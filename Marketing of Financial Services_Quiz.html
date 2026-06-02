@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing of Financial Services Quiz</title>
+    <style>
+        :root {
+            --bg-primary: #0f172a; --bg-secondary: #1e293b; --bg-tertiary: #334155;
+            --text-primary: #f8fafc; --text-secondary: #cbd5e1;
+            --accent: #3b82f6; --accent-hover: #2563eb;
+            --success: #22c55e; --error: #ef4444; --warning: #f59e0b;
+            --border-radius: 12px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: var(--bg-primary); color: var(--text-primary); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { width: 100%; max-width: 600px; background-color: var(--bg-secondary); border-radius: var(--border-radius); padding: 24px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); }
+        h1, h2, h3 { text-align: center; margin-bottom: 16px; }
+        .screen { display: none; animation: fadeIn 0.3s ease-in-out; }
+        .screen.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 600; }
+        select, button, input { width: 100%; padding: 14px; border-radius: var(--border-radius); border: 1px solid var(--bg-tertiary); background-color: var(--bg-tertiary); color: var(--text-primary); font-size: 16px; cursor: pointer; transition: all 0.2s; min-height: 52px; }
+        input[type="number"] { cursor: text; }
+        select:focus, input:focus { outline: none; border-color: var(--accent); }
+        button { background-color: var(--accent); border: none; font-weight: 700; margin-top: 10px; }
+        button:hover:not(:disabled) { background-color: var(--accent-hover); }
+        button:disabled { background-color: var(--bg-tertiary); color: var(--text-secondary); cursor: not-allowed; opacity: 0.6; }
+        .stats-bar { display: flex; justify-content: space-between; background-color: var(--bg-tertiary); padding: 12px; border-radius: var(--border-radius); margin-bottom: 20px; font-size: 14px; font-weight: 600; }
+        .progress-container { width: 100%; height: 8px; background-color: var(--bg-tertiary); border-radius: 4px; margin-bottom: 24px; overflow: hidden; }
+        .progress-bar { height: 100%; background-color: var(--accent); transition: width 0.3s ease; }
+        .question-text { font-size: 18px; font-weight: 600; margin-bottom: 24px; line-height: 1.5; }
+        .options-list { display: flex; flex-direction: column; gap: 12px; }
+        .option-btn { text-align: left; background-color: var(--bg-tertiary); border: 2px solid transparent; padding: 16px; border-radius: var(--border-radius); cursor: pointer; transition: all 0.2s; font-size: 16px; min-height: 56px; }
+        .option-btn:hover:not(:disabled) { background-color: #475569; }
+        .option-btn.correct { background-color: rgba(34, 197, 94, 0.2); border-color: var(--success); color: var(--success); }
+        .option-btn.wrong { background-color: rgba(239, 68, 68, 0.2); border-color: var(--error); color: var(--error); }
+        .option-btn.selected { border-color: var(--accent); background-color: rgba(59, 130, 246, 0.1); }
+        .explanation { margin-top: 20px; padding: 16px; background-color: rgba(59, 130, 246, 0.1); border-left: 4px solid var(--accent); border-radius: 4px; font-size: 15px; line-height: 1.5; display: none; }
+        .explanation.visible { display: block; animation: fadeIn 0.3s ease-in-out; }
+        .action-buttons { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+        .action-buttons button { flex: 1; min-width: 80px; }
+        .btn-secondary { background-color: var(--bg-tertiary); }
+        .btn-secondary:hover:not(:disabled) { background-color: #475569; }
+        .flashcard-container { perspective: 1000px; min-height: 300px; margin-bottom: 20px; }
+        .flashcard { width: 100%; min-height: 300px; position: relative; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer; }
+        .flashcard.flipped { transform: rotateY(180deg); }
+        .flashcard-face { position: absolute; width: 100%; min-height: 300px; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px; background-color: var(--bg-tertiary); border-radius: var(--border-radius); text-align: center; border: 2px solid var(--bg-tertiary); }
+        .flashcard-back { transform: rotateY(180deg); background-color: rgba(59, 130, 246, 0.1); border-color: var(--accent); }
+        .flashcard-hint { margin-top: 12px; font-size: 14px; color: var(--text-secondary); }
+        .results-score { font-size: 48px; font-weight: 800; text-align: center; margin: 20px 0; }
+        .results-score.green { color: var(--success); }
+        .results-score.amber { color: var(--warning); }
+        .results-score.red { color: var(--error); }
+        .results-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
+        .stat-box { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); text-align: center; }
+        .stat-value { font-size: 24px; font-weight: 700; display: block; }
+        .stat-label { font-size: 14px; color: var(--text-secondary); }
+        .review-section { max-height: 400px; overflow-y: auto; margin-bottom: 24px; padding-right: 8px; }
+        .review-item { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); margin-bottom: 12px; border-left: 4px solid var(--bg-tertiary); }
+        .review-item.correct { border-left-color: var(--success); }
+        .review-item.wrong { border-left-color: var(--error); }
+        .review-item.skipped { border-left-color: var(--warning); }
+        .review-q { font-weight: 600; margin-bottom: 8px; font-size: 15px; }
+        .review-detail { font-size: 14px; color: var(--text-secondary); margin-bottom: 4px; }
+        .review-detail strong { color: var(--text-primary); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb { background: var(--bg-tertiary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ═══════════ SETUP SCREEN ═══════════ -->
+        <div id="setup-screen" class="screen active">
+            <h1>Marketing of Financial Services Quiz</h1>
+            <p style="text-align:center; color:var(--text-secondary); margin-bottom: 20px;">Master Sales & Marketing in Banking</p>
+            <div class="form-group">
+                <label for="mode-select">Quiz Mode</label>
+                <select id="mode-select">
+                    <option value="">Select a mode...</option>
+                    <option value="random">Random Mix</option>
+                    <option value="sequential">Sequential</option>
+                    <option value="missed">Missed Only</option>
+                    <option value="flashcard">Flashcard Revision</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="count-select">Number of Questions</label>
+                <select id="count-select">
+                    <option value="">Select count...</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="all">All (120)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="test-mode-select">Test Mode</label>
+                <select id="test-mode-select">
+                    <option value="practice">Practice Mode</option>
+                    <option value="exam">Exam Mode</option>
+                </select>
+            </div>
+            <div id="exam-time-group" class="form-group" style="display: none;">
+                <label for="exam-time-input">Time Limit (minutes)</label>
+                <input type="number" id="exam-time-input" min="1" max="300" value="60">
+            </div>
+            <div class="stats-bar">
+                <span>Total Available: <span id="total-avail">0</span></span>
+                <span>Missed Questions: <span id="total-missed">0</span></span>
+            </div>
+            <button id="start-btn" disabled>Start Quiz</button>
+        </div>
+
+        <!-- ═══════════ QUIZ SCREEN ═══════════ -->
+        <div id="quiz-screen" class="screen">
+            <div id="exam-timer" style="text-align: center; font-size: 20px; font-weight: 700; margin-bottom: 12px; display: none;">
+                Time Remaining: <span id="timer-display">60:00</span>
+            </div>
+            <div class="stats-bar" id="quiz-stats-bar">
+                <span>Correct: <span id="live-correct">0</span></span>
+                <span>Wrong: <span id="live-wrong">0</span></span>
+                <span>Score: <span id="live-score">0%</span></span>
+            </div>
+            <div class="progress-container"><div class="progress-bar" id="progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Question <span id="current-q-num">1</span> of <span id="total-q-num">10</span>
+            </div>
+            <div class="question-text" id="question-text"></div>
+            <div class="options-list" id="options-list"></div>
+            <div class="explanation" id="explanation"></div>
+            <div class="action-buttons" id="practice-actions">
+                <button class="btn-secondary" id="skip-btn">Skip</button>
+                <button class="btn-secondary" id="end-session-btn">End Session</button>
+                <button id="next-btn" style="display: none;">Next</button>
+            </div>
+            <div class="action-buttons" id="exam-actions" style="display: none;">
+                <button class="btn-secondary" id="prev-exam-btn">Previous</button>
+                <button class="btn-secondary" id="submit-exam-btn">Submit Exam</button>
+                <button id="next-exam-btn">Next</button>
+            </div>
+        </div>
+
+        <!-- ═══════════ FLASHCARD SCREEN ═══════════ -->
+        <div id="flashcard-screen" class="screen">
+            <div class="progress-container"><div class="progress-bar" id="fc-progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Card <span id="fc-current-num">1</span> of <span id="fc-total-num">10</span>
+            </div>
+            <div class="flashcard-container" onclick="flipCard()">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-face flashcard-front">
+                        <div id="fc-question" style="font-size: 18px; font-weight: 600;"></div>
+                        <div class="flashcard-hint">Tap to reveal answer</div>
+                    </div>
+                    <div class="flashcard-face flashcard-back">
+                        <div id="fc-answer" style="font-size: 18px; font-weight: 700; color: var(--success); margin-bottom: 12px;"></div>
+                        <div id="fc-explanation" style="font-size: 15px; line-height: 1.5;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons" id="fc-actions" style="display: none;">
+                <button class="btn-secondary" style="border-color: var(--error); color: var(--error);" onclick="handleFlashcardDecision(false)">Still Learning</button>
+                <button style="border-color: var(--success); color: var(--success); background-color: rgba(34, 197, 94, 0.1);" onclick="handleFlashcardDecision(true)">Got It</button>
+            </div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="fc-skip-btn" onclick="skipFlashcard()">Skip</button>
+                <button class="btn-secondary" id="fc-end-btn" onclick="endSession()">End Session</button>
+            </div>
+        </div>
+
+        <!-- ═══════════ RESULTS SCREEN ═══════════ -->
+        <div id="results-screen" class="screen">
+            <h2>Session Complete!</h2>
+            <div class="results-score" id="results-score">0%</div>
+            <div class="results-stats" id="results-stats-grid">
+                <div class="stat-box"><span class="stat-value" id="res-correct" style="color: var(--success);">0</span><span class="stat-label">Correct</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-wrong" style="color: var(--error);">0</span><span class="stat-label">Wrong</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-skipped" style="color: var(--warning);">0</span><span class="stat-label">Skipped</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-total">0</span><span class="stat-label">Total</span></div>
+                <div class="stat-box" id="time-stat-box" style="display: none;"><span class="stat-value" id="res-time">0:00</span><span class="stat-label">Time Taken</span></div>
+            </div>
+            <h3>Review All Answers</h3>
+            <div class="review-section" id="review-section"></div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="retry-missed-btn">Retry Missed</button>
+                <button id="new-session-btn">New Session</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const QB = [
+{id:'Q1', q:"According to the course material, how does a bank CEO primarily view profitability?", opts:["A. Profit is a function of employee satisfaction and innovation.", "B. Profit equals Revenue minus Cost (P = R - C).", "C. Profit is derived from minimizing customer acquisition costs.", "D. Profit is directly tied to the number of physical branches."], ans:"B", exp:"The manual states 'P= R-C(Profit= Revenue – Cost) The Profit equation is the yardstick against which all CEO’s in for-profit organizations are judged.'"},
+{id:'Q2', q:"In the context of banking, how is 'Revenue (R)' in the profit equation primarily defined?", opts:["A. The total number of new accounts opened in a quarter.", "B. The sum of all operational cost savings achieved.", "C. A function of price (P) and quantity (Q), where P is the average price (fees/interest) and Q is the number of transactions or accounts.", "D. The market capitalization of the bank's stock."], ans:"C", exp:"The manual explains that 'Revenue is a function of price and quantity. ... P is the average price a customer pays. ... Q is the number of transactions or accounts.'"},
+{id:'Q3', q:"Based on Maslow's Hierarchy of Needs as applied to banking, which type of financial product is a customer most likely to seek first?", opts:["A. An asset management portfolio for wealth growth.", "B. A complex derivative product for hedging.", "C. A basic savings account or loan to meet fundamental needs.", "D. A premium private banking service for esteem."], ans:"C", exp:"The manual notes that 'Individuals are more inclined to utilize banking products, like savings accounts or basic loans, to meet fundamental needs initially.'"},
+{id:'Q4', q:"What is the primary focus of 'Selling' as distinguished from 'Marketing' in the course material?", opts:["A. Building long-term brand equity and market positioning.", "B. Understanding and satisfying the customer's needs and wants.", "C. The direct, personal approach to promoting and transferring ownership of goods to the customer.", "D. Conducting extensive market research to identify new segments."], ans:"C", exp:"The table on page 8 defines Selling as 'the direct and personal approach to promoting and transferring ownership of goods to the customer.'"},
+{id:'Q5', q:"Which of the following best describes the orientation of Marketing compared to Selling?", opts:["A. Marketing is product-oriented, while Selling is customer-oriented.", "B. Marketing is transactional, while Selling is relational.", "C. Marketing is customer-oriented, while Selling is product-oriented.", "D. Marketing focuses on short-term goals, while Selling focuses on long-term goals."], ans:"C", exp:"The table on page 8 states that Marketing is 'Customer-oriented' while Selling is 'Product-oriented.'"},
+{id:'Q6', q:"Why is building trust particularly challenging when selling financial services compared to tangible goods?", opts:["A. Because customers can easily return a faulty financial service.", "B. Because the value of financial services is immediately apparent upon purchase.", "C. Because customers cannot physically experience the service before purchase and must trust future delivery.", "D. Because regulatory constraints make trust-building irrelevant."], ans:"C", exp:"Page 10 explains that 'Customers can't physically experience or evaluate a service before purchase...' and 'The customer must trust that the provider will honor the agreement...far into the future.'"},
+{id:'Q7', q:"Which of the following is NOT listed as a challenge in building trust and credibility for financial services?", opts:["A. The high level of financial literacy among the general population.", "B. Negative past experiences with financial institutions.", "C. Fear of financial loss associated with wrong decisions.", "D. A perceived lack of transparency from institutions."], ans:"A", exp:"Page 11 lists 'Financial Literacy Gap' as a challenge, stating 'Many customers lack a deep understanding...', which is the opposite of high financial literacy."},
+{id:'Q8', q:"How do regulatory constraints specifically impact the marketing of financial services in Nigeria, according to the manual?", opts:["A. They eliminate all competition from fintech companies.", "B. They provide a clear and simple legal framework that is easy to navigate.", "C. They restrict operations, increase compliance costs, and require constant adaptation to a changing legal landscape.", "D. They have no significant impact on traditional banks."], ans:"C", exp:"Page 13 states under 'Regulatory Constraints': 'Strict Regulations...', 'Compliance Costs...', and 'Changing Legal Landscape...' as key impacts."},
+{id:'Q9', q:"What strategic response are traditional Nigerian banks adopting to compete with emerging financial service providers?", opts:["A. Reducing their digital footprint to focus solely on branch banking.", "B. Forming a Holding Corporation (HoldCo) structure to diversify and innovate.", "C. Merging all subsidiaries into a single, monolithic entity.", "D. Avoiding investment in technological infrastructure."], ans:"B", exp:"Pages 14-15 detail 'THE HOLDCO STRUCTURE' as a 'noteworthy strategy being adopted' to 'diversify, innovate, and compete effectively.'"},
+{id:'Q10', q:"What is the key difference between 'Market Research' and 'Marketing Research' as defined in the manual?", opts:["A. Market Research is about competitors, while Marketing Research is about customers.", "B. Market Research collects info about a market's size and features, while Marketing Research systematically analyzes data about specific marketing problems for decision-making.", "C. Market Research is qualitative, while Marketing Research is quantitative.", "D. There is no practical difference; the terms are used interchangeably."], ans:"B", exp:"Page 16 defines Market Research as collecting info about a market's 'size, composition and general features,' while Marketing Research involves 'systematic gathering, recording, and analyzing of data about marketing problems to facilitate decision making.'"},
+{id:'Q11', q:"Which of the following is a critical step in conducting effective market research?", opts:["A. Skipping the definition of objectives to save time.", "B. Using only secondary data sources to reduce costs.", "C. Defining clear, SMART objectives to set the project's direction.", "D. Focusing exclusively on competitor pricing data."], ans:"C", exp:"Page 16 lists 'Define Objectives' as the first step, emphasizing the need for 'specific, measurable, achievable, relevant, and time-bound (SMART) objectives.'"},
+{id:'Q12', q:"What is the primary purpose of market segmentation in retail banking?", opts:["A. To create a single, generic product for all customers.", "B. To classify customers based on common characteristics to develop more effective products and strategies.", "C. To eliminate low-value customer segments from the bank's portfolio.", "D. To standardize all communication across every channel."], ans:"B", exp:"Page 18 states, 'Customer segmentation is the process by which customers are classified based on common characteristics. The marketing/sales team use those characteristics to develop banking products and marketing strategies that more effectively address the needs...'"},
+{id:'Q13', q:"Which of the following is NOT listed as a common basis for segmenting a retail banking market?", opts:["A. Geographic location", "B. Demographic statistics like age and income", "C. Psychographic attributes like lifestyle and values", "D. Employee performance metrics"], ans:"D", exp:"Page 18 lists Geographic, Demographic, Psychographic, and Behavioral as the four ways retail banks segment the market. Employee performance is not a customer characteristic."},
+{id:'Q14', q:"What is a key characteristic of a 'good' market segment?", opts:["A. It should be immeasurable to maintain a competitive secret.", "B. It must be substantial enough to justify resource allocation.", "C. It should be inaccessible to competitors.", "D. It must be identical to other segments for standardization."], ans:"B", exp:"Page 18 lists 'SUBSTANTIAL: The segments must be sizeable to justify allocation of corporate resources' as a key characteristic."},
+{id:'Q15', q:"If an insurance company focuses exclusively on selling health insurance to senior citizens, which targeting strategy is it using?", opts:["A. Multi-Segment Coverage", "B. Product Specialization", "C. Single Segment Concentration", "D. Full Market Coverage"], ans:"C", exp:"Page 19 provides this exact example under 'Single Segment Concentration': 'A company might focus exclusively on selling health insurance to senior citizens...'"},
+{id:'Q16', q:"A large bank that offers a full range of products (auto, health, life, business insurance) to every possible customer group is employing which targeting strategy?", opts:["A. Segment Specialization", "B. Single Segment Concentration", "C. Full Market Coverage", "D. Product Specialization"], ans:"C", exp:"Page 21 defines 'Full Market Coverage' as attempting 'to serve all customer segments' and gives the example of a large insurance company offering a 'comprehensive range of insurance products...targeting every possible customer group.'"},
+{id:'Q17', q:"What is the core objective of market positioning?", opts:["A. To copy the strategies of the market leader exactly.", "B. To occupy a distinct place in the minds of consumers and differentiate from competitors.", "C. To minimize all marketing expenditures.", "D. To create the cheapest product in the market."], ans:"B", exp:"Page 22 states, 'Market positioning is the strategy used by companies to occupy a distinct place in the minds of consumers. In essence, positioning helps businesses differentiate their products or services from competitors.'"},
+{id:'Q18', q:"Which element of a market positioning strategy directly answers the customer's question, 'What's in it for me?'?", opts:["A. Unique Selling Proposition (USP)", "B. Target Market", "C. Value Proposition", "D. Competitive Analysis"], ans:"C", exp:"Page 22 defines the Value Proposition as an 'combination of the benefits and features of your product. It answers the customer’s question, “What’s in it for me?”'"},
+{id:'Q19', q:"An insurance company markets its policy by saying, 'Secure your family’s future with our comprehensive life insurance plan.' This is an example of which positioning approach?", opts:["A. Functional", "B. Symbolic", "C. Experiential", "D. Competitive"], ans:"B", exp:"Page 24 describes 'Symbolic' positioning as emphasizing 'the emotional or psychological needs the product fulfills' and gives the example: 'Secure your family’s future with our comprehensive life insurance plan.'"},
+{id:'Q20', q:"Which of the following is a primary objective of pricing for a bank?", opts:["A. To maximize customer confusion about fee structures.", "B. To ensure prices are always lower than any competitor, regardless of cost.", "C. To balance generating profit with attracting customers, covering costs while yielding profits.", "D. To eliminate all variable costs from the bank's operations."], ans:"C", exp:"Page 26 states, 'Pricing decisions in banks must balance between generating profit and attracting customers.' It also lists 'Profit Maximization' as ensuring 'prices for services and products...cover operational costs while yielding profits.'"},
+{id:'Q21', q:"What is 'Relationship Pricing' as a pricing strategy in banking?", opts:["A. Setting prices based on the cost of raw materials.", "B. Offering varied pricing structures to reward loyal customers or encourage continued service use.", "C. Pricing products at a loss to drive competitors out of the market.", "D. Using a single, fixed price for all customers regardless of their history."], ans:"B", exp:"Page 27 defines 'Relationship Pricing' as 'Offering varied pricing structures to reward loyal customers or encourage continued utilization of the bank’s services.'"},
+{id:'Q22', q:"Which distribution channel in retail banking is described as essential for complex transactions or disputes requiring extensive consultation?", opts:["A. Mobile Banking", "B. Social Media & Chatbots", "C. Online Banking", "D. Branch Banking"], ans:"D", exp:"Page 28 describes Branch Banking as providing 'a personal touch and direct interaction. Essential for complex transactions, disputes, or services that require extensive consultation.'"},
+{id:'Q23', q:"In corporate banking, what is the primary function of an API (Application Programming Interface)?", opts:["A. To provide a physical meeting space for corporate clients.", "B. To allow corporate clients to integrate banking services directly into their own business systems.", "C. To replace the need for relationship managers entirely.", "D. To manage the bank's internal payroll system."], ans:"B", exp:"Page 29 states for API Banking: 'APIs allow corporate clients to integrate banking services directly into their business systems and processes.'"},
+{id:'Q24', q:"Which component of the promotion mix involves short-term incentives to encourage customers to choose the bank’s services?", opts:["A. Advertising", "B. Public Relations", "C. Sales Promotion", "D. Personal Selling"], ans:"C", exp:"Page 31 defines 'Sales Promotion' as 'short-term incentives designed to encourage customers to choose the bank’s services.'"},
+{id:'Q25', q:"In the context of the 7Ps of marketing for financial services, what does 'Physical Evidence' refer to?", opts:["A. The legal contracts signed by the customer.", "B. The intangible promises made by the salesperson.", "C. The tangible elements like branding, branch ambiance, and online presence that shape customer perception.", "D. The physical cash reserves held by the bank."], ans:"C", exp:"Pages 32-33 describe Physical Evidence as including 'Branding Materials', 'Branch Ambiance', 'Online Presence', and 'Employee Appearance'—all tangible elements that influence customer perception."},
+{id:'Q26', q:"How does social media marketing benefit financial services firms, according to the manual?", opts:["A. It eliminates the need for customer service representatives.", "B. It creates a platform for community, enables two-way communication, and helps build relationships.", "C. It guarantees a fixed return on investment for all campaigns.", "D. It is only useful for recruiting new employees."], ans:"B", exp:"Page 34 states that social media 'Creates a platform for community...', 'Creates a two-way communication flow...', and 'Provides a platform for a Bank to build and sustain relationships...'"},
+{id:'Q27', q:"What is a key application of analytics in the marketing of financial services?", opts:["A. To automate all customer-facing decisions without human input.", "B. To create generic, one-size-fits-all marketing messages for efficiency.", "C. To enable personalized marketing by analyzing customer data for customized recommendations.", "D. To reduce the need for market segmentation entirely."], ans:"C", exp:"Page 35 lists 'Personalization' as a key deployment, stating 'Analytics enables personalized marketing by analyzing customer data and generating customized recommendations and offers.'"},
+{id:'Q28', q:"In the Customer Value Journey, what is the primary goal of the 'Subscribe' stage?", opts:["A. To finalize the purchase contract.", "B. To collect a prospect's contact information to build a relationship.", "C. To ask for a referral from a satisfied customer.", "D. To deliver the purchased product or service."], ans:"B", exp:"Page 36 defines the 'SUBSCRIBE' stage as where 'marketing designs systems to collect a prospect contact information to build a relationship.'"},
+{id:'Q29', q:"According to the manual, what is the definition of 'Selling' in the context of financial services?", opts:["A. The act of forcing a product onto a customer to meet a quota.", "B. Responding to consumer needs through planned, personalized communication to influence purchase decisions and ensure satisfaction.", "C. The process of setting the price for a financial product.", "D. The creation of advertising campaigns for new products."], ans:"B", exp:"Page 38 defines Selling as 'responding to consumer needs and wants through planned, personalized communication to influence purchase decisions and ensure satisfaction.'"},
+{id:'Q30', q:"Which of the following is NOT listed as a role of selling in financial services?", opts:["A. Product Promotion", "B. Customer Needs Assessment", "C. Inventory Management of physical goods", "D. Risk Management"], ans:"C", exp:"Page 38 lists roles including Product Promotion, Customer Needs Assessment, Risk Management, Compliance, Relationship Building, etc. Inventory management is not relevant for intangible financial services."},
+{id:'Q31', q:"What are the 'Six Pillars of Professional Selling in Banking'?", opts:["A. Price, Product, Place, Promotion, People, Process", "B. Business, Product, Industry, Selling Skills, Company Knowledge, Attitude", "C. Awareness, Engagement, Subscribe, Conversion, Advocacy", "D. Ethos, Pathos, Logos, Clarity, Consideration, Confirmation"], ans:"B", exp:"Pages 44-45 list the six pillars as: 1. Business Knowledge, 2. Product Knowledge, 3. Industry Knowledge, 4. Selling Skills, 5. Company Knowledge, 6. Attitude."},
+{id:'Q32', q:"Which soft skill in selling involves 'challenging assumptions and engaging in skilled questioning to understand the prospect's perspective'?", opts:["A. Communication", "B. Empathy", "C. Critical Thinking", "D. Adaptability"], ans:"C", exp:"Page 45 defines 'Critical Thinking' as 'Challenging assumptions and engaging in skilled questioning to understand the prospect's perspective.'"},
+{id:'Q33', q:"Which prospecting method leverages existing customers to introduce new potential clients?", opts:["A. Data Analytics", "B. Cold Emails", "C. Scraping Social Media", "D. Referrals from Existing Customers"], ans:"D", exp:"Page 47 defines 'Referral marketing' as 'a word-of-mouth initiative...to incentivize existing customers to introduce their family, friends, and contacts to become new customers.'"},
+{id:'Q34', q:"What is the primary purpose of 'probing' in the sales process?", opts:["A. To deliver a pre-scripted sales pitch as quickly as possible.", "B. To gather information about the customer's financial needs, preferences, and pain points.", "C. To convince the customer to buy before they can ask questions.", "D. To collect sensitive personal data for unrelated purposes."], ans:"B", exp:"Page 50 states, 'Probing involves asking the right questions to gather information about the customer's financial needs, preferences, and pain points.'"},
+{id:'Q35', q:"Which type of probe is best used early in a conversation to get a broad understanding of a customer's financial needs?", opts:["A. Closed-End Probes", "B. Leading Questions", "C. Open-End Probes", "D. Summary Statements"], ans:"C", exp:"Page 52 states that Open-End Probes are used 'To elicit more extensive responses and get the customer to share more details' and 'When to Use: Early in the conversation to get a broad understanding...'"},
+{id:'Q36', q:"What is the main goal of active listening in a sales context?", opts:["A. To wait for your turn to speak and deliver your pitch.", "B. To not just hear but to understand, interpret, and evaluate what the customer is saying.", "C. To memorize every word the customer says for legal documentation.", "D. To identify weaknesses in the customer's financial knowledge to exploit."], ans:"B", exp:"Page 50 defines 'Listening' as 'Active listening involves not just hearing but understanding, interpreting, and evaluating what you're being told.'"},
+{id:'Q37', q:"According to the principles of persuasion, what does 'Ethos' primarily focus on?", opts:["A. Creating an emotional connection with the audience.", "B. Presenting a logical argument with facts and data.", "C. Establishing the credibility and authority of the speaker.", "D. Offering the lowest price in the market."], ans:"C", exp:"Page 58 defines 'Ethos (Establishing Credibility)' as showcasing 'expertise, qualifications, and the reliability of the bank and its products.'"},
+{id:'Q38', q:"What is the primary purpose of the 'Approach' stage in a sales call?", opts:["A. To close the sale immediately.", "B. To conduct a deep technical analysis of the customer's finances.", "C. To make a favorable first impression during the first face-to-face contact.", "D. To send a follow-up email after the meeting."], ans:"C", exp:"Page 59 states, 'The Approach: is the first face-to-face contact with the prospect where a ‘favourable’ first impression is critical.'"},
+{id:'Q39', q:"Which of the following is a strong verbal 'buying signal' from a prospect?", opts:["A. 'I've heard that before.'", "B. 'How long will this take?'", "C. 'Can I prepay?'", "D. 'I need to think about it.'"], ans:"C", exp:"Page 64 lists '“Can I Prepay?”' as a 'very strong buying signal' because it suggests the prospect 'has already decided to purchase and is looking at payment options.'"},
+{id:'Q40', q:"What is the recommended action once you notice clear buying signals from a prospect?", opts:["A. Continue selling aggressively to reinforce the decision.", "B. Introduce several new, unrelated products to maximize the sale.", "C. Stop selling and start the closing process.", "D. End the meeting abruptly to create a sense of urgency."], ans:"C", exp:"Page 66 advises, 'Know When to Stop Selling. One of the biggest mistakes in sales is to continue selling after the prospect is ready to buy. ... it's time to stop selling and start closing.'"},
+{id:'Q41', q:"What is the first 'C' in the '3 C’s of Objection Handling'?", opts:["A. Convince", "B. Clarify", "C. Clarity", "D. Counter"], ans:"C", exp:"Page 67 lists the first 'C' as 'Clarity', which involves 'Active Listening' and 'Seek Clarification on the Objection.'"},
+{id:'Q42', q:"Which of the following is a key ethical consideration in selling financial services?", opts:["A. Prioritizing sales quotas over the customer's best interest.", "B. Concealing risks and fees to close more deals.", "C. Prioritizing the customer's best interests and recommending suitable products.", "D. Sharing customer data with third parties for a commission."], ans:"C", exp:"Page 69 states under 'Ethical Considerations': 'Ethical selling necessitates prioritizing customers' best interests over sales quotas or commissions. This approach involves recommending products and services that truly align with the client's financial needs...'"},
+{id:'Q43', q:"What does the 'Customer Lifetime Value (CLV)' metric represent?", opts:["A. The total cost of acquiring a new customer.", "B. The average number of products a customer buys in a year.", "C. The total revenue a company can expect from a single customer throughout their entire relationship.", "D. The customer's credit score over their lifetime."], ans:"C", exp:"Page 72 defines CLV as 'a crucial metric...it represents the total revenue a company can reasonably expect from a single customer throughout their entire relationship with the company.'"},
+{id:'Q44', q:"Why is retaining customers critical for a financial institution?", opts:["A. It is cheaper to acquire new customers than to retain old ones.", "B. Retained customers provide a stable revenue stream, higher lifetime value, and opportunities for cross-selling.", "C. Retention strategies are simple and require no investment.", "D. Loyal customers never provide feedback, reducing workload."], ans:"B", exp:"Pages 71-72 list reasons including 'Stable Revenue Stream', 'Higher Lifetime Value', and 'Cross-Selling and Up-Selling Opportunities' as critical benefits of customer retention."},
+{id:'Q45', q:"Which of the following is a key customer retention strategy mentioned in the manual?", opts:["A. Ignoring customer feedback to maintain a consistent message.", "B. Implementing standardized, non-customizable product offerings.", "C. Collecting feedback to improve service and offering value-added services.", "D. Increasing fees for long-term customers to maximize profit."], ans:"C", exp:"Page 72 lists strategies including 'Collect Feedback to Improve Service' and 'Value-Added Services' like 'complimentary or discounted services like financial planning assistance.'"},
+{id:'Q46', q:"What does the 'Net Promoter Score (NPS)' measure?", opts:["A. The total number of new customers acquired in a quarter.", "B. A measure of customer loyalty based on how likely they are to recommend the company to others.", "C. The average interest rate offered on savings accounts.", "D. The speed of the bank's online transaction processing."], ans:"B", exp:"Page 74 defines NPS as 'A measure of customer loyalty and satisfaction based on how likely they are to recommend a company's product or service to others.'"},
+{id:'Q47', q:"How can data analytics be used to enhance customer retention?", opts:["A. By sending the same generic message to all customers.", "B. By identifying at-risk customers through churn analysis for proactive engagement.", "C. By eliminating all forms of customer communication to reduce costs.", "D. By focusing retention efforts only on new customers."], ans:"B", exp:"Page 75 lists 'Identifying At-Risk Customers' as a use case, specifically 'Churn Analysis: Utilizing predictive analytics to identify customers who are likely to churn, allowing proactive engagement to retain them.'"},
+{id:'Q48', q:"In the 'Customer Value Journey', which stage involves the customer spreading positive word-of-mouth about the company?", opts:["A. Awareness", "B. Engagement", "C. Conversion", "D. Advocacy"], ans:"D", exp:"Page 36 defines the 'ADVOCACY' stage as when 'the customer is satisfied with the service offering and spreads the word about your company.'"},
+{id:'Q49', q:"Which of the following is a major challenge faced by financial institutions in marketing, as per the study guide?", opts:["A. Lack of competition in the market.", "B. High levels of customer trust in all institutions.", "C. Factors like regulatory constraints, competition, and cultural/social factors.", "D. The ease of differentiating highly homogeneous products."], ans:"C", exp:"The Study Guide (page 3) lists 'Factors affecting the marketing of financial services' under Module 3, and the Participant Manual (page 13) details these as Regulatory Constraints, Competition, and Cultural/Social factors."},
+{id:'Q50', q:"What is a key difference between retail and corporate banking functions in 'Customer Needs Assessment'?", opts:["A. Retail focuses on individual needs, while corporate focuses on the financial requirements of businesses.", "B. Both functions use identical assessment methods and criteria.", "C. Corporate banking ignores the client's financial situation.", "D. Retail banking does not involve any needs assessment."], ans:"A", exp:"Page 39 shows a table where for 'Customer Needs Assessment', Retail Banking is 'Recommend suitable retail banking products...' and Corporate Banking is 'Identifying the financial requirements of corporate customers to offer customized financial solutions...'"},
+{id:'Q51', q:"According to the manual, what is a primary benefit of the HoldCo structure for banks?", opts:["A. It simplifies regulatory compliance into a single, monolithic process.", "B. It prevents any form of innovation to maintain stability.", "C. It allows for diversification, enhanced customer experience, and a competitive edge through a comprehensive suite of services.", "D. It forces all subsidiaries to offer the exact same products."], ans:"C", exp:"Pages 14-15 list benefits including 'Diversification', 'Enhanced Customer Experience' (one-stop financial hub), and 'Competitive Edge' (providing a comprehensive suite of services)."},
+{id:'Q52', q:"Which of the following is a key factor that influences pricing decisions in banking?", opts:["A. The color scheme of the bank's logo.", "B. The personal hobbies of the bank's CEO.", "C. Level of customer demand, company cost profile, and competitor pricing.", "D. The number of holidays in a given year."], ans:"C", exp:"Page 27 lists 'FACTORS THAT INFLUENCE PRICING' as '1. Level of Customer Demand, 2. Company Cost Profile, 3. Competitor Pricing.'"},
+{id:'Q53', q:"What is the main purpose of 'Public Relations' in the promotion mix for a bank?", opts:["A. To sell products directly through paid advertisements.", "B. To offer short-term discounts and incentives.", "C. To build and maintain a positive image and strong relationships with the public through activities like CSR.", "D. To handle all customer service inquiries via phone."], ans:"C", exp:"Page 31 defines Public Relations as 'activities designed to build and maintain a positive image and strong relationships with the public,' with examples like corporate social responsibility initiatives."},
+{id:'Q54', q:"In the context of digital marketing, what is a primary benefit of using analytics for 'Marketing Attribution'?", opts:["A. It allows marketers to ignore the performance of offline channels.", "B. It helps allocate budgets more efficiently by identifying which channels contribute most to conversions.", "C. It guarantees that every marketing campaign will be successful.", "D. It replaces the need for creative content development."], ans:"B", exp:"Page 35 states for 'Marketing Attribution': 'Financial marketers can allocate their budgets more efficiently by identifying the marketing channels and campaigns that contribute the most to conversions.'"},
+{id:'Q55', q:"Which probing technique is used to explore possible financial scenarios with a customer?", opts:["A. Reflective Statements", "B. Closed-End Questions", "C. Hypothetical Probes", "D. Brief Assertions"], ans:"C", exp:"Page 55 lists 'e) Hypothetical – \"What would happen if...?\"' and explains its use 'When you want the customer to consider options or implications they haven't thought of.'"},
+{id:'Q56', q:"What is a common challenge account officers face in getting referrals from customers?", opts:["A. Customers are always eager to provide referrals without being asked.", "B. The referral process is too simple and requires no effort.", "C. Not initiating the request due to fear of rejection or failing to simplify the referral process.", "D. Banks prohibit the use of referral programs."], ans:"C", exp:"Page 48 lists challenges including 'Not initiating the request because of rejection fears' and 'Failing to simplify the referral process for the customer.'"},
+{id:'Q57', q:"According to the manual, what is a key principle of persuasion related to the customer's feeling after a sales conversation?", opts:["A. Leave the listener feeling confused and overwhelmed.", "B. Leave the listener feeling satisfied and competent in their understanding.", "C. Make the listener feel pressured into making an immediate decision.", "D. Ensure the listener feels they have lost something in the negotiation."], ans:"B", exp:"Page 58 lists 'Leave the Listener Feeling Satisfied and Competent' as an element, ensuring 'the customer feels capable of understanding and acting upon the financial information provided.'"},
+{id:'Q58', q:"Which of the following is an example of 'Experiential Positioning' in insurance?", opts:["A. Emphasizing the lowest possible premium rates.", "B. Highlighting a hassle-free claim process as a unique feature.", "C. Marketing the policy as a responsible choice for protecting loved ones.", "D. Promoting a seamless insurance experience through a user-friendly mobile app."], ans:"D", exp:"Page 25 defines 'Experiential' positioning as being 'based on the experience or lifestyle the product enables' and gives the example: 'Enjoy a seamless insurance experience from sign-up to claims with our user-friendly mobile app.'"},
+{id:'Q59', q:"What is the formula for calculating Customer Retention Rate as provided in the manual?", opts:["A. (Number of new customers / Number of customers at start) x 100", "B. (Number of customers at end - Number of new customers) / Number of customers at start x 100", "C. (Total revenue / Number of customers) x 100", "D. (Number of complaints resolved / Total complaints) x 100"], ans:"B", exp:"Page 74 provides the formula: 'Number of customers at end of period−Number of new customers acquired during period / Number of customers at start of period × 100'"},
+{id:'Q60', q:"In the 'Six Pillars of Professional Selling,' what does 'Company Knowledge' entail?", opts:["A. Knowing only the bank's stock price.", "B. Understanding internal policies, procedures, structure, and building internal networks.", "C. Memorizing the biography of every executive.", "D. Focusing solely on external market trends."], ans:"B", exp:"Page 45 defines 'Company Knowledge' as 'Understanding internal policies, procedures, and the structure of the bank' and 'Building internal networks to know whom to reach out to for different issues.'"},
+{id:'Q61', q:"Which of the following best describes 'Multi-Segment Coverage' as a targeting strategy?", opts:["A. Focusing all efforts on a single, niche market segment.", "B. Specializing in one product type for multiple segments.", "C. Targeting multiple market segments with separate marketing mixes for each.", "D. Attempting to serve every customer with a single, generic offering."], ans:"C", exp:"Page 20 defines 'Multi-Segment Coverage' as targeting 'multiple market segments but with separate marketing mixes for each one.'"},
+{id:'Q62', q:"What is a primary reason why 'Product Specialization' as a strategy can be risky?", opts:["A. It leads to extremely low operational costs.", "B. It guarantees success in all market conditions.", "C. It creates a dependence on the market for that particular product.", "D. It makes cross-selling opportunities abundant."], ans:"C", exp:"Page 20 lists as a con for 'Product Specialization': 'Dependence on the market for that particular product.'"},
+{id:'Q63', q:"According to the manual, what is a key factor that anchors positioning strategies?", opts:["A. The number of employees in the marketing department.", "B. The office location of the headquarters.", "C. Product Features, Utility & Benefits, Use Categories, Occasion, and Competitive Comparison.", "D. The personal opinions of the sales team."], ans:"C", exp:"Pages 23-24 list these five factors under 'FACTORS THAT ANCHOR POSITIONING STRATEGIES.'"},
+{id:'Q64', q:"Which distribution channel is described as crucial for resolving issues or providing guidance in a remote setting?", opts:["A. Branch Banking", "B. Mobile Banking", "C. Call Centers", "D. API Banking"], ans:"C", exp:"Page 28 describes Call Centers as offering 'a personal touch in a remote setting and is crucial for resolving issues or providing guidance.'"},
+{id:'Q65', q:"What is the role of 'People' in the 7Ps of service marketing for a bank?", opts:["A. They are only responsible for back-office operations.", "B. They have no impact on the customer's perception of the service.", "C. Staff like customer service reps and sales teams represent the face of the company and significantly impact the customer experience.", "D. Their primary role is to manage the bank's physical infrastructure."], ans:"C", exp:"Page 32 states that 'Customer Service Representatives...represent the face of the company' and that 'Employees embody the company’s values and brand image, acting as ambassadors.'"},
+{id:'Q66', q:"In the context of the Customer Value Journey, which digital marketing channel is most aligned with the 'Awareness' stage?", opts:["A. Personalized Email", "B. Website Landing Pages", "C. Search Engine Marketing (organic results)", "D. Loyalty Program App Notifications"], ans:"C", exp:"Page 37 shows a table syncing the journey with channels. 'Awareness' is linked to 'Search Engine Marketing' and 'Social Media.'"},
+{id:'Q67', q:"What is a key application of 'Predictive Modeling' in financial services marketing?", opts:["A. To create random marketing messages with no data basis.", "B. To forecast future customer behavior and trends using historical data.", "C. To eliminate the need for any customer interaction.", "D. To set fixed, unchanging prices for all products."], ans:"B", exp:"Page 35 defines 'Predictive Modeling' as using 'historical data to forecast future trends, including customer behavior...' and its application in identifying 'potential high-value customers' and predicting 'investment trends.'"},
+{id:'Q68', q:"Which of the following is a primary role of marketing in achieving business objectives for a bank?", opts:["A. To isolate the bank from market trends and competition.", "B. To decrease customer loyalty to encourage more frequent product switching.", "C. To drive revenue generation, aid in market expansion, and enhance customer loyalty.", "D. To focus exclusively on internal cost-cutting measures."], ans:"C", exp:"Page 9 lists 'ROLE OF MARKETING IN ACHIEVING BUSINESS OBJECTIVES' as including 'Drives Revenue Generation', 'Aids in Market Expansion', and 'Enhances Customer Loyalty.'"},
+{id:'Q69', q:"What is a major challenge in selling financial services related to product nature?", opts:["A. Financial services are easy to physically inspect before purchase.", "B. The homogeneity of products makes differentiation difficult.", "C. Customers have perfect knowledge of the cost of providing banking services.", "D. Trust is less important than with tangible goods."], ans:"B", exp:"Page 10 states under 'CHALLENGES IN SELLING INTANGIBLE GOODS' that 'It can be challenging to differentiate one's offerings the competitors’ and create a competitive edge due to product homogeneity.'"},
+{id:'Q70', q:"According to the study guide, which concept is rated as having the highest importance (Importance = 1)?", opts:["A. Market Segmentation, Targeting, and Positioning", "B. Intangibility of Financial Services", "C. Customer Value Proposition", "D. The Selling Process & Prospecting Methods"], ans:"C", exp:"The study guide on page 4 has a table where 'Customer Value Proposition' is listed with an Importance rating of '1', the highest on the scale."},
+{id:'Q71', q:"What is the primary purpose of 'Prequalification' in the banking sales process?", opts:["A. To finalize the loan approval paperwork.", "B. To assess whether a prospect is a genuine candidate for the bank's products or services.", "C. To determine the final interest rate for a loan.", "D. To close the sale immediately after the initial meeting."], ans:"B", exp:"Page 59 defines 'PREQUALIFICATION' as 'assessing whether a prospect is a genuine candidate for the bank's products or services.'"},
+{id:'Q72', q:"Which of the following language choices is recommended to make a transaction sound more positive to a customer?", opts:["A. Use 'Pay' instead of 'Invest'.", "B. Use 'Change' instead of 'Improve'.", "C. Use 'Sign' instead of 'Authorize'.", "D. Use 'Invest' instead of 'Pay'."], ans:"D", exp:"Page 66 advises: 'Pay vs. Own or Invest: \"Pay\" sounds like a cost... However, \"own\" or \"invest\" puts a more positive spin on the transaction, emphasizing long-term value.'"},
+{id:'Q73', q:"In handling objections, what should a salesperson do if they don't have an immediate answer?", opts:["A. Make up an answer to keep the conversation flowing.", "B. Ignore the objection and move to a different topic.", "C. Defer responding and promise to find out and get back to the prospect.", "D. Blame the objection on a competitor."], ans:"C", exp:"Page 67 under 'Confirmation' states: 'Defer When Not Sure: If you don't have an immediate answer, it's better to defer responding than to give incorrect or incomplete information.'"},
+{id:'Q74', q:"Which regulatory compliance requirement is crucial for sales professionals in Nigerian banks regarding customer identification?", opts:["A. General Data Protection Regulation (GDPR)", "B. Sarbanes-Oxley Act (SOX)", "C. Know Your Customer (KYC)", "D. Health Insurance Portability and Accountability Act (HIPAA)"], ans:"C", exp:"Page 70 lists 'Know Your Customer (KYC)' as a key point under 'REGULATORY COMPLIANCE IN SALES', stating it is 'crucial for customer identification and verification.'"},
+{id:'Q75', q:"What is a key future trend in customer retention highlighted in the manual?", opts:["A. Reducing the use of technology to focus on in-person interactions only.", "B. Leveraging AI for personalized customer service and using predictive analytics for churn prediction.", "C. Eliminating all loyalty programs as they are too costly.", "D. Standardizing all customer communications to a single channel."], ans:"B", exp:"Page 77 lists 'Leveraging Technology for Retention' (including AI) and 'Predictive Analytics in Retention Strategies' (including Churn Prediction) as key future trends."},
+{id:'Q76', q:"According to the manual, what is a primary challenge in customer retention related to communication?", opts:["A. Customers prefer no communication at all from their bank.", "B. Crafting timely, relevant communication that resonates without causing message fatigue is difficult.", "C. All customers prefer to be contacted only via postal mail.", "D. Communication has no impact on customer churn."], ans:"B", exp:"Page 76 states under 'Effective Communication Strategies': 'crafting timely, relevant, and engaging communication that resonates with customers while avoiding message fatigue is challenging.'"},
+{id:'Q77', q:"Which of the following is an example of a 'Process' element in the 7Ps for a bank?", opts:["A. The bank's logo and color scheme.", "B. The design of the bank's mobile application interface.", "C. Having standardized procedures for service delivery to ensure consistency.", "D. The salary structure for bank tellers."], ans:"C", exp:"Page 32 defines 'Process' as involving 'Standardization: ...having standardized procedures ensures consistency in service delivery, which is key to building trust and reliability.'"},
+{id:'Q78', q:"In the 'Power of Listening', what does 'Empathy' involve?", opts:["A. Ignoring the customer's emotional state to focus on facts.", "B. Recognizing that financial decisions are often driven by emotional needs like security and peace of mind.", "C. Mirroring the customer's body language exactly.", "D. Focusing solely on the logical aspects of the financial product."], ans:"B", exp:"Page 57 defines 'Empathy' as 'Recognizing that financial decisions are often driven by emotional needs (e.g., security, peace of mind).'"},
+{id:'Q79', q:"What is the main goal of the 'Sales Presentation: Getting Them to Talk' phase?", opts:["A. To deliver a lengthy, uninterrupted monologue about the bank's history.", "B. To allow the prospect to do most of the talking to learn about their needs and build rapport.", "C. To immediately present the pricing sheet for all products.", "D. To ask only closed-ended questions to control the conversation."], ans:"B", exp:"Page 63 states, 'During the sales presentation, one of the critical aspects is allowing the prospect to do most of the talking. The more they talk, the more you learn about their needs, pain points, and motivations.'"},
+{id:'Q80', q:"Which of the following is a key component of a successful 'Opening Statement' in a sales presentation?", opts:["A. Making grand, unverifiable claims about guaranteed returns.", "B. Introducing yourself and clearly stating your value proposition within the first 30 seconds.", "C. Immediately asking for the sale before establishing rapport.", "D. Focusing the entire opening on the bank's internal challenges."], ans:"B", exp:"Page 61 outlines the opening statement, including 'Introduce Yourself' and 'Make Your Value Proposition Clear...Within the first 30 seconds...'"},
+{id:'Q81', q:"According to the study guide, what is a sample exam question testing regarding prospect engagement?", opts:["A. The history of marketing theory.", "B. The ability to identify the correct type of probe (e.g., open probes) to encourage a reluctant customer to share details.", "C. The calculation of the bank's quarterly profit margin.", "D. The design of a new bank branch."], ans:"B", exp:"The sample exam on page 4 includes question 3: 'Early in the conversation, a customer is reluctant to share details. Which probe should you use to encourage them to open up more about their situation?' with the correct answer being 'C. Open Probes.'"},
+{id:'Q82', q:"What does the 'Repeat Purchase Ratio' KPI measure?", opts:["A. The total revenue generated from new customers.", "B. The percentage of customers who have shopped more than once within a given timeframe.", "C. The average time between a customer's first and second purchase.", "D. The number of products returned by customers."], ans:"B", exp:"Page 74 defines 'Repeat Purchase Ratio' as 'The percentage of customers who have shopped more than once from a company within a given time frame.'"},
+{id:'Q83', q:"Which of the following is a primary way banks are responding to the 'Digital Divide' challenge?", opts:["A. By abandoning all digital initiatives.", "B. By investing in robust tech infrastructure and offering multiple channels (like branches and call centers) alongside digital options.", "C. By charging extra fees for non-digital services.", "D. By assuming all customers have equal access to technology."], ans:"B", exp:"While not explicitly stated as a single solution, the manual (p.13, p.28-29) discusses the 'Digital Divide' as a challenge and then details a multi-channel approach (Branch, Call Center, Online, Mobile, API), implying a strategy of offering alternatives while building digital capabilities."},
+{id:'Q84', q:"In the context of the course, what is the relationship between Sales and Marketing?", opts:["A. They are completely independent functions with no overlap.", "B. They are complimentary functions that work together to achieve common goals like increasing revenue and growing the customer base.", "C. Marketing's sole purpose is to support the sales team's administrative tasks.", "D. Sales is a subset of the marketing department with no distinct role."], ans:"B", exp:"Page 41 states, 'Sales and marketing are indeed complimentary functions within any organization as they work closely together to achieve common goals, such as increasing revenue and growing the customer base.'"},
+{id:'FC1', q:"What is the definition of Marketing according to the manual?", opts:["A. Reveal Answer"], ans:"A", exp:"Marketing encompasses a range of activities aimed at identifying, satisfying, and anticipating customer needs while generating value for both the company and its clients."},
+{id:'FC2', q:"What are the three key elements of the definition of Marketing provided in the manual?", opts:["A. Reveal Answer"], ans:"A", exp:"The three key elements are: 1) Customer Needs, 2) Value Proposition, and 3) Exchange Process."},
+{id:'FC3', q:"What is the fundamental profit equation from the CEO's perspective?", opts:["A. Reveal Answer"], ans:"A", exp:"The fundamental profit equation is P = R - C, which stands for Profit = Revenue minus Cost."},
+{id:'FC4', q:"List the five levels of Maslow's Hierarchy of Needs as they relate to banking products.", opts:["A. Reveal Answer"], ans:"A", exp:"The five levels are: physiological, safety, love and belonging, esteem, and self-actualization. Customers first use banking for basic needs (physiological/safety) and later for advanced services (esteem/self-actualization)."},
+{id:'FC5', q:"What are the four main types of market segmentation used by retail banks?", opts:["A. Reveal Answer"], ans:"A", exp:"The four main types are: 1. Geographic, 2. Demographic, 3. Psychographic, and 4. Behavioral."},
+{id:'FC6', q:"What are the five characteristics of a good market segment?", opts:["A. Reveal Answer"], ans:"A", exp:"The five characteristics are: 1) Measurable, 2) Substantial, 3) Accessible, 4) Actionable, and 5) Distinctive. (Stability is also mentioned as a sixth on p.18)."},
+{id:'FC7', q:"Name the five targeting strategies discussed in the manual.", opts:["A. Reveal Answer"], ans:"A", exp:"The five targeting strategies are: 1. Single Segment Concentration, 2. Multi-Segment Coverage, 3. Product Specialization, 4. Segment Specialization, and 5. Full Market Coverage."},
+{id:'FC8', q:"What are the key elements of a Market Positioning Strategy?", opts:["A. Reveal Answer"], ans:"A", exp:"The key elements are: a) Unique Selling Proposition (USP), b) Target Market, c) Competitive Analysis, d) Brand Image and Identity, and e) Value Proposition."},
+{id:'FC9', q:"List the five primary objectives of pricing for a bank.", opts:["A. Reveal Answer"], ans:"A", exp:"The five objectives are: 1. Profit Maximization, 2. Market Share Growth, 3. Competitive Positioning, 4. Revenue Growth, and 5. Customer Value and Satisfaction."},
+{id:'FC10', q:"What are the six distribution channels listed for retail banking?", opts:["A. Reveal Answer"], ans:"A", exp:"The six channels are: 1. Branch Banking, 2. Call Centers, 3. Online Banking, 4. Mobile Banking, 5. Social Media & Chatbots, and 6. (implied from corporate) Direct Sales/Relationship Managers."},
+{id:'FC11', q:"What are the five components of the Promotion Mix?", opts:["A. Reveal Answer"], ans:"A", exp:"The five components are: 1. Advertising, 2. Personal Selling, 3. Sales Promotion, 4. Public Relations, and 5. Direct Marketing."},
+{id:'FC12', q:"What are the 7Ps of Marketing in the context of services?", opts:["A. Reveal Answer"], ans:"A", exp:"The 7Ps are: Product, Price, Place, Promotion, People, Process, and Physical Evidence."},
+{id:'FC13', q:"List the four main digital marketing channels mentioned for financial services.", opts:["A. Reveal Answer"], ans:"A", exp:"The four main channels are: 1. Website, 2. Email Marketing, 3. Search Engine Marketing, and 4. Social Media. (Mobile Marketing is also listed separately on p.34)."},
+{id:'FC14', q:"What are the five stages of the Customer Value Journey?", opts:["A. Reveal Answer"], ans:"A", exp:"The five stages are: 1. Awareness, 2. Engagement, 3. Subscribe, 4. Conversion, and 5. Advocacy."},
+{id:'FC15', q:"What are the six pillars of professional selling in banking?", opts:["A. Reveal Answer"], ans:"A", exp:"The six pillars are: 1. Business Knowledge, 2. Product Knowledge, 3. Industry Knowledge, 4. Selling Skills, 5. Company Knowledge, and 6. Attitude."},
+{id:'FC16', q:"List five key soft skills for selling in banking.", opts:["A. Reveal Answer"], ans:"A", exp:"Five key soft skills are: Communication, Critical Thinking, Collaboration, Problem-Solving, and Adaptability. (Empathy is also listed)."},
+{id:'FC17', q:"What are the five methods of prospecting discussed in the manual?", opts:["A. Reveal Answer"], ans:"A", exp:"The five methods are: 1. Data Analytics, 2. Referrals from Existing Customers, 3. Internal Company Sources, 4. Cold Emails, and 5. Scraping Social Media."},
+{id:'FC18', q:"What are the three main types of probes used to understand a prospect (as per p.50)?", opts:["A. Reveal Answer"], ans:"A", exp:"The three main types are: 1. Probe to Understand What the Prospect Knows, 2. Probe to Understand What the Prospect Thinks, and 3. Probe to Understand How the Prospect Feels."},
+{id:'FC19', q:"What are the four components of 'The Power of Listening'?", opts:["A. Reveal Answer"], ans:"A", exp:"The four components are: a) Attention, b) Hearing, c) Understanding, and d) Empathy."},
+{id:'FC20', q:"What are the three elements of an effective persuasive message?", opts:["A. Reveal Answer"], ans:"A", exp:"The three elements are: 1. Establish Common Ground, 2. Leave the Listener Feeling Satisfied and Competent, and 3. Convince the Listener of Benefits (P=R-C)."},
+{id:'FC21', q:"What are the '3 C’s of Objection Handling'?", opts:["A. Reveal Answer"], ans:"A", exp:"The 3 C’s are: 1. Clarity, 2. Consideration, and 3. Confirmation."},
+{id:'FC22', q:"List four key ethical considerations in selling financial services.", opts:["A. Reveal Answer"], ans:"A", exp:"Four key considerations are: 1. Transparency and Honesty, 2. Customer Best Interest, 3. Handling Sensitive Information Ethically, and 4. Navigating the Regulatory Landscape."},
+{id:'FC23', q:"What are the five reasons why retaining customers is critical?", opts:["A. Reveal Answer"], ans:"A", exp:"The five reasons are: 1. Stable Revenue Stream, 2. Higher Customer Lifetime Value, 3. Cross-Selling and Up-Selling Opportunities, 4. Brand Loyalty and Advocacy, and 5. Feedback and Improvement."},
+{id:'FC24', q:"List five customer retention strategies from the manual.", opts:["A. Reveal Answer"], ans:"A", exp:"Five strategies are: 1. Collect Feedback, 2. Account Management and Customization, 3. Identify Revenue-Generating Opportunities, 4. Loyalty and Incentive Programs, and 5. Value-Added Services."},
+{id:'FC25', q:"What are the six KPIs for Customer Retention listed in the manual?", opts:["A. Reveal Answer"], ans:"A", exp:"The six KPIs are: 1. Customer Retention Rate, 2. Customer Churn, 3. Repeat Purchase Ratio, 4. Net Promoter Score (NPS), 5. Loyal Customer Rate, and 6. Customer Lifetime Value (CLV)."},
+{id:'FC26', q:"What are the four ways data analytics enhances customer retention?", opts:["A. Reveal Answer"], ans:"A", exp:"The four ways are: 1. Measuring Customer Satisfaction, 2. Identifying At-Risk Customers, 3. Understanding Customer Behavior, and 4. Helping refine retention strategy."},
+{id:'FC27', q:"What are the three main approaches to positioning?", opts:["A. Reveal Answer"], ans:"A", exp:"The three approaches are: 1. Functional, 2. Symbolic, and 3. Experiential."},
+{id:'FC28', q:"List the factors that anchor positioning strategies.", opts:["A. Reveal Answer"], ans:"A", exp:"The factors are: 1. Product Features, 2. Utility & Benefits, 3. Use Categories, 4. Occasion, and 5. Competitive Comparison."},
+{id:'FC29', q:"What are the key roles of selling in financial services?", opts:["A. Reveal Answer"], ans:"A", exp:"Key roles include: Product Promotion, Customer Needs Assessment, Risk Management, Compliance and Regulation, Relationship Building, Cross-Selling/Up-Selling, Education and Communication, Market Research, and Digital Transformation."},
+{id:'FC30', q:"What are the seven important questions to prepare for a sales appointment?", opts:["A. Reveal Answer"], ans:"A", exp:"The seven questions cover: 1. Describing bank offerings, 2. Highlighting competitive advantages, 3. Emphasizing value proposition, 4. Explaining beyond price, 5. Thorough prospect research, 6. Visualizing the meeting, and 7. Determining next steps."},
+{id:'FC31', q:"What are the nine verbal/non-verbal buying signals listed?", opts:["A. Reveal Answer"], ans:"A", exp:"The nine signals are: 1. Relax, 2. Lean Forward, 3. Pleasant Expression, 4. Nodding, 5. Supporting Decision, 6. Sparkle in the Eyes, 7. Ownership Expression, 8. 'Can I Prepay?', 9. 'What are the costs involved?'"},
+{id:'FC32', q:"What are the nine warning signals (non-buying signals) listed?", opts:["A. Reveal Answer"], ans:"A", exp:"The nine signals are: 1. Frowning, 2. Look at Watch, 3. Unresponsiveness, 4. Tenseness, 5. Change of Tone, 6. Taking Phone Calls, 7. 'Continue Later?', 8. 'How Long to Go?', 9. 'Heard That Before'."},
+{id:'FC33', q:"What are the main challenges in customer retention as listed in the manual?", opts:["A. Reveal Answer"], ans:"A", exp:"The main challenges are: 1) Identifying Root Causes of churn, 2) Proactive Churn Prevention, and 3) Effective Communication Strategies."},
+{id:'FC34', q:"What are the future trends in customer retention highlighted in the manual?", opts:["A. Reveal Answer"], ans:"A", exp:"Future trends include: 1) Leveraging Technology (AI, Personalization, Omnichannel, CRM), and 2) Predictive Analytics (Churn Prediction, Behavioral Forecasting, CLV Prediction, Sentiment Analysis, Data-Driven Personalization)."},
+{id:'FC35', q:"What are the tactics of rhetoric (persuasion) discussed in the manual?", opts:["A. Reveal Answer"], ans:"A", exp:"The tactics of rhetoric are: 1. Ethos (Establishing Credibility), 2. Pathos (Emotional Connection), and 3. Logos (Logical Argument)."},
+{id:'FC36', q:"What are the key regulatory compliance areas for sales professionals in Nigerian banks?", opts:["A. Reveal Answer"], ans:"A", exp:"Key areas include: 1. Compliance with CBN Regulations, 2. Anti-Money Laundering (AML) & Counter-Terrorism Financing (CTF), 3. Customer Data Protection (NDPR), and 4. Know Your Customer (KYC)."},
+];
+
+        // ══════════════════════════════════════════
+        //  STORAGE
+        // ══════════════════════════════════════════
+        const STORAGE_KEY = 'mfs_missed_questions';
+        let missedQuestions = [];
+        try {
+            const saved = localStorage.getItem(STORAGE_KEY);
+            if (saved) missedQuestions = JSON.parse(saved);
+        } catch(e) { console.warn("localStorage not available."); }
+
+        window.currentTestMode = 'practice';
+        window.examTimeLimitSeconds = 3600;
+        window.examTimerInterval = null;
+        window.examAnswers = [];
+        window.examStartTime = null;
+
+        function init() {
+            document.getElementById('total-avail').textContent = QB.length;
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            document.getElementById('mode-select').addEventListener('change', validateStart);
+            document.getElementById('count-select').addEventListener('change', validateStart);
+            document.getElementById('test-mode-select').addEventListener('change', onTestModeChange);
+            document.getElementById('exam-time-input').addEventListener('input', validateStart);
+            document.getElementById('start-btn').addEventListener('click', startQuiz);
+            document.getElementById('next-btn').addEventListener('click', nextQuestion);
+            document.getElementById('skip-btn').addEventListener('click', skipQuestion);
+            document.getElementById('end-session-btn').addEventListener('click', endSession);
+            document.getElementById('new-session-btn').addEventListener('click', resetApp);
+            document.getElementById('retry-missed-btn').addEventListener('click', retryMissed);
+            document.getElementById('prev-exam-btn').addEventListener('click', previousExamQuestion);
+            document.getElementById('next-exam-btn').addEventListener('click', nextExamQuestion);
+            document.getElementById('submit-exam-btn').addEventListener('click', submitExam);
+        }
+
+        function onTestModeChange() {
+            const mode = document.getElementById('test-mode-select').value;
+            document.getElementById('exam-time-group').style.display = mode === 'exam' ? 'block' : 'none';
+            validateStart();
+        }
+
+        function validateStart() {
+            const mode = document.getElementById('mode-select').value;
+            const count = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            const btn = document.getElementById('start-btn');
+            if (mode === 'missed' && missedQuestions.length === 0) {
+                btn.disabled = true;
+                btn.textContent = "No missed questions available";
+                return;
+            }
+            let valid = (mode !== "" && count !== "");
+            if (testMode === 'exam') {
+                const timeVal = parseInt(document.getElementById('exam-time-input').value);
+                if (isNaN(timeVal) || timeVal < 1) valid = false;
+            }
+            btn.disabled = !valid;
+            btn.textContent = "Start Quiz";
+        }
+
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        function startQuiz() {
+            const currentMode = document.getElementById('mode-select').value;
+            const countVal = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            window.currentTestMode = testMode;
+            let pool;
+if (currentMode === 'flashcard') {
+    pool = QB.filter(q => q.opts.length === 1 && q.opts[0] === "A. Reveal Answer");
+} else {
+    pool = currentMode === 'missed' ? QB.filter(q => missedQuestions.includes(q.id)) : [...QB];
+    // Exclude flashcards from MCQ modes
+    pool = pool.filter(q => !(q.opts.length === 1 && q.opts[0] === "A. Reveal Answer"));
+}
+            if (currentMode === 'random') pool = shuffleArray(pool);
+            let currentSessionQuestions = [];
+            if (countVal !== 'all') {
+                const questionCount = Math.min(parseInt(countVal), pool.length);
+                currentSessionQuestions = pool.slice(0, questionCount);
+            } else { currentSessionQuestions = pool; }
+            window.currentIndex = 0;
+            window.correctCount = 0;
+            window.wrongCount = 0;
+            window.skippedCount = 0;
+            window.sessionHistory = [];
+            window.currentSessionQuestions = currentSessionQuestions;
+            window.examAnswers = new Array(currentSessionQuestions.length).fill(-1);
+            window.examStartTime = null;
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            if (currentMode === 'flashcard') { showScreen('flashcard-screen'); renderFlashcard(); }
+            else if (testMode === 'exam') {
+                window.examTimeLimitSeconds = parseInt(document.getElementById('exam-time-input').value) * 60;
+                window.examStartTime = Date.now();
+                startExamTimer();
+                showScreen('quiz-screen');
+                renderQuestion();
+            } else { showScreen('quiz-screen'); renderQuestion(); }
+        }
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        function renderQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('current-q-num').textContent = window.currentIndex + 1;
+            document.getElementById('total-q-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('question-text').textContent = q.q;
+            const optionsList = document.getElementById('options-list');
+            optionsList.innerHTML = '';
+            const isExam = window.currentTestMode === 'exam';
+            document.getElementById('quiz-stats-bar').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-timer').style.display = isExam ? 'block' : 'none';
+            document.getElementById('practice-actions').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-actions').style.display = isExam ? 'flex' : 'none';
+            document.getElementById('explanation').classList.remove('visible');
+            document.getElementById('explanation').textContent = '';
+            if (isExam) {
+                document.getElementById('prev-exam-btn').disabled = (window.currentIndex === 0);
+                document.getElementById('next-exam-btn').disabled = (window.currentIndex === window.currentSessionQuestions.length - 1);
+            }
+            q.opts.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = opt;
+                if (isExam) {
+                    if (window.examAnswers[window.currentIndex] === idx) btn.classList.add('selected');
+                    btn.onclick = () => selectExamAnswer(idx);
+                } else { btn.onclick = () => handleAnswer(idx, q); }
+                optionsList.appendChild(btn);
+            });
+            if (!isExam) {
+                document.getElementById('next-btn').style.display = 'none';
+                document.getElementById('skip-btn').style.display = 'block';
+                document.getElementById('end-session-btn').style.display = 'block';
+            }
+            updateProgress();
+            if (!isExam) updateLiveScore();
+        }
+
+        function handleAnswer(selectedIdx, q) {
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(btn => btn.disabled = true);
+            const isCorrect = q.ans === String.fromCharCode(65 + selectedIdx);
+            if (isCorrect) {
+                buttons[selectedIdx].classList.add('correct');
+                window.correctCount++;
+                missedQuestions = missedQuestions.filter(id => id !== q.id);
+            } else {
+                buttons[selectedIdx].classList.add('wrong');
+                const correctIdx = q.ans.charCodeAt(0) - 65;
+                if (correctIdx < buttons.length) buttons[correctIdx].classList.add('correct');
+                window.wrongCount++;
+                if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            }
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            const expEl = document.getElementById('explanation');
+            expEl.textContent = q.exp;
+            expEl.classList.add('visible');
+            document.getElementById('next-btn').style.display = 'block';
+            document.getElementById('skip-btn').style.display = 'none';
+            window.sessionHistory.push({ q: q, userAnswer: String.fromCharCode(65 + selectedIdx), isCorrect: isCorrect, status: isCorrect ? 'correct' : 'wrong' });
+            updateLiveScore();
+        }
+
+        function skipQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            window.skippedCount++;
+            if (!missedQuestions.includes(q.id)) { missedQuestions.push(q.id); try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {} document.getElementById('total-missed').textContent = missedQuestions.length; }
+            window.sessionHistory.push({ q: q, userAnswer: 'Skipped', isCorrect: false, status: 'skipped' });
+            nextQuestion();
+        }
+
+        function nextQuestion() {
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderQuestion();
+            else showResults();
+        }
+
+        function selectExamAnswer(idx) { window.examAnswers[window.currentIndex] = idx; renderQuestion(); }
+        function previousExamQuestion() { if (window.currentIndex > 0) { window.currentIndex--; renderQuestion(); } }
+        function nextExamQuestion() { if (window.currentIndex < window.currentSessionQuestions.length - 1) { window.currentIndex++; renderQuestion(); } }
+
+        function startExamTimer() {
+            updateExamTimerDisplay();
+            window.examTimerInterval = setInterval(() => {
+                const elapsed = Math.floor((Date.now() - window.examStartTime) / 1000);
+                const remaining = window.examTimeLimitSeconds - elapsed;
+                if (remaining <= 0) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; submitExam(); return; }
+                updateExamTimerDisplay(remaining);
+            }, 1000);
+        }
+
+        function updateExamTimerDisplay(remainingSecs) {
+            if (remainingSecs === undefined) remainingSecs = window.examTimeLimitSeconds;
+            const mins = Math.floor(remainingSecs / 60);
+            const secs = remainingSecs % 60;
+            document.getElementById('timer-display').textContent = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+        }
+
+        function submitExam() {
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            const questions = window.currentSessionQuestions;
+            let correct = 0, wrong = 0, skipped = 0;
+            window.sessionHistory = [];
+            questions.forEach((q, index) => {
+                const selectedIdx = window.examAnswers[index];
+                let userAnswerLetter = 'Not answered';
+                let isCorrect = false;
+                let status = 'skipped';
+                if (selectedIdx !== -1) {
+                    userAnswerLetter = String.fromCharCode(65 + selectedIdx);
+                    isCorrect = (userAnswerLetter === q.ans);
+                    status = isCorrect ? 'correct' : 'wrong';
+                }
+                if (status === 'correct') correct++;
+                else if (status === 'wrong') wrong++;
+                else skipped++;
+                window.sessionHistory.push({ q: q, userAnswer: userAnswerLetter, isCorrect: isCorrect, status: status });
+            });
+            window.correctCount = correct;
+            window.wrongCount = wrong;
+            window.skippedCount = skipped;
+            const totalSeconds = Math.floor((Date.now() - window.examStartTime) / 1000);
+            const timeTakenStr = formatTime(totalSeconds);
+            window.sessionHistory.forEach(item => { if (item.status === 'wrong' || item.status === 'skipped') { if (!missedQuestions.includes(item.q.id)) missedQuestions.push(item.q.id); } });
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {}
+            showResults(true, timeTakenStr);
+        }
+
+        function formatTime(totalSeconds) { const mins = Math.floor(totalSeconds / 60); const secs = totalSeconds % 60; return String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0'); }
+
+        function updateProgress() {
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('progress-bar').style.width = pct + '%';
+        }
+
+        function updateLiveScore() {
+            const total = window.correctCount + window.wrongCount;
+            const score = total === 0 ? 0 : Math.round((window.correctCount / total) * 100);
+            document.getElementById('live-correct').textContent = window.correctCount;
+            document.getElementById('live-wrong').textContent = window.wrongCount;
+            document.getElementById('live-score').textContent = score + '%';
+        }
+
+        function renderFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('fc-current-num').textContent = window.currentIndex + 1;
+            document.getElementById('fc-total-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('fc-question').textContent = q.q;
+            document.getElementById('fc-answer').textContent = "Answer: " + q.ans;
+            document.getElementById('fc-explanation').textContent = q.exp;
+            document.getElementById('flashcard').classList.remove('flipped');
+            document.getElementById('fc-actions').style.display = 'none';
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('fc-progress-bar').style.width = pct + '%';
+        }
+
+        function flipCard() {
+            document.getElementById('flashcard').classList.toggle('flipped');
+            setTimeout(() => { document.getElementById('fc-actions').style.display = 'flex'; }, 300);
+        }
+
+        function handleFlashcardDecision(gotIt) {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (gotIt) missedQuestions = missedQuestions.filter(id => id !== q.id);
+            else if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function skipFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (!missedQuestions.includes(q.id)) { missedQuestions.push(q.id); try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {} document.getElementById('total-missed').textContent = missedQuestions.length; }
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function endSession() {
+            if (window.currentTestMode === 'exam') { if (confirm('Are you sure you want to submit your exam?')) submitExam(); }
+            else showResults();
+        }
+
+        function showResults(isExam = false, timeTaken = null) {
+            showScreen('results-screen');
+            const total = window.correctCount + window.wrongCount + window.skippedCount;
+            const score = (window.correctCount + window.wrongCount) === 0 ? 0 : Math.round((window.correctCount / (window.correctCount + window.wrongCount)) * 100);
+            const scoreEl = document.getElementById('results-score');
+            scoreEl.textContent = score + '%';
+            scoreEl.className = 'results-score';
+            if (score >= 80) scoreEl.classList.add('green');
+            else if (score >= 60) scoreEl.classList.add('amber');
+            else scoreEl.classList.add('red');
+            document.getElementById('res-correct').textContent = window.correctCount;
+            document.getElementById('res-wrong').textContent = window.wrongCount;
+            document.getElementById('res-skipped').textContent = window.skippedCount;
+            document.getElementById('res-total').textContent = total;
+            const timeBox = document.getElementById('time-stat-box');
+            if (isExam && timeTaken) { document.getElementById('res-time').textContent = timeTaken; timeBox.style.display = 'block'; }
+            else { timeBox.style.display = 'none'; }
+            const reviewSection = document.getElementById('review-section');
+            reviewSection.innerHTML = '';
+            window.sessionHistory.forEach(item => {
+                const div = document.createElement('div');
+                div.className = `review-item ${item.status}`;
+                let correctAnsText = item.q.opts.find(opt => opt.startsWith(item.q.ans + '.')) || item.q.ans;
+                div.innerHTML = `<div class="review-q">${item.q.q}</div><div class="review-detail">Your Answer: <strong>${item.userAnswer}</strong></div><div class="review-detail">Correct Answer: <strong>${correctAnsText}</strong></div><div class="review-detail" style="margin-top: 8px; font-style: italic;">${item.q.exp}</div>`;
+                reviewSection.appendChild(div);
+            });
+            if (window.sessionHistory.length === 0) reviewSection.innerHTML = '<div class="review-item"><div class="review-q">No questions were answered in this session.</div></div>';
+        }
+
+        function resetApp() {
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            document.getElementById('mode-select').value = '';
+            document.getElementById('count-select').value = '';
+            document.getElementById('test-mode-select').value = 'practice';
+            document.getElementById('exam-time-group').style.display = 'none';
+            document.getElementById('start-btn').disabled = true;
+            showScreen('setup-screen');
+            document.getElementById('total-avail').textContent = QB.length;
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+        }
+
+        function retryMissed() {
+            document.getElementById('mode-select').value = 'missed';
+            document.getElementById('count-select').value = 'all';
+            validateStart();
+            startQuiz();
+        }
+
+        init();
+    </script>
+</body>
+</html>

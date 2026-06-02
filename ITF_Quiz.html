@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Finance Quiz — International Trade & Finance</title>
+    <style>
+        :root {
+            --bg-primary: #0f172a; --bg-secondary: #1e293b; --bg-tertiary: #334155;
+            --text-primary: #f8fafc; --text-secondary: #cbd5e1;
+            --accent: #3b82f6; --accent-hover: #2563eb;
+            --success: #22c55e; --error: #ef4444; --warning: #f59e0b;
+            --border-radius: 12px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: var(--bg-primary); color: var(--text-primary); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { width: 100%; max-width: 600px; background-color: var(--bg-secondary); border-radius: var(--border-radius); padding: 24px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); }
+        h1, h2, h3 { text-align: center; margin-bottom: 16px; }
+        .screen { display: none; animation: fadeIn 0.3s ease-in-out; }
+        .screen.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 600; }
+        select, button, input { width: 100%; padding: 14px; border-radius: var(--border-radius); border: 1px solid var(--bg-tertiary); background-color: var(--bg-tertiary); color: var(--text-primary); font-size: 16px; cursor: pointer; transition: all 0.2s; min-height: 52px; }
+        input[type="number"] { cursor: text; }
+        select:focus, input:focus { outline: none; border-color: var(--accent); }
+        button { background-color: var(--accent); border: none; font-weight: 700; margin-top: 10px; }
+        button:hover:not(:disabled) { background-color: var(--accent-hover); }
+        button:disabled { background-color: var(--bg-tertiary); color: var(--text-secondary); cursor: not-allowed; opacity: 0.6; }
+        .stats-bar { display: flex; justify-content: space-between; background-color: var(--bg-tertiary); padding: 12px; border-radius: var(--border-radius); margin-bottom: 20px; font-size: 14px; font-weight: 600; }
+        .progress-container { width: 100%; height: 8px; background-color: var(--bg-tertiary); border-radius: 4px; margin-bottom: 24px; overflow: hidden; }
+        .progress-bar { height: 100%; background-color: var(--accent); transition: width 0.3s ease; }
+        .question-text { font-size: 18px; font-weight: 600; margin-bottom: 24px; line-height: 1.5; }
+        .options-list { display: flex; flex-direction: column; gap: 12px; }
+        .option-btn { text-align: left; background-color: var(--bg-tertiary); border: 2px solid transparent; padding: 16px; border-radius: var(--border-radius); cursor: pointer; transition: all 0.2s; font-size: 16px; min-height: 56px; }
+        .option-btn:hover:not(:disabled) { background-color: #475569; }
+        .option-btn.correct { background-color: rgba(34, 197, 94, 0.2); border-color: var(--success); color: var(--success); }
+        .option-btn.wrong { background-color: rgba(239, 68, 68, 0.2); border-color: var(--error); color: var(--error); }
+        .option-btn.selected { border-color: var(--accent); background-color: rgba(59, 130, 246, 0.1); }
+        .explanation { margin-top: 20px; padding: 16px; background-color: rgba(59, 130, 246, 0.1); border-left: 4px solid var(--accent); border-radius: 4px; font-size: 15px; line-height: 1.5; display: none; }
+        .explanation.visible { display: block; animation: fadeIn 0.3s ease-in-out; }
+        .action-buttons { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+        .action-buttons button { flex: 1; min-width: 80px; }
+        .btn-secondary { background-color: var(--bg-tertiary); }
+        .btn-secondary:hover:not(:disabled) { background-color: #475569; }
+        .flashcard-container { perspective: 1000px; min-height: 300px; margin-bottom: 20px; }
+        .flashcard { width: 100%; min-height: 300px; position: relative; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer; }
+        .flashcard.flipped { transform: rotateY(180deg); }
+        .flashcard-face { position: absolute; width: 100%; min-height: 300px; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px; background-color: var(--bg-tertiary); border-radius: var(--border-radius); text-align: center; border: 2px solid var(--bg-tertiary); }
+        .flashcard-back { transform: rotateY(180deg); background-color: rgba(59, 130, 246, 0.1); border-color: var(--accent); }
+        .flashcard-hint { margin-top: 12px; font-size: 14px; color: var(--text-secondary); }
+        .results-score { font-size: 48px; font-weight: 800; text-align: center; margin: 20px 0; }
+        .results-score.green { color: var(--success); }
+        .results-score.amber { color: var(--warning); }
+        .results-score.red { color: var(--error); }
+        .results-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
+        .stat-box { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); text-align: center; }
+        .stat-value { font-size: 24px; font-weight: 700; display: block; }
+        .stat-label { font-size: 14px; color: var(--text-secondary); }
+        .review-section { max-height: 400px; overflow-y: auto; margin-bottom: 24px; padding-right: 8px; }
+        .review-item { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); margin-bottom: 12px; border-left: 4px solid var(--bg-tertiary); }
+        .review-item.correct { border-left-color: var(--success); }
+        .review-item.wrong { border-left-color: var(--error); }
+        .review-item.skipped { border-left-color: var(--warning); }
+        .review-q { font-weight: 600; margin-bottom: 8px; font-size: 15px; }
+        .review-detail { font-size: 14px; color: var(--text-secondary); margin-bottom: 4px; }
+        .review-detail strong { color: var(--text-primary); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb { background: var(--bg-tertiary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="setup-screen" class="screen active">
+            <h1>Trade Finance Quiz Master</h1>
+            <p style="text-align:center; color:var(--text-secondary); margin-bottom: 20px;">International Trade & Finance</p>
+            <div class="form-group">
+                <label for="mode-select">Quiz Mode</label>
+                <select id="mode-select">
+                    <option value="">Select a mode...</option>
+                    <option value="random">Random Mix</option>
+                    <option value="sequential">Sequential</option>
+                    <option value="missed">Missed Only</option>
+                    <option value="flashcard">Flashcard Revision</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="count-select">Number of Questions</label>
+                <select id="count-select">
+                    <option value="">Select count...</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="all">All (105)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="test-mode-select">Test Mode</label>
+                <select id="test-mode-select">
+                    <option value="practice">Practice Mode</option>
+                    <option value="exam">Exam Mode</option>
+                </select>
+            </div>
+            <div id="exam-time-group" class="form-group" style="display: none;">
+                <label for="exam-time-input">Time Limit (minutes)</label>
+                <input type="number" id="exam-time-input" min="1" max="300" value="60">
+            </div>
+            <div class="stats-bar">
+                <span>Total Available: <span id="total-avail">0</span></span>
+                <span>Missed Questions: <span id="total-missed">0</span></span>
+            </div>
+            <button id="start-btn" disabled>Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div id="exam-timer" style="text-align: center; font-size: 20px; font-weight: 700; margin-bottom: 12px; display: none;">
+                Time Remaining: <span id="timer-display">60:00</span>
+            </div>
+            <div class="stats-bar" id="quiz-stats-bar">
+                <span>Correct: <span id="live-correct">0</span></span>
+                <span>Wrong: <span id="live-wrong">0</span></span>
+                <span>Score: <span id="live-score">0%</span></span>
+            </div>
+            <div class="progress-container"><div class="progress-bar" id="progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Question <span id="current-q-num">1</span> of <span id="total-q-num">10</span>
+            </div>
+            <div class="question-text" id="question-text"></div>
+            <div class="options-list" id="options-list"></div>
+            <div class="explanation" id="explanation"></div>
+            <div class="action-buttons" id="practice-actions">
+                <button class="btn-secondary" id="skip-btn">Skip</button>
+                <button class="btn-secondary" id="end-session-btn">End Session</button>
+                <button id="next-btn" style="display: none;">Next</button>
+            </div>
+            <div class="action-buttons" id="exam-actions" style="display: none;">
+                <button class="btn-secondary" id="prev-exam-btn">Previous</button>
+                <button class="btn-secondary" id="submit-exam-btn">Submit Exam</button>
+                <button id="next-exam-btn">Next</button>
+            </div>
+        </div>
+
+        <div id="flashcard-screen" class="screen">
+            <div class="progress-container"><div class="progress-bar" id="fc-progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Card <span id="fc-current-num">1</span> of <span id="fc-total-num">10</span>
+            </div>
+            <div class="flashcard-container" onclick="flipCard()">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-face flashcard-front">
+                        <div id="fc-question" style="font-size: 18px; font-weight: 600;"></div>
+                        <div class="flashcard-hint">Tap to reveal answer</div>
+                    </div>
+                    <div class="flashcard-face flashcard-back">
+                        <div id="fc-answer" style="font-size: 18px; font-weight: 700; color: var(--success); margin-bottom: 12px;"></div>
+                        <div id="fc-explanation" style="font-size: 15px; line-height: 1.5;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons" id="fc-actions" style="display: none;">
+                <button class="btn-secondary" style="border-color: var(--error); color: var(--error);" onclick="handleFlashcardDecision(false)">Still Learning</button>
+                <button style="border-color: var(--success); color: var(--success); background-color: rgba(34, 197, 94, 0.1);" onclick="handleFlashcardDecision(true)">Got It</button>
+            </div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="fc-skip-btn" onclick="skipFlashcard()">Skip</button>
+                <button class="btn-secondary" id="fc-end-btn" onclick="endSession()">End Session</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <h2>Session Complete!</h2>
+            <div class="results-score" id="results-score">0%</div>
+            <div class="results-stats" id="results-stats-grid">
+                <div class="stat-box"><span class="stat-value" id="res-correct" style="color: var(--success);">0</span><span class="stat-label">Correct</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-wrong" style="color: var(--error);">0</span><span class="stat-label">Wrong</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-skipped" style="color: var(--warning);">0</span><span class="stat-label">Skipped</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-total">0</span><span class="stat-label">Total</span></div>
+                <div class="stat-box" id="time-stat-box" style="display: none;"><span class="stat-value" id="res-time">0:00</span><span class="stat-label">Time Taken</span></div>
+            </div>
+            <h3>Review All Answers</h3>
+            <div class="review-section" id="review-section"></div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="retry-missed-btn">Retry Missed</button>
+                <button id="new-session-btn">New Session</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const QB = [
+{id:'Q1', q:"What is the risk that the exporter or seller may not receive payment due to the inability of the buyer to fund at maturity or transfer funds?", opts:["A. Payment Risk", "B. Performance Risk", "C. Transfer Risk", "D. Political Risk"], ans:"A", exp:"Payment Risk is the risk that the exporter may not receive payment due to the buyer's inability to fund or transfer funds."},
+{id:'Q2', q:"Which risk involves the possibility that the exporter may not deliver goods at all or deliver goods that do not conform to the contract terms?", opts:["A. Transaction Risk", "B. Performance Risk", "C. Documentation Risk", "D. Sovereign Risk"], ans:"B", exp:"Performance Risk is the risk that the exporter may fail to deliver goods or deliver non-conforming goods."},
+{id:'Q3', q:"What does Transfer Risk specifically involve in international trade?", opts:["A. The physical movement of funds from the paying country to the receiving country", "B. The risk of goods being lost during transport", "C. The risk of non-performance by either party regarding jurisdiction", "D. The risk of goods not clearing customs at the destination port"], ans:"A", exp:"Transfer Risk involves the physical movement of funds from the paying country to the receiving country."},
+{id:'Q4', q:"In the trust league table of payment methods, which method represents 'Complete Trust'?", opts:["A. Advance Payment", "B. Documentary Credit", "C. Open Account", "D. Bills for Collection"], ans:"C", exp:"Open Account trading represents complete trust between the buyer and seller."},
+{id:'Q5', q:"Which Incoterm 2020 rule represents the minimum obligation for the seller?", opts:["A. FCA", "B. EXW", "C. DDP", "D. FOB"], ans:"B", exp:"Ex Works (EXW) represents the minimum obligation for the seller, delivering goods at their premises."},
+{id:'Q6', q:"Which Incoterm 2020 rule represents the maximum obligation for the seller, including clearing goods for import and paying all duties?", opts:["A. DAP", "B. CIP", "C. DDP", "D. DPU"], ans:"C", exp:"Delivered Duty Paid (DDP) represents the maximum obligation for the seller."},
+{id:'Q7', q:"Under Incoterms 2020, which rule is the only one that obligates the seller to unload goods at the buyer's destination?", opts:["A. DAP", "B. DPU", "C. DDP", "D. CPT"], ans:"B", exp:"DPU (Delivered at Place Unloaded) is the only Incoterm that obligates the seller to unload goods at the destination."},
+{id:'Q8', q:"For CIP shipments under Incoterms 2020, which insurance clause is appropriate?", opts:["A. Institute Cargo Clause C", "B. Institute Cargo Clause B", "C. Institute Cargo Clause A", "D. Institute War Clause"], ans:"C", exp:"For CIP shipments, the appropriate insurance clause is Institute Cargo Clause A, providing maximum cover."},
+{id:'Q9', q:"For CIF shipments under Incoterms 2020, which insurance cover is appropriate?", opts:["A. Institute Cargo Clause A", "B. Institute Cargo Clause C", "C. Institute Cargo Clause B", "D. Institute Strike Clause"], ans:"B", exp:"For CIF shipments, the appropriate cover would be Institute Cargo Clause C, providing minimum cover."},
+{id:'Q10', q:"What key update was made to the FCA Incoterm in 2020?", opts:["A. It now requires the seller to clear goods for import", "B. It allows the exporter to receive an 'On Board' multi-modal Bill of Lading", "C. It mandates the use of air freight only", "D. It eliminates the need for transport documents"], ans:"B", exp:"Incoterms 2020 updated FCA to allow the exporter to receive an 'On Board' multi-modal Bill of Lading."},
+{id:'Q11', q:"Which of the following is NOT a rule for Sea and Inland Waterways Transport in Incoterms 2020?", opts:["A. FAS", "B. FOB", "C. CPT", "D. CIF"], ans:"C", exp:"CPT (Carriage Paid To) is a rule for any Mode of Transport, not specifically Sea and Inland Waterways."},
+{id:'Q12', q:"What is the primary purpose of a Bill of Lading in international trade?", opts:["A. To serve as a receipt, evidence of contract, and title document to goods", "B. To act as a promissory note for deferred payment", "C. To certify the origin and value of the goods", "D. To provide insurance cover for the shipment"], ans:"A", exp:"A Bill of Lading serves as a receipt, evidence of a shipping contract, and a title document to the goods."},
+{id:'Q13', q:"A Bill of Lading that is consigned to a specified party and cannot be transferred by endorsement is called a:", opts:["A. Order Bill of Lading", "B. Straight Bill of Lading", "C. Clean Bill of Lading", "D. Claused Bill of Lading"], ans:"B", exp:"A Straight Bill of Lading is consigned to a specified party and cannot be transferred by endorsement."},
+{id:'Q14', q:"What does a 'Claused, dirty or foul' Bill of Lading indicate?", opts:["A. The goods are in perfect condition", "B. The shipmaster has verified the quality and quantity", "C. There is a defect either in the goods or in the packaging", "D. The goods have been successfully cleared by customs"], ans:"C", exp:"A 'Claused, dirty or foul' Bill of Lading indicates that the goods or packaging are defective."},
+{id:'Q15', q:"If a Bill of Lading is issued with the notation 'Said to Contain', what does this imply?", opts:["A. The carrier has verified the exact weight of the goods", "B. The shipmaster is unable to verify the quality or quantity of the goods", "C. The goods have been inspected by a third party", "D. The goods are exempt from import duties"], ans:"B", exp:"'Said to Contain' means the shipmaster is unable to verify the quality or quantity of the goods."},
+{id:'Q16', q:"An unconditional order in writing requiring the drawee to pay a certain sum of money on demand or at a fixed future time is a:", opts:["A. Promissory Note", "B. Bill of Exchange", "C. Commercial Invoice", "D. Trust Receipt"], ans:"B", exp:"A Bill of Exchange is an unconditional order in writing to pay a certain sum of money."},
+{id:'Q17', q:"A Bill of Exchange drawn on and accepted by a bank is known as a:", opts:["A. Trade Acceptance", "B. Banker's Acceptance", "C. Promissory Note", "D. Sight Draft"], ans:"B", exp:"A Banker's Acceptance is a Bill of Exchange drawn on and accepted by a bank."},
+{id:'Q18', q:"How many original Bills of Exchange are usually issued to safeguard against loss in transit?", opts:["A. One", "B. Two", "C. Three", "D. Four"], ans:"B", exp:"Bills are usually issued in sets of two originals to safeguard against loss in transit."},
+{id:'Q19', q:"Which of the following is considered a regulatory document in international trade?", opts:["A. Commercial Invoice", "B. Packing List", "C. Clean Report of Inspection", "D. Bill of Lading"], ans:"C", exp:"The Clean Report of Inspection (CRI) is a regulatory document specified for importation."},
+{id:'Q20', q:"Under UCP 600, a Letter of Credit is inherently considered to be:", opts:["A. Revocable", "B. Irrevocable", "C. Transferable", "D. Unconfirmed"], ans:"B", exp:"Under UCP 600 art. 2, a Letter of Credit is inherently Irrevocable."},
+{id:'Q21', q:"Which bank adds its confirmation to an L/C, substituting its creditworthiness for the issuing bank?", opts:["A. Advising Bank", "B. Paying Bank", "C. Confirming Bank", "D. Reimbursing Bank"], ans:"C", exp:"The Confirming Bank substitutes its creditworthiness for that of the issuing bank."},
+{id:'Q22', q:"What is the primary role of the Advising Bank in an L/C transaction?", opts:["A. To make payment to the beneficiary", "B. To establish the apparent authenticity of the credit", "C. To add its confirmation to the credit", "D. To examine documents for discrepancies"], ans:"B", exp:"The Advising Bank's role is limited to establishing the apparent authenticity of the credit."},
+{id:'Q23', q:"In a sight payment L/C, when is the credit payable?", opts:["A. 30 days after the Bill of Lading date", "B. When the beneficiary presents complying documents on or before expiration", "C. Upon the arrival of goods at the destination port", "D. After the issuing bank inspects the physical goods"], ans:"B", exp:"In a sight payment, the L/C is payable when complying documents are presented on or before expiration."},
+{id:'Q24', q:"Which type of L/C allows the exporter to draw an advance before shipment?", opts:["A. Standby L/C", "B. Revolving L/C", "C. Advance Payment L/C", "D. Back-to-Back L/C"], ans:"C", exp:"An Advance Payment L/C allows the exporter to draw an advance before shipment."},
+{id:'Q25', q:"An L/C that acts as a guarantee of payment against default or non-performance of the applicant is a:", opts:["A. Transferable L/C", "B. Standby L/C", "C. Deferred Payment L/C", "D. Revolving L/C"], ans:"B", exp:"A Standby L/C acts as a guarantee of payment by the applicant to the beneficiary in case of default."},
+{id:'Q26', q:"Which L/C is used when the exporter is a middleman and transfers the L/C to secondary beneficiaries?", opts:["A. Back-to-Back L/C", "B. Transferable L/C", "C. Revolving L/C", "D. Standby L/C"], ans:"B", exp:"A Transferable L/C allows the first beneficiary to transfer the L/C to secondary beneficiaries."},
+{id:'Q27', q:"In a Back-to-Back L/C, who is typically aware of the existence of the two L/Cs?", opts:["A. The applicant and the beneficiary", "B. The first supplier and the advising/issuing bank of the second L/C", "C. The secondary beneficiary and the issuing bank", "D. The confirming bank and the applicant"], ans:"B", exp:"In a Back-to-Back L/C, only the first supplier and the advising/issuing bank of the second L/C are aware of both."},
+{id:'Q28', q:"What is a key difference between Transferable and Back-to-Back L/Cs?", opts:["A. Transferable L/C involves two distinct transactions", "B. Back-to-Back L/C is a single elongated transaction", "C. Back-to-Back L/C involves two distinct transactions", "D. Transferable L/C is riskier for all parties"], ans:"C", exp:"While a Transferable L/C is a single elongated transaction, a Back-to-Back L/C involves two distinct transactions."},
+{id:'Q29', q:"A Revolving L/C where a shortfall in shipment of one month can be added to subsequent months is:", opts:["A. Non-cumulative", "B. Cumulative", "C. Irrevocable", "D. Unconfirmed"], ans:"B", exp:"A cumulative revolving L/C allows shortfalls in one month to be added to subsequent months."},
+{id:'Q30', q:"Which UCP 600 article specifically deals with Transferable Credits?", opts:["A. Article 2", "B. Article 14", "C. Article 30", "D. Article 38"], ans:"D", exp:"UCP 600 Article 38 emphasizes the importance of Transferable Credits."},
+{id:'Q31', q:"Which of the following is considered a non-waivable discrepancy in an L/C?", opts:["A. L/C number wrongly typed on document", "B. Late presentation of documents", "C. Bill of Lading not signed by the carrier", "D. L/C overdrawn within 10% tolerance"], ans:"C", exp:"A Bill of Lading not signed by the carrier is a non-waivable discrepancy as it hinders clearing goods."},
+{id:'Q32', q:"If an L/C is unconfirmed, whose credit risk does the exporter primarily bear?", opts:["A. The Advising Bank", "B. The Confirming Bank", "C. The Issuing Bank", "D. The Applicant"], ans:"C", exp:"In an unconfirmed L/C, the exporter bears the credit risk of the Issuing Bank."},
+{id:'Q33', q:"What is the main risk for the Issuing Bank in an L/C transaction?", opts:["A. The applicant may not be in a position to pay when documents are presented", "B. The beneficiary may fail to ship the goods", "C. The advising bank may lose the documents", "D. The goods may be damaged in transit"], ans:"A", exp:"The Issuing Bank risks the applicant's inability to pay upon presentation of compliant documents."},
+{id:'Q34', q:"Under UCP 600, if an issuing bank sends a pre-advice of an L/C, it is:", opts:["A. Not bound until the operative credit is issued", "B. Irrevocably committed to issue the operative credit without delay", "C. Allowed to cancel the pre-advice if market conditions change", "D. Required to add confirmation to the pre-advice"], ans:"B", exp:"Article 11 of UCP 600 states that an issuing bank sending a pre-advice is irrevocably committed to issue the operative credit."},
+{id:'Q35', q:"Which document is typically required to collect under a Standby L/C?", opts:["A. Full set of transport documents", "B. Commercial invoice and packing list", "C. Statement from beneficiary that obligation remains unpaid", "D. Clean Report of Inspection"], ans:"C", exp:"A Standby L/C requires a statement from the beneficiary that the obligation remains unpaid or risk has crystallized."},
+{id:'Q36', q:"What is a specific risk associated with an Advance Payment L/C regarding the use of funds?", opts:["A. Exchange rate risk", "B. Diversion of funds", "C. Inability to clear customs", "D. Non-acceptance risk"], ans:"B", exp:"A key risk in an Advance Payment L/C is the diversion of funds by the exporter."},
+{id:'Q37', q:"In a Back-to-Back L/C, how should the expiry date of the second L/C compare to the first?", opts:["A. It should be later to allow more time", "B. It should be exactly the same", "C. It should be earlier to allow for substitution of documents", "D. The expiry date is irrelevant in Back-to-Back L/Cs"], ans:"C", exp:"The expiry date of the second L/C must be earlier to allow for the substitution of documents."},
+{id:'Q38', q:"Which UCP 600 article provides the definition of a credit?", opts:["A. Article 1", "B. Article 2", "C. Article 3", "D. Article 4"], ans:"B", exp:"UCP 600 Article 2 defines the credit."},
+{id:'Q39', q:"What is the primary mitigant for an applicant facing foreign exchange risk in an L/C?", opts:["A. Using a confirmed L/C", "B. Having a hedge product in place", "C. Requesting a transferable L/C", "D. Using a Standby L/C"], ans:"B", exp:"The buyer should always have a hedge product in place to mitigate foreign exchange risk."},
+{id:'Q40', q:"The collection by banks of a sum of money due from a buyer, with or without shipping documents, is called:", opts:["A. Open Account", "B. Documentary Credit", "C. Bills for Collection", "D. Forfaiting"], ans:"C", exp:"Bills for Collection is the collection by banks of a sum of money due from a buyer."},
+{id:'Q41', q:"In a Documentary Collection, what does D/A stand for?", opts:["A. Delivery of document against acceptance", "B. Direct payment against assets", "C. Deferred acceptance of assets", "D. Document of authorization"], ans:"A", exp:"D/A stands for Delivery of document against acceptance."},
+{id:'Q42', q:"Which party in a collection transaction is usually the seller's bank?", opts:["A. Collecting Bank", "B. Presenting Bank", "C. Remitting Bank", "D. Reimbursing Bank"], ans:"C", exp:"The Remitting Bank is usually the seller's bank in a collection transaction."},
+{id:'Q43', q:"What is the primary risk faced by the exporter in a collection transaction?", opts:["A. The goods may be damaged in transit", "B. The importer may default on payment or refuse to accept the draft", "C. The collecting bank may become insolvent", "D. The documents may be lost by the courier"], ans:"B", exp:"The exporter faces the risk that the importer may default on payment or refuse to accept the draft."},
+{id:'Q44', q:"Under URC 522, what is a 'case of need'?", opts:["A. A loan provided by the collecting bank", "B. A representative identified to stand-in for the exporter in case of default", "C. A mandatory insurance policy for the goods", "D. A penalty clause for late shipment"], ans:"B", exp:"A case of need is a representative identified on a collection order to stand-in for the exporter in case of default."},
+{id:'Q45', q:"Which type of collection involves very little documentation, usually just a bill of exchange?", opts:["A. Documentary Collection", "B. Clean Collection", "C. Standby Collection", "D. Revolving Collection"], ans:"B", exp:"Clean Collections involve very little documentation, usually just a bill of exchange."},
+{id:'Q46', q:"What is a major advantage of Collections over Letters of Credit for the buyer?", opts:["A. The bank guarantees payment", "B. It provides better control over shipping documents", "C. It is much cheaper than letters of credit", "D. It eliminates all performance risks"], ans:"C", exp:"Collections are much cheaper than letters of credit for the buyer."},
+{id:'Q47', q:"In a collection transaction, who generally bears the higher risk?", opts:["A. The Buyer (Importer)", "B. The Seller (Exporter)", "C. The Remitting Bank", "D. The Collecting Bank"], ans:"B", exp:"Both face risks, but the seller faces the higher risk in a collection transaction."},
+{id:'Q48', q:"Which URC 522 article deals with the Release of Commercial Documents?", opts:["A. Article 4", "B. Article 6", "C. Article 7", "D. Article 10"], ans:"C", exp:"URC 522 Article 7 deals with the Release of Commercial Documents."},
+{id:'Q49', q:"If a collecting bank cannot verify the genuineness of documents listed on the collection order, what should it do?", opts:["A. Destroy the documents immediately", "B. Release the documents to the buyer anyway", "C. Immediately notify the remitting bank", "D. Charge a penalty fee to the exporter"], ans:"C", exp:"The collecting bank must immediately notify the remitting bank if documents do not appear genuine."},
+{id:'Q50', q:"A draft drawn on and accepted by a bank, unconditionally ordering payment at a specified future time, is a:", opts:["A. Trust Receipt", "B. Banker's Acceptance", "C. Packing Loan", "D. Promissory Note"], ans:"B", exp:"A Banker's Acceptance is a draft drawn on and accepted by a bank for payment at a specified future time."},
+{id:'Q51', q:"A confirmation line facility (CLF) extended by a bank to an importer for opening L/Cs is typically disbursed in:", opts:["A. Local currency only", "B. Dollars", "C. Euros only", "D. Gold bullion"], ans:"B", exp:"A Confirmation Line Facility is typically disbursed in dollars."},
+{id:'Q52', q:"The process where an importer's bank adds its payment undertaking to a bill of exchange already accepted by the importer is called:", opts:["A. Forfaiting", "B. Factoring", "C. Avalization", "D. Discounting"], ans:"C", exp:"Avalization is the process where the bank adds its undertaking to an accepted bill of exchange."},
+{id:'Q53', q:"Trust Receipt (T/R) financing is considered high-risk and should only be used for:", opts:["A. Any importer regardless of credit history", "B. Credit worthy importers such as blue-chip companies", "C. Importers with a history of late payments", "D. Government entities only"], ans:"B", exp:"T/R financing should only be used to finance credit worthy importers such as blue-chip companies."},
+{id:'Q54', q:"Which pre-export facility is availed to the exporter against the security of an incoming L/C?", opts:["A. Invoice Discounting", "B. Packing Loan", "C. Forfaiting", "D. Factoring"], ans:"B", exp:"A Packing Loan is a pre-export facility availed against the security of an incoming L/C."},
+{id:'Q55', q:"Forfaiting is a form of debt discounting where the forfaiter accepts bills without:", opts:["A. Recourse", "B. Collateral", "C. Endorsement", "D. Maturity date"], ans:"A", exp:"Forfaiting involves accepting bills of exchange or promissory notes without recourse."},
+{id:'Q56', q:"In factoring, the party residing in the importer's country to which receivables are assigned is the:", opts:["A. Export factor", "B. Import factor", "C. Beneficiary", "D. Drawer"], ans:"B", exp:"The import factor resides in the importer's country and receives assigned receivables from the export factor."},
+{id:'Q57', q:"What is the typical maturity period for Forfaiting transactions?", opts:["A. 30 to 90 days", "B. 6 months to 1 year", "C. 1 to 3 years", "D. 5 to 10 years"], ans:"C", exp:"Maturities for forfaiting are normally for 1 to 3 years."},
+{id:'Q58', q:"In Supply Chain Financing, who typically initiates the program?", opts:["A. The Supplier", "B. The Financial Institution", "C. The Buyer", "D. The Export Credit Agency"], ans:"C", exp:"Supply chain financing is typically initiated by the buyer to optimize cash flow."},
+{id:'Q59', q:"Which of the following is a post-export financing method for the exporter?", opts:["A. Packing Loan", "B. Performance Guarantee", "C. Invoice Discounting", "D. Bid Bond"], ans:"C", exp:"Invoice Discounting is a post-export financing method where approved invoices are discounted."},
+{id:'Q60', q:"What is the primary benefit to the exporter in a factoring transaction?", opts:["A. It provides more time to concentrate on core business activities", "B. It eliminates the need to ship goods", "C. It guarantees the quality of goods", "D. It reduces the cost of raw materials"], ans:"A", exp:"Factoring provides the exporter more time to concentrate on core business activities by outsourcing credit functions."},
+{id:'Q61', q:"The World Trade Organization (WTO) was officially constituted on which date?", opts:["A. January 1, 1948", "B. April 15, 1994", "C. January 1, 1995", "D. December 31, 2000"], ans:"C", exp:"The WTO was officially constituted on January 1, 1995."},
+{id:'Q62', q:"Which UN body was established in 1964 to deal with trade, investment, and development issues, particularly for developing countries?", opts:["A. WTO", "B. UNCTAD", "C. ICC", "D. IMF"], ans:"B", exp:"UNCTAD was established in 1964 as a permanent intergovernmental body dealing with trade and development."},
+{id:'Q63', q:"One of the principal achievements of UNCTAD was the conception and implementation of what scheme?", opts:["A. Generalised System of Preferences (GSP)", "B. North American Free Trade Agreement (NAFTA)", "C. European Union Customs Union", "D. Trans-Pacific Partnership"], ans:"A", exp:"UNCTAD conceived and implemented the Generalised System of Preferences (GSP)."},
+{id:'Q64', q:"The International Chamber of Commerce (ICC) was founded in which city in 1919?", opts:["A. London", "B. New York", "C. Geneva", "D. Paris"], ans:"D", exp:"The ICC was founded in Paris, France in 1919."},
+{id:'Q65', q:"The African Continental Free Trade Area (AfCFTA) was officially launched on which date?", opts:["A. January 1, 2019", "B. January 1, 2021", "C. July 1, 2020", "D. March 21, 2018"], ans:"B", exp:"The AfCFTA was officially launched on January 1, 2021."},
+{id:'Q66', q:"Which of the following is NOT one of the three primary activities performed by the ICC?", opts:["A. Establishment of rules", "B. Dispute resolution", "C. Military intervention in trade disputes", "D. Policy advocacy"], ans:"C", exp:"The ICC performs rule establishment, dispute resolution, and policy advocacy, not military intervention."},
+{id:'Q67', q:"What is the top level decision-making body of the WTO?", opts:["A. The General Council", "B. The Dispute Settlement Body", "C. The Ministerial Conferences", "D. The Secretariat"], ans:"C", exp:"The WTO's top level decision-making body is the Ministerial Conferences."},
+{id:'Q68', q:"Under the Generalised System of Preferences (GSP), manufacturers' exports from developing countries enter developed countries:", opts:["A. At double the normal tariff rates", "B. Duty-free or at reduced rates", "C. Only if they meet strict environmental quotas", "D. With a mandatory 10% surcharge"], ans:"B", exp:"Under GSP, exports from developing countries enter duty-free or at reduced rates in developed countries."},
+{id:'Q69', q:"What is the primary goal of the AfCFTA?", opts:["A. To establish a single currency for Africa", "B. To boost economic growth and create a single continental market for goods and services", "C. To restrict imports from non-African countries", "D. To nationalize all African industries"], ans:"B", exp:"The primary goal of AfCFTA is to boost economic growth and create a single continental market."},
+{id:'Q70', q:"Which of the following is a key feature of Supply Chain Financing?", opts:["A. Early payment to suppliers based on the buyer's creditworthiness", "B. Suppliers must provide 100% collateral for invoices", "C. The financial institution only deals with the supplier, not the buyer", "D. It is exclusively used for international maritime trade"], ans:"A", exp:"A key feature is early payment to suppliers, often at a discount, based on the buyer's creditworthiness."},
+{id:'FC1', q:"What is Payment Risk in trade finance?", opts:["A. Reveal Answer"], ans:"A", exp:"Payment Risk is the risk that the exporter or seller may not receive payment due to the inability of the buyer to fund at maturity or transfer funds due to importing country policy."},
+{id:'FC2', q:"What is Performance Risk?", opts:["A. Reveal Answer"], ans:"A", exp:"Performance Risk is the risk that the exporter may not deliver goods at all or deliver goods that do not conform to the terms of the contract."},
+{id:'FC3', q:"What is Transfer Risk?", opts:["A. Reveal Answer"], ans:"A", exp:"Transfer Risk involves the physical movement of funds from the paying country to the receiving country, where the buyer may have local currency but the country lacks foreign currency for transfer."},
+{id:'FC4', q:"Define the Open Account payment method.", opts:["A. Reveal Answer"], ans:"A", exp:"Open Account is a payment method where the exporter ships goods and sends an invoice marked with the terms of payment. It is suitable for circumstances where a valuable trading relationship and trust exist."},
+{id:'FC5', q:"What does EXW stand for in Incoterms 2020?", opts:["A. Reveal Answer"], ans:"A", exp:"EXW stands for Ex Works. It represents the minimum obligation for the seller, who delivers goods at their premises without loading them or clearing them for export."},
+{id:'FC6', q:"What are the three main purposes of a Bill of Lading?", opts:["A. Reveal Answer"], ans:"A", exp:"A Bill of Lading serves as: 1) A receipt issued by the carrier to the exporter, 2) Evidence of a shipping contract between the carrier and shipper, and 3) A title document to the goods."},
+{id:'FC7', q:"What is a Straight Bill of Lading?", opts:["A. Reveal Answer"], ans:"A", exp:"A Straight Bill of Lading is consigned to a specified party and cannot be transferred by endorsement to any other party. Banks usually do not accept this type for financing."},
+{id:'FC8', q:"Define a Bill of Exchange.", opts:["A. Reveal Answer"], ans:"A", exp:"A Bill of Exchange is an unconditional order in writing addressed by one party to another, signed by the drawer, requiring the drawee to pay a certain sum of money on demand or at a fixed future time."},
+{id:'FC9', q:"What is a Trade Acceptance?", opts:["A. Reveal Answer"], ans:"A", exp:"A Trade Acceptance is a Bill of Exchange that is drawn on and accepted by an individual or corporate entity, rather than a bank."},
+{id:'FC10', q:"What does a 'Clean' Bill of Lading mean?", opts:["A. Reveal Answer"], ans:"A", exp:"A 'Clean' Bill of Lading means the goods are in line with the invoice and there are no defects noted in the goods or packaging by the carrier."},
+{id:'FC11', q:"Define a Documentary Letter of Credit.", opts:["A. Reveal Answer"], ans:"A", exp:"A Documentary Letter of Credit is a written undertaking by a bank (Issuing Bank) to pay the seller (Beneficiary) a stated amount against prescribed documents, provided they comply with the L/C terms."},
+{id:'FC12', q:"What is the role of the Confirming Bank in an L/C transaction?", opts:["A. Reveal Answer"], ans:"A", exp:"The Confirming Bank substitutes its creditworthiness for that of the issuing bank, assuming the issuing bank's commitment to pay the beneficiary upon presentation of compliant documents."},
+{id:'FC13', q:"What is a Standby Letter of Credit (SBLC)?", opts:["A. Reveal Answer"], ans:"A", exp:"An SBLC is an L/C issued by a bank on behalf of an applicant that acts as a guarantee of payment to the beneficiary in case of default or non-performance by the applicant."},
+{id:'FC14', q:"What is a Transferable Letter of Credit?", opts:["A. Reveal Answer"], ans:"A", exp:"A Transferable L/C allows the first beneficiary (often a middleman) to ask the advising bank to transfer the L/C in parts or whole to secondary beneficiary(ies)."},
+{id:'FC15', q:"What is a Back-to-Back Letter of Credit?", opts:["A. Reveal Answer"], ans:"A", exp:"A Back-to-Back L/C involves two distinct L/Cs where the first beneficiary uses the prime L/C as security for a bank to issue a second L/C in favor of the ultimate supplier, without the applicant's knowledge."},
+{id:'FC16', q:"What is a Revolving Letter of Credit?", opts:["A. Reveal Answer"], ans:"A", exp:"A Revolving L/C is used for regular shipments where the validity and amount are automatically renewed after each shipment within prescribed time limits, avoiding the need to open multiple L/Cs."},
+{id:'FC17', q:"List three non-waivable discrepancies in an L/C.", opts:["A. Reveal Answer"], ans:"A", exp:"Non-waivable discrepancies include: 1) Bill of Lading not presented or non-negotiable copy presented, 2) Bill of Lading not signed by the carrier, 3) Description of goods on L/C different from documents."},
+{id:'FC18', q:"What does UCP stand for?", opts:["A. Reveal Answer"], ans:"A", exp:"UCP stands for Uniform Customs and Practices for Documentary Credit."},
+{id:'FC19', q:"What are the advantages of an L/C to the Buyer (Applicant)?", opts:["A. Reveal Answer"], ans:"A", exp:"Advantages to the buyer include: getting necessary documents to clear goods, receiving goods at the right time by stipulating shipment dates, controlling payment via presentation limits, and having documents checked by a bank."},
+{id:'FC20', q:"What is a Bid or Tender Bond?", opts:["A. Reveal Answer"], ans:"A", exp:"A Bid or Tender Bond is a guarantee required to support an exporter's offer to supply goods or a contractor's offer to carry out a service, usually 2-5% of the contract value."},
+{id:'FC21', q:"Define Documentary Collection.", opts:["A. Reveal Answer"], ans:"A", exp:"Documentary Collection involves the use of commercial documentation similar to an L/C, routed through banks, and usually involves the drawing and acceptance of a bill of exchange."},
+{id:'FC22', q:"What is the role of the Remitting Bank in a collection?", opts:["A. Reveal Answer"], ans:"A", exp:"The Remitting Bank (usually the seller's bank) deals with documents quickly, checks that instructions can be carried out, and clearly instructs the collecting bank."},
+{id:'FC23', q:"What is the role of the Collecting Bank in a collection?", opts:["A. Reveal Answer"], ans:"A", exp:"The Collecting Bank carries out the remitting bank's instructions, keeps the remitting bank informed, keeps documents secured until acceptance/payment, and verifies document genuineness."},
+{id:'FC24', q:"What does D/P stand for in collections?", opts:["A. Reveal Answer"], ans:"A", exp:"D/P stands for Delivery of document against payment, meaning the shipping documents are released to the buyer only upon immediate payment."},
+{id:'FC25', q:"What is a Clean Collection?", opts:["A. Reveal Answer"], ans:"A", exp:"A Clean Collection involves very little documentation, usually just a bill of exchange, and is more commonly used in service delivery than the sale of goods."},
+{id:'FC26', q:"Define Banker's Acceptance (BA).", opts:["A. Reveal Answer"], ans:"A", exp:"A BA is a draft drawn on and accepted by a bank, unconditionally ordering payment of a certain sum of money at a specified time in the future to the order of a designated party."},
+{id:'FC27', q:"What is Avalization?", opts:["A. Reveal Answer"], ans:"A", exp:"Avalization is the process whereby the importer's bank adds its payment undertaking to a bill of exchange already accepted by the importer, providing the exporter with a strong payment undertaking."},
+{id:'FC28', q:"What is Trust Receipt (T/R) Financing?", opts:["A. Reveal Answer"], ans:"A", exp:"T/R Financing is the process where the importer's bank lends shipping documents to the importer to enable access to goods, based on a written undertaking (Trust Receipt) by the importer."},
+{id:'FC29', q:"Define Forfaiting.", opts:["A. Reveal Answer"], ans:"A", exp:"Forfaiting is a form of debt discounting where a forfaiter accepts at a discount and without recourse promissory notes, bills of exchange, or L/Cs received from a foreign buyer by an exporter."},
+{id:'FC30', q:"What is Factoring?", opts:["A. Reveal Answer"], ans:"A", exp:"Factoring is the provision of a service for the collection and/or financing of short-term receivables, combining credit protection, account management, and outsourcing of credit functions."},
+{id:'FC31', q:"What are the primary activities of the ICC?", opts:["A. Reveal Answer"], ans:"A", exp:"The ICC performs three primary activities: the establishment of rules, dispute resolution, and policy advocacy."},
+{id:'FC32', q:"What is the primary goal of the AfCFTA?", opts:["A. Reveal Answer"], ans:"A", exp:"The primary goal of the AfCFTA is to boost economic growth, reduce poverty, and enhance industrialization by creating a single continental market for goods and services."},
+{id:'FC33', q:"What does UNCTAD stand for?", opts:["A. Reveal Answer"], ans:"A", exp:"UNCTAD stands for the United Nations Conference on Trade and Development."},
+{id:'FC34', q:"What is the top level decision-making body of the WTO?", opts:["A. Reveal Answer"], ans:"A", exp:"The top level decision-making body of the WTO is the Ministerial Conferences, which meets at least once every two years."},
+{id:'FC35', q:"What is the Generalised System of Preferences (GSP)?", opts:["A. Reveal Answer"], ans:"A", exp:"The GSP is a scheme conceived by UNCTAD where manufacturers' exports and some agricultural goods from developing countries enter developed countries duty-free or at reduced rates."}
+];
+
+        // ══════════════════════════════════════════
+        //  STORAGE
+        // ══════════════════════════════════════════
+        const STORAGE_KEY = 'trade_finance_missed_questions';
+        let missedQuestions = [];
+        try {
+            const saved = localStorage.getItem(STORAGE_KEY);
+            if (saved) missedQuestions = JSON.parse(saved);
+        } catch(e) { console.warn("localStorage not available."); }
+
+        window.currentTestMode = 'practice';
+        window.examTimeLimitSeconds = 3600;
+        window.examTimerInterval = null;
+        window.examAnswers = [];
+        window.examStartTime = null;
+
+        function init() {
+            document.getElementById('total-avail').textContent = QB.length;
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            document.getElementById('mode-select').addEventListener('change', validateStart);
+            document.getElementById('count-select').addEventListener('change', validateStart);
+            document.getElementById('test-mode-select').addEventListener('change', onTestModeChange);
+            document.getElementById('exam-time-input').addEventListener('input', validateStart);
+            document.getElementById('start-btn').addEventListener('click', startQuiz);
+            document.getElementById('next-btn').addEventListener('click', nextQuestion);
+            document.getElementById('skip-btn').addEventListener('click', skipQuestion);
+            document.getElementById('end-session-btn').addEventListener('click', endSession);
+            document.getElementById('new-session-btn').addEventListener('click', resetApp);
+            document.getElementById('retry-missed-btn').addEventListener('click', retryMissed);
+            document.getElementById('prev-exam-btn').addEventListener('click', previousExamQuestion);
+            document.getElementById('next-exam-btn').addEventListener('click', nextExamQuestion);
+            document.getElementById('submit-exam-btn').addEventListener('click', submitExam);
+        }
+
+        function onTestModeChange() {
+            const mode = document.getElementById('test-mode-select').value;
+            document.getElementById('exam-time-group').style.display = mode === 'exam' ? 'block' : 'none';
+            validateStart();
+        }
+
+        function validateStart() {
+            const mode = document.getElementById('mode-select').value;
+            const count = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            const btn = document.getElementById('start-btn');
+            if (mode === 'missed' && missedQuestions.length === 0) {
+                btn.disabled = true;
+                btn.textContent = "No missed questions available";
+                return;
+            }
+            let valid = (mode !== "" && count !== "");
+            if (testMode === 'exam') {
+                const timeVal = parseInt(document.getElementById('exam-time-input').value);
+                if (isNaN(timeVal) || timeVal < 1) valid = false;
+            }
+            btn.disabled = !valid;
+            btn.textContent = "Start Quiz";
+        }
+
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        function startQuiz() {
+            const currentMode = document.getElementById('mode-select').value;
+            const countVal = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            window.currentTestMode = testMode;
+            let pool;
+if (currentMode === 'flashcard') {
+    pool = QB.filter(q => q.opts.length === 1 && q.opts[0] === "A. Reveal Answer");
+} else {
+    pool = currentMode === 'missed' ? QB.filter(q => missedQuestions.includes(q.id)) : [...QB];
+    // Exclude flashcards from MCQ modes
+    pool = pool.filter(q => !(q.opts.length === 1 && q.opts[0] === "A. Reveal Answer"));
+}
+            if (currentMode === 'random') pool = shuffleArray(pool);
+            let currentSessionQuestions = [];
+            if (countVal !== 'all') {
+                const questionCount = Math.min(parseInt(countVal), pool.length);
+                currentSessionQuestions = pool.slice(0, questionCount);
+            } else { currentSessionQuestions = pool; }
+            window.currentIndex = 0;
+            window.correctCount = 0;
+            window.wrongCount = 0;
+            window.skippedCount = 0;
+            window.sessionHistory = [];
+            window.currentSessionQuestions = currentSessionQuestions;
+            window.examAnswers = new Array(currentSessionQuestions.length).fill(-1);
+            window.examStartTime = null;
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            if (currentMode === 'flashcard') { showScreen('flashcard-screen'); renderFlashcard(); }
+            else if (testMode === 'exam') {
+                window.examTimeLimitSeconds = parseInt(document.getElementById('exam-time-input').value) * 60;
+                window.examStartTime = Date.now();
+                startExamTimer();
+                showScreen('quiz-screen');
+                renderQuestion();
+            } else { showScreen('quiz-screen'); renderQuestion(); }
+        }
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        function renderQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('current-q-num').textContent = window.currentIndex + 1;
+            document.getElementById('total-q-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('question-text').textContent = q.q;
+            const optionsList = document.getElementById('options-list');
+            optionsList.innerHTML = '';
+            const isExam = window.currentTestMode === 'exam';
+            document.getElementById('quiz-stats-bar').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-timer').style.display = isExam ? 'block' : 'none';
+            document.getElementById('practice-actions').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-actions').style.display = isExam ? 'flex' : 'none';
+            document.getElementById('explanation').classList.remove('visible');
+            document.getElementById('explanation').textContent = '';
+            if (isExam) {
+                document.getElementById('prev-exam-btn').disabled = (window.currentIndex === 0);
+                document.getElementById('next-exam-btn').disabled = (window.currentIndex === window.currentSessionQuestions.length - 1);
+            }
+            q.opts.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = opt;
+                if (isExam) {
+                    if (window.examAnswers[window.currentIndex] === idx) btn.classList.add('selected');
+                    btn.onclick = () => selectExamAnswer(idx);
+                } else { btn.onclick = () => handleAnswer(idx, q); }
+                optionsList.appendChild(btn);
+            });
+            if (!isExam) {
+                document.getElementById('next-btn').style.display = 'none';
+                document.getElementById('skip-btn').style.display = 'block';
+                document.getElementById('end-session-btn').style.display = 'block';
+            }
+            updateProgress();
+            if (!isExam) updateLiveScore();
+        }
+
+        function handleAnswer(selectedIdx, q) {
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(btn => btn.disabled = true);
+            const isCorrect = q.ans === String.fromCharCode(65 + selectedIdx);
+            if (isCorrect) {
+                buttons[selectedIdx].classList.add('correct');
+                window.correctCount++;
+                missedQuestions = missedQuestions.filter(id => id !== q.id);
+            } else {
+                buttons[selectedIdx].classList.add('wrong');
+                const correctIdx = q.ans.charCodeAt(0) - 65;
+                if (correctIdx < buttons.length) buttons[correctIdx].classList.add('correct');
+                window.wrongCount++;
+                if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            }
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            const expEl = document.getElementById('explanation');
+            expEl.textContent = q.exp;
+            expEl.classList.add('visible');
+            document.getElementById('next-btn').style.display = 'block';
+            document.getElementById('skip-btn').style.display = 'none';
+            window.sessionHistory.push({ q: q, userAnswer: String.fromCharCode(65 + selectedIdx), isCorrect: isCorrect, status: isCorrect ? 'correct' : 'wrong' });
+            updateLiveScore();
+        }
+
+        function skipQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            window.skippedCount++;
+            if (!missedQuestions.includes(q.id)) { missedQuestions.push(q.id); try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {} document.getElementById('total-missed').textContent = missedQuestions.length; }
+            window.sessionHistory.push({ q: q, userAnswer: 'Skipped', isCorrect: false, status: 'skipped' });
+            nextQuestion();
+        }
+
+        function nextQuestion() {
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderQuestion();
+            else showResults();
+        }
+
+        function selectExamAnswer(idx) { window.examAnswers[window.currentIndex] = idx; renderQuestion(); }
+        function previousExamQuestion() { if (window.currentIndex > 0) { window.currentIndex--; renderQuestion(); } }
+        function nextExamQuestion() { if (window.currentIndex < window.currentSessionQuestions.length - 1) { window.currentIndex++; renderQuestion(); } }
+
+        function startExamTimer() {
+            updateExamTimerDisplay();
+            window.examTimerInterval = setInterval(() => {
+                const elapsed = Math.floor((Date.now() - window.examStartTime) / 1000);
+                const remaining = window.examTimeLimitSeconds - elapsed;
+                if (remaining <= 0) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; submitExam(); return; }
+                updateExamTimerDisplay(remaining);
+            }, 1000);
+        }
+
+        function updateExamTimerDisplay(remainingSecs) {
+            if (remainingSecs === undefined) remainingSecs = window.examTimeLimitSeconds;
+            const mins = Math.floor(remainingSecs / 60);
+            const secs = remainingSecs % 60;
+            document.getElementById('timer-display').textContent = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+        }
+
+        function submitExam() {
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            const questions = window.currentSessionQuestions;
+            let correct = 0, wrong = 0, skipped = 0;
+            window.sessionHistory = [];
+            questions.forEach((q, index) => {
+                const selectedIdx = window.examAnswers[index];
+                let userAnswerLetter = 'Not answered';
+                let isCorrect = false;
+                let status = 'skipped';
+                if (selectedIdx !== -1) {
+                    userAnswerLetter = String.fromCharCode(65 + selectedIdx);
+                    isCorrect = (userAnswerLetter === q.ans);
+                    status = isCorrect ? 'correct' : 'wrong';
+                }
+                if (status === 'correct') correct++;
+                else if (status === 'wrong') wrong++;
+                else skipped++;
+                window.sessionHistory.push({ q: q, userAnswer: userAnswerLetter, isCorrect: isCorrect, status: status });
+            });
+            window.correctCount = correct;
+            window.wrongCount = wrong;
+            window.skippedCount = skipped;
+            const totalSeconds = Math.floor((Date.now() - window.examStartTime) / 1000);
+            const timeTakenStr = formatTime(totalSeconds);
+            window.sessionHistory.forEach(item => { if (item.status === 'wrong' || item.status === 'skipped') { if (!missedQuestions.includes(item.q.id)) missedQuestions.push(item.q.id); } });
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {}
+            showResults(true, timeTakenStr);
+        }
+
+        function formatTime(totalSeconds) { const mins = Math.floor(totalSeconds / 60); const secs = totalSeconds % 60; return String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0'); }
+
+        function updateProgress() {
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('progress-bar').style.width = pct + '%';
+        }
+
+        function updateLiveScore() {
+            const total = window.correctCount + window.wrongCount;
+            const score = total === 0 ? 0 : Math.round((window.correctCount / total) * 100);
+            document.getElementById('live-correct').textContent = window.correctCount;
+            document.getElementById('live-wrong').textContent = window.wrongCount;
+            document.getElementById('live-score').textContent = score + '%';
+        }
+
+        function renderFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('fc-current-num').textContent = window.currentIndex + 1;
+            document.getElementById('fc-total-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('fc-question').textContent = q.q;
+            document.getElementById('fc-answer').textContent = "Answer: " + q.ans;
+            document.getElementById('fc-explanation').textContent = q.exp;
+            document.getElementById('flashcard').classList.remove('flipped');
+            document.getElementById('fc-actions').style.display = 'none';
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('fc-progress-bar').style.width = pct + '%';
+        }
+
+        function flipCard() {
+            document.getElementById('flashcard').classList.toggle('flipped');
+            setTimeout(() => { document.getElementById('fc-actions').style.display = 'flex'; }, 300);
+        }
+
+        function handleFlashcardDecision(gotIt) {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (gotIt) missedQuestions = missedQuestions.filter(id => id !== q.id);
+            else if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function skipFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (!missedQuestions.includes(q.id)) { missedQuestions.push(q.id); try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {} document.getElementById('total-missed').textContent = missedQuestions.length; }
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function endSession() {
+            if (window.currentTestMode === 'exam') { if (confirm('Are you sure you want to submit your exam?')) submitExam(); }
+            else showResults();
+        }
+
+        function showResults(isExam = false, timeTaken = null) {
+            showScreen('results-screen');
+            const total = window.correctCount + window.wrongCount + window.skippedCount;
+            const score = (window.correctCount + window.wrongCount) === 0 ? 0 : Math.round((window.correctCount / (window.correctCount + window.wrongCount)) * 100);
+            const scoreEl = document.getElementById('results-score');
+            scoreEl.textContent = score + '%';
+            scoreEl.className = 'results-score';
+            if (score >= 80) scoreEl.classList.add('green');
+            else if (score >= 60) scoreEl.classList.add('amber');
+            else scoreEl.classList.add('red');
+            document.getElementById('res-correct').textContent = window.correctCount;
+            document.getElementById('res-wrong').textContent = window.wrongCount;
+            document.getElementById('res-skipped').textContent = window.skippedCount;
+            document.getElementById('res-total').textContent = total;
+            const timeBox = document.getElementById('time-stat-box');
+            if (isExam && timeTaken) { document.getElementById('res-time').textContent = timeTaken; timeBox.style.display = 'block'; }
+            else { timeBox.style.display = 'none'; }
+            const reviewSection = document.getElementById('review-section');
+            reviewSection.innerHTML = '';
+            window.sessionHistory.forEach(item => {
+                const div = document.createElement('div');
+                div.className = `review-item ${item.status}`;
+                let correctAnsText = item.q.opts.find(opt => opt.startsWith(item.q.ans + '.')) || item.q.ans;
+                div.innerHTML = `<div class="review-q">${item.q.q}</div><div class="review-detail">Your Answer: <strong>${item.userAnswer}</strong></div><div class="review-detail">Correct Answer: <strong>${correctAnsText}</strong></div><div class="review-detail" style="margin-top: 8px; font-style: italic;">${item.q.exp}</div>`;
+                reviewSection.appendChild(div);
+            });
+            if (window.sessionHistory.length === 0) reviewSection.innerHTML = '<div class="review-item"><div class="review-q">No questions were answered in this session.</div></div>';
+        }
+
+        function resetApp() {
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            document.getElementById('mode-select').value = '';
+            document.getElementById('count-select').value = '';
+            document.getElementById('test-mode-select').value = 'practice';
+            document.getElementById('exam-time-group').style.display = 'none';
+            document.getElementById('start-btn').disabled = true;
+            showScreen('setup-screen');
+            document.getElementById('total-avail').textContent = QB.length;
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+        }
+
+        function retryMissed() {
+            document.getElementById('mode-select').value = 'missed';
+            document.getElementById('count-select').value = 'all';
+            validateStart();
+            startQuiz();
+        }
+
+        init();
+    </script>
+</body>
+</html>

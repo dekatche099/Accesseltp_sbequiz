@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Quiz Hub</title>
+    <style>
+        :root {
+            --bg: #0f172a; --card: #1e293b; --accent: #3b82f6;
+            --text: #f8fafc; --muted: #94a3b8;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:40px 20px; }
+        .container { max-width:600px; width:100%; }
+        h1 { text-align:center; margin-bottom:8px; font-size:24px; }
+        .subtitle { text-align:center; color:var(--muted); margin-bottom:32px; font-size:14px; }
+        .course-grid { display:flex; flex-direction:column; gap:16px; }
+        .course-card {
+            background:var(--card); border:1px solid #1e293b; border-radius:12px;
+            padding:20px; text-decoration:none; color:var(--text); transition:all 0.2s;
+            display:flex; justify-content:space-between; align-items:center;
+        }
+        .course-card:hover { border-color:var(--accent); transform:translateY(-2px); }
+        .course-info h2 { font-size:18px; margin-bottom:4px; }
+        .course-info p { color:var(--muted); font-size:13px; }
+        .arrow { font-size:20px; color:var(--accent); }
+        .footer { text-align:center; margin-top:40px; color:var(--muted); font-size:12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Banking Quiz Hub</h1>
+        <p class="subtitle">Select a course to start practicing</p>
+        <div class="course-grid">
+            <a href="cpg-quiz.html" class="course-card">
+                <div class="course-info"><h2>CPG Quiz Master</h2><p>Credit Policy Guide — 500 questions</p></div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="accounting-quiz.html" class="course-card">
+                <div class="course-info"><h2>Accounting MCQ Quiz</h2><p>Financial Accounting — 114 questions</p></div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="fgm-quiz.html" class="course-card">
+                <div class="course-info"><h2>FGM Quiz</h2><p>International Banking & Finance — 98 questions</p></div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="afcfta-quiz.html" class="course-card">
+                <div class="course-info"><h2>AfCFTA & Intra‑African Trade</h2><p>70 questions</p></div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="marketing-quiz.html" class="course-card">
+                <div class="course-info"><h2>Marketing of Financial Services</h2><p>120 questions</p></div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="bbo-quiz.html" class="course-card">
+                <div class="course-info"><h2>Basic Banking Operations</h2><p>189 questions</p></div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="trade-finance-quiz.html" class="course-card">
+                <div class="course-info"><h2>Trade Finance Quiz</h2><p>105 questions</p></div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="erm-quiz.html" class="course-card">
+                <div class="course-info"><h2>ERM Quiz</h2><p>Enterprise Risk Management — 50 questions</p></div>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+        <p class="footer">All quizzes run entirely in your browser — no data is sent anywhere.</p>
+    </div>
+</body>
+</html>

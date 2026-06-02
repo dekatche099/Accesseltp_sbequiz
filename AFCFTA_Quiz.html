@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfCFTA & Intra-African Trade Quiz</title>
+    <style>
+        :root {
+            --bg-primary: #0f172a; --bg-secondary: #1e293b; --bg-tertiary: #334155;
+            --text-primary: #f8fafc; --text-secondary: #cbd5e1;
+            --accent: #3b82f6; --accent-hover: #2563eb;
+            --success: #22c55e; --error: #ef4444; --warning: #f59e0b;
+            --border-radius: 12px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: var(--bg-primary); color: var(--text-primary); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { width: 100%; max-width: 600px; background-color: var(--bg-secondary); border-radius: var(--border-radius); padding: 24px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); }
+        h1, h2, h3 { text-align: center; margin-bottom: 16px; }
+        .screen { display: none; animation: fadeIn 0.3s ease-in-out; }
+        .screen.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 600; }
+        select, button, input { width: 100%; padding: 14px; border-radius: var(--border-radius); border: 1px solid var(--bg-tertiary); background-color: var(--bg-tertiary); color: var(--text-primary); font-size: 16px; cursor: pointer; transition: all 0.2s; min-height: 52px; }
+        input[type="number"] { cursor: text; }
+        select:focus, input:focus { outline: none; border-color: var(--accent); }
+        button { background-color: var(--accent); border: none; font-weight: 700; margin-top: 10px; }
+        button:hover:not(:disabled) { background-color: var(--accent-hover); }
+        button:disabled { background-color: var(--bg-tertiary); color: var(--text-secondary); cursor: not-allowed; opacity: 0.6; }
+        .stats-bar { display: flex; justify-content: space-between; background-color: var(--bg-tertiary); padding: 12px; border-radius: var(--border-radius); margin-bottom: 20px; font-size: 14px; font-weight: 600; }
+        .progress-container { width: 100%; height: 8px; background-color: var(--bg-tertiary); border-radius: 4px; margin-bottom: 24px; overflow: hidden; }
+        .progress-bar { height: 100%; background-color: var(--accent); transition: width 0.3s ease; }
+        .question-text { font-size: 18px; font-weight: 600; margin-bottom: 24px; line-height: 1.5; }
+        .options-list { display: flex; flex-direction: column; gap: 12px; }
+        .option-btn { text-align: left; background-color: var(--bg-tertiary); border: 2px solid transparent; padding: 16px; border-radius: var(--border-radius); cursor: pointer; transition: all 0.2s; font-size: 16px; min-height: 56px; }
+        .option-btn:hover:not(:disabled) { background-color: #475569; }
+        .option-btn.correct { background-color: rgba(34, 197, 94, 0.2); border-color: var(--success); color: var(--success); }
+        .option-btn.wrong { background-color: rgba(239, 68, 68, 0.2); border-color: var(--error); color: var(--error); }
+        .option-btn.selected { border-color: var(--accent); background-color: rgba(59, 130, 246, 0.1); }
+        .explanation { margin-top: 20px; padding: 16px; background-color: rgba(59, 130, 246, 0.1); border-left: 4px solid var(--accent); border-radius: 4px; font-size: 15px; line-height: 1.5; display: none; }
+        .explanation.visible { display: block; animation: fadeIn 0.3s ease-in-out; }
+        .action-buttons { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+        .action-buttons button { flex: 1; min-width: 80px; }
+        .btn-secondary { background-color: var(--bg-tertiary); }
+        .btn-secondary:hover:not(:disabled) { background-color: #475569; }
+        .flashcard-container { perspective: 1000px; min-height: 300px; margin-bottom: 20px; }
+        .flashcard { width: 100%; min-height: 300px; position: relative; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer; }
+        .flashcard.flipped { transform: rotateY(180deg); }
+        .flashcard-face { position: absolute; width: 100%; min-height: 300px; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px; background-color: var(--bg-tertiary); border-radius: var(--border-radius); text-align: center; border: 2px solid var(--bg-tertiary); }
+        .flashcard-back { transform: rotateY(180deg); background-color: rgba(59, 130, 246, 0.1); border-color: var(--accent); }
+        .flashcard-hint { margin-top: 12px; font-size: 14px; color: var(--text-secondary); }
+        .results-score { font-size: 48px; font-weight: 800; text-align: center; margin: 20px 0; }
+        .results-score.green { color: var(--success); }
+        .results-score.amber { color: var(--warning); }
+        .results-score.red { color: var(--error); }
+        .results-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
+        .stat-box { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); text-align: center; }
+        .stat-value { font-size: 24px; font-weight: 700; display: block; }
+        .stat-label { font-size: 14px; color: var(--text-secondary); }
+        .review-section { max-height: 400px; overflow-y: auto; margin-bottom: 24px; padding-right: 8px; }
+        .review-item { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); margin-bottom: 12px; border-left: 4px solid var(--bg-tertiary); }
+        .review-item.correct { border-left-color: var(--success); }
+        .review-item.wrong { border-left-color: var(--error); }
+        .review-item.skipped { border-left-color: var(--warning); }
+        .review-q { font-weight: 600; margin-bottom: 8px; font-size: 15px; }
+        .review-detail { font-size: 14px; color: var(--text-secondary); margin-bottom: 4px; }
+        .review-detail strong { color: var(--text-primary); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb { background: var(--bg-tertiary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ═══════════ SETUP SCREEN ═══════════ -->
+        <div id="setup-screen" class="screen active">
+            <h1>AfCFTA & Intra‑African Trade Quiz</h1>
+            <p style="text-align:center; color:var(--text-secondary); margin-bottom: 20px;">Master the African Continental Free Trade Area</p>
+            <div class="form-group">
+                <label for="mode-select">Quiz Mode</label>
+                <select id="mode-select">
+                    <option value="">Select a mode...</option>
+                    <option value="random">Random Mix</option>
+                    <option value="sequential">Sequential</option>
+                    <option value="missed">Missed Only</option>
+                    <option value="flashcard">Flashcard Revision</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="count-select">Number of Questions</label>
+                <select id="count-select">
+                    <option value="">Select count...</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="all">All (70)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="test-mode-select">Test Mode</label>
+                <select id="test-mode-select">
+                    <option value="practice">Practice Mode</option>
+                    <option value="exam">Exam Mode</option>
+                </select>
+            </div>
+            <div id="exam-time-group" class="form-group" style="display: none;">
+                <label for="exam-time-input">Time Limit (minutes)</label>
+                <input type="number" id="exam-time-input" min="1" max="300" value="60">
+            </div>
+            <div class="stats-bar">
+                <span>Total Available: <span id="total-avail">0</span></span>
+                <span>Missed Questions: <span id="total-missed">0</span></span>
+            </div>
+            <button id="start-btn" disabled>Start Quiz</button>
+        </div>
+
+        <!-- ═══════════ QUIZ SCREEN ═══════════ -->
+        <div id="quiz-screen" class="screen">
+            <div id="exam-timer" style="text-align: center; font-size: 20px; font-weight: 700; margin-bottom: 12px; display: none;">
+                Time Remaining: <span id="timer-display">60:00</span>
+            </div>
+            <div class="stats-bar" id="quiz-stats-bar">
+                <span>Correct: <span id="live-correct">0</span></span>
+                <span>Wrong: <span id="live-wrong">0</span></span>
+                <span>Score: <span id="live-score">0%</span></span>
+            </div>
+            <div class="progress-container"><div class="progress-bar" id="progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Question <span id="current-q-num">1</span> of <span id="total-q-num">10</span>
+            </div>
+            <div class="question-text" id="question-text"></div>
+            <div class="options-list" id="options-list"></div>
+            <div class="explanation" id="explanation"></div>
+            <div class="action-buttons" id="practice-actions">
+                <button class="btn-secondary" id="skip-btn">Skip</button>
+                <button class="btn-secondary" id="end-session-btn">End Session</button>
+                <button id="next-btn" style="display: none;">Next</button>
+            </div>
+            <div class="action-buttons" id="exam-actions" style="display: none;">
+                <button class="btn-secondary" id="prev-exam-btn">Previous</button>
+                <button class="btn-secondary" id="submit-exam-btn">Submit Exam</button>
+                <button id="next-exam-btn">Next</button>
+            </div>
+        </div>
+
+        <!-- ═══════════ FLASHCARD SCREEN ═══════════ -->
+        <div id="flashcard-screen" class="screen">
+            <div class="progress-container"><div class="progress-bar" id="fc-progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Card <span id="fc-current-num">1</span> of <span id="fc-total-num">10</span>
+            </div>
+            <div class="flashcard-container" onclick="flipCard()">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-face flashcard-front">
+                        <div id="fc-question" style="font-size: 18px; font-weight: 600;"></div>
+                        <div class="flashcard-hint">Tap to reveal answer</div>
+                    </div>
+                    <div class="flashcard-face flashcard-back">
+                        <div id="fc-answer" style="font-size: 18px; font-weight: 700; color: var(--success); margin-bottom: 12px;"></div>
+                        <div id="fc-explanation" style="font-size: 15px; line-height: 1.5;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons" id="fc-actions" style="display: none;">
+                <button class="btn-secondary" style="border-color: var(--error); color: var(--error);" onclick="handleFlashcardDecision(false)">Still Learning</button>
+                <button style="border-color: var(--success); color: var(--success); background-color: rgba(34, 197, 94, 0.1);" onclick="handleFlashcardDecision(true)">Got It</button>
+            </div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="fc-skip-btn" onclick="skipFlashcard()">Skip</button>
+                <button class="btn-secondary" id="fc-end-btn" onclick="endSession()">End Session</button>
+            </div>
+        </div>
+
+        <!-- ═══════════ RESULTS SCREEN ═══════════ -->
+        <div id="results-screen" class="screen">
+            <h2>Session Complete!</h2>
+            <div class="results-score" id="results-score">0%</div>
+            <div class="results-stats" id="results-stats-grid">
+                <div class="stat-box"><span class="stat-value" id="res-correct" style="color: var(--success);">0</span><span class="stat-label">Correct</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-wrong" style="color: var(--error);">0</span><span class="stat-label">Wrong</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-skipped" style="color: var(--warning);">0</span><span class="stat-label">Skipped</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-total">0</span><span class="stat-label">Total</span></div>
+                <div class="stat-box" id="time-stat-box" style="display: none;"><span class="stat-value" id="res-time">0:00</span><span class="stat-label">Time Taken</span></div>
+            </div>
+            <h3>Review All Answers</h3>
+            <div class="review-section" id="review-section"></div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="retry-missed-btn">Retry Missed</button>
+                <button id="new-session-btn">New Session</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const QB = [
+{id:'Q1', q:"What characterized pre-colonial trade networks in Africa before colonial intervention?", opts:["A. They were primarily focused on exporting raw materials to Europe.", "B. They included extensive commercial ties exchanging gold, iron, and kola nuts among empires like Nubia and Ashanti.", "C. They relied heavily on the use of modern banking instruments like Letters of Credit.", "D. They were strictly limited to coastal regions and did not penetrate the interior."], ans:"B", exp:"Pre-colonial Africa had sophisticated trade networks where empires like Nubia, Ashanti, Oyo, and Bornu exchanged commodities like gold, iron, and kola nuts."},
+{id:'Q2', q:"How did colonialism primarily impact intra-African trade?", opts:["A. It established a unified continental currency to facilitate seamless trade.", "B. It reoriented African economies towards external markets and undermined local industries.", "C. It significantly increased the volume of trade between neighboring African countries.", "D. It created robust infrastructure networks connecting all major African cities."], ans:"B", exp:"Colonial powers prioritized the extraction of raw materials for their home industries, reorienting African economies towards external markets and undermining local industries."},
+{id:'Q3', q:"According to the manual, what was the estimated value of intra-African trade in 2024?", opts:["A. $100.5 billion", "B. $220.3 billion", "C. $350.8 billion", "D. $500.2 billion"], ans:"B", exp:"The manual states that intra-African trade was estimated at $220.3 billion in 2024, representing a 12.4% increase from the previous year."},
+{id:'Q4', q:"What is the primary definition of intra-African trade?", opts:["A. The exchange of goods and services exclusively between African countries and their former colonial powers.", "B. The exchange of goods and services among countries within the African continent.", "C. The importation of raw materials from Africa to manufacturing hubs in Asia.", "D. The financial settlement of debts between African nations and the IMF."], ans:"B", exp:"Intra-African trade refers to the exchange of goods and services among countries within the African continent, encompassing all economic interactions occurring exclusively within Africa."},
+{id:'Q5', q:"Which of the following is NOT listed as a benefit of intra-African trade for African nations?", opts:["A. Reduced reliance on external markets", "B. Increased bargaining power in global trade negotiations", "C. Immediate elimination of all domestic poverty", "D. Infrastructure development and regional integration"], ans:"C", exp:"While intra-African trade contributes to poverty reduction and economic growth, the manual does not claim it causes the immediate elimination of all domestic poverty."},
+{id:'FC1', q:"What are the key initiatives pursued to boost intra-African trade figures?", opts:["A. Reveal Answer"], ans:"A", exp:"Key initiatives include reducing trade barriers, improving infrastructure, harmonizing regulations, promoting economic diversification, and building capacity for businesses, particularly SMEs."},
+{id:'FC2', q:"What historical empires are noted for maintaining extensive commercial ties in pre-colonial Africa?", opts:["A. Reveal Answer"], ans:"A", exp:"Empires such as Nubia, Ashanti, Oyo, and Bornu maintained extensive commercial ties, exchanging valuable commodities like gold, iron, kola nuts, groundnuts, and date palms."},
+{id:'Q6', q:"What is the approximate combined GDP of the single continental market envisioned by the AfCFTA?", opts:["A. US$1.2 trillion", "B. US$3.4 trillion", "C. US$5.8 trillion", "D. US$8.5 trillion"], ans:"B", exp:"The AfCFTA envisions a single continental market with a population of 1.3 billion people and a combined GDP of roughly US$3.4 trillion."},
+{id:'Q7', q:"What is the target percentage for intra-African trade once the AfCFTA is fully operational?", opts:["A. 25%", "B. 35%", "C. 52%", "D. 75%"], ans:"C", exp:"The ambitious goal is to boost intra-African trade significantly, with projections aiming for a 52% increase once the AfCFTA is fully operational."},
+{id:'Q8', q:"Which AfCFTA protocol is often considered the 'Engine Room' of the agreement?", opts:["A. Protocol on Trade in Services", "B. Protocol on Trade in Goods", "C. Protocol on Digital Trade", "D. Protocol on Investment"], ans:"B", exp:"The Protocol on Trade in Goods is considered the 'Engine Room' of the AfCFTA, focusing on the progressive elimination of tariffs and non-tariff barriers on goods."},
+{id:'Q9', q:"What is the primary objective of the Protocol on Investment, often referred to as the 'Magnet'?", opts:["A. To prevent anti-competitive practices and monopolies.", "B. To create a stable, transparent, and predictable investment climate to attract FDI.", "C. To protect and enforce intellectual property rights across the continent.", "D. To establish a legal framework for resolving trade-related disputes."], ans:"B", exp:"The Protocol on Investment aims to create a stable, transparent, and predictable investment climate across Africa to attract both intra-African and foreign direct investment."},
+{id:'Q10', q:"Which protocol is designed to prevent anti-competitive practices and is known as the 'Referee'?", opts:["A. Protocol on Competition Policy", "B. Protocol on Dispute Settlement", "C. Protocol on Intellectual Property Rights", "D. Protocol on Women and Youth in Trade"], ans:"A", exp:"The Protocol on Competition Policy, known as the 'Referee', is designed to prevent anti-competitive practices like monopolies and cartels to ensure fair competition."},
+{id:'Q11', q:"Why are Rules of Origin (RoO) critical in a free trade area like the AfCFTA?", opts:["A. To ensure that all products are manufactured using 100% local labor.", "B. To prevent trade deflection by ensuring goods genuinely originate from a member state to qualify for preferential tariffs.", "C. To restrict the importation of any goods from outside the African continent.", "D. To standardize the packaging and labeling of all agricultural products."], ans:"B", exp:"RoO determine the 'economic nationality' of a product and are essential to prevent trade deflection, ensuring goods qualify for preferential tariff treatment."},
+{id:'Q12', q:"What is the primary purpose of the Guided Trade Initiative (GTI) launched in October 2022?", opts:["A. To provide direct financial grants to smallholder farmers in East Africa.", "B. To serve as a pilot project allowing participating countries to test operational and institutional arrangements for trade under AfCFTA.", "C. To establish a new continental currency for seamless cross-border transactions.", "D. To build new physical border infrastructure between member states."], ans:"B", exp:"The GTI is a pilot project designed to facilitate commercially meaningful trade under the AfCFTA, allowing countries to test operational and institutional arrangements."},
+{id:'Q13', q:"As of February 2025, how many State Parties were actively trading goods under the Guided Trade Initiative?", opts:["A. 10", "B. 25", "C. 39", "D. 54"], ans:"A", exp:"By February 2025, 10 State Parties were actively trading goods under the Guided Trade Initiative (GTI)."},
+{id:'FC3', q:"What do Sanitary and Phytosanitary (SPS) measures and Technical Barriers to Trade (TBT) aim to protect?", opts:["A. Reveal Answer"], ans:"A", exp:"SPS measures are designed to protect human, animal, or plant life and health, while TBT ensures product quality and safety, though they can sometimes act as hidden barriers to trade."},
+{id:'FC4', q:"What are the key opportunities presented to African businesses by the AfCFTA?", opts:["A. Reveal Answer"], ans:"A", exp:"Opportunities include expanded market access, increased intra-African trade, development of regional value chains, attraction of FDI, and growth in digital trade and e-commerce."},
+{id:'FC5', q:"What is the primary function of the Protocol on Digital Trade within the AfCFTA?", opts:["A. Reveal Answer"], ans:"A", exp:"The Protocol on Digital Trade addresses the digital economy by promoting digital connectivity, facilitating cross-border data flows, enabling e-commerce, and developing robust digital infrastructure."},
+{id:'Q14', q:"Which of the following is NOT a key area where financial institutions contribute to intra-African trade?", opts:["A. Trade Finance", "B. Payment Systems", "C. Setting national tariff rates", "D. Risk Mitigation"], ans:"C", exp:"Financial institutions contribute through trade finance, payment systems, risk mitigation, information services, and capacity building, but they do not set national tariff rates."},
+{id:'Q15', q:"Which institutions collaborated to develop the Pan-African Payment and Settlement System (PAPSS)?", opts:["A. The World Bank and the IMF", "B. The African Export-Import Bank (Afreximbank) and the African Union", "C. The European Central Bank and the African Development Bank", "D. Access Bank and Ecobank"], ans:"B", exp:"PAPSS was developed by the African Export-Import Bank (Afreximbank) in collaboration with the African Union."},
+{id:'Q16', q:"What was a major challenge of the traditional correspondent banking system for intra-African payments?", opts:["A. Payments were processed instantly but with high fees.", "B. It required multiple intermediaries and foreign exchange conversions, leading to high costs and delays.", "C. It exclusively used local African currencies, causing volatility.", "D. It was highly regulated by the African Union, limiting transaction volumes."], ans:"B", exp:"The traditional correspondent banking system involved multiple intermediaries and foreign exchange conversions, leading to high costs, delays, and complexity."},
+{id:'Q17', q:"How does PAPSS primarily reduce foreign exchange risk for businesses?", opts:["A. By fixing the exchange rate between all African currencies.", "B. By enabling payments to be made and received in local currencies, minimizing exposure to hard currency fluctuations.", "C. By eliminating the need for any currency conversion whatsoever.", "D. By requiring all transactions to be settled in US Dollars."], ans:"B", exp:"PAPSS reduces foreign exchange risk by allowing payments to be made and received in local currencies, minimizing exposure to fluctuations in hard currencies like the USD."},
+{id:'Q18', q:"What is the name of Access Bank's digital payment infrastructure that enables seamless cross-border payments?", opts:["A. AfriPay", "B. AccessAfrica", "C. PAPSS-AB", "D. TradeLink"], ans:"B", exp:"Access Bank developed the AccessAfrica platform, a robust digital payment infrastructure that enables seamless and cost-effective cross-border payments."},
+{id:'Q19', q:"Which of the following is a specific risk mitigation service offered by Access Bank for intra-African trade?", opts:["A. Free currency exchange for all transactions", "B. Foreign exchange risk hedging products and trade credit insurance", "C. Guaranteed zero-tariff shipping for all goods", "D. Full assumption of all political risks without premiums"], ans:"B", exp:"Access Bank offers risk mitigation services including trade credit insurance and foreign exchange risk hedging products to protect businesses from trade-related risks."},
+{id:'FC6', q:"What is the Pan-African Payment and Settlement System (PAPSS)?", opts:["A. Reveal Answer"], ans:"A", exp:"PAPSS is a centralized payment and settlement infrastructure designed to enable instant, cross-border payments in local currencies among African countries, eliminating the need for intermediary foreign banks."},
+{id:'FC7', q:"What are the main benefits of the Pan-African Payment and Settlement System (PAPSS)?", opts:["A. Reveal Answer"], ans:"A", exp:"Benefits include instant real-time payments, reduced transaction costs, reduced foreign exchange risk, increased transparency, enhanced financial inclusion, and a boost to intra-African trade."},
+{id:'Q20', q:"Which of the following is considered a Non-Tariff Barrier (NTB) in intra-African trade?", opts:["A. A 10% import duty on textiles", "B. Cumbersome customs procedures and excessive documentation requirements", "C. A quota limiting the import of 1,000 vehicles", "D. A specific tax levied only on foreign-owned businesses"], ans:"B", exp:"NTBs include cumbersome customs procedures, excessive documentation, TBT, SPS measures, and lack of transparency, whereas tariffs and quotas are distinct trade barriers."},
+{id:'Q21', q:"How does inadequate infrastructure primarily affect intra-African trade?", opts:["A. It lowers the cost of production but increases shipping times.", "B. It significantly increases the cost and time of doing business across Africa.", "C. It forces businesses to rely exclusively on digital trade.", "D. It reduces the need for trade finance instruments."], ans:"B", exp:"Poor infrastructure, such as bad road networks and inefficient ports, significantly increases the cost and time of doing business across Africa."},
+{id:'Q22', q:"What is a primary reason SMEs struggle to access affordable trade finance in Africa?", opts:["A. SMEs are legally prohibited from accessing international trade finance.", "B. Banks perceive cross-border trade with African partners as high-risk, and SMEs often lack collateral.", "C. SMEs prefer to use informal lending networks rather than commercial banks.", "D. Trade finance products are exclusively designed for multinational corporations."], ans:"B", exp:"SMEs struggle due to high-risk perceptions by banks, lack of tangible collateral, and limited knowledge of available trade finance products."},
+{id:'Q23', q:"Which strategy involves creating industrial hubs with favorable policies to attract investment in manufacturing?", opts:["A. Harmonizing Standards", "B. Developing Special Economic Zones (SEZs)", "C. Promoting PAPSS", "D. Establishing Trade Information Portals"], ans:"B", exp:"Developing Special Economic Zones (SEZs) involves creating industrial hubs with favorable policies to attract investment in manufacturing and value-added processing."},
+{id:'Q24', q:"How does Access Bank address the challenge of cumbersome customs procedures and payment inefficiencies?", opts:["A. By lobbying for the removal of all customs checks.", "B. Through the digitalization of trade processes via platforms like AccessAfrica.", "C. By taking over the management of border posts.", "D. By offering free legal representation for customs disputes."], ans:"B", exp:"Access Bank addresses these issues through the digitalization of trade processes, reducing paperwork and accelerating transaction times via platforms like AccessAfrica."},
+{id:'Q25', q:"What is the purpose of establishing centralized Trade Information Portals?", opts:["A. To collect tariffs on behalf of the AfCFTA secretariat.", "B. To provide up-to-date information on market opportunities, trade regulations, and business contacts across Africa.", "C. To issue Certificates of Origin for all exported goods.", "D. To regulate the prices of essential commodities across the continent."], ans:"B", exp:"Trade Information Portals provide up-to-date information on market opportunities, trade regulations, and business contacts, helping to overcome information asymmetry."},
+{id:'FC8', q:"What are Non-Tariff Barriers (NTBs) in the context of intra-African trade?", opts:["A. Reveal Answer"], ans:"A", exp:"NTBs are impediments to trade other than tariffs, including cumbersome customs procedures, Technical Barriers to Trade (TBT), Sanitary and Phytosanitary (SPS) measures, quotas, import bans, and lack of transparency."},
+{id:'FC9', q:"What strategies are recommended for enhancing access to finance for intra-African trade?", opts:["A. Reveal Answer"], ans:"A", exp:"Strategies include developing innovative trade finance products for SMEs, capacity building for SMEs on financial literacy, and leveraging regional financial institutions like Afreximbank for guarantees."},
+{id:'Q26', q:"What is a primary motivation for African banks to expand their operations across the continent?", opts:["A. To avoid domestic regulatory requirements.", "B. To diversify revenue streams, mitigate risks, and support regional integration under the AfCFTA.", "C. To reduce their overall operational costs by moving headquarters.", "D. To exclusively focus on serving multinational corporations."], ans:"B", exp:"African banks expand to diversify revenue streams, mitigate risks, capitalize on market opportunities, support regional integration, and facilitate intra-African trade."},
+{id:'Q27', q:"Which of the following is a key pillar of Access Bank's Africa expansion strategy?", opts:["A. Creation of a Single Market through consistent presence across key African countries.", "B. Exclusively focusing on digital banking without physical branches.", "C. Merging with all regional central banks.", "D. Restricting services to only large corporate clients."], ans:"A", exp:"A key pillar is the creation of a single market by establishing a consistent presence across key African countries to provide a unified platform for financial services."},
+{id:'Q28', q:"What is the primary focus of the African Natural Capital Alliance (ANCA), of which Access Bank is a founding member?", opts:["A. To provide microloans to rural farmers.", "B. To harness the financial sector's efforts regarding nature-related risks and opportunities in Africa.", "C. To build solar power plants across the continent.", "D. To regulate the fishing industry in African waters."], ans:"B", exp:"ANCA is a collaborative initiative aimed at harnessing the financial sector's efforts regarding nature-related risks and opportunities in Africa, demonstrating a commitment to sustainable development."},
+{id:'Q29', q:"How does Access Bank's collaboration with MFS Africa enhance its services?", opts:["A. By providing venture capital to fintech startups.", "B. By simplifying transfers for AccessAfrica customers, facilitating seamless cross-border payments and remittances.", "C. By offering free legal advice for trade disputes.", "D. By building physical branches in rural areas."], ans:"B", exp:"The partnership with MFS Africa simplifies transfers for AccessAfrica customers, enhancing the bank's ability to facilitate seamless cross-border payments and remittances."},
+{id:'FC10', q:"What are the key pillars of Access Bank's Africa expansion strategy?", opts:["A. Reveal Answer"], ans:"A", exp:"Key pillars include the creation of a single market, strengthening intra-African commerce, championing regional and pan-African cohesion, and elevating African industrial prowess."},
+{id:'FC11', q:"What is the objective of the UNDP, Vodafone, and Access Bank initiative in Ghana?", opts:["A. Reveal Answer"], ans:"A", exp:"The initiative aims to train local women in the Upper East Region of Ghana to understand and utilize technological banking systems, enabling them to save and grow their business capital."},
+{id:'Q30', q:"In the cross-border agricultural trade case study (Zambia to DRC), how does PAPSS specifically help the Zambian cooperative?", opts:["A. It provides free transportation for the maize.", "B. It allows the DRC buyer to pay in CDF and the cooperative to receive ZMW, eliminating third-currency conversions.", "C. It guarantees the purchase of the maize at a fixed global price.", "D. It automatically clears all customs documentation for the export."], ans:"B", exp:"PAPSS allows the DRC buyer to pay in CDF and the Zambian cooperative to receive ZMW, eliminating the need for third-currency conversions and reducing costs and time."},
+{id:'Q31', q:"In the manufacturing case study (Ghana sourcing from Burkina Faso), what is a major challenge regarding the export of finished garments to Côte d'Ivoire?", opts:["A. Ensuring the garments meet the AfCFTA Rules of Origin to qualify for preferential tariffs.", "B. Finding a bank willing to process payments in West African CFA francs.", "C. The lack of a digital trade protocol between the three countries.", "D. The prohibition of textile imports under the AfCFTA."], ans:"A", exp:"A major challenge is ensuring the finished garments meet the AfCFTA Rules of Origin to qualify for preferential tariffs, especially when raw materials originate from another AfCFTA country."},
+{id:'Q32', q:"In the digital services case study, which AfCFTA protocol is vital for a Nigerian fintech expanding to Kenya and Egypt to liberalize financial services?", opts:["A. Protocol on Trade in Goods", "B. Protocol on Trade in Services", "C. Protocol on Competition Policy", "D. Protocol on Women and Youth in Trade"], ans:"B", exp:"The Protocol on Trade in Services is vital for liberalizing financial services, making it easier for the fintech company to obtain licenses and operate across borders."},
+{id:'Q33', q:"What type of finance solution can banks offer to support a manufacturer at various stages of the production process?", opts:["A. Only post-shipment factoring", "B. Integrated supply chain finance solutions", "C. Fixed-rate mortgage loans for factory buildings", "D. Government-backed agricultural subsidies"], ans:"B", exp:"Financial institutions can offer integrated supply chain finance solutions, providing financing at various stages from raw material procurement to distribution of finished goods."},
+{id:'Q34', q:"How can a pan-African bank assist a fintech company in navigating new markets like Kenya and Egypt?", opts:["A. By lobbying the central banks to lower interest rates.", "B. By providing strategic partnerships, local banking infrastructure, regulatory guidance, and access to its customer base.", "C. By taking full ownership of the fintech company's intellectual property.", "D. By guaranteeing zero customer acquisition costs."], ans:"B", exp:"A pan-African bank can offer strategic partnerships, providing local banking infrastructure, regulatory guidance, and access to its customer base to help the fintech company navigate new markets."},
+{id:'FC12', q:"What are the primary challenges faced in the cross-border agricultural trade scenario between Zambia and DRC?", opts:["A. Reveal Answer"], ans:"A", exp:"Challenges include poor logistics and transportation, complex customs procedures, payment and currency exchange issues, differing SPS standards, and the need for pre- and post-shipment finance."},
+{id:'FC13', q:"What challenges does a Nigerian fintech face when expanding its mobile payment solutions to Kenya and Egypt?", opts:["A. Reveal Answer"], ans:"A", exp:"Challenges include regulatory harmonization, interoperability with existing ecosystems, real-time currency conversion, market entry partnerships, and securing access to capital."},
+{id:'Q35', q:"Which emerging sector within the AfCFTA is projected to grow to more than $42 billion by 2027?", opts:["A. Pharmaceuticals", "B. Transport and Logistics", "C. Automotive Industry", "D. Agriculture and Agro-processing"], ans:"C", exp:"Africa's automotive industry is projected to grow to more than $42 billion by 2027 due to increasing domestic demand and high projections for intra-African trade."},
+{id:'FC14', q:"What are the four high-potential emerging sectors expected to see rapid acceleration under the AfCFTA?", opts:["A. Reveal Answer"], ans:"A", exp:"The four sectors are the Automotive Industry, Agriculture and Agro-processing, Pharmaceuticals, and Transport and Logistics."},
+{id:'FC15', q:"What are the key areas where banking professionals will make a significant impact in the AfCFTA era?", opts:["A. Reveal Answer"], ans:"A", exp:"Key areas include trade finance expertise, digital payment solutions, risk management advisory, market intelligence, SME support, innovation and fintech integration, and advocacy and policy engagement."},
+{id:'Q36', q:"Under the AfCFTA Protocol on Investment, what does the principle of 'national treatment' specifically require?", opts:["A. Treating foreign investors no less favorably than domestic investors.", "B. Extending the best treatment offered to any third country to all AfCFTA State Parties.", "C. Guaranteeing zero taxation for all foreign direct investments in the manufacturing sector.", "D. Requiring all foreign investors to partner with a local indigenous company holding at least 51% equity."], ans:"A", exp:"The Protocol on Investment includes provisions for national treatment, which means treating foreign investors no less favorably than domestic ones, alongside most-favored-nation (MFN) treatment."},
+{id:'Q37', q:"According to the AfCFTA Protocol on Intellectual Property Rights, safeguarding geographical indications is intended to achieve which primary economic outcome?", opts:["A. It prevents the importation of generic pharmaceuticals from outside the continent.", "B. It fosters creativity, technology transfer, and industrial development essential for value addition.", "C. It automatically grants patent protection for all digital software developed in Africa.", "D. It eliminates the need for customs inspections on culturally significant artifacts."], ans:"B", exp:"The Protocol on IPRs covers areas such as patents, trademarks, copyrights, and geographical indications, aiming to foster creativity, technology transfer, and industrial development essential for value addition."},
+{id:'Q38', q:"In the operational flow of the Pan-African Payment and Settlement System (PAPSS), what specific action occurs during the 'Conversion' step?", opts:["A. The sender's local bank converts the local currency into US Dollars before sending the instruction.", "B. PAPSS, through its central bank participants, converts the payment into the local currency of the recipient country.", "C. The recipient's bank automatically converts the incoming funds into a stable cryptocurrency.", "D. The African Union's central financial authority fixes the exchange rate for the transaction."], ans:"B", exp:"During the Conversion step, PAPSS, through its central bank participants, converts the payment into the local currency of the recipient country, eliminating the need for intermediary foreign banks."},
+{id:'Q39', q:"How does the issue of 'Currency Convertibility and Volatility' primarily complicate intra-African trade for businesses?", opts:["A. It forces all businesses to use only digital currencies for cross-border settlements.", "B. It limits the ability to freely exchange local currencies, adding complexity, risk, and conversion costs.", "C. It mandates that all trade invoices must be denominated in the Euro to ensure stability.", "D. It prevents commercial banks from offering foreign exchange hedging products."], ans:"B", exp:"The existence of multiple currencies and limited convertibility between them, coupled with volatile exchange rates, adds complexity and risk, as businesses face challenges managing foreign exchange risks and incur additional costs."},
+{id:'Q40', q:"As a strategy for improving market intelligence, what is the specific function of supporting Business-to-Business (B2B) platforms?", opts:["A. To regulate the prices of wholesale goods across different African countries.", "B. To facilitate online platforms that connect African buyers and sellers, fostering new trade relationships.", "C. To provide a centralized database for all government procurement contracts in Africa.", "D. To enforce the AfCFTA Rules of Origin for all digital transactions."], ans:"B", exp:"Supporting Business-to-Business (B2B) platforms involves facilitating online platforms that connect African buyers and sellers, thereby fostering new trade relationships and overcoming information asymmetry."},
+{id:'Q41', q:"Which specific achievements are cited as evidence of Access Bank's dedication to 'Elevating African Industrial Prowess'?", opts:["A. The acquisition of Diamond Bank and the launch of the AccessAfrica platform.", "B. Receiving the Hewlett Packard Award for core banking application and partnering with the European Investment Bank for SME facilitation.", "C. Founding the African Natural Capital Alliance and partnering with MFS Africa.", "D. Training 60 local women in Ghana's Upper East Region in technological banking systems."], ans:"B", exp:"Access Bank's achievements, such as receiving the Hewlett Packard Award for the best implementation of a core banking application and its partnership with the European Investment Bank for SME facilitation, highlight its dedication to fostering industrial competitiveness."},
+{id:'Q42', q:"What is the primary focus of the partnership between Access Bank Ghana and Deloitte Ghana?", opts:["A. Developing a new digital currency for the West African sub-region.", "B. Supporting the growth and resilience of Ghana's SMEs and trade associations through business advisory services.", "C. Building physical infrastructure for Special Economic Zones in Accra.", "D. Providing direct foreign exchange hedging for multinational corporations operating in Ghana."], ans:"B", exp:"Access Bank Ghana has partnered with Deloitte Ghana to support the growth and resilience of Ghana's SMEs and trade associations, providing business interaction series and offering business advisory services."},
+{id:'Q43', q:"In the cross-border agricultural trade case study, what specific challenge relates to Sanitary and Phytosanitary (SPS) standards?", opts:["A. The DRC requires all Zambian maize to be processed into flour before importation.", "B. Ensuring the maize meets the health and safety standards of the DRC, which may differ from Zambian standards.", "C. The Zambian cooperative lacks the necessary digital certificates to track the maize's carbon footprint.", "D. The DRC imposes a strict quota on the number of maize trucks allowed to cross the border daily."], ans:"B", exp:"A key challenge is ensuring the maize meets the health and safety standards of the DRC, which may differ from Zambian standards, highlighting the impact of divergent SPS measures."},
+{id:'Q44', q:"In the manufacturing case study involving a Ghanaian textile manufacturer, how can banks assist in managing counterparty risk?", opts:["A. By issuing cross-border guarantees to suppliers in Burkina Faso and on behalf of the manufacturer to retailers.", "B. By taking direct ownership of the cotton inventory until the final garments are sold in Senegal.", "C. By lobbying the AfCFTA secretariat to waive all tariffs on textiles for a period of five years.", "D. By providing free warehousing space in Accra for the finished garments."], ans:"A", exp:"Banks can issue cross-border guarantees to suppliers (e.g., cotton farmers in Burkina Faso) and on behalf of the manufacturer to retailers, effectively reducing counterparty risk."},
+{id:'Q45', q:"For a Nigerian fintech expanding to Kenya and Egypt, what does the challenge of 'Interoperability' specifically entail?", opts:["A. Ensuring the mobile payment platform seamlessly integrates with existing banking infrastructure and mobile money ecosystems in the target countries.", "B. Converting the company's source code into multiple local languages for customer support.", "C. Merging the fintech's corporate identity with a local Kenyan bank to obtain a license.", "D. Ensuring all transactions are settled in US Dollars before being converted to local currencies."], ans:"A", exp:"Interoperability involves ensuring the mobile payment platform can seamlessly integrate with existing banking infrastructure and mobile money ecosystems in the target countries like Kenya and Egypt."},
+{id:'Q46', q:"According to the manual, what is the current average annual demand for motor cars and commercial vehicles in Africa, indicating the potential for the automotive sector?", opts:["A. 1.5 million motor cars and 250,000 commercial vehicles.", "B. 2.4 million motor cars and 500,000 commercial vehicles.", "C. 3.2 million motor cars and 750,000 commercial vehicles.", "D. 4.0 million motor cars and 1,000,000 commercial vehicles."], ans:"B", exp:"The continent currently has an average annual demand for 2.4 million motor cars and 500,000 commercial vehicles, with domestic demand rising due to increased disposable income and urbanization."},
+{id:'Q47', q:"What is the fundamental shift in the Agriculture and Agro-processing sector that the AfCFTA aims to promote?", opts:["A. Shifting from subsistence farming to large-scale mechanized farming for export to Europe.", "B. Moving beyond exporting raw agricultural produce to processing it into finished goods to create jobs and enhance food security.", "C. Restricting agricultural trade to only member states of the East African Community to stabilize prices.", "D. Subsidizing the importation of cheap food from outside Africa to lower domestic inflation."], ans:"B", exp:"The AfCFTA aims to boost agricultural trade by moving beyond exporting raw agricultural produce to processing it into finished goods (e.g., turning cocoa beans into chocolate), which creates jobs and enhances food security."},
+{id:'Q48', q:"Under the 'Innovation and Fintech Integration' role, what specific emerging technologies are banking professionals expected to explore to enhance services for intra-African trade?", opts:["A. Quantum computing for currency minting and 3D printing for bank branches.", "B. Blockchain for trade finance and AI for risk assessment.", "C. Virtual reality for customer service and biometric scanning for all cross-border shipments.", "D. Satellite internet for rural banking and drone delivery for cash transport."], ans:"B", exp:"As the financial landscape evolves, banking professionals are expected to embrace and integrate new technologies, including exploring blockchain for trade finance, AI for risk assessment, and other emerging innovations."},
+{id:'Q49', q:"In the 2030 class exercise scenario, a client approaches Access Bank with a plan to establish a regional manufacturing hub for electric vehicle components. What is the client's proposed operational model?", opts:["A. Sourcing raw materials from outside Africa and exporting finished components to the EU.", "B. Sourcing raw materials from three different AfCFTA member states and exporting finished components to five other member states.", "C. Importing used electric vehicles from Asia and dismantling them for parts across West Africa.", "D. Manufacturing battery components exclusively for the domestic Nigerian market using 100% local labor."], ans:"B", exp:"The scenario involves a client establishing a regional manufacturing hub for electric vehicle components, sourcing raw materials from three different AfCFTA member states and exporting finished components to five other member states."},
+{id:'FC16', q:"In the context of the AfCFTA and Rules of Origin, what is 'trade deflection'?", opts:["A. Reveal Answer"], ans:"A", exp:"Trade deflection occurs when goods from outside the free trade area are imported into a member state with low external tariffs, undergo minimal processing, and are then re-exported to another member state at preferential tariffs, circumventing the higher external tariffs of the second country."},
+{id:'FC17', q:"What are the four sequential steps in the operational flow of the Pan-African Payment and Settlement System (PAPSS)?", opts:["A. Reveal Answer"], ans:"A", exp:"1. Initiation: The sender initiates a payment in their local currency. 2. Conversion: PAPSS converts the payment into the recipient's local currency via central bank participants. 3. Settlement: PAPSS settles the transaction between the involved central banks. 4. Receipt: The recipient's bank receives the payment in their local currency and credits the account."},
+{id:'FC18', q:"What are the six key challenges in intra-African trade identified in the manual?", opts:["A. Reveal Answer"], ans:"A", exp:"1. Non-Tariff Barriers (NTBs), 2. Inadequate Infrastructure, 3. Access to Finance, 4. Currency Convertibility and Volatility, 5. Information Asymmetry and Market Intelligence, and 6. Limited Industrial Capacity and Diversification."},
+{id:'FC19', q:"What are the four key pillars of Access Bank's Africa expansion and growth strategy?", opts:["A. Reveal Answer"], ans:"A", exp:"1. Creation of a Single Market, 2. Strengthening Intra-African Commerce, 3. Championing Regional and Pan-African Cohesion, and 4. Elevating African Industrial Prowess."},
+{id:'FC20', q:"What are the four high-potential emerging sectors expected to see rapid acceleration under the AfCFTA?", opts:["A. Reveal Answer"], ans:"A", exp:"1. Automotive Industry, 2. Agriculture and Agro-processing, 3. Pharmaceuticals, and 4. Transport and Logistics."},
+{id:'FC21', q:"What are the seven key areas where banking professionals will make a significant impact in the AfCFTA era?", opts:["A. Reveal Answer"], ans:"A", exp:"1. Trade Finance Expertise, 2. Digital Payment Solutions, 3. Risk Management Advisory, 4. Market Intelligence and Business Development, 5. SME Support and Capacity Building, 6. Innovation and Fintech Integration, and 7. Advocacy and Policy Engagement."},
+];
+
+        // ══════════════════════════════════════════
+        //  STORAGE
+        // ══════════════════════════════════════════
+        const STORAGE_KEY = 'afcfta_missed_questions';
+        let missedQuestions = [];
+        try {
+            const saved = localStorage.getItem(STORAGE_KEY);
+            if (saved) missedQuestions = JSON.parse(saved);
+        } catch(e) { console.warn("localStorage not available."); }
+
+        window.currentTestMode = 'practice';
+        window.examTimeLimitSeconds = 3600;
+        window.examTimerInterval = null;
+        window.examAnswers = [];
+        window.examStartTime = null;
+
+        function init() {
+            document.getElementById('total-avail').textContent = QB.length;
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            document.getElementById('mode-select').addEventListener('change', validateStart);
+            document.getElementById('count-select').addEventListener('change', validateStart);
+            document.getElementById('test-mode-select').addEventListener('change', onTestModeChange);
+            document.getElementById('exam-time-input').addEventListener('input', validateStart);
+            document.getElementById('start-btn').addEventListener('click', startQuiz);
+            document.getElementById('next-btn').addEventListener('click', nextQuestion);
+            document.getElementById('skip-btn').addEventListener('click', skipQuestion);
+            document.getElementById('end-session-btn').addEventListener('click', endSession);
+            document.getElementById('new-session-btn').addEventListener('click', resetApp);
+            document.getElementById('retry-missed-btn').addEventListener('click', retryMissed);
+            document.getElementById('prev-exam-btn').addEventListener('click', previousExamQuestion);
+            document.getElementById('next-exam-btn').addEventListener('click', nextExamQuestion);
+            document.getElementById('submit-exam-btn').addEventListener('click', submitExam);
+        }
+
+        function onTestModeChange() {
+            const mode = document.getElementById('test-mode-select').value;
+            document.getElementById('exam-time-group').style.display = mode === 'exam' ? 'block' : 'none';
+            validateStart();
+        }
+
+        function validateStart() {
+            const mode = document.getElementById('mode-select').value;
+            const count = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            const btn = document.getElementById('start-btn');
+            if (mode === 'missed' && missedQuestions.length === 0) {
+                btn.disabled = true;
+                btn.textContent = "No missed questions available";
+                return;
+            }
+            let valid = (mode !== "" && count !== "");
+            if (testMode === 'exam') {
+                const timeVal = parseInt(document.getElementById('exam-time-input').value);
+                if (isNaN(timeVal) || timeVal < 1) valid = false;
+            }
+            btn.disabled = !valid;
+            btn.textContent = "Start Quiz";
+        }
+
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        function startQuiz() {
+            const currentMode = document.getElementById('mode-select').value;
+            const countVal = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            window.currentTestMode = testMode;
+            let pool;
+if (currentMode === 'flashcard') {
+    pool = QB.filter(q => q.opts.length === 1 && q.opts[0] === "A. Reveal Answer");
+} else {
+    pool = currentMode === 'missed' ? QB.filter(q => missedQuestions.includes(q.id)) : [...QB];
+    // Exclude flashcards from MCQ modes
+    pool = pool.filter(q => !(q.opts.length === 1 && q.opts[0] === "A. Reveal Answer"));
+}
+            if (currentMode === 'random') pool = shuffleArray(pool);
+            let currentSessionQuestions = [];
+            if (countVal !== 'all') {
+                const questionCount = Math.min(parseInt(countVal), pool.length);
+                currentSessionQuestions = pool.slice(0, questionCount);
+            } else { currentSessionQuestions = pool; }
+            window.currentIndex = 0;
+            window.correctCount = 0;
+            window.wrongCount = 0;
+            window.skippedCount = 0;
+            window.sessionHistory = [];
+            window.currentSessionQuestions = currentSessionQuestions;
+            window.examAnswers = new Array(currentSessionQuestions.length).fill(-1);
+            window.examStartTime = null;
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            if (currentMode === 'flashcard') { showScreen('flashcard-screen'); renderFlashcard(); }
+            else if (testMode === 'exam') {
+                window.examTimeLimitSeconds = parseInt(document.getElementById('exam-time-input').value) * 60;
+                window.examStartTime = Date.now();
+                startExamTimer();
+                showScreen('quiz-screen');
+                renderQuestion();
+            } else { showScreen('quiz-screen'); renderQuestion(); }
+        }
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        function renderQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('current-q-num').textContent = window.currentIndex + 1;
+            document.getElementById('total-q-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('question-text').textContent = q.q;
+            const optionsList = document.getElementById('options-list');
+            optionsList.innerHTML = '';
+            const isExam = window.currentTestMode === 'exam';
+            document.getElementById('quiz-stats-bar').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-timer').style.display = isExam ? 'block' : 'none';
+            document.getElementById('practice-actions').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-actions').style.display = isExam ? 'flex' : 'none';
+            document.getElementById('explanation').classList.remove('visible');
+            document.getElementById('explanation').textContent = '';
+            if (isExam) {
+                document.getElementById('prev-exam-btn').disabled = (window.currentIndex === 0);
+                document.getElementById('next-exam-btn').disabled = (window.currentIndex === window.currentSessionQuestions.length - 1);
+            }
+            q.opts.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = opt;
+                if (isExam) {
+                    if (window.examAnswers[window.currentIndex] === idx) btn.classList.add('selected');
+                    btn.onclick = () => selectExamAnswer(idx);
+                } else { btn.onclick = () => handleAnswer(idx, q); }
+                optionsList.appendChild(btn);
+            });
+            if (!isExam) {
+                document.getElementById('next-btn').style.display = 'none';
+                document.getElementById('skip-btn').style.display = 'block';
+                document.getElementById('end-session-btn').style.display = 'block';
+            }
+            updateProgress();
+            if (!isExam) updateLiveScore();
+        }
+
+        function handleAnswer(selectedIdx, q) {
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(btn => btn.disabled = true);
+            const isCorrect = q.ans === String.fromCharCode(65 + selectedIdx);
+            if (isCorrect) {
+                buttons[selectedIdx].classList.add('correct');
+                window.correctCount++;
+                missedQuestions = missedQuestions.filter(id => id !== q.id);
+            } else {
+                buttons[selectedIdx].classList.add('wrong');
+                const correctIdx = q.ans.charCodeAt(0) - 65;
+                if (correctIdx < buttons.length) buttons[correctIdx].classList.add('correct');
+                window.wrongCount++;
+                if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            }
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            const expEl = document.getElementById('explanation');
+            expEl.textContent = q.exp;
+            expEl.classList.add('visible');
+            document.getElementById('next-btn').style.display = 'block';
+            document.getElementById('skip-btn').style.display = 'none';
+            window.sessionHistory.push({ q: q, userAnswer: String.fromCharCode(65 + selectedIdx), isCorrect: isCorrect, status: isCorrect ? 'correct' : 'wrong' });
+            updateLiveScore();
+        }
+
+        function skipQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            window.skippedCount++;
+            if (!missedQuestions.includes(q.id)) { missedQuestions.push(q.id); try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {} document.getElementById('total-missed').textContent = missedQuestions.length; }
+            window.sessionHistory.push({ q: q, userAnswer: 'Skipped', isCorrect: false, status: 'skipped' });
+            nextQuestion();
+        }
+
+        function nextQuestion() {
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderQuestion();
+            else showResults();
+        }
+
+        function selectExamAnswer(idx) { window.examAnswers[window.currentIndex] = idx; renderQuestion(); }
+        function previousExamQuestion() { if (window.currentIndex > 0) { window.currentIndex--; renderQuestion(); } }
+        function nextExamQuestion() { if (window.currentIndex < window.currentSessionQuestions.length - 1) { window.currentIndex++; renderQuestion(); } }
+
+        function startExamTimer() {
+            updateExamTimerDisplay();
+            window.examTimerInterval = setInterval(() => {
+                const elapsed = Math.floor((Date.now() - window.examStartTime) / 1000);
+                const remaining = window.examTimeLimitSeconds - elapsed;
+                if (remaining <= 0) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; submitExam(); return; }
+                updateExamTimerDisplay(remaining);
+            }, 1000);
+        }
+
+        function updateExamTimerDisplay(remainingSecs) {
+            if (remainingSecs === undefined) remainingSecs = window.examTimeLimitSeconds;
+            const mins = Math.floor(remainingSecs / 60);
+            const secs = remainingSecs % 60;
+            document.getElementById('timer-display').textContent = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+        }
+
+        function submitExam() {
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            const questions = window.currentSessionQuestions;
+            let correct = 0, wrong = 0, skipped = 0;
+            window.sessionHistory = [];
+            questions.forEach((q, index) => {
+                const selectedIdx = window.examAnswers[index];
+                let userAnswerLetter = 'Not answered';
+                let isCorrect = false;
+                let status = 'skipped';
+                if (selectedIdx !== -1) {
+                    userAnswerLetter = String.fromCharCode(65 + selectedIdx);
+                    isCorrect = (userAnswerLetter === q.ans);
+                    status = isCorrect ? 'correct' : 'wrong';
+                }
+                if (status === 'correct') correct++;
+                else if (status === 'wrong') wrong++;
+                else skipped++;
+                window.sessionHistory.push({ q: q, userAnswer: userAnswerLetter, isCorrect: isCorrect, status: status });
+            });
+            window.correctCount = correct;
+            window.wrongCount = wrong;
+            window.skippedCount = skipped;
+            const totalSeconds = Math.floor((Date.now() - window.examStartTime) / 1000);
+            const timeTakenStr = formatTime(totalSeconds);
+            window.sessionHistory.forEach(item => { if (item.status === 'wrong' || item.status === 'skipped') { if (!missedQuestions.includes(item.q.id)) missedQuestions.push(item.q.id); } });
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {}
+            showResults(true, timeTakenStr);
+        }
+
+        function formatTime(totalSeconds) { const mins = Math.floor(totalSeconds / 60); const secs = totalSeconds % 60; return String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0'); }
+
+        function updateProgress() {
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('progress-bar').style.width = pct + '%';
+        }
+
+        function updateLiveScore() {
+            const total = window.correctCount + window.wrongCount;
+            const score = total === 0 ? 0 : Math.round((window.correctCount / total) * 100);
+            document.getElementById('live-correct').textContent = window.correctCount;
+            document.getElementById('live-wrong').textContent = window.wrongCount;
+            document.getElementById('live-score').textContent = score + '%';
+        }
+
+        function renderFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('fc-current-num').textContent = window.currentIndex + 1;
+            document.getElementById('fc-total-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('fc-question').textContent = q.q;
+            document.getElementById('fc-answer').textContent = "Answer: " + q.ans;
+            document.getElementById('fc-explanation').textContent = q.exp;
+            document.getElementById('flashcard').classList.remove('flipped');
+            document.getElementById('fc-actions').style.display = 'none';
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('fc-progress-bar').style.width = pct + '%';
+        }
+
+        function flipCard() {
+            document.getElementById('flashcard').classList.toggle('flipped');
+            setTimeout(() => { document.getElementById('fc-actions').style.display = 'flex'; }, 300);
+        }
+
+        function handleFlashcardDecision(gotIt) {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (gotIt) missedQuestions = missedQuestions.filter(id => id !== q.id);
+            else if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function skipFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (!missedQuestions.includes(q.id)) { missedQuestions.push(q.id); try { localStorage.setItem(STORAGE_KEY, JSON.stringify(missedQuestions)); } catch(e) {} document.getElementById('total-missed').textContent = missedQuestions.length; }
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function endSession() {
+            if (window.currentTestMode === 'exam') { if (confirm('Are you sure you want to submit your exam?')) submitExam(); }
+            else showResults();
+        }
+
+        function showResults(isExam = false, timeTaken = null) {
+            showScreen('results-screen');
+            const total = window.correctCount + window.wrongCount + window.skippedCount;
+            const score = (window.correctCount + window.wrongCount) === 0 ? 0 : Math.round((window.correctCount / (window.correctCount + window.wrongCount)) * 100);
+            const scoreEl = document.getElementById('results-score');
+            scoreEl.textContent = score + '%';
+            scoreEl.className = 'results-score';
+            if (score >= 80) scoreEl.classList.add('green');
+            else if (score >= 60) scoreEl.classList.add('amber');
+            else scoreEl.classList.add('red');
+            document.getElementById('res-correct').textContent = window.correctCount;
+            document.getElementById('res-wrong').textContent = window.wrongCount;
+            document.getElementById('res-skipped').textContent = window.skippedCount;
+            document.getElementById('res-total').textContent = total;
+            const timeBox = document.getElementById('time-stat-box');
+            if (isExam && timeTaken) { document.getElementById('res-time').textContent = timeTaken; timeBox.style.display = 'block'; }
+            else { timeBox.style.display = 'none'; }
+            const reviewSection = document.getElementById('review-section');
+            reviewSection.innerHTML = '';
+            window.sessionHistory.forEach(item => {
+                const div = document.createElement('div');
+                div.className = `review-item ${item.status}`;
+                let correctAnsText = item.q.opts.find(opt => opt.startsWith(item.q.ans + '.')) || item.q.ans;
+                div.innerHTML = `<div class="review-q">${item.q.q}</div><div class="review-detail">Your Answer: <strong>${item.userAnswer}</strong></div><div class="review-detail">Correct Answer: <strong>${correctAnsText}</strong></div><div class="review-detail" style="margin-top: 8px; font-style: italic;">${item.q.exp}</div>`;
+                reviewSection.appendChild(div);
+            });
+            if (window.sessionHistory.length === 0) reviewSection.innerHTML = '<div class="review-item"><div class="review-q">No questions were answered in this session.</div></div>';
+        }
+
+        function resetApp() {
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            document.getElementById('mode-select').value = '';
+            document.getElementById('count-select').value = '';
+            document.getElementById('test-mode-select').value = 'practice';
+            document.getElementById('exam-time-group').style.display = 'none';
+            document.getElementById('start-btn').disabled = true;
+            showScreen('setup-screen');
+            document.getElementById('total-avail').textContent = QB.length;
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+        }
+
+        function retryMissed() {
+            document.getElementById('mode-select').value = 'missed';
+            document.getElementById('count-select').value = 'all';
+            validateStart();
+            startQuiz();
+        }
+
+        init();
+    </script>
+</body>
+</html>

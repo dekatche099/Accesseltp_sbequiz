@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FGM Quiz — International Banking & Finance</title>
+    <style>
+        :root {
+            --bg-primary: #0f172a; --bg-secondary: #1e293b; --bg-tertiary: #334155;
+            --text-primary: #f8fafc; --text-secondary: #cbd5e1;
+            --accent: #3b82f6; --accent-hover: #2563eb;
+            --success: #22c55e; --error: #ef4444; --warning: #f59e0b;
+            --border-radius: 12px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: var(--bg-primary); color: var(--text-primary); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { width: 100%; max-width: 600px; background-color: var(--bg-secondary); border-radius: var(--border-radius); padding: 24px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); }
+        h1, h2, h3 { text-align: center; margin-bottom: 16px; }
+        .screen { display: none; animation: fadeIn 0.3s ease-in-out; }
+        .screen.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 600; }
+        select, button, input { width: 100%; padding: 14px; border-radius: var(--border-radius); border: 1px solid var(--bg-tertiary); background-color: var(--bg-tertiary); color: var(--text-primary); font-size: 16px; cursor: pointer; transition: all 0.2s; min-height: 52px; }
+        input[type="number"] { cursor: text; }
+        select:focus, input:focus { outline: none; border-color: var(--accent); }
+        button { background-color: var(--accent); border: none; font-weight: 700; margin-top: 10px; }
+        button:hover:not(:disabled) { background-color: var(--accent-hover); }
+        button:disabled { background-color: var(--bg-tertiary); color: var(--text-secondary); cursor: not-allowed; opacity: 0.6; }
+        .stats-bar { display: flex; justify-content: space-between; background-color: var(--bg-tertiary); padding: 12px; border-radius: var(--border-radius); margin-bottom: 20px; font-size: 14px; font-weight: 600; }
+        .progress-container { width: 100%; height: 8px; background-color: var(--bg-tertiary); border-radius: 4px; margin-bottom: 24px; overflow: hidden; }
+        .progress-bar { height: 100%; background-color: var(--accent); transition: width 0.3s ease; }
+        .question-text { font-size: 18px; font-weight: 600; margin-bottom: 24px; line-height: 1.5; }
+        .options-list { display: flex; flex-direction: column; gap: 12px; }
+        .option-btn { text-align: left; background-color: var(--bg-tertiary); border: 2px solid transparent; padding: 16px; border-radius: var(--border-radius); cursor: pointer; transition: all 0.2s; font-size: 16px; min-height: 56px; }
+        .option-btn:hover:not(:disabled) { background-color: #475569; }
+        .option-btn.correct { background-color: rgba(34, 197, 94, 0.2); border-color: var(--success); color: var(--success); }
+        .option-btn.wrong { background-color: rgba(239, 68, 68, 0.2); border-color: var(--error); color: var(--error); }
+        .option-btn.selected { border-color: var(--accent); background-color: rgba(59, 130, 246, 0.1); }
+        .explanation { margin-top: 20px; padding: 16px; background-color: rgba(59, 130, 246, 0.1); border-left: 4px solid var(--accent); border-radius: 4px; font-size: 15px; line-height: 1.5; display: none; }
+        .explanation.visible { display: block; animation: fadeIn 0.3s ease-in-out; }
+        .action-buttons { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+        .action-buttons button { flex: 1; min-width: 80px; }
+        .btn-secondary { background-color: var(--bg-tertiary); }
+        .btn-secondary:hover:not(:disabled) { background-color: #475569; }
+        .flashcard-container { perspective: 1000px; min-height: 300px; margin-bottom: 20px; }
+        .flashcard { width: 100%; min-height: 300px; position: relative; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer; }
+        .flashcard.flipped { transform: rotateY(180deg); }
+        .flashcard-face { position: absolute; width: 100%; min-height: 300px; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px; background-color: var(--bg-tertiary); border-radius: var(--border-radius); text-align: center; border: 2px solid var(--bg-tertiary); }
+        .flashcard-back { transform: rotateY(180deg); background-color: rgba(59, 130, 246, 0.1); border-color: var(--accent); }
+        .flashcard-hint { margin-top: 12px; font-size: 14px; color: var(--text-secondary); }
+        .results-score { font-size: 48px; font-weight: 800; text-align: center; margin: 20px 0; }
+        .results-score.green { color: var(--success); }
+        .results-score.amber { color: var(--warning); }
+        .results-score.red { color: var(--error); }
+        .results-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
+        .stat-box { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); text-align: center; }
+        .stat-value { font-size: 24px; font-weight: 700; display: block; }
+        .stat-label { font-size: 14px; color: var(--text-secondary); }
+        .review-section { max-height: 400px; overflow-y: auto; margin-bottom: 24px; padding-right: 8px; }
+        .review-item { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); margin-bottom: 12px; border-left: 4px solid var(--bg-tertiary); }
+        .review-item.correct { border-left-color: var(--success); }
+        .review-item.wrong { border-left-color: var(--error); }
+        .review-item.skipped { border-left-color: var(--warning); }
+        .review-q { font-weight: 600; margin-bottom: 8px; font-size: 15px; }
+        .review-detail { font-size: 14px; color: var(--text-secondary); margin-bottom: 4px; }
+        .review-detail strong { color: var(--text-primary); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb { background: var(--bg-tertiary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="setup-screen" class="screen active">
+            <h1>FGM Quiz Master</h1>
+            <p style="text-align:center; color:var(--text-secondary); margin-bottom: 20px;">International Banking & Finance</p>
+            <div class="form-group">
+                <label for="mode-select">Quiz Mode</label>
+                <select id="mode-select">
+                    <option value="">Select a mode...</option>
+                    <option value="random">Random Mix</option>
+                    <option value="sequential">Sequential</option>
+                    <option value="missed">Missed Only</option>
+                    <option value="flashcard">Flashcard Revision</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="count-select">Number of Questions</label>
+                <select id="count-select">
+                    <option value="">Select count...</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="all">All (98)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="test-mode-select">Test Mode</label>
+                <select id="test-mode-select">
+                    <option value="practice">Practice Mode</option>
+                    <option value="exam">Exam Mode</option>
+                </select>
+            </div>
+            <div id="exam-time-group" class="form-group" style="display: none;">
+                <label for="exam-time-input">Time Limit (minutes)</label>
+                <input type="number" id="exam-time-input" min="1" max="300" value="60">
+            </div>
+            <div class="stats-bar">
+                <span>Total Available: <span id="total-avail">0</span></span>
+                <span>Missed Questions: <span id="total-missed">0</span></span>
+            </div>
+            <button id="start-btn" disabled>Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div id="exam-timer" style="text-align: center; font-size: 20px; font-weight: 700; margin-bottom: 12px; display: none;">
+                Time Remaining: <span id="timer-display">60:00</span>
+            </div>
+            <div class="stats-bar" id="quiz-stats-bar">
+                <span>Correct: <span id="live-correct">0</span></span>
+                <span>Wrong: <span id="live-wrong">0</span></span>
+                <span>Score: <span id="live-score">0%</span></span>
+            </div>
+            <div class="progress-container"><div class="progress-bar" id="progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Question <span id="current-q-num">1</span> of <span id="total-q-num">10</span>
+            </div>
+            <div class="question-text" id="question-text"></div>
+            <div class="options-list" id="options-list"></div>
+            <div class="explanation" id="explanation"></div>
+            <div class="action-buttons" id="practice-actions">
+                <button class="btn-secondary" id="skip-btn">Skip</button>
+                <button class="btn-secondary" id="end-session-btn">End Session</button>
+                <button id="next-btn" style="display: none;">Next</button>
+            </div>
+            <div class="action-buttons" id="exam-actions" style="display: none;">
+                <button class="btn-secondary" id="prev-exam-btn">Previous</button>
+                <button class="btn-secondary" id="submit-exam-btn">Submit Exam</button>
+                <button id="next-exam-btn">Next</button>
+            </div>
+        </div>
+
+        <div id="flashcard-screen" class="screen">
+            <div class="progress-container"><div class="progress-bar" id="fc-progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Card <span id="fc-current-num">1</span> of <span id="fc-total-num">10</span>
+            </div>
+            <div class="flashcard-container" onclick="flipCard()">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-face flashcard-front">
+                        <div id="fc-question" style="font-size: 18px; font-weight: 600;"></div>
+                        <div class="flashcard-hint">Tap to reveal answer</div>
+                    </div>
+                    <div class="flashcard-face flashcard-back">
+                        <div id="fc-answer" style="font-size: 18px; font-weight: 700; color: var(--success); margin-bottom: 12px;"></div>
+                        <div id="fc-explanation" style="font-size: 15px; line-height: 1.5;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons" id="fc-actions" style="display: none;">
+                <button class="btn-secondary" style="border-color: var(--error); color: var(--error);" onclick="handleFlashcardDecision(false)">Still Learning</button>
+                <button style="border-color: var(--success); color: var(--success); background-color: rgba(34, 197, 94, 0.1);" onclick="handleFlashcardDecision(true)">Got It</button>
+            </div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="fc-skip-btn" onclick="skipFlashcard()">Skip</button>
+                <button class="btn-secondary" id="fc-end-btn" onclick="endSession()">End Session</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <h2>Session Complete!</h2>
+            <div class="results-score" id="results-score">0%</div>
+            <div class="results-stats" id="results-stats-grid">
+                <div class="stat-box"><span class="stat-value" id="res-correct" style="color: var(--success);">0</span><span class="stat-label">Correct</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-wrong" style="color: var(--error);">0</span><span class="stat-label">Wrong</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-skipped" style="color: var(--warning);">0</span><span class="stat-label">Skipped</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-total">0</span><span class="stat-label">Total</span></div>
+                <div class="stat-box" id="time-stat-box" style="display: none;"><span class="stat-value" id="res-time">0:00</span><span class="stat-label">Time Taken</span></div>
+            </div>
+            <h3>Review All Answers</h3>
+            <div class="review-section" id="review-section"></div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="retry-missed-btn">Retry Missed</button>
+                <button id="new-session-btn">New Session</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const QB = [
+{id:'Q1', q:"Which of these is not a precondition to qualify for loan from International Finance Corporation?", opts:["A. The project must satisfy IFC environmental and social standards","B. The project must be in the private sector","C. The project must be technically sound","D. The project must be mutually exclusive"], ans:"D", exp:"Mutual exclusivity is not a precondition for IFC loans. The actual preconditions include the project being in the private sector, technically sound, and satisfying IFC environmental and social standards."},
+{id:'Q2', q:"Which of these members of World Bank Group (WBG) offers political risk insurance and credit enhancement guarantee?", opts:["A. International Development Association (IDA)","B. International Bank for Reconstruction and Development (IBRD)","C. Multilateral Investment Guarantee Agency (MIGA)","D. International Finance Corporation (IFC)"], ans:"C", exp:"MIGA (Multilateral Investment Guarantee Agency) is the WBG member that offers political risk insurance and credit enhancement guarantees to encourage foreign investment in developing countries."},
+{id:'Q3', q:"The International Bank for Reconstruction and Development (IBRD) was established in 1945 to provide financing on the basis of?", opts:["A. Sovereign guarantees","B. Central Bank guarantees","C. Bond guarantees","D. European Union guarantees"], ans:"A", exp:"The IBRD was established in 1945 to provide financing on the basis of sovereign guarantees, meaning loans are backed by the guarantee of member country governments."},
+{id:'Q4', q:"Which of these statements is NOT true for international banking?", opts:["A. International banks must set up operations in other countries","B. International banks engage in cross-border operations","C. International banks must have international clients","D. International banks can perform local transactions"], ans:"A", exp:"International banks do not necessarily have to set up physical operations in other countries. They can engage in cross-border operations, have international clients, and still perform local transactions without a foreign physical presence."},
+{id:'Q5', q:"One of the many functions of an international bank is to facilitate?", opts:["A. Continental cooperation","B. Cross border trade and services","C. Equilibrium price of international commodities","D. Peace accord among warring nations"], ans:"B", exp:"A core function of international banks is to facilitate cross-border trade and services, including financing imports/exports, processing international payments, and supporting global commerce."},
+{id:'Q6', q:"Which of the following is not considered as a constituent of African Development Banks (AfDB)?", opts:["A. African Agricultural Bank (AAB)","B. African Development Fund (ADF)","C. Nigerian Trust Fund (NTF)","D. African Development Bank (AfDA)"], ans:"A", exp:"The African Agricultural Bank (AAB) is not a constituent of the AfDB Group. The AfDB Group consists of the African Development Bank (ADB), the African Development Fund (ADF), and the Nigerian Trust Fund (NTF)."},
+{id:'Q7', q:"A component of balance of payment account where the immediate means of international payment by the monetary authorities and some private sector operators are recorded is called?", opts:["A. Miscellaneous errors and omissions","B. Official Reserve Account","C. Capital account","D. Current account"], ans:"B", exp:"The Official Reserve Account records the immediate means of international payment held by monetary authorities, including foreign exchange reserves, gold, and Special Drawing Rights (SDRs)."},
+{id:'Q8', q:"Which of the following is not a preventive/corrective measure of discrepancies in correspondent banking relationship?", opts:["A. Ensuring accuracy of records","B. Regular rendition of statement","C. Robust channel of communication","D. Regular meeting between both parties"], ans:"D", exp:"Regular meetings between both parties is not listed as a standard preventive/corrective measure for discrepancies in correspondent banking. The key measures are accuracy of records, regular statement rendition, and robust communication channels."},
+{id:'Q9', q:"Which of the following is not the cause of Balance of Payment (BOP) disequilibrium?", opts:["A. Interest rate differential","B. Level of economic development","C. Overvalued currency","D. Relative peace in the country"], ans:"D", exp:"Relative peace in a country is not a cause of BOP disequilibrium. Causes include interest rate differentials, level of economic development, and overvalued currency."},
+{id:'Q10', q:"Under the BOP only one of the following items can be categorized as Miscellaneous (errors and omissions)?", opts:["A. Miscellaneous organisations running expenses","B. Corporate travelling expenses","C. Corporate medical expenses","D. Allocation of special drawing rights (SDRs) and errors and omissions"], ans:"D", exp:"The allocation of Special Drawing Rights (SDRs) and errors and omissions is the item correctly categorized under the BOP Miscellaneous (errors and omissions) account."},
+{id:'Q11', q:"In the treatment of translation exposure, current rate signifies?", opts:["A. The expected forward rate","B. The expected spot rates","C. The previous rate on the date of preparation of the balance sheet","D. The prevailing rate on the date of the balance sheet"], ans:"D", exp:"In translation exposure, the current rate refers to the prevailing (spot) exchange rate on the date the balance sheet is being prepared, not a forward or historical rate."},
+{id:'Q12', q:"When one unit of foreign currency is quoted against variable units of local currency, this is called?", opts:["A. Two way bid quotation","B. Direct quotation","C. Spot quotation","D. Indirect quotation"], ans:"B", exp:"A direct quotation is when one unit of foreign currency is expressed in terms of variable units of the local/home currency. For example, 1 USD = 780 NGN is a direct quote from Nigeria's perspective."},
+{id:'Q13', q:"All of these are services offered by Nigerian Trust Fund (NTF) except?", opts:["A. Private sector operations","B. Concessional loan operations with short term maturity","C. Concessional loan operations with long term maturity","D. Concessional project financing loans"], ans:"B", exp:"The NTF offers concessional project financing loans and concessional loan operations with long-term maturity, not short-term maturity. Short-term concessional loan operations are not among its standard services."},
+{id:'Q14', q:"The price at which a trader may exercise his/her right in a currency option is called?", opts:["A. The equilibrium trade price","B. The covered interest price","C. The strike price","D. The purchase price"], ans:"C", exp:"The strike price (also called the exercise price) is the predetermined price at which the holder of a currency option has the right to buy or sell the underlying currency."},
+{id:'Q15', q:"Which of these is the acronym of GDR?", opts:["A. Gold Diamond Reserves","B. Global Depository Region","C. Global Depository Reserves","D. Global Depository Receipts"], ans:"D", exp:"GDR stands for Global Depository Receipts. These are bank certificates issued in more than one country for shares in a foreign company, allowing investors to trade shares in global markets."},
+{id:'Q16', q:"Mentimeter Ltd with presence in three continents is currently experiencing interference into its business activities by one of the host country's governments which had led to total seizure of all its assets. Mentimeter will be said to be facing?", opts:["A. Transfer risks","B. Transaction risk","C. Sovereign risk","D. Political risk"], ans:"D", exp:"Political risk refers to the risk that a foreign government's actions — such as asset seizure, expropriation, or interference — will adversely affect a company's operations. Total seizure of assets by a host government is a classic example."},
+{id:'Q17', q:"Which of these is NOT a proven method of adjusting for translation exposure?", opts:["A. Monetary/Non-monetary method","B. Accounting method","C. Current/Non-current method","D. Current rate method"], ans:"B", exp:"The proven methods of translation exposure include the Current Rate method, Current/Non-current method, and Monetary/Non-monetary method (Temporal method). 'Accounting method' is not a recognised translation exposure method."},
+{id:'Q18', q:"A bank with local or international presence that provides service for another bank is?", opts:["A. Central bank","B. Correspondent bank","C. Development bank","D. An international bank"], ans:"B", exp:"A correspondent bank is a financial institution that provides services on behalf of another bank, typically in a foreign country, including wire transfers, accepting deposits, and conducting business transactions."},
+{id:'Q19', q:"All except one of the following adequately describe correspondent banking?", opts:["A. Act as an agent of another bank in the establishment and advice of letters of credit","B. Opening of customers account on behalf of another bank for domestic services","C. A correspondent bank is a financial institution that services on behalf of another","D. A correspondent bank can facilitate wire transfers, conduct business transactions, accepts deposits, and gather documents on behalf of another bank"], ans:"B", exp:"Opening customer accounts on behalf of another bank for domestic services is not a standard description of correspondent banking. Correspondent banking is primarily about cross-border/international service facilitation between banks."},
+{id:'Q20', q:"An action taken by a merchant that seeks to address transaction exposure is said to do what to the risk?", opts:["A. Analyse","B. Identify","C. Understand","D. Cover"], ans:"D", exp:"When a merchant takes action to address transaction exposure — such as using hedging instruments — they are said to 'cover' the risk. Covering involves using financial instruments to protect against adverse exchange rate movements."},
+{id:'Q21', q:"An arbitrage situation may occur when ONE of the following situations arises?", opts:["A. Large price differential between two countries of same product","B. Large balance of trade deficit between two countries","C. Large economic exposure between two competing firms","D. Large interest rate differential between two foreign companies"], ans:"A", exp:"Arbitrage occurs when there is a price differential for the same product or asset in different markets, allowing traders to buy low in one market and sell high in another for a risk-free profit."},
+{id:'Q22', q:"The International Organization of Securities Commissions (IOSCO) is an association of organizations that regulate the securities and futures markets. Which of the following markets in Nigeria is related to IOSCO?", opts:["A. Foreign exchange Market as regulated by Central Bank of Nigeria","B. Capital Market as regulated by Security Exchange Commission (SEC)","C. Money Market as regulated by Central Bank of Nigeria (CBN)","D. Commodities Market yet to be active"], ans:"B", exp:"IOSCO relates to the Capital Market regulated by the Securities and Exchange Commission (SEC) in Nigeria. SEC is Nigeria's equivalent of securities regulators that are members of IOSCO."},
+{id:'Q23', q:"In a balance of payment accounting, a situation where there is an increase in purchasing power is regarded as?", opts:["A. Balance of payment disequilibrium","B. Balance of payment equilibrium","C. Balance of payment surplus","D. Balance of payment deficit"], ans:"C", exp:"A BOP surplus occurs when a country receives more payments from abroad than it makes to other countries, resulting in an increase in purchasing power and accumulation of foreign reserves."},
+{id:'Q24', q:"The balance of payment account that records foreign investments is the?", opts:["A. Transfer Account","B. External Account","C. Capital Account","D. Current Account"], ans:"C", exp:"The Capital Account (also referred to as the Financial Account in some frameworks) records foreign investments, including foreign direct investment (FDI) and foreign portfolio investment (FPI)."},
+{id:'Q25', q:"The World Bank Group consists of?", opts:["A. IBRD, ICSID, IFC, MIGA, IDA","B. IBRD, AFC, AFDB, IFC, IMF","C. IBRD, IDA, MIGA, MAGA, APGA","D. IBRD, MIGA, MENU, IDA, ICSID"], ans:"A", exp:"The World Bank Group consists of five institutions: IBRD, IDA, IFC, MIGA, and ICSID."},
+{id:'Q26', q:"Which of the following functions is NOT a broad function of International Financial Institutions such as World Bank Group and IMF?", opts:["A. Play significant role in the privatization and regulation of public utilities and natural resources","B. Loans to private businesses investing in developing countries","C. Mandatory capacity development for all licensed banks in the world","D. Provision of loans, grants, and technical assistance to governments"], ans:"C", exp:"Mandatory capacity development for all licensed banks in the world is not a function of the World Bank Group or IMF. Their broad functions include providing loans, grants, technical assistance, and playing roles in privatization and regulation in developing countries."},
+{id:'Q27', q:"Economic exposure in foreign currency management can also be referred to as?", opts:["A. Competitive exposure","B. Translation exposure","C. Hedging","D. Competitive advantage"], ans:"A", exp:"Economic exposure is also known as competitive exposure or operating exposure. It refers to the extent to which a firm's future cash flows and market value are affected by unexpected changes in exchange rates."},
+{id:'Q28', q:"In a country's balance of payment of accounts, the main difference between long-term and short-term capital is?", opts:["A. Ease of transferability","B. Duration of capital flow","C. Rate of return on the capital flow","D. Origin of the capital flow"], ans:"B", exp:"The main distinction between long-term and short-term capital in the BOP capital account is the duration (time period) of the capital flow. Long-term capital flows have maturities exceeding one year, while short-term flows are under one year."},
+{id:'Q29', q:"__________ is an interest-bearing international reserve asset created by the International Monetary Fund (IMF) to supplement other reserve assets of member countries.", opts:["A. Foreign Bond","B. Eurobond","C. International Monetary Fund reserve","D. Special Drawing Right"], ans:"D", exp:"Special Drawing Rights (SDRs) are interest-bearing international reserve assets created by the IMF in 1969 to supplement member countries' official reserves. They are not a currency but can be exchanged for freely usable currencies."},
+{id:'Q30', q:"Which of the following is incorrect about Multilateral Development Banks (MDBs)?", opts:["A. Multilateral Development Banks are institutions created by a group of countries to provide financing and professional advising","B. Multilateral Development Banks (MDBs) have large membership including developed donor countries","C. The mission of the multilateral development banks is to serve as Central Banks in their pursuit of monetary and financial stability","D. Multilateral Development Banks (MDBs) finance projects in the form of long-term loans at market rates"], ans:"C", exp:"MDBs do not serve as Central Banks. That is the role of the Bank for International Settlements (BIS). MDBs are development finance institutions that provide long-term loans, grants, and technical assistance for development projects."},
+{id:'Q31', q:"A method of translating accounting or balance sheet exposure where all current assets and current liabilities are translated at current rate is?", opts:["A. Current Rate method","B. Temporal Method","C. Current/Non-Current method","D. Monetary/Non-Monetary Method"], ans:"C", exp:"The Current/Non-Current method translates all current assets and current liabilities at the current (spot) rate, while non-current items are translated at historical rates."},
+{id:'Q32', q:"A Multilateral Financial Institution whose broad mission is to achieve the twin goals of ending extreme poverty and shared prosperity is?", opts:["A. World Bank Group","B. African Development Bank","C. Islamic Development Bank","D. European Investment Bank"], ans:"A", exp:"The World Bank Group's mission is explicitly defined around two goals: ending extreme poverty and boosting shared prosperity (promoting income growth of the bottom 40% in every country)."},
+{id:'Q33', q:"Which of these appropriately defines a Eurocurrency?", opts:["A. A bank deposit held in a currency other than the currency of the host country","B. A bank deposit in a non-European currency held in Europe","C. A currency of the European Union","D. Bank deposit in a European currency held outside Europe"], ans:"A", exp:"A Eurocurrency is any currency deposited in a bank outside the country that issues that currency. For example, US dollars deposited in a London bank are Eurodollars. The key feature is that the currency is held outside its country of origin."},
+{id:'Q34', q:"Which of the following does NOT appropriately define balance of payment accounting?", opts:["A. Balance of Payment statement summarises all the flow of economic transactions between the government, business, and private residents of other countries","B. Balance of Payment summarises all the flow of economic transactions between government, business, and private residents of that country","C. Balance of Payment records flows rather than stocks and reflects changes in accounts similar to an income statement","D. Balance of Payments records transactions that affect the local residents and only transactions in local currency are recorded"], ans:"D", exp:"BOP records all international transactions — not just local currency transactions. It includes transactions in foreign currencies as well. Saying 'only transactions in local currency are recorded' is incorrect."},
+{id:'Q35', q:"Which of these is NOT a constituent institution of the African Development Bank (AfDB)?", opts:["A. The African Development Fund (ADF)","B. The Nigeria Trust Fund (NTF)","C. The African Development Bank (ADB)","D. The Central Bank of Nigeria (CBN)"], ans:"D", exp:"The Central Bank of Nigeria (CBN) is Nigeria's national monetary authority and is not a constituent of the AfDB Group. The AfDB Group comprises the African Development Bank, the African Development Fund (ADF), and the Nigerian Trust Fund (NTF)."},
+{id:'Q36', q:"In the balance of payment capital account, the distinction between foreign direct investment and foreign portfolio investment is made on the basis of?", opts:["A. Degree of management of investment","B. Rate of return on investment","C. Origin of the capital flow","D. Ease of transferability of ownership"], ans:"A", exp:"The key distinction between FDI and FPI is the degree of management control. FDI involves a significant degree of management influence (typically 10%+ ownership), while FPI involves passive investment with no management control."},
+{id:'Q37', q:"All of these are components of current account in balance of payment except?", opts:["A. Portfolio investment","B. Import and export of goods","C. Unilateral transfers","D. Services"], ans:"A", exp:"Portfolio investment is recorded in the Capital/Financial Account, not the Current Account. The Current Account comprises trade in goods, trade in services, income, and unilateral transfers."},
+{id:'Q38', q:"All of these are adjustment means of correcting deficit balance of payment disequilibrium except?", opts:["A. The country could resort to counter trade","B. Currency devaluation","C. Domestic loans can be raised and converted into foreign currency","D. Domestic prices could be deflated to make exports cheaper"], ans:"C", exp:"Raising domestic loans and converting them to foreign currency is a financing method, not an adjustment/corrective measure for BOP deficit. Adjustment measures include currency devaluation, deflating domestic prices, and counter trade."},
+{id:'Q39', q:"The following institutions with the exception of one are considered members of Bretton Woods Institutions?", opts:["A. The World Bank","B. The African Development Bank","C. The International Monetary Fund","D. The International Finance Corporation"], ans:"B", exp:"The Bretton Woods Institutions are the World Bank and the International Monetary Fund (IMF), both established at the 1944 Bretton Woods Conference. The African Development Bank was not established at Bretton Woods."},
+{id:'Q40', q:"Which of the following is the main objective of Bank of International Settlement?", opts:["A. Serve central banks in their pursuit of monetary and financial stability","B. Ensure adherence to standard of auditing of member states","C. Ensure price stability of member countries","D. Ensure proper functioning of the capital market of member countries"], ans:"A", exp:"The primary objective of the Bank for International Settlements (BIS) is to serve central banks in their pursuit of monetary and financial stability, foster international cooperation among central banks, and act as a bank for central banks."},
+{id:'Q41', q:"The Balance of Payment (BOP) statement of account records?", opts:["A. Bilateral transactions","B. Unilateral transactions","C. Political transactions","D. Multilateral transactions"], ans:"A", exp:"The BOP statement records bilateral transactions — economic transactions between residents of one country and residents of the rest of the world. Each transaction involves two parties, making them bilateral in nature."},
+{id:'Q42', q:"One of these is not among the original aims of International Monetary Fund (IMF)?", opts:["A. Coordinate the activities of member countries monetary authorities","B. Promote exchange stability","C. Make resources available to member countries experiencing balance of payment problems","D. Facilitate the expansion and balanced growth of international trade"], ans:"A", exp:"Coordinating the activities of member countries' monetary authorities is not one of the original aims of the IMF. The original aims include promoting exchange stability, facilitating international trade, and providing resources to countries with BOP problems."},
+{id:'Q43', q:"Which of these is not a financing method of adjusting Balance of Payment Disequilibrium?", opts:["A. Counter trade","B. Obtain loan from other countries","C. Sell part of foreign investment","D. Seek assistance from the IMF"], ans:"A", exp:"Counter trade is a trade adjustment measure (not a financing method) for correcting BOP disequilibrium. Financing methods include obtaining loans from other countries, selling foreign investments, and seeking IMF assistance."},
+{id:'Q44', q:"As a treasurer of your bank, which of the following factors will NOT be considered necessary when entering into correspondent relationship with a foreign bank?", opts:["A. Compatibility of operations","B. Nature of transaction","C. Strategy of the foreign bank","D. Comparability of IT network"], ans:"C", exp:"The strategy of the foreign bank is not a primary factor when establishing a correspondent banking relationship. Key considerations include compatibility of operations, nature of transactions, and comparability of IT networks."},
+{id:'Q45', q:"One of the following is NOT a way by which Foreign Exchange risk can be covered?", opts:["A. Currency options","B. Currency trading","C. Matching payments with receipts (Netting)","D. Forward exchange contracts"], ans:"B", exp:"Currency trading (speculation) is not a method of covering/hedging foreign exchange risk — it actually creates or increases risk exposure. Methods of covering FX risk include currency options, netting, and forward exchange contracts."},
+{id:'Q46', q:"An international multilateral institution whose goal is to formulate broad supervisory standards and guidelines for best practice in banking supervision is?", opts:["A. The Basel Committee for Banking Supervision (BCBS)","B. The Bank of International Settlement (BIS)","C. The International Monetary Fund (IMF)","D. The World Bank"], ans:"A", exp:"The Basel Committee for Banking Supervision (BCBS) is the international body that formulates broad supervisory standards and guidelines for best practices in banking supervision, including the Basel I, II, and III accords."},
+{id:'Q47', q:"All of these are constituents of World Bank Group (WBG) except?", opts:["A. Basel Committee for Banking Supervision","B. Multilateral Investment Guarantee Agency","C. International Bank for Reconstruction and Development","D. International Finance Corporation"], ans:"A", exp:"The Basel Committee for Banking Supervision (BCBS) is not part of the World Bank Group. It operates under the Bank for International Settlements (BIS). The WBG consists of IBRD, IDA, IFC, MIGA, and ICSID."},
+{id:'Q48', q:"One of these is not an attribute of a pence rate system?", opts:["A. A fixed unit of home country currency is quoted against variable unit of foreign country currency","B. A fixed unit of foreign country currency is quoted against variable units of home country currency","C. Premium add, discount subtract to get forward rate","D. The applicable principle is buy low, sell high for spot transaction"], ans:"B", exp:"In a pence rate (direct quote) system, a fixed unit of FOREIGN currency is quoted against variable units of HOME currency. Option B describes an indirect quote system, which is not an attribute of the pence rate system."},
+{id:'Q49', q:"Economic exposure in foreign currency management can be referred to as?", opts:["A. Hedging","B. Translation Exposure","C. Competitive exposure","D. Competitive advantage"], ans:"C", exp:"Economic exposure is also known as competitive exposure or operating exposure. It refers to the impact of unexpected exchange rate changes on a firm's future cash flows, revenues, and market value."},
+{id:'Q50', q:"Which of these is not a precondition to qualify for loan from International Finance Corporation? (variant)", opts:["A. The project must be mutually exclusive","B. The project must satisfy IFC environmental and social standards","C. The project must be technically sound","D. The project must be in a private sector"], ans:"A", exp:"Mutual exclusivity is not a precondition for IFC loans. The actual preconditions include the project being in the private sector, technically sound, and satisfying IFC environmental and social standards."},
+{id:'Q51', q:"Owners or shareholders of International Financial Institutions such as World Bank Group and IMF are generally national governments. Which of the following functions is NOT a broad function of these institutions?", opts:["A. Mandatory capacity development for all licensed banks in the world","B. Provision of loans, grants and technical assistance to government","C. Play significant role in the privatization and regulation of public utilities and natural resources","D. Loans to private businesses investing in developing countries"], ans:"A", exp:"Mandatory capacity development for all licensed banks in the world is not a function of the World Bank Group or IMF. Their broad functions include providing loans, grants, technical assistance, and roles in privatization and regulation in developing countries."},
+{id:'Q52', q:"Which of the following does NOT appropriately define balance of payment accounting? (variant)", opts:["A. Balance of payments records flows rather than stocks and reflects changes in accounts similar to an income statement","B. Balance of payment summarizes all the flow of economic transactions between government, business and private residents of that particular country","C. Balance of payment records transactions that affects the local residents and only transactions in local currency are recorded","D. Balance of payment statement summarizes all the flow of economic transactions between the government, businesses and private residents of other countries"], ans:"C", exp:"BOP records all international transactions regardless of currency. Saying 'only transactions in local currency are recorded' is incorrect — foreign currency transactions are equally captured in the BOP statement."},
+{id:'Q53', q:"In the balance of payment capital account, the distinction between foreign direct investment and foreign portfolio investment is made on the basis of? (variant)", opts:["A. Rate of return on investment","B. Degree of management of investment","C. Origin of the capital flow","D. Ease of transferability of ownership"], ans:"B", exp:"The key distinction between FDI and FPI is the degree of management control. FDI involves significant management influence (typically 10%+ ownership), while FPI involves passive investment with no management control."},
+{id:'Q54', q:"Under the BOP only one of the following items can be categorized as Miscellaneous (errors and omissions)? (variant)", opts:["A. Corporate medical expenses","B. Miscellaneous organization running expenses","C. Corporate travelling expenses","D. Allocation of special drawing rights (SDRs) and errors and omissions"], ans:"D", exp:"The allocation of Special Drawing Rights (SDRs) and errors and omissions is the item correctly categorized under the BOP Miscellaneous (errors and omissions) account."},
+{id:'Q55', q:"All these are constituents of World Bank Group except? (variant)", opts:["A. International Bank for Reconstruction and Development","B. Basel Committee for Banking Supervision","C. International Finance Corporation","D. Multilateral Investment Guarantee Agency"], ans:"B", exp:"The Basel Committee for Banking Supervision (BCBS) operates under the Bank for International Settlements (BIS) and is not part of the World Bank Group. The WBG consists of IBRD, IDA, IFC, MIGA, and ICSID."},
+{id:'Q56', q:"In a balance of payments accounting, a situation where there is an increase in purchasing power is regarded as? (variant)", opts:["A. Balance of Payment disequilibrium","B. Balance of payment deficit","C. Balance of Payment Surplus","D. Balance of payment equilibrium"], ans:"C", exp:"A BOP surplus occurs when a country receives more payments from abroad than it makes, resulting in an increase in the country's purchasing power and accumulation of foreign reserves."},
+{id:'Q57', q:"When one unit of foreign currency is quoted against variable units of local currency, this is called? (variant)", opts:["A. Direct Quotation","B. Indirect quotation","C. Spot quotation","D. Two-way bid quotation"], ans:"A", exp:"A direct quotation expresses one unit of foreign currency in terms of variable units of the local/home currency. For example, 1 USD = 780 NGN is a direct quote from Nigeria's perspective."},
+{id:'Q58', q:"All of these are components of current account in balance of payments except? (variant)", opts:["A. Unilateral Transfer","B. Services","C. Portfolio investment","D. Import and export of goods"], ans:"C", exp:"Portfolio investment belongs to the Capital/Financial Account, not the Current Account. The Current Account comprises trade in goods, trade in services, income flows, and unilateral transfers."},
+{id:'Q59', q:"The broad mission and purpose of African Development Bank is to?", opts:["A. Promote political platform that engenders peace among African countries","B. Promote regional collaboration against economic crisis among member countries","C. Promote sustainable economic growth and reduce poverty in Africa","D. Promote monetary cooperation among African countries"], ans:"C", exp:"The African Development Bank's mission is to promote sustainable economic growth and reduce poverty in Africa by mobilizing resources in and outside Africa and providing financial and technical assistance for development projects."},
+{id:'Q60', q:"Which of these members of World Bank Group (WBG) offers political risk insurance and credit enhancement guarantee? (variant)", opts:["A. International Development Association (IDA)","B. International Bank for Reconstruction and Development (IBRD)","C. International Finance Corporation (IFC)","D. Multilateral Investment Guarantee Agency (MIGA)"], ans:"D", exp:"MIGA (Multilateral Investment Guarantee Agency) is the WBG member that provides political risk insurance and credit enhancement guarantees to encourage foreign direct investment into developing countries."},
+{id:'Q61', q:"One of the many functions of an international bank is to facilitate? (variant)", opts:["A. Continental cooperation","B. Equilibrium price of international commodities","C. Cross border trade and services","D. Peace accord among warring nations"], ans:"C", exp:"A core function of international banks is to facilitate cross-border trade and services, including financing imports/exports, processing international payments, and supporting global commerce."},
+{id:'Q62', q:"The balance of payment account that records foreign investments is the? (variant)", opts:["A. Transfer account","B. Current account","C. Capital account","D. External account"], ans:"C", exp:"The Capital Account records foreign investments, including foreign direct investment (FDI) and foreign portfolio investment (FPI)."},
+{id:'Q63', q:"The Balance of Payment (BOP) statement of account records? (variant)", opts:["A. Unilateral transactions","B. Political transactions","C. Bilateral transactions","D. Multilateral transactions"], ans:"C", exp:"The BOP statement records bilateral transactions — economic transactions between residents of one country and residents of the rest of the world."},
+{id:'Q64', q:"A component of balance of payment account where the immediate means of international payment by the monetary authorities and some private sector operators are recorded is called? (variant)", opts:["A. Official reserve account","B. Miscellaneous (errors and omissions)","C. Capital account","D. Current account"], ans:"A", exp:"The Official Reserve Account records the immediate means of international payment held by monetary authorities, including foreign exchange reserves, gold, and SDRs."},
+{id:'Q65', q:"Which of these appropriately defines a Eurocurrency? (variant)", opts:["A. A bank deposit held in a currency other than the currency of the host country","B. A currency of the European Union","C. Bank deposit in a European currency held outside Europe","D. A bank deposit in a non-European currency held in Europe"], ans:"A", exp:"A Eurocurrency is any currency deposited in a bank outside the country that issues that currency. The key feature is that the currency is held outside its country of origin."},
+{id:'Q66', q:"A Multilateral Finance institution whose broad mission is to achieve the twin goals of ending extreme poverty and shared prosperity is? (variant)", opts:["A. World Bank Group","B. Islamic Development Bank","C. African Development Bank","D. European Investment Bank"], ans:"A", exp:"The World Bank Group's mission is explicitly defined around two goals: ending extreme poverty and boosting shared prosperity by promoting income growth among the bottom 40% in every country."},
+{id:'Q67', q:"One of these is not an original aim of International Monetary Fund (IMF)? (variant)", opts:["A. Coordinate the activities of member countries monetary authorities","B. Facilitate the expansion and balanced growth of international trade","C. Promote exchange stability","D. Make resources available to member countries experiencing balance of payment problems"], ans:"A", exp:"Coordinating the activities of member countries' monetary authorities is not one of the original aims of the IMF. The original aims include promoting exchange stability, facilitating international trade, and providing resources to countries with BOP problems."},
+{id:'Q68', q:"Which of these is not a financing method of adjusting Balance of Payment Disequilibrium? (variant)", opts:["A. Sell part of foreign investment","B. Seek assistance from the IMF","C. Obtain loan from other countries","D. Counter trade"], ans:"D", exp:"Counter trade is a trade adjustment measure, not a financing method, for correcting BOP disequilibrium. Financing methods include obtaining loans, selling foreign investments, and seeking IMF assistance."},
+{id:'Q69', q:"An action taken by a merchant that seeks to address transaction exposure is said to do what to the risk? (variant)", opts:["A. Understand","B. Identity","C. Analyze","D. Cover"], ans:"D", exp:"When a merchant takes action to address transaction exposure — such as using hedging instruments — they are said to 'cover' the risk, protecting against adverse exchange rate movements."},
+{id:'Q70', q:"In a country's balance of payment of accounts, the main difference between long-term and short-term capital is? (variant)", opts:["A. Origin of the capital flow","B. Duration of capital flow","C. Ease of transferability","D. Rate of return on the capital flow"], ans:"B", exp:"The main distinction between long-term and short-term capital in the BOP capital account is the duration (time period) of the capital flow."},
+{id:'Q71', q:"Which of the following is incorrect about Multilateral Development Banks (MDBs)? (variant)", opts:["A. Multilateral Development Banks (MDBs) have large membership including developed donor countries","B. Multilateral Development Banks (MDBs) finance projects in the form of long-term loans at market rates","C. The mission of the multilateral development banks is to serve as Central Banks in their pursuit of monetary and financial stability","D. Multilateral Development Banks are institutions created by a group of countries to provide financing and professional advising"], ans:"C", exp:"MDBs do not serve as Central Banks. That is the role of the BIS. MDBs are development finance institutions providing long-term loans, grants, and technical assistance for development projects."},
+{id:'Q72', q:"Mentimeter Ltd with presence in three continents is currently experiencing interference into its business activities by one of the host country's governments which led to total seizure of all its assets. Mentimeter will be said to be facing? (variant)", opts:["A. Transaction risk","B. Political risk","C. Sovereign risk","D. Transfer risk"], ans:"B", exp:"Political risk refers to the risk that a foreign government's actions — such as asset seizure or expropriation — will adversely affect a company's operations."},
+{id:'Q73', q:"The price at which a trader may exercise his/her right in a currency option is called? (variant)", opts:["A. The covered interest price","B. The purchase price","C. The equilibrium trade price","D. The strike price"], ans:"D", exp:"The strike price (also called the exercise price) is the predetermined price at which the holder of a currency option has the right to buy or sell the underlying currency."},
+{id:'Q74', q:"One of these is not an attribute of a pence rate system? (variant)", opts:["A. A fixed unit of foreign country is quoted against variable units of home country currency","B. Premium add discount subtract to get forward rate","C. The applicable principle is buy low, sell high for spot transaction","D. A fixed unit of home currency is quoted against variable unit of foreign country currency"], ans:"D", exp:"In a pence rate (direct quote) system, a fixed unit of FOREIGN currency is quoted against variable units of HOME currency. Option D describes an indirect quote, which is not an attribute of the pence rate system."},
+{id:'Q75', q:"Which of these statements is NOT true for international banking? (variant)", opts:["A. International banks engage in cross-border operations","B. International banks must set up operations in other countries","C. International banks can perform local transactions","D. International banks must have international clients"], ans:"B", exp:"International banks do not necessarily have to set up physical operations in other countries. They can engage in cross-border operations and serve international clients without a foreign physical presence."},
+{id:'Q76', q:"One of the following is NOT a way by which Foreign Exchange risk can be covered? (variant)", opts:["A. Currency trading","B. Matching payments with receipts (Netting)","C. Currency options","D. Forward exchange contracts"], ans:"A", exp:"Currency trading (speculation) creates or increases FX risk rather than covering it. Methods of covering FX risk include netting, currency options, and forward exchange contracts."},
+{id:'Q77', q:"Which of these is the acronym of GDR? (variant)", opts:["A. Gold Diamond Reserves","B. Global Depository Receipts","C. Global Depository Reserves","D. Global Depository Region"], ans:"B", exp:"GDR stands for Global Depository Receipts. These are bank certificates issued in more than one country for shares in a foreign company, enabling investors to trade shares in global markets."},
+{id:'Q78', q:"Which of these is NOT a constituent institution of the African Development Banks (ADB)?", opts:["A. The Central Bank of Nigeria (CBN)","B. The Nigeria Trust Fund (NTF)","C. The African Development Fund (ADF)","D. The African Development Bank (ADB)"], ans:"A", exp:"The Central Bank of Nigeria (CBN) is Nigeria's national monetary authority and is not a constituent of the AfDB Group. The AfDB Group comprises the African Development Bank, the African Development Fund (ADF), and the Nigerian Trust Fund (NTF)."},
+{id:'Q79', q:"The International Organization of Securities Commissions (IOSCO) regulates the world's securities and futures markets. Which of the following markets in Nigeria is related to IOSCO?", opts:["A. Capital Market as regulated by Security Exchange Commission (SEC)","B. Commodities Market as regulated by yet to be active Commodities Exchange","C. Foreign exchange Market as regulated by Central Bank of Nigeria","D. Money Market as regulated by Central Bank of Nigeria (CBN)"], ans:"A", exp:"IOSCO relates to the Capital Market regulated by the Securities and Exchange Commission (SEC) in Nigeria. SEC is Nigeria's equivalent of securities regulators that are members of IOSCO."},
+{id:'Q80', q:"__________ is an interest-bearing international reserve asset created by the International Monetary Fund (IMF) to supplement other reserve assets of member countries. (variant)", opts:["A. Special Drawing Rights","B. Foreign Bond","C. Eurobond","D. International Monetary Fund Reserve"], ans:"A", exp:"Special Drawing Rights (SDRs) are interest-bearing international reserve assets created by the IMF in 1969 to supplement member countries' official reserves."},
+{id:'Q81', q:"Which of the following is the main objective of Bank of International Settlement? (variant)", opts:["A. Serve central banks in pursuit of monetary and financial stability","B. Ensure proper functioning of the capital market of member countries","C. Ensure adherence to standard of auditing of member states","D. Ensure price stability of member countries"], ans:"A", exp:"The primary objective of the BIS is to serve central banks in their pursuit of monetary and financial stability, foster international cooperation among central banks, and act as a bank for central banks."},
+{id:'Q82', q:"The following institutions with the exception of one are considered members of Bretton Woods Institutions? (variant)", opts:["A. The World Bank","B. The Africa Development Bank","C. The International Finance Corporation","D. The International Monetary Fund"], ans:"B", exp:"The Bretton Woods Institutions are the World Bank and the IMF, both established at the 1944 Bretton Woods Conference. The African Development Bank was not established at Bretton Woods."},
+{id:'Q83', q:"Which of the following is not considered as a constituent of African Development Banks (AfDB)? (variant)", opts:["A. Nigeria Trust Fund (NTF)","B. African Agriculture Bank (AAB)","C. African Development Bank (AfDB)","D. African Development Fund (ADF)"], ans:"B", exp:"The African Agriculture Bank (AAB) is not a constituent of the AfDB Group. The AfDB Group consists of the African Development Bank, the African Development Fund (ADF), and the Nigerian Trust Fund (NTF)."},
+{id:'Q84', q:"The bank with local or international presence that provides services for another bank is? (variant)", opts:["A. Correspondent Bank","B. Development Bank","C. An International Bank","D. Central Bank"], ans:"A", exp:"A correspondent bank is a financial institution that provides services on behalf of another bank, typically in a foreign country, including wire transfers, accepting deposits, and conducting business transactions."},
+{id:'Q85', q:"All of these are adjustment means of correcting deficit balance of payment disequilibrium except? (variant)", opts:["A. Domestic loans can be raised and converted into foreign currency","B. Domestic prices could be deflated to make exports cheaper","C. The country could resort to counter trade","D. Currency devaluation"], ans:"A", exp:"Raising domestic loans and converting them to foreign currency is a financing method, not an adjustment measure. Adjustment measures include currency devaluation, deflating domestic prices, and resorting to counter trade."},
+{id:'Q86', q:"Which of these is NOT a proven method of adjusting for translation exposure? (variant)", opts:["A. Monetary/Non-monetary method","B. Accounting Method","C. Current/Non-current method","D. Current rate method"], ans:"B", exp:"The proven methods of translation exposure are the Current Rate method, Current/Non-current method, and Monetary/Non-monetary (Temporal) method. 'Accounting method' is not a recognised translation exposure method."},
+{id:'Q87', q:"Which of the following is not a preventive/corrective measure of discrepancies in correspondent banking relationship? (variant)", opts:["A. Regular rendition of statements","B. Ensuring accuracy of records","C. Regular meeting between both parties","D. Robust channel of communication"], ans:"C", exp:"Regular meetings between both parties is not a standard preventive/corrective measure for discrepancies in correspondent banking. The key measures are accuracy of records, regular statement rendition, and robust communication channels."},
+{id:'Q88', q:"All of these are services offered by Nigerian Trust Fund (NTF) except? (variant)", opts:["A. Concessional loan operations with short term maturity","B. Concessional loan operations with long term maturity","C. Concessional project financing loans","D. Private sector operations"], ans:"A", exp:"The NTF offers concessional project financing loans and concessional loan operations with long-term maturity, not short-term maturity."},
+{id:'Q89', q:"A method of translating accounting or balance sheet exposure where all current assets and current liabilities are translated at current rate is? (variant)", opts:["A. Current Rate Method","B. Current/non-current method","C. Temporal Method","D. Monetary/Non-Monetary method"], ans:"B", exp:"The Current/Non-Current method translates all current assets and current liabilities at the current (spot) rate, while non-current items are translated at historical rates."},
+{id:'Q90', q:"In the treatment of translation exposure, current rate signifies? (variant)", opts:["A. The expected forward rate","B. The previous rate on the date of the balance sheet","C. The prevailing rate on the date of the balance sheet","D. The expected spot rates"], ans:"C", exp:"In translation exposure, the current rate refers to the prevailing (spot) exchange rate on the date the balance sheet is being prepared, not a forward or historical rate."},
+{id:'Q91', q:"As a treasurer of your bank, which of the following factors will be considered necessary when entering into correspondent relationship with a foreign bank?", opts:["A. Comparability of IT network","B. Strategy of the foreign bank","C. Nature of transaction","D. Compatibility of operations"], ans:"D", exp:"Compatibility of operations is a key factor when establishing a correspondent banking relationship. Other relevant factors include comparability of IT networks and nature of transactions. The strategy of the foreign bank is not a primary consideration."},
+{id:'Q92', q:"Which of the following is not the cause of Balance of Payment (BOP) disequilibrium? (variant)", opts:["A. Over-valued currency","B. Interest rate differential","C. Level of economic development","D. Relative peace in the country"], ans:"D", exp:"Relative peace in a country is not a cause of BOP disequilibrium. Causes include interest rate differentials, level of economic development, and overvalued currency."},
+{id:'Q93', q:"An arbitrage situation may occur when ONE of the following situations arises? (variant)", opts:["A. Large economic exposure between two competing firms","B. Large price differential between two countries of the same product","C. Large interest rate differential between two foreign companies","D. Large balance of trade deficit between two countries"], ans:"B", exp:"Arbitrage occurs when there is a price differential for the same product or asset in different markets, allowing traders to buy low in one market and sell high in another for a risk-free profit."},
+{id:'Q94', q:"An international multilateral institution whose goal is to formulate broad supervisory standards and guidelines for best practices in banking supervision is? (variant)", opts:["A. The International Monetary Fund (IMF)","B. The World Bank","C. The Bank of International Settlement (BIS)","D. The Basel Committee for Banking Supervision (BCBS)"], ans:"D", exp:"The Basel Committee for Banking Supervision (BCBS) is the international body that formulates broad supervisory standards and guidelines for best practices in banking supervision, including the Basel I, II, and III accords."},
+{id:'Q95', q:"The World Bank Group consists of? (variant)", opts:["A. IBRD, ICSID, IFC, MIGA, IDA","B. IBRD, MIGA, MENU, IDA, ICSID","C. IBRD, AFC, AFDB, IFC, IMF","D. IBRD, IDA, MIGA, MAGA, APGA"], ans:"A", exp:"The World Bank Group consists of five institutions: IBRD, IDA, IFC, MIGA, and ICSID."},
+{id:'Q96', q:"All except one of the following adequately describe correspondent banking? (variant)", opts:["A. Opening of customers account on behalf of another bank for domestic services","B. A correspondent bank is a financial institution that services on behalf of another","C. Act as an agent of another bank in the establishment and advice of letters of credits","D. A correspondent bank can facilitate wire transfers, conduct business transactions, accepts deposits and gather documents on behalf of another bank"], ans:"A", exp:"Opening customer accounts on behalf of another bank for domestic services is not a standard description of correspondent banking. Correspondent banking is primarily about cross-border/international service facilitation between financial institutions."},
+{id:'Q97', q:"The International Monetary Fund (IMF) was established at the Bretton Woods Conference to?", opts:["A. Intermediate between countries that have BOP deficit","B. Promote exchange rate stability","C. Facilitate FINTECH","D. Provide financial support to the needy"], ans:"B", exp:"The IMF was established at the 1944 Bretton Woods Conference primarily to promote exchange rate stability, facilitate international trade, and provide resources to member countries experiencing balance of payments difficulties."},
+{id:'Q98', q:"The International Bank for Reconstruction and Development (IBRD) was established in 1945 to provide financing on the basis of? (variant)", opts:["A. European Union guarantee","B. Central Bank guarantee","C. Bond Guarantee","D. Sovereign Guarantee"], ans:"D", exp:"The IBRD was established in 1945 to provide financing on the basis of sovereign guarantees, meaning loans are backed by the guarantee of member country governments."},
+];
+
+        let missedQuestions = [];
+        try {
+            const saved = localStorage.getItem('fgm_missed_questions');
+            if (saved) missedQuestions = JSON.parse(saved);
+        } catch(e) { console.warn("localStorage not available."); }
+
+        window.currentTestMode = 'practice';
+        window.examTimeLimitSeconds = 3600;
+        window.examTimerInterval = null;
+        window.examAnswers = [];
+        window.examStartTime = null;
+
+        function init() {
+            document.getElementById('total-avail').textContent = QB.length;
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            document.getElementById('mode-select').addEventListener('change', validateStart);
+            document.getElementById('count-select').addEventListener('change', validateStart);
+            document.getElementById('test-mode-select').addEventListener('change', onTestModeChange);
+            document.getElementById('exam-time-input').addEventListener('input', validateStart);
+            document.getElementById('start-btn').addEventListener('click', startQuiz);
+            document.getElementById('next-btn').addEventListener('click', nextQuestion);
+            document.getElementById('skip-btn').addEventListener('click', skipQuestion);
+            document.getElementById('end-session-btn').addEventListener('click', endSession);
+            document.getElementById('new-session-btn').addEventListener('click', resetApp);
+            document.getElementById('retry-missed-btn').addEventListener('click', retryMissed);
+            document.getElementById('prev-exam-btn').addEventListener('click', previousExamQuestion);
+            document.getElementById('next-exam-btn').addEventListener('click', nextExamQuestion);
+            document.getElementById('submit-exam-btn').addEventListener('click', submitExam);
+        }
+
+        function onTestModeChange() {
+            const mode = document.getElementById('test-mode-select').value;
+            document.getElementById('exam-time-group').style.display = mode === 'exam' ? 'block' : 'none';
+            validateStart();
+        }
+
+        function validateStart() {
+            const mode = document.getElementById('mode-select').value;
+            const count = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            const btn = document.getElementById('start-btn');
+            if (mode === 'missed' && missedQuestions.length === 0) {
+                btn.disabled = true;
+                btn.textContent = "No missed questions available";
+                return;
+            }
+            let valid = (mode !== "" && count !== "");
+            if (testMode === 'exam') {
+                const timeVal = parseInt(document.getElementById('exam-time-input').value);
+                if (isNaN(timeVal) || timeVal < 1) valid = false;
+            }
+            btn.disabled = !valid;
+            btn.textContent = "Start Quiz";
+        }
+
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        function startQuiz() {
+            const currentMode = document.getElementById('mode-select').value;
+            const countVal = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            window.currentTestMode = testMode;
+            let pool;
+if (currentMode === 'flashcard') {
+    pool = QB.filter(q => q.opts.length === 1 && q.opts[0] === "A. Reveal Answer");
+} else {
+    pool = currentMode === 'missed' ? QB.filter(q => missedQuestions.includes(q.id)) : [...QB];
+    // Exclude flashcards from MCQ modes
+    pool = pool.filter(q => !(q.opts.length === 1 && q.opts[0] === "A. Reveal Answer"));
+}
+            if (currentMode === 'random') pool = shuffleArray(pool);
+            let currentSessionQuestions = [];
+            if (countVal !== 'all') {
+                const questionCount = Math.min(parseInt(countVal), pool.length);
+                currentSessionQuestions = pool.slice(0, questionCount);
+            } else { currentSessionQuestions = pool; }
+            window.currentIndex = 0;
+            window.correctCount = 0;
+            window.wrongCount = 0;
+            window.skippedCount = 0;
+            window.sessionHistory = [];
+            window.currentSessionQuestions = currentSessionQuestions;
+            window.examAnswers = new Array(currentSessionQuestions.length).fill(-1);
+            window.examStartTime = null;
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            if (currentMode === 'flashcard') { showScreen('flashcard-screen'); renderFlashcard(); }
+            else if (testMode === 'exam') {
+                window.examTimeLimitSeconds = parseInt(document.getElementById('exam-time-input').value) * 60;
+                window.examStartTime = Date.now();
+                startExamTimer();
+                showScreen('quiz-screen');
+                renderQuestion();
+            } else { showScreen('quiz-screen'); renderQuestion(); }
+        }
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        function renderQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('current-q-num').textContent = window.currentIndex + 1;
+            document.getElementById('total-q-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('question-text').textContent = q.q;
+            const optionsList = document.getElementById('options-list');
+            optionsList.innerHTML = '';
+            const isExam = window.currentTestMode === 'exam';
+            document.getElementById('quiz-stats-bar').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-timer').style.display = isExam ? 'block' : 'none';
+            document.getElementById('practice-actions').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-actions').style.display = isExam ? 'flex' : 'none';
+            document.getElementById('explanation').classList.remove('visible');
+            document.getElementById('explanation').textContent = '';
+            if (isExam) {
+                document.getElementById('prev-exam-btn').disabled = (window.currentIndex === 0);
+                document.getElementById('next-exam-btn').disabled = (window.currentIndex === window.currentSessionQuestions.length - 1);
+            }
+            q.opts.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = opt;
+                if (isExam) {
+                    if (window.examAnswers[window.currentIndex] === idx) btn.classList.add('selected');
+                    btn.onclick = () => selectExamAnswer(idx);
+                } else { btn.onclick = () => handleAnswer(idx, q); }
+                optionsList.appendChild(btn);
+            });
+            if (!isExam) {
+                document.getElementById('next-btn').style.display = 'none';
+                document.getElementById('skip-btn').style.display = 'block';
+                document.getElementById('end-session-btn').style.display = 'block';
+            }
+            updateProgress();
+            if (!isExam) updateLiveScore();
+        }
+
+        function handleAnswer(selectedIdx, q) {
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(btn => btn.disabled = true);
+            const isCorrect = q.ans === String.fromCharCode(65 + selectedIdx);
+            if (isCorrect) {
+                buttons[selectedIdx].classList.add('correct');
+                window.correctCount++;
+                missedQuestions = missedQuestions.filter(id => id !== q.id);
+            } else {
+                buttons[selectedIdx].classList.add('wrong');
+                const correctIdx = q.ans.charCodeAt(0) - 65;
+                if (correctIdx < buttons.length) buttons[correctIdx].classList.add('correct');
+                window.wrongCount++;
+                if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            }
+            try { localStorage.setItem('fgm_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            const expEl = document.getElementById('explanation');
+            expEl.textContent = q.exp;
+            expEl.classList.add('visible');
+            document.getElementById('next-btn').style.display = 'block';
+            document.getElementById('skip-btn').style.display = 'none';
+            window.sessionHistory.push({ q: q, userAnswer: String.fromCharCode(65 + selectedIdx), isCorrect: isCorrect, status: isCorrect ? 'correct' : 'wrong' });
+            updateLiveScore();
+        }
+
+        function skipQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            window.skippedCount++;
+            if (!missedQuestions.includes(q.id)) { missedQuestions.push(q.id); try { localStorage.setItem('fgm_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {} document.getElementById('total-missed').textContent = missedQuestions.length; }
+            window.sessionHistory.push({ q: q, userAnswer: 'Skipped', isCorrect: false, status: 'skipped' });
+            nextQuestion();
+        }
+
+        function nextQuestion() {
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderQuestion();
+            else showResults();
+        }
+
+        function selectExamAnswer(idx) { window.examAnswers[window.currentIndex] = idx; renderQuestion(); }
+        function previousExamQuestion() { if (window.currentIndex > 0) { window.currentIndex--; renderQuestion(); } }
+        function nextExamQuestion() { if (window.currentIndex < window.currentSessionQuestions.length - 1) { window.currentIndex++; renderQuestion(); } }
+
+        function startExamTimer() {
+            updateExamTimerDisplay();
+            window.examTimerInterval = setInterval(() => {
+                const elapsed = Math.floor((Date.now() - window.examStartTime) / 1000);
+                const remaining = window.examTimeLimitSeconds - elapsed;
+                if (remaining <= 0) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; submitExam(); return; }
+                updateExamTimerDisplay(remaining);
+            }, 1000);
+        }
+
+        function updateExamTimerDisplay(remainingSecs) {
+            if (remainingSecs === undefined) remainingSecs = window.examTimeLimitSeconds;
+            const mins = Math.floor(remainingSecs / 60);
+            const secs = remainingSecs % 60;
+            document.getElementById('timer-display').textContent = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+        }
+
+        function submitExam() {
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            const questions = window.currentSessionQuestions;
+            let correct = 0, wrong = 0, skipped = 0;
+            window.sessionHistory = [];
+            questions.forEach((q, index) => {
+                const selectedIdx = window.examAnswers[index];
+                let userAnswerLetter = 'Not answered';
+                let isCorrect = false;
+                let status = 'skipped';
+                if (selectedIdx !== -1) {
+                    userAnswerLetter = String.fromCharCode(65 + selectedIdx);
+                    isCorrect = (userAnswerLetter === q.ans);
+                    status = isCorrect ? 'correct' : 'wrong';
+                }
+                if (status === 'correct') correct++;
+                else if (status === 'wrong') wrong++;
+                else skipped++;
+                window.sessionHistory.push({ q: q, userAnswer: userAnswerLetter, isCorrect: isCorrect, status: status });
+            });
+            window.correctCount = correct;
+            window.wrongCount = wrong;
+            window.skippedCount = skipped;
+            const totalSeconds = Math.floor((Date.now() - window.examStartTime) / 1000);
+            const timeTakenStr = formatTime(totalSeconds);
+            window.sessionHistory.forEach(item => { if (item.status === 'wrong' || item.status === 'skipped') { if (!missedQuestions.includes(item.q.id)) missedQuestions.push(item.q.id); } });
+            try { localStorage.setItem('fgm_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {}
+            showResults(true, timeTakenStr);
+        }
+
+        function formatTime(totalSeconds) { const mins = Math.floor(totalSeconds / 60); const secs = totalSeconds % 60; return String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0'); }
+
+        function updateProgress() {
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('progress-bar').style.width = pct + '%';
+        }
+
+        function updateLiveScore() {
+            const total = window.correctCount + window.wrongCount;
+            const score = total === 0 ? 0 : Math.round((window.correctCount / total) * 100);
+            document.getElementById('live-correct').textContent = window.correctCount;
+            document.getElementById('live-wrong').textContent = window.wrongCount;
+            document.getElementById('live-score').textContent = score + '%';
+        }
+
+        function renderFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('fc-current-num').textContent = window.currentIndex + 1;
+            document.getElementById('fc-total-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('fc-question').textContent = q.q;
+            document.getElementById('fc-answer').textContent = "Answer: " + q.ans;
+            document.getElementById('fc-explanation').textContent = q.exp;
+            document.getElementById('flashcard').classList.remove('flipped');
+            document.getElementById('fc-actions').style.display = 'none';
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('fc-progress-bar').style.width = pct + '%';
+        }
+
+        function flipCard() {
+            document.getElementById('flashcard').classList.toggle('flipped');
+            setTimeout(() => { document.getElementById('fc-actions').style.display = 'flex'; }, 300);
+        }
+
+        function handleFlashcardDecision(gotIt) {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (gotIt) missedQuestions = missedQuestions.filter(id => id !== q.id);
+            else if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            try { localStorage.setItem('fgm_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function skipFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (!missedQuestions.includes(q.id)) { missedQuestions.push(q.id); try { localStorage.setItem('fgm_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {} document.getElementById('total-missed').textContent = missedQuestions.length; }
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function endSession() {
+            if (window.currentTestMode === 'exam') { if (confirm('Are you sure you want to submit your exam?')) submitExam(); }
+            else showResults();
+        }
+
+        function showResults(isExam = false, timeTaken = null) {
+            showScreen('results-screen');
+            const total = window.correctCount + window.wrongCount + window.skippedCount;
+            const score = (window.correctCount + window.wrongCount) === 0 ? 0 : Math.round((window.correctCount / (window.correctCount + window.wrongCount)) * 100);
+            const scoreEl = document.getElementById('results-score');
+            scoreEl.textContent = score + '%';
+            scoreEl.className = 'results-score';
+            if (score >= 80) scoreEl.classList.add('green');
+            else if (score >= 60) scoreEl.classList.add('amber');
+            else scoreEl.classList.add('red');
+            document.getElementById('res-correct').textContent = window.correctCount;
+            document.getElementById('res-wrong').textContent = window.wrongCount;
+            document.getElementById('res-skipped').textContent = window.skippedCount;
+            document.getElementById('res-total').textContent = total;
+            const timeBox = document.getElementById('time-stat-box');
+            if (isExam && timeTaken) { document.getElementById('res-time').textContent = timeTaken; timeBox.style.display = 'block'; }
+            else { timeBox.style.display = 'none'; }
+            const reviewSection = document.getElementById('review-section');
+            reviewSection.innerHTML = '';
+            window.sessionHistory.forEach(item => {
+                const div = document.createElement('div');
+                div.className = `review-item ${item.status}`;
+                let correctAnsText = item.q.opts.find(opt => opt.startsWith(item.q.ans + '.')) || item.q.ans;
+                div.innerHTML = `<div class="review-q">${item.q.q}</div><div class="review-detail">Your Answer: <strong>${item.userAnswer}</strong></div><div class="review-detail">Correct Answer: <strong>${correctAnsText}</strong></div><div class="review-detail" style="margin-top: 8px; font-style: italic;">${item.q.exp}</div>`;
+                reviewSection.appendChild(div);
+            });
+            if (window.sessionHistory.length === 0) reviewSection.innerHTML = '<div class="review-item"><div class="review-q">No questions were answered in this session.</div></div>';
+        }
+
+        function resetApp() {
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            document.getElementById('mode-select').value = '';
+            document.getElementById('count-select').value = '';
+            document.getElementById('test-mode-select').value = 'practice';
+            document.getElementById('exam-time-group').style.display = 'none';
+            document.getElementById('start-btn').disabled = true;
+            showScreen('setup-screen');
+            document.getElementById('total-avail').textContent = QB.length;
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+        }
+
+        function retryMissed() {
+            document.getElementById('mode-select').value = 'missed';
+            document.getElementById('count-select').value = 'all';
+            validateStart();
+            startQuiz();
+        }
+
+        init();
+    </script>
+</body>
+</html>

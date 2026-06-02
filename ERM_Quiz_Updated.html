@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERM Quiz — Enterprise Risk Management</title>
+    <style>
+        :root {
+            --bg-primary: #0f172a; --bg-secondary: #1e293b; --bg-tertiary: #334155;
+            --text-primary: #f8fafc; --text-secondary: #cbd5e1;
+            --accent: #3b82f6; --accent-hover: #2563eb;
+            --success: #22c55e; --error: #ef4444; --warning: #f59e0b;
+            --border-radius: 12px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: var(--bg-primary); color: var(--text-primary); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { width: 100%; max-width: 600px; background-color: var(--bg-secondary); border-radius: var(--border-radius); padding: 24px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); }
+        h1, h2, h3 { text-align: center; margin-bottom: 16px; }
+        .screen { display: none; animation: fadeIn 0.3s ease-in-out; }
+        .screen.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 600; }
+        select, button, input { width: 100%; padding: 14px; border-radius: var(--border-radius); border: 1px solid var(--bg-tertiary); background-color: var(--bg-tertiary); color: var(--text-primary); font-size: 16px; cursor: pointer; transition: all 0.2s; min-height: 52px; }
+        input[type="number"] { cursor: text; }
+        select:focus, input:focus { outline: none; border-color: var(--accent); }
+        button { background-color: var(--accent); border: none; font-weight: 700; margin-top: 10px; }
+        button:hover:not(:disabled) { background-color: var(--accent-hover); }
+        button:disabled { background-color: var(--bg-tertiary); color: var(--text-secondary); cursor: not-allowed; opacity: 0.6; }
+        .stats-bar { display: flex; justify-content: space-between; background-color: var(--bg-tertiary); padding: 12px; border-radius: var(--border-radius); margin-bottom: 20px; font-size: 14px; font-weight: 600; }
+        .progress-container { width: 100%; height: 8px; background-color: var(--bg-tertiary); border-radius: 4px; margin-bottom: 24px; overflow: hidden; }
+        .progress-bar { height: 100%; background-color: var(--accent); transition: width 0.3s ease; }
+        .question-text { font-size: 18px; font-weight: 600; margin-bottom: 24px; line-height: 1.5; }
+        .options-list { display: flex; flex-direction: column; gap: 12px; }
+        .option-btn { text-align: left; background-color: var(--bg-tertiary); border: 2px solid transparent; padding: 16px; border-radius: var(--border-radius); cursor: pointer; transition: all 0.2s; font-size: 16px; min-height: 56px; }
+        .option-btn:hover:not(:disabled) { background-color: #475569; }
+        .option-btn.correct { background-color: rgba(34, 197, 94, 0.2); border-color: var(--success); color: var(--success); }
+        .option-btn.wrong { background-color: rgba(239, 68, 68, 0.2); border-color: var(--error); color: var(--error); }
+        .option-btn.selected { border-color: var(--accent); background-color: rgba(59, 130, 246, 0.1); }
+        .explanation { margin-top: 20px; padding: 16px; background-color: rgba(59, 130, 246, 0.1); border-left: 4px solid var(--accent); border-radius: 4px; font-size: 15px; line-height: 1.5; display: none; }
+        .explanation.visible { display: block; animation: fadeIn 0.3s ease-in-out; }
+        .action-buttons { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+        .action-buttons button { flex: 1; min-width: 80px; }
+        .btn-secondary { background-color: var(--bg-tertiary); }
+        .btn-secondary:hover:not(:disabled) { background-color: #475569; }
+        .flashcard-container { perspective: 1000px; min-height: 300px; margin-bottom: 20px; }
+        .flashcard { width: 100%; min-height: 300px; position: relative; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer; }
+        .flashcard.flipped { transform: rotateY(180deg); }
+        .flashcard-face { position: absolute; width: 100%; min-height: 300px; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px; background-color: var(--bg-tertiary); border-radius: var(--border-radius); text-align: center; border: 2px solid var(--bg-tertiary); }
+        .flashcard-back { transform: rotateY(180deg); background-color: rgba(59, 130, 246, 0.1); border-color: var(--accent); }
+        .flashcard-hint { margin-top: 12px; font-size: 14px; color: var(--text-secondary); }
+        .results-score { font-size: 48px; font-weight: 800; text-align: center; margin: 20px 0; }
+        .results-score.green { color: var(--success); }
+        .results-score.amber { color: var(--warning); }
+        .results-score.red { color: var(--error); }
+        .results-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
+        .stat-box { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); text-align: center; }
+        .stat-value { font-size: 24px; font-weight: 700; display: block; }
+        .stat-label { font-size: 14px; color: var(--text-secondary); }
+        .review-section { max-height: 400px; overflow-y: auto; margin-bottom: 24px; padding-right: 8px; }
+        .review-item { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); margin-bottom: 12px; border-left: 4px solid var(--bg-tertiary); }
+        .review-item.correct { border-left-color: var(--success); }
+        .review-item.wrong { border-left-color: var(--error); }
+        .review-item.skipped { border-left-color: var(--warning); }
+        .review-q { font-weight: 600; margin-bottom: 8px; font-size: 15px; }
+        .review-detail { font-size: 14px; color: var(--text-secondary); margin-bottom: 4px; }
+        .review-detail strong { color: var(--text-primary); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb { background: var(--bg-tertiary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="setup-screen" class="screen active">
+            <h1>ERM Quiz Master</h1>
+            <p style="text-align:center; color:var(--text-secondary); margin-bottom: 20px;">Enterprise Risk Management</p>
+            <div class="form-group">
+                <label for="mode-select">Quiz Mode</label>
+                <select id="mode-select">
+                    <option value="">Select a mode...</option>
+                    <option value="random">Random Mix</option>
+                    <option value="sequential">Sequential</option>
+                    <option value="missed">Missed Only</option>
+                    <option value="flashcard">Flashcard Revision</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="count-select">Number of Questions</label>
+                <select id="count-select">
+                    <option value="">Select count...</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="all">All (50)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="test-mode-select">Test Mode</label>
+                <select id="test-mode-select">
+                    <option value="practice">Practice Mode</option>
+                    <option value="exam">Exam Mode</option>
+                </select>
+            </div>
+            <div id="exam-time-group" class="form-group" style="display: none;">
+                <label for="exam-time-input">Time Limit (minutes)</label>
+                <input type="number" id="exam-time-input" min="1" max="300" value="60">
+            </div>
+            <div class="stats-bar">
+                <span>Total Available: <span id="total-avail">0</span></span>
+                <span>Missed Questions: <span id="total-missed">0</span></span>
+            </div>
+            <button id="start-btn" disabled>Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div id="exam-timer" style="text-align: center; font-size: 20px; font-weight: 700; margin-bottom: 12px; display: none;">
+                Time Remaining: <span id="timer-display">60:00</span>
+            </div>
+            <div class="stats-bar" id="quiz-stats-bar">
+                <span>Correct: <span id="live-correct">0</span></span>
+                <span>Wrong: <span id="live-wrong">0</span></span>
+                <span>Score: <span id="live-score">0%</span></span>
+            </div>
+            <div class="progress-container"><div class="progress-bar" id="progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Question <span id="current-q-num">1</span> of <span id="total-q-num">10</span>
+            </div>
+            <div class="question-text" id="question-text"></div>
+            <div class="options-list" id="options-list"></div>
+            <div class="explanation" id="explanation"></div>
+            <div class="action-buttons" id="practice-actions">
+                <button class="btn-secondary" id="skip-btn">Skip</button>
+                <button class="btn-secondary" id="end-session-btn">End Session</button>
+                <button id="next-btn" style="display: none;">Next</button>
+            </div>
+            <div class="action-buttons" id="exam-actions" style="display: none;">
+                <button class="btn-secondary" id="prev-exam-btn">Previous</button>
+                <button class="btn-secondary" id="submit-exam-btn">Submit Exam</button>
+                <button id="next-exam-btn">Next</button>
+            </div>
+        </div>
+
+        <div id="flashcard-screen" class="screen">
+            <div class="progress-container"><div class="progress-bar" id="fc-progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Card <span id="fc-current-num">1</span> of <span id="fc-total-num">10</span>
+            </div>
+            <div class="flashcard-container" onclick="flipCard()">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-face flashcard-front">
+                        <div id="fc-question" style="font-size: 18px; font-weight: 600;"></div>
+                        <div class="flashcard-hint">Tap to reveal answer</div>
+                    </div>
+                    <div class="flashcard-face flashcard-back">
+                        <div id="fc-answer" style="font-size: 18px; font-weight: 700; color: var(--success); margin-bottom: 12px;"></div>
+                        <div id="fc-explanation" style="font-size: 15px; line-height: 1.5;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons" id="fc-actions" style="display: none;">
+                <button class="btn-secondary" style="border-color: var(--error); color: var(--error);" onclick="handleFlashcardDecision(false)">Still Learning</button>
+                <button style="border-color: var(--success); color: var(--success); background-color: rgba(34, 197, 94, 0.1);" onclick="handleFlashcardDecision(true)">Got It</button>
+            </div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="fc-skip-btn" onclick="skipFlashcard()">Skip</button>
+                <button class="btn-secondary" id="fc-end-btn" onclick="endSession()">End Session</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <h2>Session Complete!</h2>
+            <div class="results-score" id="results-score">0%</div>
+            <div class="results-stats" id="results-stats-grid">
+                <div class="stat-box"><span class="stat-value" id="res-correct" style="color: var(--success);">0</span><span class="stat-label">Correct</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-wrong" style="color: var(--error);">0</span><span class="stat-label">Wrong</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-skipped" style="color: var(--warning);">0</span><span class="stat-label">Skipped</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-total">0</span><span class="stat-label">Total</span></div>
+                <div class="stat-box" id="time-stat-box" style="display: none;"><span class="stat-value" id="res-time">0:00</span><span class="stat-label">Time Taken</span></div>
+            </div>
+            <h3>Review All Answers</h3>
+            <div class="review-section" id="review-section"></div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="retry-missed-btn">Retry Missed</button>
+                <button id="new-session-btn">New Session</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const QB = [
+{id:'Q38', q:"As part of an organisation's risk management process, when considering risk and uncertainty, the risk team must be aware that", opts:["A. Risk can apply to both opportunities and threats to the organization","B. Uncertainty should only be considered when reviewing long-term objectives","C. Risk assessment is the sole method of reducing uncertainty","D. Uncertainty should always be considered completely separately from risk"], ans:"A", exp:"Risk can be both upside (opportunities) and downside (threats). Uncertainty is inherent in both."},
+{id:'Q39', q:"How does a pure risk differ from a speculative risk?", opts:["A. A pure risk always has an environmental cause whereas a speculative risk always involves human error","B. A pure risk can be measured in probability terms whereas a speculative risk cannot","C. A pure risk is not subject to regulatory control but a speculative risk always is","D. A pure risk only leads to the possibility of a loss, whereas a speculative risk may lead to a gain"], ans:"D", exp:"Pure risk involves only the chance of loss (e.g., fire), while speculative risk also involves the chance of gain (e.g., investment)."},
+{id:'Q41', q:"Transactional leadership has which of the following characteristics?", opts:["A. Believes success arises from leaders and staff working together","B. Seeks to involve staff in the decisionmaking process","C. Seeks to pick up the mood of the audience","D. Takes the view that rewards and punishment motivate staff"], ans:"D", exp:"Transactional leadership is based on exchanges: rewards for performance and punishment for non‑compliance."},
+{id:'Q42a', q:"An independent group of suppliers, such as farmers, gather to form a cooperative in order to sell their products to buyers directly, replacing their previous distributor. This is an example of", opts:["A. Forward integration","B. Backward integration","C. Threat of entry","D. Threat of substitute products"], ans:"A", exp:"Forward integration occurs when a company moves closer to the final customer by taking over distribution or sales functions."},
+{id:'Q42b', q:"An organization operates with separate and independent risk management, compliance and audit functions. The organisation's board of directors should be aware that", opts:["A. Holistic risk management processes will be more effective across the organization","B. This is likely to create a more robust approach to managing risk","C. Work will often be duplicated and costs will usually be increased","D. All costs will be reduced and more risks will be eliminated"], ans:"C", exp:"Separate, independent functions often lead to duplication of effort, increased costs, and potential gaps in coverage."},
+{id:'Q43', q:"In relation to a large organisation's risk management process, what does the internal audit function typically have responsibility for?", opts:["A. Providing detailed assurance that risk management processes are effective","B. Helping to evaluate existing risk controls in specified areas of the business only","C. Preparing designated parts of an up-to-date risk register","D. Setting detailed targets and objectives within the Board remit"], ans:"A", exp:"Internal audit provides independent assurance on the effectiveness of risk management, control, and governance processes."},
+{id:'Q44', q:"Within a large global organization, who has the primary responsibility of identifying individual risk owners and making sure appropriate risk control activities are carried out?", opts:["A. Risk Manager","B. Chief Risk Officer","C. Risk Committee","D. Board of Directors"], ans:"A", exp:"The Risk Manager is typically responsible for day‑to‑day risk identification, assigning risk owners, and monitoring controls."},
+{id:'Q45', q:"The Chief Risk Officer within a large manufacturing organization has been asked by the Board of Directors to provide an example of a pure risk. A suitable example would be", opts:["A. Making a strategic decision that affects the long-term future of the organization","B. The purchase of a currency derivative","C. Entering into a contract to purchase a new factory","D. A fire occurring in a new manufacturing process line"], ans:"D", exp:"A fire is a classic pure risk – it can only result in a loss. Other options involve speculative or strategic risks."},
+{id:'Q46', q:"Reviewing critical control systems and risk management processes is the responsibility of ....................", opts:["A. Internal auditors","B. Board of directors","C. Management","D. Risk officers"], ans:"A", exp:"Internal auditors independently review and evaluate the effectiveness of control systems and risk management processes."},
+{id:'Q48', q:"The executive management is responsible for one of the following.", opts:["A. Designing and implementing the risk management framework approved by the board","B. Implementing strategies, processes and procedures set by the board of directors","C. Implementing the internal control systems","D. All of the above"], ans:"D", exp:"Executive management is responsible for executing all of these activities under board oversight."},
+{id:'Q49', q:"Which of the framework methodology has a defined organizational objective at the entity and business levels?", opts:["A. Strategic objectives evaluation","B. Risk threshold determination","C. Risk appetite statement ratification","D. Business models alignment"], ans:"A", exp:"Strategic objectives evaluation links objectives at entity and business unit levels to ensure alignment."},
+{id:'Q50', q:"One of the following component of ERM Framework that establishes a philosophy regarding risk management.", opts:["A. Risk Assessment","B. Event Identification","C. Internal Environment","D. Objective Setting"], ans:"C", exp:"The Internal Environment sets the tone and risk philosophy, including risk appetite and ethical values."},
+{id:'Q52', q:"Best practices and features sets of risk dashboard will provide all of the following except;", opts:["A. Vague definitions of each dimension and category of risk","B. Calendaring and notification of special political events, protests, and more","C. Risk score carding and risk intelligence hierarchy creation","D. Incident command and response functionality"], ans:"A", exp:"Effective dashboards provide clear, precise definitions — not vague ones. The other options are desirable features."},
+{id:'Q53', q:"In reference to components of COSO framework, what component addresses how internal and external factors combine and interact to influence the risk profile?", opts:["A. Objective setting","B. Risk assessment","C. Event identification","D. Internal environment"], ans:"C", exp:"Event identification involves recognizing internal and external events that affect the achievement of objectives, shaping the risk profile."},
+{id:'Q54', q:"Which one of the following is the responsibility of management in ERM?", opts:["A. Articulate risk appetite/risk tolerance in policy","B. Develops processes to implement ERM in the bank","C. Establishes, approves, annually updates governing policy on enterprise risk","D. Be fully independent of a firm's individual business units"], ans:"B", exp:"Management is responsible for implementing ERM processes. The board articulates risk appetite; internal audit is independent."},
+{id:'Q55', q:"Which of the following is not a component in the COSO framework for internal control?", opts:["A. Segregation of duties","B. Monitoring","C. Risk assessment","D. Control environment"], ans:"A", exp:"Segregation of duties is a control activity, not one of the five COSO components. The components are control environment, risk assessment, control activities, information & communication, and monitoring."},
+{id:'Q56', q:"...... Forms the risk appetite of the entity a high-level view of how much risk management and the board are willing to accept.", opts:["A. Risk response","B. Internal environment","C. Objective setting","D. Risk assessment"], ans:"B", exp:"The internal environment (or tone at the top) establishes the entity's risk appetite and culture."},
+{id:'Q57', q:"Which of the following components of internal control would encompass the routine controls over business processes and transactions?", opts:["A. Information and communication","B. Risk assessment","C. The control environment","D. Control activities"], ans:"D", exp:"Control activities are the policies and procedures that help ensure management directives are carried out, including routine transaction controls."},
+{id:'Q58', q:"Enterprise risk management framework entity objectives can be viewed in the context of these categories except?", opts:["A. Strategic","B. Operations","C. Monitoring","D. Compliance"], ans:"C", exp:"ERM objectives are typically categorized as strategic, operations, reporting, and compliance. Monitoring is not a separate objective category."},
+{id:'Q60', q:"Which one of the attitudes towards risk doesn't know what is out there and doesn't care but stays underground where it's safe?", opts:["A. Pioneer","B. Gopher","C. Settler","D. Cowboy"], ans:"B", exp:"The 'Gopher' attitude is risk‑averse and unaware, sticking to safe, underground activities."},
+{id:'Q61', q:"Which of the following indicates a true difference between Basel I and Basel II?", opts:["A. Basel II has a more active role of bank supervision as compared to Basel I","B. Basel II applies a more risk oriented capital calculation as compared to Basel I","C. Basel II has more flexibility in approaches available to banks","D. All of the above"], ans:"D", exp:"Basel II introduced a more risk‑sensitive framework, greater supervisory review, and multiple approaches for calculating capital."},
+{id:'Q62', q:"A problem with risk-weighted capital asset ratios is that they:", opts:["A. Do not weight risks accurately","B. Do not take into account off-balance-sheet business","C. Are too complex to calculate","D. Put too much pressure on the profitability of banks"], ans:"A", exp:"Risk weights are often criticized for not accurately reflecting actual risk, leading to misallocation of capital."},
+{id:'Q63', q:"Under the Basel II framework, the total regulatory capital comprises of Tier II that is ......", opts:["A. Core capital","B. Supplementary capital","C. Monitory capital","D. None of these"], ans:"B", exp:"Tier II capital is known as supplementary capital, which includes instruments like subordinated debt and revaluation reserves."},
+{id:'Q64', q:"The minimum requirement for common equity, which is the highest form of loss-absorbing capital, has been raised under Basel III from ...... Of total risk-weighted assets.", opts:["A. 2.5% to 4.5%","B. 2% to 4.5%","C. 3% to 4.5%","D. 1.5% to 4.5%"], ans:"B", exp:"Basel III raised the minimum common equity tier 1 (CET1) requirement from 2% to 4.5% of risk‑weighted assets."},
+{id:'Q67', q:"Basel III is the global regulatory standard on ......(1) Bank Capital Adequacy (2) Stress Testing (3) Market Liquidity Risk", opts:["A. Only (1) and (2)","B. Only (1) and (2) 3","C. Only (2) and (3)","D. All of these"], ans:"D", exp:"Basel III addresses capital adequacy, stress testing, and liquidity risk (including the LCR and NSFR)."},
+{id:'Q68', q:"What does the first pillar of Basel II describes?", opts:["A. It outlines the role of the supervisor and the requirements regarding the responsibilities of the bank's board and senior management","B. It describes the guidelines for calculating the bank's risk profile and capital requirements for credit, market and operational risk","C. It describes the disclosure requirements towards stakeholders","D. None of the above"], ans:"B", exp:"Pillar 1 of Basel II deals with minimum capital requirements for credit, market, and operational risk."},
+{id:'Q69', q:"What is the main objective of Basel III framework?", opts:["A. Raise the resilience of individual banking institution in the period of stress","B. Reduce the risk of spillover from financial sector to real economy","C. Improve the banking sector's ability to absorb shocks arising from financial economic stress","D. All of the above"], ans:"D", exp:"Basel III aims to strengthen bank resilience, reduce systemic risk, and improve shock‑absorbing capacity."},
+{id:'Q72', q:"A guide in deciding what type of risk assets to create and what kind of customer to deal with is referred to ....................", opts:["A. Risk strategy","B. Risk culture","C. Risk appetite","D. Risk philosophy"], ans:"C", exp:"Risk appetite defines the amount and type of risk an organization is willing to pursue or retain."},
+{id:'Q73', q:"Which one of the following is the correct process of risk management?", opts:["A. Control it, transfer it and avoid it","B. Transfer it, control it and avoid it","C. Avoid it, control it and transfer it","D. None of the above"], ans:"C", exp:"The hierarchy of risk treatment is: avoid, then control (mitigate), then transfer (e.g., insurance)."},
+{id:'Q74', q:"What defense consists of all divisions and business unit functions with primary responsibilities for independent risk oversight and monitoring?", opts:["A. Third line","B. No line","C. First line","D. Second line"], ans:"D", exp:"The second line of defense comprises risk management and compliance functions that provide independent oversight."},
+{id:'Q75', q:"What are the three stages of cyclical risk management?", opts:["A. Analysis, prioritization and monitoring","B. Identification, measurement and prioritization","C. Identification, analysis, and monitoring and control","D. Analysis, mitigation, and control"], ans:"C", exp:"The cyclical process is: identify risks, analyze them, then monitor and control."},
+{id:'Q76', q:"Risk appetite framework is divided into different segments, which part approaches benchmarking against peers?", opts:["A. Risk appetite & business models alignment","B. Risk appetite statement ratification","C. Strategic objectives evaluation","D. Risk threshold determination"], ans:"D", exp:"Risk threshold determination often involves benchmarking to industry peers to set acceptable limits."},
+{id:'Q77', q:"There are different fundamental issues at stake when applying each ERM drivers. Which of the drivers attacks an organization's self-awareness of its balance between risk taking and control", opts:["A. Risk strategy","B. Risk philosophy","C. Risk appetite","D. Risk culture"], ans:"D", exp:"Risk culture reflects the shared values, beliefs, and attitudes toward risk, influencing self‑awareness of risk‑control balance."},
+{id:'Q78', q:"Enterprise risk management comprises of different lines of defense. Which of them involves business and support functions?", opts:["A. Third line","B. First line","C. Fourth line","D. Second line"], ans:"B", exp:"The first line of defense is operational management and business units that own and manage risk."},
+{id:'Q79', q:"What are the aims of the Basel III measures? (1) Improve the banking sector's ability to absorb shocks arising from financial and economic stress, whatever the source (2) improve risk management and governance (3) Strengthen bank's transparency and disclosures.", opts:["A. Only (1) and (2)","B. Only (1) and (3)","C. Only (2) and (3)","D. All of the above"], ans:"D", exp:"All three are stated objectives of Basel III."},
+{id:'Q80', q:"Which of the following are the major changes proposed in Basel III over earlier Accords (Basel I and Basel II)?", opts:["A. Better capital quality","B. Capital conversion buffer","C. Counter cyclical buffer","D. All of these"], ans:"D", exp:"Basel III introduced higher quality capital, capital conservation buffer, and counter‑cyclical buffer among other changes."},
+{id:'Q81', q:"What banking believes that long-term profit and viability must go hand in hand with enduring economic and social impact?", opts:["A. Sustainability banking","B. Corporate banking","C. Commercial banking","D. Retail banking"], ans:"A", exp:"Sustainability banking integrates economic, environmental, and social considerations into banking practices."},
+{id:'Q82', q:"In reference to Nigerian sustainable banking principles, principle one talks about..............", opts:["A. Human rights","B. Business activities","C. Financial inclusion","D. Business operations"], ans:"D", exp:"Principle 1 of the Nigerian Sustainable Banking Principles addresses the environmental and social impact of business operations."},
+{id:'Q83', q:"One of the following is not a focus of sustainability banking in Nigeria.", opts:["A. Oil and gas","B. Power","C. Education","D. Agriculture"], ans:"C", exp:"The focus areas generally include oil & gas, power, and agriculture; education is not a primary focus sector."},
+{id:'Q84', q:"...... is intended to provide a minimum standard for due diligence to support responsible risk decision-making.", opts:["A. Social standard","B. Convention","C. Equator principle","D. Covenant principle"], ans:"C", exp:"The Equator Principles provide a baseline framework for assessing and managing environmental and social risks in projects."},
+{id:'Q86', q:"The context in which business decisions are made is, however, characterized by complex and growing challenges relating to which one of the following?", opts:["A. Population growth","B. Urban migration","C. Poverty","D. All of the above"], ans:"D", exp:"All of these are significant challenges that affect the business environment."},
+{id:'Q87', q:"Regulators expect effective risk management that promotes the sustainability of the organization, stabilizes the financial system, and is good for consumers?", opts:["A. True","B. False","C. Not sure","D. I cannot answer this question"], ans:"A", exp:"True – regulators seek robust risk management for stability, sustainability, and consumer protection."},
+{id:'Q89', q:"Monitoring risk events and losses, identifying issues and implementing remedial actions to address issues are primary responsibilities of ............", opts:["A. Last line defense","B. Second line defense","C. Third line defense","D. First line defense"], ans:"D", exp:"The first line (operational management) is primarily responsible for identifying, monitoring, and addressing risk events."},
+{id:'Q91', q:"The board of directors oversees the risk management of the bank through the following committees except", opts:["A. Board audit committee","B. Board business head committee","C. Board finance and general purpose committee","D. Board credit and risk management committee"], ans:"B", exp:"A 'Board business head committee' is not a typical board committee; the others are common."},
+{id:'Q93', q:"The management credit committee shall be responsible for managing credit risks in the bank. The following except one are members of the committee.", opts:["A. Chief financial officer","B. The treasurer","C. Head, credit risk management","D. Managing director"], ans:"D", exp:"The Managing Director is usually not a member of management credit committee; the committee reports to management."},
+{id:'Q94', q:"In reference to the risk appetite framework methodology, the process of identifying and quantifying objectives of risk drivers and appetite indicators is known as ......", opts:["A. Risk appetite & business models alignment","B. Risk threshold determination","C. (Missing)","D. Strategic objectives evaluation"], ans:"A", exp:"This describes aligning risk appetite with business objectives and quantifying indicators."},
+{id:'Q95', q:"Risk strategy provides a guide as to how the organization wants to treat risks facing it in the course of normal business activities. This strategy includes all but one of the following?", opts:["A. Deleting","B. Sharing","C. Acceptance","D. (Missing)"], ans:"A", exp:"The standard risk treatment strategies are avoid, reduce, share, and accept. 'Deleting' is not a standard term; 'avoid' is the correct concept."},
+{id:'Q96', q:"Risk Management includes all of the following processes except:", opts:["A. Risk Monitoring and Control","B. Risk Identification","C. Risk Avoidance","D. Risk Response Planning"], ans:"C", exp:"Risk avoidance is a risk response strategy, not a process step. The core processes are identification, analysis, response planning, and monitoring/control."},
+{id:'Q97', q:"When should a risk be avoided?", opts:["A. When the risk event has a low probability of occurrence and low impact","B. When it can be transferred by purchasing insurance","C. A risk event can never be avoided","D. When the risk event is unacceptable -- generally one with a very high probability of occurrence and high impact"], ans:"D", exp:"Risk avoidance is appropriate for risks that are catastrophic and cannot be mitigated or transferred."},
+{id:'Q98', q:"Risk management is important part of a project management", opts:["A. True","B. False"], ans:"A", exp:"True – risk management is a critical component of project management."}
+];
+
+        let missedQuestions = [];
+        try {
+            const saved = localStorage.getItem('erm_missed_questions');
+            if (saved) missedQuestions = JSON.parse(saved);
+        } catch(e) { console.warn("localStorage not available."); }
+
+        window.currentTestMode = 'practice';
+        window.examTimeLimitSeconds = 3600;
+        window.examTimerInterval = null;
+        window.examAnswers = [];
+        window.examStartTime = null;
+
+        function init() {
+            document.getElementById('total-avail').textContent = QB.length;
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            document.getElementById('mode-select').addEventListener('change', validateStart);
+            document.getElementById('count-select').addEventListener('change', validateStart);
+            document.getElementById('test-mode-select').addEventListener('change', onTestModeChange);
+            document.getElementById('exam-time-input').addEventListener('input', validateStart);
+            document.getElementById('start-btn').addEventListener('click', startQuiz);
+            document.getElementById('next-btn').addEventListener('click', nextQuestion);
+            document.getElementById('skip-btn').addEventListener('click', skipQuestion);
+            document.getElementById('end-session-btn').addEventListener('click', endSession);
+            document.getElementById('new-session-btn').addEventListener('click', resetApp);
+            document.getElementById('retry-missed-btn').addEventListener('click', retryMissed);
+            document.getElementById('prev-exam-btn').addEventListener('click', previousExamQuestion);
+            document.getElementById('next-exam-btn').addEventListener('click', nextExamQuestion);
+            document.getElementById('submit-exam-btn').addEventListener('click', submitExam);
+        }
+
+        function onTestModeChange() {
+            const mode = document.getElementById('test-mode-select').value;
+            document.getElementById('exam-time-group').style.display = mode === 'exam' ? 'block' : 'none';
+            validateStart();
+        }
+
+        function validateStart() {
+            const mode = document.getElementById('mode-select').value;
+            const count = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            const btn = document.getElementById('start-btn');
+            if (mode === 'missed' && missedQuestions.length === 0) {
+                btn.disabled = true;
+                btn.textContent = "No missed questions available";
+                return;
+            }
+            let valid = (mode !== "" && count !== "");
+            if (testMode === 'exam') {
+                const timeVal = parseInt(document.getElementById('exam-time-input').value);
+                if (isNaN(timeVal) || timeVal < 1) valid = false;
+            }
+            btn.disabled = !valid;
+            btn.textContent = "Start Quiz";
+        }
+
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        function startQuiz() {
+            const currentMode = document.getElementById('mode-select').value;
+            const countVal = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            window.currentTestMode = testMode;
+            let pool;
+if (currentMode === 'flashcard') {
+    pool = QB.filter(q => q.opts.length === 1 && q.opts[0] === "A. Reveal Answer");
+} else {
+    pool = currentMode === 'missed' ? QB.filter(q => missedQuestions.includes(q.id)) : [...QB];
+    // Exclude flashcards from MCQ modes
+    pool = pool.filter(q => !(q.opts.length === 1 && q.opts[0] === "A. Reveal Answer"));
+}
+            if (currentMode === 'random') pool = shuffleArray(pool);
+            let currentSessionQuestions = [];
+            if (countVal !== 'all') {
+                const questionCount = Math.min(parseInt(countVal), pool.length);
+                currentSessionQuestions = pool.slice(0, questionCount);
+            } else { currentSessionQuestions = pool; }
+            window.currentIndex = 0;
+            window.correctCount = 0;
+            window.wrongCount = 0;
+            window.skippedCount = 0;
+            window.sessionHistory = [];
+            window.currentSessionQuestions = currentSessionQuestions;
+            window.examAnswers = new Array(currentSessionQuestions.length).fill(-1);
+            window.examStartTime = null;
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            if (currentMode === 'flashcard') { showScreen('flashcard-screen'); renderFlashcard(); }
+            else if (testMode === 'exam') {
+                window.examTimeLimitSeconds = parseInt(document.getElementById('exam-time-input').value) * 60;
+                window.examStartTime = Date.now();
+                startExamTimer();
+                showScreen('quiz-screen');
+                renderQuestion();
+            } else { showScreen('quiz-screen'); renderQuestion(); }
+        }
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        function renderQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('current-q-num').textContent = window.currentIndex + 1;
+            document.getElementById('total-q-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('question-text').textContent = q.q;
+            const optionsList = document.getElementById('options-list');
+            optionsList.innerHTML = '';
+            const isExam = window.currentTestMode === 'exam';
+            document.getElementById('quiz-stats-bar').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-timer').style.display = isExam ? 'block' : 'none';
+            document.getElementById('practice-actions').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-actions').style.display = isExam ? 'flex' : 'none';
+            document.getElementById('explanation').classList.remove('visible');
+            document.getElementById('explanation').textContent = '';
+            if (isExam) {
+                document.getElementById('prev-exam-btn').disabled = (window.currentIndex === 0);
+                document.getElementById('next-exam-btn').disabled = (window.currentIndex === window.currentSessionQuestions.length - 1);
+            }
+            q.opts.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = opt;
+                if (isExam) {
+                    if (window.examAnswers[window.currentIndex] === idx) btn.classList.add('selected');
+                    btn.onclick = () => selectExamAnswer(idx);
+                } else { btn.onclick = () => handleAnswer(idx, q); }
+                optionsList.appendChild(btn);
+            });
+            if (!isExam) {
+                document.getElementById('next-btn').style.display = 'none';
+                document.getElementById('skip-btn').style.display = 'block';
+                document.getElementById('end-session-btn').style.display = 'block';
+            }
+            updateProgress();
+            if (!isExam) updateLiveScore();
+        }
+
+        function handleAnswer(selectedIdx, q) {
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(btn => btn.disabled = true);
+            const isCorrect = q.ans === String.fromCharCode(65 + selectedIdx);
+            if (isCorrect) {
+                buttons[selectedIdx].classList.add('correct');
+                window.correctCount++;
+                missedQuestions = missedQuestions.filter(id => id !== q.id);
+            } else {
+                buttons[selectedIdx].classList.add('wrong');
+                const correctIdx = q.ans.charCodeAt(0) - 65;
+                if (correctIdx < buttons.length) buttons[correctIdx].classList.add('correct');
+                window.wrongCount++;
+                if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            }
+            try { localStorage.setItem('erm_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            const expEl = document.getElementById('explanation');
+            expEl.textContent = q.exp;
+            expEl.classList.add('visible');
+            document.getElementById('next-btn').style.display = 'block';
+            document.getElementById('skip-btn').style.display = 'none';
+            window.sessionHistory.push({ q: q, userAnswer: String.fromCharCode(65 + selectedIdx), isCorrect: isCorrect, status: isCorrect ? 'correct' : 'wrong' });
+            updateLiveScore();
+        }
+
+        function skipQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            window.skippedCount++;
+            if (!missedQuestions.includes(q.id)) { missedQuestions.push(q.id); try { localStorage.setItem('erm_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {} document.getElementById('total-missed').textContent = missedQuestions.length; }
+            window.sessionHistory.push({ q: q, userAnswer: 'Skipped', isCorrect: false, status: 'skipped' });
+            nextQuestion();
+        }
+
+        function nextQuestion() {
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderQuestion();
+            else showResults();
+        }
+
+        function selectExamAnswer(idx) { window.examAnswers[window.currentIndex] = idx; renderQuestion(); }
+        function previousExamQuestion() { if (window.currentIndex > 0) { window.currentIndex--; renderQuestion(); } }
+        function nextExamQuestion() { if (window.currentIndex < window.currentSessionQuestions.length - 1) { window.currentIndex++; renderQuestion(); } }
+
+        function startExamTimer() {
+            updateExamTimerDisplay();
+            window.examTimerInterval = setInterval(() => {
+                const elapsed = Math.floor((Date.now() - window.examStartTime) / 1000);
+                const remaining = window.examTimeLimitSeconds - elapsed;
+                if (remaining <= 0) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; submitExam(); return; }
+                updateExamTimerDisplay(remaining);
+            }, 1000);
+        }
+
+        function updateExamTimerDisplay(remainingSecs) {
+            if (remainingSecs === undefined) remainingSecs = window.examTimeLimitSeconds;
+            const mins = Math.floor(remainingSecs / 60);
+            const secs = remainingSecs % 60;
+            document.getElementById('timer-display').textContent = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+        }
+
+        function submitExam() {
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            const questions = window.currentSessionQuestions;
+            let correct = 0, wrong = 0, skipped = 0;
+            window.sessionHistory = [];
+            questions.forEach((q, index) => {
+                const selectedIdx = window.examAnswers[index];
+                let userAnswerLetter = 'Not answered';
+                let isCorrect = false;
+                let status = 'skipped';
+                if (selectedIdx !== -1) {
+                    userAnswerLetter = String.fromCharCode(65 + selectedIdx);
+                    isCorrect = (userAnswerLetter === q.ans);
+                    status = isCorrect ? 'correct' : 'wrong';
+                }
+                if (status === 'correct') correct++;
+                else if (status === 'wrong') wrong++;
+                else skipped++;
+                window.sessionHistory.push({ q: q, userAnswer: userAnswerLetter, isCorrect: isCorrect, status: status });
+            });
+            window.correctCount = correct;
+            window.wrongCount = wrong;
+            window.skippedCount = skipped;
+            const totalSeconds = Math.floor((Date.now() - window.examStartTime) / 1000);
+            const timeTakenStr = formatTime(totalSeconds);
+            window.sessionHistory.forEach(item => { if (item.status === 'wrong' || item.status === 'skipped') { if (!missedQuestions.includes(item.q.id)) missedQuestions.push(item.q.id); } });
+            try { localStorage.setItem('erm_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {}
+            showResults(true, timeTakenStr);
+        }
+
+        function formatTime(totalSeconds) { const mins = Math.floor(totalSeconds / 60); const secs = totalSeconds % 60; return String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0'); }
+
+        function updateProgress() {
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('progress-bar').style.width = pct + '%';
+        }
+
+        function updateLiveScore() {
+            const total = window.correctCount + window.wrongCount;
+            const score = total === 0 ? 0 : Math.round((window.correctCount / total) * 100);
+            document.getElementById('live-correct').textContent = window.correctCount;
+            document.getElementById('live-wrong').textContent = window.wrongCount;
+            document.getElementById('live-score').textContent = score + '%';
+        }
+
+        function renderFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('fc-current-num').textContent = window.currentIndex + 1;
+            document.getElementById('fc-total-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('fc-question').textContent = q.q;
+            document.getElementById('fc-answer').textContent = "Answer: " + q.ans;
+            document.getElementById('fc-explanation').textContent = q.exp;
+            document.getElementById('flashcard').classList.remove('flipped');
+            document.getElementById('fc-actions').style.display = 'none';
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('fc-progress-bar').style.width = pct + '%';
+        }
+
+        function flipCard() {
+            document.getElementById('flashcard').classList.toggle('flipped');
+            setTimeout(() => { document.getElementById('fc-actions').style.display = 'flex'; }, 300);
+        }
+
+        function handleFlashcardDecision(gotIt) {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (gotIt) missedQuestions = missedQuestions.filter(id => id !== q.id);
+            else if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            try { localStorage.setItem('erm_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function skipFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (!missedQuestions.includes(q.id)) { missedQuestions.push(q.id); try { localStorage.setItem('erm_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {} document.getElementById('total-missed').textContent = missedQuestions.length; }
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function endSession() {
+            if (window.currentTestMode === 'exam') { if (confirm('Are you sure you want to submit your exam?')) submitExam(); }
+            else showResults();
+        }
+
+        function showResults(isExam = false, timeTaken = null) {
+            showScreen('results-screen');
+            const total = window.correctCount + window.wrongCount + window.skippedCount;
+            const score = (window.correctCount + window.wrongCount) === 0 ? 0 : Math.round((window.correctCount / (window.correctCount + window.wrongCount)) * 100);
+            const scoreEl = document.getElementById('results-score');
+            scoreEl.textContent = score + '%';
+            scoreEl.className = 'results-score';
+            if (score >= 80) scoreEl.classList.add('green');
+            else if (score >= 60) scoreEl.classList.add('amber');
+            else scoreEl.classList.add('red');
+            document.getElementById('res-correct').textContent = window.correctCount;
+            document.getElementById('res-wrong').textContent = window.wrongCount;
+            document.getElementById('res-skipped').textContent = window.skippedCount;
+            document.getElementById('res-total').textContent = total;
+            const timeBox = document.getElementById('time-stat-box');
+            if (isExam && timeTaken) { document.getElementById('res-time').textContent = timeTaken; timeBox.style.display = 'block'; }
+            else { timeBox.style.display = 'none'; }
+            const reviewSection = document.getElementById('review-section');
+            reviewSection.innerHTML = '';
+            window.sessionHistory.forEach(item => {
+                const div = document.createElement('div');
+                div.className = `review-item ${item.status}`;
+                let correctAnsText = item.q.opts.find(opt => opt.startsWith(item.q.ans + '.')) || item.q.ans;
+                div.innerHTML = `<div class="review-q">${item.q.q}</div><div class="review-detail">Your Answer: <strong>${item.userAnswer}</strong></div><div class="review-detail">Correct Answer: <strong>${correctAnsText}</strong></div><div class="review-detail" style="margin-top: 8px; font-style: italic;">${item.q.exp}</div>`;
+                reviewSection.appendChild(div);
+            });
+            if (window.sessionHistory.length === 0) reviewSection.innerHTML = '<div class="review-item"><div class="review-q">No questions were answered in this session.</div></div>';
+        }
+
+        function resetApp() {
+            if (window.examTimerInterval) { clearInterval(window.examTimerInterval); window.examTimerInterval = null; }
+            document.getElementById('mode-select').value = '';
+            document.getElementById('count-select').value = '';
+            document.getElementById('test-mode-select').value = 'practice';
+            document.getElementById('exam-time-group').style.display = 'none';
+            document.getElementById('start-btn').disabled = true;
+            showScreen('setup-screen');
+            document.getElementById('total-avail').textContent = QB.length;
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+        }
+
+        function retryMissed() {
+            document.getElementById('mode-select').value = 'missed';
+            document.getElementById('count-select').value = 'all';
+            validateStart();
+            startQuiz();
+        }
+
+        init();
+    </script>
+</body>
+</html>

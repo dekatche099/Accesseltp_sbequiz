@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPG Universal Quiz App</title>
+    <style>
+        :root {
+            --bg-primary: #0f172a; --bg-secondary: #1e293b; --bg-tertiary: #334155;
+            --text-primary: #f8fafc; --text-secondary: #cbd5e1;
+            --accent: #3b82f6; --accent-hover: #2563eb;
+            --success: #22c55e; --error: #ef4444; --warning: #f59e0b;
+            --border-radius: 12px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: var(--bg-primary); color: var(--text-primary); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { width: 100%; max-width: 600px; background-color: var(--bg-secondary); border-radius: var(--border-radius); padding: 24px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); }
+        h1, h2, h3 { text-align: center; margin-bottom: 16px; }
+        .screen { display: none; animation: fadeIn 0.3s ease-in-out; }
+        .screen.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 600; }
+        select, button, input { width: 100%; padding: 14px; border-radius: var(--border-radius); border: 1px solid var(--bg-tertiary); background-color: var(--bg-tertiary); color: var(--text-primary); font-size: 16px; cursor: pointer; transition: all 0.2s; min-height: 52px; }
+        input[type="number"] { cursor: text; }
+        select:focus, input:focus { outline: none; border-color: var(--accent); }
+        button { background-color: var(--accent); border: none; font-weight: 700; margin-top: 10px; }
+        button:hover:not(:disabled) { background-color: var(--accent-hover); }
+        button:disabled { background-color: var(--bg-tertiary); color: var(--text-secondary); cursor: not-allowed; opacity: 0.6; }
+        .stats-bar { display: flex; justify-content: space-between; background-color: var(--bg-tertiary); padding: 12px; border-radius: var(--border-radius); margin-bottom: 20px; font-size: 14px; font-weight: 600; }
+        .progress-container { width: 100%; height: 8px; background-color: var(--bg-tertiary); border-radius: 4px; margin-bottom: 24px; overflow: hidden; }
+        .progress-bar { height: 100%; background-color: var(--accent); transition: width 0.3s ease; }
+        .question-text { font-size: 18px; font-weight: 600; margin-bottom: 24px; line-height: 1.5; }
+        .options-list { display: flex; flex-direction: column; gap: 12px; }
+        .option-btn { text-align: left; background-color: var(--bg-tertiary); border: 2px solid transparent; padding: 16px; border-radius: var(--border-radius); cursor: pointer; transition: all 0.2s; font-size: 16px; min-height: 56px; }
+        .option-btn:hover:not(:disabled) { background-color: #475569; }
+        .option-btn.correct { background-color: rgba(34, 197, 94, 0.2); border-color: var(--success); color: var(--success); }
+        .option-btn.wrong { background-color: rgba(239, 68, 68, 0.2); border-color: var(--error); color: var(--error); }
+        .option-btn.selected { border-color: var(--accent); background-color: rgba(59, 130, 246, 0.1); }
+        .explanation { margin-top: 20px; padding: 16px; background-color: rgba(59, 130, 246, 0.1); border-left: 4px solid var(--accent); border-radius: 4px; font-size: 15px; line-height: 1.5; display: none; }
+        .explanation.visible { display: block; animation: fadeIn 0.3s ease-in-out; }
+        .action-buttons { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+        .action-buttons button { flex: 1; min-width: 80px; }
+        .btn-secondary { background-color: var(--bg-tertiary); }
+        .btn-secondary:hover:not(:disabled) { background-color: #475569; }
+        .flashcard-container { perspective: 1000px; min-height: 300px; margin-bottom: 20px; }
+        .flashcard { width: 100%; min-height: 300px; position: relative; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer; }
+        .flashcard.flipped { transform: rotateY(180deg); }
+        .flashcard-face { position: absolute; width: 100%; min-height: 300px; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px; background-color: var(--bg-tertiary); border-radius: var(--border-radius); text-align: center; border: 2px solid var(--bg-tertiary); }
+        .flashcard-back { transform: rotateY(180deg); background-color: rgba(59, 130, 246, 0.1); border-color: var(--accent); }
+        .flashcard-hint { margin-top: 12px; font-size: 14px; color: var(--text-secondary); }
+        .results-score { font-size: 48px; font-weight: 800; text-align: center; margin: 20px 0; }
+        .results-score.green { color: var(--success); }
+        .results-score.amber { color: var(--warning); }
+        .results-score.red { color: var(--error); }
+        .results-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
+        .stat-box { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); text-align: center; }
+        .stat-value { font-size: 24px; font-weight: 700; display: block; }
+        .stat-label { font-size: 14px; color: var(--text-secondary); }
+        .review-section { max-height: 400px; overflow-y: auto; margin-bottom: 24px; padding-right: 8px; }
+        .review-item { background-color: var(--bg-tertiary); padding: 16px; border-radius: var(--border-radius); margin-bottom: 12px; border-left: 4px solid var(--bg-tertiary); }
+        .review-item.correct { border-left-color: var(--success); }
+        .review-item.wrong { border-left-color: var(--error); }
+        .review-item.skipped { border-left-color: var(--warning); }
+        .review-q { font-weight: 600; margin-bottom: 8px; font-size: 15px; }
+        .review-detail { font-size: 14px; color: var(--text-secondary); margin-bottom: 4px; }
+        .review-detail strong { color: var(--text-primary); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb { background: var(--bg-tertiary); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="setup-screen" class="screen active">
+            <h1>CPG Quiz Master</h1>
+            <div class="form-group">
+                <label for="mode-select">Quiz Mode</label>
+                <select id="mode-select">
+                    <option value="">Select a mode...</option>
+                    <option value="random">Random Mix</option>
+                    <option value="sequential">Sequential</option>
+                    <option value="missed">Missed Only</option>
+                    <option value="flashcard">Flashcard Revision</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="count-select">Number of Questions</label>
+                <select id="count-select">
+                    <option value="">Select count...</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="all">All Available</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="test-mode-select">Test Mode</label>
+                <select id="test-mode-select">
+                    <option value="practice">Practice Mode</option>
+                    <option value="exam">Exam Mode</option>
+                </select>
+            </div>
+            <div id="exam-time-group" class="form-group" style="display: none;">
+                <label for="exam-time-input">Time Limit (minutes)</label>
+                <input type="number" id="exam-time-input" min="1" max="300" value="60">
+            </div>
+            <div class="stats-bar">
+                <span>Total Available: <span id="total-avail">0</span></span>
+                <span>Missed Questions: <span id="total-missed">0</span></span>
+            </div>
+            <button id="start-btn" disabled>Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div id="exam-timer" style="text-align: center; font-size: 20px; font-weight: 700; margin-bottom: 12px; display: none;">
+                Time Remaining: <span id="timer-display">60:00</span>
+            </div>
+            <div class="stats-bar" id="quiz-stats-bar">
+                <span>Correct: <span id="live-correct">0</span></span>
+                <span>Wrong: <span id="live-wrong">0</span></span>
+                <span>Score: <span id="live-score">0%</span></span>
+            </div>
+            <div class="progress-container"><div class="progress-bar" id="progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Question <span id="current-q-num">1</span> of <span id="total-q-num">10</span>
+            </div>
+            <div class="question-text" id="question-text"></div>
+            <div class="options-list" id="options-list"></div>
+            <div class="explanation" id="explanation"></div>
+            <div class="action-buttons" id="practice-actions">
+                <button class="btn-secondary" id="skip-btn">Skip</button>
+                <button class="btn-secondary" id="end-session-btn">End Session</button>
+                <button id="next-btn" style="display: none;">Next</button>
+            </div>
+            <div class="action-buttons" id="exam-actions" style="display: none;">
+                <button class="btn-secondary" id="prev-exam-btn">Previous</button>
+                <button class="btn-secondary" id="submit-exam-btn">Submit Exam</button>
+                <button id="next-exam-btn">Next</button>
+            </div>
+        </div>
+
+        <div id="flashcard-screen" class="screen">
+            <div class="progress-container"><div class="progress-bar" id="fc-progress-bar" style="width: 0%"></div></div>
+            <div style="text-align: right; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                Card <span id="fc-current-num">1</span> of <span id="fc-total-num">10</span>
+            </div>
+            <div class="flashcard-container" onclick="flipCard()">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-face flashcard-front">
+                        <div id="fc-question" style="font-size: 18px; font-weight: 600;"></div>
+                        <div class="flashcard-hint">Tap to reveal answer</div>
+                    </div>
+                    <div class="flashcard-face flashcard-back">
+                        <div id="fc-answer" style="font-size: 18px; font-weight: 700; color: var(--success); margin-bottom: 12px;"></div>
+                        <div id="fc-explanation" style="font-size: 15px; line-height: 1.5;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons" id="fc-actions" style="display: none;">
+                <button class="btn-secondary" style="border-color: var(--error); color: var(--error);" onclick="handleFlashcardDecision(false)">Still Learning</button>
+                <button style="border-color: var(--success); color: var(--success); background-color: rgba(34, 197, 94, 0.1);" onclick="handleFlashcardDecision(true)">Got It</button>
+            </div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="fc-skip-btn" onclick="skipFlashcard()">Skip</button>
+                <button class="btn-secondary" id="fc-end-btn" onclick="endSession()">End Session</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <h2>Session Complete!</h2>
+            <div class="results-score" id="results-score">0%</div>
+            <div class="results-stats" id="results-stats-grid">
+                <div class="stat-box"><span class="stat-value" id="res-correct" style="color: var(--success);">0</span><span class="stat-label">Correct</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-wrong" style="color: var(--error);">0</span><span class="stat-label">Wrong</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-skipped" style="color: var(--warning);">0</span><span class="stat-label">Skipped</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-total">0</span><span class="stat-label">Total</span></div>
+                <div class="stat-box" id="time-stat-box" style="display: none;"><span class="stat-value" id="res-time">0:00</span><span class="stat-label">Time Taken</span></div>
+            </div>
+            <h3>Review All Answers</h3>
+            <div class="review-section" id="review-section"></div>
+            <div class="action-buttons">
+                <button class="btn-secondary" id="retry-missed-btn">Retry Missed</button>
+                <button id="new-session-btn">New Session</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const QB = [
+{id:'Q1', q:'Why is it critical for Relationship Management officers to maintain direct contact with customers through periodic visits after extending credit?', opts:['A. To immediately withdraw the facility if market conditions change', 'B. To ensure the customer receives regular marketing materials from the bank', 'C. It provides relevant, up-to-date and reliable information for ongoing management of exposure quality and overall business condition of the obligor and relationship with the bank', 'D. It is a mandatory requirement for the bank to charge higher interest rates'], ans:'C', exp:'It provides relevant, up-to-date and reliable information for ongoing management of exposure quality and overall business condition of the obligor and relationship with the bank. (Pg 146)'},
+{id:'Q2', q:'Where is a credit call meeting most suitable to take place?', opts:['A. Only at the bank premises', 'B. Only at the customer\'s business location', 'C. At a neutral third-party location', 'D. Customer\'s business location as well as bank premises'], ans:'D', exp:'Customer\'s business location as well as bank premises. (Pg 146)'},
+{id:'Q3', q:'What determines the frequency of credit calls?', opts:['A. Risky obligor/large exposures only', 'B. Less risky obligor/smaller exposure only', 'C. The personal preference of the Relationship Manager', 'D. Both A & B: Risky obligor/large exposures AND less risky obligor/smaller exposure. The riskier or larger the exposure, the more frequent the calls.'], ans:'D', exp:'Both A & B: Risky obligor/large exposures AND less risky obligor/smaller exposure. The riskier or larger the exposure, the more frequent the calls. (Pg 146)'},
+{id:'Q4', q:'Information gathered from credit calls are properly documented and circulated via:', opts:['A. Verbal report to the Branch Manager', 'B. Call memo to business head and CRM', 'C. Email to the customer', 'D. Monthly newsletter to all staff'], ans:'B', exp:'Call memo to business head and CRM. (Pg 146)'},
+{id:'Q5', q:'Why is Bank and trade check an important component of the credit process?', opts:['A. It guarantees the profitability of the loan', 'B. It eliminates all credit risk', 'C. It serves as an assessment of the obligor and confirms that the business remains a going concern', 'D. It is required by the Central Bank for all loans'], ans:'C', exp:'It serves as an assessment of the obligor and confirms that the business remains a going concern. (Pg 147)'},
+{id:'Q6', q:'The ongoing administration of the quality and performance of loans depends on:', opts:['A. Periodic analysis of up-to-date financial information only', 'B. The character, ability and willingness of the customer to meet obligations only', 'C. All of the above: periodic analysis of up-to-date financial information AND the character, ability and willingness of the customer to meet obligations', 'D. The collateral value alone'], ans:'C', exp:'All of the above: periodic analysis of up-to-date financial information AND the character, ability and willingness of the customer to meet obligations. (Pg 147)'},
+{id:'Q7', q:'What is the objective of collateral inspection?', opts:['A. To increase the collateral value', 'B. To prepare for immediate sale of the collateral', 'C. To confirm the existence and adequacy of all collateral held as security', 'D. To renegotiate the loan terms'], ans:'C', exp:'To confirm the existence and adequacy of all collateral held as security. (Pg 79)'},
+{id:'Q8', q:'Under the CRG, RM must conduct and document a site visit prior to disbursement of funds under:', opts:['A. Overdraft facilities', 'B. Short-term trade finance', 'C. All facilities regardless of type', 'D. Term loans'], ans:'D', exp:'Term loans. (Pg 79)'},
+{id:'Q9', q:'Why must collateral be revalued periodically?', opts:['A. To increase the bank\'s asset base artificially', 'B. To satisfy the customer\'s request for higher limits', 'C. To confirm the continuing appropriateness and adequacy of the forced sale value of collateral on the open market to cover the bank\'s exposure', 'D. To reduce the loan loss provisioning requirements'], ans:'C', exp:'To confirm the continuing appropriateness and adequacy of the forced sale value of collateral on the open market to cover the bank\'s exposure. (Pg 79)'},
+{id:'Q10', q:'Where obligations are secured by marketable securities prone to price fluctuation (e.g. shares), what should you do?', opts:['A. Ignore the price fluctuation as it is a long-term investment', 'B. Immediately sell the securities upon any price drop', 'C. Establish a predetermined \'stop loss\' or \'sell point\' under clear advice to the obligor', 'D. Require the customer to provide additional cash collateral daily'], ans:'C', exp:'Establish a predetermined \'stop loss\' or \'sell point\' under clear advice to the obligor. (Pg 79)'},
+{id:'Q11', q:'Collateral valuation is usually conducted by:', opts:['A. The Relationship Manager only', 'B. RM, CRM and Professional appraisers', 'C. The customer\'s chosen valuer only', 'D. The Central Bank of Nigeria'], ans:'B', exp:'RM, CRM and Professional appraisers. (Pg 79)'},
+{id:'Q12', q:'All legal documentation in respect of approved credit exposure are kept in:', opts:['A. The Relationship Manager\'s desk', 'B. The customer\'s office', 'C. The branch manager\'s safe', 'D. Bank vault or a location of equivalent security and safety'], ans:'D', exp:'Bank vault or a location of equivalent security and safety. (Pg 147)'},
+{id:'Q13', q:'What is the frequency of physical verification of all credit documentation?', opts:['A. Monthly', 'B. Quarterly', 'C. Semi-annually', 'D. Annually'], ans:'D', exp:'Annually. (Pg 147)'},
+{id:'Q14', q:'How often does CRM and relevant approval authority review all outstanding credit transactions and commitments?', opts:['A. Monthly', 'B. Quarterly', 'C. Semi-annually', 'D. Annually'], ans:'D', exp:'Annually. (Pg 147)'},
+{id:'Q15', q:'Under what circumstances will collateral be released to a customer?', opts:['A. Upon customer\'s written request regardless of facility status', 'B. Upon liquidation of facility in accordance with agreed terms and conditions', 'C. After 50% of the facility has been repaid', 'D. When the customer provides alternative collateral'], ans:'B', exp:'Upon liquidation of facility in accordance with agreed terms and conditions. (Full repayment AND accordance with agreed terms — not merely upon customer request.)'},
+{id:'Q16', q:'How often must obligor and facility exposure quality and performance grades be reviewed?', opts:['A. Monthly', 'B. Quarterly', 'C. Semi-annually', 'D. Annually'], ans:'B', exp:'Quarterly.'},
+{id:'Q17', q:'What is the primary information source for decision-making on credits and customer relationships?', opts:['A. Credit files', 'B. Customer\'s verbal assurances', 'C. External credit rating agencies only', 'D. News articles about the customer'], ans:'A', exp:'Credit files. (Pg 148)'},
+{id:'Q18', q:'Credit files must contain at a minimum:', opts:['A. Only the initial loan application', 'B. Only the approved facility letter', 'C. Only the customer\'s financial statements', 'D. Memoranda and correspondence with customer'], ans:'D', exp:'Memoranda and correspondence with customer. (Pg 148)'},
+{id:'Q19', q:'How often must credit files be reviewed?', opts:['A. Only at facility maturity', 'B. Periodically', 'C. Annually only', 'D. Never, once closed'], ans:'B', exp:'Periodically. (Pg 148)'},
+{id:'Q20', q:'How do you treat information of an unfavourable nature in the credit file?', opts:['A. Hide it from future reviewers', 'B. Remove it and file it away separately', 'C. Permanently retain and mark the information. Do NOT hide, remove, or file away separately', 'D. Shred it immediately'], ans:'C', exp:'Permanently retain and mark the information. Do NOT hide, remove, or file away separately. (Pg 148)'},
+{id:'Q21', q:'How many components are there to each customer credit file?', opts:['A. 1 component', 'B. 3 components', 'C. 4 components', 'D. 2 components'], ans:'D', exp:'2 components. (Pg 149)'},
+{id:'Q22', q:'How often is the Unauthorized Overdraft Report generated?', opts:['A. Daily', 'B. Weekly', 'C. Monthly', 'D. Quarterly'], ans:'A', exp:'Daily. (Pg 114)'},
+{id:'Q23', q:'How often is the Excess Over Approved Limit report generated?', opts:['A. Daily', 'B. Weekly', 'C. Monthly', 'D. Quarterly'], ans:'A', exp:'Daily. (Pg 114)'},
+{id:'Q24', q:'How often are Expiring Facilities reports generated?', opts:['A. Daily', 'B. Weekly', 'C. Monthly', 'D. Quarterly'], ans:'A', exp:'Daily. (Pg 114)'},
+{id:'Q25', q:'How often are Expired Facilities reports generated?', opts:['A. Daily', 'B. Weekly', 'C. Monthly', 'D. Quarterly'], ans:'B', exp:'Weekly. (Pg 114)'},
+{id:'Q26', q:'How often is the Central Liability Report generated?', opts:['A. Daily', 'B. Weekly', 'C. Monthly', 'D. Quarterly'], ans:'C', exp:'Monthly. (Pg 114)'},
+{id:'Q27', q:'How often is the Maturing Obligations Report generated?', opts:['A. Daily', 'B. Weekly', 'C. Monthly', 'D. Quarterly'], ans:'C', exp:'Monthly. (Pg 114)'},
+{id:'Q28', q:'How often is the Review of Security Documentation report generated?', opts:['A. Daily', 'B. Weekly', 'C. Monthly', 'D. Annually'], ans:'D', exp:'Annually. (Pg 114)'},
+{id:'Q29', q:'How often is the Portfolio Review Report generated?', opts:['A. Quarterly', 'B. Monthly', 'C. Weekly', 'D. Annually'], ans:'A', exp:'Quarterly. (Pg 114)'},
+{id:'Q30', q:'How often is the Collateral Review report generated?', opts:['A. Quarterly', 'B. Monthly', 'C. Weekly', 'D. Annually (or as specified in the credit approval)'], ans:'D', exp:'Annually (or as specified in the credit approval). (Pg 114)'},
+{id:'Q31', q:'How often is the Recovery Status Report generated?', opts:['A. Quarterly', 'B. Weekly', 'C. Monthly', 'D. Annually'], ans:'C', exp:'Monthly. (Pg 114)'},
+{id:'Q32', q:'How often is the Recoveries Made Report generated?', opts:['A. Quarterly', 'B. Weekly', 'C. Monthly', 'D. Annually'], ans:'C', exp:'Monthly. (Pg 114)'},
+{id:'Q33', q:'How often is the Reserves and Write-offs report generated?', opts:['A. Quarterly', 'B. Monthly', 'C. Weekly', 'D. Annually'], ans:'D', exp:'Annually. (Pg 114)'},
+{id:'Q34', q:'How often is the Account Throughput Reporting generated?', opts:['A. Quarterly', 'B. Weekly', 'C. Monthly', 'D. Annually'], ans:'C', exp:'Monthly. (Pg 114)'},
+{id:'Q35', q:'The Portfolio Review Report is sent to which recipients?', opts:['A. Business Units', 'B. Policy MCC / CRO', 'C. GCRO, GMD', 'D. BCC'], ans:'B', exp:'Policy MCC / CRO. (Pg 114)'},
+{id:'Q36', q:'The Collateral Review report is sent to which recipients?', opts:['A. Business Units', 'B. MCC', 'C. GCRO, GMD', 'D. BCC'], ans:'B', exp:'MCC. (Pg 114)'},
+{id:'Q37', q:'The Recovery Status Report is sent to which recipients?', opts:['A. Business Units', 'B. GCRO, GMD', 'C. Policy MCC / CRO', 'D. BCC'], ans:'B', exp:'GCRO, GMD. (Pg 114)'},
+{id:'Q38', q:'The Recoveries Made report is sent to which recipients?', opts:['A. BCC', 'B. Business Units / CRM', 'C. Policy MCC / CRO', 'D. GCRO, GMD'], ans:'B', exp:'Business Units / CRM. (Pg 114)'},
+{id:'Q39', q:'The Account Throughput Reporting is sent to which recipients?', opts:['A. Business Units', 'B. MCC', 'C. GCRO, GMD', 'D. BCC'], ans:'A', exp:'Business Units. (Pg 114)'},
+{id:'Q40', q:'The Reserves and Write-offs report is sent to which recipients?', opts:['A. Business Units', 'B. MCC', 'C. GCRO, GMD', 'D. BCC'], ans:'D', exp:'BCC. (Pg 114)'},
+{id:'Q41', q:'The Review of Security Documentation report is sent to which recipients?', opts:['A. Business Units', 'B. MCC', 'C. GCRO, GMD', 'D. BCC'], ans:'A', exp:'Business Units. (Pg 114)'},
+{id:'Q42', q:'The Excess Over Approval Limits report is sent to which recipients?', opts:['A. Business Units', 'B. MCC', 'C. GCRO, GMD', 'D. BCC'], ans:'A', exp:'Business Units. (Pg 114)'},
+{id:'Q43', q:'The Unauthorized O/D Report is sent to which recipients?', opts:['A. Business Units', 'B. MCC', 'C. GCRO, GMD', 'D. BCC'], ans:'A', exp:'Business Units. (Pg 114)'},
+{id:'Q44', q:'The Central Liability Report is sent to which recipients?', opts:['A. Business Units', 'B. MCC', 'C. GCRO, GMD', 'D. BCC'], ans:'A', exp:'Business Units. (Pg 114)'},
+{id:'Q45', q:'The Maturing Obligation Report is sent to which recipients?', opts:['A. Business Units', 'B. MCC', 'C. GCRO, GMD', 'D. BCC'], ans:'A', exp:'Business Units. (Pg 114)'},
+{id:'Q46', q:'The Expiring and Expired Facilities report is sent to which recipients?', opts:['A. Business Units', 'B. MCC', 'C. GCRO, GMD', 'D. BCC'], ans:'A', exp:'Business Units. (Pg 114)'},
+{id:'Q47', q:'On what basis does the bank extend credit facilities?', opts:['A. On the basis of verbal commitments to the customer', 'B. On the basis of the customer\'s verbal agreement', 'C. On the basis of informal email notifications', 'D. On the basis of legal commitments notified in writing to a customer once the terms and conditions contained therein have been satisfied'], ans:'D', exp:'On the basis of legal commitments notified in writing to a customer once the terms and conditions contained therein have been satisfied. (Verbal commitments are NEVER sufficient.)'},
+{id:'Q48', q:'Under what circumstances will an unadvised facility be appropriate?', opts:['A. To keep accounts within collateral cover', 'B. To avoid penalty interest', 'C. When the customer requests it verbally', 'D. When the Relationship Manager deems it necessary for daily operations', 'E. None of the above. An unadvised facility is NOT used to keep accounts within collateral cover or avoid penalty interest. It is a discretionary accommodation managed by the account officer.'], ans:'E', exp:'None of the above. An unadvised facility is NOT used to keep accounts within collateral cover or avoid penalty interest. It is a discretionary accommodation managed by the account officer. (Pg 136)'},
+{id:'Q49', q:'Which one of the following will NOT be suitably structured as a term loan?', opts:['A. Equipment financing', 'B. Asset replacement', 'C. Operating expenses', 'D. New technology capital loans'], ans:'C', exp:'Operating expenses. Term loans finance capital items, not recurring operating costs. (Pg 42)'},
+{id:'Q50', q:'On repayment, a customer may re-borrow under a revolving credit provided that:', opts:['A. The customer has a new business plan', 'B. The bank has increased its lending limits', 'C. There is no material change to his financial position', 'D. The customer provides additional collateral'], ans:'C', exp:'There is no material change to his financial position. (Pg 42)'},
+{id:'Q51', q:'If a temporary overdraft accommodation remains outstanding for longer than 30 days, what prudent step should be taken?', opts:['A. Increase the overdraft limit', 'B. Charge a higher interest rate', 'C. Convert it to a term loan automatically', 'D. Facility shall be classified as a past due loan'], ans:'D', exp:'Facility shall be classified as a past due loan. (Pg 38)'},
+{id:'Q52', q:'Customers\' requests for withdrawal against uncleared effects or drafts will NOT be approved for:', opts:['A. Drawings under DAUE/DAUD against company\'s own cheques only', 'B. Drawings in excess of the approved DAUE/DAUD only', 'C. Any withdrawal against uncleared effects', 'D. A and B exclusively: drawings under DAUE/DAUD against company\'s own cheques, AND drawings in excess of the approved DAUE/DAUD'], ans:'D', exp:'A and B exclusively: drawings under DAUE/DAUD against company\'s own cheques, AND drawings in excess of the approved DAUE/DAUD. (Pg 43)'},
+{id:'Q53', q:'How many parties are there to a typical transaction involving the issuance of a bond by the bank?', opts:['A. 2 parties', 'B. 3 parties', 'C. 4 parties', 'D. 5 parties'], ans:'B', exp:'3 parties. (The bank/guarantor, the applicant/principal, and the beneficiary.)'},
+{id:'Q54', q:'In what instance will a bond/guarantee be issued on a clean basis?', opts:['A. When the customer has a high credit rating', 'B. When the bank wants to increase its fee income', 'C. When the underlying contract is short-term', 'D. Bond includes a clause to make it effective only upon receipt of equivalent cash cover from the beneficiary'], ans:'D', exp:'Bond includes a clause to make it effective only upon receipt of equivalent cash cover from the beneficiary. (Pg 43)'},
+{id:'Q55', q:'Which statement is TRUE concerning the maturity of the underlying contract vs. the bond/guarantee tenor?', opts:['A. The maturity of the underlying contract must be shorter than the tenor of the bond/guarantee', 'B. The maturity of the underlying contract must be equal to the tenor of the bond/guarantee', 'C. The maturity of the underlying contract must EXCEED the tenor of the bond/guarantee', 'D. The maturity of the underlying contract has no relation to the tenor of the bond/guarantee'], ans:'C', exp:'The maturity of the underlying contract must EXCEED the tenor of the bond/guarantee. (Pg 44)'},
+{id:'Q56', q:'Which statement is FALSE regarding the issuance of bonds/guarantees?', opts:['A. Issuance of guarantees should be carefully evaluated', 'B. Issuance of guarantees to support offshore facilities is strongly encouraged in view of its profitability', 'C. The bank must assess the risk before issuing guarantees', 'D. Guarantees should have specific expiration dates'], ans:'B', exp:'\'Issuance of guarantees to support offshore facilities is strongly encouraged in view of its profitability.\' This is FALSE — the CPG strongly DISCOURAGES such guarantees. (Pg 44)'},
+{id:'Q57', q:'What kind of risk is the bank exposed to on ALL commercial papers it intermediates?', opts:['A. Reputation risk', 'B. Credit risk', 'C. Market risk', 'D. Liquidity risk'], ans:'A', exp:'Reputation risk. (This applies even when the bank does not guarantee the CP.) (Pg 44)'},
+{id:'Q58', q:'When the Bank does not guarantee the CPs it issues, what role does the bank play?', opts:['A. Principal role', 'B. Agency role', 'C. Guarantor role', 'D. Underwriter role'], ans:'B', exp:'Agency role. (Pg 44)'},
+{id:'Q59', q:'In a lease facility, what is the most important consideration?', opts:['A. The aesthetic value of the asset', 'B. Ability of the bank to take effective and prompt possession of the asset in the event of default by the lessee', 'C. The brand name of the asset supplier', 'D. The length of the lease agreement only'], ans:'B', exp:'Ability of the bank to take effective and prompt possession of the asset in the event of default by the lessee. (Pg 44)'},
+{id:'Q60', q:'How many parties are there in a lease arrangement?', opts:['A. 2 parties', 'B. 3 parties', 'C. 4 parties', 'D. 5 parties'], ans:'B', exp:'3 parties. (Bank/lessor, client/lessee, and asset supplier/vendor.)'},
+{id:'Q61', q:'What is the most important consideration for the bank when undertaking warehouse financing?', opts:['A. The location of the warehouse', 'B. The insurance coverage of the goods', 'C. The credit rating of the borrower', 'D. Assumption of physical control of goods financed'], ans:'D', exp:'Assumption of physical control of goods financed. (Pg 45)'},
+{id:'Q62', q:'Warehouse financing should NOT be considered where:', opts:['A. The goods are fast-moving consumer goods', 'B. The maximum tenor is 12 months', 'C. The forced sale value of goods is NOT adequate to cover the exposure at all times', 'D. The bank takes physical control of the goods'], ans:'C', exp:'The forced sale value of goods is NOT adequate to cover the exposure at all times. (The FSV must ALWAYS be adequate — option D \'none of the above\' is WRONG because C is a valid reason to decline.) (Pg 45)'},
+{id:'Q63', q:'Under what condition will Access Bank take a lead role in loan syndication?', opts:['A. When the loan amount is very small', 'B. When the borrower is a new customer', 'C. Where it has the expertise and capacity to manage the syndication fully', 'D. When other banks refuse to participate'], ans:'C', exp:'Where it has the expertise and capacity to manage the syndication fully. (Pg 46)'},
+{id:'Q64', q:'Unsecured credit to bank\'s directors must be:', opts:['A. Approved by the Branch Manager', 'B. Approved by the GMD only', 'C. Approved by the MCC only', 'D. Approved by Board prior to drawdown AND mentioned at a board meeting for ratification'], ans:'D', exp:'Approved by Board prior to drawdown AND mentioned at a board meeting for ratification. (Pg 46)'},
+{id:'Q65', q:'What is the maximum tenure the Bank can allow for agricultural loans?', opts:['A. 3 years', 'B. 5 years', 'C. 7 years', 'D. 8 years'], ans:'D', exp:'8 years. (Pg 46)'},
+{id:'Q66', q:'Which consideration is NOT important in establishing the bank\'s lending rate?', opts:['A. Cost of funds', 'B. Lending rates of peer banks', 'C. Lending rates of POOR banks', 'D. Risk/return preference'], ans:'C', exp:'Lending rates of POOR banks. (Peer banks yes; poor banks no.) (Pg ~47)'},
+{id:'Q67', q:'What is the minimum requirement for all items pledged as security for credit facilities?', opts:['A. Verbal agreement from the customer', 'B. Perfected legal mortgage in favour of Access Bank', 'C. Insurance coverage only', 'D. Personal guarantee of the director'], ans:'B', exp:'Perfected legal mortgage in favour of Access Bank. (Pg 50)'},
+{id:'Q68', q:'What is the minimum collateral requirement for all credit extensions to corporate obligors?', opts:['A. Board resolution only', 'B. Personal guarantees of directors only', 'C. All-assets debenture only', 'D. Any of the above. (Board resolution, personal guarantees of directors, OR all-assets debenture — any satisfies the minimum.)'], ans:'D', exp:'Any of the above. (Board resolution, personal guarantees of directors, OR all-assets debenture — any satisfies the minimum.) (Pg 50)'},
+{id:'Q69', q:'Which one is NOT accepted collateral based on the CPG?', opts:['A. Landed property', 'B. Cash collateral', 'C. Marketable securities', 'D. Life assurance policy', 'E. Letter of hypothecation of stock'], ans:'E', exp:'Letter of hypothecation of stock. (Pg 50)'},
+{id:'Q70', q:'What is the minimum percentage of Expected Forced Sale Value (EFSV) of collateral acceptable to Access Bank?', opts:['A. 100%', 'B. 110%', 'C. 120%', 'D. 130%'], ans:'C', exp:'120%. (Pg 50)'},
+{id:'Q71', q:'Which landed property may be acceptable under the CPG?', opts:['A. Undeveloped land in a remote area', 'B. Property with less than 15 years remaining on lease', 'C. Property with disputed ownership', 'D. Undeveloped land in prime location (e.g. Abuja, V/I or Lekki)'], ans:'D', exp:'Undeveloped land in prime location (e.g. Abuja, V/I or Lekki). (Pg 51)'},
+{id:'Q72', q:'EFSV must be determined by a professional estate valuer for facilities in excess of:', opts:['A. N10 million', 'B. N20 million', 'C. N30 million', 'D. N50 million'], ans:'D', exp:'N50 million. (Pg 50)'},
+{id:'Q73', q:'In what type of account will cash deposited as collateral be placed?', opts:['A. Savings account', 'B. Current account', 'C. Escrow account', 'D. Fixed deposit account'], ans:'C', exp:'Escrow account. (Pg 51)'},
+{id:'Q74', q:'In what instance will Access Bank allow another bank to share/participate in its lien over cash collateral?', opts:['A. When the customer requests it in writing', 'B. When the other bank is a partner bank', 'C. Where the account balance can conveniently accommodate such lien by the second bank', 'D. Never, under any circumstances'], ans:'C', exp:'Where the account balance can conveniently accommodate such lien by the second bank. (Pg 51)'},
+{id:'Q75', q:'Acceptability of stocks & shares as collateral shall be limited to:', opts:['A. All companies listed on any exchange', 'B. Unlisted private companies', 'C. Selected blue chip companies quoted on the NSE', 'D. Start-up companies with high growth potential'], ans:'C', exp:'Selected blue chip companies quoted on the NSE. (Pg 51)'},
+{id:'Q76', q:'The assessed market value of shares used as collateral is based on the average value over what period?', opts:['A. 30 days', 'B. 90 days', 'C. 180 days', 'D. 360 days (12 months)'], ans:'D', exp:'360 days (12 months). (Pg 52)'},
+{id:'Q77', q:'What resource material is most appropriate to find the average value of a share?', opts:['A. Financial newspapers', 'B. Online stock trackers', 'C. Bank approved stockbroker', 'D. The customer\'s financial advisor'], ans:'C', exp:'Bank approved stockbroker.'},
+{id:'Q78', q:'What is the recommended minimum shrinkage/discount on market value of share collateral?', opts:['A. Between 10% and 20%', 'B. Between 20% and 30%', 'C. Between 30% and 50%', 'D. Between 50% and 70%'], ans:'C', exp:'Between 30% and 50%. (Pg 52)'},
+{id:'Q79', q:'Under what circumstance will personal, joint and several guarantees of Directors be acceptable as SOLE security?', opts:['A. When the director has a high net worth', 'B. When the director has a long track record with the bank', 'C. When the loan amount is small', 'D. When the company is highly profitable', 'E. None of the above. Personal guarantees alone are NEVER sufficient as sole security regardless of the director\'s net worth or track record.'], ans:'E', exp:'None of the above. Personal guarantees alone are NEVER sufficient as sole security regardless of the director\'s net worth or track record. (CPG)'},
+{id:'Q80', q:'Corporate guarantees may NOT be acceptable under which instance?', opts:['A. Cross-corporate guarantee of a SUBSIDIARY company for a credit line approved for the PARENT company', 'B. Guarantee of a parent company for a subsidiary', 'C. Guarantee of a sister company with strong financials', 'D. Guarantee of an affiliate with shared management'], ans:'A', exp:'Cross-corporate guarantee of a SUBSIDIARY company for a credit line approved for the PARENT company. (A subsidiary guaranteeing the parent is not acceptable.) (Pg ~52)'},
+{id:'Q81', q:'The most compelling consideration for accepting a life assurance policy as collateral:', opts:['A. The premium payment history of the policy', 'B. The surrender value of such policy is very easily ascertainable and adequate to ensure full recovery of the facility', 'C. The policy is issued by a reputable insurance company', 'D. The policyholder is a close relative of the bank director'], ans:'B', exp:'The surrender value of such policy is very easily ascertainable and adequate to ensure full recovery of the facility. (Pg 52)'},
+{id:'Q82', q:'Which item is EXEMPTED from the insurance requirement for pledged assets?', opts:['A. Landed property', 'B. Guarantees', 'C. Motor vehicles', 'D. Machinery and equipment'], ans:'B', exp:'Guarantees. (Legal undertakings, not physical assets.) (Pg 55)'},
+{id:'Q83', q:'Time frame for completion of preliminary screening of credit requests:', opts:['A. 24 hours', 'B. 48 hours', 'C. 72 hours', 'D. 7 days'], ans:'A', exp:'24 hours. (Pg 131)'},
+{id:'Q84', q:'What is the purpose of preliminary credit screening?', opts:['A. To finalize the loan documentation', 'B. To disburse funds immediately', 'C. To facilitate the early identification of unacceptable risk exposures', 'D. To calculate the final interest rate'], ans:'C', exp:'To facilitate the early identification of unacceptable risk exposures. (Pg 131)'},
+{id:'Q85', q:'All recommendations for denial of credit facility shall require endorsement of:', opts:['A. Relationship Manager', 'B. Group Head', 'C. Credit Risk Management', 'D. Branch Manager'], ans:'B', exp:'Group Head. (Pg 131)'},
+{id:'Q86', q:'What is the primary outcome of the credit analysis process?', opts:['A. Immediate disbursement of funds', 'B. Creation of a marketing plan for the client', 'C. Determination of credit risk rating only', 'D. Determination of credit risk rating AND an approval/rejection recommendation of facility'], ans:'D', exp:'Determination of credit risk rating AND an approval/rejection recommendation of facility. (Both outcomes together.)'},
+{id:'Q87', q:'Which component must be included in a full credit review?', opts:['A. Financial spreads only', 'B. Risk rating document only', 'C. Facility approval memo only', 'D. All of the above: financial spreads, risk rating document, facility approval memo, Target Market/Risk Acceptance criteria'], ans:'D', exp:'All of the above: financial spreads, risk rating document, facility approval memo, Target Market/Risk Acceptance criteria. (Pg 132)'},
+{id:'Q88', q:'Which is an important consideration for renewal of approved facilities?', opts:['A. Continued viability only', 'B. Account turnover only', 'C. Status of collateral only', 'D. All of the above: continued viability, account turnover, status of collateral, micro & economic considerations'], ans:'D', exp:'All of the above: continued viability, account turnover, status of collateral, micro & economic considerations. (Pg 133)'},
+{id:'Q89', q:'Why does the CPG direct that risk ratings be assigned to each facility?', opts:['A. To provide a uniform basis for comparison only', 'B. To indicate credit risk inherent in the facility only', 'C. All of the above: to provide a uniform basis for comparison AND to indicate credit risk inherent in the facility and overall acceptability', 'D. To satisfy external auditor requirements'], ans:'C', exp:'All of the above: to provide a uniform basis for comparison AND to indicate credit risk inherent in the facility and overall acceptability. (Pg 133)'},
+{id:'Q90', q:'How long does the credit analyst have to complete detailed analysis?', opts:['A. 24 hours', 'B. 48 hours', 'C. 48–72 hours from receipt of complete information', 'D. 7 days'], ans:'C', exp:'48–72 hours from receipt of complete information. (Pg 133)'},
+{id:'Q91', q:'How long does a customer have to accept a credit offer?', opts:['A. Within 30 days of facility offer date', 'B. Within 60 days of facility offer date', 'C. Within 90 days of facility offer date', 'D. Within 7 days of facility offer date'], ans:'A', exp:'Within 30 days of facility offer date. (Pg 133)'},
+{id:'Q92', q:'How long does a customer have to meet all conditions precedent to drawdown?', opts:['A. Within 30 days of facility offer date', 'B. Within 60 days of facility offer date', 'C. Within 90 days of facility offer date', 'D. Within 180 days of facility offer date'], ans:'C', exp:'Within 90 days of facility offer date. (Pg 133)'},
+{id:'Q93', q:'What mode of acceptance of facility offer is required?', opts:['A. Verbal acceptance', 'B. SMS acceptance', 'C. In writing. Verbal or SMS acceptance is NOT sufficient', 'D. Email acceptance only'], ans:'C', exp:'In writing. Verbal or SMS acceptance is NOT sufficient. (Pg 133)'},
+{id:'Q94', q:'If a single bank customer has multiple exposures with more than one market-facing unit, how many credit files should be maintained?', opts:['A. One for each market-facing unit', 'B. One single credit file', 'C. Two credit files (one for retail, one for corporate)', 'D. No credit file is needed'], ans:'B', exp:'One single credit file. (Pg 134)'},
+{id:'Q95', q:'Who is responsible for establishing the customer\'s credit file?', opts:['A. Relationship Manager', 'B. Branch Manager', 'C. Credit Administration', 'D. The customer'], ans:'C', exp:'Credit Administration. (Pg 134)'},
+{id:'Q96', q:'Whose responsibility is it to ensure complete and legally enforceable documentation of credit?', opts:['A. Credit Administration only', 'B. Legal Department only', 'C. Relationship Manager in conjunction with customers', 'D. Branch Manager'], ans:'C', exp:'Relationship Manager in conjunction with customers. (Pg 134)'},
+{id:'Q97', q:'What time frame does the CPG stipulate for the completion of credit documentation?', opts:['A. 24 hours', 'B. 7 days', 'C. 30 days', 'D. None (the CPG does not specify a fixed deadline for credit documentation completion)'], ans:'D', exp:'None (the CPG does not specify a fixed deadline for credit documentation completion).'},
+{id:'Q98', q:'What is the minimum number of years remaining on a property lease for it to be acceptable as collateral?', opts:['A. 5 years', 'B. More than 15 years', 'C. 10 years', 'D. 20 years'], ans:'B', exp:'More than 15 years. (Pg 51)'},
+{id:'Q99', q:'Deferral of any security document for facility under N1bn will require approval of:', opts:['A. The GMD', 'B. The MCC', 'C. The Head of Credit Risk Management', 'D. The GDMD'], ans:'D', exp:'The GDMD. (Pg 134)'},
+{id:'Q100', q:'How often must CAD prepare a report on deferrals?', opts:['A. Weekly', 'B. Monthly', 'C. Quarterly', 'D. Annually'], ans:'B', exp:'Monthly. (Pg 134)'},
+{id:'Q101', q:'What may trigger the need for an Exposure Quality Review?', opts:['A. Routine annual review', 'B. Identification of a decline in the quality of the facility', 'C. Customer request for a limit increase', 'D. Change in Relationship Manager'], ans:'B', exp:'Identification of a decline in the quality of the facility. (Pg 137)'},
+{id:'Q102', q:'How often must the MCC institute periodic reviews of exposure?', opts:['A. Monthly', 'B. Quarterly', 'C. Semi-annually', 'D. Annually'], ans:'B', exp:'Quarterly. (Pg 134)'},
+{id:'Q103', q:'The overall responsibility of sustaining the quality of individual risk exposure is primarily that of:', opts:['A. Credit Risk Management', 'B. Credit Administration', 'C. Relationship Manager', 'D. The Board of Directors'], ans:'C', exp:'Relationship Manager. (Pg 134)'},
+{id:'Q104', q:'Discovery of any declining risk exposure must be brought to the notice of the Chairman of CAC within:', opts:['A. 24 hours', 'B. 3 days', 'C. 5 days', 'D. 7 days'], ans:'D', exp:'7 days. (Pg 138)'},
+{id:'Q105', q:'Whose responsibility is it to make this report to the Chairman of CAC?', opts:['A. Relationship Manager only', 'B. Credit Risk Management only', 'C. Branch Manager', 'D. ED of business unit AND Head, Credit Risk Management. Both are jointly responsible'], ans:'D', exp:'ED of business unit AND Head, Credit Risk Management. Both are jointly responsible. (Pg 138)'},
+{id:'Q106', q:'Where collateral is a mortgage on landed property, which is a condition precedent to final approval?', opts:['A. Verbal agreement from the customer', 'B. Payment of the first installment', 'C. Receipt of certificate of good title from search', 'D. Insurance coverage only'], ans:'C', exp:'Receipt of certificate of good title from search. (Pg 138)'},
+{id:'Q107', q:'Whose responsibility is it to develop and implement a collateral management plan?', opts:['A. Relationship Manager', 'B. Legal Department', 'C. Credit Risk Management', 'D. Credit Administration'], ans:'C', exp:'Credit Risk Management. (Pg 139)'},
+{id:'Q108', q:'In event of non-compliance with collateralization conditions, whose responsibility is it to report to the Chairman, CAC?', opts:['A. Relationship Manager', 'B. Branch Manager', 'C. Credit Risk Management', 'D. Legal Department'], ans:'C', exp:'Credit Risk Management. (Pg 139)'},
+{id:'Q109', q:'What is the time frame within which this report will be made?', opts:['A. Within 24 hours', 'B. Within 3 days', 'C. Within 5 days', 'D. Within 7 days'], ans:'D', exp:'Within 7 days. (Pg 139)'},
+{id:'Q110', q:'First delinquency notice: within ___ working days. Second notice: after ___ working days of first.', opts:['A. 5 working days / 10 working days', 'B. 7 working days / 14 working days', 'C. 10 working days / 20 working days', 'D. 15 working days / 30 working days'], ans:'C', exp:'10 working days / 20 working days. (Pg 139)'},
+{id:'Q111', q:'How regularly must the credit watch list of non-performing/delinquent credits be prepared?', opts:['A. Weekly', 'B. Monthly', 'C. Quarterly', 'D. Annually'], ans:'B', exp:'Monthly. (Pg 139)'},
+{id:'Q112', q:'Responsibility for delinquency management:', opts:['A. Relationship Manager', 'B. Credit Administration', 'C. Legal Department', 'D. Remedial Assets Unit'], ans:'D', exp:'Remedial Assets Unit. (Pg 140)'},
+{id:'Q113', q:'All non-performing/delinquent credits shall be classified as remedial assets after:', opts:['A. 90 days', 'B. 180 days', 'C. 360 days', 'D. 720 days'], ans:'B', exp:'180 days. (CPG)'},
+{id:'Q114', q:'Credit facilities may be restructured:', opts:['A. Only at the request of the obligor', 'B. Only by the RM on identification of need based on performance', 'C. Both A & B: at the request of the obligor OR by the RM on identification of need based on performance', 'D. Only by the Board of Directors'], ans:'C', exp:'Both A & B: at the request of the obligor OR by the RM on identification of need based on performance. (Pg 140)'},
+{id:'Q115', q:'Loan loss provisioning for outstanding credit facility NOT specifically provided for:', opts:['A. 0.5%', 'B. 5%', 'C. 1%', 'D. 10%'], ans:'C', exp:'1%. (Pg 86)'},
+{id:'Q116', q:'Loan loss provisioning for \'Substandard\' classification:', opts:['A. 10%', 'B. 20%', 'C. 50%', 'D. 100%'], ans:'B', exp:'20%. (Pg 85)'},
+{id:'Q117', q:'Loan loss provisioning for \'Doubtful\' classification:', opts:['A. 10%', 'B. 20%', 'C. 50%', 'D. 100%'], ans:'C', exp:'50%. (Pg 85)'},
+{id:'Q118', q:'Loan loss provisioning for \'Lost\' classification:', opts:['A. 100%', 'B. 50%', 'C. 20%', 'D. 10%'], ans:'A', exp:'100%. (Pg 85)'},
+{id:'Q119', q:'Interest waivers and/or credit charge consideration is limited only to credit exposures classified as:', opts:['A. \'Substandard\'', 'B. \'Doubtful\'', 'C. \'Lost\'', 'D. \'Pass\''], ans:'C', exp:'\'Lost\'. (Pg 141)'},
+{id:'Q120', q:'Discussions and negotiation in respect of repayment/waiver is the responsibility of:', opts:['A. Relationship Manager', 'B. Legal Department', 'C. Remedial Asset Unit', 'D. Credit Administration'], ans:'C', exp:'Remedial Asset Unit. (Pg 141)'},
+{id:'Q121', q:'Under what circumstance may the bank grant a new facility to a borrower who had previously enjoyed a waiver?', opts:['A. When the customer provides additional collateral', 'B. When the customer has a new business plan', 'C. Where the customer has fully settled the previously granted waivers', 'D. When the Board of Directors approves it unconditionally'], ans:'C', exp:'Where the customer has fully settled the previously granted waivers. (Pg 141)'},
+{id:'Q122', q:'All waivers of interest and charges shall require approval of:', opts:['A. The Board of Directors', 'B. The MCC', 'C. GMD', 'D. Relationship Manager'], ans:'C', exp:'GMD. (Pg 141)'},
+{id:'Q123', q:'Under what condition(s) will an exposure be recommended for write-off?', opts:['A. Impossible contact with the obligor', 'B. Cost of recovery exceeds the debt', 'C. Collateral shortfall', 'D. Any of the above: impossible contact, cost exceeds debt, collateral shortfall, or no further recovery possible'], ans:'D', exp:'Any of the above. (Impossible contact, cost exceeds debt, collateral shortfall, or no further recovery possible.) (Pg 140)'},
+{id:'Q124', q:'All credit facility write-offs require approval by:', opts:['A. The GMD', 'B. The Board of Directors (and CBN)', 'C. The MCC', 'D. The Head of Credit Risk Management'], ans:'B', exp:'The Board of Directors (and CBN). (Pg 140)'},
+{id:'Q125', q:'Erroneous interest or charges reversal may be approved by:', opts:['A. The MCC', 'B. The Head of Credit Risk Management', 'C. The Branch Manager', 'D. GMD'], ans:'D', exp:'GMD. (Pg 140/141)'},
+{id:'Q126', q:'The primary reference document for creating & managing credit exposure:', opts:['A. The ERM Framework', 'B. The Market Risk Policy', 'C. The Central Bank Guidelines', 'D. None of the above (CPG Manual itself)'], ans:'D', exp:'None of the above (CPG Manual itself — not the ERM Framework, not market risk policy). (CPG)'},
+{id:'Q126b', q:'Under the CPG, which statement is True?', opts:['A. The CPG is only for senior management', 'B. Only the Head Office must comply', 'C. All of the above: The CPG is intended for credit personnel AND all business units/countries must fully comply', 'D. The CPG is optional for regional offices'], ans:'C', exp:'All of the above: The CPG is intended for credit personnel AND all business units/countries must fully comply.'},
+{id:'Q127', q:'The Africa regional office of the Credit Risk Group reports to:', opts:['A. The Board of Directors', 'B. The GMD directly', 'C. The local country manager', 'D. Head, Credit Risk Management in Head Office'], ans:'D', exp:'Head, Credit Risk Management in Head Office. (CPG)'},
+{id:'Q128', q:'Which is NOT a function of the MCC?', opts:['A. Review policy for Board approval', 'B. Approve individual credits within its limits', 'C. Approve lending decisions & limit setting', 'D. Monitor portfolio performance'], ans:'C', exp:'"Approve lending decisions & limit setting." (MCC reviews policy for Board approval; it approves individual credits within its limits but does not set limits.) (Pg 23–24)'},
+{id:'Q129', q:'Whose responsibility is it to ensure the integrity of the credit process and proper documentation of credit decisions?', opts:['A. Credit Risk Management (primarily)', 'B. The Relationship Manager only', 'C. The Legal Department', 'D. The Branch Manager'], ans:'A', exp:'Credit Risk Management (primarily). (CPG)'},
+{id:'Q130', q:'The policy document sets out a framework for:', opts:['A. The consistent management of Credit Risk', 'B. Marketing strategies only', 'C. Human resource management', 'D. IT security protocols'], ans:'A', exp:'The consistent management of Credit Risk. (Pg 8)'},
+{id:'Q131', q:'The policy is derived from:', opts:['A. The Central Bank guidelines only', 'B. The Bank\'s Enterprise Risk Management Framework', 'C. International Financial Reporting Standards', 'D. The Board of Directors\' personal preferences'], ans:'B', exp:'The Bank\'s Enterprise Risk Management Framework. (CPG)'},
+{id:'Q132', q:'The Enterprise Risk Management Framework represents the following EXCEPT:', opts:['A. Identifying opportunities', 'B. Assessing risk', 'C. Monitoring and reporting of demand deposits', 'D. Managing risks proactively'], ans:'C', exp:'Monitoring and reporting of demand deposits. (ERM is about identifying opportunities, assessing risk, and managing risks proactively — NOT deposit monitoring.) (CPG)'},
+{id:'Q133', q:'The manual outlines the general policies and procedures framework and incorporates provisions for:', opts:['A. Marketing/risk analysis only', 'B. Approval/administration only', 'C. Monitoring/reporting only', 'D. All of the above: marketing/risk analysis, approval/administration, and monitoring/reporting'], ans:'D', exp:'All of the above: marketing/risk analysis, approval/administration, and monitoring/reporting. (Pg 9)'},
+{id:'Q134', q:'The credit risk management policy manual is designed for the following EXCEPT:', opts:['A. "Structuralize credit policies for the bank, giving CLIENTS clear and consistent direction."', 'B. Giving EMPLOYEES clear and consistent direction', 'C. Establishing standards for credit analysis', 'D. Defining approval authorities'], ans:'A', exp:'"Structuralize credit policies for the bank, giving CLIENTS clear and consistent direction." (It gives EMPLOYEES, not clients, direction.) (Pg 9)'},
+{id:'Q135', q:'Risk management policies will be:', opts:['A. Reviewed on an ongoing basis', 'B. Reviewed once every 5 years', 'C. Static and unchangeable', 'D. Reviewed only upon regulatory request'], ans:'A', exp:'Reviewed on an ongoing basis. (Pg 10)'},
+{id:'Q136', q:'The policy manual is intended for:', opts:['A. Senior management only', 'B. The Legal Department only', 'C. All personnel involved in the creation and management of credit exposure', 'D. External auditors only'], ans:'C', exp:'All personnel involved in the creation and management of credit exposure. (CPG)'},
+{id:'Q137', q:'Access Bank\'s risk management policies comprise the following EXCEPT:', opts:['A. Policies', 'B. Standards', 'C. Procedures', 'D. Structures'], ans:'D', exp:'Structures. (Policies, Standards, and Procedures — not Structures.) (CPG)'},
+{id:'Q138', q:'Proposals for addition to or modification of policy statements will be presented to:', opts:['A. The Board of Directors', 'B. The GMD', 'C. The MCC', 'D. The Head, Credit Risk Management'], ans:'D', exp:'The Head, Credit Risk Management. (Pg 11)'},
+{id:'Q139', q:'Complete: the Bank "considers risk management philosophy and culture as the set of shared beliefs, values, attitudes and ___":', opts:['A. Rules', 'B. Regulations', 'C. Practices', 'D. Penalties'], ans:'C', exp:'Practices. (Pg 13)'},
+{id:'Q140', q:'The Bank\'s Risk Management philosophy is that ___ and ___ risk attitude will ensure sustainable growth:', opts:['A. Aggressive and bold', 'B. Moderate and guarded', 'C. Conservative and passive', 'D. High-risk and high-reward'], ans:'B', exp:'Moderate and guarded. (Pg 13)'},
+{id:'Q141', q:'Which is NOT a guiding principle for the Bank\'s risk culture?', opts:['A. Promote a portfolio view of risk', 'B. "Create and evaluate business-unit and Bank-wide risk profile to consider what is best for their individual business units regardless of what is best for the Bank as a whole."', 'C. Encourage open communication about risk', 'D. Foster accountability for risk management'], ans:'B', exp:'"Create and evaluate business-unit and Bank-wide risk profile to consider what is best for their individual business units regardless of what is best for the Bank as a whole." This violates the portfolio view principle. (Pg 13)'},
+{id:'Q142', q:'The enterprise risk management framework is:', opts:['A. Mandatory', 'B. Optional', 'C. Recommended but not enforced', 'D. Applicable only to the Head Office'], ans:'A', exp:'Mandatory. (Pg 14)'},
+{id:'Q143', q:'Risk management is the responsibility of:', opts:['A. MCC only', 'B. Risk Officers only', 'C. Relationship Managers only', 'D. All of the above: MCC, Risk Officers, and Relationship Managers'], ans:'D', exp:'All of the above: MCC, Risk Officers, and Relationship Managers. (Pg 14)'},
+{id:'Q144', q:'___ attention shall be paid to quantifiable and non-quantifiable risks:', opts:['A. Primary', 'B. Equal', 'C. Secondary', 'D. Minimal'], ans:'B', exp:'Equal. (Pg 14)'},
+{id:'Q145', q:'Before granting credit to an individual or sole proprietorship you must do all the following EXCEPT:', opts:['A. Have a personal relationship with the client', 'B. Obtain a complete financial picture', 'C. Conduct an independent income check', 'D. Make personal visits'], ans:'A', exp:'Have a personal relationship with the client. (A complete financial picture, independent income check, and personal visits are required; a personal relationship is NOT a CPG requirement.)'},
+{id:'Q146', q:'Individuals or business credit must be secured by all the following EXCEPT:', opts:['A. Tangible collateral', 'B. Easy-to-dispose collateral', 'C. Collateral in the bank\'s possession', 'D. Relevant past history with the Bank'], ans:'D', exp:'Relevant past history with the Bank. (Tangible collateral, easy-to-dispose collateral, and collateral in the bank\'s possession are required; past history alone is not a security item.)'},
+{id:'Q147', q:'Unsecured loans to individuals or organisations, other than to members of staff of the Bank, shall require:', opts:['A. Branch Manager approval', 'B. MCC approval only', 'C. Board of Directors approval', 'D. GMD/GDMD\'s approval irrespective of the amount involved (in addition to other approvals that may be required)'], ans:'D', exp:'GMD/GDMD\'s approval irrespective of the amount involved (in addition to other approvals that may be required).'},
+{id:'Q148', q:'Which of the following is NOT a type of Credit Exposure?', opts:['A. Legal Commitments', 'B. Term loan', 'C. Unadvised Facility', 'D. Advised Facility'], ans:'A', exp:'Legal Commitments. (Term loan, Unadvised Facility, and Advised Facility are credit exposure types; Legal Commitments is not a standalone exposure type in this context.)'},
+{id:'Q149', q:'A credit extension made known to the borrower and to which the Bank is committed (as long as the borrower fulfils prior conditions) is:', opts:['A. An unadvised facility', 'B. A temporary overdraft', 'C. A term loan', 'D. An advised facility'], ans:'D', exp:'An advised facility. (Pg 136)'},
+{id:'Q150', q:'Acceptance of an advised credit by a corporate client must be supported by a:', opts:['A. Board Resolution, among other requirements', 'B. Verbal agreement', 'C. Email confirmation', 'D. Personal guarantee only'], ans:'A', exp:'Board Resolution, among other requirements. (Pg 136)'},
+{id:'Q151', q:'Tenor of revolving credits must not exceed:', opts:['A. 1 year', 'B. 2 years', 'C. 3 years', 'D. 5 years'], ans:'C', exp:'3 years. (Pg 42)'},
+{id:'Q152', q:'To manage the Bank\'s exposure effectively, an Account Officer may choose not to advise the full amount of the facility approved. One valid reason for this is:', opts:['A. To restrict response to emergency needs for additional lines', 'B. To avoid documentation requirements', 'C. To increase the interest rate arbitrarily', 'D. To bypass credit approval'], ans:'A', exp:'To restrict response to emergency needs for additional lines. (This is the unadvised/discretionary portion managed by the Account Officer.)'},
+{id:'Q153', q:'An Overdraft (OD) is a line of credit that allows a customer to write cheques for _______ the actual balance on the account, with a finance charge on the excess.', opts:['A. Less than', 'B. Equal to', 'C. More than', 'D. Exactly half of'], ans:'C', exp:'More than.'},
+{id:'Q154', q:'Ideally, the use of an OD should be restricted to:', opts:['A. Working capital requirements', 'B. Capital expenditure', 'C. Personal loans', 'D. Long-term investments'], ans:'A', exp:'Working capital requirements. (Pg 43)'},
+{id:'Q155', q:'It is imperative for an account officer to satisfy himself as to which of the following before extending an overdraft?', opts:['A. The reasonableness of the OD amount only', 'B. The usage matching the client\'s business cycle only', 'C. The client\'s ability to absorb interest only', 'D. All of the above: the reasonableness of the OD amount, the usage matching the client\'s business cycle, and the client\'s ability to absorb interest'], ans:'D', exp:'All of the above: the reasonableness of the OD amount, the usage matching the client\'s business cycle, and the client\'s ability to absorb interest.'},
+{id:'Q156', q:'For customers wishing to draw against confirmed drafts (DAU/D or DAUE), the facility shall be approved for:', opts:['A. The full value of the draft regardless of clearing time', 'B. The tenor the draft is in clearing', 'C. A maximum of 90 days', 'D. A maximum of 180 days'], ans:'B', exp:'The tenor the draft is in clearing. (Pg 43)'},
+{id:'Q157', q:'Tenor of revolving credit (confirmation):', opts:['A. One year', 'B. Three years', 'C. Five years', 'D. Seven years'], ans:'B', exp:'Three years. (Pg 42)'},
+{id:'Q159', q:'Warehouse financing is best suited where:', opts:['A. Goods are slow-moving', 'B. Maximum tenor is 24 months', 'C. Forced sale value of goods is inadequate', 'D. All of the above: fast-moving consumer goods, maximum tenor 12 months, forced sale value of goods adequate to cover exposure'], ans:'D', exp:'All of the above: fast-moving consumer goods, maximum tenor 12 months, forced sale value of goods adequate to cover exposure. (CPG)'},
+{id:'Q160', q:'Maximum tenure of a TIME loan:', opts:['A. One year or less', 'B. Two years', 'C. Three years', 'D. Five years'], ans:'A', exp:'One year or less. (Pg 42)'},
+{id:'Q160b', q:'Where a warehouse financing facility is granted, which is necessary?', opts:['A. Periodic stock taking only', 'B. FIFO release only', 'C. Bank takes physical control only', 'D. All of the above: periodic stock taking, FIFO release, bank takes physical control'], ans:'D', exp:'All of the above: periodic stock taking, FIFO release, bank takes physical control. (Pg 45)'},
+{id:'Q161', q:'Maximum tenor of a TERM loan:', opts:['A. 7 years (maturities beyond 7 years generally discouraged)', 'B. 5 years', 'C. 10 years', 'D. 3 years'], ans:'A', exp:'7 years (maturities beyond 7 years generally discouraged). (Pg 42)'},
+{id:'Q162', q:'Where a financing request is too large for one Bank, two or more Banks may jointly provide financing. The Bank shall be willing to participate in syndications led by other Banks subject to:', opts:['A. The syndicated facility being led by a foreign bank', 'B. The syndicated facility being subject to the same high standards of credit analysis, documentation, etc.', 'C. The syndicated facility having a lower interest rate', 'D. The syndicated facility being unsecured'], ans:'B', exp:'The syndicated facility being subject to the same high standards of credit analysis, documentation, etc. (Pg 45)'},
+{id:'Q163', q:'Under what condition will the Bank assume lead roles in syndication.', opts:['A. Where the loan amount is very small', 'B. Where the borrower is a new customer', 'C. Where the Bank has the expertise and capacity to manage the syndication fully', 'D. When other banks refuse to participate'], ans:'C', exp:'Where the Bank has the expertise and capacity to manage the syndication fully. (Pg 46)'},
+{id:'Q164', q:'Policy Loans are exceptional or unsecured credit extensions to certain parties. Which of the following is NOT a policy loan category?', opts:['A. Loans to directors', 'B. Loans to politically exposed persons', 'C. Loans to related parties', 'D. Loans to staff of the bank'], ans:'D', exp:'Loans to staff of the bank. (Staff loans are a separate category, not a "policy loan" requiring special handling.) (Pg 46)'},
+{id:'Q165', q:'The appraisal of agricultural loan proposals shall take account of:', opts:['A. Vulnerability to weather/pest/disease only', 'B. Specialized skills required only', 'C. Long maturing period only', 'D. All of the above: vulnerability to weather/pest/disease, specialized skills required, and long maturing period'], ans:'D', exp:'All of the above: vulnerability to weather/pest/disease, specialized skills required, and long maturing period. (Pg 46)'},
+{id:'Q166', q:'The Bank may extend credit for specific agricultural ventures provided that:', opts:['A. The venture is located in a rural area', 'B. The borrower has previous farming experience', 'C. The loan is secured by farmland', 'D. The bank receives acceptable guarantees from public or private sources external to the project'], ans:'D', exp:'The bank receives acceptable guarantees from public or private sources external to the project. (Pg 47)'},
+{id:'Q167', q:'Maximum tenor for agricultural loans:', opts:['A. 3 years', 'B. 5 years', 'C. 7 years', 'D. 8 years'], ans:'D', exp:'8 years. (Pg 46)'},
+{id:'Q168', q:'Advance Payment, Bid Bonds and Guarantees should contain all of the following elements EXCEPT:', opts:['A. Specific expiration date', 'B. Limited amount', 'C. Clear statement of the underlying contract', 'D. "The Bank may not charge a fee for its issuance."'], ans:'D', exp:'"The Bank may not charge a fee for its issuance." This is FALSE — the Bank CAN and does charge fees for bond/guarantee issuance. (Pg 44)'},
+{id:'Q169', q:'Maximum tenor for placements with approved banks:', opts:['A. 30 days', 'B. 90 days', 'C. 180 days', 'D. 360 days'], ans:'D', exp:'360 days. (Pg 47)'},
+{id:'Q170', q:'Nature of limit the CPG imposes on TAKINGS from other banks:', opts:['A. None. There is no limit on takings from other banks.', 'B. 10% of shareholders\' funds', 'C. 20% of shareholders\' funds', 'D. 50% of shareholders\' funds'], ans:'A', exp:'None. There is no limit on takings from other banks. (Pg 47)'},
+{id:'Q171', q:'Access Bank policy will NOT finance armament loans or gambling loans. What exceptions exist?', opts:['A. None, no exceptions allowed', 'B. The GMD can approve with a waiver', 'C. The MCC can approve under special circumstances', 'D. The Board of Directors must approve'], ans:'D', exp:'The Board of Directors must approve. (Pg 35)'},
+{id:'Q172', q:'Section 20(1a) of BOFIA 1991: a Bank shall not grant more than ___% of shareholders\' funds to a company, its subsidiaries and associates.', opts:['A. 10%', 'B. 15%', 'C. 20%', 'D. 25%'], ans:'C', exp:'20%. (Pg 70)'},
+{id:'Q173', q:'The concept of one obligor includes any company belonging to a group whose management are linked by virtue of their related ownership structure.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 70)'},
+{id:'Q174', q:'It shall be the responsibility of the Relationship Manager to determine whether related company obligations shall be aggregated.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 70)'},
+{id:'Q175', q:'\'One-obligor\' includes all subsidiaries owned at least 50% (aggregate of direct and indirect shareholdings).', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 70)'},
+{id:'Q176', q:'Any less than 50% owned affiliate where the borrower exercises management control is included in the one-obligor concept.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 70)'},
+{id:'Q177', q:'Any obligor related to the borrower as a result of guarantees, endorsements, or similar arrangements in favor of the Bank is included.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 70)'},
+{id:'Q178', q:'All obligors under common ownership or control of a corporation or individual are included in the one-obligor concept.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 70)'},
+{id:'Q179', q:'Approval limit — Executive Directors:', opts:['A. N75 million', 'B. N150 million', 'C. N200 million', 'D. N500 million'], ans:'A', exp:'N75 million. (Pg 64)'},
+{id:'Q180', q:'Approval limit — Group Deputy Managing Director:', opts:['A. N75 million', 'B. N150 million', 'C. N200 million', 'D. N500 million'], ans:'B', exp:'N150 million. (Pg 64)'},
+{id:'Q181', q:'Approval limit — Group Managing Director/CEO:', opts:['A. N75 million', 'B. N150 million', 'C. N200 million', 'D. N500 million'], ans:'C', exp:'N200 million. (Pg 64)'},
+{id:'Q182', q:'Approval limit — Management Credit Committee (MCC):', opts:['A. N150 million', 'B. N200 million', 'C. N1 billion', 'D. N500 million'], ans:'D', exp:'N500 million. (Pg 64)'},
+{id:'Q183', q:'Approval limit — Board Credit Committee:', opts:['A. N500 million', 'B. N1 billion', 'C. N6 billion', 'D. N10 billion'], ans:'C', exp:'N6 billion. (Pg 64)'},
+{id:'Q184', q:'Approval limit — Board of Directors:', opts:['A. N500 million', 'B. N1 billion', 'C. N6 billion', 'D. Above N6 billion'], ans:'D', exp:'Above N6 billion (No upper limit, subject to CPG and statutory lending limit). (Pg 64)'},
+{id:'Q185', q:'There is no limit to the amount of credit which may be approved by the Board of Directors, provided the credit conforms to the CPG and statutory lending limit.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 64)'},
+{id:'Q185b', q:'Credits above N6 billion must be approved by the Board of Directors.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 65)'},
+{id:'Q186', q:'The MCC shall review and approve extensions of credit that exceed N15 million but are lower than N20 million.', opts:['A. True', 'B. False'], ans:'B', exp:'False — This amount range is incorrect. MCC approves credits above the GMD\'s N200 million limit up to N500 million.'},
+{id:'Q187', q:'The Management Credit Committee shall meet at least once a MONTH.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The MCC meets at least ONCE A WEEK. (Pg 23)'},
+{id:'Q188', q:'For an MCC meeting to be valid, the Chairman or Vice Chairman must be present. The Chairman or Vice Chairman, the Secretary and at least 2 other members form a quorum.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The quorum requirement stated here is incorrect per the CPG. (Pg 25)'},
+{id:'Q189', q:'In the absence of the GMD, the GDMD automatically assumes the lending limit of the GMD.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The GDMD does NOT automatically assume the GMD\'s limit; a formal delegation is required. (Pg 25)'},
+{id:'Q190', q:'Recommendation and approval of facilities shall require involvement of a minimum of ___ credit officers:', opts:['A. 1 officer', 'B. 3 officers', 'C. 2 officers', 'D. 4 officers'], ans:'B', exp:'3 officers. (Pg 62)'},
+{id:'Q191', q:'The Bank\'s pricing strategy shall be based on the following EXCEPT:', opts:['A. Cost of funds', 'B. Cost of administering the relationship', 'C. Risk/return preference', 'D. Customer\'s ability to pay'], ans:'D', exp:'Customer\'s ability to pay. (Cost of funds, cost of administering the relationship, and risk/return preference are valid bases; ability to pay alone is not a pricing input.)'},
+{id:'Q192', q:'Which of the following is NOT a consideration in ascertaining the margins to be applied in estimating lending rate?', opts:['A. Desired profitability of target segment', 'B. Profitability per customer', 'C. Lending rates of peer banks', 'D. Size of the customer'], ans:'D', exp:'Size of the customer. (Desired profitability of target segment, profitability per customer, and lending rates of peer banks are all valid considerations; size alone is not.)'},
+{id:'Q193', q:'What is the purpose of risk management policies?', opts:['A. To support the Bank\'s business strategies only', 'B. To ensure the achievement of the Bank\'s overall corporate goals and objectives only', 'C. All of the above: to support the Bank\'s business strategies AND to ensure the achievement of the Bank\'s overall corporate goals and objectives', 'D. To comply with external auditor requests only'], ans:'C', exp:'All of the above: to support the Bank\'s business strategies AND to ensure the achievement of the Bank\'s overall corporate goals and objectives.'},
+{id:'Q195', q:'Which one of the following does NOT form a critical part of the Bank\'s risk management policy?', opts:['A. Management policies', 'B. Performance standards', 'C. Procedures', 'D. None of the above'], ans:'D', exp:'None of the above. (Management policies, performance standards, and procedures ALL form critical parts.)'},
+{id:'Q196', q:'The risk management policies and procedures of the bank are articulated mainly by:', opts:['A. Relationship Management', 'B. Legal Department', 'C. Credit Risk Management', 'D. Internal Audit'], ans:'C', exp:'Credit Risk Management.'},
+{id:'Q197', q:'According to the CPG, the Credit Risk Group of the bank is presently made up of how many divisions?', opts:['A. 2', 'B. 3', 'C. 4', 'D. 5'], ans:'C', exp:'4.'},
+{id:'Q198', q:'Where will all issues regarding credit risk management from the bank\'s branches in countries other than Nigeria be treated?', opts:['A. Head Office only', 'B. Local country manager', 'C. Africa regional office', 'D. Central Bank of Nigeria'], ans:'C', exp:'Africa regional office. (Pg 9)'},
+{id:'Q199', q:'Credit Risk Management at Head Office is responsible for setting overall policies on all issues relating to credit risk management in every country where Access Bank is represented.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 26)'},
+{id:'Q200', q:'The Bank\'s representatives in other countries may institute their own independent credit risk management policies.', opts:['A. True', 'B. False'], ans:'B', exp:'False — No (they may only institute local policies for issues NOT specifically addressed in Head Office policies, and subject to endorsement). (Pg 10)'},
+{id:'Q201', q:'Any local policy in any of the Bank\'s representative offices which turns out to be at variance with Head Office policies:', opts:['A. Is automatically voided', 'B. Can be implemented without Head Office approval', 'C. Must be approved at the same level as Head Office policies', 'D. Must be approved by the local branch manager only'], ans:'C', exp:'Must be approved at the same level as Head Office policies. (Pg 10)'},
+{id:'Q202', q:'Under what circumstance will the country office be permitted to institute their own local credit risk policies?', opts:['A. For issues not specifically addressed in Head Office policies only', 'B. Adapted to their peculiarities only', 'C. Where Head Office delegates development of certain policies only', 'D. All of the above: for issues not specifically addressed in Head Office policies; adapted to their peculiarities; or where Head Office delegates development of certain policies'], ans:'D', exp:'All of the above: for issues not specifically addressed in Head Office policies; adapted to their peculiarities; or where Head Office delegates development of certain policies. (Pg 10)'},
+{id:'Q203', q:'Such local policies of the country office would not be endorsed by Head Office Credit Risk Management, but must be approved by GDMD or GMD.', opts:['A. True', 'B. False'], ans:'B', exp:'False — Such local policies MUST be endorsed by Head Office Credit Risk Management (as well as approved). (Pg 10)'},
+{id:'Q204', q:'Whose responsibility is it to ensure that the provisions of the CPG remain relevant and adequate?', opts:['A. Relationship Manager only', 'B. Credit Risk Management only', 'C. Head of Credit Risk Management only', 'D. All personnel who are involved in the credit process'], ans:'D', exp:'All personnel who are involved in the credit process. (Pg 10)'},
+{id:'Q205', q:'An approval may be given by a designee other than the primary authority for such approval.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 11)'},
+{id:'Q206', q:'Where authority to approve is delegated, such designation can be in writing only.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The CPG requires delegation to be IN WRITING; the statement as worded implies it can be oral, which is False. (Pg 11)'},
+{id:'Q207', q:'Examples of credit products that shall qualify as term loans include the following EXCEPT:', opts:['A. Equipment financing', 'B. Raw material financing', 'C. Asset replacement', 'D. New technology capital loans'], ans:'B', exp:'Raw material financing. (Equipment financing, asset replacement, and new technology capital loans are term loan products; raw material financing is typically working capital / revolving.) (Pg 42)'},
+{id:'Q209', q:'The CPG covers the marketing, analysis, processing, approval and reporting of loans.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q214', q:'As an Account Officer or Relationship Manager, you must know all aspects of the CPG.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q218', q:'The Bank may need to change these policies and procedures as laws, market conditions and the Bank\'s strategy change.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q219', q:'This guide may be altered or even withdrawn as the need arises. The change must be communicated to all concerned parties.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q220', q:'You must initiate changes to the CPG where you spot areas for improvement.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q223', q:'Most of the topics in this guide are based on a few principles.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q224', q:'Understanding these principles will give you a better understanding of credit policy.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q225', q:'They will help you with day-to-day credit decision-making, especially when you come across new situations.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q227', q:'This will not only sharpen your skills but also enhance your career.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q228', q:'Individuals and companies place their funds with us trusting our integrity in managing these funds.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q229', q:'This integrity must flow through everything the Bank does.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q230', q:'Any break in the chain of integrity, no matter how small and no matter where, will eventually lead to the decline of the Bank — if it is not checked.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q231', q:'The Bank will not take any action that may compromise its integrity.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q232', q:'It is easy to forget the importance of integrity. In credit functions you are far removed from the depositors who have entrusted their money to you.', opts:['A. True', 'B. False'], ans:'B', exp:'False — You must NEVER forget the importance of integrity regardless of how removed you feel.'},
+{id:'Q233', q:'As the funds you lend come from so many sources you often feel no specific responsibility.', opts:['A. True', 'B. False'], ans:'B', exp:'False — You must always feel responsibility regardless of the number of funding sources.'},
+{id:'Q234', q:'As a Banker you must make a conscious effort to continuously strengthen your integrity.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q235', q:'The name Access Bank is a constant reminder of this need.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q239', q:'For every transaction you must learn to identify and minimize all the potential risks in that transaction.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q240', q:'For every risk the Bank takes we must have a matching return for taking that risk.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q241', q:'All too often we take the interest and fees we charge as fixed and simply apply our efforts to structuring a credit.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q242', q:'In many instances the return on the credit is far too low for the risk of lending. A 10% profit margin on a loan is a small compensation for losing the whole loan.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q243', q:'It would take the profit of 10 loans just to break even. In this situation our success rate must be over 90% of all loans.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q244', q:'In special cases we might decide to have an exposure to a company at a low return with the expectation of getting other business/accounts, which will improve the profitability of the name.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q245', q:'From experience a bad loan takes more than ten times as much management effort as a good loan.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q251', q:'A guiding principle of credit is that all information should be independently verified.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q252', q:'Independent verification may involve an outside expert or a member of staff.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q253', q:'Independently verified information helps to reduce risk considerably.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q254', q:'An important aspect of independent verification is separation controls — the person who prepares a credit should not be the one who approves it.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q255', q:'The principle of separation controls is a very wide principle that occurs in several diverse forms.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q256', q:'The principle is not simply that certain items should be matched, but that we need to understand corresponding items.', opts:['A. True','B. False'], ans:'B', exp:'False. The correct principle is to understand what should be matched and what should be deliberately mismatched — not just "understand corresponding items."'},
+{id:'Q257', q:'We need to know what should be matched with what and in some cases what should be deliberately mismatched.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q258', q:'A key principle of credit policy is that the Bank will always comply with all Government regulations.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q259', q:'The Bank operates under a license.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q260', q:'By not complying with regulations we not only breach our contract with the authorities, we also risk losing our license or incurring penalties.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q261', q:'If we assume that Government regulations are in the best interest of the country, then we work against this interest when we break them.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q262', q:'If we break regulations and this information reaches the market, our reputation will be diminished.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q263', q:'The fall in reputation could result in lost business and reduced profit. Considering all the negative results of breaking regulations, we are much better off complying with them.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q264', q:'A loan is a contract between two (or more) parties where one party agrees to give the other party funds based on agreed terms.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q265', q:'These terms should include when and how the funds will be given as well as when and how the funds will be paid.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q267', q:'The net income from loans is the bulk of the Bank\'s total earnings.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q268', q:'Loans represent the Bank\'s single largest exposure to jeopardy.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q271', q:'A well-managed, high-quality loan portfolio will give the Bank a competitive advantage in the Banking industry.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q272', q:'An OD fluctuates regularly and even moves into credit periodically as the business cycle is completed.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q273', q:'Though theoretically repayable on demand, an OD may in practice run from year to year without being called in.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q274', q:'The company\'s ability to complete its asset conversion cycle, its profitability, relationships and exposures to other Banks are key considerations in fixing an initial overdraft limit. The extent of utilization and turnover recorded are principal issues at renewal.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 43)'},
+{id:'Q279', q:'Requests for longer tenors for temps not supported by confirmed drafts shall be documented properly in a FAM and FSR.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q280', q:'All temps shall be approved by officers who have authority to do so, while clean accommodations should require one-up approval.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q282', q:'Good clients with substantial turnover and strong management can be offered direct credit (instant credit) for cheques lodged into their accounts for clearing.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q283', q:'Financial Institutions are often given direct credit if they carry a risk rating of 2 or 3.', opts:['A. True','B. False'], ans:'B', exp:'False. Financial Institutions are given direct credit if they carry a risk rating of 1 or 2 (not 2 or 3).'},
+{id:'Q284', q:'Banker\'s Acceptance (BA) can be sold to a third party usually at a discount. By accepting the bill, the accepting institution guarantees payment.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q285', q:'BA is usually revolving and available for periods up to 9 months.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q286', q:'The BA line is available on standby to fund any type of transaction.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q287', q:'Rollover of BAs is dependent on prompt liquidation of the earlier drawdown. It is often DISCOURAGED that a standby OD line be put in place for the customer.', opts:['A. True','B. False'], ans:'B', exp:'False. It is often ENCOURAGED (not discouraged) that a standby OD line be put in place for the customer.'},
+{id:'Q288', q:'We cannot sell Bankers\' Acceptances when we need more liquidity, so we have to be extremely careful with BAs.', opts:['A. True','B. False'], ans:'B', exp:'False. BAs CAN be sold to third parties at a discount; this is one of their key features.'},
+{id:'Q289', q:'For a Revolving Credit, the customer may re-borrow sums as needed up to the limit of the facility. It is usually given to finance a company\'s permanent working capital and is ever-green for the period of the total facility.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 42)'},
+{id:'Q292', q:'Access Bank can buy or fund the purchase of a capital asset at a client\'s request and hire or lease it to them at an agreed rental.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 44)'},
+{id:'Q294', q:'Access Bank will finance leases for a wide range of equipment in normal use such as textile machinery, computers, industrial machines, telecommunications equipment, aircraft, ships and boats, motor vehicles, etc.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 44)'},
+{id:'Q296', q:'The credit management cycle in Access Bank has 5 distinct phases.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q297', q:'The type of customer selected for banking services depends on whether the company falls within the Bank\'s target market and our risk acceptance criteria.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 119)'},
+{id:'Q298', q:'Credit Analysis and Packaging does NOT include collecting information, analyzing the industry and client, judgment on ability to repay, structuring appropriate facilities, and obtaining necessary approvals.', opts:['A. True','B. False'], ans:'B', exp:'False. Credit Analysis and Packaging DOES include all of these activities.'},
+{id:'Q299', q:'Developing the association with our clients and monitoring their business is UNNECESSARY.', opts:['A. True','B. False'], ans:'B', exp:'False. It is NECESSARY, not only to ensure repayment but also to explore new business opportunities.'},
+{id:'Q300', q:'Credit Administration and Control are the step-by-step procedures a credit follows from initial contact to final repayment, necessary to keep quality consistently high.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q301', q:'Establishment of a target market and a client focus form the basis of strategically strong business and credit relationships.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q303', q:'The target markets are the industries a particular credit team concentrates its marketing efforts on.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q305', q:'Lending to customers within the client focus will be dependent on their meeting our Risk Acceptance Criteria.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q307', q:'A good Account Officer is not one that aims at winning and retaining any client at all costs, but the one that learns to say \'no\' to low quality credit proposals and those that do not fit into corporate strategy.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q308', q:'You must know clearly your target market at both the industry level and the client level.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q309', q:'You must clearly see how your marketing goals fit into the Bank\'s strategy.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q310', q:'You must ensure portfolio risks are minimised by avoiding excessive loan concentration in any industry, region or product.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q312', q:'The Bank will play across the entire chain of its customers\' business.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 13)'},
+{id:'Q313', q:'The guide is designed to be a holistic framework for creating and managing risk assets.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 13)'},
+{id:'Q314', q:'There may be clients of the Bank who will have several units responsible for approving all credit extensions related to the client.', opts:['A. True','B. False'], ans:'A', exp:'True.'},
+{id:'Q315', q:'The authority to extend or approve credit is granted to individual credit officers based upon their grades, portfolio, and length of stay in the organization.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 61)'},
+{id:'Q316', q:'Credit approval officers are recommended by senior members of risk and business management for approval by shareholders at the general meeting.', opts:['A. True','B. False'], ans:'B', exp:'False. Credit approval officers are NOT approved by shareholders at general meetings; they are designated internally. (Pg 61)'},
+{id:'Q317', q:'The level of authority required to approve credit will INCREASE as amounts and transaction risks increase and as risk rating worsens.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 61)'},
+{id:'Q318', q:'The risk asset portfolio of the bank shall be deliberately managed to ensure CONCENTRATION of risk to choice industries, market sectors and individual customers.', opts:['A. True','B. False'], ans:'B', exp:'False. The portfolio is managed to ensure DIVERSIFICATION (avoid concentration), not concentration. (CPG)'},
+{id:'Q319', q:'Credit risk is described as the potential that a bank borrower or counter party will fail to meet obligations in accordance with agreed terms.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 14)'},
+{id:'Q320', q:'Direct lending risk is that actual customer obligation and contingent obligations will not be repaid on time.', opts:['A. True','B. False'], ans:'B', exp:'False. Direct lending risk applies only to ACTUAL (not contingent) obligations. Contingent obligations are a separate risk. (Pg 15)'},
+{id:'Q321', q:'Direct lending risk exists only at the commencement of the credit extension.', opts:['A. True','B. False'], ans:'B', exp:'False — Direct lending risk exists for the ENTIRE LIFE of the transaction. (Pg 15)'},
+{id:'Q322', q:'Contingent lending risk is the risk that potential customer obligation will become actual obligation and will not be repaid on time.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 15)'},
+{id:'Q324', q:'Pre-settlement risk is the risk of default on a contractual obligation before settlement of the contract by a counter party.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 15)'},
+{id:'Q325', q:'Clearing risk may occur when funds are transferred on a customer\'s instructions before the bank receives reimbursement.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 15)'},
+{id:'Q326', q:'Equity risk occurs when the bank invests in, holds or receives equity, equity-like securities or other junior securities in non-affiliated entities.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 15)'},
+{id:'Q327', q:'Price risk is the risk that market conditions may change for an individual instrument or for all securities of the same general class.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 16)'},
+{id:'Q328', q:'Liquidity risk is the risk that the bank may be UNABLE to meet its financial commitments to customers or markets when due.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 16)'},
+{id:'Q329', q:'Fiduciary risk occurs when the bank is charged with responsibilities of acting as a trustee for third parties.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 16)'},
+{id:'Q330', q:'Disclosure risk is the risk that there is disclosure of information that the bank knows or should have known to be incorrect.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 16)'},
+{id:'Q331', q:'Country risk is the risk that an event in a country will impair the value of the Bank\'s assets or adversely affect the ability of obligations within that country to honour their obligations.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 16)'},
+{id:'Q332', q:'The Bank\'s credit risk management framework is made up of ___ distinct modules:', opts:['A. 3 modules', 'B. 4 modules', 'C. 5 modules: Risk Portfolio Planning, Exposure Development and Creation, Exposure Management, Delinquency Management/Loan Workout, and Credit Recovery', 'D. 6 modules'], ans:'C', exp:'5 modules: Risk Portfolio Planning, Exposure Development and Creation, Exposure Management, Delinquency Management/Loan Workout, and Credit Recovery. (Pg 17)'},
+{id:'Q333', q:'Risk portfolio plans shall be developed at the overall bank level ONLY.', opts:['A. True','B. False'], ans:'B', exp:'False — Plans are developed at both the overall bank level AND the individual business unit level. (Pg 17)'},
+{id:'Q334', q:'In the unlikely event of decline in quality of assets, prompt identification and management of such delinquency may reduce credit loss to the bank.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 18)'},
+{id:'Q335', q:'In the absence of approved credit programs, transactions for individual customers or customer relationships will be treated as individual/business credits.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 19)'},
+{id:'Q336', q:'As a result of their peculiar nature, all exposures to a customer or group approved as individual/business credits must be aggregated and managed by Credit Risk Management.', opts:['A. True','B. False'], ans:'B', exp:'False — The aggregation and management responsibility lies with the Relationship Manager and approval officer, not solely CRM. (Pg 19)'},
+{id:'Q337', q:'The Board Credit Committee is comprised of 6 non-executive directors, the GMD, the GDMD, and a few executive directors.', opts:['A. True','B. False'], ans:'B', exp:'False — The composition as stated is incorrect. (Pg 23)'},
+{id:'Q338', q:'The Board Credit Committee shall meet not more than once quarterly.', opts:['A. True','B. False'], ans:'B', exp:'False — The BCC meets more frequently than quarterly. (Pg 23)'},
+{id:'Q339', q:'For an MCC meeting to be valid, it must be presided over by the GMD or GDMD ONLY.', opts:['A. True','B. False'], ans:'B', exp:'False — The CPG allows delegation to another member to serve as Chairman. (Pg 25)'},
+{id:'Q340', q:'Approvals can be obtained by circulation of credit memo for absent MCC members.', opts:['A. True','B. False'], ans:'B', exp:'False — All members must attend MCC meetings; approval by circulation is not permitted. (Pg 25)'},
+{id:'Q341', q:'The Criticized Assets Committee shall be convened normally every MONTH.', opts:['A. True','B. False'], ans:'B', exp:'False — The CAC meets QUARTERLY (once every quarter). (Pg 25)'},
+{id:'Q342', q:'Facilities shall be regarded as delinquent where normal repayment of principal and/or interest is in arrears for less than 360 days.', opts:['A. True','B. False'], ans:'A', exp:'True — Delinquency classification (not yet "remedial") covers the period up to 360 days; remedial classification kicks in after 180 days. (Pg 25)'},
+{id:'Q343', q:'The decision to transfer non-performing facilities to remedial assets management must be taken at MCC meeting under the GMD\'s chairmanship.', opts:['A. True','B. False'], ans:'B', exp:'False — This decision is taken at the CAC, not the MCC. (Pg 29)'},
+{id:'Q344', q:'Credit approval is always required for the establishment of a credit facility.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 61)'},
+{id:'Q345', q:'Risk rating limits is the ONLY mechanism to control the Bank\'s portfolio of credit exposures.', opts:['A. True','B. False'], ans:'B', exp:'False — Risk Rating Limits are the PRIMARY mechanism, but not the only one. (Pg 74)'},
+{id:'Q346', q:'Risk rating limits are established by the Head of Credit Risk Management and approved by the Criticized Assets Committee.', opts:['A. True','B. False'], ans:'B', exp:'False — They are approved by the MANAGEMENT CREDIT COMMITTEE, not the CAC. (Pg 74)'},
+{id:'Q347', q:'Risk rating limits, no matter how appropriate, are subject to legal lending limits.', opts:['A. True','B. False'], ans:'A', exp:'True — Legal lending limits ALWAYS prevail over internal risk rating limits. (Pg 74)'},
+{id:'Q348', q:'Risk rating limits shall be established for the following EXCEPT:', opts:['A. Banks', 'B. Corporations', 'C. Government-owned entities', 'D. Individuals'], ans:'D', exp:'Individuals. Risk rating limits apply to Banks, Corporations, and Government-owned entities — not individuals. (Pg 74)'},
+{id:'Q349', q:'For purposes of applying Risk Rating Limits, which is TRUE?', opts:['A. Parent company rating for corporations only', 'B. Lead bank rating for syndicated loans only', 'C. Determined rating for other entities only', 'D. All of the above: parent company rating for corporations, lead bank rating for syndicated loans, and determined rating for other entities.'], ans:'D', exp:'All of the above: parent company rating for corporations, lead bank rating for syndicated loans, and determined rating for other entities. (Pg 75)'},
+{id:'Q350', q:'Exposure against Risk Rating Limits is measured as the Outstanding and Unused Commitments (OSUC) to a given relationship.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 75)'},
+{id:'Q351', q:'OSUC may be considered GROSS of reductions resulting from sales of assets and risk mitigation efforts.', opts:['A. True','B. False'], ans:'B', exp:'False — OSUC is considered NET of such reductions. (Pg 75)'},
+{id:'Q354', q:'All Risk Rating Limit exceptions will be reported QUARTERLY to the MCC.', opts:['A. True','B. False'], ans:'B', exp:'False — They are reported MONTHLY to the MCC. (Pg 76)'},
+{id:'Q355', q:'On an annual basis, the Head of Credit Risk Management will review all Risk Rating Limit exceptions.', opts:['A. True','B. False'], ans:'B', exp:'False — This review is done QUARTERLY, not annually. (Pg 76)'},
+{id:'Q356', q:'A proposal or marketing letter does NOT require credit approval as long as it does not obligate the bank in any way.', opts:['A. True','B. False'], ans:'A', exp:'True — A proposal that expressly disclaims commitment does not need credit approval. (Pg 76)'},
+{id:'Q359', q:'The level of authority required for approval is a function of the facility amount.', opts:['A. True','B. False'], ans:'A', exp:'True. (Pg 62)'},
+{id:'Q362', q:'Sign-off by at least one officer from Credit Risk Management with exposure endorsement authority is NOT always a condition for approval.', opts:['A. True','B. False'], ans:'B', exp:'False — CRM sign-off IS always required for credit approval to be valid. (Pg 62)'},
+{id:'Q368', q:'Which statement is NOT correct regarding credit facility reviews?', opts:['A. Extensions beyond 30 days (up to 60 days) need GDMD approval', 'B. Extensions beyond 60 days need GMD/CEO approval', 'C. MCC is not the approver for these extensions', 'D. Extension beyond 60 days must be approved by MCC'], ans:'D', exp:'"Extension beyond 60 days must be approved by MCC." The correct rule: extensions beyond 30 days (up to 60 days) need GDMD; extensions beyond 60 days need GMD/CEO. MCC is not the approver. (Pg 68)'},
+{id:'Q370', q:'When an established credit facility undergoes a material change, who determines materiality?', opts:['A. Relationship Manager', 'B. Head, Credit Risk Management', 'C. Group Managing Director', 'D. Management Credit Committee'], ans:'B', exp:'Head, Credit Risk Management. (Pg 66)'},
+{id:'Q375', q:'Each underwriting and distribution must have a Defined Distribution Period that cannot exceed ___ days:', opts:['A. 30 days', 'B. 60 days', 'C. 90 days', 'D. 180 days'], ans:'C', exp:'90 days. (Pg 135)'},
+{id:'Q418', q:'Exposure management entails ongoing prompt and timely identification of decline in quality/performance of a credit exposure.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 137)'},
+{id:'Q421', q:'It is the responsibility of the Relationship Manager to monitor the performance of credit facilities.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 136)'},
+{id:'Q422', q:'Whose responsibility is it to review credit facility performance?', opts:['A. Credit Risk Management', 'B. Relationship Manager', 'C. Legal Department', 'D. Remedial Assets Unit'], ans:'B', exp:'Relationship Manager. (Pg 137)'},
+{id:'Q423', q:'Whose duty is it to confirm the status and adequacy of collateral and legal documentation?', opts:['A. Relationship Manager', 'B. Credit Administration', 'C. Credit Risk Manager', 'D. Remedial Assets Unit'], ans:'C', exp:'Credit Risk Manager. (Pg 137)'},
+{id:'Q424', q:'Whose duty is it to evaluate the impact of industry and market factors on the customer and the customer\'s financial position?', opts:['A. Credit Risk Management', 'B. Credit Administration', 'C. Relationship Manager', 'D. Remedial Assets Unit'], ans:'C', exp:'Relationship Manager. (Pg 137)'},
+{id:'Q425', q:'Exposure management entails restructuring exposures as may be required.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 136)'},
+{id:'Q426', q:'How often must the MCC institute a review of exposures?', opts:['A. Monthly', 'B. Quarterly', 'C. Semi-annually', 'D. Annually'], ans:'B', exp:'Quarterly. (Pg 137)'},
+{id:'Q427', q:'The overall responsibility of sustaining the quality of credit risk exposures is certainly that of Credit Risk Management.', opts:['A. True', 'B. False'], ans:'B', exp:'False — It is the RELATIONSHIP MANAGER\'s responsibility. (Pg 137)'},
+{id:'Q428', q:'____________ will be responsible for overall credit quality review of all outstanding risk exposures.', opts:['A. Credit Risk Management', 'B. Relationship Manager', 'C. Remedial Assets Unit', 'D. Board of Directors'], ans:'B', exp:'Relationship Manager. (Pg 137)'},
+{id:'Q429', q:'Relationship Management will periodically report all temporary overdrafts and excesses over approved limits for appropriate action.', opts:['A. True', 'B. False'], ans:'B', exp:'False — This is the responsibility of CRM (Credit Risk Management), not Relationship Management. (Pg 137)'},
+{id:'Q430', q:'Decline in quality of risk exposure is to be brought to the attention of the GMD and GDMD immediately.', opts:['A. True', 'B. False'], ans:'B', exp:'False — It is reported to the ED and Head, Credit Risk Management. (Pg 138)'},
+{id:'Q431', q:'Management of credit collateral is the SOLE responsibility of Relationship Management.', opts:['A. True', 'B. False'], ans:'B', exp:'False — It is a shared responsibility involving CRM, ED, and Legal. (Pg 138)'},
+{id:'Q432', q:'The cost of conducting searches is borne by the obligor whether or not prior consent was obtained to incur such expenditure.', opts:['A. True', 'B. False'], ans:'B', exp:'False — Prior consent of the obligor must be obtained before incurring search expenses. (Pg 138)'},
+{id:'Q433', q:'Where the collateral for a credit facility is a mortgage on landed property, which is a condition precedent to final approval?', opts:['A. Verbal agreement', 'B. Payment of first installment', 'C. Receipt of certificate of good title from search', 'D. Insurance coverage'], ans:'C', exp:'Receipt of certificate of good title from search. (Pg 138)'},
+{id:'Q434', q:'What is the purpose of the collateral management plan?', opts:['A. To transfer risk to Legal', 'B. To indicate pre-determined intervals for review of credit collateral', 'C. To increase collateral value', 'D. To approve the loan'], ans:'B', exp:'To indicate pre-determined intervals for review of credit collateral. (Pg 138)'},
+{id:'Q435', q:'A collateral management plan is required for each approved facility.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 138)'},
+{id:'Q436', q:'What is the purpose of the periodic inspection of collateral security?', opts:['A. To ensure existence and adequacy only', 'B. To confirm existence of security agreement only', 'C. To verify adequate insurance only', 'D. All of the above: to ensure existence and adequacy of the security, confirm existence of security agreement, and verify adequate insurance protection'], ans:'D', exp:'All of the above. (Pg 79)'},
+{id:'Q437', q:'Who is responsible for implementation of the collateral management plan?', opts:['A. Credit Risk Management', 'B. Relationship Manager', 'C. Legal Department', 'D. Remedial Assets Unit'], ans:'A', exp:'Credit Risk Management. (Pg 139)'},
+{id:'Q438', q:'Delinquency in credit quality and performance can be as a result of a downgrade in credit risk rating.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 139)'},
+{id:'Q439', q:'Relationship Management shall maintain a watch list of delinquent facilities for circulation to the CAC on a regular basis.', opts:['A. True', 'B. False'], ans:'B', exp:'False — It is CRM (not Relationship Management) that maintains and circulates the watch list, and it goes to relevant parties on a MONTHLY basis. (Pg 139)'},
+{id:'Q440', q:'A formal delinquency notice shall be made to the customer within 7 working days of default.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The correct timeframe is 10 working days, not 7. (Pg 139)'},
+{id:'Q441', q:'A second delinquency notice is usually made after 14 working days of the first notice in the event of non-performance.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The correct timeframe is 20 working days after the first notice, not 14. (Pg 139)'},
+{id:'Q442', q:'Credit facilities may be classified as remedial accounts after 360 days.', opts:['A. True', 'B. False'], ans:'B', exp:'False — Classification as remedial occurs after 180 days, not 360. (CPG)'},
+{id:'Q443', q:'Interest accruals on non-performing exposures may be suspended in accordance with the bank\'s credit loss provision policy.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q444', q:'Who develops the plan of delinquency management?', opts:['A. Credit Risk Management', 'B. Relationship Manager', 'C. Legal Department', 'D. Remedial Assets Unit'], ans:'A', exp:'Credit Risk Management. (Pg 139)'},
+{id:'Q445', q:'The responsibility for delinquency management shall be referred to the Legal Department.', opts:['A. True', 'B. False'], ans:'B', exp:'False — It is the responsibility of the Remedial Assets Unit, not Legal. (Pg 140)'},
+{id:'Q446', q:'Where a proposed plan to restructure an existing credit exposure is presented, detailed credit risk analysis of the proposed credit structure may NOT be required.', opts:['A. True', 'B. False'], ans:'A', exp:'True — The CPG indicates that detailed analysis may not always be required for restructuring proposals (context-dependent). (Pg 140)'},
+{id:'Q447', q:'A credit facility may be restructured at the request of the obligor as part of ongoing exposure management.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 140)'},
+{id:'Q448', q:'As soon as a credit facility is identified as delinquent, adequate loan loss provision ought to be made.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 85)'},
+{id:'Q449', q:'Consideration of waivers of interest and/or credit charge shall be limited to credit exposures classified as "very doubtful."', opts:['A. True', 'B. False'], ans:'B', exp:'False — Waivers are ONLY for \'LOST\' classification, not "very doubtful." (Pg 141)'},
+{id:'Q450', q:'MOST waivers of interest and charges require approval of the GMD or GDMD.', opts:['A. True', 'B. False'], ans:'B', exp:'False — ALL waivers require GMD approval (not "most"). (Pg 141)'},
+{id:'Q451', q:'Under which of the following circumstances will a non-performing exposure be recommended for write-off?', opts:['A. Continued contact is impossible', 'B. Recovery cost exceeds outstanding debt', 'C. Amount realized from collateral leaves a balance', 'D. All of the above'], ans:'D', exp:'All of the above. (Pg 141)'},
+{id:'Q452', q:'All write-offs require approval by the Board of Directors and the Central Bank of Nigeria.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 141)'},
+{id:'Q453', q:'In cases of erroneous interest or charges, Credit Risk Management is authorized to approve reversal of such erroneous charges.', opts:['A. True', 'B. False'], ans:'B', exp:'False — Approval for reversal of erroneous charges requires GMD/GDMD, not CRM alone. (Pg 141)'},
+{id:'Q454', q:'The authority to approve credit shall be EXCLUSIVELY exercised by the bank\'s Credit Risk Management function.', opts:['A. True', 'B. False'], ans:'B', exp:'False — Credit approval authority is held by designated individuals at various levels; CRM has a sign-off role, not exclusive approval authority. (Pg 63)'},
+{id:'Q455', q:'Certain obligors and facilities may be assigned a risk rating in accordance with an approved Risk Rating process.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q456', q:'The Bank\'s Portfolio Management process provides for backend definition of target risk stratification and, on an ongoing basis, tracks the actual composition of the risk asset portfolio against the desired structure.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q457', q:'Under the CPG there will be various standards across the bank for the origination, documentation and maintenance of extensions of credit.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The CPG calls for UNIFORM/CONSISTENT standards across the bank, not various different ones.'},
+{id:'Q458', q:'For obligors to whom we have extended credit, there will be several approvals across the bank toward problem recognition, classification of problem exposures, and remedial action.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q459', q:'Credit portfolio risk limits may be proposed by Credit Management and approved by Management Credit Committee.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q460', q:'It is the responsibility of Relationship Management to accurately, completely and in a timely fashion report the comprehensive set of credit risk data into the independent risk reporting system.', opts:['A. True', 'B. False'], ans:'B', exp:'False — This is the responsibility of the risk-taking business unit, not exclusively Relationship Management. (Pg 116)'},
+{id:'Q462', q:'While considering settlement risk, there is also a risk that the counter party does not deliver at all, resulting in exposure of the bank to direct lending risk.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 15)'},
+{id:'Q465', q:'Legal and regulatory risks may occur when the Bank is subject to a change in exposure resulting from legal or criminal sanctions or litigation.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 16)'},
+{id:'Q466', q:'Liquidity risk is that the bank WILL BE ABLE to meet all of its financial commitments to customers and markets when due.', opts:['A. True', 'B. False'], ans:'B', exp:'False — Liquidity risk is the risk that the bank will be UNABLE to meet its financial commitments. The statement is the opposite of correct. (Pg 16)'},
+{id:'Q467', q:'Under the CPG, it is the responsibility of Management and Board of Directors to ensure the integrity of the credit process and proper documentation of credit decisions.', opts:['A. True', 'B. False'], ans:'B', exp:'False — This is primarily the responsibility of Credit Risk Management (and the Relationship Manager), not Management and the Board. (CPG)'},
+{id:'Q468', q:'The level of authority required to approve credit will DECREASE as amounts and transaction risks decrease and as risk ratings improve.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 61)'},
+{id:'Q469', q:'The CPG proposes a system of MULTIPLE standards for the measurement of credit risk in order to ensure consistency across business, stability in methodologies and transparency of risk.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The CPG proposes a SINGLE/UNIFORM system of standards, not multiple different ones.'},
+{id:'Q470', q:'Contingent lending risks may occur in products ranging from letters of credit to guarantees to unusual commitments.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 15)'},
+{id:'Q471', q:'Direct lending risk exists for the ENTIRE LIFE of a transaction.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 15)'},
+{id:'Q472', q:'Contingent lending risk exists for the entire life of the transaction.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 15)'},
+{id:'Q473', q:'Country risk events may include political events.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 16)'},
+{id:'Q474', q:'Tentative action shall be taken on a REACTIVE basis to minimize the bank\'s loss on a non-performing asset.', opts:['A. True', 'B. False'], ans:'B', exp:'False — DELIBERATE and PROACTIVE action shall be taken, not tentative/reactive. (Pg 29)'},
+{id:'Q475', q:'Under the CPG, approved credit product programs shall demonstrate that the behavior of the portfolio will NOT be predictable.', opts:['A. True', 'B. False'], ans:'B', exp:'False — Programs must demonstrate PREDICTABLE portfolio behavior. (Pg 18)'},
+{id:'Q476', q:'Individual credits are applicable in respect of facility requests and credit approvals for customers who do not fit into credit product programmes.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 18)'},
+{id:'Q477', q:'Individual/Business credits are suitable for which of the following?', opts:['A. Customer characteristics are unique', 'B. Facility is a large, complex transaction requiring in-depth evaluation', 'C. Transaction will result in multiple facilities', 'D. Any of the above'], ans:'D', exp:'Any of the above. (Pg 19)'},
+{id:'Q478', q:'Some credit activities in the Retail Banking business unit may be categorized as individual/business credits.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 19)'},
+{id:'Q479', q:'The Board Credit Committee is the highest credit approval body in the bank and is responsible for approval of credit beyond the authorized approval limits.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The BOARD OF DIRECTORS (not the BCC) is the highest credit approval body. (Pg 21)'},
+{id:'Q480', q:'The Board Credit Committee is headed by the GMD and by the GDMD in his absence.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The BCC is headed by a NON-EXECUTIVE DIRECTOR, not the GMD. (Pg 23)'},
+{id:'Q481', q:'The Criticized Assets Committee is headed by GDMD and is convened once every MONTH.', opts:['A. True', 'B. False'], ans:'B', exp:'False — CAC meets QUARTERLY (once every quarter), not monthly. (Pg 25)'},
+{id:'Q482', q:'Loans that show little or no movement during their tenor, or which fail to be liquidated on due date, are to be regarded as delinquent.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 25)'},
+{id:'Q483', q:'The decision to transfer non-performing facilities to the Remedial Assets Management Unit is normally taken at Management Credit Committee meetings.', opts:['A. True', 'B. False'], ans:'B', exp:'False — This decision is taken at the CRITICIZED ASSETS COMMITTEE (CAC), not the MCC. (Pg 29)'},
+{id:'Q484', q:'In some instances where the probability of turnaround of a facility performing is remote, such facility may be immediately classified as LOST.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q485', q:'Under which of the following instances will a facility be classified as LOST?', opts:['A. Death or disappearance of an obligor', 'B. Bankruptcy or going concern problems', 'C. Unforeseen circumstances with significant business impact', 'D. Any of the above'], ans:'D', exp:'Any of the above. (Pg 38)'},
+{id:'Q486', q:'Generally, recovery action may be instigated at any point in time in the life of a credit exposure.', opts:['A. True', 'B. False'], ans:'B', exp:'False — Recovery action follows a specific process and is not instigated arbitrarily at any point. (Pg 58)'},
+{id:'Q487', q:'In the event of delinquency, the required approach to resolve lost credits shall be GENERIC in every instance.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The approach to each delinquency situation must be tailored — it is NOT generic. (Pg 58)'},
+{id:'Q488', q:'In the event of recovery, the bank\'s entitlement shall be limited to the full amount of principal and interest unpaid to date of recovery.', opts:['A. True', 'B. False'], ans:'B', exp:'False — The bank\'s entitlement also includes ALL COSTS incurred in the recovery process, not just principal and interest. (Pg 58)'},
+{id:'Q489', q:'Where sale proceeds from realizing collateral security fall short of the bank\'s entitlement, the difference may be forgiven to the customer.', opts:['A. True', 'B. False'], ans:'A', exp:'True — The bank may forgive the shortfall (this is part of the write-off/waiver process). (Pg 58)'},
+{id:'Q490', q:'The Relationship Manager is responsible for bringing industry, product and other specialists (e.g. Legal, Tax) when required.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 32)'},
+{id:'Q491', q:'Risk Management policies are approved by the Board Credit Committee to enable informed decision-making and maintain an appropriate environment for risk management.', opts:['A. True', 'B. False'], ans:'B', exp:'False — Risk management policies are approved by the BOARD OF DIRECTORS, not the BCC.'},
+{id:'Q492', q:'Compliance with the CPG shall be monitored on an ongoing basis by Credit Risk Management and reported on a quarterly basis to the MCC.', opts:['A. True', 'B. False'], ans:'A', exp:'True.'},
+{id:'Q494', q:'Exposure against Risk Rating Limits may be measured as the Outstanding and Unused Commitments (OSUC) to a relationship.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 75)'},
+{id:'Q495', q:'OSUC may NOT include settlement and clearing exposure, or the underwritten position of a credit underwriting transaction, unless the position becomes aged beyond the extension period.', opts:['A. True', 'B. False'], ans:'A', exp:'True. (Pg 74)'},
+{id:'Q496', q:'What level of approval is required for a Cash Exception (RRLE)?', opts:['A. Line ED and Head of Credit Risk Management', 'B. MCC', 'C. Board of Directors', 'D. GMD'], ans:'A', exp:'Line ED and Head of Credit Risk Management. (Pg 76)'},
+{id:'Q497', q:'What level of approval is required for an Immaterial Exception (RRLE)?', opts:['A. Line ED and Head of Credit Risk Management', 'B. MCC', 'C. Board of Directors', 'D. GMD'], ans:'A', exp:'Line ED and Head of Credit Risk Management. (Pg 76)'},
+{id:'Q498', q:'What level of approval is required for a Passive Exception (RRLE)?', opts:['A. Line ED and Head of Credit Risk Management', 'B. MCC', 'C. Board of Directors', 'D. GMD'], ans:'A', exp:'Line ED and Head of Credit Risk Management (after flagging via regular reporting). (Pg 76)'},
+{id:'Q499', q:'What level of approval is required for a Long-term Conditioning Exception (RRLE)?', opts:['A. Line ED and Head of Credit Risk Management', 'B. MCC', 'C. Board of Directors', 'D. GMD'], ans:'B', exp:'MCC. (Pg 76)'},
+{id:'Q500', q:'An approved Risk Rating Limit Exception does NOT need to be re-approved during the annual review process.', opts:['A. True', 'B. False'], ans:'B', exp:'False — All RRLEs must be noted and re-reviewed at least annually. (CPG)'}
+];
+
+        // Bulletproof LocalStorage
+        let missedQuestions = [];
+        try {
+            const saved = localStorage.getItem('cpg_missed_questions');
+            if (saved) missedQuestions = JSON.parse(saved);
+        } catch(e) {
+            console.warn("localStorage not available or blocked.");
+        }
+
+        // Global state
+        window.currentTestMode = 'practice';
+        window.examTimeLimitSeconds = 3600; // default 60 min
+        window.examTimerInterval = null;
+        window.examAnswers = [];
+        window.examStartTime = null;
+
+        function init() {
+            document.getElementById('total-avail').textContent = QB.length;
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            
+            document.getElementById('mode-select').addEventListener('change', validateStart);
+            document.getElementById('count-select').addEventListener('change', validateStart);
+            document.getElementById('test-mode-select').addEventListener('change', onTestModeChange);
+            document.getElementById('exam-time-input').addEventListener('input', validateStart);
+            document.getElementById('start-btn').addEventListener('click', startQuiz);
+            document.getElementById('next-btn').addEventListener('click', nextQuestion);
+            document.getElementById('skip-btn').addEventListener('click', skipQuestion);
+            document.getElementById('end-session-btn').addEventListener('click', endSession);
+            document.getElementById('new-session-btn').addEventListener('click', resetApp);
+            document.getElementById('retry-missed-btn').addEventListener('click', retryMissed);
+            
+            // Exam mode buttons
+            document.getElementById('prev-exam-btn').addEventListener('click', previousExamQuestion);
+            document.getElementById('next-exam-btn').addEventListener('click', nextExamQuestion);
+            document.getElementById('submit-exam-btn').addEventListener('click', submitExam);
+        }
+
+        function onTestModeChange() {
+            const mode = document.getElementById('test-mode-select').value;
+            const timeGroup = document.getElementById('exam-time-group');
+            if (mode === 'exam') {
+                timeGroup.style.display = 'block';
+            } else {
+                timeGroup.style.display = 'none';
+            }
+            validateStart();
+        }
+
+        function validateStart() {
+            const mode = document.getElementById('mode-select').value;
+            const count = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            const btn = document.getElementById('start-btn');
+            
+            if (mode === 'missed' && missedQuestions.length === 0) {
+                btn.disabled = true;
+                btn.textContent = "No missed questions available";
+                return;
+            }
+
+            let valid = (mode !== "" && count !== "");
+            if (testMode === 'exam') {
+                const timeVal = parseInt(document.getElementById('exam-time-input').value);
+                if (isNaN(timeVal) || timeVal < 1) valid = false;
+            }
+
+            if (valid) {
+                btn.disabled = false;
+                btn.textContent = "Start Quiz";
+            } else {
+                btn.disabled = true;
+                btn.textContent = "Start Quiz";
+            }
+        }
+
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        function startQuiz() {
+            const currentMode = document.getElementById('mode-select').value;
+            const countVal = document.getElementById('count-select').value;
+            const testMode = document.getElementById('test-mode-select').value;
+            window.currentTestMode = testMode;
+
+            let pool;
+if (currentMode === 'flashcard') {
+    pool = QB.filter(q => q.opts.length === 1 && q.opts[0] === "A. Reveal Answer");
+} else {
+    pool = currentMode === 'missed' ? QB.filter(q => missedQuestions.includes(q.id)) : [...QB];
+    // Exclude flashcards from MCQ modes
+    pool = pool.filter(q => !(q.opts.length === 1 && q.opts[0] === "A. Reveal Answer"));
+}
+            if (currentMode === 'random') pool = shuffleArray(pool);
+            
+            let currentSessionQuestions = [];
+            if (countVal !== 'all') {
+                const questionCount = Math.min(parseInt(countVal), pool.length);
+                currentSessionQuestions = pool.slice(0, questionCount);
+            } else {
+                currentSessionQuestions = pool;
+            }
+
+            window.currentIndex = 0; 
+            window.correctCount = 0; 
+            window.wrongCount = 0; 
+            window.skippedCount = 0; 
+            window.sessionHistory = [];
+            window.currentSessionQuestions = currentSessionQuestions;
+            window.examAnswers = new Array(currentSessionQuestions.length).fill(-1);
+            window.examStartTime = null;
+            if (window.examTimerInterval) {
+                clearInterval(window.examTimerInterval);
+                window.examTimerInterval = null;
+            }
+
+            if (currentMode === 'flashcard') {
+                showScreen('flashcard-screen');
+                renderFlashcard();
+            } else if (testMode === 'exam') {
+                // Exam mode initialization
+                window.examTimeLimitSeconds = parseInt(document.getElementById('exam-time-input').value) * 60;
+                window.examStartTime = Date.now();
+                startExamTimer();
+                showScreen('quiz-screen');
+                renderQuestion();
+            } else {
+                showScreen('quiz-screen');
+                renderQuestion();
+            }
+        }
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        function renderQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('current-q-num').textContent = window.currentIndex + 1;
+            document.getElementById('total-q-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('question-text').textContent = q.q;
+            
+            const optionsList = document.getElementById('options-list');
+            optionsList.innerHTML = '';
+            
+            const isExam = window.currentTestMode === 'exam';
+            
+            // Toggle UI elements based on mode
+            document.getElementById('quiz-stats-bar').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-timer').style.display = isExam ? 'block' : 'none';
+            document.getElementById('practice-actions').style.display = isExam ? 'none' : 'flex';
+            document.getElementById('exam-actions').style.display = isExam ? 'flex' : 'none';
+            document.getElementById('explanation').classList.remove('visible');
+            document.getElementById('explanation').textContent = '';
+            
+            // Update navigation buttons state
+            if (isExam) {
+                document.getElementById('prev-exam-btn').disabled = (window.currentIndex === 0);
+                document.getElementById('next-exam-btn').disabled = (window.currentIndex === window.currentSessionQuestions.length - 1);
+            }
+            
+            // Render options
+            q.opts.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = opt;
+                
+                if (isExam) {
+                    // Highlight previously selected answer
+                    if (window.examAnswers[window.currentIndex] === idx) {
+                        btn.classList.add('selected');
+                    }
+                    btn.onclick = () => selectExamAnswer(idx);
+                } else {
+                    btn.onclick = () => handleAnswer(idx, q);
+                }
+                optionsList.appendChild(btn);
+            });
+            
+            // In practice mode, reset next button visibility and ensure skip/end are shown
+            if (!isExam) {
+                document.getElementById('next-btn').style.display = 'none';
+                document.getElementById('skip-btn').style.display = 'block';
+                document.getElementById('end-session-btn').style.display = 'block';
+            }
+            
+            updateProgress();
+            if (!isExam) updateLiveScore();
+        }
+
+        // Practice mode handlers
+        function handleAnswer(selectedIdx, q) {
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(btn => btn.disabled = true);
+            const isCorrect = q.ans === String.fromCharCode(65 + selectedIdx);
+            if (isCorrect) {
+                buttons[selectedIdx].classList.add('correct');
+                window.correctCount++;
+                missedQuestions = missedQuestions.filter(id => id !== q.id);
+            } else {
+                buttons[selectedIdx].classList.add('wrong');
+                const correctIdx = q.ans.charCodeAt(0) - 65;
+                buttons[correctIdx].classList.add('correct');
+                window.wrongCount++;
+                if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            }
+            try { localStorage.setItem('cpg_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            const expEl = document.getElementById('explanation');
+            expEl.textContent = q.exp;
+            expEl.classList.add('visible');
+            document.getElementById('next-btn').style.display = 'block';
+            document.getElementById('skip-btn').style.display = 'none';
+            window.sessionHistory.push({ q: q, userAnswer: String.fromCharCode(65 + selectedIdx), isCorrect: isCorrect, status: isCorrect ? 'correct' : 'wrong' });
+            updateLiveScore();
+        }
+
+        function skipQuestion() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            window.skippedCount++;
+            if (!missedQuestions.includes(q.id)) {
+                missedQuestions.push(q.id);
+                try { localStorage.setItem('cpg_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {}
+                document.getElementById('total-missed').textContent = missedQuestions.length;
+            }
+            window.sessionHistory.push({ q: q, userAnswer: 'Skipped', isCorrect: false, status: 'skipped' });
+            nextQuestion();
+        }
+
+        function nextQuestion() {
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderQuestion();
+            else showResults();
+        }
+
+        // Exam mode handlers
+        function selectExamAnswer(idx) {
+            window.examAnswers[window.currentIndex] = idx;
+            renderQuestion(); // re-render to update highlight
+        }
+
+        function previousExamQuestion() {
+            if (window.currentIndex > 0) {
+                window.currentIndex--;
+                renderQuestion();
+            }
+        }
+
+        function nextExamQuestion() {
+            if (window.currentIndex < window.currentSessionQuestions.length - 1) {
+                window.currentIndex++;
+                renderQuestion();
+            }
+        }
+
+        function startExamTimer() {
+            updateExamTimerDisplay();
+            window.examTimerInterval = setInterval(() => {
+                const elapsed = Math.floor((Date.now() - window.examStartTime) / 1000);
+                const remaining = window.examTimeLimitSeconds - elapsed;
+                if (remaining <= 0) {
+                    clearInterval(window.examTimerInterval);
+                    window.examTimerInterval = null;
+                    // Auto-submit
+                    submitExam();
+                    return;
+                }
+                updateExamTimerDisplay(remaining);
+            }, 1000);
+        }
+
+        function updateExamTimerDisplay(remainingSecs) {
+            if (remainingSecs === undefined) {
+                remainingSecs = window.examTimeLimitSeconds;
+            }
+            const mins = Math.floor(remainingSecs / 60);
+            const secs = remainingSecs % 60;
+            document.getElementById('timer-display').textContent = 
+                String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+        }
+
+        function submitExam() {
+            if (window.examTimerInterval) {
+                clearInterval(window.examTimerInterval);
+                window.examTimerInterval = null;
+            }
+            // Build sessionHistory and compute score
+            const questions = window.currentSessionQuestions;
+            let correct = 0, wrong = 0, skipped = 0;
+            window.sessionHistory = [];
+            
+            questions.forEach((q, index) => {
+                const selectedIdx = window.examAnswers[index];
+                let userAnswerLetter = 'Not answered';
+                let isCorrect = false;
+                let status = 'skipped';
+                if (selectedIdx !== -1) {
+                    userAnswerLetter = String.fromCharCode(65 + selectedIdx);
+                    isCorrect = (userAnswerLetter === q.ans);
+                    status = isCorrect ? 'correct' : 'wrong';
+                }
+                if (status === 'correct') correct++;
+                else if (status === 'wrong') wrong++;
+                else skipped++;
+                
+                window.sessionHistory.push({
+                    q: q,
+                    userAnswer: userAnswerLetter,
+                    isCorrect: isCorrect,
+                    status: status
+                });
+            });
+            
+            window.correctCount = correct;
+            window.wrongCount = wrong;
+            window.skippedCount = skipped;
+            
+            // Calculate time taken
+            const endTime = Date.now();
+            const totalSeconds = Math.floor((endTime - window.examStartTime) / 1000);
+            const timeTakenStr = formatTime(totalSeconds);
+            
+            // Update missed questions
+            window.sessionHistory.forEach(item => {
+                if (item.status === 'wrong' || item.status === 'skipped') {
+                    if (!missedQuestions.includes(item.q.id)) {
+                        missedQuestions.push(item.q.id);
+                    }
+                }
+            });
+            try { localStorage.setItem('cpg_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {}
+            
+            showResults(true, timeTakenStr);
+        }
+
+        function formatTime(totalSeconds) {
+            const mins = Math.floor(totalSeconds / 60);
+            const secs = totalSeconds % 60;
+            return String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+        }
+
+        function updateProgress() {
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('progress-bar').style.width = pct + '%';
+        }
+
+        function updateLiveScore() {
+            const total = window.correctCount + window.wrongCount;
+            const score = total === 0 ? 0 : Math.round((window.correctCount / total) * 100);
+            document.getElementById('live-correct').textContent = window.correctCount;
+            document.getElementById('live-wrong').textContent = window.wrongCount;
+            document.getElementById('live-score').textContent = score + '%';
+        }
+
+        function renderFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            document.getElementById('fc-current-num').textContent = window.currentIndex + 1;
+            document.getElementById('fc-total-num').textContent = window.currentSessionQuestions.length;
+            document.getElementById('fc-question').textContent = q.q;
+            document.getElementById('fc-answer').textContent = "Answer: " + q.ans;
+            document.getElementById('fc-explanation').textContent = q.exp;
+            document.getElementById('flashcard').classList.remove('flipped');
+            document.getElementById('fc-actions').style.display = 'none';
+            const pct = ((window.currentIndex + 1) / window.currentSessionQuestions.length) * 100;
+            document.getElementById('fc-progress-bar').style.width = pct + '%';
+        }
+
+        function flipCard() {
+            document.getElementById('flashcard').classList.toggle('flipped');
+            setTimeout(() => { document.getElementById('fc-actions').style.display = 'flex'; }, 300);
+        }
+
+        function handleFlashcardDecision(gotIt) {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (gotIt) missedQuestions = missedQuestions.filter(id => id !== q.id);
+            else if (!missedQuestions.includes(q.id)) missedQuestions.push(q.id);
+            try { localStorage.setItem('cpg_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {}
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function skipFlashcard() {
+            const q = window.currentSessionQuestions[window.currentIndex];
+            if (!missedQuestions.includes(q.id)) {
+                missedQuestions.push(q.id);
+                try { localStorage.setItem('cpg_missed_questions', JSON.stringify(missedQuestions)); } catch(e) {}
+                document.getElementById('total-missed').textContent = missedQuestions.length;
+            }
+            window.currentIndex++;
+            if (window.currentIndex < window.currentSessionQuestions.length) renderFlashcard();
+            else showResults();
+        }
+
+        function endSession() { 
+            if (window.currentTestMode === 'exam') {
+                if (confirm('Are you sure you want to submit your exam?')) submitExam();
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults(isExam = false, timeTaken = null) {
+            showScreen('results-screen');
+            const total = window.correctCount + window.wrongCount + window.skippedCount;
+            const score = (window.correctCount + window.wrongCount) === 0 ? 0 : Math.round((window.correctCount / (window.correctCount + window.wrongCount)) * 100);
+            const scoreEl = document.getElementById('results-score');
+            scoreEl.textContent = score + '%';
+            scoreEl.className = 'results-score';
+            if (score >= 80) scoreEl.classList.add('green');
+            else if (score >= 60) scoreEl.classList.add('amber');
+            else scoreEl.classList.add('red');
+            
+            document.getElementById('res-correct').textContent = window.correctCount;
+            document.getElementById('res-wrong').textContent = window.wrongCount;
+            document.getElementById('res-skipped').textContent = window.skippedCount;
+            document.getElementById('res-total').textContent = total;
+            
+            // Time taken for exam mode
+            const timeBox = document.getElementById('time-stat-box');
+            if (isExam && timeTaken) {
+                document.getElementById('res-time').textContent = timeTaken;
+                timeBox.style.display = 'block';
+            } else {
+                timeBox.style.display = 'none';
+            }
+            
+            const reviewSection = document.getElementById('review-section');
+            reviewSection.innerHTML = '';
+            window.sessionHistory.forEach(item => {
+                const div = document.createElement('div');
+                div.className = `review-item ${item.status}`;
+                let correctAnsText = item.q.opts.find(opt => opt.startsWith(item.q.ans + '.')) || item.q.ans;
+                div.innerHTML = `<div class="review-q">${item.q.q}</div><div class="review-detail">Your Answer: <strong>${item.userAnswer}</strong></div><div class="review-detail">Correct Answer: <strong>${correctAnsText}</strong></div><div class="review-detail" style="margin-top: 8px; font-style: italic;">${item.q.exp}</div>`;
+                reviewSection.appendChild(div);
+            });
+            if (window.sessionHistory.length === 0) reviewSection.innerHTML = '<div class="review-item"><div class="review-q">No questions were answered in this session.</div></div>';
+        }
+
+        function resetApp() {
+            // Clear timers
+            if (window.examTimerInterval) {
+                clearInterval(window.examTimerInterval);
+                window.examTimerInterval = null;
+            }
+            document.getElementById('mode-select').value = ''; 
+            document.getElementById('count-select').value = ''; 
+            document.getElementById('test-mode-select').value = 'practice';
+            document.getElementById('exam-time-group').style.display = 'none';
+            const btn = document.getElementById('start-btn');
+            btn.disabled = true; 
+            btn.textContent = "Start Quiz";
+            showScreen('setup-screen'); 
+            document.getElementById('total-avail').textContent = QB.length; 
+            document.getElementById('total-missed').textContent = missedQuestions.length;
+        }
+
+        function retryMissed() {
+            document.getElementById('mode-select').value = 'missed'; 
+            document.getElementById('count-select').value = 'all'; 
+            validateStart(); 
+            startQuiz();
+        }
+
+        init();
+    </script>
+</body>
+</html>

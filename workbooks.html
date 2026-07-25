@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Practice Workbooks</title>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.8.3/tinymce.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+    :root {
+        --bg: #f1f3f8;
+        --panel-bg: #ffffff;
+        --text: #1c2230;
+        --text-secondary: #5b6478;
+        --border: #dde1ea;
+        --accent: #4f46e5;
+        --accent-light: #e8e6fb;
+        --accent-dark: #3730a3;
+        --btn-bg: #f8f9fc;
+        --btn-hover: #ececfa;
+        --btn-active: #dedcf7;
+        --shadow: 0 2px 8px rgba(28,34,48,0.08);
+        --radius: 10px;
+        --radius-sm: 6px;
+        --font: 'Segoe UI', system-ui, sans-serif;
+        --danger: #dc2626;
+        --success: #16a34a;
+        --info: #2563eb;
+    }
+    .dark {
+        --bg: #14161f;
+        --panel-bg: #1d2030;
+        --text: #e4e6ef;
+        --text-secondary: #a0a5b8;
+        --border: #333750;
+        --accent: #8380f0;
+        --accent-light: #2a2860;
+        --accent-dark: #b3b0ff;
+        --btn-bg: #262a3d;
+        --btn-hover: #313650;
+        --btn-active: #3a3f5e;
+        --shadow: 0 2px 8px rgba(0,0,0,0.35);
+        --danger: #f87171;
+        --success: #4ade80;
+        --info: #60a5fa;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh;transition:background 0.3s,color 0.3s}
+    .toolbar{background:var(--panel-bg);border-bottom:1px solid var(--border);padding:8px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;box-shadow:var(--shadow);position:sticky;top:0;z-index:100;min-height:52px}
+    .toolbar .logo{font-weight:700;font-size:1rem;color:var(--accent);white-space:nowrap}
+    .toolbar .spacer{flex:1}
+    .toolbar input,.toolbar select{padding:6px 10px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;background:var(--btn-bg);color:var(--text);font-family:var(--font);min-width:70px}
+    .toolbar button{padding:6px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.82rem;cursor:pointer;background:var(--btn-bg);color:var(--text);font-family:var(--font);white-space:nowrap;transition:all 0.15s;font-weight:500}
+    .toolbar button:hover{background:var(--btn-hover);border-color:var(--accent)}
+    .save-indicator{display:inline-flex;align-items:center;gap:4px;font-size:0.72rem;color:var(--success);font-weight:500;white-space:nowrap}
+    .sync-indicator{display:inline-flex;align-items:center;gap:4px;font-size:0.72rem;color:var(--info);font-weight:500;white-space:nowrap}
+    .logged-in-bar{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;background:var(--accent-light);border-bottom:1px solid var(--border);color:var(--text);font-size:0.85rem}
+    .logged-in-bar button{padding:4px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--btn-bg);color:var(--text);cursor:pointer;font-size:0.78rem}
+    .breadcrumb{display:flex;align-items:center;gap:8px;padding:10px 20px;background:var(--panel-bg);border-bottom:1px solid var(--border);font-size:0.88rem}
+    .breadcrumb .crumb{cursor:pointer;color:var(--accent);font-weight:600}
+    .breadcrumb .crumb:hover{text-decoration:underline}
+    .breadcrumb .sep{color:var(--text-secondary)}
+    .breadcrumb .current{color:var(--text-secondary)}
+    .content-area{padding:24px 20px;max-width:1100px;margin:0 auto;width:100%}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+    .card{background:var(--panel-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);cursor:pointer;transition:all 0.15s;display:flex;flex-direction:column;gap:8px;min-height:110px}
+    .card:hover{border-color:var(--accent);transform:translateY(-2px)}
+    .card .card-title{font-weight:700;font-size:1rem;color:var(--text)}
+    .card .card-meta{font-size:0.78rem;color:var(--text-secondary)}
+    .card .card-actions{display:flex;gap:6px;margin-top:auto}
+    .card .card-actions button{padding:4px 10px;font-size:0.72rem;border:1px solid var(--border);border-radius:6px;background:var(--btn-bg);color:var(--text);cursor:pointer}
+    .card .card-actions button.danger{color:var(--danger);border-color:var(--danger)}
+    .card.new-card{align-items:center;justify-content:center;text-align:center;border-style:dashed;color:var(--accent);font-weight:700}
+    .card input{width:100%;padding:6px 8px;border:1px solid var(--border);border-radius:6px;background:var(--btn-bg);color:var(--text);font-family:var(--font);font-size:0.9rem}
+    .sheet-tabs{display:flex;gap:4px;margin-bottom:10px;flex-wrap:wrap;align-items:center;padding:0 20px}
+    .sheet-tabs button{padding:5px 14px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--btn-bg);color:var(--text);cursor:pointer;font-size:0.82rem;white-space:nowrap}
+    .sheet-tabs button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .sheet-tabs input{padding:2px 6px;font-size:0.82rem;border:1px solid var(--border);border-radius:4px;background:var(--btn-bg);color:var(--text);width:110px}
+    .editor-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:0 20px 10px}
+    .editor-toolbar select{padding:6px 10px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--btn-bg);color:var(--text);font-family:var(--font);font-size:0.82rem}
+    .insert-btn{padding:8px 16px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius-sm);font-weight:600;font-size:0.85rem;cursor:pointer;transition:background 0.15s;font-family:var(--font)}
+    .table-help-text{font-size:0.8rem;line-height:1.5;background:var(--btn-bg);padding:8px 10px;border-radius:var(--radius-sm);border-left:3px solid var(--accent);max-width:420px}
+    .editor-container{padding:0 20px 24px}
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:9999;display:flex;align-items:center;justify-content:center}
+    .modal{background:var(--panel-bg);border-radius:var(--radius);padding:24px;max-width:440px;width:90%;box-shadow:0 8px 32px rgba(0,0,0,0.3);text-align:center;border:1px solid var(--border);z-index:10000}
+    .equation-modal{max-width:650px!important}
+    .symbol-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:4px;margin:10px 0}
+    .symbol-grid button{padding:4px 2px;font-size:0.9rem;border:1px solid var(--border);background:var(--btn-bg);color:var(--text);border-radius:4px;cursor:pointer}
+    .calc-modal{max-width:300px!important}
+    .calc-display{background:var(--btn-bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;font-size:1.6rem;text-align:right;margin-bottom:10px;font-family:'Consolas',monospace;overflow-x:auto;min-height:1.6em}
+    .calc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+    .calc-grid button{padding:14px 0;font-size:1.05rem;border:1px solid var(--border);border-radius:8px;background:var(--btn-bg);color:var(--text);cursor:pointer;font-family:var(--font)}
+    .calc-grid button:hover{background:var(--btn-hover)}
+    .calc-grid button.op{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .calc-grid button.wide{grid-column:span 2}
+    .empty-state{text-align:center;padding:60px 20px;color:var(--text-secondary)}
+    @media(max-width:600px){.content-area{padding:16px 12px}.breadcrumb{padding:8px 14px}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+
+/* ───────────────────────── Table templates (reused/generalized helper) ───────────────────────── */
+const TABLE_GUIDES = {
+    AccountingEquation: "The accounting equation is Assets = Liabilities + Equity. Set up columns for Assets, Liabilities and Equity (add a Transaction column if needed).",
+    JournalEntry: "A journal is the book of prime entry. Use five columns — Date, Account, Debit (Dr), Credit (Cr), Narration. Put the account to be debited first, then the credit indented.",
+    Ledger: "Each ledger account is written in 'T' form: the Debit side on the left, the Credit side on the right. Post the two sides of every journal entry, then balance off the account.",
+    TrialBalance: "A trial balance lists every closing ledger balance. Use columns: Account, Debit, Credit. Assets and expenses go into Debit; liabilities, capital, and income into Credit.",
+    BankReconciliation: "A bank reconciliation explains the difference between cash book and bank statement. Prepare an Adjusted Cash Book first, then a Reconciliation Statement.",
+    IncomeStatement: "An Income Statement shows profitability over a period. Use two columns: Particulars and Amount. Sales − Cost of Goods Sold = Gross Profit; then deduct expenses.",
+    BalanceSheet: "A Statement of Financial Position shows what the business owns and owes at a point in time. Total Assets must equal Total Capital and Liabilities.",
+    DepreciationSchedule: "Track an asset's cost, accumulated depreciation and carrying value. Debit Depreciation Expense, credit Accumulated Depreciation.",
+    CalculationTable: "A simple two-column working: Item and Amount. Show every step of the calculation in order.",
+    Provision: "Provision for doubtful debts is calculated as a percentage of receivables. Show columns for Receivables, Provision %, Provision Amount, Movement.",
+    Classification: "A classification table groups items into categories. Use two columns: Item and Classification.",
+    BlankTable: "A plain grid — pick your own number of rows/columns using TinyMCE's own Table menu instead, if you'd rather start from scratch."
+};
+
+const TABLE_SKELETONS = {
+    AccountingEquation: { columns: 4, headers: ["Transaction", "Assets (₦)", "Liabilities (₦)", "Equity (₦)"], rows: [["a.", "+______", "NE", "+______"], ["b.", "", "", ""]] },
+    JournalEntry: { columns: 5, headers: ["Date", "Account", "Dr (₦)", "Cr (₦)", "Narration"], rows: [["", "Account to be debited", "______", "", "Being ..."], ["", "  Account to be credited", "", "______", ""], ["", "", "", "", ""]] },
+    Ledger: { columns: 6, headers: ["Date", "Details (Dr)", "Dr (₦)", "Date", "Details (Cr)", "Cr (₦)"], rows: [["", "Opening balance b/d", "______", "", "Item", "______"], ["", "Item", "______", "", "Bal c/d", "______"]] },
+    TrialBalance: { columns: 3, headers: ["Account", "Debit (₦)", "Credit (₦)"], rows: [["Cash", "______", ""], ["Capital", "", "______"], ["Total", "______", "______"]], totalsRow: true },
+    BankReconciliation: { columns: 2, headers: ["Item", "Amount (₦)"], rows: [["Balance as per Adjusted Cash Book", "______"], ["Add: Unpresented cheques", "______"], ["Less: Uncredited cheques", "(______)"], ["Balance as per Bank Statement", "______"]] },
+    IncomeStatement: { columns: 2, headers: ["Particulars", "Amount (₦)"], rows: [["Sales", "______"], ["Less: Cost of Goods Sold", "(______)"], ["Gross Profit", "______"], ["Less: Operating expenses", "(______)"], ["Net Profit", "______"]] },
+    BalanceSheet: { columns: 2, headers: ["Particulars", "Amount (₦)"], rows: [["**NON-CURRENT ASSETS**", ""], ["Item", "______"], ["**CURRENT ASSETS**", ""], ["Total Assets", "______"], ["**CAPITAL & LIABILITIES**", ""], ["Total Capital & Liabilities", "______"]] },
+    DepreciationSchedule: { columns: 5, headers: ["Year", "Cost (₦)", "Depreciation (₦)", "Accumulated (₦)", "Carrying Value (₦)"], rows: [["1", "______", "______", "______", "______"]] },
+    CalculationTable: { columns: 2, headers: ["Item", "Amount (₦)"], rows: [["Step 1", "______"], ["Step 2", "______"], ["Result", "______"]] },
+    Provision: { columns: 5, headers: ["Year", "Receivables (₦)", "Provision %", "Provision (₦)", "Movement (₦)"], rows: [["20X1", "______", "______", "______", "______"]] },
+    Classification: { columns: 2, headers: ["Item", "Classification"], rows: [["", ""], ["", ""]] },
+    BlankTable: { columns: 3, headers: ["Column 1", "Column 2", "Column 3"], rows: [["", "", ""], ["", "", ""], ["", "", ""]] }
+};
+
+function skeletonToHTML(skel) {
+    const headerHtml = `<tr>${skel.headers.map(h => `<th style="background:#4f46e5;color:#fff;padding:6px;border:1px solid #3730a3;">${h}</th>`).join('')}</tr>`;
+    const rowsHtml = skel.rows.map((row, idx) => {
+        const isTotals = skel.totalsRow && idx === skel.rows.length - 1;
+        const isHeaderRow = row[0].startsWith('**') && row[0].endsWith('**');
+        if (isHeaderRow) {
+            const label = row[0].replace(/\*\*/g, '');
+            return `<tr><td colspan="${skel.columns}" style="font-weight:bold;background:#e8e6fb;padding:6px;border:1px solid #dde1ea;">${label}</td></tr>`;
+        }
+        const cells = row.map(c => {
+            const val = (c === undefined || c === '') ? '&nbsp;' : c;
+            const style = isTotals ? 'font-weight:bold;border-top:2px solid #1c2230;padding:6px;border:1px solid #dde1ea;' : 'padding:6px;border:1px solid #dde1ea;';
+            return `<td style="${style}">${val}</td>`;
+        }).join('');
+        return `<tr>${cells}</tr>`;
+    }).join('');
+    return `<table border="1" style="border-collapse:collapse;width:100%;margin:8px 0"><thead>${headerHtml}</thead><tbody>${rowsHtml}</tbody></table><p>&nbsp;</p>`;
+}
+
+function newId() { return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8); }
+function newSheet(name) { return { id: newId(), name: name || 'Sheet 1', content: '' }; }
+function newWorkbook(name) { return { id: newId(), name, sheets: [newSheet('Sheet 1')] }; }
+function newSubject(name) { return { id: newId(), name, workbooks: [] }; }
+
+function stripHtmlToText(html) {
+    const div = document.createElement('div');
+    div.innerHTML = html || '';
+    return div.textContent || div.innerText || '';
+}
+
+/* ───────────────────────── Calculator logic (kept deliberately simple & safe) ───────────────────────── */
+function safeEvalExpression(expr) {
+    if (!/^[0-9+\-*/.()%\s]*$/.test(expr)) throw new Error('Invalid characters');
+    const jsExpr = expr.replace(/(\d+(\.\d+)?)%/g, '($1/100)');
+    // eslint-disable-next-line no-new-func
+    const result = Function('"use strict"; return (' + jsExpr + ')')();
+    if (typeof result !== 'number' || !isFinite(result)) throw new Error('Invalid result');
+    return result;
+}
+
+/* ───────────────────────── Main App ───────────────────────── */
+function App() {
+    const [darkMode, setDarkMode] = useState(() => localStorage.getItem('wb_dark') === 'true');
+    const [userId, setUserId] = useState(() => localStorage.getItem('wb_user') || '');
+    const [pin, setPin] = useState('');
+    const [isHubLogin, setIsHubLogin] = useState(false);
+    const [syncStatus, setSyncStatus] = useState('');
+    const [saveStatus, setSaveStatus] = useState('');
+    const [dataVersion, setDataVersion] = useState(0);
+
+    const [data, setData] = useState({ subjects: [] });
+    const [view, setView] = useState('subjects'); // 'subjects' | 'workbooks' | 'editor'
+    const [activeSubjectId, setActiveSubjectId] = useState(null);
+    const [activeWorkbookId, setActiveWorkbookId] = useState(null);
+    const [activeSheetIdx, setActiveSheetIdx] = useState(0);
+
+    const [editingCard, setEditingCard] = useState(null); // { scope:'subject'|'workbook', id, value }
+    const [editingSheet, setEditingSheet] = useState(null); // idx being renamed
+
+    const [showEquEditor, setShowEquEditor] = useState(false);
+    const [latexCode, setLatexCode] = useState('');
+    const [equPreview, setEquPreview] = useState('');
+    const [showCalculator, setShowCalculator] = useState(false);
+    const [calcExpr, setCalcExpr] = useState('');
+    const [calcResult, setCalcResult] = useState(null);
+    const [selectedTableType, setSelectedTableType] = useState('CalculationTable');
+
+    const editorRef = useRef(null);
+    const equSetterRef = useRef(null);
+    const calcSetterRef = useRef(null);
+
+    const activeSubject = data.subjects.find(s => s.id === activeSubjectId) || null;
+    const activeWorkbook = activeSubject ? activeSubject.workbooks.find(w => w.id === activeWorkbookId) : null;
+    const activeSheet = activeWorkbook ? activeWorkbook.sheets[activeSheetIdx] : null;
+
+    // Refs so the TinyMCE change handler (bound once) always sees current ids
+    const idsRef = useRef({});
+    useEffect(() => { idsRef.current = { activeSubjectId, activeWorkbookId, activeSheetIdx }; }, [activeSubjectId, activeWorkbookId, activeSheetIdx]);
+    const dataRef = useRef(data);
+    useEffect(() => { dataRef.current = data; }, [data]);
+
+    /* ---- Hub login pass-through (same qb_global_user/qb_global_pin as the rest of the platform) ---- */
+    useEffect(() => {
+        const name = localStorage.getItem('qb_global_user');
+        const hubPin = localStorage.getItem('qb_global_pin');
+        if (name && hubPin) {
+            setIsHubLogin(true);
+            setUserId(name);
+            setPin(hubPin);
+        }
+    }, []);
+
+    useEffect(() => { if (userId) localStorage.setItem('wb_user', userId); }, [userId]);
+    useEffect(() => { localStorage.setItem('wb_dark', darkMode); document.body.className = darkMode ? 'dark' : ''; }, [darkMode]);
+
+    /* ---- Load data for this user from localStorage, then try cloud sync if a PIN is present ---- */
+    useEffect(() => {
+        const storageKey = 'wb_data_' + (userId || 'default');
+        try {
+            const saved = localStorage.getItem(storageKey);
+            setData(saved ? JSON.parse(saved) : { subjects: [] });
+        } catch {
+            setData({ subjects: [] });
+        }
+        setView('subjects');
+        setActiveSubjectId(null);
+        setActiveWorkbookId(null);
+        setDataVersion(v => v + 1);
+
+        if (userId && /^\d{4}$/.test(pin)) {
+            setSyncStatus('☁️ Checking…');
+            import('./workbook-sync.js').then(({ verifyAndPullWorkbooks }) => {
+                verifyAndPullWorkbooks(userId, pin).then(result => {
+                    if (!result.ok) { setSyncStatus('⚠ ' + result.reason); return; }
+                    if (result.data && Array.isArray(result.data)) {
+                        setData({ subjects: result.data });
+                        setDataVersion(v => v + 1);
+                    }
+                    setSyncStatus('✅ Synced');
+                }).catch(() => setSyncStatus('⚠ Sync unavailable'));
+            }).catch(() => setSyncStatus('⚠ Sync unavailable'));
+        } else {
+            setSyncStatus('');
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [userId, pin]);
+
+    /* ---- Persist locally + push to cloud on every change ---- */
+    useEffect(() => {
+        const storageKey = 'wb_data_' + (userId || 'default');
+        localStorage.setItem(storageKey, JSON.stringify(data));
+        const now = new Date().toLocaleTimeString();
+        setSaveStatus('💾 Saved ' + now);
+        const t = setTimeout(() => setSaveStatus(''), 3000);
+        if (userId && /^\d{4}$/.test(pin)) {
+            import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => {
+                pushWorkbooksToCloud(userId, data.subjects);
+            }).catch(() => {});
+        }
+        return () => clearTimeout(t);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [data]);
+
+    /* ---- TinyMCE init (once) ---- */
+    useEffect(() => {
+        if (!window.tinymce || editorRef.current) return;
+        tinymce.init({
+            selector: '#wb-rich-editor',
+            height: 480,
+            plugins: 'table lists link fullscreen code',
+            toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | bullist numlist outdent indent | link | table | fullscreen | equation calculator',
+            setup: function (ed) {
+                ed.ui.registry.addButton('equation', { icon: 'superscript', tooltip: 'Insert Equation', onAction: () => equSetterRef.current && equSetterRef.current(true) });
+                ed.ui.registry.addButton('calculator', { text: '🧮', tooltip: 'Calculator', onAction: () => calcSetterRef.current && calcSetterRef.current(true) });
+                ed.on('change keyup', () => {
+                    const { activeSubjectId: sId, activeWorkbookId: wId, activeSheetIdx: idx } = idsRef.current;
+                    if (!sId || !wId) return;
+                    setData(prev => {
+                        const subjects = prev.subjects.map(s => {
+                            if (s.id !== sId) return s;
+                            return {
+                                ...s,
+                                workbooks: s.workbooks.map(w => {
+                                    if (w.id !== wId) return w;
+                                    const sheets = [...w.sheets];
+                                    sheets[idx] = { ...sheets[idx], content: ed.getContent() };
+                                    return { ...w, sheets };
+                                })
+                            };
+                        });
+                        return { subjects };
+                    });
+                });
+                editorRef.current = ed;
+            }
+        });
+    }, []);
+
+    // Load editor content whenever the active sheet changes
+    useEffect(() => {
+        if (editorRef.current && activeSheet) {
+            editorRef.current.setContent(activeSheet.content || '');
+        }
+    }, [activeWorkbookId, activeSheetIdx, dataVersion]);
+
+    /* ---- Equation modal ---- */
+    useEffect(() => { equSetterRef.current = setShowEquEditor; }, []);
+    const equationModal = showEquEditor ? ReactDOM.createPortal(
+        <div className="modal-overlay" onClick={() => setShowEquEditor(false)}>
+            <div className="modal equation-modal" onClick={e => e.stopPropagation()}>
+                <h3>Insert Equation</h3>
+                <div className="symbol-grid">
+                    {['+', '-', '\\times', '\\div', '\\pm', '\\le', '\\ge', '\\neq', '\\infty', '\\in'].map(sym => (
+                        <button key={sym} onClick={() => setLatexCode(prev => prev + sym)}>{sym}</button>
+                    ))}
+                </div>
+                <textarea value={latexCode} onChange={e => { setLatexCode(e.target.value); try { setEquPreview(katex.renderToString(e.target.value, { throwOnError: false })); } catch { setEquPreview('Error'); } }} placeholder="LaTeX code" rows="2" style={{ width: '100%', padding: 6, border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', background: 'var(--btn-bg)', color: 'var(--text)', fontFamily: 'var(--font)' }} />
+                <div style={{ margin: '8px 0', minHeight: '30px', border: '1px solid var(--border)', padding: 5, borderRadius: 'var(--radius-sm)' }} dangerouslySetInnerHTML={{ __html: equPreview }} />
+                <button onClick={() => {
+                    try {
+                        const html = katex.renderToString(latexCode, { throwOnError: false });
+                        if (editorRef.current) editorRef.current.execCommand('mceInsertContent', false, html);
+                        setShowEquEditor(false); setLatexCode(''); setEquPreview('');
+                    } catch { alert('Invalid LaTeX'); }
+                }} style={{ padding: '6px 16px', background: 'var(--accent)', color: '#fff', border: 'none', borderRadius: 'var(--radius-sm)', cursor: 'pointer', fontWeight: 600 }}>Insert</button>
+            </div>
+        </div>, document.body
+    ) : null;
+
+    /* ---- Calculator modal ---- */
+    useEffect(() => { calcSetterRef.current = setShowCalculator; }, []);
+    const pressCalcKey = (key) => {
+        if (key === 'C') { setCalcExpr(''); setCalcResult(null); return; }
+        if (key === '⌫') { setCalcExpr(prev => prev.slice(0, -1)); return; }
+        if (key === '=') {
+            try { setCalcResult(safeEvalExpression(calcExpr)); } catch { setCalcResult('Error'); }
+            return;
+        }
+        setCalcExpr(prev => prev + key);
+    };
+    const calculatorModal = showCalculator ? ReactDOM.createPortal(
+        <div className="modal-overlay" onClick={() => setShowCalculator(false)}>
+            <div className="modal calc-modal" onClick={e => e.stopPropagation()}>
+                <h3 style={{ marginBottom: 10 }}>🧮 Calculator</h3>
+                <div className="calc-display">{calcResult !== null ? String(calcResult) : (calcExpr || '0')}</div>
+                <div className="calc-grid">
+                    {['7', '8', '9', '⌫', '4', '5', '6', '/', '1', '2', '3', '*', '0', '.', '%', '-'].map(k => (
+                        <button key={k} className={['/', '*', '-', '⌫'].includes(k) ? 'op' : ''} onClick={() => pressCalcKey(k)}>{k}</button>
+                    ))}
+                    <button className="wide" onClick={() => pressCalcKey('C')}>C</button>
+                    <button className="wide op" onClick={() => pressCalcKey('+')}>+</button>
+                    <button className="wide op" style={{ gridColumn: 'span 4' }} onClick={() => pressCalcKey('=')}>=</button>
+                </div>
+                <button className="insert-btn" style={{ width: '100%', marginTop: 12 }} onClick={() => {
+                    const value = calcResult !== null ? String(calcResult) : calcExpr;
+                    if (editorRef.current && value) editorRef.current.execCommand('mceInsertContent', false, value);
+                }}>Insert into Sheet</button>
+            </div>
+        </div>, document.body
+    ) : null;
+
+    /* ---- Subject CRUD ---- */
+    const addSubject = () => {
+        const name = prompt('Name this subject/course (e.g. "Accounting"):');
+        if (!name || !name.trim()) return;
+        setData(prev => ({ subjects: [...prev.subjects, newSubject(name.trim())] }));
+    };
+    const renameSubject = (id, value) => {
+        setData(prev => ({ subjects: prev.subjects.map(s => s.id === id ? { ...s, name: value } : s) }));
+    };
+    const deleteSubject = (id) => {
+        if (!confirm('Delete this subject and all its workbooks? This cannot be undone.')) return;
+        setData(prev => ({ subjects: prev.subjects.filter(s => s.id !== id) }));
+        if (activeSubjectId === id) { setView('subjects'); setActiveSubjectId(null); }
+    };
+
+    /* ---- Workbook CRUD ---- */
+    const addWorkbook = (subjectId) => {
+        const name = prompt('Name this workbook:');
+        if (!name || !name.trim()) return;
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id === subjectId ? { ...s, workbooks: [...s.workbooks, newWorkbook(name.trim())] } : s)
+        }));
+    };
+    const renameWorkbook = (subjectId, workbookId, value) => {
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id !== subjectId ? s : {
+                ...s, workbooks: s.workbooks.map(w => w.id === workbookId ? { ...w, name: value } : w)
+            })
+        }));
+    };
+    const deleteWorkbook = (subjectId, workbookId) => {
+        if (!confirm('Delete this workbook and all its sheets? This cannot be undone.')) return;
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id !== subjectId ? s : { ...s, workbooks: s.workbooks.filter(w => w.id !== workbookId) })
+        }));
+        if (activeWorkbookId === workbookId) { setView('workbooks'); setActiveWorkbookId(null); }
+    };
+    const duplicateWorkbook = (subjectId, workbookId) => {
+        setData(prev => ({
+            subjects: prev.subjects.map(s => {
+                if (s.id !== subjectId) return s;
+                const original = s.workbooks.find(w => w.id === workbookId);
+                if (!original) return s;
+                const copy = {
+                    id: newId(),
+                    name: original.name + ' (Copy)',
+                    sheets: original.sheets.map(sh => ({ id: newId(), name: sh.name, content: sh.content }))
+                };
+                return { ...s, workbooks: [...s.workbooks, copy] };
+            })
+        }));
+    };
+    const openWorkbook = (subjectId, workbookId) => {
+        setActiveSubjectId(subjectId);
+        setActiveWorkbookId(workbookId);
+        setActiveSheetIdx(0);
+        setView('editor');
+        setDataVersion(v => v + 1);
+    };
+
+    /* ---- Sheet CRUD ---- */
+    const addSheet = () => {
+        if (!activeSubject || !activeWorkbook) return;
+        const name = prompt('Name this sheet:', 'Sheet ' + (activeWorkbook.sheets.length + 1));
+        if (!name || !name.trim()) return;
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id !== activeSubjectId ? s : {
+                ...s, workbooks: s.workbooks.map(w => w.id !== activeWorkbookId ? w : { ...w, sheets: [...w.sheets, newSheet(name.trim())] })
+            })
+        }));
+        setActiveSheetIdx(activeWorkbook.sheets.length);
+    };
+    const renameSheet = (idx, value) => {
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id !== activeSubjectId ? s : {
+                ...s, workbooks: s.workbooks.map(w => w.id !== activeWorkbookId ? w : {
+                    ...w, sheets: w.sheets.map((sh, i) => i === idx ? { ...sh, name: value } : sh)
+                })
+            })
+        }));
+    };
+    const deleteSheet = (idx) => {
+        if (!activeWorkbook || activeWorkbook.sheets.length <= 1) return;
+        if (!confirm('Delete this sheet?')) return;
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id !== activeSubjectId ? s : {
+                ...s, workbooks: s.workbooks.map(w => w.id !== activeWorkbookId ? w : { ...w, sheets: w.sheets.filter((_, i) => i !== idx) })
+            })
+        }));
+        setActiveSheetIdx(prev => Math.max(0, Math.min(prev, activeWorkbook.sheets.length - 2)));
+        setDataVersion(v => v + 1);
+    };
+
+    const insertTableSkeleton = () => {
+        if (!editorRef.current) return;
+        const html = skeletonToHTML(TABLE_SKELETONS[selectedTableType] || TABLE_SKELETONS.CalculationTable);
+        editorRef.current.execCommand('mceInsertContent', false, html);
+    };
+
+    /* ---- Export ---- */
+    const exportWorkbookPDF = () => {
+        if (!activeWorkbook) return;
+        const w = window.open('', '_blank'); if (!w) return;
+        let h = `<html><head><title>${activeWorkbook.name}</title><style>body{font-family:Arial;padding:20px}h2{color:#4f46e5}</style></head><body><h1>${activeWorkbook.name}</h1>`;
+        activeWorkbook.sheets.forEach(sh => { h += `<h2>${sh.name}</h2><div>${sh.content || '<em>empty</em>'}</div><hr>`; });
+        h += `</body></html>`;
+        w.document.write(h); w.document.close(); setTimeout(() => w.print(), 500);
+    };
+    const exportWorkbookExcel = () => {
+        if (!activeWorkbook) return;
+        const rows = activeWorkbook.sheets.map(sh => ({ Sheet: sh.name, Content: stripHtmlToText(sh.content) }));
+        const wsheet = XLSX.utils.json_to_sheet(rows);
+        const wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, wsheet, 'Sheets');
+        XLSX.writeFile(wb, (activeWorkbook.name || 'workbook') + '.xlsx');
+    };
+
+    /* ================= RENDER ================= */
+    return (
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+            <div className="toolbar">
+                <span className="logo">📓 Practice Workbooks</span>
+                <span className="spacer" />
+                {!isHubLogin && (
+                    <>
+                        <input value={userId} onChange={e => setUserId(e.target.value)} placeholder="Your name / ID" style={{ width: 110 }} />
+                        <input value={pin} onChange={e => setPin(e.target.value.replace(/\D/g, '').slice(0, 4))} placeholder="PIN (optional)" maxLength={4} inputMode="numeric" style={{ width: 90 }} />
+                    </>
+                )}
+                <button onClick={() => setDarkMode(!darkMode)}>{darkMode ? '☀️' : '🌙'}</button>
+                {view === 'editor' && (
+                    <>
+                        <button onClick={exportWorkbookExcel}>📊 Export Excel</button>
+                        <button onClick={exportWorkbookPDF}>📄 Full PDF</button>
+                    </>
+                )}
+                {saveStatus && <span className="save-indicator">{saveStatus}</span>}
+                {syncStatus && <span className="sync-indicator">{syncStatus}</span>}
+            </div>
+
+            {isHubLogin && (
+                <div className="logged-in-bar">
+                    <span>👤 Logged in as <strong>{userId}</strong></span>
+                </div>
+            )}
+
+            <div className="breadcrumb">
+                <span className="crumb" onClick={() => { setView('subjects'); setActiveSubjectId(null); setActiveWorkbookId(null); }}>Subjects</span>
+                {activeSubject && (
+                    <>
+                        <span className="sep">›</span>
+                        {view === 'editor'
+                            ? <span className="crumb" onClick={() => { setView('workbooks'); setActiveWorkbookId(null); }}>{activeSubject.name}</span>
+                            : <span className="current">{activeSubject.name}</span>}
+                    </>
+                )}
+                {activeWorkbook && view === 'editor' && (<><span className="sep">›</span><span className="current">{activeWorkbook.name}</span></>)}
+            </div>
+
+            {/* ---- VIEW: Subjects ---- */}
+            {view === 'subjects' && (
+                <div className="content-area">
+                    {data.subjects.length === 0 && (
+                        <div className="empty-state">No subjects yet. Create one to start building workbooks — e.g. "Accounting" or "Banking Operations."</div>
+                    )}
+                    <div className="grid">
+                        {data.subjects.map(s => (
+                            <div key={s.id} className="card" onClick={() => { setActiveSubjectId(s.id); setView('workbooks'); }}>
+                                {editingCard && editingCard.scope === 'subject' && editingCard.id === s.id ? (
+                                    <input autoFocus value={editingCard.value} onClick={e => e.stopPropagation()}
+                                        onChange={e => setEditingCard({ ...editingCard, value: e.target.value })}
+                                        onBlur={() => { renameSubject(s.id, editingCard.value); setEditingCard(null); }}
+                                        onKeyDown={e => { if (e.key === 'Enter') { renameSubject(s.id, editingCard.value); setEditingCard(null); } }} />
+                                ) : (
+                                    <div className="card-title" onDoubleClick={e => { e.stopPropagation(); setEditingCard({ scope: 'subject', id: s.id, value: s.name }); }}>{s.name}</div>
+                                )}
+                                <div className="card-meta">{s.workbooks.length} workbook{s.workbooks.length !== 1 ? 's' : ''}</div>
+                                <div className="card-actions">
+                                    <button onClick={e => { e.stopPropagation(); setEditingCard({ scope: 'subject', id: s.id, value: s.name }); }}>Rename</button>
+                                    <button className="danger" onClick={e => { e.stopPropagation(); deleteSubject(s.id); }}>Delete</button>
+                                </div>
+                            </div>
+                        ))}
+                        <div className="card new-card" onClick={addSubject}>+ New Subject</div>
+                    </div>
+                </div>
+            )}
+
+            {/* ---- VIEW: Workbooks within a subject ---- */}
+            {view === 'workbooks' && activeSubject && (
+                <div className="content-area">
+                    {activeSubject.workbooks.length === 0 && (
+                        <div className="empty-state">No workbooks in "{activeSubject.name}" yet. Create one to start practicing.</div>
+                    )}
+                    <div className="grid">
+                        {activeSubject.workbooks.map(w => (
+                            <div key={w.id} className="card" onClick={() => openWorkbook(activeSubject.id, w.id)}>
+                                {editingCard && editingCard.scope === 'workbook' && editingCard.id === w.id ? (
+                                    <input autoFocus value={editingCard.value} onClick={e => e.stopPropagation()}
+                                        onChange={e => setEditingCard({ ...editingCard, value: e.target.value })}
+                                        onBlur={() => { renameWorkbook(activeSubject.id, w.id, editingCard.value); setEditingCard(null); }}
+                                        onKeyDown={e => { if (e.key === 'Enter') { renameWorkbook(activeSubject.id, w.id, editingCard.value); setEditingCard(null); } }} />
+                                ) : (
+                                    <div className="card-title" onDoubleClick={e => { e.stopPropagation(); setEditingCard({ scope: 'workbook', id: w.id, value: w.name }); }}>{w.name}</div>
+                                )}
+                                <div className="card-meta">{w.sheets.length} sheet{w.sheets.length !== 1 ? 's' : ''}</div>
+                                <div className="card-actions">
+                                    <button onClick={e => { e.stopPropagation(); setEditingCard({ scope: 'workbook', id: w.id, value: w.name }); }}>Rename</button>
+                                    <button onClick={e => { e.stopPropagation(); duplicateWorkbook(activeSubject.id, w.id); }}>Duplicate</button>
+                                    <button className="danger" onClick={e => { e.stopPropagation(); deleteWorkbook(activeSubject.id, w.id); }}>Delete</button>
+                                </div>
+                            </div>
+                        ))}
+                        <div className="card new-card" onClick={() => addWorkbook(activeSubject.id)}>+ New Workbook</div>
+                    </div>
+                </div>
+            )}
+
+            {/* ---- VIEW: Editor (sheets inside a workbook) ---- */}
+            {view === 'editor' && activeWorkbook && (
+                <>
+                    <div className="sheet-tabs">
+                        {activeWorkbook.sheets.map((sh, idx) => (
+                            <div key={sh.id} style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                                <button className={idx === activeSheetIdx ? 'active' : ''} onClick={() => setActiveSheetIdx(idx)}>
+                                    {editingSheet === idx ? (
+                                        <input autoFocus value={sh.name} onChange={e => renameSheet(idx, e.target.value)}
+                                            onBlur={() => setEditingSheet(null)}
+                                            onKeyDown={e => { if (e.key === 'Enter') setEditingSheet(null); }} />
+                                    ) : (
+                                        <span onDoubleClick={() => setEditingSheet(idx)}>{sh.name}</span>
+                                    )}
+                                </button>
+                                {activeWorkbook.sheets.length > 1 && (
+                                    <button onClick={() => deleteSheet(idx)} style={{ padding: '2px 6px', fontSize: '0.7rem', background: 'var(--danger)', color: '#fff', border: 'none', borderRadius: 4 }}>✕</button>
+                                )}
+                            </div>
+                        ))}
+                        <button onClick={addSheet} style={{ padding: '4px 10px', fontSize: '0.8rem', background: 'var(--success)', color: '#fff', border: 'none', borderRadius: 4 }}>+ New Sheet</button>
+                    </div>
+
+                    <div className="editor-toolbar">
+                        <select value={selectedTableType} onChange={e => setSelectedTableType(e.target.value)}>
+                            {Object.keys(TABLE_SKELETONS).map(type => (<option key={type} value={type}>{type}</option>))}
+                        </select>
+                        <button className="insert-btn" onClick={insertTableSkeleton}>📋 Insert {selectedTableType} Template</button>
+                        <span className="table-help-text">{TABLE_GUIDES[selectedTableType] || TABLE_GUIDES.CalculationTable}</span>
+                    </div>
+
+                    <div className="editor-container">
+                        <textarea id="wb-rich-editor"></textarea>
+                    </div>
+                </>
+            )}
+
+            {equationModal}
+            {calculatorModal}
+        </div>
+    );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "id": "example-course",
+    "title": "Example Course",
+    "description": "A working example — copy this file's shape to add a real course.",
+    "category": "example",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      { "count": 30, "minutes": 40 },
+      { "count": 40, "minutes": 45 },
+      { "count": 50, "minutes": 60 }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    { "id": 1, "title": "Module 1: Geography Basics" },
+    { "id": 2, "title": "Module 2: World Capitals" },
+    { "id": 3, "title": "Module 3: Banking Fundamentals" },
+    { "id": 0, "title": "📘 Case Studies" }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the capital of France?",
+      "opts": ["Berlin", "Madrid", "Paris", "Rome"],
+      "ans": "C",
+      "exp": "Paris is the capital and most populous city of France."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which ocean is the largest by surface area?",
+      "opts": ["Atlantic", "Indian", "Arctic", "Pacific"],
+      "ans": "D",
+      "exp": "The Pacific Ocean covers roughly a third of the Earth's surface."
+    },
+    {
+      "id": "Q3",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the capital of Japan?",
+      "opts": ["Seoul", "Tokyo", "Beijing", "Bangkok"],
+      "ans": "B",
+      "exp": "Tokyo has been Japan's capital since 1868."
+    },
+    {
+      "id": "Q4",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the capital of Nigeria?",
+      "opts": ["Lagos", "Kano", "Abuja", "Ibadan"],
+      "ans": "C",
+      "exp": "Abuja became Nigeria's capital in 1991, replacing Lagos."
+    },
+    {
+      "id": "Q5",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does KYC stand for in banking compliance?",
+      "opts": ["Keep Your Cash", "Know Your Customer", "Key Yield Calculation", "Know Your Currency"],
+      "ans": "B",
+      "exp": "KYC (Know Your Customer) refers to the process of verifying a customer's identity to prevent fraud and money laundering."
+    },
+    {
+      "id": "Q6",
+      "module": 3,
+      "type": "mcq",
+      "q": "A non-performing loan (NPL) is generally one where repayments are overdue by at least how many days?",
+      "opts": ["30 days", "60 days", "90 days", "180 days"],
+      "ans": "C",
+      "exp": "Under most regulatory frameworks, a loan is classified as non-performing once payments are 90+ days past due."
+    },
+    {
+      "id": "Q7",
+      "module": 0,
+      "type": "case-mcq",
+      "case": "ABC Bank reported a 40% rise in non-performing loans after relaxing its collateral requirements in Q1. Management argues the growth in loan volume more than compensates for the higher default rate.",
+      "q": "Which control weakness most directly explains the rise in defaults?",
+      "opts": [
+        "Loosened collateral requirements without added credit assessment.",
+        "Rapid increase in overall loan volume during the quarter.",
+        "Management's optimistic view of loan growth versus risk.",
+        "A general rise in interest rates across the sector."
+      ],
+      "ans": "A",
+      "exp": "The relaxed collateral standard directly weakened the credit control that normally screens out higher-risk borrowers, which is why defaults rose — the other options describe consequences or context, not the underlying control failure."
+    },
+    {
+      "id": "Q8",
+      "module": 0,
+      "type": "case-mcq",
+      "case": "A regional bank's fraud team flagged a customer account receiving multiple small deposits from unrelated third parties, followed by a single large wire transfer out within 24 hours.",
+      "q": "What financial crime pattern does this most closely resemble?",
+      "opts": [
+        "Structuring / smurfing to obscure the source of funds.",
+        "Simple identity theft of the account holder.",
+        "A routine payroll processing error.",
+        "Standard peer-to-peer expense splitting."
+      ],
+      "ans": "A",
+      "exp": "Multiple small unrelated deposits followed by rapid consolidation and outward transfer is a classic structuring pattern used to avoid reporting thresholds and obscure the origin of funds."
+    }
+  ]
+}

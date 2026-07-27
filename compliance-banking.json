@@ -1,0 +1,2783 @@
+{
+  "meta": {
+    "id": "compliance-banking",
+    "title": "Compliance, AML, KYC & Ethics",
+    "description": "195 MCQs covering Compliance Function, AML/CFT/CPF, KYC/UBO, Ethics, and Whistleblowing",
+    "category": "",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1: Conduct &amp; Compliance Group \u2014 Structure, Function, Culture"
+    },
+    {
+      "id": 2,
+      "title": "Module 2: Anti-Money Laundering / CFT / CPF"
+    },
+    {
+      "id": 3,
+      "title": "Module 3: Know Your Customer, CDD &amp; Beneficial Owners"
+    },
+    {
+      "id": 4,
+      "title": "Module 4: Ethics and Conduct"
+    },
+    {
+      "id": 5,
+      "title": "Module 5: Whistleblowing"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary responsibility of the Compliance Function in a bank?",
+      "opts": [
+        "Ensuring observance with all applicable laws, regulations, and corporate ethical standards.",
+        "Maximising return on equity through aggressive product innovation.",
+        "Directly managing the bank's daily treasury and liquidity operations.",
+        "Developing new customer-facing digital banking software features."
+      ],
+      "ans": "A",
+      "exp": "The Compliance Function ensures observance with policies, laws, regulations and corporate ethical standards (page 6)."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which risk type is directly mitigated by a strong compliance function?",
+      "opts": [
+        "Reputation and regulatory risk.",
+        "Credit default and counterparty risk.",
+        "Foreign exchange translation risk.",
+        "Market interest rate fluctuation risk."
+      ],
+      "ans": "A",
+      "exp": "Compliance takes care of reputation and regulatory risks, and indirectly some aspects of operational risk (page 6)."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following correctly describes the two levels of business compliance?",
+      "opts": [
+        "External rules imposed on the organisation and internal controls to achieve them.",
+        "Internal profit targets and external shareholder expectations.",
+        "Employee personal conduct and corporate social responsibility.",
+        "Regulatory capital requirements and liquidity coverage ratios."
+      ],
+      "ans": "A",
+      "exp": "Level 1 involves external rules; Level 2 involves internal systems to achieve compliance with external rules (page 6)."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Compliance risk' refer to in a banking context?",
+      "opts": [
+        "The risk of impairment from failure to meet laws, regulations, and internal policies.",
+        "The risk of customer default on loan repayment obligations.",
+        "The risk of technology failure disrupting core banking systems.",
+        "The risk of currency devaluation affecting foreign investments."
+      ],
+      "ans": "A",
+      "exp": "Compliance risk is the risk of impairment to the business model, reputation and financial condition from failure to meet laws and internal standards (page 6)."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an internal source of compliance risk?",
+      "opts": [
+        "Failure to adhere to the bank's Code of Conduct and Gifts Policy.",
+        "Enactment of a new Central Bank of Nigeria policy.",
+        "Amendment to the Companies and Allied Matters Act.",
+        "A new regulation from the Securities and Exchange Commission."
+      ],
+      "ans": "A",
+      "exp": "Internal sources include Code of Conduct, Gifts Policy, conflict of interest, and insider dealing (page 7)."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an external source of compliance risk?",
+      "opts": [
+        "Laws, regulations, and CBN policies.",
+        "The bank's internal Gifts Policy.",
+        "Staff attestation procedures.",
+        "Internal risk assessment frameworks."
+      ],
+      "ans": "A",
+      "exp": "External sources include laws, EFCC, NDLEA, CAMA, BOFIA, CBN Policies and SEC (page 7)."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "A compliance officer is expected to possess which key personal attribute?",
+      "opts": [
+        "Independence of judgement and a proactive attitude.",
+        "A high-risk appetite for proprietary trading.",
+        "Extensive experience in software development.",
+        "A primary focus on short-term sales targets."
+      ],
+      "ans": "A",
+      "exp": "Required attributes include independence of judgement, neutrality, critical mind, and a proactive attitude (page 8)."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why is confidentiality important for a compliance professional?",
+      "opts": [
+        "To protect sensitive regulatory and enforcement interactions.",
+        "To share customer data with marketing teams.",
+        "To accelerate loan approval processes.",
+        "To improve public relations through transparency."
+      ],
+      "ans": "A",
+      "exp": "Confidentiality and impartiality are key attributes, especially when dealing with regulators and law enforcement (page 8)."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a key objective of the compliance function?",
+      "opts": [
+        "Safeguarding stakeholder interests and protecting the bank's reputation.",
+        "Maximising bonus payouts for the executive team.",
+        "Reducing customer deposit interest rates.",
+        "Expanding into unrelated business sectors."
+      ],
+      "ans": "A",
+      "exp": "Objectives include safeguarding stakeholders' interests, protecting reputation, and removing legal liability (page 9)."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary purpose of the Regulatory Surveillance Compliance Unit?",
+      "opts": [
+        "Act as liaison on legislative matters and coordinate regulatory examinations.",
+        "Conduct enhanced due diligence on high-risk customers.",
+        "Monitor staff account transactions for irregularities.",
+        "Provide compliance training to branch staff."
+      ],
+      "ans": "A",
+      "exp": "The unit handles regulatory enquiries, acts as liaison, and coordinates regulatory examinations (page 10)."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Financial Crimes Compliance Unit is primarily responsible for:",
+      "opts": [
+        "Monitoring channels to prevent money laundering and terrorist financing.",
+        "Managing the bank's financial investment portfolio.",
+        "Approving all international trade finance transactions.",
+        "Designing new retail banking products."
+      ],
+      "ans": "A",
+      "exp": "The unit ensures bank channels are not used for ML/TF/PF and monitors high-risk transactions and PEPs (page 10)."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which unit is responsible for monitoring staff accounts and reviewing Suspicious Transaction Reports?",
+      "opts": [
+        "Financial Crimes Compliance Unit.",
+        "Regulatory Surveillance Compliance Unit.",
+        "Retail Compliance Unit.",
+        "Global Compliance Advisory Unit."
+      ],
+      "ans": "A",
+      "exp": "Financial Crimes Compliance Unit reviews STRs, sanctions screening, and staff account activity (page 10)."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Head Office Compliance Unit is responsible for which activity?",
+      "opts": [
+        "Certification of applications and monitoring of risk assets.",
+        "KYC review of new retail accounts.",
+        "Anti-bribery and corruption risk assessment.",
+        "Liaison between group office and subsidiaries."
+      ],
+      "ans": "A",
+      "exp": "It certifies applications, monitors risk assets, collateral, and unusual postings (page 10)."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which unit handles Anti-Bribery and Corruption risk assessment and governance document management?",
+      "opts": [
+        "Global Compliance Advisory Unit.",
+        "Financial Crimes Compliance Unit.",
+        "Head Office Compliance Unit.",
+        "Retail Compliance Unit."
+      ],
+      "ans": "A",
+      "exp": "The Global Compliance Advisory Unit conducts ABC risk assessment and manages governance documents (page 11)."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Retail Compliance Unit performs which of these duties?",
+      "opts": [
+        "KYC review of new accounts and monitoring of branch control logs.",
+        "Monitoring the bank's correspondent banking relationships.",
+        "Conducting information system security audits.",
+        "Managing the bank's anti-money laundering software."
+      ],
+      "ans": "A",
+      "exp": "The unit is responsible for KYC review, branch control logs, spot checks, and vault administration (page 11)."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Subsidiaries Conduct & Compliance Unit acts as:",
+      "opts": [
+        "The liaison between the Group Office and its subsidiaries.",
+        "The primary auditor for the bank's financial statements.",
+        "The head of retail sales across all branches.",
+        "The manager of the bank's electronic payment platforms."
+      ],
+      "ans": "A",
+      "exp": "It acts as the liaison between Group Office and subsidiaries, performing oversight of compliance monitoring (page 11)."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the Three Lines of Defence model, which line owns and manages compliance risks?",
+      "opts": [
+        "Businesses (first line).",
+        "Compliance Monitoring and Testing (second line).",
+        "Internal Audit (third line).",
+        "The Board of Directors."
+      ],
+      "ans": "A",
+      "exp": "The first line (businesses) owns and manages compliance risks and develops internal control frameworks (page 12)."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which line of defence provides independent assurance that the risk management and control processes are effective?",
+      "opts": [
+        "Internal Audit (third line).",
+        "Businesses (first line).",
+        "Compliance Monitoring (second line).",
+        "External regulators."
+      ],
+      "ans": "A",
+      "exp": "The third line (Internal Audit) provides independent assurance on the effectiveness of risk management and controls (page 12)."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "Who is legally mandated to be appointed as the Chief Compliance Officer under Nigerian law?",
+      "opts": [
+        "A person not below the rank of General Manager at headquarters and at every branch.",
+        "A junior officer with compliance experience.",
+        "An external consultant on a short-term contract.",
+        "A member of the bank's internal audit team."
+      ],
+      "ans": "A",
+      "exp": "The Money Laundering Prohibition Act requires a CCO not below the rank of General Manager (page 14)."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "To whom does the Chief Compliance Officer (CCO) report?",
+      "opts": [
+        "An Executive Compliance Officer (ECO).",
+        "The Head of Internal Audit.",
+        "The Managing Director directly.",
+        "The Board of Directors only."
+      ],
+      "ans": "A",
+      "exp": "The Regulation mandates that the CCO reports to an Executive Compliance Officer (page 14)."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is a primary responsibility of the Chief Compliance Officer?",
+      "opts": [
+        "Advising senior management on laws, rules, and ethical standards.",
+        "Managing the bank's corporate social investment portfolio.",
+        "Appointing all branch managers.",
+        "Approving all large commercial loans."
+      ],
+      "ans": "A",
+      "exp": "The CCO advises senior management on laws, ethical standards, and acts as an interface with regulators (page 14)."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Chief Compliance Officer must be competent and knowledgeable regarding:",
+      "opts": [
+        "Money laundering, terrorist financing risks, and the AML legal framework.",
+        "International trade finance documentation.",
+        "Software engineering and database architecture.",
+        "Real estate valuation and property management."
+      ],
+      "ans": "A",
+      "exp": "The CCO must be competent in ML/TF/PF issues, risks, and the legal framework (page 15)."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which responsibility falls under the CCO's role in developing the AML Program?",
+      "opts": [
+        "Developing policies to deter and detect money laundering and terrorist financing.",
+        "Directly managing all customer relationships.",
+        "Setting the bank's prime lending rate.",
+        "Designing the bank's main website."
+      ],
+      "ans": "A",
+      "exp": "The CCO develops policies designed to deter and detect ML/TF as part of the AML Program (page 16)."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "What must be included in a clear corporate policy on AML?",
+      "opts": [
+        "A prohibition against retaliation against employees who report violations.",
+        "A guarantee of no regulatory inspections.",
+        "A promise to ignore minor infractions.",
+        "A policy to share all customer data with competitors."
+      ],
+      "ans": "A",
+      "exp": "The AML policy must include a clear policy prohibiting retaliation against employees who report (page 16)."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "When should AML procedures be updated by the CCO?",
+      "opts": [
+        "When laws change, business operations change, or new risks are identified.",
+        "Only once every five years.",
+        "Whenever a new branch is opened.",
+        "Only when a fine is imposed by a regulator."
+      ],
+      "ans": "A",
+      "exp": "Procedures are updated when laws change, business changes, or new ML/TF risks are identified (page 17)."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is required regarding AML training for employees?",
+      "opts": [
+        "Training of appropriate employees with mandatory attendance records.",
+        "Training only for senior executives.",
+        "Voluntary online training without attendance tracking.",
+        "Training only for new staff, not existing ones."
+      ],
+      "ans": "A",
+      "exp": "The CCO must ensure training of appropriate employees, with mandatory attendance and record-keeping (page 17)."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a component of an effective compliance program?",
+      "opts": [
+        "A designated Chief Compliance Officer and internal policies and procedures.",
+        "A single employee handling all compliance duties without oversight.",
+        "Exclusive reliance on external lawyers for all decisions.",
+        "No need for employee training since rules are obvious."
+      ],
+      "ans": "A",
+      "exp": "Components include a designated CCO, internal policies, KYC, training, document retention, and independent testing (page 18)."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "type": "mcq",
+      "q": "What defines a strong 'compliance culture' within an organisation?",
+      "opts": [
+        "Established by top management and characterised by their example.",
+        "Delegated entirely to the human resources department.",
+        "Defined solely by the number of disciplinary actions taken.",
+        "Focused on profit maximisation over regulatory adherence."
+      ],
+      "ans": "A",
+      "exp": "A good compliance culture is established by top management, led by senior management example, and embedded in processes (page 19)."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the 'Confirmation' step in compliance risk management?",
+      "opts": [
+        "Monitoring and testing the adequacy of controls and processes.",
+        "Creating awareness of policies and regulations.",
+        "Closing gaps identified by product owners.",
+        "Designing new compliance software."
+      ],
+      "ans": "A",
+      "exp": "Confirmation includes monitoring and testing adequacy of controls and processes (page 20)."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which department is a key partner for Compliance in handling special investigations and audit reviews?",
+      "opts": [
+        "Internal Audit.",
+        "Human Resources.",
+        "Legal.",
+        "Business Units."
+      ],
+      "ans": "A",
+      "exp": "Compliance co-operates with Internal Audit for audit reviews, special investigations, and risk assessments (page 22)."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does Human Resources assist the Compliance function?",
+      "opts": [
+        "Implementing internal regulations and training sensitive staff.",
+        "Performing regulatory reporting to the CBN.",
+        "Customer onboarding and transaction monitoring.",
+        "Legal complaints handling."
+      ],
+      "ans": "A",
+      "exp": "HR implements internal regulations, code of conduct, and provides information/training for staff (page 22)."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which unit is responsible for ensuring statutory returns are sent to regulatory bodies on time?",
+      "opts": [
+        "Chief Compliance Officer.",
+        "Retail Compliance Unit.",
+        "Financial Crimes Compliance Unit.",
+        "Global Advisory Unit."
+      ],
+      "ans": "A",
+      "exp": "The CCO must ensure all statutory returns are sent to required regulatory bodies as at when due (page 14)."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is a key characteristic of the compliance mandate regarding the bank's business model?",
+      "opts": [
+        "To embed compliance in the system to optimise efficiency.",
+        "To eliminate all risk-taking activities.",
+        "To prioritise profitability over governance.",
+        "To avoid any interaction with regulators."
+      ],
+      "ans": "A",
+      "exp": "The mandate includes optimising efficiency by embedding compliance in the system (page 13)."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why might a bank suffer reputation damage even without a formal regulatory sanction?",
+      "opts": [
+        "Significant adverse publicity from non-compliance can damage reputation independently.",
+        "Sanctions are the only cause of reputation damage.",
+        "Reputation is not affected by compliance matters.",
+        "Only the CBN can cause reputation damage."
+      ],
+      "ans": "A",
+      "exp": "Failure to adhere may result in significant adverse publicity and reputation damage even without a sanction (page 14)."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the role of the CCO regarding policy deficiencies?",
+      "opts": [
+        "Identify deficiencies and formulate proposals for amendments.",
+        "Ignore deficiencies unless reported by customers.",
+        "Wait for regulators to point them out.",
+        "Delegate all policy reviews to junior staff."
+      ],
+      "ans": "A",
+      "exp": "The CCO identifies deficiencies in policies and formulates proposals for amendments (page 14)."
+    },
+    {
+      "id": "Q36",
+      "module": 2,
+      "type": "mcq",
+      "q": "Money laundering is defined as the conversion or transfer of property knowing it is derived from:",
+      "opts": [
+        "A criminal offence for the purpose of concealing its illicit origin.",
+        "A legitimate business venture for tax optimisation.",
+        "A family inheritance subject to estate duties.",
+        "An interest-bearing savings account."
+      ],
+      "ans": "A",
+      "exp": "Money laundering involves converting property knowing it is derived from a criminal offence to conceal its origin (page 24)."
+    },
+    {
+      "id": "Q37",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which act is NOT typically considered a money laundering predicate offence?",
+      "opts": [
+        "Payment of utility bills from salary income.",
+        "Illicit trafficking in narcotic drugs.",
+        "Corruption and bribery.",
+        "Counterfeiting currency."
+      ],
+      "ans": "A",
+      "exp": "Predicate offences include drug trafficking, corruption, counterfeiting, fraud, and terrorism \u2014 not legitimate salary spending (page 28)."
+    },
+    {
+      "id": "Q38",
+      "module": 2,
+      "type": "mcq",
+      "q": "Money laundering is regarded as a 'catch-all' offence because:",
+      "opts": [
+        "It encompasses aiding, abetting, concealing, and participating in criminal proceeds.",
+        "It only applies to bank managers.",
+        "It is impossible to prosecute.",
+        "It only covers terrorism financing."
+      ],
+      "ans": "A",
+      "exp": "It includes concealment, possession, transfer, receipt, participation, conspiracy, aiding and abetting (page 24)."
+    },
+    {
+      "id": "Q39",
+      "module": 2,
+      "type": "mcq",
+      "q": "Deception is the art of money laundering. What is money laundering itself?",
+      "opts": [
+        "A derivative crime that cannot exist without a prior criminal act.",
+        "A regulatory requirement for bank audits.",
+        "A type of tax evasion only.",
+        "A legal method of wealth management."
+      ],
+      "ans": "A",
+      "exp": "Money laundering is a derivative crime \u2014 it depends on a prior criminal offence (page 24)."
+    },
+    {
+      "id": "Q40",
+      "module": 2,
+      "type": "mcq",
+      "q": "What does 'wilful blindness' mean in the context of money laundering?",
+      "opts": [
+        "Deliberate avoidance of obvious facts indicating money laundering.",
+        "Accidentally overlooking a transaction.",
+        "Failing to report a small cash deposit.",
+        "Misreading a customer's identification document."
+      ],
+      "ans": "A",
+      "exp": "Wilful blindness is the deliberate avoidance of obvious facts (page 24)."
+    },
+    {
+      "id": "Q41",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which is the correct order of the three stages of money laundering?",
+      "opts": [
+        "Placement, Layering, Integration.",
+        "Layering, Placement, Integration.",
+        "Integration, Placement, Layering.",
+        "Placement, Integration, Layering."
+      ],
+      "ans": "A",
+      "exp": "The stages are Placement (entry), Layering (concealment), and Integration (appears legitimate) (page 26)."
+    },
+    {
+      "id": "Q42",
+      "module": 2,
+      "type": "mcq",
+      "q": "During which stage of money laundering are illegal proceeds first introduced into the financial system?",
+      "opts": [
+        "Placement.",
+        "Layering.",
+        "Integration.",
+        "Predication."
+      ],
+      "ans": "A",
+      "exp": "Placement is the stage where illegal proceeds are placed into the financial system (page 26)."
+    },
+    {
+      "id": "Q43",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which money laundering stage involves complex transactions to conceal the origin of funds?",
+      "opts": [
+        "Layering.",
+        "Placement.",
+        "Integration.",
+        "Reporting."
+      ],
+      "ans": "A",
+      "exp": "Layering involves multiple layers of transactions and wire transfers to conceal the origin and complicate tracing (page 26)."
+    },
+    {
+      "id": "Q44",
+      "module": 2,
+      "type": "mcq",
+      "q": "At the Integration stage of money laundering, funds are:",
+      "opts": [
+        "Successfully cleansed and appear legitimate.",
+        "First deposited into a bank.",
+        "Disguised through shell companies.",
+        "Reported to the NFIU."
+      ],
+      "ans": "A",
+      "exp": "Integration is when illegal funds are cleansed and now appear legitimate (page 26)."
+    },
+    {
+      "id": "Q45",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary motivation difference between money laundering and terrorist financing?",
+      "opts": [
+        "Money laundering is profit-driven; terrorist financing is ideologically driven.",
+        "Money laundering is smaller in scale.",
+        "Terrorist financing uses only legitimate funds.",
+        "There is no difference in motivation."
+      ],
+      "ans": "A",
+      "exp": "ML is motivated by profit, while TF is motivated by ideology (page 34)."
+    },
+    {
+      "id": "Q46",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is a key difference in the source of funds between money laundering and terrorist financing?",
+      "opts": [
+        "ML uses illegitimate funds; TF can use both legitimate and illegitimate funds.",
+        "ML uses only cash; TF uses only digital assets.",
+        "TF uses only illegal drug money.",
+        "ML uses only legitimate funds."
+      ],
+      "ans": "A",
+      "exp": "ML sources are illegitimate; TF sources can be legitimate and illegitimate (page 34)."
+    },
+    {
+      "id": "Q47",
+      "module": 2,
+      "type": "mcq",
+      "q": "How does the money trail differ between money laundering and terrorist financing?",
+      "opts": [
+        "ML is circular (returns to origin); TF is linear (used to propagate activities).",
+        "ML is linear; TF is circular.",
+        "Both are circular.",
+        "Both are linear."
+      ],
+      "ans": "A",
+      "exp": "ML money trail is circular (ends with originator); TF is linear (used for group/activities) (page 34)."
+    },
+    {
+      "id": "Q48",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which conduit is favoured by money launderers according to the comparison table?",
+      "opts": [
+        "Formal financial systems.",
+        "Cash couriers only.",
+        "Hawala exclusively.",
+        "Virtual assets only."
+      ],
+      "ans": "A",
+      "exp": "Money laundering favours formal financial systems, while TF favours cash couriers and informal systems (page 34)."
+    },
+    {
+      "id": "Q49",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is a typical 'red flag' for money laundering?",
+      "opts": [
+        "Transactions that appear uncharacteristic compared to prior account activity.",
+        "Regular salary deposits.",
+        "Monthly standing order payments.",
+        "Standard customer onboarding documentation."
+      ],
+      "ans": "A",
+      "exp": "Red flags are suspicious activities uncharacteristic when compared with prior knowledge and expectations (page 34)."
+    },
+    {
+      "id": "Q50",
+      "module": 2,
+      "type": "mcq",
+      "q": "Proliferation financing is motivated by:",
+      "opts": [
+        "Ideology, similar to terrorist financing.",
+        "Profit, similar to money laundering.",
+        "Political ambition only.",
+        "Economic growth."
+      ],
+      "ans": "A",
+      "exp": "Proliferation financing is ideologically driven (page 34)."
+    },
+    {
+      "id": "Q51",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under Section 34 of the AML/CFT/CPF Regulation 2022, when must a financial institution forward a suspicious transaction report to the NFIU?",
+      "opts": [
+        "Within 72 hours.",
+        "Within 24 hours.",
+        "Within 7 days.",
+        "Within 1 hour."
+      ],
+      "ans": "A",
+      "exp": "The report must be forwarded to NFIU within 72 hours (page 35)."
+    },
+    {
+      "id": "Q52",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the mandatory content required when filing a Suspicious Transaction Report (STR)?",
+      "opts": [
+        "Account opening package, statements, customer info, source documents, and investigation report.",
+        "Only the customer's name and address.",
+        "A summary of bank profits.",
+        "The account officer's personal opinion."
+      ],
+      "ans": "A",
+      "exp": "Mandatory uploads include account opening package, statements, InfoPool pages, source documents, and investigation report (page 35)."
+    },
+    {
+      "id": "Q53",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which system is used to log Suspicious Transaction Reports (STRs) internally?",
+      "opts": [
+        "Processmaker.",
+        "Bloomberg Terminal.",
+        "Oracle Banking Platform.",
+        "Microsoft Excel."
+      ],
+      "ans": "A",
+      "exp": "Staff log on to Processmaker, click New Case, and select Monitor Suspicious Transaction (Log STR) (page 35)."
+    },
+    {
+      "id": "Q54",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a red flag for terrorist financing?",
+      "opts": [
+        "Fund transfers ordered in small amounts to avoid triggering reporting.",
+        "Large single-deposit transactions from known businesses.",
+        "Monthly dividend payments.",
+        "Consistent regular salary credits."
+      ],
+      "ans": "A",
+      "exp": "Small transfers to avoid reporting thresholds are a TF red flag (page 30)."
+    },
+    {
+      "id": "Q55",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is a red flag related to terrorist financing and charitable organisations?",
+      "opts": [
+        "Financial transactions with no logical economic purpose or link to stated activity.",
+        "Regular payment of staff salaries.",
+        "Purchase of office supplies.",
+        "Payment of utility bills."
+      ],
+      "ans": "A",
+      "exp": "Red flags include transactions with no logical economic purpose or link to the NGO/charity's stated activity (page 30)."
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which is a red flag for terrorist financing concerning account dormancy?",
+      "opts": [
+        "Periods of dormancy possibly resulting from terrorist training or combat engagement.",
+        "Regular monthly deposits.",
+        "Frequent interbank transfers.",
+        "High number of cheque clearances."
+      ],
+      "ans": "A",
+      "exp": "Dormancy could be the result of terrorist training or engagement in combat (page 30)."
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "type": "mcq",
+      "q": "A 'many-to-one' transaction cluster where many low-value transactions are received into one account is a red flag for:",
+      "opts": [
+        "Terrorist financing fundraising activity.",
+        "Salary payments.",
+        "Dividend distribution.",
+        "Loan disbursements."
+      ],
+      "ans": "A",
+      "exp": "Many-to-one transaction clusters can indicate fundraising activity (page 31)."
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "type": "mcq",
+      "q": "If a customer is on the United Nations 1267 Sanctions list, this is a red flag for:",
+      "opts": [
+        "Terrorist financing and proliferation financing.",
+        "Money laundering only.",
+        "Tax evasion.",
+        "Insider trading."
+      ],
+      "ans": "A",
+      "exp": "Inclusion on the UN 1267 Sanctions list is a specific TF/PF red flag (page 31)."
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the maximum single deposit amount and cumulative balance for a Tier 1 account under the tiered KYC?",
+      "opts": [
+        "N50,000 deposit and N300,000 cumulative balance.",
+        "N100,000 deposit and N500,000 cumulative balance.",
+        "No limits.",
+        "N20,000 deposit and N100,000 balance."
+      ],
+      "ans": "A",
+      "exp": "Tier 1 allows N50k deposit max and N300k cumulative balance (page 38)."
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the maximum single deposit amount for a Tier 2 account under the tiered KYC?",
+      "opts": [
+        "N100,000.",
+        "N50,000.",
+        "N500,000.",
+        "Unlimited."
+      ],
+      "ans": "A",
+      "exp": "Tier 2 has a maximum single deposit of N100,000 (page 38)."
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "type": "mcq",
+      "q": "Tier 3 accounts have which of the following features?",
+      "opts": [
+        "No limit to cumulative balance, deposits, or transactions.",
+        "Maximum balance of N500,000.",
+        "No international transfers allowed.",
+        "Maximum single deposit of N100,000."
+      ],
+      "ans": "A",
+      "exp": "Tier 3 accounts have no limit to cumulative balance, deposit, or transactions (page 38)."
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a basic requirement for opening a Tier 1 account?",
+      "opts": [
+        "Basic customer information without mandatory verification evidence.",
+        "Full KYC documentation with independent verification.",
+        "Tax Identification Number mandatory.",
+        "Beneficial ownership declaration."
+      ],
+      "ans": "A",
+      "exp": "Tier 1 requires basic customer information (passport, name, etc.) without verification evidence (page 38)."
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "type": "mcq",
+      "q": "International transfers are strictly prohibited for which tiers?",
+      "opts": [
+        "Tiers 1, 2, and 3.",
+        "Only Tier 1.",
+        "Only Tier 2.",
+        "Only Tier 3."
+      ],
+      "ans": "A",
+      "exp": "International transfers are prohibited for Tier 1, 2, and 3 (page 38)."
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "type": "mcq",
+      "q": "Terrorist financing is defined by FATF as:",
+      "opts": [
+        "The financing of terrorist acts, terrorists, and terrorist organisations.",
+        "The funding of political campaigns.",
+        "The support of peaceful religious activities.",
+        "The investment in government bonds."
+      ],
+      "ans": "A",
+      "exp": "FATF defines TF as the financing of terrorist acts, terrorists, and terrorist organisations (page 29)."
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is a common red flag involving Foreign Exchange (FX) transactions?",
+      "opts": [
+        "FX transactions followed by immediate fund transfers to higher-risk locations.",
+        "FX transactions for import of essential goods.",
+        "FX transactions for student tuition payments.",
+        "FX transactions for medical tourism."
+      ],
+      "ans": "A",
+      "exp": "Transactions involving FX followed by immediate transfers to higher-risk locations is a red flag (page 30)."
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "type": "mcq",
+      "q": "What should a bank do when it notices any of the AML red flags?",
+      "opts": [
+        "File a Suspicious Transaction Report (STR).",
+        "Ignore it if the amount is small.",
+        "Alert the customer immediately.",
+        "Close the account without reporting."
+      ],
+      "ans": "A",
+      "exp": "Your responsibility is to file STR when any red flag is noticed (page 31)."
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a prohibited activity for the Bank regarding customers?",
+      "opts": [
+        "Dealing with customers that trade in weapons of mass destruction (WMDs).",
+        "Dealing with customers that import agricultural equipment.",
+        "Dealing with students paying tuition fees.",
+        "Dealing with local grocery stores."
+      ],
+      "ans": "A",
+      "exp": "The Bank prohibits business with customers trading in WMDs, illicit drugs, arms, human trafficking, etc. (page 51)."
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "type": "mcq",
+      "q": "Crypto transactions are now permitted subject to:",
+      "opts": [
+        "Meeting the CBN requirements on Virtual Asset Service Providers (VASPs).",
+        "A minimum balance of N1 billion.",
+        "Approval from the Securities and Exchange Commission only.",
+        "A special license from the Nigerian Communications Commission."
+      ],
+      "ans": "A",
+      "exp": "Crypto is permitted subject to CBN requirements for VASPs (page 51)."
+    },
+    {
+      "id": "Q69",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which countries are listed as special risk areas for the Bank's business?",
+      "opts": [
+        "Crimea, Donetsk, Luhansk, DPRK, Syria, Cuba, Iran, Yemen, Russia, Belarus.",
+        "United States, United Kingdom, France.",
+        "Ghana, Kenya, South Africa.",
+        "Brazil, Argentina, Chile."
+      ],
+      "ans": "A",
+      "exp": "The special risk areas include Crimea, Donetsk, Luhansk, DPRK, Syria, Cuba, Iran, Yemen, Russia, and Belarus (page 51)."
+    },
+    {
+      "id": "Q70",
+      "module": 2,
+      "type": "mcq",
+      "q": "What type of customer does the Bank prohibit doing business with?",
+      "opts": [
+        "Shell companies.",
+        "Publicly listed companies.",
+        "Government parastatals.",
+        "Religious organisations."
+      ],
+      "ans": "A",
+      "exp": "The Bank does not do business with shell companies (page 51)."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "type": "mcq",
+      "q": "Hawala is a channel that the Bank prohibits because it is associated with:",
+      "opts": [
+        "High risk of money laundering and terrorist financing.",
+        "High transaction fees.",
+        "Slow transfer speeds.",
+        "Lack of regulatory clarity in Nigeria."
+      ],
+      "ans": "A",
+      "exp": "Hawala is listed as a prohibited channel due to ML/TF risks (page 51)."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "type": "mcq",
+      "q": "Who must a financial institution verify the identity of before opening an account?",
+      "opts": [
+        "The customer and beneficial owners.",
+        "Only the account signatory.",
+        "Only the company secretary.",
+        "Only the external auditors."
+      ],
+      "ans": "A",
+      "exp": "The FI must verify customer identity and beneficial ownership/control (page 47)."
+    },
+    {
+      "id": "Q73",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the new mandatory requirement for individual account holders under the latest regulations?",
+      "opts": [
+        "Tax Identification Number (TIN), date of birth, and telephone number.",
+        "Passport number only.",
+        "Next of kin details only.",
+        "Educational qualification."
+      ],
+      "ans": "A",
+      "exp": "TIN, date of birth, and telephone number are now mandatory for individuals (page 48)."
+    },
+    {
+      "id": "Q74",
+      "module": 2,
+      "type": "mcq",
+      "q": "How can a financial institution verify telephone numbers for KYC?",
+      "opts": [
+        "By independent process including validation against the NCC database or geo-mapping.",
+        "By calling the number once.",
+        "By checking the phone's IMEI.",
+        "By requiring a sworn affidavit."
+      ],
+      "ans": "A",
+      "exp": "Verification can be via NCC database or geo-mapping (page 48)."
+    },
+    {
+      "id": "Q75",
+      "module": 2,
+      "type": "mcq",
+      "q": "What must a financial institution do if performing Customer Due Diligence (CDD) might tip off the customer?",
+      "opts": [
+        "Not pursue the CDD process and file an STR to NFIU immediately.",
+        "Continue CDD anyway.",
+        "Call the customer to warn them.",
+        "Close the account instantly."
+      ],
+      "ans": "A",
+      "exp": "The FI shall not pursue CDD and shall file an STR immediately (page 49)."
+    },
+    {
+      "id": "Q76",
+      "module": 2,
+      "type": "mcq",
+      "q": "How often should CDD information be updated for high-risk customers?",
+      "opts": [
+        "Every 12 months.",
+        "Every 18 months.",
+        "Every 3 years.",
+        "Never."
+      ],
+      "ans": "A",
+      "exp": "For high-risk customers, every 12 months; moderate 18 months; low 3 years (page 49)."
+    },
+    {
+      "id": "Q77",
+      "module": 2,
+      "type": "mcq",
+      "q": "What should a financial institution do with a Foreign Trust or Foundation that is opaque?",
+      "opts": [
+        "Decline to open an account for the legal arrangement.",
+        "Open the account with basic information.",
+        "Report to the Nigerian Police.",
+        "File a STR and proceed."
+      ],
+      "ans": "A",
+      "exp": "If opaque and information cannot be provided (e.g., tax havens), the FI shall decline to open an account (page 49)."
+    },
+    {
+      "id": "Q78",
+      "module": 2,
+      "type": "mcq",
+      "q": "Refugees and asylum seekers can be banked using identification issued by:",
+      "opts": [
+        "The Nigerian Immigration Service or other recognised government agency.",
+        "Only the United Nations High Commissioner for Refugees.",
+        "Their country of origin's embassy.",
+        "Any form of local identification."
+      ],
+      "ans": "A",
+      "exp": "Refugees can use identification issued by the Nigerian Immigration Service or other recognised government agency (page 50)."
+    },
+    {
+      "id": "Q79",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the record retention period for transactions under the CBN AML Regulations?",
+      "opts": [
+        "At least five years after completion of the transaction.",
+        "Three years.",
+        "Ten years.",
+        "One year."
+      ],
+      "ans": "A",
+      "exp": "The bank must keep records for at least five years after the transaction is completed (page 80)."
+    },
+    {
+      "id": "Q80",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the penalty for failure to maintain necessary transaction records?",
+      "opts": [
+        "A fine of N10 million.",
+        "A fine of N1 million.",
+        "Imprisonment of the CEO.",
+        "Suspension of banking license."
+      ],
+      "ans": "A",
+      "exp": "The Bank shall be liable to a fine of N10 Million for failure to maintain records (page 80)."
+    },
+    {
+      "id": "Q81",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the primary purpose of Know Your Customer (KYC) due diligence?",
+      "opts": [
+        "To identify customers and ascertain relevant information for doing financial business with them.",
+        "To determine the profitability of each customer.",
+        "To assess the customer's credit score.",
+        "To market new products to the customer."
+      ],
+      "ans": "A",
+      "exp": "KYC is the due diligence to identify customers and ascertain relevant information for doing financial business (page 40)."
+    },
+    {
+      "id": "Q82",
+      "module": 3,
+      "type": "mcq",
+      "q": "According to KYC principles, who does 'Customer' refer to?",
+      "opts": [
+        "A real person or organisation that the Bank deals with, whether or not they have an account.",
+        "Only existing account holders.",
+        "Only corporate bodies.",
+        "Only high-net-worth individuals."
+      ],
+      "ans": "A",
+      "exp": "A customer includes anyone the Bank deals with, whether they have an account or not (page 40)."
+    },
+    {
+      "id": "Q83",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does 'Know' refer to in KYC principles?",
+      "opts": [
+        "The identity, beneficial ownership, sources of funds, and nature of the customer's business.",
+        "The customer's favourite colour.",
+        "The customer's political affiliation.",
+        "The customer's birth weight."
+      ],
+      "ans": "A",
+      "exp": "Know means identity, BO, source of funds, nature of business, and reasonable account activity (page 40)."
+    },
+    {
+      "id": "Q84",
+      "module": 3,
+      "type": "mcq",
+      "q": "Who is responsible for 'Knowing' the customer under the KYC framework?",
+      "opts": [
+        "Account Officers and Relationship Managers (the Business).",
+        "The Internal Audit team.",
+        "The Human Resources department.",
+        "The Marketing department."
+      ],
+      "ans": "A",
+      "exp": "Account Officers and Relationship Managers are responsible (page 40)."
+    },
+    {
+      "id": "Q85",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a beneficial owner under Nigerian AML regulations?",
+      "opts": [
+        "A natural person who ultimately owns or controls at least 5% of shares or voting rights.",
+        "Any shareholder owning more than 1%.",
+        "The first listed director on the board.",
+        "The company's external auditor."
+      ],
+      "ans": "A",
+      "exp": "A BO is a natural person who owns at least 5% of shares, exercises 5% voting rights, or controls the entity (page 53)."
+    },
+    {
+      "id": "Q86",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which document is NOT typically a source for determining beneficial ownership?",
+      "opts": [
+        "The customer's daily bank statement.",
+        "Certificate of incorporation.",
+        "Memorandum and Articles of Association (MEMART).",
+        "Annual returns and financial statements."
+      ],
+      "ans": "A",
+      "exp": "Sources include certificate of incorporation, MEMART, minutes, partnership agreements, and annual returns \u2014 not daily bank statements (page 53)."
+    },
+    {
+      "id": "Q87",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a 'Legal Person' for the purpose of beneficial ownership identification?",
+      "opts": [
+        "Corporate bodies, foundations, partnerships, associations, cooperatives, or similar entities.",
+        "A natural person with a bank account.",
+        "An unregistered sole proprietorship.",
+        "A minor child of a customer."
+      ],
+      "ans": "A",
+      "exp": "Legal persons include corporate bodies, foundations, partnerships, associations, cooperatives, or similar entities (page 54)."
+    },
+    {
+      "id": "Q88",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a 'Legal Arrangement' in the context of CDD?",
+      "opts": [
+        "Trusts, express trusts, or similar relationships separating legal ownership from beneficial ownership.",
+        "A partnership agreement.",
+        "A government contract.",
+        "A joint venture with a foreign entity."
+      ],
+      "ans": "A",
+      "exp": "Legal arrangements include trusts separating legal ownership from beneficial ownership (page 54)."
+    },
+    {
+      "id": "Q89",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why is it crucial to identify legal persons in banking relationships?",
+      "opts": [
+        "To mitigate ML/TF risks, as opaque legal persons are used to hide beneficial ownership.",
+        "To increase the bank's tax liability.",
+        "To simplify loan processing.",
+        "To reduce customer complaints."
+      ],
+      "ans": "A",
+      "exp": "Effective identification of legal persons is crucial to mitigating ML/TF risk (page 54)."
+    },
+    {
+      "id": "Q90",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a 'beneficiary' in the context of a trust?",
+      "opts": [
+        "The individual or entity entitled to receive benefits or income from the trust assets.",
+        "The person who sets up the trust.",
+        "The person who manages the trust.",
+        "The regulator overseeing the trust."
+      ],
+      "ans": "A",
+      "exp": "Beneficiaries are entitled to receive the benefits or income generated by trust assets (page 55)."
+    },
+    {
+      "id": "Q91",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is an 'intermediary' in a financial context?",
+      "opts": [
+        "A middleman such as a bank or broker facilitating the flow of funds between savers and borrowers.",
+        "The ultimate beneficial owner.",
+        "The government regulator.",
+        "The company auditor."
+      ],
+      "ans": "A",
+      "exp": "Intermediaries include banks and brokers that facilitate funds between savers and borrowers (page 55)."
+    },
+    {
+      "id": "Q92",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which type of trust is commonly used for estate planning and wealth management?",
+      "opts": [
+        "Legal trusts governed by a trust deed.",
+        "Oral agreements.",
+        "Informal family arrangements.",
+        "Unregistered partnerships."
+      ],
+      "ans": "A",
+      "exp": "Trusts are governed by a trust deed and commonly used for estate planning and wealth management (page 56)."
+    },
+    {
+      "id": "Q93",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a Special Purpose Vehicle (SPV) commonly used for?",
+      "opts": [
+        "To isolate specific assets or liabilities, often for securitisation and risk management.",
+        "To handle all customer complaints.",
+        "To manage the bank's employee payroll.",
+        "To issue daily bank statements."
+      ],
+      "ans": "A",
+      "exp": "SPVs isolate specific assets/liabilities and are used for financing and risk management (page 56)."
+    },
+    {
+      "id": "Q94",
+      "module": 3,
+      "type": "mcq",
+      "q": "What due diligence is required for an SPV?",
+      "opts": [
+        "Identify and verify the originator, sponsors, investors, collateral manager, and purpose of the SPV.",
+        "Only the name of the SPV.",
+        "Only the country of incorporation.",
+        "No due diligence is required."
+      ],
+      "ans": "A",
+      "exp": "Due diligence requires identifying the originator, sponsors, investors, collateral manager, and purpose (page 56)."
+    },
+    {
+      "id": "Q95",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a red flag for identifying beneficial owners?",
+      "opts": [
+        "A shareholders' agreement showing one natural person controls shares of more than one shareholder.",
+        "A simple shareholding structure.",
+        "Transparent board appointments.",
+        "Clear annual returns."
+      ],
+      "ans": "A",
+      "exp": "Red flags include nominee agreements, shareholders' agreements showing control, and dominant influence over transactions (page 57)."
+    },
+    {
+      "id": "Q96",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the Bank's obligation regarding the UBO register?",
+      "opts": [
+        "Create, maintain, and continually update it with information collected through CDD.",
+        "Create it once and never update it.",
+        "Share it publicly on the website.",
+        "Delete it after five years."
+      ],
+      "ans": "A",
+      "exp": "The bank must create, maintain, and continually update the UBO register (page 57)."
+    },
+    {
+      "id": "Q97",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a 'Politically Exposed Person' (PEP) as defined by FATF?",
+      "opts": [
+        "An individual entrusted with a prominent public function.",
+        "Any wealthy business owner.",
+        "Any member of a royal family.",
+        "A senior banker."
+      ],
+      "ans": "A",
+      "exp": "A PEP is an individual entrusted with a prominent public function (page 61)."
+    },
+    {
+      "id": "Q98",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why are PEPs considered high risk for financial institutions?",
+      "opts": [
+        "Their position and influence can be abused for money laundering and corruption.",
+        "They always conduct illegal transactions.",
+        "They are difficult to verify.",
+        "They are not subject to any laws."
+      ],
+      "ans": "A",
+      "exp": "Their positions can be abused for ML and predicate offences like corruption (page 61)."
+    },
+    {
+      "id": "Q99",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is considered a 'Close Associate' (RCA) of a PEP?",
+      "opts": [
+        "Business partners who share beneficial ownership of legal entities with the PEP.",
+        "The PEP's accountant of 20 years.",
+        "A neighbour who occasionally waves hello.",
+        "The PEP's distant cousin twice-removed."
+      ],
+      "ans": "A",
+      "exp": "RCAs include business partners and associates sharing beneficial ownership of legal entities (page 62)."
+    },
+    {
+      "id": "Q100",
+      "module": 3,
+      "type": "mcq",
+      "q": "Who qualifies as a 'Relative and Close Associate' of a PEP?",
+      "opts": [
+        "Spouses, partners, parents, children, siblings, and close friends.",
+        "All employees of the PEP's company.",
+        "All shareholders of the PEP's company.",
+        "All residents of the PEP's neighbourhood."
+      ],
+      "ans": "A",
+      "exp": "RCAs include spouses, parents, children, siblings, close friends, and legal advisors (page 62)."
+    },
+    {
+      "id": "Q101",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which Nigerian official would be classified as a PEP?",
+      "opts": [
+        "A Senator in the National Assembly.",
+        "A junior clerk in the ministry.",
+        "A school teacher.",
+        "A retail shop owner."
+      ],
+      "ans": "A",
+      "exp": "Elected politicians such as Senators, House of Reps, and Councillors are PEPs (page 63)."
+    },
+    {
+      "id": "Q102",
+      "module": 3,
+      "type": "mcq",
+      "q": "What rank of military officer is classified as a PEP?",
+      "opts": [
+        "Colonel and above, and equivalents in Navy, Air Force, Police, Customs, Immigration.",
+        "All soldiers.",
+        "Only the Chief of Defence Staff.",
+        "Lieutenants and below."
+      ],
+      "ans": "A",
+      "exp": "Senior Officers from the rank of Colonel and above are PEPs (page 63)."
+    },
+    {
+      "id": "Q103",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which approval level is required for onboarding a PEP relationship?",
+      "opts": [
+        "Senior Management approval not below General Manager (GM).",
+        "Approval by the Branch Manager.",
+        "Approval by the Customer Service Officer.",
+        "No special approval is required."
+      ],
+      "ans": "A",
+      "exp": "PEP onboarding requires Senior Management approval not below GM (page 66)."
+    },
+    {
+      "id": "Q104",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the transaction threshold requiring GM approval for a PEP account?",
+      "opts": [
+        "N5 million / $30,000.",
+        "N1 million / $10,000.",
+        "N10 million / $50,000.",
+        "Any amount requires approval."
+      ],
+      "ans": "A",
+      "exp": "Transactions of N5m/$30k require approval from GM and above (page 66)."
+    },
+    {
+      "id": "Q105",
+      "module": 3,
+      "type": "mcq",
+      "q": "What Enhanced Due Diligence (EDD) measure must be taken for a PEP?",
+      "opts": [
+        "Establish the source of wealth and source of funds, and conduct enhanced ongoing monitoring.",
+        "Only collect a copy of the passport.",
+        "No extra steps beyond standard CDD.",
+        "Send the customer a questionnaire once a year."
+      ],
+      "ans": "A",
+      "exp": "EDD for PEPs includes establishing source of wealth/funds and enhanced monitoring (page 65)."
+    },
+    {
+      "id": "Q106",
+      "module": 3,
+      "type": "mcq",
+      "q": "What should be done when a customer is identified as a PEP after onboarding?",
+      "opts": [
+        "Conduct EDD, obtain senior management approval, and flag the account in the core banking system.",
+        "Ignore it since they were already onboarded.",
+        "Close the account immediately.",
+        "Report to the police without internal approval."
+      ],
+      "ans": "A",
+      "exp": "EDD, senior management approval, and flagging in the core application are required (page 66)."
+    },
+    {
+      "id": "Q107",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a common reason PEPs are not detected and flagged?",
+      "opts": [
+        "Negligence or inadequate KYC by the Account Officer.",
+        "The bank's system is too sensitive.",
+        "PEPS always provide false information.",
+        "The law does not require detection."
+      ],
+      "ans": "A",
+      "exp": "Reasons include negligence, improper profiling, concealment by AO, and knowledge gaps (page 64)."
+    },
+    {
+      "id": "Q108",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a consequence of not identifying a PEP relationship?",
+      "opts": [
+        "Imposition of fines, reputation risk, and potential severance by correspondent banks.",
+        "The bank receives a commendation.",
+        "The customer automatically becomes low risk.",
+        "No consequences apply."
+      ],
+      "ans": "A",
+      "exp": "Consequences include fines, reputational damage, and loss of correspondent banking relationships (page 64)."
+    },
+    {
+      "id": "Q109",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a Non-Governmental Organisation (NGO) in the context of banking risk?",
+      "opts": [
+        "A non-profit entity with high public trust that can be abused for TF/ML.",
+        "A government-funded agency.",
+        "A for-profit corporation.",
+        "A religious ministry."
+      ],
+      "ans": "A",
+      "exp": "NGOs are non-profit, have public trust, and can be used as proxies for TF/ML (page 67)."
+    },
+    {
+      "id": "Q110",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why are NGOs considered high risk by financial institutions?",
+      "opts": [
+        "Their purpose can be abused toward funding terrorism and money laundering.",
+        "They always operate with cash.",
+        "They have no board of directors.",
+        "They are unregistered."
+      ],
+      "ans": "A",
+      "exp": "The purpose of NGOs can be abused towards funding terrorism, ML, and PF (page 67)."
+    },
+    {
+      "id": "Q111",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is required when onboarding an NGO as a customer?",
+      "opts": [
+        "Obtain the UBO and ED approval, mark as HIGH RISK and NGO in FCUBS, and continuously monitor.",
+        "Only a certificate of incorporation.",
+        "No special requirements.",
+        "A sign-off from the governor."
+      ],
+      "ans": "A",
+      "exp": "UBO and ED approval, HIGH RISK tagging, and continuous monitoring are required (page 67)."
+    },
+    {
+      "id": "Q112",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the purpose of FATCA (Foreign Account Tax Compliance Act) screening?",
+      "opts": [
+        "To identify US citizens or residents for reporting to US tax authorities.",
+        "To screen for money laundering only.",
+        "To assess creditworthiness.",
+        "To determine eligibility for loans."
+      ],
+      "ans": "A",
+      "exp": "FATCA screens for US nationality/residency for reporting to US tax authorities (page 68)."
+    },
+    {
+      "id": "Q113",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a FATCA indication that triggers further due diligence?",
+      "opts": [
+        "A US place of birth or US telephone number.",
+        "A Canadian passport.",
+        "A UK mailing address.",
+        "A Nigerian BVN."
+      ],
+      "ans": "A",
+      "exp": "Indications include US nationality, US address, US place of birth, and US telephone number (page 68)."
+    },
+    {
+      "id": "Q114",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the consequence for a Foreign Financial Institution that refuses to comply with FATCA?",
+      "opts": [
+        "Application of 30% withholding tax on US source payments.",
+        "A fine of N10 million.",
+        "Immediate license revocation.",
+        "No consequence exists."
+      ],
+      "ans": "A",
+      "exp": "Refusal may result in 30% withholding tax (page 68)."
+    },
+    {
+      "id": "Q115",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the role of the Branch Manager (BM) in FATCA compliance?",
+      "opts": [
+        "Sight the customer, verify ID, ensure forms are filled, confirm MIS classification, and authorise maintenance.",
+        "Only sign off on loan applications.",
+        "Handle AML training.",
+        "Manage the branch's budget."
+      ],
+      "ans": "A",
+      "exp": "The BM sights the customer, verifies ID, ensures forms, confirms MIS classification, and authorises (page 69)."
+    },
+    {
+      "id": "Q116",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the CCO's role regarding FATCA?",
+      "opts": [
+        "Ensure forms are filled, obtain ID validating US citizenship, and update the customer's MIS classification.",
+        "None.",
+        "Only handle internal audits.",
+        "Only train staff on ethics."
+      ],
+      "ans": "A",
+      "exp": "CCO ensures forms, obtains US ID, and updates MIS classification for FATCA (page 69)."
+    },
+    {
+      "id": "Q117",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the mandate of the Special Control Unit Against Money Laundering (SCUML)?",
+      "opts": [
+        "To monitor, supervise, and regulate all Designated Non-Financial Institutions (DNFIs).",
+        "To prosecute all money laundering cases.",
+        "To regulate banks only.",
+        "To set monetary policy."
+      ],
+      "ans": "A",
+      "exp": "SCUML monitors, supervises, and regulates DNFIs (page 70)."
+    },
+    {
+      "id": "Q118",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a Designated Non-Financial Institution (DNFI) that must register with SCUML?",
+      "opts": [
+        "Automobile dealers and dealers in precious metals.",
+        "Commercial banks.",
+        "Insurance companies.",
+        "Microfinance banks."
+      ],
+      "ans": "A",
+      "exp": "DNFIs include automobile dealers, dealers in precious stones/metals, casinos, real estate dealers, etc. (page 72)."
+    },
+    {
+      "id": "Q119",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is prohibited when registering a customer on the SCUML platform?",
+      "opts": [
+        "Collecting any form of gratification to register the customer's business.",
+        "Guiding the customer on the registration portal.",
+        "Using the customer's own email address.",
+        "Referring the customer to the SCUML helpdesk."
+      ],
+      "ans": "A",
+      "exp": "Never collect any gratification to register the customer's business (page 70)."
+    },
+    {
+      "id": "Q120",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a type of NGO orientation mentioned?",
+      "opts": [
+        "Profit Maximisation Orientation.",
+        "Charitable Orientation.",
+        "Service Orientation.",
+        "Empowering Orientation."
+      ],
+      "ans": "A",
+      "exp": "Types include Charitable, Service, Participatory, and Empowering \u2014 not profit maximisation (page 67)."
+    },
+    {
+      "id": "Q121",
+      "module": 3,
+      "type": "mcq",
+      "q": "How does the Bank classify all PEP accounts?",
+      "opts": [
+        "High risk.",
+        "Medium risk.",
+        "Low risk.",
+        "No risk."
+      ],
+      "ans": "A",
+      "exp": "In Access Bank, all PEP accounts are classified as high risk (page 61)."
+    },
+    {
+      "id": "Q122",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a 'Blind Trust' and what must a financial institution do with it?",
+      "opts": [
+        "Obtain and understand the Trust Agreement to identify grantor, settlor, trustor, and beneficiary.",
+        "Accept it without documentation.",
+        "Reject all blind trusts outright.",
+        "Only verify the trustee."
+      ],
+      "ans": "A",
+      "exp": "FIs shall obtain and understand the Trust Agreement in a Blind Trust (page 49)."
+    },
+    {
+      "id": "Q123",
+      "module": 3,
+      "type": "mcq",
+      "q": "How should a financial institution handle correspondent banking when the correspondent bank fails to provide satisfactory answers?",
+      "opts": [
+        "Terminate the account with the correspondent bank.",
+        "Ignore the failure.",
+        "Continue the relationship with reduced oversight.",
+        "Report to the police."
+      ],
+      "ans": "A",
+      "exp": "If a correspondent fails to provide satisfactory answers, the FI shall terminate the account (page 50)."
+    },
+    {
+      "id": "Q124",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is required for non-face-to-face customers (internet banking) under CDD regulations?",
+      "opts": [
+        "Conduct regular monitoring and use computerized monitoring systems to recognize unusual transactions.",
+        "No special requirements.",
+        "Only basic KYC.",
+        "They are prohibited entirely."
+      ],
+      "ans": "A",
+      "exp": "Regular monitoring and computerized systems must be used for internet-based customers (page 50)."
+    },
+    {
+      "id": "Q125",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which statement best describes the CDD process for trusts?",
+      "opts": [
+        "Identify and verify the settlor, trustee, protector, beneficiaries, and those exercising effective control.",
+        "Only identify the trust name.",
+        "Only identify the trustee.",
+        "No CDD required for trusts."
+      ],
+      "ans": "A",
+      "exp": "Due diligence requires identifying settlor, trustee, protector, beneficiaries, and controllers (page 56)."
+    },
+    {
+      "id": "Q126",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the purpose of maintaining a Beneficial Ownership register?",
+      "opts": [
+        "To record information collected through CDD and flag inconsistencies to the CAC.",
+        "To track customer complaints.",
+        "To record all deposits.",
+        "To track branch performance."
+      ],
+      "ans": "A",
+      "exp": "The register records BO information and flags inconsistencies to the CAC (page 57)."
+    },
+    {
+      "id": "Q127",
+      "module": 3,
+      "type": "mcq",
+      "q": "What should be done if there is a discrepancy between the UBO register and records?",
+      "opts": [
+        "Flag and report to the Corporate Affairs Commission (CAC).",
+        "Correct it silently.",
+        "Ignore it.",
+        "File an STR immediately."
+      ],
+      "ans": "A",
+      "exp": "Flag and report inconsistency to the CAC (page 57)."
+    },
+    {
+      "id": "Q128",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the EDD requirement for a customer with a multi-layered UBO structure?",
+      "opts": [
+        "Conduct EDD on the entire chain of ownership until the true individuals are identified.",
+        "Only require the company seal.",
+        "No EDD is required.",
+        "Only check the first layer."
+      ],
+      "ans": "A",
+      "exp": "EDD shall be conducted to the entire chain of ownership until the true UBOs are identified (page 60)."
+    },
+    {
+      "id": "Q129",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the minimum ownership threshold (5%) used for identifying beneficial owners?",
+      "opts": [
+        "5% of shares or voting rights.",
+        "10% of shares.",
+        "1% of shares.",
+        "25% of shares."
+      ],
+      "ans": "A",
+      "exp": "The threshold is 5% of issued shares or voting rights (page 53)."
+    },
+    {
+      "id": "Q130",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a 'Legal Trust' primarily used for?",
+      "opts": [
+        "Estate planning, wealth management, and asset protection.",
+        "Daily branch operations.",
+        "Marketing campaigns.",
+        "Staff payroll."
+      ],
+      "ans": "A",
+      "exp": "Trusts are used for estate planning, wealth management, and asset protection (page 56)."
+    },
+    {
+      "id": "Q131",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does the regulation require for verifying customer identity through telephone numbers?",
+      "opts": [
+        "Validation against the NCC database or geo-mapping.",
+        "A simple call to confirm.",
+        "A sworn affidavit from the customer.",
+        "A letter from the customer's employer."
+      ],
+      "ans": "A",
+      "exp": "Telephone numbers must be validated against NCC database or geo-mapping (page 48)."
+    },
+    {
+      "id": "Q132",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the procedure for opening an external or non-resident non-Nigerian account?",
+      "opts": [
+        "Satisfy that the customer is permanently resident outside Nigeria per CBN Foreign Exchange Manual.",
+        "Require a Nigerian passport.",
+        "Limit the account to N50,000.",
+        "No special procedure."
+      ],
+      "ans": "A",
+      "exp": "Per Memorandum 17 of the CBN Foreign Exchange Manual, satisfy they are permanently resident outside Nigeria (page 48)."
+    },
+    {
+      "id": "Q133",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the key CDD requirement for refugees and asylum seekers?",
+      "opts": [
+        "Use identification from Nigerian Immigration Service or recognised government agency.",
+        "Require a UNHCR refugee card only.",
+        "Require a letter from the embassy.",
+        "No verification needed."
+      ],
+      "ans": "A",
+      "exp": "Use identification issued by the Nigerian Immigration Service or other recognisable government agency (page 50)."
+    },
+    {
+      "id": "Q134",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the bank's policy regarding customers who trade in narcotics or illicit drugs?",
+      "opts": [
+        "The Bank prohibits doing business with such customers.",
+        "The Bank allows it with enhanced monitoring.",
+        "The Bank only reports to NFIU but allows it.",
+        "The Bank encourages it for profit."
+      ],
+      "ans": "A",
+      "exp": "The Bank prohibits and does not do business with customers trading in narcotics/illicit drugs (page 51)."
+    },
+    {
+      "id": "Q135",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is required for FATCA screening of new customers?",
+      "opts": [
+        "Screen each new customer against the seven FATCA indications at onboarding.",
+        "Only screen if the customer mentions US ties.",
+        "Screen only corporate customers.",
+        "Screen only once every 5 years."
+      ],
+      "ans": "A",
+      "exp": "Screen each new customer against the seven FATCA indications at onboarding (page 68)."
+    },
+    {
+      "id": "Q136",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the responsibility of the Bank regarding BOs that pose higher risk?",
+      "opts": [
+        "Conduct EDD and file STR with NFIU if there are reasonable grounds to suspect ML/TF.",
+        "Ignore them.",
+        "Only monitor annually.",
+        "Close their accounts."
+      ],
+      "ans": "A",
+      "exp": "Conduct EDD and file STR if reasonable grounds to suspect ML/TF exist (page 57)."
+    },
+    {
+      "id": "Q137",
+      "module": 3,
+      "type": "mcq",
+      "q": "How often are AML/CFT/CPF internal policies and procedures required to be updated?",
+      "opts": [
+        "Annually to mitigate identified risks relating to BO.",
+        "Every 5 years.",
+        "Only when a new law is passed.",
+        "Never."
+      ],
+      "ans": "A",
+      "exp": "Annual update of AML/CFT/CPF internal policies to mitigate risks relating to BO is required (page 57)."
+    },
+    {
+      "id": "Q138",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a 'Code of Ethics' in an organisational context?",
+      "opts": [
+        "A written document stating acceptable and unacceptable behaviours for employees.",
+        "A manual for software installation.",
+        "A financial reporting guideline.",
+        "A marketing strategy document."
+      ],
+      "ans": "A",
+      "exp": "A Code of Ethics is a written document stating what acceptable and unacceptable behaviours are (page 74)."
+    },
+    {
+      "id": "Q139",
+      "module": 4,
+      "type": "mcq",
+      "q": "What does 'Business Ethics' examine?",
+      "opts": [
+        "Ethical principles or problems that arise in a business environment.",
+        "The profitability of business units.",
+        "The technical specifications of banking software.",
+        "The architectural design of bank buildings."
+      ],
+      "ans": "A",
+      "exp": "Business ethics examines ethical principles or problems that arise in a business environment (page 74)."
+    },
+    {
+      "id": "Q140",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the foundation upon which the Bank's ethical standards stand?",
+      "opts": [
+        "Obeying the laws, rules, and regulations in letter and in spirit.",
+        "Profit maximisation.",
+        "Market share dominance.",
+        "Employee satisfaction."
+      ],
+      "ans": "A",
+      "exp": "Obeying laws, rules, and regulations, both in letter and spirit, is the foundation (page 75)."
+    },
+    {
+      "id": "Q141",
+      "module": 4,
+      "type": "mcq",
+      "q": "How long does the duty of confidentiality continue after an officer disengages from the Bank?",
+      "opts": [
+        "Without limit in point of time.",
+        "For 5 years.",
+        "For 10 years.",
+        "Until the officer is hired elsewhere."
+      ],
+      "ans": "A",
+      "exp": "Confidentiality restriction continues without limit in time after disengagement (page 75)."
+    },
+    {
+      "id": "Q142",
+      "module": 4,
+      "type": "mcq",
+      "q": "When may customer information be disclosed to third parties?",
+      "opts": [
+        "When required by law, professional responsibility, authorised by customer, or under enforceable subpoena.",
+        "Whenever the bank wishes.",
+        "When the customer has a low balance.",
+        "Only during annual audits."
+      ],
+      "ans": "A",
+      "exp": "Disclosure is permitted when required by law, professional responsibility, authorised by customer, or in response to subpoena (page 75)."
+    },
+    {
+      "id": "Q143",
+      "module": 4,
+      "type": "mcq",
+      "q": "Where should confidential customer information NOT be discussed?",
+      "opts": [
+        "In elevators, lunchrooms, corridors, or social functions.",
+        "In a secure meeting room.",
+        "Via encrypted email.",
+        "During a formal board meeting."
+      ],
+      "ans": "A",
+      "exp": "Non-public information must not be discussed in public places such as elevators, lunchrooms, corridors, or social functions (page 75)."
+    },
+    {
+      "id": "Q144",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the rule regarding an officer's personal interest conflicting with duties?",
+      "opts": [
+        "It must not conflict with any of their duties as an Officer of the Bank.",
+        "It is allowed if approved by a supervisor.",
+        "It is acceptable if it brings profit.",
+        "It is allowed if not disclosed."
+      ],
+      "ans": "A",
+      "exp": "The personal interest of an Officer shall not conflict with any of their duties (page 76)."
+    },
+    {
+      "id": "Q145",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the Bank's policy on discrimination and harassment?",
+      "opts": [
+        "It is not tolerated; the Bank values diversity and equal opportunity.",
+        "It is allowed if justifiable.",
+        "It is only prohibited in senior roles.",
+        "There is no formal policy."
+      ],
+      "ans": "A",
+      "exp": "The Bank does not tolerate discrimination or harassment of any kind (page 76)."
+    },
+    {
+      "id": "Q146",
+      "module": 4,
+      "type": "mcq",
+      "q": "What must an officer do before acquiring a financial interest in a business that does business with the Bank?",
+      "opts": [
+        "Fully disclose the interest in writing to the Company Secretary.",
+        "Nothing.",
+        "Get approval from the branch manager.",
+        "Resign from the Bank."
+      ],
+      "ans": "A",
+      "exp": "Any financial interest in a business that does business with the Bank must be fully disclosed to the Company Secretary (page 76)."
+    },
+    {
+      "id": "Q147",
+      "module": 4,
+      "type": "mcq",
+      "q": "What does 'Tipping off' refer to in a compliance context?",
+      "opts": [
+        "Hinting to someone that they are under suspicion of money laundering or investigation.",
+        "Providing small tips to waiters.",
+        "Reporting misconduct formally.",
+        "Giving gifts to colleagues."
+      ],
+      "ans": "A",
+      "exp": "Tipping off means doing or saying anything that might hint someone they are under suspicion of ML (page 77)."
+    },
+    {
+      "id": "Q148",
+      "module": 4,
+      "type": "mcq",
+      "q": "Why is 'Tipping off' prohibited?",
+      "opts": [
+        "Because it can warn suspects and undermine investigations.",
+        "Because it is too expensive.",
+        "Because it is not allowed by HR policy.",
+        "Because it is a security breach only."
+      ],
+      "ans": "A",
+      "exp": "Tipping off is prohibited because it warns suspects and undermines investigations (page 77)."
+    },
+    {
+      "id": "Q149",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the rule regarding the use of staff accounts by third parties?",
+      "opts": [
+        "Officers shall not allow their accounts to be used by third parties.",
+        "It is allowed for family members only.",
+        "It is allowed if below a certain amount.",
+        "It is allowed with branch manager approval."
+      ],
+      "ans": "A",
+      "exp": "Officers shall not allow any of their accounts to be used by third parties (page 77)."
+    },
+    {
+      "id": "Q150",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the rule on 'Corporate Opportunity' for officers of the Bank?",
+      "opts": [
+        "Prohibited from benefiting from opportunities arising from Bank property or position without CEO consent.",
+        "Allowed if the opportunity is profitable.",
+        "Allowed if not noticed by others.",
+        "Allowed for junior staff only."
+      ],
+      "ans": "A",
+      "exp": "Officers are prohibited from benefiting from opportunities using Bank property/position without CEO or Board Audit Committee consent (page 77)."
+    },
+    {
+      "id": "Q151",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the transaction threshold for a General Manager (GM) for staff account lodgments?",
+      "opts": [
+        "N9,500,000.",
+        "N5,000,000.",
+        "N14,000,000.",
+        "N18,600,000."
+      ],
+      "ans": "A",
+      "exp": "The threshold for GM is N9,500,000 (page 78)."
+    },
+    {
+      "id": "Q152",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the transaction threshold for a Deputy General Manager (DGM)?",
+      "opts": [
+        "N5,000,000.",
+        "N9,500,000.",
+        "N8,600,000.",
+        "N4,000,000."
+      ],
+      "ans": "A",
+      "exp": "The threshold for DGM is N5,000,000 (page 78)."
+    },
+    {
+      "id": "Q153",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the transaction threshold for non-professional staff (ETD)?",
+      "opts": [
+        "N2,000,000.",
+        "N5,000,000.",
+        "N1,120,000.",
+        "N3,050,000."
+      ],
+      "ans": "A",
+      "exp": "The threshold for ETD (non-professional) is N2,000,000 (page 78)."
+    },
+    {
+      "id": "Q154",
+      "module": 4,
+      "type": "mcq",
+      "q": "What action is taken for a first offence of exceeding staff account threshold without approval?",
+      "opts": [
+        "Caution memo by Supervisor/Group Head.",
+        "Warning memo to HR file.",
+        "Disciplinary Committee.",
+        "Termination of appointment."
+      ],
+      "ans": "A",
+      "exp": "1st Offender receives a Caution memo; 2nd: Warning memo; 3rd: Disciplinary Committee; 4th: Termination (page 79)."
+    },
+    {
+      "id": "Q155",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the policy regarding dud cheque issuance by staff?",
+      "opts": [
+        "No dud cheque issuance is permitted.",
+        "Permitted with a fee.",
+        "Permitted once per year.",
+        "Permitted for amounts under N50,000."
+      ],
+      "ans": "A",
+      "exp": "No dud cheque issuance is allowed for staff (page 79)."
+    },
+    {
+      "id": "Q156",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the minimum period for retaining records of transactions after termination of a business relationship?",
+      "opts": [
+        "Five years.",
+        "One year.",
+        "Ten years.",
+        "Three years."
+      ],
+      "ans": "A",
+      "exp": "Records are kept for a minimum of five years after termination of business relationship (page 80)."
+    },
+    {
+      "id": "Q157",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the requirement for recording and reporting of information by officers?",
+      "opts": [
+        "Honest and accurate recording to make responsible business decisions.",
+        "Only record profitable transactions.",
+        "Recording is optional for minor amounts.",
+        "Only report to immediate supervisors."
+      ],
+      "ans": "A",
+      "exp": "Officers shall ensure honest and accurate recording of information (page 80)."
+    },
+    {
+      "id": "Q158",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a serious offence according to the Bank's classification?",
+      "opts": [
+        "Debiting a customer's account without consent.",
+        "Poor time keeping.",
+        "Consuming food in unauthorised areas.",
+        "Breach of dress code."
+      ],
+      "ans": "A",
+      "exp": "Debiting customer's account without consent is a serious offence (page 89)."
+    },
+    {
+      "id": "Q159",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a gross misconduct offence?",
+      "opts": [
+        "Tipping off customers.",
+        "Poor time keeping.",
+        "Breach of dress code.",
+        "Petty negligence."
+      ],
+      "ans": "A",
+      "exp": "Tipping off to customers is listed as gross misconduct (page 90)."
+    },
+    {
+      "id": "Q160",
+      "module": 4,
+      "type": "mcq",
+      "q": "What constitutes 'Gross Misconduct' in the disciplinary framework?",
+      "opts": [
+        "Conduct so bad it destroys the employer/employee relationship and can lead to instant dismissal.",
+        "Repeated lateness to work.",
+        "Use of unlicensed software.",
+        "Wrong naming convention of device."
+      ],
+      "ans": "A",
+      "exp": "Gross misconduct destroys the employment relationship and can lead to instant dismissal (page 89)."
+    },
+    {
+      "id": "Q161",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which is an example of a minor offence?",
+      "opts": [
+        "Poor time keeping.",
+        "Staff fraud.",
+        "Tipping off a customer.",
+        "Dishonesty."
+      ],
+      "ans": "A",
+      "exp": "Poor time keeping is a minor offence (page 89)."
+    },
+    {
+      "id": "Q162",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the definition of bribery under the Bank's ethical standards?",
+      "opts": [
+        "Providing a benefit to influence a public official to obtain an illegitimate business advantage.",
+        "Giving small gifts to family members.",
+        "Paying taxes on time.",
+        "Investing in government bonds."
+      ],
+      "ans": "A",
+      "exp": "Bribery is providing a benefit to influence a public official to circumvent the law (page 82)."
+    },
+    {
+      "id": "Q163",
+      "module": 4,
+      "type": "mcq",
+      "q": "What was Access Bank's average CPI (Corruption Perception Index) score according to the 2023 report?",
+      "opts": [
+        "40%.",
+        "50%.",
+        "60%.",
+        "30%."
+      ],
+      "ans": "A",
+      "exp": "The Bank had an average CPI score of 40% in the 2023 report (page 83)."
+    },
+    {
+      "id": "Q164",
+      "module": 4,
+      "type": "mcq",
+      "q": "Who is the appointed Anti-Bribery and Corruption Compliance Officer?",
+      "opts": [
+        "Inyang Etim (DGM).",
+        "The CEO.",
+        "The Head of Internal Audit.",
+        "The Company Secretary."
+      ],
+      "ans": "A",
+      "exp": "Inyang Etim (DGM) was appointed as the Anti-Bribery and Corruption Compliance Officer (page 86)."
+    },
+    {
+      "id": "Q165",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the gift threshold for Senior Management (SM) and above?",
+      "opts": [
+        "N150,000.",
+        "N50,000.",
+        "N100,000.",
+        "N200,000."
+      ],
+      "ans": "A",
+      "exp": "The threshold for SM & above is N150,000 (page 87)."
+    },
+    {
+      "id": "Q166",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the gift threshold for all other employees (Professional and support)?",
+      "opts": [
+        "N50,000.",
+        "N150,000.",
+        "N25,000.",
+        "N75,000."
+      ],
+      "ans": "A",
+      "exp": "The threshold for all other employees is N50,000 (page 87)."
+    },
+    {
+      "id": "Q167",
+      "module": 4,
+      "type": "mcq",
+      "q": "Within how many working days must all employees declare a gift received?",
+      "opts": [
+        "3 working days.",
+        "7 working days.",
+        "1 working day.",
+        "5 working days."
+      ],
+      "ans": "A",
+      "exp": "All employees must declare gifts within 3 working days (page 87)."
+    },
+    {
+      "id": "Q168",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the Gift Declaration Portal built on?",
+      "opts": [
+        "ProcessMaker.",
+        "SAP.",
+        "Oracle.",
+        "Microsoft Dynamics."
+      ],
+      "ans": "A",
+      "exp": "The Gift Declaration Portal is on ProcessMaker (page 87)."
+    },
+    {
+      "id": "Q169",
+      "module": 4,
+      "type": "mcq",
+      "q": "When does accepting a gift become a bribery and corruption issue?",
+      "opts": [
+        "When it is accepted without compliance with the Gift Policy.",
+        "Only when accepted from a government official.",
+        "Only when exceeding N1 million.",
+        "When it is accepted publicly."
+      ],
+      "ans": "A",
+      "exp": "It becomes bribery/corruption when gifts are accepted without following the policy (page 87)."
+    },
+    {
+      "id": "Q170",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is one benefit of having a Code of Ethics?",
+      "opts": [
+        "Enhances reputation and builds trust internally and externally.",
+        "Increases employee turnover.",
+        "Reduces profitability.",
+        "Increases regulatory fines."
+      ],
+      "ans": "A",
+      "exp": "Benefits include enhanced reputation, trust, and reduced ethics risks (page 88)."
+    },
+    {
+      "id": "Q171",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a key element of the Bank's Anti-Bribery & Corruption Program?",
+      "opts": [
+        "Including specific ABC clauses in Service Level Agreements (SLA) with vendors.",
+        "Ignoring vendor conduct.",
+        "Avoiding training.",
+        "No defined gift thresholds."
+      ],
+      "ans": "A",
+      "exp": "Specific ABC clauses are included in SLA of vendors (page 86)."
+    },
+    {
+      "id": "Q172",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is an example of a gross misconduct offence?",
+      "opts": [
+        "Wilful blindness relating to money laundering offences.",
+        "Poor time keeping.",
+        "Breach of dress code.",
+        "Consuming food in unauthorised areas."
+      ],
+      "ans": "A",
+      "exp": "Wilful blindness relating to ML offences is gross misconduct (page 90)."
+    },
+    {
+      "id": "Q173",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the sanction for a 4th offender who exceeds staff account lodgment limits without approval?",
+      "opts": [
+        "Termination of appointment.",
+        "Caution memo.",
+        "Warning memo.",
+        "Disciplinary Committee."
+      ],
+      "ans": "A",
+      "exp": "4th Offender faces termination of appointment (page 79)."
+    },
+    {
+      "id": "Q174",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary purpose of a whistleblowing programme in an organisation?",
+      "opts": [
+        "To enable staff and stakeholders to report unethical conduct anonymously and confidentially.",
+        "To punish all staff for any violations.",
+        "To reduce the number of employees.",
+        "To spy on customers."
+      ],
+      "ans": "A",
+      "exp": "Whistleblowing enables reporting of unethical conduct and is key to good governance (page 92)."
+    },
+    {
+      "id": "Q175",
+      "module": 5,
+      "type": "mcq",
+      "q": "Why do many people generally fail to report misconduct?",
+      "opts": [
+        "Fear of victimisation or retaliation.",
+        "They are too busy.",
+        "They do not know the law.",
+        "They do not care about money."
+      ],
+      "ans": "A",
+      "exp": "Many do not report due to fear of victimisation (page 92)."
+    },
+    {
+      "id": "Q176",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key feature of an effective whistleblowing programme?",
+      "opts": [
+        "Ability to report anonymously and confidentially.",
+        "Mandatory disclosure of the reporter's identity.",
+        "Publicly publishing all reports.",
+        "No feedback mechanism."
+      ],
+      "ans": "A",
+      "exp": "Anonymous and confidential reporting is a key feature (page 92)."
+    },
+    {
+      "id": "Q177",
+      "module": 5,
+      "type": "mcq",
+      "q": "How is the whistleblower protected if they disclose their identity to KPMG Ethics?",
+      "opts": [
+        "The identity will NOT be disclosed to Access Bank without written consent.",
+        "The identity is automatically shared.",
+        "The identity is published.",
+        "The identity is shared with the police."
+      ],
+      "ans": "A",
+      "exp": "Even if disclosed to KPMG, it will not be shared with Access Bank without written consent (page 93)."
+    },
+    {
+      "id": "Q178",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which statement supports the importance of reporting misconduct?",
+      "opts": [
+        "Silence may imply that I condone or am a party to the misconduct.",
+        "Silence is always golden.",
+        "Reporting is not my duty.",
+        "Reporting always leads to job loss."
+      ],
+      "ans": "A",
+      "exp": "Silence may imply condoning the misconduct or being a party to it (page 94)."
+    },
+    {
+      "id": "Q179",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is one reason people choose not to report misconduct?",
+      "opts": [
+        "Lack of trust in the system.",
+        "There is too much evidence.",
+        "The system is too fast.",
+        "They are rewarded for silence."
+      ],
+      "ans": "A",
+      "exp": "Lack of trust in the system is a common reason for not reporting (page 95)."
+    },
+    {
+      "id": "Q180",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following can be reported through the whistleblowing channel?",
+      "opts": [
+        "Fraud, bribery, corruption, conflicts of interest, and harassment.",
+        "Only financial fraud.",
+        "Only bribery.",
+        "Only personal grievances."
+      ],
+      "ans": "A",
+      "exp": "The list includes fraud, bribery, corruption, conflicts, harassment, abuse of authority, etc. (page 97)."
+    },
+    {
+      "id": "Q181",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the procedure after calling the Deloitte Reporting Line?",
+      "opts": [
+        "The operator interviews you and gives a reference number (PIN) for follow-up.",
+        "Your identity is recorded and shared with the Bank.",
+        "The call is disconnected.",
+        "You must send a written formal letter."
+      ],
+      "ans": "A",
+      "exp": "You are interviewed, given a PIN, and can call back for feedback (page 98)."
+    },
+    {
+      "id": "Q182",
+      "module": 5,
+      "type": "mcq",
+      "q": "Why will Deloitte not call the whistleblower back?",
+      "opts": [
+        "Because it does not know the identity of the caller.",
+        "Because they do not care.",
+        "Because it is too expensive.",
+        "Because the Bank prevents it."
+      ],
+      "ans": "A",
+      "exp": "Deloitte does not know the identity since calls are anonymous (page 98)."
+    },
+    {
+      "id": "Q183",
+      "module": 5,
+      "type": "mcq",
+      "q": "What email address is used for whistleblowing reports at Access Bank?",
+      "opts": [
+        "tip-offs@deloitte.com.ng.",
+        "report@accessbankplc.com.",
+        "whistle@accessbank.com.",
+        "compliance@accessbank.com."
+      ],
+      "ans": "A",
+      "exp": "Reports are sent to tip-offs@deloitte.com.ng (page 98)."
+    },
+    {
+      "id": "Q184",
+      "module": 5,
+      "type": "mcq",
+      "q": "How can a whistleblower report misconduct via the website?",
+      "opts": [
+        "Log on to www.accessbankplc.com, click Customer Service then Whistle Blower, fill the form and submit.",
+        "Send a direct message on social media.",
+        "Post on the blog.",
+        "Use the WhatsApp number."
+      ],
+      "ans": "A",
+      "exp": "Go to the website, navigate Customer Service \u2192 Whistle Blower, fill the form (page 98)."
+    },
+    {
+      "id": "Q185",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a critical success factor for the whistleblowing mechanism?",
+      "opts": [
+        "Trust the Deloitte Reporting Line and provide detailed information.",
+        "Make anonymous but vague reports.",
+        "Only report if there is a reward.",
+        "Avoid reporting to protect colleagues."
+      ],
+      "ans": "A",
+      "exp": "Critical success factors include trusting the line and providing detailed information (page 100)."
+    },
+    {
+      "id": "Q186",
+      "module": 5,
+      "type": "mcq",
+      "q": "What should a whistleblower do when making a report to Deloitte?",
+      "opts": [
+        "Provide nature of incident, people involved, dates, place, and how it occurred.",
+        "Only state the name of the culprit.",
+        "Provide a summary without details.",
+        "Only mention the amount involved."
+      ],
+      "ans": "A",
+      "exp": "Provide all details: nature, people, dates, place, how it occurred (page 98)."
+    },
+    {
+      "id": "Q187",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the consequence of failure to report misconduct?",
+      "opts": [
+        "It may cast doubt on your integrity and loyalty.",
+        "It guarantees a promotion.",
+        "It is encouraged by the Bank.",
+        "It has no consequence."
+      ],
+      "ans": "A",
+      "exp": "Failure to report may cast doubt on integrity and loyalty to the Bank (page 94)."
+    },
+    {
+      "id": "Q188",
+      "module": 5,
+      "type": "mcq",
+      "q": "Who is protected by the whistleblowing policy?",
+      "opts": [
+        "Staff and other stakeholders.",
+        "Only customers.",
+        "Only senior management.",
+        "Only external regulators."
+      ],
+      "ans": "A",
+      "exp": "The policy enables staff and stakeholders to report (page 92)."
+    },
+    {
+      "id": "Q189",
+      "module": 5,
+      "type": "mcq",
+      "q": "What can a whistleblower use to hide their identity when calling?",
+      "opts": [
+        "Hide the caller ID or use a specially created email address.",
+        "Use their official email only.",
+        "Use their personal phone without hiding.",
+        "Send a formal letter."
+      ],
+      "ans": "A",
+      "exp": "You can hide caller ID or use a specially created email address (page 93)."
+    },
+    {
+      "id": "Q190",
+      "module": 5,
+      "type": "mcq",
+      "q": "Why should false and malicious allegations be avoided?",
+      "opts": [
+        "Because they are unethical and waste resources, undermining the system.",
+        "Because they are illegal.",
+        "Because they are difficult to prove.",
+        "Because they help to test the system."
+      ],
+      "ans": "A",
+      "exp": "Critical success factors include avoiding false and malicious allegations (page 100)."
+    },
+    {
+      "id": "Q191",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the reference PIN given after reporting?",
+      "opts": [
+        "To allow the whistleblower to follow up on the report confidentially.",
+        "To identify the whistleblower to the Bank.",
+        "To confirm the call was received.",
+        "To authorise a reward."
+      ],
+      "ans": "A",
+      "exp": "The PIN allows follow-up calls for feedback (page 98)."
+    },
+    {
+      "id": "Q192",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a whistleblowing reportable incident?",
+      "opts": [
+        "Leakage of confidential data and override of controls.",
+        "Regular performance reviews.",
+        "Approved expense reimbursements.",
+        "Standard staff leave applications."
+      ],
+      "ans": "A",
+      "exp": "Leakage of confidential data and override of controls are reportable (page 97)."
+    },
+    {
+      "id": "Q193",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is 'Swallowing the whistle' in the context of whistleblowing?",
+      "opts": [
+        "Failing to report misconduct, which can lead to fraud and misconduct galore.",
+        "Physically hiding the whistle.",
+        "Reporting misconduct secretly.",
+        "Accepting a bribe to stay silent."
+      ],
+      "ans": "A",
+      "exp": "'Swallowing the whistle' means not reporting, leading to fraud and misconduct (page 94)."
+    },
+    {
+      "id": "Q194",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is one of the key elements of good corporate governance supported by whistleblowing?",
+      "opts": [
+        "Good risk management including fraud and corruption mitigation.",
+        "High executive pay.",
+        "Reduced audit frequency.",
+        "Less external regulation."
+      ],
+      "ans": "A",
+      "exp": "Whistleblowing is key to good risk management for fraud, bribery, and corruption (page 92)."
+    },
+    {
+      "id": "Q195",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the overarching message regarding compliance in the training?",
+      "opts": [
+        "The culture of compliance, championed by Senior Management, is the focus for all officers.",
+        "Compliance is only for the Compliance department.",
+        "Profit is more important than compliance.",
+        "Regulators do not affect daily work."
+      ],
+      "ans": "A",
+      "exp": "The culture of compliance, championed by Senior Management, should be the focus of all officers (page 101)."
+    }
+  ]
+}

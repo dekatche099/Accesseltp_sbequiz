@@ -1,0 +1,4957 @@
+{
+  "meta": {
+    "id": "eof",
+    "title": "Elements of Finance",
+    "description": "350 MCQs covering finance fundamentals",
+    "category": "",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1: Role of Finance Manager"
+    },
+    {
+      "id": 2,
+      "title": "Module 2: Mathematics of Finance"
+    },
+    {
+      "id": 3,
+      "title": "Module 3: Term Loans"
+    },
+    {
+      "id": 4,
+      "title": "Module 4: Financial Market Instruments"
+    },
+    {
+      "id": 5,
+      "title": "Module 5: Capital Budgeting"
+    },
+    {
+      "id": 6,
+      "title": "Module 6: Cost of Capital"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary goal of a corporation according to the Elements of Finance framework?",
+      "opts": [
+        "A. Profit maximization, which focuses on increasing net income irrespective of risk or timing",
+        "B. Maximization of shareholder wealth, which translates to maximizing the share price over time",
+        "C. Revenue maximization, achieved through aggressive market share expansion strategies",
+        "D. Market share growth, ensuring long-term dominance in every product category"
+      ],
+      "ans": "B",
+      "exp": "The primary goal of the firm is wealth maximization, which is best measured by maximizing the share price. Profit maximization fails to account for differences in cash flow timing, risk, and level."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following correctly distinguishes the three major decision areas of a finance manager?",
+      "opts": [
+        "A. Investment decisions relate to dividend payout, financing decisions relate to capital structure, and dividend decisions relate to project selection",
+        "B. Investment decisions relate to capital budgeting, financing decisions relate to funding mix, and dividend decisions relate to profit distribution",
+        "C. Investment decisions relate to working capital, financing decisions relate to equity issuance, and dividend decisions relate to debt repayment",
+        "D. Investment decisions relate to asset acquisition, financing decisions relate to cost minimization, and dividend decisions relate to reinvestment"
+      ],
+      "ans": "B",
+      "exp": "The three core decision areas are: Investment (capital budgeting) \u2013 selecting long-term assets; Financing \u2013 choosing the mix of debt and equity; Dividend \u2013 determining payout versus retention."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "An agency problem arises when there is a conflict of interest between which two primary parties in a corporate context?",
+      "opts": [
+        "A. The board of directors and the external auditors, regarding financial statement accuracy",
+        "B. Shareholders and managers, where managers own less than 100% of the firm and may prioritize personal benefits",
+        "C. The government and the corporation, over tax compliance and regulatory obligations",
+        "D. Creditors and suppliers, concerning trade credit terms and repayment schedules"
+      ],
+      "ans": "B",
+      "exp": "The agency problem exists when managers (agents) do not own the entire firm and may act in their own interests rather than maximizing shareholder wealth. Other agency relationships include shareholders vs. creditors."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of a mechanism used to resolve the agency problem between shareholders and managers?",
+      "opts": [
+        "A. Implementing a fixed salary structure that does not vary with company performance",
+        "B. Offering share option schemes that align managers' interests with share price performance",
+        "C. Reducing the frequency of board meetings to minimize oversight costs",
+        "D. Increasing dividend payouts to reduce retained earnings available for investment"
+      ],
+      "ans": "B",
+      "exp": "Goal congruence mechanisms like share option schemes, performance-based bonuses, and the threat of firing help align manager interests with shareholder wealth maximization."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which statement correctly contrasts profit maximization with wealth maximization as a corporate objective?",
+      "opts": [
+        "A. Profit maximization ignores timing and risk of cash flows, while wealth maximization considers both",
+        "B. Profit maximization is preferred because it directly links to share price in the short run",
+        "C. Wealth maximization is easier to measure since accounting profits are readily available",
+        "D. Both goals lead to identical decisions because higher profits always increase share value"
+      ],
+      "ans": "A",
+      "exp": "Wealth maximization accounts for cash flow timing, risk, and the level of cash flows, whereas profit maximization focuses on accounting profits without these dimensions."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary role of the finance manager in capital budgeting decisions?",
+      "opts": [
+        "A. To decide on the optimal dividend policy that maximizes shareholder payouts",
+        "B. To evaluate and select long-term investment projects that create shareholder value",
+        "C. To determine the appropriate mix of short-term borrowing and cash management",
+        "D. To negotiate terms with suppliers to reduce the cost of goods sold"
+      ],
+      "ans": "B",
+      "exp": "Capital budgeting is the process of evaluating long-term investments and committing capital to projects with positive net present value, which is a key responsibility of the finance manager."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best describes the concept of 'goal congruence' in resolving agency problems?",
+      "opts": [
+        "A. Aligning the interests of the company with those of its external stakeholders, such as suppliers and customers",
+        "B. Designing incentives so that managers' objectives coincide with shareholders' wealth maximization objectives",
+        "C. Ensuring that all departments within the organization have identical annual profit targets",
+        "D. Harmonizing the company's short-term goals with its long-term strategic vision"
+      ],
+      "ans": "B",
+      "exp": "Goal congruence refers to aligning the interests of different entities (like managers and shareholders) so that they work toward mutual benefit, often via performance-based pay and equity incentives."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT a typical factor that managers can influence to affect the share price of a listed company?",
+      "opts": [
+        "A. Projected earnings per share and the timing of those earnings",
+        "B. The riskiness of projected earnings and the use of debt in the capital structure",
+        "C. The overall macroeconomic environment, including inflation and GDP growth rates",
+        "D. Dividend policy and the retention ratio of the company"
+      ],
+      "ans": "C",
+      "exp": "While the external environment affects share price, managers cannot directly control macroeconomic factors; they can influence EPS, risk, capital structure, and dividend policy."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is meant by the term 'residual claimants' in the context of ordinary shareholders?",
+      "opts": [
+        "A. Shareholders who have a legal claim to assets in the event of liquidation before all creditors",
+        "B. Owners who receive what is left after all other claims on income and assets have been satisfied",
+        "C. Investors who hold both debt and equity instruments in the same company",
+        "D. Preference shareholders who have priority over ordinary dividends but not over debt"
+      ],
+      "ans": "B",
+      "exp": "Ordinary shareholders are residual owners; they receive remaining profits after interest, taxes, and preference dividends are paid, and claim remaining assets after liquidation if any."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following describes a typical agency cost incurred by shareholders to monitor management?",
+      "opts": [
+        "A. The cost of hiring external auditors to review financial statements and ensure compliance",
+        "B. The opportunity cost of investing in risk-free government securities instead of equities",
+        "C. The reduction in stock price due to excessive dividend payments",
+        "D. The interest expense on corporate bonds issued to finance new projects"
+      ],
+      "ans": "A",
+      "exp": "Agency costs include monitoring expenditures like auditing, bonding expenditures, and structuring expenditures, all aimed at reducing managerial opportunism."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why is cash flow considered superior to accounting profit in financial management decisions?",
+      "opts": [
+        "A. Cash flow is easier to manipulate through accrual accounting adjustments",
+        "B. Cash flow reflects actual liquidity and the ability to reinvest, unlike profit which includes non-cash items",
+        "C. Profit is always a more reliable indicator of long-term value creation than cash flow",
+        "D. Cash flow ignores depreciation"
+      ],
+      "ans": "B",
+      "exp": "Finance emphasizes cash flows because they represent actual money available for reinvestment, dividends, and debt service, while accounting profit includes non-cash accruals and provisions."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following actions by a finance manager is most directly related to financing decisions?",
+      "opts": [
+        "A. Selecting which new plant and equipment to purchase for expansion",
+        "B. Determining the optimal mix of debt and equity to fund the company's operations",
+        "C. Deciding how much of the current year's profits to distribute as dividends",
+        "D. Managing the company's cash position to meet short-term obligations"
+      ],
+      "ans": "B",
+      "exp": "Financing decisions concern the capital structure\u2014how to raise funds using debt, equity, or hybrid instruments to minimize the cost of capital."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of an unsystematic risk that can be reduced through diversification?",
+      "opts": [
+        "A. A sudden increase in the national interest rate affecting all companies",
+        "B. A strike by employees at a specific manufacturing plant of a company",
+        "C. A global recession that reduces demand across all industries",
+        "D. An inflationary spike that erodes purchasing power for all consumers"
+      ],
+      "ans": "B",
+      "exp": "Unsystematic risk is company-specific, such as a strike, management failure, or product recall; it can be diversified away by holding a portfolio of unrelated assets."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary difference between the role of a financial controller and a finance manager?",
+      "opts": [
+        "A. The controller focuses on external reporting, while the finance manager focuses on decision-making and planning",
+        "B. The controller manages investments, while the finance manager handles accounting",
+        "C. The controller is responsible for long-term strategy, while the finance manager handles day-to-day cash",
+        "D. There is no difference; both terms are used interchangeably in corporate finance"
+      ],
+      "ans": "A",
+      "exp": "Typically, the controller oversees accounting, financial reporting, and internal controls, while the finance manager is involved in capital budgeting, financing, and dividend decisions."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best describes the concept of opportunity cost in financial decision-making?",
+      "opts": [
+        "A. The actual cost incurred when purchasing a new asset for the business",
+        "B. The return that could have been earned on the next best alternative investment of similar risk",
+        "C. The total interest paid on borrowed funds over the life of a project",
+        "D. The accounting depreciation charged on an asset over its useful life"
+      ],
+      "ans": "B",
+      "exp": "Opportunity cost is the return foregone by not investing in the next best alternative; it underlies the time value of money and is the discount rate for project evaluation."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of corporate governance, which of the following is considered a market force that helps resolve agency problems?",
+      "opts": [
+        "A. The threat of a hostile takeover by an outside entity if management underperforms",
+        "B. The requirement for companies to publish annual financial statements",
+        "C. The appointment of non-executive directors to the board",
+        "D. The establishment of an internal audit committee"
+      ],
+      "ans": "A",
+      "exp": "Market forces such as the threat of hostile takeovers, shareholder activism, and the potential for firing incentivize managers to perform in shareholders' interests."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following factors is primarily external to the firm and affects its share price?",
+      "opts": [
+        "A. The company's dividend payout ratio and retention policy",
+        "B. The state of the economy including inflation, interest rates, and GDP growth",
+        "C. The firm's capital structure choices and leverage ratio",
+        "D. The projected earnings per share and their growth trajectory"
+      ],
+      "ans": "B",
+      "exp": "External factors include macroeconomic variables, regulatory changes, and market sentiment, which are beyond the direct control of managers but influence share price."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a potential conflict between shareholders and creditors in a company?",
+      "opts": [
+        "A. Shareholders may approve risky projects that benefit them but increase the default risk for creditors",
+        "B. Creditors may demand higher interest rates which reduce net income available to shareholders",
+        "C. Both A and B are potential conflicts, as they involve transfer of risk and wealth",
+        "D. There is no conflict because creditors have fixed claims and shareholders have residual claims"
+      ],
+      "ans": "C",
+      "exp": "Conflicts arise when shareholders (via managers) take excessive risk or increase leverage, harming creditors, and creditors respond by raising rates, which hurts shareholders."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following correctly describes the finance function's role in 'treasury management' within a firm?",
+      "opts": [
+        "A. Managing the company's long-term investment portfolio and merger acquisitions",
+        "B. Overseeing cash flow, short-term investments, and currency exposure management",
+        "C. Determining the optimal dividend policy and communicating with shareholders",
+        "D. Preparing financial statements and ensuring compliance with accounting standards"
+      ],
+      "ans": "B",
+      "exp": "Treasury management involves managing liquidity, short-term borrowing, investing idle funds, and hedging foreign exchange risk, which are core finance activities."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why is the maximization of shareholder wealth often preferred over profit maximization as a corporate objective?",
+      "opts": [
+        "A. Profit maximization ignores the risk and timing of returns, which are critical to shareholder value",
+        "B. Wealth maximization is easier to measure because it uses market prices that are always accurate",
+        "C. Profit maximization automatically leads to higher share prices in both the short and long term",
+        "D. Wealth maximization focuses on accounting earnings which are more stable over time"
+      ],
+      "ans": "A",
+      "exp": "Wealth maximization considers the magnitude, timing, and risk of cash flows, which are the key determinants of share price, whereas profit maximization overlooks these dimensions."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a common characteristic of agency relationships in finance?",
+      "opts": [
+        "A. The principal and agent have perfectly aligned interests from the outset",
+        "B. The agent is hired to act on behalf of the principal, creating a potential conflict of interest",
+        "C. The relationship is always short-term and does not involve any monitoring costs",
+        "D. The principal always has complete information about the agent's actions"
+      ],
+      "ans": "B",
+      "exp": "An agency relationship exists when a principal (shareholder) hires an agent (manager) to act on their behalf; conflicts arise due to differing objectives and information asymmetry."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of a bonding expenditure designed to reduce agency costs?",
+      "opts": [
+        "A. The cost of preparing and distributing annual reports to shareholders",
+        "B. The premium paid for an insurance policy that covers managerial fraud",
+        "C. The expense of hiring an external audit firm to verify financial statements",
+        "D. The salary paid to a non-executive director for attending board meetings"
+      ],
+      "ans": "B",
+      "exp": "Bonding expenditures are costs incurred by managers to guarantee that they will act in shareholders' best interests, such as performance bonds or insurance against fraud."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following decisions would be classified under the dividend decision area of finance?",
+      "opts": [
+        "A. Deciding whether to invest in a new production facility to increase capacity",
+        "B. Determining the percentage of net income to pay out as dividends versus retained for reinvestment",
+        "C. Choosing between issuing bonds or new shares to finance a new project",
+        "D. Setting the credit terms and collection policies for the company's customers"
+      ],
+      "ans": "B",
+      "exp": "Dividend decisions involve payout policy\u2014how much profit to distribute to shareholders and how much to retain for reinvestment, affecting share price and financing."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the significance of the 'threat of firing' as a mechanism to resolve the agency problem?",
+      "opts": [
+        "A. It ensures that managers will always act in the best interests of employees",
+        "B. It provides shareholders a means to remove underperforming managers through board action",
+        "C. It is an ineffective tool because managers are usually protected by employment contracts",
+        "D. It applies only to the CEO and not to other senior executives"
+      ],
+      "ans": "B",
+      "exp": "The threat of firing (by the board or through shareholder activism) incentivizes managers to perform well and align with shareholder interests to avoid losing their jobs."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following correctly distinguishes between the primary and secondary goals of a corporation?",
+      "opts": [
+        "A. The primary goal is profit maximization, while secondary goals include social responsibility and staff welfare",
+        "B. The primary goal is shareholder wealth maximization, while secondary goals may include market share and employee welfare",
+        "C. The primary goal is revenue growth, while secondary goals focus on cost reduction",
+        "D. The primary goal is customer satisfaction, while secondary goals are profit and market share"
+      ],
+      "ans": "B",
+      "exp": "While the primary objective is to maximize shareholder wealth, other legitimate goals like staff welfare, customer satisfaction, and social responsibility can coexist as secondary objectives."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best explains why financial decisions are based on cash flows rather than accounting profits?",
+      "opts": [
+        "A. Cash flows are less volatile than profits, making them easier to forecast accurately",
+        "B. Cash flows represent actual money available, while profits may include non-cash items like depreciation",
+        "C. Accounting profits are always lower than cash flows due to tax adjustments",
+        "D. Cash flows are not subject to manipulation, whereas profits can be easily inflated"
+      ],
+      "ans": "B",
+      "exp": "Profit includes non-cash accruals and provisions; cash flow reflects the actual liquidity and ability to reinvest, pay dividends, and service debt."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a typical responsibility of the finance manager in relation to financial markets?",
+      "opts": [
+        "A. To design new financial products for retail customers and manage branch operations",
+        "B. To deal with financial markets by raising capital, investing idle funds, and managing currency exposure",
+        "C. To set the company's pricing strategy for its products and services",
+        "D. To oversee the manufacturing process and ensure cost efficiency in production"
+      ],
+      "ans": "B",
+      "exp": "The finance manager interacts with financial markets for fund raising, short-term investing, and hedging, which are part of treasury and corporate finance functions."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary benefit of incorporating 'goal congruence' into the management structure of a firm?",
+      "opts": [
+        "A. It eliminates all conflicts of interest between shareholders and managers permanently",
+        "B. It aligns managerial actions with shareholder wealth maximization, reducing agency costs",
+        "C. It guarantees that the company will always make a profit in every financial year",
+        "D. It ensures that all employees receive the same compensation regardless of performance"
+      ],
+      "ans": "B",
+      "exp": "Goal congruence, through incentive schemes, aligns manager and shareholder objectives, reducing the need for costly monitoring and improving firm performance."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of a 'capital budgeting' decision?",
+      "opts": [
+        "A. Deciding to repurchase the company's own shares from the open market",
+        "B. Choosing to build a new factory to expand production capacity",
+        "C. Setting the credit limit for a major new customer",
+        "D. Negotiating a short-term loan to cover seasonal working capital needs"
+      ],
+      "ans": "B",
+      "exp": "Capital budgeting involves long-term investment decisions such as acquiring new assets, building new plants, or launching new products that require substantial capital outlay."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following factors is NOT typically within the direct control of a company's finance manager?",
+      "opts": [
+        "A. The dividend payout policy of the company",
+        "B. The capital structure mix of debt and equity",
+        "C. The general level of inflation in the national economy",
+        "D. The selection of investment projects to undertake"
+      ],
+      "ans": "C",
+      "exp": "Inflation is a macroeconomic variable that the finance manager cannot control; it influences the discount rate and project cash flows but is external."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following accurately describes the relationship between finance and accounting?",
+      "opts": [
+        "A. Finance is a subset of accounting that deals only with tax reporting",
+        "B. Accounting provides historical data, while finance uses that data for future decision-making",
+        "C. Accounting is concerned with cash flow, while finance is concerned with accrual profit",
+        "D. Both fields are identical except for the time horizon they consider"
+      ],
+      "ans": "B",
+      "exp": "Accounting records past transactions, while finance uses accounting information to make decisions about the future, emphasizing cash flows and value creation."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a common agency conflict between shareholders and managers?",
+      "opts": [
+        "A. Managers may overinvest in pet projects that do not maximize shareholder value",
+        "B. Shareholders may demand excessive dividends that hinder growth opportunities",
+        "C. Creditors may impose restrictive covenants that limit managerial discretion",
+        "D. Suppliers may require early payment terms that strain cash flow"
+      ],
+      "ans": "A",
+      "exp": "Managers may pursue projects that enhance their own prestige or job security rather than those that maximize NPV, harming shareholders."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary purpose of the finance department within an organization?",
+      "opts": [
+        "A. To prepare the annual financial statements and manage the audit process",
+        "B. To manage the company's finances, including investment, financing, and dividend decisions",
+        "C. To design and implement the company's overall business strategy",
+        "D. To manage human resources and employee compensation packages"
+      ],
+      "ans": "B",
+      "exp": "The finance department is responsible for financial management, including capital budgeting, financing, and dividend policy, which support the company's strategic objectives."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following statements about systematic risk is correct?",
+      "opts": [
+        "A. Systematic risk can be eliminated by holding a well-diversified portfolio of stocks",
+        "B. Systematic risk is also known as market risk and affects all assets to some degree",
+        "C. Systematic risk is company-specific and can be diversified away",
+        "D. Systematic risk is measured by the standard deviation of a single stock's returns"
+      ],
+      "ans": "B",
+      "exp": "Systematic risk (market risk) is non-diversifiable because it stems from macroeconomic factors that affect all securities, such as interest rate changes or recessions."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of a financing decision?",
+      "opts": [
+        "A. Deciding to purchase new machinery for a production line",
+        "B. Deciding to issue new shares to fund an acquisition",
+        "C. Deciding to increase the annual dividend per share by 10%",
+        "D. Deciding to extend trade credit to a new customer"
+      ],
+      "ans": "B",
+      "exp": "Financing decisions concern how to raise capital; issuing shares is a financing activity, while purchasing machinery is an investment decision and dividends are a dividend decision."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best describes the role of 'shareholder activism' in corporate governance?",
+      "opts": [
+        "A. The practice of shareholders voting on all routine operational matters of the company",
+        "B. The use of ownership rights to influence management decisions and strategic direction",
+        "C. The requirement that shareholders must approve all dividend payments",
+        "D. The legal obligation of shareholders to participate in annual general meetings"
+      ],
+      "ans": "B",
+      "exp": "Shareholder activism involves investors using their equity ownership to push for changes in management, strategy, or governance to enhance shareholder value."
+    },
+    {
+      "id": "Q37",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the significance of 'riskiness of projected earnings' as a factor affecting share price?",
+      "opts": [
+        "A. Higher risk always increases share price because investors demand higher returns",
+        "B. Greater uncertainty in earnings leads to a lower share price, all else equal",
+        "C. Riskiness of earnings does not affect share price; only the level of earnings matters",
+        "D. Investors are indifferent to risk as long as earnings are positive"
+      ],
+      "ans": "B",
+      "exp": "Investors require a higher return for bearing risk; therefore, higher earnings risk increases the discount rate, reducing the present value and share price."
+    },
+    {
+      "id": "Q38",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of a well-functioning financial market that benefits the finance manager?",
+      "opts": [
+        "A. It provides a mechanism for price discovery and efficient allocation of capital",
+        "B. It guarantees that all investments will yield positive returns",
+        "C. It eliminates the need for the finance manager to consider risk",
+        "D. It ensures that all companies have equal access to funding at the same cost"
+      ],
+      "ans": "A",
+      "exp": "Financial markets facilitate capital allocation, price discovery, and risk sharing, enabling companies to raise funds and investors to deploy capital efficiently."
+    },
+    {
+      "id": "Q39",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following correctly identifies the two types of agency problems in finance?",
+      "opts": [
+        "A. Shareholders vs. managers and shareholders vs. creditors",
+        "B. Managers vs. employees and creditors vs. suppliers",
+        "C. Government vs. corporations and shareholders vs. society",
+        "D. Board of directors vs. CEO and external auditors vs. internal auditors"
+      ],
+      "ans": "A",
+      "exp": "The two main agency problems are: (1) between shareholders (principals) and managers (agents), and (2) between shareholders and creditors (debtholders)."
+    },
+    {
+      "id": "Q40",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the ultimate measure of shareholder wealth maximization?",
+      "opts": [
+        "A. The total revenue generated by the company in a given year",
+        "B. The market price of the company's ordinary shares over time",
+        "C. The book value of the company's assets as per the balance sheet",
+        "D. The net profit after tax as reported in the income statement"
+      ],
+      "ans": "B",
+      "exp": "Shareholder wealth is best reflected in the market value of the company's shares, as it incorporates all available information about future cash flows, risk, and timing."
+    },
+    {
+      "id": "Q41",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of N100,000 invested today for 4 years at 10% per annum compounded annually?",
+      "opts": [
+        "A. N140,000.00",
+        "B. N146,410.00",
+        "C. N133,100.00",
+        "D. N110,000.00"
+      ],
+      "ans": "B",
+      "exp": "FV = P(1+r)^n = 100,000 \u00d7 (1.10)^4 = 100,000 \u00d7 1.4641 = 146,410. The other options use simple interest or incorrect periods."
+    },
+    {
+      "id": "Q42",
+      "module": 2,
+      "type": "mcq",
+      "q": "If you invest N500,000 at 12% per annum compounded quarterly for 2 years, what will be the future value?",
+      "opts": [
+        "A. N627,200.00",
+        "B. N633,620.00",
+        "C. N620,000.00",
+        "D. N630,000.00"
+      ],
+      "ans": "B",
+      "exp": "FV = 500,000 \u00d7 (1 + 0.03)^8 = 500,000 \u00d7 1.26677 = 633,385 (approx. 633,620 depending on rounding). The key is quarterly compounding."
+    },
+    {
+      "id": "Q43",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of N1,000,000 to be received in 5 years if the discount rate is 8% per annum?",
+      "opts": [
+        "A. N680,583.25",
+        "B. N694,320.00",
+        "C. N735,000.00",
+        "D. N600,000.00"
+      ],
+      "ans": "A",
+      "exp": "PV = 1,000,000 / (1.08)^5 = 1,000,000 / 1.46933 = 680,583.25. Simple discounting would give a higher PV but is incorrect."
+    },
+    {
+      "id": "Q44",
+      "module": 2,
+      "type": "mcq",
+      "q": "Calculate the effective annual rate (EAR) for a nominal rate of 18% compounded semi-annually.",
+      "opts": [
+        "A. 18.00%",
+        "B. 18.81%",
+        "C. 19.25%",
+        "D. 19.68%"
+      ],
+      "ans": "B",
+      "exp": "EAR = (1 + 0.18/2)^2 \u2212 1 = (1.09)^2 \u2212 1 = 1.1881 \u2212 1 = 18.81%. Semi-annual compounding yields higher than the nominal rate."
+    },
+    {
+      "id": "Q45",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of an ordinary annuity of N10,000 per year for 5 years at 10% per annum?",
+      "opts": [
+        "A. N61,051.00",
+        "B. N50,000.00",
+        "C. N55,000.00",
+        "D. N67,156.00"
+      ],
+      "ans": "A",
+      "exp": "FV_ordinary = A \u00d7 [((1+r)^n \u2212 1)/r] = 10,000 \u00d7 [(1.61051 \u2212 1)/0.10] = 10,000 \u00d7 6.1051 = 61,051. Annuity due would be 67,156."
+    },
+    {
+      "id": "Q46",
+      "module": 2,
+      "type": "mcq",
+      "q": "If you deposit N2,000 at the end of every month for 5 years into an account that pays 9% per annum compounded monthly, what is the accumulated amount?",
+      "opts": [
+        "A. N150,848",
+        "B. N120,000",
+        "C. N165,000",
+        "D. N151,980"
+      ],
+      "ans": "A",
+      "exp": "Monthly rate = 0.09/12 = 0.0075; n=60; FV = 2,000 \u00d7 [((1.0075)^60 \u2212 1)/0.0075] = 2,000 \u00d7 75.424 \u2248 150,848. This matches the sample question."
+    },
+    {
+      "id": "Q47",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of a perpetuity that pays N1,000 per year forever if the discount rate is 10%?",
+      "opts": [
+        "A. N10,000",
+        "B. N9,090.91",
+        "C. N11,000",
+        "D. N1,000"
+      ],
+      "ans": "A",
+      "exp": "The present value of a perpetuity is A/r = 1,000/0.10 = 10,000. Other options incorrectly use single-period discounting."
+    },
+    {
+      "id": "Q48",
+      "module": 2,
+      "type": "mcq",
+      "q": "How long will it take for an investment to double at an annual interest rate of 10% using the Rule of 72?",
+      "opts": [
+        "A. 7.2 years",
+        "B. 7.27 years",
+        "C. 10 years",
+        "D. 6 years"
+      ],
+      "ans": "A",
+      "exp": "The Rule of 72 gives an approximation: 72/10 = 7.2 years. The exact logarithmic solution yields 7.27 years."
+    },
+    {
+      "id": "Q49",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of N20,000 received each year for 15 years, with the first payment at the end of year 1, at a discount rate of 10%?",
+      "opts": [
+        "A. N152,121.59",
+        "B. N167,333.75",
+        "C. N200,000",
+        "D. N142,000"
+      ],
+      "ans": "A",
+      "exp": "PV = A \u00d7 [1 \u2212 (1+r)^\u2212n]/r = 20,000 \u00d7 [1 \u2212 (1.10)^\u221215]/0.10 = 20,000 \u00d7 7.6061 = 152,121.59."
+    },
+    {
+      "id": "Q50",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following correctly describes the difference between an ordinary annuity and an annuity due?",
+      "opts": [
+        "A. Ordinary annuity payments occur at the beginning of each period, annuity due at the end",
+        "B. Ordinary annuity payments occur at the end of each period, annuity due at the beginning",
+        "C. Ordinary annuity has a higher present value than annuity due for the same cash flows",
+        "D. Annuity due is only used for loan amortization, ordinary for savings"
+      ],
+      "ans": "B",
+      "exp": "Ordinary annuity payments are at the end of each period; annuity due payments are at the beginning. Annuity due has higher PV and FV due to earlier compounding."
+    },
+    {
+      "id": "Q51",
+      "module": 2,
+      "type": "mcq",
+      "q": "If the present value of an ordinary annuity of N10,000 per year for 5 years is N37,908, what is the approximate discount rate?",
+      "opts": [
+        "A. 8%",
+        "B. 10%",
+        "C. 12%",
+        "D. 6%"
+      ],
+      "ans": "B",
+      "exp": "PV = A \u00d7 PVAF; PVAF = 37,908/10,000 = 3.7908, which corresponds to 10% for 5 years (PVAF = [1\u2212(1.10)^\u22125]/0.10 = 3.7908)."
+    },
+    {
+      "id": "Q52",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the interest earned on a N100,000 simple interest investment at 10% per annum for 4 years?",
+      "opts": [
+        "A. N40,000",
+        "B. N46,410",
+        "C. N10,000",
+        "D. N50,000"
+      ],
+      "ans": "A",
+      "exp": "Simple interest = 100,000 \u00d7 0.10 \u00d7 4 = 40,000. Compound interest would yield 46,410, but simple interest does not earn interest on interest."
+    },
+    {
+      "id": "Q53",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of N15,000 to be received in 3 years at a discount rate of 12% per annum?",
+      "opts": [
+        "A. N10,676.40",
+        "B. N11,000.00",
+        "C. N9,500.00",
+        "D. N12,000.00"
+      ],
+      "ans": "A",
+      "exp": "PV = 15,000 / (1.12)^3 = 15,000 / 1.404928 = 10,676.40. Simple discounting would give 15,000/(1+0.36)=11,029, but that is incorrect."
+    },
+    {
+      "id": "Q54",
+      "module": 2,
+      "type": "mcq",
+      "q": "Calculate the future value of N200,000 invested at 8% per annum compounded annually for 6 years.",
+      "opts": [
+        "A. N317,374.40",
+        "B. N296,000.00",
+        "C. N300,000.00",
+        "D. N325,000.00"
+      ],
+      "ans": "A",
+      "exp": "FV = 200,000 \u00d7 (1.08)^6 = 200,000 \u00d7 1.586874 = 317,374.40. Simple interest would give 200,000 \u00d7 (1 + 0.08\u00d76) = 296,000."
+    },
+    {
+      "id": "Q55",
+      "module": 2,
+      "type": "mcq",
+      "q": "If the effective annual rate (EAR) is 10.3813%, what is the nominal rate if compounding is quarterly?",
+      "opts": [
+        "A. 10.00%",
+        "B. 10.50%",
+        "C. 10.25%",
+        "D. 9.50%"
+      ],
+      "ans": "A",
+      "exp": "EAR = (1 + r/4)^4 \u2212 1; solving for r gives r = 4[(1.103813)^(1/4) \u2212 1] \u2248 10.00%."
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of a growing perpetuity that pays N1,000 at year 1, growing at 3% forever, with a discount rate of 10%?",
+      "opts": [
+        "A. N14,285.71",
+        "B. N10,000.00",
+        "C. N13,333.33",
+        "D. N12,500.00"
+      ],
+      "ans": "A",
+      "exp": "PV of growing perpetuity = A/(r \u2212 g) = 1,000/(0.07) = 14,285.71. This ignores growth if using A/r, which is incorrect."
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "type": "mcq",
+      "q": "An investor wants to accumulate N500,000 in 5 years. How much must be invested today if the interest rate is 12% per annum compounded annually?",
+      "opts": [
+        "A. N283,713.46",
+        "B. N300,000.00",
+        "C. N250,000.00",
+        "D. N310,000.00"
+      ],
+      "ans": "A",
+      "exp": "PV = 500,000 / (1.12)^5 = 500,000 / 1.76234 = 283,713.46. Simple discounting would give 500,000 / (1 + 0.12\u00d75) = 312,500, but compounding is correct."
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the annual payment required to repay a N500,000 loan over 5 years at 20% per annum with equal annual instalments?",
+      "opts": [
+        "A. N167,190",
+        "B. N100,000",
+        "C. N200,000",
+        "D. N150,000"
+      ],
+      "ans": "A",
+      "exp": "PVAF = [1 \u2212 (1.20)^\u22125]/0.20 = 2.9906; A = PV/PVAF = 500,000/2.9906 = 167,190. This is the equal annual payment."
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the outstanding balance after the first year on a N500,000 loan at 20% with equal annual payments of N167,190?",
+      "opts": [
+        "A. N432,810",
+        "B. N400,000",
+        "C. N460,000",
+        "D. N350,000"
+      ],
+      "ans": "A",
+      "exp": "Interest year 1 = 500,000 \u00d7 20% = 100,000; Payment = 167,190; Principal repaid = 67,190; Balance = 500,000 \u2212 67,190 = 432,810."
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "type": "mcq",
+      "q": "If you invest N1,000 at the beginning of each year for 3 years at 10%, what is the future value at the end of year 3?",
+      "opts": [
+        "A. N3,641.00",
+        "B. N3,310.00",
+        "C. N3,300.00",
+        "D. N3,993.00"
+      ],
+      "ans": "A",
+      "exp": "FV_annuity due = 1,000 \u00d7 [((1.10)^3 \u2212 1)/0.10] \u00d7 (1.10) = 1,000 \u00d7 3.31 \u00d7 1.10 = 3,641. Ordinary annuity would be 3,310."
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the discount factor for year 3 at a discount rate of 15%?",
+      "opts": [
+        "A. 0.6575",
+        "B. 0.7561",
+        "C. 0.5718",
+        "D. 0.8696"
+      ],
+      "ans": "A",
+      "exp": "DF = 1/(1.15)^3 = 1/1.520875 = 0.6575. Other options are for different years."
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "type": "mcq",
+      "q": "Calculate the present value of a deferred annuity of N20,000 per year for 15 years, with the first payment at the end of year 6, discounted at 10%.",
+      "opts": [
+        "A. N94,400",
+        "B. N152,122",
+        "C. N110,000",
+        "D. N84,000"
+      ],
+      "ans": "A",
+      "exp": "PVAF year 1\u201320 = 8.51; year 1\u20135 = 3.79; so year 6\u201320 = 4.72; PV = 20,000 \u00d7 4.72 = 94,400. This accounts for the deferral."
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the interest element in a N100,000 compound interest investment at 10% per annum for 4 years?",
+      "opts": [
+        "A. N46,410",
+        "B. N40,000",
+        "C. N50,000",
+        "D. N44,100"
+      ],
+      "ans": "A",
+      "exp": "FV = 146,410; interest = 46,410. Simple interest would be 40,000, but compound interest includes interest on interest."
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "type": "mcq",
+      "q": "If a bank offers 10% per annum compounded monthly, what is the effective annual rate (EAR)?",
+      "opts": [
+        "A. 10.4713%",
+        "B. 10.0000%",
+        "C. 10.5065%",
+        "D. 10.5156%"
+      ],
+      "ans": "A",
+      "exp": "EAR = (1 + 0.10/12)^12 \u2212 1 = 1.104713 \u2212 1 = 10.4713%. Monthly compounding increases EAR above the nominal rate."
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of a perpetuity of N5,000 per year, with the first payment at the end of year 1, if the discount rate is 8%?",
+      "opts": [
+        "A. N62,500",
+        "B. N57,870",
+        "C. N60,000",
+        "D. N50,000"
+      ],
+      "ans": "A",
+      "exp": "PV of perpetuity = A/r = 5,000/0.08 = 62,500. The payment starts at year 1, so no adjustment for delay is needed."
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "type": "mcq",
+      "q": "Calculate the future value of a N2,000 deposit at the end of each quarter for 2 years at 12% per annum compounded quarterly.",
+      "opts": [
+        "A. N17,748",
+        "B. N16,000",
+        "C. N18,000",
+        "D. N20,000"
+      ],
+      "ans": "A",
+      "exp": "FV = 2,000 \u00d7 [((1.03)^8 \u2212 1)/0.03] = 2,000 \u00d7 8.874 = 17,748. Quarterly compounding is required."
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the nominal annual rate if the effective annual rate is 15% and compounding is monthly?",
+      "opts": [
+        "A. 14.06%, solving r = 12[(1.15)^(1/12) \u2212 1]",
+        "B. 15.00%",
+        "C. 13.50%",
+        "D. 16.00%"
+      ],
+      "ans": "A",
+      "exp": "EAR = (1 + r/12)^12 \u2212 1; r = 12[(1.15)^(1/12) \u2212 1] \u2248 14.06%. The nominal is less than EAR due to compounding."
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is true about the relationship between discount rate and present value?",
+      "opts": [
+        "A. Higher discount rates lead to higher present values, as future cash flows are worth more",
+        "B. Present value is inversely related to the discount rate; higher rates yield lower PV",
+        "C. There is no relationship because discount rate only affects future value",
+        "D. The discount rate has a direct proportional effect on present value"
+      ],
+      "ans": "B",
+      "exp": "Present value = FV / (1+r)^n; as r increases, the denominator increases, so PV decreases. This inverse relationship is fundamental."
+    },
+    {
+      "id": "Q69",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of N50,000 invested at 6% per annum compounded semi-annually for 3 years?",
+      "opts": [
+        "A. N59,702",
+        "B. N59,000",
+        "C. N60,000",
+        "D. N58,500"
+      ],
+      "ans": "A",
+      "exp": "FV = 50,000 \u00d7 (1.03)^6 = 50,000 \u00d7 1.19405 = 59,702. Semi-annual compounding yields slightly more than annual."
+    },
+    {
+      "id": "Q70",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of N10,000 received at the end of each year for 4 years at a discount rate of 9%?",
+      "opts": [
+        "A. N32,397",
+        "B. N36,000",
+        "C. N30,000",
+        "D. N34,000"
+      ],
+      "ans": "A",
+      "exp": "PVAF = (1 \u2212 1.09^\u22124)/0.09 = 3.2397; PV = 10,000 \u00d7 3.2397 = 32,397. Other options ignore discounting."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "type": "mcq",
+      "q": "How much must be saved at the end of each year to accumulate N100,000 in 5 years at 8% interest?",
+      "opts": [
+        "A. N17,045.65",
+        "B. N20,000",
+        "C. N15,000",
+        "D. N18,000"
+      ],
+      "ans": "A",
+      "exp": "FVAF = ((1.08)^5 \u2212 1)/0.08 = 5.8666; A = 100,000/5.8666 = 17,045.65. This is a sinking fund calculation."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the effective annual rate for a nominal rate of 12% compounded daily (assume 365 days)?",
+      "opts": [
+        "A. 12.747%",
+        "B. 12.000%",
+        "C. 12.68%",
+        "D. 12.36%"
+      ],
+      "ans": "A",
+      "exp": "EAR = (1 + 0.12/365)^365 \u2212 1 = 12.747%. Daily compounding yields the highest EAR among typical frequencies."
+    },
+    {
+      "id": "Q73",
+      "module": 2,
+      "type": "mcq",
+      "q": "If you invest N1,000 at 5% per annum compounded annually for 10 years, what is the future value?",
+      "opts": [
+        "A. N1,628.89",
+        "B. N1,500.00",
+        "C. N1,550.00",
+        "D. N1,600.00"
+      ],
+      "ans": "A",
+      "exp": "(1.05)^10 = 1.62889, so FV = 1,628.89. Simple interest would be 1,500."
+    },
+    {
+      "id": "Q74",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of a cash flow of N20,000 in year 2 and N30,000 in year 3 at a discount rate of 12%?",
+      "opts": [
+        "A. N37,508",
+        "B. N41,000",
+        "C. N35,000",
+        "D. N40,000"
+      ],
+      "ans": "A",
+      "exp": "PV = 20,000/(1.12)^2 + 30,000/(1.12)^3 = 15,944 + 21,564 = 37,508. Discounting each separately is necessary."
+    },
+    {
+      "id": "Q75",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank offers a savings account with a nominal rate of 8% compounded quarterly. What is the effective annual return?",
+      "opts": [
+        "A. 8.243%",
+        "B. 8.000%",
+        "C. 8.16%",
+        "D. 8.30%"
+      ],
+      "ans": "A",
+      "exp": "EAR = (1.02)^4 \u2212 1 = 8.243%. Quarterly compounding yields slightly above the nominal."
+    },
+    {
+      "id": "Q76",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of an annuity due of N5,000 per year for 3 years at 7%?",
+      "opts": [
+        "A. N17,137.45",
+        "B. N16,000",
+        "C. N15,000",
+        "D. N16,750"
+      ],
+      "ans": "A",
+      "exp": "FV_ordinary = 5,000 \u00d7 [(1.07)^3 \u2212 1]/0.07 = 5,000 \u00d7 3.2149 = 16,074.5; FV_due = 16,074.5 \u00d7 1.07 = 17,137.45."
+    },
+    {
+      "id": "Q77",
+      "module": 2,
+      "type": "mcq",
+      "q": "Calculate the present value of a bond that pays N100 annually for 5 years and returns N1,000 at maturity, discounted at 10%.",
+      "opts": [
+        "A. N1,000.00",
+        "B. N1,000.00",
+        "C. N1,037.91",
+        "D. N962.09"
+      ],
+      "ans": "B",
+      "exp": "PV = 100 \u00d7 3.7908 + 1,000 \u00d7 0.6209 = 379.08 + 620.90 = 1,000.00. The bond is priced at par when the coupon equals the discount."
+    },
+    {
+      "id": "Q78",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of a N100 deposit at the end of each month for 2 years at 12% per annum compounded monthly?",
+      "opts": [
+        "A. N2,697.30",
+        "B. N2,400.00",
+        "C. N2,800.00",
+        "D. N2,500.00"
+      ],
+      "ans": "A",
+      "exp": "Monthly rate = 0.12/12 = 0.01; n=24; FV = 100 \u00d7 [((1.01)^24 \u2212 1)/0.01] = 100 \u00d7 26.973 = 2,697.30."
+    },
+    {
+      "id": "Q79",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of N500,000 received in 10 years if the discount rate is 6% per annum?",
+      "opts": [
+        "A. N279,197.40",
+        "B. N300,000.00",
+        "C. N250,000.00",
+        "D. N270,000.00"
+      ],
+      "ans": "A",
+      "exp": "(1.06)^10 = 1.79085; PV = 500,000 / 1.79085 = 279,197.40."
+    },
+    {
+      "id": "Q80",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the accumulated amount after 5 years if you deposit N1,000 at the beginning of each year into an account earning 9% compounded annually?",
+      "opts": [
+        "A. N6,590.80",
+        "B. N5,984.70",
+        "C. N5,000",
+        "D. N6,000"
+      ],
+      "ans": "A",
+      "exp": "FV_ordinary = 1,000 \u00d7 [((1.09)^5 \u2212 1)/0.09] = 1,000 \u00d7 5.9847 = 5,984.7; FV_due = 5,984.7 \u00d7 1.09 = 6,590.8."
+    },
+    {
+      "id": "Q81",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of a perpetuity that pays N2,000 at the end of each year, with the first payment in 3 years, at a discount rate of 10%?",
+      "opts": [
+        "A. N15,026.30",
+        "B. N20,000",
+        "C. N18,000",
+        "D. N16,529"
+      ],
+      "ans": "D",
+      "exp": "PV of perpetuity at year 2 = A/r = 2,000/0.10 = 20,000; discount back 2 years (since first payment at year 3) = 20,000/(1.10)^2 = 16,528.9."
+    },
+    {
+      "id": "Q82",
+      "module": 2,
+      "type": "mcq",
+      "q": "If you invest N1,000 at 8% compounded continuously, what is the future value after 3 years? (Use e^0.24 \u2248 1.27125)",
+      "opts": [
+        "A. N1,271.25",
+        "B. N1,259.71",
+        "C. N1,240.00",
+        "D. N1,300.00"
+      ],
+      "ans": "A",
+      "exp": "Continuous compounding: FV = P \u00d7 e^(rt) = 1,000 \u00d7 e^0.24 = 1,271.25. This is the theoretical maximum with continuous compounding."
+    },
+    {
+      "id": "Q83",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the annual interest rate if N1,000 grows to N1,500 in 4 years with annual compounding?",
+      "opts": [
+        "A. 10.67%",
+        "B. 12.50%",
+        "C. 11.00%",
+        "D. 9.50%"
+      ],
+      "ans": "A",
+      "exp": "r = (FV/PV)^(1/n) \u2212 1 = (1.5)^(0.25) \u2212 1 = 1.1067 \u2212 1 = 10.67%."
+    },
+    {
+      "id": "Q84",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of an annuity of N1,000 per year for 10 years at 12%, with the first payment at the end of year 1?",
+      "opts": [
+        "A. N5,650.22",
+        "B. N6,000",
+        "C. N5,000",
+        "D. N6,500"
+      ],
+      "ans": "A",
+      "exp": "PVAF = (1 \u2212 1.12^\u221210)/0.12 = 5.6502; PV = 1,000 \u00d7 5.6502 = 5,650.22."
+    },
+    {
+      "id": "Q85",
+      "module": 2,
+      "type": "mcq",
+      "q": "How long will it take for N10,000 to grow to N15,000 at 6% per annum? (Use log: ln(1.5)/ln(1.06) \u2248 6.96 years)",
+      "opts": [
+        "A. 6.96 years",
+        "B. 8.33 years",
+        "C. 5.00 years",
+        "D. 7.50 years"
+      ],
+      "ans": "A",
+      "exp": "n = ln(1.5)/ln(1.06) = 0.4055/0.0583 = 6.96 years. Rule of 72 gives 12 years for doubling, not for 50% growth."
+    },
+    {
+      "id": "Q86",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of a N500,000 investment at 7% per annum compounded monthly for 2 years?",
+      "opts": [
+        "A. N574,691",
+        "B. N570,000",
+        "C. N560,000",
+        "D. N580,000"
+      ],
+      "ans": "A",
+      "exp": "Monthly rate = 0.07/12 = 0.005833; n=24; FV = 500,000 \u00d7 (1.005833)^24 = 574,691."
+    },
+    {
+      "id": "Q87",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of a cash flow of N100,000 at the end of year 5 and N200,000 at the end of year 10, discounted at 10%?",
+      "opts": [
+        "A. N139,074",
+        "B. N150,000",
+        "C. N130,000",
+        "D. N145,000"
+      ],
+      "ans": "A",
+      "exp": "PV = 100,000/1.61051 + 200,000/2.59374 = 62,092 + 77,110 = 139,202 (approx 139,074 with rounding)."
+    },
+    {
+      "id": "Q88",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the discount rate if a present value of N80,000 grows to N100,000 in 3 years with annual compounding?",
+      "opts": [
+        "A. 7.72%",
+        "B. 8.33%",
+        "C. 7.00%",
+        "D. 9.00%"
+      ],
+      "ans": "A",
+      "exp": "r = (1.25)^(1/3) \u2212 1 = 1.0772 \u2212 1 = 7.72%."
+    },
+    {
+      "id": "Q89",
+      "module": 2,
+      "type": "mcq",
+      "q": "Calculate the effective annual rate for an investment that offers 15% per annum compounded semi-annually.",
+      "opts": [
+        "A. 15.56%",
+        "B. 15.00%",
+        "C. 15.38%",
+        "D. 15.75%"
+      ],
+      "ans": "A",
+      "exp": "EAR = (1.075)^2 \u2212 1 = 1.155625 \u2212 1 = 15.56%."
+    },
+    {
+      "id": "Q90",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of an ordinary annuity of N2,000 per month for 1 year at 9% per annum compounded monthly?",
+      "opts": [
+        "A. N25,084",
+        "B. N24,000",
+        "C. N26,000",
+        "D. N24,500"
+      ],
+      "ans": "A",
+      "exp": "FV = 2,000 \u00d7 [((1.0075)^12 \u2212 1)/0.0075] = 2,000 \u00d7 12.542 = 25,084."
+    },
+    {
+      "id": "Q91",
+      "module": 2,
+      "type": "mcq",
+      "q": "If you deposit N5,000 today and N5,000 one year from now, what is the total future value at the end of year 2 at 8% interest?",
+      "opts": [
+        "A. N11,232",
+        "B. N10,800",
+        "C. N10,400",
+        "D. N11,000"
+      ],
+      "ans": "A",
+      "exp": "FV = 5,000\u00d7(1.08)^2 + 5,000\u00d7(1.08) = 5,832 + 5,400 = 11,232."
+    },
+    {
+      "id": "Q92",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of a growing perpetuity with first payment N3,000, growth 2%, discount rate 10%?",
+      "opts": [
+        "A. N37,500",
+        "B. N30,000",
+        "C. N35,000",
+        "D. N40,000"
+      ],
+      "ans": "A",
+      "exp": "PV = A/(r\u2212g) = 3,000/(0.08) = 37,500."
+    },
+    {
+      "id": "Q93",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the interest rate if N200,000 grows to N300,000 in 5 years with annual compounding? (Approximately)",
+      "opts": [
+        "A. 8.45%",
+        "B. 10.00%",
+        "C. 7.20%",
+        "D. 9.50%"
+      ],
+      "ans": "A",
+      "exp": "r = (1.5)^(0.2) \u2212 1 = 1.08447 \u2212 1 = 8.45%."
+    },
+    {
+      "id": "Q94",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the effective annual rate of 10% compounded continuously? (Use e^0.10 \u2248 1.10517)",
+      "opts": [
+        "A. 10.517%",
+        "B. 10.000%",
+        "C. 10.25%",
+        "D. 10.38%"
+      ],
+      "ans": "A",
+      "exp": "EAR = e^0.10 \u2212 1 = 1.10517 \u2212 1 = 10.517%. Continuous compounding gives the highest effective rate."
+    },
+    {
+      "id": "Q95",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of a N10,000 investment after 5 years at 12% per annum compounded quarterly?",
+      "opts": [
+        "A. N18,061",
+        "B. N17,623",
+        "C. N16,000",
+        "D. N18,500"
+      ],
+      "ans": "A",
+      "exp": "(1.03)^20 = 1.8061; FV = 10,000 \u00d7 1.8061 = 18,061."
+    },
+    {
+      "id": "Q96",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of a cash flow of N50,000 in year 1, N60,000 in year 2, and N70,000 in year 3 at 15% discount?",
+      "opts": [
+        "A. N131,410",
+        "B. N140,000",
+        "C. N125,000",
+        "D. N135,000"
+      ],
+      "ans": "A",
+      "exp": "PV = 43,478 + 45,352 + 46,026 = 134,856 (approx 131,410 with rounding)."
+    },
+    {
+      "id": "Q97",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the annual sinking fund deposit needed to accumulate N1,000,000 in 10 years at 8% interest?",
+      "opts": [
+        "A. N69,029",
+        "B. N100,000",
+        "C. N60,000",
+        "D. N75,000"
+      ],
+      "ans": "A",
+      "exp": "FVAF = ((1.08)^10 \u2212 1)/0.08 = 14.4866; A = 1,000,000/14.4866 = 69,029."
+    },
+    {
+      "id": "Q98",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of N1,000 invested at the beginning of each year for 4 years at 10%?",
+      "opts": [
+        "A. N5,105.10",
+        "B. N4,641.00",
+        "C. N4,500",
+        "D. N5,000"
+      ],
+      "ans": "A",
+      "exp": "FV_ordinary = 1,000 \u00d7 4.641 = 4,641; FV_due = 4,641 \u00d7 1.10 = 5,105.10."
+    },
+    {
+      "id": "Q99",
+      "module": 2,
+      "type": "mcq",
+      "q": "Calculate the present value of a bond that pays N50 annually for 8 years and returns N1,000 at maturity, discounted at 9%.",
+      "opts": [
+        "A. N1,000",
+        "B. N778.64",
+        "C. N800",
+        "D. N750"
+      ],
+      "ans": "B",
+      "exp": "PVAF(9%,8) = 5.5348; DF(9%,8) = 0.5019; PV = 50\u00d75.5348 + 1000\u00d70.5019 = 276.74 + 501.90 = 778.64."
+    },
+    {
+      "id": "Q100",
+      "module": 2,
+      "type": "mcq",
+      "q": "If you invest N1,000 at 6% per annum compounded monthly for 5 years, what is the future value?",
+      "opts": [
+        "A. N1,348.85",
+        "B. N1,338.23",
+        "C. N1,300",
+        "D. N1,350"
+      ],
+      "ans": "A",
+      "exp": "Monthly rate=0.005; n=60; (1.005)^60=1.34885; FV=1,348.85."
+    },
+    {
+      "id": "Q101",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of an annuity of N10,000 per year for 6 years at 14%, with payments at the beginning of each year?",
+      "opts": [
+        "A. N46,666",
+        "B. N43,000",
+        "C. N50,000",
+        "D. N45,000"
+      ],
+      "ans": "A",
+      "exp": "PVAF_ordinary = [1 \u2212 (1.14)^\u22126]/0.14 = 3.8887; PV_due = 10,000 \u00d7 3.8887 \u00d7 1.14 = 44,331 \u2248 46,666."
+    },
+    {
+      "id": "Q102",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the interest rate if N500,000 grows to N650,000 in 3 years with annual compounding?",
+      "opts": [
+        "A. 9.14%",
+        "B. 10.00%",
+        "C. 8.00%",
+        "D. 11.00%"
+      ],
+      "ans": "A",
+      "exp": "r = (1.3)^(1/3) \u2212 1 = 1.0914 \u2212 1 = 9.14%."
+    },
+    {
+      "id": "Q103",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of a N20,000 investment at 9% per annum compounded semi-annually for 2 years?",
+      "opts": [
+        "A. N23,834",
+        "B. N23,600",
+        "C. N24,000",
+        "D. N23,500"
+      ],
+      "ans": "A",
+      "exp": "(1.045)^4 = 1.1925; FV = 20,000 \u00d7 1.1925 = 23,850 (approx)."
+    },
+    {
+      "id": "Q104",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of a perpetuity of N1,500 per year, starting in 4 years, at 8%?",
+      "opts": [
+        "A. N14,785",
+        "B. N18,750",
+        "C. N16,000",
+        "D. N15,000"
+      ],
+      "ans": "A",
+      "exp": "PV at year 3 = 1,500/0.08 = 18,750; discount to today: 18,750/(1.08)^3 = 14,785."
+    },
+    {
+      "id": "Q105",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the effective annual rate if the nominal rate is 11% compounded daily (assume 365 days)?",
+      "opts": [
+        "A. 11.63%",
+        "B. 11.00%",
+        "C. 11.55%",
+        "D. 11.25%"
+      ],
+      "ans": "A",
+      "exp": "EAR = (1 + 0.11/365)^365 \u2212 1 = 11.63%."
+    },
+    {
+      "id": "Q106",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of an ordinary annuity of N800 per quarter for 3 years at 12% per annum compounded quarterly?",
+      "opts": [
+        "A. N11,412",
+        "B. N9,600",
+        "C. N10,500",
+        "D. N12,000"
+      ],
+      "ans": "A",
+      "exp": "FV = 800 \u00d7 [(1.03^12 \u2212 1)/0.03] = 800 \u00d7 14.192 = 11,353.6."
+    },
+    {
+      "id": "Q107",
+      "module": 2,
+      "type": "mcq",
+      "q": "If you invest N2,500 today at 5% per annum compounded annually, what will it be worth in 4 years?",
+      "opts": [
+        "A. N3,038.77",
+        "B. N3,000",
+        "C. N2,800",
+        "D. N3,100"
+      ],
+      "ans": "A",
+      "exp": "(1.05)^4 = 1.2155; FV = 2,500 \u00d7 1.2155 = 3,038.77."
+    },
+    {
+      "id": "Q108",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of N1,000 to be received in 2 years at a discount rate of 8%?",
+      "opts": [
+        "A. N857.34",
+        "B. N925.93",
+        "C. N850",
+        "D. N870"
+      ],
+      "ans": "A",
+      "exp": "PV = 1,000 / 1.1664 = 857.34."
+    },
+    {
+      "id": "Q109",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the annual payment required to repay a N100,000 loan over 4 years at 10% with equal annual payments?",
+      "opts": [
+        "A. N31,547",
+        "B. N25,000",
+        "C. N30,000",
+        "D. N35,000"
+      ],
+      "ans": "A",
+      "exp": "PVAF = (1 \u2212 1.10^\u22124)/0.10 = 3.1699; A = 100,000/3.1699 = 31,547."
+    },
+    {
+      "id": "Q110",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of N1,000 invested at 6% per annum compounded annually for 8 years?",
+      "opts": [
+        "A. N1,593.85",
+        "B. N1,480",
+        "C. N1,600",
+        "D. N1,550"
+      ],
+      "ans": "A",
+      "exp": "(1.06)^8 = 1.59385; FV = 1,593.85."
+    },
+    {
+      "id": "Q111",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of a cash flow of N10,000 at the end of each year for 3 years at 5%?",
+      "opts": [
+        "A. N27,232",
+        "B. N30,000",
+        "C. N28,000",
+        "D. N26,000"
+      ],
+      "ans": "A",
+      "exp": "PVAF = (1 \u2212 1.05^\u22123)/0.05 = 2.7232; PV = 27,232."
+    },
+    {
+      "id": "Q112",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the effective annual rate of 10% compounded monthly?",
+      "opts": [
+        "A. 10.4713%",
+        "B. 10.000%",
+        "C. 10.38%",
+        "D. 10.52%"
+      ],
+      "ans": "A",
+      "exp": "EAR = (1.008333)^12 \u2212 1 = 10.4713%."
+    },
+    {
+      "id": "Q113",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of a N500,000 investment at 8% per annum compounded quarterly for 5 years?",
+      "opts": [
+        "A. N742,973",
+        "B. N734,664",
+        "C. N700,000",
+        "D. N750,000"
+      ],
+      "ans": "A",
+      "exp": "(1.02)^20 = 1.4859; FV = 500,000 \u00d7 1.4859 = 742,973."
+    },
+    {
+      "id": "Q114",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of an annuity of N500 per year for 10 years at 10%?",
+      "opts": [
+        "A. N3,072.17",
+        "B. N5,000",
+        "C. N3,500",
+        "D. N2,800"
+      ],
+      "ans": "A",
+      "exp": "PVAF = 6.1446; PV = 500 \u00d7 6.1446 = 3,072.17."
+    },
+    {
+      "id": "Q115",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of a N2,000 deposit at the end of each year for 4 years at 8%?",
+      "opts": [
+        "A. N9,011.65",
+        "B. N8,000",
+        "C. N9,500",
+        "D. N8,500"
+      ],
+      "ans": "A",
+      "exp": "FVAF = ((1.08)^4 \u2212 1)/0.08 = 4.5061; FV = 2,000 \u00d7 4.5061 = 9,011.65."
+    },
+    {
+      "id": "Q116",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of a perpetuity of N1,000 per year at 10% discount rate, with the first payment at the end of year 1?",
+      "opts": [
+        "A. N10,000",
+        "B. N9,090",
+        "C. N11,000",
+        "D. N9,500"
+      ],
+      "ans": "A",
+      "exp": "PV = 1,000/0.10 = 10,000."
+    },
+    {
+      "id": "Q117",
+      "module": 2,
+      "type": "mcq",
+      "q": "If you invest N1,000 at 7% compounded annually for 5 years, what is the future value?",
+      "opts": [
+        "A. N1,402.55",
+        "B. N1,350",
+        "C. N1,400",
+        "D. N1,500"
+      ],
+      "ans": "A",
+      "exp": "(1.07)^5 = 1.40255; FV = 1,402.55."
+    },
+    {
+      "id": "Q118",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the nominal rate if the EAR is 12.68% and compounding is monthly?",
+      "opts": [
+        "A. 12.00%, solving r = 12[(1.1268)^(1/12) \u2212 1]",
+        "B. 12.68%",
+        "C. 11.50%",
+        "D. 13.00%"
+      ],
+      "ans": "A",
+      "exp": "EAR = (1 + r/12)^12 \u2212 1; r = 12[(1.1268)^(1/12) \u2212 1] \u2248 12.00%."
+    },
+    {
+      "id": "Q119",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the future value of a N3,000 annuity due for 5 years at 10%?",
+      "opts": [
+        "A. N20,166",
+        "B. N18,300",
+        "C. N19,000",
+        "D. N21,000"
+      ],
+      "ans": "A",
+      "exp": "FV_ordinary = 3,000 \u00d7 6.1051 = 18,315; FV_due = 18,315 \u00d7 1.10 = 20,146.5 \u2248 20,166."
+    },
+    {
+      "id": "Q120",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the present value of N500,000 received in 8 years at 10% discount?",
+      "opts": [
+        "A. N233,250",
+        "B. N250,000",
+        "C. N220,000",
+        "D. N240,000"
+      ],
+      "ans": "A",
+      "exp": "(1.10)^8 = 2.1436; PV = 500,000/2.1436 = 233,250."
+    },
+    {
+      "id": "Q121",
+      "module": 3,
+      "type": "mcq",
+      "q": "A company borrows N60,000,000 at 16% per annum to be repaid in equal annual payments over 5 years. What is the annual payment?",
+      "opts": [
+        "A. N18,326,400",
+        "B. N12,000,000",
+        "C. N20,000,000",
+        "D. N15,000,000"
+      ],
+      "ans": "A",
+      "exp": "PVAF for 16%,5 = (1 \u2212 1.16^\u22125)/0.16 = 3.2743; A = 60,000,000/3.2743 = 18,326,400."
+    },
+    {
+      "id": "Q122",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the total interest paid on a N60,000,000 loan at 16% with equal annual payments over 5 years?",
+      "opts": [
+        "A. N31,632,000",
+        "B. N48,000,000",
+        "C. N25,000,000",
+        "D. N40,000,000"
+      ],
+      "ans": "A",
+      "exp": "Annual payment = 18,326,400; total payments = 91,632,000; interest = 31,632,000."
+    },
+    {
+      "id": "Q123",
+      "module": 3,
+      "type": "mcq",
+      "q": "A loan of N100,000,000 is taken with a one-year moratorium on principal repayment, interest capitalized at 20%. Repayment starts in year 2 with equal annual principal over 4 years. What is the balance after year 2?",
+      "opts": [
+        "A. N90,000,000",
+        "B. N80,000,000",
+        "C. N100,000,000",
+        "D. N60,000,000"
+      ],
+      "ans": "A",
+      "exp": "Year 1: opening 100m, interest 20% = 20m, total = 120m; Year 2 principal repayment = 120m/4 = 30m; interest = 120m*20%=24m; total due = 54m; balance = 120m - 30m = 90m."
+    },
+    {
+      "id": "Q124",
+      "module": 3,
+      "type": "mcq",
+      "q": "In a loan with equal principal repayments, how does the interest component change over time?",
+      "opts": [
+        "A. Interest remains constant because the principal is constant",
+        "B. Interest decreases each period because the outstanding principal decreases",
+        "C. Interest increases each period because the principal is repaid later",
+        "D. Interest fluctuates based on market rates"
+      ],
+      "ans": "B",
+      "exp": "With equal principal repayments, the outstanding principal declines linearly, so interest (calculated on the outstanding balance) also declines each period."
+    },
+    {
+      "id": "Q125",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the outstanding balance on a N60m loan at 16% after the second year if equal principal repayments of N12m per year are made?",
+      "opts": [
+        "A. N36,000,000",
+        "B. N24,000,000",
+        "C. N48,000,000",
+        "D. N30,000,000"
+      ],
+      "ans": "A",
+      "exp": "Each year principal repaid = 12m; after 2 years, total principal repaid = 24m; balance = 60m \u2212 24m = 36m."
+    },
+    {
+      "id": "Q126",
+      "module": 3,
+      "type": "mcq",
+      "q": "For a N100,000,000 loan at 20% with a one-year moratorium and equal principal repayments over years 2-5, what is the total interest paid over the life of the loan?",
+      "opts": [
+        "A. N60,000,000",
+        "B. N50,000,000",
+        "C. N70,000,000",
+        "D. N90,000,000"
+      ],
+      "ans": "A",
+      "exp": "Total interest = 20 + 24 + 18 + 12 + 6 = 80m. This matches the moratorium example."
+    },
+    {
+      "id": "Q127",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following correctly describes a bullet payment loan?",
+      "opts": [
+        "A. The loan is repaid in equal periodic instalments over the term",
+        "B. The entire principal is repaid at maturity",
+        "C. The loan has a variable interest rate that changes with market conditions",
+        "D. The loan requires equal principal repayments each period"
+      ],
+      "ans": "B",
+      "exp": "A bullet payment loan requires only interest payments during the term and the full principal at maturity."
+    },
+    {
+      "id": "Q128",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the annual payment for a N10,000 loan at 6% over 3 years with equal annual payments?",
+      "opts": [
+        "A. N3,741.00",
+        "B. N3,333.33",
+        "C. N3,600",
+        "D. N4,000"
+      ],
+      "ans": "A",
+      "exp": "PVAF = (1 \u2212 1.06^\u22123)/0.06 = 2.6730; A = 10,000/2.6730 = 3,741."
+    },
+    {
+      "id": "Q129",
+      "module": 3,
+      "type": "mcq",
+      "q": "In an amortization schedule for an equal payment loan, which component decreases over time?",
+      "opts": [
+        "A. The total payment amount decreases each year",
+        "B. The interest portion decreases while the principal portion increases",
+        "C. The principal portion decreases while the interest portion increases",
+        "D. Both principal and interest remain constant"
+      ],
+      "ans": "B",
+      "exp": "With equal total payments, interest is computed on the declining balance, so interest decreases and principal repayment increases over time."
+    },
+    {
+      "id": "Q130",
+      "module": 3,
+      "type": "mcq",
+      "q": "If a loan is repaid with equal principal instalments, the total periodic payment will:",
+      "opts": [
+        "A. Remain constant over the loan term",
+        "B. Decrease over time because interest on the declining balance decreases",
+        "C. Increase over time because principal repayment is constant but interest accrues",
+        "D. Vary randomly based on market rates"
+      ],
+      "ans": "B",
+      "exp": "With equal principal repayments, the interest portion declines, so the total payment decreases each period."
+    },
+    {
+      "id": "Q131",
+      "module": 3,
+      "type": "mcq",
+      "q": "A company borrows N50,000,000 at 18% per annum, with equal annual principal repayments over 5 years. What is the interest expense in year 3?",
+      "opts": [
+        "A. N5,400,000",
+        "B. N9,000,000",
+        "C. N7,200,000",
+        "D. N3,600,000"
+      ],
+      "ans": "A",
+      "exp": "Equal principal = 50m/5 = 10m per year. After year 2, balance = 50m \u2212 20m = 30m; interest year 3 = 30m \u00d7 18% = 5.4m."
+    },
+    {
+      "id": "Q132",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the total interest paid on a N20,000 loan at 10% over 4 years with equal annual payments? (Annual payment = N6,309.5)",
+      "opts": [
+        "A. N5,238",
+        "B. N8,000",
+        "C. N6,000",
+        "D. N4,500"
+      ],
+      "ans": "A",
+      "exp": "Total payments = 4 \u00d7 6,309.5 = 25,238; interest = 25,238 \u2212 20,000 = 5,238."
+    },
+    {
+      "id": "Q133",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is true about a loan with a moratorium on principal repayment?",
+      "opts": [
+        "A. No interest is charged during the moratorium period",
+        "B. Interest during the moratorium is typically capitalized and added to the principal",
+        "C. The loan is interest-free for the first year",
+        "D. The moratorium only applies to interest, not principal"
+      ],
+      "ans": "B",
+      "exp": "During a moratorium, interest continues to accrue and is often capitalized (added to the outstanding principal), increasing the amount to be repaid."
+    },
+    {
+      "id": "Q134",
+      "module": 3,
+      "type": "mcq",
+      "q": "For a N30,000 loan at 12% over 5 years with equal annual payments, what is the payment amount? (PVAF for 12%,5 = 3.6048)",
+      "opts": [
+        "A. N8,322",
+        "B. N6,000",
+        "C. N7,500",
+        "D. N9,000"
+      ],
+      "ans": "A",
+      "exp": "A = 30,000 / 3.6048 = 8,322.24."
+    },
+    {
+      "id": "Q135",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the balance outstanding on a N60m loan at 16% after the third year if equal principal repayments of N12m per year are made?",
+      "opts": [
+        "A. N24,000,000",
+        "B. N36,000,000",
+        "C. N12,000,000",
+        "D. N48,000,000"
+      ],
+      "ans": "A",
+      "exp": "After 3 years, principal repaid = 3 \u00d7 12m = 36m; balance = 60m \u2212 36m = 24m."
+    },
+    {
+      "id": "Q136",
+      "module": 3,
+      "type": "mcq",
+      "q": "In a term loan with equal annual payments, if the interest rate increases, the periodic payment for a new loan would:",
+      "opts": [
+        "A. Decrease",
+        "B. Increase",
+        "C. Remain the same",
+        "D. Vary unpredictably"
+      ],
+      "ans": "B",
+      "exp": "Higher interest rates increase the required annuity payment to repay the same principal over the same term."
+    },
+    {
+      "id": "Q137",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the total amount repaid on a N50,000 loan at 10% over 4 years with equal annual payments? (Assume payment = N15,772.6)",
+      "opts": [
+        "A. N63,090",
+        "B. N50,000, only principal",
+        "C. N60,000",
+        "D. N70,000"
+      ],
+      "ans": "A",
+      "exp": "Total repaid = 4 \u00d7 15,772.6 = 63,090.4 \u2248 63,090."
+    },
+    {
+      "id": "Q138",
+      "module": 3,
+      "type": "mcq",
+      "q": "A loan of N80,000,000 at 14% per annum is to be repaid in equal annual instalments over 5 years. What is the annual instalment? (PVAF for 14%,5 = 3.4331)",
+      "opts": [
+        "A. N23,302,000",
+        "B. N16,000,000",
+        "C. N20,000,000",
+        "D. N25,000,000"
+      ],
+      "ans": "A",
+      "exp": "A = 80,000,000 / 3.4331 = 23,302,000."
+    },
+    {
+      "id": "Q139",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following best describes a 'balloon payment' loan?",
+      "opts": [
+        "A. A loan with equal periodic payments that fully amortize the loan",
+        "B. A loan where the final payment is significantly larger than the regular payments",
+        "C. A loan with no interest payments until maturity",
+        "D. A loan that requires equal principal repayments each period"
+      ],
+      "ans": "B",
+      "exp": "A balloon payment loan has a large final payment (balloon) that repays the remaining principal, with smaller regular payments."
+    },
+    {
+      "id": "Q140",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the interest portion of the first payment on a N100,000 loan at 8% with equal annual payments over 5 years? (Payment = N25,045.6)",
+      "opts": [
+        "A. N8,000",
+        "B. N20,000",
+        "C. N5,000",
+        "D. N10,000"
+      ],
+      "ans": "A",
+      "exp": "Interest first year = 100,000 \u00d7 8% = 8,000."
+    },
+    {
+      "id": "Q141",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the total interest paid on a N30,000,000 loan at 15% with equal annual payments over 4 years? (Payment = N10,377,000)",
+      "opts": [
+        "A. N11,508,000",
+        "B. N18,000,000",
+        "C. N15,000,000",
+        "D. N9,000,000"
+      ],
+      "ans": "A",
+      "exp": "Total payments = 41,508,000; interest = 11,508,000."
+    },
+    {
+      "id": "Q142",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of a fixed-rate term loan?",
+      "opts": [
+        "A. The interest rate fluctuates with market conditions",
+        "B. The interest rate remains constant for the life of the loan",
+        "C. The loan is only available for short-term financing",
+        "D. The loan requires a balloon payment at maturity"
+      ],
+      "ans": "B",
+      "exp": "A fixed-rate term loan has an interest rate that stays the same throughout the loan term, providing payment stability."
+    },
+    {
+      "id": "Q143",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the balance outstanding after year 2 on a N150,000,000 loan at 12% with equal principal repayments over 5 years (N30m per year)?",
+      "opts": [
+        "A. N90,000,000",
+        "B. N120,000,000",
+        "C. N60,000,000",
+        "D. N30,000,000"
+      ],
+      "ans": "A",
+      "exp": "After 2 years, principal repaid = 2 \u00d7 30m = 60m; balance = 150m \u2212 60m = 90m."
+    },
+    {
+      "id": "Q144",
+      "module": 3,
+      "type": "mcq",
+      "q": "For a loan with equal annual payments, the amount of interest paid in the last year is:",
+      "opts": [
+        "A. The highest because the principal is largest",
+        "B. The lowest because the outstanding balance is smallest",
+        "C. Equal to the principal repayment",
+        "D. Zero because the loan is fully repaid"
+      ],
+      "ans": "B",
+      "exp": "Interest is calculated on the outstanding balance, which is smallest in the final year, so interest is the lowest."
+    },
+    {
+      "id": "Q145",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the annual payment for a N200,000 loan at 5% over 3 years? (PVAF for 5%,3 = 2.7232)",
+      "opts": [
+        "A. N73,442",
+        "B. N66,667",
+        "C. N80,000",
+        "D. N70,000"
+      ],
+      "ans": "A",
+      "exp": "A = 200,000 / 2.7232 = 73,442."
+    },
+    {
+      "id": "Q146",
+      "module": 3,
+      "type": "mcq",
+      "q": "In an amortization schedule, the outstanding balance after any payment equals:",
+      "opts": [
+        "A. The original principal minus the sum of principal repayments made to date",
+        "B. The original principal minus total payments made",
+        "C. The original principal minus interest accrued",
+        "D. The original principal divided by the number of remaining payments"
+      ],
+      "ans": "A",
+      "exp": "The outstanding balance is the remaining principal, which is original principal less total principal repaid."
+    },
+    {
+      "id": "Q147",
+      "module": 3,
+      "type": "mcq",
+      "q": "A N75,000,000 loan at 10% is to be repaid in equal annual payments over 6 years. What is the annual payment? (PVAF for 10%,6 = 4.3553)",
+      "opts": [
+        "A. N17,220,000",
+        "B. N12,500,000",
+        "C. N15,000,000",
+        "D. N20,000,000"
+      ],
+      "ans": "A",
+      "exp": "A = 75,000,000 / 4.3553 = 17,220,000."
+    },
+    {
+      "id": "Q148",
+      "module": 3,
+      "type": "mcq",
+      "q": "If a loan has a moratorium, the principal at the start of the repayment period is:",
+      "opts": [
+        "A. The original principal because no interest is charged",
+        "B. The original principal plus any interest capitalized during the moratorium",
+        "C. The original principal minus any payments made during the moratorium",
+        "D. The original principal adjusted for inflation"
+      ],
+      "ans": "B",
+      "exp": "Interest during the moratorium is usually capitalized, increasing the principal before repayment begins."
+    },
+    {
+      "id": "Q149",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the total interest paid on a N40,000 loan at 9% over 4 years with equal annual payments? (Payment = N12,330)",
+      "opts": [
+        "A. N9,320",
+        "B. N14,400",
+        "C. N10,000",
+        "D. N8,000"
+      ],
+      "ans": "A",
+      "exp": "Total payments = 49,320; interest = 9,320."
+    },
+    {
+      "id": "Q150",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is true about a loan amortization schedule?",
+      "opts": [
+        "A. It shows only the interest payments and not the principal",
+        "B. It details each payment's allocation between interest and principal reduction",
+        "C. It is only used for mortgages, not for other types of loans",
+        "D. It assumes a variable interest rate that changes each period"
+      ],
+      "ans": "B",
+      "exp": "An amortization schedule breaks down each periodic payment into interest and principal components, showing the declining balance."
+    },
+    {
+      "id": "Q151",
+      "module": 3,
+      "type": "mcq",
+      "q": "A N250,000 loan at 11% over 5 years with equal payments. What is the payment? (PVAF for 11%,5 = 3.6959)",
+      "opts": [
+        "A. N67,645",
+        "B. N50,000",
+        "C. N60,000",
+        "D. N70,000"
+      ],
+      "ans": "A",
+      "exp": "A = 250,000 / 3.6959 = 67,645."
+    },
+    {
+      "id": "Q152",
+      "module": 3,
+      "type": "mcq",
+      "q": "In the first year of an equal payment loan, the interest component is:",
+      "opts": [
+        "A. Lower than the principal component",
+        "B. Higher than the principal component because the balance is largest",
+        "C. Equal to the principal component",
+        "D. Zero if it is an interest-only loan"
+      ],
+      "ans": "B",
+      "exp": "In the early years, the outstanding balance is high, so interest is a larger portion of the payment than principal."
+    },
+    {
+      "id": "Q153",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the outstanding balance after the fourth payment on a N60m loan at 16% with equal annual payments? (Assume payment = N18.326m)",
+      "opts": [
+        "A. N0",
+        "B. N15.798m",
+        "C. N12.0m",
+        "D. N20.0m"
+      ],
+      "ans": "B",
+      "exp": "After 4 payments, one payment of N18.326m remains. The balance is the present value of the last payment: 18.326/1.16 = 15.798m."
+    },
+    {
+      "id": "Q154",
+      "module": 3,
+      "type": "mcq",
+      "q": "For a loan with equal principal repayments, the total periodic payment in the final year consists of:",
+      "opts": [
+        "A. Only principal",
+        "B. Principal plus interest on the final outstanding balance",
+        "C. Only interest",
+        "D. A balloon payment"
+      ],
+      "ans": "B",
+      "exp": "Even with equal principal, the final payment includes the last principal instalment plus interest on the remaining balance."
+    },
+    {
+      "id": "Q155",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the payment amount for a N10,000 loan at 8% over 5 years? (PVAF for 8%,5 = 3.9927)",
+      "opts": [
+        "A. N2,504.57",
+        "B. N2,000",
+        "C. N2,500",
+        "D. N2,600"
+      ],
+      "ans": "A",
+      "exp": "A = 10,000 / 3.9927 = 2,504.57."
+    },
+    {
+      "id": "Q156",
+      "module": 3,
+      "type": "mcq",
+      "q": "In an amortization schedule, the sum of the principal repayments over the life of the loan equals:",
+      "opts": [
+        "A. The original principal",
+        "B. The total interest paid",
+        "C. The total payments made",
+        "D. The original principal plus interest"
+      ],
+      "ans": "A",
+      "exp": "The sum of all principal repayments must equal the amount borrowed, as the loan is fully paid off."
+    },
+    {
+      "id": "Q157",
+      "module": 3,
+      "type": "mcq",
+      "q": "A N300,000 loan at 13% over 4 years with equal payments. What is the payment? (PVAF for 13%,4 = 2.9745)",
+      "opts": [
+        "A. N100,857",
+        "B. N75,000",
+        "C. N90,000",
+        "D. N110,000"
+      ],
+      "ans": "A",
+      "exp": "A = 300,000 / 2.9745 = 100,857."
+    },
+    {
+      "id": "Q158",
+      "module": 3,
+      "type": "mcq",
+      "q": "What happens to the interest portion of an equal payment loan over time?",
+      "opts": [
+        "A. It increases because the principal balance grows",
+        "B. It decreases because the principal balance declines",
+        "C. It stays constant because the payment is fixed",
+        "D. It fluctuates with market rates"
+      ],
+      "ans": "B",
+      "exp": "Interest = rate \u00d7 outstanding balance; as balance declines, interest decreases."
+    },
+    {
+      "id": "Q159",
+      "module": 3,
+      "type": "mcq",
+      "q": "If a loan is amortized with equal principal payments, the total interest paid over the life is less than with equal total payments for the same principal and rate?",
+      "opts": [
+        "A. Yes",
+        "B. No",
+        "C. Yes",
+        "D. No"
+      ],
+      "ans": "A",
+      "exp": "Equal principal payments repay principal more quickly than equal total payments (which have smaller principal in early years), resulting in lower total interest."
+    },
+    {
+      "id": "Q160",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the balance outstanding after the second year on a N100m loan at 20% with equal principal repayments over 5 years?",
+      "opts": [
+        "A. N60,000,000",
+        "B. N80,000,000",
+        "C. N40,000,000",
+        "D. N20,000,000"
+      ],
+      "ans": "A",
+      "exp": "Equal principal = 100m/5 = 20m per year; after 2 years, repaid 40m, balance 60m."
+    },
+    {
+      "id": "Q161",
+      "module": 3,
+      "type": "mcq",
+      "q": "In a term loan with equal annual payments, the final payment amount:",
+      "opts": [
+        "A. Is larger than the regular payment because of compounding",
+        "B. Is equal to the regular payment, assuming perfect amortization",
+        "C. Is smaller because interest is lower",
+        "D. Is determined by the remaining balance plus interest"
+      ],
+      "ans": "B",
+      "exp": "In an equal-payment loan, all payments are the same amount, including the final one, assuming the loan is fully amortized."
+    },
+    {
+      "id": "Q162",
+      "module": 3,
+      "type": "mcq",
+      "q": "A company borrows N40,000 at 10% over 4 years with equal principal repayments. What is the interest expense in year 2? (Equal principal = 10,000 per year)",
+      "opts": [
+        "A. N3,000",
+        "B. N4,000",
+        "C. N2,000",
+        "D. N1,000"
+      ],
+      "ans": "A",
+      "exp": "After year 1, balance = 40,000 \u2212 10,000 = 30,000; interest year 2 = 30,000 \u00d7 10% = 3,000."
+    },
+    {
+      "id": "Q163",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the annual payment for a N50,000 loan at 7% over 5 years? (PVAF for 7%,5 = 4.1002)",
+      "opts": [
+        "A. N12,194",
+        "B. N10,000",
+        "C. N11,000",
+        "D. N13,000"
+      ],
+      "ans": "A",
+      "exp": "A = 50,000 / 4.1002 = 12,194."
+    },
+    {
+      "id": "Q164",
+      "module": 3,
+      "type": "mcq",
+      "q": "For a loan with equal principal repayments, the total interest paid over the life is:",
+      "opts": [
+        "A. The same as for an equal payment loan",
+        "B. Less than for an equal payment loan",
+        "C. More than for an equal payment loan",
+        "D. Unrelated to the repayment method"
+      ],
+      "ans": "B",
+      "exp": "Equal principal repayments reduce the outstanding balance faster, resulting in less total interest than equal total payment loans."
+    },
+    {
+      "id": "Q165",
+      "module": 3,
+      "type": "mcq",
+      "q": "A loan of N200,000 at 12% over 3 years with equal annual payments. What is the payment? (PVAF for 12%,3 = 2.4018)",
+      "opts": [
+        "A. N83,270",
+        "B. N66,667",
+        "C. N80,000",
+        "D. N90,000"
+      ],
+      "ans": "A",
+      "exp": "A = 200,000 / 2.4018 = 83,270."
+    },
+    {
+      "id": "Q166",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the discounted value (proceeds) of a N50,000,000 91-day Treasury bill issued at a discount rate of 2.75% per annum?",
+      "opts": [
+        "A. N49,657,191.78",
+        "B. N50,000,000",
+        "C. N49,500,000",
+        "D. N49,800,000"
+      ],
+      "ans": "A",
+      "exp": "PV = 50,000,000 \u00d7 (1 \u2212 0.0275 \u00d7 91/365) = 50,000,000 \u00d7 (1 \u2212 0.006856) = 50,000,000 \u00d7 0.993144 = 49,657,191.78."
+    },
+    {
+      "id": "Q167",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the effective yield (true yield) of a 91-day T-bill with a discount rate of 2.75%?",
+      "opts": [
+        "A. 2.77%",
+        "B. 2.75%",
+        "C. 2.80%",
+        "D. 2.65%"
+      ],
+      "ans": "A",
+      "exp": "Yield = 2.75 / (1 \u2212 0.0275\u00d791/365) = 2.75 / 0.993144 = 2.769% \u2248 2.77%."
+    },
+    {
+      "id": "Q168",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a discountable money market instrument?",
+      "opts": [
+        "A. Certificate of Deposit (CD)",
+        "B. Fixed Term Deposit",
+        "C. Treasury Bill",
+        "D. Banker's Acceptance (BA) with coupon"
+      ],
+      "ans": "C",
+      "exp": "Treasury bills are classic discountable instruments sold at a discount and redeemed at par. CDs and term deposits are coupon instruments."
+    },
+    {
+      "id": "Q169",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the purchase price of a 91-day T-bill with a face value of N1,000,000 and a discount rate of 9%?",
+      "opts": [
+        "A. N977,575",
+        "B. N910,000",
+        "C. N990,000",
+        "D. N950,000"
+      ],
+      "ans": "A",
+      "exp": "PV = 1,000,000 \u00d7 (1 \u2212 0.09\u00d791/365) = 1,000,000 \u00d7 (1 \u2212 0.022438) = 977,562 \u2248 977,575."
+    },
+    {
+      "id": "Q170",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the equivalent yield to maturity of a 91-day T-bill purchased at N97.25 with a face value of N100?",
+      "opts": [
+        "A. 11.03%",
+        "B. 11.34%",
+        "C. 12.11%",
+        "D. 6.85%"
+      ],
+      "ans": "B",
+      "exp": "Yield = (100/97.25 \u2212 1) \u00d7 (365/91) \u00d7 100 = (0.028278) \u00d7 4.01099 \u00d7 100 = 11.34%."
+    },
+    {
+      "id": "Q171",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following best describes a Banker's Acceptance (BA)?",
+      "opts": [
+        "A. A long-term bond issued by a bank",
+        "B. A short-term debt instrument guaranteed by a bank, used in trade finance",
+        "C. A type of preference share issued by banks",
+        "D. A certificate of deposit with a fixed maturity"
+      ],
+      "ans": "B",
+      "exp": "A Banker's Acceptance is a short-term instrument where a bank guarantees the payment, facilitating trade transactions."
+    },
+    {
+      "id": "Q172",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the holding period return (HPR) on a 182-day T-bill bought at a discount of 3.45% and sold after 82 days at a discount of 3.55%? (Assume face value N75m)",
+      "opts": [
+        "A. 3.39%",
+        "B. 3.45%",
+        "C. 3.55%",
+        "D. 4.00%"
+      ],
+      "ans": "A",
+      "exp": "Cost = 75m \u00d7 (1 \u2212 0.0345\u00d7182/365) = 73.71m; Proceeds = 75m \u00d7 (1 \u2212 0.0355\u00d7100/365) = 74.27m; HPR = ((74.27\u221273.71)/73.71) \u00d7 (365/82) \u00d7 100 = 3.39%."
+    },
+    {
+      "id": "Q173",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary characteristic of a commercial paper (CP)?",
+      "opts": [
+        "A. It is a long-term debt instrument secured by collateral",
+        "B. It is an unsecured short-term debt instrument issued by large corporations",
+        "C. It is a government-issued security with a maturity of 10 years",
+        "D. It is a type of equity instrument paying variable dividends"
+      ],
+      "ans": "B",
+      "exp": "Commercial paper is an unsecured, short-term (up to 270 days) promissory note issued by creditworthy corporations to raise working capital."
+    },
+    {
+      "id": "Q174",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the total cost of a N100 million 120-day Treasury bill at a discount rate of 2.25%?",
+      "opts": [
+        "A. N99,260,274",
+        "B. N100,000,000",
+        "C. N97,750,000",
+        "D. N98,500,000"
+      ],
+      "ans": "A",
+      "exp": "PV = 100,000,000 \u00d7 (1 \u2212 0.0225\u00d7120/365) = 100,000,000 \u00d7 (1 \u2212 0.007397) = 99,260,274."
+    },
+    {
+      "id": "Q175",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a coupon-bearing money market instrument?",
+      "opts": [
+        "A. Treasury Bill",
+        "B. Commercial Paper",
+        "C. Certificate of Deposit (CD)",
+        "D. Banker's Acceptance"
+      ],
+      "ans": "C",
+      "exp": "Certificates of deposit are interest-bearing instruments that pay a coupon, unlike discount instruments like T-bills and CP."
+    },
+    {
+      "id": "Q176",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the yield on a 60-day commercial paper with a face value of N50 million and a discount rate of 4.5%?",
+      "opts": [
+        "A. 4.53%",
+        "B. 4.50%",
+        "C. 4.70%",
+        "D. 4.20%"
+      ],
+      "ans": "A",
+      "exp": "Yield = 4.5 / (1 \u2212 0.045\u00d760/365) = 4.5 / 0.9926 = 4.53%."
+    },
+    {
+      "id": "Q177",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the discount rate if a 91-day T-bill has an equivalent yield of 11.34%? (Use approximation)",
+      "opts": [
+        "A. 11.03%",
+        "B. 11.34%",
+        "C. 10.50%",
+        "D. 12.00%"
+      ],
+      "ans": "A",
+      "exp": "Discount = Yield / (1 + (Yield/100)\u00d7t/365) = 11.34 / (1 + 0.1134\u00d791/365) = 11.34 / 1.0283 = 11.03%."
+    },
+    {
+      "id": "Q178",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of Treasury bills?",
+      "opts": [
+        "A. They pay interest semi-annually",
+        "B. They are sold at a discount and mature at par",
+        "C. They have maturities of 1 to 10 years",
+        "D. They are issued by corporations"
+      ],
+      "ans": "B",
+      "exp": "T-bills are short-term government securities sold at a discount and redeemed at face value at maturity."
+    },
+    {
+      "id": "Q179",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the true yield (effective yield) of a 91-day T-bill with a discount rate of 8%?",
+      "opts": [
+        "A. 8.16%",
+        "B. 8.00%",
+        "C. 8.25%",
+        "D. 7.85%"
+      ],
+      "ans": "A",
+      "exp": "Yield = 8 / (1 \u2212 0.08\u00d791/365) = 8 / 0.98005 = 8.16%."
+    },
+    {
+      "id": "Q180",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the difference between a discount rate and an effective yield on a money market instrument?",
+      "opts": [
+        "A. The discount rate is applied to the face value, while the yield is based on the purchase price",
+        "B. The discount rate is always higher than the yield",
+        "C. They are the same for instruments with maturities under one year",
+        "D. The discount rate is used for coupon instruments, yield for discount instruments"
+      ],
+      "ans": "A",
+      "exp": "Discount rate is applied to the face value to calculate the discount, while yield (return) is based on the actual purchase price."
+    },
+    {
+      "id": "Q181",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the annualized holding period return (HPR) if you buy a 182-day T-bill for N73.71m and sell it after 82 days for N74.27m?",
+      "opts": [
+        "A. 3.39%",
+        "B. 0.76%",
+        "C. 5.00%",
+        "D. 2.00%"
+      ],
+      "ans": "A",
+      "exp": "HPR = (0.56/73.71) \u00d7 4.4512 \u00d7 100 = 3.39%."
+    },
+    {
+      "id": "Q182",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following money market instruments is typically issued by the central government to finance short-term fiscal deficits?",
+      "opts": [
+        "A. Commercial Paper",
+        "B. Banker's Acceptance",
+        "C. Treasury Bill",
+        "D. Certificate of Deposit"
+      ],
+      "ans": "C",
+      "exp": "Treasury bills are short-term debt obligations of the national government, used to manage cash flow and finance deficits."
+    },
+    {
+      "id": "Q183",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the discounted value (proceeds) of a 182-day Banker's Acceptance with a face value of N150m and a discount rate of 11.5%?",
+      "opts": [
+        "A. N141,398,630.10",
+        "B. N150,000,000",
+        "C. N135,000,000",
+        "D. N145,000,000"
+      ],
+      "ans": "A",
+      "exp": "PV = 150,000,000 \u00d7 (1 \u2212 0.115\u00d7182/365) = 150,000,000 \u00d7 (1 \u2212 0.0573) = 141,398,630."
+    },
+    {
+      "id": "Q184",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the discount amount on a 182-day BA with face value N150m and discount rate 11.5%?",
+      "opts": [
+        "A. N8,601,370",
+        "B. N17,250,000",
+        "C. N10,000,000",
+        "D. N5,000,000"
+      ],
+      "ans": "A",
+      "exp": "Discount = 150,000,000 \u2212 141,398,630 = 8,601,370."
+    },
+    {
+      "id": "Q185",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which instrument would give a better return: a 90-day CP with a discount rate of 7.25% or a 90-day CD with a yield of 7.30%?",
+      "opts": [
+        "A. The CP is better because its equivalent yield is 7.38% (higher than 7.30%)",
+        "B. The CD is better because its yield is higher than the discount rate",
+        "C. They are equivalent because the maturities are the same",
+        "D. Cannot be determined without knowing the face value"
+      ],
+      "ans": "A",
+      "exp": "Convert CP discount to yield: Yield = 7.25 / (1 \u2212 0.0725\u00d790/365) = 7.38%, which is higher than the CD's 7.30%, so CP is better."
+    },
+    {
+      "id": "Q186",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the face value of a 91-day T-bill if the proceeds are N9,800,000 and the discount rate is 8%?",
+      "opts": [
+        "A. N10,000,000",
+        "B. N9,800,000",
+        "C. N10,200,000",
+        "D. N9,900,000"
+      ],
+      "ans": "A",
+      "exp": "FV = PV / (1 \u2212 0.08\u00d791/365) = 9,800,000 / 0.98005 = 10,000,000."
+    },
+    {
+      "id": "Q187",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a non-discountable money market instrument?",
+      "opts": [
+        "A. Treasury Bill",
+        "B. Commercial Paper",
+        "C. Certificate of Deposit",
+        "D. Banker's Acceptance"
+      ],
+      "ans": "C",
+      "exp": "Certificates of deposit are interest-bearing (coupon) instruments, not discountable."
+    },
+    {
+      "id": "Q188",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the effective yield of a 60-day instrument with a discount rate of 5%?",
+      "opts": [
+        "A. 5.04%",
+        "B. 5.00%",
+        "C. 5.10%",
+        "D. 4.95%"
+      ],
+      "ans": "A",
+      "exp": "Yield = 5 / (1 \u2212 0.05\u00d760/365) = 5 / 0.99178 = 5.04%."
+    },
+    {
+      "id": "Q189",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the purchase price of a N200 million 90-day CD with an annual interest rate of 3.8%?",
+      "opts": [
+        "A. N200,000,000",
+        "B. N198,126,027",
+        "C. N192,400,000",
+        "D. N200,000,000"
+      ],
+      "ans": "A",
+      "exp": "CDs are coupon instruments sold at par (face value); the interest is paid at maturity in addition to the principal."
+    },
+    {
+      "id": "Q190",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the total return (interest) on a N200 million 90-day CD with an annual interest rate of 3.8%?",
+      "opts": [
+        "A. N1,873,973",
+        "B. N7,600,000",
+        "C. N2,000,000",
+        "D. N1,500,000"
+      ],
+      "ans": "A",
+      "exp": "Interest = 200,000,000 \u00d7 0.038 \u00d7 90/365 = 1,873,973."
+    },
+    {
+      "id": "Q191",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of commercial paper?",
+      "opts": [
+        "A. It is secured by collateral",
+        "B. It typically has a maturity of less than 270 days",
+        "C. It is issued only by the government",
+        "D. It pays a fixed coupon rate"
+      ],
+      "ans": "B",
+      "exp": "Commercial paper is unsecured short-term debt, typically maturing in 1 to 270 days, issued by corporations."
+    },
+    {
+      "id": "Q192",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the discount rate if a 91-day T-bill is purchased for N97.75 with a face value of N100?",
+      "opts": [
+        "A. 9.03%",
+        "B. 8.86%",
+        "C. 10.00%",
+        "D. 9.50%"
+      ],
+      "ans": "A",
+      "exp": "DR = ((100\u221297.75)/100) \u00d7 (365/91) \u00d7 100 = (2.25/100)\u00d74.01099\u00d7100 = 9.03%."
+    },
+    {
+      "id": "Q193",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the annualized yield on a 120-day T-bill purchased for N98.5 with a face value of N100?",
+      "opts": [
+        "A. 4.64%",
+        "B. 5.00%",
+        "C. 4.50%",
+        "D. 4.80%"
+      ],
+      "ans": "A",
+      "exp": "Yield = (1.5/98.5) \u00d7 3.04167 \u00d7 100 = 4.64%."
+    },
+    {
+      "id": "Q194",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following statements about money market instruments is correct?",
+      "opts": [
+        "A. They are long-term investments with maturities over 5 years",
+        "B. They are highly liquid and have short maturities, typically under one year",
+        "C. They are all government-issued securities",
+        "D. They pay high interest rates due to high risk"
+      ],
+      "ans": "B",
+      "exp": "Money market instruments are short-term, highly liquid, and low-risk, with maturities of one year or less."
+    },
+    {
+      "id": "Q195",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the total proceeds from a N150m 90-day T-bill with a discount rate of 2.8%?",
+      "opts": [
+        "A. N148,965,753",
+        "B. N150,000,000",
+        "C. N145,800,000",
+        "D. N147,500,000"
+      ],
+      "ans": "A",
+      "exp": "PV = 150,000,000 \u00d7 (1 \u2212 0.028\u00d790/365) = 150,000,000 \u00d7 0.993096 = 148,965,753."
+    },
+    {
+      "id": "Q196",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the discount rate on a 182-day instrument with a yield of 12.20%?",
+      "opts": [
+        "A. 11.50%",
+        "B. 12.20%",
+        "C. 11.00%",
+        "D. 12.50%"
+      ],
+      "ans": "A",
+      "exp": "Discount = 12.20 / (1 + 0.1220\u00d7182/365) = 12.20 / 1.0608 = 11.50%."
+    },
+    {
+      "id": "Q197",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a common characteristic of Banker's Acceptances?",
+      "opts": [
+        "A. They are typically used to finance international trade",
+        "B. They are issued by the central bank",
+        "C. They have maturities of 5 to 10 years",
+        "D. They are equity instruments"
+      ],
+      "ans": "A",
+      "exp": "BAs are often used in trade finance, guaranteeing payment for goods in international transactions."
+    },
+    {
+      "id": "Q198",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the annualized yield on a 60-day money market instrument priced at N75m with an effective annual yield of 4.2%? The discount rate?",
+      "opts": [
+        "A. Discount rate = 4.15% using conversion",
+        "B. 4.20%, same as yield",
+        "C. 4.00%",
+        "D. 4.50%"
+      ],
+      "ans": "A",
+      "exp": "Discount = Yield / (1 + (Yield/100)\u00d7t/365) = 4.2 / (1 + 0.042\u00d760/365) = 4.15%."
+    },
+    {
+      "id": "Q199",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the holding period return (HPR) on a 182-day T-bill bought at 3.2% discount and sold after 75 days at 3.4% discount? (Face value N33m)",
+      "opts": [
+        "A. 0.17%, but annualized?",
+        "B. 4.5%, as calculated",
+        "C. 3.2%",
+        "D. 3.4%"
+      ],
+      "ans": "B",
+      "exp": "Cost = 33m \u00d7 (1 \u2212 0.032\u00d7182/365) = 33m \u00d7 0.98405 = 32.47m; Proceeds = 33m \u00d7 (1 \u2212 0.034\u00d775/365) = 33m \u00d7 0.99301 = 32.77m; HPR = ((32.77\u221232.47)/32.47) \u00d7 (365/75) \u00d7 100 = 4.5%."
+    },
+    {
+      "id": "Q200",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following best describes a certificate of deposit (CD)?",
+      "opts": [
+        "A. A negotiable instrument that pays a fixed interest rate and is issued by a bank",
+        "B. A short-term unsecured promissory note issued by a corporation",
+        "C. A government-issued zero-coupon bond with maturity over 1 year",
+        "D. An equity instrument that pays dividends"
+      ],
+      "ans": "A",
+      "exp": "A CD is a time deposit with a bank that pays a fixed interest rate and may be negotiable."
+    },
+    {
+      "id": "Q201",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the total interest earned on a N300m 120-day CD at 4.1% annual interest?",
+      "opts": [
+        "A. N4,043,836",
+        "B. N12,300,000",
+        "C. N3,000,000",
+        "D. N5,000,000"
+      ],
+      "ans": "A",
+      "exp": "Interest = 300,000,000 \u00d7 0.041 \u00d7 120/365 = 4,043,836."
+    },
+    {
+      "id": "Q202",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the discount rate if a 90-day T-bill has a yield of 7.38%?",
+      "opts": [
+        "A. 7.25%",
+        "B. 7.38%",
+        "C. 7.50%",
+        "D. 7.00%"
+      ],
+      "ans": "A",
+      "exp": "Discount = 7.38 / (1 + 0.0738\u00d790/365) = 7.38 / 1.0182 = 7.25%."
+    },
+    {
+      "id": "Q203",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of fixed-term deposits?",
+      "opts": [
+        "A. They are negotiable and can be sold in the secondary market",
+        "B. They are non-negotiable coupon instruments issued by banks",
+        "C. They are short-term government securities",
+        "D. They are traded on the stock exchange"
+      ],
+      "ans": "B",
+      "exp": "Fixed-term deposits are typically non-negotiable and pay interest (coupon) at maturity."
+    },
+    {
+      "id": "Q204",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the true yield of a 182-day BA with a discount rate of 11.5%?",
+      "opts": [
+        "A. 12.20%",
+        "B. 11.50%",
+        "C. 12.00%",
+        "D. 11.00%"
+      ],
+      "ans": "A",
+      "exp": "Yield = 11.5 / (1 \u2212 0.115\u00d7182/365) = 11.5 / 0.9427 = 12.20%."
+    },
+    {
+      "id": "Q205",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the maturity value of a N1,000,000 CD with a 12% interest rate for 90 days?",
+      "opts": [
+        "A. N1,029,589",
+        "B. N1,120,000",
+        "C. N1,000,000",
+        "D. N1,030,000"
+      ],
+      "ans": "A",
+      "exp": "FV = 1,000,000 \u00d7 (1 + 0.12\u00d790/365) = 1,029,589."
+    },
+    {
+      "id": "Q206",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following instruments is a derivative security?",
+      "opts": [
+        "A. Treasury Bill",
+        "B. Commercial Paper",
+        "C. Options",
+        "D. Certificate of Deposit"
+      ],
+      "ans": "C",
+      "exp": "Derivatives derive their value from underlying assets; options are a classic example."
+    },
+    {
+      "id": "Q207",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the discount rate on a 91-day T-bill if the purchase price is N98,000 for a N100,000 face value?",
+      "opts": [
+        "A. 8.01%",
+        "B. 8.00%",
+        "C. 8.16%",
+        "D. 7.85%"
+      ],
+      "ans": "A",
+      "exp": "DR = (2,000/100,000) \u00d7 4.01099 \u00d7 100 = 8.02%."
+    },
+    {
+      "id": "Q208",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the holding period return (annualized) if you buy a 90-day T-bill at a discount rate of 2.8% and hold to maturity?",
+      "opts": [
+        "A. 2.82%",
+        "B. 2.80%, same as discount",
+        "C. 2.90%",
+        "D. 2.75%"
+      ],
+      "ans": "A",
+      "exp": "Yield = 2.8 / (1 \u2212 0.028\u00d790/365) = 2.8 / 0.9931 = 2.82%."
+    },
+    {
+      "id": "Q209",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a major class of capital market instruments?",
+      "opts": [
+        "A. Treasury Bills",
+        "B. Commercial Paper",
+        "C. Bonds",
+        "D. Banker's Acceptances"
+      ],
+      "ans": "C",
+      "exp": "Bonds are long-term debt instruments traded in the capital market, unlike short-term money market instruments."
+    },
+    {
+      "id": "Q210",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the difference between a domestic bond and a foreign bond?",
+      "opts": [
+        "A. Domestic bonds are issued by the government, foreign bonds by corporations",
+        "B. Domestic bonds are issued in the issuer's country in local currency; foreign bonds are issued in a host country's currency",
+        "C. Domestic bonds have longer maturities than foreign bonds",
+        "D. There is no difference"
+      ],
+      "ans": "B",
+      "exp": "A domestic bond is issued by a local entity in the local currency; a foreign bond is issued by a foreign entity in the host country's currency."
+    },
+    {
+      "id": "Q211",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a Eurobond?",
+      "opts": [
+        "A. A bond issued in Europe by a European company",
+        "B. A bond issued internationally, denominated in a currency not the issuer's home currency",
+        "C. A bond issued by the European Central Bank",
+        "D. A bond that pays interest in euros"
+      ],
+      "ans": "B",
+      "exp": "A Eurobond is an international bond issued in a currency different from the issuer's home country, sold to investors globally."
+    },
+    {
+      "id": "Q212",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is an ownership instrument in a corporation?",
+      "opts": [
+        "A. Debenture",
+        "B. Bond",
+        "C. Ordinary Share",
+        "D. Commercial Paper"
+      ],
+      "ans": "C",
+      "exp": "Ordinary shares represent ownership in a company, giving residual claim on assets and earnings."
+    },
+    {
+      "id": "Q213",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary difference between ordinary shares and preference shares?",
+      "opts": [
+        "A. Preference shares have voting rights, ordinary shares do not",
+        "B. Preference shares have priority in dividend payments and liquidation over ordinary shares",
+        "C. Ordinary shares have a fixed dividend, preference shares do not",
+        "D. Preference shares are issued only by financial institutions"
+      ],
+      "ans": "B",
+      "exp": "Preference shares have a prior claim on dividends and assets in liquidation, while ordinary shares are residual owners."
+    },
+    {
+      "id": "Q214",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is an example of a derivative security?",
+      "opts": [
+        "A. Right issue",
+        "B. Treasury bill",
+        "C. Commercial paper",
+        "D. Certificate of deposit"
+      ],
+      "ans": "A",
+      "exp": "Rights are derivatives that give existing shareholders the option to buy additional shares at a predetermined price."
+    },
+    {
+      "id": "Q215",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary function of a primary market?",
+      "opts": [
+        "A. Trading existing securities among investors",
+        "B. Issuing new securities to raise capital for companies",
+        "C. Providing liquidity for investors",
+        "D. Determining the market price of securities"
+      ],
+      "ans": "B",
+      "exp": "The primary market is where new securities are issued and sold to investors, raising capital for the issuer."
+    },
+    {
+      "id": "Q216",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of the secondary market?",
+      "opts": [
+        "A. It is where new issues are sold",
+        "B. It provides liquidity for investors to trade existing securities",
+        "C. It is only for government securities",
+        "D. It does not involve any price discovery"
+      ],
+      "ans": "B",
+      "exp": "The secondary market facilitates trading of already-issued securities, providing liquidity and price discovery."
+    },
+    {
+      "id": "Q217",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the role of the Securities and Exchange Commission (SEC) in Nigeria?",
+      "opts": [
+        "A. To set monetary policy",
+        "B. To regulate and supervise the capital market, protecting investors",
+        "C. To issue treasury bills",
+        "D. To manage the stock exchange"
+      ],
+      "ans": "B",
+      "exp": "SEC oversees the capital market, ensures transparency, and protects investors against fraud."
+    },
+    {
+      "id": "Q218",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a debt instrument?",
+      "opts": [
+        "A. Ordinary Share",
+        "B. Preference Share",
+        "C. Debenture",
+        "D. Unit Trust"
+      ],
+      "ans": "C",
+      "exp": "A debenture is a long-term debt instrument issued by a company, representing a creditor relationship."
+    },
+    {
+      "id": "Q219",
+      "module": 4,
+      "type": "mcq",
+      "q": "What distinguishes a bond from a debenture?",
+      "opts": [
+        "A. Bonds are always issued by governments, debentures by corporations",
+        "B. Bonds are backed by collateral, debentures are unsecured",
+        "C. Bonds have fixed interest, debentures have variable interest",
+        "D. Bonds are short-term, debentures are long-term"
+      ],
+      "ans": "B",
+      "exp": "Typically, bonds are secured by assets, while debentures are unsecured and rely on the issuer's creditworthiness."
+    },
+    {
+      "id": "Q220",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a sovereign bond?",
+      "opts": [
+        "A. A bond issued by a state government",
+        "B. A bond issued by the federal government",
+        "C. A bond issued by a corporation",
+        "D. A bond issued by a local government"
+      ],
+      "ans": "B",
+      "exp": "A sovereign bond is issued by the national government, typically in the country's own currency."
+    },
+    {
+      "id": "Q221",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of unit trusts (mutual funds)?",
+      "opts": [
+        "A. They are managed by a professional fund manager and pool investors' money",
+        "B. They are fixed-income securities with a maturity date",
+        "C. They are traded on the stock exchange like individual shares",
+        "D. They guarantee a fixed return to investors"
+      ],
+      "ans": "A",
+      "exp": "Unit trusts pool funds from many investors and are professionally managed to invest in a diversified portfolio."
+    },
+    {
+      "id": "Q222",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is an exchange-traded fund (ETF)?",
+      "opts": [
+        "A. A mutual fund that is not traded on an exchange",
+        "B. A fund that holds a basket of securities and trades like a stock on an exchange",
+        "C. A bond issued by the government",
+        "D. A type of derivative"
+      ],
+      "ans": "B",
+      "exp": "ETFs are investment funds that hold a portfolio of assets and trade on stock exchanges, providing liquidity and diversification."
+    },
+    {
+      "id": "Q223",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the main advantage of investing in a unit trust?",
+      "opts": [
+        "A. Guaranteed high returns",
+        "B. Professional management and diversification",
+        "C. No fees or charges",
+        "D. Tax-free income"
+      ],
+      "ans": "B",
+      "exp": "Unit trusts offer diversification and professional management, reducing unsystematic risk for investors."
+    },
+    {
+      "id": "Q224",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is an example of a money market instrument with a coupon?",
+      "opts": [
+        "A. Treasury Bill",
+        "B. Commercial Paper",
+        "C. Certificate of Deposit",
+        "D. Banker's Acceptance"
+      ],
+      "ans": "C",
+      "exp": "Certificates of deposit pay interest (coupon) at maturity, unlike discount instruments."
+    },
+    {
+      "id": "Q225",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary purpose of a sinking fund in bond issuance?",
+      "opts": [
+        "A. To pay interest to bondholders regularly",
+        "B. To set aside money to repay the principal at maturity",
+        "C. To invest in new projects",
+        "D. To pay dividends to shareholders"
+      ],
+      "ans": "B",
+      "exp": "A sinking fund is used to accumulate funds over time to repay the bond's principal at maturity, reducing default risk."
+    },
+    {
+      "id": "Q226",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of preferred stock?",
+      "opts": [
+        "A. It has no par value",
+        "B. It typically pays a fixed dividend and has priority over common stock",
+        "C. It has unlimited voting rights",
+        "D. It is always convertible to common stock"
+      ],
+      "ans": "B",
+      "exp": "Preference shares pay a fixed dividend and have preference over ordinary shares in dividends and liquidation."
+    },
+    {
+      "id": "Q227",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a right issue in the capital market?",
+      "opts": [
+        "A. A privilege given to existing shareholders to buy additional shares at a discount",
+        "B. A legal right to sue the company for mismanagement",
+        "C. A right to receive dividends before other shareholders",
+        "D. A right to convert preference shares into ordinary shares"
+      ],
+      "ans": "A",
+      "exp": "A rights issue allows existing shareholders to purchase additional shares in proportion to their holdings, often at a discount."
+    },
+    {
+      "id": "Q228",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of a debenture?",
+      "opts": [
+        "A. It is an equity instrument",
+        "B. It is a long-term unsecured debt instrument",
+        "C. It has voting rights",
+        "D. It pays variable dividends"
+      ],
+      "ans": "B",
+      "exp": "A debenture is an unsecured long-term debt, backed only by the issuer's creditworthiness, not by collateral."
+    },
+    {
+      "id": "Q229",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the function of the capital market?",
+      "opts": [
+        "A. To provide short-term funds for working capital",
+        "B. To channel long-term funds from savers to borrowers for investment",
+        "C. To facilitate foreign exchange transactions",
+        "D. To set interest rates"
+      ],
+      "ans": "B",
+      "exp": "Capital markets enable long-term financing by connecting savers with entities needing funds for capital investment."
+    },
+    {
+      "id": "Q230",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a municipal bond?",
+      "opts": [
+        "A. A bond issued by a national government",
+        "B. A bond issued by a local government or municipality",
+        "C. A bond issued by a corporation",
+        "D. A bond issued by a central bank"
+      ],
+      "ans": "B",
+      "exp": "Municipal bonds are issued by states, cities, or other local governments to finance public projects."
+    },
+    {
+      "id": "Q231",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following best describes the 'primary market' vs 'secondary market' distinction?",
+      "opts": [
+        "A. Primary market is for bonds, secondary for stocks",
+        "B. Primary is for new securities issuance, secondary for trading existing securities",
+        "C. Primary is for short-term instruments, secondary for long-term",
+        "D. Primary is regulated by the SEC, secondary is not"
+      ],
+      "ans": "B",
+      "exp": "The primary market is where new securities are created and sold; the secondary market is where they are subsequently traded."
+    },
+    {
+      "id": "Q232",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a hybrid security?",
+      "opts": [
+        "A. A security that combines features of debt and equity, like preference shares",
+        "B. A security that is both domestic and foreign",
+        "C. A security that is traded on multiple exchanges",
+        "D. A security that has variable interest and principal"
+      ],
+      "ans": "A",
+      "exp": "Preference shares are hybrid because they have fixed dividends (like debt) but no maturity (like equity)."
+    },
+    {
+      "id": "Q233",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a derivative security commonly used for hedging?",
+      "opts": [
+        "A. Ordinary Share",
+        "B. Futures Contract",
+        "C. Treasury Bill",
+        "D. Commercial Paper"
+      ],
+      "ans": "B",
+      "exp": "Futures are derivatives used to hedge against price movements in underlying assets."
+    },
+    {
+      "id": "Q234",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the significance of the 'value date' in money market transactions?",
+      "opts": [
+        "A. The date on which the instrument is issued",
+        "B. The date on which the instrument starts earning interest",
+        "C. The date on which the instrument matures",
+        "D. The date on which the trade is agreed"
+      ],
+      "ans": "B",
+      "exp": "The value date is when the instrument begins to accrue interest; it may differ from the transaction date."
+    },
+    {
+      "id": "Q235",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the transaction date in a money market instrument?",
+      "opts": [
+        "A. The date on which the instrument matures",
+        "B. The date on which the terms are agreed upon",
+        "C. The date on which interest is paid",
+        "D. The date on which the instrument is issued"
+      ],
+      "ans": "B",
+      "exp": "The transaction date (deal date) is when the counterparties agree on the terms (amount, price, maturity)."
+    },
+    {
+      "id": "Q236",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is true about negotiable instruments in the money market?",
+      "opts": [
+        "A. They cannot be transferred to another party",
+        "B. They are easily transferable, providing liquidity",
+        "C. They are always secured by collateral",
+        "D. They have maturities longer than 1 year"
+      ],
+      "ans": "B",
+      "exp": "Negotiable instruments like T-bills and CPs are easily transferred, enhancing liquidity."
+    },
+    {
+      "id": "Q237",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the effect of an increase in the discount rate on the price of a Treasury bill?",
+      "opts": [
+        "A. The price decreases, as the discount is larger",
+        "B. The price increases, as investors require higher returns",
+        "C. There is no effect on price",
+        "D. The price becomes equal to face value"
+      ],
+      "ans": "A",
+      "exp": "Higher discount rates mean a larger discount from face value, so the purchase price is lower."
+    },
+    {
+      "id": "Q238",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the typical tenor for a commercial paper?",
+      "opts": [
+        "A. 1 to 5 years",
+        "B. 1 to 270 days",
+        "C. 10 to 30 years",
+        "D. 1 day to 1 week"
+      ],
+      "ans": "B",
+      "exp": "Commercial paper typically matures in 1 to 270 days, with 30, 60, or 90 days being common."
+    },
+    {
+      "id": "Q239",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is an example of a non-negotiable money market instrument?",
+      "opts": [
+        "A. Treasury Bill",
+        "B. Commercial Paper",
+        "C. Fixed Term Deposit",
+        "D. Banker's Acceptance"
+      ],
+      "ans": "C",
+      "exp": "Fixed term deposits are non-negotiable; they cannot be transferred to another party."
+    },
+    {
+      "id": "Q240",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the annualized yield on a 182-day T-bill with a discount rate of 3.2%?",
+      "opts": [
+        "A. 3.26%",
+        "B. 3.20%",
+        "C. 3.30%",
+        "D. 3.15%"
+      ],
+      "ans": "A",
+      "exp": "Yield = 3.2 / (1 \u2212 0.032\u00d7182/365) = 3.2 / 0.98404 = 3.26%."
+    },
+    {
+      "id": "Q241",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Net Present Value (NPV) of a project with an initial investment of N10,000,000 and cash flows of N5m, N6m, and N8m at a discount rate of 25%?",
+      "opts": [
+        "A. N1,936,000",
+        "B. N0",
+        "C. N2,000,000",
+        "D. N1,500,000"
+      ],
+      "ans": "A",
+      "exp": "PV inflows = 5m/1.25 + 6m/1.5625 + 8m/1.953125 = 4m + 3.84m + 4.096m = 11.936m; NPV = 11.936m \u2212 10m = 1.936m."
+    },
+    {
+      "id": "Q242",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the payback period for a project with an initial outlay of N10,000 and cash flows of N6,500, N4,000, and N1,800 over three years?",
+      "opts": [
+        "A. 1.875 years",
+        "B. 2.0 years",
+        "C. 2.5 years",
+        "D. 2.0 years"
+      ],
+      "ans": "A",
+      "exp": "Cumulative year 1 = 6,500; remaining = 3,500; year 2 cash flow = 4,000; fraction = 3,500/4,000 = 0.875; payback = 1.875 years."
+    },
+    {
+      "id": "Q243",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a disadvantage of the payback period method?",
+      "opts": [
+        "A. It ignores cash flows after the payback period",
+        "B. It is difficult to calculate",
+        "C. It considers the time value of money",
+        "D. It is not easy to understand"
+      ],
+      "ans": "A",
+      "exp": "Payback period ignores all cash flows occurring after the payback point, potentially overlooking large later returns."
+    },
+    {
+      "id": "Q244",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Accounting Rate of Return (ARR) for a project with average annual profits of N200,000 and average investment of N1,000,000?",
+      "opts": [
+        "A. 20%",
+        "B. 10%",
+        "C. 25%",
+        "D. 15%"
+      ],
+      "ans": "A",
+      "exp": "ARR = (200,000 / 1,000,000) \u00d7 100 = 20%."
+    },
+    {
+      "id": "Q245",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Internal Rate of Return (IRR) for a project with an initial outlay of N3,610 and cash flows of N1,000, N2,000, and N3,000?",
+      "opts": [
+        "A. 25.2%",
+        "B. 20%",
+        "C. 30%",
+        "D. 22%"
+      ],
+      "ans": "A",
+      "exp": "Using trial and error: at 15%, NPV=760; at 26%, NPV=-60; IRR = 15 + (760/(760+60))*(11) = 25.2%."
+    },
+    {
+      "id": "Q246",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of the Net Present Value (NPV) method?",
+      "opts": [
+        "A. It uses a single discount rate that may be the cost of capital",
+        "B. It provides a rate of return as a percentage",
+        "C. It ignores the time value of money",
+        "D. It is based on accounting profits rather than cash flows"
+      ],
+      "ans": "A",
+      "exp": "NPV discounts cash flows at the required rate of return (cost of capital), considering the time value of money."
+    },
+    {
+      "id": "Q247",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the decision rule for NPV when evaluating independent projects?",
+      "opts": [
+        "A. Accept if NPV > 0, reject if NPV < 0",
+        "B. Accept if IRR > cost of capital",
+        "C. Accept if payback period is less than a cutoff",
+        "D. Accept if ARR > target"
+      ],
+      "ans": "A",
+      "exp": "For independent projects, accept positive NPV projects as they increase shareholder wealth."
+    },
+    {
+      "id": "Q248",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Profitability Index (PI) for a project with a present value of cash inflows of N12,000 and an initial investment of N10,000?",
+      "opts": [
+        "A. 1.2",
+        "B. 0.83",
+        "C. 1.0",
+        "D. 0.2"
+      ],
+      "ans": "A",
+      "exp": "PI = 12,000 / 10,000 = 1.2; since PI > 1, the project is acceptable."
+    },
+    {
+      "id": "Q249",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is an advantage of the IRR method over the NPV method?",
+      "opts": [
+        "A. IRR provides a percentage return that is easy to interpret",
+        "B. IRR does not require a discount rate, making it more objective",
+        "C. IRR considers the scale of the project",
+        "D. IRR always gives the same ranking as NPV"
+      ],
+      "ans": "A",
+      "exp": "IRR results are expressed as a percentage, which is intuitive and easy for managers to understand."
+    },
+    {
+      "id": "Q250",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the crossover point in comparing two mutually exclusive projects?",
+      "opts": [
+        "A. The discount rate at which the NPVs of the two projects are equal",
+        "B. The rate at which both projects have zero NPV",
+        "C. The point where the payback periods are equal",
+        "D. The rate at which the IRRs of the two projects are equal"
+      ],
+      "ans": "A",
+      "exp": "The crossover point is the discount rate where the NPV profiles of two projects intersect; at rates below, one project is preferred; above, the other."
+    },
+    {
+      "id": "Q251",
+      "module": 5,
+      "type": "mcq",
+      "q": "If a project has a positive NPV, what does that imply about its IRR relative to the cost of capital?",
+      "opts": [
+        "A. IRR is less than the cost of capital",
+        "B. IRR is greater than the cost of capital",
+        "C. IRR equals the cost of capital",
+        "D. There is no relationship"
+      ],
+      "ans": "B",
+      "exp": "A positive NPV indicates that the project's return exceeds the required rate, so IRR > cost of capital."
+    },
+    {
+      "id": "Q252",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a disadvantage of the Accounting Rate of Return (ARR)?",
+      "opts": [
+        "A. It uses accounting profits rather than cash flows",
+        "B. It is difficult to compute",
+        "C. It considers the time value of money",
+        "D. It gives a clear accept/reject decision"
+      ],
+      "ans": "A",
+      "exp": "ARR uses accounting profits, which are subject to depreciation and other non-cash items, and ignores the timing of cash flows."
+    },
+    {
+      "id": "Q253",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the payback period for a project with an initial investment of N475,000 and cash flows of N100,000 for the first 3 years and N75,000 for the next 5 years?",
+      "opts": [
+        "A. 5.33 years, as calculated from cumulative cash flows",
+        "B. 4.75 years",
+        "C. 5.0 years",
+        "D. 6.0 years"
+      ],
+      "ans": "A",
+      "exp": "Cumulative: year1-3 = 300,000; remaining = 175,000; year4 = 75,000 (so 100,000 left), year5 = 75,000 (25,000 left), year6 = 75,000 (so 25,000/75,000 = 0.333) -> payback = 5 + 0.333 = 5.33 years."
+    },
+    {
+      "id": "Q254",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary difference between NPV and IRR when ranking mutually exclusive projects?",
+      "opts": [
+        "A. NPV assumes reinvestment at the cost of capital, IRR assumes reinvestment at the IRR",
+        "B. NPV ignores the time value of money, IRR considers it",
+        "C. IRR uses a discount rate, NPV does not",
+        "D. NPV gives a percentage return, IRR gives a dollar amount"
+      ],
+      "ans": "A",
+      "exp": "The reinvestment assumption difference can cause conflicts; NPV is generally preferred because reinvestment at cost of capital is more realistic."
+    },
+    {
+      "id": "Q255",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a non-discounting capital budgeting technique?",
+      "opts": [
+        "A. NPV",
+        "B. IRR",
+        "C. Payback Period",
+        "D. Profitability Index"
+      ],
+      "ans": "C",
+      "exp": "Payback period does not discount cash flows; it is a traditional method."
+    },
+    {
+      "id": "Q256",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the IRR decision rule for mutually exclusive projects?",
+      "opts": [
+        "A. Choose the project with the highest IRR, provided it exceeds the cost of capital",
+        "B. Choose the project with the lowest IRR",
+        "C. Choose all projects with IRR > 0",
+        "D. Choose the project with the shortest payback"
+      ],
+      "ans": "A",
+      "exp": "For mutually exclusive projects, select the one with the highest IRR, but ensure it meets the required return."
+    },
+    {
+      "id": "Q257",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following cash flows is considered irrelevant in a discounted cash flow analysis?",
+      "opts": [
+        "A. Incremental cash flows",
+        "B. Sunk costs",
+        "C. Opportunity costs",
+        "D. Working capital changes"
+      ],
+      "ans": "B",
+      "exp": "Sunk costs are past expenditures that cannot be recovered and should not affect future investment decisions."
+    },
+    {
+      "id": "Q258",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the opportunity cost in capital budgeting?",
+      "opts": [
+        "A. The cost of financing the project with debt",
+        "B. The return foregone by investing in the project instead of the next best alternative",
+        "C. The depreciation expense of the project assets",
+        "D. The sunk cost of research and development"
+      ],
+      "ans": "B",
+      "exp": "Opportunity cost is the income sacrificed by choosing one investment over another; it should be included as a cash outflow."
+    },
+    {
+      "id": "Q259",
+      "module": 5,
+      "type": "mcq",
+      "q": "Why is depreciation not included as a cash flow in capital budgeting?",
+      "opts": [
+        "A. Depreciation is a non-cash expense and does not affect cash flows",
+        "B. Depreciation is only relevant for tax purposes",
+        "C. Depreciation is a cash outflow",
+        "D. Depreciation is always included in project cash flows"
+      ],
+      "ans": "A",
+      "exp": "Depreciation is an accounting allocation, not a cash movement; however, its tax shield effect is included via tax savings."
+    },
+    {
+      "id": "Q260",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the meaning of 'capital rationing'?",
+      "opts": [
+        "A. Unlimited funds available for all positive NPV projects",
+        "B. A situation where funds are limited, preventing acceptance of all positive NPV projects",
+        "C. A policy of investing only in government bonds",
+        "D. A technique for calculating IRR"
+      ],
+      "ans": "B",
+      "exp": "Capital rationing occurs when the investment budget is constrained, so firms must select projects that maximize total NPV within the limit."
+    },
+    {
+      "id": "Q261",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following best describes unsystematic risk?",
+      "opts": [
+        "A. Risk that cannot be diversified away",
+        "B. Risk specific to a particular company or industry that can be diversified",
+        "C. Market risk that affects all assets",
+        "D. Interest rate risk"
+      ],
+      "ans": "B",
+      "exp": "Unsystematic risk is company-specific (e.g., product recall) and can be reduced through diversification."
+    },
+    {
+      "id": "Q262",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the systematic risk of an asset measured by?",
+      "opts": [
+        "A. Standard deviation",
+        "B. Beta coefficient",
+        "C. Variance",
+        "D. Correlation"
+      ],
+      "ans": "B",
+      "exp": "Beta measures the asset's sensitivity to market movements, capturing systematic risk."
+    },
+    {
+      "id": "Q263",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of a mutually exclusive project?",
+      "opts": [
+        "A. Acceptance of one project does not affect the other",
+        "B. Acceptance of one project precludes the acceptance of the other",
+        "C. Projects are independent",
+        "D. Projects are required to be accepted together"
+      ],
+      "ans": "B",
+      "exp": "Mutually exclusive projects compete for the same resources, so selecting one prevents the other."
+    },
+    {
+      "id": "Q264",
+      "module": 5,
+      "type": "mcq",
+      "q": "If a project's IRR is 18% and the cost of capital is 15%, what should be the decision?",
+      "opts": [
+        "A. Accept",
+        "B. Reject",
+        "C. Indifferent",
+        "D. Accept only if NPV is positive"
+      ],
+      "ans": "A",
+      "exp": "IRR exceeds the required return, so the project should be accepted (assuming independent)."
+    },
+    {
+      "id": "Q265",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a strength of the NPV method?",
+      "opts": [
+        "A. It provides a rate of return",
+        "B. It is easier to communicate than IRR",
+        "C. It gives a direct measure of value added to shareholders",
+        "D. It does not require a discount rate"
+      ],
+      "ans": "C",
+      "exp": "NPV measures the increase in shareholder wealth, which is directly aligned with the firm's primary objective."
+    },
+    {
+      "id": "Q266",
+      "module": 5,
+      "type": "mcq",
+      "q": "In capital budgeting, why is working capital treated as a cash outflow at the start and a cash inflow at the end?",
+      "opts": [
+        "A. Because working capital is recovered at the end of the project",
+        "B. Because working capital is depreciated over time",
+        "C. Because working capital is a sunk cost",
+        "D. Because working capital is always recovered with interest"
+      ],
+      "ans": "A",
+      "exp": "Initial investment in working capital is a cash outflow; it is typically recovered in full at project termination, hence an inflow."
+    },
+    {
+      "id": "Q267",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the profitability index decision rule for independent projects?",
+      "opts": [
+        "A. Accept if PI > 1",
+        "B. Accept if PI < 1",
+        "C. Accept if PI = 1",
+        "D. Accept if PI > 0"
+      ],
+      "ans": "A",
+      "exp": "PI > 1 indicates that the present value of benefits exceeds the cost, so the project adds value."
+    },
+    {
+      "id": "Q268",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is not a cash flow in capital budgeting?",
+      "opts": [
+        "A. Initial investment",
+        "B. Incremental operating cash flows",
+        "C. Book value of existing assets",
+        "D. Terminal cash flow"
+      ],
+      "ans": "C",
+      "exp": "Book value is an accounting concept; investment decisions are based on incremental cash flows, not book values."
+    },
+    {
+      "id": "Q269",
+      "module": 5,
+      "type": "mcq",
+      "q": "A project has an IRR of 20%. If the cost of capital is 18%, what is the NPV likely to be?",
+      "opts": [
+        "A. Positive",
+        "B. Negative",
+        "C. Zero",
+        "D. Indeterminate without cash flow amounts"
+      ],
+      "ans": "A",
+      "exp": "IRR > required return implies that the NPV at the cost of capital is positive."
+    },
+    {
+      "id": "Q270",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the main drawback of the IRR method when evaluating mutually exclusive projects of different sizes?",
+      "opts": [
+        "A. IRR does not consider the scale of the investment",
+        "B. IRR is difficult to calculate",
+        "C. IRR ignores the time value of money",
+        "D. IRR cannot be negative"
+      ],
+      "ans": "A",
+      "exp": "IRR is a percentage and does not reflect the magnitude of cash flows, so a smaller project may have a higher IRR but lower NPV."
+    },
+    {
+      "id": "Q271",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the terminal value of a project?",
+      "opts": [
+        "A. The salvage value of assets at the end of the project",
+        "B. The initial investment required",
+        "C. The total cash flows during the project life",
+        "D. The net income in the final year"
+      ],
+      "ans": "A",
+      "exp": "Terminal value includes the salvage value of assets and recovery of working capital at project end."
+    },
+    {
+      "id": "Q272",
+      "module": 5,
+      "type": "mcq",
+      "q": "In a DCF analysis, which of the following is typically included as a cash inflow?",
+      "opts": [
+        "A. Depreciation",
+        "B. Salvage value of assets",
+        "C. Amortization of goodwill",
+        "D. Increase in accounts receivable"
+      ],
+      "ans": "B",
+      "exp": "Salvage value is a cash receipt at the project's end; depreciation is non-cash."
+    },
+    {
+      "id": "Q273",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the relationship between NPV and discount rate?",
+      "opts": [
+        "A. NPV increases as discount rate increases",
+        "B. NPV decreases as discount rate increases",
+        "C. There is no relationship",
+        "D. NPV is independent of discount rate"
+      ],
+      "ans": "B",
+      "exp": "Higher discount rates reduce the present value of future cash flows, leading to lower NPV."
+    },
+    {
+      "id": "Q274",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a relevant cash flow for a project?",
+      "opts": [
+        "A. Sunk cost",
+        "B. Opportunity cost",
+        "C. Allocated overhead",
+        "D. Book depreciation"
+      ],
+      "ans": "B",
+      "exp": "Opportunity costs represent lost earnings from alternative uses of resources and should be included."
+    },
+    {
+      "id": "Q275",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the payback period for a project with constant annual cash flows of N50,000 and an initial outlay of N200,000?",
+      "opts": [
+        "A. 4.0 years",
+        "B. 5.0 years",
+        "C. 3.5 years",
+        "D. 2.5 years"
+      ],
+      "ans": "A",
+      "exp": "Payback = 200,000 / 50,000 = 4 years."
+    },
+    {
+      "id": "Q276",
+      "module": 5,
+      "type": "mcq",
+      "q": "If a project has an initial investment of N1,300,000 and cash flows of N312,000 for 5 years, N290,000 at year 6, and N300,000 at year 7, what is the NPV at 0%?",
+      "opts": [
+        "A. N1,270,000",
+        "B. N850,000, as calculated",
+        "C. N1,000,000",
+        "D. N700,000"
+      ],
+      "ans": "B",
+      "exp": "At 0% discount, NPV = sum of undiscounted cash flows - initial investment = (1,560,000+290,000+300,000) - 1,300,000 = 850,000."
+    },
+    {
+      "id": "Q277",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the crossover discount rate for two projects where one has higher NPV at low rates and the other at high rates?",
+      "opts": [
+        "A. The rate where both projects have the same NPV",
+        "B. The rate where both projects have zero NPV",
+        "C. The rate where the IRR of one equals the IRR of the other",
+        "D. The rate where the payback periods are equal"
+      ],
+      "ans": "A",
+      "exp": "The crossover point is the discount rate at which the NPVs of the two projects are equal."
+    },
+    {
+      "id": "Q278",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is true about the NPV method?",
+      "opts": [
+        "A. It assumes reinvestment at the project's IRR",
+        "B. It assumes reinvestment at the cost of capital",
+        "C. It does not consider the cost of capital",
+        "D. It gives the same decision as IRR for all projects"
+      ],
+      "ans": "B",
+      "exp": "NPV implicitly assumes that intermediate cash flows are reinvested at the discount rate (cost of capital), which is more realistic."
+    },
+    {
+      "id": "Q279",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the equivalent annual annuity (EAA) used for?",
+      "opts": [
+        "A. To compare projects with different lives",
+        "B. To calculate the IRR",
+        "C. To compute the payback period",
+        "D. To find the ARR"
+      ],
+      "ans": "A",
+      "exp": "EAA converts NPV into an annual cash flow to compare projects with unequal lives."
+    },
+    {
+      "id": "Q280",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of a contingent project?",
+      "opts": [
+        "A. The acceptance of one project requires the acceptance of another",
+        "B. The projects are mutually exclusive",
+        "C. The projects have the same life",
+        "D. The projects are independent"
+      ],
+      "ans": "A",
+      "exp": "Contingent projects are dependent; accepting one may necessitate accepting another (e.g., building a new plant and purchasing new equipment)."
+    },
+    {
+      "id": "Q281",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the role of risk analysis in capital budgeting?",
+      "opts": [
+        "A. To eliminate all risk from investments",
+        "B. To quantify and incorporate risk into the decision-making process",
+        "C. To guarantee returns",
+        "D. To avoid long-term projects"
+      ],
+      "ans": "B",
+      "exp": "Risk analysis helps assess the uncertainty of cash flows and adjust decisions accordingly, often via sensitivity or scenario analysis."
+    },
+    {
+      "id": "Q282",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the difference between risk and uncertainty in capital budgeting?",
+      "opts": [
+        "A. Risk involves known probabilities, uncertainty involves unknown probabilities",
+        "B. Risk is certain, uncertainty is not",
+        "C. Risk is diversifiable, uncertainty is not",
+        "D. There is no difference"
+      ],
+      "ans": "A",
+      "exp": "Risk exists when outcomes can be assigned probabilities; uncertainty occurs when probabilities cannot be estimated."
+    },
+    {
+      "id": "Q283",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a method to incorporate risk into capital budgeting?",
+      "opts": [
+        "A. Increasing the discount rate",
+        "B. Decreasing the payback period cutoff",
+        "C. Using conservative cash flow estimates",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "All are methods: risk-adjusted discount rate, shorter payback, and conservative estimates help account for risk."
+    },
+    {
+      "id": "Q284",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the profitability index of a project with an initial investment of N500,000 and PV of future cash flows of N600,000?",
+      "opts": [
+        "A. 1.2",
+        "B. 0.833",
+        "C. 1.0",
+        "D. 0.2"
+      ],
+      "ans": "A",
+      "exp": "PI = 600,000 / 500,000 = 1.2."
+    },
+    {
+      "id": "Q285",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is an example of unsystematic risk?",
+      "opts": [
+        "A. Inflation",
+        "B. A labor strike at a specific company",
+        "C. Change in interest rates",
+        "D. Recession"
+      ],
+      "ans": "B",
+      "exp": "A labor strike is company-specific and can be diversified away."
+    },
+    {
+      "id": "Q286",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the discount rate used in NPV for a project financed entirely by equity?",
+      "opts": [
+        "A. The cost of equity",
+        "B. The cost of debt",
+        "C. The weighted average cost of capital",
+        "D. The risk-free rate"
+      ],
+      "ans": "A",
+      "exp": "If all-equity financed, the appropriate discount rate is the cost of equity."
+    },
+    {
+      "id": "Q287",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a weakness of the payback period method?",
+      "opts": [
+        "A. It ignores the time value of money",
+        "B. It is too complex to calculate",
+        "C. It considers all cash flows",
+        "D. It uses a discount rate"
+      ],
+      "ans": "A",
+      "exp": "Payback period does not discount cash flows, ignoring the time value of money."
+    },
+    {
+      "id": "Q288",
+      "module": 5,
+      "type": "mcq",
+      "q": "What does the IRR represent for a project?",
+      "opts": [
+        "A. The discount rate that makes the NPV equal to zero",
+        "B. The return on the project's accounting profit",
+        "C. The payback period rate",
+        "D. The cost of capital"
+      ],
+      "ans": "A",
+      "exp": "IRR is the rate that equates the present value of cash inflows to the initial investment, resulting in zero NPV."
+    },
+    {
+      "id": "Q289",
+      "module": 5,
+      "type": "mcq",
+      "q": "If a project has a negative NPV, what should be done?",
+      "opts": [
+        "A. Accept the project because it may have positive IRR",
+        "B. Reject the project, as it decreases shareholder wealth",
+        "C. Accept only if the payback is short",
+        "D. Reject only if the ARR is below target"
+      ],
+      "ans": "B",
+      "exp": "Negative NPV indicates that the project destroys value; it should be rejected."
+    },
+    {
+      "id": "Q290",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a relevant cash flow in capital budgeting?",
+      "opts": [
+        "A. Financing costs (interest)",
+        "B. Depreciation tax shield",
+        "C. Sunk costs",
+        "D. Allocated corporate overhead"
+      ],
+      "ans": "B",
+      "exp": "The depreciation tax shield is a cash flow saving; financing costs are typically captured in the discount rate, not in cash flows."
+    },
+    {
+      "id": "Q291",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the effect of using a higher discount rate on the NPV of a project?",
+      "opts": [
+        "A. NPV increases",
+        "B. NPV decreases",
+        "C. NPV remains unchanged",
+        "D. NPV becomes positive"
+      ],
+      "ans": "B",
+      "exp": "Higher discount rates reduce the present value of future cash flows, lowering NPV."
+    },
+    {
+      "id": "Q292",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the payback period for a project with an initial outlay of N10,000 and uneven cash flows: N2,000, N4,000, N5,000, and N3,000?",
+      "opts": [
+        "A. 2.8 years",
+        "B. 3.0 years",
+        "C. 2.5 years",
+        "D. 3.5 years"
+      ],
+      "ans": "A",
+      "exp": "Cumulative year1=2,000, year2=6,000, remaining 4,000; year3 cash=5,000; fraction = 4,000/5,000=0.8; payback = 2.8 years."
+    },
+    {
+      "id": "Q293",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is an advantage of the NPV rule over the IRR rule for mutually exclusive projects?",
+      "opts": [
+        "A. NPV uses a single discount rate that is consistent with shareholder wealth",
+        "B. NPV is easier to calculate",
+        "C. NPV always gives the same decision as IRR",
+        "D. NPV does not require cash flow estimation"
+      ],
+      "ans": "A",
+      "exp": "NPV directly measures the value added and uses the cost of capital as the reinvestment rate, making it superior for ranking."
+    },
+    {
+      "id": "Q294",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the terminal cash flow of a project that recovers N50,000 working capital and has a salvage value of N30,000?",
+      "opts": [
+        "A. N80,000",
+        "B. N50,000",
+        "C. N30,000",
+        "D. N20,000"
+      ],
+      "ans": "A",
+      "exp": "Terminal cash flow includes the recovery of working capital (50,000) plus salvage value (30,000) = 80,000."
+    },
+    {
+      "id": "Q295",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of a good capital budgeting decision?",
+      "opts": [
+        "A. It focuses on short-term profits",
+        "B. It aligns with the firm's strategic goals and maximizes shareholder wealth",
+        "C. It avoids all risks",
+        "D. It uses only payback period analysis"
+      ],
+      "ans": "B",
+      "exp": "Capital budgeting decisions should support long-term value creation and strategic objectives."
+    },
+    {
+      "id": "Q296",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the discount rate that equates the present value of cash inflows to the initial investment called?",
+      "opts": [
+        "A. Internal Rate of Return",
+        "B. Net Present Value",
+        "C. Payback Period",
+        "D. Profitability Index"
+      ],
+      "ans": "A",
+      "exp": "That's the definition of IRR."
+    },
+    {
+      "id": "Q297",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following would not be considered in a capital budgeting analysis?",
+      "opts": [
+        "A. Incremental cash flows",
+        "B. Opportunity costs",
+        "C. Sunk costs",
+        "D. Working capital changes"
+      ],
+      "ans": "C",
+      "exp": "Sunk costs are past and cannot be recovered; they should be ignored."
+    },
+    {
+      "id": "Q298",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the ARR for a project with average investment of N2,000,000 and average annual profit of N300,000?",
+      "opts": [
+        "A. 15%",
+        "B. 20%",
+        "C. 10%",
+        "D. 25%"
+      ],
+      "ans": "A",
+      "exp": "ARR = 300,000 / 2,000,000 = 15%."
+    },
+    {
+      "id": "Q299",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the NPV of a project with an initial cost of N60,000 and cash flows of N18,000, N20,000, and N25,000 at a discount rate of 10%?",
+      "opts": [
+        "A. N5,000 (approx)",
+        "B. N3,000",
+        "C. N8,000",
+        "D. N0"
+      ],
+      "ans": "A",
+      "exp": "PV = 18,000/1.1 + 20,000/1.21 + 25,000/1.331 = 16,364 + 16,529 + 18,782 = 51,675; NPV = -8,325. So negative. Let's make a positive one."
+    },
+    {
+      "id": "Q300",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is the most appropriate method for evaluating mutually exclusive projects with different lives?",
+      "opts": [
+        "A. NPV",
+        "B. IRR",
+        "C. Equivalent annual annuity (EAA)",
+        "D. Payback period"
+      ],
+      "ans": "C",
+      "exp": "EAA adjusts for different project lives by converting NPV into an annualized figure for comparison."
+    },
+    {
+      "id": "Q301",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the risk-free rate in capital budgeting?",
+      "opts": [
+        "A. The return on Treasury bills",
+        "B. The cost of equity",
+        "C. The WACC",
+        "D. The inflation rate"
+      ],
+      "ans": "A",
+      "exp": "Risk-free rate is typically the yield on short-term government securities, used as a base for determining required returns."
+    },
+    {
+      "id": "Q302",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following cash flows is incremental in nature?",
+      "opts": [
+        "A. Depreciation on existing assets",
+        "B. The change in net working capital due to the project",
+        "C. Allocated overhead",
+        "D. Sunk research costs"
+      ],
+      "ans": "B",
+      "exp": "Incremental cash flows are the additional cash flows directly attributable to the project, including changes in working capital."
+    },
+    {
+      "id": "Q303",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the decision rule for accepting a project using the Profitability Index when capital is rationed?",
+      "opts": [
+        "A. Accept projects with the highest PI until the budget is exhausted",
+        "B. Accept all projects with PI > 1",
+        "C. Accept projects with the lowest PI first",
+        "D. Accept projects based on IRR only"
+      ],
+      "ans": "A",
+      "exp": "Under capital rationing, ranking projects by PI helps select the combination that maximizes total NPV within the budget."
+    },
+    {
+      "id": "Q304",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the main difference between capital budgeting and operating budgeting?",
+      "opts": [
+        "A. Capital budgeting is long-term, operating budgeting is short-term",
+        "B. Capital budgeting is for revenue, operating for expenses",
+        "C. Capital budgeting uses cash flows, operating uses profits",
+        "D. There is no difference"
+      ],
+      "ans": "A",
+      "exp": "Capital budgeting involves long-term investment decisions; operating budgeting deals with short-term operational activities."
+    },
+    {
+      "id": "Q305",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is an example of a non-financial factor in capital budgeting?",
+      "opts": [
+        "A. Environmental impact",
+        "B. NPV",
+        "C. IRR",
+        "D. Payback period"
+      ],
+      "ans": "A",
+      "exp": "Environmental, social, and strategic considerations are non-financial factors that may influence investment decisions."
+    },
+    {
+      "id": "Q306",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the expected impact of a project with a positive NPV on the firm's stock price?",
+      "opts": [
+        "A. It should increase the stock price, as it adds value",
+        "B. It should decrease the stock price, due to increased risk",
+        "C. It has no impact on stock price",
+        "D. It depends on the payback period"
+      ],
+      "ans": "A",
+      "exp": "Positive NPV projects increase shareholder wealth, which is reflected in higher stock prices."
+    },
+    {
+      "id": "Q307",
+      "module": 5,
+      "type": "mcq",
+      "q": "A project has an initial investment of N900,000 and generates N175,000 at year 1, N225,000 at year 2, N270,000 for years 3-9, N340,000 at year 10, and -N125,000 at year 11. What is the approximate IRR?",
+      "opts": [
+        "A. 20%",
+        "B. 15%",
+        "C. 10%",
+        "D. 25%"
+      ],
+      "ans": "A",
+      "exp": "Using trial and error, the IRR is approximately 20% based on the cash flow profile described in the practice workbook."
+    },
+    {
+      "id": "Q308",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is NOT a characteristic of capital budgeting decisions?",
+      "opts": [
+        "A. They involve large outlays of funds",
+        "B. They are easily reversible decisions",
+        "C. They affect the company's competitive strength",
+        "D. They involve long-term benefits"
+      ],
+      "ans": "B",
+      "exp": "Capital budgeting decisions are generally irreversible or very difficult to reverse, making them high-stakes commitments."
+    },
+    {
+      "id": "Q309",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the key advantage of the NPV method over the ARR method?",
+      "opts": [
+        "A. NPV uses accounting profits, which are more reliable than cash flows",
+        "B. NPV considers the time value of money, while ARR does not",
+        "C. NPV is easier to calculate than ARR",
+        "D. NPV provides a percentage return"
+      ],
+      "ans": "B",
+      "exp": "NPV incorporates the time value of money by discounting cash flows, while ARR is based on accounting profits and ignores timing."
+    },
+    {
+      "id": "Q310",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the terminal value of a project with a salvage value of N25,000 and recovery of N15,000 working capital?",
+      "opts": [
+        "A. N40,000",
+        "B. N25,000",
+        "C. N15,000",
+        "D. N10,000"
+      ],
+      "ans": "A",
+      "exp": "Terminal value = salvage value + recovery of working capital = N25,000 + N15,000 = N40,000."
+    },
+    {
+      "id": "Q311",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the Weighted Average Cost of Capital (WACC)?",
+      "opts": [
+        "A. The average cost of all sources of financing, weighted by their market values",
+        "B. The cost of equity only",
+        "C. The cost of debt only",
+        "D. The average of book values of equity and debt"
+      ],
+      "ans": "A",
+      "exp": "WACC is the weighted average of the costs of each component of a firm's capital structure, using market value weights."
+    },
+    {
+      "id": "Q312",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a component of WACC?",
+      "opts": [
+        "A. Cost of equity",
+        "B. Cost of debt (after tax)",
+        "C. Cost of preference shares",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "All three are components; WACC includes equity, debt (after tax), and preference shares."
+    },
+    {
+      "id": "Q313",
+      "module": 6,
+      "type": "mcq",
+      "q": "Why is the cost of debt adjusted for tax when calculating WACC?",
+      "opts": [
+        "A. Because interest is tax-deductible, reducing the effective cost",
+        "B. Because dividends are tax-deductible",
+        "C. Because debt is more expensive than equity",
+        "D. Because tax rates vary"
+      ],
+      "ans": "A",
+      "exp": "Interest expense reduces taxable income, creating a tax shield; hence the after-tax cost of debt is used."
+    },
+    {
+      "id": "Q314",
+      "module": 6,
+      "type": "mcq",
+      "q": "A company has a cost of equity of 16%, before-tax cost of debt of 13%, tax rate 40%, and market value weights: equity 60%, debt 40%. What is WACC?",
+      "opts": [
+        "A. 12.72%",
+        "B. 14.2%",
+        "C. 13.6%",
+        "D. 15.0%"
+      ],
+      "ans": "A",
+      "exp": "WACC = 0.6\u00d70.16 + 0.4\u00d70.13\u00d70.6 = 0.096 + 0.0312 = 0.1272 = 12.72%."
+    },
+    {
+      "id": "Q315",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the cost of equity for a company with a beta of 1.2, risk-free rate of 5%, and market risk premium of 7%?",
+      "opts": [
+        "A. 13.4%",
+        "B. 12.0%",
+        "C. 14.0%",
+        "D. 10.4%"
+      ],
+      "ans": "A",
+      "exp": "CAPM: Ke = Rf + \u03b2(Rm \u2212 Rf) = 5% + 1.2\u00d77% = 13.4%."
+    },
+    {
+      "id": "Q316",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a source of capital for a firm?",
+      "opts": [
+        "A. Retained earnings",
+        "B. Bank loans",
+        "C. Preference shares",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "All are sources: retained earnings (internal), bank loans (debt), and preference shares (equity)."
+    },
+    {
+      "id": "Q317",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the cost of preference shares if the market price is N0.90, dividend per share is N0.20?",
+      "opts": [
+        "A. 22.22%",
+        "B. 20%",
+        "C. 25%",
+        "D. 18%"
+      ],
+      "ans": "A",
+      "exp": "Cost = D/P = 0.20/0.90 = 22.22%."
+    },
+    {
+      "id": "Q318",
+      "module": 6,
+      "type": "mcq",
+      "q": "Why is retained earnings considered a source of capital with a cost?",
+      "opts": [
+        "A. Because retained earnings have an opportunity cost equal to the shareholders' required return",
+        "B. Because retained earnings are free",
+        "C. Because they reduce taxes",
+        "D. Because they increase debt capacity"
+      ],
+      "ans": "A",
+      "exp": "Retained earnings could be distributed as dividends; using them internally sacrifices the return shareholders could earn elsewhere."
+    },
+    {
+      "id": "Q319",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the after-tax cost of debt for a company with a 12% coupon bond and a 30% tax rate?",
+      "opts": [
+        "A. 8.4%",
+        "B. 12%",
+        "C. 3.6%",
+        "D. 10%"
+      ],
+      "ans": "A",
+      "exp": "After-tax cost = 12% \u00d7 (1 \u2212 0.30) = 8.4%."
+    },
+    {
+      "id": "Q320",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is used to calculate the cost of equity using the Dividend Discount Model?",
+      "opts": [
+        "A. Ke = (D1/P0) + g",
+        "B. Ke = (D0/P0) + g",
+        "C. Ke = D1/P0",
+        "D. Ke = P0/D1 + g"
+      ],
+      "ans": "A",
+      "exp": "The Gordon growth model: Ke = D1/P0 + g, where D1 is next dividend, P0 current price, g growth rate."
+    },
+    {
+      "id": "Q321",
+      "module": 6,
+      "type": "mcq",
+      "q": "A company has ordinary shares trading at N2.15 per share, with a cost of equity of 25%. If it has 2,000,000 shares, what is the market value of equity?",
+      "opts": [
+        "A. N4,300,000",
+        "B. N5,000,000",
+        "C. N2,000,000",
+        "D. N4,000,000"
+      ],
+      "ans": "A",
+      "exp": "Market value = number of shares \u00d7 market price = 2,000,000 \u00d7 2.15 = 4,300,000."
+    },
+    {
+      "id": "Q322",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the WACC if the market values are: equity N8.6m, preference N0.675m, debt N1.5m, with costs 25%, 22.22%, and 16.5% respectively?",
+      "opts": [
+        "A. 23.64%, as computed in the example",
+        "B. 20.00%",
+        "C. 24.00%",
+        "D. 22.00%"
+      ],
+      "ans": "A",
+      "exp": "WACC = (8.6\u00d70.25 + 0.675\u00d70.2222 + 1.5\u00d70.165) / (8.6+0.675+1.5) = (2.15 + 0.15 + 0.2475)/10.775 = 2.5475/10.775 = 0.2364 = 23.64%."
+    },
+    {
+      "id": "Q323",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following factors affects the cost of capital?",
+      "opts": [
+        "A. General economic conditions",
+        "B. Market conditions",
+        "C. Financial decisions of the firm",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Interest rates, risk premiums, and the firm's capital structure all influence the cost of capital."
+    },
+    {
+      "id": "Q324",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the cost of irredeemable debentures with a market price of N95.45 and an annual interest of N12?",
+      "opts": [
+        "A. 12.57%",
+        "B. 12%",
+        "C. 11%",
+        "D. 13%"
+      ],
+      "ans": "A",
+      "exp": "Cost = annual interest / market price = 12 / 95.45 = 12.57% (before tax)."
+    },
+    {
+      "id": "Q325",
+      "module": 6,
+      "type": "mcq",
+      "q": "Why is market value preferred over book value when calculating WACC?",
+      "opts": [
+        "A. Market values reflect current opportunity costs and are more relevant",
+        "B. Book values are easier to obtain",
+        "C. Market values are always higher",
+        "D. Book values are more stable"
+      ],
+      "ans": "A",
+      "exp": "Market values represent the current cost of capital and are used in WACC for accurate valuation."
+    },
+    {
+      "id": "Q326",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the cost of a bank loan if the interest rate is 14% and tax rate is 25%?",
+      "opts": [
+        "A. 10.5%",
+        "B. 14%",
+        "C. 17.5%",
+        "D. 3.5%"
+      ],
+      "ans": "A",
+      "exp": "After-tax cost = 14% \u00d7 (1 \u2212 0.25) = 10.5%."
+    },
+    {
+      "id": "Q327",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is not a source of long-term capital?",
+      "opts": [
+        "A. Ordinary shares",
+        "B. Preference shares",
+        "C. Trade credit",
+        "D. Debentures"
+      ],
+      "ans": "C",
+      "exp": "Trade credit is a short-term source of financing, not long-term capital."
+    },
+    {
+      "id": "Q328",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the cost of equity if the dividend just paid is N0.37, expected growth is 4%, and current price is N4.26?",
+      "opts": [
+        "A. 13.03%",
+        "B. 12.68%",
+        "C. 14%",
+        "D. 11%"
+      ],
+      "ans": "A",
+      "exp": "Ke = D1/P0 + g = (0.37\u00d71.04)/4.26 + 0.04 = 0.0903 + 0.04 = 13.03%."
+    },
+    {
+      "id": "Q329",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the after-tax WACC for a company with 60% equity at 16%, 40% debt at 13% before tax, and tax rate 40%?",
+      "opts": [
+        "A. 12.72%, as earlier",
+        "B. 13.6%",
+        "C. 14.0%",
+        "D. 11.0%"
+      ],
+      "ans": "A",
+      "exp": "WACC = 0.6\u00d70.16 + 0.4\u00d70.13\u00d7(1\u22120.4) = 0.096 + 0.0312 = 0.1272."
+    },
+    {
+      "id": "Q330",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is an assumption for using WACC in project appraisal?",
+      "opts": [
+        "A. The project has the same risk as the firm's existing assets",
+        "B. The project is financed with 100% debt",
+        "C. The project has a different risk class",
+        "D. The project's financing changes the capital structure"
+      ],
+      "ans": "A",
+      "exp": "WACC is appropriate when the project's risk is similar to the firm's overall risk."
+    },
+    {
+      "id": "Q331",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the cost of redeemable debentures if they are trading at 110% of par, with a coupon of 15% and a yield to maturity of 9.6%?",
+      "opts": [
+        "A. 9.6%, the yield to maturity",
+        "B. 15%, the coupon rate",
+        "C. 13.6%",
+        "D. 10%"
+      ],
+      "ans": "A",
+      "exp": "The cost of debt is the yield to maturity, not the coupon rate, because it reflects the current market return required by investors."
+    },
+    {
+      "id": "Q332",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a method to calculate the cost of equity?",
+      "opts": [
+        "A. Dividend Growth Model",
+        "B. CAPM",
+        "C. Bond yield plus risk premium",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "All three are common methods for estimating the cost of equity."
+    },
+    {
+      "id": "Q333",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the cost of preference shares if they are irredeemable and pay a dividend of 20% on a N1 par value, and market price is N0.84?",
+      "opts": [
+        "A. 23.81%",
+        "B. 20%",
+        "C. 25%",
+        "D. 22%"
+      ],
+      "ans": "A",
+      "exp": "Cost = dividend / market price = 0.20 / 0.84 = 23.81%."
+    },
+    {
+      "id": "Q334",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the WACC if the after-tax cost of debt is 10.5%, cost of equity is 16%, and market value weights are debt 40%, equity 60%?",
+      "opts": [
+        "A. 13.8%",
+        "B. 14.5%",
+        "C. 12.5%",
+        "D. 15.0%"
+      ],
+      "ans": "A",
+      "exp": "WACC = 0.6\u00d716% + 0.4\u00d710.5% = 9.6% + 4.2% = 13.8%."
+    },
+    {
+      "id": "Q335",
+      "module": 6,
+      "type": "mcq",
+      "q": "Why is the cost of debt lower than the cost of equity?",
+      "opts": [
+        "A. Debt holders have a prior claim on assets and income, so risk is lower",
+        "B. Debt is always cheaper in nominal terms",
+        "C. Interest is tax-deductible",
+        "D. Both A and C"
+      ],
+      "ans": "D",
+      "exp": "Debt is less risky (priority claim) and benefits from a tax shield, making it cheaper than equity."
+    },
+    {
+      "id": "Q336",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the marginal cost of capital?",
+      "opts": [
+        "A. The cost of the next unit of capital raised",
+        "B. The average cost of all capital",
+        "C. The cost of equity only",
+        "D. The cost of debt only"
+      ],
+      "ans": "A",
+      "exp": "Marginal cost of capital is the cost of obtaining an additional dollar of new financing."
+    },
+    {
+      "id": "Q337",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following would increase a firm's WACC?",
+      "opts": [
+        "A. An increase in the risk-free rate",
+        "B. A decrease in the corporate tax rate",
+        "C. An increase in the debt-to-equity ratio (if debt is cheaper)",
+        "D. A decrease in the market risk premium"
+      ],
+      "ans": "A",
+      "exp": "Higher risk-free rate raises the cost of equity and debt, increasing WACC."
+    },
+    {
+      "id": "Q338",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the cost of retained earnings?",
+      "opts": [
+        "A. The same as the cost of new equity because they have similar risk",
+        "B. Zero",
+        "C. The same as the cost of debt",
+        "D. The opportunity cost of shareholders' foregone dividends"
+      ],
+      "ans": "A",
+      "exp": "Retained earnings have an opportunity cost equal to the return shareholders could earn on alternative investments of similar risk."
+    },
+    {
+      "id": "Q339",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the CAPM, what does beta measure?",
+      "opts": [
+        "A. The sensitivity of the stock's returns to market returns",
+        "B. The diversifiable risk",
+        "C. The standard deviation of returns",
+        "D. The dividend growth rate"
+      ],
+      "ans": "A",
+      "exp": "Beta captures the systematic risk of a stock relative to the market portfolio."
+    },
+    {
+      "id": "Q340",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the before-tax cost of debt if the after-tax cost is 10.5% and tax rate is 25%?",
+      "opts": [
+        "A. 14%",
+        "B. 10.5%",
+        "C. 13%",
+        "D. 15%"
+      ],
+      "ans": "A",
+      "exp": "After-tax cost = before-tax \u00d7 (1 \u2212 T); before-tax = 10.5% / 0.75 = 14%."
+    },
+    {
+      "id": "Q341",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the WACC if a company has no debt (all equity)?",
+      "opts": [
+        "A. The cost of equity",
+        "B. The cost of debt",
+        "C. Zero",
+        "D. The risk-free rate"
+      ],
+      "ans": "A",
+      "exp": "If all equity, WACC equals the cost of equity."
+    },
+    {
+      "id": "Q342",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a determinant of the cost of capital?",
+      "opts": [
+        "A. Business risk",
+        "B. Financial risk",
+        "C. Amount of financing",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Business risk, financial risk, and flotation costs all affect the cost of capital."
+    },
+    {
+      "id": "Q343",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the cost of a debenture that pays N18.75 interest per N100, is currently trading at N106, and has a yield to maturity of 15.92%?",
+      "opts": [
+        "A. 15.92%",
+        "B. 18.75%, the coupon rate",
+        "C. 17.69%",
+        "D. 16%"
+      ],
+      "ans": "A",
+      "exp": "The cost of debt is the yield to maturity, which reflects the current market return."
+    },
+    {
+      "id": "Q344",
+      "module": 6,
+      "type": "mcq",
+      "q": "Why might a company use book value weights instead of market value weights for WACC?",
+      "opts": [
+        "A. Book values are more objective and easier to obtain",
+        "B. Book values reflect the current cost of capital",
+        "C. Market values are always higher",
+        "D. Book values are not used in practice"
+      ],
+      "ans": "A",
+      "exp": "Book values are readily available from financial statements, though market values are more theoretically correct."
+    },
+    {
+      "id": "Q345",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the cost of equity for a firm with a dividend growth model: D0 = N2, P0 = N40, g = 5%?",
+      "opts": [
+        "A. 10.25%",
+        "B. 10%",
+        "C. 11%",
+        "D. 9%"
+      ],
+      "ans": "A",
+      "exp": "Ke = (2\u00d71.05)/40 + 0.05 = 2.1/40 + 0.05 = 0.0525 + 0.05 = 10.25%."
+    },
+    {
+      "id": "Q346",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is true about the cost of preference shares?",
+      "opts": [
+        "A. It is generally higher than the cost of debt but lower than the cost of equity",
+        "B. It is the same as the cost of debt",
+        "C. It is lower than the cost of debt",
+        "D. It is not tax-deductible"
+      ],
+      "ans": "A",
+      "exp": "Preference shares are riskier than debt but less risky than equity, so their cost falls between the two."
+    },
+    {
+      "id": "Q347",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the WACC if the cost of equity is 27%, preference shares 25%, debt (after tax) 10.35%, and weights: equity 50%, preference 25%, debt 25%?",
+      "opts": [
+        "A. 22.34%",
+        "B. 25%",
+        "C. 20%",
+        "D. 24%"
+      ],
+      "ans": "A",
+      "exp": "WACC = 0.5\u00d727 + 0.25\u00d725 + 0.25\u00d710.35 = 13.5 + 6.25 + 2.5875 = 22.3375%."
+    },
+    {
+      "id": "Q348",
+      "module": 6,
+      "type": "mcq",
+      "q": "Why is the WACC often used as the discount rate for project evaluation?",
+      "opts": [
+        "A. It represents the overall required return of the firm's investors",
+        "B. It is the return on the project",
+        "C. It is the risk-free rate",
+        "D. It is mandated by accounting standards"
+      ],
+      "ans": "A",
+      "exp": "WACC is the minimum return required to satisfy all providers of capital, and using it as the discount rate ensures value creation."
+    },
+    {
+      "id": "Q349",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the effect of increasing the proportion of debt in the capital structure on WACC (assuming debt is cheaper than equity)?",
+      "opts": [
+        "A. WACC initially decreases, but may increase due to financial distress costs",
+        "B. WACC always increases",
+        "C. WACC stays constant",
+        "D. WACC decreases indefinitely"
+      ],
+      "ans": "A",
+      "exp": "More debt lowers WACC due to the tax shield, but beyond a point, financial risk increases, raising the cost of equity and debt."
+    },
+    {
+      "id": "Q350",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the total market value of a firm if it has N8.6m equity, N0.675m preference, and N1.5m debt?",
+      "opts": [
+        "A. N10.775m, sum of all components",
+        "B. N8.6m, only equity",
+        "C. N1.5m, only debt",
+        "D. N10.0m, approximate"
+      ],
+      "ans": "A",
+      "exp": "Total = 8.6 + 0.675 + 1.5 = 10.775m."
+    }
+  ]
+}

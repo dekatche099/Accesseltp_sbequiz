@@ -1,0 +1,5229 @@
+{
+  "meta": {
+    "id": "banking-regulation-2023",
+    "title": "Banking Regulation \u2013 2023",
+    "description": "370 MCQs covering Nigerian banking regulation, supervision, and CAMELS",
+    "category": "",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1: Introduction to Banking Regulation"
+    },
+    {
+      "id": 2,
+      "title": "Module 2: Fundamentals of Banking Regulation"
+    },
+    {
+      "id": 3,
+      "title": "Module 3: Banking Regulation and Supervision"
+    },
+    {
+      "id": 4,
+      "title": "Module 4: CAMELS and Supervisory Roles"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best describes banking regulation in Nigeria?",
+      "opts": [
+        "A. Laws enacted by the National Assembly and subsidiary legislations by the CBN and NDIC.",
+        "B. Only the CBN Act and BOFIA, with no subsidiary rules.",
+        "C. Guidelines issued exclusively by the Federal Ministry of Finance.",
+        "D. International treaties that automatically apply without local enactment."
+      ],
+      "ans": "A",
+      "exp": "Banking regulation comprises laws by the National Assembly and subsidiary legislations (regulations, guidelines, directives) by the CBN and NDIC (Trainee Manual, p.2)."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "The period from 1894 to 1952 in Nigerian banking history is described as:",
+      "opts": [
+        "A. The era of indigenisation.",
+        "B. The era of free banking.",
+        "C. The era of consolidation.",
+        "D. The era of liberalisation."
+      ],
+      "ans": "B",
+      "exp": "1894\u20131952 is referred to as the era of free banking due to total absence of regulation (Trainee Manual, p.2)."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "What major regulatory development occurred in 1952 regarding Nigerian banks?",
+      "opts": [
+        "A. The Central Bank of Nigeria was established.",
+        "B. The Banking Ordinance introduced licensing and minimum paid-up capital.",
+        "C. The Nigerian Enterprises Promotion Act compelled indigenisation.",
+        "D. The Banking Act of 1968 was first enacted."
+      ],
+      "ans": "B",
+      "exp": "The Banking Ordinance of 1952 introduced licensing and minimum paid-up capital requirements, marking the start of regulation (p.2)."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Central Bank of Nigeria Act was enacted in 1958, but it commenced operations in:",
+      "opts": [
+        "A. 1958.",
+        "B. 1959.",
+        "C. 1960.",
+        "D. 1962."
+      ],
+      "ans": "B",
+      "exp": "The CBN Act was passed in 1958 but operations began in 1959 (p.2)."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Nigerian Enterprises Promotion Act (Decree) of 1972 compelled:",
+      "opts": [
+        "A. The participation of Nigerians and the Federal Government in foreign banks' equities.",
+        "B. The consolidation of all banks into one national bank.",
+        "C. The establishment of the Nigeria Deposit Insurance Corporation.",
+        "D. The adoption of the Basel Accord."
+      ],
+      "ans": "A",
+      "exp": "The 1972 Act compelled participation of Nigerians and the Federal Government in acquiring controlling equities of foreign banks (p.2)."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "What was the main outcome of the liberalisation era (1984\u20131992)?",
+      "opts": [
+        "A. Reduction in the number of banks from 89 to 25.",
+        "B. The number of licensed banks rose from 24 to 120 by 1992.",
+        "C. The establishment of the Financial Services Regulation Coordinating Committee.",
+        "D. The introduction of the Prudential Guidelines."
+      ],
+      "ans": "B",
+      "exp": "Liberalisation removed stringent rules, and by end of 1992, licensed banks increased to 120 (p.3)."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Nigeria Deposit Insurance Corporation (NDIC) was established in:",
+      "opts": [
+        "A. 1988.",
+        "B. 1989.",
+        "C. 1991.",
+        "D. 1994."
+      ],
+      "ans": "A",
+      "exp": "NDIC was established in 1988 to insure deposit liabilities and handle bank failures; commenced operations in 1989 (p.3)."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Banks and Other Financial Institutions Act (BOFIA) was first enacted in:",
+      "opts": [
+        "A. 1968.",
+        "B. 1991.",
+        "C. 2007.",
+        "D. 2020."
+      ],
+      "ans": "B",
+      "exp": "BOFIA was enacted in 1991 to strengthen regulatory and supervisory structures (p.3)."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Banking Consolidation program initiated in 2004 raised the minimum capitalisation of banks from \u20a64 billion to:",
+      "opts": [
+        "A. \u20a610 billion.",
+        "B. \u20a615 billion.",
+        "C. \u20a625 billion.",
+        "D. \u20a650 billion."
+      ],
+      "ans": "C",
+      "exp": "The consolidation program raised minimum capital from \u20a64bn to \u20a625bn; by Dec 2006, 25 banks emerged from 89 (p.3)."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which regulatory agency has the primary objective of ensuring monetary and price stability in Nigeria?",
+      "opts": [
+        "A. Securities and Exchange Commission.",
+        "B. Nigeria Deposit Insurance Corporation.",
+        "C. Central Bank of Nigeria.",
+        "D. Federal Ministry of Finance."
+      ],
+      "ans": "C",
+      "exp": "CBN's principal objectives include ensuring monetary and price stability (p.4)."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT a function of the Central Bank of Nigeria as stated in the CBN Act?",
+      "opts": [
+        "A. Issuing legal tender currency.",
+        "B. Maintaining external reserves.",
+        "C. Insuring deposit liabilities of banks.",
+        "D. Acting as banker to the Federal Government."
+      ],
+      "ans": "C",
+      "exp": "Deposit insurance is a function of NDIC, not CBN. CBN issues currency, maintains reserves, advises the government, and acts as banker to other banks (p.4)."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Nigeria Deposit Insurance Corporation (NDIC) complements the CBN by:",
+      "opts": [
+        "A. Conducting on-site supervision of banks exclusively.",
+        "B. Insuring customers' deposits and handling bank failure resolutions.",
+        "C. Setting monetary policy and interest rates.",
+        "D. Regulating the capital market."
+      ],
+      "ans": "B",
+      "exp": "NDIC insures deposits and shares supervision with CBN; it also handles liquidation of failed banks (p.5)."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "Under Section 2 of the NDIC Act 2006, which of the following is a function of the NDIC?",
+      "opts": [
+        "A. Issuing banking licences.",
+        "B. Conducting foreign exchange examinations.",
+        "C. Structuring liquidation of insured institutions as a last resort.",
+        "D. Approving mergers and acquisitions."
+      ],
+      "ans": "C",
+      "exp": "NDIC functions include insuring deposits, assisting monetary authorities, supervising banks, and structuring liquidation when licences are revoked (p.5)."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Federal Ministry of Finance (FMF) primarily handles:",
+      "opts": [
+        "A. Monetary policy and price stability.",
+        "B. Fiscal policy, tax revenue, and supervision of NDIC, SEC, NAICOM, etc.",
+        "C. Deposit insurance and bank resolution.",
+        "D. Anti-money laundering enforcement."
+      ],
+      "ans": "B",
+      "exp": "FMF is in charge of fiscal policy and oversees NDIC, SEC, NAICOM, Customs, FIRS, etc. (p.5)."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which regulatory authority is the apex body for the Nigerian capital market?",
+      "opts": [
+        "A. Central Bank of Nigeria.",
+        "B. Nigeria Deposit Insurance Corporation.",
+        "C. Securities and Exchange Commission.",
+        "D. National Insurance Commission."
+      ],
+      "ans": "C",
+      "exp": "SEC is the apex regulatory authority for the capital market, registering securities, exchanges, issuing houses, and stockbroking firms (p.5)."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a function of the Securities and Exchange Commission (SEC)?",
+      "opts": [
+        "A. Approving mergers and acquisitions.",
+        "B. Issuing currency notes and coins.",
+        "C. Setting interest rates for banks.",
+        "D. Insuring depositors' funds."
+      ],
+      "ans": "A",
+      "exp": "SEC approves and regulates mergers and acquisitions, authorises unit trusts, and monitors the capital market (p.5-6)."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Economic and Financial Crimes Commission (EFCC) is empowered to investigate all financial crimes, including:",
+      "opts": [
+        "A. Counterfeiting and advance fee fraud.",
+        "B. Tax evasion and customs fraud.",
+        "C. Environmental crimes.",
+        "D. Labour disputes."
+      ],
+      "ans": "A",
+      "exp": "Section 6 of EFCC Act lists advance fee fraud, money laundering, counterfeiting, computer credit card fraud, contract scam, etc. (p.6)."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "The National Drug Law Enforcement Agency (NDLEA) was established in 1995 mainly to:",
+      "opts": [
+        "A. Regulate the banking industry.",
+        "B. Combat money laundering arising from drug trafficking.",
+        "C. Issue banking licences to financial institutions.",
+        "D. Supervise capital market operators."
+      ],
+      "ans": "B",
+      "exp": "NDLEA's main objective is to interdict, investigate, and prosecute money laundering from illicit drug dealings (p.6)."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT a member of the Financial Services Regulation Coordinating Committee (FSRCC)?",
+      "opts": [
+        "A. Central Bank of Nigeria.",
+        "B. Securities and Exchange Commission.",
+        "C. Economic and Financial Crimes Commission.",
+        "D. National Insurance Commission."
+      ],
+      "ans": "C",
+      "exp": "FSRCC members: CBN (Chairman), SEC, NAICOM, CAC, FMF, NDIC, PENCOM. EFCC is not a member (p.7)."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "The main objective of the Financial Services Regulation Coordinating Committee (FSRCC) is to:",
+      "opts": [
+        "A. Enforce anti-money laundering laws.",
+        "B. Coordinate supervision and reduce arbitrage among regulatory authorities.",
+        "C. Issue banking licences to new banks.",
+        "D. Set interest rates for bank loans."
+      ],
+      "ans": "B",
+      "exp": "FSRCC aims for coordinated supervision, reducing arbitrage, sharing information, and promoting sound practices (p.7)."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Basel Committee on Banking Supervision was established in 1974 after the failure of:",
+      "opts": [
+        "A. Bank of Credit and Commerce International.",
+        "B. Bank Herstatt.",
+        "C. Barings Bank.",
+        "D. Lehman Brothers."
+      ],
+      "ans": "B",
+      "exp": "The Herstatt Bank liquidation on June 26, 1974, due to time-zone settlement failure, prompted the establishment of the Basel Committee (p.8)."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is true about the Basel Committee on Banking Supervision?",
+      "opts": [
+        "A. It has supranational supervisory authority over all member countries.",
+        "B. Its conclusions have legal force in all G10 countries.",
+        "C. It provides a forum for cooperation and does not possess formal legal authority.",
+        "D. It was established by the United Nations."
+      ],
+      "ans": "C",
+      "exp": "The Committee does not possess formal supranational authority; its conclusions were never intended to have legal force (p.8)."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Basel Accord of 1988 (Basel I) primarily focused on:",
+      "opts": [
+        "A. Liquidity requirements.",
+        "B. Capital adequacy.",
+        "C. Market discipline.",
+        "D. Supervisory review."
+      ],
+      "ans": "B",
+      "exp": "Basel I focused on capital adequacy and minimum capital requirements (p.8)."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a pillar of Basel II?",
+      "opts": [
+        "A. Minimum capital requirements.",
+        "B. Supervisory review.",
+        "C. Market discipline.",
+        "D. All of the above."
+      ],
+      "ans": "D",
+      "exp": "Basel II has three pillars: minimum capital requirements, supervisory review, and market discipline (p.8-9)."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "Under Pillar III of Basel II, banks are required to:",
+      "opts": [
+        "A. Disclose financial and other information to allow market participants to assess capital adequacy.",
+        "B. Maintain a minimum liquidity coverage ratio.",
+        "C. Submit to on-site examinations twice a year.",
+        "D. Obtain approval for all new products."
+      ],
+      "ans": "A",
+      "exp": "Pillar III aims to complement capital requirements and supervisory review with disclosure requirements for market discipline (p.9)."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "type": "mcq",
+      "q": "Basel III placed a new emphasis on:",
+      "opts": [
+        "A. Credit risk and operational risk.",
+        "B. Liquidity standards and risk-taking limits.",
+        "C. Market risk and interest rate risk.",
+        "D. Corporate governance and board composition."
+      ],
+      "ans": "B",
+      "exp": "Basel III, after the 2007-2009 crisis, emphasised liquidity standards to prevent lack of ready cash (p.9)."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a 'Core Principle for Effective Banking Supervision' issued by the Basel Committee?",
+      "opts": [
+        "A. All banks must have a minimum of 25% capital adequacy.",
+        "B. Supervisors must have the power to revoke licences and take corrective actions.",
+        "C. Banks are prohibited from lending to directors.",
+        "D. All banks must be owned by the government."
+      ],
+      "ans": "B",
+      "exp": "The Core Principles include supervisory powers such as licence revocation and corrective actions. The others are not principles (p.10)."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "type": "mcq",
+      "q": "The International Monetary Fund (IMF) and the World Bank were created in 1944 at:",
+      "opts": [
+        "A. Paris, France.",
+        "B. Bretton Woods, New Hampshire.",
+        "C. Washington D.C.",
+        "D. Geneva, Switzerland."
+      ],
+      "ans": "B",
+      "exp": "Both institutions were established at the Bretton Woods conference in July 1944 (p.10)."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best distinguishes the IMF from the World Bank?",
+      "opts": [
+        "A. The IMF focuses on long-term development, while the World Bank focuses on macroeconomic stability.",
+        "B. The IMF focuses on macroeconomic issues, while the World Bank concentrates on long-term economic development and poverty reduction.",
+        "C. The IMF provides loans, while the World Bank only offers grants.",
+        "D. The IMF is a UN agency, but the World Bank is independent."
+      ],
+      "ans": "B",
+      "exp": "IMF focuses on macroeconomics, World Bank on development and poverty reduction (p.10)."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT a reason why banks are heavily regulated?",
+      "opts": [
+        "A. To prevent systemic financial crises.",
+        "B. To safeguard individual deposits and sustain public trust.",
+        "C. To maximise bank profitability and shareholder returns.",
+        "D. To prevent money laundering and other financial crimes."
+      ],
+      "ans": "C",
+      "exp": "Regulation is not designed to maximise profits; it aims to protect depositors, ensure stability, and combat crime (p.3)."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a direct regulator of banks in Nigeria?",
+      "opts": [
+        "A. Federal Ministry of Finance.",
+        "B. Securities and Exchange Commission.",
+        "C. Central Bank of Nigeria.",
+        "D. Economic and Financial Crimes Commission."
+      ],
+      "ans": "C",
+      "exp": "CBN is a direct regulator; FMF, SEC, EFCC are indirect regulators (p.4-6)."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "type": "mcq",
+      "q": "The CBN has exclusive supervisory authority over which of the following financial institutions?",
+      "opts": [
+        "A. Deposit money banks (in collaboration with NDIC).",
+        "B. Finance companies and Bureau de Change.",
+        "C. Insurance companies.",
+        "D. Pension fund administrators."
+      ],
+      "ans": "B",
+      "exp": "CBN exclusively supervises finance companies, Bureaux de change, mortgage institutions, and discount houses (p.4)."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "type": "mcq",
+      "q": "The NDIC's deposit insurance covers:",
+      "opts": [
+        "A. All deposit liabilities of licensed banks and such other financial institutions.",
+        "B. Only deposits of commercial banks up to \u20a6500,000.",
+        "C. Only savings accounts, not current accounts.",
+        "D. Only deposits in foreign currency."
+      ],
+      "ans": "A",
+      "exp": "Section 2 of NDIC Act states it insures all deposit liabilities of licensed banks and other financial institutions (p.5)."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which indirect regulator is responsible for registering and regulating stock exchanges?",
+      "opts": [
+        "A. Central Bank of Nigeria.",
+        "B. Nigeria Deposit Insurance Corporation.",
+        "C. Securities and Exchange Commission.",
+        "D. National Insurance Commission."
+      ],
+      "ans": "C",
+      "exp": "SEC registers and regulates stock exchanges, over-the-counter transactions, and other investment exchanges (p.5)."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "type": "mcq",
+      "q": "The EFCC was established to coordinate and enforce all economic and financial crimes laws. This is stated in:",
+      "opts": [
+        "A. Section 2 of the NDIC Act.",
+        "B. Section 6 of the EFCC Act.",
+        "C. Section 19 of BOFIA.",
+        "D. Section 47 of the CBN Act."
+      ],
+      "ans": "B",
+      "exp": "Section 6 of the EFCC Act confers these powers (p.6)."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which agency has the power to place bank accounts under surveillance and tap telephone lines in the course of investigating drug-related money laundering?",
+      "opts": [
+        "A. EFCC.",
+        "B. NDLEA.",
+        "C. CBN.",
+        "D. SEC."
+      ],
+      "ans": "B",
+      "exp": "NDLEA is empowered to place accounts under surveillance, tap telephones, access computer systems, etc. (p.6)."
+    },
+    {
+      "id": "Q37",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Financial Services Regulation Coordinating Committee (FSRCC) includes which of the following?",
+      "opts": [
+        "A. Nigerian Stock Exchange as a permanent member.",
+        "B. Federal Ministry of Finance.",
+        "C. Economic and Financial Crimes Commission.",
+        "D. National Drug Law Enforcement Agency."
+      ],
+      "ans": "B",
+      "exp": "FSRCC members: CBN, SEC, NAICOM, CAC, FMF, NDIC, PENCOM. NSE has observer status (p.7)."
+    },
+    {
+      "id": "Q38",
+      "module": 1,
+      "type": "mcq",
+      "q": "One of the objectives of the FSRCC is to:",
+      "opts": [
+        "A. Issue new banking licences.",
+        "B. Eliminate information gaps encountered by regulatory agencies.",
+        "C. Set interest rates for all banks.",
+        "D. Investigate and prosecute bank fraud."
+      ],
+      "ans": "B",
+      "exp": "Objectives include coordinated supervision, reducing arbitrage, deliberating on problems, eliminating information gaps, and promoting sound practices (p.7)."
+    },
+    {
+      "id": "Q39",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Basel Committee on Banking Supervision was originally established by the G10 countries along with:",
+      "opts": [
+        "A. Switzerland and Luxembourg.",
+        "B. China and India.",
+        "C. Brazil and Russia.",
+        "D. Australia and Canada."
+      ],
+      "ans": "A",
+      "exp": "The Committee was formed by G10 countries plus Switzerland and Luxembourg under the auspices of the BIS (p.8)."
+    },
+    {
+      "id": "Q40",
+      "module": 1,
+      "type": "mcq",
+      "q": "Pillar II of Basel II provides:",
+      "opts": [
+        "A. Minimum capital requirements.",
+        "B. Supervisory review and risk management.",
+        "C. Market discipline through disclosure.",
+        "D. Liquidity coverage ratios."
+      ],
+      "ans": "B",
+      "exp": "Pillar II is about supervisory review and gives regulators tools to deal with systemic, pension, concentration, strategic, reputational, liquidity, and legal risks (p.8)."
+    },
+    {
+      "id": "Q41",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Basel III Accord was introduced in response to:",
+      "opts": [
+        "A. The Asian financial crisis of 1997.",
+        "B. The global financial meltdown of 2007-2009.",
+        "C. The European sovereign debt crisis of 2010.",
+        "D. The Nigerian banking crisis of 2009."
+      ],
+      "ans": "B",
+      "exp": "Basel III was issued in December 2010 in response to the 2007-2009 crisis (p.9)."
+    },
+    {
+      "id": "Q42",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT a component of the supervisory structure for banking regulation as identified by the Basel Core Principles?",
+      "opts": [
+        "A. Licensing and supervisory structure.",
+        "B. Safety net arrangements.",
+        "C. Political oversight and legislative approval.",
+        "D. Legal and institutional structure."
+      ],
+      "ans": "C",
+      "exp": "The four components are: legal/institutional structure, regulatory structure, supervisory structure, and safety net arrangements (p.10)."
+    },
+    {
+      "id": "Q43",
+      "module": 1,
+      "type": "mcq",
+      "q": "The CBN's function of acting as banker to other banks is intended to:",
+      "opts": [
+        "A. Ensure commercial banks maintain high profits.",
+        "B. Seek cooperation of banks in performing its functions under the Act.",
+        "C. Provide loans to individuals.",
+        "D. Invest in the capital market."
+      ],
+      "ans": "B",
+      "exp": "CBN acts as banker to banks and seeks their cooperation in performing its functions (p.4)."
+    },
+    {
+      "id": "Q44",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Nigerian banking regulatory environment includes both direct and indirect regulators. Which of the following is an indirect regulator?",
+      "opts": [
+        "A. NDIC.",
+        "B. CBN.",
+        "C. SEC.",
+        "D. Both NDIC and CBN are direct."
+      ],
+      "ans": "C",
+      "exp": "Direct regulators are CBN and NDIC; indirect include FMF, SEC, EFCC, NDLEA, etc. (p.4-6)."
+    },
+    {
+      "id": "Q45",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Banking Act of 1968 is significant because:",
+      "opts": [
+        "A. It introduced the first comprehensive regulatory and supervisory framework.",
+        "B. It nationalised all foreign banks.",
+        "C. It created the NDIC.",
+        "D. It implemented the Basel Accord."
+      ],
+      "ans": "A",
+      "exp": "The Banking Act of 1968 codified rules and presented the first comprehensive attempt at institutionalising a standard framework (p.2)."
+    },
+    {
+      "id": "Q46",
+      "module": 1,
+      "type": "mcq",
+      "q": "The era of indigenisation (1972-1976) under the Nigerian Enterprises Promotion Decree led to:",
+      "opts": [
+        "A. Nigerian participation in foreign banks' ownership.",
+        "B. The consolidation of banks into 25.",
+        "C. The introduction of deposit insurance.",
+        "D. The adoption of universal banking."
+      ],
+      "ans": "A",
+      "exp": "The Decree compelled participation of Nigerians and the Federal Government in acquiring controlling equities of foreign banks (p.2-3)."
+    },
+    {
+      "id": "Q47",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the liberalisation era (1984-1992), the CBN established the deposit protection scheme in 1988 to:",
+      "opts": [
+        "A. Encourage foreign banks to enter Nigeria.",
+        "B. Handle the consequences of bank failures.",
+        "C. Reduce the number of banks.",
+        "D. Introduce minimum capital requirements."
+      ],
+      "ans": "B",
+      "exp": "The deposit protection scheme was established to handle consequences of bank failures (p.3)."
+    },
+    {
+      "id": "Q48",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best describes the universal banking structure that was revoked by the CBN in 2009?",
+      "opts": [
+        "A. Banks could only engage in commercial banking activities.",
+        "B. Banks were allowed to engage in a wide range of financial services under one licence.",
+        "C. Banks were required to form holding companies.",
+        "D. Banks were prohibited from investing in non-bank subsidiaries."
+      ],
+      "ans": "B",
+      "exp": "The CBN revoked universal banking and introduced the holding company structure (p.3)."
+    },
+    {
+      "id": "Q49",
+      "module": 1,
+      "type": "mcq",
+      "q": "The CBN's power to request and share information on matters affecting the economy is part of its:",
+      "opts": [
+        "A. Currency issuance function.",
+        "B. Banker to government function.",
+        "C. Supervisory and regulatory function.",
+        "D. Exchange rate determination function."
+      ],
+      "ans": "C",
+      "exp": "CBN is empowered to request and share information as part of its supervision and regulation (p.4)."
+    },
+    {
+      "id": "Q50",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which agency is responsible for approving and regulating unit trusts (mutual funds)?",
+      "opts": [
+        "A. CBN.",
+        "B. NDIC.",
+        "C. SEC.",
+        "D. FMF."
+      ],
+      "ans": "C",
+      "exp": "SEC authorises the establishment of unit trusts (p.6)."
+    },
+    {
+      "id": "Q51",
+      "module": 1,
+      "type": "mcq",
+      "q": "The NDIC's function of 'guaranteeing payments to depositors' is capped at a maximum amount as provided in:",
+      "opts": [
+        "A. Section 2 of the NDIC Act.",
+        "B. Section 20 of the NDIC Act.",
+        "C. Section 12 of BOFIA.",
+        "D. Section 55 of BOFIA."
+      ],
+      "ans": "B",
+      "exp": "Section 20 of NDIC Act provides for maximum deposit insurance coverage (p.5)."
+    },
+    {
+      "id": "Q52",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a function of the CBN that requires the approval of the President?",
+      "opts": [
+        "A. Issuing legal tender currency.",
+        "B. Redenominating currency notes and coins.",
+        "C. Maintaining external reserves.",
+        "D. Acting as banker to the Federal Government."
+      ],
+      "ans": "B",
+      "exp": "CBN has sole right of issuing currency but requires Presidential approval to redenominate (p.4)."
+    },
+    {
+      "id": "Q53",
+      "module": 1,
+      "type": "mcq",
+      "q": "The 'era of free banking' in Nigeria ended with the enactment of:",
+      "opts": [
+        "A. The CBN Act of 1958.",
+        "B. The Banking Ordinance of 1952.",
+        "C. The Banking Act of 1968.",
+        "D. The Nigerian Enterprises Promotion Act of 1972."
+      ],
+      "ans": "B",
+      "exp": "Banking regulation started with the 1952 Banking Ordinance, ending the free banking era (p.2)."
+    },
+    {
+      "id": "Q54",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a 'safety net arrangement' as described in the Basel Core Principles?",
+      "opts": [
+        "A. Licensing requirements.",
+        "B. Deposit insurance scheme or winding-up procedures.",
+        "C. Capital adequacy requirements.",
+        "D. Market discipline through disclosure."
+      ],
+      "ans": "B",
+      "exp": "Safety net arrangements handle liquidity and solvency difficulties and include deposit insurance or winding-up procedures (p.10)."
+    },
+    {
+      "id": "Q55",
+      "module": 1,
+      "type": "mcq",
+      "q": "The CBN's supervisory role is exercised in collaboration with the NDIC for deposit money banks, but the CBN exclusively supervises:",
+      "opts": [
+        "A. Insurance companies.",
+        "B. Pension fund administrators.",
+        "C. Finance companies and Bureaux de change.",
+        "D. Stock exchanges."
+      ],
+      "ans": "C",
+      "exp": "CBN exclusively supervises finance companies, Bureaux de change, mortgage institutions, and discount houses (p.4)."
+    },
+    {
+      "id": "Q56",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an objective of the FSRCC?",
+      "opts": [
+        "A. To reduce arbitrage opportunities created by differing regulatory standards.",
+        "B. To increase arbitrage opportunities.",
+        "C. To eliminate all banking regulation.",
+        "D. To merge all regulatory agencies into one."
+      ],
+      "ans": "A",
+      "exp": "FSRCC aims to reduce arbitrage opportunities and coordinate supervision (p.7)."
+    },
+    {
+      "id": "Q57",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Basel Committee's origins can be traced to the failure of Bank Herstatt, which highlighted:",
+      "opts": [
+        "A. Credit risk from loans.",
+        "B. Settlement risk due to time-zone differences.",
+        "C. Operational risk in bank systems.",
+        "D. Liquidity risk from deposit runs."
+      ],
+      "ans": "B",
+      "exp": "Bank Herstatt's failure was due to time-zone differences in payment settlements (p.8)."
+    },
+    {
+      "id": "Q58",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following correctly describes the relationship between the IMF and the World Bank?",
+      "opts": [
+        "A. Both were created at Bretton Woods and share the same goal of raising living standards.",
+        "B. IMF provides long-term development loans; World Bank stabilises exchange rates.",
+        "C. They are both agencies of the United Nations with identical mandates.",
+        "D. The World Bank is a division of the IMF."
+      ],
+      "ans": "A",
+      "exp": "Both were created at Bretton Woods in 1944 and share the goal of raising living standards, though their approaches differ (p.10)."
+    },
+    {
+      "id": "Q59",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT a principal objective of the CBN as stated in the CBN Act?",
+      "opts": [
+        "A. Ensure monetary and price stability.",
+        "B. Promote a sound financial system.",
+        "C. Provide economic and financial advice to the Federal Government.",
+        "D. Regulate the capital market."
+      ],
+      "ans": "D",
+      "exp": "CBN's objectives do not include capital market regulation; that is SEC's role (p.4)."
+    },
+    {
+      "id": "Q60",
+      "module": 1,
+      "type": "mcq",
+      "q": "The NDIC's role in liquidation of failed banks is to ensure:",
+      "opts": [
+        "A. Assets are sold to the highest bidder, irrespective of depositors.",
+        "B. Orderly and efficient liquidation and cost-effective realisation of assets.",
+        "C. The government takes over all liabilities.",
+        "D. Shareholders are paid first."
+      ],
+      "ans": "B",
+      "exp": "NDIC ensures orderly liquidation and cost-effective realisation of assets, with proceeds appropriated among claimants (p.5)."
+    },
+    {
+      "id": "Q61",
+      "module": 1,
+      "type": "mcq",
+      "q": "The CBN's power to arrange for the printing of currency notes and minting of coins falls under its:",
+      "opts": [
+        "A. Monetary policy function.",
+        "B. Currency issuance function.",
+        "C. Banking supervision function.",
+        "D. Foreign exchange management function."
+      ],
+      "ans": "B",
+      "exp": "The CBN has sole right of issuing currency, and arranges printing and minting (p.4)."
+    },
+    {
+      "id": "Q62",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a function of the SEC that directly impacts banks?",
+      "opts": [
+        "A. Approving mergers and acquisitions involving banks.",
+        "B. Setting capital adequacy ratios for banks.",
+        "C. Insuring bank deposits.",
+        "D. Issuing bank licences."
+      ],
+      "ans": "A",
+      "exp": "SEC approves and regulates mergers and acquisitions (p.5-6)."
+    },
+    {
+      "id": "Q63",
+      "module": 1,
+      "type": "mcq",
+      "q": "The EFCC's power to freeze, confiscate, or seize proceeds derived from terrorist activities is provided under:",
+      "opts": [
+        "A. Section 6(d) of the EFCC Act.",
+        "B. Section 20 of the NDIC Act.",
+        "C. Section 97 of BOFIA.",
+        "D. Section 12 of the CBN Act."
+      ],
+      "ans": "A",
+      "exp": "Section 6(d) of EFCC Act empowers the commission to adopt measures to identify, trace, freeze, confiscate or seize proceeds of terrorist activities and economic/financial crimes (p.6)."
+    },
+    {
+      "id": "Q64",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an indirect regulator that has the power to access bank records and private contracts?",
+      "opts": [
+        "A. CBN.",
+        "B. NDIC.",
+        "C. NDLEA.",
+        "D. SEC."
+      ],
+      "ans": "C",
+      "exp": "NDLEA is empowered to obtain communication of authentic instruments and all bank, financial, and commercial records (p.6)."
+    },
+    {
+      "id": "Q65",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Basel Committee's first Accord (Basel I) was motivated by concerns over:",
+      "opts": [
+        "A. Low capital levels of internationally active banks and competitive advantages.",
+        "B. Excessive liquidity in the banking system.",
+        "C. High inflation rates.",
+        "D. Lack of consumer protection."
+      ],
+      "ans": "A",
+      "exp": "Basel I was motivated by low capital levels and competitive advantages of banks with lower capital requirements (p.8)."
+    },
+    {
+      "id": "Q66",
+      "module": 1,
+      "type": "mcq",
+      "q": "Under Basel II, Pillar III's market discipline is achieved through:",
+      "opts": [
+        "A. Mandatory disclosure requirements that allow stakeholders to assess risk.",
+        "B. Regular on-site inspections by supervisors.",
+        "C. Minimum capital ratios.",
+        "D. Liquidity coverage ratios."
+      ],
+      "ans": "A",
+      "exp": "Pillar III requires public disclosure to enable investors, analysts, and customers to assess the bank's capital adequacy and risk (p.9)."
+    },
+    {
+      "id": "Q67",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Nigerian banking sector's adoption of the Basel Accords is intended to:",
+      "opts": [
+        "A. Increase bank profitability.",
+        "B. Align Nigeria with international best practices and reduce systemic risk.",
+        "C. Eliminate all non-performing loans.",
+        "D. Increase the number of banks."
+      ],
+      "ans": "B",
+      "exp": "Adoption of Basel Accords aims to maintain international best practice and establish sustainable risk-management practices (p.4)."
+    },
+    {
+      "id": "Q68",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following regulatory bodies was established primarily to handle the consequences of bank failures?",
+      "opts": [
+        "A. CBN.",
+        "B. NDIC.",
+        "C. SEC.",
+        "D. FMF."
+      ],
+      "ans": "B",
+      "exp": "NDIC was established to insure deposits and handle bank failures (p.3)."
+    },
+    {
+      "id": "Q69",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Prudential Guidelines of 1990 were introduced to:",
+      "opts": [
+        "A. Standardise asset classification and loan loss provisioning.",
+        "B. Increase bank capital requirements to \u20a625 billion.",
+        "C. Implement the Basel III Accord.",
+        "D. Regulate foreign exchange transactions."
+      ],
+      "ans": "A",
+      "exp": "The Prudential Guidelines were meant to guide asset classification and loan loss provisioning (p.3, p.19)."
+    },
+    {
+      "id": "Q70",
+      "module": 1,
+      "type": "mcq",
+      "q": "The CBN's stress testing and restructuring of banks from 2009 aimed to:",
+      "opts": [
+        "A. Revoke the universal banking structure and introduce holding company structure.",
+        "B. Reduce the number of banks from 120 to 25.",
+        "C. Implement the Banking Ordinance of 1952.",
+        "D. Increase the minimum capital to \u20a64 billion."
+      ],
+      "ans": "A",
+      "exp": "From 2009, CBN engaged in stress testing, restructuring, revoked universal banking, and introduced holding company structure (p.3)."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following best defines 'regulation' in the context of banking?",
+      "opts": [
+        "A. A process of supervising bank employees.",
+        "B. An official rule or order stating what may or may not be done.",
+        "C. A recommendation issued by the IMF.",
+        "D. A voluntary code of conduct for banks."
+      ],
+      "ans": "B",
+      "exp": "Regulation means an official rule, law, or order stating what may or may not be done (p.10)."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "type": "mcq",
+      "q": "'Supervision' in banking refers to:",
+      "opts": [
+        "A. Watching over an activity to ensure it is performed as required.",
+        "B. The process of setting capital ratios.",
+        "C. The issuance of banking licences.",
+        "D. The liquidation of failed banks."
+      ],
+      "ans": "A",
+      "exp": "Supervision means to watch over an activity or task and ensure it is performed as required (p.11)."
+    },
+    {
+      "id": "Q73",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why must banks adapt their operational frameworks when regulations change?",
+      "opts": [
+        "A. To comply with the law and reduce risk.",
+        "B. To increase profits and reduce costs.",
+        "C. To avoid all penalties.",
+        "D. To prevent any changes in their business."
+      ],
+      "ans": "A",
+      "exp": "Banks must adapt to comply with law, reduce risk, improve efficiency, and remain competitive (p.11)."
+    },
+    {
+      "id": "Q74",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a general principle of banking regulation?",
+      "opts": [
+        "A. Banks must always maintain a loan-to-deposit ratio of 100%.",
+        "B. Banks require a licence from the CBN before engaging in banking business.",
+        "C. Banks are free to set their own capital requirements.",
+        "D. Banks need not disclose financial information to the public."
+      ],
+      "ans": "B",
+      "exp": "Licensing is a key principle; banks need a CBN licence (p.12)."
+    },
+    {
+      "id": "Q75",
+      "module": 2,
+      "type": "mcq",
+      "q": "Market discipline in banking regulation is achieved through:",
+      "opts": [
+        "A. Public disclosure of financial information.",
+        "B. On-site examinations.",
+        "C. Minimum capital ratios.",
+        "D. Liquidity requirements."
+      ],
+      "ans": "A",
+      "exp": "Market discipline requires banks to publicly disclose information so that depositors and creditors can assess risk (p.12)."
+    },
+    {
+      "id": "Q76",
+      "module": 2,
+      "type": "mcq",
+      "q": "Prudential requirements imposed on banks are typically tied to:",
+      "opts": [
+        "A. The level of risk exposure of the bank.",
+        "B. The age of the bank.",
+        "C. The number of employees.",
+        "D. The location of the bank's headquarters."
+      ],
+      "ans": "A",
+      "exp": "Prudential requirements are closely tied to the level of risk exposure (p.12)."
+    },
+    {
+      "id": "Q77",
+      "module": 2,
+      "type": "mcq",
+      "q": "Failure resolution processes in banking regulation are designed to:",
+      "opts": [
+        "A. Protect shareholders' interests.",
+        "B. Handle distress and bank failure in the best interest of depositors and the economy.",
+        "C. Maximise profits for banks.",
+        "D. Reduce the number of banks."
+      ],
+      "ans": "B",
+      "exp": "Failure resolution processes handle distress and bank failure in the best interest of depositors and the economy (p.12)."
+    },
+    {
+      "id": "Q78",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under Section 2 of BOFIA 2020, banking business in Nigeria can only be carried out by:",
+      "opts": [
+        "A. Any company incorporated in Nigeria.",
+        "B. A company duly incorporated in Nigeria with a valid banking licence from CBN.",
+        "C. A foreign bank with a representative office.",
+        "D. Any financial institution registered with SEC."
+      ],
+      "ans": "B",
+      "exp": "Section 2: Only a company incorporated in Nigeria with a valid CBN licence can engage in banking business (p.13)."
+    },
+    {
+      "id": "Q79",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under Section 6 of BOFIA, a bank cannot open a new branch without:",
+      "opts": [
+        "A. Approval from the SEC.",
+        "B. The prior consent of the CBN.",
+        "C. A resolution from its board.",
+        "D. Notification to the NDIC."
+      ],
+      "ans": "B",
+      "exp": "Section 6: No bank may open or close any branch without prior CBN consent (p.13)."
+    },
+    {
+      "id": "Q80",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 9 of BOFIA empowers the CBN to:",
+      "opts": [
+        "A. Revoke banking licences.",
+        "B. Determine the capital requirement for each category of banks.",
+        "C. Approve mergers and acquisitions.",
+        "D. Regulate the capital market."
+      ],
+      "ans": "B",
+      "exp": "Section 9: CBN has powers to determine capital requirement for each category of banks (p.13)."
+    },
+    {
+      "id": "Q81",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under Section 12 of BOFIA, which of the following is a ground for revocation of a bank's licence?",
+      "opts": [
+        "A. Failure to pay dividends for two consecutive years.",
+        "B. Conducting business in an unsound manner.",
+        "C. Opening a branch without board approval.",
+        "D. Having a capital adequacy ratio below 15%."
+      ],
+      "ans": "B",
+      "exp": "Section 12 lists grounds including conducting business in an unsound manner, insufficient assets, failure to comply with obligations, etc. (p.13-14)."
+    },
+    {
+      "id": "Q82",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 13 of BOFIA requires all banks to maintain a minimum capital adequacy ratio (CAR) as prescribed by CBN. Failure to do so may lead to:",
+      "opts": [
+        "A. A fine only.",
+        "B. Revocation of licence.",
+        "C. Restriction on dividend distribution only.",
+        "D. A reduction in interest rates."
+      ],
+      "ans": "B",
+      "exp": "Section 13: penalties for failure may include revocation of licence (p.14)."
+    },
+    {
+      "id": "Q83",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 14 of BOFIA requires banks to maintain with the CBN:",
+      "opts": [
+        "A. Cash reserves and special deposits.",
+        "B. All customer deposits.",
+        "C. A copy of all loan agreements.",
+        "D. Employee records."
+      ],
+      "ans": "A",
+      "exp": "Section 14: Banks must maintain cash reserves, special deposits, and specified liquid assets with CBN (p.14)."
+    },
+    {
+      "id": "Q84",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 15 and 16 of BOFIA require banks to maintain a reserve fund and may only declare dividends from:",
+      "opts": [
+        "A. Gross income before tax.",
+        "B. Net profit after provision for tax, expenses, and losses.",
+        "C. Retained earnings from previous years.",
+        "D. Revaluation surplus."
+      ],
+      "ans": "B",
+      "exp": "Sections 15 & 16: Dividend can only be declared from net profit after tax, expenses, and losses (p.14)."
+    },
+    {
+      "id": "Q85",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under Section 17 of BOFIA, directors and officers of a bank must:",
+      "opts": [
+        "A. Disclose any interest they have in a credit facility.",
+        "B. Receive prior approval from SEC for all loans.",
+        "C. Maintain a fixed deposit with the bank.",
+        "D. Not hold shares in the bank."
+      ],
+      "ans": "A",
+      "exp": "Section 17: Directors, managers, or officers must disclose any interest in a credit facility and ensure adequate security (p.14)."
+    },
+    {
+      "id": "Q86",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 18 of BOFIA prohibits a bank from having as a director a person who:",
+      "opts": [
+        "A. Is a director of any other bank, unless approved by CBN.",
+        "B. Is a foreign national.",
+        "C. Has no banking experience.",
+        "D. Is less than 40 years old."
+      ],
+      "ans": "A",
+      "exp": "Section 18: No bank shall have a director who is a director of any other bank without CBN approval, and cannot re-employ persons convicted of fraud (p.14)."
+    },
+    {
+      "id": "Q87",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 19(1)(a) of BOFIA restricts a commercial bank from granting loans to a single obligor exceeding:",
+      "opts": [
+        "A. 20% of the bank's shareholders' fund unimpaired by losses.",
+        "B. 10% of the bank's total assets.",
+        "C. 25% of the bank's deposit liabilities.",
+        "D. 50% of the bank's paid-up capital."
+      ],
+      "ans": "A",
+      "exp": "Section 19(1)(a): For a commercial bank, the single obligor limit is 20% of shareholders' fund unimpaired by losses (p.14)."
+    },
+    {
+      "id": "Q88",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 19(1)(a) provides that for a merchant bank, the single obligor limit is:",
+      "opts": [
+        "A. 20% of shareholders' fund.",
+        "B. 30% of shareholders' fund.",
+        "C. 50% of shareholders' fund.",
+        "D. 10% of shareholders' fund."
+      ],
+      "ans": "C",
+      "exp": "Section 19(1)(a): Merchant bank single obligor limit is 50% of shareholders' fund (p.14)."
+    },
+    {
+      "id": "Q89",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 19(3)(a) prohibits unsecured advances to directors and significant shareholders above an aggregate amount of:",
+      "opts": [
+        "A. \u20a6500,000.",
+        "B. \u20a61,000,000.",
+        "C. \u20a65,000,000.",
+        "D. \u20a610,000,000."
+      ],
+      "ans": "B",
+      "exp": "Section 19(3)(a): Unsecured advances to directors or significant shareholders above \u20a61,000,000 or such amount as prescribed is prohibited (p.14-15)."
+    },
+    {
+      "id": "Q90",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under Section 19(3)(b), unsecured advances to officers and employees must not exceed:",
+      "opts": [
+        "A. Six months' emolument.",
+        "B. One year's emolument.",
+        "C. Two years' emolument.",
+        "D. Three months' emolument."
+      ],
+      "ans": "B",
+      "exp": "Section 19(3)(b): Unsecured advances to officers and employees must not exceed one year's emolument (p.15)."
+    },
+    {
+      "id": "Q91",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 33 of BOFIA empowers the Governor of CBN to order a special examination of a bank if:",
+      "opts": [
+        "A. The bank applies for a licence.",
+        "B. It is in the public interest to do so.",
+        "C. The bank declares a dividend.",
+        "D. The bank opens a new branch."
+      ],
+      "ans": "B",
+      "exp": "Section 33: CBN Governor may order special examination if public interest, detrimental conduct, insufficient assets, contravention, or application by director/shareholder (p.15)."
+    },
+    {
+      "id": "Q92",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 34 of BOFIA grants the CBN intervention powers if a bank is likely to become unable to meet its obligations. This is triggered when:",
+      "opts": [
+        "A. The bank informs the CBN of such situation.",
+        "B. The bank's CAR falls below 2%.",
+        "C. The bank fails to declare dividends.",
+        "D. The bank opens a branch abroad."
+      ],
+      "ans": "A",
+      "exp": "Section 34: If a bank informs CBN that it is likely to become unable to meet obligations, the Governor may exercise intervention powers (p.15)."
+    },
+    {
+      "id": "Q93",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 36 of BOFIA defines a systemic banking crisis when, among other conditions, critically distressed banks control:",
+      "opts": [
+        "A. 10% or more of total industry assets.",
+        "B. 12.5% or more of total industry assets.",
+        "C. 15% or more of total industry assets.",
+        "D. 20% or more of total industry assets."
+      ],
+      "ans": "B",
+      "exp": "Section 36: Systemic crisis exists when critically distressed banks control 12.5% or more of total industry assets (p.15)."
+    },
+    {
+      "id": "Q94",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 41 of BOFIA allows the CBN to transfer assets of a failing bank to a private asset management vehicle, such as:",
+      "opts": [
+        "A. NDIC.",
+        "B. AMCON.",
+        "C. SEC.",
+        "D. FMF."
+      ],
+      "ans": "B",
+      "exp": "Section 41: CBN may transfer assets to one or more private asset management vehicles, e.g., AMCON (p.16)."
+    },
+    {
+      "id": "Q95",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 44 of BOFIA prohibits:",
+      "opts": [
+        "A. Banks from advertising.",
+        "B. Persons other than banks from inviting deposits through advertising.",
+        "C. Banks from opening foreign accounts.",
+        "D. Banks from paying interest on savings."
+      ],
+      "ans": "B",
+      "exp": "Section 44: Only banks and authorised persons may invite deposits via advertisements (p.16)."
+    },
+    {
+      "id": "Q96",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 46 of BOFIA prohibits directors and employees of banks from receiving commissions or gifts for rendering banking services. This is to:",
+      "opts": [
+        "A. Prevent bribery and corruption.",
+        "B. Increase bank profitability.",
+        "C. Encourage competition.",
+        "D. Reduce operating costs."
+      ],
+      "ans": "A",
+      "exp": "Section 46 prohibits receipt of commissions, gifts, or property for rendering banking services, to prevent bribery (p.16)."
+    },
+    {
+      "id": "Q97",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under Section 47(1) of BOFIA, before appointing a director or chief executive, a bank must:",
+      "opts": [
+        "A. Obtain CBN's written approval.",
+        "B. Notify the NDIC.",
+        "C. Publish a notice in the newspaper.",
+        "D. Obtain SEC approval."
+      ],
+      "ans": "A",
+      "exp": "Section 47(1): Banks must seek and obtain CBN's written approval for appointments of directors, CEOs, and specified management staff (p.16)."
+    },
+    {
+      "id": "Q98",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 47(2) disqualifies a person from being a director or officer if that person:",
+      "opts": [
+        "A. Has been declared bankrupt.",
+        "B. Has no university degree.",
+        "C. Is below 30 years old.",
+        "D. Has been a director of another bank."
+      ],
+      "ans": "A",
+      "exp": "Section 47(2): Disqualifications include unsound mind, dismissed from government service, declared bankrupt, convicted of fraud, etc. (p.16)."
+    },
+    {
+      "id": "Q99",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 49 of BOFIA prescribes penalties for directors and managers who fail to ensure compliance with the Act. The penalty is:",
+      "opts": [
+        "A. A fine of \u20a61,000,000.",
+        "B. Imprisonment for a term not less than three years or fine of not less than \u20a62,000,000.",
+        "C. Only a warning.",
+        "D. Suspension from office."
+      ],
+      "ans": "B",
+      "exp": "Section 49: Offence is punishable with fine of not less than \u20a62,000,000 or imprisonment for not less than three years, or both (p.16-17)."
+    },
+    {
+      "id": "Q100",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 50 of BOFIA provides for penalties for offences not otherwise provided for, which is a fine of not less than:",
+      "opts": [
+        "A. \u20a61,000,000.",
+        "B. \u20a62,000,000.",
+        "C. \u20a65,000,000.",
+        "D. \u20a6500,000."
+      ],
+      "ans": "B",
+      "exp": "Section 50: Fine of not less than \u20a62,000,000 for contraventions not expressly provided for (p.17)."
+    },
+    {
+      "id": "Q101",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 51 of BOFIA provides protection against adverse claims for the CBN and its officers, provided they acted:",
+      "opts": [
+        "A. In good faith.",
+        "B. With due diligence.",
+        "C. Within their authority.",
+        "D. With ministerial approval."
+      ],
+      "ans": "A",
+      "exp": "Section 51: CBN and officers are protected if they acted in good faith (p.17)."
+    },
+    {
+      "id": "Q102",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 52 of BOFIA confers exclusive jurisdiction to try offences under the Act on:",
+      "opts": [
+        "A. The Supreme Court.",
+        "B. The Federal High Court.",
+        "C. The State High Court.",
+        "D. The Magistrate Court."
+      ],
+      "ans": "B",
+      "exp": "Section 52: Federal High Court has exclusive jurisdiction (p.17)."
+    },
+    {
+      "id": "Q103",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 53 of BOFIA states that the provisions of the Act shall prevail over other laws. This is known as the:",
+      "opts": [
+        "A. Supremacy clause.",
+        "B. Conflict resolution clause.",
+        "C. Harmonisation clause.",
+        "D. Precedence clause."
+      ],
+      "ans": "A",
+      "exp": "Section 53: Supremacy of BOFIA, it prevails over other laws in so far as they relate to banks (p.17)."
+    },
+    {
+      "id": "Q104",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 55 of BOFIA provides that in the liquidation of a bank, deposit liabilities shall have:",
+      "opts": [
+        "A. Priority over all other liabilities.",
+        "B. Equal priority with other creditors.",
+        "C. Lower priority than shareholders.",
+        "D. No priority."
+      ],
+      "ans": "A",
+      "exp": "Section 55: Deposit liabilities shall have priority over all other liabilities (p.17)."
+    },
+    {
+      "id": "Q105",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 56 of BOFIA empowers the Governor of CBN to make rules and regulations for:",
+      "opts": [
+        "A. The operation and control of all institutions under CBN supervision.",
+        "B. The capital market.",
+        "C. Insurance companies.",
+        "D. Pension fund administrators."
+      ],
+      "ans": "A",
+      "exp": "Section 56: Governor may make rules and regulations for all institutions under CBN supervision (p.17)."
+    },
+    {
+      "id": "Q106",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 64 of BOFIA allows the CBN to carry out examination of:",
+      "opts": [
+        "A. Only the bank itself.",
+        "B. The bank and entities associated with or affiliated to it.",
+        "C. Only the bank's parent company.",
+        "D. Only subsidiaries within Nigeria."
+      ],
+      "ans": "B",
+      "exp": "Section 64: CBN may examine books of banks and entities associated with or affiliated to them (p.17)."
+    },
+    {
+      "id": "Q107",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 67 of BOFIA empowers the Governor to make regulations on corporate governance, including:",
+      "opts": [
+        "A. Appointment of principal officers.",
+        "B. Dividend payment ratios.",
+        "C. Loan loss provisioning.",
+        "D. Foreign exchange transactions."
+      ],
+      "ans": "A",
+      "exp": "Section 67: Regulations may cover corporate governance, appointment of principal officers, prohibition on mutual holding of shares, and risk management (p.17)."
+    },
+    {
+      "id": "Q108",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 70 of BOFIA allows the Governor to designate a bank as:",
+      "opts": [
+        "A. A systemically important bank.",
+        "B. A development bank.",
+        "C. A microfinance bank.",
+        "D. A non-interest bank."
+      ],
+      "ans": "A",
+      "exp": "Section 70: Governor may designate a bank as systemically important (p.17-18)."
+    },
+    {
+      "id": "Q109",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 71 of BOFIA gives CBN power to regulate:",
+      "opts": [
+        "A. Operations of agents of banks.",
+        "B. Interest rates.",
+        "C. Capital market operations.",
+        "D. Insurance products."
+      ],
+      "ans": "A",
+      "exp": "Section 71: CBN may regulate operations of agents of banks (p.18)."
+    },
+    {
+      "id": "Q110",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 72 of BOFIA concerns unclaimed funds in dormant accounts. It requires that after one year of inactivity, withdrawals require approval of:",
+      "opts": [
+        "A. The account holder.",
+        "B. Two authorised signatories of the bank.",
+        "C. The CBN Governor.",
+        "D. The NDIC."
+      ],
+      "ans": "B",
+      "exp": "Section 72: After one year of no operation, withdrawal requires approval of two authorised signatories of the bank (p.18)."
+    },
+    {
+      "id": "Q111",
+      "module": 2,
+      "type": "mcq",
+      "q": "Sections 74-78 of BOFIA establish the Banking Sector Resolution Fund. Which of the following contributes to the fund?",
+      "opts": [
+        "A. CBN, NDIC, and each bank.",
+        "B. Only the Federal Government.",
+        "C. Only commercial banks.",
+        "D. Only the CBN."
+      ],
+      "ans": "A",
+      "exp": "Sections 75-77: CBN contributes \u20a610bn, NDIC \u20a64bn, and each bank contributes 10 basis points of total assets (p.18)."
+    },
+    {
+      "id": "Q112",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 78 of BOFIA states that the Resolution Fund shall be utilised exclusively for purposes including:",
+      "opts": [
+        "A. Paying operating costs of a bridge bank.",
+        "B. Paying dividends to shareholders.",
+        "C. Funding regulatory agencies.",
+        "D. Providing loans to government."
+      ],
+      "ans": "A",
+      "exp": "Section 78: Fund may be used to pay operating costs of a bridge bank, costs of transfer, credit facilities, etc. (p.18)."
+    },
+    {
+      "id": "Q113",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 97 of BOFIA permits the CBN to freeze a customer's account if the Governor has reason to believe transactions involve:",
+      "opts": [
+        "A. A criminal offence under any law.",
+        "B. A breach of contract.",
+        "C. An overdraft.",
+        "D. A tax evasion."
+      ],
+      "ans": "A",
+      "exp": "Section 97: CBN may freeze account if transactions involve criminal offence (p.18)."
+    },
+    {
+      "id": "Q114",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 99 of BOFIA empowers the Governor to:",
+      "opts": [
+        "A. Reduce or increase monetary penalties for contraventions.",
+        "B. Exempt banks from all provisions.",
+        "C. Charge fees for services.",
+        "D. Establish the Special Tribunal for Recovery."
+      ],
+      "ans": "A",
+      "exp": "Section 99: Governor may reduce or increase monetary penalty payable for contravention (p.18)."
+    },
+    {
+      "id": "Q115",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 100 of BOFIA allows the Governor to exempt certain institutions from provisions of the Act by:",
+      "opts": [
+        "A. A notice published in the media and Gazette.",
+        "B. A letter to the institution.",
+        "C. An oral directive.",
+        "D. A resolution of the National Assembly."
+      ],
+      "ans": "A",
+      "exp": "Section 100: Governor may exempt other financial institutions or non-interest banks by notice in print/electronic media and Gazette (p.18)."
+    },
+    {
+      "id": "Q116",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 101 of BOFIA empowers the CBN to:",
+      "opts": [
+        "A. Charge fees for its services.",
+        "B. Impose taxes on banks.",
+        "C. Set interest rates.",
+        "D. Regulate the stock exchange."
+      ],
+      "ans": "A",
+      "exp": "Section 101: CBN may charge such fees as Board considers appropriate (p.19)."
+    },
+    {
+      "id": "Q117",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 102 of BOFIA establishes the Special Tribunal for the Enforcement and Recovery of Eligible Loans. This tribunal:",
+      "opts": [
+        "A. Has jurisdiction to recover eligible loans.",
+        "B. Has jurisdiction over all criminal matters.",
+        "C. Replaces the Federal High Court.",
+        "D. Is composed solely of CBN staff."
+      ],
+      "ans": "A",
+      "exp": "Section 102: Establishes Special Tribunal to exercise jurisdiction conferred on it for recovery of eligible loans (p.19)."
+    },
+    {
+      "id": "Q118",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a legislation that impacts banking in Nigeria, besides BOFIA?",
+      "opts": [
+        "A. Companies and Allied Matters Act 2020.",
+        "B. National Youth Service Corps Act.",
+        "C. Labour Act.",
+        "D. Education Act."
+      ],
+      "ans": "A",
+      "exp": "Other legislation includes CAMA 2020, NDIC Act, SEC Act, EFCC Act, Money Laundering (Prohibition) Act (p.19)."
+    },
+    {
+      "id": "Q119",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's Prudential Guidelines were introduced in 1990 to standardise:",
+      "opts": [
+        "A. Asset classification and loan loss provisioning.",
+        "B. Capital adequacy ratios.",
+        "C. Liquidity management.",
+        "D. Foreign exchange transactions."
+      ],
+      "ans": "A",
+      "exp": "The Guidelines were meant to guide asset classification and provisioning (p.19)."
+    },
+    {
+      "id": "Q120",
+      "module": 2,
+      "type": "mcq",
+      "q": "The revised Prudential Guidelines of 2010 address all of the following EXCEPT:",
+      "opts": [
+        "A. Risk management.",
+        "B. Corporate governance.",
+        "C. KYC and anti-money laundering.",
+        "D. Interest rate determination."
+      ],
+      "ans": "D",
+      "exp": "The 2010 guidelines address risk management, corporate governance, KYC/AML, and loan loss provisioning, not interest rate determination (p.19)."
+    },
+    {
+      "id": "Q121",
+      "module": 2,
+      "type": "mcq",
+      "q": "According to the Prudential Guidelines, a bank's credit policy must be approved by the Board of Directors and reviewed at least every:",
+      "opts": [
+        "A. One year.",
+        "B. Two years.",
+        "C. Three years.",
+        "D. Five years."
+      ],
+      "ans": "C",
+      "exp": "Credit policy should be reviewed at least every three years (p.19)."
+    },
+    {
+      "id": "Q122",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under the Prudential Guidelines, the total outstanding exposure by a bank to a single obligor or group of related borrowers shall not exceed:",
+      "opts": [
+        "A. 10% of shareholders' fund.",
+        "B. 20% of shareholders' fund.",
+        "C. 25% of shareholders' fund.",
+        "D. 30% of shareholders' fund."
+      ],
+      "ans": "B",
+      "exp": "Single obligor limit is 20% of shareholders' fund unimpaired by losses (p.20)."
+    },
+    {
+      "id": "Q123",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Prudential Guidelines define a 'large exposure' as any credit to a customer that is at least:",
+      "opts": [
+        "A. 5% of shareholders' fund.",
+        "B. 10% of shareholders' fund.",
+        "C. 15% of shareholders' fund.",
+        "D. 20% of shareholders' fund."
+      ],
+      "ans": "B",
+      "exp": "Large exposure is any credit that is at least 10% of shareholders' fund (p.20)."
+    },
+    {
+      "id": "Q124",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under the Prudential Guidelines, exposure to all tiers of government and their agencies shall not exceed:",
+      "opts": [
+        "A. 5% of total credit portfolio.",
+        "B. 10% of total credit portfolio.",
+        "C. 15% of total credit portfolio.",
+        "D. 20% of total credit portfolio."
+      ],
+      "ans": "B",
+      "exp": "Exposure to government and agencies shall not exceed 10% of total credit portfolio (p.20)."
+    },
+    {
+      "id": "Q125",
+      "module": 2,
+      "type": "mcq",
+      "q": "Regarding exposures to directors and related interests, the Prudential Guidelines define a significant shareholding as:",
+      "opts": [
+        "A. 2% of equity.",
+        "B. 5% of equity.",
+        "C. 10% of equity.",
+        "D. 15% of equity."
+      ],
+      "ans": "B",
+      "exp": "Significant shareholding is holding of at least 5% of a bank's equity (p.20)."
+    },
+    {
+      "id": "Q126",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under the Prudential Guidelines, before granting a facility, banks must obtain a credit report from at least:",
+      "opts": [
+        "A. One credit bureau.",
+        "B. Two credit bureaux.",
+        "C. Three credit bureaux.",
+        "D. Four credit bureaux."
+      ],
+      "ans": "B",
+      "exp": "Banks must obtain credit report from at least two credit bureaux (p.20)."
+    },
+    {
+      "id": "Q127",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Prudential Guidelines require banks to review their credit portfolio at least:",
+      "opts": [
+        "A. Monthly.",
+        "B. Quarterly.",
+        "C. Bi-annually.",
+        "D. Annually."
+      ],
+      "ans": "B",
+      "exp": "Credit portfolio should be reviewed at least once in a quarter (p.21)."
+    },
+    {
+      "id": "Q128",
+      "module": 2,
+      "type": "mcq",
+      "q": "A credit facility is deemed non-performing when interest or principal is due and unpaid for:",
+      "opts": [
+        "A. 30 days or more.",
+        "B. 60 days or more.",
+        "C. 90 days or more.",
+        "D. 120 days or more."
+      ],
+      "ans": "C",
+      "exp": "Non-performing when due and unpaid for 90 days or more (p.21)."
+    },
+    {
+      "id": "Q129",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under the Prudential Guidelines, a sub-standard facility is one on which principal or interest remains unpaid for more than 90 days but less than:",
+      "opts": [
+        "A. 120 days.",
+        "B. 150 days.",
+        "C. 180 days.",
+        "D. 270 days."
+      ],
+      "ans": "C",
+      "exp": "Sub-standard: outstanding for more than 90 days but less than 180 days (p.21)."
+    },
+    {
+      "id": "Q130",
+      "module": 2,
+      "type": "mcq",
+      "q": "The provisioning rate for a sub-standard facility under the Prudential Guidelines is:",
+      "opts": [
+        "A. 10%.",
+        "B. 20%.",
+        "C. 50%.",
+        "D. 100%."
+      ],
+      "ans": "A",
+      "exp": "Sub-standard provision is 10% (p.21)."
+    },
+    {
+      "id": "Q131",
+      "module": 2,
+      "type": "mcq",
+      "q": "A doubtful facility is one on which principal or interest remains outstanding for at least 180 days but less than 360 days. Its provisioning rate is:",
+      "opts": [
+        "A. 10%.",
+        "B. 20%.",
+        "C. 50%.",
+        "D. 100%."
+      ],
+      "ans": "C",
+      "exp": "Doubtful provision is 50% (p.21)."
+    },
+    {
+      "id": "Q132",
+      "module": 2,
+      "type": "mcq",
+      "q": "A lost facility is one on which principal or interest remains outstanding for 360 days or more. Its provisioning rate is:",
+      "opts": [
+        "A. 10%.",
+        "B. 20%.",
+        "C. 50%.",
+        "D. 100%."
+      ],
+      "ans": "D",
+      "exp": "Lost provision is 100% (p.22)."
+    },
+    {
+      "id": "Q133",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Prudential Guidelines allow for 'haircut adjustments' on collateral for provisioning. For collateral to qualify, it must be:",
+      "opts": [
+        "A. Perfected and realisable with no restrictions on sale.",
+        "B. Unperfected but acceptable.",
+        "C. Valued by the bank's internal staff.",
+        "D. Based on historic cost only."
+      ],
+      "ans": "A",
+      "exp": "Collateral must be perfected, realisable, and regularly valued with transparent method (p.22)."
+    },
+    {
+      "id": "Q134",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under the Prudential Guidelines, revaluation of fixed assets is allowed only for:",
+      "opts": [
+        "A. Land and buildings (own premises) and requires prior CBN approval.",
+        "B. All fixed assets including equipment.",
+        "C. Intangible assets.",
+        "D. Investment properties."
+      ],
+      "ans": "A",
+      "exp": "Revaluation is applicable to own premises only and requires prior CBN approval (p.22)."
+    },
+    {
+      "id": "Q135",
+      "module": 2,
+      "type": "mcq",
+      "q": "The revaluation surplus on fixed assets recognised in the books is discounted by:",
+      "opts": [
+        "A. 10%.",
+        "B. 25%.",
+        "C. 55%.",
+        "D. 75%."
+      ],
+      "ans": "C",
+      "exp": "The difference between market and historic value shall be discounted by 55% (p.22)."
+    },
+    {
+      "id": "Q136",
+      "module": 2,
+      "type": "mcq",
+      "q": "The minimum capital adequacy ratio (CAR) prescribed by the CBN is:",
+      "opts": [
+        "A. 8%.",
+        "B. 10%.",
+        "C. 12%.",
+        "D. 15%."
+      ],
+      "ans": "B",
+      "exp": "Minimum CAR is 10% (p.22)."
+    },
+    {
+      "id": "Q137",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank with a CAR between 5% and 10% is classified as:",
+      "opts": [
+        "A. Adequately capitalised.",
+        "B. Under capitalised.",
+        "C. Significantly undercapitalised.",
+        "D. Critically undercapitalised."
+      ],
+      "ans": "B",
+      "exp": "Under capitalised: CAR greater than or equal to 5% but less than 10% (p.22-23)."
+    },
+    {
+      "id": "Q138",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank with a CAR less than 5% but equal to or greater than 2% is classified as:",
+      "opts": [
+        "A. Under capitalised.",
+        "B. Significantly undercapitalised.",
+        "C. Critically undercapitalised.",
+        "D. Insolvent."
+      ],
+      "ans": "B",
+      "exp": "Significantly undercapitalised: CAR less than 5% but >=2% (p.23)."
+    },
+    {
+      "id": "Q139",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank with a CAR less than 2% is classified as:",
+      "opts": [
+        "A. Under capitalised.",
+        "B. Significantly undercapitalised.",
+        "C. Critically undercapitalised.",
+        "D. Insolvent."
+      ],
+      "ans": "C",
+      "exp": "Critically undercapitalised: CAR less than 2% (p.23)."
+    },
+    {
+      "id": "Q140",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank with a negative CAR is classified as:",
+      "opts": [
+        "A. Under capitalised.",
+        "B. Significantly undercapitalised.",
+        "C. Critically undercapitalised.",
+        "D. Insolvent."
+      ],
+      "ans": "D",
+      "exp": "Insolvent: negative CAR (p.23)."
+    },
+    {
+      "id": "Q141",
+      "module": 2,
+      "type": "mcq",
+      "q": "For an undercapitalised bank (CAR 5-10%), which of the following is a supervisory action?",
+      "opts": [
+        "A. Restrict dividend distribution.",
+        "B. Take over management and control.",
+        "C. Revoke licence.",
+        "D. Restrict new lending to recoveries."
+      ],
+      "ans": "A",
+      "exp": "Under capitalised: special examination, restrict dividends, restrict investment in subsidiaries/fixed assets (p.23)."
+    },
+    {
+      "id": "Q142",
+      "module": 2,
+      "type": "mcq",
+      "q": "For a significantly undercapitalised bank (CAR <5% but >=2%), CBN may:",
+      "opts": [
+        "A. Restrict new lending to recoveries.",
+        "B. Immediately revoke licence.",
+        "C. Only issue a warning.",
+        "D. Allow normal operations."
+      ],
+      "ans": "A",
+      "exp": "Significantly undercapitalised: restrict new lending to recoveries, request business plan, etc. (p.23)."
+    },
+    {
+      "id": "Q143",
+      "module": 2,
+      "type": "mcq",
+      "q": "For a critically undercapitalised bank (CAR <2%), CBN may:",
+      "opts": [
+        "A. Take over management and control and/or revoke licence.",
+        "B. Only restrict dividends.",
+        "C. Only restrict lending.",
+        "D. Require a business plan but not take over."
+      ],
+      "ans": "A",
+      "exp": "Critically undercapitalised: take over management and control and/or revoke licence (p.23)."
+    },
+    {
+      "id": "Q144",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's circular on rendition of false returns (BSD/1/2003) is aimed at ensuring:",
+      "opts": [
+        "A. Data integrity for proper administration and planning.",
+        "B. Higher capital ratios.",
+        "C. Lower interest rates.",
+        "D. Better customer service."
+      ],
+      "ans": "A",
+      "exp": "The circular ensures data integrity and punishes erring banks (p.23)."
+    },
+    {
+      "id": "Q145",
+      "module": 2,
+      "type": "mcq",
+      "q": "CBN's foreign exchange management circulars forbid practices such as:",
+      "opts": [
+        "A. Round tripping and non-disclosure of foreign accounts.",
+        "B. Importation of goods.",
+        "C. Export of services.",
+        "D. Domestic currency transactions."
+      ],
+      "ans": "A",
+      "exp": "They forbid unlawful use of foreign exchange including round tripping, non-disclosure, etc. (p.23-24)."
+    },
+    {
+      "id": "Q146",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN prohibits borrowing from within the banking system to recapitalise banks. Funds borrowed outside the banking system must:",
+      "opts": [
+        "A. Be of the type and nature that qualify as part of capital.",
+        "B. Be repaid within one year.",
+        "C. Be secured by government guarantee.",
+        "D. Be approved by the SEC."
+      ],
+      "ans": "A",
+      "exp": "Outside funds must be of the type and nature that qualify as part of capital per CBN's Guidance Notes (p.24)."
+    },
+    {
+      "id": "Q147",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's directive on currency substitution (April 2015) precludes:",
+      "opts": [
+        "A. Pricing of goods and services in foreign currency within Nigeria.",
+        "B. Use of foreign currency for imports.",
+        "C. Holding of foreign currency accounts.",
+        "D. Payment of salaries in foreign currency."
+      ],
+      "ans": "A",
+      "exp": "The directive precludes charging in foreign currency for services in Nigeria (p.24)."
+    },
+    {
+      "id": "Q148",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under the CBN's whistleblowing policy, reports of dishonest conduct by CBN employees should be sent to:",
+      "opts": [
+        "A. The Head, Ethics & Anti-Corruption Office, CBN.",
+        "B. The NDIC.",
+        "C. The EFCC.",
+        "D. The Federal Ministry of Finance."
+      ],
+      "ans": "A",
+      "exp": "Reports should be sent to Head, Ethics & Anti-Corruption Office, Governors' Department, CBN (p.24)."
+    },
+    {
+      "id": "Q149",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Prudential Regulation for management of foreign exchange risks limits a bank's aggregate foreign currency borrowing (excluding intergroup) to:",
+      "opts": [
+        "A. 50% of shareholders' funds.",
+        "B. 75% of shareholders' funds.",
+        "C. 100% of shareholders' funds.",
+        "D. 125% of shareholders' funds."
+      ],
+      "ans": "B",
+      "exp": "It should not exceed 75% of shareholders' funds unimpaired by losses (p.24)."
+    },
+    {
+      "id": "Q150",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's measures on dud cheques include barring serial offenders from the clearing system for a period of:",
+      "opts": [
+        "A. 2 years.",
+        "B. 3 years.",
+        "C. 5 years.",
+        "D. 10 years."
+      ],
+      "ans": "C",
+      "exp": "Serial issuers are barred from clearing system for 5 years (p.24)."
+    },
+    {
+      "id": "Q151",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's Know Your Customer (KYC) regulations require banks to:",
+      "opts": [
+        "A. Identify and verify customer identity and monitor transactions.",
+        "B. Maintain customer deposits in foreign currency.",
+        "C. Provide loans only to verified customers.",
+        "D. Report all customers to EFCC."
+      ],
+      "ans": "A",
+      "exp": "KYC requires identification, verification, and monitoring to prevent money laundering (p.25)."
+    },
+    {
+      "id": "Q152",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Bank Verification Number (BVN) is a unique identifier assigned to each bank customer to:",
+      "opts": [
+        "A. Verify identity and prevent fraud.",
+        "B. Track customer transactions for tax purposes.",
+        "C. Determine credit worthiness.",
+        "D. Monitor foreign exchange purchases."
+      ],
+      "ans": "A",
+      "exp": "BVN is used to verify identity and prevent fraud (p.25)."
+    },
+    {
+      "id": "Q153",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's consumer protection initiatives include regulations on:",
+      "opts": [
+        "A. Fees and charges, overdrafts, and debt collection.",
+        "B. Only interest rates.",
+        "C. Only loan pricing.",
+        "D. Only deposit insurance."
+      ],
+      "ans": "A",
+      "exp": "Consumer protection covers fees, overdrafts, debt collection, etc. (p.25)."
+    },
+    {
+      "id": "Q154",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's financial inclusion initiatives include:",
+      "opts": [
+        "A. Mobile money and agent banking schemes.",
+        "B. Increasing capital requirements.",
+        "C. Reducing the number of banks.",
+        "D. Encouraging foreign bank entry."
+      ],
+      "ans": "A",
+      "exp": "Financial inclusion includes mobile money and agent banking (p.25)."
+    },
+    {
+      "id": "Q155",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN has adopted the Basel Accords to:",
+      "opts": [
+        "A. Require banks to maintain certain levels of capital and liquidity.",
+        "B. Set interest rates for banks.",
+        "C. Regulate stock exchanges.",
+        "D. Insurance deposits."
+      ],
+      "ans": "A",
+      "exp": "Basel Accords require capital and liquidity to reduce systemic risk (p.25)."
+    },
+    {
+      "id": "Q156",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under the Prudential Guidelines, a bank's credit policy should cover:",
+      "opts": [
+        "A. Loan administration, disbursement, and monitoring.",
+        "B. Only lending to individuals.",
+        "C. Only corporate lending.",
+        "D. Only foreign currency lending."
+      ],
+      "ans": "A",
+      "exp": "Credit policy should cover loan administration, disbursement, and appropriate monitoring (p.19)."
+    },
+    {
+      "id": "Q157",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Prudential Guidelines require banks to have internal policies to control credit risk concentrations. Such policies must be approved by:",
+      "opts": [
+        "A. The Board of Directors.",
+        "B. The CBN.",
+        "C. The NDIC.",
+        "D. The shareholders."
+      ],
+      "ans": "A",
+      "exp": "Credit concentration policies should be approved by the Board (p.20)."
+    },
+    {
+      "id": "Q158",
+      "module": 2,
+      "type": "mcq",
+      "q": "According to the Prudential Guidelines, a bank must provide evidence of a search on the borrower in the CBN's Credit Risk Management System (CRMS) database:",
+      "opts": [
+        "A. Before granting any facility.",
+        "B. After granting the facility.",
+        "C. Annually.",
+        "D. Only for large exposures."
+      ],
+      "ans": "A",
+      "exp": "Evidence of search in CRMS database should be provided before granting facility (p.20)."
+    },
+    {
+      "id": "Q159",
+      "module": 2,
+      "type": "mcq",
+      "q": "A loan application form (LAF) must be completed before any exposure is approved. The LAF should contain:",
+      "opts": [
+        "A. Recent audited financial statements and projected cash flows.",
+        "B. Only the borrower's name.",
+        "C. Only the loan amount.",
+        "D. Only the collateral details."
+      ],
+      "ans": "A",
+      "exp": "LAF should contain such information as financial statements, projected cash flows, etc. (p.20)."
+    },
+    {
+      "id": "Q160",
+      "module": 2,
+      "type": "mcq",
+      "q": "A credit facility may be considered performing if:",
+      "opts": [
+        "A. Payments of both principal and interest are up-to-date.",
+        "B. Principal is not paid but interest is up-to-date.",
+        "C. Principal is paid but interest is overdue for 30 days.",
+        "D. Principal and interest are overdue for 60 days."
+      ],
+      "ans": "A",
+      "exp": "Performing if payments of both principal and interest are up-to-date (p.21)."
+    },
+    {
+      "id": "Q161",
+      "module": 2,
+      "type": "mcq",
+      "q": "A facility is non-performing if interest payments equal to 90 days of interest have been capitalised, rescheduled, or rolled over. This is known as:",
+      "opts": [
+        "A. Troubled debt restructuring.",
+        "B. Capitalisation of arrears.",
+        "C. Forbearance.",
+        "D. Refinancing."
+      ],
+      "ans": "B",
+      "exp": "Capitalised, rescheduled, or rolled over interest payments are considered non-performing (p.21)."
+    },
+    {
+      "id": "Q162",
+      "module": 2,
+      "type": "mcq",
+      "q": "Subjective criteria for classifying a facility as sub-standard include:",
+      "opts": [
+        "A. Inadequate cash flow to service debt.",
+        "B. Outstanding for 180 days.",
+        "C. Collateral value insufficient.",
+        "D. Borrower declared bankrupt."
+      ],
+      "ans": "A",
+      "exp": "Subjective criteria: inadequate cash flow, undercapitalisation, absence of financial information, irregular payments, etc. (p.21)."
+    },
+    {
+      "id": "Q163",
+      "module": 2,
+      "type": "mcq",
+      "q": "A doubtful facility has a provisioning rate of 50%. This classification includes facilities on which principal or interest remains unpaid for at least 180 days but less than 360 days and:",
+      "opts": [
+        "A. Are not secured by perfected realisable collateral.",
+        "B. Are secured by government securities.",
+        "C. Have been written off.",
+        "D. Are fully secured by cash."
+      ],
+      "ans": "A",
+      "exp": "Doubtful if not secured by legal title to leased assets or perfected realisable collateral (p.21)."
+    },
+    {
+      "id": "Q164",
+      "module": 2,
+      "type": "mcq",
+      "q": "A lost facility is considered uncollectible and typically has a provision of 100%. Examples include:",
+      "opts": [
+        "A. Facilities secured with unmarketable securities.",
+        "B. Facilities with overdue interest less than 90 days.",
+        "C. Facilities with collateral values covering exposure.",
+        "D. Facilities with government guarantee."
+      ],
+      "ans": "A",
+      "exp": "Lost facilities are those considered uncollectible, e.g., abandoned, secured with unmarketable securities, or extended to judgment debtors with no means (p.22)."
+    },
+    {
+      "id": "Q165",
+      "module": 2,
+      "type": "mcq",
+      "q": "For collateral adjustments in loan provisioning (haircut), the collateral must be regularly valued with:",
+      "opts": [
+        "A. Transparent method of valuation.",
+        "B. Valuation by the bank's internal auditor.",
+        "C. Valuation by the borrower.",
+        "D. Valuation based on book value."
+      ],
+      "ans": "A",
+      "exp": "Collateral must be regularly valued with transparent method of valuation (p.22)."
+    },
+    {
+      "id": "Q166",
+      "module": 2,
+      "type": "mcq",
+      "q": "Revaluation of fixed assets can only be done after a minimum period of:",
+      "opts": [
+        "A. 3 years.",
+        "B. 5 years.",
+        "C. 7 years.",
+        "D. 10 years."
+      ],
+      "ans": "C",
+      "exp": "Revaluation permissible within a minimum period of seven years after purchase or last revaluation (p.22)."
+    },
+    {
+      "id": "Q167",
+      "module": 2,
+      "type": "mcq",
+      "q": "The study guide mentions that the Federal Ministry of Finance formerly conducted on-site supervision of banks between 1960 and 1965. Which of the following is correct?",
+      "opts": [
+        "A. CBN handled off-site, FMF handled on-site.",
+        "B. FMF handled off-site, CBN handled on-site.",
+        "C. Both handled on-site jointly.",
+        "D. Only the CBN handled all supervision."
+      ],
+      "ans": "A",
+      "exp": "Between 1960 and 1965, CBN handled off-site, FMF handled on-site (p.5)."
+    },
+    {
+      "id": "Q168",
+      "module": 2,
+      "type": "mcq",
+      "q": "The harmonisation of regulations by the FSRCC is intended to address:",
+      "opts": [
+        "A. Duplicity and conflicts among multiple regulators.",
+        "B. Increase in the number of banks.",
+        "C. Reduction in deposit insurance.",
+        "D. Increase in capital requirements."
+      ],
+      "ans": "A",
+      "exp": "FSRCC was created to harmonise due to duplicity and conflicts among regulators (p.7)."
+    },
+    {
+      "id": "Q169",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's power to revoke a banking licence under Section 12 of BOFIA requires:",
+      "opts": [
+        "A. The approval of the Board of CBN.",
+        "B. The approval of the Federal Ministry of Finance.",
+        "C. A court order.",
+        "D. The approval of the National Assembly."
+      ],
+      "ans": "A",
+      "exp": "Section 12: Governor may, with approval of the Board, revoke licence (p.13)."
+    },
+    {
+      "id": "Q170",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 19(6) of BOFIA defines 'director' for the purpose of related party transactions to include:",
+      "opts": [
+        "A. The director's spouse, parents, siblings, and children, their spouses, and companies where the director holds at least 5%.",
+        "B. Only the director's immediate family.",
+        "C. Only the director's spouse.",
+        "D. Only the director's siblings."
+      ],
+      "ans": "A",
+      "exp": "Section 19(6) expands director to include family members and companies in which director has at least 5% shareholding (p.15)."
+    },
+    {
+      "id": "Q171",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under BOFIA, a bank that fails to comply with obligations under the Act may have its licence revoked. This is provided in:",
+      "opts": [
+        "A. Section 12(g).",
+        "B. Section 19.",
+        "C. Section 33.",
+        "D. Section 55."
+      ],
+      "ans": "A",
+      "exp": "Section 12(g) includes failure to comply with obligations as grounds for revocation (p.14)."
+    },
+    {
+      "id": "Q172",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Banking Sector Resolution Fund established under BOFIA is domiciled with:",
+      "opts": [
+        "A. The CBN.",
+        "B. The NDIC.",
+        "C. The Federal Ministry of Finance.",
+        "D. The SEC."
+      ],
+      "ans": "A",
+      "exp": "Section 74: Fund shall be domiciled with the CBN (p.18)."
+    },
+    {
+      "id": "Q173",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's contribution to the Banking Sector Resolution Fund at commencement is \u20a610 billion, as per:",
+      "opts": [
+        "A. Section 75.",
+        "B. Section 76.",
+        "C. Section 77.",
+        "D. Section 78."
+      ],
+      "ans": "A",
+      "exp": "Section 75: CBN contributes \u20a610 billion (p.18)."
+    },
+    {
+      "id": "Q174",
+      "module": 2,
+      "type": "mcq",
+      "q": "NDIC's contribution to the Banking Sector Resolution Fund at commencement is \u20a64 billion, as per:",
+      "opts": [
+        "A. Section 75.",
+        "B. Section 76.",
+        "C. Section 77.",
+        "D. Section 78."
+      ],
+      "ans": "B",
+      "exp": "Section 76: NDIC contributes \u20a64 billion (p.18)."
+    },
+    {
+      "id": "Q175",
+      "module": 2,
+      "type": "mcq",
+      "q": "Each bank's contribution to the Banking Sector Resolution Fund is an amount equal to 10 basis points of total assets, as per:",
+      "opts": [
+        "A. Section 75.",
+        "B. Section 76.",
+        "C. Section 77.",
+        "D. Section 78."
+      ],
+      "ans": "C",
+      "exp": "Section 77: Each bank contributes 10 basis points of total assets (p.18)."
+    },
+    {
+      "id": "Q176",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 94 of BOFIA empowers the CBN to:",
+      "opts": [
+        "A. Manage and regulate operations of the Resolution Fund.",
+        "B. Set interest rates.",
+        "C. Regulate the capital market.",
+        "D. Approve bank mergers."
+      ],
+      "ans": "A",
+      "exp": "Section 94: CBN has power to manage and regulate operations of the Fund (p.18)."
+    },
+    {
+      "id": "Q177",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT a ground for revocation of a bank's licence under Section 12 of BOFIA?",
+      "opts": [
+        "A. Ceasing to carry on banking business for six continuous months.",
+        "B. Going into liquidation.",
+        "C. Failure to pay dividends.",
+        "D. Insufficient assets to meet liabilities."
+      ],
+      "ans": "C",
+      "exp": "Section 12 lists cessation, liquidation, failure to comply with conditions, insufficient assets, unsound conduct, threat to stability, non-compliance, critical undercapitalisation, failure to commence operations. Failure to pay dividends is not a ground (p.13-14)."
+    },
+    {
+      "id": "Q178",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's circular on Reporting Unethical Conduct (BSD/DIR/GEN/LAB/08/017 of April 2, 2015) directs that reports be sent:",
+      "opts": [
+        "A. Directly, confidentially, or anonymously to the Head, Ethics & Anti-Corruption Office.",
+        "B. To the EFCC.",
+        "C. To the police.",
+        "D. To the NDIC."
+      ],
+      "ans": "A",
+      "exp": "The circular directs reports to Head, Ethics & Anti-Corruption Office (p.24)."
+    },
+    {
+      "id": "Q179",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's measure to dissuade issuance of dud cheques includes forwarding names of offenders to:",
+      "opts": [
+        "A. Private Credit Bureaux and CRMS.",
+        "B. The Federal Ministry of Finance.",
+        "C. The Securities and Exchange Commission.",
+        "D. The National Assembly."
+      ],
+      "ans": "A",
+      "exp": "Names are forwarded to Private Credit Bureaux and CRMS (p.24)."
+    },
+    {
+      "id": "Q180",
+      "module": 2,
+      "type": "mcq",
+      "q": "If a bank fails to report a serial dud cheque issuer as required, the bank is considered to have:",
+      "opts": [
+        "A. Concealed and misrepresented material fact and punished under BOFIA.",
+        "B. Committed a minor error.",
+        "C. Breached its customer confidentiality.",
+        "D. Committed a civil wrong."
+      ],
+      "ans": "A",
+      "exp": "Failure to report is concealment and misrepresentation, punished under BOFIA (p.24-25)."
+    },
+    {
+      "id": "Q181",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a reason banks must adapt to regulatory changes?",
+      "opts": [
+        "A. To comply with law and reduce risk.",
+        "B. To increase operational costs.",
+        "C. To reduce customer satisfaction.",
+        "D. To avoid competition."
+      ],
+      "ans": "A",
+      "exp": "Adaptation ensures compliance, reduces risk, improves efficiency, and maintains competitiveness (p.11)."
+    },
+    {
+      "id": "Q182",
+      "module": 2,
+      "type": "mcq",
+      "q": "Market discipline as a regulatory principle means:",
+      "opts": [
+        "A. Banks are required to disclose financial information to enable stakeholders to assess risk.",
+        "B. Banks are allowed to set their own capital requirements.",
+        "C. Banks are prohibited from advertising.",
+        "D. Banks must pay dividends."
+      ],
+      "ans": "A",
+      "exp": "Market discipline requires disclosure to enable stakeholders to assess risk (p.12)."
+    },
+    {
+      "id": "Q183",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Prudential Guidelines were revised in 2010 to address the financial crisis of 2007/09. Which of the following was a key focus?",
+      "opts": [
+        "A. Enhancing the quality of banks through improved risk management.",
+        "B. Reducing the number of banks.",
+        "C. Increasing bank profitability.",
+        "D. Reducing capital requirements."
+      ],
+      "ans": "A",
+      "exp": "The revision aimed to enhance quality of banks, addressing risk management, corporate governance, KYC/AML, and loan provisioning (p.19)."
+    },
+    {
+      "id": "Q184",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under BOFIA, a bank that is designated as systemically important may be subject to:",
+      "opts": [
+        "A. Additional regulatory requirements.",
+        "B. Exemption from certain provisions.",
+        "C. Reduced capital requirements.",
+        "D. No special treatment."
+      ],
+      "ans": "A",
+      "exp": "Systemically important banks may be subject to additional oversight (p.17-18)."
+    },
+    {
+      "id": "Q185",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 19(3)(c) of BOFIA prohibits a bank from remitting, in whole or in part, the debts owed to it by:",
+      "opts": [
+        "A. Any of its directors or past directors.",
+        "B. Any customer.",
+        "C. Any government agency.",
+        "D. Any other bank."
+      ],
+      "ans": "A",
+      "exp": "Section 19(3)(c): Bank cannot remit debts owed by its directors or past directors (p.15)."
+    },
+    {
+      "id": "Q186",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Special Tribunal for the Enforcement and Recovery of Eligible Loans under Section 102 of BOFIA is composed and its membership is highlighted in:",
+      "opts": [
+        "A. Section 103.",
+        "B. Section 104.",
+        "C. Section 105.",
+        "D. Section 106."
+      ],
+      "ans": "A",
+      "exp": "Section 103 highlights membership and composition (p.19)."
+    },
+    {
+      "id": "Q187",
+      "module": 2,
+      "type": "mcq",
+      "q": "The CBN's circular on foreign exchange management aims to ensure:",
+      "opts": [
+        "A. Realisation of monetary policy objectives, check capital flight, and curb money laundering.",
+        "B. Higher bank profits.",
+        "C. Reduction in foreign reserves.",
+        "D. Increase in importation."
+      ],
+      "ans": "A",
+      "exp": "Essence is to ensure monetary policy objectives, check capital flight, and curb money laundering (p.23-24)."
+    },
+    {
+      "id": "Q188",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Prudential Guidelines require that a bank's credit policy should be reviewed at least every:",
+      "opts": [
+        "A. One year.",
+        "B. Two years.",
+        "C. Three years.",
+        "D. Four years."
+      ],
+      "ans": "C",
+      "exp": "Reviewed at least every three years (p.19)."
+    },
+    {
+      "id": "Q189",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under the Prudential Guidelines, the total outstanding exposure (on and off-balance sheet) by a bank to all tiers of government and their agencies shall not exceed 10% of:",
+      "opts": [
+        "A. Total credit portfolio.",
+        "B. Shareholders' fund.",
+        "C. Total assets.",
+        "D. Total deposits."
+      ],
+      "ans": "A",
+      "exp": "Limitation is 10% of total credit portfolio (p.20)."
+    },
+    {
+      "id": "Q190",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Prudential Guidelines require banks to ensure that their credit policies specifically address lending to directors as part of:",
+      "opts": [
+        "A. Related parties or insiders lending policies.",
+        "B. General corporate lending.",
+        "C. Consumer lending.",
+        "D. Mortgage lending."
+      ],
+      "ans": "A",
+      "exp": "Credit policies should address lending to directors as related parties or insiders (p.20)."
+    },
+    {
+      "id": "Q191",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank grants a loan of \u20a650 million to a single company. The bank's shareholders' fund is \u20a6200 million. Is this within the single obligor limit?",
+      "opts": [
+        "A. Yes, because it is 25% of shareholders' fund, exceeding the 20% limit.",
+        "B. No, because it is 25% which exceeds the 20% limit.",
+        "C. Yes, because it is 10% of shareholders' fund.",
+        "D. No, because the limit is 10%."
+      ],
+      "ans": "B",
+      "exp": "The limit is 20% of shareholders' fund (\u20a6200m x 20% = \u20a640m). \u20a650m exceeds it, so it violates the limit (p.20)."
+    },
+    {
+      "id": "Q192",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank classifies a loan as 'doubtful' when the principal has been unpaid for 200 days. What is the required provisioning rate?",
+      "opts": [
+        "A. 10%.",
+        "B. 20%.",
+        "C. 50%.",
+        "D. 100%."
+      ],
+      "ans": "C",
+      "exp": "Doubtful is 180-360 days and requires 50% provision (p.21)."
+    },
+    {
+      "id": "Q193",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank's CAR falls to 4%. According to the Prudential Guidelines, this bank is classified as:",
+      "opts": [
+        "A. Adequately capitalised.",
+        "B. Under capitalised.",
+        "C. Significantly undercapitalised.",
+        "D. Critically undercapitalised."
+      ],
+      "ans": "C",
+      "exp": "Significantly undercapitalised: CAR <5% but >=2% (p.23)."
+    },
+    {
+      "id": "Q194",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank's CAR is 1.5%. What supervisory action is most likely?",
+      "opts": [
+        "A. Restrict dividend distribution.",
+        "B. Request a business plan.",
+        "C. Take over management and control and/or revoke licence.",
+        "D. Restrict new lending to recoveries."
+      ],
+      "ans": "C",
+      "exp": "Critically undercapitalised (CAR<2%) may lead to takeover and/or revocation (p.23)."
+    },
+    {
+      "id": "Q195",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank that has negative CAR is considered insolvent, and the appropriate action is:",
+      "opts": [
+        "A. Licence revocation.",
+        "B. Special examination.",
+        "C. Restriction on dividends.",
+        "D. Business plan approval."
+      ],
+      "ans": "A",
+      "exp": "Insolvent banks (negative CAR) face licence revocation (p.23)."
+    },
+    {
+      "id": "Q196",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under Section 6 of BOFIA, which of the following requires prior CBN consent?",
+      "opts": [
+        "A. Opening a new branch.",
+        "B. Changing the bank's name.",
+        "C. Employing a new cashier.",
+        "D. Declaring a dividend."
+      ],
+      "ans": "A",
+      "exp": "Section 6: No branch opening or closing without prior CBN consent (p.13)."
+    },
+    {
+      "id": "Q197",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 7 of BOFIA requires CBN approval for:",
+      "opts": [
+        "A. Any change in control or ownership structure of a bank.",
+        "B. Any change in interest rates.",
+        "C. Any change in the bank's auditors.",
+        "D. Any change in the bank's name."
+      ],
+      "ans": "A",
+      "exp": "Section 7: Restructuring, re-organisation, mergers, disposal, change of control require CBN approval (p.13)."
+    },
+    {
+      "id": "Q198",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under Section 12(b) of BOFIA, a bank's licence may be revoked if the bank:",
+      "opts": [
+        "A. Goes into liquidation.",
+        "B. Opens a branch without approval.",
+        "C. Declares a dividend.",
+        "D. Hires a new director."
+      ],
+      "ans": "A",
+      "exp": "Section 12(b): goes into liquidation or is wound up (p.13)."
+    },
+    {
+      "id": "Q199",
+      "module": 2,
+      "type": "mcq",
+      "q": "Section 13 of BOFIA requires banks to maintain capital funds unimpaired by losses. The CBN may prescribe a CAR for each category. Failure to observe may lead to:",
+      "opts": [
+        "A. A fine only.",
+        "B. Revocation of licence.",
+        "C. Restriction on lending.",
+        "D. All of the above."
+      ],
+      "ans": "D",
+      "exp": "Penalties for failure may include fine, revocation, or other actions (p.14)."
+    },
+    {
+      "id": "Q200",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT a function of the NDIC under Section 2 of the NDIC Act?",
+      "opts": [
+        "A. Insuring deposit liabilities of licensed banks.",
+        "B. Giving technical or financial assistance to insured institutions.",
+        "C. Approving mergers and acquisitions of banks.",
+        "D. Structuring liquidation of failed banks."
+      ],
+      "ans": "C",
+      "exp": "Approving mergers is SEC's function, not NDIC's (p.5)."
+    },
+    {
+      "id": "Q201",
+      "module": 3,
+      "type": "mcq",
+      "q": "Bank supervision is described as the process of monitoring banks to ensure their operations are:",
+      "opts": [
+        "A. Safe and sound and in compliance with laws and regulations.",
+        "B. Maximising shareholder returns.",
+        "C. Minimising operating costs.",
+        "D. Expanding into new markets."
+      ],
+      "ans": "A",
+      "exp": "Supervision ensures safe and sound operations and compliance with laws (p.26)."
+    },
+    {
+      "id": "Q202",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a type of bank supervision?",
+      "opts": [
+        "A. On-site supervision.",
+        "B. Off-site supervision.",
+        "C. Both on-site and off-site supervision.",
+        "D. Remote supervision."
+      ],
+      "ans": "C",
+      "exp": "Supervision is either on-site or off-site (p.25)."
+    },
+    {
+      "id": "Q203",
+      "module": 3,
+      "type": "mcq",
+      "q": "On-site examination of a bank is carried out:",
+      "opts": [
+        "A. At the premises of the regulator.",
+        "B. At the premises of the bank being reviewed.",
+        "C. Through analysis of statutory returns.",
+        "D. By the bank's internal auditors."
+      ],
+      "ans": "B",
+      "exp": "On-site examination is carried out on the premises of the bank being reviewed (p.25)."
+    },
+    {
+      "id": "Q204",
+      "module": 3,
+      "type": "mcq",
+      "q": "Off-site supervision involves:",
+      "opts": [
+        "A. Physical verification of assets.",
+        "B. Receipt and analysis of mandatory statutory returns sent to the CBN.",
+        "C. On-the-spot checking of transactions.",
+        "D. Interviews with bank staff."
+      ],
+      "ans": "B",
+      "exp": "Off-site supervision comprises receipt and analysis of statutory returns (p.26)."
+    },
+    {
+      "id": "Q205",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a reason why banks are supervised?",
+      "opts": [
+        "A. To ensure they are profitable.",
+        "B. Because they are guardians of people's wealth.",
+        "C. To increase the number of banks.",
+        "D. To reduce competition."
+      ],
+      "ans": "B",
+      "exp": "Banks are guardians of people's wealth and must be checked for the benefit of depositors and stakeholders (p.26)."
+    },
+    {
+      "id": "Q206",
+      "module": 3,
+      "type": "mcq",
+      "q": "Bank examination looks at all of the following EXCEPT:",
+      "opts": [
+        "A. How much risk the bank undertakes.",
+        "B. How well risks are managed.",
+        "C. What resources are available to support business and risk profile.",
+        "D. The bank's marketing strategies."
+      ],
+      "ans": "D",
+      "exp": "Examination looks at risk, management, and resources, not marketing strategies (p.26)."
+    },
+    {
+      "id": "Q207",
+      "module": 3,
+      "type": "mcq",
+      "q": "The impact of bank supervision on the financial system includes:",
+      "opts": [
+        "A. Financial stability and safety.",
+        "B. Market transparency and discipline.",
+        "C. Deposit insurance and protection.",
+        "D. All of the above."
+      ],
+      "ans": "D",
+      "exp": "Supervision contributes to stability, transparency, deposit protection, and compliance (p.26-27)."
+    },
+    {
+      "id": "Q208",
+      "module": 3,
+      "type": "mcq",
+      "q": "Routine on-site examination of banks is presently conducted how often?",
+      "opts": [
+        "A. Once a year.",
+        "B. Twice a year.",
+        "C. Three times a year.",
+        "D. Quarterly."
+      ],
+      "ans": "B",
+      "exp": "Routine on-site examination is conducted twice a year (p.27)."
+    },
+    {
+      "id": "Q209",
+      "module": 3,
+      "type": "mcq",
+      "q": "The two types of routine on-site examinations mentioned are:",
+      "opts": [
+        "A. Risk Assets assessment and Risk Based Supervision.",
+        "B. Financial audit and compliance audit.",
+        "C. Liquidity assessment and capital assessment.",
+        "D. Forensic audit and fraud investigation."
+      ],
+      "ans": "A",
+      "exp": "Routine examinations are Risk Assets assessment and Risk Based Supervision (p.27)."
+    },
+    {
+      "id": "Q210",
+      "module": 3,
+      "type": "mcq",
+      "q": "Nigeria has adopted which approach to banking supervision in line with international best practice?",
+      "opts": [
+        "A. Rules-based supervision.",
+        "B. Risk-based supervision.",
+        "C. Principle-based supervision.",
+        "D. Proactive supervision."
+      ],
+      "ans": "B",
+      "exp": "Nigeria has opted for a Risk-based Supervision (RBS) approach (p.27)."
+    },
+    {
+      "id": "Q211",
+      "module": 3,
+      "type": "mcq",
+      "q": "Risk Based Supervision (RBS) involves:",
+      "opts": [
+        "A. Identifying significant activities and determining inherent risks.",
+        "B. Only reviewing past performance.",
+        "C. Only checking compliance with capital ratios.",
+        "D. Only interviewing management."
+      ],
+      "ans": "A",
+      "exp": "RBS involves identification of activities, determination of risks, evaluation of risk management, and determination of overall riskiness (p.27)."
+    },
+    {
+      "id": "Q212",
+      "module": 3,
+      "type": "mcq",
+      "q": "Macro-prudential supervision aims to:",
+      "opts": [
+        "A. Focus on individual bank safety.",
+        "B. Complement micro-prudential supervision by considering threats to the whole financial system.",
+        "C. Replace micro-prudential supervision.",
+        "D. Focus only on capital adequacy."
+      ],
+      "ans": "B",
+      "exp": "Macro-prudential supervision complements traditional supervision of individual banks with consideration of systemic threats (p.27)."
+    },
+    {
+      "id": "Q213",
+      "module": 3,
+      "type": "mcq",
+      "q": "The ultimate goal of macro-prudential supervision is to:",
+      "opts": [
+        "A. Increase bank profits.",
+        "B. Minimise systemic risk that could damage the broader economy.",
+        "C. Reduce the number of banks.",
+        "D. Increase regulatory fees."
+      ],
+      "ans": "B",
+      "exp": "Goal is to minimise systemic risk that could inflict significant damage on the broader economy (p.27)."
+    },
+    {
+      "id": "Q214",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which type of examination is conducted as at the financial year end of every bank (31st December)?",
+      "opts": [
+        "A. Special examination.",
+        "B. Routine Risk Assessment Examination.",
+        "C. Foreign Exchange Examination.",
+        "D. Special Investigation."
+      ],
+      "ans": "B",
+      "exp": "Routine Risk Assessment Examination is conducted as at the financial year end (p.28)."
+    },
+    {
+      "id": "Q215",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Routine Risk Assessment Examination primarily reviews:",
+      "opts": [
+        "A. All assets on the balance sheet to check for impairments.",
+        "B. Only loans and advances.",
+        "C. Only off-balance sheet items.",
+        "D. Only income and expenses."
+      ],
+      "ans": "A",
+      "exp": "It reviews all assets on the balance sheet for impairments (p.28)."
+    },
+    {
+      "id": "Q216",
+      "module": 3,
+      "type": "mcq",
+      "q": "A special examination is conducted when:",
+      "opts": [
+        "A. The bank requests it.",
+        "B. The regulatory authorities have cause to believe safety and soundness have been impaired.",
+        "C. The bank's CAR falls below 10%.",
+        "D. The bank opens a new branch."
+      ],
+      "ans": "B",
+      "exp": "Special examination is conducted when safety and soundness are considerably impaired (p.28)."
+    },
+    {
+      "id": "Q217",
+      "module": 3,
+      "type": "mcq",
+      "q": "A special examination is a statutory examination and is:",
+      "opts": [
+        "A. A prelude to regulatory intervention.",
+        "B. A routine annual check.",
+        "C. Conducted only at the bank's request.",
+        "D. Only for foreign currency transactions."
+      ],
+      "ans": "A",
+      "exp": "It is a prelude to regulatory intervention (p.28)."
+    },
+    {
+      "id": "Q218",
+      "module": 3,
+      "type": "mcq",
+      "q": "Foreign Exchange Examination is conducted to check compliance with:",
+      "opts": [
+        "A. Forex rules and regulations.",
+        "B. Anti-money laundering rules.",
+        "C. Capital adequacy requirements.",
+        "D. Corporate governance rules."
+      ],
+      "ans": "A",
+      "exp": "It checks compliance with forex rules and regulations (p.28)."
+    },
+    {
+      "id": "Q219",
+      "module": 3,
+      "type": "mcq",
+      "q": "Special investigations are unscheduled examinations arising from:",
+      "opts": [
+        "A. Petitions from the banking public or suspicions.",
+        "B. Routine annual plans.",
+        "C. Changes in management.",
+        "D. Capital injection."
+      ],
+      "ans": "A",
+      "exp": "Special investigations arise from petitions, suspicions, or prior examination activities (p.28)."
+    },
+    {
+      "id": "Q220",
+      "module": 3,
+      "type": "mcq",
+      "q": "At the end of every examination, a report of findings is produced. The report must be:",
+      "opts": [
+        "A. Factual and supported by credible documentary evidence.",
+        "B. Based on assumptions.",
+        "C. Only verbal.",
+        "D. Not discussed with management."
+      ],
+      "ans": "A",
+      "exp": "Reports must be factual and assertions supported with evidence (p.28-29)."
+    },
+    {
+      "id": "Q221",
+      "module": 3,
+      "type": "mcq",
+      "q": "Examination findings must be discussed with management, and management explanations must be factored into the final report. This is described as:",
+      "opts": [
+        "A. An open reporting system.",
+        "B. A closed reporting system.",
+        "C. A confidential system.",
+        "D. A privileged system."
+      ],
+      "ans": "A",
+      "exp": "It is an open reporting system with no surprises (p.29)."
+    },
+    {
+      "id": "Q222",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a type of bank examination?",
+      "opts": [
+        "A. Routine Risk Assessment.",
+        "B. Special Examination.",
+        "C. Financial Audit.",
+        "D. Foreign Exchange Examination."
+      ],
+      "ans": "C",
+      "exp": "Types: Routine Risk Assessment, Special, Foreign Exchange, and Special Investigations. Financial Audit is not listed (p.28)."
+    },
+    {
+      "id": "Q223",
+      "module": 3,
+      "type": "mcq",
+      "q": "The CBN and NDIC carry out examinations to determine:",
+      "opts": [
+        "A. Solvency status and compliance with laws.",
+        "B. Marketing strategies.",
+        "C. Employee satisfaction.",
+        "D. Customer preferences."
+      ],
+      "ans": "A",
+      "exp": "Examinations determine solvency and compliance (p.25)."
+    },
+    {
+      "id": "Q224",
+      "module": 3,
+      "type": "mcq",
+      "q": "Early Warning Signals (EWS) are used to:",
+      "opts": [
+        "A. Detect ill-health and take prompt corrective action.",
+        "B. Increase bank profits.",
+        "C. Reduce regulatory oversight.",
+        "D. Encourage new bank entry."
+      ],
+      "ans": "A",
+      "exp": "EWS detects ill-health and leads to Prompt Corrective Action (PCA) (p.26)."
+    },
+    {
+      "id": "Q225",
+      "module": 3,
+      "type": "mcq",
+      "q": "Prompt Corrective Action (PCA) refers to:",
+      "opts": [
+        "A. Taking appropriate action to restore a troubled bank to good standing.",
+        "B. Immediate liquidation of any troubled bank.",
+        "C. Giving loans to troubled banks.",
+        "D. Reducing interest rates."
+      ],
+      "ans": "A",
+      "exp": "PCA is taking appropriate corrective action to restore a troubled bank (p.26)."
+    },
+    {
+      "id": "Q226",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is an objective of bank supervision?",
+      "opts": [
+        "A. To ensure compliance with regulations and laws.",
+        "B. To maximise shareholder profits.",
+        "C. To increase market share.",
+        "D. To reduce customer service."
+      ],
+      "ans": "A",
+      "exp": "Supervision ensures compliance and protection (p.26-27)."
+    },
+    {
+      "id": "Q227",
+      "module": 3,
+      "type": "mcq",
+      "q": "Bank supervision helps to promote:",
+      "opts": [
+        "A. Operational resilience.",
+        "B. Unfair practices.",
+        "C. High staff turnover.",
+        "D. High loan default rates."
+      ],
+      "ans": "A",
+      "exp": "Supervision promotes operational resilience, among other benefits (p.27)."
+    },
+    {
+      "id": "Q228",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a component of the supervisory structure?",
+      "opts": [
+        "A. Safety net arrangements.",
+        "B. Licensing requirements.",
+        "C. Capital adequacy rules.",
+        "D. All of the above."
+      ],
+      "ans": "D",
+      "exp": "Supervisory structure includes licensing, capital, accounting, disclosure, risk management (p.10)."
+    },
+    {
+      "id": "Q229",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Basel Core Principles for Effective Banking Supervision include the principle that supervisors should have:",
+      "opts": [
+        "A. Power to revoke licences and take corrective actions.",
+        "B. Power to set interest rates.",
+        "C. Power to manage banks.",
+        "D. Power to hire bank staff."
+      ],
+      "ans": "A",
+      "exp": "Core Principles include supervisory powers like revocation and corrective actions (p.10)."
+    },
+    {
+      "id": "Q230",
+      "module": 3,
+      "type": "mcq",
+      "q": "Nigeria's compliance with the 29 Core Principles for Effective Banking Supervision is described as:",
+      "opts": [
+        "A. Largely compliant.",
+        "B. Non-compliant.",
+        "C. Partially compliant.",
+        "D. Fully compliant."
+      ],
+      "ans": "A",
+      "exp": "Nigeria is largely compliant with the Core Principles (p.27)."
+    },
+    {
+      "id": "Q231",
+      "module": 3,
+      "type": "mcq",
+      "q": "Risk-based supervision focuses on:",
+      "opts": [
+        "A. The overall riskiness of the bank's business.",
+        "B. Only credit risk.",
+        "C. Only operational risk.",
+        "D. Only market risk."
+      ],
+      "ans": "A",
+      "exp": "RBS determines the overall riskiness of the bank's business (p.27)."
+    },
+    {
+      "id": "Q232",
+      "module": 3,
+      "type": "mcq",
+      "q": "The macro-prudential approach is concerned with:",
+      "opts": [
+        "A. The stability of the financial system as a whole.",
+        "B. The safety of individual banks.",
+        "C. The profitability of banks.",
+        "D. The efficiency of payment systems."
+      ],
+      "ans": "A",
+      "exp": "Macro-prudential approach focuses on systemic stability (p.27)."
+    },
+    {
+      "id": "Q233",
+      "module": 3,
+      "type": "mcq",
+      "q": "Special investigations are typically triggered by:",
+      "opts": [
+        "A. Petitions from the banking public.",
+        "B. Routine annual review.",
+        "C. Change in management.",
+        "D. Increase in capital."
+      ],
+      "ans": "A",
+      "exp": "They arise from petitions, suspicions, or prior examinations (p.28)."
+    },
+    {
+      "id": "Q234",
+      "module": 3,
+      "type": "mcq",
+      "q": "The report of examination findings is described as an open reporting system because:",
+      "opts": [
+        "A. Findings are discussed with management and their responses included.",
+        "B. Findings are published in newspapers.",
+        "C. Findings are shared with all banks.",
+        "D. Findings are available to the public."
+      ],
+      "ans": "A",
+      "exp": "It is open because findings are discussed with management and responses factored in (p.29)."
+    },
+    {
+      "id": "Q235",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a benefit of off-site supervision?",
+      "opts": [
+        "A. It is less costly than on-site.",
+        "B. It allows physical verification of assets.",
+        "C. It provides real-time insight into bank operations.",
+        "D. It reduces the need for statutory returns."
+      ],
+      "ans": "A",
+      "exp": "Off-site is less costly, though it relies on returns (p.26)."
+    },
+    {
+      "id": "Q236",
+      "module": 3,
+      "type": "mcq",
+      "q": "Regulatory authorities in emerging markets often rely more on off-site supervision because:",
+      "opts": [
+        "A. They have limited resources.",
+        "B. They have no regulatory powers.",
+        "C. They lack trained staff.",
+        "D. They prefer remote work."
+      ],
+      "ans": "A",
+      "exp": "Emerging markets with inadequate resources rely more on off-site supervision (p.26)."
+    },
+    {
+      "id": "Q237",
+      "module": 3,
+      "type": "mcq",
+      "q": "Bank supervision is critical to mitigate:",
+      "opts": [
+        "A. Banking crises.",
+        "B. Bank profits.",
+        "C. Interest rates.",
+        "D. Exchange rates."
+      ],
+      "ans": "A",
+      "exp": "Banking crisis is best mitigated through effective supervision (p.26)."
+    },
+    {
+      "id": "Q238",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Asset Management Corporation of Nigeria (AMCON) was established to:",
+      "opts": [
+        "A. Purchase toxic risk assets of ailing banks.",
+        "B. Provide deposit insurance.",
+        "C. Regulate the capital market.",
+        "D. Set monetary policy."
+      ],
+      "ans": "A",
+      "exp": "AMCON was set up to purchase toxic assets to improve liquidity (p.32)."
+    },
+    {
+      "id": "Q239",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a duty of bank supervisors under the curative role?",
+      "opts": [
+        "A. Take over management of ailing banks.",
+        "B. Issue banking licences.",
+        "C. Conduct fit and proper tests.",
+        "D. Prescribe capital requirements."
+      ],
+      "ans": "A",
+      "exp": "Curative role includes injecting funds and taking over management (p.32)."
+    },
+    {
+      "id": "Q240",
+      "module": 3,
+      "type": "mcq",
+      "q": "The preventive role of bank supervisors includes:",
+      "opts": [
+        "A. Entry point screening of shareholders and managers.",
+        "B. Taking over management.",
+        "C. Liquidation of failed banks.",
+        "D. Purchasing toxic assets."
+      ],
+      "ans": "A",
+      "exp": "Preventive role includes entry point screening (fit and proper) and capital prescription (p.31)."
+    },
+    {
+      "id": "Q241",
+      "module": 3,
+      "type": "mcq",
+      "q": "The curative role of bank supervisors includes all of the following EXCEPT:",
+      "opts": [
+        "A. Injecting funds into troubled banks.",
+        "B. Taking over management.",
+        "C. Setting up AMCON.",
+        "D. Issuing banking licences."
+      ],
+      "ans": "D",
+      "exp": "Issuing licences is preventive, not curative (p.31-32)."
+    },
+    {
+      "id": "Q242",
+      "module": 3,
+      "type": "mcq",
+      "q": "The liquidation role of bank supervisors aims to:",
+      "opts": [
+        "A. Ensure smooth winding up and maximise asset realisation for depositors.",
+        "B. Maximise shareholder returns.",
+        "C. Prevent bank failures.",
+        "D. Reduce regulatory burden."
+      ],
+      "ans": "A",
+      "exp": "Liquidation role aims for orderly winding up and best possible revenue for depositors (p.32)."
+    },
+    {
+      "id": "Q243",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank that is critically undercapitalised (CAR <2%) is subject to:",
+      "opts": [
+        "A. Takeover of management and/or revocation of licence.",
+        "B. Only a fine.",
+        "C. Restriction on dividends.",
+        "D. Special examination."
+      ],
+      "ans": "A",
+      "exp": "Critically undercapitalised may lead to takeover/revocation (p.23)."
+    },
+    {
+      "id": "Q244",
+      "module": 3,
+      "type": "mcq",
+      "q": "The CBN's power to impose sanctions on banks includes:",
+      "opts": [
+        "A. Monetary penalty.",
+        "B. Removal of directors.",
+        "C. Suspension from forex transactions.",
+        "D. All of the above."
+      ],
+      "ans": "D",
+      "exp": "Sanctions include fines, removal, suspension, takeover, and revocation (p.31)."
+    },
+    {
+      "id": "Q245",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a consequence of non-compliance with banking regulations?",
+      "opts": [
+        "A. Fines and suspension from clearing.",
+        "B. Increased profitability.",
+        "C. Reduced regulatory oversight.",
+        "D. More favourable interest rates."
+      ],
+      "ans": "A",
+      "exp": "Non-compliance leads to penalties, suspension, removal, etc. (p.32)."
+    },
+    {
+      "id": "Q246",
+      "module": 3,
+      "type": "mcq",
+      "q": "The CBN's intervention in a failing bank may include:",
+      "opts": [
+        "A. Injecting funds and taking over management.",
+        "B. Reducing capital requirements.",
+        "C. Waiving all penalties.",
+        "D. Approving new loans."
+      ],
+      "ans": "A",
+      "exp": "Intervention includes injecting funds and taking over management (p.32)."
+    },
+    {
+      "id": "Q247",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Nigeria Deposit Insurance Corporation (NDIC) shares supervision of deposit money banks with:",
+      "opts": [
+        "A. The CBN.",
+        "B. The SEC.",
+        "C. The FMF.",
+        "D. The EFCC."
+      ],
+      "ans": "A",
+      "exp": "NDIC shares supervision with CBN (p.4)."
+    },
+    {
+      "id": "Q248",
+      "module": 3,
+      "type": "mcq",
+      "q": "On-site examination includes:",
+      "opts": [
+        "A. Physically authenticating periodic reports.",
+        "B. Reviewing statutory returns.",
+        "C. Analyzing financial statements sent to CBN.",
+        "D. Desk review of bank data."
+      ],
+      "ans": "A",
+      "exp": "On-site consists of physically authenticating reports (p.25)."
+    },
+    {
+      "id": "Q249",
+      "module": 3,
+      "type": "mcq",
+      "q": "Off-site supervision relies on:",
+      "opts": [
+        "A. Mandatory statutory returns periodically sent to CBN.",
+        "B. Physical inspection of branches.",
+        "C. Interviews with customers.",
+        "D. Review of internal audit reports."
+      ],
+      "ans": "A",
+      "exp": "Off-site comprises receipt and analysis of mandatory statutory returns (p.26)."
+    },
+    {
+      "id": "Q250",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a key element of Risk-Based Supervision?",
+      "opts": [
+        "A. Evaluating the risk management framework.",
+        "B. Checking all transactions for compliance.",
+        "C. Reviewing all loan applications.",
+        "D. Counting cash in vaults."
+      ],
+      "ans": "A",
+      "exp": "RBS involves evaluating risk management framework (p.27)."
+    },
+    {
+      "id": "Q251",
+      "module": 3,
+      "type": "mcq",
+      "q": "The macro-prudential approach supports micro-prudential supervision but cannot:",
+      "opts": [
+        "A. Replace it.",
+        "B. Complement it.",
+        "C. Enhance it.",
+        "D. Improve it."
+      ],
+      "ans": "A",
+      "exp": "Macro-prudential supervision can only support, not supplant, micro-prudential supervision (p.27)."
+    },
+    {
+      "id": "Q252",
+      "module": 3,
+      "type": "mcq",
+      "q": "A special examination is ordered when:",
+      "opts": [
+        "A. The bank's CAR falls below 10%.",
+        "B. There is a threat to safety and soundness.",
+        "C. The bank declares a dividend.",
+        "D. The bank opens a new branch."
+      ],
+      "ans": "B",
+      "exp": "Special examination is when safety and soundness are considerably impaired (p.28)."
+    },
+    {
+      "id": "Q253",
+      "module": 3,
+      "type": "mcq",
+      "q": "Foreign Exchange Examination reviews:",
+      "opts": [
+        "A. Sources and application of funds and forex compliance.",
+        "B. Capital adequacy.",
+        "C. Asset quality.",
+        "D. Management competence."
+      ],
+      "ans": "A",
+      "exp": "It reviews sources and application of funds (p.28)."
+    },
+    {
+      "id": "Q254",
+      "module": 3,
+      "type": "mcq",
+      "q": "Special investigations are:",
+      "opts": [
+        "A. Unscheduled and arise from petitions.",
+        "B. Scheduled annually.",
+        "C. Only for forex violations.",
+        "D. Only for capital deficiencies."
+      ],
+      "ans": "A",
+      "exp": "They are unscheduled from petitions or suspicions (p.28)."
+    },
+    {
+      "id": "Q255",
+      "module": 3,
+      "type": "mcq",
+      "q": "The report of examination findings must be:",
+      "opts": [
+        "A. Supported with credible documentary evidence.",
+        "B. Based on hearsay.",
+        "C. Published immediately.",
+        "D. Kept confidential."
+      ],
+      "ans": "A",
+      "exp": "Assertions must be supported with evidence (p.28-29)."
+    },
+    {
+      "id": "Q256",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a role of bank supervisors?",
+      "opts": [
+        "A. Preventive.",
+        "B. Curative.",
+        "C. Liquidative.",
+        "D. Promotional."
+      ],
+      "ans": "D",
+      "exp": "The three roles are preventive, curative, and liquidation (p.30-32)."
+    },
+    {
+      "id": "Q257",
+      "module": 3,
+      "type": "mcq",
+      "q": "The preventive role includes ensuring that individuals with questionable integrity are precluded from owning or managing banks through:",
+      "opts": [
+        "A. Fit and proper person test.",
+        "B. Police clearance.",
+        "C. Educational qualifications.",
+        "D. Political affiliation."
+      ],
+      "ans": "A",
+      "exp": "Fit and proper person test is used to prevent undesirable persons from entering banking (p.31)."
+    },
+    {
+      "id": "Q258",
+      "module": 3,
+      "type": "mcq",
+      "q": "Capital adequacy as a preventive measure aims to:",
+      "opts": [
+        "A. Ensure banks have enough capital to support their operations and absorb losses.",
+        "B. Increase bank profits.",
+        "C. Reduce the number of banks.",
+        "D. Encourage risky lending."
+      ],
+      "ans": "A",
+      "exp": "Capital adequacy provides cushion against losses and supports operations (p.31)."
+    },
+    {
+      "id": "Q259",
+      "module": 3,
+      "type": "mcq",
+      "q": "Continuous supervision includes:",
+      "opts": [
+        "A. On-site and off-site supervision diligently executed.",
+        "B. Only annual reviews.",
+        "C. Only off-site reviews.",
+        "D. Only on-site reviews."
+      ],
+      "ans": "A",
+      "exp": "Continuous supervision involves both on-site and off-site (p.31)."
+    },
+    {
+      "id": "Q260",
+      "module": 3,
+      "type": "mcq",
+      "q": "Information disclosure as a preventive tool requires banks to announce:",
+      "opts": [
+        "A. Operating results to the public.",
+        "B. All customer details.",
+        "C. Internal audit reports.",
+        "D. Strategic plans."
+      ],
+      "ans": "A",
+      "exp": "Banks must disclose operating results to inform stakeholders (p.31)."
+    },
+    {
+      "id": "Q261",
+      "module": 3,
+      "type": "mcq",
+      "q": "Imposition of sanctions is a preventive measure. Which of the following is a sanction?",
+      "opts": [
+        "A. Payment of monetary penalty.",
+        "B. Removal of directors.",
+        "C. Suspension from clearing house.",
+        "D. All of the above."
+      ],
+      "ans": "D",
+      "exp": "Sanctions include fines, removal, suspension, takeover, revocation (p.31)."
+    },
+    {
+      "id": "Q262",
+      "module": 3,
+      "type": "mcq",
+      "q": "The curative role aims to correct anomalies and prevent:",
+      "opts": [
+        "A. Loss of confidence or run on banks.",
+        "B. Increase in profits.",
+        "C. New bank entry.",
+        "D. Reduction in capital."
+      ],
+      "ans": "A",
+      "exp": "Curative role corrects anomalies to prevent loss of confidence (p.32)."
+    },
+    {
+      "id": "Q263",
+      "module": 3,
+      "type": "mcq",
+      "q": "AMCON was set up to purchase toxic assets from ailing banks. This is part of the:",
+      "opts": [
+        "A. Curative role.",
+        "B. Preventive role.",
+        "C. Liquidation role.",
+        "D. Supervisory role."
+      ],
+      "ans": "A",
+      "exp": "AMCON is a curative measure to improve bank liquidity (p.32)."
+    },
+    {
+      "id": "Q264",
+      "module": 3,
+      "type": "mcq",
+      "q": "Liquidation role ensures that depositors do not face avoidable loss through:",
+      "opts": [
+        "A. Orderly winding up and asset realisation.",
+        "B. Government bailouts.",
+        "C. Reduction of deposit insurance.",
+        "D. Waiver of liabilities."
+      ],
+      "ans": "A",
+      "exp": "Liquidation ensures smooth winding up and best possible revenue (p.32)."
+    },
+    {
+      "id": "Q265",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a consequence of non-compliance with banking laws?",
+      "opts": [
+        "A. Revocation of banking licence.",
+        "B. Increased trust.",
+        "C. Reduced penalties.",
+        "D. Higher capital."
+      ],
+      "ans": "A",
+      "exp": "Non-compliance may lead to licence revocation (p.32)."
+    },
+    {
+      "id": "Q266",
+      "module": 3,
+      "type": "mcq",
+      "q": "Effective collaboration by regulatory authorities is required for:",
+      "opts": [
+        "A. Good corporate governance and safe banking.",
+        "B. Increased bank profits.",
+        "C. Reduced regulation.",
+        "D. Lower capital requirements."
+      ],
+      "ans": "A",
+      "exp": "Collaboration ensures good governance and safe banking (p.32)."
+    },
+    {
+      "id": "Q267",
+      "module": 3,
+      "type": "mcq",
+      "q": "Risk management practices such as the COSO Framework and Basel Accords are adopted to maintain:",
+      "opts": [
+        "A. International best practice.",
+        "B. High profits.",
+        "C. Low competition.",
+        "D. High interest rates."
+      ],
+      "ans": "A",
+      "exp": "Adoption maintains international best practice and sustainable risk management (p.4)."
+    },
+    {
+      "id": "Q268",
+      "module": 3,
+      "type": "mcq",
+      "q": "The CBN's adoption of the Basel Accords requires banks to maintain:",
+      "opts": [
+        "A. Certain levels of capital and liquidity.",
+        "B. High loan-to-deposit ratios.",
+        "C. Low operational costs.",
+        "D. High dividend payouts."
+      ],
+      "ans": "A",
+      "exp": "Basel Accords require capital and liquidity to reduce systemic risk (p.25)."
+    },
+    {
+      "id": "Q269",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under the preventive role, prescription of capital is important because:",
+      "opts": [
+        "A. Higher capital reduces likelihood of failure.",
+        "B. Lower capital increases returns.",
+        "C. Capital is not important for banks.",
+        "D. Capital only affects dividends."
+      ],
+      "ans": "A",
+      "exp": "Higher capital makes a bank less likely to fail (p.31)."
+    },
+    {
+      "id": "Q270",
+      "module": 3,
+      "type": "mcq",
+      "q": "The liquidation role is necessary when:",
+      "opts": [
+        "A. A bank fails and its licence is revoked.",
+        "B. A bank is profitable.",
+        "C. A bank opens a new branch.",
+        "D. A bank declares dividends."
+      ],
+      "ans": "A",
+      "exp": "Liquidation is for failed banks whose licences are revoked (p.32)."
+    },
+    {
+      "id": "Q271",
+      "module": 3,
+      "type": "mcq",
+      "q": "The CBN's power to take over management of a bank is an example of:",
+      "opts": [
+        "A. Curative role.",
+        "B. Preventive role.",
+        "C. Liquidation role.",
+        "D. Regulatory role."
+      ],
+      "ans": "A",
+      "exp": "Takeover of management is curative (p.32)."
+    },
+    {
+      "id": "Q272",
+      "module": 3,
+      "type": "mcq",
+      "q": "Off-site supervision is less effective in emerging markets because of:",
+      "opts": [
+        "A. Inadequate resources.",
+        "B. High level of technology.",
+        "C. Strong banking culture.",
+        "D. High competition."
+      ],
+      "ans": "A",
+      "exp": "Emerging markets with inadequate resources rely more on off-site (p.26)."
+    },
+    {
+      "id": "Q273",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Core Principles for Effective Banking Supervision are issued by:",
+      "opts": [
+        "A. The Basel Committee on Banking Supervision.",
+        "B. The IMF.",
+        "C. The World Bank.",
+        "D. The United Nations."
+      ],
+      "ans": "A",
+      "exp": "The Basel Committee issues the Core Principles (p.10)."
+    },
+    {
+      "id": "Q274",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a type of bank examination?",
+      "opts": [
+        "A. Routine Risk Assessment.",
+        "B. Special Examination.",
+        "C. Financial Audit.",
+        "D. Foreign Exchange Examination."
+      ],
+      "ans": "C",
+      "exp": "Financial Audit is not listed among the examination types (p.28)."
+    },
+    {
+      "id": "Q275",
+      "module": 3,
+      "type": "mcq",
+      "q": "Special investigations are conducted to ascertain the true position of issues under investigation. They are triggered by:",
+      "opts": [
+        "A. Petitions from the banking public.",
+        "B. Routine annual checks.",
+        "C. Changes in bank management.",
+        "D. Capital injection."
+      ],
+      "ans": "A",
+      "exp": "They arise from petitions, suspicions, or prior examinations (p.28)."
+    },
+    {
+      "id": "Q276",
+      "module": 3,
+      "type": "mcq",
+      "q": "The report of examination findings must be discussed with management to:",
+      "opts": [
+        "A. Ensure an open reporting system.",
+        "B. Keep findings secret.",
+        "C. Avoid confrontation.",
+        "D. Delay regulatory action."
+      ],
+      "ans": "A",
+      "exp": "Discussion with management and inclusion of responses is an open system (p.29)."
+    },
+    {
+      "id": "Q277",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a benefit of effective bank supervision?",
+      "opts": [
+        "A. Enhanced market transparency and discipline.",
+        "B. Higher bank profits.",
+        "C. Lower capital requirements.",
+        "D. Reduced regulatory oversight."
+      ],
+      "ans": "A",
+      "exp": "Supervision enhances transparency and discipline (p.26-27)."
+    },
+    {
+      "id": "Q278",
+      "module": 3,
+      "type": "mcq",
+      "q": "The macro-prudential approach aims to minimise systemic risk by considering:",
+      "opts": [
+        "A. Interconnections among financial institutions.",
+        "B. Only individual bank risks.",
+        "C. Only credit risk.",
+        "D. Only market risk."
+      ],
+      "ans": "A",
+      "exp": "Macro-prudential considers threats to the financial system as a whole (p.27)."
+    },
+    {
+      "id": "Q279",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a tool used in off-site supervision?",
+      "opts": [
+        "A. Analysis of statutory returns.",
+        "B. Physical cash count.",
+        "C. Customer interviews.",
+        "D. Branch visits."
+      ],
+      "ans": "A",
+      "exp": "Off-site relies on analysis of statutory returns (p.26)."
+    },
+    {
+      "id": "Q280",
+      "module": 3,
+      "type": "mcq",
+      "q": "On-site supervision provides the advantage of:",
+      "opts": [
+        "A. Physical authentication of reports.",
+        "B. Lower cost.",
+        "C. Faster analysis.",
+        "D. Less regulatory burden."
+      ],
+      "ans": "A",
+      "exp": "On-site allows physical authentication (p.25)."
+    },
+    {
+      "id": "Q281",
+      "module": 3,
+      "type": "mcq",
+      "q": "The CBN and NDIC carry out routine examinations twice a year. This is to:",
+      "opts": [
+        "A. Ensure ongoing safety and soundness.",
+        "B. Reduce costs.",
+        "C. Increase bank profits.",
+        "D. Meet Basel requirements."
+      ],
+      "ans": "A",
+      "exp": "Routine examinations ensure safety and soundness (p.27)."
+    },
+    {
+      "id": "Q282",
+      "module": 3,
+      "type": "mcq",
+      "q": "Risk-based supervision shifts focus from:",
+      "opts": [
+        "A. Transaction-based checking to risk management assessment.",
+        "B. Capital adequacy to liquidity.",
+        "C. Profitability to market share.",
+        "D. Compliance to innovation."
+      ],
+      "ans": "A",
+      "exp": "RBS focuses on risk management rather than just transactions (p.27)."
+    },
+    {
+      "id": "Q283",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a component of the supervisory review process under Pillar II of Basel II?",
+      "opts": [
+        "A. Minimum capital requirements.",
+        "B. Supervisory review and risk management.",
+        "C. Market discipline.",
+        "D. Liquidity requirements."
+      ],
+      "ans": "B",
+      "exp": "Pillar II is supervisory review (p.8)."
+    },
+    {
+      "id": "Q284",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Nigerian banking sector's supervision is largely compliant with the 29 Core Principles, which include:",
+      "opts": [
+        "A. Supervisors must have the authority to take corrective actions.",
+        "B. Banks must have unlimited deposit insurance.",
+        "C. Banks must be state-owned.",
+        "D. Banks must operate only in Nigeria."
+      ],
+      "ans": "A",
+      "exp": "Core Principles include supervisory powers for corrective actions (p.10)."
+    },
+    {
+      "id": "Q285",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a type of risk that the macro-prudential approach addresses?",
+      "opts": [
+        "A. Systemic risk.",
+        "B. Credit risk.",
+        "C. Operational risk.",
+        "D. Liquidity risk."
+      ],
+      "ans": "A",
+      "exp": "Macro-prudential addresses systemic risk (p.27)."
+    },
+    {
+      "id": "Q286",
+      "module": 3,
+      "type": "mcq",
+      "q": "The CBN's circular on false returns is designed to:",
+      "opts": [
+        "A. Ensure data integrity.",
+        "B. Increase bank profits.",
+        "C. Reduce regulatory oversight.",
+        "D. Encourage bank mergers."
+      ],
+      "ans": "A",
+      "exp": "It ensures data integrity (p.23)."
+    },
+    {
+      "id": "Q287",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank that fails to report a serial dud cheque issuer may be penalised under:",
+      "opts": [
+        "A. BOFIA.",
+        "B. NDIC Act.",
+        "C. CBN Act.",
+        "D. EFCC Act."
+      ],
+      "ans": "A",
+      "exp": "Failure is concealment and misrepresentation, punished under BOFIA (p.24-25)."
+    },
+    {
+      "id": "Q288",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Prudential Guidelines require that banks obtain credit reports from at least two credit bureaux. This is to:",
+      "opts": [
+        "A. Enhance credit risk assessment.",
+        "B. Increase costs.",
+        "C. Reduce lending.",
+        "D. Satisfy regulators only."
+      ],
+      "ans": "A",
+      "exp": "It enhances assessment of borrowers (p.20)."
+    },
+    {
+      "id": "Q289",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a criterion for a facility to be classified as 'lost'?",
+      "opts": [
+        "A. Principal unpaid for 360 days or more.",
+        "B. Interest unpaid for 90 days.",
+        "C. Facility is fully secured.",
+        "D. Borrower has good cash flow."
+      ],
+      "ans": "A",
+      "exp": "Lost: 360 days or more (p.22)."
+    },
+    {
+      "id": "Q290",
+      "module": 3,
+      "type": "mcq",
+      "q": "The haircut adjustment on collateral for provisioning requires that collateral be:",
+      "opts": [
+        "A. Perfected and realisable.",
+        "B. Unperfected but acceptable.",
+        "C. Valued by the bank only.",
+        "D. Based on book value."
+      ],
+      "ans": "A",
+      "exp": "Must be perfected and realisable (p.22)."
+    },
+    {
+      "id": "Q291",
+      "module": 3,
+      "type": "mcq",
+      "q": "Revaluation of fixed assets requires CBN approval and is allowed only for:",
+      "opts": [
+        "A. Own premises.",
+        "B. Investment properties.",
+        "C. Equipment.",
+        "D. Intangible assets."
+      ],
+      "ans": "A",
+      "exp": "Only own premises (p.22)."
+    },
+    {
+      "id": "Q292",
+      "module": 3,
+      "type": "mcq",
+      "q": "The discount on revaluation surplus is 55%, meaning:",
+      "opts": [
+        "A. Only 45% of the surplus can be recognised.",
+        "B. 55% of the surplus is added to capital.",
+        "C. 55% is written off.",
+        "D. 45% is discounted."
+      ],
+      "ans": "A",
+      "exp": "Discount of 55% means 45% of the surplus is recognised (p.22)."
+    },
+    {
+      "id": "Q293",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank's CAR of 6% would trigger which supervisory action?",
+      "opts": [
+        "A. Restrict dividend distribution.",
+        "B. Take over management.",
+        "C. Revoke licence.",
+        "D. Restrict new lending to recoveries."
+      ],
+      "ans": "A",
+      "exp": "Under capitalised (5-10%) \u2192 restrict dividends (p.23)."
+    },
+    {
+      "id": "Q294",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank with CAR of 3% is significantly undercapitalised. What action may CBN take?",
+      "opts": [
+        "A. Request a business plan for capital injection.",
+        "B. Immediately revoke licence.",
+        "C. Only restrict dividends.",
+        "D. No action."
+      ],
+      "ans": "A",
+      "exp": "Significantly undercapitalised: request business plan, restrict lending (p.23)."
+    },
+    {
+      "id": "Q295",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Banking Sector Resolution Fund is used for:",
+      "opts": [
+        "A. Paying operating costs of a bridge bank.",
+        "B. Paying dividends to shareholders.",
+        "C. Funding regulatory agencies.",
+        "D. Providing loans to customers."
+      ],
+      "ans": "A",
+      "exp": "Fund used for bridge bank costs, transfer costs, credit facilities (p.18)."
+    },
+    {
+      "id": "Q296",
+      "module": 3,
+      "type": "mcq",
+      "q": "The CBN may freeze an account under Section 97 of BOFIA if the Governor believes:",
+      "opts": [
+        "A. Transactions involve a criminal offence.",
+        "B. The account is dormant.",
+        "C. The customer is a director.",
+        "D. The account has insufficient funds."
+      ],
+      "ans": "A",
+      "exp": "Freeze if transactions involve criminal offence (p.18)."
+    },
+    {
+      "id": "Q297",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Special Tribunal for the Enforcement and Recovery of Eligible Loans is established under:",
+      "opts": [
+        "A. Section 102 of BOFIA.",
+        "B. Section 53 of BOFIA.",
+        "C. Section 12 of BOFIA.",
+        "D. Section 74 of BOFIA."
+      ],
+      "ans": "A",
+      "exp": "Section 102 establishes the Tribunal (p.19)."
+    },
+    {
+      "id": "Q298",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a consequence of non-compliance with banking laws?",
+      "opts": [
+        "A. Blacklisting of officers.",
+        "B. Increase in capital.",
+        "C. Reduction in interest rates.",
+        "D. Higher dividends."
+      ],
+      "ans": "A",
+      "exp": "Non-compliance may lead to blacklisting of officers (p.32)."
+    },
+    {
+      "id": "Q299",
+      "module": 3,
+      "type": "mcq",
+      "q": "The CBN's power to impose sanctions is derived from:",
+      "opts": [
+        "A. Its enabling statutes.",
+        "B. The Constitution.",
+        "C. The Federal Ministry of Finance.",
+        "D. The National Assembly."
+      ],
+      "ans": "A",
+      "exp": "Regulators are empowered by enabling statutes to impose sanctions (p.31)."
+    },
+    {
+      "id": "Q300",
+      "module": 3,
+      "type": "mcq",
+      "q": "Bank supervisors enforce adequate disclosure to ensure that:",
+      "opts": [
+        "A. Governments, supervisors, depositors, and investors are informed of bank performance.",
+        "B. Banks maximise profits.",
+        "C. Banks reduce lending.",
+        "D. Banks avoid competition."
+      ],
+      "ans": "A",
+      "exp": "Disclosure informs all stakeholders (p.31)."
+    },
+    {
+      "id": "Q301",
+      "module": 4,
+      "type": "mcq",
+      "q": "The CAMELS parameters are used by the CBN to evaluate:",
+      "opts": [
+        "A. The well-being of banks.",
+        "B. The profitability of banks.",
+        "C. The market share of banks.",
+        "D. The customer satisfaction of banks."
+      ],
+      "ans": "A",
+      "exp": "CAMELS is used to evaluate well-being of banks (p.29)."
+    },
+    {
+      "id": "Q302",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'C' in CAMELS stands for:",
+      "opts": [
+        "A. Capital Adequacy.",
+        "B. Credit Quality.",
+        "C. Compliance.",
+        "D. Customer Satisfaction."
+      ],
+      "ans": "A",
+      "exp": "C stands for Capital Adequacy (p.29)."
+    },
+    {
+      "id": "Q303",
+      "module": 4,
+      "type": "mcq",
+      "q": "What constitutes the core capital of a bank?",
+      "opts": [
+        "A. Equity contributions, reserves, and retained earnings.",
+        "B. Deposits from customers.",
+        "C. Borrowings from other banks.",
+        "D. Government grants."
+      ],
+      "ans": "A",
+      "exp": "Core capital includes equity, reserves, and retained earnings (p.29)."
+    },
+    {
+      "id": "Q304",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a function of bank capital?",
+      "opts": [
+        "A. Provides support for the volume and character of the bank's business.",
+        "B. Finances customer deposits.",
+        "C. Pays dividends.",
+        "D. Reduces operating costs."
+      ],
+      "ans": "A",
+      "exp": "Capital provides infrastructure, supports business, and cushions losses (p.29)."
+    },
+    {
+      "id": "Q305",
+      "module": 4,
+      "type": "mcq",
+      "q": "Bank capital serves as a buffer between:",
+      "opts": [
+        "A. Operating losses and depositors' funds.",
+        "B. Shareholders and management.",
+        "C. Regulatory capital and economic capital.",
+        "D. Assets and liabilities."
+      ],
+      "ans": "A",
+      "exp": "Capital cushions the bank against operating losses, protecting depositors (p.29)."
+    },
+    {
+      "id": "Q306",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'A' in CAMELS stands for:",
+      "opts": [
+        "A. Asset Quality.",
+        "B. Asset Management.",
+        "C. Accounting.",
+        "D. Administrative."
+      ],
+      "ans": "A",
+      "exp": "A stands for Asset Quality (p.29)."
+    },
+    {
+      "id": "Q307",
+      "module": 4,
+      "type": "mcq",
+      "q": "Asset quality refers to the productive capacity of assets, which includes:",
+      "opts": [
+        "A. Income generation capacity and liquidity.",
+        "B. Market value and historical cost.",
+        "C. Intangible value and goodwill.",
+        "D. Collateral and security."
+      ],
+      "ans": "A",
+      "exp": "Productivity includes income generation and liquidity (p.29)."
+    },
+    {
+      "id": "Q308",
+      "module": 4,
+      "type": "mcq",
+      "q": "Assets on a balance sheet are arranged in order of:",
+      "opts": [
+        "A. Liquidity.",
+        "B. Size.",
+        "C. Age.",
+        "D. Risk."
+      ],
+      "ans": "A",
+      "exp": "Assets are arranged in order of liquidity (p.29)."
+    },
+    {
+      "id": "Q309",
+      "module": 4,
+      "type": "mcq",
+      "q": "Liabilities are real and cannot be wished away, whereas assets:",
+      "opts": [
+        "A. May be unreal, stolen, or unrealisable.",
+        "B. Are always real.",
+        "C. Are always liquid.",
+        "D. Are always profitable."
+      ],
+      "ans": "A",
+      "exp": "Assets may be unreal, stolen, or unrealisable; they can be paper assets (p.29)."
+    },
+    {
+      "id": "Q310",
+      "module": 4,
+      "type": "mcq",
+      "q": "Assets generate the most income for banks, but they also generate the largest losses depending on:",
+      "opts": [
+        "A. Their productivity.",
+        "B. Their age.",
+        "C. Their size.",
+        "D. Their location."
+      ],
+      "ans": "A",
+      "exp": "Productivity determines income or loss (p.29)."
+    },
+    {
+      "id": "Q311",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'M' in CAMELS stands for:",
+      "opts": [
+        "A. Management.",
+        "B. Market Risk.",
+        "C. Monetary Policy.",
+        "D. Margin."
+      ],
+      "ans": "A",
+      "exp": "M stands for Management (p.30)."
+    },
+    {
+      "id": "Q312",
+      "module": 4,
+      "type": "mcq",
+      "q": "Management is judged by the results of:",
+      "opts": [
+        "A. All the other CAMELS parameters.",
+        "B. Only capital adequacy.",
+        "C. Only earnings.",
+        "D. Only liquidity."
+      ],
+      "ans": "A",
+      "exp": "Management is judged by results of the other parameters (p.30)."
+    },
+    {
+      "id": "Q313",
+      "module": 4,
+      "type": "mcq",
+      "q": "Management drives:",
+      "opts": [
+        "A. Financial intermediation and Asset and Liability Management.",
+        "B. Only lending.",
+        "C. Only deposit-taking.",
+        "D. Only compliance."
+      ],
+      "ans": "A",
+      "exp": "Management drives financial intermediation and ALM (p.30)."
+    },
+    {
+      "id": "Q314",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'E' in CAMELS stands for:",
+      "opts": [
+        "A. Earnings.",
+        "B. Equity.",
+        "C. Efficiency.",
+        "D. Expense."
+      ],
+      "ans": "A",
+      "exp": "E stands for Earnings (p.30)."
+    },
+    {
+      "id": "Q315",
+      "module": 4,
+      "type": "mcq",
+      "q": "Assets generate incomes for banks, while liabilities generate:",
+      "opts": [
+        "A. Costs.",
+        "B. Income.",
+        "C. Capital.",
+        "D. Reserves."
+      ],
+      "ans": "A",
+      "exp": "Liabilities generate costs (p.30)."
+    },
+    {
+      "id": "Q316",
+      "module": 4,
+      "type": "mcq",
+      "q": "Good earnings lead to:",
+      "opts": [
+        "A. Retained earnings, capital reserves, and dividends.",
+        "B. Higher costs.",
+        "C. Lower capital.",
+        "D. Reduced liquidity."
+      ],
+      "ans": "A",
+      "exp": "Earnings generate retained earnings, reserves, and dividends (p.30)."
+    },
+    {
+      "id": "Q317",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'L' in CAMELS stands for:",
+      "opts": [
+        "A. Liquidity.",
+        "B. Leverage.",
+        "C. Loan.",
+        "D. Loss."
+      ],
+      "ans": "A",
+      "exp": "L stands for Liquidity (p.30)."
+    },
+    {
+      "id": "Q318",
+      "module": 4,
+      "type": "mcq",
+      "q": "Liquidity refers to the ability of a bank to:",
+      "opts": [
+        "A. Meet maturing obligations without forced sale of assets at a loss.",
+        "B. Increase loans.",
+        "C. Reduce capital.",
+        "D. Pay high dividends."
+      ],
+      "ans": "A",
+      "exp": "Liquidity is ability to meet obligations without forced sale at loss (p.30)."
+    },
+    {
+      "id": "Q319",
+      "module": 4,
+      "type": "mcq",
+      "q": "Liquidity also includes the ability to:",
+      "opts": [
+        "A. Fund new assets or take advantage of investment opportunities.",
+        "B. Reduce deposits.",
+        "C. Increase borrowing costs.",
+        "D. Lower capital."
+      ],
+      "ans": "A",
+      "exp": "Liquidity allows funding new assets and opportunities (p.30)."
+    },
+    {
+      "id": "Q320",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'S' in CAMELS stands for:",
+      "opts": [
+        "A. Sensitivity to Market Risk.",
+        "B. Solvency.",
+        "C. Stability.",
+        "D. Strategy."
+      ],
+      "ans": "A",
+      "exp": "S stands for Sensitivity to Market Risk (p.30)."
+    },
+    {
+      "id": "Q321",
+      "module": 4,
+      "type": "mcq",
+      "q": "Market risks include:",
+      "opts": [
+        "A. Interest rate risk, exchange rate risk, and commodity price risk.",
+        "B. Only credit risk.",
+        "C. Only operational risk.",
+        "D. Only legal risk."
+      ],
+      "ans": "A",
+      "exp": "Market risks include interest rate, exchange rate, and stock/commodity prices (p.30)."
+    },
+    {
+      "id": "Q322",
+      "module": 4,
+      "type": "mcq",
+      "q": "Sensitivity to market risk examines:",
+      "opts": [
+        "A. How rate sensitive the bank's assets and liabilities are.",
+        "B. How profitable the bank is.",
+        "C. How much capital the bank holds.",
+        "D. How liquid the bank is."
+      ],
+      "ans": "A",
+      "exp": "It looks at rate sensitivity of assets and liabilities and impact on income (p.30)."
+    },
+    {
+      "id": "Q323",
+      "module": 4,
+      "type": "mcq",
+      "q": "The general role of bank supervisors includes:",
+      "opts": [
+        "A. Preventive, curative, and liquidation roles.",
+        "B. Only preventive.",
+        "C. Only curative.",
+        "D. Only liquidation."
+      ],
+      "ans": "A",
+      "exp": "The three roles are preventive, curative, and liquidation (p.30-32)."
+    },
+    {
+      "id": "Q324",
+      "module": 4,
+      "type": "mcq",
+      "q": "The preventive role includes ensuring that individuals with questionable integrity are precluded from banking through:",
+      "opts": [
+        "A. Fit and proper person test.",
+        "B. Educational qualifications.",
+        "C. Political affiliation.",
+        "D. Wealth."
+      ],
+      "ans": "A",
+      "exp": "Fit and proper test is used (p.31)."
+    },
+    {
+      "id": "Q325",
+      "module": 4,
+      "type": "mcq",
+      "q": "The preventive role also includes prescription of capital, which is important because:",
+      "opts": [
+        "A. Higher capital reduces the likelihood of failure.",
+        "B. Lower capital increases profits.",
+        "C. Capital is irrelevant.",
+        "D. Capital only affects dividends."
+      ],
+      "ans": "A",
+      "exp": "Higher capital makes bank less likely to fail (p.31)."
+    },
+    {
+      "id": "Q326",
+      "module": 4,
+      "type": "mcq",
+      "q": "Continuous supervision as a preventive measure includes:",
+      "opts": [
+        "A. On-site and off-site supervision.",
+        "B. Only annual reviews.",
+        "C. Only off-site reviews.",
+        "D. Only on-site reviews."
+      ],
+      "ans": "A",
+      "exp": "Continuous supervision involves both (p.31)."
+    },
+    {
+      "id": "Q327",
+      "module": 4,
+      "type": "mcq",
+      "q": "Information disclosure is a preventive tool that requires banks to:",
+      "opts": [
+        "A. Announce operating results to the public.",
+        "B. Keep all information confidential.",
+        "C. Only disclose to regulators.",
+        "D. Not disclose any information."
+      ],
+      "ans": "A",
+      "exp": "Disclosure informs stakeholders (p.31)."
+    },
+    {
+      "id": "Q328",
+      "module": 4,
+      "type": "mcq",
+      "q": "Imposition of sanctions is a preventive measure. Which of the following is a possible sanction?",
+      "opts": [
+        "A. Payment of monetary penalty.",
+        "B. Removal of directors.",
+        "C. Suspension from clearing house.",
+        "D. All of the above."
+      ],
+      "ans": "D",
+      "exp": "Sanctions include fines, removal, suspension, takeover, revocation (p.31)."
+    },
+    {
+      "id": "Q329",
+      "module": 4,
+      "type": "mcq",
+      "q": "The curative role aims to:",
+      "opts": [
+        "A. Correct anomalies and prevent loss of confidence.",
+        "B. Issue new licences.",
+        "C. Increase capital requirements.",
+        "D. Reduce bank numbers."
+      ],
+      "ans": "A",
+      "exp": "Curative role corrects anomalies (p.32)."
+    },
+    {
+      "id": "Q330",
+      "module": 4,
+      "type": "mcq",
+      "q": "In the curative role, CBN may inject funds and take over management of troubled banks. This is an example of:",
+      "opts": [
+        "A. Intervention.",
+        "B. Prevention.",
+        "C. Liquidation.",
+        "D. Licensing."
+      ],
+      "ans": "A",
+      "exp": "Intervention includes fund injection and management takeover (p.32)."
+    },
+    {
+      "id": "Q331",
+      "module": 4,
+      "type": "mcq",
+      "q": "AMCON was set up to purchase toxic assets of ailing banks as part of:",
+      "opts": [
+        "A. Curative role.",
+        "B. Preventive role.",
+        "C. Liquidation role.",
+        "D. Regulatory role."
+      ],
+      "ans": "A",
+      "exp": "AMCON is a curative measure (p.32)."
+    },
+    {
+      "id": "Q332",
+      "module": 4,
+      "type": "mcq",
+      "q": "The liquidation role ensures:",
+      "opts": [
+        "A. Smooth and orderly winding up and best possible revenue for depositors.",
+        "B. Immediate closure without asset realisation.",
+        "C. Full compensation to shareholders.",
+        "D. Government takeover of all assets."
+      ],
+      "ans": "A",
+      "exp": "Liquidation aims for orderly winding up and depositor protection (p.32)."
+    },
+    {
+      "id": "Q333",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is NOT a component of CAMELS?",
+      "opts": [
+        "A. Capital Adequacy.",
+        "B. Asset Quality.",
+        "C. Efficiency.",
+        "D. Sensitivity to Market Risk."
+      ],
+      "ans": "C",
+      "exp": "CAMELS includes Capital, Asset quality, Management, Earnings, Liquidity, Sensitivity to market risk. Efficiency is not a component (p.29-30)."
+    },
+    {
+      "id": "Q334",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'M' in CAMELS is judged by the results of the other parameters, implying that:",
+      "opts": [
+        "A. Management's performance is reflected in capital, asset quality, earnings, liquidity, and sensitivity.",
+        "B. Management is not important.",
+        "C. Management only affects earnings.",
+        "D. Management is independent of other factors."
+      ],
+      "ans": "A",
+      "exp": "Management is judged by the results of all other parameters (p.30)."
+    },
+    {
+      "id": "Q335",
+      "module": 4,
+      "type": "mcq",
+      "q": "Earnings from assets generate profits that lead to:",
+      "opts": [
+        "A. Retained earnings and increased capital.",
+        "B. Higher costs.",
+        "C. Lower liquidity.",
+        "D. Reduced asset quality."
+      ],
+      "ans": "A",
+      "exp": "Profits lead to retained earnings, reserves, and dividends (p.30)."
+    },
+    {
+      "id": "Q336",
+      "module": 4,
+      "type": "mcq",
+      "q": "Liquidity is important because it ensures a bank can:",
+      "opts": [
+        "A. Meet maturing obligations without distress.",
+        "B. Increase lending without limits.",
+        "C. Reduce capital.",
+        "D. Pay high dividends."
+      ],
+      "ans": "A",
+      "exp": "Liquidity is the ability to meet obligations without forced sale at loss (p.30)."
+    },
+    {
+      "id": "Q337",
+      "module": 4,
+      "type": "mcq",
+      "q": "Sensitivity to market risk assesses the impact of changes in:",
+      "opts": [
+        "A. Interest rates, exchange rates, and commodity prices.",
+        "B. Only interest rates.",
+        "C. Only exchange rates.",
+        "D. Only commodity prices."
+      ],
+      "ans": "A",
+      "exp": "Market risks include all three (p.30)."
+    },
+    {
+      "id": "Q338",
+      "module": 4,
+      "type": "mcq",
+      "q": "The preventive role includes entry point screening to:",
+      "opts": [
+        "A. Prevent undesirable persons from owning or managing banks.",
+        "B. Increase the number of banks.",
+        "C. Reduce capital requirements.",
+        "D. Encourage foreign investment."
+      ],
+      "ans": "A",
+      "exp": "Entry point screening prevents undesirable persons (p.31)."
+    },
+    {
+      "id": "Q339",
+      "module": 4,
+      "type": "mcq",
+      "q": "The failure of banks in the recent past is indicative of:",
+      "opts": [
+        "A. Failure of the preventive strategy.",
+        "B. Success of regulation.",
+        "C. Too much supervision.",
+        "D. High profitability."
+      ],
+      "ans": "A",
+      "exp": "Failure indicates failure of preventive strategy (p.31)."
+    },
+    {
+      "id": "Q340",
+      "module": 4,
+      "type": "mcq",
+      "q": "Risk-based capital aims to encourage banks to keep:",
+      "opts": [
+        "A. Sufficient cushion of equity capital and reserves.",
+        "B. Low levels of capital.",
+        "C. High levels of debt.",
+        "D. Minimal reserves."
+      ],
+      "ans": "A",
+      "exp": "Risk-based capital encourages sufficient capital cushion (p.31)."
+    },
+    {
+      "id": "Q341",
+      "module": 4,
+      "type": "mcq",
+      "q": "Disclosure of operating results to the public ensures:",
+      "opts": [
+        "A. Informed stakeholders.",
+        "B. Increased profits.",
+        "C. Lower costs.",
+        "D. Reduced regulation."
+      ],
+      "ans": "A",
+      "exp": "Disclosure informs governments, supervisors, depositors, investors (p.31)."
+    },
+    {
+      "id": "Q342",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a sanction that can be imposed on a bank?",
+      "opts": [
+        "A. Suspension from foreign exchange transactions.",
+        "B. Increase in capital.",
+        "C. Reduction in interest rates.",
+        "D. Lower deposit insurance."
+      ],
+      "ans": "A",
+      "exp": "Suspension from forex transactions is a sanction (p.31)."
+    },
+    {
+      "id": "Q343",
+      "module": 4,
+      "type": "mcq",
+      "q": "The curative role prevents:",
+      "opts": [
+        "A. Loss of confidence or run on banks.",
+        "B. Increase in profits.",
+        "C. New bank entry.",
+        "D. Reduction in capital."
+      ],
+      "ans": "A",
+      "exp": "Curative role prevents loss of confidence (p.32)."
+    },
+    {
+      "id": "Q344",
+      "module": 4,
+      "type": "mcq",
+      "q": "The Asset Management Corporation of Nigeria (AMCON) was established to:",
+      "opts": [
+        "A. Purchase toxic risk assets of ailing banks.",
+        "B. Provide deposit insurance.",
+        "C. Regulate the capital market.",
+        "D. Set monetary policy."
+      ],
+      "ans": "A",
+      "exp": "AMCON purchases toxic assets (p.32)."
+    },
+    {
+      "id": "Q345",
+      "module": 4,
+      "type": "mcq",
+      "q": "The liquidation role is performed when:",
+      "opts": [
+        "A. A bank's licence is revoked.",
+        "B. A bank is profitable.",
+        "C. A bank opens a new branch.",
+        "D. A bank declares dividends."
+      ],
+      "ans": "A",
+      "exp": "Liquidation is for failed banks with revoked licences (p.32)."
+    },
+    {
+      "id": "Q346",
+      "module": 4,
+      "type": "mcq",
+      "q": "Effective collaboration by regulatory authorities is essential for:",
+      "opts": [
+        "A. Good corporate governance and safe banking.",
+        "B. Increased bank profits.",
+        "C. Reduced regulatory oversight.",
+        "D. Lower capital requirements."
+      ],
+      "ans": "A",
+      "exp": "Collaboration ensures good governance and safety (p.32)."
+    },
+    {
+      "id": "Q347",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a risk heightened by non-compliance with laws?",
+      "opts": [
+        "A. Credit risk.",
+        "B. Liquidity risk.",
+        "C. Reputational risk.",
+        "D. All of the above."
+      ],
+      "ans": "D",
+      "exp": "Non-compliance heightens credit, liquidity, operational, reputational, market, and legal risks (p.32)."
+    },
+    {
+      "id": "Q348",
+      "module": 4,
+      "type": "mcq",
+      "q": "Banks and bankers are required to apply due care and skill and imbibe tenets of:",
+      "opts": [
+        "A. Sound corporate governance.",
+        "B. Profit maximisation.",
+        "C. Cost minimisation.",
+        "D. Market dominance."
+      ],
+      "ans": "A",
+      "exp": "They must imbibe tenets of sound corporate governance (p.32)."
+    },
+    {
+      "id": "Q349",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of bank examination?",
+      "opts": [
+        "A. Evaluating risk management.",
+        "B. Marketing strategies.",
+        "C. Customer satisfaction surveys.",
+        "D. Staff performance reviews."
+      ],
+      "ans": "A",
+      "exp": "Examination evaluates risk management (p.27)."
+    },
+    {
+      "id": "Q350",
+      "module": 4,
+      "type": "mcq",
+      "q": "The CBN's adoption of Basel Accords is intended to align Nigeria with:",
+      "opts": [
+        "A. International best practice.",
+        "B. Regional standards.",
+        "C. Domestic laws.",
+        "D. Political objectives."
+      ],
+      "ans": "A",
+      "exp": "Adoption aligns with international best practice (p.4)."
+    },
+    {
+      "id": "Q351",
+      "module": 4,
+      "type": "mcq",
+      "q": "The CBN's foreign exchange management circulars are designed to check:",
+      "opts": [
+        "A. Capital flight and money laundering.",
+        "B. Bank profitability.",
+        "C. Interest rates.",
+        "D. Loan growth."
+      ],
+      "ans": "A",
+      "exp": "They check capital flight and money laundering (p.23-24)."
+    },
+    {
+      "id": "Q352",
+      "module": 4,
+      "type": "mcq",
+      "q": "The Prudential Guidelines require that a bank's board of directors approve the credit policy and review it at least every three years. This ensures:",
+      "opts": [
+        "A. Up-to-date risk management.",
+        "B. Higher profits.",
+        "C. Lower costs.",
+        "D. Increased market share."
+      ],
+      "ans": "A",
+      "exp": "Regular review ensures up-to-date risk management (p.19)."
+    },
+    {
+      "id": "Q353",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank that fails to obtain CBN approval for opening a branch may face:",
+      "opts": [
+        "A. Penalties under BOFIA.",
+        "B. No consequences.",
+        "C. A warning only.",
+        "D. Increased capital requirements."
+      ],
+      "ans": "A",
+      "exp": "Section 6 requires prior consent; violations attract penalties (p.13)."
+    },
+    {
+      "id": "Q354",
+      "module": 4,
+      "type": "mcq",
+      "q": "The Banking Sector Resolution Fund is used to provide credit facilities to banks under resolution. This is part of:",
+      "opts": [
+        "A. Curative role.",
+        "B. Preventive role.",
+        "C. Liquidation role.",
+        "D. Licensing role."
+      ],
+      "ans": "A",
+      "exp": "Resolution Fund supports resolution measures, which is curative (p.18)."
+    },
+    {
+      "id": "Q355",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a type of market risk?",
+      "opts": [
+        "A. Exchange rate risk.",
+        "B. Credit risk.",
+        "C. Operational risk.",
+        "D. Legal risk."
+      ],
+      "ans": "A",
+      "exp": "Market risks include exchange rate, interest rate, and commodity price risk (p.30)."
+    },
+    {
+      "id": "Q356",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'S' in CAMELS is often referred to as:",
+      "opts": [
+        "A. Sensitivity to Market Risk.",
+        "B. Solvency.",
+        "C. Stability.",
+        "D. Strategy."
+      ],
+      "ans": "A",
+      "exp": "S stands for Sensitivity to Market Risk (p.30)."
+    },
+    {
+      "id": "Q357",
+      "module": 4,
+      "type": "mcq",
+      "q": "The preventive role of bank supervisors includes:",
+      "opts": [
+        "A. Prescription of capital.",
+        "B. Injecting funds into banks.",
+        "C. Liquidation of banks.",
+        "D. Purchase of toxic assets."
+      ],
+      "ans": "A",
+      "exp": "Preventive includes capital prescription, licensing, supervision, disclosure, sanctions (p.31)."
+    },
+    {
+      "id": "Q358",
+      "module": 4,
+      "type": "mcq",
+      "q": "The curative role includes:",
+      "opts": [
+        "A. Taking over management.",
+        "B. Issuing new licences.",
+        "C. Conducting fit and proper tests.",
+        "D. Prescribing capital."
+      ],
+      "ans": "A",
+      "exp": "Curative includes taking over management and injecting funds (p.32)."
+    },
+    {
+      "id": "Q359",
+      "module": 4,
+      "type": "mcq",
+      "q": "The liquidation role is concerned with:",
+      "opts": [
+        "A. Winding up failed banks and realising assets.",
+        "B. Preventing bank failures.",
+        "C. Ensuring bank profitability.",
+        "D. Increasing bank capital."
+      ],
+      "ans": "A",
+      "exp": "Liquidation deals with winding up failed banks (p.32)."
+    },
+    {
+      "id": "Q360",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a consequence of non-compliance with banking regulations?",
+      "opts": [
+        "A. Removal and blacklisting of officers.",
+        "B. Increased trust.",
+        "C. Reduced penalties.",
+        "D. Higher capital."
+      ],
+      "ans": "A",
+      "exp": "Non-compliance may lead to removal and blacklisting (p.32)."
+    },
+    {
+      "id": "Q361",
+      "module": 4,
+      "type": "mcq",
+      "q": "The CBN's power to revoke a banking licence is a:",
+      "opts": [
+        "A. Preventive and curative measure.",
+        "B. Only preventive.",
+        "C. Only curative.",
+        "D. Only liquidation."
+      ],
+      "ans": "A",
+      "exp": "Revocation can be preventive (deterrence) and curative (removing failing banks) (p.31-32)."
+    },
+    {
+      "id": "Q362",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'fit and proper person' test is used to:",
+      "opts": [
+        "A. Evaluate the integrity of shareholders and managers.",
+        "B. Assess the bank's profitability.",
+        "C. Determine loan terms.",
+        "D. Set interest rates."
+      ],
+      "ans": "A",
+      "exp": "It prevents undesirable persons from owning or managing banks (p.31)."
+    },
+    {
+      "id": "Q363",
+      "module": 4,
+      "type": "mcq",
+      "q": "Capital adequacy as a preventive measure is measured by:",
+      "opts": [
+        "A. The ratio of capital to risk-weighted assets.",
+        "B. The ratio of loans to deposits.",
+        "C. The ratio of income to expenses.",
+        "D. The ratio of assets to liabilities."
+      ],
+      "ans": "A",
+      "exp": "Capital adequacy is capital relative to risk-weighted assets (p.31)."
+    },
+    {
+      "id": "Q364",
+      "module": 4,
+      "type": "mcq",
+      "q": "The CBN's injection of funds into troubled banks is an example of:",
+      "opts": [
+        "A. Curative role.",
+        "B. Preventive role.",
+        "C. Liquidation role.",
+        "D. Supervisory role."
+      ],
+      "ans": "A",
+      "exp": "Injection of funds is curative (p.32)."
+    },
+    {
+      "id": "Q365",
+      "module": 4,
+      "type": "mcq",
+      "q": "AMCON was established to purchase toxic assets. This is part of:",
+      "opts": [
+        "A. Curative role.",
+        "B. Preventive role.",
+        "C. Liquidation role.",
+        "D. Licensing role."
+      ],
+      "ans": "A",
+      "exp": "AMCON is a curative measure (p.32)."
+    },
+    {
+      "id": "Q366",
+      "module": 4,
+      "type": "mcq",
+      "q": "The liquidation role aims to protect:",
+      "opts": [
+        "A. Depositors.",
+        "B. Shareholders.",
+        "C. Management.",
+        "D. Employees."
+      ],
+      "ans": "A",
+      "exp": "Liquidation aims to protect depositors from avoidable loss (p.32)."
+    },
+    {
+      "id": "Q367",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of market risk?",
+      "opts": [
+        "A. Interest rate risk.",
+        "B. Credit risk.",
+        "C. Operational risk.",
+        "D. Reputational risk."
+      ],
+      "ans": "A",
+      "exp": "Interest rate risk is a market risk (p.30)."
+    },
+    {
+      "id": "Q368",
+      "module": 4,
+      "type": "mcq",
+      "q": "The CAMELS parameter 'Liquidity' is assessed by:",
+      "opts": [
+        "A. Ability to meet obligations without forced asset sale.",
+        "B. Level of capital.",
+        "C. Quality of loans.",
+        "D. Earnings performance."
+      ],
+      "ans": "A",
+      "exp": "Liquidity is ability to meet obligations without distress (p.30)."
+    },
+    {
+      "id": "Q369",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'A' in CAMELS, Asset Quality, is determined by:",
+      "opts": [
+        "A. The productive capacity of assets.",
+        "B. The size of the bank.",
+        "C. The number of employees.",
+        "D. The location of branches."
+      ],
+      "ans": "A",
+      "exp": "Asset quality is about productive capacity (p.29)."
+    },
+    {
+      "id": "Q370",
+      "module": 4,
+      "type": "mcq",
+      "q": "The CBN's use of CAMELS parameters is consistent with:",
+      "opts": [
+        "A. International best practice in bank supervision.",
+        "B. Domestic accounting standards.",
+        "C. Political objectives.",
+        "D. Marketing strategies."
+      ],
+      "ans": "A",
+      "exp": "CAMELS is an internationally recognised supervisory framework (p.29)."
+    }
+  ]
+}

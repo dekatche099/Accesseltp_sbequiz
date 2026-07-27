@@ -1,0 +1,5931 @@
+{
+  "meta": {
+    "id": "fraud-risk-management",
+    "title": "Fraud Risk Management & Detection",
+    "description": "421 MCQs with balanced Theoretical & Scenario alternation",
+    "category": "",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank employee deliberately inflates a customer's loan application to earn a higher commission. Which key element of fraud is most clearly demonstrated?",
+      "opts": [
+        "A. Misrepresentation of a material fact",
+        "B. Unintentional clerical error",
+        "C. Breach of internal policy",
+        "D. Negligent supervision"
+      ],
+      "ans": "A",
+      "exp": "Fraud involves intentional misrepresentation of a material fact to gain an unfair advantage. Inflating loan details to earn commission is a deliberate deception."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to Fagbemi (1989), fraud is defined as 'the act of depriving a person dishonestly of something which is his'. Which of the following best illustrates this definition?",
+      "opts": [
+        "A. A bank teller miscounts cash and gives a customer extra money",
+        "B. An accountant falsifies records to hide a theft from the company",
+        "C. A customer forgets to update his address and misses a bank statement",
+        "D. A manager approves a loan without reviewing the applicant's credit history"
+      ],
+      "ans": "B",
+      "exp": "Fagbemi's definition focuses on dishonest deprivation. Falsifying records to conceal theft is a deliberate act to deprive the company of its assets."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraudster uses a fake identity to open a bank account and secure a credit facility. Which characteristic of a fraudster is most evident?",
+      "opts": [
+        "A. Intentional misrepresentation to induce another to surrender a right",
+        "B. Unawareness of the consequences of their actions",
+        "C. Acting under duress from external parties",
+        "D. Reluctance to break the law but doing so due to financial need"
+      ],
+      "ans": "A",
+      "exp": "A fraudster intentionally misrepresents material facts to gain an unfair advantage. Using a fake identity to obtain credit is a classic example of this."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which group is most likely to perpetrate fraud by exploiting internal vulnerabilities through collusion?",
+      "opts": [
+        "A. External auditors reviewing financial statements",
+        "B. Customers acting independently",
+        "C. Employees and external parties working together",
+        "D. Regulatory authorities conducting routine inspections"
+      ],
+      "ans": "C",
+      "exp": "Collusion fraud involves insiders and outsiders working together to circumvent controls. This type often has a high success rate because it combines internal access with external expertise."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraudster obtains a loan by submitting falsified employment documents. Under Nigerian law, which section of the Criminal Code would most likely be applied?",
+      "opts": [
+        "A. Section 383 (Stealing)",
+        "B. Section 419 (Obtaining by false pretences)",
+        "C. Section 419A (Obtaining credit by fraud)",
+        "D. Section 17 (BOFIA)"
+      ],
+      "ans": "B",
+      "exp": "Section 419 specifically covers obtaining anything capable of being stolen by false pretences with intent to defraud. Falsified documents to obtain a loan falls under this provision."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "NIBSS data shows that fraud losses in Nigeria increased from \u20a62.96bn in 2019 to \u20a652.26bn in 2024. What trend does this indicate?",
+      "opts": [
+        "A. A decline in digital banking adoption",
+        "B. An increase in the effectiveness of internal controls",
+        "C. A shift towards digital channels as the primary attack vector",
+        "D. A reduction in regulatory oversight"
+      ],
+      "ans": "C",
+      "exp": "The sharp increase in losses, despite improved controls, reflects the growing sophistication of digital fraud and the expansion of electronic payment channels."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's General Ledger is fraudulently debited to create a fictitious expense. This practice falls under which category of fraudulent practices in banks?",
+      "opts": [
+        "A. Unauthorized withdrawals through ATMs",
+        "B. Computer/web frauds",
+        "C. Fraudulent debit of General Ledgers",
+        "D. Fictitious loan facilities"
+      ],
+      "ans": "C",
+      "exp": "Manipulating GL accounts to create false expenses is explicitly listed as a fraudulent practice. It misrepresents the bank's financial position."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "A person uses forged documents to obtain a bank loan and then disappears without repaying. Which fraud feature best describes this action?",
+      "opts": [
+        "A. Deception",
+        "B. Dishonesty",
+        "C. Deprivation",
+        "D. Impropriety"
+      ],
+      "ans": "A",
+      "exp": "Deception is the act of getting what does not belong to you by false pretenses. Using forged documents to secure a loan is a clear act of deception."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "An individual lies about their identity to withdraw funds from another person's account. This is an example of which fraud feature?",
+      "opts": [
+        "A. Sharp practices",
+        "B. Breach of confidence",
+        "C. Dishonesty",
+        "D. Impropriety"
+      ],
+      "ans": "C",
+      "exp": "Dishonesty involves lying to obtain value that does not belong to you. Impersonating someone to withdraw their money is dishonest."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank IT staff member exploits system vulnerabilities to transfer funds to a personal account. This is an example of which fraud feature?",
+      "opts": [
+        "A. Deception",
+        "B. Sharp practices",
+        "C. Impropriety",
+        "D. Breach of confidence"
+      ],
+      "ans": "B",
+      "exp": "Sharp practices involve using knowledge or skill for undue advantage. An IT staff member misusing system access for personal gain fits this description."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank account officer misappropriates customer cash entrusted for deposit. Which fraud feature does this represent?",
+      "opts": [
+        "A. Impropriety",
+        "B. Breach of confidence",
+        "C. Deception",
+        "D. Sharp practices"
+      ],
+      "ans": "B",
+      "exp": "Breach of confidence involves disappointing actions of trusted persons. The account officer betrayed the customer's trust."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "A branch manager uses the bank's official vehicle for personal errands. This is an example of which fraud feature?",
+      "opts": [
+        "A. Deprivation",
+        "B. Breach of confidence",
+        "C. Impropriety",
+        "D. Sharp practices"
+      ],
+      "ans": "C",
+      "exp": "Impropriety is abuse of office by trusted top officials. Using bank assets for personal purposes is an abuse of position."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank has weak segregation of duties, allowing a single employee to process and approve transactions. This is an example of which enabling environment factor?",
+      "opts": [
+        "A. Social factor",
+        "B. Institutional factor",
+        "C. Legal constraint",
+        "D. Personal habit"
+      ],
+      "ans": "B",
+      "exp": "Institutional factors include poor internal controls and lack of segregation of duties, which create opportunities for fraud."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank faces high fraud rates because employees feel pressure from social media to maintain a certain lifestyle. This is a(n) ___ factor.",
+      "opts": [
+        "A. Institutional",
+        "B. Social",
+        "C. Legal",
+        "D. Personal"
+      ],
+      "ans": "B",
+      "exp": "Social factors include peer pressure, social vices, and societal norms that can drive individuals to commit fraud."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraudster exploits the slow judicial process in Nigeria to avoid prosecution. This is a(n) ___ enabling factor.",
+      "opts": [
+        "A. Institutional",
+        "B. Social",
+        "C. Legal",
+        "D. Personal"
+      ],
+      "ans": "C",
+      "exp": "Legal constraints include long court processes, lenient penalties, and complex laws that make prosecution difficult."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "Inadequate regulatory oversight is classified under which enabling environment factor?",
+      "opts": [
+        "A. Institutional",
+        "B. Social",
+        "C. Legal",
+        "D. Personal"
+      ],
+      "ans": "C",
+      "exp": "Inadequate oversight is a legal constraint because it relates to the effectiveness of the legal and regulatory framework."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank operates without a valid licence from the CBN. Which section of BOFIA 2020 is violated?",
+      "opts": [
+        "A. Section 3",
+        "B. Section 17",
+        "C. Section 18",
+        "D. Section 102"
+      ],
+      "ans": "A",
+      "exp": "Section 3 of BOFIA 2020 requires all banks to hold a licence issued by the CBN."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank officer approves a loan to his brother without declaring the relationship. Which section of BOFIA 2020 requires disclosure of such interest?",
+      "opts": [
+        "A. Section 3",
+        "B. Section 17",
+        "C. Section 18",
+        "D. Section 102"
+      ],
+      "ans": "B",
+      "exp": "Section 17 compels bank officers to declare any interest in credit facilities granted by their bank."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank hires a teller who was previously convicted of embezzlement. Which section of BOFIA 2020 prohibits this employment?",
+      "opts": [
+        "A. Section 3",
+        "B. Section 17",
+        "C. Section 18",
+        "D. Section 102"
+      ],
+      "ans": "C",
+      "exp": "Section 18 prohibits banks from employing anyone convicted of fraud or dishonesty."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "A person fraudulently converts company funds to personal use. Under the Criminal Code, this offence is defined in which section?",
+      "opts": [
+        "A. Section 383",
+        "B. Section 419",
+        "C. Section 419A",
+        "D. Section 102"
+      ],
+      "ans": "A",
+      "exp": "Section 383 defines stealing as fraudulently taking or converting anything capable of being stolen."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer obtains credit by providing false financial information. Which section of the Criminal Code specifically addresses this?",
+      "opts": [
+        "A. Section 383",
+        "B. Section 419",
+        "C. Section 419A",
+        "D. Section 102"
+      ],
+      "ans": "C",
+      "exp": "Section 419A criminalises obtaining credit by false pretences or other fraud."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which Nigerian regulatory body oversees the entire banking sector's compliance with anti-fraud regulations?",
+      "opts": [
+        "A. SEC",
+        "B. NDIC",
+        "C. CBN",
+        "D. NAICOM"
+      ],
+      "ans": "C",
+      "exp": "The Central Bank of Nigeria (CBN) regulates and supervises all banks to ensure compliance with financial crime regulations."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which institution insures customer deposits to protect against bank failures?",
+      "opts": [
+        "A. CBN",
+        "B. NDIC",
+        "C. SEC",
+        "D. FRCN"
+      ],
+      "ans": "B",
+      "exp": "The Nigerian Deposit Insurance Corporation (NDIC) insures deposits to protect depositors."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which body regulates the capital market and oversees securities issuance?",
+      "opts": [
+        "A. CBN",
+        "B. NDIC",
+        "C. SEC",
+        "D. NAICOM"
+      ],
+      "ans": "C",
+      "exp": "The Securities and Exchange Commission (SEC) regulates the capital market, including operators and securities."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which body sets accounting standards and promotes corporate governance?",
+      "opts": [
+        "A. CBN",
+        "B. NDIC",
+        "C. FRCN",
+        "D. SEC"
+      ],
+      "ans": "C",
+      "exp": "The Financial Reporting Council of Nigeria (FRCN) establishes accounting and auditing standards."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "type": "mcq",
+      "q": "A hacker breaches a bank's system and steals customer data. Which law provides the legal framework for prosecuting this cybercrime?",
+      "opts": [
+        "A. Advance Fee Fraud Act",
+        "B. Cybercrime (Prohibition Prevention etc.) Act 2015",
+        "C. Data Protection Regulation",
+        "D. Whistleblower Protection Act"
+      ],
+      "ans": "B",
+      "exp": "The Cybercrime Act 2015 specifically addresses computer\u2011related offences and provides for investigation and prosecution."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank collects customer personal data without consent. Which regulation governs data protection and privacy?",
+      "opts": [
+        "A. Cybercrime Act 2015",
+        "B. Nigerian Data Protection Regulation",
+        "C. Advance Fee Fraud Act",
+        "D. BOFIA 2020"
+      ],
+      "ans": "B",
+      "exp": "The Nigerian Data Protection Regulation is the primary framework for data protection and privacy."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to Cressey, which of the following is a necessary condition for someone to commit fraud?",
+      "opts": [
+        "A. Access to large sums of money",
+        "B. Pressure, opportunity, and rationalisation",
+        "C. Lack of formal education",
+        "D. Support from colleagues"
+      ],
+      "ans": "B",
+      "exp": "The Fraud Triangle identifies three elements: pressure, opportunity, and rationalisation. All three must be present."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "type": "mcq",
+      "q": "A staff member facing medical bills for a sick child embezzles funds from the company. What Fraud Triangle element is driving this behaviour?",
+      "opts": [
+        "A. Opportunity",
+        "B. Rationalisation",
+        "C. Pressure",
+        "D. Capability"
+      ],
+      "ans": "C",
+      "exp": "Pressure refers to non\u2011shareable financial problems. The medical bills create a financial pressure that motivates the fraud."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "type": "mcq",
+      "q": "Cressey found that approximately what percentage of fraud cases are influenced by financial pressure?",
+      "opts": [
+        "A. 50%",
+        "B. 65%",
+        "C. 80%",
+        "D. 95%"
+      ],
+      "ans": "D",
+      "exp": "Cressey's research indicated that about 95% of fraud cases have a financial pressure component."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee tells himself, 'I am just borrowing the money; I will pay it back next month.' This is an example of which Fraud Triangle element?",
+      "opts": [
+        "A. Pressure",
+        "B. Opportunity",
+        "C. Rationalisation",
+        "D. Capability"
+      ],
+      "ans": "C",
+      "exp": "Rationalisation is the justification that makes the unethical behaviour seem acceptable. 'Borrowing' is a classic rationalisation."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of rationalisation in fraud?",
+      "opts": [
+        "A. 'The system has weak controls, so I can do it.'",
+        "B. 'I need the money to pay for my child's school fees.'",
+        "C. 'The company owes me; I was underpaid.'",
+        "D. 'I have the technical skills to bypass the audit.'"
+      ],
+      "ans": "C",
+      "exp": "Rationalisation often involves feeling entitled to the stolen assets, such as believing you were underpaid."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which theory adds 'capability' to the Fraud Triangle, recognising that the perpetrator must have the skills to execute the fraud?",
+      "opts": [
+        "A. Fraud Pentagon",
+        "B. Fraud Diamond",
+        "C. GONE Theory",
+        "D. Occupational Fraud"
+      ],
+      "ans": "B",
+      "exp": "The Fraud Diamond Theory, proposed by Wolfe and Hermanson, added capability as a fourth element."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "type": "mcq",
+      "q": "Capability in the Fraud Diamond includes all of the following EXCEPT:",
+      "opts": [
+        "A. Knowledge of the system",
+        "B. Access to the assets",
+        "C. The ability to conceal the fraud",
+        "D. Financial pressure"
+      ],
+      "ans": "D",
+      "exp": "Capability is about the skills and means to execute the fraud, not the motivation (pressure)."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "type": "mcq",
+      "q": "Who proposed the Fraud Pentagon Theory, adding arrogance and competence to the Fraud Triangle?",
+      "opts": [
+        "A. Cressey",
+        "B. Wolfe and Hermanson",
+        "C. Bologne",
+        "D. Crowe Howarth"
+      ],
+      "ans": "D",
+      "exp": "Crowe Howarth introduced the Fraud Pentagon in 2011."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the Fraud Pentagon, an executive who believes that internal controls do not apply to him is exhibiting which element?",
+      "opts": [
+        "A. Competence",
+        "B. Arrogance",
+        "C. Pressure",
+        "D. Rationalisation"
+      ],
+      "ans": "B",
+      "exp": "Arrogance is the belief that one is above the rules and that controls are for others."
+    },
+    {
+      "id": "Q37",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which Fraud Pentagon element involves the ability to override controls and manipulate the social situation to one's advantage?",
+      "opts": [
+        "A. Arrogance",
+        "B. Competence",
+        "C. Pressure",
+        "D. Rationalisation"
+      ],
+      "ans": "B",
+      "exp": "Competence is the skill to bypass controls and manage the situation."
+    },
+    {
+      "id": "Q38",
+      "module": 1,
+      "type": "mcq",
+      "q": "The GONE Theory was proposed by Jack Bologne. What does 'GONE' stand for?",
+      "opts": [
+        "A. Greed, Opportunity, Need, Exposure",
+        "B. Gain, Obstacles, Negligence, Evidence",
+        "C. Greed, Obstacles, Need, Expectation",
+        "D. Gain, Opportunity, Negligence, Exposure"
+      ],
+      "ans": "A",
+      "exp": "GONE stands for Greed, Opportunity, Need, and Exposure."
+    },
+    {
+      "id": "Q39",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the GONE Theory, which factors are considered individual (internal) factors?",
+      "opts": [
+        "A. Greed and Need",
+        "B. Opportunity and Exposure",
+        "C. Greed and Opportunity",
+        "D. Need and Exposure"
+      ],
+      "ans": "A",
+      "exp": "Greed and Need are personal motivations, while Opportunity and Exposure are situational."
+    },
+    {
+      "id": "Q40",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the GONE Theory, which factors are considered generic (external) factors?",
+      "opts": [
+        "A. Greed and Need",
+        "B. Opportunity and Exposure",
+        "C. Greed and Opportunity",
+        "D. Need and Exposure"
+      ],
+      "ans": "B",
+      "exp": "Opportunity and Exposure are external conditions that influence the likelihood of fraud."
+    },
+    {
+      "id": "Q41",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the GONE Theory, if the likelihood of discovery is very high, which factor is most affected?",
+      "opts": [
+        "A. Greed",
+        "B. Opportunity",
+        "C. Need",
+        "D. Exposure"
+      ],
+      "ans": "D",
+      "exp": "Exposure is the risk of being caught; high exposure reduces the incentive to commit fraud."
+    },
+    {
+      "id": "Q42",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee steals office supplies for personal use. This is an example of which type of occupational fraud?",
+      "opts": [
+        "A. Corruption",
+        "B. Asset Misappropriation",
+        "C. Financial Statement Fraud",
+        "D. Electronic Fraud"
+      ],
+      "ans": "B",
+      "exp": "Asset misappropriation involves stealing or misusing the organisation's resources."
+    },
+    {
+      "id": "Q43",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT one of the three major types of occupational fraud?",
+      "opts": [
+        "A. Corruption",
+        "B. Asset Misappropriation",
+        "C. Financial Statement Fraud",
+        "D. Cybercrime"
+      ],
+      "ans": "D",
+      "exp": "Cybercrime is a separate category; the three types are corruption, asset misappropriation, and financial statement fraud."
+    },
+    {
+      "id": "Q44",
+      "module": 1,
+      "type": "mcq",
+      "q": "A manager accepts a bribe from a vendor to award a contract. This is an example of which occupational fraud?",
+      "opts": [
+        "A. Corruption",
+        "B. Asset Misappropriation",
+        "C. Financial Statement Fraud",
+        "D. All of the above"
+      ],
+      "ans": "A",
+      "exp": "Corruption involves misuse of influence for personal gain, such as accepting bribes."
+    },
+    {
+      "id": "Q45",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of occupational fraud is most common in terms of frequency?",
+      "opts": [
+        "A. Corruption",
+        "B. Asset Misappropriation",
+        "C. Financial Statement Fraud",
+        "D. Electronic Fraud"
+      ],
+      "ans": "B",
+      "exp": "Asset misappropriation is the most frequent type of occupational fraud, though not always the highest in financial impact."
+    },
+    {
+      "id": "Q46",
+      "module": 1,
+      "type": "mcq",
+      "q": "A CFO intentionally overstates revenues to meet market expectations. This is an example of:",
+      "opts": [
+        "A. Corruption",
+        "B. Asset Misappropriation",
+        "C. Financial Statement Fraud",
+        "D. Insider Trading"
+      ],
+      "ans": "C",
+      "exp": "Financial statement fraud involves misrepresenting financial information to deceive stakeholders."
+    },
+    {
+      "id": "Q47",
+      "module": 1,
+      "type": "mcq",
+      "q": "Cressey's Fraud Triangle was developed in which year?",
+      "opts": [
+        "A. 1953",
+        "B. 2004",
+        "C. 2011",
+        "D. 1989"
+      ],
+      "ans": "A",
+      "exp": "Cressey introduced the Fraud Triangle in 1953 based on his study of embezzlers."
+    },
+    {
+      "id": "Q48",
+      "module": 1,
+      "type": "mcq",
+      "q": "Cressey described a 'non\u2011shareable financial problem' as a key driver of fraud. Which of the following best illustrates this concept?",
+      "opts": [
+        "A. A person with a gambling addiction needing to pay off debts",
+        "B. A person who wants to buy a luxury car but cannot afford it",
+        "C. A person who feels peer pressure to maintain an extravagant lifestyle",
+        "D. A person who is struggling with medical bills and is too proud to ask for help"
+      ],
+      "ans": "D",
+      "exp": "A non\u2011shareable problem is one the person feels unable to disclose due to shame or fear, such as medical bills they cannot afford."
+    },
+    {
+      "id": "Q49",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the Fraud Triangle, which element is most directly influenced by strong internal controls?",
+      "opts": [
+        "A. Pressure",
+        "B. Rationalisation",
+        "C. Opportunity",
+        "D. Capability"
+      ],
+      "ans": "C",
+      "exp": "Opportunity is reduced by effective controls, such as segregation of duties and authorisation limits."
+    },
+    {
+      "id": "Q50",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the GONE Theory, which factor is about the fear of being caught and punished?",
+      "opts": [
+        "A. Greed",
+        "B. Opportunity",
+        "C. Need",
+        "D. Exposure"
+      ],
+      "ans": "D",
+      "exp": "Exposure refers to the perceived risk of detection and the severity of consequences."
+    },
+    {
+      "id": "Q51",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's managing director manipulates financial statements to hide losses. Which classification of fraud does this represent?",
+      "opts": [
+        "A. Management fraud",
+        "B. Insider fraud",
+        "C. External fraud",
+        "D. Collusion fraud"
+      ],
+      "ans": "A",
+      "exp": "Management fraud is committed by directors and senior executives."
+    },
+    {
+      "id": "Q52",
+      "module": 1,
+      "type": "mcq",
+      "q": "A teller exploits weak controls to steal cash from the vault. This is an example of:",
+      "opts": [
+        "A. Management fraud",
+        "B. Insider fraud",
+        "C. External fraud",
+        "D. Collusion fraud"
+      ],
+      "ans": "B",
+      "exp": "Insider fraud is committed by employees who take advantage of weaknesses in controls."
+    },
+    {
+      "id": "Q53",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of external fraud?",
+      "opts": [
+        "A. A director inflating expenses",
+        "B. An employee stealing customer data",
+        "C. A customer using a forged cheque",
+        "D. A manager colluding with a vendor"
+      ],
+      "ans": "C",
+      "exp": "External fraud is perpetrated by customers or outsiders, such as using forged instruments."
+    },
+    {
+      "id": "Q54",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why is collusion fraud particularly dangerous?",
+      "opts": [
+        "A. It involves large amounts of money",
+        "B. It requires sophisticated technology",
+        "C. It combines internal access with external expertise",
+        "D. It is often undetected because it happens slowly"
+      ],
+      "ans": "C",
+      "exp": "Collusion combines an insider's knowledge and access with an outsider's skills, making detection and prevention much harder."
+    },
+    {
+      "id": "Q55",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraudster alters cash count records in the vault to cover a theft. This is known as:",
+      "opts": [
+        "A. Forged instruments",
+        "B. Vault manipulation",
+        "C. Dormant account fraud",
+        "D. Shortages and overages"
+      ],
+      "ans": "B",
+      "exp": "Vault manipulation involves tampering with cash records to conceal discrepancies."
+    },
+    {
+      "id": "Q56",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer presents a counterfeit cheque for payment. This falls under which fraud type?",
+      "opts": [
+        "A. Forged instruments",
+        "B. Lost instruments",
+        "C. Stealing of lodgments",
+        "D. Impropriety"
+      ],
+      "ans": "A",
+      "exp": "Forged instruments include counterfeit cheques and drafts."
+    },
+    {
+      "id": "Q57",
+      "module": 1,
+      "type": "mcq",
+      "q": "A dormant account is fraudulently accessed because it was never closed. This is an example of:",
+      "opts": [
+        "A. Dormant account fraud",
+        "B. Account opening fraud",
+        "C. Manipulation of test codes",
+        "D. Suppression of irregular instruments"
+      ],
+      "ans": "A",
+      "exp": "Dormant accounts not closed or blocked are vulnerable to fraud."
+    },
+    {
+      "id": "Q58",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which department is most susceptible to cash shortages and counterfeit currency?",
+      "opts": [
+        "A. Customer Service",
+        "B. Cash and Teller",
+        "C. Funds Transfer",
+        "D. Clearing Operations"
+      ],
+      "ans": "B",
+      "exp": "The Cash and Teller department handles physical cash, making it prone to shortages and counterfeits."
+    },
+    {
+      "id": "Q59",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer service officer routinely waives fees for a particular client. This is a red flag for:",
+      "opts": [
+        "A. Abuse of waivers or deferral",
+        "B. Fake account opening documents",
+        "C. Dormant account manipulation",
+        "D. Conflict of interest"
+      ],
+      "ans": "A",
+      "exp": "Unauthorised fee waivers are a common fraud in Customer Service."
+    },
+    {
+      "id": "Q60",
+      "module": 1,
+      "type": "mcq",
+      "q": "Opening accounts for customers without proper identification is a fraud\u2011prone activity in which department?",
+      "opts": [
+        "A. Cash and Teller",
+        "B. Customer Service",
+        "C. Clearing Operations",
+        "D. Treasury"
+      ],
+      "ans": "B",
+      "exp": "Customer Service is responsible for opening accounts; lax KYC can lead to fraud."
+    },
+    {
+      "id": "Q61",
+      "module": 1,
+      "type": "mcq",
+      "q": "Manipulating test codes to process fraudulent wire transfers is a risk associated with which department?",
+      "opts": [
+        "A. Funds Transfer",
+        "B. Clearing Operations",
+        "C. Information Technology",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "The Funds Transfer department uses test codes to authenticate transfers; their compromise enables fraud."
+    },
+    {
+      "id": "Q62",
+      "module": 1,
+      "type": "mcq",
+      "q": "Cheque kiting \u2013 writing cheques against insufficient funds \u2013 is a fraud\u2011prone activity in:",
+      "opts": [
+        "A. Cash and Teller",
+        "B. Customer Service",
+        "C. Clearing Operations",
+        "D. Treasury"
+      ],
+      "ans": "C",
+      "exp": "Clearing Operations processes cheques; kiting exploits the clearing float."
+    },
+    {
+      "id": "Q63",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which department is most vulnerable to unauthorised access and password theft?",
+      "opts": [
+        "A. Financial Control",
+        "B. Information Technology",
+        "C. Credit and Marketing",
+        "D. Treasury"
+      ],
+      "ans": "B",
+      "exp": "IT staff have access to systems; stolen passwords can lead to significant fraud."
+    },
+    {
+      "id": "Q64",
+      "module": 1,
+      "type": "mcq",
+      "q": "Creating fictitious deposit accounts is a fraud\u2011prone activity in which department?",
+      "opts": [
+        "A. Credit and Marketing",
+        "B. Information Technology",
+        "C. Treasury",
+        "D. Customer Service"
+      ],
+      "ans": "C",
+      "exp": "The Treasury/TROPS department handles large deposits and can create fictitious accounts to siphon funds."
+    },
+    {
+      "id": "Q65",
+      "module": 1,
+      "type": "mcq",
+      "q": "A credit officer approves loans for non\u2011existent customers. This is most likely a fraud scheme in the ___ department.",
+      "opts": [
+        "A. Customer Service",
+        "B. Credit and Marketing",
+        "C. Clearing Operations",
+        "D. Treasury"
+      ],
+      "ans": "B",
+      "exp": "The Credit and Marketing department originates loans; fictitious loans are a common fraud."
+    },
+    {
+      "id": "Q66",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraudster steals a customer's identity to open accounts and obtain loans. This is which type of electronic banking fraud?",
+      "opts": [
+        "A. Phishing",
+        "B. Skimming",
+        "C. Identity theft",
+        "D. Social engineering"
+      ],
+      "ans": "C",
+      "exp": "Identity theft involves using stolen personal data to impersonate the victim."
+    },
+    {
+      "id": "Q67",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer receives an email claiming to be from their bank, asking them to click a link and update credentials. This is:",
+      "opts": [
+        "A. Phishing",
+        "B. Skimming",
+        "C. Malware",
+        "D. Vishing"
+      ],
+      "ans": "A",
+      "exp": "Phishing uses deceptive emails to steal login details."
+    },
+    {
+      "id": "Q68",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which fraud involves capturing card data at an ATM using a hidden device?",
+      "opts": [
+        "A. Phishing",
+        "B. Skimming",
+        "C. Malware",
+        "D. Social engineering"
+      ],
+      "ans": "B",
+      "exp": "Skimming devices read the magnetic stripe and PIN to clone cards."
+    },
+    {
+      "id": "Q69",
+      "module": 1,
+      "type": "mcq",
+      "q": "Malicious software that records keystrokes to steal banking credentials is known as:",
+      "opts": [
+        "A. Spyware",
+        "B. Phishing",
+        "C. Skimming",
+        "D. Social engineering"
+      ],
+      "ans": "A",
+      "exp": "Spyware is a type of malware that monitors and captures user inputs."
+    },
+    {
+      "id": "Q70",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraudster calls a customer pretending to be a bank official and tricks them into revealing their OTP. This is:",
+      "opts": [
+        "A. Phishing",
+        "B. Skimming",
+        "C. Vishing",
+        "D. Malware"
+      ],
+      "ans": "C",
+      "exp": "Vishing (voice phishing) uses phone calls to manipulate victims."
+    },
+    {
+      "id": "Q71",
+      "module": 1,
+      "type": "mcq",
+      "q": "A company inflates revenue figures to attract investors. This is which type of fraud?",
+      "opts": [
+        "A. Asset Misappropriation",
+        "B. Corruption",
+        "C. Financial Statement Fraud",
+        "D. Electronic Fraud"
+      ],
+      "ans": "C",
+      "exp": "Financial statement fraud involves misrepresenting financial results."
+    },
+    {
+      "id": "Q72",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which vulnerability arises from the adoption of new digital banking channels?",
+      "opts": [
+        "A. Increased customer base",
+        "B. Expanded attack surface for cybercriminals",
+        "C. Reduced transaction costs",
+        "D. Improved regulatory compliance"
+      ],
+      "ans": "B",
+      "exp": "Digital transformation introduces new technologies and processes that can be exploited."
+    },
+    {
+      "id": "Q73",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank offers many different products and services. How does this complexity contribute to fraud vulnerability?",
+      "opts": [
+        "A. It reduces the need for internal controls",
+        "B. It creates gaps and overlaps that fraudsters can exploit",
+        "C. It simplifies reconciliation",
+        "D. It eliminates the need for employee training"
+      ],
+      "ans": "B",
+      "exp": "Complexity can lead to control gaps and inadequate oversight, providing opportunities for fraud."
+    },
+    {
+      "id": "Q74",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee with extensive system access misuses their privileges to commit fraud. This is an example of:",
+      "opts": [
+        "A. Third\u2011party risk",
+        "B. Insider threat",
+        "C. Human error",
+        "D. Regulatory failure"
+      ],
+      "ans": "B",
+      "exp": "Insider threats arise from employees who have authorised access that they abuse."
+    },
+    {
+      "id": "Q75",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which vulnerability is directly related to the loss or compromise of personal and financial customer data?",
+      "opts": [
+        "A. Customer data risk",
+        "B. Global reach risk",
+        "C. Third\u2011party risk",
+        "D. Human error risk"
+      ],
+      "ans": "A",
+      "exp": "Customer data is a prime target; its loss can lead to identity theft and fraud."
+    },
+    {
+      "id": "Q76",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraud incident leads to a loss of shareholder trust and a drop in stock price. This is which type of impact?",
+      "opts": [
+        "A. Financial loss",
+        "B. Reputational damage",
+        "C. Operational disruption",
+        "D. Legal penalty"
+      ],
+      "ans": "B",
+      "exp": "Loss of confidence in management by shareholders is a reputational impact."
+    },
+    {
+      "id": "Q77",
+      "module": 1,
+      "type": "mcq",
+      "q": "After a fraud incident, a bank is placed under closer regulatory watch. This is an example of:",
+      "opts": [
+        "A. Financial impact",
+        "B. Reputational impact",
+        "C. Regulatory impact",
+        "D. Operational impact"
+      ],
+      "ans": "C",
+      "exp": "Surveillance by regulatory authorities is a direct regulatory consequence."
+    },
+    {
+      "id": "Q78",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best describes fraud risk management?",
+      "opts": [
+        "A. Eliminating all fraud risks entirely",
+        "B. A continuous process to identify, assess, and mitigate fraud risks",
+        "C. A one\u2011time audit of internal controls",
+        "D. Outsourcing risk to third parties"
+      ],
+      "ans": "B",
+      "exp": "Fraud risk management is an ongoing cycle of identification, assessment, response, and monitoring."
+    },
+    {
+      "id": "Q79",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary objective of a fraud risk management program?",
+      "opts": [
+        "A. To detect fraud after it occurs",
+        "B. To prevent fraud before it happens",
+        "C. To punish perpetrators",
+        "D. To reduce the number of employees"
+      ],
+      "ans": "B",
+      "exp": "Prevention is the main goal, as it is more cost\u2011effective than detection and remediation."
+    },
+    {
+      "id": "Q80",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which responsibility of the Fraud Management Unit involves examining new products for potential fraud risks?",
+      "opts": [
+        "A. Conducting fraud investigations",
+        "B. Performing risk assessments on new offerings",
+        "C. Drafting fraud policies",
+        "D. Preparing intelligence reports"
+      ],
+      "ans": "B",
+      "exp": "Assessing new products before launch is a key preventive function."
+    },
+    {
+      "id": "Q81",
+      "module": 1,
+      "type": "mcq",
+      "q": "The formal documentation of fraud governance, including roles and responsibilities, is part of which component?",
+      "opts": [
+        "A. Risk Exposure Assessment",
+        "B. Prevention Techniques",
+        "C. Governance Structure",
+        "D. Monitoring and Evaluation"
+      ],
+      "ans": "C",
+      "exp": "Governance structure sets the framework for accountability and oversight."
+    },
+    {
+      "id": "Q82",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which component of the Fraud Risk Management Framework involves evaluating the likelihood and impact of potential fraud risks?",
+      "opts": [
+        "A. Governance Structure",
+        "B. Risk Exposure Assessment",
+        "C. Prevention Techniques",
+        "D. Monitoring and Evaluation"
+      ],
+      "ans": "B",
+      "exp": "Risk Exposure Assessment identifies and prioritises risks."
+    },
+    {
+      "id": "Q83",
+      "module": 1,
+      "type": "mcq",
+      "q": "After implementing controls, a bank still faces a moderate level of fraud risk. This remaining risk is called:",
+      "opts": [
+        "A. Inherent risk",
+        "B. Residual risk",
+        "C. Acceptable risk",
+        "D. Diversified risk"
+      ],
+      "ans": "B",
+      "exp": "Residual risk is what remains after controls are applied."
+    },
+    {
+      "id": "Q84",
+      "module": 1,
+      "type": "mcq",
+      "q": "In a fraud risk matrix, if controls reduce the risk from high to moderate, the moderate level is the:",
+      "opts": [
+        "A. Inherent risk",
+        "B. Residual risk",
+        "C. Target risk",
+        "D. Minimum risk"
+      ],
+      "ans": "B",
+      "exp": "Residual risk is the risk level after mitigation."
+    },
+    {
+      "id": "Q85",
+      "module": 1,
+      "type": "mcq",
+      "q": "When monitoring fraud, which activity involves identifying weak points in systems?",
+      "opts": [
+        "A. Analytical perspective",
+        "B. Identification of high\u2011risk areas",
+        "C. Evaluation of systems accuracy",
+        "D. Investigation of suspicion"
+      ],
+      "ans": "B",
+      "exp": "Identifying weak points is a key part of monitoring."
+    },
+    {
+      "id": "Q86",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the ultimate goal of fraud prevention?",
+      "opts": [
+        "A. To reduce the incidence and cost of fraud",
+        "B. To catch all fraudsters",
+        "C. To eliminate the need for internal controls",
+        "D. To transfer risk to insurers"
+      ],
+      "ans": "A",
+      "exp": "Prevention aims to lower the frequency and financial impact of fraud."
+    },
+    {
+      "id": "Q87",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which prevention measure involves creating clear guidelines on acceptable behaviour and consequences?",
+      "opts": [
+        "A. Risk assessment",
+        "B. Policies and procedures",
+        "C. Internal controls",
+        "D. Code of conduct"
+      ],
+      "ans": "B",
+      "exp": "Policies and procedures define rules and expectations."
+    },
+    {
+      "id": "Q88",
+      "module": 1,
+      "type": "mcq",
+      "q": "Implementing segregation of duties and job rotation is an example of which prevention measure?",
+      "opts": [
+        "A. Employee training",
+        "B. Internal controls",
+        "C. Whistleblowing",
+        "D. Digital security"
+      ],
+      "ans": "B",
+      "exp": "Internal controls include operational measures like segregation of duties."
+    },
+    {
+      "id": "Q89",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which prevention measure encourages employees to report suspicions anonymously?",
+      "opts": [
+        "A. Training",
+        "B. Code of ethics",
+        "C. Whistleblowing program",
+        "D. Digital security"
+      ],
+      "ans": "C",
+      "exp": "Whistleblowing programs protect reporters and encourage reporting."
+    },
+    {
+      "id": "Q90",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank requires all staff to take at least two weeks of annual leave. This is an example of:",
+      "opts": [
+        "A. Job rotation",
+        "B. Compulsory vacation",
+        "C. Segregation of duties",
+        "D. Access control"
+      ],
+      "ans": "B",
+      "exp": "Compulsory vacation helps detect fraud by forcing employees to step away from their roles."
+    },
+    {
+      "id": "Q91",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is fraud detection?",
+      "opts": [
+        "A. Preventing fraud from occurring",
+        "B. Identifying and uncovering fraud after it has happened",
+        "C. Investigating fraud to gather evidence",
+        "D. Reporting fraud to authorities"
+      ],
+      "ans": "B",
+      "exp": "Detection is the systematic identification of fraudulent activities."
+    },
+    {
+      "id": "Q92",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which detection measure uses data analytics to find unusual patterns?",
+      "opts": [
+        "A. Auditing",
+        "B. Data analysis",
+        "C. Monitoring systems",
+        "D. Employee reporting"
+      ],
+      "ans": "B",
+      "exp": "Data analysis is a key technique for detecting anomalies."
+    },
+    {
+      "id": "Q93",
+      "module": 1,
+      "type": "mcq",
+      "q": "External auditors are engaged to provide an independent review of financial statements. This is a ___ measure.",
+      "opts": [
+        "A. Prevention",
+        "B. Detection",
+        "C. Response",
+        "D. Recovery"
+      ],
+      "ans": "B",
+      "exp": "External audits help detect irregularities."
+    },
+    {
+      "id": "Q94",
+      "module": 1,
+      "type": "mcq",
+      "q": "Fraud detection software that alerts on unusual transactions in real\u2011time is using which feature?",
+      "opts": [
+        "A. Data analytics",
+        "B. Anomaly detection",
+        "C. Rule\u2011based monitoring",
+        "D. Pattern recognition"
+      ],
+      "ans": "C",
+      "exp": "Real\u2011time alerts often rely on predefined rules to flag suspicious activity."
+    },
+    {
+      "id": "Q95",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which feature of detection software allows it to learn from historical fraud patterns?",
+      "opts": [
+        "A. Machine learning",
+        "B. Rule\u2011based alerts",
+        "C. Manual review",
+        "D. Batch processing"
+      ],
+      "ans": "A",
+      "exp": "Machine learning models can identify patterns and adapt over time."
+    },
+    {
+      "id": "Q96",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the key difference between fraud control and fraud response?",
+      "opts": [
+        "A. Control is proactive, response is reactive",
+        "B. Control is reactive, response is proactive",
+        "C. Control focuses on recovery, response on prevention",
+        "D. They are essentially the same"
+      ],
+      "ans": "A",
+      "exp": "Control aims to prevent fraud; response deals with incidents after they occur."
+    },
+    {
+      "id": "Q97",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the response process, which step involves freezing accounts and stopping further losses?",
+      "opts": [
+        "A. Identification",
+        "B. Preservation of evidence",
+        "C. Mitigation",
+        "D. Investigation"
+      ],
+      "ans": "C",
+      "exp": "Mitigation includes immediate actions to prevent further harm."
+    },
+    {
+      "id": "Q98",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the final step in the fraud response process?",
+      "opts": [
+        "A. Recovery",
+        "B. Continuous improvement",
+        "C. Legal action",
+        "D. Reporting"
+      ],
+      "ans": "B",
+      "exp": "Continuous improvement uses lessons learned to strengthen future controls."
+    },
+    {
+      "id": "Q99",
+      "module": 1,
+      "type": "mcq",
+      "q": "Investigators analyze email logs, browsing history, and hard drives. This is which investigation procedure?",
+      "opts": [
+        "A. Interviews",
+        "B. Analysis of electronic evidence",
+        "C. Undercover operations",
+        "D. Transaction analysis"
+      ],
+      "ans": "B",
+      "exp": "Electronic evidence analysis is a key part of fraud investigations."
+    },
+    {
+      "id": "Q100",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraud report must include all of the following EXCEPT:",
+      "opts": [
+        "A. Executive summary",
+        "B. Estimate of loss",
+        "C. Recommendations for bonuses",
+        "D. Procedures performed"
+      ],
+      "ans": "C",
+      "exp": "Fraud reports focus on findings and loss, not employee compensation."
+    },
+    {
+      "id": "Q101",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which component of an anti\u2011fraud program outlines expected ethical behaviour?",
+      "opts": [
+        "A. Fraud prevention policies",
+        "B. Code of ethics",
+        "C. Incident response plan",
+        "D. Risk assessment"
+      ],
+      "ans": "B",
+      "exp": "The Code of Ethics sets the tone for integrity and conduct."
+    },
+    {
+      "id": "Q102",
+      "module": 1,
+      "type": "mcq",
+      "q": "An anti\u2011fraud program includes a framework for assessing fraud risks and monitoring controls. This is the:",
+      "opts": [
+        "A. Risk assessment component",
+        "B. Communication and training component",
+        "C. Incident response plan",
+        "D. Fraud prevention policies"
+      ],
+      "ans": "A",
+      "exp": "Risk assessment and monitoring are integral to the program."
+    },
+    {
+      "id": "Q103",
+      "module": 1,
+      "type": "mcq",
+      "q": "Internal controls serve to protect assets and ensure accurate reporting. Which of the following is NOT an objective of internal control?",
+      "opts": [
+        "A. Enhancing operational efficiency",
+        "B. Maximising shareholder dividends",
+        "C. Preventing and detecting fraud",
+        "D. Ensuring compliance with laws"
+      ],
+      "ans": "B",
+      "exp": "Maximising dividends is not a control objective; controls focus on safeguarding and compliance."
+    },
+    {
+      "id": "Q104",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which objective of internal control is primarily about building trust with stakeholders?",
+      "opts": [
+        "A. Protecting assets",
+        "B. Accuracy of reporting",
+        "C. Enhancing stakeholder confidence",
+        "D. Operational efficiency"
+      ],
+      "ans": "C",
+      "exp": "Stakeholder confidence is built through reliable controls and transparency."
+    },
+    {
+      "id": "Q105",
+      "module": 1,
+      "type": "mcq",
+      "q": "Internal controls help ensure that financial statements are free from material misstatement. This is the objective of:",
+      "opts": [
+        "A. Asset protection",
+        "B. Financial reporting accuracy",
+        "C. Compliance",
+        "D. Operational efficiency"
+      ],
+      "ans": "B",
+      "exp": "Accurate financial reporting is a key control objective."
+    },
+    {
+      "id": "Q106",
+      "module": 1,
+      "type": "mcq",
+      "q": "The COSO framework was developed by:",
+      "opts": [
+        "A. The Central Bank of Nigeria",
+        "B. The Committee of Sponsoring Organizations of the Treadway Commission",
+        "C. The Nigerian Deposit Insurance Corporation",
+        "D. The Securities and Exchange Commission"
+      ],
+      "ans": "B",
+      "exp": "COSO is a widely recognised internal control framework."
+    },
+    {
+      "id": "Q107",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the COSO framework, which category addresses the effectiveness and efficiency of operations?",
+      "opts": [
+        "A. Reporting",
+        "B. Operations",
+        "C. Compliance",
+        "D. Monitoring"
+      ],
+      "ans": "B",
+      "exp": "Operations objectives relate to achieving business goals and safeguarding assets."
+    },
+    {
+      "id": "Q108",
+      "module": 1,
+      "type": "mcq",
+      "q": "The COSO framework requires that fraud incidents be reported to the board. This falls under which objective?",
+      "opts": [
+        "A. Operations",
+        "B. Reporting",
+        "C. Compliance",
+        "D. Control environment"
+      ],
+      "ans": "B",
+      "exp": "Reporting ensures transparency and accountability."
+    },
+    {
+      "id": "Q109",
+      "module": 1,
+      "type": "mcq",
+      "q": "Compliance with internal policies and external regulations is a key COSO objective. This is achieved through:",
+      "opts": [
+        "A. Control activities",
+        "B. Risk assessment",
+        "C. Monitoring",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Compliance requires a combination of control activities, risk assessment, and monitoring."
+    },
+    {
+      "id": "Q110",
+      "module": 1,
+      "type": "mcq",
+      "q": "At which COSO level are controls established at the overall enterprise or C\u2011suite?",
+      "opts": [
+        "A. Entity level",
+        "B. Divisional level",
+        "C. Operating unit level",
+        "D. Functional level"
+      ],
+      "ans": "A",
+      "exp": "Entity\u2011level controls set the tone at the top."
+    },
+    {
+      "id": "Q111",
+      "module": 1,
+      "type": "mcq",
+      "q": "At which COSO level are controls implemented at the Strategic Business Unit (SBU) level?",
+      "opts": [
+        "A. Entity level",
+        "B. Divisional level",
+        "C. Operating unit level",
+        "D. Functional level"
+      ],
+      "ans": "B",
+      "exp": "Divisional controls are applied to specific business units."
+    },
+    {
+      "id": "Q112",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the COSO framework, departmental controls as a first line of defense are at the:",
+      "opts": [
+        "A. Entity level",
+        "B. Divisional level",
+        "C. Operating unit level",
+        "D. Functional level"
+      ],
+      "ans": "C",
+      "exp": "Operating unit controls are at the departmental level."
+    },
+    {
+      "id": "Q113",
+      "module": 1,
+      "type": "mcq",
+      "q": "The 'Control Environment' component of COSO includes all of the following EXCEPT:",
+      "opts": [
+        "A. Integrity and ethical values",
+        "B. Organisational structure",
+        "C. Risk assessment",
+        "D. Commitment to competence"
+      ],
+      "ans": "C",
+      "exp": "Risk assessment is a separate component; control environment is about culture and structure."
+    },
+    {
+      "id": "Q114",
+      "module": 1,
+      "type": "mcq",
+      "q": "Identifying and analysing risks to the organisation is part of which COSO component?",
+      "opts": [
+        "A. Control Environment",
+        "B. Risk Assessment",
+        "C. Control Activities",
+        "D. Information & Communication"
+      ],
+      "ans": "B",
+      "exp": "Risk assessment is the process of identifying and evaluating risks."
+    },
+    {
+      "id": "Q115",
+      "module": 1,
+      "type": "mcq",
+      "q": "Setting policies and procedures to mitigate risks is part of which COSO component?",
+      "opts": [
+        "A. Control Environment",
+        "B. Risk Assessment",
+        "C. Control Activities",
+        "D. Monitoring"
+      ],
+      "ans": "C",
+      "exp": "Control activities are the actions taken to address risks."
+    },
+    {
+      "id": "Q116",
+      "module": 1,
+      "type": "mcq",
+      "q": "Ensuring that information flows effectively, including escalation of issues, is part of which COSO component?",
+      "opts": [
+        "A. Control Environment",
+        "B. Risk Assessment",
+        "C. Control Activities",
+        "D. Information & Communication"
+      ],
+      "ans": "D",
+      "exp": "Information & Communication covers the flow of relevant information."
+    },
+    {
+      "id": "Q117",
+      "module": 1,
+      "type": "mcq",
+      "q": "Ongoing and periodic evaluations of controls are part of which COSO component?",
+      "opts": [
+        "A. Control Environment",
+        "B. Risk Assessment",
+        "C. Control Activities",
+        "D. Monitoring"
+      ],
+      "ans": "D",
+      "exp": "Monitoring assesses the effectiveness of controls over time."
+    },
+    {
+      "id": "Q118",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary purpose of internal audit?",
+      "opts": [
+        "A. To prevent all fraud",
+        "B. To provide assurance on governance, risk, and controls",
+        "C. To manage day\u2011to\u2011day operations",
+        "D. To approve financial statements"
+      ],
+      "ans": "B",
+      "exp": "Internal audit provides independent assurance to management and the board."
+    },
+    {
+      "id": "Q119",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which internal audit function focuses on the accuracy of financial statements and accounting practices?",
+      "opts": [
+        "A. Risk assessment",
+        "B. Financial auditing",
+        "C. Operational auditing",
+        "D. IT auditing"
+      ],
+      "ans": "B",
+      "exp": "Financial auditing reviews the integrity of financial reporting."
+    },
+    {
+      "id": "Q120",
+      "module": 1,
+      "type": "mcq",
+      "q": "Assessing the efficiency of operational processes is the role of:",
+      "opts": [
+        "A. Financial auditing",
+        "B. Operational auditing",
+        "C. Compliance review",
+        "D. Governance assessment"
+      ],
+      "ans": "B",
+      "exp": "Operational auditing evaluates effectiveness and efficiency."
+    },
+    {
+      "id": "Q121",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which internal audit function reviews the security of IT systems and data protection?",
+      "opts": [
+        "A. Financial auditing",
+        "B. Operational auditing",
+        "C. IT auditing",
+        "D. Compliance review"
+      ],
+      "ans": "C",
+      "exp": "IT auditing assesses cybersecurity and data integrity."
+    },
+    {
+      "id": "Q122",
+      "module": 1,
+      "type": "mcq",
+      "q": "Evaluating the governance structure, including board roles and responsibilities, is:",
+      "opts": [
+        "A. Compliance review",
+        "B. Financial auditing",
+        "C. Governance assessment",
+        "D. Operational auditing"
+      ],
+      "ans": "C",
+      "exp": "Governance assessment reviews the overall governance framework."
+    },
+    {
+      "id": "Q123",
+      "module": 1,
+      "type": "mcq",
+      "q": "An internal auditor's primary responsibility is to:",
+      "opts": [
+        "A. Approve all transactions",
+        "B. Monitor, analyze, and assess risks and controls",
+        "C. Manage the audit committee",
+        "D. Perform external audits"
+      ],
+      "ans": "B",
+      "exp": "Internal auditors evaluate risk management and controls."
+    },
+    {
+      "id": "Q124",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does internal control differ from internal audit?",
+      "opts": [
+        "A. Controls are preventive; audit is detective",
+        "B. Controls are policies; audit assesses them",
+        "C. Controls are financial; audit is operational",
+        "D. They are the same function"
+      ],
+      "ans": "B",
+      "exp": "Internal control is the design of policies; internal audit evaluates their adequacy."
+    },
+    {
+      "id": "Q125",
+      "module": 1,
+      "type": "mcq",
+      "q": "Compliance is defined as:",
+      "opts": [
+        "A. Adherence to legal and regulatory requirements",
+        "B. The art of detecting fraud",
+        "C. The process of auditing financial statements",
+        "D. The design of internal controls"
+      ],
+      "ans": "A",
+      "exp": "Compliance ensures that the organisation follows applicable laws, regulations, and internal policies."
+    },
+    {
+      "id": "Q126",
+      "module": 1,
+      "type": "mcq",
+      "q": "Compliance is often described as the 'modern art of self\u2011defence' because it:",
+      "opts": [
+        "A. Protects the organisation from legal and regulatory risks",
+        "B. Helps the organisation increase profits",
+        "C. Reduces the need for internal audit",
+        "D. Focuses on customer satisfaction"
+      ],
+      "ans": "A",
+      "exp": "Compliance acts as a shield against regulatory penalties and reputational harm."
+    },
+    {
+      "id": "Q127",
+      "module": 1,
+      "type": "mcq",
+      "q": "Alice opened a corporate account without proper KYC. This violated:",
+      "opts": [
+        "A. Internal audit standards",
+        "B. KYC and CDD principles",
+        "C. AML regulations",
+        "D. Segregation of duties"
+      ],
+      "ans": "B",
+      "exp": "KYC and CDD are core to account opening."
+    },
+    {
+      "id": "Q128",
+      "module": 1,
+      "type": "mcq",
+      "q": "What did the investigation into JIMCART Limited reveal?",
+      "opts": [
+        "A. It was a legitimate business",
+        "B. It was not registered with the CAC",
+        "C. It had a valid tax ID",
+        "D. It had prior banking relationships"
+      ],
+      "ans": "B",
+      "exp": "The company was not found on the CAC register."
+    },
+    {
+      "id": "Q129",
+      "module": 1,
+      "type": "mcq",
+      "q": "Alice's financial burden from medical bills and family responsibilities represents which Fraud Triangle element?",
+      "opts": [
+        "A. Opportunity",
+        "B. Pressure",
+        "C. Rationalisation",
+        "D. Capability"
+      ],
+      "ans": "B",
+      "exp": "Pressure from non\u2011shareable financial problems."
+    },
+    {
+      "id": "Q130",
+      "module": 1,
+      "type": "mcq",
+      "q": "Alice's access to branch transactions without supervision represents which Fraud Triangle element?",
+      "opts": [
+        "A. Pressure",
+        "B. Opportunity",
+        "C. Rationalisation",
+        "D. Capability"
+      ],
+      "ans": "B",
+      "exp": "Weak controls provided the opportunity."
+    },
+    {
+      "id": "Q131",
+      "module": 1,
+      "type": "mcq",
+      "q": "What preventive measure would have most likely stopped the JIMCART fraud?",
+      "opts": [
+        "A. Compulsory vacation",
+        "B. CAC verification of the company",
+        "C. Fraud detection software",
+        "D. Internal audit"
+      ],
+      "ans": "B",
+      "exp": "Verifying the company's registration would have flagged the fraud."
+    },
+    {
+      "id": "Q132",
+      "module": 1,
+      "type": "mcq",
+      "q": "Alice's lack of supervision and ability to work across departments highlights a failure in:",
+      "opts": [
+        "A. Code of conduct",
+        "B. Segregation of duties",
+        "C. Employee training",
+        "D. Whistleblowing"
+      ],
+      "ans": "B",
+      "exp": "Segregation of duties would have prevented her from having unfettered access."
+    },
+    {
+      "id": "Q133",
+      "module": 1,
+      "type": "mcq",
+      "q": "After meeting Jim, Alice became willing to try anything to succeed. This is an example of which enabling factor?",
+      "opts": [
+        "A. Unemployment",
+        "B. Peer pressure",
+        "C. Weak controls",
+        "D. Legal constraints"
+      ],
+      "ans": "B",
+      "exp": "Peer pressure is a social enabling factor."
+    },
+    {
+      "id": "Q134",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the case of Mr. Frederick Sharp, the loan fraud was enabled by:",
+      "opts": [
+        "A. Failure to verify income",
+        "B. Collusion with a bank employee",
+        "C. Identity theft",
+        "D. Insider trading"
+      ],
+      "ans": "A",
+      "exp": "Sharp provided false income information."
+    },
+    {
+      "id": "Q135",
+      "module": 1,
+      "type": "mcq",
+      "q": "To prevent loan fraud, the bank should have:",
+      "opts": [
+        "A. Approved the loan quickly",
+        "B. Independently verified employment and income",
+        "C. Increased the loan amount",
+        "D. Waived the documentation"
+      ],
+      "ans": "B",
+      "exp": "Verification is key to preventing loan fraud."
+    },
+    {
+      "id": "Q136",
+      "module": 1,
+      "type": "mcq",
+      "q": "A consequence of loan fraud for the bank is:",
+      "opts": [
+        "A. Higher interest rates",
+        "B. Financial loss",
+        "C. Improved customer relationships",
+        "D. Reduced regulatory oversight"
+      ],
+      "ans": "B",
+      "exp": "Defaults lead to direct financial losses."
+    },
+    {
+      "id": "Q137",
+      "module": 1,
+      "type": "mcq",
+      "q": "A consequence for the customer committing loan fraud is:",
+      "opts": [
+        "A. Better credit score",
+        "B. Legal prosecution",
+        "C. Lower interest rates",
+        "D. Increased borrowing capacity"
+      ],
+      "ans": "B",
+      "exp": "Fraud can result in criminal charges."
+    },
+    {
+      "id": "Q138",
+      "module": 1,
+      "type": "mcq",
+      "q": "Miss Kikelomo Brown lost N20 million to account takeover. The most likely method used to obtain her credentials was:",
+      "opts": [
+        "A. Skimming",
+        "B. Phishing",
+        "C. Malware",
+        "D. Social engineering"
+      ],
+      "ans": "B",
+      "exp": "Phishing is a common way to steal login details."
+    },
+    {
+      "id": "Q139",
+      "module": 1,
+      "type": "mcq",
+      "q": "Account takeover fraud occurs when a fraudster:",
+      "opts": [
+        "A. Copies a customer's card",
+        "B. Gains unauthorised access to an existing account",
+        "C. Opens a new account in the customer's name",
+        "D. Forges a customer's signature"
+      ],
+      "ans": "B",
+      "exp": "Takeover involves taking control of an existing account."
+    },
+    {
+      "id": "Q140",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank can prevent account takeover by implementing:",
+      "opts": [
+        "A. Multi\u2011factor authentication",
+        "B. Higher transaction fees",
+        "C. Reduced account limits",
+        "D. Manual paper statements"
+      ],
+      "ans": "A",
+      "exp": "MFA adds an extra layer of security."
+    },
+    {
+      "id": "Q141",
+      "module": 1,
+      "type": "mcq",
+      "q": "To detect account takeover early, a bank should use:",
+      "opts": [
+        "A. Real\u2011time transaction monitoring",
+        "B. Annual account reviews",
+        "C. Quarterly balance checks",
+        "D. Monthly statement generation"
+      ],
+      "ans": "A",
+      "exp": "Real\u2011time monitoring can flag unusual activity."
+    },
+    {
+      "id": "Q142",
+      "module": 1,
+      "type": "mcq",
+      "q": "The customer suffering from account takeover may face:",
+      "opts": [
+        "A. Financial loss and identity damage",
+        "B. Increased credit limit",
+        "C. Better fraud protection",
+        "D. Reduced fees"
+      ],
+      "ans": "A",
+      "exp": "The customer loses money and may suffer identity theft."
+    },
+    {
+      "id": "Q143",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank that suffers a major account takeover incident may experience:",
+      "opts": [
+        "A. Reputational damage",
+        "B. Increased trust",
+        "C. Lower regulatory scrutiny",
+        "D. Higher profits"
+      ],
+      "ans": "A",
+      "exp": "Fraud erodes customer confidence."
+    },
+    {
+      "id": "Q144",
+      "module": 1,
+      "type": "mcq",
+      "q": "A non\u2011shareable financial problem is one that:",
+      "opts": [
+        "A. Can be shared with colleagues easily",
+        "B. The individual feels ashamed to disclose",
+        "C. Is known to the organisation",
+        "D. Has a simple solution"
+      ],
+      "ans": "B",
+      "exp": "Non\u2011shareable problems are often private and cause stress."
+    },
+    {
+      "id": "Q145",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Fraud Diamond Theory adds which element to the Fraud Triangle?",
+      "opts": [
+        "A. Arrogance",
+        "B. Capability",
+        "C. Competence",
+        "D. Greed"
+      ],
+      "ans": "B",
+      "exp": "Capability is the fourth element in the Diamond."
+    },
+    {
+      "id": "Q146",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the Fraud Pentagon, an individual's ability to override controls is known as:",
+      "opts": [
+        "A. Arrogance",
+        "B. Competence",
+        "C. Pressure",
+        "D. Rationalisation"
+      ],
+      "ans": "B",
+      "exp": "Competence is the skill to bypass controls."
+    },
+    {
+      "id": "Q147",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the GONE Theory, high exposure (risk of detection) tends to:",
+      "opts": [
+        "A. Increase fraud",
+        "B. Decrease fraud",
+        "C. Have no effect",
+        "D. Only affect greed"
+      ],
+      "ans": "B",
+      "exp": "High exposure reduces the motivation to commit fraud."
+    },
+    {
+      "id": "Q148",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which fraud type involves using someone else's personal information to open accounts?",
+      "opts": [
+        "A. Identity theft",
+        "B. Account takeover",
+        "C. Phishing",
+        "D. Skimming"
+      ],
+      "ans": "A",
+      "exp": "Identity theft is broader than account takeover."
+    },
+    {
+      "id": "Q149",
+      "module": 1,
+      "type": "mcq",
+      "q": "Alice's negative attitude shift after meeting Jim contributed to her:",
+      "opts": [
+        "A. Rationalisation",
+        "B. Opportunity",
+        "C. Pressure",
+        "D. Capability"
+      ],
+      "ans": "A",
+      "exp": "She rationalised that she needed to succeed by any means."
+    },
+    {
+      "id": "Q150",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the first step in responding to a suspected fraud incident?",
+      "opts": [
+        "A. Report to police",
+        "B. Identify and confirm the incident",
+        "C. Freeze the accounts",
+        "D. Notify the board"
+      ],
+      "ans": "B",
+      "exp": "Confirmation is the initial step."
+    },
+    {
+      "id": "Q151",
+      "module": 1,
+      "type": "mcq",
+      "q": "A staff member with gambling debts steals from the company. This is driven by which Fraud Triangle element?",
+      "opts": [
+        "A. Opportunity",
+        "B. Pressure",
+        "C. Rationalisation",
+        "D. Capability"
+      ],
+      "ans": "B",
+      "exp": "Debt creates financial pressure."
+    },
+    {
+      "id": "Q152",
+      "module": 1,
+      "type": "mcq",
+      "q": "An executive who believes he is above the rules is displaying which Fraud Pentagon element?",
+      "opts": [
+        "A. Competence",
+        "B. Arrogance",
+        "C. Pressure",
+        "D. Rationalisation"
+      ],
+      "ans": "B",
+      "exp": "Arrogance is a sense of entitlement."
+    },
+    {
+      "id": "Q153",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee tells himself, 'I will return the money next month.' This is an example of:",
+      "opts": [
+        "A. Pressure",
+        "B. Rationalisation",
+        "C. Opportunity",
+        "D. Capability"
+      ],
+      "ans": "B",
+      "exp": "Rationalisation justifies the act."
+    },
+    {
+      "id": "Q154",
+      "module": 1,
+      "type": "mcq",
+      "q": "A teller notices that small discrepancies are not checked, so she takes \u20a61,000 daily. This illustrates:",
+      "opts": [
+        "A. Pressure",
+        "B. Opportunity",
+        "C. Rationalisation",
+        "D. Capability"
+      ],
+      "ans": "B",
+      "exp": "The lack of checks creates opportunity."
+    },
+    {
+      "id": "Q155",
+      "module": 1,
+      "type": "mcq",
+      "q": "A loan applicant claims a salary far above what the employment letter shows. This is a red flag for:",
+      "opts": [
+        "A. Identity theft",
+        "B. Income inconsistency",
+        "C. Fraudulent references",
+        "D. Over\u2011collateralisation"
+      ],
+      "ans": "B",
+      "exp": "Inconsistency between stated and verified income is a key red flag."
+    },
+    {
+      "id": "Q156",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer service officer opens an account with only a photocopy of an ID. This breaches:",
+      "opts": [
+        "A. Internal audit",
+        "B. KYC principles",
+        "C. AML reporting",
+        "D. Segregation of duties"
+      ],
+      "ans": "B",
+      "exp": "KYC requires original documents and address verification."
+    },
+    {
+      "id": "Q157",
+      "module": 1,
+      "type": "mcq",
+      "q": "The same person initiates, approves, and reconciles wire transfers. This is a failure of:",
+      "opts": [
+        "A. Job rotation",
+        "B. Segregation of duties",
+        "C. Training",
+        "D. Supervision"
+      ],
+      "ans": "B",
+      "exp": "Segregation of duties would separate these roles."
+    },
+    {
+      "id": "Q158",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee has not taken leave for three years. This is a warning sign for:",
+      "opts": [
+        "A. Dedication",
+        "B. Concealment of fraud",
+        "C. Lack of interest",
+        "D. Poor time management"
+      ],
+      "ans": "B",
+      "exp": "Avoiding leave can hide ongoing fraud."
+    },
+    {
+      "id": "Q159",
+      "module": 1,
+      "type": "mcq",
+      "q": "An IT staff member creates a backdoor into the system. This is an example of:",
+      "opts": [
+        "A. External fraud",
+        "B. Insider fraud",
+        "C. Management fraud",
+        "D. Collusion fraud"
+      ],
+      "ans": "B",
+      "exp": "Insider fraud is committed by employees."
+    },
+    {
+      "id": "Q160",
+      "module": 1,
+      "type": "mcq",
+      "q": "A device placed on an ATM to capture card data is used for:",
+      "opts": [
+        "A. Phishing",
+        "B. Skimming",
+        "C. Malware",
+        "D. Social engineering"
+      ],
+      "ans": "B",
+      "exp": "Skimming devices read card stripes and PINs."
+    },
+    {
+      "id": "Q161",
+      "module": 1,
+      "type": "mcq",
+      "q": "An email asking to 'verify' your online banking details is a:",
+      "opts": [
+        "A. Phishing attempt",
+        "B. Skimming attempt",
+        "C. Malware attack",
+        "D. Social engineering attack"
+      ],
+      "ans": "A",
+      "exp": "Phishing uses deceptive emails."
+    },
+    {
+      "id": "Q162",
+      "module": 1,
+      "type": "mcq",
+      "q": "A phone call claiming to be from the bank fraud desk asking for an OTP is:",
+      "opts": [
+        "A. Phishing",
+        "B. Vishing",
+        "C. Smishing",
+        "D. Skimming"
+      ],
+      "ans": "B",
+      "exp": "Vishing uses voice calls."
+    },
+    {
+      "id": "Q163",
+      "module": 1,
+      "type": "mcq",
+      "q": "Unauthorised transfers from a customer's account indicate:",
+      "opts": [
+        "A. Loan fraud",
+        "B. Account takeover",
+        "C. Forged instruments",
+        "D. Insider fraud"
+      ],
+      "ans": "B",
+      "exp": "Takeover involves unauthorised access."
+    },
+    {
+      "id": "Q164",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank adopts new digital services without assessing fraud risks. This increases vulnerability to:",
+      "opts": [
+        "A. Insider threats",
+        "B. Cyber\u2011enabled fraud",
+        "C. Human error",
+        "D. Third\u2011party risk"
+      ],
+      "ans": "B",
+      "exp": "New digital channels can be exploited by cybercriminals."
+    },
+    {
+      "id": "Q165",
+      "module": 1,
+      "type": "mcq",
+      "q": "A third\u2011party vendor with weak security causes a data breach. This is a risk from:",
+      "opts": [
+        "A. Customer data",
+        "B. Third\u2011party relationships",
+        "C. Global reach",
+        "D. Regulatory challenges"
+      ],
+      "ans": "B",
+      "exp": "Vendor weaknesses can expose the bank."
+    },
+    {
+      "id": "Q166",
+      "module": 1,
+      "type": "mcq",
+      "q": "A branch manager conceals a cash shortage by altering records. This is:",
+      "opts": [
+        "A. Management fraud",
+        "B. Insider fraud",
+        "C. External fraud",
+        "D. Collusion fraud"
+      ],
+      "ans": "A",
+      "exp": "Managers are considered management."
+    },
+    {
+      "id": "Q167",
+      "module": 1,
+      "type": "mcq",
+      "q": "Assessing a new mobile app for fraud risks before launch is a responsibility of:",
+      "opts": [
+        "A. Internal audit",
+        "B. Compliance",
+        "C. Fraud management unit",
+        "D. IT department"
+      ],
+      "ans": "C",
+      "exp": "Fraud management assesses new products."
+    },
+    {
+      "id": "Q168",
+      "module": 1,
+      "type": "mcq",
+      "q": "Upon discovering a fraudulent loan, the first step is to:",
+      "opts": [
+        "A. Terminate the employee",
+        "B. Identify and confirm the incident",
+        "C. Report to the police",
+        "D. Freeze the loan"
+      ],
+      "ans": "B",
+      "exp": "Confirmation is the first response step."
+    },
+    {
+      "id": "Q169",
+      "module": 1,
+      "type": "mcq",
+      "q": "Investigators review emails and browsing history. This is:",
+      "opts": [
+        "A. Financial analysis",
+        "B. Electronic evidence review",
+        "C. Interview",
+        "D. Undercover work"
+      ],
+      "ans": "B",
+      "exp": "Electronic evidence analysis."
+    },
+    {
+      "id": "Q170",
+      "module": 1,
+      "type": "mcq",
+      "q": "Rotating employees across different functions is a form of:",
+      "opts": [
+        "A. Digital security",
+        "B. Internal control",
+        "C. Whistleblowing",
+        "D. Training"
+      ],
+      "ans": "B",
+      "exp": "Job rotation is a control measure."
+    },
+    {
+      "id": "Q171",
+      "module": 1,
+      "type": "mcq",
+      "q": "Inflating expense reports is an example of:",
+      "opts": [
+        "A. Deception",
+        "B. Dishonesty",
+        "C. Impropriety",
+        "D. Sharp practices"
+      ],
+      "ans": "B",
+      "exp": "Dishonesty involves lying to gain value."
+    },
+    {
+      "id": "Q172",
+      "module": 1,
+      "type": "mcq",
+      "q": "The audit committee's review of internal controls is part of:",
+      "opts": [
+        "A. Governance",
+        "B. Operations",
+        "C. Reporting",
+        "D. Compliance"
+      ],
+      "ans": "A",
+      "exp": "Oversight is a governance function."
+    },
+    {
+      "id": "Q173",
+      "module": 1,
+      "type": "mcq",
+      "q": "Reviewing AML controls is a compliance audit function, which falls under:",
+      "opts": [
+        "A. Operational auditing",
+        "B. Compliance review",
+        "C. Financial auditing",
+        "D. IT auditing"
+      ],
+      "ans": "B",
+      "exp": "Compliance review verifies adherence to laws."
+    },
+    {
+      "id": "Q174",
+      "module": 1,
+      "type": "mcq",
+      "q": "Non\u2011compliance with KYC procedures indicates weak:",
+      "opts": [
+        "A. Segregation of duties",
+        "B. Compliance controls",
+        "C. Training",
+        "D. Supervision"
+      ],
+      "ans": "B",
+      "exp": "Weak compliance oversight allows deviations."
+    },
+    {
+      "id": "Q175",
+      "module": 1,
+      "type": "mcq",
+      "q": "A whistleblower hotline is an example of a:",
+      "opts": [
+        "A. Prevention measure",
+        "B. Detection measure",
+        "C. Response measure",
+        "D. Recovery measure"
+      ],
+      "ans": "A",
+      "exp": "Whistleblowing helps prevent fraud by encouraging reporting."
+    },
+    {
+      "id": "Q176",
+      "module": 1,
+      "type": "mcq",
+      "q": "A CEO signing off all transactions alone indicates:",
+      "opts": [
+        "A. Efficient governance",
+        "B. Overcentralisation of authority",
+        "C. Strong controls",
+        "D. Compliance"
+      ],
+      "ans": "B",
+      "exp": "Overcentralisation creates fraud risk."
+    },
+    {
+      "id": "Q177",
+      "module": 1,
+      "type": "mcq",
+      "q": "One person approving, disbursing, and reconciling loans is a control weakness due to:",
+      "opts": [
+        "A. No job rotation",
+        "B. No segregation of duties",
+        "C. Weak IT",
+        "D. Poor supervision"
+      ],
+      "ans": "B",
+      "exp": "Segregation is missing."
+    },
+    {
+      "id": "Q178",
+      "module": 1,
+      "type": "mcq",
+      "q": "Failure to reconcile GL accounts for months is an institutional factor known as:",
+      "opts": [
+        "A. Poor segregation",
+        "B. Failure to reconcile",
+        "C. Inadequate training",
+        "D. Weak digital security"
+      ],
+      "ans": "B",
+      "exp": "Reconciliation failures enable fraud."
+    },
+    {
+      "id": "Q179",
+      "module": 1,
+      "type": "mcq",
+      "q": "Open items on GL accounts, especially dormant ones, can be exploited for:",
+      "opts": [
+        "A. Dormant account fraud",
+        "B. Loan fraud",
+        "C. Cyber fraud",
+        "D. Insider trading"
+      ],
+      "ans": "A",
+      "exp": "Dormant accounts are vulnerable."
+    },
+    {
+      "id": "Q180",
+      "module": 1,
+      "type": "mcq",
+      "q": "Detection software flags a customer's unusual transfer. This is an example of:",
+      "opts": [
+        "A. Anomaly detection",
+        "B. Rule\u2011based detection",
+        "C. Pattern recognition",
+        "D. Real\u2011time monitoring"
+      ],
+      "ans": "A",
+      "exp": "Anomalies are deviations from normal behaviour."
+    },
+    {
+      "id": "Q181",
+      "module": 1,
+      "type": "mcq",
+      "q": "A system that learns from past frauds to identify new ones uses:",
+      "opts": [
+        "A. Rule\u2011based detection",
+        "B. Machine learning",
+        "C. Manual review",
+        "D. Threshold alerts"
+      ],
+      "ans": "B",
+      "exp": "Machine learning adapts over time."
+    },
+    {
+      "id": "Q182",
+      "module": 1,
+      "type": "mcq",
+      "q": "A rule that flags all transactions above \u20a610 million is an example of:",
+      "opts": [
+        "A. Anomaly detection",
+        "B. Rule\u2011based detection",
+        "C. Pattern recognition",
+        "D. Machine learning"
+      ],
+      "ans": "B",
+      "exp": "Rules set specific thresholds."
+    },
+    {
+      "id": "Q183",
+      "module": 1,
+      "type": "mcq",
+      "q": "An anonymous tip from an employee is a form of:",
+      "opts": [
+        "A. Data analysis",
+        "B. Employee reporting",
+        "C. Monitoring",
+        "D. Auditing"
+      ],
+      "ans": "B",
+      "exp": "Employee reporting is a detection method."
+    },
+    {
+      "id": "Q184",
+      "module": 1,
+      "type": "mcq",
+      "q": "A CEO fails to report a fraud to the board. This violates the response step of:",
+      "opts": [
+        "A. Preservation of evidence",
+        "B. Incident reporting",
+        "C. Legal action",
+        "D. Recovery"
+      ],
+      "ans": "B",
+      "exp": "Reporting is mandatory."
+    },
+    {
+      "id": "Q185",
+      "module": 1,
+      "type": "mcq",
+      "q": "After identifying a fraud, the next response step is:",
+      "opts": [
+        "A. Investigation",
+        "B. Reporting",
+        "C. Mitigation",
+        "D. Legal action"
+      ],
+      "ans": "B",
+      "exp": "Reporting follows identification."
+    },
+    {
+      "id": "Q186",
+      "module": 1,
+      "type": "mcq",
+      "q": "Updating fraud policies after an incident is part of:",
+      "opts": [
+        "A. Recovery",
+        "B. Continuous improvement",
+        "C. Legal action",
+        "D. Remediation"
+      ],
+      "ans": "B",
+      "exp": "Continuous improvement applies lessons."
+    },
+    {
+      "id": "Q187",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraud report that answers 'who, what, when, where, why, and how' addresses the:",
+      "opts": [
+        "A. Summary of findings",
+        "B. Procedures performed",
+        "C. Loss estimate",
+        "D. All key questions"
+      ],
+      "ans": "D",
+      "exp": "The report must cover these details."
+    },
+    {
+      "id": "Q188",
+      "module": 1,
+      "type": "mcq",
+      "q": "Internal audit identifying a pattern of cash shortages is performing a:",
+      "opts": [
+        "A. Fraud detection role",
+        "B. Operational management role",
+        "C. Financial reporting role",
+        "D. Governance role"
+      ],
+      "ans": "A",
+      "exp": "Detection of trends is a fraud detection function."
+    },
+    {
+      "id": "Q189",
+      "module": 1,
+      "type": "mcq",
+      "q": "For cross\u2011border fraud, which international framework facilitates cooperation?",
+      "opts": [
+        "A. BOFIA 2020",
+        "B. UNCAC",
+        "C. Cybercrime Act",
+        "D. Data Protection Regulation"
+      ],
+      "ans": "B",
+      "exp": "UNCAC enables international cooperation."
+    },
+    {
+      "id": "Q190",
+      "module": 1,
+      "type": "mcq",
+      "q": "Compliance ensures that the bank follows laws like BOFIA. Its primary purpose is:",
+      "opts": [
+        "A. Maximising profits",
+        "B. Ensuring quality conduct",
+        "C. Reducing staff",
+        "D. Avoiding audits"
+      ],
+      "ans": "B",
+      "exp": "Compliance fosters ethical and lawful behaviour."
+    },
+    {
+      "id": "Q191",
+      "module": 1,
+      "type": "mcq",
+      "q": "Annual fraud awareness training for staff is a:",
+      "opts": [
+        "A. Prevention measure",
+        "B. Detection measure",
+        "C. Response measure",
+        "D. Recovery measure"
+      ],
+      "ans": "A",
+      "exp": "Training helps prevent fraud."
+    },
+    {
+      "id": "Q192",
+      "module": 1,
+      "type": "mcq",
+      "q": "A clear fraud governance structure with defined roles is part of:",
+      "opts": [
+        "A. Risk assessment",
+        "B. Governance structure",
+        "C. Prevention",
+        "D. Monitoring"
+      ],
+      "ans": "B",
+      "exp": "Governance sets the framework."
+    },
+    {
+      "id": "Q193",
+      "module": 1,
+      "type": "mcq",
+      "q": "Firewalls and encryption are examples of:",
+      "opts": [
+        "A. Internal controls",
+        "B. Digital security",
+        "C. Training",
+        "D. Whistleblowing"
+      ],
+      "ans": "B",
+      "exp": "Digital security protects systems."
+    },
+    {
+      "id": "Q194",
+      "module": 1,
+      "type": "mcq",
+      "q": "The board's review of fraud reports demonstrates:",
+      "opts": [
+        "A. Accountability",
+        "B. Delegation",
+        "C. Risk acceptance",
+        "D. Operational management"
+      ],
+      "ans": "A",
+      "exp": "Board oversight ensures accountability."
+    },
+    {
+      "id": "Q195",
+      "module": 1,
+      "type": "mcq",
+      "q": "A forged cheque processed in clearing could have been prevented by:",
+      "opts": [
+        "A. Stronger passwords",
+        "B. Signature verification",
+        "C. Job rotation",
+        "D. Whistleblowing"
+      ],
+      "ans": "B",
+      "exp": "Verifying signatures would detect forgeries."
+    },
+    {
+      "id": "Q196",
+      "module": 1,
+      "type": "mcq",
+      "q": "Educating customers not to share PINs is an example of:",
+      "opts": [
+        "A. Internal control",
+        "B. Customer awareness",
+        "C. Digital security",
+        "D. Policy enforcement"
+      ],
+      "ans": "B",
+      "exp": "Customer education reduces fraud risk."
+    },
+    {
+      "id": "Q197",
+      "module": 1,
+      "type": "mcq",
+      "q": "Prosecuting a fraudster is part of the response step called:",
+      "opts": [
+        "A. Investigation",
+        "B. Legal action",
+        "C. Mitigation",
+        "D. Recovery"
+      ],
+      "ans": "B",
+      "exp": "Legal action involves prosecution."
+    },
+    {
+      "id": "Q198",
+      "module": 1,
+      "type": "mcq",
+      "q": "Recovering funds from the perpetrator is the response step of:",
+      "opts": [
+        "A. Mitigation",
+        "B. Recovery",
+        "C. Legal action",
+        "D. Remediation"
+      ],
+      "ans": "B",
+      "exp": "Recovery is about regaining assets."
+    },
+    {
+      "id": "Q199",
+      "module": 1,
+      "type": "mcq",
+      "q": "Requiring two approvals for large transactions is a:",
+      "opts": [
+        "A. Control activity",
+        "B. Risk assessment",
+        "C. Control environment",
+        "D. Monitoring activity"
+      ],
+      "ans": "A",
+      "exp": "Dual authorisation is a control activity."
+    },
+    {
+      "id": "Q200",
+      "module": 1,
+      "type": "mcq",
+      "q": "A surge in fraud in Customer Service may be due to exploitation of:",
+      "opts": [
+        "A. Cash movements",
+        "B. Opening accounts for unknown clients",
+        "C. Cheque cloning",
+        "D. Fictitious deposits"
+      ],
+      "ans": "B",
+      "exp": "Weak KYC in account opening is a common vulnerability."
+    },
+    {
+      "id": "Q201",
+      "module": 1,
+      "type": "mcq",
+      "q": "A compliance officer discovers unreported AML violations. She should:",
+      "opts": [
+        "A. Ignore them",
+        "B. Report to management and regulators",
+        "C. Cover it up",
+        "D. Wait for audit"
+      ],
+      "ans": "B",
+      "exp": "Reporting is required by law."
+    },
+    {
+      "id": "Q202",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee observes a colleague accessing files outside their role. The employee should:",
+      "opts": [
+        "A. Mind their own business",
+        "B. Report it via whistleblowing",
+        "C. Confront the colleague",
+        "D. Wait for evidence"
+      ],
+      "ans": "B",
+      "exp": "Reporting is the correct action."
+    },
+    {
+      "id": "Q203",
+      "module": 1,
+      "type": "mcq",
+      "q": "A policy requiring supervisor approval for large cash transactions is an example of:",
+      "opts": [
+        "A. Segregation of duties",
+        "B. Authorisation",
+        "C. Job rotation",
+        "D. Access control"
+      ],
+      "ans": "B",
+      "exp": "Authorisation is the control."
+    },
+    {
+      "id": "Q204",
+      "module": 1,
+      "type": "mcq",
+      "q": "Hiring a teller with a fraud conviction violates which BOFIA section?",
+      "opts": [
+        "A. Section 3",
+        "B. Section 17",
+        "C. Section 18",
+        "D. Section 102"
+      ],
+      "ans": "C",
+      "exp": "Section 18 prohibits employing convicted fraudsters."
+    },
+    {
+      "id": "Q205",
+      "module": 1,
+      "type": "mcq",
+      "q": "Cash shortages in the teller unit could be reduced by:",
+      "opts": [
+        "A. Installing cameras",
+        "B. Dual control for cash handling",
+        "C. Reducing customer transactions",
+        "D. Increasing fees"
+      ],
+      "ans": "B",
+      "exp": "Dual control ensures oversight."
+    },
+    {
+      "id": "Q206",
+      "module": 1,
+      "type": "mcq",
+      "q": "A staff member sharing passwords creates a risk of:",
+      "opts": [
+        "A. Improved collaboration",
+        "B. Unauthorised access",
+        "C. Reduced workload",
+        "D. Better efficiency"
+      ],
+      "ans": "B",
+      "exp": "Shared passwords compromise security."
+    },
+    {
+      "id": "Q207",
+      "module": 1,
+      "type": "mcq",
+      "q": "Fictitious loans are a fraud scheme most associated with which department?",
+      "opts": [
+        "A. Customer Service",
+        "B. Credit and Marketing",
+        "C. Clearing Operations",
+        "D. Treasury"
+      ],
+      "ans": "B",
+      "exp": "Credit and Marketing originate loans."
+    },
+    {
+      "id": "Q208",
+      "module": 1,
+      "type": "mcq",
+      "q": "A signature mismatch on an account opening should prompt:",
+      "opts": [
+        "A. Account opening anyway",
+        "B. Verification and additional checks",
+        "C. Ignoring the discrepancy",
+        "D. Closing the customer's accounts"
+      ],
+      "ans": "B",
+      "exp": "Verification is necessary."
+    },
+    {
+      "id": "Q209",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee offered a bribe to process an irregular transaction should:",
+      "opts": [
+        "A. Accept it",
+        "B. Reject and report",
+        "C. Accept but not process",
+        "D. Ignore it"
+      ],
+      "ans": "B",
+      "exp": "Bribery must be reported."
+    },
+    {
+      "id": "Q210",
+      "module": 1,
+      "type": "mcq",
+      "q": "Lack of regular branch audits increases the risk of:",
+      "opts": [
+        "A. Operational efficiency",
+        "B. Undetected fraud",
+        "C. Staff morale",
+        "D. Regulatory compliance"
+      ],
+      "ans": "B",
+      "exp": "Audits help detect fraud."
+    },
+    {
+      "id": "Q211",
+      "module": 1,
+      "type": "mcq",
+      "q": "Shredding sensitive documents is an example of:",
+      "opts": [
+        "A. Internal control",
+        "B. Information protection",
+        "C. Digital security",
+        "D. Training"
+      ],
+      "ans": "B",
+      "exp": "Protecting information prevents fraud."
+    },
+    {
+      "id": "Q212",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee's relative owning a vendor company and being involved in selection presents a:",
+      "opts": [
+        "A. Conflict of interest",
+        "B. Asset misappropriation",
+        "C. Financial statement fraud",
+        "D. Electronic fraud"
+      ],
+      "ans": "A",
+      "exp": "Conflict of interest requires disclosure."
+    },
+    {
+      "id": "Q213",
+      "module": 1,
+      "type": "mcq",
+      "q": "Conducting background checks on employees is part of:",
+      "opts": [
+        "A. Know your employee",
+        "B. Customer due diligence",
+        "C. Internal controls",
+        "D. Training"
+      ],
+      "ans": "A",
+      "exp": "'Know your employee' is a prevention measure."
+    },
+    {
+      "id": "Q214",
+      "module": 1,
+      "type": "mcq",
+      "q": "A text message asking for verification is an example of:",
+      "opts": [
+        "A. Phishing",
+        "B. Smishing",
+        "C. Vishing",
+        "D. Skimming"
+      ],
+      "ans": "B",
+      "exp": "Smishing uses SMS."
+    },
+    {
+      "id": "Q215",
+      "module": 1,
+      "type": "mcq",
+      "q": "One person managing vendors, payments, and reconciliations lacks:",
+      "opts": [
+        "A. Job rotation",
+        "B. Segregation of duties",
+        "C. Training",
+        "D. Supervision"
+      ],
+      "ans": "B",
+      "exp": "Segregation is missing."
+    },
+    {
+      "id": "Q216",
+      "module": 1,
+      "type": "mcq",
+      "q": "Avoiding leave may indicate:",
+      "opts": [
+        "A. Commitment",
+        "B. Concealment of fraud",
+        "C. Planning",
+        "D. Vacation accrual"
+      ],
+      "ans": "B",
+      "exp": "Leave avoidance can hide fraud."
+    },
+    {
+      "id": "Q217",
+      "module": 1,
+      "type": "mcq",
+      "q": "Weak authentication on online banking can be addressed by:",
+      "opts": [
+        "A. Ignoring it",
+        "B. Implementing multi\u2011factor authentication",
+        "C. Closing the platform",
+        "D. Increasing fees"
+      ],
+      "ans": "B",
+      "exp": "MFA strengthens authentication."
+    },
+    {
+      "id": "Q218",
+      "module": 1,
+      "type": "mcq",
+      "q": "Only 60% compliance with anti\u2011fraud policies requires:",
+      "opts": [
+        "A. Acceptance",
+        "B. Training and enforcement",
+        "C. Reducing standards",
+        "D. Ignoring"
+      ],
+      "ans": "B",
+      "exp": "Low compliance needs corrective action."
+    },
+    {
+      "id": "Q219",
+      "module": 1,
+      "type": "mcq",
+      "q": "Opening an unknown attachment that installs malware is a result of:",
+      "opts": [
+        "A. Phishing",
+        "B. Social engineering",
+        "C. Skimming",
+        "D. Vishing"
+      ],
+      "ans": "B",
+      "exp": "Social engineering manipulates users."
+    },
+    {
+      "id": "Q220",
+      "module": 1,
+      "type": "mcq",
+      "q": "Approving a loan without verifying income is a weakness in:",
+      "opts": [
+        "A. Credit assessment",
+        "B. Segregation of duties",
+        "C. Supervision",
+        "D. Training"
+      ],
+      "ans": "A",
+      "exp": "Credit assessment must verify information."
+    },
+    {
+      "id": "Q221",
+      "module": 1,
+      "type": "mcq",
+      "q": "A teller receives cash but does not post it. This is:",
+      "opts": [
+        "A. Cash shortage",
+        "B. Suppression of cash",
+        "C. Vault manipulation",
+        "D. Forged instruments"
+      ],
+      "ans": "B",
+      "exp": "Suppression involves not recording deposits."
+    },
+    {
+      "id": "Q222",
+      "module": 1,
+      "type": "mcq",
+      "q": "Unreconciled GL balances may indicate:",
+      "opts": [
+        "A. Operational efficiency",
+        "B. Possible fraud",
+        "C. Accurate reporting",
+        "D. Customer satisfaction"
+      ],
+      "ans": "B",
+      "exp": "Unreconciled items can hide fraud."
+    },
+    {
+      "id": "Q223",
+      "module": 1,
+      "type": "mcq",
+      "q": "A loan obtained with forged documents falls under:",
+      "opts": [
+        "A. BOFIA Section 3",
+        "B. Criminal Code Section 419",
+        "C. Cybercrime Act",
+        "D. Data Protection Regulation"
+      ],
+      "ans": "B",
+      "exp": "Section 419 covers false pretences."
+    },
+    {
+      "id": "Q224",
+      "module": 1,
+      "type": "mcq",
+      "q": "A mandatory password change policy is a form of:",
+      "opts": [
+        "A. Segregation of duties",
+        "B. Digital security",
+        "C. Job rotation",
+        "D. Access restriction"
+      ],
+      "ans": "B",
+      "exp": "Password policies are part of digital security."
+    },
+    {
+      "id": "Q225",
+      "module": 1,
+      "type": "mcq",
+      "q": "Reviewing compliance with the Cybercrime Act is a:",
+      "opts": [
+        "A. Operational audit",
+        "B. Legal compliance review",
+        "C. Financial audit",
+        "D. Governance assessment"
+      ],
+      "ans": "B",
+      "exp": "Compliance review focuses on laws."
+    },
+    {
+      "id": "Q226",
+      "module": 1,
+      "type": "mcq",
+      "q": "Forged cheques can be reduced by:",
+      "opts": [
+        "A. More staff",
+        "B. Cheque verification protocols",
+        "C. Better lighting",
+        "D. Longer clearing times"
+      ],
+      "ans": "B",
+      "exp": "Verification detects forgeries."
+    },
+    {
+      "id": "Q227",
+      "module": 1,
+      "type": "mcq",
+      "q": "Siphoning from dormant accounts is a type of:",
+      "opts": [
+        "A. Loan fraud",
+        "B. Dormant account fraud",
+        "C. Forged instrument fraud",
+        "D. Identity theft"
+      ],
+      "ans": "B",
+      "exp": "Dormant accounts are the target."
+    },
+    {
+      "id": "Q228",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer's unusual transfer is flagged by detection software as:",
+      "opts": [
+        "A. Anomaly",
+        "B. Rule violation",
+        "C. Pattern match",
+        "D. Expected behaviour"
+      ],
+      "ans": "A",
+      "exp": "Anomalies are unusual patterns."
+    },
+    {
+      "id": "Q229",
+      "module": 1,
+      "type": "mcq",
+      "q": "Late filing of regulatory returns exposes the bank to:",
+      "opts": [
+        "A. Reputational damage",
+        "B. Regulatory penalties",
+        "C. Increased profits",
+        "D. Customer satisfaction"
+      ],
+      "ans": "B",
+      "exp": "Penalties result from non\u2011compliance."
+    },
+    {
+      "id": "Q230",
+      "module": 1,
+      "type": "mcq",
+      "q": "Using insider information to trade shares is:",
+      "opts": [
+        "A. Corruption",
+        "B. Insider trading",
+        "C. Asset misappropriation",
+        "D. Financial statement fraud"
+      ],
+      "ans": "B",
+      "exp": "Insider trading is a specific offence."
+    },
+    {
+      "id": "Q231",
+      "module": 1,
+      "type": "mcq",
+      "q": "Unauthorised withdrawals from a customer's account after password compromise indicate:",
+      "opts": [
+        "A. Account takeover",
+        "B. Loan fraud",
+        "C. Skimming",
+        "D. Vishing"
+      ],
+      "ans": "A",
+      "exp": "Takeover follows credential theft."
+    },
+    {
+      "id": "Q232",
+      "module": 1,
+      "type": "mcq",
+      "q": "Two\u2011signature approval for contracts is a form of:",
+      "opts": [
+        "A. Segregation of duties",
+        "B. Authorisation",
+        "C. Access control",
+        "D. Job rotation"
+      ],
+      "ans": "B",
+      "exp": "Authorisation requires multiple approvals."
+    },
+    {
+      "id": "Q233",
+      "module": 1,
+      "type": "mcq",
+      "q": "Collusion between a manager and an outsider is classified as:",
+      "opts": [
+        "A. Insider fraud",
+        "B. Collusion fraud",
+        "C. Management fraud",
+        "D. External fraud"
+      ],
+      "ans": "B",
+      "exp": "Collusion involves insiders and outsiders."
+    },
+    {
+      "id": "Q234",
+      "module": 1,
+      "type": "mcq",
+      "q": "Dependence on a single IT vendor is a risk that can be mitigated by:",
+      "opts": [
+        "A. Accepting the risk",
+        "B. Vendor diversification",
+        "C. Ending the contract",
+        "D. Ignoring"
+      ],
+      "ans": "B",
+      "exp": "Diversification reduces single\u2011point failure."
+    },
+    {
+      "id": "Q235",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraudulent transfer using forged test codes could be prevented by:",
+      "opts": [
+        "A. Securing test codes and segregation",
+        "B. Stronger passwords",
+        "C. Job rotation",
+        "D. Training"
+      ],
+      "ans": "A",
+      "exp": "Test codes must be protected."
+    },
+    {
+      "id": "Q236",
+      "module": 1,
+      "type": "mcq",
+      "q": "The 'final deposition' in a fraud report is the:",
+      "opts": [
+        "A. Executive summary",
+        "B. Conclusion and recommendations",
+        "C. Evidence summary",
+        "D. Loss estimate"
+      ],
+      "ans": "B",
+      "exp": "The deposition contains conclusions."
+    },
+    {
+      "id": "Q237",
+      "module": 1,
+      "type": "mcq",
+      "q": "An anonymous whistleblower report should be:",
+      "opts": [
+        "A. Ignored",
+        "B. Investigated confidentially",
+        "C. Shared with the subject",
+        "D. Dismissed"
+      ],
+      "ans": "B",
+      "exp": "Confidential investigation is required."
+    },
+    {
+      "id": "Q238",
+      "module": 1,
+      "type": "mcq",
+      "q": "Relying solely on names and dates for verification creates a risk of:",
+      "opts": [
+        "A. Identity theft",
+        "B. Operational efficiency",
+        "C. Customer convenience",
+        "D. Lower costs"
+      ],
+      "ans": "A",
+      "exp": "Weak verification facilitates identity fraud."
+    },
+    {
+      "id": "Q239",
+      "module": 1,
+      "type": "mcq",
+      "q": "An IT staff creating a program to steal \u20a6100 per account is:",
+      "opts": [
+        "A. Data corruption",
+        "B. Salami slicing",
+        "C. Cyber attack",
+        "D. Insider trading"
+      ],
+      "ans": "B",
+      "exp": "Salami slicing steals small amounts from many."
+    },
+    {
+      "id": "Q240",
+      "module": 1,
+      "type": "mcq",
+      "q": "A material weakness in internal controls identified by external auditors requires:",
+      "opts": [
+        "A. Ignoring",
+        "B. Remediation",
+        "C. Acceptance",
+        "D. Restating financials"
+      ],
+      "ans": "B",
+      "exp": "Weaknesses must be fixed."
+    },
+    {
+      "id": "Q241",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee pressured to override controls should:",
+      "opts": [
+        "A. Comply",
+        "B. Refuse and report",
+        "C. Comply but document",
+        "D. Ignore"
+      ],
+      "ans": "B",
+      "exp": "Override attempts must be reported."
+    },
+    {
+      "id": "Q242",
+      "module": 1,
+      "type": "mcq",
+      "q": "Fraud awareness training aims to help employees:",
+      "opts": [
+        "A. Increase productivity",
+        "B. Recognise red flags",
+        "C. Reduce turnover",
+        "D. Improve customer service"
+      ],
+      "ans": "B",
+      "exp": "Training focuses on recognition."
+    },
+    {
+      "id": "Q243",
+      "module": 1,
+      "type": "mcq",
+      "q": "A teller's cash drawer imbalance should be:",
+      "opts": [
+        "A. Absorbed",
+        "B. Investigated immediately",
+        "C. Ignored",
+        "D. Adjusted"
+      ],
+      "ans": "B",
+      "exp": "Imbalances need investigation."
+    },
+    {
+      "id": "Q244",
+      "module": 1,
+      "type": "mcq",
+      "q": "Upon receiving a complaint of unauthorised debit, the first step is:",
+      "opts": [
+        "A. Refund",
+        "B. Identify and confirm",
+        "C. Report to police",
+        "D. Freeze"
+      ],
+      "ans": "B",
+      "exp": "Confirmation is first."
+    },
+    {
+      "id": "Q245",
+      "module": 1,
+      "type": "mcq",
+      "q": "A 21\u2011day waiting period for transfers to new beneficiaries is a:",
+      "opts": [
+        "A. Control activity",
+        "B. Risk assessment",
+        "C. Governance",
+        "D. Monitoring"
+      ],
+      "ans": "A",
+      "exp": "It is a specific control."
+    },
+    {
+      "id": "Q246",
+      "module": 1,
+      "type": "mcq",
+      "q": "Higher fraud rates in branches without surprise visits suggest:",
+      "opts": [
+        "A. Surprise visits deter fraud",
+        "B. Controls are weak",
+        "C. Staff are dishonest",
+        "D. Fraud is inevitable"
+      ],
+      "ans": "A",
+      "exp": "Surprise visits are effective deterrents."
+    },
+    {
+      "id": "Q247",
+      "module": 1,
+      "type": "mcq",
+      "q": "Protecting employees who report fraud is the role of:",
+      "opts": [
+        "A. Whistleblower protection",
+        "B. Code of conduct",
+        "C. Internal controls",
+        "D. Training"
+      ],
+      "ans": "A",
+      "exp": "Protection encourages reporting."
+    },
+    {
+      "id": "Q248",
+      "module": 1,
+      "type": "mcq",
+      "q": "Reviewing compliance with the Advance Fee Fraud Act is reviewing:",
+      "opts": [
+        "A. AML regulations",
+        "B. Anti\u2011419 laws",
+        "C. Cybercrime laws",
+        "D. Data protection"
+      ],
+      "ans": "B",
+      "exp": "Advance Fee Fraud is 419."
+    },
+    {
+      "id": "Q249",
+      "module": 1,
+      "type": "mcq",
+      "q": "Stolen card details used for fraudulent transactions indicate:",
+      "opts": [
+        "A. Skimming",
+        "B. Phishing",
+        "C. Identity theft",
+        "D. Social engineering"
+      ],
+      "ans": "A",
+      "exp": "Skimming captures card data."
+    },
+    {
+      "id": "Q250",
+      "module": 1,
+      "type": "mcq",
+      "q": "Reviewing fraud reports and prioritising high\u2011risk areas is:",
+      "opts": [
+        "A. Risk identification",
+        "B. Risk prioritisation",
+        "C. Risk assessment",
+        "D. Risk avoidance"
+      ],
+      "ans": "B",
+      "exp": "Prioritising is part of risk management."
+    },
+    {
+      "id": "Q251",
+      "module": 1,
+      "type": "mcq",
+      "q": "A Financial Control officer approves a payment to a fictitious vendor. The most effective preventive control is:",
+      "opts": [
+        "A. Requiring independent vendor verification",
+        "B. Limiting approval authority",
+        "C. Quarterly audits",
+        "D. Job rotation"
+      ],
+      "ans": "A",
+      "exp": "Vendor verification ensures legitimacy."
+    },
+    {
+      "id": "Q252",
+      "module": 1,
+      "type": "mcq",
+      "q": "A Customer Service officer waives fees without authorisation. This can be controlled by:",
+      "opts": [
+        "A. Dual approval for waivers",
+        "B. Customer satisfaction surveys",
+        "C. Higher fees",
+        "D. Reducing staff"
+      ],
+      "ans": "A",
+      "exp": "Dual approval prevents unilateral waivers."
+    },
+    {
+      "id": "Q253",
+      "module": 1,
+      "type": "mcq",
+      "q": "A branch manager manipulates cash records to hide shortages. The key control missing is:",
+      "opts": [
+        "A. Independent daily cash counts",
+        "B. CCTV cameras",
+        "C. Staff training",
+        "D. Clear policies"
+      ],
+      "ans": "A",
+      "exp": "Independent counts would detect discrepancies."
+    },
+    {
+      "id": "Q254",
+      "module": 1,
+      "type": "mcq",
+      "q": "A Funds Transfer officer shares client data for profit. This breaches:",
+      "opts": [
+        "A. Client confidentiality",
+        "B. Segregation of duties",
+        "C. Job rotation",
+        "D. Access controls"
+      ],
+      "ans": "A",
+      "exp": "Confidentiality is a fundamental duty."
+    },
+    {
+      "id": "Q255",
+      "module": 1,
+      "type": "mcq",
+      "q": "A Clearing officer processes forged cheques in collusion. This could have been prevented by:",
+      "opts": [
+        "A. Automated cheque verification",
+        "B. Dual control on clearing",
+        "C. Staff rotation",
+        "D. Training"
+      ],
+      "ans": "A",
+      "exp": "Automated verification checks authenticity."
+    },
+    {
+      "id": "Q256",
+      "module": 1,
+      "type": "mcq",
+      "q": "An IT administrator creates phantom accounts. The most effective control is:",
+      "opts": [
+        "A. Role\u2011based access control",
+        "B. Strong passwords",
+        "C. Regular security training",
+        "D. Background checks"
+      ],
+      "ans": "A",
+      "exp": "Access control limits privileges."
+    },
+    {
+      "id": "Q257",
+      "module": 1,
+      "type": "mcq",
+      "q": "A Treasury dealer creates a fictitious deposit. This could be detected by:",
+      "opts": [
+        "A. Daily reconciliation of GL and subsidiary ledgers",
+        "B. Customer confirmations",
+        "C. Surprise audits",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Multiple controls would detect such a scheme."
+    },
+    {
+      "id": "Q258",
+      "module": 1,
+      "type": "mcq",
+      "q": "A Credit officer approves loans without verification. This is a failure in:",
+      "opts": [
+        "A. Underwriting standards",
+        "B. Segregation of duties",
+        "C. Supervision",
+        "D. Training"
+      ],
+      "ans": "A",
+      "exp": "Underwriting standards require verification."
+    },
+    {
+      "id": "Q259",
+      "module": 1,
+      "type": "mcq",
+      "q": "Using a bank vehicle for personal errands is an example of:",
+      "opts": [
+        "A. Impropriety",
+        "B. Sharp practices",
+        "C. Deception",
+        "D. Breach of confidence"
+      ],
+      "ans": "A",
+      "exp": "Misuse of assets is improper."
+    },
+    {
+      "id": "Q260",
+      "module": 1,
+      "type": "mcq",
+      "q": "Forging a signature on a withdrawal slip is a type of:",
+      "opts": [
+        "A. Forged mandate",
+        "B. Identity theft",
+        "C. Forged instruments",
+        "D. Account opening fraud"
+      ],
+      "ans": "A",
+      "exp": "Forging a mandate authorises unauthorised withdrawals."
+    },
+    {
+      "id": "Q261",
+      "module": 1,
+      "type": "mcq",
+      "q": "Processing incomplete cheques can be prevented by:",
+      "opts": [
+        "A. Strict adherence to clearing rules",
+        "B. Increasing staff",
+        "C. Faster processing",
+        "D. Manual checks"
+      ],
+      "ans": "A",
+      "exp": "Rules must be enforced."
+    },
+    {
+      "id": "Q262",
+      "module": 1,
+      "type": "mcq",
+      "q": "A teller delays posting a deposit to earn interest. This is:",
+      "opts": [
+        "A. Suppression of cash",
+        "B. Theft",
+        "C. Fraudulent conversion",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "It involves suppression and conversion for personal gain."
+    },
+    {
+      "id": "Q263",
+      "module": 1,
+      "type": "mcq",
+      "q": "Selling customer data is a breach of:",
+      "opts": [
+        "A. Client confidentiality",
+        "B. Data protection laws",
+        "C. Both A and B",
+        "D. None of the above"
+      ],
+      "ans": "C",
+      "exp": "It violates both confidentiality and data protection."
+    },
+    {
+      "id": "Q264",
+      "module": 1,
+      "type": "mcq",
+      "q": "Manipulating test codes to transfer funds is a fraud risk in:",
+      "opts": [
+        "A. Funds Transfer",
+        "B. Clearing Operations",
+        "C. Treasury",
+        "D. IT"
+      ],
+      "ans": "A",
+      "exp": "Test codes authenticate transfers."
+    },
+    {
+      "id": "Q265",
+      "module": 1,
+      "type": "mcq",
+      "q": "Opening an account with a false address is a KYC failure that can lead to:",
+      "opts": [
+        "A. Inability to trace the customer",
+        "B. Fraudulent transactions",
+        "C. Regulatory fines",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "False addresses have multiple consequences."
+    },
+    {
+      "id": "Q266",
+      "module": 1,
+      "type": "mcq",
+      "q": "Abuse of capital expenses involves:",
+      "opts": [
+        "A. Overstating project costs",
+        "B. Personal use of funds",
+        "C. Approving fictitious projects",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "All are forms of capital expense abuse."
+    },
+    {
+      "id": "Q267",
+      "module": 1,
+      "type": "mcq",
+      "q": "Collusion between a Treasury officer and a customer to create fictitious deposits is a type of:",
+      "opts": [
+        "A. Internal fraud",
+        "B. External fraud",
+        "C. Collusion fraud",
+        "D. Management fraud"
+      ],
+      "ans": "C",
+      "exp": "It involves both internal and external actors."
+    },
+    {
+      "id": "Q268",
+      "module": 1,
+      "type": "mcq",
+      "q": "A relationship manager manipulates interest rates for personal benefit. This is:",
+      "opts": [
+        "A. Rate manipulation",
+        "B. Corruption",
+        "C. Conflict of interest",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "It involves all three elements."
+    },
+    {
+      "id": "Q269",
+      "module": 1,
+      "type": "mcq",
+      "q": "Using customer data to open unauthorised accounts is:",
+      "opts": [
+        "A. Identity theft",
+        "B. Account opening fraud",
+        "C. Both A and B",
+        "D. Data breach"
+      ],
+      "ans": "C",
+      "exp": "It is identity theft and unauthorised account opening."
+    },
+    {
+      "id": "Q270",
+      "module": 1,
+      "type": "mcq",
+      "q": "Suppressing a returned cheque is a fraud scheme in:",
+      "opts": [
+        "A. Clearing Operations",
+        "B. Customer Service",
+        "C. Funds Transfer",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "Clearing handles cheques."
+    },
+    {
+      "id": "Q271",
+      "module": 1,
+      "type": "mcq",
+      "q": "A hidden function in the payment system to siphon funds could have been detected by:",
+      "opts": [
+        "A. Code review",
+        "B. Access logs",
+        "C. Independent testing",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Multiple controls can detect such fraud."
+    },
+    {
+      "id": "Q272",
+      "module": 1,
+      "type": "mcq",
+      "q": "Opening an account without verifying identity violates:",
+      "opts": [
+        "A. Customer Due Diligence",
+        "B. Anti\u2011Money Laundering rules",
+        "C. Internal policies",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "It breaches multiple requirements."
+    },
+    {
+      "id": "Q273",
+      "module": 1,
+      "type": "mcq",
+      "q": "Using a stolen cheque is a fraud risk in:",
+      "opts": [
+        "A. Funds Transfer",
+        "B. Clearing Operations",
+        "C. Customer Service",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "Funds Transfer handles cheques."
+    },
+    {
+      "id": "Q274",
+      "module": 1,
+      "type": "mcq",
+      "q": "Unauthorised placement of funds at a branch is a fraud scheme in:",
+      "opts": [
+        "A. Treasury",
+        "B. Customer Service",
+        "C. IT",
+        "D. Clearing"
+      ],
+      "ans": "A",
+      "exp": "Treasury deals with fund placements."
+    },
+    {
+      "id": "Q275",
+      "module": 1,
+      "type": "mcq",
+      "q": "Dormant accounts are vulnerable because:",
+      "opts": [
+        "A. They are not actively monitored",
+        "B. They have no signatories",
+        "C. They earn high interest",
+        "D. They are often frozen"
+      ],
+      "ans": "A",
+      "exp": "Lack of monitoring makes them targets."
+    },
+    {
+      "id": "Q276",
+      "module": 1,
+      "type": "mcq",
+      "q": "Cheque cloning involves:",
+      "opts": [
+        "A. Creating a copy of a genuine cheque",
+        "B. Using a stolen cheque",
+        "C. Forging a signature",
+        "D. Altering the amount"
+      ],
+      "ans": "A",
+      "exp": "Cloning duplicates a legitimate cheque."
+    },
+    {
+      "id": "Q277",
+      "module": 1,
+      "type": "mcq",
+      "q": "Approving fictitious loans is a fraud scheme in:",
+      "opts": [
+        "A. Credit and Marketing",
+        "B. Customer Service",
+        "C. Treasury",
+        "D. Clearing"
+      ],
+      "ans": "A",
+      "exp": "Credit originates loans."
+    },
+    {
+      "id": "Q278",
+      "module": 1,
+      "type": "mcq",
+      "q": "A stolen password used to access accounts is a risk in:",
+      "opts": [
+        "A. IT department",
+        "B. Customer Service",
+        "C. Clearing",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "IT manages system access."
+    },
+    {
+      "id": "Q279",
+      "module": 1,
+      "type": "mcq",
+      "q": "Creating fictitious deposits to move funds is a fraud risk in:",
+      "opts": [
+        "A. Treasury",
+        "B. Credit",
+        "C. Customer Service",
+        "D. IT"
+      ],
+      "ans": "A",
+      "exp": "Treasury deals with deposits."
+    },
+    {
+      "id": "Q280",
+      "module": 1,
+      "type": "mcq",
+      "q": "Using forged documents to open accounts is:",
+      "opts": [
+        "A. Account opening fraud",
+        "B. Identity theft",
+        "C. Both A and B",
+        "D. Forgery"
+      ],
+      "ans": "C",
+      "exp": "It combines identity theft and account opening fraud."
+    },
+    {
+      "id": "Q281",
+      "module": 1,
+      "type": "mcq",
+      "q": "Collusion with clearing officers to process fraudulent cheques can be mitigated by:",
+      "opts": [
+        "A. Segregation of duties",
+        "B. Random audits",
+        "C. Automated verification",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Multiple controls reduce collusion risk."
+    },
+    {
+      "id": "Q282",
+      "module": 1,
+      "type": "mcq",
+      "q": "Fraudulent transfers using forged test codes are a risk in:",
+      "opts": [
+        "A. Funds Transfer",
+        "B. Clearing",
+        "C. Treasury",
+        "D. IT"
+      ],
+      "ans": "A",
+      "exp": "Test codes authenticate transfers."
+    },
+    {
+      "id": "Q283",
+      "module": 1,
+      "type": "mcq",
+      "q": "Theft of valuable items from the branch is a risk in:",
+      "opts": [
+        "A. Cash and Teller",
+        "B. Customer Service",
+        "C. IT",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "Cash and Teller handles physical assets."
+    },
+    {
+      "id": "Q284",
+      "module": 1,
+      "type": "mcq",
+      "q": "Abuse of operating expenses includes:",
+      "opts": [
+        "A. Fictitious training costs",
+        "B. Inflated travel claims",
+        "C. Unauthorised purchases",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "All are examples of operating expense abuse."
+    },
+    {
+      "id": "Q285",
+      "module": 1,
+      "type": "mcq",
+      "q": "Installing malware on the bank's system is a risk in:",
+      "opts": [
+        "A. IT department",
+        "B. Customer Service",
+        "C. Clearing",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "IT manages the systems."
+    },
+    {
+      "id": "Q286",
+      "module": 1,
+      "type": "mcq",
+      "q": "Collusion between treasury dealers to manipulate rates is a form of:",
+      "opts": [
+        "A. Collusion fraud",
+        "B. Market manipulation",
+        "C. Both A and B",
+        "D. Insider trading"
+      ],
+      "ans": "C",
+      "exp": "It involves collusion and market manipulation."
+    },
+    {
+      "id": "Q287",
+      "module": 1,
+      "type": "mcq",
+      "q": "Opening accounts for unknown clients is a risk in:",
+      "opts": [
+        "A. Customer Service",
+        "B. Credit",
+        "C. Treasury",
+        "D. IT"
+      ],
+      "ans": "A",
+      "exp": "Customer Service opens accounts."
+    },
+    {
+      "id": "Q288",
+      "module": 1,
+      "type": "mcq",
+      "q": "Cash movements with criminal involvement is a risk in:",
+      "opts": [
+        "A. Cash and Teller",
+        "B. Customer Service",
+        "C. IT",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "Cash handling is in Cash and Teller."
+    },
+    {
+      "id": "Q289",
+      "module": 1,
+      "type": "mcq",
+      "q": "Exposing client details to third parties is a risk in:",
+      "opts": [
+        "A. Funds Transfer",
+        "B. Customer Service",
+        "C. Both A and B",
+        "D. Treasury"
+      ],
+      "ans": "C",
+      "exp": "Both departments handle client data."
+    },
+    {
+      "id": "Q290",
+      "module": 1,
+      "type": "mcq",
+      "q": "Processing incomplete cheques can be prevented by:",
+      "opts": [
+        "A. Strict adherence to rules",
+        "B. Automated systems",
+        "C. Staff training",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Multiple measures are effective."
+    },
+    {
+      "id": "Q291",
+      "module": 1,
+      "type": "mcq",
+      "q": "Collusion with customers to defraud the bank is a risk in:",
+      "opts": [
+        "A. Credit and Marketing",
+        "B. Customer Service",
+        "C. Treasury",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Collusion can occur in various departments."
+    },
+    {
+      "id": "Q292",
+      "module": 1,
+      "type": "mcq",
+      "q": "Using bank assets for personal use is:",
+      "opts": [
+        "A. Unauthorised use",
+        "B. Impropriety",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "ans": "C",
+      "exp": "It is both unauthorised and improper."
+    },
+    {
+      "id": "Q293",
+      "module": 1,
+      "type": "mcq",
+      "q": "Unauthorised database access is a risk in:",
+      "opts": [
+        "A. IT department",
+        "B. Customer Service",
+        "C. Credit",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "IT manages the database."
+    },
+    {
+      "id": "Q294",
+      "module": 1,
+      "type": "mcq",
+      "q": "Placing funds at a branch without authorisation is a risk in:",
+      "opts": [
+        "A. Treasury",
+        "B. Customer Service",
+        "C. IT",
+        "D. Clearing"
+      ],
+      "ans": "A",
+      "exp": "Treasury handles fund placements."
+    },
+    {
+      "id": "Q295",
+      "module": 1,
+      "type": "mcq",
+      "q": "Using fake references to open accounts is:",
+      "opts": [
+        "A. Account opening fraud",
+        "B. Identity fraud",
+        "C. Both A and B",
+        "D. Forgery"
+      ],
+      "ans": "C",
+      "exp": "It involves both."
+    },
+    {
+      "id": "Q296",
+      "module": 1,
+      "type": "mcq",
+      "q": "Suppression of irregular instruments is a risk in:",
+      "opts": [
+        "A. Clearing Operations",
+        "B. Customer Service",
+        "C. Funds Transfer",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "Clearing handles instruments."
+    },
+    {
+      "id": "Q297",
+      "module": 1,
+      "type": "mcq",
+      "q": "Forged drafts or managers' cheques are a risk in:",
+      "opts": [
+        "A. Funds Transfer",
+        "B. Clearing",
+        "C. Customer Service",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "Funds Transfer issues draft instruments."
+    },
+    {
+      "id": "Q298",
+      "module": 1,
+      "type": "mcq",
+      "q": "Manipulating customer accounts for personal gain is a risk in:",
+      "opts": [
+        "A. Credit and Marketing",
+        "B. Customer Service",
+        "C. Both A and B",
+        "D. Treasury"
+      ],
+      "ans": "C",
+      "exp": "Both departments can manipulate accounts."
+    },
+    {
+      "id": "Q299",
+      "module": 1,
+      "type": "mcq",
+      "q": "Data corruption to conceal fraud is a risk in:",
+      "opts": [
+        "A. IT department",
+        "B. Customer Service",
+        "C. Credit",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "IT manages data integrity."
+    },
+    {
+      "id": "Q300",
+      "module": 1,
+      "type": "mcq",
+      "q": "Vault manipulation to cover theft is a risk in:",
+      "opts": [
+        "A. Cash and Teller",
+        "B. Customer Service",
+        "C. IT",
+        "D. Treasury"
+      ],
+      "ans": "A",
+      "exp": "Vaults are in Cash and Teller."
+    },
+    {
+      "id": "Q301",
+      "module": 1,
+      "type": "mcq",
+      "q": "A teller records \u20a6450,000 instead of \u20a6500,000 for a deposit. This is:",
+      "opts": [
+        "A. Cash shortage",
+        "B. Suppression of cash",
+        "C. Vault manipulation",
+        "D. Fraudulent conversion"
+      ],
+      "ans": "B",
+      "exp": "Suppression reduces the recorded amount."
+    },
+    {
+      "id": "Q302",
+      "module": 1,
+      "type": "mcq",
+      "q": "A stolen manager's cheque could have been detected by:",
+      "opts": [
+        "A. Signature verification",
+        "B. Cheque number validation",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "ans": "C",
+      "exp": "Both checks would detect stolen cheques."
+    },
+    {
+      "id": "Q303",
+      "module": 1,
+      "type": "mcq",
+      "q": "A program that rounds down interest and steals fractions is:",
+      "opts": [
+        "A. Salami slicing",
+        "B. Data corruption",
+        "C. Cyber attack",
+        "D. Insider trading"
+      ],
+      "ans": "A",
+      "exp": "Salami slicing takes small amounts."
+    },
+    {
+      "id": "Q304",
+      "module": 1,
+      "type": "mcq",
+      "q": "Mandatory AML training is required by:",
+      "opts": [
+        "A. CBN circulars",
+        "B. BOFIA",
+        "C. Both A and B",
+        "D. NDIC"
+      ],
+      "ans": "A",
+      "exp": "CBN issues AML training requirements."
+    },
+    {
+      "id": "Q305",
+      "module": 1,
+      "type": "mcq",
+      "q": "The first step in a fraud risk assessment for a new app is:",
+      "opts": [
+        "A. Identify risks",
+        "B. Develop controls",
+        "C. Implement",
+        "D. Train staff"
+      ],
+      "ans": "A",
+      "exp": "Risk identification comes first."
+    },
+    {
+      "id": "Q306",
+      "module": 1,
+      "type": "mcq",
+      "q": "A branch manager approving a loan to a relative without disclosure violates:",
+      "opts": [
+        "A. Code of ethics",
+        "B. Conflict of interest policy",
+        "C. Both A and B",
+        "D. Loan policy"
+      ],
+      "ans": "C",
+      "exp": "It breaches ethics and conflict rules."
+    },
+    {
+      "id": "Q307",
+      "module": 1,
+      "type": "mcq",
+      "q": "A phone call asking for an OTP is:",
+      "opts": [
+        "A. Phishing",
+        "B. Vishing",
+        "C. Smishing",
+        "D. Social engineering"
+      ],
+      "ans": "B",
+      "exp": "Vishing is voice\u2011based phishing."
+    },
+    {
+      "id": "Q308",
+      "module": 1,
+      "type": "mcq",
+      "q": "A login from a foreign country while the customer is in Nigeria may indicate:",
+      "opts": [
+        "A. Account takeover",
+        "B. Travel",
+        "C. VPN use",
+        "D. Normal behaviour"
+      ],
+      "ans": "A",
+      "exp": "Geolocation anomalies suggest takeover."
+    },
+    {
+      "id": "Q309",
+      "module": 1,
+      "type": "mcq",
+      "q": "Accepting kickbacks from vendors is:",
+      "opts": [
+        "A. Corruption",
+        "B. Bribery",
+        "C. Both A and B",
+        "D. Fraud"
+      ],
+      "ans": "C",
+      "exp": "Kickbacks are corrupt and bribery."
+    },
+    {
+      "id": "Q310",
+      "module": 1,
+      "type": "mcq",
+      "q": "When handling electronic evidence, the most critical factor is:",
+      "opts": [
+        "A. Speed",
+        "B. Chain of custody",
+        "C. Cost",
+        "D. Volume"
+      ],
+      "ans": "B",
+      "exp": "Chain of custody ensures admissibility."
+    },
+    {
+      "id": "Q311",
+      "module": 1,
+      "type": "mcq",
+      "q": "Selling customer information to third parties is a breach of:",
+      "opts": [
+        "A. Confidentiality",
+        "B. Data protection",
+        "C. Both A and B",
+        "D. Internal policies"
+      ],
+      "ans": "C",
+      "exp": "It violates both."
+    },
+    {
+      "id": "Q312",
+      "module": 1,
+      "type": "mcq",
+      "q": "Establishing an audit committee is part of:",
+      "opts": [
+        "A. Governance structure",
+        "B. Risk assessment",
+        "C. Control activities",
+        "D. Monitoring"
+      ],
+      "ans": "A",
+      "exp": "Audit committees are a governance component."
+    },
+    {
+      "id": "Q313",
+      "module": 1,
+      "type": "mcq",
+      "q": "Loss of unencrypted customer data creates a risk of:",
+      "opts": [
+        "A. Identity theft",
+        "B. Regulatory fines",
+        "C. Reputational damage",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "All are potential consequences."
+    },
+    {
+      "id": "Q314",
+      "module": 1,
+      "type": "mcq",
+      "q": "Multiple accounts opened with the same photo but different names indicates:",
+      "opts": [
+        "A. Synthetic identity fraud",
+        "B. Identity theft",
+        "C. Account takeover",
+        "D. Phishing"
+      ],
+      "ans": "A",
+      "exp": "Synthetic identity uses fabricated details."
+    },
+    {
+      "id": "Q315",
+      "module": 1,
+      "type": "mcq",
+      "q": "A teller processing a withdrawal without ID verification is a weakness in:",
+      "opts": [
+        "A. Identity verification",
+        "B. Segregation of duties",
+        "C. Supervision",
+        "D. Training"
+      ],
+      "ans": "A",
+      "exp": "Verification is the missing control."
+    },
+    {
+      "id": "Q316",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee recognising a phishing email demonstrates:",
+      "opts": [
+        "A. Security awareness",
+        "B. Digital security",
+        "C. Compliance",
+        "D. Training effectiveness"
+      ],
+      "ans": "A",
+      "exp": "Awareness is key to recognition."
+    },
+    {
+      "id": "Q317",
+      "module": 1,
+      "type": "mcq",
+      "q": "Requiring two weeks of consecutive annual leave supports:",
+      "opts": [
+        "A. Compulsory vacation",
+        "B. Segregation of duties",
+        "C. Job rotation",
+        "D. Access control"
+      ],
+      "ans": "A",
+      "exp": "It is a preventive control."
+    },
+    {
+      "id": "Q318",
+      "module": 1,
+      "type": "mcq",
+      "q": "ATM withdrawals in different cities within 30 minutes suggests:",
+      "opts": [
+        "A. Card skimming",
+        "B. Account takeover",
+        "C. Lost card",
+        "D. Normal travel"
+      ],
+      "ans": "A",
+      "exp": "Impossible travel indicates skimming."
+    },
+    {
+      "id": "Q319",
+      "module": 1,
+      "type": "mcq",
+      "q": "Processing fraudulent transfers for payment is:",
+      "opts": [
+        "A. Corruption",
+        "B. Bribery",
+        "C. Both A and B",
+        "D. Fraud"
+      ],
+      "ans": "C",
+      "exp": "It involves corrupt acceptance of payment."
+    },
+    {
+      "id": "Q320",
+      "module": 1,
+      "type": "mcq",
+      "q": "A circular reminding staff not to share passwords is an example of:",
+      "opts": [
+        "A. Communication",
+        "B. Training",
+        "C. Policy",
+        "D. Monitoring"
+      ],
+      "ans": "A",
+      "exp": "It is communication of rules."
+    },
+    {
+      "id": "Q321",
+      "module": 1,
+      "type": "mcq",
+      "q": "Inflating customer income on loan applications is:",
+      "opts": [
+        "A. Loan fraud",
+        "B. Misrepresentation",
+        "C. Both A and B",
+        "D. Asset misappropriation"
+      ],
+      "ans": "C",
+      "exp": "It is misrepresentation to obtain a loan."
+    },
+    {
+      "id": "Q322",
+      "module": 1,
+      "type": "mcq",
+      "q": "Protecting a whistleblower is achieved through:",
+      "opts": [
+        "A. Whistleblower protection policy",
+        "B. Code of ethics",
+        "C. Internal controls",
+        "D. Training"
+      ],
+      "ans": "A",
+      "exp": "Policies protect reporters."
+    },
+    {
+      "id": "Q323",
+      "module": 1,
+      "type": "mcq",
+      "q": "Misusing customer funds for personal purposes is:",
+      "opts": [
+        "A. Breach of confidence",
+        "B. Theft",
+        "C. Both A and B",
+        "D. Impropriety"
+      ],
+      "ans": "C",
+      "exp": "It is both a breach and theft."
+    },
+    {
+      "id": "Q324",
+      "module": 1,
+      "type": "mcq",
+      "q": "An intelligence report on fraud trends is an example of:",
+      "opts": [
+        "A. Data analysis",
+        "B. Monitoring",
+        "C. Reporting",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "It involves analysis, monitoring, and reporting."
+    },
+    {
+      "id": "Q325",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraud conviction prevents future employment in banking under:",
+      "opts": [
+        "A. BOFIA Section 18",
+        "B. BOFIA Section 17",
+        "C. BOFIA Section 3",
+        "D. BOFIA Section 102"
+      ],
+      "ans": "A",
+      "exp": "Section 18 prohibits employing convicted fraudsters."
+    },
+    {
+      "id": "Q326",
+      "module": 1,
+      "type": "mcq",
+      "q": "Detection software that matches transactions to known money laundering patterns uses:",
+      "opts": [
+        "A. Pattern recognition",
+        "B. Anomaly detection",
+        "C. Rule\u2011based detection",
+        "D. Machine learning"
+      ],
+      "ans": "A",
+      "exp": "Pattern matching identifies known schemes."
+    },
+    {
+      "id": "Q327",
+      "module": 1,
+      "type": "mcq",
+      "q": "An unauthorised account opened in a customer's name indicates:",
+      "opts": [
+        "A. Identity theft",
+        "B. Account opening fraud",
+        "C. Both A and B",
+        "D. Forgery"
+      ],
+      "ans": "C",
+      "exp": "It involves theft of identity and fraud."
+    },
+    {
+      "id": "Q328",
+      "module": 1,
+      "type": "mcq",
+      "q": "Fictitious expense claims are an example of:",
+      "opts": [
+        "A. Abuse of operating expenses",
+        "B. Abuse of capital expenses",
+        "C. Asset misappropriation",
+        "D. Fraudulent reimbursement"
+      ],
+      "ans": "D",
+      "exp": "They are fraudulent claims for reimbursement."
+    },
+    {
+      "id": "Q329",
+      "module": 1,
+      "type": "mcq",
+      "q": "Failure to reconcile GL accounts for months increases the risk of:",
+      "opts": [
+        "A. Undetected fraud",
+        "B. Regulatory fines",
+        "C. Operational inefficiency",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Multiple risks arise."
+    },
+    {
+      "id": "Q330",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee accessing confidential documents without authorisation is:",
+      "opts": [
+        "A. Unauthorised access",
+        "B. Insider threat",
+        "C. Both A and B",
+        "D. Data breach"
+      ],
+      "ans": "C",
+      "exp": "It is unauthorised and an insider threat."
+    },
+    {
+      "id": "Q331",
+      "module": 1,
+      "type": "mcq",
+      "q": "Audio recording of an interview requires consideration of:",
+      "opts": [
+        "A. Admissibility",
+        "B. Consent",
+        "C. Both A and B",
+        "D. Equipment quality"
+      ],
+      "ans": "C",
+      "exp": "Consent and admissibility are key."
+    },
+    {
+      "id": "Q332",
+      "module": 1,
+      "type": "mcq",
+      "q": "An email asking for a password is both:",
+      "opts": [
+        "A. Phishing and social engineering",
+        "B. Phishing and malware",
+        "C. Social engineering and malware",
+        "D. Vishing and phishing"
+      ],
+      "ans": "A",
+      "exp": "It uses deceptive email and manipulation."
+    },
+    {
+      "id": "Q333",
+      "module": 1,
+      "type": "mcq",
+      "q": "Updating policies to reflect new regulations is a compliance function called:",
+      "opts": [
+        "A. Regulatory monitoring",
+        "B. Policy alignment",
+        "C. Both A and B",
+        "D. Risk assessment"
+      ],
+      "ans": "C",
+      "exp": "It involves both monitoring and alignment."
+    },
+    {
+      "id": "Q334",
+      "module": 1,
+      "type": "mcq",
+      "q": "Using a company car for personal errands is:",
+      "opts": [
+        "A. Impropriety",
+        "B. Misuse of assets",
+        "C. Both A and B",
+        "D. Sharp practices"
+      ],
+      "ans": "C",
+      "exp": "It is improper and a misuse."
+    },
+    {
+      "id": "Q335",
+      "module": 1,
+      "type": "mcq",
+      "q": "A large transaction on a card that never left the customer's possession suggests:",
+      "opts": [
+        "A. Skimming",
+        "B. Phishing",
+        "C. Malware",
+        "D. Vishing"
+      ],
+      "ans": "A",
+      "exp": "Skimming captures card data."
+    },
+    {
+      "id": "Q336",
+      "module": 1,
+      "type": "mcq",
+      "q": "Manipulating rates in exchange for a bribe is:",
+      "opts": [
+        "A. Corruption",
+        "B. Rate manipulation",
+        "C. Collusion",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "It involves all elements."
+    },
+    {
+      "id": "Q337",
+      "module": 1,
+      "type": "mcq",
+      "q": "Requiring two approvals for transactions above \u20a61 million is an example of:",
+      "opts": [
+        "A. Authorisation controls",
+        "B. Segregation of duties",
+        "C. Both A and B",
+        "D. Access control"
+      ],
+      "ans": "C",
+      "exp": "Dual authorisation combines both."
+    },
+    {
+      "id": "Q338",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fake robbery report to cover theft is:",
+      "opts": [
+        "A. Theft",
+        "B. False reporting",
+        "C. Both A and B",
+        "D. Fraud"
+      ],
+      "ans": "C",
+      "exp": "It involves both theft and falsehood."
+    },
+    {
+      "id": "Q339",
+      "module": 1,
+      "type": "mcq",
+      "q": "The board approving the fraud risk appetite is part of:",
+      "opts": [
+        "A. Governance",
+        "B. Risk management",
+        "C. Both A and B",
+        "D. Control activities"
+      ],
+      "ans": "C",
+      "exp": "It is a governance and risk management function."
+    },
+    {
+      "id": "Q340",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee misusing customer funds is:",
+      "opts": [
+        "A. Insider fraud",
+        "B. Asset misappropriation",
+        "C. Both A and B",
+        "D. Corruption"
+      ],
+      "ans": "C",
+      "exp": "It is insider asset misappropriation."
+    },
+    {
+      "id": "Q341",
+      "module": 1,
+      "type": "mcq",
+      "q": "Ensuring AML compliance is the responsibility of:",
+      "opts": [
+        "A. Compliance department",
+        "B. Fraud management",
+        "C. Internal audit",
+        "D. Operations"
+      ],
+      "ans": "A",
+      "exp": "Compliance oversees AML."
+    },
+    {
+      "id": "Q342",
+      "module": 1,
+      "type": "mcq",
+      "q": "Unauthorised early closure of a fixed deposit is:",
+      "opts": [
+        "A. Fraudulent liquidation",
+        "B. Theft",
+        "C. Both A and B",
+        "D. Breach of mandate"
+      ],
+      "ans": "C",
+      "exp": "It is fraudulent and constitutes theft."
+    },
+    {
+      "id": "Q343",
+      "module": 1,
+      "type": "mcq",
+      "q": "Installing spyware to monitor customer transactions is:",
+      "opts": [
+        "A. Malware installation",
+        "B. Cyber attack",
+        "C. Both A and B",
+        "D. Insider threat"
+      ],
+      "ans": "C",
+      "exp": "Spyware is malware and a cyber attack."
+    },
+    {
+      "id": "Q344",
+      "module": 1,
+      "type": "mcq",
+      "q": "Opening an account with a forged ID is:",
+      "opts": [
+        "A. Account opening fraud",
+        "B. Identity theft",
+        "C. Both A and B",
+        "D. Forgery"
+      ],
+      "ans": "C",
+      "exp": "It involves both."
+    },
+    {
+      "id": "Q345",
+      "module": 1,
+      "type": "mcq",
+      "q": "Freezing an account after suspicious activity is a response step called:",
+      "opts": [
+        "A. Mitigation",
+        "B. Investigation",
+        "C. Reporting",
+        "D. Recovery"
+      ],
+      "ans": "A",
+      "exp": "Freezing limits further loss."
+    },
+    {
+      "id": "Q346",
+      "module": 1,
+      "type": "mcq",
+      "q": "Processing a cheque with a forged signature could have been prevented by:",
+      "opts": [
+        "A. Signature verification",
+        "B. Automated checks",
+        "C. Staff training",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Multiple controls can prevent it."
+    },
+    {
+      "id": "Q347",
+      "module": 1,
+      "type": "mcq",
+      "q": "Approving a contract with a spouse's company without disclosure is a:",
+      "opts": [
+        "A. Conflict of interest",
+        "B. Breach of ethics",
+        "C. Both A and B",
+        "D. Fraud"
+      ],
+      "ans": "C",
+      "exp": "It is both a conflict and ethical breach."
+    },
+    {
+      "id": "Q348",
+      "module": 1,
+      "type": "mcq",
+      "q": "Verifying a customer's identity through security questions is part of:",
+      "opts": [
+        "A. KYC",
+        "B. CDD",
+        "C. Both A and B",
+        "D. AML"
+      ],
+      "ans": "C",
+      "exp": "It is part of KYC and CDD."
+    },
+    {
+      "id": "Q349",
+      "module": 1,
+      "type": "mcq",
+      "q": "Monitoring activities in the risk management framework aim to:",
+      "opts": [
+        "A. Ensure controls work",
+        "B. Identify new risks",
+        "C. Report to management",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Monitoring serves multiple purposes."
+    },
+    {
+      "id": "Q350",
+      "module": 1,
+      "type": "mcq",
+      "q": "A clear organisational structure and code of conduct are elements of the COSO:",
+      "opts": [
+        "A. Control environment",
+        "B. Risk assessment",
+        "C. Control activities",
+        "D. Information & communication"
+      ],
+      "ans": "A",
+      "exp": "They set the tone at the top."
+    },
+    {
+      "id": "Q351",
+      "module": 1,
+      "type": "mcq",
+      "q": "Section 102 of BOFIA 2020 established a special tribunal for:",
+      "opts": [
+        "A. Recovery of eligible loans",
+        "B. Banking supervision",
+        "C. Consumer protection",
+        "D. Anti\u2011money laundering"
+      ],
+      "ans": "A",
+      "exp": "It created the Special Tribunal for Enforcement and Recovery of Eligible Loans."
+    },
+    {
+      "id": "Q352",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which agencies are specifically empowered to enforce anti\u2011fraud laws alongside the courts?",
+      "opts": [
+        "A. EFCC and ICPC",
+        "B. CBN and NDIC",
+        "C. SEC and FRCN",
+        "D. NAICOM and PenCom"
+      ],
+      "ans": "A",
+      "exp": "The EFCC and ICPC are the main enforcement agencies."
+    },
+    {
+      "id": "Q353",
+      "module": 1,
+      "type": "mcq",
+      "q": "NAICOM is the regulatory body for:",
+      "opts": [
+        "A. Insurance industry",
+        "B. Pension industry",
+        "C. Capital market",
+        "D. Banking"
+      ],
+      "ans": "A",
+      "exp": "NAICOM regulates the insurance sector."
+    },
+    {
+      "id": "Q354",
+      "module": 1,
+      "type": "mcq",
+      "q": "PenCom is responsible for:",
+      "opts": [
+        "A. Regulating the pension industry",
+        "B. Insuring deposits",
+        "C. Regulating the capital market",
+        "D. Establishing accounting standards"
+      ],
+      "ans": "A",
+      "exp": "PenCom oversees pension funds."
+    },
+    {
+      "id": "Q355",
+      "module": 1,
+      "type": "mcq",
+      "q": "A Cash & Teller unit receiving counterfeit currency is an example of:",
+      "opts": [
+        "A. Cash Counterfeit",
+        "B. Cash Shortage",
+        "C. Vault Manipulation",
+        "D. Forged Instruments"
+      ],
+      "ans": "A",
+      "exp": "Counterfeit currency is explicitly a risk in Cash & Teller."
+    },
+    {
+      "id": "Q356",
+      "module": 1,
+      "type": "mcq",
+      "q": "Cheque kiting, a scheme to create false balances, is a risk in:",
+      "opts": [
+        "A. Bank Clearing Operations",
+        "B. Funds Transfer",
+        "C. Treasury",
+        "D. Customer Service"
+      ],
+      "ans": "A",
+      "exp": "Clearing Operations handles cheques."
+    },
+    {
+      "id": "Q357",
+      "module": 1,
+      "type": "mcq",
+      "q": "Abuse of capital expenses involves:",
+      "opts": [
+        "A. Fictitious project costs",
+        "B. Misuse of large\u2011ticket expenditures",
+        "C. Both A and B",
+        "D. Operating expense inflation"
+      ],
+      "ans": "C",
+      "exp": "Capital expenses cover large asset purchases and projects."
+    },
+    {
+      "id": "Q358",
+      "module": 1,
+      "type": "mcq",
+      "q": "A branch manager discovers that a teller has been manipulating cash records to conceal a \u20a6500,000 shortage. The teller is a high performer with a clean record. What should the branch manager do FIRST?",
+      "opts": [
+        "A. Immediately terminate the teller to send a strong message to other staff.",
+        "B. Conduct a preliminary investigation and report the matter to internal control.",
+        "C. Give the teller a verbal warning and request repayment of the shortage.",
+        "D. Ignore the shortage and adjust the records to avoid a scandal."
+      ],
+      "ans": "B",
+      "exp": "The first step is to investigate and report. Termination without investigation could be premature, and ignoring the issue is a breach of duty."
+    },
+    {
+      "id": "Q359",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's fraud detection system alerts on a customer account showing 15 ATM withdrawals in 3 different cities within 2 hours. The customer is unreachable. What should the fraud team do NEXT?",
+      "opts": [
+        "A. Block the card and attempt to contact the customer through alternative channels.",
+        "B. Wait 24 hours to see if the customer reports the transactions themselves.",
+        "C. Approve the transactions as they appear to be from a loyal customer.",
+        "D. File a police report immediately before confirming any fraud."
+      ],
+      "ans": "A",
+      "exp": "Blocking the card and contacting the customer is the immediate priority to prevent further losses. Waiting or approving would increase exposure."
+    },
+    {
+      "id": "Q360",
+      "module": 1,
+      "type": "mcq",
+      "q": "A Credit Officer discovers that a loan applicant provided falsified employment documents. The loan has not yet been disbursed. What is the appropriate action?",
+      "opts": [
+        "A. Reject the application and flag the customer in the bank's system.",
+        "B. Continue processing the loan to meet monthly targets.",
+        "C. Confront the applicant and demand an explanation.",
+        "D. Approve a smaller loan amount to reduce risk."
+      ],
+      "ans": "A",
+      "exp": "Rejecting the application and flagging the customer is the correct action. Continuing or approving would violate lending policies."
+    },
+    {
+      "id": "Q361",
+      "module": 1,
+      "type": "mcq",
+      "q": "During an internal audit, you discover that a colleague is overriding mandatory dual\u2011approval controls for high\u2011value transfers. The colleague is your friend. What should you do?",
+      "opts": [
+        "A. Report the issue to your supervisor, as it poses a serious control weakness.",
+        "B. Warn your friend privately and give them a chance to correct it.",
+        "C. Ignore it since no loss has occurred yet.",
+        "D. Help your friend cover it up to maintain your friendship."
+      ],
+      "ans": "A",
+      "exp": "Override of mandatory controls is a serious risk and must be reported. Warning privately or ignoring it compromises the bank's controls."
+    },
+    {
+      "id": "Q362",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer calls to report that funds were debited from their account without authorization. The customer is emotional and demanding immediate action. What should the customer service officer do FIRST?",
+      "opts": [
+        "A. Refund the customer immediately to calm them down.",
+        "B. Listen, document the complaint, and initiate a formal investigation.",
+        "C. Advise the customer to contact the police directly.",
+        "D. Ask the customer to come to the branch the next day."
+      ],
+      "ans": "B",
+      "exp": "Listening, documenting, and initiating an investigation is the correct first step. Immediate refunds without investigation can expose the bank."
+    },
+    {
+      "id": "Q363",
+      "module": 1,
+      "type": "mcq",
+      "q": "A new employee in the IT department requests full administrative access to all systems on their first day. What should the IT manager do?",
+      "opts": [
+        "A. Grant full access immediately to avoid delays in their work.",
+        "B. Grant access but monitor their activity closely.",
+        "C. Grant only the minimum access required for their role.",
+        "D. Deny all access until they complete a probation period."
+      ],
+      "ans": "C",
+      "exp": "Principle of least privilege: grant only the access needed for their role. Full access on day one is a security risk."
+    },
+    {
+      "id": "Q364",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's Compliance Officer discovers that the bank has been inadvertently violating a minor AML regulation for six months. The violation has not caused any loss. What should the Compliance Officer do?",
+      "opts": [
+        "A. Report the violation to the regulator immediately, as required by law.",
+        "B. Correct the procedure quietly and not report it.",
+        "C. Wait until the next audit to disclose the issue.",
+        "D. Blame the IT system and delay reporting."
+      ],
+      "ans": "A",
+      "exp": "Compliance requires timely reporting of violations, even minor ones. Concealing or delaying is a breach of duty."
+    },
+    {
+      "id": "Q365",
+      "module": 1,
+      "type": "mcq",
+      "q": "A branch manager notices that a long\u2011standing customer is consistently depositing large amounts of cash just below the reporting threshold. What is the most appropriate action?",
+      "opts": [
+        "A. File a suspicious transaction report (STR) as it may indicate structuring.",
+        "B. Ignore it since the customer is known and trusted.",
+        "C. Ask the customer to explain their cash deposits.",
+        "D. Reduce the reporting threshold for this specific customer."
+      ],
+      "ans": "A",
+      "exp": "Deposits just below the threshold over time (structuring) is a red flag and should be reported. Trust alone does not override AML obligations."
+    },
+    {
+      "id": "Q366",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee is offered a gift worth \u20a650,000 by a customer who just secured a large loan approval. What should the employee do?",
+      "opts": [
+        "A. Accept the gift as a token of appreciation.",
+        "B. Politely decline and explain the bank's policy on gifts.",
+        "C. Accept the gift but report it to the compliance department.",
+        "D. Accept the gift and keep it confidential."
+      ],
+      "ans": "B",
+      "exp": "Accepting gifts from customers who have just received a benefit creates a conflict of interest. The employee should decline and explain the policy."
+    },
+    {
+      "id": "Q367",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's internal audit report reveals that the reconciliation team has not reconciled a key GL account for three months. The reconciliation manager is on leave. What should the Head of Finance do?",
+      "opts": [
+        "A. Wait for the reconciliation manager to return from leave.",
+        "B. Assign a temporary staff member to prioritize the reconciliation immediately.",
+        "C. Accept the risk and focus on other priorities.",
+        "D. Write a memo to the reconciliation manager to follow up upon return."
+      ],
+      "ans": "B",
+      "exp": "Unreconciled accounts pose a significant fraud risk. Immediate action is required, and delegation to a competent staff member is appropriate."
+    },
+    {
+      "id": "Q368",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's fraud detection software flags a suspicious transaction on a customer's account. The customer's history is clean. What should the fraud analyst do NEXT?",
+      "opts": [
+        "A. Block the account immediately and escalate to the legal team.",
+        "B. Investigate the transaction's context and decide if it is truly suspicious.",
+        "C. Ignore the alert as a false positive since the customer has a clean history.",
+        "D. Contact the customer directly to ask if they authorized the transaction."
+      ],
+      "ans": "B",
+      "exp": "Investigation is the correct next step. The analyst should evaluate the context before taking action. Clean history does not negate the need for investigation."
+    },
+    {
+      "id": "Q369",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee who is a whistleblower reports a major fraud to management. The employee is later excluded from team meetings and isolated. What should the bank do?",
+      "opts": [
+        "A. Reassure the employee and ensure they are protected from retaliation.",
+        "B. Ignore the employee's concerns as they are no longer in the team.",
+        "C. Transfer the employee to another department to reduce tension.",
+        "D. Investigate the employee's past performance to justify the isolation."
+      ],
+      "ans": "A",
+      "exp": "Whistleblowers must be protected from retaliation. The bank must take immediate steps to ensure their safety and well-being."
+    },
+    {
+      "id": "Q370",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's IT system is breached, and customer data is exfiltrated. The breach is detected at 2:00 AM on a Sunday. What is the FIRST action?",
+      "opts": [
+        "A. Wait until Monday morning to form a response team.",
+        "B. Activate the incident response plan and notify key personnel immediately.",
+        "C. Shut down all systems without notifying anyone.",
+        "D. Delete all logs to prevent further exposure."
+      ],
+      "ans": "B",
+      "exp": "Incident response plans are designed for immediate activation, regardless of the time or day. Delaying could worsen the breach."
+    },
+    {
+      "id": "Q371",
+      "module": 1,
+      "type": "mcq",
+      "q": "A relationship manager identifies that a client has inflated their income to qualify for a loan. The loan is already disbursed. What should the relationship manager do?",
+      "opts": [
+        "A. Report the matter to the credit committee and consider immediate recovery.",
+        "B. Ignore it since the loan is already disbursed.",
+        "C. Negotiate with the client to convert the loan to a higher interest rate.",
+        "D. Advise the client to update their financials for next time."
+      ],
+      "ans": "A",
+      "exp": "Fraudulent misrepresentation requires reporting and potential recovery action. Ignoring it or renegotiating is not appropriate."
+    },
+    {
+      "id": "Q372",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's Clearing Operations staff member is found to have processed a cheque twice, resulting in a duplicate payment. The error was discovered after the client spent the funds. What should the bank do?",
+      "opts": [
+        "A. Write off the loss as a cost of doing business.",
+        "B. Request the client to refund the duplicate payment.",
+        "C. Report the error to the police as fraud.",
+        "D. Reimburse the client from the bank's own funds."
+      ],
+      "ans": "B",
+      "exp": "The bank should request the client to refund the duplicate payment. The client received funds they were not entitled to, but the error was the bank's."
+    },
+    {
+      "id": "Q373",
+      "module": 1,
+      "type": "mcq",
+      "q": "A branch manager is under pressure to meet aggressive targets. A large client offers to bring a significant deposit if the manager waives some documentation. What should the manager do?",
+      "opts": [
+        "A. Waive the documentation to secure the deposit and meet targets.",
+        "B. Offer to fast\u2011track the documentation process but insist on compliance.",
+        "C. Agree to waive the documentation for this client as a one\u2011off exception.",
+        "D. Decline the deposit and refer the client to another branch."
+      ],
+      "ans": "B",
+      "exp": "Compliance with documentation requirements is non\u2011negotiable. Fast\u2011tracking is acceptable, but waiving documentation is not."
+    },
+    {
+      "id": "Q374",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer sends an email requesting a transfer of \u20a62 million to a new beneficiary. The request is unusual and the customer is unreachable. What should the bank do?",
+      "opts": [
+        "A. Execute the transfer since it is a customer's legitimate request.",
+        "B. Hold the transfer and attempt to contact the customer via phone or SMS.",
+        "C. Execute the transfer but flag it for review.",
+        "D. Decline the transfer and block the customer's account."
+      ],
+      "ans": "B",
+      "exp": "Holding the transfer and attempting to confirm is the correct action, given the unusual nature and the customer being unreachable."
+    },
+    {
+      "id": "Q375",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's internal control team identifies that a staff member has been using the bank's systems to run a side business. The staff member is a top performer. What should the bank do?",
+      "opts": [
+        "A. Issue a formal warning and monitor their activity.",
+        "B. Terminate the staff member immediately for policy violation.",
+        "C. Allow them to continue but restrict their system access.",
+        "D. Promote them to a higher position to retain their talent."
+      ],
+      "ans": "B",
+      "exp": "Using bank systems for a side business is a serious policy violation that warrants termination. Ignoring it sends a poor message."
+    },
+    {
+      "id": "Q376",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's CEO is offered a luxury holiday by a vendor bidding for a large contract. The CEO's family would also be included. What should the CEO do?",
+      "opts": [
+        "A. Accept the holiday as a gesture of goodwill from the vendor.",
+        "B. Decline the offer and report it to the board.",
+        "C. Accept the holiday but pay for it personally.",
+        "D. Negotiate with the vendor for a more modest gift."
+      ],
+      "ans": "B",
+      "exp": "Accepting such gifts creates a conflict of interest. The CEO must decline and report the offer to maintain integrity."
+    },
+    {
+      "id": "Q377",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's fraud team discovers that a staff member has been sharing their login credentials with their team. The staff member claims it helps with efficiency. What should the bank do?",
+      "opts": [
+        "A. Allow the practice since it improves efficiency.",
+        "B. Issue a warning and mandate a refresher on security policies.",
+        "C. Change the staff member's password but not take further action.",
+        "D. Terminate the staff member for this serious breach."
+      ],
+      "ans": "B",
+      "exp": "Sharing credentials is a security risk. A warning and refresher training is appropriate unless the breach is severe."
+    },
+    {
+      "id": "Q378",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer presents a cheque that appears to be altered. The amount has been changed from \u20a650,000 to \u20a6150,000. What should the bank teller do?",
+      "opts": [
+        "A. Accept the cheque since it is a customer's cheque.",
+        "B. Politely inform the customer that the cheque appears altered and refuse it.",
+        "C. Accept the cheque and investigate it later.",
+        "D. Confiscate the cheque and call the police."
+      ],
+      "ans": "B",
+      "exp": "The teller should refuse the altered cheque and inform the customer. Confiscation and police involvement may be needed if the customer insists."
+    },
+    {
+      "id": "Q379",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's AML officer notices a pattern of large deposits into a dormant account followed by immediate transfers overseas. What is the appropriate action?",
+      "opts": [
+        "A. File a suspicious transaction report (STR) with the appropriate authorities.",
+        "B. Close the account without explanation.",
+        "C. Contact the account holder for an explanation.",
+        "D. Ignore the pattern as it may be legitimate."
+      ],
+      "ans": "A",
+      "exp": "The pattern is highly suspicious and requires filing a STR. Closing the account without investigation may alert the customer."
+    },
+    {
+      "id": "Q380",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee receives a request from a client to transfer funds to a new account number that does not match the client's usual account. The client's phone is unreachable. What should the employee do?",
+      "opts": [
+        "A. Delay the transfer until the client can be verified through a secondary channel.",
+        "B. Execute the transfer as the request was authorized by email.",
+        "C. Transfer to the new account but mark it for review.",
+        "D. Decline the transfer and inform the client's relationship manager."
+      ],
+      "ans": "A",
+      "exp": "Delay and verification are critical when there is an unexplained change in payment instructions."
+    },
+    {
+      "id": "Q381",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's security team identifies that a staff member has been accessing confidential customer files without a business reason. What is the appropriate disciplinary action?",
+      "opts": [
+        "A. Immediate termination and possible legal action.",
+        "B. Verbal warning and additional training.",
+        "C. Written warning and increased monitoring.",
+        "D. Transfer to a non\u2011customer\u2011facing role."
+      ],
+      "ans": "A",
+      "exp": "Unauthorized access to confidential data is a serious breach requiring termination. It indicates potential fraud."
+    },
+    {
+      "id": "Q382",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer of a bank's branch requests to withdraw cash above the branch's daily limit. The customer is a VIP client. What should the branch manager do?",
+      "opts": [
+        "A. Approve the withdrawal to maintain the client relationship.",
+        "B. Refer the client to a higher\u2011level authority for approval.",
+        "C. Deny the request and refer the client to the policy.",
+        "D. Process the withdrawal but reduce the client's limits for future."
+      ],
+      "ans": "B",
+      "exp": "Branch limits are in place for a reason. The manager should escalate rather than circumvent the control."
+    },
+    {
+      "id": "Q383",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's loan officer discovers that a client's collateral valuation was inflated by the external valuer. The valuer is a known contact of the client. What should the loan officer do?",
+      "opts": [
+        "A. Reject the loan based on the inflated collateral.",
+        "B. Request a fresh independent valuation from another valuer.",
+        "C. Accept the valuation to expedite the loan.",
+        "D. Report the valuer to the bank's compliance department."
+      ],
+      "ans": "B",
+      "exp": "A fresh independent valuation is necessary to ensure the collateral is accurately assessed. Reporting the valuer may also be required."
+    },
+    {
+      "id": "Q384",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's internal fraud investigator is reviewing a case and finds evidence that a senior manager was involved in the fraud. What should the investigator do?",
+      "opts": [
+        "A. Confront the senior manager directly.",
+        "B. Escalate the findings to the board or audit committee.",
+        "C. Complete the investigation and include the evidence in the final report.",
+        "D. Ignore the evidence to avoid confrontation."
+      ],
+      "ans": "C",
+      "exp": "The investigator must include all evidence in the report and escalate appropriately. Ignoring evidence is not acceptable."
+    },
+    {
+      "id": "Q385",
+      "module": 1,
+      "type": "mcq",
+      "q": "A staff member reports that they accidentally sent a customer's personal data to the wrong email address. The data includes account numbers and balances. What should the bank do immediately?",
+      "opts": [
+        "A. Ask the staff member to contact the email recipient and request deletion.",
+        "B. Inform the customer and the data protection officer immediately.",
+        "C. Wait to see if the recipient uses the data.",
+        "D. Delete the email from the sent folder."
+      ],
+      "ans": "B",
+      "exp": "Data breaches require immediate customer notification and escalation to the data protection officer."
+    },
+    {
+      "id": "Q386",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank is planning to launch a new digital product. The risk assessment team has identified potential fraud risks but management wants to launch quickly. What should the risk team do?",
+      "opts": [
+        "A. Approve the launch and address risks post\u2011launch.",
+        "B. Document the risks and proceed with the launch.",
+        "C. Hold the launch until all identified risks are properly addressed.",
+        "D. Accept the risks and launch, given management's approval."
+      ],
+      "ans": "C",
+      "exp": "Fraud risks must be addressed before launch. Proceeding without mitigation exposes the bank."
+    },
+    {
+      "id": "Q387",
+      "module": 1,
+      "type": "mcq",
+      "q": "A branch employee notices that a coworker is always the first to arrive and the last to leave, often working on weekends without supervision. What should the employee do?",
+      "opts": [
+        "A. Report the coworker's behavior to the branch manager.",
+        "B. Confront the coworker and ask why they work late.",
+        "C. Ignore the behavior since it is not their concern.",
+        "D. Join the coworker to learn new skills."
+      ],
+      "ans": "A",
+      "exp": "Unusual working patterns can indicate fraud. The employee should report the behavior to management."
+    },
+    {
+      "id": "Q388",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's fraud team receives an alert on a transaction that could be fraudulent but the customer confirms it is legitimate. What should the fraud team do?",
+      "opts": [
+        "A. Accept the customer's confirmation and close the case.",
+        "B. Flag the transaction for further review despite the customer's confirmation.",
+        "C. Wait for additional evidence before closing the case.",
+        "D. Escalate the case to the compliance department."
+      ],
+      "ans": "C",
+      "exp": "The fraud team should not accept the customer's confirmation at face value. Further review is needed."
+    },
+    {
+      "id": "Q389",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's teller suspects that a customer is trying to deposit counterfeit currency. What should the teller do?",
+      "opts": [
+        "A. Politely inform the customer that the currency appears counterfeit and refuse it.",
+        "B. Accept the currency and report it to the branch manager later.",
+        "C. Call the police immediately.",
+        "D. Confiscate the currency without telling the customer."
+      ],
+      "ans": "A",
+      "exp": "The teller should politely inform the customer and refuse the deposit. Further steps may be needed if the customer insists."
+    },
+    {
+      "id": "Q390",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's senior management wants to improve fraud detection. They have budget for either new software or additional staff training. Which should they prioritize?",
+      "opts": [
+        "A. Software, as it provides real\u2011time monitoring.",
+        "B. Training, as human error is a leading cause of fraud.",
+        "C. Both are equally important and should be balanced.",
+        "D. Neither; the bank should rely on its current systems."
+      ],
+      "ans": "C",
+      "exp": "Both technology and human capability are essential. A balanced approach is most effective."
+    },
+    {
+      "id": "Q391",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraud incident investigation reveals that a staff member's negligence contributed to the fraud but they did not act maliciously. What should the bank do?",
+      "opts": [
+        "A. Terminate the staff member for their role in the incident.",
+        "B. Issue a formal warning and assign remedial training.",
+        "C. Remove the staff member from their role and reassign them.",
+        "D. Ignore the negligence as it was not malicious."
+      ],
+      "ans": "B",
+      "exp": "Negligence, even if not malicious, requires corrective action. Training is appropriate for non\u2011malicious errors."
+    },
+    {
+      "id": "Q392",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer disputes a transaction on their statement, claiming they never made it. The customer's account has a history of fraudulent activity. What should the bank do?",
+      "opts": [
+        "A. Accept the dispute and refund the customer immediately.",
+        "B. Investigate the transaction thoroughly before making a decision.",
+        "C. Deny the dispute based on the customer's history.",
+        "D. Close the customer's account due to the history of fraud."
+      ],
+      "ans": "B",
+      "exp": "The bank must investigate each dispute thoroughly, regardless of the customer's history."
+    },
+    {
+      "id": "Q393",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's compliance team identifies that a new regulation requires significant changes to the bank's policies and procedures within 60 days. What is the best course of action?",
+      "opts": [
+        "A. Wait until the deadline to implement changes.",
+        "B. Form a task force to review and implement the changes immediately.",
+        "C. Ignore the regulation as it may not be enforced.",
+        "D. Request an extension from the regulator."
+      ],
+      "ans": "B",
+      "exp": "Proactive compliance is essential. The bank should act immediately to ensure compliance."
+    },
+    {
+      "id": "Q394",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's internal audit team discovers that a staff member has been using the bank's systems to trade shares based on insider information. What should the audit team do?",
+      "opts": [
+        "A. Report the findings to the board and law enforcement.",
+        "B. Issue a warning to the staff member.",
+        "C. Reassign the staff member to a different role.",
+        "D. Ignore the findings to protect the bank's reputation."
+      ],
+      "ans": "A",
+      "exp": "Insider trading is a serious crime that requires immediate escalation to the board and authorities."
+    },
+    {
+      "id": "Q395",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's branch manager is told by a regional manager to approve a loan that does not meet the bank's lending criteria to support a client relationship. What should the branch manager do?",
+      "opts": [
+        "A. Approve the loan to support the client relationship and meet targets.",
+        "B. Refuse to approve the loan and document the request from the regional manager.",
+        "C. Approve the loan but document it as an exception.",
+        "D. Report the regional manager to the compliance department."
+      ],
+      "ans": "B",
+      "exp": "The branch manager must refuse the loan and document the situation. Approving a non\u2011compliant loan is a breach of duty."
+    },
+    {
+      "id": "Q396",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer reports that they lost their debit card and noticed unauthorized transactions. What should the bank do FIRST?",
+      "opts": [
+        "A. Block the card immediately and investigate the transactions.",
+        "B. Issue a new card immediately.",
+        "C. Ask the customer to file a police report.",
+        "D. Reimburse the customer for the unauthorized transactions."
+      ],
+      "ans": "A",
+      "exp": "Blocking the card is the immediate priority to prevent further losses. Other steps follow."
+    },
+    {
+      "id": "Q397",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's IT team detects an attempted cyberattack on the bank's systems. The attack is in progress and appears to be from an external source. What should the IT team do FIRST?",
+      "opts": [
+        "A. Notify management and activate the incident response plan.",
+        "B. Shut down all systems to stop the attack.",
+        "C. Identify the attacker's IP address.",
+        "D. Increase firewall security settings."
+      ],
+      "ans": "A",
+      "exp": "Activating the incident response plan is the first step. Shutting down all systems may be necessary but should be guided by the plan."
+    },
+    {
+      "id": "Q398",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's Anti\u2011Money Laundering (AML) officer finds that a client is connected to a politically exposed person (PEP). What additional measures should the bank take?",
+      "opts": [
+        "A. Conduct enhanced due diligence on the client's account.",
+        "B. Monitor the account for unusual transactions.",
+        "C. Close the account immediately.",
+        "D. Report the client to the relevant authorities."
+      ],
+      "ans": "A",
+      "exp": "Enhanced due diligence is required for PEPs. The bank must take extra steps to understand the client's activities."
+    },
+    {
+      "id": "Q399",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's branch manager notices that a staff member is unusually protective of a specific customer's file and refuses to let anyone else access it. What should the manager do?",
+      "opts": [
+        "A. Respect the staff member's wishes and not access the file.",
+        "B. Request the staff member to share the file, explaining that access is required.",
+        "C. Access the file without the staff member's consent.",
+        "D. Report the staff member to the compliance department."
+      ],
+      "ans": "B",
+      "exp": "The manager should request access and explain the reason. If the staff member refuses, further investigation may be needed."
+    },
+    {
+      "id": "Q400",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer asks a bank employee to change their account's registered address to a different country to avoid paying taxes. What should the employee do?",
+      "opts": [
+        "A. Change the address as requested by the customer.",
+        "B. Politely refuse and advise the customer to consult a tax advisor.",
+        "C. Report the request to the compliance department.",
+        "D. Change the address but inform the customer of the risks."
+      ],
+      "ans": "C",
+      "exp": "The request could indicate tax evasion, a serious matter. The employee should escalate it to compliance."
+    },
+    {
+      "id": "Q401",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's fraud prevention team has identified a pattern of fraud in branches with weak internal controls. What is the best approach to address this?",
+      "opts": [
+        "A. Close the branches with weak controls.",
+        "B. Strengthen controls and provide additional training to staff in those branches.",
+        "C. Replace the management in those branches.",
+        "D. Increase monitoring of transactions in those branches."
+      ],
+      "ans": "B",
+      "exp": "Strengthening controls and training addresses the root cause. Branch closure is drastic and not likely the best solution."
+    },
+    {
+      "id": "Q402",
+      "module": 1,
+      "type": "mcq",
+      "q": "A junior compliance analyst detects suspicious transactions tied to a politically exposed person (PEP). The analyst's supervisor advises ignoring it to avoid harming a lucrative client relationship. What should the analyst do?",
+      "opts": [
+        "A. Follow the supervisor's instruction to maintain team harmony and avoid conflict.",
+        "B. Seek guidance from the bank's whistleblower hotline or independent compliance channel.",
+        "C. Confront the supervisor directly with evidence and threaten to escalate.",
+        "D. Quietly drop the matter but keep detailed private notes for future reference."
+      ],
+      "ans": "B",
+      "exp": "The analyst must not ignore suspicious activity. Escalating through an independent channel ensures the matter is reviewed without retaliation."
+    },
+    {
+      "id": "Q403",
+      "module": 1,
+      "type": "mcq",
+      "q": "A cashier discovers that a customer's deposit slip was altered to increase the amount credited. The alteration was done by a junior teller who claims it was an accident. What should the cashier do?",
+      "opts": [
+        "A. Accept the explanation, reverse the difference, and give the teller a written warning.",
+        "B. Escalate the matter to the fraud unit for a formal investigation.",
+        "C. Praise the teller for honesty and correct the entry quietly.",
+        "D. Ignore it since the customer has not complained about a shortfall."
+      ],
+      "ans": "B",
+      "exp": "Alteration of financial documents is a serious red flag that requires investigation regardless of the excuse."
+    },
+    {
+      "id": "Q404",
+      "module": 1,
+      "type": "mcq",
+      "q": "During a routine audit, you find that a branch has not performed a surprise cash count in over six months, despite this being a mandatory control. What should you recommend?",
+      "opts": [
+        "A. Schedule a surprise cash count immediately and investigate past discrepancies.",
+        "B. Update the policy to make it an annual requirement instead of monthly.",
+        "C. Accept the lapse since the branch has high transaction volumes.",
+        "D. Focus audit efforts on other areas to avoid overburdening the branch."
+      ],
+      "ans": "A",
+      "exp": "Reinstating the surprise count and checking for past issues is essential. Ignoring lapses in mandatory controls weakens the control environment."
+    },
+    {
+      "id": "Q405",
+      "module": 1,
+      "type": "mcq",
+      "q": "A client requests to waive the mandatory cooling-off period for a large investment product because they 'need the money now'. The waiver requires board approval. What should the relationship manager do?",
+      "opts": [
+        "A. Submit a waiver request to the board with a clear justification and supporting documents.",
+        "B. Waive it informally to maintain client satisfaction and avoid losing the account.",
+        "C. Advise the client to liquidate another asset instead of processing the waiver.",
+        "D. Decline the request outright and offer no alternative solutions."
+      ],
+      "ans": "A",
+      "exp": "Waivers must follow proper governance. Submitting a formal request is the correct process."
+    },
+    {
+      "id": "Q406",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's online portal experiences a data breach exposing customer email addresses. No financial data was exposed. What is the immediate priority?",
+      "opts": [
+        "A. Notify affected customers and the regulator within the prescribed timeline.",
+        "B. Wait to see if the breach is reported in the news before taking any action.",
+        "C. Upgrade all firewalls before notifying anyone to prevent further attacks.",
+        "D. Change all internal passwords and disable external email access."
+      ],
+      "ans": "A",
+      "exp": "Regulations typically require timely notification of breaches, even if only email addresses are exposed."
+    },
+    {
+      "id": "Q407",
+      "module": 1,
+      "type": "mcq",
+      "q": "A relationship manager is pressured by a client to approve a loan with missing financial documents. The client threatens to move their multi-million naira accounts elsewhere. What should the manager do?",
+      "opts": [
+        "A. Approve the loan to retain the valuable business relationship.",
+        "B. Explain the policy, request the missing documents urgently, and offer to expedite processing.",
+        "C. Escalate the client's threat to the CEO for a discretionary decision.",
+        "D. Offer a smaller loan without requiring the missing documents."
+      ],
+      "ans": "B",
+      "exp": "Policies exist for a reason. Offering to expedite while maintaining compliance is the correct balance."
+    },
+    {
+      "id": "Q408",
+      "module": 1,
+      "type": "mcq",
+      "q": "A staff member finds a USB drive in the parking lot labeled 'Confidential - Payroll'. What should they do?",
+      "opts": [
+        "A. Plug it into their computer to check if it contains sensitive information.",
+        "B. Hand it over to the IT security team immediately without connecting it.",
+        "C. Format the drive to ensure it is clean before using it.",
+        "D. Keep it as a spare for personal use."
+      ],
+      "ans": "B",
+      "exp": "Unknown USB drives are a major security risk. IT security must handle it to prevent malware or data leakage."
+    },
+    {
+      "id": "Q409",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's fraud detection system flags a series of small, regular transfers from a business account to an overseas personal account. The transfers are just under the reporting threshold. What is the most likely action?",
+      "opts": [
+        "A. Dismiss the alerts as the amounts are below the reporting threshold.",
+        "B. Initiate an investigation into possible money laundering structuring activity.",
+        "C. Contact the customer to confirm the legitimacy of each transaction.",
+        "D. Adjust the threshold for this specific customer to reduce future alerts."
+      ],
+      "ans": "B",
+      "exp": "Multiple transfers just below the threshold are a classic indicator of structuring, a money laundering technique."
+    },
+    {
+      "id": "Q410",
+      "module": 1,
+      "type": "mcq",
+      "q": "A credit officer discovers that the collateral for a large facility was valued by an appraiser who is a family friend of the borrower. What should the officer do?",
+      "opts": [
+        "A. Accept the valuation if it appears reasonable and matches market rates.",
+        "B. Request a second independent valuation from a different, unrelated appraiser.",
+        "C. Confront the borrower about the relationship and demand a new appraisal.",
+        "D. Ignore the relationship since the physical collateral is clearly visible."
+      ],
+      "ans": "B",
+      "exp": "An independent valuation is critical to ensure the collateral is not inflated. The relationship creates a conflict of interest."
+    },
+    {
+      "id": "Q411",
+      "module": 1,
+      "type": "mcq",
+      "q": "An employee receives a text message from the 'IT Helpdesk' asking for their password to perform a server update. What should the employee do?",
+      "opts": [
+        "A. Reply with the password immediately to ensure the system is secure.",
+        "B. Ignore the message and report the attempt to the IT security team.",
+        "C. Call the number back to verify the identity of the caller.",
+        "D. Text back asking for the specific update schedule."
+      ],
+      "ans": "B",
+      "exp": "IT will never ask for passwords via text. This is a classic phishing attempt."
+    },
+    {
+      "id": "Q412",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's ATM is found to have a skimming device installed. The device was discovered during routine maintenance. What should be the first action?",
+      "opts": [
+        "A. Remove the device immediately and resume normal ATM operations.",
+        "B. Notify law enforcement and affected customers immediately.",
+        "C. Check the ATM's transaction logs for anomalies before removing the device.",
+        "D. Increase monitoring on all other ATMs in the vicinity."
+      ],
+      "ans": "B",
+      "exp": "Law enforcement must be notified to investigate, and customers must be alerted to protect their accounts."
+    },
+    {
+      "id": "Q413",
+      "module": 1,
+      "type": "mcq",
+      "q": "A branch manager is assessing the risk of a new business relationship with a high-net-worth individual from a high-risk jurisdiction. What is the most appropriate step?",
+      "opts": [
+        "A. Conduct enhanced due diligence (EDD) on the individual and source of funds.",
+        "B. Open the account with standard KYC to avoid delays and paperwork.",
+        "C. Seek approval directly from the Central Bank of Nigeria.",
+        "D. Decline the relationship outright to avoid any compliance risk."
+      ],
+      "ans": "A",
+      "exp": "High-risk jurisdictions require enhanced due diligence to understand the client and source of wealth."
+    },
+    {
+      "id": "Q414",
+      "module": 1,
+      "type": "mcq",
+      "q": "A junior employee is asked by a senior colleague to override a system block to expedite a payment for a 'VIP' client. What should the junior employee do?",
+      "opts": [
+        "A. Override the block, trusting the senior colleague's judgment.",
+        "B. Refuse and escalate the request to the compliance officer.",
+        "C. Override it but document the senior colleague's name in the log.",
+        "D. Ask the VIP client to contact customer service directly."
+      ],
+      "ans": "B",
+      "exp": "Overriding system blocks without proper authorization is a serious breach. Escalation is required."
+    },
+    {
+      "id": "Q415",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's internal audit report highlights a material weakness in the trade finance unit. Management decides to accept the risk to maintain business volumes. What should the audit committee do?",
+      "opts": [
+        "A. Accept management's risk acceptance to maintain a collaborative relationship.",
+        "B. Challenge management's decision and demand a formal remediation plan.",
+        "C. Reduce the frequency of audits on trade finance to reduce costs.",
+        "D. Approve a larger budget for trade finance to address the weakness."
+      ],
+      "ans": "B",
+      "exp": "The audit committee has a duty to challenge management's risk acceptance and ensure controls are in place."
+    },
+    {
+      "id": "Q416",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer is trying to withdraw a large amount of cash, but their signature on the withdrawal slip does not match the one on file. What should the teller do?",
+      "opts": [
+        "A. Allow the withdrawal if the customer has a valid ID.",
+        "B. Politely refuse and request the customer to come back with a passport.",
+        "C. Approve the transaction and flag it for review later.",
+        "D. Call the account holder to verify the transaction immediately."
+      ],
+      "ans": "D",
+      "exp": "Calling the account holder is the most secure way to verify a potential forgery or unauthorized access."
+    },
+    {
+      "id": "Q417",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fraud investigator is analyzing a case and finds that the suspect has a clean disciplinary record. What should the investigator do?",
+      "opts": [
+        "A. Treat the suspect more leniently due to their clean record.",
+        "B. Focus entirely on the evidence without being influenced by the record.",
+        "C. Close the investigation due to lack of prior infractions.",
+        "D. Interview the suspect's previous managers to find past issues."
+      ],
+      "ans": "B",
+      "exp": "A clean record does not negate evidence. The investigator must remain objective and follow the evidence."
+    },
+    {
+      "id": "Q418",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank is upgrading its core banking system. The project is behind schedule, and the project manager wants to skip user acceptance testing (UAT) to catch up. What should the project sponsor do?",
+      "opts": [
+        "A. Approve the skip to meet the deadline and avoid penalties.",
+        "B. Refuse to skip UAT and extend the timeline to ensure proper testing.",
+        "C. Reduce the scope of UAT to only the highest-risk areas.",
+        "D. Outsource UAT to an external vendor to speed up the process."
+      ],
+      "ans": "B",
+      "exp": "Skipping UAT is unacceptable as it would expose the bank to significant operational and fraud risks."
+    },
+    {
+      "id": "Q419",
+      "module": 1,
+      "type": "mcq",
+      "q": "A staff member receives a substantial bonus but knows that they were allocated extra clients due to a system error, which inflated their performance. What should they do?",
+      "opts": [
+        "A. Accept the bonus and keep quiet about the error.",
+        "B. Report the error to HR and request the bonus be corrected.",
+        "C. Donate the extra bonus to charity to ease their conscience.",
+        "D. Ask the manager to adjust next year's target to balance it."
+      ],
+      "ans": "B",
+      "exp": "Accepting an undeserved bonus due to a system error is unethical. The error must be corrected."
+    },
+    {
+      "id": "Q420",
+      "module": 1,
+      "type": "mcq",
+      "q": "A branch has a high employee turnover rate. The branch manager suspects it is due to poor morale and low pay, but the HR policy is set by headquarters. What should the manager do?",
+      "opts": [
+        "A. Present a business case to headquarters with data on turnover and market benchmarks.",
+        "B. Accept the turnover as inevitable and focus on quick rehiring.",
+        "C. Increase workloads for existing staff to compensate for vacancies.",
+        "D. Reduce the branch's service hours to reduce the workload."
+      ],
+      "ans": "A",
+      "exp": "A data-driven business case is the most effective way to influence central HR policy."
+    },
+    {
+      "id": "Q421",
+      "module": 1,
+      "type": "mcq",
+      "q": "A long-standing customer complains about a service charge they were not informed of. The bank's policy allows for a one-time reversal at the officer's discretion. What should the customer service officer do?",
+      "opts": [
+        "A. Explain the policy and offer a one-time reversal as a goodwill gesture.",
+        "B. Uphold the charge strictly and refer the customer to the terms and conditions.",
+        "C. Reverse the charge without explanation to calm the customer down.",
+        "D. Blame the system and offer a partial refund."
+      ],
+      "ans": "A",
+      "exp": "A one-time reversal as goodwill is appropriate for a long-standing customer while still explaining the policy to prevent future disputes."
+    }
+  ]
+}

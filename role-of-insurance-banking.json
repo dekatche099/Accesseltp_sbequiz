@@ -1,0 +1,2248 @@
+{
+  "meta": {
+    "id": "role-of-insurance-banking",
+    "title": "Role of Insurance in Banking",
+    "description": "155 MCQs covering risk management, bancassurance, and insurance products for banking professionals",
+    "category": "",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1: Introduction to Banking &amp; Insurance"
+    },
+    {
+      "id": 2,
+      "title": "Module 2: Risk Management in Banking"
+    },
+    {
+      "id": 3,
+      "title": "Module 3: Insurance Products for Clients"
+    },
+    {
+      "id": 4,
+      "title": "Module 4: Scenarios &amp; Applications"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the Access Bank training manual, what is the primary function of banking as a financial system?",
+      "opts": [
+        "Accept deposits and create credit for commerce",
+        "Manage only government securities and bonds",
+        "Primarily insure the lives of depositors",
+        "Regulate stock exchange trading activities"
+      ],
+      "ans": "Accept deposits and create credit for commerce",
+      "exp": "Banking is the system of financial institutions that handle money and transactions, underpinning commerce and providing credit."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "How do banks primarily facilitate economic activity in an economy?",
+      "opts": [
+        "By exclusively funding agricultural development",
+        "By facilitating transactions and providing credit",
+        "By managing only corporate pension funds",
+        "By issuing physical currency exclusively"
+      ],
+      "ans": "By facilitating transactions and providing credit",
+      "exp": "Banks act as the backbone of economic activity by facilitating monetary transactions and providing credit to businesses and individuals."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does insurance fundamentally provide as a risk mechanism?",
+      "opts": [
+        "A system to amplify business profits",
+        "A transfer of financial loss contractually",
+        "A guarantee to avoid all forms of loss",
+        "A free repayment of all outstanding debts"
+      ],
+      "ans": "A transfer of financial loss contractually",
+      "exp": "Insurance is a risk management mechanism involving the contractual transfer of financial loss from the insured to the insurer."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which component of insurance represents the price paid for coverage?",
+      "opts": [
+        "The deductible amount applicable",
+        "The coverage limit set forth",
+        "The insurance policy document",
+        "The insurance premium payment"
+      ],
+      "ans": "The insurance premium payment",
+      "exp": "Premium is the amount paid by the insured to the insurer for coverage, determined by risk assessments."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which category of insurance covers risks associated with death or disability?",
+      "opts": [
+        "General insurance products",
+        "Liability insurance policies",
+        "Life insurance policies",
+        "Property insurance coverage"
+      ],
+      "ans": "Life insurance policies",
+      "exp": "Life insurance covers risks associated with human life, such as death, disability, or critical illness."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which insurance principle involves spreading risks across many policyholders?",
+      "opts": [
+        "Insurable interest principle",
+        "Risk pooling mechanism",
+        "Indemnity principle only",
+        "Subrogation principle"
+      ],
+      "ans": "Risk pooling mechanism",
+      "exp": "Risk pooling spreads risks across many policyholders to mitigate financial losses for any single individual."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "What principle requires the insured to have a financial stake in the subject matter?",
+      "opts": [
+        "Utmost good faith only",
+        "Indemnity principle",
+        "Insurable interest principle",
+        "Subrogation principle"
+      ],
+      "ans": "Insurable interest principle",
+      "exp": "Insurable interest means the insured must have a legally recognizable financial relationship with the subject matter."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "What principle ensures the insured does not profit from a loss event?",
+      "opts": [
+        "Risk pooling agreement",
+        "Insurable interest concept",
+        "Subrogation provision",
+        "Indemnity principle"
+      ],
+      "ans": "Indemnity principle",
+      "exp": "Indemnity compensates for actual financial losses, ensuring the insured does not profit from an incident."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which principle allows the insurer to recover costs from a third party after a claim?",
+      "opts": [
+        "Subrogation principle",
+        "Utmost good faith",
+        "Risk pooling rule",
+        "Indemnity clause"
+      ],
+      "ans": "Subrogation principle",
+      "exp": "Subrogation transfers the insured's rights to the insurer after compensation, allowing recovery from liable third parties."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is required of both parties under the principle of utmost good faith?",
+      "opts": [
+        "To split premiums equally",
+        "To disclose all relevant information truthfully",
+        "To avoid any formal contractual agreements",
+        "To transfer all risks to the regulator"
+      ],
+      "ans": "To disclose all relevant information truthfully",
+      "exp": "Utmost good faith requires both parties to disclose all relevant information truthfully; misrepresentation can void a policy."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "Who are the primary organizations that provide insurance coverage?",
+      "opts": [
+        "Policyholders only",
+        "Licensed insurance brokers",
+        "Insurance companies (insurers)",
+        "Registered agents"
+      ],
+      "ans": "Insurance companies (insurers)",
+      "exp": "Insurers are organizations that provide insurance coverage, such as Allianz and AXA."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "Who represents the client to provide tailored insurance recommendations?",
+      "opts": [
+        "Insurers directly",
+        "Agents exclusively",
+        "Co-insurers only",
+        "Licensed brokers"
+      ],
+      "ans": "Licensed brokers",
+      "exp": "Brokers work for clients, providing tailored advice and often negotiating better terms for corporate clients."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary role of reinsurers in the insurance market?",
+      "opts": [
+        "Manage retail policies directly",
+        "Provide insurance to primary insurers",
+        "Regulate market conduct",
+        "Sell policies to individuals"
+      ],
+      "ans": "Provide insurance to primary insurers",
+      "exp": "Reinsurers provide insurance to primary insurers, managing exposure to catastrophic losses (e.g., Swiss Re)."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which body oversees insurance practices and safeguards stakeholders in Nigeria?",
+      "opts": [
+        "Central Bank of Nigeria",
+        "National Insurance Commission (NAICOM)",
+        "Nigeria Deposit Insurance Corporation",
+        "Securities and Exchange Commission"
+      ],
+      "ans": "National Insurance Commission (NAICOM)",
+      "exp": "NAICOM oversees insurance practices to maintain market integrity and compliance with local and international standards."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does insurance primarily assist banks in their risk management approach?",
+      "opts": [
+        "By eliminating all operational losses",
+        "By transferring risks via premium payments",
+        "By guaranteeing loan approvals",
+        "By setting market interest rates"
+      ],
+      "ans": "By transferring risks via premium payments",
+      "exp": "Banks transfer risks to insurers via premiums, reducing exposure to potential losses."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which insurance policy is designed to protect banks against employee fraud or dishonesty?",
+      "opts": [
+        "Cyber insurance policy",
+        "Fidelity insurance policy",
+        "Business interruption policy",
+        "Property insurance policy"
+      ],
+      "ans": "Fidelity insurance policy",
+      "exp": "Fidelity insurance covers employee fraud, a key exposure for banks."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "What type of insurance protects a bank's physical branches from natural disasters?",
+      "opts": [
+        "Liability insurance only",
+        "Directors' and officers' insurance",
+        "Property insurance policy",
+        "Credit insurance policy"
+      ],
+      "ans": "Property insurance policy",
+      "exp": "Property insurance protects physical assets such as buildings and equipment against risks like fire, theft, or natural disasters."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "What regulatory mandate often requires banks to maintain deposit insurance?",
+      "opts": [
+        "Protecting loan portfolios",
+        "Maintaining market share",
+        "Protecting depositor funds",
+        "Ensuring executive bonuses"
+      ],
+      "ans": "Protecting depositor funds",
+      "exp": "Deposit insurance protects depositor funds, typically offered through government schemes as a compliance requirement."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does insurance contribute to a bank's enhanced financial stability?",
+      "opts": [
+        "By increasing operational costs significantly",
+        "By mitigating unexpected financial losses",
+        "By restricting capital allocation",
+        "By eliminating competitive pressures"
+      ],
+      "ans": "By mitigating unexpected financial losses",
+      "exp": "Insurance mitigates unexpected losses, boosting depositor confidence and attracting investments."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which policy supports a bank's operational resilience during a pandemic?",
+      "opts": [
+        "Credit insurance cover",
+        "Business interruption insurance",
+        "Directors' liability cover",
+        "Motor vehicle insurance"
+      ],
+      "ans": "Business interruption insurance",
+      "exp": "Business interruption insurance provides coverage for lost income when a bank cannot operate normally due to unforeseen events."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary difference between life insurance and general insurance?",
+      "opts": [
+        "Life insurance covers property damage",
+        "General insurance covers human life risks",
+        "Life insurance covers death and disability",
+        "General insurance only covers motor vehicles"
+      ],
+      "ans": "Life insurance covers death and disability",
+      "exp": "Life insurance covers risks associated with human life; general insurance covers property, liability, health, and other non-life risks."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which stakeholder acts as an intermediary for clients, not the insurer?",
+      "opts": [
+        "The insurer itself",
+        "The policyholder",
+        "The insurance agent",
+        "The insurance broker"
+      ],
+      "ans": "The insurance broker",
+      "exp": "Brokers work for clients, providing tailored advice and policy recommendations, whereas agents represent the insurer."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why is the principle of insurable interest critical for a valid contract?",
+      "opts": [
+        "It ensures the premium is paid",
+        "It prevents gambling on losses",
+        "It guarantees the policy term",
+        "It sets the coverage limit"
+      ],
+      "ans": "It prevents gambling on losses",
+      "exp": "Insurable interest ensures the insured has a genuine financial stake, preventing speculative contracts where one might profit from loss."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does the principle of subrogation prevent the insured from doing?",
+      "opts": [
+        "Receiving any compensation",
+        "Double recovery from the insurer and a third party",
+        "Paying the premium on time",
+        "Cancelling the policy early"
+      ],
+      "ans": "Double recovery from the insurer and a third party",
+      "exp": "Subrogation transfers rights to the insurer after payment, preventing the insured from collecting twice for the same loss."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which regulatory body collaborates with NAICOM to approve bancassurance in Nigeria?",
+      "opts": [
+        "NDIC",
+        "NIA",
+        "CBN",
+        "FIRS"
+      ],
+      "ans": "CBN",
+      "exp": "Banks need approval from both the Central Bank of Nigeria (CBN) and NAICOM for bancassurance operations."
+    },
+    {
+      "id": "Q26",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which risk arises from a borrower's failure to repay a loan obligation?",
+      "opts": [
+        "Market risk exposure",
+        "Liquidity risk factor",
+        "Credit risk exposure",
+        "Operational risk event"
+      ],
+      "ans": "Credit risk exposure",
+      "exp": "Credit risk is the risk that a borrower will default on their obligations to repay a loan."
+    },
+    {
+      "id": "Q27",
+      "module": 2,
+      "type": "mcq",
+      "q": "What type of risk involves potential losses from fluctuations in interest rates?",
+      "opts": [
+        "Credit risk",
+        "Market risk",
+        "Liquidity risk",
+        "Reputational risk"
+      ],
+      "ans": "Market risk",
+      "exp": "Market risk encompasses potential losses due to fluctuations in market prices, including interest rates, foreign exchange, and equity prices."
+    },
+    {
+      "id": "Q28",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which risk arises when a bank cannot meet its short-term financial obligations?",
+      "opts": [
+        "Operational risk",
+        "Liquidity risk",
+        "Credit risk",
+        "Regulatory risk"
+      ],
+      "ans": "Liquidity risk",
+      "exp": "Liquidity risk arises from an imbalance between liquid assets and liabilities, leading to emergency borrowing or forced asset sales."
+    },
+    {
+      "id": "Q29",
+      "module": 2,
+      "type": "mcq",
+      "q": "What does operational risk primarily stem from within a bank?",
+      "opts": [
+        "Market price changes",
+        "Internal processes, people, and systems failures",
+        "Borrower defaults",
+        "Government policy shifts"
+      ],
+      "ans": "Internal processes, people, and systems failures",
+      "exp": "Operational risk includes risks from internal processes, people, and systems failures, as well as external events."
+    },
+    {
+      "id": "Q30",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which risk involves failure to comply with laws, leading to fines or sanctions?",
+      "opts": [
+        "Reputational risk",
+        "Regulatory compliance risk",
+        "Moral hazard risk",
+        "Market risk"
+      ],
+      "ans": "Regulatory compliance risk",
+      "exp": "Regulatory compliance risk involves failure to adhere to extensive regulations, resulting in fines, sanctions, or reputational harm."
+    },
+    {
+      "id": "Q31",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary concern of reputational risk for a bank?",
+      "opts": [
+        "Loss of customer trust and attrition",
+        "Direct financial penalties",
+        "System failures and downtime",
+        "Fluctuation in stock prices"
+      ],
+      "ans": "Loss of customer trust and attrition",
+      "exp": "Reputational risk arises from negative public opinion, leading to loss of trust and customer attrition."
+    },
+    {
+      "id": "Q32",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the fundamental meaning of moral hazard in banking?",
+      "opts": [
+        "Banks avoid all risky ventures",
+        "Banks take excessive risks due to external safety nets",
+        "Banks eliminate all operational losses",
+        "Banks strictly follow all regulations"
+      ],
+      "ans": "Banks take excessive risks due to external safety nets",
+      "exp": "Moral hazard occurs when banks take excessive risks knowing they will not bear the full consequences due to government bailouts or safety nets."
+    },
+    {
+      "id": "Q33",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which risk management strategy involves consciously retaining the risk?",
+      "opts": [
+        "Avoiding the risk",
+        "Reducing the risk",
+        "Accepting the risk",
+        "Transferring the risk"
+      ],
+      "ans": "Accepting the risk",
+      "exp": "Accepting the risk is a conscious decision to retain it, either by absorbing losses or creating an in-house fund."
+    },
+    {
+      "id": "Q34",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which strategy describes a bank that seeks a safety net to avert any form of risk?",
+      "opts": [
+        "Transferring the risk",
+        "Avoiding the risk",
+        "Reducing the risk",
+        "Accepting the risk"
+      ],
+      "ans": "Avoiding the risk",
+      "exp": "Avoiding the risk means the individual or entity does not want to take any form of risk and seeks a safety net."
+    },
+    {
+      "id": "Q35",
+      "module": 2,
+      "type": "mcq",
+      "q": "What does reducing a risk typically involve in banking operations?",
+      "opts": [
+        "Transferring it to an insurer",
+        "Ignoring the risk entirely",
+        "Implementing measures to reduce loss severity",
+        "Absorbing all losses directly"
+      ],
+      "ans": "Implementing measures to reduce loss severity",
+      "exp": "Reducing the risk involves reviewing it to identify measures that reduce the loss to within a 'tolerance limit', even if it cannot be totally eliminated."
+    },
+    {
+      "id": "Q36",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why is insurance referred to as a risk transfer mechanism?",
+      "opts": [
+        "It eliminates the risk completely",
+        "It shifts the financial burden to the insurer",
+        "It avoids the risk entirely",
+        "It reduces the frequency of events"
+      ],
+      "ans": "It shifts the financial burden to the insurer",
+      "exp": "Risk is transferred when the insured buys insurance to cover losses, shifting the financial burden to the insurer."
+    },
+    {
+      "id": "Q37",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which characteristic states that only pure risks are insurable?",
+      "opts": [
+        "Particular risk requirement",
+        "Pure risk requirement",
+        "Financial measurement",
+        "Fortuitous event"
+      ],
+      "ans": "Pure risk requirement",
+      "exp": "Insurance does not seek to make the insured richer; therefore speculative risks are not insurable, only pure risks."
+    },
+    {
+      "id": "Q38",
+      "module": 2,
+      "type": "mcq",
+      "q": "What type of risk must arise from an individual cause to be insurable?",
+      "opts": [
+        "Fundamental risk",
+        "Particular risk",
+        "Systemic risk",
+        "Market risk"
+      ],
+      "ans": "Particular risk",
+      "exp": "Particular risks arise from an individual cause and affect that individual, making them insurable."
+    },
+    {
+      "id": "Q39",
+      "module": 2,
+      "type": "mcq",
+      "q": "What does 'fortuitous' mean in the context of insurable risks?",
+      "opts": [
+        "The loss is pre-planned",
+        "The event is accidental or by chance",
+        "The event is guaranteed to happen",
+        "The loss is sentimental"
+      ],
+      "ans": "The event is accidental or by chance",
+      "exp": "The cause of loss must be accidental (fortuitous) during normal activity; it must not be pre-planned."
+    },
+    {
+      "id": "Q40",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why must the subject matter of insurance have a financial measurement?",
+      "opts": [
+        "To estimate the replacement cost",
+        "To determine the sentimental value",
+        "To make the policy legally binding",
+        "To set the premium based on coverage"
+      ],
+      "ans": "To set the premium based on coverage",
+      "exp": "The object must be capable of being assigned a monetary value to form the basis for compensation and premium calculation."
+    },
+    {
+      "id": "Q41",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the 'homogeneous exposure' requirement for insurability?",
+      "opts": [
+        "Only one risk is exposed",
+        "Sufficient number of similar risks",
+        "All risks are completely unique",
+        "Only the insurer is exposed"
+      ],
+      "ans": "Sufficient number of similar risks",
+      "exp": "There must be a sufficient number of exposures to similar risks for the insurer to forecast expected losses."
+    },
+    {
+      "id": "Q42",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which insurability criterion rules out insuring fines for traffic offences?",
+      "opts": [
+        "Financial measurement",
+        "Homogeneous exposure",
+        "Public policy",
+        "Fortuitous event"
+      ],
+      "ans": "Public policy",
+      "exp": "Insuring the risk must not be against public policy or the laws of the land; insuring fines is illegal."
+    },
+    {
+      "id": "Q43",
+      "module": 2,
+      "type": "mcq",
+      "q": "What type of risk profile is best suited for insurance coverage?",
+      "opts": [
+        "High frequency, low severity",
+        "Low frequency, high severity",
+        "High frequency, high severity",
+        "Low frequency, low severity"
+      ],
+      "ans": "Low frequency, high severity",
+      "exp": "Risks that occur infrequently but result in high-valued losses are best for insurance."
+    },
+    {
+      "id": "Q44",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is generally considered an insurable risk in banking?",
+      "opts": [
+        "Reputational damage",
+        "Employee dishonesty",
+        "Strategic decision failure",
+        "Systemic market collapse"
+      ],
+      "ans": "Employee dishonesty",
+      "exp": "Crime/employee dishonesty, property damage, business interruption, and cybersecurity breaches are insurable risks."
+    },
+    {
+      "id": "Q45",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a classic uninsurable risk in banking?",
+      "opts": [
+        "Property damage from fire",
+        "Cybersecurity breaches",
+        "Reputational risk",
+        "Errors and omissions"
+      ],
+      "ans": "Reputational risk",
+      "exp": "Reputational, regulatory, strategic, market, and systemic risks are generally uninsurable."
+    },
+    {
+      "id": "Q46",
+      "module": 2,
+      "type": "mcq",
+      "q": "What insurance product protects a bank against borrower default?",
+      "opts": [
+        "Cyber liability insurance",
+        "Credit insurance",
+        "D&O insurance",
+        "Property insurance"
+      ],
+      "ans": "Credit insurance",
+      "exp": "Credit insurance protects banks against losses from borrower defaults, covering unpaid debts."
+    },
+    {
+      "id": "Q47",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which policy covers a bank's legal costs after a data breach?",
+      "opts": [
+        "Credit insurance",
+        "Cyber liability insurance",
+        "Business interruption",
+        "Fidelity insurance"
+      ],
+      "ans": "Cyber liability insurance",
+      "exp": "Cyber liability insurance covers losses related to data breaches, including legal fees, notification costs, and PR expenses."
+    },
+    {
+      "id": "Q48",
+      "module": 2,
+      "type": "mcq",
+      "q": "What does Directors and Officers (D&O) insurance protect against?",
+      "opts": [
+        "Employee fraud",
+        "Mismanagement and breach of fiduciary duty claims",
+        "Physical damage to branches",
+        "Customer loan defaults"
+      ],
+      "ans": "Mismanagement and breach of fiduciary duty claims",
+      "exp": "D&O insurance protects executives against claims of wrongful acts such as mismanagement or breach of fiduciary duty."
+    },
+    {
+      "id": "Q49",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which policy covers claims of negligence in providing professional services?",
+      "opts": [
+        "General liability",
+        "E&O (Errors and Omissions)",
+        "Property insurance",
+        "Credit insurance"
+      ],
+      "ans": "E&O (Errors and Omissions)",
+      "exp": "E&O insurance, also known as professional liability insurance, covers claims of negligence or mistakes in providing professional services."
+    },
+    {
+      "id": "Q50",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which product protects the bank against lost income during a disaster?",
+      "opts": [
+        "Business interruption insurance",
+        "Regulatory compliance insurance",
+        "Operational risk insurance",
+        "Motor vehicle insurance"
+      ],
+      "ans": "Business interruption insurance",
+      "exp": "Business interruption insurance provides coverage for lost income when a bank cannot operate due to unforeseen events like natural disasters."
+    },
+    {
+      "id": "Q51",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the 'First Loss Payee' principle in claims administration?",
+      "opts": [
+        "The bank pays the first loss",
+        "The insurer pays the first loss",
+        "The designated party is paid first",
+        "The policyholder is paid first"
+      ],
+      "ans": "The designated party is paid first",
+      "exp": "First loss payee denotes the rightful recipient of reimbursement; for loans, the bank is noted as the first loss payee."
+    },
+    {
+      "id": "Q52",
+      "module": 2,
+      "type": "mcq",
+      "q": "When does the insured have a right to claim on an insurance policy?",
+      "opts": [
+        "When the premium is overdue",
+        "When the policy is lapsed",
+        "When the risk insured against materialises",
+        "When the policy excludes the loss"
+      ],
+      "ans": "When the risk insured against materialises",
+      "exp": "The insured has the right to claim when the risk insured against materialises, the policy is valid, and premium is paid."
+    },
+    {
+      "id": "Q53",
+      "module": 2,
+      "type": "mcq",
+      "q": "What must a policyholder provide during a claim investigation?",
+      "opts": [
+        "Only the policy number",
+        "All relevant information to support the claim",
+        "A guarantee of no future losses",
+        "A signed confession"
+      ],
+      "ans": "All relevant information to support the claim",
+      "exp": "The insured has the responsibility to support and provide all relevant information during the investigation."
+    },
+    {
+      "id": "Q54",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which type of risk is amplified by high leverage and asset price declines?",
+      "opts": [
+        "Liquidity risk",
+        "Credit risk",
+        "Market risk (systemic)",
+        "Operational risk"
+      ],
+      "ans": "Market risk (systemic)",
+      "exp": "Market risks, particularly systemic ones, are amplified by high leverage, as seen in the Lehman Brothers case."
+    },
+    {
+      "id": "Q55",
+      "module": 2,
+      "type": "mcq",
+      "q": "In the Lehman Brothers case, what was a key failure in risk management?",
+      "opts": [
+        "Excessive leverage and underestimating subprime risks",
+        "Lack of cybersecurity measures",
+        "Failure to offer mortgage insurance",
+        "Inadequate branch infrastructure"
+      ],
+      "ans": "Excessive leverage and underestimating subprime risks",
+      "exp": "Lehman Brothers operated with over 30 times leverage and underestimated subprime mortgage risks, leading to bankruptcy."
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "type": "mcq",
+      "q": "How did Private Mortgage Insurance (PMI) help banks during the 2008 crisis?",
+      "opts": [
+        "It guaranteed all loans",
+        "It covered bank losses on defaults",
+        "It eliminated interest rates",
+        "It paid borrower salaries"
+      ],
+      "ans": "It covered bank losses on defaults",
+      "exp": "PMI covered the bank's losses in case of default, allowing them to recover some of the outstanding loan balance."
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is a key lesson from the Lehman Brothers collapse regarding leverage?",
+      "opts": [
+        "Leverage should be maximised",
+        "Banks must maintain prudent leverage ratios",
+        "Leverage has no impact on stability",
+        "Bankruptcy is avoidable with insurance"
+      ],
+      "ans": "Banks must maintain prudent leverage ratios",
+      "exp": "Financial institutions must maintain prudent leverage ratios to withstand economic downturns."
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which insurance helped a major U.S. bank manage the costs of a customer data breach?",
+      "opts": [
+        "Credit insurance",
+        "Cyber liability insurance",
+        "Business interruption",
+        "D&O insurance"
+      ],
+      "ans": "Cyber liability insurance",
+      "exp": "Cyber liability insurance covered costs including legal fees, notification, and PR expenses after a data breach."
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary benefit of cyber liability insurance after a breach?",
+      "opts": [
+        "It restores lost data",
+        "It covers legal and PR costs",
+        "It prevents future attacks",
+        "It reimburses customers directly"
+      ],
+      "ans": "It covers legal and PR costs",
+      "exp": "It helps the bank manage the financial fallout, allowing focus on restoring trust without crippling costs."
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which risk is classified as a 'strategic risk' and is typically uninsurable?",
+      "opts": [
+        "Employee theft",
+        "Poor business decisions",
+        "System failure",
+        "Interest rate swings"
+      ],
+      "ans": "Poor business decisions",
+      "exp": "Strategic decisions leading to poor outcomes are uninsurable; they are managed through internal controls and planning."
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why are regulatory fines typically uninsurable?",
+      "opts": [
+        "They are too high",
+        "They are against public policy to insure penalties",
+        "They occur too frequently",
+        "They lack a financial measurement"
+      ],
+      "ans": "They are against public policy to insure penalties",
+      "exp": "Insuring fines is against public policy; the law prohibits transferring penalties to an insurer."
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "type": "mcq",
+      "q": "What does operational risk insurance cover?",
+      "opts": [
+        "Fluctuations in stock prices",
+        "Losses from fraud or system failures",
+        "Borrower defaults on loans",
+        "Damage to bank reputation"
+      ],
+      "ans": "Losses from fraud or system failures",
+      "exp": "Some insurers offer products specifically designed to cover operational risks, including losses from fraud or system failures."
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "type": "mcq",
+      "q": "How does a bank reduce risk when it cannot transfer it?",
+      "opts": [
+        "Ignore the risk",
+        "Implement strong internal controls",
+        "Increase leverage",
+        "Reduce all lending"
+      ],
+      "ans": "Implement strong internal controls",
+      "exp": "For uninsurable risks like reputational or regulatory risk, strong internal controls and scenario planning are effective strategies."
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the condition of 'market agreement' in insurability?",
+      "opts": [
+        "The risk is accepted by all insurers",
+        "The risk is acceptable to the insurer market",
+        "The risk is quoted on the stock exchange",
+        "The risk is regulated by NAICOM"
+      ],
+      "ans": "The risk is acceptable to the insurer market",
+      "exp": "When insurers in a country agree a risk is not acceptable, none will accept it; this is market agreement."
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which characteristic differentiates fundamental risks from particular risks?",
+      "opts": [
+        "Fundamental risks are insurable",
+        "Fundamental risks affect large groups",
+        "Particular risks are speculative",
+        "Particular risks are always illegal"
+      ],
+      "ans": "Fundamental risks affect large groups",
+      "exp": "Particular risks arise from an individual cause; fundamental risks affect large groups (though some are now insurable)."
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why must the insured have an insurable interest in the subject matter?",
+      "opts": [
+        "To increase the premium",
+        "To prove a direct financial loss would occur",
+        "To transfer the policy to others",
+        "To avoid paying tax on the policy"
+      ],
+      "ans": "To prove a direct financial loss would occur",
+      "exp": "The loss of or damage to the subject matter must create a direct financial loss for the insured."
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the main objective of risk management in banking?",
+      "opts": [
+        "To eliminate all risks",
+        "To maximize profits",
+        "To anticipate and minimize financial impact",
+        "To avoid all lending"
+      ],
+      "ans": "To anticipate and minimize financial impact",
+      "exp": "Risk management anticipates possible losses and designs procedures to minimize occurrence or financial impact."
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following risks is most directly mitigated by fidelity insurance?",
+      "opts": [
+        "Market risk",
+        "Credit risk",
+        "Operational risk (fraud)",
+        "Liquidity risk"
+      ],
+      "ans": "Operational risk (fraud)",
+      "exp": "Fidelity insurance covers employee fraud, which is an operational risk."
+    },
+    {
+      "id": "Q69",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the role of reinsurance in managing catastrophe risk?",
+      "opts": [
+        "To eliminate the need for primary insurance",
+        "To transfer risk from primary insurers to reinsurers",
+        "To regulate insurance premiums",
+        "To directly pay policyholders"
+      ],
+      "ans": "To transfer risk from primary insurers to reinsurers",
+      "exp": "Reinsurers provide insurance to primary insurers, managing exposure to catastrophic losses."
+    },
+    {
+      "id": "Q70",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which insurance product aligns directly with the risk of legal action against a bank's directors?",
+      "opts": [
+        "E&O insurance",
+        "D&O insurance",
+        "General liability",
+        "Property insurance"
+      ],
+      "ans": "D&O insurance",
+      "exp": "D&O insurance protects bank executives against claims of wrongful acts like mismanagement or breach of fiduciary duty."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "type": "mcq",
+      "q": "How does credit insurance contribute to a bank's risk management?",
+      "opts": [
+        "It protects against interest rate changes",
+        "It covers borrower defaults and insolvency",
+        "It insures the branch building",
+        "It covers employee health costs"
+      ],
+      "ans": "It covers borrower defaults and insolvency",
+      "exp": "Credit insurance protects banks against losses from borrower defaults, including insolvency or protracted default."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which risk is managed by paying close attention to customer service and public perception?",
+      "opts": [
+        "Liquidity risk",
+        "Reputational risk",
+        "Operational risk",
+        "Credit risk"
+      ],
+      "ans": "Reputational risk",
+      "exp": "Reputational risk arises from negative public opinion; building a positive reputation helps mitigate it."
+    },
+    {
+      "id": "Q73",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which specific feature distinguishes a pure risk from a speculative risk?",
+      "opts": [
+        "Pure risk involves a chance of gain",
+        "Speculative risk involves no gain",
+        "Pure risk involves only loss or no loss",
+        "Speculative risk is always insurable"
+      ],
+      "ans": "Pure risk involves only loss or no loss",
+      "exp": "Pure risks involve only loss or no loss; speculative risks involve the chance of gain, making them uninsurable."
+    },
+    {
+      "id": "Q74",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the significance of the 'Legality' criterion for insurable risks?",
+      "opts": [
+        "It ensures the policy is cheap",
+        "The subject matter must not be illegal",
+        "It sets the coverage limit",
+        "It determines the premium"
+      ],
+      "ans": "The subject matter must not be illegal",
+      "exp": "The insurance business operates within the law; the subject matter is not insurable if it is illegal."
+    },
+    {
+      "id": "Q75",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT a criterion for an insurable risk?",
+      "opts": [
+        "Fortuitous event",
+        "Financial measurement",
+        "Homogeneous exposure",
+        "Speculative nature"
+      ],
+      "ans": "Speculative nature",
+      "exp": "Speculative risks are not insurable; insurability requires pure risk, fortuitousness, and financial measurement."
+    },
+    {
+      "id": "Q76",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary advantage of transfer as a risk management strategy?",
+      "opts": [
+        "It eliminates the risk completely",
+        "It shifts financial consequences to another party",
+        "It reduces the probability of loss",
+        "It avoids the risk entirely"
+      ],
+      "ans": "It shifts financial consequences to another party",
+      "exp": "Risk transfer shifts the financial burden to another party, typically through an insurance contract."
+    },
+    {
+      "id": "Q77",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why is liquidity risk a major concern for banks?",
+      "opts": [
+        "It affects the bank's ability to trade",
+        "It can lead to forced asset sales or emergency borrowing",
+        "It is always covered by insurance",
+        "It only affects customer deposits"
+      ],
+      "ans": "It can lead to forced asset sales or emergency borrowing",
+      "exp": "Liquidity risk arises when a bank cannot meet obligations, leading to emergency borrowing or forced asset sales at unfavorable prices."
+    },
+    {
+      "id": "Q78",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which risk type is driven by the increasing reliance on digital banking?",
+      "opts": [
+        "Credit risk",
+        "Cybersecurity risk",
+        "Reputational risk",
+        "Liquidity risk"
+      ],
+      "ans": "Cybersecurity risk",
+      "exp": "Cybersecurity risks have become paramount with digital banking, involving data breaches, hacking, and identity theft."
+    },
+    {
+      "id": "Q79",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which strategy helps banks manage uninsurable risks like regulatory changes?",
+      "opts": [
+        "Buying insurance",
+        "Scenario planning and staying informed",
+        "Increasing leverage",
+        "Reducing capital reserves"
+      ],
+      "ans": "Scenario planning and staying informed",
+      "exp": "Alternative strategies for uninsurable risks include strong internal controls, scenario planning, and staying informed."
+    },
+    {
+      "id": "Q80",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the fundamental purpose of aligning insurance products with banking risks?",
+      "opts": [
+        "To increase revenue from premiums",
+        "To enhance resilience and ensure regulatory compliance",
+        "To eliminate all banking staff",
+        "To reduce the need for capital"
+      ],
+      "ans": "To enhance resilience and ensure regulatory compliance",
+      "exp": "Aligning products enhances resilience against losses while ensuring compliance and maintaining customer trust."
+    },
+    {
+      "id": "Q81",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is bancassurance in the context of banking services?",
+      "opts": [
+        "A separate insurance company owned by a bank",
+        "A partnership to sell insurance through bank branches",
+        "A regulatory body overseeing banks",
+        "A type of mortgage insurance"
+      ],
+      "ans": "A partnership to sell insurance through bank branches",
+      "exp": "Bancassurance is a partnership between a bank and an insurance company, allowing the bank to sell insurance products to its customers."
+    },
+    {
+      "id": "Q82",
+      "module": 3,
+      "type": "mcq",
+      "q": "How does bancassurance primarily benefit banks?",
+      "opts": [
+        "It reduces their operational costs",
+        "It diversifies revenue via commissions",
+        "It eliminates credit risk",
+        "It guarantees loan repayments"
+      ],
+      "ans": "It diversifies revenue via commissions",
+      "exp": "Bancassurance serves as a means of diversification of revenue streams through commissions from insurance sales."
+    },
+    {
+      "id": "Q83",
+      "module": 3,
+      "type": "mcq",
+      "q": "How do banks benefit from offering comprehensive financial solutions via bancassurance?",
+      "opts": [
+        "By reducing staff requirements",
+        "By enhancing customer relationships and loyalty",
+        "By lowering interest rates",
+        "By eliminating customer complaints"
+      ],
+      "ans": "By enhancing customer relationships and loyalty",
+      "exp": "It enhances customer relationships by providing integrated banking and insurance services, fostering trust and loyalty."
+    },
+    {
+      "id": "Q84",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a key benefit of bancassurance for insurance companies?",
+      "opts": [
+        "It reduces the need for reinsurance",
+        "It provides access to a larger customer base",
+        "It eliminates premium payments",
+        "It guarantees no losses"
+      ],
+      "ans": "It provides access to a larger customer base",
+      "exp": "Insurance companies gain access to a larger customer base through established banking networks."
+    },
+    {
+      "id": "Q85",
+      "module": 3,
+      "type": "mcq",
+      "q": "How does bancassurance reduce distribution costs for insurers?",
+      "opts": [
+        "By hiring more agents",
+        "By utilizing the bank's existing infrastructure",
+        "By increasing advertising",
+        "By reducing the number of policies"
+      ],
+      "ans": "By utilizing the bank's existing infrastructure",
+      "exp": "Reduced distribution costs are achieved by utilizing banks' existing infrastructure, trained staff, and shared resources."
+    },
+    {
+      "id": "Q86",
+      "module": 3,
+      "type": "mcq",
+      "q": "What benefit does bancassurance offer to customers?",
+      "opts": [
+        "Higher interest rates on savings",
+        "Convenience of accessing both services under one roof",
+        "Guaranteed investment returns",
+        "Free life insurance"
+      ],
+      "ans": "Convenience of accessing both services under one roof",
+      "exp": "Customers benefit from the convenience of accessing banking and insurance services in a seamless, one-stop-shop manner."
+    },
+    {
+      "id": "Q87",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why might customers pay lower prices for insurance through bancassurance?",
+      "opts": [
+        "Due to government subsidies",
+        "Due to reduced distribution costs and economies of scale",
+        "Because the insurance is inferior",
+        "Because the bank pays the premium"
+      ],
+      "ans": "Due to reduced distribution costs and economies of scale",
+      "exp": "Reduced distribution costs and economies of scale allow banks and insurers to offer more competitive pricing."
+    },
+    {
+      "id": "Q88",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which regulatory bodies must approve bancassurance operations in Nigeria?",
+      "opts": [
+        "NDIC and SEC",
+        "CBN and NAICOM",
+        "FIRS and NIA",
+        "NSE and CBN"
+      ],
+      "ans": "CBN and NAICOM",
+      "exp": "Bancassurance requires regulatory approval from the Central Bank of Nigeria (CBN) and the National Insurance Commission (NAICOM)."
+    },
+    {
+      "id": "Q89",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does the operational guideline for bancassurance include?",
+      "opts": [
+        "Investment strategy",
+        "Board resolution and risk assessment",
+        "Staff salary structure",
+        "Branch expansion plans"
+      ],
+      "ans": "Board resolution and risk assessment",
+      "exp": "The operational guideline contains board resolution, bancassurance agreement, and risk assessment."
+    },
+    {
+      "id": "Q90",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the primary goal of cross-selling insurance products in banks?",
+      "opts": [
+        "To replace the bank's core services",
+        "To increase the overall value of sales and customer satisfaction",
+        "To eliminate competition",
+        "To reduce the number of products"
+      ],
+      "ans": "To increase the overall value of sales and customer satisfaction",
+      "exp": "Cross-selling aims to encourage customers to purchase additional products, increasing overall value and satisfaction."
+    },
+    {
+      "id": "Q91",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which strategy involves using customer data to identify insurance needs?",
+      "opts": [
+        "Staff training",
+        "Integrated marketing",
+        "Identifying customer needs via data mining",
+        "Relationship building"
+      ],
+      "ans": "Identifying customer needs via data mining",
+      "exp": "Identifying customer needs involves data mining, customer segmentation, and life events tracking to offer relevant products."
+    },
+    {
+      "id": "Q92",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why is staff training essential for effective cross-selling?",
+      "opts": [
+        "To reduce staff salaries",
+        "To ensure staff have product knowledge and communication skills",
+        "To automate all sales",
+        "To replace marketing departments"
+      ],
+      "ans": "To ensure staff have product knowledge and communication skills",
+      "exp": "Staff training in comprehensive product knowledge and communication skills is essential for successful cross-selling."
+    },
+    {
+      "id": "Q93",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is an example of an integrated marketing strategy for cross-selling?",
+      "opts": [
+        "Ignoring customer feedback",
+        "Running cross-channel campaigns",
+        "Reducing online presence",
+        "Increasing interest rates"
+      ],
+      "ans": "Running cross-channel campaigns",
+      "exp": "Integrated marketing strategies combine various channels, including cross-channel campaigns, personalized marketing, and in-branch promotions."
+    },
+    {
+      "id": "Q94",
+      "module": 3,
+      "type": "mcq",
+      "q": "How can technology facilitate cross-selling of insurance?",
+      "opts": [
+        "By eliminating customer interaction",
+        "By providing personalized recommendations via digital platforms",
+        "By reducing the need for policies",
+        "By increasing premiums automatically"
+      ],
+      "ans": "By providing personalized recommendations via digital platforms",
+      "exp": "Digital platforms provide personalized recommendations based on customer behavior and preferences, facilitating cross-selling."
+    },
+    {
+      "id": "Q95",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why is building relationships paramount in cross-selling?",
+      "opts": [
+        "It eliminates the need for marketing",
+        "It creates trust and fosters loyalty",
+        "It guarantees all sales",
+        "It reduces product variety"
+      ],
+      "ans": "It creates trust and fosters loyalty",
+      "exp": "Building relationships creates a foundation of trust, enhances understanding, and fosters loyalty, driving sales."
+    },
+    {
+      "id": "Q96",
+      "module": 3,
+      "type": "mcq",
+      "q": "What do feedback mechanisms provide in cross-selling strategies?",
+      "opts": [
+        "Critical insights into customer needs",
+        "Guarantees of high sales",
+        "Government compliance only",
+        "Automated purchase orders"
+      ],
+      "ans": "Critical insights into customer needs",
+      "exp": "Feedback mechanisms provide critical insights into customer needs, enhancing satisfaction and fostering continuous improvement."
+    },
+    {
+      "id": "Q97",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why is regulatory compliance awareness vital in cross-selling?",
+      "opts": [
+        "To increase sales commissions",
+        "To protect customer interests and mitigate legal risks",
+        "To reduce product costs",
+        "To eliminate training needs"
+      ],
+      "ans": "To protect customer interests and mitigate legal risks",
+      "exp": "Compliance awareness protects customer interests, mitigates legal risks, and enhances the bank's reputation."
+    },
+    {
+      "id": "Q98",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which type of life insurance provides coverage for a specified period only?",
+      "opts": [
+        "Whole life insurance",
+        "Term assurance",
+        "Endowment policy",
+        "Annuity plan"
+      ],
+      "ans": "Term assurance",
+      "exp": "Term assurance provides coverage for a specified period; if the term expires, there is no payout."
+    },
+    {
+      "id": "Q99",
+      "module": 3,
+      "type": "mcq",
+      "q": "What feature distinguishes whole life insurance from term assurance?",
+      "opts": [
+        "It only covers accidents",
+        "It covers the insured's entire lifetime",
+        "It is cheaper than term",
+        "It covers business risks"
+      ],
+      "ans": "It covers the insured's entire lifetime",
+      "exp": "Whole life insurance provides coverage for the insured's entire lifetime as long as premiums are paid and includes a cash value component."
+    },
+    {
+      "id": "Q100",
+      "module": 3,
+      "type": "mcq",
+      "q": "What type of insurance covers medical expenses for the insured?",
+      "opts": [
+        "Life insurance",
+        "Motor vehicle insurance",
+        "Health insurance",
+        "Liability insurance"
+      ],
+      "ans": "Health insurance",
+      "exp": "Health insurance pays for medical and surgical expenses, including preventive care, hospitalization, and prescription drugs."
+    },
+    {
+      "id": "Q101",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which type of insurance provides financial protection for vehicles?",
+      "opts": [
+        "Travel insurance",
+        "Motor vehicle insurance",
+        "Property insurance",
+        "Liability insurance"
+      ],
+      "ans": "Motor vehicle insurance",
+      "exp": "Motor vehicle (auto) insurance provides financial protection for vehicles and owners against various risks."
+    },
+    {
+      "id": "Q102",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does liability insurance primarily protect against?",
+      "opts": [
+        "Damage to the insured's own property",
+        "Claims for injuries or damage caused to other people or property",
+        "Loss of life or disability",
+        "Vehicle theft"
+      ],
+      "ans": "Claims for injuries or damage caused to other people or property",
+      "exp": "Liability insurance provides protection against claims resulting from injuries and damage to other people or their property."
+    },
+    {
+      "id": "Q103",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which type of liability insurance protects professionals against negligence claims?",
+      "opts": [
+        "General liability",
+        "Product liability",
+        "Professional liability (E&O)",
+        "Public liability"
+      ],
+      "ans": "Professional liability (E&O)",
+      "exp": "Professional liability insurance (Errors and Omissions) protects professionals against claims of negligence, errors, or omissions."
+    },
+    {
+      "id": "Q104",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which liability insurance covers manufacturers against defective products?",
+      "opts": [
+        "General liability",
+        "Product liability",
+        "Professional liability",
+        "Motor liability"
+      ],
+      "ans": "Product liability",
+      "exp": "Product liability insurance covers manufacturers, distributors, and retailers against claims from defective products."
+    },
+    {
+      "id": "Q105",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does travel insurance cover for a policyholder?",
+      "opts": [
+        "Vehicle damage",
+        "Health expenses and trip cancellations",
+        "Mortgage payments",
+        "Employee salaries"
+      ],
+      "ans": "Health expenses and trip cancellations",
+      "exp": "Travel insurance provides financial protection against unforeseen events before or during a trip, including health expenses."
+    },
+    {
+      "id": "Q106",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the purpose of Mortgage Protection Insurance (MPI)?",
+      "opts": [
+        "To cover car repairs",
+        "To pay off the mortgage upon the policyholder's death",
+        "To cover the bank's operational costs",
+        "To insure the bank building"
+      ],
+      "ans": "To pay off the mortgage upon the policyholder's death",
+      "exp": "MPI is a type of life insurance designed to pay off the mortgage in the event of the policyholder's death."
+    },
+    {
+      "id": "Q107",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does Credit Life and Disability Insurance protect against?",
+      "opts": [
+        "Damage to credit cards",
+        "Outstanding debts being paid off on death or disability",
+        "Reduction in credit ratings",
+        "Loss of employment only"
+      ],
+      "ans": "Outstanding debts being paid off on death or disability",
+      "exp": "This insurance ensures outstanding debts are paid off in case of the borrower's death or disability, protecting the bank's interests."
+    },
+    {
+      "id": "Q108",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which insurance product is directly tied to a specific loan facility to protect the lender?",
+      "opts": [
+        "Motor insurance",
+        "Mortgage Protection Insurance",
+        "Travel insurance",
+        "General liability"
+      ],
+      "ans": "Mortgage Protection Insurance",
+      "exp": "Mortgage Protection Insurance and Credit Life insurance are tied to loans to protect the lender (bank)."
+    },
+    {
+      "id": "Q109",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the main goal of personalized marketing in cross-selling?",
+      "opts": [
+        "To send the same offer to everyone",
+        "To tailor offers to individual customer segments",
+        "To reduce marketing costs",
+        "To avoid customer contact"
+      ],
+      "ans": "To tailor offers to individual customer segments",
+      "exp": "Personalized marketing tailors offers based on customer data, enhancing relevance and conversion rates."
+    },
+    {
+      "id": "Q110",
+      "module": 3,
+      "type": "mcq",
+      "q": "How does the 'single point of contact' benefit customers in bancassurance?",
+      "opts": [
+        "It confuses the customer",
+        "It simplifies financial planning",
+        "It increases the number of bank visits",
+        "It reduces insurance coverage"
+      ],
+      "ans": "It simplifies financial planning",
+      "exp": "A single point of contact allows customers to manage both banking and insurance needs efficiently."
+    },
+    {
+      "id": "Q111",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the role of in-branch promotions in cross-selling?",
+      "opts": [
+        "To showcase available insurance options",
+        "To replace digital banking",
+        "To reduce staff workload",
+        "To increase branch operating costs"
+      ],
+      "ans": "To showcase available insurance options",
+      "exp": "In-branch promotions showcase available insurance options to customers visiting the bank."
+    },
+    {
+      "id": "Q112",
+      "module": 3,
+      "type": "mcq",
+      "q": "How does bancassurance benefit the bank's customer loyalty?",
+      "opts": [
+        "By providing comprehensive financial solutions",
+        "By increasing service fees",
+        "By reducing deposit accounts",
+        "By eliminating branch services"
+      ],
+      "ans": "By providing comprehensive financial solutions",
+      "exp": "By offering a broader range of services, banks become holistic financial partners, fostering loyalty."
+    },
+    {
+      "id": "Q113",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a feature of cross-selling insurance?",
+      "opts": [
+        "Product integration and customer insights",
+        "Reducing the number of bank products",
+        "Focusing only on wealthy clients",
+        "Avoiding regulatory checks"
+      ],
+      "ans": "Product integration and customer insights",
+      "exp": "Features include product integration, customer insights, personalized recommendations, bundling, and cross-promotion."
+    },
+    {
+      "id": "Q114",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the purpose of the MOU on Bancassurance signed by CBN and NAICOM?",
+      "opts": [
+        "To merge the two bodies",
+        "To define roles: banks concentrate on banking, insurers on insurance",
+        "To increase bank interest rates",
+        "To eliminate life insurance"
+      ],
+      "ans": "To define roles: banks concentrate on banking, insurers on insurance",
+      "exp": "The MOU agreed that banks should concentrate on banking services while insurers handle insurance products."
+    },
+    {
+      "id": "Q115",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does 'bundling offers' mean in the context of cross-selling?",
+      "opts": [
+        "Separating products",
+        "Combining insurance with banking services at a discount",
+        "Increasing product prices",
+        "Offering only one product"
+      ],
+      "ans": "Combining insurance with banking services at a discount",
+      "exp": "Bundling combines products (e.g., a loan with credit life insurance) often at a perceived discount or convenience."
+    },
+    {
+      "id": "Q116",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why is life insurance considered a key product offered to banking clients?",
+      "opts": [
+        "It provides a safety net for families",
+        "It insures the bank's property",
+        "It covers business operational losses",
+        "It replaces health insurance"
+      ],
+      "ans": "It provides a safety net for families",
+      "exp": "Life insurance provides monetary protection to beneficiaries, serving as a safety net for families."
+    },
+    {
+      "id": "Q117",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which product helps banks maintain operational resilience during cyberattacks?",
+      "opts": [
+        "Property insurance",
+        "Cyber liability insurance",
+        "Motor insurance",
+        "Credit insurance"
+      ],
+      "ans": "Cyber liability insurance",
+      "exp": "Cyber liability insurance covers losses related to data breaches and helps banks manage the financial fallout."
+    },
+    {
+      "id": "Q118",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the primary risk covered by general liability insurance for a bank?",
+      "opts": [
+        "Employee dishonesty",
+        "Bodily injury on bank premises",
+        "Loan default",
+        "Interest rate fluctuation"
+      ],
+      "ans": "Bodily injury on bank premises",
+      "exp": "General liability insurance covers claims related to bodily injury and property damage occurring on the bank's premises."
+    },
+    {
+      "id": "Q119",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is an example of a non-life insurance product?",
+      "opts": [
+        "Whole life insurance",
+        "Term assurance",
+        "Property insurance",
+        "Annuity"
+      ],
+      "ans": "Property insurance",
+      "exp": "Property insurance is a general (non-life) insurance product, covering physical assets."
+    },
+    {
+      "id": "Q120",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does the 'cash value component' in whole life insurance represent?",
+      "opts": [
+        "The penalty for early withdrawal",
+        "A savings element that grows over time",
+        "The annual premium amount",
+        "The death benefit only"
+      ],
+      "ans": "A savings element that grows over time",
+      "exp": "Whole life insurance combines a death benefit with a cash value component that grows over time."
+    },
+    {
+      "id": "Q121",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which cross-selling strategy involves training staff on communication skills?",
+      "opts": [
+        "Identifying customer needs",
+        "Training staff",
+        "Integrated marketing",
+        "Utilizing technology"
+      ],
+      "ans": "Training staff",
+      "exp": "Staff training includes communication skills and role-playing scenarios to improve sales effectiveness."
+    },
+    {
+      "id": "Q122",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the benefit of 'economies of scale' in bancassurance?",
+      "opts": [
+        "Higher costs per unit",
+        "Lower costs per policy sold",
+        "Reduced customer base",
+        "Increased premiums for customers"
+      ],
+      "ans": "Lower costs per policy sold",
+      "exp": "Shared resources and large volumes lead to economies of scale, lowering the cost per policy sold."
+    },
+    {
+      "id": "Q123",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which product protects the bank if a borrower dies before repaying a loan?",
+      "opts": [
+        "Mortgage Protection Insurance (MPI)",
+        "Motor insurance",
+        "Travel insurance",
+        "General liability"
+      ],
+      "ans": "Mortgage Protection Insurance (MPI)",
+      "exp": "MPI covers the outstanding mortgage or loan balance upon the borrower's death, protecting the bank."
+    },
+    {
+      "id": "Q124",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a key challenge that bancassurance helps banks overcome?",
+      "opts": [
+        "Lack of physical branches",
+        "Revenue diversification",
+        "Regulatory fines",
+        "Staff shortages"
+      ],
+      "ans": "Revenue diversification",
+      "exp": "Bancassurance helps banks diversify revenue streams, reducing reliance on traditional interest income."
+    },
+    {
+      "id": "Q125",
+      "module": 3,
+      "type": "mcq",
+      "q": "How does 'customer journey mapping' contribute to cross-selling?",
+      "opts": [
+        "By guessing customer preferences",
+        "By understanding touchpoints to offer timely products",
+        "By avoiding customer interaction",
+        "By eliminating marketing channels"
+      ],
+      "ans": "By understanding touchpoints to offer timely products",
+      "exp": "Mapping the customer journey helps identify key touchpoints where insurance products are most relevant and timely."
+    },
+    {
+      "id": "Q126",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which risk is the bank MOST immediately exposed to?",
+      "opts": [
+        "Credit risk from loan defaults",
+        "Liquidity risk from cash flow mismatch",
+        "Reputational risk from media coverage",
+        "Operational risk from system failure"
+      ],
+      "ans": "Liquidity risk from cash flow mismatch",
+      "exp": "The bank faces liquidity risk due to the mismatch between short-term funding and long-term lending, exacerbated by market rate spikes.",
+      "case": "A regional bank relies heavily on short-term interbank borrowing to fund its long-term lending. A sudden spike in market interest rates makes it difficult to roll over these borrowings."
+    },
+    {
+      "id": "Q127",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "What type of risk is this error classified as, and how should it be managed?",
+      "opts": [
+        "Credit risk, managed by recovery efforts",
+        "Operational risk, managed by process controls",
+        "Market risk, managed by hedging",
+        "Strategic risk, managed by board decisions"
+      ],
+      "ans": "Operational risk, managed by process controls",
+      "exp": "Human errors in processing are operational risks; they are managed via internal controls, staff training, and system safeguards.",
+      "case": "A bank teller accidentally processes a large cash transfer twice, crediting the customer's account twice."
+    },
+    {
+      "id": "Q128",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which insurance product could have reduced the bank's exposure to this potential loss?",
+      "opts": [
+        "Cyber liability insurance",
+        "Business interruption insurance",
+        "Errors and Omissions (E&O) insurance",
+        "Property insurance"
+      ],
+      "ans": "Errors and Omissions (E&O) insurance",
+      "exp": "E&O insurance covers claims arising from mistakes or negligence in providing professional services, such as flawed credit assessment.",
+      "case": "A bank's loan officer approves a \u20a650 million facility for a company without verifying the collateral's existence, relying solely on the company's unaudited financials."
+    },
+    {
+      "id": "Q129",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which risk management strategy was notably absent?",
+      "opts": [
+        "Risk transfer",
+        "Risk avoidance",
+        "Risk reduction",
+        "Risk acceptance"
+      ],
+      "ans": "Risk reduction",
+      "exp": "The bank failed to reduce the risk by implementing a rollback plan. Risk reduction involves measures to fall within a 'tolerance limit'.",
+      "case": "A bank is undergoing a major IT upgrade. The project manager decides to proceed without a backup rollback plan. A critical system fails during the upgrade, halting all branches for 4 hours."
+    },
+    {
+      "id": "Q130",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "This scenario best illustrates which type of risk?",
+      "opts": [
+        "Market risk",
+        "Credit risk",
+        "Operational risk",
+        "Reputational risk"
+      ],
+      "ans": "Reputational risk",
+      "exp": "While operational issues triggered it, the public complaints and negative perception directly lead to reputational risk.",
+      "case": "A bank offers a new 'digital-only' savings account with a high interest rate. The marketing team promotes it heavily, but the operations team did not prepare for the volume of customer support queries, leading to huge wait times and complaints."
+    },
+    {
+      "id": "Q131",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "What type of risk is the bank MOST likely exacerbating through this decision?",
+      "opts": [
+        "Liquidity risk",
+        "Reputational risk",
+        "Credit risk",
+        "Regulatory risk"
+      ],
+      "ans": "Reputational risk",
+      "exp": "This decision could trigger public backlash, damaging the bank's reputation and leading to loss of trust.",
+      "case": "During a financial downturn, a bank's board decides to continue paying high bonuses to executives while simultaneously cutting customer service staff."
+    },
+    {
+      "id": "Q132",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which insurance claim is the bank most likely to pursue?",
+      "opts": [
+        "Credit life insurance",
+        "Fidelity insurance",
+        "Business interruption insurance",
+        "D&O insurance"
+      ],
+      "ans": "Fidelity insurance",
+      "exp": "Fidelity insurance covers employee fraud or dishonesty, which is precisely what the branch manager engaged in.",
+      "case": "A bank's internal audit reveals that a branch manager has been approving loans to relatives without proper credit checks for two years."
+    },
+    {
+      "id": "Q133",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which insurance product would protect the bank against these specific loan defaults?",
+      "opts": [
+        "Cyber insurance",
+        "Credit insurance",
+        "Property insurance",
+        "Motor insurance"
+      ],
+      "ans": "Credit insurance",
+      "exp": "Credit insurance protects the bank against losses from borrower defaults, such as those caused by the oil price crash.",
+      "case": "A bank has a large exposure to the oil and gas sector. A sudden crash in global oil prices leads to multiple defaults by its corporate clients."
+    },
+    {
+      "id": "Q134",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "What additional coverage should the bank have held to protect lost income?",
+      "opts": [
+        "Property insurance",
+        "Business interruption insurance",
+        "Liability insurance",
+        "D&O insurance"
+      ],
+      "ans": "Business interruption insurance",
+      "exp": "Business interruption insurance provides coverage for lost income during periods when the bank cannot operate normally.",
+      "case": "A bank's head office is severely damaged by a fire. While the branch building is insured, the bank loses three weeks of critical operations at that location."
+    },
+    {
+      "id": "Q135",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which insurance policy is designed to cover the CEO's legal defence costs?",
+      "opts": [
+        "E&O insurance",
+        "Cyber insurance",
+        "D&O insurance",
+        "Fidelity insurance"
+      ],
+      "ans": "D&O insurance",
+      "exp": "D&O insurance protects bank executives against claims arising from their decisions, including legal costs for mismanagement claims.",
+      "case": "A major shareholder sues the CEO of a bank for mismanagement and breach of fiduciary duty after a derivative trade goes spectacularly wrong."
+    },
+    {
+      "id": "Q136",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which risk could this expose the bank to, and what product could help?",
+      "opts": [
+        "Credit risk; Credit insurance",
+        "Cyber liability risk; Cyber insurance",
+        "Liquidity risk; D&O insurance",
+        "Operational risk; Property insurance"
+      ],
+      "ans": "Cyber liability risk; Cyber insurance",
+      "exp": "The bank is exposed to cyber liability risk from the breach, and cyber insurance covers losses related to such incidents.",
+      "case": "A bank's customer loses \u20a65 million to a sophisticated phishing scam. The customer claims the bank did not have adequate security measures."
+    },
+    {
+      "id": "Q137",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "What type of risk is the bank primarily taking on, and is it insurable?",
+      "opts": [
+        "Strategic risk; Uninsurable",
+        "Operational risk; Insurable",
+        "Credit risk; Insurable",
+        "Market risk; Uninsurable"
+      ],
+      "ans": "Strategic risk; Uninsurable",
+      "exp": "Strategic risks (poor business decisions) are typically uninsurable. They are managed through due diligence and planning.",
+      "case": "A bank decides to acquire a small fintech startup. The acquisition is complex and involves significant regulatory hurdles and integration risks."
+    },
+    {
+      "id": "Q138",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which insurance product covers this direct loss of assets?",
+      "opts": [
+        "E&O insurance",
+        "Cyber insurance",
+        "Property and crime insurance",
+        "Business interruption"
+      ],
+      "ans": "Property and crime insurance",
+      "exp": "Property insurance covers physical assets, and crime insurance (or fidelity) covers theft of cash and valuables.",
+      "case": "A bank's physical security is breached, and thieves steal cash and valuable documents from the vault."
+    },
+    {
+      "id": "Q139",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "How does this insurance benefit both the bank and the family?",
+      "opts": [
+        "It pays off the debt, protecting the bank and freeing the family from liability",
+        "It gives the family the right to the bank's assets",
+        "It cancels the loan without any payment",
+        "It requires the bank to sue the family"
+      ],
+      "ans": "It pays off the debt, protecting the bank and freeing the family from liability",
+      "exp": "Credit Life insurance ensures the outstanding debt is paid off upon death, protecting the bank's interest and relieving the family of the debt burden.",
+      "case": "A small business owner with a loan default dies unexpectedly, leaving a huge outstanding balance. The loan was secured with a life insurance policy."
+    },
+    {
+      "id": "Q140",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "What is a potential uninsurable risk associated with this strategic move?",
+      "opts": [
+        "Physical damage to new branches",
+        "Customer fraud at new branches",
+        "Strategic failure due to poor market acceptance",
+        "Employee errors in the new branches"
+      ],
+      "ans": "Strategic failure due to poor market acceptance",
+      "exp": "Strategic market-entry failure is an uninsurable business risk; only pure risks are insurable, not business judgment risks.",
+      "case": "A bank plans to expand into a new territory where it has no brand presence. It heavily advertises its new services."
+    },
+    {
+      "id": "Q141",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "This event directly impacts which category of risk, and how could insurance have helped?",
+      "opts": [
+        "Operational risk; Data recovery is uninsurable",
+        "Operational risk; Cyber insurance sometimes covers data restoration",
+        "Credit risk; Insurance is not applicable",
+        "Strategic risk; D&O insurance could cover it"
+      ],
+      "ans": "Operational risk; Cyber insurance sometimes covers data restoration",
+      "exp": "System failures are operational risks. Some cyber/operational insurance policies may cover data restoration costs and business interruption.",
+      "case": "A bank's employee accidentally deletes a critical production database. There is no recent backup."
+    },
+    {
+      "id": "Q142",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "What type of risk is being exposed, and what is the appropriate management response?",
+      "opts": [
+        "Regulatory risk; Self-report and implement controls",
+        "Credit risk; Increase loan loss provisions",
+        "Market risk; Hedge foreign currency positions",
+        "Reputational risk; Launch a PR campaign"
+      ],
+      "ans": "Regulatory risk; Self-report and implement controls",
+      "exp": "This is regulatory compliance risk. The bank should self-report and fix the reporting processes.",
+      "case": "A bank's compliance officer flags that the bank has been inadvertently under-reporting its foreign currency transactions to the regulator for six months."
+    },
+    {
+      "id": "Q143",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "This situation mostly exposes the bank to which risk category?",
+      "opts": [
+        "Liquidity risk",
+        "Credit risk",
+        "Operational risk",
+        "Systemic risk"
+      ],
+      "ans": "Credit risk",
+      "exp": "The potential for the corporate customer to default makes this a credit risk.",
+      "case": "A large corporate customer of a bank is struggling to survive, and its unsecured loans account for 15% of the bank's total capital. The bank refuses to restructure."
+    },
+    {
+      "id": "Q144",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which cross-selling principle was likely violated?",
+      "opts": [
+        "Identifying customer needs",
+        "Staff training and communication",
+        "Utilizing technology",
+        "Feedback mechanisms"
+      ],
+      "ans": "Staff training and communication",
+      "exp": "Staff likely failed to adequately communicate the terms and exclusions, indicating a lapse in training and disclosure.",
+      "case": "A bank successfully cross-sells a health insurance product to a customer. The customer later complains that the policy does not cover pre-existing conditions as they understood."
+    },
+    {
+      "id": "Q145",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "This decision was influenced by which underlying risk management factor?",
+      "opts": [
+        "Credit risk",
+        "Market risk",
+        "Liquidity risk",
+        "Operational risk"
+      ],
+      "ans": "Liquidity risk",
+      "exp": "The need to sell assets at a loss to meet obligations is a direct consequence of liquidity risk.",
+      "case": "A bank is facing a liquidity crunch. It can borrow from the CBN's discount window at a high rate, or sell its high-quality government bonds at a loss. The Treasurer chooses the loss-making sale."
+    },
+    {
+      "id": "Q146",
+      "module": 4,
+      "type": "case-mcq",
+      "opts": [
+        "Operational risk",
+        "Regulatory compliance",
+        "Market and credit risk",
+        "Liquidity risk"
+      ],
+      "ans": "Market and credit risk",
+      "exp": "A drop in real estate prices affects the collateral value (credit risk) and the market value of assets (market risk).",
+      "case": "During a bank-wide stress test, the risk department assumes a 40% drop in real estate prices. This scenario tests the bank's resilience to which factor?"
+    },
+    {
+      "id": "Q147",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which insurance product might cover this payment?",
+      "opts": [
+        "Fidelity insurance",
+        "Cyber liability insurance",
+        "Property insurance",
+        "E&O insurance"
+      ],
+      "ans": "Cyber liability insurance",
+      "exp": "Cyber liability policies often cover ransomware payments and associated negotiation costs.",
+      "case": "A bank receives a ransomware demand after a hacker encrypts its ATM servers. The bank decides to pay the ransom."
+    },
+    {
+      "id": "Q148",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "This is an example of which risk management strategy?",
+      "opts": [
+        "Risk transfer",
+        "Risk reduction",
+        "Risk acceptance",
+        "Risk avoidance"
+      ],
+      "ans": "Risk avoidance",
+      "exp": "By deciding not to engage in agricultural lending, the bank is avoiding the associated risks.",
+      "case": "A bank's management decides to avoid all lending to the agricultural sector due to perceived high risk, despite government incentives."
+    },
+    {
+      "id": "Q149",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "What regulatory compliance issue might this raise?",
+      "opts": [
+        "Anti-competitive behavior (tying)",
+        "Anti-money laundering",
+        "Capital adequacy violation",
+        "Data privacy violation"
+      ],
+      "ans": "Anti-competitive behavior (tying)",
+      "exp": "Forcing a customer to buy insurance to access a loan (tying) is a regulatory and consumer protection concern.",
+      "case": "A bank offers a bundled package: a mortgage loan with obligatory mortgage protection insurance. The customer feels forced to buy the insurance."
+    },
+    {
+      "id": "Q150",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "This scenario highlights a failure in which aspect of risk reduction?",
+      "opts": [
+        "Financial hedging",
+        "Credit assessment",
+        "Physical controls and business continuity",
+        "Regulatory compliance"
+      ],
+      "ans": "Physical controls and business continuity",
+      "exp": "The failure to install adequate surge protectors is a lapse in physical controls, which is part of risk reduction.",
+      "case": "A bank's network is down for the entire morning due to a power surge. The system did not have adequate surge protectors."
+    },
+    {
+      "id": "Q151",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Will the bank (or beneficiary) receive a payout under the policy?",
+      "opts": [
+        "Yes, because death occurred",
+        "No, because the policy expired and was not renewed",
+        "Yes, but only half the sum",
+        "No, because term assurance does not pay out on death"
+      ],
+      "ans": "No, because the policy expired and was not renewed",
+      "exp": "Term assurance provides coverage only for the specified term. If the term expires, coverage ends and no payout is made.",
+      "case": "A customer has a term assurance policy that expires today. The customer forgot to renew it. Tomorrow, the customer passes away."
+    },
+    {
+      "id": "Q152",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which insurance principle is being violated here?",
+      "opts": [
+        "Insurable interest",
+        "Indemnity",
+        "Utmost good faith",
+        "Subrogation"
+      ],
+      "ans": "Utmost good faith",
+      "exp": "The agent's misrepresentation violates the principle of utmost good faith, which requires truthful disclosure.",
+      "case": "A bank's agent sells a whole life policy to a 70-year-old customer, promising massive cash value growth in two years. The agent knows this is impossible but earns a high commission."
+    },
+    {
+      "id": "Q153",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "What type of risk is the bank exposed to, and what is the potential consequence?",
+      "opts": [
+        "Credit risk; loan write-off",
+        "Regulatory risk; fines and sanctions for non-compliance",
+        "Market risk; loss on securities",
+        "Operational risk; IT failure"
+      ],
+      "ans": "Regulatory risk; fines and sanctions for non-compliance",
+      "exp": "Failure to flag suspicious transactions exposes the bank to regulatory compliance risk, leading to fines and sanctions.",
+      "case": "A bank processes a large payment for a customer. The payment is later discovered to be for illegal activities. The bank's internal systems did not flag the transaction."
+    },
+    {
+      "id": "Q154",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "The strategy of diversification primarily helps the bank manage which risk?",
+      "opts": [
+        "Systemic risk",
+        "Credit risk (concentration risk)",
+        "Operational risk",
+        "Liquidity risk"
+      ],
+      "ans": "Credit risk (concentration risk)",
+      "exp": "Diversification reduces concentration risk in the credit portfolio, protecting the bank from a single sector's downturn.",
+      "case": "A bank has a diversified loan portfolio spread across many sectors and regions. A recession hits the manufacturing sector hard."
+    },
+    {
+      "id": "Q155",
+      "module": 4,
+      "type": "case-mcq",
+      "q": "Which type of insurability criterion highlights why this risk is extremely difficult to insure?",
+      "opts": [
+        "Financial measurement",
+        "Legality and public policy",
+        "Homogeneous exposure",
+        "Particular risk"
+      ],
+      "ans": "Legality and public policy",
+      "exp": "If cryptocurrency trading is not fully legalised or is against regulatory policy, it fails the 'legality' and 'public policy' criteria, making it uninsurable.",
+      "case": "A bank's CEO decides to enter the cryptocurrency trading space despite the board's concerns about volatility and regulatory uncertainty."
+    }
+  ]
+}

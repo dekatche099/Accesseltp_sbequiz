@@ -1,0 +1,4813 @@
+{
+  "meta": {
+    "id": "eob",
+    "title": "Elements of Banking",
+    "description": "330 MCQs + 10 Case Study questions covering elements of banking fundamentals",
+    "category": "",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1: Overview of Banking Business"
+    },
+    {
+      "id": 2,
+      "title": "Module 2: Key Functions of Banks"
+    },
+    {
+      "id": 3,
+      "title": "Module 3: Banking Products and Classification"
+    },
+    {
+      "id": 4,
+      "title": "Module 4: Income Sources & Financial Structure"
+    },
+    {
+      "id": 5,
+      "title": "Module 5: Bank Regulatory Structure & Appraisal"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is the primary business of a bank as defined in BOFIA 2020?",
+      "opts": [
+        "A. Providing insurance services to customers",
+        "B. Receiving deposits on current, savings, or similar accounts and paying or collecting cheques",
+        "C. Issuing bonds on behalf of the government",
+        "D. Underwriting equity shares for corporate clients"
+      ],
+      "ans": "B",
+      "exp": "BOFIA defines banking business as receiving deposits on current, savings, or similar accounts, and paying or collecting cheques drawn by or paid in by customers."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "What fundamental principle underpins the stability of the banking system?",
+      "opts": [
+        "A. High interest rates on loans",
+        "B. Profit maximization",
+        "C. Trust",
+        "D. Government guarantees"
+      ],
+      "ans": "C",
+      "exp": "Banking is all about trust. The higher the degree of trust the banking system can elicit, the greater its stability."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "During the Free Banking Era (1880s\u20131952) in Nigeria, what was the key characteristic?",
+      "opts": [
+        "A. Strong regulation and oversight",
+        "B. Banks operated without regulation, leading to frequent failures",
+        "C. Government ownership of all banks",
+        "D. International banks were banned"
+      ],
+      "ans": "B",
+      "exp": "The Free Banking Era was characterized by banks operating without regulation, many banks opening without strong capital, and frequent bank failures."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "What was the primary purpose of the Central Bank of Nigeria when it was established in 1958?",
+      "opts": [
+        "A. To provide commercial banking services to individuals",
+        "B. To issue currency, supervise banks, and maintain monetary stability",
+        "C. To insure customer deposits",
+        "D. To regulate the stock market"
+      ],
+      "ans": "B",
+      "exp": "The CBN was created to issue currency, supervise banks, maintain monetary stability, and promote sound banking practices."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "What was the key change brought about by the 2004 banking consolidation exercise in Nigeria?",
+      "opts": [
+        "A. Banks were required to increase their capital base significantly",
+        "B. All foreign banks were closed",
+        "C. Interest rates were fixed by the government",
+        "D. Banks were prohibited from lending"
+      ],
+      "ans": "A",
+      "exp": "In 2004, banks were required to increase capital, leading to mergers and the emergence of stronger banks."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "How did goldsmiths pioneer modern banking?",
+      "opts": [
+        "A. They invented the first paper currency",
+        "B. They issued receipts over and above actual gold deposits, creating money",
+        "C. They introduced cheque clearing systems",
+        "D. They established the first central bank"
+      ],
+      "ans": "B",
+      "exp": "Goldsmiths realized deposits remained constant and started issuing receipts over and above actual deposits, creating fictitious paper money\u2014a process called money creation."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best describes the process of money creation by banks?",
+      "opts": [
+        "A. Printing physical currency notes",
+        "B. Lending out a portion of deposits while keeping a reserve, thereby increasing the money supply",
+        "C. Investing in government bonds",
+        "D. Exchanging foreign currency"
+      ],
+      "ans": "B",
+      "exp": "Banks create money by lending out a portion of deposits (keeping a reserve), which multiplies the money supply through the fractional reserve system."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "When a bank lends money to a customer, what happens to the total money supply in the economy?",
+      "opts": [
+        "A. It decreases",
+        "B. It remains unchanged",
+        "C. It increases",
+        "D. It depends on the interest rate"
+      ],
+      "ans": "C",
+      "exp": "When a bank lends money, the loan proceeds are deposited and can be re-lent, multiplying the money supply."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank that lends money directly to a deficit sector of the economy is engaging in which type of financial intermediation?",
+      "opts": [
+        "A. Underwriting",
+        "B. Guarantee",
+        "C. Direct Lending",
+        "D. Brokering"
+      ],
+      "ans": "C",
+      "exp": "Direct lending is when a bank channels its own funds directly to deficit sectors through loans such as overdrafts, term loans, and trade finance facilities."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "When a bank agrees to underwrite a customer's security issue, what is the bank's obligation?",
+      "opts": [
+        "A. Primary obligation",
+        "B. Secondary obligation",
+        "C. No obligation",
+        "D. Guarantee obligation"
+      ],
+      "ans": "B",
+      "exp": "Underwriting creates a secondary obligation for the bank, making it easier for customers to find credit from other sources."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which financial intermediation method carries the HIGHEST risk for a bank?",
+      "opts": [
+        "A. Underwriting",
+        "B. Direct Lending",
+        "C. Guarantee",
+        "D. Brokerage"
+      ],
+      "ans": "B",
+      "exp": "Direct lending carries all of the credit risk, making it the highest-risk intermediation method."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the SANNEF initiative aimed at in the Nigerian banking sector?",
+      "opts": [
+        "A. Reducing bank interest rates",
+        "B. Promoting financial inclusion through an agent network",
+        "C. Increasing foreign exchange reserves",
+        "D. Regulating fintech companies"
+      ],
+      "ans": "B",
+      "exp": "SANNEF (Shared Agent Network Expansion Facilities) is a financial inclusion initiative that aggressively rolls out agent networks to offer basic financial services."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is a Payment Service Bank (PSB) like Momo designed to do?",
+      "opts": [
+        "A. Provide full commercial banking services",
+        "B. Offer basic financial services primarily through mobile channels",
+        "C. Underwrite corporate bonds",
+        "D. Manage pension funds"
+      ],
+      "ans": "B",
+      "exp": "Payment Service Banks offer basic financial services such as cash-in, cash-out, and funds transfer, primarily through mobile channels."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the term for companies that use technology to provide digital financial services?",
+      "opts": [
+        "A. Merchant Banks",
+        "B. Commercial Banks",
+        "C. Fintech Companies",
+        "D. Payment Service Banks"
+      ],
+      "ans": "C",
+      "exp": "Fintech companies use applications, software, or technology to allow people or businesses to digitally access, manage, or gain insight into their finances."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "What was the CBN's primary objective in harmonizing the exchange rate in 2023?",
+      "opts": [
+        "A. To fix the exchange rate at a specific level",
+        "B. To allow market forces to determine the rate and converge official and parallel rates",
+        "C. To eliminate the parallel market entirely",
+        "D. To devalue the naira by 50%"
+      ],
+      "ans": "B",
+      "exp": "The CBN embarked on a process to harmonize the exchange rate by allowing the forces of demand and supply to determine the rate, hoping the parallel and official rates would converge."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the minimum capital requirement for an International Commercial Bank under the CBN's 2024 recapitalization circular?",
+      "opts": [
+        "A. N50 billion",
+        "B. N200 billion",
+        "C. N500 billion",
+        "D. N1 trillion"
+      ],
+      "ans": "C",
+      "exp": "International Commercial Banks are required to have a minimum capital of N500 billion under the new recapitalization guidelines."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the minimum capital requirement for a Regional Commercial Bank after the 2024 recapitalization?",
+      "opts": [
+        "A. N10 billion",
+        "B. N20 billion",
+        "C. N50 billion",
+        "D. N100 billion"
+      ],
+      "ans": "C",
+      "exp": "Regional Commercial Banks are required to have a minimum capital of N50 billion."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of bank is authorized to underwrite equity and debt issues?",
+      "opts": [
+        "A. Commercial Bank",
+        "B. Payment Service Bank",
+        "C. Merchant Bank",
+        "D. Non-Interest Bank"
+      ],
+      "ans": "C",
+      "exp": "Merchant banks can underwrite equity and debt issues, whereas commercial banks cannot."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of bank CANNOT accept deposits withdrawable by cheques?",
+      "opts": [
+        "A. Commercial Bank",
+        "B. Merchant Bank",
+        "C. Payment Service Bank",
+        "D. Non-Interest Bank"
+      ],
+      "ans": "B",
+      "exp": "Merchant banks cannot accept deposits withdrawable by cheques."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of bank CANNOT grant retail loans of any kind?",
+      "opts": [
+        "A. Commercial Bank",
+        "B. Merchant Bank",
+        "C. Payment Service Bank",
+        "D. Non-Interest Bank"
+      ],
+      "ans": "B",
+      "exp": "Merchant banks cannot grant retail loans of any kind."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which regulatory body in Nigeria is responsible for issuing banking licences?",
+      "opts": [
+        "A. NDIC",
+        "B. CBN",
+        "C. SEC",
+        "D. FRCN"
+      ],
+      "ans": "B",
+      "exp": "The Central Bank of Nigeria (CBN) issues banking licences."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary distinction between commercial banks and merchant banks in terms of deposit acceptance?",
+      "opts": [
+        "A. Commercial banks accept only fixed deposits",
+        "B. Merchant banks have a minimum deposit requirement of N100 million",
+        "C. Commercial banks cannot accept foreign currency deposits",
+        "D. Merchant banks accept deposits from the public but do not issue cheques"
+      ],
+      "ans": "B",
+      "exp": "Merchant banks have a minimum deposit of N100 million (or as prescribed by CBN), unlike commercial banks with no minimum deposit requirement."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "Both merchant banks and commercial banks CANNOT provide which type of service?",
+      "opts": [
+        "A. Foreign exchange services",
+        "B. Treasury management services",
+        "C. Insurance underwriting",
+        "D. Lending services"
+      ],
+      "ans": "C",
+      "exp": "Both merchant and commercial banks cannot provide insurance underwriting or loss adjusting services."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a similarity between merchant and commercial banks?",
+      "opts": [
+        "A. Both can underwrite equity issues",
+        "B. Both can grant retail loans",
+        "C. Both accept deposits from the general public",
+        "D. Both can participate in capital market activities"
+      ],
+      "ans": "C",
+      "exp": "Both merchant and commercial banks accept deposits from the general public."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the term for the process of banks acting as a bridge between surplus and deficit sectors of the economy?",
+      "opts": [
+        "A. Money creation",
+        "B. Financial intermediation",
+        "C. Capital formation",
+        "D. Liquidity management"
+      ],
+      "ans": "B",
+      "exp": "Financial intermediation is the process of banks accepting deposits from surplus sectors and lending to deficit sectors."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT a function of a central bank?",
+      "opts": [
+        "A. Issuing currency",
+        "B. Supervising banks",
+        "C. Accepting deposits from the general public",
+        "D. Managing the country's foreign exchange reserves"
+      ],
+      "ans": "C",
+      "exp": "Central banks do not accept deposits from the general public; they are the banker's bank and the government's bank."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Nigerian banking system became stable only after which key event?",
+      "opts": [
+        "A. The establishment of the first bank in 1892",
+        "B. The introduction of regulation in 1952 and the establishment of the CBN in 1958",
+        "C. The Free Banking Era",
+        "D. The introduction of mobile banking"
+      ],
+      "ans": "B",
+      "exp": "Nigeria's banking system became stable only after the introduction of regulation in 1952 and the establishment of the CBN in 1958."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a current issue in the Nigerian banking sector?",
+      "opts": [
+        "A. Reduction in the number of fintech companies",
+        "B. Financial inclusion through agent networks",
+        "C. Decreased competition among banks",
+        "D. Elimination of payment service banks"
+      ],
+      "ans": "B",
+      "exp": "Financial inclusion through initiatives like SANNEF and Payment Service Banks is a current issue in the Nigerian banking sector."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "type": "mcq",
+      "q": "The CBN's 2024 recapitalization circular requires banks to meet the new capital requirements by which deadline?",
+      "opts": [
+        "A. December 31, 2024",
+        "B. March 31, 2025",
+        "C. March 31, 2026",
+        "D. December 31, 2026"
+      ],
+      "ans": "C",
+      "exp": "The recapitalization circular mandates that banks increase their minimum capital within 24 months, terminating on March 31, 2026."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the minimum capital requirement for a National Merchant Bank under the new CBN guidelines?",
+      "opts": [
+        "A. N15 billion",
+        "B. N20 billion",
+        "C. N50 billion",
+        "D. N100 billion"
+      ],
+      "ans": "C",
+      "exp": "National Merchant Banks are required to have a minimum capital of N50 billion."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the minimum capital requirement for a Non-Interest Bank (National) after the recapitalization?",
+      "opts": [
+        "A. N5 billion",
+        "B. N10 billion",
+        "C. N20 billion",
+        "D. N50 billion"
+      ],
+      "ans": "C",
+      "exp": "National Non-Interest Banks are required to have a minimum capital of N20 billion."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a key difference between a commercial bank and a merchant bank?",
+      "opts": [
+        "A. Commercial banks can provide foreign exchange services",
+        "B. Merchant banks cannot participate in capital market activities",
+        "C. Commercial banks can grant retail loans",
+        "D. Merchant banks can accept deposits withdrawable by cheques"
+      ],
+      "ans": "C",
+      "exp": "Commercial banks can grant retail loans, while merchant banks cannot."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does the acronym SANNEF stand for?",
+      "opts": [
+        "A. Shared Agent Network Expansion Facilities",
+        "B. Standard African Network for Economic Finance",
+        "C. Systematic Agent Network for Electronic Funds",
+        "D. Strategic Association of Nigerian Financial Entities"
+      ],
+      "ans": "A",
+      "exp": "SANNEF stands for Shared Agent Network Expansion Facilities."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "type": "mcq",
+      "q": "The CBN's harmonization of the exchange rate in 2023 was aimed at:",
+      "opts": [
+        "A. Eliminating the parallel market",
+        "B. Allowing market forces to determine the exchange rate",
+        "C. Fixing the exchange rate at a specific level",
+        "D. Devaluing the naira by 50%"
+      ],
+      "ans": "B",
+      "exp": "The CBN allowed market forces of demand and supply to determine the exchange rate, aiming to converge official and parallel rates."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "type": "mcq",
+      "q": "A Bankers' Acceptance is primarily used in which type of banking activity?",
+      "opts": [
+        "A. Retail banking",
+        "B. International trade finance",
+        "C. Wealth management",
+        "D. Mortgage lending"
+      ],
+      "ans": "B",
+      "exp": "A Bankers' Acceptance is a short-term financing instrument used in international trade finance, guaranteeing payment to the seller."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of a Bankers' Acceptance?",
+      "opts": [
+        "A. Long-term financing",
+        "B. Non-negotiable instrument",
+        "C. Bank guarantee",
+        "D. Equity instrument"
+      ],
+      "ans": "C",
+      "exp": "A Bankers' Acceptance is a financial instrument that includes a bank guarantee, ensuring payment to the seller at a specified future date."
+    },
+    {
+      "id": "Q37",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary purpose of the CBN's Minimum Capital Requirement for banks?",
+      "opts": [
+        "A. To ensure banks have enough money to pay dividends",
+        "B. To ensure banks have a buffer to absorb losses and withstand financial shocks",
+        "C. To increase competition among banks",
+        "D. To reduce the number of banks in the industry"
+      ],
+      "ans": "B",
+      "exp": "Capital requirements ensure that banks are well-capitalized to withstand financial shocks and protect depositors."
+    },
+    {
+      "id": "Q38",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of financial institution is characterized by providing services such as Cash-in, Cash-out, and funds transfer without offering full banking services?",
+      "opts": [
+        "A. Merchant Bank",
+        "B. Payment Service Bank",
+        "C. Commercial Bank",
+        "D. Investment Bank"
+      ],
+      "ans": "B",
+      "exp": "Payment Service Banks offer basic financial services such as cash-in, cash-out, and funds transfer, primarily through mobile channels."
+    },
+    {
+      "id": "Q39",
+      "module": 1,
+      "type": "mcq",
+      "q": "The 2004 banking consolidation in Nigeria was primarily driven by:",
+      "opts": [
+        "A. The need to increase the number of banks",
+        "B. The desire to create larger, stronger banks through mergers",
+        "C. The introduction of mobile banking",
+        "D. The establishment of the NDIC"
+      ],
+      "ans": "B",
+      "exp": "The 2004 consolidation required banks to increase capital, leading to mergers and the emergence of stronger banks."
+    },
+    {
+      "id": "Q40",
+      "module": 1,
+      "type": "mcq",
+      "q": "During the Free Banking Era, depositors often lost their savings because:",
+      "opts": [
+        "A. Banks were too strictly regulated",
+        "B. Many banks failed due to lack of regulation and weak capital",
+        "C. The government seized bank assets",
+        "D. There was no currency in circulation"
+      ],
+      "ans": "B",
+      "exp": "The Free Banking Era was characterized by banks operating without strong capital, leading to frequent bank failures and depositors losing their savings."
+    },
+    {
+      "id": "Q41",
+      "module": 1,
+      "type": "mcq",
+      "q": "The financial intermediation function of banks primarily involves:",
+      "opts": [
+        "A. Printing currency notes",
+        "B. Accepting deposits and using them to make loans",
+        "C. Regulating the stock market",
+        "D. Issuing government bonds"
+      ],
+      "ans": "B",
+      "exp": "Financial intermediation is the process of banks accepting deposits and using those deposits to lend, creating loans and making investments."
+    },
+    {
+      "id": "Q42",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of a liability product for a bank?",
+      "opts": [
+        "A. Treasury Investments",
+        "B. Loans and Advances",
+        "C. Savings Accounts",
+        "D. Bankers Acceptances"
+      ],
+      "ans": "C",
+      "exp": "Savings accounts are liability products because they represent funds that the bank owes to customers."
+    },
+    {
+      "id": "Q43",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of an asset product for a bank?",
+      "opts": [
+        "A. Demand Deposits",
+        "B. Call Deposits",
+        "C. Loans and Advances",
+        "D. Certificate of Deposits"
+      ],
+      "ans": "C",
+      "exp": "Loans and advances are asset products because they represent money the bank has lent out and expects to receive back."
+    },
+    {
+      "id": "Q44",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the name of the mobile banking application built by Access Bank for digital loans?",
+      "opts": [
+        "A. AccessMore",
+        "B. QuickBucks",
+        "C. Access Mobile Premium",
+        "D. AccessPay"
+      ],
+      "ans": "B",
+      "exp": "QuickBucks is a Mobile Banking Application for digital loans, covering retail loans, credit cards, and consumer durable loans."
+    },
+    {
+      "id": "Q45",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the key distinction between Mobile Banking and Internet Banking?",
+      "opts": [
+        "A. There is no difference",
+        "B. Mobile banking uses an app; internet banking uses a browser",
+        "C. Mobile banking is only for transfers; internet banking is for bill payments",
+        "D. Internet banking is only available on computers"
+      ],
+      "ans": "B",
+      "exp": "The primary difference between mobile banking and internet banking is that mobile banking is accessed through an application on a smartphone, whereas internet banking is accessed through a browser."
+    },
+    {
+      "id": "Q46",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which Access Bank mobile application offers services such as instant transfers, bills payment, and BVN linking?",
+      "opts": [
+        "A. QuickBucks",
+        "B. Access Mobile Premium",
+        "C. AccessMore",
+        "D. AccessPay"
+      ],
+      "ans": "C",
+      "exp": "AccessMore is a mobile payment application offering tailored services including instant transfers, account balance, bills payments, BVN linking, and statement generation."
+    },
+    {
+      "id": "Q47",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which Access Bank mobile application allows for cheque management, airline ticket purchase, and international funds transfer?",
+      "opts": [
+        "A. QuickBucks",
+        "B. Access Mobile Premium",
+        "C. AccessMore",
+        "D. AccessPay"
+      ],
+      "ans": "B",
+      "exp": "Access Mobile Premium allows users to carry out cheque management, airline ticket purchases, international funds transfers, and find branch and ATM locations."
+    },
+    {
+      "id": "Q48",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the minimum capital requirement for a Regional Non-Interest Bank under the new CBN guidelines?",
+      "opts": [
+        "A. N5 billion",
+        "B. N10 billion",
+        "C. N20 billion",
+        "D. N50 billion"
+      ],
+      "ans": "B",
+      "exp": "Regional Non-Interest Banks are required to have a minimum capital of N10 billion."
+    },
+    {
+      "id": "Q49",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the minimum capital requirement for a National Commercial Bank under the new CBN guidelines?",
+      "opts": [
+        "A. N50 billion",
+        "B. N100 billion",
+        "C. N200 billion",
+        "D. N500 billion"
+      ],
+      "ans": "C",
+      "exp": "National Commercial Banks are required to have a minimum capital of N200 billion."
+    },
+    {
+      "id": "Q50",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the minimum capital requirement for a Regional Commercial Bank under the new CBN guidelines?",
+      "opts": [
+        "A. N10 billion",
+        "B. N20 billion",
+        "C. N50 billion",
+        "D. N100 billion"
+      ],
+      "ans": "C",
+      "exp": "Regional Commercial Banks are required to have a minimum capital of N50 billion."
+    },
+    {
+      "id": "Q51",
+      "module": 2,
+      "type": "mcq",
+      "q": "When a bank accepts deposits and uses them to make loans, what function is the bank performing?",
+      "opts": [
+        "A. Transactional services",
+        "B. Financial intermediation",
+        "C. Monetary policy implementation",
+        "D. Trade services"
+      ],
+      "ans": "B",
+      "exp": "Financial intermediation is the process of accepting deposits and using those deposits to lend, creating loans and making investments."
+    },
+    {
+      "id": "Q52",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is an example of a transactional service provided by a bank?",
+      "opts": [
+        "A. Issuing shares",
+        "B. Writing a cheque",
+        "C. Underwriting bonds",
+        "D. Providing a mortgage"
+      ],
+      "ans": "B",
+      "exp": "Transactional services include deposits, withdrawals, payments, cheques, ATM services, and online banking."
+    },
+    {
+      "id": "Q53",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary benefit of a bank's transactional services to customers?",
+      "opts": [
+        "A. They allow customers to earn high interest",
+        "B. They provide a safe and efficient way to manage money and make payments",
+        "C. They enable customers to avoid taxes",
+        "D. They guarantee investment returns"
+      ],
+      "ans": "B",
+      "exp": "Transactional services are tools that allow customers to manage their finances, make payments, and keep their money safe efficiently."
+    },
+    {
+      "id": "Q54",
+      "module": 2,
+      "type": "mcq",
+      "q": "Banks help people grow their wealth through savings accounts and investment opportunities. This is part of which function?",
+      "opts": [
+        "A. Transactional services",
+        "B. Currency exchange",
+        "C. Facilitating savings and investments",
+        "D. Trade services"
+      ],
+      "ans": "C",
+      "exp": "Banks facilitate savings and investments by offering savings accounts, certificates of deposit, and investment opportunities."
+    },
+    {
+      "id": "Q55",
+      "module": 2,
+      "type": "mcq",
+      "q": "When a bank exchanges local currency for foreign currency, what function is it performing?",
+      "opts": [
+        "A. Financial intermediation",
+        "B. Transactional services",
+        "C. Currency exchange",
+        "D. Trade services"
+      ],
+      "ans": "C",
+      "exp": "Currency exchange services allow businesses and travelers to trade one currency for another."
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "type": "mcq",
+      "q": "A Letter of Credit is a key instrument in which banking function?",
+      "opts": [
+        "A. Monetary policy implementation",
+        "B. Trade services",
+        "C. Facilitating savings and investments",
+        "D. Currency exchange"
+      ],
+      "ans": "B",
+      "exp": "A Letter of Credit is a trade services instrument that provides payment assurance in international trade."
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary purpose of a Letter of Credit in international trade?",
+      "opts": [
+        "A. To guarantee payment to the seller upon transfer of title documents",
+        "B. To provide a loan to the buyer",
+        "C. To eliminate the need for shipping documents",
+        "D. To set the exchange rate"
+      ],
+      "ans": "A",
+      "exp": "A Letter of Credit promises to pay the seller upon transferring title documents to the buyer, eliminating the risk of not getting paid."
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "type": "mcq",
+      "q": "In a Bills for Collection arrangement, what is the role of the buyer's bank?",
+      "opts": [
+        "A. To guarantee payment to the seller",
+        "B. To act as a collection intermediary, releasing documents only upon payment",
+        "C. To provide financing to the buyer",
+        "D. To underwrite the transaction"
+      ],
+      "ans": "B",
+      "exp": "The bank acts as a collection intermediary, keeping documents from the buyer until payment or acceptance of a draft."
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the key difference between a Letter of Credit and Bills for Collection?",
+      "opts": [
+        "A. There is no difference",
+        "B. A Letter of Credit provides a guarantee of payment; Bills for Collection does not",
+        "C. Bills for Collection requires a minimum deposit",
+        "D. A Letter of Credit is only for domestic trade"
+      ],
+      "ans": "B",
+      "exp": "A Letter of Credit provides a bank guarantee of payment, while Bills for Collection does not provide a guarantee."
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "type": "mcq",
+      "q": "When the central bank lowers interest rates to encourage spending, it is using which tool?",
+      "opts": [
+        "A. Reserve requirements",
+        "B. Open market operations",
+        "C. Monetary policy rate",
+        "D. Capital controls"
+      ],
+      "ans": "C",
+      "exp": "The Monetary Policy Rate (MPR) is the benchmark interest rate used by the central bank to signal the direction of monetary policy."
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "type": "mcq",
+      "q": "In the analogy of monetary policy implementation, what do banks represent?",
+      "opts": [
+        "A. Traffic headquarters",
+        "B. Traffic lights",
+        "C. Traffic signals",
+        "D. Fuel tanks"
+      ],
+      "ans": "B",
+      "exp": "Banks act as traffic lights, regulating the flow of money in response to signals from the central bank."
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the role of banks in implementing monetary policy?",
+      "opts": [
+        "A. They set the interest rates",
+        "B. They act as intermediaries, adjusting lending based on signals from the central bank",
+        "C. They print currency",
+        "D. They regulate other banks"
+      ],
+      "ans": "B",
+      "exp": "Banks act as intermediaries, adjusting the flow of credit based on signals like interest rates from the central bank."
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "type": "mcq",
+      "q": "When the central bank wants to slow down the economy, it can:",
+      "opts": [
+        "A. Lower interest rates",
+        "B. Raise interest rates",
+        "C. Reduce reserve requirements",
+        "D. Increase money printing"
+      ],
+      "ans": "B",
+      "exp": "Raising interest rates signals a red light to banks, reducing lending and slowing economic activity."
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is a key characteristic of a savings account?",
+      "opts": [
+        "A. It earns no interest",
+        "B. It is used primarily for daily transactions",
+        "C. It encourages saving by offering interest",
+        "D. It is only for businesses"
+      ],
+      "ans": "C",
+      "exp": "Savings accounts encourage saving by offering interest on the balance."
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a transactional service offered by banks?",
+      "opts": [
+        "A. Underwriting bonds",
+        "B. Providing a Letter of Credit",
+        "C. ATM services",
+        "D. Investment management"
+      ],
+      "ans": "C",
+      "exp": "ATM services are part of transactional services, allowing customers to withdraw cash, check balances, or deposit money."
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "type": "mcq",
+      "q": "A written order to a bank to pay a specific amount from a customer's account is known as a:",
+      "opts": [
+        "A. Demand draft",
+        "B. Cheque",
+        "C. Letter of credit",
+        "D. Banker's acceptance"
+      ],
+      "ans": "B",
+      "exp": "A cheque is a written order to a bank to pay someone from the account holder's funds."
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary function of online and mobile banking?",
+      "opts": [
+        "A. To replace physical cash",
+        "B. To allow customers to access their accounts and make transactions via website or app",
+        "C. To print bank statements",
+        "D. To approve loans"
+      ],
+      "ans": "B",
+      "exp": "Online and mobile banking allow customers to access accounts and make transactions through websites or mobile apps."
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which function of banks involves helping customers nurture and grow their wealth over time?",
+      "opts": [
+        "A. Transactional services",
+        "B. Investment management services",
+        "C. Trade services",
+        "D. Currency exchange"
+      ],
+      "ans": "B",
+      "exp": "Investment management services help customers grow their wealth by managing investments and providing guidance."
+    },
+    {
+      "id": "Q69",
+      "module": 2,
+      "type": "mcq",
+      "q": "When a bank provides a foreign currency for a customer before a trip abroad, it is performing:",
+      "opts": [
+        "A. Trade services",
+        "B. Currency exchange",
+        "C. Monetary policy implementation",
+        "D. Financial intermediation"
+      ],
+      "ans": "B",
+      "exp": "Currency exchange involves providing foreign currency in exchange for local currency."
+    },
+    {
+      "id": "Q70",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which trade service instrument is a bill drawn on and accepted by a bank, guaranteeing payment at a specified future date?",
+      "opts": [
+        "A. Letter of Credit",
+        "B. Banker's Acceptance",
+        "C. Bill of Exchange",
+        "D. Performance Bond"
+      ],
+      "ans": "B",
+      "exp": "A Banker's Acceptance is a bill drawn on and accepted by a bank, guaranteeing payment at a specified future date."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "type": "mcq",
+      "q": "A Banker's Acceptance is typically used for:",
+      "opts": [
+        "A. Long-term corporate financing",
+        "B. Short-term international trade financing",
+        "C. Retail mortgage lending",
+        "D. Equity investments"
+      ],
+      "ans": "B",
+      "exp": "Banker's Acceptances are short-term financing instruments used in international trade finance."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT a characteristic of a Banker's Acceptance?",
+      "opts": [
+        "A. Short-term financing",
+        "B. Trade finance instrument",
+        "C. Equity instrument",
+        "D. Negotiable instrument"
+      ],
+      "ans": "C",
+      "exp": "A Banker's Acceptance is a debt instrument, not an equity instrument."
+    },
+    {
+      "id": "Q73",
+      "module": 2,
+      "type": "mcq",
+      "q": "When a bank adjusts its lending rates in response to a change in the Monetary Policy Rate, it is affecting:",
+      "opts": [
+        "A. Transactional services",
+        "B. Monetary policy transmission",
+        "C. Trade services",
+        "D. Currency exchange rates"
+      ],
+      "ans": "B",
+      "exp": "The transmission of monetary policy occurs when banks adjust their lending and deposit rates in response to changes in the MPR."
+    },
+    {
+      "id": "Q74",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a benefit of using a Letter of Credit for an exporter?",
+      "opts": [
+        "A. The exporter receives payment immediately",
+        "B. The exporter is guaranteed payment once they transfer title documents",
+        "C. The exporter does not need to ship the goods",
+        "D. The exporter avoids customs duties"
+      ],
+      "ans": "B",
+      "exp": "A Letter of Credit guarantees payment to the exporter upon transferring title documents, eliminating the risk of non-payment."
+    },
+    {
+      "id": "Q75",
+      "module": 2,
+      "type": "mcq",
+      "q": "In a Bills for Collection arrangement, if the buyer refuses to pay, the bank:",
+      "opts": [
+        "A. Guarantees payment",
+        "B. Can enforce collection",
+        "C. Acts as an agent and does not guarantee payment",
+        "D. Freezes the buyer's account"
+      ],
+      "ans": "C",
+      "exp": "In Bills for Collection, the bank acts as an agent and does not provide a guarantee of payment."
+    },
+    {
+      "id": "Q76",
+      "module": 2,
+      "type": "mcq",
+      "q": "The process of banks making loans and creating deposits is part of:",
+      "opts": [
+        "A. Monetary policy implementation",
+        "B. Money creation",
+        "C. Trade services",
+        "D. Currency exchange"
+      ],
+      "ans": "B",
+      "exp": "Money creation is the process by which banks create new money through lending."
+    },
+    {
+      "id": "Q77",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT a key function of banks as described in the manual?",
+      "opts": [
+        "A. Financial intermediation",
+        "B. Issuing currency",
+        "C. Transactional services",
+        "D. Monetary policy implementation"
+      ],
+      "ans": "B",
+      "exp": "Issuing currency is a function of the central bank, not commercial banks."
+    },
+    {
+      "id": "Q78",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the 'traffic controller' analogy used to describe?",
+      "opts": [
+        "A. How banks manage their branches",
+        "B. How banks implement monetary policy",
+        "C. How banks handle cheque clearing",
+        "D. How banks set interest rates on deposits"
+      ],
+      "ans": "B",
+      "exp": "The traffic controller analogy describes how banks act as intermediaries in implementing monetary policy, regulating the flow of money based on central bank signals."
+    },
+    {
+      "id": "Q79",
+      "module": 2,
+      "type": "mcq",
+      "q": "When a bank offers investment management services, what does it typically do?",
+      "opts": [
+        "A. Only provides savings accounts",
+        "B. Helps customers manage investments and grow wealth based on their goals",
+        "C. Guarantees investment returns",
+        "D. Only offers fixed deposits"
+      ],
+      "ans": "B",
+      "exp": "Investment management services help customers grow their wealth by managing investments and providing guidance based on their goals."
+    },
+    {
+      "id": "Q80",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is an example of a transactional service?",
+      "opts": [
+        "A. Providing a mortgage loan",
+        "B. Issuing a Letter of Credit",
+        "C. Withdrawing cash from an ATM",
+        "D. Underwriting a bond issue"
+      ],
+      "ans": "C",
+      "exp": "Withdrawing cash from an ATM is a transactional service, allowing customers to access their money."
+    },
+    {
+      "id": "Q81",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Monetary Policy Rate is set by:",
+      "opts": [
+        "A. Commercial banks",
+        "B. The Central Bank",
+        "C. The Federal Ministry of Finance",
+        "D. The Stock Exchange"
+      ],
+      "ans": "B",
+      "exp": "The Monetary Policy Rate (MPR) is set by the Central Bank of Nigeria."
+    },
+    {
+      "id": "Q82",
+      "module": 2,
+      "type": "mcq",
+      "q": "When the central bank raises the MPR, what effect does it have on bank lending?",
+      "opts": [
+        "A. Lending becomes cheaper",
+        "B. Lending becomes more expensive",
+        "C. Lending is not affected",
+        "D. Banks stop lending"
+      ],
+      "ans": "B",
+      "exp": "A higher MPR makes borrowing more expensive, leading to reduced credit expansion."
+    },
+    {
+      "id": "Q83",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary purpose of reserve requirements imposed by the central bank?",
+      "opts": [
+        "A. To ensure banks have funds for lending",
+        "B. To control the amount of money banks can create through lending",
+        "C. To increase bank profitability",
+        "D. To provide funds for the government"
+      ],
+      "ans": "B",
+      "exp": "Reserve requirements control the amount of money banks can create by limiting the funds available for lending."
+    },
+    {
+      "id": "Q84",
+      "module": 2,
+      "type": "mcq",
+      "q": "When a bank offers a customer a mortgage to buy a house, it is engaging in:",
+      "opts": [
+        "A. Transactional services",
+        "B. Financial intermediation",
+        "C. Currency exchange",
+        "D. Trade services"
+      ],
+      "ans": "B",
+      "exp": "Providing a mortgage is part of financial intermediation, where banks lend deposited funds to borrowers for investments and purchases."
+    },
+    {
+      "id": "Q85",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the 'financial hub' analogy used to describe?",
+      "opts": [
+        "A. How banks manage their branches",
+        "B. How banks connect different parts of the economy",
+        "C. How banks set interest rates",
+        "D. How banks handle cheque clearing"
+      ],
+      "ans": "B",
+      "exp": "The financial hub analogy describes how banks act as bridges connecting various parts of the economy, enabling economic activities to flow smoothly."
+    },
+    {
+      "id": "Q86",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a transactional service provided by banks?",
+      "opts": [
+        "A. Underwriting bonds",
+        "B. Issuing shares",
+        "C. Depositing money into an account",
+        "D. Providing a loan"
+      ],
+      "ans": "C",
+      "exp": "Depositing money into an account is a transactional service."
+    },
+    {
+      "id": "Q87",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is a key characteristic of a current account?",
+      "opts": [
+        "A. It offers high interest",
+        "B. It is primarily used for savings",
+        "C. It is used for daily transactions and payments",
+        "D. It is only for businesses"
+      ],
+      "ans": "C",
+      "exp": "Current accounts are primarily used for daily transactions and payments."
+    },
+    {
+      "id": "Q88",
+      "module": 2,
+      "type": "mcq",
+      "q": "When a bank collects cheques on behalf of a customer and credits the customer's account, it is providing:",
+      "opts": [
+        "A. Lending services",
+        "B. Transactional services",
+        "C. Investment management",
+        "D. Trade services"
+      ],
+      "ans": "B",
+      "exp": "Cheque collection is part of transactional services."
+    },
+    {
+      "id": "Q89",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is an example of a bank facilitating savings?",
+      "opts": [
+        "A. Providing a loan",
+        "B. Offering a fixed deposit account",
+        "C. Issuing a Letter of Credit",
+        "D. Exchanging foreign currency"
+      ],
+      "ans": "B",
+      "exp": "Offering a fixed deposit account is a way for banks to facilitate savings."
+    },
+    {
+      "id": "Q90",
+      "module": 2,
+      "type": "mcq",
+      "q": "When a bank provides a performance bond, it is engaging in:",
+      "opts": [
+        "A. Transactional services",
+        "B. Financial intermediation",
+        "C. Trade services",
+        "D. Currency exchange"
+      ],
+      "ans": "C",
+      "exp": "A performance bond is a trade service instrument."
+    },
+    {
+      "id": "Q91",
+      "module": 2,
+      "type": "mcq",
+      "q": "The difference between interest rates charged on loans and paid on deposits is called:",
+      "opts": [
+        "A. Interest rate spread",
+        "B. Profit margin",
+        "C. Net interest income",
+        "D. Operating expense"
+      ],
+      "ans": "A",
+      "exp": "The interest rate spread is the difference between the interest rate paid on deposits and the interest rate charged on loans."
+    },
+    {
+      "id": "Q92",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary purpose of a bank's deposit-taking function?",
+      "opts": [
+        "A. To provide a safe place for customers to store their money",
+        "B. To generate fee income",
+        "C. To reduce the bank's tax liability",
+        "D. To create investment opportunities"
+      ],
+      "ans": "A",
+      "exp": "Banks provide a safe place for customers to store their money, which is a core function."
+    },
+    {
+      "id": "Q93",
+      "module": 2,
+      "type": "mcq",
+      "q": "When a bank offers investment advice and portfolio management, it is performing:",
+      "opts": [
+        "A. Transactional services",
+        "B. Wealth management services",
+        "C. Trade services",
+        "D. Monetary policy functions"
+      ],
+      "ans": "B",
+      "exp": "Wealth management services include investment advice and portfolio management."
+    },
+    {
+      "id": "Q94",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the function of banks in trade services?",
+      "opts": [
+        "A. To provide loans for trade",
+        "B. To facilitate international trade through instruments like Letters of Credit",
+        "C. To exchange currency for travelers",
+        "D. To invest in export businesses"
+      ],
+      "ans": "B",
+      "exp": "Trade services facilitate international trade through instruments like Letters of Credit and Bills for Collection."
+    },
+    {
+      "id": "Q95",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which bank function is most directly related to the implementation of monetary policy?",
+      "opts": [
+        "A. Financial intermediation",
+        "B. Transactional services",
+        "C. Currency exchange",
+        "D. Trade services"
+      ],
+      "ans": "A",
+      "exp": "Financial intermediation is directly related to monetary policy implementation, as banks adjust lending in response to central bank signals."
+    },
+    {
+      "id": "Q96",
+      "module": 2,
+      "type": "mcq",
+      "q": "A customer using a debit card to pay for groceries is using which bank function?",
+      "opts": [
+        "A. Financial intermediation",
+        "B. Transactional services",
+        "C. Trade services",
+        "D. Currency exchange"
+      ],
+      "ans": "B",
+      "exp": "Using a debit card is a transactional service, allowing customers to make payments."
+    },
+    {
+      "id": "Q97",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary role of banks as 'traffic lights' in the monetary policy analogy?",
+      "opts": [
+        "A. To set the interest rates",
+        "B. To regulate the flow of money by adjusting lending",
+        "C. To print currency",
+        "D. To collect taxes"
+      ],
+      "ans": "B",
+      "exp": "Banks regulate the flow of money by adjusting lending in response to interest rate signals from the central bank."
+    },
+    {
+      "id": "Q98",
+      "module": 2,
+      "type": "mcq",
+      "q": "When a bank provides funds for infrastructure projects, it is fulfilling which function?",
+      "opts": [
+        "A. Transactional services",
+        "B. Financial intermediation",
+        "C. Currency exchange",
+        "D. Trade services"
+      ],
+      "ans": "B",
+      "exp": "Investing in infrastructure projects is part of financial intermediation."
+    },
+    {
+      "id": "Q99",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT a transactional service?",
+      "opts": [
+        "A. Deposits",
+        "B. Withdrawals",
+        "C. Loan origination",
+        "D. Cheque payments"
+      ],
+      "ans": "C",
+      "exp": "Loan origination is part of financial intermediation, not transactional services."
+    },
+    {
+      "id": "Q100",
+      "module": 2,
+      "type": "mcq",
+      "q": "The central bank uses the Monetary Policy Rate to control:",
+      "opts": [
+        "A. The exchange rate",
+        "B. Inflation and money supply",
+        "C. The stock market",
+        "D. Bank profitability"
+      ],
+      "ans": "B",
+      "exp": "The MPR is used to control inflation and manage the money supply in the economy."
+    },
+    {
+      "id": "Q101",
+      "module": 3,
+      "type": "mcq",
+      "q": "Bank products that are owned by customers and represent money owed by the bank are classified as:",
+      "opts": [
+        "A. Asset products",
+        "B. Liability products",
+        "C. Off-balance sheet products",
+        "D. Service products"
+      ],
+      "ans": "B",
+      "exp": "Liability products represent funds that the bank owes to customers, such as deposits."
+    },
+    {
+      "id": "Q102",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is an asset product for a bank?",
+      "opts": [
+        "A. Demand Deposits",
+        "B. Savings Accounts",
+        "C. Treasury Investments",
+        "D. Certificate of Deposits"
+      ],
+      "ans": "C",
+      "exp": "Treasury investments are assets that the bank owns and expects to earn returns from."
+    },
+    {
+      "id": "Q103",
+      "module": 3,
+      "type": "mcq",
+      "q": "Products that do not appear on the balance sheet but represent contingent liabilities are called:",
+      "opts": [
+        "A. Asset products",
+        "B. Liability products",
+        "C. Off-balance sheet products",
+        "D. Short-term products"
+      ],
+      "ans": "C",
+      "exp": "Off-balance sheet products, such as Letters of Credit and guarantees, represent contingent liabilities that do not appear on the balance sheet."
+    },
+    {
+      "id": "Q104",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is an example of an off-balance sheet product?",
+      "opts": [
+        "A. Overdraft",
+        "B. Term Loan",
+        "C. Performance Bond",
+        "D. Savings Account"
+      ],
+      "ans": "C",
+      "exp": "A performance bond is an off-balance sheet product, representing a contingent liability."
+    },
+    {
+      "id": "Q105",
+      "module": 3,
+      "type": "mcq",
+      "q": "A product that matures in less than one year is classified as:",
+      "opts": [
+        "A. Long-term",
+        "B. Short-term",
+        "C. Off-balance sheet",
+        "D. Liability"
+      ],
+      "ans": "B",
+      "exp": "Short-term products are those with a maturity of less than one year."
+    },
+    {
+      "id": "Q106",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a long-term product?",
+      "opts": [
+        "A. Time Loan",
+        "B. Call Deposit",
+        "C. Mortgage",
+        "D. Commercial Paper"
+      ],
+      "ans": "C",
+      "exp": "A mortgage is a long-term product with a maturity typically exceeding one year."
+    },
+    {
+      "id": "Q107",
+      "module": 3,
+      "type": "mcq",
+      "q": "Products that are used by the consumer banking department include:",
+      "opts": [
+        "A. Corporate finance products",
+        "B. Savings Accounts and Card Products",
+        "C. Letters of Credit",
+        "D. Mergers and Acquisition services"
+      ],
+      "ans": "B",
+      "exp": "Consumer banking products include savings accounts, ATM services, and card products."
+    },
+    {
+      "id": "Q108",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a source of funds for banks under liability products?",
+      "opts": [
+        "A. Loans and Advances",
+        "B. Treasury Investments",
+        "C. Domiciliary Accounts",
+        "D. Bankers Acceptances"
+      ],
+      "ans": "C",
+      "exp": "Domiciliary accounts are liability products representing customer deposits in foreign currency."
+    },
+    {
+      "id": "Q109",
+      "module": 3,
+      "type": "mcq",
+      "q": "A Banker's Acceptance is classified as which type of product?",
+      "opts": [
+        "A. Asset",
+        "B. Liability",
+        "C. Off-balance sheet",
+        "D. Service product"
+      ],
+      "ans": "A",
+      "exp": "A Banker's Acceptance is an asset product because it represents a bank's commitment to pay, which is an asset."
+    },
+    {
+      "id": "Q110",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a transaction product?",
+      "opts": [
+        "A. Savings Account",
+        "B. Tax Collection Services",
+        "C. Letter of Credit",
+        "D. Debt Restructuring"
+      ],
+      "ans": "B",
+      "exp": "Tax collection services are transaction products, involving collection services for government agencies."
+    },
+    {
+      "id": "Q111",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the key difference between mobile banking and internet banking?",
+      "opts": [
+        "A. There is no difference",
+        "B. Mobile banking uses an app, while internet banking uses a browser",
+        "C. Mobile banking is only for transfers",
+        "D. Internet banking is only available on smartphones"
+      ],
+      "ans": "B",
+      "exp": "Mobile banking is accessed through a mobile application, while internet banking is accessed through a web browser."
+    },
+    {
+      "id": "Q112",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a digital banking service?",
+      "opts": [
+        "A. Issuing a cheque",
+        "B. Checking account balances online",
+        "C. Withdrawing cash from a teller",
+        "D. Depositing cash at a branch"
+      ],
+      "ans": "B",
+      "exp": "Checking account balances online is a digital banking service."
+    },
+    {
+      "id": "Q113",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a feature of the AccessMore mobile app?",
+      "opts": [
+        "A. Cheque management",
+        "B. Loan origination",
+        "C. Linking BVN",
+        "D. Underwriting services"
+      ],
+      "ans": "C",
+      "exp": "AccessMore offers services including instant transfers, account balance, bills payments, and BVN linking."
+    },
+    {
+      "id": "Q114",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a feature of the Access Mobile Premium app?",
+      "opts": [
+        "A. Device financing",
+        "B. Payday loans",
+        "C. Cheque management",
+        "D. BVN linking"
+      ],
+      "ans": "C",
+      "exp": "Access Mobile Premium offers cheque management, airline ticket purchases, and international funds transfer."
+    },
+    {
+      "id": "Q115",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a consumer banking product?",
+      "opts": [
+        "A. Savings Account",
+        "B. ATM Services",
+        "C. Corporate Finance Advisory",
+        "D. Card Products"
+      ],
+      "ans": "C",
+      "exp": "Corporate finance advisory is a corporate banking product, not a consumer banking product."
+    },
+    {
+      "id": "Q116",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a transaction product offered by banks?",
+      "opts": [
+        "A. Overdraft",
+        "B. Collection Services",
+        "C. Mergers & Acquisition",
+        "D. Correspondent Banking"
+      ],
+      "ans": "B",
+      "exp": "Collection services are transaction products, involving collecting payments on behalf of entities."
+    },
+    {
+      "id": "Q117",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a funds transfer product?",
+      "opts": [
+        "A. Savings Account",
+        "B. NEFT",
+        "C. Letter of Credit",
+        "D. Performance Bond"
+      ],
+      "ans": "B",
+      "exp": "NEFT (National Electronic Funds Transfer) is a funds transfer product."
+    },
+    {
+      "id": "Q118",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a corporate finance product?",
+      "opts": [
+        "A. Savings Account",
+        "B. ATM Services",
+        "C. Debt Restructuring",
+        "D. Collection Services"
+      ],
+      "ans": "C",
+      "exp": "Debt restructuring is a corporate finance product, part of financial advisory services."
+    },
+    {
+      "id": "Q119",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is an international banking service?",
+      "opts": [
+        "A. NEFT",
+        "B. Tax Collection",
+        "C. Correspondent Banking",
+        "D. Card Products"
+      ],
+      "ans": "C",
+      "exp": "Correspondent banking is an international banking service, facilitating cross-border transactions."
+    },
+    {
+      "id": "Q120",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a Letter of Credit classified as in terms of product type?",
+      "opts": [
+        "A. Asset product",
+        "B. Liability product",
+        "C. Off-balance sheet product",
+        "D. Short-term product"
+      ],
+      "ans": "C",
+      "exp": "A Letter of Credit is an off-balance sheet product because it represents a contingent liability."
+    },
+    {
+      "id": "Q121",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a short-term product?",
+      "opts": [
+        "A. Term Loan",
+        "B. Mortgage",
+        "C. Call Deposit",
+        "D. Bond"
+      ],
+      "ans": "C",
+      "exp": "A call deposit is a short-term product, typically repayable on demand."
+    },
+    {
+      "id": "Q122",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a long-term product?",
+      "opts": [
+        "A. Time Loan",
+        "B. Commercial Paper",
+        "C. Term Loan",
+        "D. Certificate of Deposit"
+      ],
+      "ans": "C",
+      "exp": "A term loan is a long-term product with a maturity typically exceeding one year."
+    },
+    {
+      "id": "Q123",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is classified as an asset product by ownership?",
+      "opts": [
+        "A. Demand Deposits",
+        "B. Savings Accounts",
+        "C. Domiciliary Accounts",
+        "D. Leases"
+      ],
+      "ans": "D",
+      "exp": "Leases are asset products because the bank owns the asset being leased."
+    },
+    {
+      "id": "Q124",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is classified as a liability product by ownership?",
+      "opts": [
+        "A. Treasury Investments",
+        "B. Inter-bank Placements",
+        "C. Certificate of Deposits",
+        "D. Bankers Acceptances"
+      ],
+      "ans": "C",
+      "exp": "A Certificate of Deposit is a liability product because it represents funds the bank owes to depositors."
+    },
+    {
+      "id": "Q125",
+      "module": 3,
+      "type": "mcq",
+      "q": "What type of product is a Guarantee?",
+      "opts": [
+        "A. On-balance sheet asset",
+        "B. On-balance sheet liability",
+        "C. Off-balance sheet product",
+        "D. Asset product"
+      ],
+      "ans": "C",
+      "exp": "A guarantee is an off-balance sheet product representing a contingent liability."
+    },
+    {
+      "id": "Q126",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the funds transfer department?",
+      "opts": [
+        "A. Collection Services",
+        "B. Standing Orders & Disbursements",
+        "C. Financial Advisory Services",
+        "D. Correspondent Banking"
+      ],
+      "ans": "B",
+      "exp": "Standing orders and disbursements are funds transfer products."
+    },
+    {
+      "id": "Q127",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a feature of digital banking?",
+      "opts": [
+        "A. Underwriting services",
+        "B. Bill payments",
+        "C. Loan origination",
+        "D. Corporate finance"
+      ],
+      "ans": "B",
+      "exp": "Bill payments are a feature of digital banking, allowing customers to pay bills online."
+    },
+    {
+      "id": "Q128",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the corporate finance department?",
+      "opts": [
+        "A. Collection Services",
+        "B. Tax Collection",
+        "C. Mergers & Acquisition",
+        "D. Rates Collection"
+      ],
+      "ans": "C",
+      "exp": "Mergers and acquisition services are corporate finance products."
+    },
+    {
+      "id": "Q129",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a transaction product?",
+      "opts": [
+        "A. Loans and Advances",
+        "B. Customs Collection",
+        "C. Card Products",
+        "D. NEFT"
+      ],
+      "ans": "B",
+      "exp": "Customs collection is a transaction product, involving collection of customs duties."
+    },
+    {
+      "id": "Q130",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a consumer banking product?",
+      "opts": [
+        "A. Correspondent Banking",
+        "B. Leasing Vehicles",
+        "C. Capital Market Activities",
+        "D. Tax Collection"
+      ],
+      "ans": "B",
+      "exp": "Leasing vehicles is a consumer banking product."
+    },
+    {
+      "id": "Q131",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the primary difference between mobile banking and internet banking?",
+      "opts": [
+        "A. Mobile banking offers higher transaction limits",
+        "B. Mobile banking requires a smartphone; internet banking requires a computer",
+        "C. Mobile banking is only available to corporate clients",
+        "D. Internet banking is only available during business hours"
+      ],
+      "ans": "B",
+      "exp": "Mobile banking is accessed through an application on a smartphone, whereas internet banking is accessed through a browser on a computer."
+    },
+    {
+      "id": "Q132",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a service offered by the QuickBucks app?",
+      "opts": [
+        "A. Cheque management",
+        "B. Payday Loan",
+        "C. Branch location",
+        "D. Airline ticket purchase"
+      ],
+      "ans": "B",
+      "exp": "QuickBucks offers Payday Loans, Salary Advances, and Device Financing."
+    },
+    {
+      "id": "Q133",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a service offered by Access Mobile Premium?",
+      "opts": [
+        "A. Cheque management",
+        "B. Airline ticket purchase",
+        "C. Device financing",
+        "D. International funds transfer"
+      ],
+      "ans": "C",
+      "exp": "Device financing is offered through QuickBucks, not Access Mobile Premium."
+    },
+    {
+      "id": "Q134",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the transaction services department?",
+      "opts": [
+        "A. Rates Collection",
+        "B. Savings Account",
+        "C. Financial Advisory Services",
+        "D. NEFT"
+      ],
+      "ans": "A",
+      "exp": "Rates collection is a transaction service, involving collection of government rates."
+    },
+    {
+      "id": "Q135",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the consumer banking department?",
+      "opts": [
+        "A. Tax Collection",
+        "B. Capital Market Activities",
+        "C. Card Products",
+        "D. Correspondent Banking"
+      ],
+      "ans": "C",
+      "exp": "Card products are consumer banking products."
+    },
+    {
+      "id": "Q136",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the international banking department?",
+      "opts": [
+        "A. Debt Restructuring",
+        "B. Money Transfer - WUMT",
+        "C. Mergers & Acquisition",
+        "D. Financial Advisory Services"
+      ],
+      "ans": "B",
+      "exp": "Money transfer services like WUMT and MoneyGram are international banking products."
+    },
+    {
+      "id": "Q137",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the funds transfer department?",
+      "opts": [
+        "A. Letter of Credit",
+        "B. Nigeria Interbank Transfer",
+        "C. Tax Collection",
+        "D. Leasing Vehicles"
+      ],
+      "ans": "B",
+      "exp": "Nigeria Interbank Transfer is a funds transfer product."
+    },
+    {
+      "id": "Q138",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the corporate finance department?",
+      "opts": [
+        "A. Savings Account",
+        "B. Capital Market Activities",
+        "C. ATM Services",
+        "D. Card Products"
+      ],
+      "ans": "B",
+      "exp": "Capital market activities are corporate finance products."
+    },
+    {
+      "id": "Q139",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the transaction services department?",
+      "opts": [
+        "A. Savings Account",
+        "B. Leasing Vehicles",
+        "C. Financial Advisory Services",
+        "D. FIRS Collection"
+      ],
+      "ans": "D",
+      "exp": "FIRS collection is a transaction service, involving tax collection for the Federal Inland Revenue Service."
+    },
+    {
+      "id": "Q140",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a digital banking service?",
+      "opts": [
+        "A. Cheque requisition",
+        "B. Corporate finance advisory",
+        "C. Underwriting services",
+        "D. Mergers and acquisition"
+      ],
+      "ans": "A",
+      "exp": "Cheque requisition is a digital banking service, allowing customers to request cheques online."
+    },
+    {
+      "id": "Q141",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the international banking department?",
+      "opts": [
+        "A. Tax Collection",
+        "B. Correspondent Banking",
+        "C. Card Products",
+        "D. Leasing Vehicles"
+      ],
+      "ans": "B",
+      "exp": "Correspondent banking is an international banking product."
+    },
+    {
+      "id": "Q142",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the consumer banking department?",
+      "opts": [
+        "A. Tax Collection",
+        "B. Savings Account",
+        "C. NEFT",
+        "D. Debt Restructuring"
+      ],
+      "ans": "B",
+      "exp": "Savings accounts are consumer banking products."
+    },
+    {
+      "id": "Q143",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a product of the transaction services department?",
+      "opts": [
+        "A. Customs Collection",
+        "B. Tax Collection",
+        "C. Rates Collection",
+        "D. Card Products"
+      ],
+      "ans": "D",
+      "exp": "Card products are consumer banking products, not transaction services."
+    },
+    {
+      "id": "Q144",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the corporate finance department?",
+      "opts": [
+        "A. Savings Account",
+        "B. Collection Services",
+        "C. Mergers & Acquisition",
+        "D. ATM Services"
+      ],
+      "ans": "C",
+      "exp": "Mergers and acquisition are corporate finance products."
+    },
+    {
+      "id": "Q145",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a product of the transaction services department?",
+      "opts": [
+        "A. Tax Collection",
+        "B. NEFT",
+        "C. Correspondent Banking",
+        "D. Capital Market Activities"
+      ],
+      "ans": "A",
+      "exp": "Tax collection is a transaction service."
+    },
+    {
+      "id": "Q146",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a digital banking service?",
+      "opts": [
+        "A. Underwriting services",
+        "B. Capital market activities",
+        "C. Cheque confirmation",
+        "D. Correspondent banking"
+      ],
+      "ans": "C",
+      "exp": "Cheque confirmation is a digital banking service."
+    },
+    {
+      "id": "Q147",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a short-term product?",
+      "opts": [
+        "A. Term Loan",
+        "B. Mortgage",
+        "C. Commercial Paper",
+        "D. Bond"
+      ],
+      "ans": "C",
+      "exp": "Commercial paper is a short-term product with a typical maturity of less than one year."
+    },
+    {
+      "id": "Q148",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a long-term product?",
+      "opts": [
+        "A. Call Deposit",
+        "B. Time Loan",
+        "C. Bond",
+        "D. Commercial Paper"
+      ],
+      "ans": "C",
+      "exp": "Bonds are long-term products with a maturity typically exceeding one year."
+    },
+    {
+      "id": "Q149",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is an on-balance sheet product?",
+      "opts": [
+        "A. Letter of Credit",
+        "B. Performance Bond",
+        "C. Savings Account",
+        "D. Guarantee"
+      ],
+      "ans": "C",
+      "exp": "Savings accounts are on-balance sheet products because they appear as liabilities on the balance sheet."
+    },
+    {
+      "id": "Q150",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is an off-balance sheet product?",
+      "opts": [
+        "A. Loans and Advances",
+        "B. Demand Deposits",
+        "C. Acceptances",
+        "D. Treasury Investments"
+      ],
+      "ans": "C",
+      "exp": "Acceptances are off-balance sheet products, representing contingent liabilities."
+    },
+    {
+      "id": "Q151",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the main source of income for banks?",
+      "opts": [
+        "A. Fee-based income",
+        "B. Foreign exchange income",
+        "C. Interest income from financial intermediation",
+        "D. Investment income"
+      ],
+      "ans": "C",
+      "exp": "The main source of income for banks is interest income from financial intermediation, earned through the spread between borrowing and lending rates."
+    },
+    {
+      "id": "Q152",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the interest rate spread?",
+      "opts": [
+        "A. The difference between interest rates charged on loans and paid on deposits",
+        "B. The total interest earned by the bank",
+        "C. The interest paid to depositors",
+        "D. The bank's profit margin"
+      ],
+      "ans": "A",
+      "exp": "The interest rate spread is the difference between the interest rate charged on loans and the interest rate paid on deposits."
+    },
+    {
+      "id": "Q153",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a fee-based income for banks?",
+      "opts": [
+        "A. Interest on loans",
+        "B. ATM withdrawal fees",
+        "C. Dividend income",
+        "D. Rental income"
+      ],
+      "ans": "B",
+      "exp": "ATM withdrawal fees are fee-based income, earned from non-lending activities."
+    },
+    {
+      "id": "Q154",
+      "module": 4,
+      "type": "mcq",
+      "q": "Investment income for banks includes:",
+      "opts": [
+        "A. Dividends from investments",
+        "B. Interest on loans",
+        "C. ATM withdrawal fees",
+        "D. Rental income"
+      ],
+      "ans": "A",
+      "exp": "Investment income includes income from investing and trading in securities such as stocks and bonds."
+    },
+    {
+      "id": "Q155",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the trade-off between liquidity and profitability?",
+      "opts": [
+        "A. High liquidity leads to high profitability",
+        "B. There is no relationship between liquidity and profitability",
+        "C. High liquidity typically means lower profitability",
+        "D. Profitability and liquidity are the same"
+      ],
+      "ans": "C",
+      "exp": "Holding more liquid assets typically yields lower returns, so high liquidity often means lower profitability."
+    },
+    {
+      "id": "Q156",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a typical component of a bank's income statement?",
+      "opts": [
+        "A. Cash and cash equivalents",
+        "B. Loans and advances",
+        "C. Interest income",
+        "D. Shareholders' equity"
+      ],
+      "ans": "C",
+      "exp": "Interest income is a key line item on a bank's income statement."
+    },
+    {
+      "id": "Q157",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the impact of loan loss provisions on a bank's profit?",
+      "opts": [
+        "A. They increase profit",
+        "B. They have no impact",
+        "C. They reduce profit",
+        "D. They affect only operating expenses"
+      ],
+      "ans": "C",
+      "exp": "Loan loss provisions are expenses that reduce the bank's profit."
+    },
+    {
+      "id": "Q158",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's Statement of Financial Position?",
+      "opts": [
+        "A. Interest income",
+        "B. Commission and fees",
+        "C. Loans and advances",
+        "D. Profit before tax"
+      ],
+      "ans": "C",
+      "exp": "Loans and advances are assets on a bank's Statement of Financial Position."
+    },
+    {
+      "id": "Q159",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is Tier 1 Capital?",
+      "opts": [
+        "A. A bank's supplementary capital",
+        "B. A bank's core capital including shareholders' equity and retained earnings",
+        "C. A bank's loan loss reserves",
+        "D. A bank's subordinated debt"
+      ],
+      "ans": "B",
+      "exp": "Tier 1 Capital is a bank's core capital, consisting of shareholders' equity and retained earnings."
+    },
+    {
+      "id": "Q160",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is Tier 2 Capital?",
+      "opts": [
+        "A. A bank's core capital",
+        "B. A bank's supplementary capital including revaluation reserves and subordinated debt",
+        "C. A bank's cash reserves",
+        "D. A bank's deposits"
+      ],
+      "ans": "B",
+      "exp": "Tier 2 Capital is supplementary capital, including revaluation reserves, hybrid capital instruments, and subordinated term debt."
+    },
+    {
+      "id": "Q161",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's operating expenses?",
+      "opts": [
+        "A. Interest expense",
+        "B. Staff costs",
+        "C. Loan loss provision",
+        "D. Tax"
+      ],
+      "ans": "B",
+      "exp": "Staff costs are part of operating expenses, along with depreciation, administration, and marketing expenses."
+    },
+    {
+      "id": "Q162",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary driver of a bank's interest income?",
+      "opts": [
+        "A. The volume of deposits",
+        "B. The value and interest rate of loans and investments",
+        "C. The number of branches",
+        "D. The level of staff costs"
+      ],
+      "ans": "B",
+      "exp": "Interest income is driven by the value of loans and investments and the interest rates charged."
+    },
+    {
+      "id": "Q163",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary driver of a bank's interest expense?",
+      "opts": [
+        "A. The number of customers",
+        "B. The volume and mix of deposit accounts and interest rates",
+        "C. The level of staff costs",
+        "D. The value of investments"
+      ],
+      "ans": "B",
+      "exp": "Interest expense is driven by the volume and mix of deposits and the interest rates paid on them."
+    },
+    {
+      "id": "Q164",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's other income?",
+      "opts": [
+        "A. Interest income",
+        "B. Commission and fees",
+        "C. Profit on sale of fixed assets",
+        "D. Net interest income"
+      ],
+      "ans": "C",
+      "exp": "Profit on sale of fixed assets is categorized as other income."
+    },
+    {
+      "id": "Q165",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a key difference between Tier 1 and Tier 2 Capital?",
+      "opts": [
+        "A. Tier 1 capital is less reliable than Tier 2 capital",
+        "B. Tier 1 capital is core capital, while Tier 2 is supplementary",
+        "C. There is no difference",
+        "D. Tier 2 capital is only used for international banks"
+      ],
+      "ans": "B",
+      "exp": "Tier 1 Capital is core capital, while Tier 2 Capital is supplementary capital."
+    },
+    {
+      "id": "Q166",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a risk asset for a bank?",
+      "opts": [
+        "A. Cash in vault",
+        "B. Treasury Bills",
+        "C. Loans and advances",
+        "D. Fixed assets"
+      ],
+      "ans": "C",
+      "exp": "Loans and advances are risk assets because they carry the risk of default and are a bank's major source of income."
+    },
+    {
+      "id": "Q167",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a minimum risk asset for a bank?",
+      "opts": [
+        "A. Overdrafts",
+        "B. Treasury Bills",
+        "C. Leases",
+        "D. Mortgages"
+      ],
+      "ans": "B",
+      "exp": "Treasury Bills are minimum risk assets because they are short-term, highly liquid, and carry very low credit risk."
+    },
+    {
+      "id": "Q168",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a non-banking asset?",
+      "opts": [
+        "A. Loans and advances",
+        "B. Interbank placements",
+        "C. Fixed assets",
+        "D. Treasury Bills"
+      ],
+      "ans": "C",
+      "exp": "Fixed assets are non-banking assets used to support the business, such as buildings and equipment."
+    },
+    {
+      "id": "Q169",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the Cash Reserve Ratio (CRR) currently pegged at for commercial banks?",
+      "opts": [
+        "A. 10%",
+        "B. 27.5%",
+        "C. 32.5%",
+        "D. 45%"
+      ],
+      "ans": "D",
+      "exp": "The CRR is currently pegged at 45% of total deposits for commercial banks."
+    },
+    {
+      "id": "Q170",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the Cash Reserve Ratio (CRR) currently pegged at for merchant banks?",
+      "opts": [
+        "A. 10%",
+        "B. 27.5%",
+        "C. 32.5%",
+        "D. 45%"
+      ],
+      "ans": "A",
+      "exp": "The CRR is currently pegged at 10% of total deposits for merchant banks."
+    },
+    {
+      "id": "Q171",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary purpose of the Cash Reserve Ratio?",
+      "opts": [
+        "A. To ensure banks have funds for lending",
+        "B. To provide a return on idle funds",
+        "C. To control liquidity in the banking system",
+        "D. To increase bank profitability"
+      ],
+      "ans": "C",
+      "exp": "CRR is a monetary policy tool used by the central bank to control liquidity in the banking system."
+    },
+    {
+      "id": "Q172",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the Liquidity Ratio (LR) designed to measure?",
+      "opts": [
+        "A. A bank's ability to generate profits",
+        "B. A bank's ability to meet short-term obligations using liquid assets",
+        "C. A bank's capital adequacy",
+        "D. A bank's asset quality"
+      ],
+      "ans": "B",
+      "exp": "The Liquidity Ratio measures a bank's ability to meet its short-term obligations using its liquid assets."
+    },
+    {
+      "id": "Q173",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following qualifies as a liquid asset for a bank?",
+      "opts": [
+        "A. Loans and advances",
+        "B. Fixed assets",
+        "C. Treasury Bills",
+        "D. Intangible assets"
+      ],
+      "ans": "C",
+      "exp": "Treasury Bills qualify as liquid assets because they can be converted to cash immediately without significant loss in value."
+    },
+    {
+      "id": "Q174",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's deposits?",
+      "opts": [
+        "A. Shareholders' equity",
+        "B. Retained earnings",
+        "C. Current accounts",
+        "D. Revaluation reserves"
+      ],
+      "ans": "C",
+      "exp": "Current accounts are a core component of a bank's deposits."
+    },
+    {
+      "id": "Q175",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary purpose of a bank's Statement of Financial Position?",
+      "opts": [
+        "A. To show the bank's profitability",
+        "B. To show the bank's assets, liabilities, and equity at a point in time",
+        "C. To show the bank's cash flows",
+        "D. To show the bank's income sources"
+      ],
+      "ans": "B",
+      "exp": "The Statement of Financial Position shows a bank's assets, liabilities, and equity at a specific point in time."
+    },
+    {
+      "id": "Q176",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's income statement?",
+      "opts": [
+        "A. Cash and cash equivalents",
+        "B. Loans and advances",
+        "C. Commission and fees",
+        "D. Shareholders' equity"
+      ],
+      "ans": "C",
+      "exp": "Commission and fees are line items on a bank's income statement."
+    },
+    {
+      "id": "Q177",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the relationship between interest income and interest expense for a bank?",
+      "opts": [
+        "A. Interest income is always greater than interest expense",
+        "B. Net interest income is the difference between interest income and interest expense",
+        "C. Interest expense is always greater than interest income",
+        "D. They are unrelated"
+      ],
+      "ans": "B",
+      "exp": "Net interest income is the difference between interest income and interest expense."
+    },
+    {
+      "id": "Q178",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a driver of operating expenses?",
+      "opts": [
+        "A. The volume of loans",
+        "B. The number and quality of staff",
+        "C. The deposit mix",
+        "D. The interest rate"
+      ],
+      "ans": "B",
+      "exp": "Operating expenses are driven by factors such as the number and quality of staff, and the value and age of assets."
+    },
+    {
+      "id": "Q179",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's assets?",
+      "opts": [
+        "A. Deposits",
+        "B. Borrowings",
+        "C. Loans and advances",
+        "D. Shareholders' equity"
+      ],
+      "ans": "C",
+      "exp": "Loans and advances are assets on a bank's Statement of Financial Position."
+    },
+    {
+      "id": "Q180",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's liabilities?",
+      "opts": [
+        "A. Cash and cash equivalents",
+        "B. Loans and advances",
+        "C. Deposits",
+        "D. Fixed assets"
+      ],
+      "ans": "C",
+      "exp": "Deposits are liabilities on a bank's Statement of Financial Position."
+    },
+    {
+      "id": "Q181",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary purpose of loan loss provisions?",
+      "opts": [
+        "A. To increase bank profits",
+        "B. To provide for potential losses from non-performing loans",
+        "C. To reduce tax liabilities",
+        "D. To increase deposits"
+      ],
+      "ans": "B",
+      "exp": "Loan loss provisions are expenses recognized to cover potential losses from non-performing loans."
+    },
+    {
+      "id": "Q182",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a source of fee-based income for a bank?",
+      "opts": [
+        "A. Interest on mortgages",
+        "B. Account maintenance fees",
+        "C. Dividend income",
+        "D. Rental income"
+      ],
+      "ans": "B",
+      "exp": "Account maintenance fees are fee-based income from non-lending activities."
+    },
+    {
+      "id": "Q183",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the impact of a high interest rate spread on a bank's profitability?",
+      "opts": [
+        "A. It decreases profitability",
+        "B. It has no impact",
+        "C. It increases profitability",
+        "D. It affects only liquidity"
+      ],
+      "ans": "C",
+      "exp": "A higher spread means the bank earns more from lending compared to what it pays on deposits, increasing profitability."
+    },
+    {
+      "id": "Q184",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's Statement of Financial Position?",
+      "opts": [
+        "A. Interest income",
+        "B. Commission and fees",
+        "C. Operating expenses",
+        "D. Interbank borrowings"
+      ],
+      "ans": "D",
+      "exp": "Interbank borrowings are liabilities on a bank's Statement of Financial Position."
+    },
+    {
+      "id": "Q185",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the purpose of the Cash Reserve Ratio for the central bank?",
+      "opts": [
+        "A. To ensure banks are profitable",
+        "B. To reduce excess liquidity in the banking system",
+        "C. To increase the money supply",
+        "D. To reduce bank competition"
+      ],
+      "ans": "B",
+      "exp": "CRR is a monetary policy tool for reducing excess liquidity in the banking system."
+    },
+    {
+      "id": "Q186",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of a risk asset?",
+      "opts": [
+        "A. Highly liquid",
+        "B. Low risk of default",
+        "C. Major source of income with high risk of default",
+        "D. Non-interest earning"
+      ],
+      "ans": "C",
+      "exp": "Risk assets are core banking assets, a major source of income, but with a high risk of default."
+    },
+    {
+      "id": "Q187",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of a minimum risk asset?",
+      "opts": [
+        "A. High yield",
+        "B. High risk of default",
+        "C. Short-term and liquid",
+        "D. Long-term and illiquid"
+      ],
+      "ans": "C",
+      "exp": "Minimum risk assets are short-term, earning assets that are highly liquid and carry very low credit risk."
+    },
+    {
+      "id": "Q188",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a non-interest earning asset?",
+      "opts": [
+        "A. Loans and advances",
+        "B. Treasury Bills",
+        "C. Fixed assets",
+        "D. Interbank placements"
+      ],
+      "ans": "C",
+      "exp": "Fixed assets do not earn interest directly and are used to support the business."
+    },
+    {
+      "id": "Q189",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary driver of a bank's commission income?",
+      "opts": [
+        "A. The volume of deposits",
+        "B. The number and volume of transactions",
+        "C. The interest rate spread",
+        "D. The level of staff costs"
+      ],
+      "ans": "B",
+      "exp": "Commission income is driven by the volume and value of transactions, such as funds transfers, Letters of Credit, and account maintenance."
+    },
+    {
+      "id": "Q190",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's other income?",
+      "opts": [
+        "A. Interest income",
+        "B. Commission income",
+        "C. Rental income",
+        "D. Operating expenses"
+      ],
+      "ans": "C",
+      "exp": "Rental income is categorized as other income."
+    },
+    {
+      "id": "Q191",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the purpose of a bank's Statement of Financial Position?",
+      "opts": [
+        "A. To show the bank's profitability over a period",
+        "B. To show the bank's assets, liabilities, and equity at a point in time",
+        "C. To show the bank's cash flows",
+        "D. To show the bank's income sources"
+      ],
+      "ans": "B",
+      "exp": "The Statement of Financial Position shows a bank's assets, liabilities, and equity at a specific point in time."
+    },
+    {
+      "id": "Q192",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's operating expenses?",
+      "opts": [
+        "A. Interest expense",
+        "B. Loan loss provisions",
+        "C. Depreciation",
+        "D. Tax"
+      ],
+      "ans": "C",
+      "exp": "Depreciation is part of operating expenses."
+    },
+    {
+      "id": "Q193",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary driver of a bank's loan loss expense?",
+      "opts": [
+        "A. The volume of deposits",
+        "B. The volume of non-performing assets",
+        "C. The interest rate",
+        "D. The level of staff costs"
+      ],
+      "ans": "B",
+      "exp": "Loan loss expense is driven by the volume of non-performing assets and early problem recognition."
+    },
+    {
+      "id": "Q194",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's assets?",
+      "opts": [
+        "A. Deposits",
+        "B. Borrowings",
+        "C. Cash and cash equivalents",
+        "D. Shareholders' equity"
+      ],
+      "ans": "C",
+      "exp": "Cash and cash equivalents are assets on a bank's Statement of Financial Position."
+    },
+    {
+      "id": "Q195",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's liabilities?",
+      "opts": [
+        "A. Loans and advances",
+        "B. Fixed assets",
+        "C. Borrowings",
+        "D. Shareholders' equity"
+      ],
+      "ans": "C",
+      "exp": "Borrowings are liabilities on a bank's Statement of Financial Position."
+    },
+    {
+      "id": "Q196",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the impact of a loan loss provision on a bank's asset value?",
+      "opts": [
+        "A. It increases the value of assets",
+        "B. It has no impact",
+        "C. It reduces the value of assets",
+        "D. It only affects liabilities"
+      ],
+      "ans": "C",
+      "exp": "Provisions reduce the value of assets to ensure they are stated at net realizable value."
+    },
+    {
+      "id": "Q197",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's interest income?",
+      "opts": [
+        "A. Dividends",
+        "B. Rental income",
+        "C. Interest on loans",
+        "D. Commission"
+      ],
+      "ans": "C",
+      "exp": "Interest on loans is a component of interest income."
+    },
+    {
+      "id": "Q198",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's interest expense?",
+      "opts": [
+        "A. Staff costs",
+        "B. Depreciation",
+        "C. Interest on deposits",
+        "D. Commission"
+      ],
+      "ans": "C",
+      "exp": "Interest on deposits is a component of interest expense."
+    },
+    {
+      "id": "Q199",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a driver of a bank's staff costs?",
+      "opts": [
+        "A. The volume of deposits",
+        "B. The number and quality of staff",
+        "C. The interest rate",
+        "D. The value of assets"
+      ],
+      "ans": "B",
+      "exp": "Staff costs are driven by the number and quality of staff."
+    },
+    {
+      "id": "Q200",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's Tier 1 Capital?",
+      "opts": [
+        "A. Revaluation reserves",
+        "B. Subordinated debt",
+        "C. Retained earnings",
+        "D. General provisions"
+      ],
+      "ans": "C",
+      "exp": "Retained earnings are part of Tier 1 Capital."
+    },
+    {
+      "id": "Q201",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a reason why banks are subject to severe regulations?",
+      "opts": [
+        "A. To increase bank profitability",
+        "B. To protect depositors and maintain financial system stability",
+        "C. To reduce competition",
+        "D. To encourage bank failures"
+      ],
+      "ans": "B",
+      "exp": "Banks are regulated to protect depositors, maintain financial system stability, and prevent fraud and money laundering."
+    },
+    {
+      "id": "Q202",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary purpose of banking regulation?",
+      "opts": [
+        "A. To reduce bank profits",
+        "B. To protect depositors and reduce risk-taking",
+        "C. To encourage bank failures",
+        "D. To increase competition"
+      ],
+      "ans": "B",
+      "exp": "Banking regulation aims to protect depositors and reduce excessive risk-taking by banks."
+    },
+    {
+      "id": "Q203",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a key piece of banking legislation in Nigeria?",
+      "opts": [
+        "A. The Securities and Exchange Act",
+        "B. The Banks and Other Financial Institutions Act (BOFIA)",
+        "C. The Insurance Act",
+        "D. The Pension Reform Act"
+      ],
+      "ans": "B",
+      "exp": "BOFIA is the primary law guiding the activities of banks in Nigeria."
+    },
+    {
+      "id": "Q204",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which act confers instrument autonomy on the Central Bank of Nigeria?",
+      "opts": [
+        "A. BOFIA 2020",
+        "B. The CBN Act 2007",
+        "C. The Prudential Guidelines",
+        "D. The Money Laundering Act"
+      ],
+      "ans": "B",
+      "exp": "The CBN Act 2007 conferred instrument autonomy on the CBN for the effective discharge of its core mandate."
+    },
+    {
+      "id": "Q205",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a regulator of the Nigerian banking industry?",
+      "opts": [
+        "A. Federal Ministry of Finance",
+        "B. Nigerian Deposit Insurance Corporation (NDIC)",
+        "C. Federal Inland Revenue Service",
+        "D. National Pension Commission"
+      ],
+      "ans": "B",
+      "exp": "The NDIC complements the regulatory role of the CBN by insuring customer deposits."
+    },
+    {
+      "id": "Q206",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary function of the NDIC?",
+      "opts": [
+        "A. To regulate the stock market",
+        "B. To insure customer deposits",
+        "C. To set interest rates",
+        "D. To issue banking licenses"
+      ],
+      "ans": "B",
+      "exp": "The NDIC insures deposit liabilities of licensed banks to protect depositors."
+    },
+    {
+      "id": "Q207",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which regulator is the apex regulator of the Nigerian capital market?",
+      "opts": [
+        "A. CBN",
+        "B. NDIC",
+        "C. SEC",
+        "D. FRCN"
+      ],
+      "ans": "C",
+      "exp": "The Securities and Exchange Commission (SEC) is the apex regulator of the Nigerian capital market."
+    },
+    {
+      "id": "Q208",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a function of the Central Bank of Nigeria?",
+      "opts": [
+        "A. Insuring customer deposits",
+        "B. Regulating the capital market",
+        "C. Implementing monetary policy",
+        "D. Setting accounting standards"
+      ],
+      "ans": "C",
+      "exp": "The CBN implements monetary policy and regulates the banking industry."
+    },
+    {
+      "id": "Q209",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Monetary Policy Rate (MPR)?",
+      "opts": [
+        "A. The rate at which banks lend to each other",
+        "B. The benchmark interest rate set by the CBN",
+        "C. The rate at which banks lend to customers",
+        "D. The deposit rate offered by banks"
+      ],
+      "ans": "B",
+      "exp": "The MPR is the benchmark interest rate set by the CBN, serving as the anchor rate for the economy."
+    },
+    {
+      "id": "Q210",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary purpose of the Monetary Policy Rate?",
+      "opts": [
+        "A. To control inflation and manage liquidity",
+        "B. To increase bank profits",
+        "C. To set exchange rates",
+        "D. To regulate the stock market"
+      ],
+      "ans": "A",
+      "exp": "The MPR is used to control inflation and manage liquidity in the economy."
+    },
+    {
+      "id": "Q211",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the corridor around the MPR?",
+      "opts": [
+        "A. The range within which bank interest rates fluctuate",
+        "B. The band within which short-term interest rates fluctuate",
+        "C. The spread between lending and deposit rates",
+        "D. The range of exchange rates"
+      ],
+      "ans": "B",
+      "exp": "The corridor defines the band within which short-term interest rates fluctuate, consisting of the Standing Lending Facility (upper band) and Standing Deposit Facility (lower band)."
+    },
+    {
+      "id": "Q212",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Standing Lending Facility (SLF)?",
+      "opts": [
+        "A. The rate at which banks lend to customers",
+        "B. The rate at which the CBN lends to banks",
+        "C. The rate at which banks borrow from each other",
+        "D. The deposit rate offered by banks"
+      ],
+      "ans": "B",
+      "exp": "The SLF is the rate at which the CBN lends to commercial banks, representing the upper band of the corridor."
+    },
+    {
+      "id": "Q213",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Standing Deposit Facility (SDF)?",
+      "opts": [
+        "A. The rate at which banks lend to each other",
+        "B. The rate at which banks lend to customers",
+        "C. The rate at which banks earn for depositing excess liquidity with the CBN",
+        "D. The rate at which customers earn on deposits"
+      ],
+      "ans": "C",
+      "exp": "The SDF is the rate at which banks earn on excess liquidity deposited with the CBN, representing the lower band of the corridor."
+    },
+    {
+      "id": "Q214",
+      "module": 5,
+      "type": "mcq",
+      "q": "When the CBN raises the MPR, what is the likely impact on inflation?",
+      "opts": [
+        "A. Inflation will increase",
+        "B. Inflation will decrease",
+        "C. Inflation will remain unchanged",
+        "D. The impact is unpredictable"
+      ],
+      "ans": "B",
+      "exp": "Raising the MPR makes borrowing more expensive, reducing money supply and moderating demand, which helps control inflation."
+    },
+    {
+      "id": "Q215",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Cash Reserve Ratio (CRR) used for?",
+      "opts": [
+        "A. To increase bank profitability",
+        "B. To control liquidity in the banking system",
+        "C. To reduce bank costs",
+        "D. To increase bank lending"
+      ],
+      "ans": "B",
+      "exp": "CRR is a monetary policy tool used to control liquidity in the banking system."
+    },
+    {
+      "id": "Q216",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the formula for calculating the CRR amount?",
+      "opts": [
+        "A. CRR Amount = CRR Rate \u00d7 Total Eligible Deposits",
+        "B. CRR Amount = CRR Rate \u00d7 Total Assets",
+        "C. CRR Amount = CRR Rate \u00d7 Total Loans",
+        "D. CRR Amount = CRR Rate \u00d7 Total Capital"
+      ],
+      "ans": "A",
+      "exp": "The CRR amount is calculated as the CRR rate multiplied by total eligible deposits."
+    },
+    {
+      "id": "Q217",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the effect of a high CRR on a bank's lending capacity?",
+      "opts": [
+        "A. It increases lending capacity",
+        "B. It reduces lending capacity",
+        "C. It has no effect",
+        "D. It only affects deposit rates"
+      ],
+      "ans": "B",
+      "exp": "A high CRR means a larger portion of deposits must be kept with the CBN, reducing funds available for lending."
+    },
+    {
+      "id": "Q218",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Liquidity Ratio (LR) designed to measure?",
+      "opts": [
+        "A. A bank's profitability",
+        "B. A bank's capital adequacy",
+        "C. A bank's ability to meet short-term obligations",
+        "D. A bank's asset quality"
+      ],
+      "ans": "C",
+      "exp": "The Liquidity Ratio measures a bank's ability to meet short-term obligations using its liquid assets."
+    },
+    {
+      "id": "Q219",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the formula for calculating the Liquidity Ratio?",
+      "opts": [
+        "A. LR = Liquid Assets / Total Assets \u00d7 100%",
+        "B. LR = Liquid Assets / Total Current Liabilities \u00d7 100%",
+        "C. LR = Total Deposits / Liquid Assets \u00d7 100%",
+        "D. LR = Liquid Assets / Total Deposits \u00d7 100%"
+      ],
+      "ans": "B",
+      "exp": "The Liquidity Ratio is calculated as Specified Liquid Assets divided by Total Current Liabilities, multiplied by 100%."
+    },
+    {
+      "id": "Q220",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is considered a liquid asset?",
+      "opts": [
+        "A. Loans and advances",
+        "B. Cash in vault",
+        "C. Fixed assets",
+        "D. Shareholders' equity"
+      ],
+      "ans": "B",
+      "exp": "Cash in vault qualifies as a liquid asset because it can be used immediately to meet obligations."
+    },
+    {
+      "id": "Q221",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Capital Adequacy Ratio (CAR)?",
+      "opts": [
+        "A. A measure of a bank's ability to generate profits",
+        "B. A measure of a bank's financial strength by comparing capital with risk-weighted assets",
+        "C. A measure of a bank's liquidity",
+        "D. A measure of a bank's asset quality"
+      ],
+      "ans": "B",
+      "exp": "The CAR measures a bank's financial strength by comparing its regulatory capital with its risk-weighted assets."
+    },
+    {
+      "id": "Q222",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the formula for calculating the Capital Adequacy Ratio?",
+      "opts": [
+        "A. CAR = Total Assets / Total Capital \u00d7 100%",
+        "B. CAR = Total Qualifying Capital / Risk-Weighted Assets \u00d7 100%",
+        "C. CAR = Risk-Weighted Assets / Total Capital \u00d7 100%",
+        "D. CAR = Total Deposits / Total Capital \u00d7 100%"
+      ],
+      "ans": "B",
+      "exp": "CAR is calculated as Total Qualifying Capital divided by Risk-Weighted Assets, multiplied by 100%."
+    },
+    {
+      "id": "Q223",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the minimum CAR requirement for an International Bank in Nigeria?",
+      "opts": [
+        "A. 10%",
+        "B. 15%",
+        "C. 12%",
+        "D. 20%"
+      ],
+      "ans": "B",
+      "exp": "International Banks and Domestic Systemically Important Banks (DSIBs) are required to maintain a minimum CAR of 15%."
+    },
+    {
+      "id": "Q224",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the minimum CAR requirement for a National Bank in Nigeria?",
+      "opts": [
+        "A. 10%",
+        "B. 15%",
+        "C. 12%",
+        "D. 20%"
+      ],
+      "ans": "A",
+      "exp": "National and Regional Banks are required to maintain a minimum CAR of 10%."
+    },
+    {
+      "id": "Q225",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Single Obligor Limit (SOL) for a Deposit Money Bank?",
+      "opts": [
+        "A. 15% of Shareholders' Funds",
+        "B. 20% of Shareholders' Funds",
+        "C. 25% of Shareholders' Funds",
+        "D. 10% of Shareholders' Funds"
+      ],
+      "ans": "B",
+      "exp": "The Single Obligor Limit for DMBs is 20% of Shareholders' Funds Unimpaired by Losses."
+    },
+    {
+      "id": "Q226",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the Single Obligor Limit?",
+      "opts": [
+        "A. To limit the amount a bank can lend to one borrower",
+        "B. To increase bank profitability",
+        "C. To reduce deposit costs",
+        "D. To increase competition"
+      ],
+      "ans": "A",
+      "exp": "The SOL limits the maximum credit exposure a bank can have to one borrower or a group of related borrowers."
+    },
+    {
+      "id": "Q227",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a Credit Conversion Factor (CCF)?",
+      "opts": [
+        "A. The percentage used to convert off-balance sheet exposures into on-balance sheet credit equivalents",
+        "B. The interest rate on loans",
+        "C. The capital requirement for loans",
+        "D. The deposit rate for customers"
+      ],
+      "ans": "A",
+      "exp": "A Credit Conversion Factor is the percentage used to convert an off-balance sheet commitment into an estimated on-balance sheet credit exposure for risk purposes."
+    },
+    {
+      "id": "Q228",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Credit Conversion Factor for Direct Credit Substitutes?",
+      "opts": [
+        "A. 20%",
+        "B. 50%",
+        "C. 100%",
+        "D. 10%"
+      ],
+      "ans": "C",
+      "exp": "Direct Credit Substitutes, such as general guarantees of indebtedness, have a CCF of 100%."
+    },
+    {
+      "id": "Q229",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Credit Conversion Factor for Performance Bonds?",
+      "opts": [
+        "A. 20%",
+        "B. 50%",
+        "C. 100%",
+        "D. 10%"
+      ],
+      "ans": "B",
+      "exp": "Performance bonds and bid bonds have a CCF of 50%."
+    },
+    {
+      "id": "Q230",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Credit Conversion Factor for Short-term Trade-related Contingencies?",
+      "opts": [
+        "A. 20%",
+        "B. 50%",
+        "C. 100%",
+        "D. 10%"
+      ],
+      "ans": "A",
+      "exp": "Short-term, self-liquidating trade-related contingencies like Letters of Credit have a CCF of 20%."
+    },
+    {
+      "id": "Q231",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the Prudential Guidelines?",
+      "opts": [
+        "A. To increase bank profitability",
+        "B. To facilitate timely recognition of asset quality deterioration and harmonize provisioning",
+        "C. To reduce bank lending",
+        "D. To increase competition"
+      ],
+      "ans": "B",
+      "exp": "The Prudential Guidelines aim to facilitate timely recognition of deterioration of asset quality, classification of credit exposures, and harmonize provisioning for assets."
+    },
+    {
+      "id": "Q232",
+      "module": 5,
+      "type": "mcq",
+      "q": "When is a credit classified as non-performing?",
+      "opts": [
+        "A. When interest or principal is due and unpaid for 30 days",
+        "B. When interest or principal is due and unpaid for 90 days or more",
+        "C. When interest or principal is due and unpaid for 60 days",
+        "D. When interest or principal is due and unpaid for 120 days"
+      ],
+      "ans": "B",
+      "exp": "A credit is non-performing when interest or principal is due and unpaid for 90 days or more."
+    },
+    {
+      "id": "Q233",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the provision rate for a Substandard loan?",
+      "opts": [
+        "A. 5%",
+        "B. 10%",
+        "C. 50%",
+        "D. 100%"
+      ],
+      "ans": "B",
+      "exp": "Substandard loans (90-180 days past due) require a 10% specific provision."
+    },
+    {
+      "id": "Q234",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the provision rate for a Doubtful loan?",
+      "opts": [
+        "A. 10%",
+        "B. 20%",
+        "C. 50%",
+        "D. 100%"
+      ],
+      "ans": "C",
+      "exp": "Doubtful loans (180-360 days past due) require a 50% specific provision."
+    },
+    {
+      "id": "Q235",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the provision rate for a Lost loan?",
+      "opts": [
+        "A. 10%",
+        "B. 50%",
+        "C. 75%",
+        "D. 100%"
+      ],
+      "ans": "D",
+      "exp": "Lost loans (over 360 days past due) require a 100% specific provision."
+    },
+    {
+      "id": "Q236",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the difference between a specific provision and a general provision?",
+      "opts": [
+        "A. Specific provisions are for non-performing loans; general provisions are for performing loans",
+        "B. Specific provisions are for performing loans; general provisions are for non-performing loans",
+        "C. There is no difference",
+        "D. Specific provisions are for large loans only"
+      ],
+      "ans": "A",
+      "exp": "Specific provisions are made for identified impaired (non-performing) loans, while general provisions are made for performing loans to cover inherent but unidentified credit risk."
+    },
+    {
+      "id": "Q237",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the general provision rate for performing loans?",
+      "opts": [
+        "A. 0.5%",
+        "B. 1%",
+        "C. 2%",
+        "D. 5%"
+      ],
+      "ans": "B",
+      "exp": "General provision is computed as 1% of net assets less the portion that has been specifically provided for."
+    },
+    {
+      "id": "Q238",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the effect of provisions on a bank's profit?",
+      "opts": [
+        "A. They increase profit",
+        "B. They have no effect",
+        "C. They reduce profit",
+        "D. They only affect the balance sheet"
+      ],
+      "ans": "C",
+      "exp": "Provisions are made against the profit and loss account, reducing profit."
+    },
+    {
+      "id": "Q239",
+      "module": 5,
+      "type": "mcq",
+      "q": "What does the 'C' in CAMELS stand for?",
+      "opts": [
+        "A. Capital Adequacy",
+        "B. Compliance",
+        "C. Customer Service",
+        "D. Credit Quality"
+      ],
+      "ans": "A",
+      "exp": "The 'C' in CAMELS stands for Capital Adequacy."
+    },
+    {
+      "id": "Q240",
+      "module": 5,
+      "type": "mcq",
+      "q": "What does the 'A' in CAMELS stand for?",
+      "opts": [
+        "A. Asset Quality",
+        "B. Audit",
+        "C. Accountability",
+        "D. Administration"
+      ],
+      "ans": "A",
+      "exp": "The 'A' in CAMELS stands for Asset Quality."
+    },
+    {
+      "id": "Q241",
+      "module": 5,
+      "type": "mcq",
+      "q": "What does the 'M' in CAMELS stand for?",
+      "opts": [
+        "A. Market Risk",
+        "B. Management Quality",
+        "C. Monetary Policy",
+        "D. Mergers"
+      ],
+      "ans": "B",
+      "exp": "The 'M' in CAMELS stands for Management Quality."
+    },
+    {
+      "id": "Q242",
+      "module": 5,
+      "type": "mcq",
+      "q": "What does the 'E' in CAMELS stand for?",
+      "opts": [
+        "A. Earnings Capacity",
+        "B. Equity",
+        "C. Efficiency",
+        "D. Expenditure"
+      ],
+      "ans": "A",
+      "exp": "The 'E' in CAMELS stands for Earnings Capacity."
+    },
+    {
+      "id": "Q243",
+      "module": 5,
+      "type": "mcq",
+      "q": "What does the 'L' in CAMELS stand for?",
+      "opts": [
+        "A. Liquidity",
+        "B. Loans",
+        "C. Liability",
+        "D. Leverage"
+      ],
+      "ans": "A",
+      "exp": "The 'L' in CAMELS stands for Liquidity."
+    },
+    {
+      "id": "Q244",
+      "module": 5,
+      "type": "mcq",
+      "q": "What does the 'S' in CAMELS stand for?",
+      "opts": [
+        "A. Sensitivity to Market Risk",
+        "B. Solvency",
+        "C. Strategy",
+        "D. Supervision"
+      ],
+      "ans": "A",
+      "exp": "The 'S' in CAMELS stands for Sensitivity to Market Risk."
+    },
+    {
+      "id": "Q245",
+      "module": 5,
+      "type": "mcq",
+      "q": "Under the CAMELS framework, what does Capital Adequacy measure?",
+      "opts": [
+        "A. The extent to which a bank's capital can carry its risk-weighted assets",
+        "B. The quality of a bank's loan portfolio",
+        "C. The ability of management to run the bank",
+        "D. The bank's earnings capacity"
+      ],
+      "ans": "A",
+      "exp": "Capital Adequacy measures the extent to which a bank's capital can sufficiently carry its risk-weighted assets."
+    },
+    {
+      "id": "Q246",
+      "module": 5,
+      "type": "mcq",
+      "q": "Under the CAMELS framework, what does Asset Quality evaluate?",
+      "opts": [
+        "A. The level, distribution, and severity of classified assets",
+        "B. The number of employees",
+        "C. The bank's profitability",
+        "D. The bank's liquidity"
+      ],
+      "ans": "A",
+      "exp": "Asset quality evaluation includes the level, distribution, and severity of classified assets, adequacy of internal controls, and credit standards."
+    },
+    {
+      "id": "Q247",
+      "module": 5,
+      "type": "mcq",
+      "q": "Under the CAMELS framework, what does Management Quality evaluate?",
+      "opts": [
+        "A. Technical competence, leadership, and corporate governance",
+        "B. The bank's earnings",
+        "C. The bank's liquidity",
+        "D. The bank's capital adequacy"
+      ],
+      "ans": "A",
+      "exp": "Management quality includes technical competence, leadership, strong corporate governance, and compliance with regulations."
+    },
+    {
+      "id": "Q248",
+      "module": 5,
+      "type": "mcq",
+      "q": "Under the CAMELS framework, what does Earnings Capacity evaluate?",
+      "opts": [
+        "A. Quality and prospects for core income",
+        "B. The level of classified assets",
+        "C. The bank's liquidity position",
+        "D. The bank's capital adequacy"
+      ],
+      "ans": "A",
+      "exp": "Earnings capacity evaluates the quality and prospects for core income and the ability to cover losses."
+    },
+    {
+      "id": "Q249",
+      "module": 5,
+      "type": "mcq",
+      "q": "Under the CAMELS framework, what does Liquidity measure?",
+      "opts": [
+        "A. A bank's ability to meet demand at all times",
+        "B. A bank's profitability",
+        "C. A bank's asset quality",
+        "D. A bank's capital adequacy"
+      ],
+      "ans": "A",
+      "exp": "Liquidity measures a bank's ability to meet demand at all times, including withdrawals, contractual obligations, and day-to-day operations."
+    },
+    {
+      "id": "Q250",
+      "module": 5,
+      "type": "mcq",
+      "q": "Under the CAMELS framework, what does Sensitivity to Market Risk measure?",
+      "opts": [
+        "A. The degree to which bank capital is affected by market volatility",
+        "B. The bank's ability to generate profits",
+        "C. The bank's asset quality",
+        "D. The bank's liquidity"
+      ],
+      "ans": "A",
+      "exp": "Sensitivity to Market Risk measures the degree to which bank capital is affected by changes in interest rates, exchange rates, equity prices, and commodities."
+    },
+    {
+      "id": "Q251",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key effect of poor liquidity on a bank?",
+      "opts": [
+        "A. Increased profitability",
+        "B. Reduced costs",
+        "C. Reduced profitability or increased losses",
+        "D. Improved market perception"
+      ],
+      "ans": "C",
+      "exp": "Poor liquidity can lead to reduced profitability or increased losses, and potentially a run on the bank."
+    },
+    {
+      "id": "Q252",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of a bank rating?",
+      "opts": [
+        "A. To help depositors and investors ascertain the suitability and capability of a bank",
+        "B. To reduce bank profitability",
+        "C. To increase competition",
+        "D. To set interest rates"
+      ],
+      "ans": "A",
+      "exp": "A rating helps depositors and investors ascertain the suitability and capability of a bank, understand the risk profile, and improves the financial standing of a bank."
+    },
+    {
+      "id": "Q253",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a regulatory policy in Nigeria?",
+      "opts": [
+        "A. The Money Laundering Act",
+        "B. The Companies and Allied Matters Act",
+        "C. The Immigration Act",
+        "D. The Customs and Excise Act"
+      ],
+      "ans": "A",
+      "exp": "The Money Laundering Act is one of the key regulations governing banking activities in Nigeria."
+    },
+    {
+      "id": "Q254",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary purpose of the Money Laundering Act?",
+      "opts": [
+        "A. To prohibit the laundering of proceeds of a crime",
+        "B. To regulate the stock market",
+        "C. To set interest rates",
+        "D. To insure deposits"
+      ],
+      "ans": "A",
+      "exp": "The Money Laundering Act makes comprehensive provisions to prohibit the laundering of the proceeds of a crime or an illegal act."
+    },
+    {
+      "id": "Q255",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a function of the Securities and Exchange Commission (SEC)?",
+      "opts": [
+        "A. Regulating the banking industry",
+        "B. Insuring customer deposits",
+        "C. Regulating the capital market",
+        "D. Setting interest rates"
+      ],
+      "ans": "C",
+      "exp": "SEC is the apex regulator of the Nigerian capital market."
+    },
+    {
+      "id": "Q256",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of a bank's Loan to Deposit Ratio?",
+      "opts": [
+        "A. To measure the proportion of loans made from deposits",
+        "B. To measure bank profitability",
+        "C. To measure capital adequacy",
+        "D. To measure liquidity"
+      ],
+      "ans": "A",
+      "exp": "The Loan to Deposit Ratio measures the proportion of loans made from deposits."
+    },
+    {
+      "id": "Q257",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's Tier 2 Capital?",
+      "opts": [
+        "A. Paid-up share capital",
+        "B. Retained earnings",
+        "C. Revaluation reserves",
+        "D. Share premium"
+      ],
+      "ans": "C",
+      "exp": "Revaluation reserves are part of Tier 2 (supplementary) capital."
+    },
+    {
+      "id": "Q258",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary purpose of the Prudential Guidelines on loan loss provisioning?",
+      "opts": [
+        "A. To increase bank profitability",
+        "B. To harmonize provisioning for assets and facilitate comparability",
+        "C. To reduce bank lending",
+        "D. To increase competition"
+      ],
+      "ans": "B",
+      "exp": "The Prudential Guidelines aim to harmonize provisioning for assets and facilitate comparability in the industry."
+    },
+    {
+      "id": "Q259",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key reason for bank regulation related to consumer protection?",
+      "opts": [
+        "A. To increase bank profits",
+        "B. To protect depositors and customers",
+        "C. To reduce competition",
+        "D. To increase bank lending"
+      ],
+      "ans": "B",
+      "exp": "Consumer protection is a key reason for banking regulation."
+    },
+    {
+      "id": "Q260",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the effect of a high CAR on a bank's stability?",
+      "opts": [
+        "A. It increases stability",
+        "B. It decreases stability",
+        "C. It has no effect",
+        "D. It only affects profitability"
+      ],
+      "ans": "A",
+      "exp": "A higher CAR means the bank has more capital to absorb losses, increasing its stability."
+    },
+    {
+      "id": "Q261",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the impact of a high provision rate on a bank's reported earnings?",
+      "opts": [
+        "A. It increases earnings",
+        "B. It has no effect",
+        "C. It reduces earnings",
+        "D. It only affects the balance sheet"
+      ],
+      "ans": "C",
+      "exp": "High provisions reduce earnings as they are charged to the profit and loss account."
+    },
+    {
+      "id": "Q262",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's Statement of Financial Position?",
+      "opts": [
+        "A. Interest income",
+        "B. Commission and fees",
+        "C. Interbank takings",
+        "D. Operating expenses"
+      ],
+      "ans": "C",
+      "exp": "Interbank takings are liabilities on a bank's Statement of Financial Position."
+    },
+    {
+      "id": "Q263",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's income statement?",
+      "opts": [
+        "A. Loans and advances",
+        "B. Deposits",
+        "C. Loan loss provisions",
+        "D. Shareholders' equity"
+      ],
+      "ans": "C",
+      "exp": "Loan loss provisions are an expense on a bank's income statement."
+    },
+    {
+      "id": "Q264",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the CBN's regulatory framework?",
+      "opts": [
+        "A. To increase bank profitability",
+        "B. To ensure the stability and soundness of the banking system",
+        "C. To reduce competition",
+        "D. To increase bank lending"
+      ],
+      "ans": "B",
+      "exp": "The CBN's regulatory framework ensures the stability and soundness of the banking system."
+    },
+    {
+      "id": "Q265",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a function of the CBN in relation to banks?",
+      "opts": [
+        "A. Insuring customer deposits",
+        "B. Setting prudential guidelines",
+        "C. Regulating the capital market",
+        "D. Setting accounting standards"
+      ],
+      "ans": "B",
+      "exp": "The CBN sets prudential guidelines to govern the operations of banks."
+    },
+    {
+      "id": "Q266",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the Liquidity Ratio?",
+      "opts": [
+        "A. To ensure banks have enough capital",
+        "B. To ensure banks can meet short-term obligations",
+        "C. To ensure banks are profitable",
+        "D. To ensure banks have good management"
+      ],
+      "ans": "B",
+      "exp": "The Liquidity Ratio ensures banks have enough liquid assets to meet short-term obligations."
+    },
+    {
+      "id": "Q267",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a measure of Sensitivity to Market Risk?",
+      "opts": [
+        "A. Gap analysis (RSA - RSL)",
+        "B. Loan to Deposit Ratio",
+        "C. Capital Adequacy Ratio",
+        "D. Liquidity Ratio"
+      ],
+      "ans": "A",
+      "exp": "Gap analysis (RSA - RSL) is a measure of Sensitivity to Market Risk."
+    },
+    {
+      "id": "Q268",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the impact of high sensitivity to market risk?",
+      "opts": [
+        "A. Volatile profitability",
+        "B. Increased stability",
+        "C. Lower funding costs",
+        "D. Higher customer satisfaction"
+      ],
+      "ans": "A",
+      "exp": "High sensitivity to market risk can lead to volatile profitability and increased funding costs."
+    },
+    {
+      "id": "Q269",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a factor affecting a bank's liquidity?",
+      "opts": [
+        "A. Quality of assets",
+        "B. Quality of earnings",
+        "C. Earnings retention",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "Liquidity is affected by the quality of assets, quality of earnings, earnings retention, and asset/liability management."
+    },
+    {
+      "id": "Q270",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key effect of poor asset quality?",
+      "opts": [
+        "A. Increased profitability",
+        "B. Reduced profitability",
+        "C. Improved market perception",
+        "D. Lower costs"
+      ],
+      "ans": "B",
+      "exp": "Poor asset quality leads to higher provisions and reduced profitability, and is a sure way to distress."
+    },
+    {
+      "id": "Q271",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary purpose of the Single Obligor Limit?",
+      "opts": [
+        "A. To limit concentration of credit risk",
+        "B. To increase bank profitability",
+        "C. To reduce deposit costs",
+        "D. To increase competition"
+      ],
+      "ans": "A",
+      "exp": "The SOL limits the maximum credit exposure to a single borrower, reducing concentration risk."
+    },
+    {
+      "id": "Q272",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's qualifying capital for CAR purposes?",
+      "opts": [
+        "A. Revaluation reserves",
+        "B. Intangible assets",
+        "C. Subordinated debt",
+        "D. General provisions"
+      ],
+      "ans": "C",
+      "exp": "Subordinated debt is part of Tier 2 Capital and qualifies for CAR purposes."
+    },
+    {
+      "id": "Q273",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the impact of a high CRR on a bank's profitability?",
+      "opts": [
+        "A. It increases profitability",
+        "B. It has no effect",
+        "C. It reduces profitability",
+        "D. It only affects liquidity"
+      ],
+      "ans": "C",
+      "exp": "A high CRR reduces the funds available for lending, reducing potential interest income and profitability."
+    },
+    {
+      "id": "Q274",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a regulatory policy in Nigeria?",
+      "opts": [
+        "A. The Prudential Guidelines",
+        "B. The Companies and Allied Matters Act",
+        "C. The Immigration Act",
+        "D. The Customs and Excise Act"
+      ],
+      "ans": "A",
+      "exp": "The Prudential Guidelines are a key regulatory policy in Nigeria."
+    },
+    {
+      "id": "Q275",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the CBN's Capital Adequacy Ratio requirement?",
+      "opts": [
+        "A. To ensure banks have enough capital to absorb unexpected losses",
+        "B. To increase bank profitability",
+        "C. To reduce bank lending",
+        "D. To increase competition"
+      ],
+      "ans": "A",
+      "exp": "The CAR ensures banks have enough capital to absorb unexpected losses and remain solvent."
+    },
+    {
+      "id": "Q276",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the impact of a high Liquidity Ratio?",
+      "opts": [
+        "A. It increases profitability",
+        "B. It has no effect",
+        "C. It may reduce profitability",
+        "D. It only affects capital"
+      ],
+      "ans": "C",
+      "exp": "A high liquidity ratio means the bank holds more liquid assets, which typically yield lower returns, potentially reducing profitability."
+    },
+    {
+      "id": "Q277",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key factor in evaluating Management Quality?",
+      "opts": [
+        "A. Strong corporate governance",
+        "B. The bank's earnings",
+        "C. The bank's liquidity",
+        "D. The bank's capital adequacy"
+      ],
+      "ans": "A",
+      "exp": "Strong corporate governance is a key factor in evaluating Management Quality."
+    },
+    {
+      "id": "Q278",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the CBN's regulatory policies?",
+      "opts": [
+        "A. To increase bank profitability",
+        "B. To ensure a sound and stable financial system",
+        "C. To reduce competition",
+        "D. To increase bank lending"
+      ],
+      "ans": "B",
+      "exp": "The CBN's regulatory policies aim to ensure a sound and stable financial system."
+    },
+    {
+      "id": "Q279",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's Statement of Financial Position?",
+      "opts": [
+        "A. Interest income",
+        "B. Commission and fees",
+        "C. Share capital",
+        "D. Operating expenses"
+      ],
+      "ans": "C",
+      "exp": "Share capital is a component of equity on a bank's Statement of Financial Position."
+    },
+    {
+      "id": "Q280",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's income statement?",
+      "opts": [
+        "A. Deposits",
+        "B. Loans and advances",
+        "C. Operating expenses",
+        "D. Shareholders' equity"
+      ],
+      "ans": "C",
+      "exp": "Operating expenses are a line item on a bank's income statement."
+    },
+    {
+      "id": "Q281",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of bank ratings?",
+      "opts": [
+        "A. To help regulatory authorities build a sound financial system",
+        "B. To increase bank profitability",
+        "C. To reduce competition",
+        "D. To increase bank lending"
+      ],
+      "ans": "A",
+      "exp": "Bank ratings help regulatory authorities build a sound financial system and provide information for pricing and exposure capability."
+    },
+    {
+      "id": "Q282",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key driver of interest income for a bank?",
+      "opts": [
+        "A. The volume of deposits",
+        "B. The value of loans and advances",
+        "C. The number of branches",
+        "D. The level of staff costs"
+      ],
+      "ans": "B",
+      "exp": "Interest income is driven by the value of loans and advances and the interest rates charged."
+    },
+    {
+      "id": "Q283",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key driver of operating expenses for a bank?",
+      "opts": [
+        "A. The volume of deposits",
+        "B. The value of assets",
+        "C. The number and quality of staff",
+        "D. The interest rate"
+      ],
+      "ans": "C",
+      "exp": "Operating expenses are driven by the number and quality of staff, the value and age of assets, and administrative efficiency."
+    },
+    {
+      "id": "Q284",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the impact of high provisions on a bank's rating?",
+      "opts": [
+        "A. It improves the rating",
+        "B. It has no effect",
+        "C. It reduces the rating",
+        "D. It only affects liquidity"
+      ],
+      "ans": "C",
+      "exp": "High provisions reflect poor asset quality and can reduce a bank's rating."
+    },
+    {
+      "id": "Q285",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's Tier 1 Capital?",
+      "opts": [
+        "A. Revaluation reserves",
+        "B. Subordinated debt",
+        "C. Paid-up share capital",
+        "D. General provisions"
+      ],
+      "ans": "C",
+      "exp": "Paid-up share capital is part of Tier 1 Capital."
+    },
+    {
+      "id": "Q286",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's Tier 2 Capital?",
+      "opts": [
+        "A. Retained earnings",
+        "B. Share premium",
+        "C. General provisions",
+        "D. Shareholders' equity"
+      ],
+      "ans": "C",
+      "exp": "General provisions are part of Tier 2 Capital."
+    },
+    {
+      "id": "Q287",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the Loan to Deposit Ratio?",
+      "opts": [
+        "A. To ensure banks have enough capital",
+        "B. To measure the amount of loans funded by deposits",
+        "C. To measure profitability",
+        "D. To measure liquidity"
+      ],
+      "ans": "B",
+      "exp": "The Loan to Deposit Ratio measures the proportion of loans funded by deposits."
+    },
+    {
+      "id": "Q288",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the impact of a low Loan to Deposit Ratio?",
+      "opts": [
+        "A. It increases profitability",
+        "B. It may indicate under-lending",
+        "C. It reduces costs",
+        "D. It has no effect"
+      ],
+      "ans": "B",
+      "exp": "A low Loan to Deposit Ratio may indicate that the bank is not lending enough and may be underutilizing its deposits."
+    },
+    {
+      "id": "Q289",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a measure of asset quality?",
+      "opts": [
+        "A. The level of classified assets",
+        "B. The bank's earnings",
+        "C. The bank's liquidity",
+        "D. The bank's capital"
+      ],
+      "ans": "A",
+      "exp": "The level of classified assets is a key measure of asset quality."
+    },
+    {
+      "id": "Q290",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the CBN's Prudential Guidelines?",
+      "opts": [
+        "A. To increase bank profitability",
+        "B. To facilitate the classification of credit exposures based on perceived risk",
+        "C. To reduce bank lending",
+        "D. To increase competition"
+      ],
+      "ans": "B",
+      "exp": "The Prudential Guidelines facilitate the classification of credit exposures based on perceived risk."
+    },
+    {
+      "id": "Q291",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's Statement of Financial Position?",
+      "opts": [
+        "A. Interest income",
+        "B. Commission and fees",
+        "C. Retained earnings",
+        "D. Operating expenses"
+      ],
+      "ans": "C",
+      "exp": "Retained earnings are part of equity on a bank's Statement of Financial Position."
+    },
+    {
+      "id": "Q292",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's income statement?",
+      "opts": [
+        "A. Loans and advances",
+        "B. Deposits",
+        "C. Profit before tax",
+        "D. Shareholders' equity"
+      ],
+      "ans": "C",
+      "exp": "Profit before tax is a line item on a bank's income statement."
+    },
+    {
+      "id": "Q293",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the CBN's regulatory oversight?",
+      "opts": [
+        "A. To increase bank profitability",
+        "B. To ensure banks operate safely and soundly",
+        "C. To reduce competition",
+        "D. To increase bank lending"
+      ],
+      "ans": "B",
+      "exp": "The CBN's regulatory oversight ensures banks operate safely and soundly."
+    },
+    {
+      "id": "Q294",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key effect of good asset quality?",
+      "opts": [
+        "A. Higher provisions",
+        "B. Lower provisions",
+        "C. Higher costs",
+        "D. Lower profitability"
+      ],
+      "ans": "B",
+      "exp": "Good asset quality leads to lower provisions and higher profitability."
+    },
+    {
+      "id": "Q295",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a measure of Sensitivity to Market Risk?",
+      "opts": [
+        "A. The percentage of wholesale deposits",
+        "B. The loan to deposit ratio",
+        "C. The capital adequacy ratio",
+        "D. The liquidity ratio"
+      ],
+      "ans": "A",
+      "exp": "Sensitivity to Market Risk is affected by the volume and diversification of deposits, including the percentage of wholesale deposits."
+    },
+    {
+      "id": "Q296",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of bank capital?",
+      "opts": [
+        "A. To absorb losses",
+        "B. To increase profits",
+        "C. To reduce costs",
+        "D. To increase lending"
+      ],
+      "ans": "A",
+      "exp": "Bank capital serves as a buffer to absorb unexpected losses."
+    },
+    {
+      "id": "Q297",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's Statement of Financial Position?",
+      "opts": [
+        "A. Interest income",
+        "B. Commission and fees",
+        "C. Subordinated debt",
+        "D. Operating expenses"
+      ],
+      "ans": "C",
+      "exp": "Subordinated debt is a liability on a bank's Statement of Financial Position."
+    },
+    {
+      "id": "Q298",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a component of a bank's income statement?",
+      "opts": [
+        "A. Loans and advances",
+        "B. Deposits",
+        "C. Tax",
+        "D. Shareholders' equity"
+      ],
+      "ans": "C",
+      "exp": "Tax is a line item on a bank's income statement."
+    },
+    {
+      "id": "Q299",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the CBN's regulatory framework?",
+      "opts": [
+        "A. To increase bank profitability",
+        "B. To ensure banks comply with laws and regulations",
+        "C. To reduce competition",
+        "D. To increase bank lending"
+      ],
+      "ans": "B",
+      "exp": "The CBN's regulatory framework ensures banks comply with laws and regulations."
+    },
+    {
+      "id": "Q300",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a measure of earnings capacity?",
+      "opts": [
+        "A. The quality of core income",
+        "B. The level of classified assets",
+        "C. The bank's liquidity",
+        "D. The bank's capital"
+      ],
+      "ans": "A",
+      "exp": "Earnings capacity evaluates the quality and prospects for core income."
+    },
+    {
+      "id": "Q301",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer deposits \u20a610 million in a current account. What is the immediate effect on the bank's balance sheet?",
+      "opts": [
+        "A. Assets increase by \u20a610 million; liabilities decrease by \u20a610 million",
+        "B. Assets increase by \u20a610 million; liabilities increase by \u20a610 million",
+        "C. Assets decrease by \u20a610 million; liabilities increase by \u20a610 million",
+        "D. There is no effect on the balance sheet"
+      ],
+      "ans": "B",
+      "exp": "A deposit increases the bank's cash (asset) and also increases customer deposits (liability)."
+    },
+    {
+      "id": "Q302",
+      "module": 5,
+      "type": "mcq",
+      "q": "If a bank lends \u20a65 million to a customer, what is the immediate effect on the bank's balance sheet?",
+      "opts": [
+        "A. Loans increase by \u20a65 million; cash decreases by \u20a65 million",
+        "B. Loans decrease by \u20a65 million; cash increases by \u20a65 million",
+        "C. Loans increase by \u20a65 million; deposits increase by \u20a65 million",
+        "D. There is no effect on the balance sheet"
+      ],
+      "ans": "A",
+      "exp": "When a bank lends money, loans (asset) increase and cash (asset) decreases."
+    },
+    {
+      "id": "Q303",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has total deposits of \u20a6100 billion. If the CRR rate is 45%, how much must be kept with the CBN?",
+      "opts": [
+        "A. \u20a645 billion",
+        "B. \u20a655 billion",
+        "C. \u20a650 billion",
+        "D. \u20a640 billion"
+      ],
+      "ans": "A",
+      "exp": "CRR = 45% \u00d7 \u20a6100 billion = \u20a645 billion."
+    },
+    {
+      "id": "Q304",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has liquid assets of \u20a630 billion and total current liabilities of \u20a6100 billion. What is the liquidity ratio?",
+      "opts": [
+        "A. 20%",
+        "B. 25%",
+        "C. 30%",
+        "D. 35%"
+      ],
+      "ans": "C",
+      "exp": "Liquidity Ratio = 30/100 \u00d7 100 = 30%."
+    },
+    {
+      "id": "Q305",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has Tier 1 capital of \u20a640 billion, Tier 2 capital of \u20a610 billion, and risk-weighted assets of \u20a6400 billion. What is the CAR?",
+      "opts": [
+        "A. 10%",
+        "B. 12.5%",
+        "C. 15%",
+        "D. 20%"
+      ],
+      "ans": "B",
+      "exp": "Total capital = \u20a640bn + \u20a610bn = \u20a650bn. CAR = 50/400 \u00d7 100 = 12.5%."
+    },
+    {
+      "id": "Q306",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has shareholders' funds unimpaired by losses of \u20a650 billion. What is the Single Obligor Limit?",
+      "opts": [
+        "A. \u20a65 billion",
+        "B. \u20a610 billion",
+        "C. \u20a612.5 billion",
+        "D. \u20a615 billion"
+      ],
+      "ans": "B",
+      "exp": "SOL = 20% \u00d7 \u20a650bn = \u20a610 billion."
+    },
+    {
+      "id": "Q307",
+      "module": 5,
+      "type": "mcq",
+      "q": "A loan of \u20a610 million is classified as Doubtful. What provision is required?",
+      "opts": [
+        "A. \u20a61 million",
+        "B. \u20a65 million",
+        "C. \u20a610 million",
+        "D. \u20a62 million"
+      ],
+      "ans": "B",
+      "exp": "Doubtful loans require a 50% provision: 50% \u00d7 \u20a610m = \u20a65 million."
+    },
+    {
+      "id": "Q308",
+      "module": 5,
+      "type": "mcq",
+      "q": "A loan of \u20a620 million is classified as Lost. What provision is required?",
+      "opts": [
+        "A. \u20a610 million",
+        "B. \u20a615 million",
+        "C. \u20a620 million",
+        "D. \u20a65 million"
+      ],
+      "ans": "C",
+      "exp": "Lost loans require a 100% provision: 100% \u00d7 \u20a620m = \u20a620 million."
+    },
+    {
+      "id": "Q309",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has total qualifying capital of \u20a6100 billion and risk-weighted assets of \u20a6800 billion. What is the CAR?",
+      "opts": [
+        "A. 10.5%",
+        "B. 12.5%",
+        "C. 15%",
+        "D. 17.5%"
+      ],
+      "ans": "B",
+      "exp": "CAR = 100/800 \u00d7 100 = 12.5%."
+    },
+    {
+      "id": "Q310",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has a customer exposure of \u20a612 billion on-balance sheet and a performance bond of \u20a64 billion with a 50% CCF. What is the total exposure for SOL purposes?",
+      "opts": [
+        "A. \u20a612 billion",
+        "B. \u20a614 billion",
+        "C. \u20a616 billion",
+        "D. \u20a620 billion"
+      ],
+      "ans": "B",
+      "exp": "Off-balance sheet exposure = \u20a64bn \u00d7 50% = \u20a62bn. Total exposure = \u20a612bn + \u20a62bn = \u20a614 billion."
+    },
+    {
+      "id": "Q311",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has total deposits of \u20a6200 billion. If the CRR is 45%, what is the amount of CRR?",
+      "opts": [
+        "A. \u20a680 billion",
+        "B. \u20a690 billion",
+        "C. \u20a6100 billion",
+        "D. \u20a6110 billion"
+      ],
+      "ans": "B",
+      "exp": "CRR = 45% \u00d7 \u20a6200bn = \u20a690 billion."
+    },
+    {
+      "id": "Q312",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has liquid assets of \u20a650 billion and total current liabilities of \u20a6125 billion. What is the liquidity ratio?",
+      "opts": [
+        "A. 35%",
+        "B. 40%",
+        "C. 45%",
+        "D. 50%"
+      ],
+      "ans": "B",
+      "exp": "LR = 50/125 \u00d7 100 = 40%."
+    },
+    {
+      "id": "Q313",
+      "module": 5,
+      "type": "mcq",
+      "q": "A loan of \u20a615 million is classified as Substandard. What provision is required?",
+      "opts": [
+        "A. \u20a60.75 million",
+        "B. \u20a61.5 million",
+        "C. \u20a63 million",
+        "D. \u20a67.5 million"
+      ],
+      "ans": "B",
+      "exp": "Substandard loans require a 10% provision: 10% \u00d7 \u20a615m = \u20a61.5 million."
+    },
+    {
+      "id": "Q314",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has total qualifying capital of \u20a680 billion and risk-weighted assets of \u20a6500 billion. What is the CAR?",
+      "opts": [
+        "A. 14%",
+        "B. 16%",
+        "C. 18%",
+        "D. 20%"
+      ],
+      "ans": "B",
+      "exp": "CAR = 80/500 \u00d7 100 = 16%."
+    },
+    {
+      "id": "Q315",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has shareholders' funds unimpaired by losses of \u20a660 billion. What is the Single Obligor Limit?",
+      "opts": [
+        "A. \u20a66 billion",
+        "B. \u20a610 billion",
+        "C. \u20a612 billion",
+        "D. \u20a615 billion"
+      ],
+      "ans": "C",
+      "exp": "SOL = 20% \u00d7 \u20a660bn = \u20a612 billion."
+    },
+    {
+      "id": "Q316",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has a customer exposure of \u20a615 billion on-balance sheet and an advance payment guarantee of \u20a65 billion with a 50% CCF. What is the total exposure for SOL purposes?",
+      "opts": [
+        "A. \u20a615 billion",
+        "B. \u20a617.5 billion",
+        "C. \u20a620 billion",
+        "D. \u20a625 billion"
+      ],
+      "ans": "B",
+      "exp": "Off-balance sheet exposure = \u20a65bn \u00d7 50% = \u20a62.5bn. Total exposure = \u20a615bn + \u20a62.5bn = \u20a617.5 billion."
+    },
+    {
+      "id": "Q317",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has total deposits of \u20a6300 billion. If the CRR is 45%, what is the amount of CRR?",
+      "opts": [
+        "A. \u20a6120 billion",
+        "B. \u20a6135 billion",
+        "C. \u20a6150 billion",
+        "D. \u20a6165 billion"
+      ],
+      "ans": "B",
+      "exp": "CRR = 45% \u00d7 \u20a6300bn = \u20a6135 billion."
+    },
+    {
+      "id": "Q318",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has liquid assets of \u20a660 billion and total current liabilities of \u20a6150 billion. What is the liquidity ratio?",
+      "opts": [
+        "A. 35%",
+        "B. 40%",
+        "C. 45%",
+        "D. 50%"
+      ],
+      "ans": "B",
+      "exp": "LR = 60/150 \u00d7 100 = 40%."
+    },
+    {
+      "id": "Q319",
+      "module": 5,
+      "type": "mcq",
+      "q": "A loan of \u20a625 million is classified as Doubtful. What provision is required?",
+      "opts": [
+        "A. \u20a62.5 million",
+        "B. \u20a65 million",
+        "C. \u20a612.5 million",
+        "D. \u20a625 million"
+      ],
+      "ans": "C",
+      "exp": "Doubtful loans require a 50% provision: 50% \u00d7 \u20a625m = \u20a612.5 million."
+    },
+    {
+      "id": "Q320",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has total qualifying capital of \u20a6120 billion and risk-weighted assets of \u20a6800 billion. What is the CAR?",
+      "opts": [
+        "A. 12%",
+        "B. 15%",
+        "C. 17.5%",
+        "D. 20%"
+      ],
+      "ans": "B",
+      "exp": "CAR = 120/800 \u00d7 100 = 15%."
+    },
+    {
+      "id": "Q321",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has shareholders' funds unimpaired by losses of \u20a640 billion. What is the Single Obligor Limit?",
+      "opts": [
+        "A. \u20a64 billion",
+        "B. \u20a68 billion",
+        "C. \u20a610 billion",
+        "D. \u20a612 billion"
+      ],
+      "ans": "B",
+      "exp": "SOL = 20% \u00d7 \u20a640bn = \u20a68 billion."
+    },
+    {
+      "id": "Q322",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has a customer exposure of \u20a68 billion on-balance sheet and a Letter of Credit of \u20a610 billion with a 20% CCF. What is the total exposure for SOL purposes?",
+      "opts": [
+        "A. \u20a68 billion",
+        "B. \u20a69 billion",
+        "C. \u20a610 billion",
+        "D. \u20a618 billion"
+      ],
+      "ans": "C",
+      "exp": "Off-balance sheet exposure = \u20a610bn \u00d7 20% = \u20a62bn. Total exposure = \u20a68bn + \u20a62bn = \u20a610 billion."
+    },
+    {
+      "id": "Q323",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has total deposits of \u20a6500 billion. If the CRR is 45%, what is the amount of CRR?",
+      "opts": [
+        "A. \u20a6200 billion",
+        "B. \u20a6225 billion",
+        "C. \u20a6250 billion",
+        "D. \u20a6275 billion"
+      ],
+      "ans": "B",
+      "exp": "CRR = 45% \u00d7 \u20a6500bn = \u20a6225 billion."
+    },
+    {
+      "id": "Q324",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has liquid assets of \u20a680 billion and total current liabilities of \u20a6200 billion. What is the liquidity ratio?",
+      "opts": [
+        "A. 35%",
+        "B. 40%",
+        "C. 45%",
+        "D. 50%"
+      ],
+      "ans": "B",
+      "exp": "LR = 80/200 \u00d7 100 = 40%."
+    },
+    {
+      "id": "Q325",
+      "module": 5,
+      "type": "mcq",
+      "q": "A loan of \u20a630 million is classified as Lost. What provision is required?",
+      "opts": [
+        "A. \u20a615 million",
+        "B. \u20a630 million",
+        "C. \u20a620 million",
+        "D. \u20a610 million"
+      ],
+      "ans": "B",
+      "exp": "Lost loans require a 100% provision: 100% \u00d7 \u20a630m = \u20a630 million."
+    },
+    {
+      "id": "Q326",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has total qualifying capital of \u20a6150 billion and risk-weighted assets of \u20a61,000 billion. What is the CAR?",
+      "opts": [
+        "A. 12%",
+        "B. 15%",
+        "C. 17.5%",
+        "D. 20%"
+      ],
+      "ans": "B",
+      "exp": "CAR = 150/1000 \u00d7 100 = 15%."
+    },
+    {
+      "id": "Q327",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has shareholders' funds unimpaired by losses of \u20a670 billion. What is the Single Obligor Limit?",
+      "opts": [
+        "A. \u20a67 billion",
+        "B. \u20a610 billion",
+        "C. \u20a614 billion",
+        "D. \u20a620 billion"
+      ],
+      "ans": "C",
+      "exp": "SOL = 20% \u00d7 \u20a670bn = \u20a614 billion."
+    },
+    {
+      "id": "Q328",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has a customer exposure of \u20a620 billion on-balance sheet and a performance guarantee of \u20a66 billion with a 50% CCF. What is the total exposure for SOL purposes?",
+      "opts": [
+        "A. \u20a620 billion",
+        "B. \u20a623 billion",
+        "C. \u20a626 billion",
+        "D. \u20a630 billion"
+      ],
+      "ans": "B",
+      "exp": "Off-balance sheet exposure = \u20a66bn \u00d7 50% = \u20a63bn. Total exposure = \u20a620bn + \u20a63bn = \u20a623 billion."
+    },
+    {
+      "id": "Q329",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has total deposits of \u20a6400 billion. If the CRR is 45%, what is the amount of CRR?",
+      "opts": [
+        "A. \u20a6160 billion",
+        "B. \u20a6180 billion",
+        "C. \u20a6200 billion",
+        "D. \u20a6220 billion"
+      ],
+      "ans": "B",
+      "exp": "CRR = 45% \u00d7 \u20a6400bn = \u20a6180 billion."
+    },
+    {
+      "id": "Q330",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has liquid assets of \u20a6100 billion and total current liabilities of \u20a6250 billion. What is the liquidity ratio?",
+      "opts": [
+        "A. 35%",
+        "B. 40%",
+        "C. 45%",
+        "D. 50%"
+      ],
+      "ans": "B",
+      "exp": "LR = 100/250 \u00d7 100 = 40%."
+    },
+    {
+      "id": "Q331",
+      "module": 5,
+      "type": "mcq",
+      "q": "The first indicator Bode flags is a rising volume of non-performing loans, with a growing share migrating from Substandard toward Doubtful classification. Which CAMELS component does this indicator most directly relate to?",
+      "opts": [
+        "A. Management Quality, since credit deterioration ultimately reflects weak leadership and administrative ability",
+        "B. Asset Quality, since it concerns the level, distribution, and severity of classified assets",
+        "C. Earnings Capacity, since deteriorating loans will eventually reduce the bank's core income",
+        "D. Capital Adequacy, since deteriorating loans directly reduce the bank's risk-weighted asset base"
+      ],
+      "ans": "B",
+      "exp": "The manual defines Asset Quality evaluation as including 'the level, distribution, and severity of classified assets' \u2014 precisely what this indicator describes. Options A and C describe real downstream consequences of poor asset quality, but the indicator itself is a direct Asset Quality signal, not a Management or Earnings signal."
+    },
+    {
+      "id": "Q332",
+      "module": 5,
+      "type": "mcq",
+      "q": "The second indicator is high and rising staff turnover within the credit approval unit, alongside internal audit findings that are consistently not followed up on. Which CAMELS component does this indicator most directly relate to?",
+      "opts": [
+        "A. Liquidity, since a weakened credit unit could eventually affect the bank's ability to meet withdrawal demand",
+        "B. Asset Quality, since credit approval staff are directly responsible for the quality of loans booked",
+        "C. Management Quality, since it concerns internal controls and the integrity of internal audit programs",
+        "D. Sensitivity to Market Risk, since staff instability increases the bank's exposure to market volatility"
+      ],
+      "ans": "C",
+      "exp": "Management Quality evaluation explicitly includes 'effectiveness of internal controls... and the strength and integrity of the internal and external audit programs.' Option B is a plausible-sounding downstream link, but the indicator itself \u2014 staff turnover and ignored audit findings \u2014 is a governance signal, not a loan-quality signal."
+    },
+    {
+      "id": "Q333",
+      "module": 5,
+      "type": "mcq",
+      "q": "The third indicator is a declining core income and shrinking net interest margin, even though loan volumes have remained steady over the same period. Which CAMELS component does this indicator most directly relate to?",
+      "opts": [
+        "A. Liquidity, since a shrinking margin could eventually force the bank to source funds at a higher rate",
+        "B. Asset Quality, since a shrinking margin usually results from an increase in non-performing loans",
+        "C. Capital Adequacy, since declining income directly reduces the bank's retained earnings component",
+        "D. Earnings Capacity, since it concerns the quality and sustainability of the bank's core income"
+      ],
+      "ans": "D",
+      "exp": "Earnings Capacity evaluation explicitly includes 'quality and prospects for core income' and 'sustainability of the various earnings components.' Option B tempts by linking margin decline to asset quality, but steady loan volumes with a shrinking margin points to a pricing or funding-cost issue within Earnings Capacity, not a credit deterioration issue."
+    },
+    {
+      "id": "Q334",
+      "module": 5,
+      "type": "mcq",
+      "q": "The fourth indicator is Meridian's growing reliance on short-term wholesale interbank borrowings to fund routine day-to-day withdrawal requests. Which CAMELS component does this indicator most directly relate to?",
+      "opts": [
+        "A. Sensitivity to Market Risk, since availability of interbank deposits is explicitly listed as a factor affecting this component",
+        "B. Liquidity, since interbank borrowings are explicitly listed as a factor affecting the bank's ability to meet withdrawal demand",
+        "C. Management Quality, since sourcing funds from the interbank market reflects a deliberate management decision",
+        "D. Capital Adequacy, since interbank borrowings are excluded entirely from a bank's risk-weighted asset calculation"
+      ],
+      "ans": "A",
+      "exp": "The manual specifically lists 'availability of interbank deposits' among the factors affecting Sensitivity to Market Risk, not Liquidity. Option B is the deliberately tempting close-wrong \u2014 reliance on interbank funding does affect a bank's practical ability to meet withdrawals, but the manual's own factor list places this specific driver under Sensitivity to Market Risk."
+    },
+    {
+      "id": "Q335",
+      "module": 5,
+      "type": "mcq",
+      "q": "The final indicator is Meridian's Capital Adequacy Ratio sitting at 11%, just above the 10% national minimum, with risk-weighted assets growing noticeably faster than retained earnings each quarter. What should Bode and Aisha be most concerned about if this trend continues unaddressed?",
+      "opts": [
+        "A. That the bank's Liquidity Ratio will automatically fall below the regulatory minimum once CAR is breached",
+        "B. That the bank's CAR could fall below the 10% national minimum as risk-weighted assets keep outpacing capital growth",
+        "C. That the bank will be forced to convert all Tier 2 Capital into Tier 1 Capital to comply with Basel III directly",
+        "D. That the bank's Single Obligor Limit will automatically be reduced in proportion to the shrinking CAR buffer"
+      ],
+      "ans": "B",
+      "exp": "Since CAR is calculated as capital against risk-weighted assets, and RWA is growing faster than capital, the ratio will continue narrowing toward \u2014 and eventually below \u2014 the 10% national minimum unless capital growth accelerates. The other options invent automatic knock-on effects (Liquidity Ratio, Tier conversion, SOL) the manual does not describe as consequences of a narrowing CAR."
+    },
+    {
+      "id": "Q336",
+      "module": 4,
+      "type": "mcq",
+      "q": "The first proposal is to shift a portion of Horizon Bank's Treasury Bill holdings (Minimum Risk Assets) into additional SME lending (Risk Assets). What trade-off should Funmi and Kelechi expect from this specific shift?",
+      "opts": [
+        "A. Higher profitability and higher liquidity simultaneously, since SME loans are both higher-yielding and easier to liquidate than Treasury Bills",
+        "B. Lower profitability and lower liquidity simultaneously, since SME loans generally underperform Treasury Bills on both dimensions",
+        "C. Higher profitability but reduced liquidity, since Risk Assets typically yield more but are harder to convert to cash quickly than Minimum Risk Assets",
+        "D. No meaningful trade-off at all, since Minimum Risk Assets and Risk Assets carry identical income and liquidity characteristics"
+      ],
+      "ans": "C",
+      "exp": "Risk Assets are the bank's main income source but carry higher default risk, while Minimum Risk Assets are liquid, low-risk, low-income holdings \u2014 shifting from one to the other trades liquidity for profitability, exactly as the manual's asset categories imply. Option A incorrectly claims a simultaneous improvement on both dimensions."
+    },
+    {
+      "id": "Q337",
+      "module": 4,
+      "type": "mcq",
+      "q": "The second proposal is to reduce Horizon Bank's reliance on Inter-Bank Borrowings and instead grow core retail deposits to fund the same volume of lending. What is the primary benefit of this shift, based on the manual's description of Inter-Bank Borrowings?",
+      "opts": [
+        "A. It reduces exposure to a funding source that easily vanishes under liquidity pressure and whose pricing is market-driven",
+        "B. It automatically increases the bank's Tier 1 Capital base without requiring any additional shareholder investment",
+        "C. It eliminates the bank's Cash Reserve Requirement obligation on the newly raised retail deposit balances",
+        "D. It converts the bank's Risk Assets into Minimum Risk Assets without any change to the bank's lending activity"
+      ],
+      "ans": "A",
+      "exp": "The manual warns that Inter-Bank Borrowings 'easily vanishes in the face of liquidity pressure' and that its 'pricing is determined by market dynamics' \u2014 replacing this with more stable core deposits directly addresses that specific vulnerability. The other options invent capital, reserve, or asset-conversion effects not attributed to this particular funding shift."
+    },
+    {
+      "id": "Q338",
+      "module": 4,
+      "type": "mcq",
+      "q": "The third proposal is to invest significantly in new proprietary banking software, recorded as an intangible Non-Banking Asset. What effect should Funmi expect this specific investment to have on the board's stated goal of increasing profitability?",
+      "opts": [
+        "A. It will directly increase profitability, since Non-Banking Assets are classified alongside Risk Assets as core income generators",
+        "B. It will directly increase liquidity, since intangible assets are classified as Minimum Risk Assets under the balance sheet structure",
+        "C. It will directly reduce the bank's Single Obligor Limit, since intangible assets are excluded from shareholders' funds entirely",
+        "D. It will not directly increase profitability, since Non-Banking Assets support operations without earning interest directly"
+      ],
+      "ans": "D",
+      "exp": "The manual states Non-Banking Assets, including intangible assets like banking software, 'are used in supporting the business' and 'do not earn interest directly' \u2014 this investment may support future efficiency, but it does not itself generate income the way Risk Assets do. Option A wrongly reclassifies Non-Banking Assets as income-generating."
+    },
+    {
+      "id": "Q339",
+      "module": 4,
+      "type": "mcq",
+      "q": "The fourth proposal is to grow the bank's capital position primarily by issuing additional subordinated term debt (Tier 2 Capital) rather than raising fresh equity (Tier 1 Capital). What should Kelechi caution the team about regarding this specific approach?",
+      "opts": [
+        "A. Subordinated term debt is entirely excluded from a bank's capital structure and cannot be used to satisfy any CAR requirement",
+        "B. Tier 2 Capital is described as less reliable than Tier 1 Capital, so this approach may meet nominal targets without strengthening true loss-absorption capacity",
+        "C. Subordinated term debt automatically converts into retained earnings within twelve months, strengthening Tier 1 Capital indirectly",
+        "D. Tier 2 Capital carries an identical reliability profile to Tier 1 Capital, so the source of new capital makes no practical difference"
+      ],
+      "ans": "B",
+      "exp": "The manual explicitly states Tier 2 capital 'is less reliable than tier 1 capital' as a loss-absorbing buffer \u2014 growing capital this way may satisfy a numeric target while leaving the bank's genuine capital strength weaker than an equivalent Tier 1 increase would. Option D wrongly claims no practical difference exists between the two tiers."
+    },
+    {
+      "id": "Q340",
+      "module": 4,
+      "type": "mcq",
+      "q": "Taking all four proposals together, what is the most balanced conclusion Funmi and Kelechi should present to the board regarding its directive to increase profitability without breaching any regulatory minimum?",
+      "opts": [
+        "A. All four proposals should be implemented immediately in full, since each one independently increases profitability with no offsetting risk to liquidity or capital quality",
+        "B. None of the four proposals should be pursued, since every one of them directly breaches a regulatory minimum described in the manual",
+        "C. The proposals should be pursued selectively and in moderation, since several genuinely improve profitability but each introduces a real trade-off in liquidity, funding stability, or capital reliability",
+        "D. Only the software investment proposal should be pursued, since it is the only one of the four with any effect on the bank's overall profitability position"
+      ],
+      "ans": "C",
+      "exp": "Each proposal offers a real potential benefit but also a genuine trade-off \u2014 reduced liquidity, continued reliance on volatile funding if not fully addressed, no direct income effect from the software investment, and weaker capital reliability from a Tier 2-heavy approach \u2014 so a balanced, selective implementation best serves the board's twin goals. Option A ignores every trade-off just established across the previous four questions."
+    }
+  ]
+}

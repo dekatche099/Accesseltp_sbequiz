@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graduate Track – Banking Quiz Hub</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f2027;
+      min-height: 100vh;
+      padding: 30px 20px;
+    }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    .back-link:hover { color: white; transform: translateX(-4px); }
+    h1 { color: white; font-size: 2rem; margin-bottom: 8px; }
+    .track-badge {
+      display: inline-block;
+      background: rgba(59,130,246,0.3);
+      color: #93c5fd;
+      padding: 4px 14px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      margin-bottom: 30px;
+    }
+    .workbooks-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: rgba(79,70,229,0.15);
+      border: 1px solid rgba(79,70,229,0.35);
+      border-radius: 16px;
+      padding: 18px 24px;
+      margin-bottom: 28px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .workbooks-banner:hover { background: rgba(79,70,229,0.25); border-color: #4f46e5; transform: translateY(-2px); }
+    .workbooks-banner .wb-info h2 { color: white; font-size: 1.05rem; margin-bottom: 4px; }
+    .workbooks-banner .wb-info p { font-size: 0.8rem; color: #c8d6e5; }
+    .workbooks-banner .wb-arrow { font-size: 1.6rem; color: #a5b4fc; flex-shrink: 0; }
+
+    .course-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
+    .course-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 16px;
+      padding: 20px 24px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      transition: all 0.3s ease;
+    }
+    .course-card.available { cursor: pointer; }
+    .course-card.available:hover {
+      background: rgba(59,130,246,0.2);
+      border-color: #3b82f6;
+      transform: translateY(-4px);
+    }
+    .course-card.coming-soon {
+      opacity: 0.7;
+      cursor: default;
+    }
+    .course-info h2 { color: white; font-size: 1.1rem; margin-bottom: 6px; font-weight: 600; }
+    .course-info p { font-size: 0.8rem; color: #c8d6e5; }
+    .status-badge {
+      font-size: 0.7rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: rgba(0,0,0,0.5);
+      display: inline-block;
+      margin-top: 6px;
+    }
+    .available .status-badge { background: #10b981; color: white; }
+    .coming-soon .status-badge { background: #fbbf24; color: #1f2937; }
+    .arrow { font-size: 1.6rem; color: #64ffda; flex-shrink: 0; }
+    .coming-soon .arrow { color: #4b5563; }
+    .footer { text-align: center; color: #6b7f94; font-size: 0.85rem; margin-top: 40px; }
+
+    /* Logged‑in bar */
+    .logged-in-bar {
+      display: none;                 /* hidden by default */
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px 16px;
+      background: rgba(59,130,246,0.12);
+      border: 1px solid rgba(59,130,246,0.25);
+      border-radius: 10px;
+      color: #c8d6e5;
+      font-size: 0.9rem;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .logged-in-bar.visible { display: flex; }
+    .logged-in-bar strong { color: #93c5fd; }
+    .logged-in-bar button {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #f1f5f9;
+      padding: 6px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: background 0.2s;
+    }
+    .logged-in-bar button:hover { background: rgba(239,68,68,0.2); border-color: #ef4444; }
+
+    @media (max-width: 550px) {
+      h1 { font-size: 1.6rem; }
+      .course-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== LOGGED‑IN BAR (only visible when logged in) ===== -->
+  <div id="loggedInBar" class="logged-in-bar">
+    <span>👤 Logged in as <strong id="trackUser"></strong></span>
+    <button id="trackLogout">🚪 Logout</button>
+  </div>
+
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to tracks</a>
+    <h1>🎓 Graduate Track</h1>
+    <div class="track-badge">ELTP 14 · 15 · 16 · 17</div>
+
+    <a href="workbooks.html" class="workbooks-banner">
+      <div class="wb-info">
+        <h2>📓 Practice Workbooks</h2>
+        <p>Free-form practice space — create workbooks, draw tables, write formulas, use the built-in calculator. Not tied to any course.</p>
+      </div>
+      <span class="wb-arrow">→</span>
+    </a>
+
+    <div class="course-grid" id="trackCourses"></div>
+    <div class="footer">✅ Available quizzes are ready – more coming soon.</div>
+  </div>
+
+  <script>
+    // Safe wrappers around localStorage so the page doesn't break in
+    // private-browsing modes or environments where storage access throws.
+    function safeGetItem(key) {
+      try {
+        return localStorage.getItem(key);
+      } catch (e) {
+        console.warn('localStorage unavailable:', e);
+        return null;
+      }
+    }
+    function safeRemoveItem(key) {
+      try {
+        localStorage.removeItem(key);
+      } catch (e) {
+        console.warn('localStorage unavailable:', e);
+      }
+    }
+
+    (function() {
+      const name = safeGetItem('qb_global_user');
+      const pin = safeGetItem('qb_global_pin');
+      const bar = document.getElementById('loggedInBar');
+
+      if (name && pin) {
+        bar.classList.add('visible');
+        document.getElementById('trackUser').textContent = name;
+
+        // NOTE: credentials are intentionally NOT appended to hrefs anymore.
+        // The PIN previously traveled in the URL query string, where it could
+        // leak into browser history, server access logs, or the Referer
+        // header of any third-party resource the destination page loads.
+        // Since qb_global_user / qb_global_pin already live in localStorage,
+        // same-origin quiz pages should read them directly from there
+        // instead of receiving them as URL parameters.
+        window.applyCredentialsToLinks = function() {
+          // Intentionally a no-op now — kept as a hook in case future
+          // same-origin pages need something injected into links that
+          // ISN'T sensitive (e.g. a non-secret display name).
+        };
+
+        document.getElementById('trackLogout').addEventListener('click', function() {
+          if (confirm('Are you sure you want to log out?')) {
+            safeRemoveItem('qb_global_user');
+            safeRemoveItem('qb_global_pin');
+            window.location.reload();
+          }
+        });
+      } else {
+        bar.classList.remove('visible');
+        window.applyCredentialsToLinks = function() {};
+      }
+    })();
+
+    // ---------- Course data (Graduate Track) ----------
+    // NEW ARCHITECTURE: courses below linking to "course.html?course=<id>"
+    // run on the shared engine (see /engine/) and are defined by a single
+    // JSON file in /courses/. Courses still linking to their own
+    // "*-quiz.html" file haven't been migrated yet — run
+    // `node tools/migrate-legacy-course.js <file> courses/` on each one,
+    // then swap its `link` here to "course.html?course=<id>".
+    // See /docs/ADDING_A_COURSE.md.
+    const courses = [
+      { title: "Example Course (shared engine demo)", status: "available", link: "course.html?course=example-course", desc: "8 questions across 3 modules + case studies — demonstrates the new architecture" },
+      { title: "Basic Accounting", status: "available", link: "course.html?course=accounting-quiz-mcq", desc: "264 MCQs + 264 flashcards — 528 total" },
+      { title: "Basic Banking Operations", status: "available", link: "course.html?course=basic-banking-operations", desc: "150 MCQs + 39 flashcards — 189 total" },
+      { title: "Credit Policy Guide Review", status: "available", link: "cpg-quiz.html", desc: "550 unique dual‑mode questions" },
+      { title: "Critical Thinking", status: "available", link: "critical-thinking-quiz.html", desc: "36 MCQs + 15 flashcards — 51 total" },
+      { title: "Enterprise Risk Management", status: "available", link: "erm-quiz.html", desc: "50 MCQs + 50 flashcards — 100 total" },
+      { title: "Finance in Global Markets", status: "available", link: "fgm-quiz.html", desc: "98 MCQs + 98 flashcards — 196 total" },
+      { title: "International Trade Finance", status: "available", link: "trade-finance-quiz.html", desc: "70 MCQs + 70 flashcards — 140 total" },
+      { title: "Intra‑Africa Trade", status: "available", link: "afcfta-quiz.html", desc: "49 MCQs + 21 flashcards — 70 total" },
+      { title: "Managing Change Successfully", status: "available", link: "managing-change-quiz.html", desc: "56 MCQs + 24 flashcards — 80 total" },
+      { title: "Money Laundering with KYC/AML/CFT", status: "available", link: "aml-quiz.html", desc: "70 MCQs + 25 flashcards — 95 total" },
+      { title: "Selling & Marketing of Financial Services", status: "available", link: "marketing-quiz.html", desc: "84 MCQs + 36 flashcards — 120 total" },
+      { title: "Bank Lending & Credit Management", status: "available", link: "credit-risk-lending-master.html", desc: "133 MCQs + 60 flashcards — 193 total" },
+      { title: "Use of English & Business Writing", status: "available", link: "business-communication-writing.html", desc: "110 MCQs + 35 flashcards — 145 total" },
+      { title: "Elements of Banking", status: "available", link: "course.html?course=eob", desc: "140 MCQs + 60 flashcards — 200 total" },
+      { title: "Micro & Macro Economics Quiz", status: "available", link: "course.html?course=economics", desc: "98 MCQs + 42 flashcards — 140 total" },
+      { title: "The Art of Self Leadership", status: "available", link: "art-of-self-leadership-quiz.html", desc: "106 MCQs + 45 flashcards — 151 total" },
+      { title: "Customer Service Excellence", status: "available", link: "customer-service-excellence-quiz.html", desc: "250 MCQs + 45 flashcards — 295 total" },
+      { title: "Compliance & Ethics", status: "available", link: "course.html?course=compliance-banking", desc: "200 MCQs + 45 flashcards — 245 total" },
+      { title: "Banking & Insurance Fundamentals", status: "available", link: "course.html?course=role-of-insurance-banking", desc: "65 MCQs covering key concepts" },
+      { title: "Fraud Risk Management & Detection", status: "available", link: "course.html?course=fraud-risk-management", desc: "150 MCQs covering key concepts" },
+      { title: "Digital Technology in Banking", status: "available", link: "course.html?course=digital-banking", desc: "200 MCQs covering key concepts" },
+      { title: "Data Analysis (Power BI and Excel)", status: "available", link: "data-analysis-quiz.html", desc: "480 MCQs covering key concepts" },
+      { title: "Elements of Finance", status: "available", link: "course.html?course=eof", desc: "280 MCQs covering key concepts" },
+      { title: "Legal Aspects of Banking & Securities for Lending", status: "available", link: "course.html?course=legal-aspects-of-banking", desc: "322 MCQs covering key concepts" },
+      { title: "Banking Regulations", status: "available", link: "course.html?course=banking-regulation-2023", desc: "250 MCQs covering key concepts" },
+      { title: "Innovation and Design Thinking", status: "available", link: "course.html?course=innovation-design-thinking", desc: "350 MCQs covering key concepts" },
+      { title: "Financial Statement Analysis", status: "available", link: "course.html?course=fsa-eltp", desc: "343 MCQs + 60 Case Study Questions covering key concepts" },
+      { title: "Introduction to Cyber Security", status: "coming", link: "#", desc: "Coming soon" }
+    ];
+
+    // Escape any text that gets interpolated into innerHTML. The course
+    // list above is a hardcoded literal today (so this isn't exploitable
+    // right now), but this keeps the render function safe if the data
+    // source is ever swapped for something dynamic (CMS, admin form, etc.).
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    const container = document.getElementById("trackCourses");
+    function render() {
+      container.innerHTML = courses.map(c => {
+        const title = escapeHtml(c.title);
+        const desc = escapeHtml(c.desc);
+
+        if (c.status === 'coming') {
+          // Not an <a> at all, so it's not focusable/announced as a link
+          // by keyboard nav or screen readers.
+          return `
+            <div class="course-card coming-soon">
+              <div class="course-info">
+                <h2>${title}</h2>
+                <p>${desc}</p>
+                <span class="status-badge">⏳ Coming soon</span>
+              </div>
+              <span class="arrow">→</span>
+            </div>
+          `;
+        }
+
+        return `
+          <a href="${escapeHtml(c.link)}" class="course-card available">
+            <div class="course-info">
+              <h2>${title}</h2>
+              <p>${desc}</p>
+              <span class="status-badge">✅ Ready</span>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+        `;
+      }).join('');
+
+      if (typeof window.applyCredentialsToLinks === 'function') {
+        window.applyCredentialsToLinks();
+      }
+    }
+    render();
+  </script>
+</body>
+</html>

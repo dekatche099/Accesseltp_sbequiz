@@ -218,38 +218,52 @@ function App() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [data]);
 
-    /* ---- TinyMCE init (once) — stock toolbar/menu, matching the standard TinyMCE layout ---- */
+    const [mceError, setMceError] = useState('');
+
+    /* ---- TinyMCE init (once, at mount — textarea is always in the DOM by then) ---- */
     useEffect(() => {
-        if (!window.tinymce || editorRef.current) return;
-        tinymce.init({
-            selector: '#wb-rich-editor',
-            height: '100%',
-            resize: false,
-            menubar: 'edit view insert format tools table help',
-            plugins: 'table lists link fullscreen directionality wordcount code',
-            toolbar: 'undo redo | bold italic | link unlink | fullscreen | alignleft aligncenter alignright | ltr rtl | outdent indent | bullist numlist | equation',
-            branding: true,
-            setup: function (ed) {
-                ed.ui.registry.addButton('equation', {
-                    icon: 'insert-character',
-                    tooltip: 'Equation',
-                    onAction: () => equSetterRef.current && equSetterRef.current(true)
-                });
-                ed.on('change keyup', () => {
-                    const { activeSubjectId: sId, activeSheetIdx: idx } = idsRef.current;
-                    if (!sId) return;
-                    setData(prev => ({
-                        subjects: prev.subjects.map(s => {
-                            if (s.id !== sId) return s;
-                            const sheets = [...s.sheets];
-                            sheets[idx] = { ...sheets[idx], content: ed.getContent() };
-                            return { ...s, sheets };
-                        })
-                    }));
-                });
-                editorRef.current = ed;
+        let attempts = 0;
+        const tryInit = () => {
+            if (editorRef.current) return;
+            if (!window.tinymce) {
+                attempts++;
+                if (attempts > 20) { setMceError('TinyMCE failed to load from the CDN. Check your internet connection or whether a browser extension is blocking scripts, then reload this page.'); return; }
+                setTimeout(tryInit, 250);
+                return;
             }
-        });
+            const target = document.getElementById('wb-rich-editor');
+            if (!target) { setMceError('Internal error: the editor element was not found in the page. Please reload.'); return; }
+            tinymce.init({
+                selector: '#wb-rich-editor',
+                height: '100%',
+                resize: false,
+                menubar: 'edit view insert format tools table help',
+                plugins: 'table lists link fullscreen directionality wordcount code',
+                toolbar: 'undo redo | bold italic | link unlink | fullscreen | alignleft aligncenter alignright | ltr rtl | outdent indent | bullist numlist | equation',
+                branding: true,
+                setup: function (ed) {
+                    ed.ui.registry.addButton('equation', {
+                        icon: 'insert-character',
+                        tooltip: 'Equation',
+                        onAction: () => equSetterRef.current && equSetterRef.current(true)
+                    });
+                    ed.on('change keyup', () => {
+                        const { activeSubjectId: sId, activeSheetIdx: idx } = idsRef.current;
+                        if (!sId) return;
+                        setData(prev => ({
+                            subjects: prev.subjects.map(s => {
+                                if (s.id !== sId) return s;
+                                const sheets = [...s.sheets];
+                                sheets[idx] = { ...sheets[idx], content: ed.getContent() };
+                                return { ...s, sheets };
+                            })
+                        }));
+                    });
+                    editorRef.current = ed;
+                }
+            });
+        };
+        tryInit();
     }, []);
 
     // Load editor content whenever the active sheet changes
@@ -396,33 +410,44 @@ function App() {
             )}
 
             {/* ---- VIEW: Editor — sheets are Excel-style tabs directly inside the subject ---- */}
-            {view === 'editor' && activeSubject && (
-                <React.Fragment>
-                    <div className="sheet-tabs-bar">
-                        {activeSubject.sheets.map((sh, idx) => (
-                            <div key={sh.id} className={'sheet-tab' + (idx === activeSheetIdx ? ' active' : '')} onClick={() => setActiveSheetIdx(idx)}>
-                                {editingSheet === idx ? (
-                                    <input autoFocus value={sh.name} onClick={e => e.stopPropagation()}
-                                        onChange={e => renameSheet(idx, e.target.value)}
-                                        onBlur={() => setEditingSheet(null)}
-                                        onKeyDown={e => { if (e.key === 'Enter') setEditingSheet(null); }} />
-                                ) : (
-                                    <span onDoubleClick={e => { e.stopPropagation(); setEditingSheet(idx); }}>{sh.name}</span>
-                                )}
-                                {activeSubject.sheets.length > 1 && (
-                                    <span className="close-x" onClick={e => { e.stopPropagation(); deleteSheet(idx); }}>✕</span>
-                                )}
-                            </div>
-                        ))}
-                        <button className="sheet-tab-add" onClick={addSheet} title="Add sheet">+</button>
-                    </div>
+            {mceError && (
+                <div style={{ background: '#fee2e2', color: '#991b1b', padding: '10px 20px', fontSize: '0.85rem', borderBottom: '1px solid #fca5a5' }}>
+                    ⚠️ {mceError}
+                </div>
+            )}
 
-                    <div className="editor-wrap" ref={editorWrapRef}>
-                        <div className="editor-fill">
-                            <textarea id="wb-rich-editor"></textarea>
-                        </div>
+            {/* Sheet tabs + editor are ALWAYS mounted (never conditionally added/removed) —
+                only their visibility toggles. TinyMCE attaches to #wb-rich-editor once, at
+                first mount; if this block were conditionally rendered, the textarea wouldn't
+                exist yet when TinyMCE tries to attach, and it would silently fail, leaving a
+                bare unstyled <textarea> instead of the real editor. */}
+            <div className="sheet-tabs-bar" style={{ display: (view === 'editor' && activeSubject) ? 'flex' : 'none' }}>
+                {activeSubject && activeSubject.sheets.map((sh, idx) => (
+                    <div key={sh.id} className={'sheet-tab' + (idx === activeSheetIdx ? ' active' : '')} onClick={() => setActiveSheetIdx(idx)}>
+                        {editingSheet === idx ? (
+                            <input autoFocus value={sh.name} onClick={e => e.stopPropagation()}
+                                onChange={e => renameSheet(idx, e.target.value)}
+                                onBlur={() => setEditingSheet(null)}
+                                onKeyDown={e => { if (e.key === 'Enter') setEditingSheet(null); }} />
+                        ) : (
+                            <span onDoubleClick={e => { e.stopPropagation(); setEditingSheet(idx); }}>{sh.name}</span>
+                        )}
+                        {activeSubject.sheets.length > 1 && (
+                            <span className="close-x" onClick={e => { e.stopPropagation(); deleteSheet(idx); }}>✕</span>
+                        )}
                     </div>
-                </React.Fragment>
+                ))}
+                {activeSubject && <button className="sheet-tab-add" onClick={addSheet} title="Add sheet">+</button>}
+            </div>
+
+            <div className="editor-wrap" style={{ display: (view === 'editor' && activeSubject) ? 'flex' : 'none' }} ref={editorWrapRef}>
+                <div className="editor-fill">
+                    <textarea id="wb-rich-editor"></textarea>
+                </div>
+            </div>
+
+            {view === 'editor' && !activeSubject && (
+                <div className="empty-state">This subject couldn't be found. <span className="crumb" onClick={() => setView('subjects')}>Go back to Subjects</span></div>
             )}
 
             {equationModal}

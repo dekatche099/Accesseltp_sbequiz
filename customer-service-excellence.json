@@ -1,0 +1,4032 @@
+{
+  "meta": {
+    "id": "customer-service-excellence",
+    "title": "Customer Service Excellence",
+    "description": "",
+    "category": "",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does the manual define customer service?",
+      "opts": [
+        "The ability to constantly and consistently give customers what they want",
+        "The process of selling products to new customers",
+        "The department that handles customer complaints",
+        "The strategy of reducing operational costs"
+      ],
+      "ans": "A",
+      "exp": "Customer service is defined as the ability to constantly and consistently give customers what they want, providing assistance from first contact throughout their journey."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, why does customer service set a bank apart in the banking sector?",
+      "opts": [
+        "Because banking products and services are largely homogeneous",
+        "Because banks have identical pricing structures",
+        "Because digital banking is unavailable to most customers",
+        "Because regulatory requirements limit product innovation"
+      ],
+      "ans": "A",
+      "exp": "Services and products in the banking sector are largely homogeneous, making customer service the primary differentiator that sets a bank apart."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "What statistic does the manual provide regarding customer switching behavior?",
+      "opts": [
+        "A customer is two times more likely to switch due to price",
+        "A customer is four times more likely to switch to competition due to service",
+        "A customer is ten times more likely to switch due to location",
+        "A customer is equally likely to switch due to service or product features"
+      ],
+      "ans": "B",
+      "exp": "The manual states that a customer is four times more likely to switch to the competition due to service, highlighting service as a critical competitive advantage."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the Amazon case study, which factor is highlighted as a key element of their convenience?",
+      "opts": [
+        "Offering only physical storefronts",
+        "Providing a wide selection of products and services",
+        "Restricting payment options to bank transfers",
+        "Limiting customer support to email only"
+      ],
+      "ans": "B",
+      "exp": "Amazon provides convenience through a wide selection of products and services, ranging from books to groceries, alongside user-friendly platforms."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the 'no' policy at the Ritz-Carlton?",
+      "opts": [
+        "Employees are not allowed to say no to guest requests",
+        "Guests are not allowed to bring pets into the rooms",
+        "The hotel does not allow external vendors on the premises",
+        "Employees must never say no to working overtime"
+      ],
+      "ans": "A",
+      "exp": "At the Ritz-Carlton, there is a 'no' policy which means employees are not allowed to say no to guest requests, empowering them to go above and beyond."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does the manual define 'Customer-Centricity'?",
+      "opts": [
+        "A strategy that places the company's profit at the center of operations",
+        "A strategy that places the customer at the centre of an organization's operations and priorities",
+        "A method of reducing customer service costs",
+        "A marketing tactic used only during product launches"
+      ],
+      "ans": "B",
+      "exp": "Customer-Centricity refers to a strategy that places the customer at the centre of an organization's operations and priorities, focusing on creating positive experiences."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is part of Access Bank's Vision statement?",
+      "opts": [
+        "To be the most profitable African bank",
+        "To be the world most respected African bank",
+        "To be the largest digital bank in Africa",
+        "To be the primary financial partner for African governments"
+      ],
+      "ans": "B",
+      "exp": "Access Bank's vision statement is 'To be the world most respected African bank'."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT listed as one of Access Bank's core values?",
+      "opts": [
+        "Leadership",
+        "Passion for customers",
+        "Aggressive expansion",
+        "Innovation"
+      ],
+      "ans": "C",
+      "exp": "The core values listed include Leadership, Excellence, Empowered employees, Passion for customers, Professionalism, and Innovation. Aggressive expansion is not listed."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is a primary role of the Frontline Staff in a retail bank?",
+      "opts": [
+        "Setting regulatory compliance standards",
+        "Developing new financial products",
+        "Engaging with customers proactively and resolving issues promptly",
+        "Managing the bank's investment portfolio"
+      ],
+      "ans": "C",
+      "exp": "Frontline staff are the first point of contact and are responsible for engaging customers proactively, listening to their needs, and resolving issues promptly."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is a key responsibility of Branch Managers regarding customer service?",
+      "opts": [
+        "Personally approving all large corporate loans",
+        "Ensuring team members are well-trained in customer service best practices",
+        "Designing the bank's mobile application",
+        "Conducting external marketing campaigns"
+      ],
+      "ans": "B",
+      "exp": "Branch managers should ensure that their team members are well-trained in customer service best practices, product knowledge, and compliance requirements."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, what is a key element of excellent customer service that ensures the service received at all touch points is error-free?",
+      "opts": [
+        "Personalization",
+        "Accuracy",
+        "Responsiveness",
+        "Empathy"
+      ],
+      "ans": "B",
+      "exp": "Accuracy is a key element of excellent customer service, meaning customers expect the service they receive at all touch points to be error-free."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Going the extra mile' mean in the context of excellent customer service?",
+      "opts": [
+        "Charging the customer for premium services",
+        "Making the customer experience truly special beyond just meeting expectations",
+        "Extending the bank's working hours indefinitely",
+        "Transferring the customer to multiple departments"
+      ],
+      "ans": "B",
+      "exp": "Going the extra mile means doing more than just meeting customer expectations to make the customer experience truly special, such as remembering their name."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does the manual distinguish between customer needs and customer preferences?",
+      "opts": [
+        "Needs are fundamental requirements to solve a problem, while preferences are specific features customers prefer",
+        "Needs are related to digital banking, while preferences are for physical branches",
+        "Needs are determined by the bank, while preferences are determined by regulators",
+        "There is no difference; the terms are used interchangeably"
+      ],
+      "ans": "A",
+      "exp": "Customer needs are fundamental things required to achieve a goal, while customer preferences are the specific features and characteristics customers prefer in a product or service."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which tool is mentioned for social listening to monitor what customers are saying about a brand?",
+      "opts": [
+        "Flexcube",
+        "Hootsuite",
+        "Robotic Process Automation",
+        "Net Promoter Score"
+      ],
+      "ans": "B",
+      "exp": "Tools such as Hootsuite and Brandwatch are used for social listening to monitor customer sentiment and feedback on social media platforms."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is customer segmentation in banking?",
+      "opts": [
+        "The process of dividing a bank's customer base into smaller groups with similar characteristics",
+        "The process of closing unprofitable customer accounts",
+        "The method of calculating interest rates for corporate loans",
+        "The strategy of merging two different banking software systems"
+      ],
+      "ans": "A",
+      "exp": "Customer segmentation is the process of dividing a bank's customer base into smaller groups who share similar characteristics, needs, and behaviors."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary purpose of upselling and cross-selling in a customer-centric bank?",
+      "opts": [
+        "To increase revenue by offering additional products that complement existing purchases",
+        "To reduce the number of products a customer holds",
+        "To force customers into higher fee brackets",
+        "To simplify the bank's product portfolio"
+      ],
+      "ans": "A",
+      "exp": "Upselling and cross-selling are techniques used to increase revenue by offering customers additional products or services that complement their existing purchases."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is identified as a challenge of tailoring customer service solutions?",
+      "opts": [
+        "Customers explicitly stating all their goals",
+        "The low cost of implementing customized solutions",
+        "Overcoming customer objections to proposed solutions",
+        "The simplicity of communicating tailored solutions"
+      ],
+      "ans": "C",
+      "exp": "Challenges include understanding goals, developing solutions, communicating them, overcoming objections, implementing solutions, cost, and complexity."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "When overcoming challenges in tailoring solutions, what does it mean to 'be proactive'?",
+      "opts": [
+        "Waiting for customers to complain before offering help",
+        "Reaching out to customers to see if there is anything you can do to help them achieve their goals",
+        "Ignoring customer feedback to save time",
+        "Strictly following a rigid script with every customer"
+      ],
+      "ans": "B",
+      "exp": "Being proactive means not waiting for customers to come to you with problems, but reaching out to help them achieve their goals."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "What technological resource does Access Bank use to automate routine tasks and improve operational efficiency?",
+      "opts": [
+        "Predictive Analytics",
+        "Robotic Process Automation (RPA)",
+        "Digital Onboarding",
+        "Social Listening"
+      ],
+      "ans": "B",
+      "exp": "Robotic Process Automation (RPA) is employed for automating routine tasks, improving operational efficiency, and reducing response times."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the purpose of Digital Onboarding at Access Bank?",
+      "opts": [
+        "To train new employees on banking software",
+        "To simplify the account opening experience and reduce paperwork",
+        "To introduce new digital products to the market",
+        "To onboard new corporate clients exclusively"
+      ],
+      "ans": "B",
+      "exp": "Digital onboarding simplifies the customer onboarding experience for account opening and reduces paperwork."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of tapping into the bank's collective experience, what does 'Multi-Channel Presence' refer to?",
+      "opts": [
+        "Using only social media to communicate with customers",
+        "Integrating physical and digital channels seamlessly for convenient access",
+        "Offering multiple types of credit cards",
+        "Having multiple CEOs for different digital products"
+      ],
+      "ans": "B",
+      "exp": "Multi-Channel Presence means integrating physical and digital channels seamlessly so customers have convenient access to services online, mobile, or in person."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does Access Bank use predictive analytics for 'Proactive Communication'?",
+      "opts": [
+        "By sending generic marketing emails to all customers",
+        "By triggering alerts, such as warning a customer of an impending overdraft",
+        "By calling customers to sell them new insurance products",
+        "By posting daily updates on the bank's website"
+      ],
+      "ans": "B",
+      "exp": "Predictive analytics can trigger proactive communications, such as sending an alert if a customer's impending overdraft is predicted, along with recommended actions."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the Oxford Dictionary definition provided in the manual, what is ethics?",
+      "opts": [
+        "The quality of being honest and having strong moral principles",
+        "Moral principles that govern a person's behavior or the conducting of an activity",
+        "The adherence to legal regulations and banking laws",
+        "The ability to resolve conflicts between employees and customers"
+      ],
+      "ans": "B",
+      "exp": "Ethics are defined as 'moral principles that govern a person's behavior or the conducting of an activity'."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does the manual define integrity?",
+      "opts": [
+        "The quality of being honest and having strong moral principles; moral uprightness",
+        "The ability to keep promises under financial pressure",
+        "The process of ensuring regulatory compliance in all transactions",
+        "The practice of treating all customers exactly the same regardless of their needs"
+      ],
+      "ans": "A",
+      "exp": "Integrity is defined as 'the quality of being honest and having strong moral principles; moral uprightness'."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a benefit of ethical conduct related to 'Resilience During Crises'?",
+      "opts": [
+        "Ethical companies are exempt from legal investigations during a crisis",
+        "Companies with a history of ethical behavior may be better equipped to handle crises due to built-up goodwill",
+        "Ethical conduct guarantees that a company will never face a public scandal",
+        "Ethical companies receive government bailouts automatically"
+      ],
+      "ans": "B",
+      "exp": "Companies with a history of ethical behavior may be better equipped to handle crises or scandals, as they have built up goodwill with customers over time."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does the 'Consistency' aspect of integrity in customer interactions require?",
+      "opts": [
+        "Delivering on promises and commitments consistently over time",
+        "Giving every customer the exact same financial product",
+        "Refusing to change bank policies once they are published",
+        "Ensuring all employees wear the same uniform"
+      ],
+      "ans": "A",
+      "exp": "Consistency means delivering on promises and commitments consistently over time, giving customers confidence that the business will meet their expectations."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "type": "mcq",
+      "q": "When dealing with a difficult customer, what should you do regarding their complaints?",
+      "opts": [
+        "Interrupt them to offer a solution quickly",
+        "Trade blames to show that the bank is not at fault",
+        "Recap the key points raised to clarify that you understood correctly",
+        "Judge their behavior and correct them immediately"
+      ],
+      "ans": "C",
+      "exp": "You should recap the key points raised by the customer and clarify that you understood correctly, avoiding interrupting or trading blames."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the recommended action if a difficult customer's issue cannot be resolved immediately?",
+      "opts": [
+        "Tell the customer to call back later",
+        "Follow up and ensure a resolution, escalating to a supervisor if necessary",
+        "Close the customer's account to prevent further complaints",
+        "Ignore the customer until they calm down"
+      ],
+      "ans": "B",
+      "exp": "The manual advises to follow up and ensure a resolution if it cannot be resolved immediately, and to escalate to a supervisor if necessary."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does customer service impact a bank's competitive advantage against new entrants?",
+      "opts": [
+        "It increases customer attrition levels",
+        "It lowers customer attrition levels, protecting the bank's position",
+        "It forces the bank to lower its prices to match new entrants",
+        "It has no impact on the threat of new entrants"
+      ],
+      "ans": "B",
+      "exp": "Customer service as a competitive advantage protects the bank from the threat of new entrants as the customer attrition level will be low."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the Ritz-Carlton case study, how are employees trained to handle guest needs?",
+      "opts": [
+        "To strictly follow a script without deviation",
+        "To anticipate and meet the needs of guests, going the extra mile",
+        "To refer all guest requests to the hotel manager",
+        "To focus solely on speed of service rather than personalization"
+      ],
+      "ans": "B",
+      "exp": "Employees are trained to anticipate and meet the needs of guests and are empowered to go the extra mile to make guests feel special."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a step to align customer service goals with Access Bank's value statement?",
+      "opts": [
+        "Hiding the values from employees to prevent confusion",
+        "Establishing customer service goals that align with the values of excellence",
+        "Eliminating training programs to reduce costs",
+        "Discouraging feedback from customers and employees"
+      ],
+      "ans": "B",
+      "exp": "Steps include communicating expectations, establishing customer service goals that align with values, investing in training, and creating feedback loops."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "type": "mcq",
+      "q": "What role do Loan Officers and Financial Advisors play in customer centricity?",
+      "opts": [
+        "They process cash deposits at the teller counter",
+        "They provide personalized financial advice and build trust by disclosing all relevant information",
+        "They manage the bank's social media accounts",
+        "They design the bank's ATM network"
+      ],
+      "ans": "B",
+      "exp": "Loan Officers and Financial Advisors provide personalized financial guidance and build trust by acting in the customer's best interests and disclosing all relevant information."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which element of excellent customer service involves tailoring services and recommendations to specific requirements?",
+      "opts": [
+        "Consistency",
+        "Personalization",
+        "Responsiveness",
+        "Accuracy"
+      ],
+      "ans": "B",
+      "exp": "Personalization means customers appreciate when businesses understand their individual needs and preferences, tailoring services and recommendations to their specific requirements."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "type": "mcq",
+      "q": "What method of understanding customer needs involves analyzing purchase history and website behavior?",
+      "opts": [
+        "Customer interviews",
+        "Social listening",
+        "Customer analytics",
+        "Focus groups"
+      ],
+      "ans": "C",
+      "exp": "Customer analytics can be used to analyze customer data, such as purchase history and website behavior, to identify trends and patterns."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "type": "mcq",
+      "q": "When implementing customer centricity, what does 'Convenience' entail for a bank?",
+      "opts": [
+        "Restricting banking hours to reduce staff costs",
+        "Making it easy for customers to bank when and where they want with user-friendly systems",
+        "Requiring all transactions to be done in person at a branch",
+        "Limiting the number of ATMs to encourage digital banking"
+      ],
+      "ans": "B",
+      "exp": "Convenience means customers want to bank when and where they want; banks should make it easy with user-friendly systems and prompt support."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a way to overcome the challenge of 'Understanding the customer's goals'?",
+      "opts": [
+        "Get to know your customers better",
+        "Be less flexible in your solutions",
+        "Avoid communicating until the solution is fully developed",
+        "Implement the solution before the customer agrees"
+      ],
+      "ans": "A",
+      "exp": "To overcome challenges in tailoring solutions, the manual advises to 'Get to know your customers' so you can better understand their goals."
+    },
+    {
+      "id": "Q37",
+      "module": 1,
+      "type": "mcq",
+      "q": "What technological feature does Access Bank's ATM network offer for convenient access to funds?",
+      "opts": [
+        "Biometric fingerprint scanning only",
+        "Cardless cash withdrawal",
+        "Free international wire transfers",
+        "In-ATM loan approvals"
+      ],
+      "ans": "B",
+      "exp": "Access Bank maintains an extensive network of ATMs equipped with advanced features like cardless cash withdrawal, allowing convenient 24/7 access to funds."
+    },
+    {
+      "id": "Q38",
+      "module": 1,
+      "type": "mcq",
+      "q": "In predictive analytics, what is the purpose of 'Risk Mitigation'?",
+      "opts": [
+        "To increase the interest rates on loans",
+        "To identify potential credit risks or fraudulent activities early",
+        "To eliminate all customer complaints",
+        "To automate the hiring of new bank staff"
+      ],
+      "ans": "B",
+      "exp": "Predictive analytics helps in identifying potential credit risks or fraudulent activities early, allowing the bank to take preventive measures."
+    },
+    {
+      "id": "Q39",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which importance of ethics in business relates to attracting socially responsible investors?",
+      "opts": [
+        "Global Expansion",
+        "Investor Confidence",
+        "Innovation and Creativity",
+        "Compliance with Laws"
+      ],
+      "ans": "B",
+      "exp": "Ethical businesses are more attractive to socially responsible investors who consider ESG factors, leading to investor confidence and increased access to capital."
+    },
+    {
+      "id": "Q40",
+      "module": 1,
+      "type": "mcq",
+      "q": "What benefit of ethical conduct leads to new customer acquisition through word-of-mouth?",
+      "opts": [
+        "Reduced Complaints and Returns",
+        "Higher Referral Rates",
+        "Brand Differentiation",
+        "Long-Term Value"
+      ],
+      "ans": "B",
+      "exp": "Higher Referral Rates occur because satisfied customers are more likely to refer friends and family to a business, leading to new customer acquisition."
+    },
+    {
+      "id": "Q41",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does the 'Fairness' aspect of integrity in customer interactions require?",
+      "opts": [
+        "Treating all customers fairly and without discrimination",
+        "Giving discounts to only the wealthiest customers",
+        "Prioritizing complaints based on the customer's account balance",
+        "Applying different rules to different demographics"
+      ],
+      "ans": "A",
+      "exp": "Fairness involves treating all customers fairly and without discrimination, as discriminatory behavior can harm the company's reputation."
+    },
+    {
+      "id": "Q42",
+      "module": 1,
+      "type": "mcq",
+      "q": "When dealing with a difficult customer, why should you avoid trading blames?",
+      "opts": [
+        "It will worsen the situation",
+        "It is against the bank's IT policy",
+        "It takes too much time to document",
+        "It requires supervisor approval"
+      ],
+      "ans": "A",
+      "exp": "The manual explicitly states to avoid trading blames with the customer because it will worsen the situation."
+    },
+    {
+      "id": "Q43",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is a key impact of a customer-centric approach on a business?",
+      "opts": [
+        "Decreased customer lifetime value",
+        "Increased customer loyalty and retention",
+        "Higher customer churn rates",
+        "Reduced brand reputation"
+      ],
+      "ans": "B",
+      "exp": "The impact of a customer-centric approach includes increased customer loyalty and retention, higher customer lifetime value, and enhanced brand reputation."
+    },
+    {
+      "id": "Q44",
+      "module": 1,
+      "type": "mcq",
+      "q": "How do Compliance and Risk Management Teams contribute to customer centricity?",
+      "opts": [
+        "By designing marketing campaigns",
+        "By safeguarding customer data and ensuring regulatory compliance",
+        "By approving all customer loan applications",
+        "By managing the bank's social media presence"
+      ],
+      "ans": "B",
+      "exp": "Compliance and Risk Management Teams protect customer interests by ensuring regulatory compliance and safeguarding customer data against cybersecurity threats."
+    },
+    {
+      "id": "Q45",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which element of excellent customer service is described as 'Customer service cannot exist without communication'?",
+      "opts": [
+        "Problem-solving skills",
+        "Effective communication",
+        "Friendliness and courtesy",
+        "Knowledge and expertise"
+      ],
+      "ans": "B",
+      "exp": "Effective communication is essential, as customer service cannot exist without listening to customers, showing empathy, and understanding their problems."
+    },
+    {
+      "id": "Q46",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary benefit of 'Tailoring recommendations' when implementing customer centricity?",
+      "opts": [
+        "It ensures the bank sells its most expensive products",
+        "It aligns products and services with the customer's specific objectives",
+        "It reduces the need for customer service staff",
+        "It standardizes all customer accounts"
+      ],
+      "ans": "B",
+      "exp": "Tailoring recommendations means suggesting products and services that align with the customer's objectives, such as recommending retirement accounts for retirement savings."
+    },
+    {
+      "id": "Q47",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which challenge of tailoring customer service solutions relates to the financial cost of customization?",
+      "opts": [
+        "Complexity",
+        "Cost",
+        "Communicating the solutions",
+        "Implementing the solutions"
+      ],
+      "ans": "B",
+      "exp": "Cost is identified as a challenge because tailoring customer service solutions can be expensive for the business."
+    },
+    {
+      "id": "Q48",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Tapping into bank's collective experience' through 'Customer Education' involve?",
+      "opts": [
+        "Teaching customers how to invest in the stock market",
+        "Educating customers on the benefits and functionalities of digital banking",
+        "Providing financial literacy courses to bank employees",
+        "Offering free degrees to loyal customers"
+      ],
+      "ans": "B",
+      "exp": "Customer Education involves leveraging experience to educate customers on the benefits and functionalities of digital banking through user-friendly guides and training."
+    },
+    {
+      "id": "Q49",
+      "module": 1,
+      "type": "mcq",
+      "q": "In predictive analytics, what is the first step involving customer data?",
+      "opts": [
+        "Machine Learning Models",
+        "Data Aggregation and Integration",
+        "Behavioural Predictions",
+        "Proactive Communication"
+      ],
+      "ans": "B",
+      "exp": "The first step is Data Aggregation and Integration, consolidating customer data from various sources to form a unified dataset for predictive analytics."
+    },
+    {
+      "id": "Q50",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a practical tip for dealing with a difficult customer?",
+      "opts": [
+        "Interrupt them to show you are in control",
+        "Show empathy and offer available options for resolving the problem",
+        "Judge their behavior to understand their frustration",
+        "Respond immediately before they finish speaking"
+      ],
+      "ans": "B",
+      "exp": "Practical tips include showing empathy, offering available options for resolving the problem, listening actively, and avoiding judgment or interruption."
+    },
+    {
+      "id": "Q51",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does the manual define professionalism in customer service?",
+      "opts": [
+        "The ability to sell the most products",
+        "Maintaining a high level of competence, courtesy, and integrity",
+        "Strictly following a script without deviation",
+        "Minimizing interaction time with customers"
+      ],
+      "ans": "B",
+      "exp": "Professionalism in customer service is about maintaining a high level of competence, courtesy, and integrity when interacting with customers."
+    },
+    {
+      "id": "Q52",
+      "module": 1,
+      "type": "mcq",
+      "q": "Under the 'Appearance' element of professionalism, what principle guides how an employee should dress?",
+      "opts": [
+        "Dress as comfortably as possible regardless of the setting",
+        "Follow personal fashion trends to appear modern",
+        "The way you dress is the way you will be addressed",
+        "Wear extreme fashion pieces to stand out"
+      ],
+      "ans": "C",
+      "exp": "The manual states that 'the way you dress is the way you will be addressed,' emphasizing that looking good makes customers perceive us as professional."
+    },
+    {
+      "id": "Q53",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of Time Management, what does TAT stand for?",
+      "opts": [
+        "Total Account Time",
+        "Turn Around Time",
+        "Transaction Approval Time",
+        "Technical Assistance Team"
+      ],
+      "ans": "B",
+      "exp": "Under Time Management, employees must respond to customers promptly and never beyond the Bank's Turn Around Time (TAT)."
+    },
+    {
+      "id": "Q54",
+      "module": 1,
+      "type": "mcq",
+      "q": "What phrase is used in the manual to emphasize the importance of Product Knowledge?",
+      "opts": [
+        "You can only give what you have",
+        "Knowledge is power",
+        "Sell what you know",
+        "Learn every product daily"
+      ],
+      "ans": "A",
+      "exp": "Under Product Knowledge, the manual states 'You can only give what you have,' urging employees to intimate themselves with all the Bank's products."
+    },
+    {
+      "id": "Q55",
+      "module": 1,
+      "type": "mcq",
+      "q": "When building trust, why must employees avoid negligence with their passwords?",
+      "opts": [
+        "It slows down the system",
+        "It can give access to unauthorized staff",
+        "It violates the dress code",
+        "It increases customer wait times"
+      ],
+      "ans": "B",
+      "exp": "The manual warns not to be negligent with passwords as this can give access to unauthorized staff, compromising customer data and trust."
+    },
+    {
+      "id": "Q56",
+      "module": 1,
+      "type": "mcq",
+      "q": "How is 'Commitment' defined in the context of customer service?",
+      "opts": [
+        "Arriving to work exactly at 8 AM",
+        "The dedication to go above and beyond to meet customer needs",
+        "Ensuring all transactions are completed in under 5 minutes",
+        "Refusing to take breaks during busy hours"
+      ],
+      "ans": "B",
+      "exp": "Commitment is the dedication to go above and beyond to meet customer needs and exceed their expectations."
+    },
+    {
+      "id": "Q57",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, how many people will one dissatisfied customer tell about their experience?",
+      "opts": [
+        "Ten people",
+        "Fifty people",
+        "A hundred people",
+        "A thousand people"
+      ],
+      "ans": "D",
+      "exp": "The manual states that while one satisfied customer tells friends, 1 dissatisfied customer would tell a thousand people."
+    },
+    {
+      "id": "Q58",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Transparency' require when dealing with customers who are not finance savvy?",
+      "opts": [
+        "Use complex financial jargon to sound professional",
+        "Withhold negative information to secure the transaction",
+        "Explain all the details clearly without lying or withholding information",
+        "Quickly push them to sign the documents"
+      ],
+      "ans": "C",
+      "exp": "Transparency requires that you do not lie or withhold full information, and it is professional to explain all details clearly, especially to non-finance savvy customers."
+    },
+    {
+      "id": "Q59",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does the manual define 'Teamwork'?",
+      "opts": [
+        "When a manager delegates all tasks to subordinates",
+        "When a group of people work together to successfully complete a task or achieve a common goal",
+        "When employees compete to see who can sell the most",
+        "When departments work in isolation to maximize their own efficiency"
+      ],
+      "ans": "B",
+      "exp": "Teamwork is when a group of people work together to successfully complete a task or achieve a common goal, involving cooperation, collaboration, and communication."
+    },
+    {
+      "id": "Q60",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the key difference between cooperation and collaboration as described in the manual?",
+      "opts": [
+        "Cooperation is formal, while collaboration is informal",
+        "Collaboration is centred on co-ownership and not individual ownership",
+        "Cooperation involves management, while collaboration involves staff",
+        "There is no difference; they are exact synonyms"
+      ],
+      "ans": "B",
+      "exp": "Although often used interchangeably, collaboration focuses on a shared objective and is centred on co-ownership and not individual ownership."
+    },
+    {
+      "id": "Q61",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is listed as an importance of departmental collaboration in banks?",
+      "opts": [
+        "Increased silos between units",
+        "Cross-selling Opportunities",
+        "Reduced need for compliance reporting",
+        "Elimination of customer feedback"
+      ],
+      "ans": "B",
+      "exp": "Departmental collaboration increases operational efficiency and provides Cross-selling Opportunities, as different departments can identify opportunities to cross-sell products."
+    },
+    {
+      "id": "Q62",
+      "module": 1,
+      "type": "mcq",
+      "q": "When is the Access Bank Managers' meeting held to provide regular status updates?",
+      "opts": [
+        "The first Monday of every month",
+        "The last Fridays of every month",
+        "Every Wednesday afternoon",
+        "The last day of the financial year"
+      ],
+      "ans": "B",
+      "exp": "Access Bank holds its Managers' meeting on the last Fridays of every month to provide regular status updates on happenings within various departments."
+    },
+    {
+      "id": "Q63",
+      "module": 1,
+      "type": "mcq",
+      "q": "What practical example does the manual give for the use of Cross-Functional Teams?",
+      "opts": [
+        "Processing daily cash deposits",
+        "Organizing bankwide events",
+        "Approving individual retail loans",
+        "Designing employee uniforms"
+      ],
+      "ans": "B",
+      "exp": "The manual notes that bankwide events in Access Bank are usually organised by cross-functional teams made up of members from different departments."
+    },
+    {
+      "id": "Q64",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which two departments collaborate specifically for 'Fraud Detection' according to the manual?",
+      "opts": [
+        "Marketing and Retail Banking",
+        "Risk Management and IT",
+        "Human Resources and Compliance",
+        "Customer Service and Facilities"
+      ],
+      "ans": "B",
+      "exp": "For Fraud Detection, Risk management and IT work together to develop algorithms and tools for fraud detection."
+    },
+    {
+      "id": "Q65",
+      "module": 1,
+      "type": "mcq",
+      "q": "How is Environmental and Social Responsibility (ESR) defined in banking?",
+      "opts": [
+        "A set of ethical and sustainable practices to make a positive impact on society",
+        "The process of maximizing shareholder dividends",
+        "The strategy of closing branches in rural areas",
+        "The requirement to only lend to environmentally friendly companies"
+      ],
+      "ans": "A",
+      "exp": "ESR in banking refers to a set of ethical and sustainable practices and commitments that financial institutions undertake to make a positive impact on society."
+    },
+    {
+      "id": "Q66",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a key dimension of ESR mentioned in the manual?",
+      "opts": [
+        "Aggressive marketing",
+        "Philanthropy",
+        "High-frequency trading",
+        "Offshore banking"
+      ],
+      "ans": "B",
+      "exp": "Key dimensions of ESR include Community Engagement, Philanthropy, and Ethical Business Practices."
+    },
+    {
+      "id": "Q67",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of a company's Environmental Responsibility Action?",
+      "opts": [
+        "Running community development projects",
+        "Promoting ethical labor practices",
+        "Carbon offset programs",
+        "Supporting local healthcare initiatives"
+      ],
+      "ans": "C",
+      "exp": "Environmental responsibility actions include practices such as recycling, sustainable sourcing, and carbon offset programs."
+    },
+    {
+      "id": "Q68",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of a company's Social Responsibility Action?",
+      "opts": [
+        "Conserving water in manufacturing",
+        "Poverty alleviation",
+        "Reducing carbon emissions",
+        "Using biodegradable packaging"
+      ],
+      "ans": "B",
+      "exp": "Social responsibility actions involve initiatives related to education, healthcare, poverty alleviation, and diversity and inclusion."
+    },
+    {
+      "id": "Q69",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Customer-Company Identification' refer to?",
+      "opts": [
+        "The process of verifying a customer's identity for KYC",
+        "The extent to which customers perceive themselves as aligned with a company's identity and values",
+        "The method of segmenting customers by account balance",
+        "The legal contract between a bank and its clients"
+      ],
+      "ans": "B",
+      "exp": "Customer-company identification refers to the extent to which customers perceive themselves as being aligned with and part of a company's identity, values, and mission."
+    },
+    {
+      "id": "Q70",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of ESR and Customer Satisfaction, how is perceived environmental and social performance classified?",
+      "opts": [
+        "As a purely economic value",
+        "As a part of the noneconomic value of products/services",
+        "As a regulatory burden",
+        "As a marketing expense"
+      ],
+      "ans": "B",
+      "exp": "The perceived environmental and social performance represents a part of the noneconomic value of its products/services, adding extra perceived benefits to consumers."
+    },
+    {
+      "id": "Q71",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which reporting frameworks are mentioned for measuring and reporting the impact of sustainability initiatives?",
+      "opts": [
+        "GAAP and IFRS",
+        "GRI and SASB",
+        "ISO 9001 and 14001",
+        "COSO and SOX"
+      ],
+      "ans": "B",
+      "exp": "The manual mentions reporting frameworks such as GRI (Global Reporting Initiative) and SASB (Sustainability Accounting Standards Board)."
+    },
+    {
+      "id": "Q72",
+      "module": 1,
+      "type": "mcq",
+      "q": "How is 'Customer Satisfaction' defined in the manual?",
+      "opts": [
+        "The total revenue generated from a customer",
+        "The extent of customer contentment with a product, service, or brand",
+        "The number of complaints resolved in a month",
+        "The speed at which a teller processes a transaction"
+      ],
+      "ans": "B",
+      "exp": "Customer Satisfaction is the extent of customer contentment with a product, service, or brand, often measured through surveys and feedback."
+    },
+    {
+      "id": "Q73",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the interesting statistics provided, what percentage of dissatisfied customers remain silent about their concerns?",
+      "opts": [
+        "54%",
+        "70%",
+        "85%",
+        "96%"
+      ],
+      "ans": "D",
+      "exp": "Surveys reveal that a staggering 96% of dissatisfied customers remain silent about their concerns, leaving businesses unaware of potential issues."
+    },
+    {
+      "id": "Q74",
+      "module": 1,
+      "type": "mcq",
+      "q": "For every customer who voices a complaint, how many other customers are reportedly facing problems?",
+      "opts": [
+        "10",
+        "26",
+        "50",
+        "100"
+      ],
+      "ans": "B",
+      "exp": "For every customer who voices a complaint, there are, on average, another 26 customers facing problems, with at least 6 encountering significant issues."
+    },
+    {
+      "id": "Q75",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of dissatisfied customer stays silent but quietly reduces their engagement until they eventually take their business elsewhere?",
+      "opts": [
+        "Voicers of Concern",
+        "Activists",
+        "Passive Observers",
+        "Irate Customers"
+      ],
+      "ans": "C",
+      "exp": "Passive Observers are customers who stay silent but quietly reduce their engagement until they eventually take their business elsewhere."
+    },
+    {
+      "id": "Q76",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of dissatisfied customer is willing to go to great lengths, even resorting to legal action, to express their dissatisfaction?",
+      "opts": [
+        "Passive Observers",
+        "Voicers of Concern",
+        "Activists",
+        "Irate Customers"
+      ],
+      "ans": "C",
+      "exp": "Activists are customers who are willing to go to great lengths, even resorting to legal action, to express their dissatisfaction."
+    },
+    {
+      "id": "Q77",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of dissatisfied customer not only expresses discontent loudly but also broadcasts negative experiences to anyone who will listen?",
+      "opts": [
+        "Passive Observers",
+        "Voicers of Concern",
+        "Activists",
+        "Irate Customers"
+      ],
+      "ans": "D",
+      "exp": "Irate Customers express their discontent loudly and broadcast their negative experiences with the organization to anyone who will listen."
+    },
+    {
+      "id": "Q78",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the first step in the '8 Steps for Service Recovery'?",
+      "opts": [
+        "Show You Care",
+        "Customer's Voice",
+        "Tailor Your Response",
+        "Dig Deeper"
+      ],
+      "ans": "B",
+      "exp": "The first step is 'Customer's Voice', which involves actively listening and acknowledging the customer's grievance."
+    },
+    {
+      "id": "Q79",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the 8 steps for service recovery, what does the step 'Dig Deeper' entail?",
+      "opts": [
+        "Checking the customer's credit score",
+        "Using questions to pinpoint and thoroughly understand the problem",
+        "Investigating the employee who caused the issue",
+        "Offering a financial refund immediately"
+      ],
+      "ans": "B",
+      "exp": "'Dig Deeper' means using questions to pinpoint and thoroughly understand the problem at hand."
+    },
+    {
+      "id": "Q80",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the final step in the 8 steps for service recovery?",
+      "opts": [
+        "Close the Loop",
+        "Track and Document",
+        "Learn and Improve",
+        "Follow the Rules"
+      ],
+      "ans": "C",
+      "exp": "The final step is 'Learn and Improve', which involves periodically analyzing and tabulating complaints to identify trends and areas for enhancement."
+    },
+    {
+      "id": "Q81",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Access Bank's CRM, integration with which core banking system is mentioned to ensure a seamless customer experience?",
+      "opts": [
+        "Finacle",
+        "TCS BaNCS",
+        "Flexcube",
+        "Temenos T24"
+      ],
+      "ans": "C",
+      "exp": "CRM systems are integrated with other banking systems such as core banking (Flexcube), loan management, and online banking platforms."
+    },
+    {
+      "id": "Q82",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which value of customer loyalty relates to the fact that acquiring new customers is significantly more expensive than retaining existing ones?",
+      "opts": [
+        "Revenue Generation",
+        "Reduced Marketing Costs",
+        "Higher Profit Margins",
+        "Stability and Predictability"
+      ],
+      "ans": "B",
+      "exp": "Reduced Marketing Costs is a key value because acquiring new customers can be significantly more expensive than retaining existing ones."
+    },
+    {
+      "id": "Q83",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which driver of customer loyalty involves telling compelling stories and aligning with customers' values?",
+      "opts": [
+        "Transparency",
+        "Convenience",
+        "Emotional Connection",
+        "Competitive Pricing"
+      ],
+      "ans": "C",
+      "exp": "Building an Emotional Connection goes beyond transactions; brands that tell compelling stories and align with customers' values create loyal followers."
+    },
+    {
+      "id": "Q84",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which customer retention strategy involves offering unexpected perks, gifts, or birthday wishes?",
+      "opts": [
+        "Loyalty Programs",
+        "Surprise and Delight",
+        "Re-Engagement Campaigns",
+        "Customer Education"
+      ],
+      "ans": "B",
+      "exp": "'Surprise and Delight' involves surprising loyal customers by offering unexpected perks or gifts, such as birthday or wedding anniversary wishes."
+    },
+    {
+      "id": "Q85",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the purpose of 'Re-Engagement Campaigns' in customer retention?",
+      "opts": [
+        "To train new employees",
+        "To identify inactive customers and encourage them to return with special offers",
+        "To launch a new credit card product",
+        "To collect feedback from new customers"
+      ],
+      "ans": "B",
+      "exp": "Re-Engagement Campaigns identify inactive or dormant customers and create targeted campaigns with special offers to encourage them to return."
+    },
+    {
+      "id": "Q86",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does the manual define 'Customer Feedback'?",
+      "opts": [
+        "The financial audit of a customer's account",
+        "Information, insights, challenges, and ideas shared by customers about their experience",
+        "The process of onboarding a new client",
+        "The legal terms and conditions of a loan"
+      ],
+      "ans": "B",
+      "exp": "Customer feedback is the information, insights, challenges, and ideas shared by customers about their experience with a brand or service provider."
+    },
+    {
+      "id": "Q87",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which feedback channel involves using tools to monitor mentions of the brand and gather sentiment?",
+      "opts": [
+        "Comment Cards",
+        "Focus Groups",
+        "Social Media Listening",
+        "Exit Surveys"
+      ],
+      "ans": "C",
+      "exp": "Social Media Listening involves using tools to monitor mentions of the brand on social media platforms to gather customer feedback and sentiment."
+    },
+    {
+      "id": "Q88",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which benefit of continuous learning exposes people to diverse ideas and helps organizations stay competitive?",
+      "opts": [
+        "Increased Competence",
+        "Innovation and Creativity",
+        "Improved Adaptability",
+        "Better Decision-Making"
+      ],
+      "ans": "B",
+      "exp": "Innovation and Creativity are encouraged by learning, as it exposes people to diverse ideas and perspectives, helping organizations stay competitive."
+    },
+    {
+      "id": "Q89",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, continuous learning can be personal or what?",
+      "opts": [
+        "Financial",
+        "Organisational",
+        "Regulatory",
+        "Technical"
+      ],
+      "ans": "B",
+      "exp": "The manual states that continuous learning can be within an organization (organisational) or it can be personal."
+    },
+    {
+      "id": "Q90",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 1 (Digital Banking), what solution is proposed to address common customer queries without visiting a branch?",
+      "opts": [
+        "Hiring more tellers",
+        "Virtual Assistance (chatbot)",
+        "Extending branch hours",
+        "Mailing FAQs to customers"
+      ],
+      "ans": "B",
+      "exp": "Implementing a chatbot or virtual assistant on the website can address common customer queries and guide them through transactions."
+    },
+    {
+      "id": "Q91",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 2 (Retaining High-Value Customers), what is recommended to provide tailored financial advice?",
+      "opts": [
+        "Automated email newsletters",
+        "Personalized Financial Advisors",
+        "Standardized loan products",
+        "Generic investment brochures"
+      ],
+      "ans": "B",
+      "exp": "Assigning dedicated, personalized financial advisors to high-value customers can provide tailored financial advice and solutions."
+    },
+    {
+      "id": "Q92",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 3 (Jalus Retail Bank), what initiative is suggested to improve the physical branch experience?",
+      "opts": [
+        "Removing seating areas to increase space",
+        "Shorter wait times and improved in-branch services",
+        "Requiring all customers to use ATMs",
+        "Closing branches in high-traffic areas"
+      ],
+      "ans": "B",
+      "exp": "Revamping the physical branch experience to include shorter wait times and improved in-branch services is a key solution."
+    },
+    {
+      "id": "Q93",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 4 (Adapting to Changing Preferences), how should physical branches be transformed?",
+      "opts": [
+        "Into self-service ATM halls only",
+        "Into tech-enabled advisory centers for personalized advice",
+        "Into community social halls",
+        "Into storage facilities for documents"
+      ],
+      "ans": "B",
+      "exp": "Branch Redesign involves transforming physical branches into tech-enabled advisory centers where customers can receive personalized financial advice."
+    },
+    {
+      "id": "Q94",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 5 (Mandy Bank Churn), what is suggested to incentivize customers to stay?",
+      "opts": [
+        "Mandatory lock-in periods",
+        "Tailored retention offers like fee waivers or higher interest rates",
+        "Increasing account maintenance fees",
+        "Reducing customer service hours"
+      ],
+      "ans": "B",
+      "exp": "Developing tailored retention offers, such as fee waivers, higher interest rates, or loyalty rewards, can incentivize customers to stay."
+    },
+    {
+      "id": "Q95",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 6 (Irate Customer), what temporary solution is offered while investigating unauthorized transactions?",
+      "opts": [
+        "Closing the customer's account permanently",
+        "Freezing the account to prevent further unauthorized transactions",
+        "Transferring the customer to a competitor",
+        "Ignoring the transactions until the month ends"
+      ],
+      "ans": "B",
+      "exp": "Offering temporary relief by freezing the account prevents further unauthorized transactions while ensuring access to funds for essential expenses."
+    },
+    {
+      "id": "Q96",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Role Play 1 (Customer Dispute), what should you do if the issue cannot be resolved at your level?",
+      "opts": [
+        "Tell the customer to leave",
+        "Escalate the issue to a supervisor or higher authority",
+        "Cancel the customer's credit card",
+        "Ask the customer to file a police report immediately"
+      ],
+      "ans": "B",
+      "exp": "If necessary, you should escalate the issue to a supervisor or higher authority within the bank to ensure proper resolution."
+    },
+    {
+      "id": "Q97",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Role Play 2 (Hidden Fees), if fees were not properly disclosed, what is an appropriate solution?",
+      "opts": [
+        "Insist the customer must pay regardless",
+        "Apologize and offer to waive the disputed fees",
+        "Close the customer's account",
+        "Charge an additional penalty for the complaint"
+      ],
+      "ans": "B",
+      "exp": "If fees were not properly disclosed, you should apologize for the oversight and offer a solution, which may include waiving the disputed fees."
+    },
+    {
+      "id": "Q98",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Role Play 3 (Credit Dispute), who must the bank work with to correct the credit report error?",
+      "opts": [
+        "The local police department",
+        "The credit reporting agencies",
+        "The customer's employer",
+        "The central bank's print media"
+      ],
+      "ans": "B",
+      "exp": "You must initiate an investigation and work with the credit reporting agencies to correct the error on the customer's credit report."
+    },
+    {
+      "id": "Q99",
+      "module": 1,
+      "type": "mcq",
+      "q": "When reviewing customer feedback, what is a key strategy for handling the identified issues?",
+      "opts": [
+        "Ignore negative feedback to maintain morale",
+        "Prioritize issues by determining which will have the most significant impact",
+        "Respond to every single comment individually within 5 minutes",
+        "Delete feedback that contradicts management's views"
+      ],
+      "ans": "B",
+      "exp": "You should prioritize issues by determining which issues or improvements are most critical and will have the most significant impact on service quality."
+    },
+    {
+      "id": "Q100",
+      "module": 1,
+      "type": "mcq",
+      "q": "Under 'Applying strategies for customer satisfaction', what does 'Customer Advocacy' involve?",
+      "opts": [
+        "Suing customers who leave bad reviews",
+        "Encouraging satisfied customers to become advocates through referral programs",
+        "Forcing customers to sign non-disclosure agreements",
+        "Hiring actors to pretend to be satisfied customers"
+      ],
+      "ans": "B",
+      "exp": "Customer Advocacy involves encouraging satisfied customers to become advocates for your brand by implementing referral programs or user-generated content campaigns."
+    },
+    {
+      "id": "Q101",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, what is a practical example of the use of Cross-Functional Teams in Access Bank?",
+      "opts": [
+        "Processing daily cash deposits",
+        "Organizing bankwide events",
+        "Approving individual retail loans",
+        "Designing employee uniforms"
+      ],
+      "ans": "B",
+      "exp": "The manual notes that bankwide events in Access Bank are usually organised by cross-functional teams made up of members from different departments."
+    },
+    {
+      "id": "Q102",
+      "module": 1,
+      "type": "mcq",
+      "q": "When is the Access Bank Managers' meeting held to provide regular status updates on happenings within various departments?",
+      "opts": [
+        "The first Monday of every month",
+        "The last Fridays of every month",
+        "Every Wednesday afternoon",
+        "The last day of the financial year"
+      ],
+      "ans": "B",
+      "exp": "Access Bank holds its Managers' meeting on the last Fridays of every month to provide regular status updates."
+    },
+    {
+      "id": "Q103",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of departmental collaboration, what is the primary purpose of 'Defined Roles and Responsibilities'?",
+      "opts": [
+        "To ensure that each party is aware of expectations and aids accountability",
+        "To allow departments to work in complete isolation",
+        "To prevent any communication between different units",
+        "To eliminate the need for leadership support"
+      ],
+      "ans": "A",
+      "exp": "Clearly defining the roles and responsibilities of each department ensures that each party is aware of the expectations and aids accountability."
+    },
+    {
+      "id": "Q104",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, how should conflicts that arise during departmental collaboration be handled?",
+      "opts": [
+        "By ignoring them until they resolve themselves",
+        "By developing conflict resolution mechanisms to address disagreements",
+        "By immediately dissolving the cross-functional team",
+        "By escalating every minor disagreement to the CEO"
+      ],
+      "ans": "B",
+      "exp": "Conflicts are to be anticipated and resolved by developing conflict resolution mechanisms to help address disagreements that may arise during collaboration."
+    },
+    {
+      "id": "Q105",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Resource Allocation' entail in the context of fostering departmental collaboration?",
+      "opts": [
+        "The organization must prioritize resources towards collaborative projects and initiatives",
+        "Resources should be hoarded by individual departments to ensure their own success",
+        "Resources should only be allocated to the most profitable department",
+        "The organization should reduce resources to force departments to compete"
+      ],
+      "ans": "A",
+      "exp": "To help foster collaboration, the organisation must prioritize resources towards the collaborative projects and initiatives."
+    },
+    {
+      "id": "Q106",
+      "module": 1,
+      "type": "mcq",
+      "q": "How can 'Leadership Support' be demonstrated to foster departmental collaboration?",
+      "opts": [
+        "By senior management involving themselves and rewarding significant contributions",
+        "By senior management remaining completely uninvolved to avoid bias",
+        "By restricting communication between departments",
+        "By punishing departments that fail to meet individual targets"
+      ],
+      "ans": "A",
+      "exp": "Leadership support can be done through the involvement of senior management in collaborative efforts and by rewarding and recognizing departments or staff who contribute significantly."
+    },
+    {
+      "id": "Q107",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the recommended approach for the successful outcomes of collaborative efforts?",
+      "opts": [
+        "Keep them secret to maintain a competitive edge between departments",
+        "Publicly recognise and reward them",
+        "Only share them with the board of directors",
+        "Use them to identify which department should receive the most funding"
+      ],
+      "ans": "B",
+      "exp": "Under 'Celebrate Success,' the manual states that successful outcomes of collaborative efforts should be publicly recognised and rewarded."
+    },
+    {
+      "id": "Q108",
+      "module": 1,
+      "type": "mcq",
+      "q": "In achieving shared goals through teamwork, collaboration between retail banking and compliance departments is specifically highlighted for which process?",
+      "opts": [
+        "Fraud Detection",
+        "Customer On-boarding",
+        "Product Development",
+        "Credit Approval"
+      ],
+      "ans": "B",
+      "exp": "Collaboration between retail banking and compliance departments can help ensure that new customers are on-boarded smoothly while meeting regulatory requirements."
+    },
+    {
+      "id": "Q109",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which departments are mentioned as collaborating for 'Credit Approval' to assess and approve credit applications within an agreed timeline?",
+      "opts": [
+        "Marketing and Retail Banking",
+        "Commercial Banking, Risk Management, and Operations",
+        "Human Resources and Compliance",
+        "IT and Customer Service"
+      ],
+      "ans": "B",
+      "exp": "Commercial banking collaborating with risk management and operations to assess and approve credit applications within an agreed timeline."
+    },
+    {
+      "id": "Q110",
+      "module": 1,
+      "type": "mcq",
+      "q": "For 'Product Development,' which departments are identified as collaborating to develop and launch new banking products?",
+      "opts": [
+        "Marketing, Retail Banking, and IT",
+        "Risk Management and Compliance",
+        "Customer Service and Facilities",
+        "Human Resources and Legal"
+      ],
+      "ans": "A",
+      "exp": "Marketing, retail banking, and IT departments collaborate to develop and launch new banking products."
+    },
+    {
+      "id": "Q111",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, what is the definition of Environmental and Social Responsibility (ESR) in banking?",
+      "opts": [
+        "A set of ethical and sustainable practices to make a positive impact on society",
+        "The process of maximizing shareholder dividends",
+        "The strategy of closing branches in rural areas",
+        "The requirement to only lend to environmentally friendly companies"
+      ],
+      "ans": "A",
+      "exp": "ESR in banking refers to a set of ethical and sustainable practices and commitments that financial institutions undertake to make a positive impact on society."
+    },
+    {
+      "id": "Q112",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of a company's Environmental Responsibility Action?",
+      "opts": [
+        "Running community development projects",
+        "Promoting ethical labor practices",
+        "Carbon offset programs",
+        "Supporting local healthcare initiatives"
+      ],
+      "ans": "C",
+      "exp": "Environmental responsibility actions include practices such as recycling, sustainable sourcing, and carbon offset programs."
+    },
+    {
+      "id": "Q113",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of a company's Social Responsibility Action?",
+      "opts": [
+        "Conserving water in manufacturing",
+        "Poverty alleviation",
+        "Reducing carbon emissions",
+        "Using biodegradable packaging"
+      ],
+      "ans": "B",
+      "exp": "Social responsibility actions involve initiatives related to education, healthcare, poverty alleviation, and diversity and inclusion."
+    },
+    {
+      "id": "Q114",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Customer-Company Identification' refer to in the context of ESR?",
+      "opts": [
+        "The process of verifying a customer's identity for KYC",
+        "The extent to which customers perceive themselves as aligned with a company's identity and values",
+        "The method of segmenting customers by account balance",
+        "The legal contract between a bank and its clients"
+      ],
+      "ans": "B",
+      "exp": "Customer-company identification refers to the extent to which customers perceive themselves as being aligned with and part of a company's identity, values, and mission."
+    },
+    {
+      "id": "Q115",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of ESR and Customer Satisfaction, how is perceived environmental and social performance classified?",
+      "opts": [
+        "As a purely economic value",
+        "As a part of the noneconomic value of products/services",
+        "As a regulatory burden",
+        "As a marketing expense"
+      ],
+      "ans": "B",
+      "exp": "The perceived environmental and social performance represents a part of the noneconomic value of its products/services, adding extra perceived benefits to consumers."
+    },
+    {
+      "id": "Q116",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does ESR enhance trust and credibility according to the manual?",
+      "opts": [
+        "By keeping all sustainability initiatives secret until the end of the year",
+        "Through transparent reporting of ESR initiatives and open communication",
+        "By only sharing positive results and hiding negative impacts",
+        "By focusing solely on financial profitability"
+      ],
+      "ans": "B",
+      "exp": "Transparent reporting of ESR initiatives fosters trust, as customers appreciate companies that openly share their environmental and social impact."
+    },
+    {
+      "id": "Q117",
+      "module": 1,
+      "type": "mcq",
+      "q": "What emotional impact do ESR actions have on customers that strengthens their loyalty?",
+      "opts": [
+        "They feel a sense of pride and ownership in supporting a socially responsible brand",
+        "They feel pressured to donate more money to the company",
+        "They feel indifferent as long as the product quality is high",
+        "They feel anxious about the company's future"
+      ],
+      "ans": "A",
+      "exp": "ESR actions create an emotional connection; customers feel a sense of pride and ownership in supporting a socially responsible brand, which strengthens their loyalty."
+    },
+    {
+      "id": "Q118",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, how do ESR efforts influence consumer behavior and purchase decisions?",
+      "opts": [
+        "Customers refuse to pay premium prices for socially responsible products",
+        "Customers are willing to pay premium prices for products or services from socially responsible companies",
+        "Customers only purchase from companies that have zero carbon emissions",
+        "Customers ignore ESR efforts when making purchasing decisions"
+      ],
+      "ans": "B",
+      "exp": "Many consumers consider a company's ESR efforts when making purchasing decisions and are willing to pay premium prices for products or services from socially responsible companies."
+    },
+    {
+      "id": "Q119",
+      "module": 1,
+      "type": "mcq",
+      "q": "What role does customer feedback play in a company's ESR initiatives?",
+      "opts": [
+        "It is ignored to maintain the company's original strategy",
+        "It can guide iterative ESR actions, leading to more effective and relevant initiatives",
+        "It is only used for marketing purposes",
+        "It is used to penalize employees who fail to meet ESR targets"
+      ],
+      "ans": "B",
+      "exp": "Customer feedback can guide a company's ESR actions, leading to more effective and relevant initiatives that resonate with customer values."
+    },
+    {
+      "id": "Q120",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which reporting frameworks are mentioned for measuring and reporting the impact of sustainability initiatives?",
+      "opts": [
+        "GAAP and IFRS",
+        "GRI and SASB",
+        "ISO 9001 and 14001",
+        "COSO and SOX"
+      ],
+      "ans": "B",
+      "exp": "The manual mentions reporting frameworks such as GRI (Global Reporting Initiative) and SASB (Sustainability Accounting Standards Board)."
+    },
+    {
+      "id": "Q121",
+      "module": 1,
+      "type": "mcq",
+      "q": "How is 'Customer Satisfaction' defined in the manual?",
+      "opts": [
+        "The total revenue generated from a customer",
+        "The extent of customer contentment with a product, service, or brand",
+        "The number of complaints resolved in a month",
+        "The speed at which a teller processes a transaction"
+      ],
+      "ans": "B",
+      "exp": "Customer Satisfaction is the extent of customer contentment with a product, service, or brand, often measured through surveys and feedback."
+    },
+    {
+      "id": "Q122",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which benefit of customer satisfaction relates to the fact that satisfied customers tend to have fewer complaints and issues?",
+      "opts": [
+        "Higher Revenue",
+        "Cost Savings",
+        "Competitive Advantage",
+        "Innovation and Improvement"
+      ],
+      "ans": "B",
+      "exp": "Cost Savings occur because satisfied customers tend to have fewer complaints and issues, reducing the resources needed for customer support and problem resolution."
+    },
+    {
+      "id": "Q123",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the interesting statistics provided, what percentage of dissatisfied customers remain silent about their concerns?",
+      "opts": [
+        "54%",
+        "70%",
+        "85%",
+        "96%"
+      ],
+      "ans": "D",
+      "exp": "Surveys reveal that a staggering 96% of dissatisfied customers remain silent about their concerns, leaving businesses unaware of potential issues."
+    },
+    {
+      "id": "Q124",
+      "module": 1,
+      "type": "mcq",
+      "q": "For every customer who voices a complaint, how many other customers are reportedly facing problems?",
+      "opts": [
+        "10",
+        "26",
+        "50",
+        "100"
+      ],
+      "ans": "B",
+      "exp": "For every customer who voices a complaint, there are, on average, another 26 customers facing problems, with at least 6 encountering significant issues."
+    },
+    {
+      "id": "Q125",
+      "module": 1,
+      "type": "mcq",
+      "q": "By effectively addressing complaints, businesses can win back what percentage of dissatisfied customers?",
+      "opts": [
+        "10% to 20%",
+        "30% to 40%",
+        "54% to 70%",
+        "80% to 90%"
+      ],
+      "ans": "C",
+      "exp": "By effectively addressing complaints, businesses can win back a substantial 54% to 70% of these dissatisfied customers."
+    },
+    {
+      "id": "Q126",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of dissatisfied customer stays silent but quietly reduces their engagement until they eventually take their business elsewhere?",
+      "opts": [
+        "Voicers of Concern",
+        "Activists",
+        "Passive Observers",
+        "Irate Customers"
+      ],
+      "ans": "C",
+      "exp": "Passive Observers are customers who stay silent but quietly reduce their engagement until they eventually take their business elsewhere."
+    },
+    {
+      "id": "Q127",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of dissatisfied customer is willing to go to great lengths, even resorting to legal action, to express their dissatisfaction?",
+      "opts": [
+        "Passive Observers",
+        "Voicers of Concern",
+        "Activists",
+        "Irate Customers"
+      ],
+      "ans": "C",
+      "exp": "Activists are customers who are willing to go to great lengths, even resorting to legal action, to express their dissatisfaction."
+    },
+    {
+      "id": "Q128",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of dissatisfied customer not only expresses discontent loudly but also broadcasts negative experiences to anyone who will listen?",
+      "opts": [
+        "Passive Observers",
+        "Voicers of Concern",
+        "Activists",
+        "Irate Customers"
+      ],
+      "ans": "D",
+      "exp": "Irate Customers express their discontent loudly and broadcast their negative experiences with the organization to anyone who will listen."
+    },
+    {
+      "id": "Q129",
+      "module": 1,
+      "type": "mcq",
+      "q": "In creating a sustainable, memorable customer experience, what does 'Seamless Multi-channel Experience' entail?",
+      "opts": [
+        "Providing a consistent experience across all customer touchpoints, allowing effortless transitions",
+        "Forcing all customers to use only the mobile app",
+        "Closing physical branches to reduce costs",
+        "Offering different services on different channels to avoid confusion"
+      ],
+      "ans": "A",
+      "exp": "Seamless Multi-channel Experience means providing a consistent and seamless experience across all customer touchpoints, ensuring customers can transition between channels effortlessly."
+    },
+    {
+      "id": "Q130",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the first step in the '8 Steps for Service Recovery'?",
+      "opts": [
+        "Show You Care",
+        "Customer's Voice",
+        "Tailor Your Response",
+        "Dig Deeper"
+      ],
+      "ans": "B",
+      "exp": "The first step is 'Customer's Voice', which involves actively listening and acknowledging the customer's grievance."
+    },
+    {
+      "id": "Q131",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the 8 steps for service recovery, what does the step 'Show You Care' entail?",
+      "opts": [
+        "Demonstrating empathy and genuine concern for the customer's situation",
+        "Offering a financial refund immediately",
+        "Transferring the customer to another department",
+        "Documenting the complaint in the system"
+      ],
+      "ans": "A",
+      "exp": "'Show You Care' means demonstrating empathy and genuine concern for the customer's situation."
+    },
+    {
+      "id": "Q132",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the step 'Dig Deeper' in the 8 steps for service recovery?",
+      "opts": [
+        "Checking the customer's credit score",
+        "Using questions to pinpoint and thoroughly understand the problem",
+        "Investigating the employee who caused the issue",
+        "Offering a financial refund immediately"
+      ],
+      "ans": "B",
+      "exp": "'Dig Deeper' means using questions to pinpoint and thoroughly understand the problem at hand."
+    },
+    {
+      "id": "Q133",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does the step 'Follow the Rules' in the 8 steps for service recovery require?",
+      "opts": [
+        "Ignoring company policies to satisfy the customer",
+        "Resolving the complaint in line with established policies and procedures",
+        "Creating new rules on the spot for every customer",
+        "Following the rules of the competitor's bank"
+      ],
+      "ans": "B",
+      "exp": "'Follow the Rules' means resolving the complaint in line with established policies and procedures."
+    },
+    {
+      "id": "Q134",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the final step in the 8 steps for service recovery?",
+      "opts": [
+        "Close the Loop",
+        "Track and Document",
+        "Learn and Improve",
+        "Follow the Rules"
+      ],
+      "ans": "C",
+      "exp": "The final step is 'Learn and Improve', which involves periodically analyzing and tabulating complaints to identify trends and areas for enhancement."
+    },
+    {
+      "id": "Q135",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Access Bank's CRM, what is the purpose of 'Customer Data Management'?",
+      "opts": [
+        "To maintain a centralized database storing customer information to understand customers better",
+        "To delete old customer records to save server space",
+        "To share customer data with competitors",
+        "To restrict customer access to their own data"
+      ],
+      "ans": "A",
+      "exp": "Customer Data Management involves maintaining a centralized database that stores customer information to help understand its customers better."
+    },
+    {
+      "id": "Q136",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does 'Personalization' function within Access Bank's CRM system?",
+      "opts": [
+        "By sending the exact same marketing offer to every customer",
+        "By tailoring marketing offers, product recommendations, and communication based on individual preferences",
+        "By allowing customers to design their own bank cards",
+        "By personalizing the bank's logo for each customer"
+      ],
+      "ans": "B",
+      "exp": "CRM systems enable personalized interactions by tailoring marketing offers, product recommendations, and communication channels based on individual preferences and behavior."
+    },
+    {
+      "id": "Q137",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary benefit of 'Multichannel Communication' in CRM?",
+      "opts": [
+        "It ensures customers can reach the bank through their preferred communication method",
+        "It forces customers to use only one specific channel",
+        "It reduces the need for customer support staff",
+        "It eliminates the use of social media"
+      ],
+      "ans": "A",
+      "exp": "Multichannel Communication ensures that customers can reach the bank through their preferred communication method, such as email, SMS, mobile apps, and social media."
+    },
+    {
+      "id": "Q138",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of CRM, what is the purpose of 'Segmentation'?",
+      "opts": [
+        "To divide the customer base into groups to target specific groups with relevant offers and services",
+        "To separate high-value customers from low-value customers permanently",
+        "To close accounts that do not meet minimum balance requirements",
+        "To merge different banking software systems"
+      ],
+      "ans": "A",
+      "exp": "Segmentation involves dividing the customer base into groups based on various criteria to target specific customer groups with relevant offers and services."
+    },
+    {
+      "id": "Q139",
+      "module": 1,
+      "type": "mcq",
+      "q": "How do 'CRM Analytics' help the bank?",
+      "opts": [
+        "By gaining insights into customer behavior and preferences for performance measurement and reporting",
+        "By automatically approving all loan applications",
+        "By designing the bank's physical branches",
+        "By hiring new employees"
+      ],
+      "ans": "A",
+      "exp": "CRM Analytics help the Bank gain insights into customer behavior and preferences, providing data for performance measurement and reporting."
+    },
+    {
+      "id": "Q140",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which core banking system is mentioned as being integrated with Access Bank's CRM systems to ensure a seamless customer experience?",
+      "opts": [
+        "Finacle",
+        "TCS BaNCS",
+        "Flexcube",
+        "Temenos T24"
+      ],
+      "ans": "C",
+      "exp": "CRM systems are integrated with other banking systems such as core banking (Flexcube), loan management, and online banking platforms."
+    },
+    {
+      "id": "Q141",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, what is a key value of customer loyalty related to the fact that acquiring new customers is significantly more expensive than retaining existing ones?",
+      "opts": [
+        "Revenue Generation",
+        "Reduced Marketing Costs",
+        "Higher Profit Margins",
+        "Stability and Predictability"
+      ],
+      "ans": "B",
+      "exp": "Reduced Marketing Costs is a key value because acquiring new customers can be significantly more expensive than retaining existing ones."
+    },
+    {
+      "id": "Q142",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which driver of customer loyalty involves telling compelling stories and aligning with customers' values?",
+      "opts": [
+        "Transparency",
+        "Convenience",
+        "Emotional Connection",
+        "Competitive Pricing"
+      ],
+      "ans": "C",
+      "exp": "Building an Emotional Connection goes beyond transactions; brands that tell compelling stories and align with customers' values create loyal followers."
+    },
+    {
+      "id": "Q143",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which customer retention strategy involves offering unexpected perks, gifts, or birthday wishes?",
+      "opts": [
+        "Loyalty Programs",
+        "Surprise and Delight",
+        "Re-Engagement Campaigns",
+        "Customer Education"
+      ],
+      "ans": "B",
+      "exp": "'Surprise and Delight' involves surprising loyal customers by offering unexpected perks or gifts, such as birthday or wedding anniversary wishes."
+    },
+    {
+      "id": "Q144",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the purpose of 'Re-Engagement Campaigns' in customer retention?",
+      "opts": [
+        "To train new employees",
+        "To identify inactive customers and encourage them to return with special offers",
+        "To launch a new credit card product",
+        "To collect feedback from new customers"
+      ],
+      "ans": "B",
+      "exp": "Re-Engagement Campaigns identify inactive or dormant customers and create targeted campaigns with special offers to encourage them to return."
+    },
+    {
+      "id": "Q145",
+      "module": 1,
+      "type": "mcq",
+      "q": "In applying strategies for customer satisfaction, what does 'Customer Advocacy' involve?",
+      "opts": [
+        "Suing customers who leave bad reviews",
+        "Encouraging satisfied customers to become advocates through referral programs",
+        "Forcing customers to sign non-disclosure agreements",
+        "Hiring actors to pretend to be satisfied customers"
+      ],
+      "ans": "B",
+      "exp": "Customer Advocacy involves encouraging satisfied customers to become advocates for your brand by implementing referral programs or user-generated content campaigns."
+    },
+    {
+      "id": "Q146",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, what is the definition of 'Customer Feedback'?",
+      "opts": [
+        "The financial audit of a customer's account",
+        "Information, insights, challenges, and ideas shared by customers about their experience",
+        "The process of onboarding a new client",
+        "The legal terms and conditions of a loan"
+      ],
+      "ans": "B",
+      "exp": "Customer feedback is the information, insights, challenges, and ideas shared by customers about their experience with a brand or service provider."
+    },
+    {
+      "id": "Q147",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which feedback channel involves using tools to monitor mentions of the brand and gather sentiment?",
+      "opts": [
+        "Comment Cards",
+        "Focus Groups",
+        "Social Media Listening",
+        "Exit Surveys"
+      ],
+      "ans": "C",
+      "exp": "Social Media Listening involves using tools to monitor mentions of the brand on social media platforms to gather customer feedback and sentiment."
+    },
+    {
+      "id": "Q148",
+      "module": 1,
+      "type": "mcq",
+      "q": "When reviewing customer feedback, what is a key strategy for handling the identified issues?",
+      "opts": [
+        "Ignore negative feedback to maintain morale",
+        "Prioritize issues by determining which will have the most significant impact",
+        "Respond to every single comment individually within 5 minutes",
+        "Delete feedback that contradicts management's views"
+      ],
+      "ans": "B",
+      "exp": "You should prioritize issues by determining which issues or improvements are most critical and will have the most significant impact on service quality."
+    },
+    {
+      "id": "Q149",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, continuous learning can be personal or what?",
+      "opts": [
+        "Financial",
+        "Organisational",
+        "Regulatory",
+        "Technical"
+      ],
+      "ans": "B",
+      "exp": "The manual states that continuous learning can be within an organization (organisational) or it can be personal."
+    },
+    {
+      "id": "Q150",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which benefit of continuous learning exposes people to diverse ideas and helps organizations stay competitive?",
+      "opts": [
+        "Increased Competence",
+        "Innovation and Creativity",
+        "Improved Adaptability",
+        "Better Decision-Making"
+      ],
+      "ans": "B",
+      "exp": "Innovation and Creativity are encouraged by learning, as it exposes people to diverse ideas and perspectives, helping organizations stay competitive."
+    },
+    {
+      "id": "Q151",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 2 (Retaining High-Value Customers), what is recommended to provide tailored financial advice?",
+      "opts": [
+        "Automated email newsletters",
+        "Personalized Financial Advisors",
+        "Standardized loan products",
+        "Generic investment brochures"
+      ],
+      "ans": "B",
+      "exp": "Assigning dedicated, personalized financial advisors to high-value customers can provide tailored financial advice and solutions."
+    },
+    {
+      "id": "Q152",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 3 (Jalus Retail Bank), what initiative is suggested to improve the physical branch experience?",
+      "opts": [
+        "Removing seating areas to increase space",
+        "Shorter wait times and improved in-branch services",
+        "Requiring all customers to use ATMs",
+        "Closing branches in high-traffic areas"
+      ],
+      "ans": "B",
+      "exp": "Revamping the physical branch experience to include shorter wait times and improved in-branch services is a key solution."
+    },
+    {
+      "id": "Q153",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 4 (Adapting to Changing Preferences), how should physical branches be transformed?",
+      "opts": [
+        "Into self-service ATM halls only",
+        "Into tech-enabled advisory centers for personalized advice",
+        "Into community social halls",
+        "Into storage facilities for documents"
+      ],
+      "ans": "B",
+      "exp": "Branch Redesign involves transforming physical branches into tech-enabled advisory centers where customers can receive personalized financial advice."
+    },
+    {
+      "id": "Q154",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 5 (Mandy Bank Churn), what is suggested to incentivize customers to stay?",
+      "opts": [
+        "Mandatory lock-in periods",
+        "Tailored retention offers like fee waivers or higher interest rates",
+        "Increasing account maintenance fees",
+        "Reducing customer service hours"
+      ],
+      "ans": "B",
+      "exp": "Developing tailored retention offers, such as fee waivers, higher interest rates, or loyalty rewards, can incentivize customers to stay."
+    },
+    {
+      "id": "Q155",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 6 (Irate Customer), what temporary solution is offered while investigating unauthorized transactions?",
+      "opts": [
+        "Closing the customer's account permanently",
+        "Freezing the account to prevent further unauthorized transactions",
+        "Transferring the customer to a competitor",
+        "Ignoring the transactions until the month ends"
+      ],
+      "ans": "B",
+      "exp": "Offering temporary relief by freezing the account prevents further unauthorized transactions while ensuring access to funds for essential expenses."
+    },
+    {
+      "id": "Q156",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Role Play 1 (Customer Dispute), what should you do if the issue cannot be resolved at your level?",
+      "opts": [
+        "Tell the customer to leave",
+        "Escalate the issue to a supervisor or higher authority",
+        "Cancel the customer's credit card",
+        "Ask the customer to file a police report immediately"
+      ],
+      "ans": "B",
+      "exp": "If necessary, you should escalate the issue to a supervisor or higher authority within the bank to ensure proper resolution."
+    },
+    {
+      "id": "Q157",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Role Play 2 (Hidden Fees), if fees were not properly disclosed, what is an appropriate solution?",
+      "opts": [
+        "Insist the customer must pay regardless",
+        "Apologize and offer to waive the disputed fees",
+        "Close the customer's account",
+        "Charge an additional penalty for the complaint"
+      ],
+      "ans": "B",
+      "exp": "If fees were not properly disclosed, you should apologize for the oversight and offer a solution, which may include waiving the disputed fees."
+    },
+    {
+      "id": "Q158",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Role Play 3 (Credit Dispute), who must the bank work with to correct the credit report error?",
+      "opts": [
+        "The local police department",
+        "The credit reporting agencies",
+        "The customer's employer",
+        "The central bank's print media"
+      ],
+      "ans": "B",
+      "exp": "You must initiate an investigation and work with the credit reporting agencies to correct the error on the customer's credit report."
+    },
+    {
+      "id": "Q159",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, what is the primary role of the 'Digital Banking Support Team'?",
+      "opts": [
+        "To process cash deposits at the teller counter",
+        "To ensure online and mobile platforms are user-friendly, secure, and offer a seamless experience",
+        "To approve all corporate loan applications",
+        "To manage the bank's social media accounts"
+      ],
+      "ans": "B",
+      "exp": "Employees responsible for digital banking platforms should ensure that these platforms are user-friendly, secure, and offer a seamless customer experience."
+    },
+    {
+      "id": "Q160",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is a key responsibility of 'Compliance and Risk Management Teams' in relation to customer centricity?",
+      "opts": [
+        "Designing marketing campaigns",
+        "Safeguarding customer data and ensuring regulatory compliance",
+        "Approving all customer loan applications",
+        "Managing the bank's ATM network"
+      ],
+      "ans": "B",
+      "exp": "Compliance and Risk Management Teams protect customer interests by ensuring regulatory compliance and safeguarding customer data against cybersecurity threats."
+    },
+    {
+      "id": "Q161",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does the step 'Tailor Your Response' in the 8 steps for service recovery entail?",
+      "opts": [
+        "Personalizing your reply to address the customer's specific needs and concerns",
+        "Offering a standard financial refund to all customers",
+        "Transferring the customer to the legal department",
+        "Documenting the complaint in the central system"
+      ],
+      "ans": "A",
+      "exp": "'Tailor Your Response' means personalizing your reply to address the customer's specific needs and concerns rather than using a generic script."
+    },
+    {
+      "id": "Q162",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the 8 steps for service recovery, what is the purpose of the step 'Close the Loop'?",
+      "opts": [
+        "To ensure you follow through with the proposed resolution and communicate it effectively",
+        "To permanently close the customer's account to prevent further issues",
+        "To end the conversation immediately after the customer speaks",
+        "To seal the physical complaint box in the branch"
+      ],
+      "ans": "A",
+      "exp": "'Close the Loop' involves ensuring you follow through with the proposed resolution and communicating it effectively to the customer."
+    },
+    {
+      "id": "Q163",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does the step 'Track and Document' in the 8 steps for service recovery require?",
+      "opts": [
+        "Maintaining a record of complaints and the actions taken to address them",
+        "Tracking the customer's location via their mobile device",
+        "Documenting the employee's personal feelings about the customer",
+        "Tracking the financial cost of the complaint to deduct from the customer's account"
+      ],
+      "ans": "A",
+      "exp": "'Track and Document' means maintaining a record of complaints and the actions taken to address them for future reference and analysis."
+    },
+    {
+      "id": "Q164",
+      "module": 1,
+      "type": "mcq",
+      "q": "How is 'Automation' utilized within Access Bank's CRM systems?",
+      "opts": [
+        "To streamline processes from marketing campaigns to customer onboarding, reducing manual tasks",
+        "To automatically reject loan applications that do not meet a certain score",
+        "To replace all human customer service representatives with robots",
+        "To automatically increase interest rates on dormant accounts"
+      ],
+      "ans": "A",
+      "exp": "Automation is used to streamline various processes, from marketing campaigns to customer onboarding, reducing manual tasks and enhancing efficiency."
+    },
+    {
+      "id": "Q165",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary function of 'Compliance and Security' within the CRM framework?",
+      "opts": [
+        "To ensure CRM systems comply with data privacy and security regulations to protect customer information",
+        "To monitor employees and ensure they are not using social media during work hours",
+        "To automatically report suspicious customer transactions to the police",
+        "To restrict customers from accessing their own data without permission"
+      ],
+      "ans": "A",
+      "exp": "Compliance and Security ensure that CRM systems comply with data privacy and security regulations to protect customer information."
+    },
+    {
+      "id": "Q166",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which value of customer loyalty relates to providing a stable and predictable revenue stream essential for financial planning?",
+      "opts": [
+        "Revenue Generation",
+        "Stability and Predictability",
+        "Higher Profit Margins",
+        "Customer Lifetime Value"
+      ],
+      "ans": "B",
+      "exp": "Stability and Predictability are key values because loyal customers provide a stable and predictable revenue stream essential for financial planning and growth."
+    },
+    {
+      "id": "Q167",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why do loyal customers contribute to 'Higher Profit Margins' for a business?",
+      "opts": [
+        "Because they require more marketing expenditure to maintain",
+        "Because they are less price-sensitive and willing to pay a premium for products or services they trust",
+        "Because they frequently return products for full refunds",
+        "Because they demand constant discounts and freebies"
+      ],
+      "ans": "B",
+      "exp": "Loyal customers are less price-sensitive and willing to pay a premium for products or services they trust, resulting in higher profit margins."
+    },
+    {
+      "id": "Q168",
+      "module": 1,
+      "type": "mcq",
+      "q": "How do loyal customers provide 'Resilience in Economic Downturns'?",
+      "opts": [
+        "By demanding lower prices during a recession",
+        "By sticking with the brand during economic downturns, providing a buffer against revenue loss",
+        "By switching to cheaper competitors immediately",
+        "By stopping all non-essential purchases entirely"
+      ],
+      "ans": "B",
+      "exp": "During economic downturns, loyal customers are more likely to stick with your brand, providing a buffer against revenue loss."
+    },
+    {
+      "id": "Q169",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Customer Lifetime Value' (CLV) refer to in the context of customer loyalty?",
+      "opts": [
+        "The total amount a customer spends on their very first transaction",
+        "The higher value loyal customers contribute by continuing to do business over an extended period",
+        "The average lifespan of a customer's bank account before it is closed",
+        "The cost of acquiring a new customer over their lifetime"
+      ],
+      "ans": "B",
+      "exp": "Loyal customers have a higher customer lifetime value (CLV) because they are more likely to continue doing business with you over an extended period."
+    },
+    {
+      "id": "Q170",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which driver of customer loyalty is described as fundamental, requiring customers to trust they will get value for their money?",
+      "opts": [
+        "Emotional Connection",
+        "Quality Products or Services",
+        "Competitive Pricing",
+        "Community and Engagement"
+      ],
+      "ans": "B",
+      "exp": "Consistently delivering high-quality products or services is fundamental to building customer loyalty, as customers need to trust they will get value for their money."
+    },
+    {
+      "id": "Q171",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which driver of customer loyalty emphasizes that customers like predictability in product quality, pricing, and service?",
+      "opts": [
+        "Personalization",
+        "Consistency",
+        "Transparency",
+        "Convenience"
+      ],
+      "ans": "B",
+      "exp": "Consistency is a key driver because customers like predictability; consistency in product quality, pricing, and customer service builds trust."
+    },
+    {
+      "id": "Q172",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which driver of customer loyalty involves rewarding customers for their repeat business with discounts, points, or exclusive offers?",
+      "opts": [
+        "Loyalty Programs",
+        "Surprise and Delight",
+        "Feedback and Improvement",
+        "Effective Communication"
+      ],
+      "ans": "A",
+      "exp": "Loyalty Programs reward customers for their repeat business, using discounts, points, and exclusive offers to incentivize them to stick with a brand."
+    },
+    {
+      "id": "Q173",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does 'Community and Engagement' drive customer loyalty?",
+      "opts": [
+        "By forcing customers to attend mandatory financial seminars",
+        "By building a sense of community around a brand, creating emotional connections and a sense of belonging",
+        "By sharing the company's internal financial reports with the public",
+        "By restricting communication to only official press releases"
+      ],
+      "ans": "B",
+      "exp": "Building a sense of community around a brand creates emotional connections; engaging customers through events or forums fosters loyalty and belonging."
+    },
+    {
+      "id": "Q174",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which driver of customer loyalty involves being open about business practices, including pricing, policies, and how products are made?",
+      "opts": [
+        "Consistency",
+        "Transparency",
+        "Emotional Connection",
+        "Trust and Reliability"
+      ],
+      "ans": "B",
+      "exp": "Transparency involves being open about business practices, including pricing and policies, which builds trust and makes customers more likely to stay loyal."
+    },
+    {
+      "id": "Q175",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is described as the foundation of loyalty, requiring companies to consistently deliver on their promises and commitments?",
+      "opts": [
+        "Competitive Pricing",
+        "Convenience",
+        "Trust and Reliability",
+        "Personalization"
+      ],
+      "ans": "C",
+      "exp": "Trust and Reliability are the foundation of loyalty; companies must consistently deliver on their promises and commitments to earn and maintain it."
+    },
+    {
+      "id": "Q176",
+      "module": 1,
+      "type": "mcq",
+      "q": "In customer retention strategies, what is the specific purpose of 'Loyalty Programs'?",
+      "opts": [
+        "To reward frequent purchases and personalize rewards based on individual customer behavior",
+        "To identify inactive customers and encourage them to return",
+        "To conduct periodic satisfaction surveys using Net Promoter Score",
+        "to manage key accounts and address specific customer needs"
+      ],
+      "ans": "A",
+      "exp": "Loyalty Programs reward frequent purchases, offering discounts, points, or exclusive access, and personalize rewards based on individual behavior."
+    },
+    {
+      "id": "Q177",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does the retention strategy of 'Regular Communication' entail?",
+      "opts": [
+        "Calling customers daily to sell new products",
+        "Communicating through newsletters, emails, or SMS, sharing valuable content and using segmentation for targeted messages",
+        "Sending automated legal notices for account maintenance",
+        "Restricting communication to only when a complaint is received"
+      ],
+      "ans": "B",
+      "exp": "Regular Communication involves keeping in touch through newsletters, emails, or SMS, sharing valuable content, and using segmentation for targeted messages."
+    },
+    {
+      "id": "Q178",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does 'Community Building' function as a customer retention strategy?",
+      "opts": [
+        "By building physical branches in every rural community",
+        "By encouraging customer interactions, hosting events, webinars, or forums related to the industry",
+        "By forcing customers to join a local charity organization",
+        "By creating a mandatory social media group for all account holders"
+      ],
+      "ans": "B",
+      "exp": "Community Building involves encouraging customer interactions and discussions, and hosting events, webinars, or forums related to the industry."
+    },
+    {
+      "id": "Q179",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the goal of 'Multi-Channel Engagement' in customer retention?",
+      "opts": [
+        "To force customers to use only the most cost-effective channel for the bank",
+        "To be available on multiple channels like social media, chat, and phone, ensuring a consistent and seamless experience",
+        "To limit communication to only one channel to avoid confusing the customer",
+        "To engage customers exclusively through physical mail"
+      ],
+      "ans": "B",
+      "exp": "Multi-Channel Engagement means being available on multiple channels, including social media, chat, and phone, ensuring a consistent and seamless experience."
+    },
+    {
+      "id": "Q180",
+      "module": 1,
+      "type": "mcq",
+      "q": "What tools are mentioned for conducting 'Satisfaction Surveys' to gauge customer sentiment?",
+      "opts": [
+        "Flexcube and Hootsuite",
+        "Net Promoter Score (NPS) or Customer Satisfaction Score (CSAT)",
+        "GRI and SASB",
+        "Robotic Process Automation (RPA)"
+      ],
+      "ans": "B",
+      "exp": "Satisfaction Surveys use tools like Net Promoter Score (NPS) or Customer Satisfaction Score (CSAT) to gauge customer sentiment periodically."
+    },
+    {
+      "id": "Q181",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary role of 'Customer Success Teams' in retention strategies?",
+      "opts": [
+        "To manage key accounts, focusing on building strong relationships and addressing specific customer needs",
+        "To handle all initial customer complaints via phone",
+        "To design the bank's marketing campaigns",
+        "To process loan applications for new customers"
+      ],
+      "ans": "A",
+      "exp": "Customer Success Teams manage key accounts, focusing on building strong relationships and addressing specific customer needs."
+    },
+    {
+      "id": "Q182",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the specific purpose of conducting 'Exit Surveys' in customer retention?",
+      "opts": [
+        "To understand customers' reasons for leaving",
+        "To survey new customers about their onboarding experience",
+        "To measure employee satisfaction after a branch event",
+        "To test the functionality of a new mobile app feature"
+      ],
+      "ans": "A",
+      "exp": "Exit Surveys are conducted specifically to understand customers' reasons for leaving the business."
+    },
+    {
+      "id": "Q183",
+      "module": 1,
+      "type": "mcq",
+      "q": "When applying strategies for customer satisfaction, what does 'Set Clear Objectives' involve?",
+      "opts": [
+        "Defining specific goals like reducing churn rate and ensuring they align with overall business goals",
+        "Setting the maximum number of complaints a branch can receive per month",
+        "Establishing the minimum balance required for all customer accounts",
+        "Determining the exact salary bonuses for customer service staff"
+      ],
+      "ans": "A",
+      "exp": "Setting clear objectives involves defining specific goals for satisfaction and retention, such as reducing churn, and aligning them with overall business goals."
+    },
+    {
+      "id": "Q184",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does the strategy 'Solve Customer Pain Points' require a business to do?",
+      "opts": [
+        "Identify common pain points in the customer journey and make improvements to directly alleviate them",
+        "Ignore minor complaints to focus only on major legal issues",
+        "Increase prices to cover the cost of fixing the pain points",
+        "Transfer all customers experiencing pain points to a competitor"
+      ],
+      "ans": "A",
+      "exp": "Solving customer pain points involves identifying common issues in the journey and making product or service improvements to directly alleviate them."
+    },
+    {
+      "id": "Q185",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does 'Celebrate Milestones' function as a retention strategy?",
+      "opts": [
+        "By acknowledging important customer milestones, such as anniversaries, with personalized messages or offers",
+        "By celebrating the bank's quarterly profit milestones publicly",
+        "By throwing a party for employees when a customer opens an account",
+        "By automatically upgrading customers to premium accounts after one year"
+      ],
+      "ans": "A",
+      "exp": "Celebrating milestones involves acknowledging important customer occasions, like anniversaries, and sending personalized messages or offers to celebrate."
+    },
+    {
+      "id": "Q186",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the purpose of 'Competitive Analysis' when applying retention strategies?",
+      "opts": [
+        "To copy exactly what competitors are doing without any changes",
+        "To stay informed about competitors' retention strategies and identify opportunities to differentiate your offerings",
+        "To publicly criticize competitors' customer service on social media",
+        "To lower your prices to match the cheapest competitor regardless of quality"
+      ],
+      "ans": "B",
+      "exp": "Competitive analysis involves staying informed about competitors' strategies to identify opportunities to differentiate your own offerings."
+    },
+    {
+      "id": "Q187",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the importance of customer feedback, what does 'Validation of Strategies' mean?",
+      "opts": [
+        "Positive feedback validates effectiveness, while negative feedback leads to necessary adjustments",
+        "It ensures that all customer feedback is legally binding",
+        "It requires customers to sign a contract validating their complaints",
+        "It means only positive feedback is accepted as valid"
+      ],
+      "ans": "A",
+      "exp": "Validation of Strategies means positive feedback validates the effectiveness of customer service strategies, while negative feedback leads to necessary adjustments."
+    },
+    {
+      "id": "Q188",
+      "module": 1,
+      "type": "mcq",
+      "q": "How do 'Online Reviews' function as a channel for customer feedback?",
+      "opts": [
+        "By monitoring and responding to reviews on platforms and social media to gain insight into customer sentiment",
+        "By forcing customers to write a review before they can log into their account",
+        "By automatically deleting negative reviews to protect the bank's reputation",
+        "By only allowing employees to post reviews about the customers"
+      ],
+      "ans": "A",
+      "exp": "Online Reviews involve monitoring and responding to reviews on platforms and social media, which provides insight into customer sentiment."
+    },
+    {
+      "id": "Q189",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Direct Interaction/Communication' as a feedback channel involve?",
+      "opts": [
+        "Reaching out to customers directly via phone, email, or live chat with their feedback, questions, or concerns",
+        "Sending mass text messages to all customers asking for a five-star rating",
+        "Reading customers' private social media messages without their permission",
+        "Only communicating with customers when they visit the physical branch"
+      ],
+      "ans": "A",
+      "exp": "Direct Interaction involves reaching out to customers directly via phone, email, or live chat to gather their feedback, questions, or concerns."
+    },
+    {
+      "id": "Q190",
+      "module": 1,
+      "type": "mcq",
+      "q": "When reviewing customer feedback, what is the purpose of the strategy to 'Categorize'?",
+      "opts": [
+        "To categorize feedback into positive and negative aspects",
+        "To categorize customers by their account balance",
+        "To categorize employees based on the number of complaints they receive",
+        "To categorize feedback by the time of day it was received"
+      ],
+      "ans": "A",
+      "exp": "When reviewing feedback, organizations should categorize feedback into positive and negative aspects to better understand areas of strength and weakness."
+    },
+    {
+      "id": "Q191",
+      "module": 1,
+      "type": "mcq",
+      "q": "In developing an effective Improvement Strategy, what does 'Assignment of responsibilities' entail?",
+      "opts": [
+        "Assigning responsibilities to team members to address identified issues",
+        "Assigning the blame for negative feedback to a specific department",
+        "Assigning customers to different relationship managers",
+        "Assigning the cost of improvements to the customers' accounts"
+      ],
+      "ans": "A",
+      "exp": "An effective improvement strategy includes assigning responsibilities to team members to ensure the identified issues are properly addressed."
+    },
+    {
+      "id": "Q192",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the goal of the 'Track Monitor Progress' step in the improvement strategy?",
+      "opts": [
+        "To ensure that the changes made are having a positive impact",
+        "To track the GPS location of customers visiting the branch",
+        "To monitor how much time employees spend on break",
+        "To track the financial cost of the feedback software"
+      ],
+      "ans": "A",
+      "exp": "Tracking and monitoring progress ensures that the changes made based on customer feedback are actually having a positive impact."
+    },
+    {
+      "id": "Q193",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which benefit of continuous learning relates to increasing an individual's skill and competence level to perform tasks better?",
+      "opts": [
+        "Innovation and Creativity",
+        "Increased Competence",
+        "Improved Adaptability",
+        "Increased Productivity"
+      ],
+      "ans": "B",
+      "exp": "Increased Competence is a benefit of continuous learning, as it increases an individual's skill and competence level, enabling them to perform tasks better."
+    },
+    {
+      "id": "Q194",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does continuous learning provide 'Improved Adaptability'?",
+      "opts": [
+        "By giving individuals the flexibility and agility needed to adjust to new situations, technologies, and challenges",
+        "By forcing individuals to adapt to the company's exact schedule without question",
+        "By automatically updating the bank's software to adapt to market changes",
+        "By ensuring all employees learn the exact same skills regardless of their role"
+      ],
+      "ans": "A",
+      "exp": "Improved Adaptability comes from continuous learning, giving individuals the flexibility and agility needed to adjust to new situations, technologies, and challenges."
+    },
+    {
+      "id": "Q195",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which benefit of continuous learning encourages critical and creative thinking, leading to improved problem-solving abilities?",
+      "opts": [
+        "Enhanced Problem-Solving Skills",
+        "Better Decision-Making",
+        "Increased Productivity",
+        "Innovation and Creativity"
+      ],
+      "ans": "A",
+      "exp": "Enhanced Problem-Solving Skills are developed through learning and adaptation, which encourages critical and creative thinking to find innovative solutions."
+    },
+    {
+      "id": "Q196",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does continuous learning lead to 'Increased Productivity'?",
+      "opts": [
+        "By making employees work longer hours without breaks",
+        "By learning new tools, techniques, or methods that lead to increased efficiency and working smarter",
+        "By automating all customer interactions to remove human effort",
+        "By reducing the number of employees needed to do the same work"
+      ],
+      "ans": "B",
+      "exp": "Increased Productivity occurs because learning new tools, techniques, or methods leads to increased efficiency, allowing individuals to work smarter."
+    },
+    {
+      "id": "Q197",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the outcome of 'Better Decision-Making' as a benefit of continuous learning?",
+      "opts": [
+        "Informed decision-making due to access to a wide range of information for strategic, data-driven decisions",
+        "The ability to make decisions faster without consulting any data",
+        "The requirement to let customers make all strategic decisions for the bank",
+        "The elimination of the need for management oversight"
+      ],
+      "ans": "A",
+      "exp": "Better Decision-Making is an outcome of continuous learning, as individuals have access to a wide range of information to make strategic, data-driven decisions."
+    },
+    {
+      "id": "Q198",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of a customer-centric organization, what does 'Ease of Interaction' mean?",
+      "opts": [
+        "Simplifying processes to ensure seamless customer interactions",
+        "Restricting customer access to only digital channels",
+        "Providing complex financial products to challenge the customer",
+        "Limiting communication to once a year"
+      ],
+      "ans": "A",
+      "exp": "Ease of Interaction involves simplifying processes to ensure seamless customer interactions across all touchpoints."
+    },
+    {
+      "id": "Q199",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Active Listening' entail as an attribute of a customer-centric organization?",
+      "opts": [
+        "Regularly soliciting feedback and making necessary adjustments",
+        "Forcing customers to listen to the bank's marketing presentations",
+        "Recording all customer phone calls without their knowledge",
+        "Only listening to customers who have high account balances"
+      ],
+      "ans": "A",
+      "exp": "Active Listening means regularly soliciting feedback from customers and making necessary adjustments based on what is heard."
+    },
+    {
+      "id": "Q200",
+      "module": 1,
+      "type": "mcq",
+      "q": "How do 'Data-Driven Decisions' function in a customer-centric organization?",
+      "opts": [
+        "By using analytics and customer data to guide strategies",
+        "By allowing only the IT department to make decisions",
+        "By base all decisions solely on competitor data",
+        "By ignoring customer data to maintain objectivity"
+      ],
+      "ans": "A",
+      "exp": "Data-Driven Decisions involve using analytics and customer data to guide strategies and organizational priorities."
+    },
+    {
+      "id": "Q201",
+      "module": 1,
+      "type": "mcq",
+      "q": "When implementing customer centricity, customer segmentation divides the customer base via factors such as demographics, financial behavior, and what else?",
+      "opts": [
+        "Product usage",
+        "Employee performance",
+        "Branch location",
+        "Competitor pricing"
+      ],
+      "ans": "A",
+      "exp": "Customer segmentation divides the base into groups sharing similar characteristics via factors like demographics, financial behavior, and product usage."
+    },
+    {
+      "id": "Q202",
+      "module": 1,
+      "type": "mcq",
+      "q": "When overcoming challenges in tailoring solutions, what does it mean to 'be flexible'?",
+      "opts": [
+        "Don't be afraid to think outside the box and come up with creative solutions to customers' problems",
+        "Allow customers to change the bank's core policies whenever they want",
+        "Reduce the quality of the solution to make it faster to implement",
+        "Change your personal work schedule to accommodate the customer"
+      ],
+      "ans": "A",
+      "exp": "Being flexible means not being afraid to think outside the box and come up with creative solutions to your customers' problems."
+    },
+    {
+      "id": "Q203",
+      "module": 1,
+      "type": "mcq",
+      "q": "When overcoming challenges in tailoring solutions, what does it mean to 'be persuasive'?",
+      "opts": [
+        "When communicating solutions, explain how they will help customers achieve their goals",
+        "Force the customer to accept the solution by threatening to close their account",
+        "Use complex financial jargon to confuse the customer into agreeing",
+        "Offer a bribe to the customer to accept the proposed solution"
+      ],
+      "ans": "A",
+      "exp": "Being persuasive means that when communicating your solutions, you explain clearly how they will help the customer achieve their goals."
+    },
+    {
+      "id": "Q204",
+      "module": 1,
+      "type": "mcq",
+      "q": "In predictive analytics, what is the function of 'Machine Learning Models'?",
+      "opts": [
+        "Analyze historical customer behavior and identify patterns to predict future actions",
+        "Automatically approve all loan applications without human review",
+        "Design the user interface of the mobile banking app",
+        "Train new employees on how to use the CRM system"
+      ],
+      "ans": "A",
+      "exp": "Machine Learning Models analyze historical customer behavior and identify patterns to predict future actions, such as the likelihood of needing a loan."
+    },
+    {
+      "id": "Q205",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the purpose of 'Segmentation and Profiling' in predictive analytics?",
+      "opts": [
+        "To segment customers based on financial behaviors, preferences, and needs to tailor services effectively",
+        "To separate profitable customers from unprofitable ones and close the latter's accounts",
+        "To segment employees based on their sales performance",
+        "To profile customers for targeted marketing by competitors"
+      ],
+      "ans": "A",
+      "exp": "Segmentation and Profiling use predictive analytics to segment customers based on behaviors and needs, allowing the bank to tailor services more effectively."
+    },
+    {
+      "id": "Q206",
+      "module": 1,
+      "type": "mcq",
+      "q": "How can predictive analytics be applied to 'Customer Service Optimization'?",
+      "opts": [
+        "By forecasting when call volumes are likely to peak and allocating resources efficiently to reduce wait times",
+        "By automatically disconnecting calls from customers who have been waiting too long",
+        "By replacing all customer service agents with automated voice responses",
+        "By reducing the number of staff working during peak hours to save costs"
+      ],
+      "ans": "A",
+      "exp": "Customer Service Optimization uses predictive analytics to forecast when call volumes will peak, allowing the bank to allocate resources efficiently and reduce wait times."
+    },
+    {
+      "id": "Q207",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Ethical Decision-Making' as an aspect of integrity require?",
+      "opts": [
+        "Choosing the morally right course of action even when it may not be the easiest or most profitable choice",
+        "Always choosing the option that generates the highest short-term profit for the bank",
+        "Following the customer's instructions even if they violate bank policy",
+        "Making decisions based solely on what is legally permissible, ignoring moral considerations"
+      ],
+      "ans": "A",
+      "exp": "Ethical Decision-Making means choosing the morally right course of action even when it may not be the easiest or most profitable choice."
+    },
+    {
+      "id": "Q208",
+      "module": 1,
+      "type": "mcq",
+      "q": "How is 'Accountability' demonstrated in customer interactions?",
+      "opts": [
+        "By taking responsibility for actions, acknowledging mistakes, and taking appropriate steps to rectify the situation",
+        "By blaming other departments for any errors made",
+        "By holding the customer accountable for not understanding the terms and conditions",
+        "By refusing to admit any fault to protect the bank's legal position"
+      ],
+      "ans": "A",
+      "exp": "Accountability involves taking responsibility for actions, acknowledging mistakes, and taking appropriate steps to rectify the situation, which builds trust."
+    },
+    {
+      "id": "Q209",
+      "module": 1,
+      "type": "mcq",
+      "q": "Under the 'Problem Resolution' element of professionalism, how should employees handle issues?",
+      "opts": [
+        "Avoid personalizing issues and focus on resolving them, treating the customer as royalty",
+        "Take the customer's rudeness personally and delay the resolution as punishment",
+        "Personalize the issue to build a deeper emotional connection with the customer",
+        "Ignore the issue if it requires too much effort to solve"
+      ],
+      "ans": "A",
+      "exp": "Employees should avoid personalizing issues, focus on resolving them, and treat the customer as royalty, as they are the reason the business exists."
+    },
+    {
+      "id": "Q210",
+      "module": 1,
+      "type": "mcq",
+      "q": "In 'Time Management', what is the recommended approach to handling workload?",
+      "opts": [
+        "Treat the urgent and important requests first and manage workload efficiently to minimize customer wait time",
+        "Process all requests strictly in the order they are received, regardless of urgency",
+        "Leave the most urgent requests for the end of the day when the branch is quieter",
+        "Spend equal amounts of time on every request, even if some are simple and others are complex"
+      ],
+      "ans": "A",
+      "exp": "Effective time management involves treating urgent and important requests first and managing workload efficiently to minimize the customer's wait time."
+    },
+    {
+      "id": "Q211",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, what is the first step in developing an action plan for improvement based on customer feedback?",
+      "opts": [
+        "Creating a detailed plan outlining the steps to address identified issues",
+        "Immediately firing the employees responsible for the negative feedback",
+        "Ignoring the feedback until the next quarterly review",
+        "Sending an automated apology email to all customers"
+      ],
+      "ans": "A",
+      "exp": "An effective improvement strategy begins with developing an action plan, which involves creating a detailed plan outlining the steps to be taken in addressing the identified issues."
+    },
+    {
+      "id": "Q212",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which benefit of continuous learning involves the ability to adjust to new situations, technologies, and challenges?",
+      "opts": [
+        "Increased Competence",
+        "Improved Adaptability",
+        "Enhanced Problem-Solving Skills",
+        "Increased Productivity"
+      ],
+      "ans": "B",
+      "exp": "Improved Adaptability is a benefit of continuous learning, as it gives individuals the flexibility and agility needed to adjust to new situations, technologies, and challenges."
+    },
+    {
+      "id": "Q213",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the statistics provided in the manual, what percentage of former complainers can be transformed into loyal customers if their grievances are handled promptly?",
+      "opts": [
+        "Up to 50%",
+        "Up to 75%",
+        "Up to 85%",
+        "Up to 95%"
+      ],
+      "ans": "D",
+      "exp": "The manual states that up to 95% of former complainers can be transformed into loyal customers once their grievances are handled promptly and effectively."
+    },
+    {
+      "id": "Q214",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of dissatisfied customer vocalizes their dissatisfaction but is eager to embrace positive changes in service delivery?",
+      "opts": [
+        "Passive Observers",
+        "Voicers of Concern",
+        "Activists",
+        "Irate Customers"
+      ],
+      "ans": "B",
+      "exp": "Voicers of Concern are customers who vocalize their dissatisfaction but are eager to embrace positive changes in service delivery without necessarily severing ties."
+    },
+    {
+      "id": "Q215",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary purpose of 'Customer Support Teams' using CRM tools at Access Bank?",
+      "opts": [
+        "To design new financial products for the market",
+        "To track and resolve customer inquiries, complaints, and requests efficiently",
+        "To manage the bank's social media advertising budget",
+        "To conduct annual performance reviews for branch managers"
+      ],
+      "ans": "B",
+      "exp": "Customer Support Teams use CRM tools to track and resolve customer inquiries, complaints, and requests efficiently so customers receive timely assistance."
+    },
+    {
+      "id": "Q216",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which aspect of Access Bank's CRM involves integrating systems with core banking platforms like Flexcube?",
+      "opts": [
+        "Customer Data Management",
+        "Automation",
+        "Integration",
+        "Compliance and Security"
+      ],
+      "ans": "C",
+      "exp": "Integration ensures a seamless customer experience by connecting CRM systems with other banking systems such as core banking (Flexcube), loan management, and online banking platforms."
+    },
+    {
+      "id": "Q217",
+      "module": 1,
+      "type": "mcq",
+      "q": "Within the key aspects of Access Bank's CRM, what does 'Corporate Social Responsibility' refer to?",
+      "opts": [
+        "The bank's involvement in initiatives including education, health, and community development",
+        "The mandatory training hours required for all new employees",
+        "The process of auditing financial transactions for tax purposes",
+        "The strategy of closing unprofitable branches in rural areas"
+      ],
+      "ans": "A",
+      "exp": "Under the CRM aspects, Corporate Social Responsibility refers to the bank's involvement in various initiatives, including education, health, and community development."
+    },
+    {
+      "id": "Q218",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which value of customer loyalty refers to the fact that loyal customers provide a wealth of data for tailored experiences?",
+      "opts": [
+        "Cross-Selling Opportunities",
+        "Data for Personalization",
+        "Brand Advocacy",
+        "Reduced Churn"
+      ],
+      "ans": "B",
+      "exp": "Data for Personalization is a key value because loyal customers provide a wealth of data that can be used to create tailored experiences, recommendations, and offers."
+    },
+    {
+      "id": "Q219",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which driver of customer loyalty involves making it easy for customers to do business through user-friendly websites and efficient order fulfillment?",
+      "opts": [
+        "Emotional Connection",
+        "Transparency",
+        "Convenience",
+        "Community and Engagement"
+      ],
+      "ans": "C",
+      "exp": "Convenience is a key driver of loyalty, making it easy for customers to do business through user-friendly websites, convenient payment options, and efficient fulfillment."
+    },
+    {
+      "id": "Q220",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which customer retention strategy involves using resources, tutorials, or webinars to help customers make the most of products or services?",
+      "opts": [
+        "Customer Education",
+        "Surprise and Delight",
+        "Predictive Analytics",
+        "Re-Engagement Campaigns"
+      ],
+      "ans": "A",
+      "exp": "Customer Education is a retention strategy that involves providing resources, tutorials, or webinars to help customers maximize the value of products or services."
+    },
+    {
+      "id": "Q221",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the purpose of monitoring 'Retention Metrics and KPIs'?",
+      "opts": [
+        "To determine which employees should receive a bonus",
+        "To monitor churn rate and customer lifetime value, adjusting strategies based on performance data",
+        "To calculate the exact cost of acquiring a new customer",
+        "To track the daily attendance of branch staff"
+      ],
+      "ans": "B",
+      "exp": "Retention Metrics and KPIs, such as churn rate and customer lifetime value, are monitored so strategies can be adjusted based on performance data."
+    },
+    {
+      "id": "Q222",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 1 (Digital Banking), what is a recommended measure to reduce wait times at physical branches?",
+      "opts": [
+        "Hiring more security guards",
+        "Appointment Scheduling",
+        "Removing seating areas",
+        "Closing the branch earlier"
+      ],
+      "ans": "B",
+      "exp": "Appointment Scheduling is recommended to allow customers to schedule visits at physical branches, thereby reducing wait times and providing personalized service."
+    },
+    {
+      "id": "Q223",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 3 (Jalus Retail Bank), what is suggested to reduce reliance on in-person transactions?",
+      "opts": [
+        "Charging fees for in-person transactions",
+        "Customer Education on how to make the most of digital banking services",
+        "Closing all physical branches immediately",
+        "Removing the mobile banking app"
+      ],
+      "ans": "B",
+      "exp": "Customer Education involves offering clear and accessible guidance to retail bank customers on how to make the most of digital banking services, reducing reliance on in-person transactions."
+    },
+    {
+      "id": "Q224",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Case Study 5 (Mandy Bank Churn), what is the purpose of implementing a 'Proactive Outreach' program?",
+      "opts": [
+        "To sell new credit cards to existing customers",
+        "To engage with at-risk customers and address their concerns before they close their accounts",
+        "To inform customers about upcoming branch closures",
+        "To collect feedback from newly onboarded customers"
+      ],
+      "ans": "B",
+      "exp": "Proactive Outreach involves implementing a program to engage with at-risk customers and address their concerns before they decide to close their accounts."
+    },
+    {
+      "id": "Q225",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Role Play 1 (Customer Dispute), what is the bank's policy regarding disputed unauthorized charges?",
+      "opts": [
+        "The customer must pay for all charges until the police investigate",
+        "The bank allows for a full investigation, and customers are generally protected against unauthorized transactions",
+        "The bank automatically closes the customer's account to prevent further fraud",
+        "The customer must provide a police report within 24 hours or forfeit the funds"
+      ],
+      "ans": "B",
+      "exp": "The bank's policy allows for a full investigation of disputed charges, and customers are generally protected against unauthorized transactions."
+    },
+    {
+      "id": "Q226",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Role Play 2 (Hidden Fees), what is a key background fact about the customer's account opening experience?",
+      "opts": [
+        "The customer refused to read the terms and conditions",
+        "The bank representative did not adequately explain all the fees associated with the account",
+        "The customer opened the account online without any human interaction",
+        "The fees were clearly printed on the back of the debit card"
+      ],
+      "ans": "B",
+      "exp": "The background information states that at the time of account opening, the bank representative did not adequately explain all the fees associated with the account."
+    },
+    {
+      "id": "Q227",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Role Play 3 (Credit Dispute), what temporary mitigation can be offered to the customer while the credit report error is investigated?",
+      "opts": [
+        "Issuing a new credit card with a higher limit",
+        "Providing information on how to temporarily mitigate the impact, such as notifying potential lenders of the dispute",
+        "Transferring the customer's mortgage to a different bank",
+        "Deleting the customer's credit history entirely"
+      ],
+      "ans": "B",
+      "exp": "The manual suggests providing information on how to temporarily mitigate the impact of the credit report error, such as notifying potential lenders of the dispute."
+    },
+    {
+      "id": "Q228",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which methods can banks employ to understand customer values regarding social and environmental issues?",
+      "opts": [
+        "Surveys, focus groups, feedback mechanisms, and data analytics",
+        "Guessing based on the age of the customer",
+        "Only reviewing the bank's internal profit margins",
+        "Monitoring the personal social media accounts of employees"
+      ],
+      "ans": "A",
+      "exp": "Banks can employ various methods to understand customer values, such as surveys, focus groups, feedback mechanisms, and data analytics."
+    },
+    {
+      "id": "Q229",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which strategy for aligning ESR with customer values involves developing sustainable banking products and services?",
+      "opts": [
+        "Marketing and Communication",
+        "Customer Engagement",
+        "Product Development",
+        "Impact Metrics"
+      ],
+      "ans": "C",
+      "exp": "Product Development is a practical strategy that involves developing sustainable banking products and services that resonate with customer values."
+    },
+    {
+      "id": "Q230",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which reporting framework is mentioned for measuring the impact of sustainability initiatives alongside SASB?",
+      "opts": [
+        "GAAP",
+        "GRI (Global Reporting Initiative)",
+        "ISO 27001",
+        "COSO"
+      ],
+      "ans": "B",
+      "exp": "The manual mentions reporting frameworks such as GRI (Global Reporting Initiative) and SASB (Sustainability Accounting Standards Board) for measuring impact."
+    },
+    {
+      "id": "Q231",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, what is a key tip for dealing with a difficult customer regarding their anger or frustration?",
+      "opts": [
+        "Interrupt them to show you are in control",
+        "Listen actively to understand the problem and do not be quick to respond",
+        "Argue with them to establish the bank's authority",
+        "Transfer them to another department immediately"
+      ],
+      "ans": "B",
+      "exp": "Practical tips for dealing with difficult customers include listening actively to understand the problem and not being quick to respond or interrupt."
+    },
+    {
+      "id": "Q232",
+      "module": 1,
+      "type": "mcq",
+      "q": "Under 'Building Trust' in the professionalism module, what specific warning is given regarding passwords?",
+      "opts": [
+        "Passwords should be changed every 5 minutes",
+        "Do not be negligent with your passwords as this can give access to unauthorized staff",
+        "Passwords should be shared with the branch manager for safety",
+        "Passwords must be written down and kept at the teller counter"
+      ],
+      "ans": "B",
+      "exp": "The manual warns employees not to be negligent with their passwords as this can give access to unauthorized staff, compromising customer data."
+    },
+    {
+      "id": "Q233",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Accessibility' in demonstrating commitment to customers entail?",
+      "opts": [
+        "Ensuring accessibility through various channels, such as in-person, phone, email, and online chat",
+        "Only allowing customers to visit the main branch during business hours",
+        "Restricting communication to written letters only",
+        "Requiring all customers to have a smartphone to access services"
+      ],
+      "ans": "A",
+      "exp": "Accessibility involves ensuring availability through various channels, such as in-person, phone, email, and online chat, making it easier for customers to reach out."
+    },
+    {
+      "id": "Q234",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the key difference between cooperation and collaboration as described in the teamwork module?",
+      "opts": [
+        "Cooperation is formal, while collaboration is informal",
+        "Collaboration is centred on co-ownership and not individual ownership",
+        "Cooperation involves management, while collaboration involves staff",
+        "There is no difference; they are exact synonyms"
+      ],
+      "ans": "B",
+      "exp": "Although often used interchangeably, collaboration focuses on a shared objective and is centred on co-ownership and not individual ownership."
+    },
+    {
+      "id": "Q235",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which practical example of shared goals involves marketing, retail banking, and IT departments collaborating?",
+      "opts": [
+        "Fraud Detection",
+        "Customer On-boarding",
+        "Product Development",
+        "Credit Approval"
+      ],
+      "ans": "C",
+      "exp": "Product Development involves marketing, retail banking, and IT departments collaborating to develop and launch new banking products."
+    },
+    {
+      "id": "Q236",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the definition of 'Customer Expectations' according to the manual?",
+      "opts": [
+        "The fundamental things customers require to solve a problem",
+        "The specific features customers prefer in a product",
+        "The standards that customers have for the products and services they purchase",
+        "The financial limits set by the bank for lending"
+      ],
+      "ans": "C",
+      "exp": "Customer expectations are defined as the standards that customers have for the products and services they purchase, which are constantly evolving."
+    },
+    {
+      "id": "Q237",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which tools are mentioned for social listening to monitor what customers are saying about a brand?",
+      "opts": [
+        "Flexcube and TCS BaNCS",
+        "Hootsuite and Brandwatch",
+        "Net Promoter Score and CSAT",
+        "GRI and SASB"
+      ],
+      "ans": "B",
+      "exp": "Tools such as Hootsuite and Brandwatch are used for social listening to monitor customer sentiment and feedback on social media platforms."
+    },
+    {
+      "id": "Q238",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the first step in using predictive analytics to anticipate customer service needs?",
+      "opts": [
+        "Machine Learning Models",
+        "Data Aggregation and Integration",
+        "Behavioural Predictions",
+        "Proactive Communication"
+      ],
+      "ans": "B",
+      "exp": "The first step is Data Aggregation and Integration, consolidating customer data from various sources to form a unified dataset for predictive analytics."
+    },
+    {
+      "id": "Q239",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does 'Risk Management' function when tapping into the bank's collective experience?",
+      "opts": [
+        "By increasing interest rates on all loans",
+        "By proactively addressing security and fraud concerns to maintain customer trust in digital banking",
+        "By refusing to offer digital banking to high-risk customers",
+        "By outsourcing all security to a third-party vendor"
+      ],
+      "ans": "B",
+      "exp": "With a strong understanding of the financial landscape, the bank can proactively address security and fraud concerns through robust risk management practices to maintain trust."
+    },
+    {
+      "id": "Q240",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is Access Bank's Mission Statement?",
+      "opts": [
+        "To be the world most respected African bank",
+        "Setting standards for sustainable business practices that unleash the talents of our employees and deliver superior value to our customers",
+        "To provide the highest dividend returns to shareholders",
+        "To become the largest employer in the African financial sector"
+      ],
+      "ans": "B",
+      "exp": "Access Bank's mission statement is 'Setting standards for sustainable business practices that unleash the talents of our employees, deliver superior value to our customers and provide innovative solutions for the markets and communities we serve.'"
+    },
+    {
+      "id": "Q241",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which step in aligning customer service goals with Access Bank's values involves establishing KPIs?",
+      "opts": [
+        "Communicate Expectations",
+        "Establish Customer Service Goals",
+        "Measure and Track Progress",
+        "Recognize and Reward Excellence"
+      ],
+      "ans": "C",
+      "exp": "'Measure and Track Progress' involves establishing key performance indicators (KPIs) that measure progress toward the customer service goals."
+    },
+    {
+      "id": "Q242",
+      "module": 1,
+      "type": "mcq",
+      "q": "What role do 'Marketing and Product Development Teams' play in customer centricity?",
+      "opts": [
+        "Processing daily cash deposits",
+        "Gathering customer insights to create products and services that align with customer needs",
+        "Approving all corporate loan applications",
+        "Managing the bank's ATM network"
+      ],
+      "ans": "B",
+      "exp": "Marketing and product development teams should gather customer insights to create products and services that align with customer needs and preferences."
+    },
+    {
+      "id": "Q243",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Proactive Problem Resolution' entail in creating a memorable customer experience?",
+      "opts": [
+        "Waiting for the customer to complain before taking action",
+        "Anticipating customer needs and proactively addressing issues before they become problems",
+        "Transferring all problems to the legal department",
+        "Ignoring minor issues to focus on major crises"
+      ],
+      "ans": "B",
+      "exp": "Proactive Problem Resolution involves anticipating customer needs and proactively addressing issues before they become problems, empowering frontline staff to resolve them promptly."
+    },
+    {
+      "id": "Q244",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the 8 steps for service recovery, what is the step immediately following 'Customer's Voice'?",
+      "opts": [
+        "Dig Deeper",
+        "Show You Care",
+        "Tailor Your Response",
+        "Follow the Rules"
+      ],
+      "ans": "B",
+      "exp": "The second step is 'Show You Care', which involves demonstrating empathy and genuine concern for the customer's situation after listening to their voice."
+    },
+    {
+      "id": "Q245",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the definition of 'Customer Retention' provided in the manual?",
+      "opts": [
+        "The process of acquiring new customers through marketing",
+        "A company's ability to turn customers into repeat buyers and prevent them from switching to a competitor",
+        "The method of calculating the lifetime value of a customer",
+        "The strategy of increasing prices to maximize profit"
+      ],
+      "ans": "B",
+      "exp": "Customer retention is defined as a company's ability to turn customers into repeat buyers and prevent them from switching to a competitor."
+    },
+    {
+      "id": "Q246",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which retention strategy involves identifying inactive or dormant customers and creating targeted campaigns?",
+      "opts": [
+        "Loyalty Programs",
+        "Surprise and Delight",
+        "Re-Engagement Campaigns",
+        "Customer Success Teams"
+      ],
+      "ans": "C",
+      "exp": "Re-Engagement Campaigns identify inactive or dormant customers and create targeted campaigns with special offers to encourage them to return."
+    },
+    {
+      "id": "Q247",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the definition of 'Customer Feedback' according to the manual?",
+      "opts": [
+        "The financial audit of a customer's account",
+        "The information, insights, challenges, and ideas shared by customers about their experience with a brand",
+        "The legal terms and conditions of a loan agreement",
+        "The process of onboarding a new corporate client"
+      ],
+      "ans": "B",
+      "exp": "Customer feedback is described as the information, insights, challenges, and ideas shared by customers about their experience with a brand or service provider."
+    },
+    {
+      "id": "Q248",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which strategy for reviewing customer feedback involves determining which issues will have the most significant impact on service quality?",
+      "opts": [
+        "Categorize feedback",
+        "Identify common themes",
+        "Prioritize issues",
+        "Engage with customers"
+      ],
+      "ans": "C",
+      "exp": "Prioritizing issues involves determining which issues or improvements are most critical and will have the most significant impact on service quality."
+    },
+    {
+      "id": "Q249",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the purpose of the 'Track Monitor Progress' step in the improvement strategy?",
+      "opts": [
+        "To ensure that the changes made are having a positive impact",
+        "To track the GPS location of customers visiting the branch",
+        "To monitor how much time employees spend on break",
+        "To track the financial cost of the feedback software"
+      ],
+      "ans": "A",
+      "exp": "Tracking and monitoring progress ensures that the changes made based on customer feedback are actually having a positive impact."
+    },
+    {
+      "id": "Q250",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, what is the ultimate goal of continuous learning and adaptation for an organization?",
+      "opts": [
+        "To reduce the number of employees needed",
+        "To allow individuals and organizations to grow, thrive, and remain competitive in the face of evolving challenges",
+        "To eliminate the need for customer feedback",
+        "To standardize all products so they are identical"
+      ],
+      "ans": "B",
+      "exp": "Continuous learning and adaptation allow individuals and organizations to grow, thrive, and remain competitive in the face of evolving challenges and opportunities."
+    },
+    {
+      "id": "FC1",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the definition of customer service?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Customer service is the ability to constantly and consistently give customers what they want, providing assistance from first contact throughout their journey."
+    },
+    {
+      "id": "FC2",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is Customer-Centricity?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "A strategy that places the customer at the centre of an organization's operations and priorities, focusing on creating positive experiences."
+    },
+    {
+      "id": "FC3",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the 8 steps for Service Recovery?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "1. Customer's Voice, 2. Show You Care, 3. Dig Deeper, 4. Tailor Your Response, 5. Follow the Rules, 6. Close the Loop, 7. Track and Document, 8. Learn and Improve."
+    },
+    {
+      "id": "FC4",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the difference between customer needs and customer preferences?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Customer needs are fundamental things required to achieve a goal, while customer preferences are the specific features and characteristics customers prefer in a product or service."
+    },
+    {
+      "id": "FC5",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is Social Listening and what tools are used?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Social Listening involves using tools to monitor what customers are saying about a brand on social media. Tools include Hootsuite and Brandwatch."
+    },
+    {
+      "id": "FC6",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is Access Bank's Vision Statement?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "To be the world most respected African bank."
+    },
+    {
+      "id": "FC7",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are Access Bank's Core Values?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Leadership, Excellence, Empowered employees, Passion for customers, Professionalism, and Innovation."
+    },
+    {
+      "id": "FC8",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is Access Bank's Mission Statement?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Setting standards for sustainable business practices that unleash the talents of our employees, deliver superior value to our customers and provide innovative solutions for the markets and communities we serve."
+    },
+    {
+      "id": "FC9",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the key elements of excellent customer service?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Accuracy, Personalization, Responsiveness, Empathy, Consistency, Going the extra mile, Effective Communication, Friendliness and courtesy, Knowledge and expertise, and Problem-solving skills."
+    },
+    {
+      "id": "FC10",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the purpose of predictive analytics in customer service?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "To identify potential credit risks or fraudulent activities early, trigger proactive communications, and forecast call volumes to optimize resource allocation."
+    },
+    {
+      "id": "FC11",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the types of dissatisfied customers?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Passive Observers (stay silent), Voicers of Concern (vocalize but embrace change), Activists (go to great lengths, even legal), Irate Customers (broadcast negative experiences)."
+    },
+    {
+      "id": "FC12",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the definition of integrity in customer service?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "The quality of being honest and having strong moral principles; moral uprightness."
+    },
+    {
+      "id": "FC13",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does 'Consistency' in integrity mean for customer interactions?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Delivering on promises and commitments consistently over time, giving customers confidence that the business will meet their expectations."
+    },
+    {
+      "id": "FC14",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the definition of professionalism in customer service?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Maintaining a high level of competence, courtesy, and integrity when interacting with customers."
+    },
+    {
+      "id": "FC15",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the key elements of professionalism in customer service?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Appearance, Attitude, Product Knowledge, Time Management, Problem Resolution, Commitment, Transparency, and Building Trust."
+    },
+    {
+      "id": "FC16",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the definition of teamwork?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "When a group of people work together to successfully complete a task or achieve a common goal, involving cooperation, collaboration, and communication."
+    },
+    {
+      "id": "FC17",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the key difference between cooperation and collaboration?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Collaboration is centred on co-ownership and not individual ownership."
+    },
+    {
+      "id": "FC18",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is Environmental and Social Responsibility (ESR) in banking?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "A set of ethical and sustainable practices and commitments that financial institutions undertake to make a positive impact on society."
+    },
+    {
+      "id": "FC19",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the key dimensions of ESR?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Community Engagement, Philanthropy, and Ethical Business Practices."
+    },
+    {
+      "id": "FC20",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the reporting frameworks for sustainability initiatives mentioned in the manual?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "GRI (Global Reporting Initiative) and SASB (Sustainability Accounting Standards Board)."
+    },
+    {
+      "id": "FC21",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is Customer Feedback?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "The information, insights, challenges, and ideas shared by customers about their experience with a brand or service provider."
+    },
+    {
+      "id": "FC22",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the benefits of continuous learning?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Increased Competence, Improved Adaptability, Enhanced Problem-Solving Skills, Better Decision-Making, Increased Productivity, Innovation and Creativity, and Personal Growth."
+    },
+    {
+      "id": "FC23",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary purpose of 'Customer Support Teams' using CRM tools?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "To track and resolve customer inquiries, complaints, and requests efficiently so customers receive timely assistance."
+    },
+    {
+      "id": "FC24",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the key aspects of Access Bank's CRM?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Customer Data Management, Personalization, Segmentation, CRM Analytics, Automation, Integration, Multichannel Communication, Compliance and Security, and Corporate Social Responsibility."
+    },
+    {
+      "id": "FC25",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the drivers of customer loyalty?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Quality Products or Services, Competitive Pricing, Customer Service, Consistency, Convenience, Personalization, Emotional Connection, Community and Engagement, Transparency, Loyalty Programs, and Trust and Reliability."
+    },
+    {
+      "id": "FC26",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the values of customer loyalty?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Revenue Generation, Reduced Marketing Costs, Higher Profit Margins, Stability and Predictability, Resilience in Economic Downturns, Customer Lifetime Value, Brand Advocacy, Data for Personalization, and Cross-Selling Opportunities."
+    },
+    {
+      "id": "FC27",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the definition of customer retention?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "A company's ability to turn customers into repeat buyers and prevent them from switching to a competitor."
+    },
+    {
+      "id": "FC28",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the customer retention strategies mentioned in the manual?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Customer Service, Personalization, Loyalty Programs, Surprise and Delight, Customer Education, Regular Communication, Re-Engagement Campaigns, Feedback and Improvement, Community Building, Multi-Channel Engagement, Predictive Analytics, and Customer Success Teams."
+    },
+    {
+      "id": "FC29",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the customer feedback channels mentioned?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Satisfaction Surveys (NPS/CSAT), Social Media Listening, Online Reviews, Comment Cards, Focus Groups, Direct Interaction, and Exit Surveys."
+    },
+    {
+      "id": "FC30",
+      "module": 1,
+      "type": "mcq",
+      "q": "What are the benefits of customer satisfaction?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Higher Revenue, Cost Savings, Brand Loyalty, Competitive Advantage, Customer Advocacy, Lower Customer Acquisition Costs, Innovation and Improvement, and Employee Morale and Retention."
+    },
+    {
+      "id": "FC31",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the role of Digital Banking Support Teams?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "To ensure online and mobile platforms are user-friendly, secure, and offer a seamless customer experience."
+    },
+    {
+      "id": "FC32",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the role of Compliance and Risk Management Teams in customer centricity?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "To safeguard customer data and ensure regulatory compliance, protecting customer interests."
+    },
+    {
+      "id": "FC33",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the role of Frontline Staff in a retail bank?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Engaging with customers proactively, listening to their needs, and resolving issues promptly."
+    },
+    {
+      "id": "FC34",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the role of Branch Managers regarding customer service?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Ensuring team members are well-trained in customer service best practices, product knowledge, and compliance requirements."
+    },
+    {
+      "id": "FC35",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the role of Loan Officers and Financial Advisors in customer centricity?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Providing personalized financial guidance and building trust by acting in the customer's best interests and disclosing all relevant information."
+    },
+    {
+      "id": "FC36",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the role of Marketing and Product Development Teams in customer centricity?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Gathering customer insights to create products and services that align with customer needs and preferences."
+    },
+    {
+      "id": "FC37",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the 'no' policy at the Ritz-Carlton?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Employees are not allowed to say no to guest requests, empowering them to go above and beyond."
+    },
+    {
+      "id": "FC38",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the purpose of Digital Onboarding?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "To simplify the customer onboarding experience for account opening and reduce paperwork."
+    },
+    {
+      "id": "FC39",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does TAT stand for in the context of Time Management?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Turn Around Time."
+    },
+    {
+      "id": "FC40",
+      "module": 1,
+      "type": "mcq",
+      "q": "What phrase emphasizes the importance of Product Knowledge?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "'You can only give what you have'."
+    },
+    {
+      "id": "FC41",
+      "module": 1,
+      "type": "mcq",
+      "q": "How many people will one dissatisfied customer tell about their experience?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "A thousand people."
+    },
+    {
+      "id": "FC42",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the statistic regarding customers switching behavior due to service?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "A customer is four times more likely to switch to the competition due to service."
+    },
+    {
+      "id": "FC43",
+      "module": 1,
+      "type": "mcq",
+      "q": "What percentage of dissatisfied customers remain silent about their concerns?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "96%."
+    },
+    {
+      "id": "FC44",
+      "module": 1,
+      "type": "mcq",
+      "q": "How many customers are reportedly facing problems for every customer who voices a complaint?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "26 customers."
+    },
+    {
+      "id": "FC45",
+      "module": 1,
+      "type": "mcq",
+      "q": "What percentage of former complainers can be transformed into loyal customers if grievances are handled promptly?",
+      "opts": [
+        "Reveal Answer"
+      ],
+      "ans": "A",
+      "exp": "Up to 95%."
+    }
+  ]
+}

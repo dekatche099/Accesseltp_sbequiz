@@ -58,8 +58,8 @@ function runSelfCheck(questionBank) {
     } else {
       seenIds.add(q.id);
     }
-    if (!Array.isArray(q.opts) || q.opts.length !== 4) {
-      problems.push(`${label}: "opts" must be an array of exactly 4 items.`);
+    if (!Array.isArray(q.opts) || (q.opts.length !== 4 && q.opts.length !== 2)) {
+      problems.push(`${label}: "opts" must be an array of exactly 4 items (standard MCQ) or exactly 2 items (True/False).`);
     } else if (q.opts.some((o) => /^[A-D][.)]\s/.test(o))) {
       problems.push(`${label}: an option starts with "A. "/"B) " etc. — remove letter prefixes.`);
     }

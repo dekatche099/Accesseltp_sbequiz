@@ -91,7 +91,7 @@
 
     /* Logged‑in bar */
     .logged-in-bar {
-      display: none;                 /* hidden by default */
+      display: none;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 20px;
@@ -119,14 +119,73 @@
     }
     .logged-in-bar button:hover { background: rgba(239,68,68,0.2); border-color: #ef4444; }
 
+    /* ---- Modal styles ---- */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      backdrop-filter: blur(4px);
+    }
+    .modal-overlay.visible { display: flex; }
+    .modal-box {
+      max-width: 520px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 24px;
+      padding: 32px 36px;
+      color: #f1f5f9;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      animation: fadeIn 0.3s ease;
+    }
+    .modal-box h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: #6ee7b7;
+    }
+    .modal-box p {
+      color: #cbd5e1;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+    .modal-box ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 24px;
+    }
+    .modal-box li {
+      padding: 6px 0 6px 28px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%236ee7b7" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>') left center no-repeat;
+      background-size: 16px;
+      color: #e2e8f0;
+    }
+    .modal-box .btn-primary {
+      background: #10b981;
+      border: none;
+      color: #0f172a;
+      font-weight: 600;
+      padding: 10px 28px;
+      border-radius: 40px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .modal-box .btn-primary:hover { background: #34d399; }
+    @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+
     @media (max-width: 550px) {
       h1 { font-size: 1.6rem; }
       .course-grid { grid-template-columns: 1fr; }
+      .modal-box { padding: 24px 20px; }
     }
   </style>
 </head>
 <body>
-  <!-- ===== LOGGED‑IN BAR (only visible when logged in) ===== -->
+  <!-- ===== LOGGED‑IN BAR ===== -->
   <div id="loggedInBar" class="logged-in-bar">
     <span>👤 Logged in as <strong id="trackUser"></strong></span>
     <button id="trackLogout">🚪 Logout</button>
@@ -149,15 +208,44 @@
     <div class="footer">✅ Available quizzes are ready – more coming soon.</div>
   </div>
 
+  <!-- ===== WORKBOOK INTRO MODAL ===== -->
+  <div id="workbookIntroModal" class="modal-overlay">
+    <div class="modal-box">
+      <h2>📓 New: Practice Workbooks</h2>
+      <p>
+        You can now practice questions in a free‑form environment – just like your LMS!
+        Use the <strong>Practice Workbooks</strong> link at the top of this page to:
+      </p>
+      <ul>
+        <li>Create your own workbooks</li>
+        <li>Write notes, draw tables, and solve problems</li>
+        <li>Use the built‑in calculator</li>
+        <li>Review your work anytime</li>
+      </ul>
+      <p style="margin-bottom: 12px; font-size:0.9rem; color:#94a3b8;">
+        This pop‑up will only appear once.
+      </p>
+      <button class="btn-primary" id="workbookIntroGotIt">Got it! 👍</button>
+    </div>
+  </div>
+
   <script>
-    // Safe wrappers around localStorage so the page doesn't break in
-    // private-browsing modes or environments where storage access throws.
+    // ---- Safe localStorage wrappers ----
     function safeGetItem(key) {
       try {
         return localStorage.getItem(key);
       } catch (e) {
         console.warn('localStorage unavailable:', e);
         return null;
+      }
+    }
+    function safeSetItem(key, value) {
+      try {
+        localStorage.setItem(key, value);
+        return true;
+      } catch (e) {
+        console.warn('localStorage unavailable:', e);
+        return false;
       }
     }
     function safeRemoveItem(key) {
@@ -168,6 +256,7 @@
       }
     }
 
+    // ---- Login bar logic ----
     (function() {
       const name = safeGetItem('qb_global_user');
       const pin = safeGetItem('qb_global_pin');
@@ -177,17 +266,8 @@
         bar.classList.add('visible');
         document.getElementById('trackUser').textContent = name;
 
-        // NOTE: credentials are intentionally NOT appended to hrefs.
-        // Putting the PIN in the URL query string lets it leak into
-        // browser history, server access logs, or the Referer header
-        // of any third-party resource the destination page loads.
-        // Since qb_global_user / qb_global_pin already live in
-        // localStorage, same-origin quiz pages should read them
-        // directly from there instead of receiving them as URL params.
         window.applyCredentialsToLinks = function() {
-          // Intentionally a no-op — kept as a hook in case a future
-          // same-origin page needs something non-secret injected
-          // into links (e.g. a display name).
+          // no-op – credentials are read from localStorage on target pages
         };
 
         document.getElementById('trackLogout').addEventListener('click', function() {
@@ -203,14 +283,28 @@
       }
     })();
 
-    // ---------- Course data (Retail Track) ----------
-    // NEW ARCHITECTURE: courses below linking to "course.html?course=<id>"
-    // run on the shared engine (see /engine/) and are defined by a single
-    // JSON file in /courses/. Courses still linking to their own
-    // "*-quiz.html" file haven't been migrated yet — run
-    // `node tools/migrate-legacy-course.js <file> courses/` on each one,
-    // then swap its `link` here to "course.html?course=<id>".
-    // See /docs/ADDING_A_COURSE.md.
+    // ---- Workbook intro modal (shown once) ----
+    (function() {
+      const modal = document.getElementById('workbookIntroModal');
+      const gotItBtn = document.getElementById('workbookIntroGotIt');
+      const shownKey = 'workbook_intro_shown';
+
+      if (!safeGetItem(shownKey)) {
+        modal.classList.add('visible');
+        gotItBtn.addEventListener('click', function() {
+          safeSetItem(shownKey, 'true');
+          modal.classList.remove('visible');
+        });
+        modal.addEventListener('click', function(e) {
+          if (e.target === modal) {
+            safeSetItem(shownKey, 'true');
+            modal.classList.remove('visible');
+          }
+        });
+      }
+    })();
+
+    // ---- Course data ----
     const courses = [
       { title: "Customer Service Excellence", status: "available", link: "course.html?course=customer-service-excellence", desc: "250 MCQs + 45 flashcards — 295 total" },
       { title: "Basic Accounting", status: "available", link: "course.html?course=accounting-quiz-mcq", desc: "264 MCQs + 264 flashcards — 528 total" },
@@ -234,10 +328,6 @@
       { title: "Risk Management in Retail Banking", status: "coming", link: "#", desc: "Coming soon" }
     ];
 
-    // Escape any text interpolated into innerHTML. The array above is a
-    // hardcoded literal, so this isn't exploitable today, but it keeps
-    // render() safe if the course data ever comes from a dynamic source
-    // (CMS, admin form, API, etc.).
     function escapeHtml(str) {
       const div = document.createElement('div');
       div.textContent = str;
@@ -251,8 +341,6 @@
         const desc = escapeHtml(c.desc);
 
         if (c.status === 'coming') {
-          // Not an <a> at all, so it's not focusable/announced as a
-          // link by keyboard nav or screen readers.
           return `
             <div class="course-card coming-soon">
               <div class="course-info">

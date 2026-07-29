@@ -7,6 +7,8 @@
  * currently hold in shared state. Course-specific content (module
  * names, exam sizes, question text) is read from state.course —
  * never hardcoded here.
+ *
+ * NEW: Previous button for practice sessions, with confirm popup.
  * ============================================================ */
 
 import { getQuestionTypeRenderer } from './question-types.js';
@@ -35,7 +37,7 @@ export class UIRenderer {
     this.applyLoginState();
     this.bindEvents();
     this.originalQuizScreenHTML = this.quizScreen.innerHTML;
-    this.attachQuizListeners();   // <-- FIX: attach listeners to static buttons
+    this.attachQuizListeners();   // ← attach listeners to static buttons
     this.switchTab('practice');
     this.updateTotalAvail();
     this.checkForSavedSession();
@@ -393,6 +395,25 @@ export class UIRenderer {
     this.openLeaveConfirm('End this session?', "Your progress so far will be saved, but you'll leave the quiz.", () => this.endSession(false));
   }
 
+  // ---- NEW: Previous button confirmation ----
+  confirmPrev() {
+    const { session } = this.state.get();
+    if (session.currentIndex <= 0) return;
+    this.openLeaveConfirm(
+      'Go to previous question?',
+      'You will move back one question. Your answer (if any) will stay as is.',
+      () => this.prevQuestion()
+    );
+  }
+
+  prevQuestion() {
+    const { session } = this.state.get();
+    if (session.currentIndex > 0) {
+      this.state.set({ session: { currentIndex: session.currentIndex - 1 } });
+      this.renderQuestion();
+    }
+  }
+
   // ---- Practice/timed single-question rendering ----
   restoreQuizScreenStructure() {
     const questionTextDiv = document.getElementById('question-text');
@@ -406,12 +427,15 @@ export class UIRenderer {
     const skipBtn = byId('skip-btn');
     const endSessionBtn = byId('end-session-btn');
     const nextBtn = byId('next-btn');
+    const prevBtn = byId('prev-btn');               // <-- new
     const prevExamBtn = byId('prev-exam-btn');
     const submitExamBtn = byId('submit-exam-btn');
     const nextExamBtn = byId('next-exam-btn');
+
     if (skipBtn) skipBtn.addEventListener('click', () => this.confirmSkip());
     if (endSessionBtn) endSessionBtn.addEventListener('click', () => this.confirmEndSession());
     if (nextBtn) nextBtn.addEventListener('click', () => this.nextQuestion());
+    if (prevBtn) prevBtn.addEventListener('click', () => this.confirmPrev());  // <-- new
     if (prevExamBtn) prevExamBtn.addEventListener('click', () => this.examEngine.prev() || this.renderQuestion());
     if (submitExamBtn) submitExamBtn.addEventListener('click', () => this.submitExam());
     if (nextExamBtn) nextExamBtn.addEventListener('click', () => this.nextExamQuestion());
@@ -442,7 +466,7 @@ export class UIRenderer {
         btn.textContent = label;
         btn.onclick = () => this.selectAnswer(idx);
         if (session.userAnswers[session.currentIndex] !== null) {
-          btn.disabled = true;
+          btn.disabled = true;   // <-- cannot change answer on revisit
           if (idx === session.userAnswers[session.currentIndex]) {
             btn.classList.add('selected');
             btn.classList.add(q.opts[idx] === q.ans ? 'correct' : 'wrong');
@@ -491,8 +515,28 @@ export class UIRenderer {
     if (session.testMode === 'practice') {
       practiceActions.style.display = 'flex';
       examActions.style.display = 'none';
-      document.getElementById('skip-btn').style.display = session.userAnswers[session.currentIndex] === null ? 'inline-block' : 'none';
-      document.getElementById('next-btn').style.display = session.userAnswers[session.currentIndex] !== null ? 'inline-block' : 'none';
+
+      // ---- Ensure Previous button exists ----
+      let prevBtn = document.getElementById('prev-btn');
+      if (!prevBtn) {
+        prevBtn = document.createElement('button');
+        prevBtn.id = 'prev-btn';
+        prevBtn.className = 'secondary-btn';
+        prevBtn.textContent = '⬅ Previous';
+        const skipBtn = document.getElementById('skip-btn');
+        if (skipBtn) {
+          practiceActions.insertBefore(prevBtn, skipBtn);
+        } else {
+          practiceActions.prepend(prevBtn);
+        }
+        prevBtn.addEventListener('click', () => this.confirmPrev());
+      }
+      prevBtn.style.display = (session.currentIndex > 0) ? 'inline-block' : 'none';
+
+      document.getElementById('skip-btn').style.display =
+        session.userAnswers[session.currentIndex] === null ? 'inline-block' : 'none';
+      document.getElementById('next-btn').style.display =
+        session.userAnswers[session.currentIndex] !== null ? 'inline-block' : 'none';
     } else {
       practiceActions.style.display = 'none';
       examActions.style.display = 'flex';

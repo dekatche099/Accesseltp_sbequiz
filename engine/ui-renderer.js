@@ -35,6 +35,7 @@ export class UIRenderer {
     this.applyLoginState();
     this.bindEvents();
     this.originalQuizScreenHTML = this.quizScreen.innerHTML;
+    this.attachQuizListeners();   // <-- FIX: attach listeners to static buttons
     this.switchTab('practice');
     this.updateTotalAvail();
     this.checkForSavedSession();

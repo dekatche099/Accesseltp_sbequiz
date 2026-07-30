@@ -149,6 +149,8 @@ function App() {
     const [userId, setUserId] = useState(() => localStorage.getItem('wb_user') || '');
     const [pin, setPin] = useState('');
     const [isHubLogin, setIsHubLogin] = useState(false);
+    // True once we've definitively finished checking for a hub login (prevents loader race)
+    const [loginResolved, setLoginResolved] = useState(false);
     const [syncStatus, setSyncStatus] = useState('');
     const [saveStatus, setSaveStatus] = useState('');
     // Flag to indicate that initial data has been loaded into state
@@ -176,6 +178,8 @@ function App() {
     const storageKeyRef = useRef(null);
     // Timeout ID for status messages
     const statusTimerRef = useRef(null);
+    // Timeout ID for the save indicator
+    const saveTimerRef = useRef(null);
 
     const activeSubject = data.subjects.find(s => s.id === activeSubjectId) || null;
     const activeSheet = activeSubject ? activeSubject.sheets[activeSheetIdx] : null;
@@ -199,6 +203,7 @@ function App() {
             setUserId(name);
             setPin(hubPin);
         }
+        setLoginResolved(true);
         // Note: we don't set loaded here, we'll do that after loading data.
     }, []);
 
@@ -232,6 +237,10 @@ function App() {
     useEffect(() => {
         // Prevent re‑loading after initial load
         if (loaded) return;
+
+        // Don't attempt to resolve a storage key until hub-login detection has finished,
+        // otherwise we can lock onto 'wb_data_default' before the real identity is known.
+        if (!loginResolved) return;
 
         // Wait until we have a definitive user (either hub login resolved or user manually entered)
         // If hub login is in progress but userId is empty, wait.
@@ -285,7 +294,7 @@ function App() {
             }
         }
         // We do NOT write empty state here.
-    }, [userId, pin, isHubLogin, loaded, resolveStorageKey]);
+    }, [userId, pin, isHubLogin, loaded, loginResolved, resolveStorageKey]);
 
     // --- Autosave: whenever data changes (only after loaded) ---
     const saveLocal = useCallback((newData) => {
@@ -294,12 +303,14 @@ function App() {
         if (!key) return;
         try {
             localStorage.setItem(key, JSON.stringify(newData));
+            if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
             setSaveStatus('💾 Saved ' + new Date().toLocaleTimeString());
-            const t = setTimeout(() => setSaveStatus(''), 3000);
-            return () => clearTimeout(t);
+            saveTimerRef.current = setTimeout(() => {
+                setSaveStatus('');
+                saveTimerRef.current = null;
+            }, 3000);
         } catch (e) {
             console.warn('localStorage save failed', e);
-            return false;
         }
     }, [loaded]);
 

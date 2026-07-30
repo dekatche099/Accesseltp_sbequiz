@@ -11,8 +11,104 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
 <style>
-    /* === ALL STYLES FROM THE PREVIOUS VERSION – COPY THEM UNCHANGED === */
-    /* I'm omitting the full style block here to keep the answer concise, but you must copy it from your current file. */
+    :root {
+        --bg: #f1f3f8;
+        --panel-bg: #ffffff;
+        --text: #1c2230;
+        --text-secondary: #5b6478;
+        --border: #dde1ea;
+        --accent: #4f46e5;
+        --accent-light: #e8e6fb;
+        --btn-bg: #f8f9fc;
+        --btn-hover: #ececfa;
+        --shadow: 0 2px 8px rgba(28,34,48,0.08);
+        --radius: 10px;
+        --radius-sm: 6px;
+        --font: 'Segoe UI', system-ui, sans-serif;
+        --danger: #dc2626;
+        --success: #16a34a;
+        --info: #2563eb;
+        --equ-tile: #316A9E;
+    }
+    .dark {
+        --bg: #14161f;
+        --panel-bg: #1d2030;
+        --text: #e4e6ef;
+        --text-secondary: #a0a5b8;
+        --border: #333750;
+        --accent: #8380f0;
+        --accent-light: #2a2860;
+        --btn-bg: #262a3d;
+        --btn-hover: #313650;
+        --shadow: 0 2px 8px rgba(0,0,0,0.35);
+        --danger: #f87171;
+        --success: #4ade80;
+        --info: #60a5fa;
+        --equ-tile: #3f7cb8;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh;transition:background 0.3s,color 0.3s;display:flex;flex-direction:column}
+    #root{display:flex;flex-direction:column;flex:1;min-height:0}
+    .toolbar{background:var(--panel-bg);border-bottom:1px solid var(--border);padding:8px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;box-shadow:var(--shadow);z-index:100;min-height:52px;flex-shrink:0}
+    .toolbar .logo{font-weight:700;font-size:1rem;color:var(--accent);white-space:nowrap}
+    .toolbar .spacer{flex:1}
+    .toolbar input{padding:6px 10px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;background:var(--btn-bg);color:var(--text);font-family:var(--font);min-width:70px}
+    .toolbar button{padding:6px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.82rem;cursor:pointer;background:var(--btn-bg);color:var(--text);font-family:var(--font);white-space:nowrap;transition:all 0.15s;font-weight:500}
+    .toolbar button:hover{background:var(--btn-hover);border-color:var(--accent)}
+    .save-indicator{display:inline-flex;align-items:center;gap:4px;font-size:0.72rem;color:var(--success);font-weight:500;white-space:nowrap}
+    .sync-indicator{display:inline-flex;align-items:center;gap:4px;font-size:0.72rem;color:var(--info);font-weight:500;white-space:nowrap}
+    .sync-indicator.error{color:var(--danger)}
+    .logged-in-bar{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;background:var(--accent-light);border-bottom:1px solid var(--border);color:var(--text);font-size:0.85rem;flex-shrink:0}
+    .logged-in-bar button{padding:4px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--btn-bg);color:var(--text);cursor:pointer;font-size:0.78rem}
+    .breadcrumb{display:flex;align-items:center;gap:8px;padding:8px 20px;background:var(--panel-bg);border-bottom:1px solid var(--border);font-size:0.88rem;flex-shrink:0}
+    .breadcrumb .crumb{cursor:pointer;color:var(--accent);font-weight:600}
+    .breadcrumb .crumb:hover{text-decoration:underline}
+    .breadcrumb .sep{color:var(--text-secondary)}
+    .breadcrumb .current{color:var(--text-secondary)}
+    .content-area{padding:24px 20px;max-width:1100px;margin:0 auto;width:100%;overflow-y:auto}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+    .card{background:var(--panel-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);cursor:pointer;transition:all 0.15s;display:flex;flex-direction:column;gap:8px;min-height:90px}
+    .card:hover{border-color:var(--accent);transform:translateY(-2px)}
+    .card .card-title{font-weight:700;font-size:1rem;color:var(--text)}
+    .card .card-meta{font-size:0.78rem;color:var(--text-secondary)}
+    .card .card-actions{display:flex;gap:6px;margin-top:auto}
+    .card .card-actions button{padding:4px 10px;font-size:0.72rem;border:1px solid var(--border);border-radius:6px;background:var(--btn-bg);color:var(--text);cursor:pointer}
+    .card .card-actions button.danger{color:var(--danger);border-color:var(--danger)}
+    .card.new-card{align-items:center;justify-content:center;text-align:center;border-style:dashed;color:var(--accent);font-weight:700}
+    .card input{width:100%;padding:6px 8px;border:1px solid var(--border);border-radius:6px;background:var(--btn-bg);color:var(--text);font-family:var(--font);font-size:0.9rem}
+    .empty-state{text-align:center;padding:60px 20px;color:var(--text-secondary)}
+
+    /* Excel-style sheet tabs */
+    .sheet-tabs-bar{display:flex;align-items:center;gap:2px;padding:6px 16px;background:var(--panel-bg);border-bottom:1px solid var(--border);flex-shrink:0;overflow-x:auto}
+    .sheet-tab{display:flex;align-items:center;gap:6px;padding:6px 12px;border:1px solid var(--border);border-bottom:none;border-radius:6px 6px 0 0;background:var(--btn-bg);color:var(--text-secondary);cursor:pointer;font-size:0.82rem;white-space:nowrap;position:relative}
+    .sheet-tab.active{background:var(--panel-bg);color:var(--accent);font-weight:700;border-color:var(--accent)}
+    .sheet-tab input{padding:1px 4px;font-size:0.82rem;border:1px solid var(--accent);border-radius:4px;background:var(--panel-bg);color:var(--text);width:100px}
+    .sheet-tab .close-x{opacity:0;font-size:0.7rem;color:var(--danger);padding:0 2px;border-radius:3px}
+    .sheet-tab:hover .close-x{opacity:1}
+    .sheet-tab-add{padding:6px 10px;border:none;background:transparent;color:var(--accent);font-size:1.1rem;cursor:pointer;font-weight:700;line-height:1}
+    .sheet-tab-add:hover{background:var(--btn-hover);border-radius:6px}
+
+    .editor-wrap{flex:1;min-height:0;padding:10px 16px 16px;display:flex;flex-direction:column}
+    .editor-fill{flex:1;min-height:0}
+
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px}
+    .equ-modal{background:var(--panel-bg);border-radius:var(--radius);padding:20px;max-width:700px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,0.3);border:1px solid var(--border);max-height:90vh;overflow-y:auto}
+    .equ-modal h3{margin-bottom:14px}
+    .equ-tabs{display:flex;gap:4px;margin-bottom:12px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+    .equ-tabs button{padding:8px 16px;border:none;background:transparent;color:var(--text-secondary);font-weight:600;font-size:0.85rem;cursor:pointer;border-bottom:2px solid transparent;font-family:var(--font)}
+    .equ-tabs button.active{color:var(--accent);border-bottom-color:var(--accent)}
+    .equ-symbol-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;margin-bottom:16px}
+    .equ-symbol-grid button{aspect-ratio:1;background:var(--equ-tile);color:#fff;border:none;border-radius:6px;font-size:0.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+    .equ-symbol-grid button:hover{opacity:0.85}
+    .equ-label{font-size:0.78rem;color:var(--text-secondary);margin-bottom:4px;display:block;font-weight:600}
+    .equ-tex-input{width:100%;padding:8px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--btn-bg);color:var(--text);font-family:'Consolas',monospace;font-size:0.9rem;margin-bottom:12px}
+    .equ-preview{min-height:44px;border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px;margin-bottom:16px;background:var(--btn-bg);display:flex;align-items:center}
+    .equ-save-btn{padding:8px 20px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius-sm);cursor:pointer;font-weight:600;font-size:0.9rem;float:right}
+    .equ-cancel-btn{padding:8px 20px;background:transparent;color:var(--text-secondary);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;font-size:0.9rem;float:right;margin-right:8px}
+    .clearfix::after{content:"";display:table;clear:both}
+
+    @media(max-width:600px){.content-area{padding:16px 12px}.breadcrumb{padding:8px 14px}}
 </style>
 </head>
 <body>
@@ -42,7 +138,6 @@ const EQU_TABS = {
 };
 
 function App() {
-    // ----- all state and refs exactly as before -----
     const [darkMode, setDarkMode] = useState(() => localStorage.getItem('wb_dark') === 'true');
     const [userId, setUserId] = useState(() => localStorage.getItem('wb_user') || '');
     const [pin, setPin] = useState('');
@@ -55,8 +150,10 @@ function App() {
     const [view, setView] = useState('subjects');
     const [activeSubjectId, setActiveSubjectId] = useState(null);
     const [activeSheetIdx, setActiveSheetIdx] = useState(0);
+
     const [editingSubject, setEditingSubject] = useState(null);
     const [editingSheet, setEditingSheet] = useState(null);
+
     const [showEquEditor, setShowEquEditor] = useState(false);
     const [equTab, setEquTab] = useState('Operators');
     const [latexCode, setLatexCode] = useState('');
@@ -65,21 +162,24 @@ function App() {
     const editorRef = useRef(null);
     const equSetterRef = useRef(null);
     const editorWrapRef = useRef(null);
+
     const activeSubject = data.subjects.find(s => s.id === activeSubjectId) || null;
     const activeSheet = activeSubject ? activeSubject.sheets[activeSheetIdx] : null;
+
     const idsRef = useRef({});
     useEffect(() => { idsRef.current = { activeSubjectId, activeSheetIdx }; }, [activeSubjectId, activeSheetIdx]);
 
-    // ---- Hub login ----
+    /* ---- Hub login ---- */
     useEffect(() => {
         const name = localStorage.getItem('qb_global_user');
         const hubPin = localStorage.getItem('qb_global_pin');
         if (name && hubPin) { setIsHubLogin(true); setUserId(name); setPin(hubPin); }
     }, []);
+
     useEffect(() => { if (userId) localStorage.setItem('wb_user', userId); }, [userId]);
     useEffect(() => { localStorage.setItem('wb_dark', darkMode); document.body.className = darkMode ? 'dark' : ''; }, [darkMode]);
 
-    // ---- push to cloud helper ----
+    /* ---- Push to cloud helper ---- */
     const pushToCloud = useCallback((subjectsData) => {
         if (userId && /^\d{4}$/.test(pin)) {
             import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => {
@@ -88,7 +188,7 @@ function App() {
         }
     }, [userId, pin]);
 
-    /* ========== 🔧 FIXED LOAD LOGIC ========== */
+    /* ============================ FIXED LOAD LOGIC ============================ */
     useEffect(() => {
         const storageKey = 'wb_data_' + (userId || 'default');
         let localData = null;
@@ -156,7 +256,7 @@ function App() {
         }).catch(() => setSyncStatus('⚠ Sync unavailable'));
     }, [userId, pin, pushToCloud]);
 
-    /* ---- Persist locally + push to cloud (unchanged) ---- */
+    /* ---- Persist locally + push to cloud on every change ---- */
     useEffect(() => {
         const storageKey = 'wb_data_' + (userId || 'default');
         const now = Date.now();
@@ -164,19 +264,316 @@ function App() {
         localStorage.setItem(storageKey, JSON.stringify(dataToSave));
         setSaveStatus('💾 Saved ' + new Date().toLocaleTimeString());
         const t = setTimeout(() => setSaveStatus(''), 3000);
+
+        // Debounced cloud push
         const timer = setTimeout(() => {
             pushToCloud(data.subjects);
         }, 600);
         return () => { clearTimeout(t); clearTimeout(timer); };
     }, [data, userId, pushToCloud]);
 
-    // ----- the rest of the app (TinyMCE, equation modal, CRUD, exports) is identical to the previous version -----
-    // I'm omitting it here for brevity, but it must be copied from your current file.
-    // Ensure you paste the complete function body (including all handlers) from your existing file.
-    // The only change is the load logic above.
+    /* ---- TinyMCE init ---- */
+    const [mceError, setMceError] = useState('');
+    useEffect(() => {
+        let attempts = 0;
+        const tryInit = () => {
+            if (editorRef.current) return;
+            if (!window.tinymce) {
+                attempts++;
+                if (attempts > 20) { setMceError('TinyMCE failed to load. Check your internet connection or reload.'); return; }
+                setTimeout(tryInit, 250);
+                return;
+            }
+            const target = document.getElementById('wb-rich-editor');
+            if (!target) { setMceError('Editor element not found. Please reload.'); return; }
+            tinymce.init({
+                selector: '#wb-rich-editor',
+                height: '100%',
+                resize: false,
+                menubar: 'edit view insert format tools table help',
+                plugins: 'table lists link fullscreen directionality wordcount code',
+                toolbar: 'undo redo | bold italic | link unlink | fullscreen | alignleft aligncenter alignright | ltr rtl | outdent indent | bullist numlist | equation',
+                branding: true,
+                setup: function (ed) {
+                    ed.ui.registry.addButton('equation', {
+                        icon: 'insert-character',
+                        tooltip: 'Equation',
+                        onAction: () => equSetterRef.current && equSetterRef.current(true)
+                    });
+                    ed.on('change keyup', () => {
+                        const { activeSubjectId: sId, activeSheetIdx: idx } = idsRef.current;
+                        if (!sId) return;
+                        setData(prev => ({
+                            subjects: prev.subjects.map(s => {
+                                if (s.id !== sId) return s;
+                                const sheets = [...s.sheets];
+                                sheets[idx] = { ...sheets[idx], content: ed.getContent() };
+                                return { ...s, sheets };
+                            })
+                        }));
+                    });
+                    editorRef.current = ed;
+                }
+            });
+        };
+        tryInit();
+    }, []);
 
-    // (All other code from your current file goes here unchanged.)
-    return ( ... ); // your existing JSX
+    useEffect(() => {
+        if (editorRef.current && activeSheet) editorRef.current.setContent(activeSheet.content || '');
+    }, [activeSubjectId, activeSheetIdx, dataVersion]);
+
+    /* ---- Equation modal ---- */
+    useEffect(() => { equSetterRef.current = setShowEquEditor; }, []);
+    const updatePreview = (code) => {
+        try { setEquPreview(katex.renderToString(code, { throwOnError: false })); } catch { setEquPreview(''); }
+    };
+    const equationModal = showEquEditor ? ReactDOM.createPortal(
+        <div className="modal-overlay" onClick={() => setShowEquEditor(false)}>
+            <div className="equ-modal" onClick={e => e.stopPropagation()}>
+                <h3>Equation Editor</h3>
+                <div className="equ-tabs">
+                    {Object.keys(EQU_TABS).map(tab => (
+                        <button key={tab} className={equTab === tab ? 'active' : ''} onClick={() => setEquTab(tab)}>{tab}</button>
+                    ))}
+                </div>
+                <div className="equ-symbol-grid">
+                    {EQU_TABS[equTab].map((sym, i) => {
+                        let preview;
+                        try { preview = katex.renderToString(sym, { throwOnError: false }); } catch { preview = sym; }
+                        return (
+                            <button key={i} title={sym} onClick={() => { const next = latexCode + sym; setLatexCode(next); updatePreview(next); }}
+                                dangerouslySetInnerHTML={{ __html: preview }} />
+                        );
+                    })}
+                </div>
+                <span className="equ-label">Edit equation using TeX</span>
+                <textarea className="equ-tex-input" rows="2" value={latexCode}
+                    onChange={e => { setLatexCode(e.target.value); updatePreview(e.target.value); }} />
+                <span className="equ-label">Equation preview</span>
+                <div className="equ-preview" dangerouslySetInnerHTML={{ __html: equPreview }} />
+                <div className="clearfix">
+                    <button className="equ-cancel-btn" onClick={() => { setShowEquEditor(false); setLatexCode(''); setEquPreview(''); }}>Cancel</button>
+                    <button className="equ-save-btn" onClick={() => {
+                        try {
+                            const html = katex.renderToString(latexCode, { throwOnError: false });
+                            if (editorRef.current) editorRef.current.execCommand('mceInsertContent', false, html);
+                            setShowEquEditor(false); setLatexCode(''); setEquPreview('');
+                        } catch { alert('Invalid LaTeX'); }
+                    }}>Save equation</button>
+                </div>
+            </div>
+        </div>, document.body
+    ) : null;
+
+    /* ---- Subject CRUD ---- */
+    const addSubject = () => {
+        const name = prompt('Name this subject/course (e.g. "Accounting"):');
+        if (!name || !name.trim()) return;
+        setData(prev => ({ subjects: [...prev.subjects, newSubject(name.trim())] }));
+    };
+    const renameSubject = (id, value) => setData(prev => ({ subjects: prev.subjects.map(s => s.id === id ? { ...s, name: value } : s) }));
+    const deleteSubject = (id) => {
+        if (!confirm('Delete this subject and all its sheets? This cannot be undone.')) return;
+        setData(prev => ({ subjects: prev.subjects.filter(s => s.id !== id) }));
+        if (activeSubjectId === id) { setView('subjects'); setActiveSubjectId(null); }
+    };
+    const openSubject = (id) => {
+        setActiveSubjectId(id);
+        setActiveSheetIdx(0);
+        setView('editor');
+        setDataVersion(v => v + 1);
+    };
+
+    /* ---- Sheet CRUD ---- */
+    const addSheet = () => {
+        if (!activeSubject) return;
+        const nextNum = activeSubject.sheets.length + 1;
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id !== activeSubjectId ? s : { ...s, sheets: [...s.sheets, newSheet('Sheet ' + nextNum)] })
+        }));
+        setActiveSheetIdx(activeSubject.sheets.length);
+    };
+    const renameSheet = (idx, value) => {
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id !== activeSubjectId ? s : { ...s, sheets: s.sheets.map((sh, i) => i === idx ? { ...sh, name: value } : sh) })
+        }));
+    };
+    const deleteSheet = (idx) => {
+        if (!activeSubject || activeSubject.sheets.length <= 1) return;
+        if (!confirm('Delete this sheet?')) return;
+        setData(prev => ({ subjects: prev.subjects.map(s => s.id !== activeSubjectId ? s : { ...s, sheets: s.sheets.filter((_, i) => i !== idx) }) }));
+        setActiveSheetIdx(prev => Math.max(0, Math.min(prev, activeSubject.sheets.length - 2)));
+        setDataVersion(v => v + 1);
+    };
+
+    /* ---- Export/Import ---- */
+    const exportJSON = () => {
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = (userId || 'workbooks') + '_workbooks.json';
+        a.click();
+    };
+    const importJSON = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+            try {
+                const imported = JSON.parse(ev.target.result);
+                if (imported.subjects && Array.isArray(imported.subjects)) {
+                    setData(imported);
+                    setSaveStatus('✅ Imported successfully!');
+                    setTimeout(() => setSaveStatus(''), 3000);
+                } else {
+                    alert('Invalid file format – missing "subjects" array.');
+                }
+            } catch (err) {
+                alert('Failed to parse JSON file.');
+            }
+        };
+        reader.readAsText(file);
+        e.target.value = null;
+    };
+    const exportPDF = () => {
+        const win = window.open('', '_blank');
+        if (!win) { alert('Please allow popups for this site.'); return; }
+        let html = `<html><head><title>Workbooks - ${userId || 'My Workbooks'}</title>
+            <style>body{font-family:Arial,sans-serif;padding:30px;max-width:1000px;margin:auto}
+            h1{color:#4f46e5;border-bottom:2px solid #ddd;padding-bottom:8px}
+            .subject{page-break-before:always;margin-top:30px}
+            .subject h2{color:#1c2230;margin:20px 0 10px}
+            .sheet{margin:20px 0;border:1px solid #ddd;padding:16px;border-radius:8px;background:#fafafa}
+            .sheet h3{margin:0 0 10px;color:#333}
+            .content{font-size:14px;line-height:1.6}
+            .footer{margin-top:40px;color:#777;text-align:center}
+    </style></head><body><h1>📓 Practice Workbooks</h1><p>User: ${userId || 'Not logged in'}</p>`;
+        data.subjects.forEach(subj => {
+            html += `<div class="subject"><h2>${subj.name}</h2>`;
+            subj.sheets.forEach((sh, idx) => {
+                const content = sh.content || '<em>Empty sheet</em>';
+                html += `<div class="sheet"><h3>${sh.name}</h3><div class="content">${content}</div></div>`;
+            });
+            html += `</div>`;
+        });
+        html += `<div class="footer">Exported on ${new Date().toLocaleString()}</div></body></html>`;
+        win.document.write(html);
+        win.document.close();
+        setTimeout(() => win.print(), 500);
+    };
+
+    const manualSync = () => {
+        if (!userId || !/^\d{4}$/.test(pin)) {
+            setSyncStatus('⚠ Enter a valid 4‑digit PIN first');
+            setTimeout(() => setSyncStatus(''), 3000);
+            return;
+        }
+        setSyncStatus('☁️ Syncing…');
+        import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => {
+            pushWorkbooksToCloud(userId, data.subjects);
+            setSyncStatus('☁️ Synced');
+            setTimeout(() => setSyncStatus(''), 2000);
+        }).catch(() => setSyncStatus('⚠ Sync failed'));
+    };
+
+    /* ================= RENDER ================= */
+    return (
+        <React.Fragment>
+            <div className="toolbar">
+                <span className="logo">📓 Practice Workbooks</span>
+                <span className="spacer" />
+                {!isHubLogin && (
+                    <React.Fragment>
+                        <input value={userId} onChange={e => setUserId(e.target.value)} placeholder="Your name / ID" style={{ width: 110 }} />
+                        <input value={pin} onChange={e => setPin(e.target.value.replace(/\D/g, '').slice(0, 4))} placeholder="PIN (optional)" maxLength={4} inputMode="numeric" style={{ width: 90 }} />
+                    </React.Fragment>
+                )}
+                <button onClick={() => setDarkMode(!darkMode)}>{darkMode ? '☀️' : '🌙'}</button>
+                <button onClick={exportJSON}>📤 Export JSON</button>
+                <button onClick={() => document.getElementById('importInput')?.click()}>📥 Import JSON</button>
+                <input id="importInput" type="file" accept=".json" style={{ display: 'none' }} onChange={importJSON} />
+                <button onClick={exportPDF}>📄 PDF</button>
+                <button onClick={manualSync} title="Push to cloud now">☁️ Sync Now</button>
+                {saveStatus && <span className="save-indicator">{saveStatus}</span>}
+                {syncStatus && <span className={'sync-indicator' + (syncStatus.includes('⚠') ? ' error' : '')}>{syncStatus}</span>}
+            </div>
+
+            {isHubLogin && (
+                <div className="logged-in-bar"><span>👤 Logged in as <strong>{userId}</strong></span></div>
+            )}
+
+            <div className="breadcrumb">
+                <span className="crumb" onClick={() => { setView('subjects'); setActiveSubjectId(null); }}>Subjects</span>
+                {activeSubject && (<React.Fragment><span className="sep">›</span><span className="current">{activeSubject.name}</span></React.Fragment>)}
+            </div>
+
+            {view === 'subjects' && (
+                <div className="content-area" style={{ flex: 1, overflowY: 'auto' }}>
+                    {data.subjects.length === 0 && (
+                        <div className="empty-state">No subjects yet. Create one to start — e.g. "Accounting" or "Banking Operations."</div>
+                    )}
+                    <div className="grid">
+                        {data.subjects.map(s => (
+                            <div key={s.id} className="card" onClick={() => openSubject(s.id)}>
+                                {editingSubject && editingSubject.id === s.id ? (
+                                    <input autoFocus value={editingSubject.value} onClick={e => e.stopPropagation()}
+                                        onChange={e => setEditingSubject({ ...editingSubject, value: e.target.value })}
+                                        onBlur={() => { renameSubject(s.id, editingSubject.value); setEditingSubject(null); }}
+                                        onKeyDown={e => { if (e.key === 'Enter') { renameSubject(s.id, editingSubject.value); setEditingSubject(null); } }} />
+                                ) : (
+                                    <div className="card-title" onDoubleClick={e => { e.stopPropagation(); setEditingSubject({ id: s.id, value: s.name }); }}>{s.name}</div>
+                                )}
+                                <div className="card-meta">{s.sheets.length} sheet{s.sheets.length !== 1 ? 's' : ''}</div>
+                                <div className="card-actions">
+                                    <button onClick={e => { e.stopPropagation(); setEditingSubject({ id: s.id, value: s.name }); }}>Rename</button>
+                                    <button className="danger" onClick={e => { e.stopPropagation(); deleteSubject(s.id); }}>Delete</button>
+                                </div>
+                            </div>
+                        ))}
+                        <div className="card new-card" onClick={addSubject}>+ New Subject</div>
+                    </div>
+                </div>
+            )}
+
+            {mceError && (
+                <div style={{ background: '#fee2e2', color: '#991b1b', padding: '10px 20px', fontSize: '0.85rem', borderBottom: '1px solid #fca5a5' }}>
+                    ⚠️ {mceError}
+                </div>
+            )}
+
+            <div className="sheet-tabs-bar" style={{ display: (view === 'editor' && activeSubject) ? 'flex' : 'none' }}>
+                {activeSubject && activeSubject.sheets.map((sh, idx) => (
+                    <div key={sh.id} className={'sheet-tab' + (idx === activeSheetIdx ? ' active' : '')} onClick={() => setActiveSheetIdx(idx)}>
+                        {editingSheet === idx ? (
+                            <input autoFocus value={sh.name} onClick={e => e.stopPropagation()}
+                                onChange={e => renameSheet(idx, e.target.value)}
+                                onBlur={() => setEditingSheet(null)}
+                                onKeyDown={e => { if (e.key === 'Enter') setEditingSheet(null); }} />
+                        ) : (
+                            <span onDoubleClick={e => { e.stopPropagation(); setEditingSheet(idx); }}>{sh.name}</span>
+                        )}
+                        {activeSubject.sheets.length > 1 && (
+                            <span className="close-x" onClick={e => { e.stopPropagation(); deleteSheet(idx); }}>✕</span>
+                        )}
+                    </div>
+                ))}
+                {activeSubject && <button className="sheet-tab-add" onClick={addSheet} title="Add sheet">+</button>}
+            </div>
+
+            <div className="editor-wrap" style={{ display: (view === 'editor' && activeSubject) ? 'flex' : 'none' }} ref={editorWrapRef}>
+                <div className="editor-fill">
+                    <textarea id="wb-rich-editor"></textarea>
+                </div>
+            </div>
+
+            {view === 'editor' && !activeSubject && (
+                <div className="empty-state">This subject couldn't be found. <span className="crumb" onClick={() => setView('subjects')}>Go back to Subjects</span></div>
+            )}
+
+            {equationModal}
+        </React.Fragment>
+    );
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

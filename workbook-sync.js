@@ -1,9 +1,4 @@
-/* workbook-sync.js — cross-device sync for the Practice Workbooks tool
- * ============================================================
- * Now returns the cloud document's updatedAt timestamp, so the UI
- * can merge data intelligently instead of blindly overwriting local work.
- * ============================================================ */
-
+/* workbook-sync.js — cross-device sync for the Practice Workbooks tool */
 import { initializeApp, getApps, getApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
 import {
   getFirestore,
@@ -77,8 +72,10 @@ let pushTimer = null;
 
 export function pushWorkbooksToCloud(name, subjectsArray) {
   const lname = (name || '').trim().toLowerCase();
-  if (verifiedName !== lname || !verifiedPinHash) return;
-
+  if (verifiedName !== lname || !verifiedPinHash) {
+    console.warn("workbook-sync: push skipped – not verified for", lname);
+    return;
+  }
   clearTimeout(pushTimer);
   pushTimer = setTimeout(async () => {
     try {
@@ -87,6 +84,7 @@ export function pushWorkbooksToCloud(name, subjectsArray) {
         { subjects: JSON.stringify(subjectsArray), updatedAt: Date.now() },
         { merge: true }
       );
+      console.log("workbook-sync: push succeeded for", lname);
     } catch (e) {
       console.warn("workbook-sync: push failed", e);
     }

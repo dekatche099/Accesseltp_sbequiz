@@ -179,16 +179,18 @@ function App() {
     useEffect(() => { if (userId) localStorage.setItem('wb_user', userId); }, [userId]);
     useEffect(() => { localStorage.setItem('wb_dark', darkMode); document.body.className = darkMode ? 'dark' : ''; }, [darkMode]);
 
-    /* ---- Push to cloud helper ---- */
+    /* ---- Push to cloud helper (with console logging) ---- */
     const pushToCloud = useCallback((subjectsData) => {
         if (userId && /^\d{4}$/.test(pin)) {
             import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => {
                 pushWorkbooksToCloud(userId, subjectsData);
-            }).catch(() => {});
+            }).catch(err => console.warn('push import failed', err));
+        } else {
+            console.warn('push skipped – no valid PIN');
         }
     }, [userId, pin]);
 
-    /* ============================ FIXED LOAD LOGIC ============================ */
+    /* ============================ SAFE LOAD LOGIC ============================ */
     useEffect(() => {
         const storageKey = 'wb_data_' + (userId || 'default');
         let localData = null;
@@ -202,7 +204,7 @@ function App() {
                 localLastModified = localData._lastModified || 0;
                 delete localData._lastModified;
             }
-        } catch { /* ignore */ }
+        } catch (e) { console.warn('local parse error', e); }
 
         // 2. Set UI from local storage immediately (fast)
         const initialSubjects = localData && localData.subjects ? localData.subjects : [];
@@ -217,7 +219,7 @@ function App() {
             return;
         }
 
-        // 4. Check cloud, but be careful not to overwrite local with empty cloud data
+        // 4. Check cloud – but NEVER overwrite local with empty cloud data
         setSyncStatus('☁️ Checking…');
         import('./workbook-sync.js').then(({ verifyAndPullWorkbooks }) => {
             verifyAndPullWorkbooks(userId, pin).then(result => {
@@ -229,31 +231,28 @@ function App() {
                 const localHasData = localData && localData.subjects && localData.subjects.length > 0;
                 const cloudHasData = cloudData && Array.isArray(cloudData) && cloudData.length > 0;
 
-                // CASE 1: Cloud is newer AND has data → pull cloud (overwrites local)
-                if (cloudHasData && cloudUpdatedAt > localLastModified) {
-                    setData({ subjects: cloudData });
-                    localStorage.setItem(storageKey, JSON.stringify({ subjects: cloudData, _lastModified: cloudUpdatedAt }));
-                    setSyncStatus('☁️ Synced (cloud newer)');
-                }
-                // CASE 2: Local has data, cloud has no data (or is older) → push local to cloud
-                else if (localHasData && (!cloudHasData || cloudUpdatedAt <= localLastModified)) {
-                    // Push local data to cloud so other devices see it
+                console.log('Local has data:', localHasData, 'Last mod:', localLastModified);
+                console.log('Cloud has data:', cloudHasData, 'Updated:', cloudUpdatedAt);
+
+                // DECISION: If local has data, we ALWAYS keep it and push to cloud.
+                if (localHasData) {
+                    // Push local to cloud so the cloud catches up (even if cloud is newer but empty)
                     pushToCloud(userId, localData.subjects);
-                    setSyncStatus('☁️ Synced (local pushed)');
+                    setSyncStatus('☁️ Synced (local kept, cloud updated)');
                 }
-                // CASE 3: Local empty, cloud has data → pull cloud (restore from cloud)
+                // If local is empty but cloud has data → restore from cloud
                 else if (!localHasData && cloudHasData) {
                     setData({ subjects: cloudData });
                     localStorage.setItem(storageKey, JSON.stringify({ subjects: cloudData, _lastModified: cloudUpdatedAt }));
                     setSyncStatus('☁️ Synced (restored from cloud)');
                 }
-                // CASE 4: Both empty → nothing to do
+                // If both empty → nothing
                 else {
                     setSyncStatus('☁️ Synced (no data)');
                 }
                 setDataVersion(v => v + 1);
-            }).catch(() => setSyncStatus('⚠ Sync unavailable'));
-        }).catch(() => setSyncStatus('⚠ Sync unavailable'));
+            }).catch(err => { setSyncStatus('⚠ Sync unavailable'); console.warn(err); });
+        }).catch(err => { setSyncStatus('⚠ Sync unavailable'); console.warn(err); });
     }, [userId, pin, pushToCloud]);
 
     /* ---- Persist locally + push to cloud on every change ---- */
@@ -265,14 +264,14 @@ function App() {
         setSaveStatus('💾 Saved ' + new Date().toLocaleTimeString());
         const t = setTimeout(() => setSaveStatus(''), 3000);
 
-        // Debounced cloud push
+        // Debounced cloud push (only if PIN valid)
         const timer = setTimeout(() => {
             pushToCloud(data.subjects);
         }, 600);
         return () => { clearTimeout(t); clearTimeout(timer); };
     }, [data, userId, pushToCloud]);
 
-    /* ---- TinyMCE init ---- */
+    /* ---- TinyMCE init (unchanged) ---- */
     const [mceError, setMceError] = useState('');
     useEffect(() => {
         let attempts = 0;
@@ -323,7 +322,7 @@ function App() {
         if (editorRef.current && activeSheet) editorRef.current.setContent(activeSheet.content || '');
     }, [activeSubjectId, activeSheetIdx, dataVersion]);
 
-    /* ---- Equation modal ---- */
+    /* ---- Equation modal (unchanged) ---- */
     useEffect(() => { equSetterRef.current = setShowEquEditor; }, []);
     const updatePreview = (code) => {
         try { setEquPreview(katex.renderToString(code, { throwOnError: false })); } catch { setEquPreview(''); }
@@ -366,7 +365,7 @@ function App() {
         </div>, document.body
     ) : null;
 
-    /* ---- Subject CRUD ---- */
+    /* ---- Subject CRUD (unchanged) ---- */
     const addSubject = () => {
         const name = prompt('Name this subject/course (e.g. "Accounting"):');
         if (!name || !name.trim()) return;
@@ -385,7 +384,7 @@ function App() {
         setDataVersion(v => v + 1);
     };
 
-    /* ---- Sheet CRUD ---- */
+    /* ---- Sheet CRUD (unchanged) ---- */
     const addSheet = () => {
         if (!activeSubject) return;
         const nextNum = activeSubject.sheets.length + 1;
@@ -407,7 +406,7 @@ function App() {
         setDataVersion(v => v + 1);
     };
 
-    /* ---- Export/Import ---- */
+    /* ---- Export/Import (unchanged) ---- */
     const exportJSON = () => {
         const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
         const a = document.createElement('a');

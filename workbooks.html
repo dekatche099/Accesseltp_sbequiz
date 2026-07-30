@@ -58,6 +58,7 @@
     .toolbar button:hover{background:var(--btn-hover);border-color:var(--accent)}
     .save-indicator{display:inline-flex;align-items:center;gap:4px;font-size:0.72rem;color:var(--success);font-weight:500;white-space:nowrap}
     .sync-indicator{display:inline-flex;align-items:center;gap:4px;font-size:0.72rem;color:var(--info);font-weight:500;white-space:nowrap}
+    .sync-indicator.error{color:var(--danger)}
     .logged-in-bar{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;background:var(--accent-light);border-bottom:1px solid var(--border);color:var(--text);font-size:0.85rem;flex-shrink:0}
     .logged-in-bar button{padding:4px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--btn-bg);color:var(--text);cursor:pointer;font-size:0.78rem}
     .breadcrumb{display:flex;align-items:center;gap:8px;padding:8px 20px;background:var(--panel-bg);border-bottom:1px solid var(--border);font-size:0.88rem;flex-shrink:0}
@@ -105,6 +106,7 @@
     .equ-preview{min-height:44px;border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px;margin-bottom:16px;background:var(--btn-bg);display:flex;align-items:center}
     .equ-save-btn{padding:8px 20px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius-sm);cursor:pointer;font-weight:600;font-size:0.9rem;float:right}
     .equ-cancel-btn{padding:8px 20px;background:transparent;color:var(--text-secondary);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;font-size:0.9rem;float:right;margin-right:8px}
+    .clearfix::after{content:"";display:table;clear:both}
 
     @media(max-width:600px){.content-area{padding:16px 12px}.breadcrumb{padding:8px 14px}}
 </style>
@@ -112,13 +114,13 @@
 <body>
 <div id="root"></div>
 <script type="text/babel">
-const { useState, useEffect, useRef } = React;
+const { useState, useEffect, useRef, useCallback } = React;
 
 function newId() { return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8); }
 function newSheet(name) { return { id: newId(), name: name, content: '' }; }
 function newSubject(name) { return { id: newId(), name, sheets: [newSheet('Sheet 1')] }; }
 
-/* ───────────────────────── Equation editor symbol sets (matches the 4-tab reference layout) ───────────────────────── */
+/* ───────────────────────── Equation editor symbol sets ───────────────────────── */
 const EQU_TABS = {
     Operators: ['\\cdot', '\\times', '*', '\\div', '\\diamond', '\\pm', '\\mp', '\\oplus', '\\ominus', '\\otimes',
         '\\oslash', '\\odot', '\\circ', '\\bullet', '\\asymp', '\\equiv', '\\subseteq', '\\supseteq', '\\le', '\\ge',
@@ -196,7 +198,7 @@ function App() {
                 verifyAndPullWorkbooks(userId, pin).then(result => {
                     if (!result.ok) { setSyncStatus('⚠ ' + result.reason); return; }
                     if (result.data && Array.isArray(result.data)) { setData({ subjects: result.data }); setDataVersion(v => v + 1); }
-                    setSyncStatus('✅ Synced');
+                    setSyncStatus('☁️ Synced');
                 }).catch(() => setSyncStatus('⚠ Sync unavailable'));
             }).catch(() => setSyncStatus('⚠ Sync unavailable'));
         } else {
@@ -206,21 +208,29 @@ function App() {
     }, [userId, pin]);
 
     /* ---- Persist locally + push to cloud on every change ---- */
+    const pushToCloud = useCallback((subjectsData) => {
+        if (userId && /^\d{4}$/.test(pin)) {
+            import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => {
+                pushWorkbooksToCloud(userId, subjectsData);
+            }).catch(() => {});
+        }
+    }, [userId, pin]);
+
     useEffect(() => {
         const storageKey = 'wb_data_' + (userId || 'default');
         localStorage.setItem(storageKey, JSON.stringify(data));
         setSaveStatus('💾 Saved ' + new Date().toLocaleTimeString());
         const t = setTimeout(() => setSaveStatus(''), 3000);
-        if (userId && /^\d{4}$/.test(pin)) {
-            import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => pushWorkbooksToCloud(userId, data.subjects)).catch(() => {});
-        }
-        return () => clearTimeout(t);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [data]);
+        // Debounce cloud push
+        const timer = setTimeout(() => {
+            pushToCloud(data.subjects);
+        }, 600);
+        return () => { clearTimeout(t); clearTimeout(timer); };
+    }, [data, userId, pushToCloud]);
 
     const [mceError, setMceError] = useState('');
 
-    /* ---- TinyMCE init (once, at mount — textarea is always in the DOM by then) ---- */
+    /* ---- TinyMCE init (once, at mount) ---- */
     useEffect(() => {
         let attempts = 0;
         const tryInit = () => {
@@ -300,15 +310,16 @@ function App() {
                     onChange={e => { setLatexCode(e.target.value); updatePreview(e.target.value); }} />
                 <span className="equ-label">Equation preview</span>
                 <div className="equ-preview" dangerouslySetInnerHTML={{ __html: equPreview }} />
-                <button className="equ-save-btn" onClick={() => {
-                    try {
-                        const html = katex.renderToString(latexCode, { throwOnError: false });
-                        if (editorRef.current) editorRef.current.execCommand('mceInsertContent', false, html);
-                        setShowEquEditor(false); setLatexCode(''); setEquPreview('');
-                    } catch { alert('Invalid LaTeX'); }
-                }}>Save equation</button>
-                <button className="equ-cancel-btn" onClick={() => { setShowEquEditor(false); setLatexCode(''); setEquPreview(''); }}>Cancel</button>
-                <div style={{ clear: 'both' }} />
+                <div className="clearfix">
+                    <button className="equ-cancel-btn" onClick={() => { setShowEquEditor(false); setLatexCode(''); setEquPreview(''); }}>Cancel</button>
+                    <button className="equ-save-btn" onClick={() => {
+                        try {
+                            const html = katex.renderToString(latexCode, { throwOnError: false });
+                            if (editorRef.current) editorRef.current.execCommand('mceInsertContent', false, html);
+                            setShowEquEditor(false); setLatexCode(''); setEquPreview('');
+                        } catch { alert('Invalid LaTeX'); }
+                    }}>Save equation</button>
+                </div>
             </div>
         </div>, document.body
     ) : null;
@@ -332,7 +343,7 @@ function App() {
         setDataVersion(v => v + 1);
     };
 
-    /* ---- Sheet CRUD — Excel-style: "+" just adds "Sheet N" immediately, no naming prompt ---- */
+    /* ---- Sheet CRUD ---- */
     const addSheet = () => {
         if (!activeSubject) return;
         const nextNum = activeSubject.sheets.length + 1;
@@ -354,6 +365,80 @@ function App() {
         setDataVersion(v => v + 1);
     };
 
+    /* ---- Export/Import JSON ---- */
+    const exportJSON = () => {
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = (userId || 'workbooks') + '_workbooks.json';
+        a.click();
+    };
+
+    const importJSON = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+            try {
+                const imported = JSON.parse(ev.target.result);
+                if (imported.subjects && Array.isArray(imported.subjects)) {
+                    setData(imported);
+                    setSaveStatus('✅ Imported successfully!');
+                    setTimeout(() => setSaveStatus(''), 3000);
+                } else {
+                    alert('Invalid file format – missing "subjects" array.');
+                }
+            } catch (err) {
+                alert('Failed to parse JSON file.');
+            }
+        };
+        reader.readAsText(file);
+        e.target.value = null;
+    };
+
+    /* ---- Export PDF ---- */
+    const exportPDF = () => {
+        const win = window.open('', '_blank');
+        if (!win) { alert('Please allow popups for this site.'); return; }
+        let html = `<html><head><title>Workbooks - ${userId || 'My Workbooks'}</title>
+            <style>body{font-family:Arial,sans-serif;padding:30px;max-width:1000px;margin:auto}
+            h1{color:#4f46e5;border-bottom:2px solid #ddd;padding-bottom:8px}
+            .subject{page-break-before:always;margin-top:30px}
+            .subject h2{color:#1c2230;margin:20px 0 10px}
+            .sheet{margin:20px 0;border:1px solid #ddd;padding:16px;border-radius:8px;background:#fafafa}
+            .sheet h3{margin:0 0 10px;color:#333}
+            .content{font-size:14px;line-height:1.6}
+            .footer{margin-top:40px;color:#777;text-align:center}
+    </style></head><body><h1>📓 Practice Workbooks</h1><p>User: ${userId || 'Not logged in'}</p>`;
+        data.subjects.forEach(subj => {
+            html += `<div class="subject"><h2>${subj.name}</h2>`;
+            subj.sheets.forEach((sh, idx) => {
+                const content = sh.content || '<em>Empty sheet</em>';
+                html += `<div class="sheet"><h3>${sh.name}</h3><div class="content">${content}</div></div>`;
+            });
+            html += `</div>`;
+        });
+        html += `<div class="footer">Exported on ${new Date().toLocaleString()}</div></body></html>`;
+        win.document.write(html);
+        win.document.close();
+        setTimeout(() => win.print(), 500);
+    };
+
+    /* ---- Manual sync ---- */
+    const manualSync = () => {
+        if (!userId || !/^\d{4}$/.test(pin)) {
+            setSyncStatus('⚠ Enter a valid 4‑digit PIN first');
+            setTimeout(() => setSyncStatus(''), 3000);
+            return;
+        }
+        setSyncStatus('☁️ Syncing…');
+        import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => {
+            pushWorkbooksToCloud(userId, data.subjects);
+            setSyncStatus('☁️ Synced');
+            setTimeout(() => setSyncStatus(''), 2000);
+        }).catch(() => setSyncStatus('⚠ Sync failed'));
+    };
+
     /* ================= RENDER ================= */
     return (
         <React.Fragment>
@@ -367,8 +452,13 @@ function App() {
                     </React.Fragment>
                 )}
                 <button onClick={() => setDarkMode(!darkMode)}>{darkMode ? '☀️' : '🌙'}</button>
+                <button onClick={exportJSON}>📤 Export JSON</button>
+                <button onClick={() => document.getElementById('importInput')?.click()}>📥 Import JSON</button>
+                <input id="importInput" type="file" accept=".json" style={{ display: 'none' }} onChange={importJSON} />
+                <button onClick={exportPDF}>📄 PDF</button>
+                <button onClick={manualSync} title="Push to cloud now">☁️ Sync Now</button>
                 {saveStatus && <span className="save-indicator">{saveStatus}</span>}
-                {syncStatus && <span className="sync-indicator">{syncStatus}</span>}
+                {syncStatus && <span className={'sync-indicator' + (syncStatus.includes('⚠') ? ' error' : '')}>{syncStatus}</span>}
             </div>
 
             {isHubLogin && (
@@ -409,18 +499,13 @@ function App() {
                 </div>
             )}
 
-            {/* ---- VIEW: Editor — sheets are Excel-style tabs directly inside the subject ---- */}
+            {/* ---- VIEW: Editor ---- */}
             {mceError && (
                 <div style={{ background: '#fee2e2', color: '#991b1b', padding: '10px 20px', fontSize: '0.85rem', borderBottom: '1px solid #fca5a5' }}>
                     ⚠️ {mceError}
                 </div>
             )}
 
-            {/* Sheet tabs + editor are ALWAYS mounted (never conditionally added/removed) —
-                only their visibility toggles. TinyMCE attaches to #wb-rich-editor once, at
-                first mount; if this block were conditionally rendered, the textarea wouldn't
-                exist yet when TinyMCE tries to attach, and it would silently fail, leaving a
-                bare unstyled <textarea> instead of the real editor. */}
             <div className="sheet-tabs-bar" style={{ display: (view === 'editor' && activeSubject) ? 'flex' : 'none' }}>
                 {activeSubject && activeSubject.sheets.map((sh, idx) => (
                     <div key={sh.id} className={'sheet-tab' + (idx === activeSheetIdx ? ' active' : '')} onClick={() => setActiveSheetIdx(idx)}>

@@ -1,0 +1,2545 @@
+{
+  "meta": {
+    "id": "financial-inclusion",
+    "title": "Financial Inclusion",
+    "description": "A course covering financial inclusion fundamentals and digital accessibility, inclusive banking as a retail strategy, strategies for engaging the unbanked, designing inclusive financial products, and the role of mobile phones, internet access, and digital ID systems.",
+    "category": "",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1: Introduction to Financial Inclusion and Digital Accessibility"
+    },
+    {
+      "id": 2,
+      "title": "Module 2: Inclusive Banking as Retail Banking Strategy"
+    },
+    {
+      "id": 3,
+      "title": "Module 3: Strategies for Engaging the Unbanked Population"
+    },
+    {
+      "id": 4,
+      "title": "Module 4: Designing Inclusive Financial Products and Services"
+    },
+    {
+      "id": 5,
+      "title": "Module 5: The Role of Mobile Phones, Internet Access and Digital ID Systems in Enhancing Financial Inclusion"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "A retail bank wants to describe its mission in one sentence for a new customer brochure. Which statement best captures the definition of financial inclusion?",
+      "opts": [
+        "Ensuring every customer maintains a minimum account balance",
+        "Providing affordable and accessible financial services to underserved and unbanked populations",
+        "Maximizing shareholder returns through premium banking products",
+        "Restricting banking services to verified high-income earners"
+      ],
+      "ans": "Providing affordable and accessible financial services to underserved and unbanked populations",
+      "exp": "Financial inclusion is defined in the manual as the provision of affordable and accessible financial services to all individuals, particularly underserved and unbanked populations. Option A describes a product feature, not the concept itself. Option C describes a commercial goal unrelated to inclusion. Option D is the opposite of inclusion."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the Centre for Financial Inclusion, approximately what proportion of Nigerian adults still lack access to formal financial services?",
+      "opts": [
+        "20%",
+        "40%",
+        "60%",
+        "80%"
+      ],
+      "ans": "40%",
+      "exp": "The manual cites the Centre for Financial Inclusion's figure of approximately 40% of Nigerian adults lacking access to formal financial services."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "A policymaker argues that expanding financial inclusion in Nigeria contributes directly to global development goals. Which international framework does the manual link financial inclusion to?",
+      "opts": [
+        "The Paris Climate Agreement",
+        "The United Nations' Sustainable Development Goals (SDGs)",
+        "The Basel III Accord",
+        "The World Trade Organization's trade facilitation agenda"
+      ],
+      "ans": "The United Nations' Sustainable Development Goals (SDGs)",
+      "exp": "The manual states financial inclusion is a key enabler for achieving several SDGs, particularly those reducing poverty and inequality."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which set of products does the manual identify as falling within the scope of financial inclusion?",
+      "opts": [
+        "Savings accounts and payment services only",
+        "Savings accounts, credit, insurance, and payment services",
+        "Credit and insurance only, excluding payments",
+        "Only mobile money and digital wallets"
+      ],
+      "ans": "Savings accounts, credit, insurance, and payment services",
+      "exp": "The manual lists savings accounts, credit, insurance, and payment services as the range of products financial inclusion encompasses."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "Between 2011 and 2021, how did the global percentage of adults with a bank account change, according to World Bank data cited in the manual?",
+      "opts": [
+        "It fell from 76% to 51%",
+        "It rose from 51% to 76%",
+        "It rose from 40% to 60%",
+        "It remained roughly flat at 51%"
+      ],
+      "ans": "It rose from 51% to 76%",
+      "exp": "The manual cites World Bank data showing account ownership rose from 51% in 2011 to 76% in 2021."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "Globally, approximately 1.4 billion people remain unbanked. Which groups does the manual identify as facing disproportionately higher exclusion rates?",
+      "opts": [
+        "Retirees, civil servants, and salaried professionals",
+        "Women, low-income individuals, and youth",
+        "Urban residents and university graduates",
+        "Business owners and licensed professionals"
+      ],
+      "ans": "Women, low-income individuals, and youth",
+      "exp": "The manual specifically names women, low-income individuals, and youth as facing higher exclusion rates among the 1.4 billion unbanked."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fintech analyst is evaluating why digital wallets are becoming the fastest-growing method for real-time payments globally. Which factor does the manual cite as driving this trend in countries like India and Brazil?",
+      "opts": [
+        "Government bans on cash transactions",
+        "Lower transaction fees spurring adoption",
+        "Mandatory conversion of bank accounts to wallets",
+        "Elimination of mobile network coverage requirements"
+      ],
+      "ans": "Lower transaction fees spurring adoption",
+      "exp": "The manual attributes the rapid growth of digital wallets in India and Brazil to lower transaction fees driving adoption."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which country is preparing to launch 'Drex,' a Central Bank Digital Currency intended to facilitate cross-border payments?",
+      "opts": [
+        "India",
+        "Brazil",
+        "Nigeria",
+        "United States"
+      ],
+      "ans": "Brazil",
+      "exp": "The manual identifies Brazil as preparing to launch Drex, its CBDC, to facilitate cross-border payments and modernize its financial system."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "The manual describes a shift in inclusive finance initiatives away from simply expanding product offerings. What is this shift instead focused on achieving?",
+      "opts": [
+        "Reducing the total number of financial products available to customers",
+        "Meaningful outcomes for users, aligned with resilience, equity, and development goals",
+        "Increasing the number of physical bank branches nationwide",
+        "Standardizing all financial products into a single universal offering"
+      ],
+      "ans": "Meaningful outcomes for users, aligned with resilience, equity, and development goals",
+      "exp": "The manual states inclusive finance initiatives increasingly emphasize meaningful outcomes for users rather than merely expanding product offerings."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "A community bank in a rural Nigerian state finds that despite nearby branch openings, adoption of formal accounts remains low. Based on the barriers the manual identifies, which combination is most likely responsible?",
+      "opts": [
+        "Excess liquidity and overregulation of interest rates",
+        "Inadequate infrastructure, high costs, limited financial literacy, and discriminatory practices",
+        "Oversupply of banking staff and excessive product variety",
+        "Currency appreciation reducing the value of local savings"
+      ],
+      "ans": "Inadequate infrastructure, high costs, limited financial literacy, and discriminatory practices",
+      "exp": "The manual explicitly lists lack of infrastructure, high costs, limited financial literacy, and discriminatory practices as barriers to access."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "Over the 15 years leading up to 2023, how did the proportion of Nigerian adults formally served by financial institutions change?",
+      "opts": [
+        "It declined from 74% to 24%",
+        "It more than doubled, rising from 24% to 74%",
+        "It stayed constant at approximately 50%",
+        "It rose modestly from 24% to 40%"
+      ],
+      "ans": "It more than doubled, rising from 24% to 74%",
+      "exp": "The manual states the proportion of adults formally served rose from 24% in 2008 to 74% in 2023 — more than doubling."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "Between 2020 and 2023, women's financial inclusion in Nigeria rose from 60% to 70%. What happened to the gender gap over the same period, according to the manual?",
+      "opts": [
+        "It closed completely, reaching 0%",
+        "It widened slightly, from 8% to 9%",
+        "It narrowed from 9% to 8%",
+        "It remained exactly unchanged at 8%"
+      ],
+      "ans": "It widened slightly, from 8% to 9%",
+      "exp": "Despite women's inclusion rising, the manual reports the gender gap actually widened from 8% to 9% over the same period — meaning men's inclusion grew even faster."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "How did the urban-rural financial inclusion gap in Nigeria change between 2020 and 2023?",
+      "opts": [
+        "It widened from 20% to 24%",
+        "It narrowed from 24% to 20%",
+        "It disappeared entirely by 2023",
+        "It remained fixed at 24% throughout"
+      ],
+      "ans": "It narrowed from 24% to 20%",
+      "exp": "The manual states the urban-rural gap narrowed from 24% in 2020 to 20% in 2023, though it notes significant disparities remain."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which Nigerian region does the manual identify as having exclusion levels above the national average across all its states?",
+      "opts": [
+        "South-West",
+        "North-East",
+        "South-South",
+        "North-Central"
+      ],
+      "ans": "North-East",
+      "exp": "The manual specifically names the North-East as continuing to experience higher exclusion rates, with all states in the region reporting exclusion above the national average."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "During the unveiling of the Access to Financial Services in Nigeria report, CBN Governor Yemi Cardoso emphasized establishing dedicated financial inclusion units. What long-term formal inclusion target did he associate with this recommendation?",
+      "opts": [
+        "60% formal inclusion",
+        "95% formal inclusion",
+        "74% formal inclusion",
+        "100% formal inclusion with no exceptions"
+      ],
+      "ans": "95% formal inclusion",
+      "exp": "The manual states Governor Cardoso emphasized the goal of achieving 95% formal inclusion, alongside addressing infrastructural challenges like broadband penetration and digital identification."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "Between 2017 and 2022, how did the CBN's agent banking network expand, according to the manual?",
+      "opts": [
+        "From 1.4 million agents down to 20,000",
+        "From 20,000 agents to over 1.4 million",
+        "From 900 agents to 20,000",
+        "It remained static at approximately 200,000 agents"
+      ],
+      "ans": "From 20,000 agents to over 1.4 million",
+      "exp": "The manual reports the number of agents grew from 20,000 in 2017 to over 1.4 million by 2022, significantly improving rural access."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "In which year did the CBN introduce the eNaira as part of its digital financial services promotion?",
+      "opts": [
+        "2011",
+        "2021",
+        "2017",
+        "2023"
+      ],
+      "ans": "2021",
+      "exp": "The manual states the eNaira was introduced in 2021 to broaden access for the unbanked population, alongside mobile money promotion."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "The CBN's financial literacy campaigns specifically target which population segments, according to the manual?",
+      "opts": [
+        "Only large corporate clients and multinational businesses",
+        "Women, youth, and micro, small, and medium enterprises (MSMEs)",
+        "Only civil servants and government employees",
+        "Exclusively urban university students"
+      ],
+      "ans": "Women, youth, and micro, small, and medium enterprises (MSMEs)",
+      "exp": "The manual states CBN financial literacy campaigns target women, youth, and MSMEs specifically, alongside consumer protection frameworks."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "Approximately how many microfinance banks has the CBN licensed nationwide to serve individuals traditionally excluded from formal banking?",
+      "opts": [
+        "Over 200",
+        "Over 900",
+        "Over 20,000",
+        "Over 1.4 million"
+      ],
+      "ans": "Over 900",
+      "exp": "The manual states the CBN has licensed over 900 microfinance banks nationwide."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "Prior to Nigeria's retail banking revolution, what misconception limited access to banking services, according to the manual?",
+      "opts": [
+        "Banks required government identification that did not yet exist",
+        "Banks were perceived as exclusive spaces reserved for high-earning individuals",
+        "Banks lacked any physical branch presence outside Lagos",
+        "Banks operated only through paper-based ledger systems"
+      ],
+      "ans": "Banks were perceived as exclusive spaces reserved for high-earning individuals",
+      "exp": "The manual explains that prior to the retail revolution, banks were seen as exclusive spaces for a select, high-earning portion of the population."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary aim of Nigeria's National Financial Inclusion Strategy, as described in the manual?",
+      "opts": [
+        "To consolidate all commercial banks into a single state-owned entity",
+        "To increase access to formal financial services by addressing barriers faced by underserved populations",
+        "To eliminate microfinance banks in favor of commercial banks",
+        "To cap the number of mobile money operators permitted to function"
+      ],
+      "ans": "To increase access to formal financial services by addressing barriers faced by underserved populations",
+      "exp": "The manual states the strategy aims to increase access to formal financial services by addressing the barriers underserved populations face."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the Nigerian Communications Commission (NCC), approximately how many active mobile phone subscriptions existed in Nigeria at the end of 2022?",
+      "opts": [
+        "Over 20 million",
+        "Over 215 million",
+        "Over 900 million",
+        "Over 1.4 billion"
+      ],
+      "ans": "Over 215 million",
+      "exp": "The manual cites the NCC figure of over 215 million active mobile phone subscriptions at the end of 2022."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "A rural resident without a smartphone or reliable internet wants to perform a basic financial transaction. Which technology does the manual identify as enabling this kind of access from any mobile phone?",
+      "opts": [
+        "Blockchain-based smart contracts",
+        "USSD codes",
+        "Biometric facial recognition",
+        "Near-field communication (NFC) chips"
+      ],
+      "ans": "USSD codes",
+      "exp": "The manual states USSD codes make it possible for anyone, anywhere, to access financial services using a mobile phone, without needing a smartphone or internet connection."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does the Access Closa initiative extend financial services into neighborhoods, according to the manual?",
+      "opts": [
+        "By offering unlimited free international wire transfers",
+        "By creating micro-branches in the form of booths placed within communities",
+        "By requiring customers to travel to regional headquarters for all transactions",
+        "By replacing all physical branches with call-center-only support"
+      ],
+      "ans": "By creating micro-branches in the form of booths placed within communities",
+      "exp": "The manual describes Access Closa as creating micro-branches in the form of booths placed in neighborhoods."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best reflects the manual's definition of digital accessibility in banking?",
+      "opts": [
+        "Ensuring all banking services are offered exclusively through mobile apps",
+        "Designing digital platforms that accommodate diverse user needs, including people with disabilities",
+        "Requiring all customers to complete digital literacy certification before account opening",
+        "Limiting online banking features to reduce complexity for all users equally"
+      ],
+      "ans": "Designing digital platforms that accommodate diverse user needs, including people with disabilities",
+      "exp": "The manual defines digital accessibility as ensuring banking services are inclusive for all individuals, including those with disabilities."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "type": "mcq",
+      "q": "The manual frames a bank's failure to provide accessible services to individuals with disabilities as more than a compliance issue. What deeper consequence does it identify?",
+      "opts": [
+        "A minor inconvenience with no lasting impact on customers",
+        "An inadvertent limitation of these individuals' independence and dignity",
+        "A purely cosmetic issue affecting only the bank's marketing materials",
+        "A temporary problem resolved automatically by newer hardware"
+      ],
+      "ans": "An inadvertent limitation of these individuals' independence and dignity",
+      "exp": "The manual states that when banks fail to provide accessible services, they inadvertently limit the independence and dignity of individuals with disabilities."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which bank does the manual cite as having implemented talking ATMs to allow visually impaired customers to transact independently?",
+      "opts": [
+        "HSBC UK",
+        "Bank of America",
+        "Access Bank",
+        "Banco Santander"
+      ],
+      "ans": "Bank of America",
+      "exp": "The manual specifically names Bank of America (BoA) as having implemented talking ATMs and committing to accessibility across its mobile apps and online banking."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does the manual identify as the key advantage of banks adopting User-Centered Design practices during product development?",
+      "opts": [
+        "It reduces the total number of products a bank needs to offer",
+        "It integrates accessibility features from the outset rather than as an afterthought",
+        "It eliminates the need for any customer feedback after launch",
+        "It guarantees lower production costs regardless of design complexity"
+      ],
+      "ans": "It integrates accessibility features from the outset rather than as an afterthought",
+      "exp": "The manual states User-Centered Design fosters an inclusive environment where accessibility features are built in from the outset, rather than added later."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "type": "mcq",
+      "q": "An internal audit finds that a significant share of a bank's website fails established web accessibility guidelines. Based on the manual's cited industry figure, approximately what percentage of banking websites fail to meet WCAG standards?",
+      "opts": [
+        "15%",
+        "58%",
+        "90%",
+        "5%"
+      ],
+      "ans": "58%",
+      "exp": "The manual cites that approximately 58% of banking websites do not meet Web Content Accessibility Guidelines (WCAG) standards."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank wants to begin improving digital accessibility but has limited budget for this financial year. Based on the manual's proactive steps, which action addresses the root cause identified as most foundational — a lack of awareness among staff?",
+      "opts": [
+        "Immediately purchasing new AI-powered compliance software",
+        "Investing in employee training on accessibility issues",
+        "Outsourcing all digital platforms to a third-party vendor",
+        "Conducting a customer satisfaction survey unrelated to accessibility"
+      ],
+      "ans": "Investing in employee training on accessibility issues",
+      "exp": "The manual identifies a lack of awareness and training among bank employees as a key challenge, and lists investing in training as a direct proactive step to address it."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which Nigerian government initiative is described as a flagship program ensuring citizens gain digital literacy skills including online safety?",
+      "opts": [
+        "Paradigm Initiative Nigeria (PIN)",
+        "Digital Literacy for All (NITDA)",
+        "Digital Nigeria Centers (DNC)",
+        "Broadband Alliance"
+      ],
+      "ans": "Digital Literacy for All (NITDA)",
+      "exp": "The manual identifies Digital Literacy for All as NITDA's flagship program to ensure every Nigerian has access to digital literacy skills, including online safety."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "type": "mcq",
+      "q": "The 'Project 774 LG Connectivity' initiative is associated with which broader collaboration described in the manual?",
+      "opts": [
+        "Digital Nigeria Centers (DNC)",
+        "Broadband Alliance",
+        "Paradigm Initiative Nigeria (PIN)",
+        "National Financial Inclusion Strategy"
+      ],
+      "ans": "Broadband Alliance",
+      "exp": "The manual describes Project 774 LG Connectivity as a project under the Broadband Alliance, a multi-stakeholder collaboration achieving universal broadband access."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which body established the Digital Nigeria Centers (DNC) to provide educational resources within public secondary schools?",
+      "opts": [
+        "National Information Technology Development Agency (NITDA)",
+        "Universal Service Provision Fund (USPF)",
+        "Central Bank of Nigeria (CBN)",
+        "Nigerian Communications Commission (NCC)"
+      ],
+      "ans": "Universal Service Provision Fund (USPF)",
+      "exp": "The manual states the Digital Nigeria Centers were established by the Universal Service Provision Fund (USPF)."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "type": "mcq",
+      "q": "A rural community advocacy group seeks a partner NGO experienced in providing digital training and advocating for policy change in marginalized regions. Which organization does the manual identify as fitting this description?",
+      "opts": [
+        "Digital Nigeria Centers (DNC)",
+        "Paradigm Initiative Nigeria (PIN)",
+        "Broadband Alliance",
+        "NITDA"
+      ],
+      "ans": "Paradigm Initiative Nigeria (PIN)",
+      "exp": "The manual describes Paradigm Initiative Nigeria (PIN) as a prominent NGO actively involved in digital inclusion programs, advocating for policy changes and providing digital training to marginalized communities."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "type": "mcq",
+      "q": "A woman gains access to credit and savings products for the first time and subsequently invests more in her children's education and healthcare. Which specific benefit of financial inclusion does this scenario best illustrate?",
+      "opts": [
+        "Innovation in Financial Services",
+        "Empowerment of Marginalized Groups",
+        "Increased Financial Security",
+        "Reduction of Economic Inequality as a standalone macroeconomic effect"
+      ],
+      "ans": "Empowerment of Marginalized Groups",
+      "exp": "The manual specifically uses this exact scenario as its illustration of the Empowerment of Marginalized Groups benefit."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "type": "mcq",
+      "q": "A small business owner who previously struggled to secure funding from traditional banks obtains capital through a new digital lending platform. Which benefit of financial inclusion is most directly demonstrated?",
+      "opts": [
+        "Increased Financial Security",
+        "Promotion of Entrepreneurship",
+        "Empowerment of Marginalized Groups",
+        "Reduction of Poverty as an isolated household-level outcome"
+      ],
+      "ans": "Promotion of Entrepreneurship",
+      "exp": "The manual describes Promotion of Entrepreneurship as specifically addressing small businesses' struggle to secure funding from traditional sources."
+    },
+    {
+      "id": "Q37",
+      "module": 2,
+      "type": "mcq",
+      "q": "A new hire asks how inclusive banking relates to financial inclusion. Which statement correctly reflects the manual's comparison of the two concepts?",
+      "opts": [
+        "Financial inclusion and inclusive banking are interchangeable terms with identical scope",
+        "Financial inclusion is the broader goal of access for all; inclusive banking is one of the means of achieving it",
+        "Inclusive banking is the regulatory framework that financial inclusion must comply with",
+        "Financial inclusion applies only to individuals, while inclusive banking applies only to businesses"
+      ],
+      "ans": "Financial inclusion is the broader goal of access for all; inclusive banking is one of the means of achieving it",
+      "exp": "The manual explicitly frames financial inclusion as the idea that everyone should have access to financial services, with inclusive banking being one of the means to achieve that goal."
+    },
+    {
+      "id": "Q38",
+      "module": 2,
+      "type": "mcq",
+      "q": "According to the World Bank figure cited in the manual, approximately how many adults remain unbanked globally — a market retail banks can tap by prioritizing financial inclusion?",
+      "opts": [
+        "900 million",
+        "1.7 billion",
+        "215 million",
+        "3.6 billion"
+      ],
+      "ans": "1.7 billion",
+      "exp": "The manual cites the World Bank's figure of approximately 1.7 billion unbanked adults as the underserved market retail banks can reach."
+    },
+    {
+      "id": "Q39",
+      "module": 2,
+      "type": "mcq",
+      "q": "A retail bank notices that customers in underserved communities increasingly refer new customers to its branches after receiving tailored products. Which strategic benefit of inclusive banking does this best illustrate?",
+      "opts": [
+        "Regulatory Compliance and Risk Management",
+        "Enhancing Customer Loyalty",
+        "Competitive Advantage",
+        "Economic Development and Poverty Alleviation"
+      ],
+      "ans": "Enhancing Customer Loyalty",
+      "exp": "The manual describes Enhancing Customer Loyalty as building trust and rapport through tailored products, which encourages word-of-mouth referrals within communities."
+    },
+    {
+      "id": "Q40",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank provides savings accounts, loans, and financial education to previously excluded customers, who subsequently invest in small businesses and improve their living standards. Which strategic rationale for inclusive banking does this scenario most directly demonstrate?",
+      "opts": [
+        "Competitive Advantage",
+        "Economic Development and Poverty Alleviation",
+        "Regulatory Compliance and Risk Management",
+        "Enhancing Customer Loyalty"
+      ],
+      "ans": "Economic Development and Poverty Alleviation",
+      "exp": "The manual describes Economic Development and Poverty Alleviation as occurring when access to savings, loans, and financial education empowers individuals to manage finances better."
+    },
+    {
+      "id": "Q41",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following best reflects the manual's explanation of how inclusive banking creates a competitive advantage for retail banks?",
+      "opts": [
+        "It reduces compliance obligations for banks operating in underserved markets",
+        "It attracts socially conscious customers and enables differentiation through innovation such as fintech partnerships",
+        "It guarantees exemption from community reinvestment regulations",
+        "It allows banks to charge higher fees to underserved customers"
+      ],
+      "ans": "It attracts socially conscious customers and enables differentiation through innovation such as fintech partnerships",
+      "exp": "The manual states that prioritizing inclusivity attracts customers who value ethical practices, and that innovation such as fintech partnerships helps banks differentiate themselves."
+    },
+    {
+      "id": "Q42",
+      "module": 2,
+      "type": "mcq",
+      "q": "How does the manual describe the relationship between inclusive banking and regulatory compliance?",
+      "opts": [
+        "Inclusive banking has no bearing on regulatory requirements",
+        "Focusing on inclusive banking helps banks navigate community reinvestment and fair lending requirements while mitigating non-compliance risk",
+        "Inclusive banking exempts banks entirely from fair lending laws",
+        "Regulatory compliance is achieved only through reduced product offerings"
+      ],
+      "ans": "Focusing on inclusive banking helps banks navigate community reinvestment and fair lending requirements while mitigating non-compliance risk",
+      "exp": "The manual states that focusing on inclusive banking helps banks navigate regulatory requirements related to community reinvestment and fair lending."
+    },
+    {
+      "id": "Q43",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under the economic impact of inclusive banking, what specific correlation does the manual describe between financial inclusion and poverty?",
+      "opts": [
+        "No measurable correlation exists between the two",
+        "A significant correlation between increased financial inclusion and lower poverty rates, particularly in marginalized communities",
+        "Increased financial inclusion correlates with higher poverty rates in urban areas",
+        "The correlation applies only to high-income countries"
+      ],
+      "ans": "A significant correlation between increased financial inclusion and lower poverty rates, particularly in marginalized communities",
+      "exp": "The manual states studies show a significant correlation between increased financial inclusion and lower poverty rates."
+    },
+    {
+      "id": "Q44",
+      "module": 2,
+      "type": "mcq",
+      "q": "A rise in consumer spending and entrepreneurship following expanded access to financial services is described in the manual as contributing to which specific economic impact of inclusive banking?",
+      "opts": [
+        "Increased Tax Revenue",
+        "Economic Growth",
+        "Support for Small Businesses",
+        "Strengthened Trust in Financial Institutions"
+      ],
+      "ans": "Economic Growth",
+      "exp": "The manual attributes Economic Growth specifically to stimulated entrepreneurship and increased consumer spending resulting from greater access to financial services."
+    },
+    {
+      "id": "Q45",
+      "module": 2,
+      "type": "mcq",
+      "q": "Many small businesses struggle to secure financing from traditional banks. Which inclusive banking initiative does the manual cite as directly addressing this specific challenge?",
+      "opts": [
+        "Increased tax revenue reinvestment",
+        "Microloans and alternative lending models",
+        "Strengthened trust in financial institutions",
+        "Reduction of economic inequality through public policy"
+      ],
+      "ans": "Microloans and alternative lending models",
+      "exp": "The manual identifies microloans and alternative lending models as the specific inclusive banking initiatives that provide small businesses the capital needed to grow."
+    },
+    {
+      "id": "Q46",
+      "module": 2,
+      "type": "mcq",
+      "q": "As more individuals and businesses engage with the formal financial system, what does the manual identify as a resulting benefit to governments?",
+      "opts": [
+        "Reduced need for financial literacy programs",
+        "Increased tax revenue that can be reinvested in public services and infrastructure",
+        "Elimination of the need for microfinance institutions",
+        "Automatic reduction in the gender gap"
+      ],
+      "ans": "Increased tax revenue that can be reinvested in public services and infrastructure",
+      "exp": "The manual states that as more people and businesses engage with the formal system, governments benefit from increased tax revenues."
+    },
+    {
+      "id": "Q47",
+      "module": 2,
+      "type": "mcq",
+      "q": "Inclusive banking initiatives that provide tailored financial products to women, rural populations, and persons with disabilities are described in the manual as delivering which social impact?",
+      "opts": [
+        "Increased Tax Revenue",
+        "Empowerment of Marginalized Groups",
+        "Support for Small Businesses",
+        "Regulatory Compliance and Risk Management"
+      ],
+      "ans": "Empowerment of Marginalized Groups",
+      "exp": "The manual lists Empowerment of Marginalized Groups as a social impact achieved by focusing on women, rural populations, and persons with disabilities."
+    },
+    {
+      "id": "Q48",
+      "module": 2,
+      "type": "mcq",
+      "q": "Educational components within financial inclusion efforts that teach budgeting, saving, and investing are associated with which social impact identified in the manual?",
+      "opts": [
+        "Improved Financial Literacy",
+        "Strengthened Trust in Financial Institutions",
+        "Reduction of Economic Inequality",
+        "Economic Growth"
+      ],
+      "ans": "Improved Financial Literacy",
+      "exp": "The manual states that financial inclusion efforts often include educational components enhancing financial literacy."
+    },
+    {
+      "id": "Q49",
+      "module": 2,
+      "type": "mcq",
+      "q": "By enabling low-income individuals to participate in the economy on equal footing with more affluent populations, inclusive banking is described in the manual as achieving which social impact?",
+      "opts": [
+        "Reduction of Economic Inequality",
+        "Increased Tax Revenue",
+        "Support for Small Businesses",
+        "Competitive Advantage"
+      ],
+      "ans": "Reduction of Economic Inequality",
+      "exp": "The manual describes Reduction of Economic Inequality as inclusive banking's effect of enabling low-income individuals to participate in the economy on equal footing."
+    },
+    {
+      "id": "Q50",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which social impact does the manual associate with banks that prioritize inclusivity and demonstrate a commitment to social responsibility?",
+      "opts": [
+        "Strengthened Trust in Financial Institutions",
+        "Increased Tax Revenue",
+        "Support for Small Businesses",
+        "Economic Growth"
+      ],
+      "ans": "Strengthened Trust in Financial Institutions",
+      "exp": "The manual states that banks prioritizing inclusivity demonstrate a commitment to social responsibility, which enhances reputation and builds trust."
+    },
+    {
+      "id": "Q51",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank designing products for customers who face high fees and minimum balance requirements at traditional institutions, and who often rely on costly informal financial services, is targeting which market segment described in the manual?",
+      "opts": [
+        "Elderly Customers",
+        "Low-Income Individuals",
+        "Young Adults and Students",
+        "Rural Populations"
+      ],
+      "ans": "Low-Income Individuals",
+      "exp": "The manual describes Low-Income Individuals as facing significant barriers due to high fees and minimum balance requirements."
+    },
+    {
+      "id": "Q52",
+      "module": 2,
+      "type": "mcq",
+      "q": "Mobile banking and digital platforms are specifically recommended in the manual to serve which customer segment facing geographic barriers to physical branch access?",
+      "opts": [
+        "Rural Populations",
+        "Young Adults and Students",
+        "People with Disabilities",
+        "Low-Income Individuals"
+      ],
+      "ans": "Rural Populations",
+      "exp": "The manual identifies Rural Populations as facing geographic barriers limiting access to physical branches."
+    },
+    {
+      "id": "Q53",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which market segment does the manual describe as often preferring in-person interactions and requiring services such as retirement planning and estate management?",
+      "opts": [
+        "Young Adults and Students",
+        "Elderly Customers",
+        "Low-Income Individuals",
+        "Rural Populations"
+      ],
+      "ans": "Elderly Customers",
+      "exp": "The manual states Elderly Customers may require retirement planning and estate management, and many in this demographic prefer in-person interactions."
+    },
+    {
+      "id": "Q54",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank designs student accounts with no fees and low-interest education loans, targeting customers typically comfortable with digital banking. Which segment does this describe?",
+      "opts": [
+        "Elderly Customers",
+        "People with Disabilities",
+        "Young Adults and Students",
+        "Rural Populations"
+      ],
+      "ans": "Young Adults and Students",
+      "exp": "The manual describes Young Adults and Students as seeking affordable solutions like no-fee student accounts and low-interest education loans."
+    },
+    {
+      "id": "Q55",
+      "module": 2,
+      "type": "mcq",
+      "q": "According to the manual, what role does digital acceptability play in a bank's ability to implement effective customer segmentation?",
+      "opts": [
+        "It is irrelevant to segmentation effectiveness",
+        "It is a major driving force, as effective technological tools help banks better handle segmentation",
+        "It only applies to segmentation of elderly customers",
+        "It replaces the need for market segmentation entirely"
+      ],
+      "ans": "It is a major driving force, as effective technological tools help banks better handle segmentation",
+      "exp": "The manual states digital acceptability is a major driving force in the effectiveness of customer segmentation."
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank develops tailored financial products after identifying the unique needs of each customer segment. Which benefit of customer segmentation does this reflect?",
+      "opts": [
+        "Efficient Resource Allocation",
+        "Customized Offerings",
+        "Informed Marketing Strategies",
+        "Enhanced Customer Experience"
+      ],
+      "ans": "Customized Offerings",
+      "exp": "The manual describes Customized Offerings as the benefit of understanding each segment's unique needs to develop tailored financial products."
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "type": "mcq",
+      "q": "By identifying which customer segments require more human support versus those that can rely on automated solutions, a bank achieves which benefit of segmentation described in the manual?",
+      "opts": [
+        "Customized Offerings",
+        "Informed Marketing Strategies",
+        "Efficient Resource Allocation",
+        "Enhanced Customer Experience"
+      ],
+      "ans": "Efficient Resource Allocation",
+      "exp": "The manual describes Efficient Resource Allocation as allowing banks to allocate human and technological resources more effectively."
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "type": "mcq",
+      "q": "Targeted outreach efforts that ensure messaging resonates with specific underserved populations reflect which benefit of customer segmentation in the manual?",
+      "opts": [
+        "Efficient Resource Allocation",
+        "Customized Offerings",
+        "Informed Marketing Strategies",
+        "Enhanced Customer Experience"
+      ],
+      "ans": "Informed Marketing Strategies",
+      "exp": "The manual identifies Informed Marketing Strategies as the benefit whereby targeted marketing efforts based on segmentation insights enhance outreach."
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank designs financial products by first understanding the unique needs of various customer segments through direct engagement during research and development. Which product design principle does the manual describe here?",
+      "opts": [
+        "Affordability",
+        "User-Centric Approach",
+        "Flexibility and Adaptability",
+        "Accessibility"
+      ],
+      "ans": "User-Centric Approach",
+      "exp": "The manual describes the User-Centric Approach as beginning with understanding the unique needs of various segments through engagement during research and development phases."
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "type": "mcq",
+      "q": "Incorporating features like text-to-speech, screen reader compatibility, and alternative authentication methods beyond biometrics reflects which product design principle in the manual?",
+      "opts": [
+        "Flexibility and Adaptability",
+        "Accessibility",
+        "User-Centric Approach",
+        "Affordability"
+      ],
+      "ans": "Accessibility",
+      "exp": "The manual specifically lists text-to-speech, screen reader compatibility, and alternative authentication methods as features supporting Accessibility."
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "type": "mcq",
+      "q": "Offering no-fee accounts, low-interest loans, and microfinance options tailored to underserved populations reflects which principle of inclusive product design?",
+      "opts": [
+        "Accessibility",
+        "Affordability",
+        "Flexibility and Adaptability",
+        "User-Centric Approach"
+      ],
+      "ans": "Affordability",
+      "exp": "The manual describes Affordability as pricing products to be accessible to low-income individuals through no-fee accounts, low-interest loans, or microfinance options."
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "type": "mcq",
+      "q": "The manual states that a one-size-fits-all approach does not work in inclusive banking, recommending simplified savings accounts or flexible loan terms instead. Which design principle does this describe?",
+      "opts": [
+        "Affordability",
+        "Accessibility",
+        "Flexibility and Adaptability",
+        "User-Centric Approach"
+      ],
+      "ans": "Flexibility and Adaptability",
+      "exp": "The manual explicitly states a one-size-fits-all approach does not work, and that offering a range of customizable products reflects Flexibility and Adaptability."
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "type": "mcq",
+      "q": "In 2019, Banco Santander set a specific financial inclusion target. What was that original target, and what happened by the end of 2022?",
+      "opts": [
+        "A target to empower 5 million people by 2025, missed by the end of 2022",
+        "A target to empower 10 million people by 2025, surpassed by reaching approximately 11.8 million by the end of 2022",
+        "A target to empower 20 million people by 2030, on track but not yet surpassed",
+        "A target to empower 1 million people annually, met exactly each year"
+      ],
+      "ans": "A target to empower 10 million people by 2025, surpassed by reaching approximately 11.8 million by the end of 2022",
+      "exp": "The manual states Santander set a 2019 target to financially empower 10 million individuals by 2025, and had already surpassed this goal by reaching approximately 11.8 million people by the end of 2022."
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank executive is designing a financial inclusion strategy and wants to ensure it addresses access, funding, and long-term resilience simultaneously. Which real-world strategic framework, described in the manual, most closely matches this three-part approach?",
+      "opts": [
+        "Access Bank's 'W' Initiative alone",
+        "Banco Santander's three-pillar strategy of access, financing, and building resilience through education",
+        "The CBN's National Financial Inclusion Strategy",
+        "The EIB's memorandum of understanding structure"
+      ],
+      "ans": "Banco Santander's three-pillar strategy of access, financing, and building resilience through education",
+      "exp": "The manual describes Santander's financial inclusion strategy as built on three pillars: access, financing, and building resilience through education."
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "type": "mcq",
+      "q": "Santander's microfinance program 'Santander Prospera' is particularly notable for its impact in which country, and for what scale of credit provided?",
+      "opts": [
+        "Nigeria, providing over ₦246 billion in credit",
+        "Brazil, having provided over €3.6 billion in credit to millions of customers",
+        "The United States, providing over $50 million in credit",
+        "Spain, providing over €10 billion in credit"
+      ],
+      "ans": "Brazil, having provided over €3.6 billion in credit to millions of customers",
+      "exp": "The manual specifically states Santander Prospera's impact is notable in Brazil, having provided over €3.6 billion in credit to millions of customers."
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "type": "mcq",
+      "q": "How does the manual describe the role of digital platforms in Banco Santander's financial inclusion strategy?",
+      "opts": [
+        "They are used exclusively for internal staff training, not customer access",
+        "They enable underbanked groups to access banking services and complete transactions without needing physical branches",
+        "They are limited to urban customers with existing bank accounts",
+        "They replace the three-pillar strategy entirely"
+      ],
+      "ans": "They enable underbanked groups to access banking services and complete transactions without needing physical branches",
+      "exp": "The manual states Santander's digital platforms enable underbanked groups to access banking services easily, facilitating payments and transactions without physical branches."
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "type": "mcq",
+      "q": "In 2023, Banco Santander received a notable industry recognition for its financial inclusion efforts. What was this recognition, and from whom?",
+      "opts": [
+        "'Best Digital Bank' from the World Economic Forum",
+        "'World's Best Bank for Financial Inclusion' from Euromoney",
+        "'Most Innovative Fintech Partner' from the World Bank",
+        "'Top Retail Bank in Latin America' from the IMF"
+      ],
+      "ans": "'World's Best Bank for Financial Inclusion' from Euromoney",
+      "exp": "The manual states Santander was named the 'World's Best Bank for Financial Inclusion' by Euromoney in 2023."
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "type": "mcq",
+      "q": "Access Bank's flagship program launched in 2014 focuses on empowering which specific group through financial resources, capacity-building, and mentoring?",
+      "opts": [
+        "Rural farmers",
+        "Women entrepreneurs",
+        "University graduates",
+        "Elderly pensioners"
+      ],
+      "ans": "Women entrepreneurs",
+      "exp": "The manual describes the 'W' Initiative, launched in 2014, as Access Bank's flagship program focused on empowering women entrepreneurs."
+    },
+    {
+      "id": "Q69",
+      "module": 2,
+      "type": "mcq",
+      "q": "In October 2023, Access Bank signed a memorandum of understanding with the European Investment Bank (EIB). What was the size of this facility, and what proportion was dedicated to women-led or women-benefiting businesses?",
+      "opts": [
+        "€10 million facility, with 50% dedicated to women",
+        "€50 million facility, with at least 30% dedicated to women",
+        "€100 million facility, with 10% dedicated to women",
+        "₦50 billion facility, with at least 30% dedicated to women"
+      ],
+      "ans": "€50 million facility, with at least 30% dedicated to women",
+      "exp": "The manual states the EIB partnership deployed a €50 million facility supporting SMEs and women-owned businesses, with at least 30% of funding dedicated to businesses led by or benefiting women."
+    },
+    {
+      "id": "Q70",
+      "module": 2,
+      "type": "mcq",
+      "q": "How has Access Bank leveraged digital banking solutions to advance financial inclusion, according to the manual?",
+      "opts": [
+        "By requiring all customers in remote areas to visit a physical branch quarterly",
+        "By offering mobile banking services allowing customers in remote areas to access products without needing physical branches",
+        "By limiting mobile banking exclusively to existing corporate clients",
+        "By phasing out savings accounts in favor of loan products only"
+      ],
+      "ans": "By offering mobile banking services allowing customers in remote areas to access products without needing physical branches",
+      "exp": "The manual states Access Bank's mobile banking services allow customers in remote areas to access banking products without needing physical branches."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "type": "mcq",
+      "q": "Since the inception of the 'W' Initiative, approximately how much financing has Access Bank provided, and to how many women, according to the manual?",
+      "opts": [
+        "Over ₦246 billion in financing for more than 3 million women",
+        "Over €3.6 billion in financing for more than 3 million women",
+        "Over ₦50 billion in financing for more than 1 million women",
+        "Over ₦246 million in financing for more than 300,000 women"
+      ],
+      "ans": "Over ₦246 billion in financing for more than 3 million women",
+      "exp": "The manual states Access Bank has provided over ₦246 billion in financing for more than 3 million women since the 'W' Initiative's inception."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "type": "mcq",
+      "q": "Comparing the two case studies in the manual, which statement accurately distinguishes Banco Santander's and Access Bank's approaches to financial inclusion?",
+      "opts": [
+        "Santander focuses exclusively on Nigeria, while Access Bank operates only in Europe",
+        "Santander pursues a global three-pillar strategy across multiple core markets, while Access Bank's flagship initiative specifically targets women entrepreneurs in Nigeria alongside an EIB-backed SME facility",
+        "Both banks pursue identical strategies with no meaningful differences",
+        "Access Bank's strategy is built on three pillars, while Santander's is built around a single women-focused initiative"
+      ],
+      "ans": "Santander pursues a global three-pillar strategy across multiple core markets, while Access Bank's flagship initiative specifically targets women entrepreneurs in Nigeria alongside an EIB-backed SME facility",
+      "exp": "The manual describes Santander's strategy as a three-pillar approach spanning Europe, Latin America, and the US, while Access Bank's approach centers on its Nigeria-based 'W' Initiative."
+    },
+    {
+      "id": "Q73",
+      "module": 3,
+      "type": "mcq",
+      "q": "A microfinance officer is asked to define the 'unbanked' population for a training session. Which definition best matches the manual's description?",
+      "opts": [
+        "Individuals who maintain savings accounts but rarely use them",
+        "Individuals who do not use or have access to any traditional banking services, such as savings accounts, credit cards, or personal checks",
+        "Individuals who only use mobile money but not physical branches",
+        "Individuals who have bank accounts but live in rural areas"
+      ],
+      "ans": "Individuals who do not use or have access to any traditional banking services, such as savings accounts, credit cards, or personal checks",
+      "exp": "The manual defines the unbanked as individuals who do not use or have access to any traditional banking services."
+    },
+    {
+      "id": "Q74",
+      "module": 3,
+      "type": "mcq",
+      "q": "In the United States, Black and Latin households are described in the manual as disproportionately represented among the unbanked. What specific figures illustrate this disproportion?",
+      "opts": [
+        "They account for 32% of unbanked households despite making up 64% of the population",
+        "They account for 64% of unbanked households despite making up only 32% of the population",
+        "They account for 50% of unbanked households, matching their 50% population share",
+        "They account for 64% of the population and 64% of unbanked households equally"
+      ],
+      "ans": "They account for 64% of unbanked households despite making up only 32% of the population",
+      "exp": "The manual states Black and Latin households account for 64% of unbanked households despite making up only 32% of the population."
+    },
+    {
+      "id": "Q75",
+      "module": 3,
+      "type": "mcq",
+      "q": "According to the 2023 EFInA Access to Finance (A2F) Survey cited in the manual, what percentage of Nigerians are financially excluded, and how does this compare to 2020?",
+      "opts": [
+        "32% excluded in 2023, up from 26% in 2020",
+        "26% excluded in 2023, a decrease from 32% in 2020",
+        "40% excluded in 2023, unchanged from 2020",
+        "26% excluded in 2023, unchanged from 2020"
+      ],
+      "ans": "26% excluded in 2023, a decrease from 32% in 2020",
+      "exp": "The manual cites the 2023 EFInA survey showing 26% of Nigerians financially excluded, a decrease from 32% in 2020."
+    },
+    {
+      "id": "Q76",
+      "module": 3,
+      "type": "mcq",
+      "q": "A researcher compares financial exclusion between rural and urban Nigerians. Based on the manual's figures, which statement is accurate?",
+      "opts": [
+        "17% of rural Nigerians are excluded, compared to 37% of urban Nigerians",
+        "37% of rural Nigerians are excluded, compared to 17% of urban Nigerians",
+        "Rural and urban exclusion rates are approximately equal at 25%",
+        "Urban exclusion exceeds rural exclusion by a wide margin"
+      ],
+      "ans": "37% of rural Nigerians are excluded, compared to 17% of urban Nigerians",
+      "exp": "The manual states 37% of rural Nigerians are financially excluded compared to 17% of urban Nigerians."
+    },
+    {
+      "id": "Q77",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which two Nigerian regions does the manual identify as the most financially excluded, each with 47% of adults excluded?",
+      "opts": [
+        "South-West and South-East",
+        "Northeast and Northwest",
+        "North-Central and South-South",
+        "Northeast and South-West"
+      ],
+      "ans": "Northeast and Northwest",
+      "exp": "The manual states the Northeast and Northwest regions are the most excluded, with 47% of adults in each region financially excluded."
+    },
+    {
+      "id": "Q78",
+      "module": 3,
+      "type": "mcq",
+      "q": "Research cited in the manual indicates that socio-economic status (SES) plays a crucial role in determining unbanked status. Which factor does the manual specifically say correlates significantly with banking status?",
+      "opts": [
+        "Marital status",
+        "Educational attainment",
+        "Religious affiliation",
+        "Number of dependents"
+      ],
+      "ans": "Educational attainment",
+      "exp": "The manual states that studies show educational attainment significantly correlates with banking status."
+    },
+    {
+      "id": "Q79",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is explicitly listed in the manual as a reason individuals remain unbanked?",
+      "opts": [
+        "Excessive availability of banking products",
+        "Lack of documentation required to open bank accounts",
+        "Oversupply of bank branches in rural areas",
+        "Mandatory digital literacy certification requirements"
+      ],
+      "ans": "Lack of documentation required to open bank accounts",
+      "exp": "The manual lists lack of necessary identification or documentation as one of the specific reasons individuals remain unbanked."
+    },
+    {
+      "id": "Q80",
+      "module": 3,
+      "type": "mcq",
+      "q": "A community member avoids opening a bank account because of negative experiences a relative had decades earlier with a failed bank. Which reason for being unbanked does this best illustrate?",
+      "opts": [
+        "Cost Barriers",
+        "Trust Issues",
+        "Lack of Documentation",
+        "Financial Literacy"
+      ],
+      "ans": "Trust Issues",
+      "exp": "The manual identifies Trust Issues as mistrust in financial institutions often stemming from negative past experiences or cultural beliefs about banking."
+    },
+    {
+      "id": "Q81",
+      "module": 3,
+      "type": "mcq",
+      "q": "High fees associated with maintaining a bank account are identified in the manual as which specific barrier to financial inclusion?",
+      "opts": [
+        "Trust Issues",
+        "Cost Barriers",
+        "Financial Literacy",
+        "Lack of Documentation"
+      ],
+      "ans": "Cost Barriers",
+      "exp": "The manual explicitly names Cost Barriers as high fees associated with maintaining bank accounts that deter many from seeking banking services."
+    },
+    {
+      "id": "Q82",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which reason for being unbanked does the manual describe as a 'major factor in the low percentage of bank accounts,' distinct from documentation, literacy, trust, or cost barriers?",
+      "opts": [
+        "Widespread poverty",
+        "Excessive regulation",
+        "Currency devaluation",
+        "Overbanking in urban centers"
+      ],
+      "ans": "Widespread poverty",
+      "exp": "The manual lists widespread poverty as a major factor in the low percentage of bank accounts."
+    },
+    {
+      "id": "Q83",
+      "module": 3,
+      "type": "mcq",
+      "q": "A Nigerian bank successfully increased account openings among unbanked customers by allowing a specific type of turnover-restricted savings account. What two requirements does the manual describe for opening this account?",
+      "opts": [
+        "A government-issued national ID and a bank verification number",
+        "An introduction from an existing customer of the bank and a passport photograph",
+        "Proof of employment and a minimum opening deposit",
+        "Two forms of government identification and a utility bill"
+      ],
+      "ans": "An introduction from an existing customer of the bank and a passport photograph",
+      "exp": "The manual specifically describes this successful Nigerian approach as requiring only an introduction from an existing customer of the bank and a passport photograph."
+    },
+    {
+      "id": "Q84",
+      "module": 3,
+      "type": "mcq",
+      "q": "Offering accounts that do not require minimum balances is described in the manual as which specific strategy for engaging the unbanked?",
+      "opts": [
+        "Simplify Account Opening",
+        "Reduce Costs",
+        "Product Adaptation",
+        "Community Outreach"
+      ],
+      "ans": "Reduce Costs",
+      "exp": "The manual lists 'Reduce Costs' as offering low-cost accounts without minimum balance requirements."
+    },
+    {
+      "id": "Q85",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank organizes financial literacy sessions covering interest rates, savings, and credit scores to help unbanked individuals make informed decisions. Which specific engagement strategy component does this represent?",
+      "opts": [
+        "Digital Resources",
+        "Learning Sessions",
+        "Practical Applications",
+        "Targeting Specific Demographics"
+      ],
+      "ans": "Learning Sessions",
+      "exp": "The manual describes Learning Sessions as teaching fundamental concepts such as interest rates, savings, and credit scores."
+    },
+    {
+      "id": "Q86",
+      "module": 3,
+      "type": "mcq",
+      "q": "Creating online tutorials specifically explaining account-opening processes and banking products is described in the manual as which engagement strategy component?",
+      "opts": [
+        "Learning Sessions",
+        "Digital Resources",
+        "Workshops and Seminars",
+        "Practical Applications"
+      ],
+      "ans": "Digital Resources",
+      "exp": "The manual specifically describes Digital Resources as online tutorials and resources on account opening processes and different banking products."
+    },
+    {
+      "id": "Q87",
+      "module": 3,
+      "type": "mcq",
+      "q": "Providing real-world scenarios and case studies to help participants apply financial knowledge effectively is described in the manual as which engagement strategy component?",
+      "opts": [
+        "Practical Applications",
+        "Learning Sessions",
+        "Digital Resources",
+        "Workshops and Seminars"
+      ],
+      "ans": "Practical Applications",
+      "exp": "The manual describes Practical Applications as providing real-world scenarios and case studies that help participants understand how to apply their knowledge effectively."
+    },
+    {
+      "id": "Q88",
+      "module": 3,
+      "type": "mcq",
+      "q": "Tailoring financial literacy programs to address the unique challenges faced by immigrants or low-income families is described in the manual as which specific component of the financial literacy strategy?",
+      "opts": [
+        "Targeting Specific Demographics",
+        "Practical Applications",
+        "Digital Resources",
+        "Workshops and Seminars"
+      ],
+      "ans": "Targeting Specific Demographics",
+      "exp": "The manual explicitly names Targeting Specific Demographics as tailoring programs to address unique challenges faced by different groups within the unbanked population."
+    },
+    {
+      "id": "Q89",
+      "module": 3,
+      "type": "mcq",
+      "q": "Implementing microfinance options to provide immediate financial relief while helping clients build credit history is described in the manual as which broader engagement strategy?",
+      "opts": [
+        "Community Outreach",
+        "Product Adaptation",
+        "Mobile Banking Solutions",
+        "Financial Literacy Programs"
+      ],
+      "ans": "Product Adaptation",
+      "exp": "The manual describes Product Adaptation as creating affordable and accessible financial products tailored to underserved populations."
+    },
+    {
+      "id": "Q90",
+      "module": 3,
+      "type": "mcq",
+      "q": "Collaborating with nonprofits and local government agencies to identify unbanked populations and gain community credibility is described in the manual as which engagement strategy?",
+      "opts": [
+        "Hyperlocal Dialogues",
+        "Partnerships with Local Organizations",
+        "Mobile Banking Units",
+        "Product Adaptation"
+      ],
+      "ans": "Partnerships with Local Organizations",
+      "exp": "The manual describes Partnerships with Local Organizations as collaborating with community-based organizations, nonprofits, and local government agencies."
+    },
+    {
+      "id": "Q91",
+      "module": 3,
+      "type": "mcq",
+      "q": "Conducting town hall sessions in underserved communities to understand specific needs and build relationships directly with residents is described in the manual as which engagement strategy?",
+      "opts": [
+        "Partnerships with Local Organizations",
+        "Product Adaptation",
+        "Hyperlocal Dialogues",
+        "Digital Resources"
+      ],
+      "ans": "Hyperlocal Dialogues",
+      "exp": "The manual specifically names Hyperlocal Dialogues as conducting town hall sessions in underserved communities to understand their needs and build relationships directly."
+    },
+    {
+      "id": "Q92",
+      "module": 3,
+      "type": "mcq",
+      "q": "Deploying mobile banking units or pop-up branches directly into underserved areas lacking easy access is described in the manual under which broader engagement strategy category?",
+      "opts": [
+        "Community Outreach",
+        "Mobile Banking Solutions",
+        "Product Adaptation",
+        "Financial Literacy Programs"
+      ],
+      "ans": "Mobile Banking Solutions",
+      "exp": "The manual lists Mobile Banking Units as a component of Mobile Banking Solutions."
+    },
+    {
+      "id": "Q93",
+      "module": 3,
+      "type": "mcq",
+      "q": "A rural resident has never opened a bank account and has difficulty traveling to the nearest branch. Which engagement strategy would most directly address this specific barrier?",
+      "opts": [
+        "Workshops and Seminars on budgeting",
+        "Mobile banking applications providing access without needing physical branches",
+        "Targeting Specific Demographics through immigrant-focused programs",
+        "Practical Applications using real-world case studies"
+      ],
+      "ans": "Mobile banking applications providing access without needing physical branches",
+      "exp": "The manual states that leveraging mobile banking applications is especially important for individuals who may have difficulty accessing traditional banking locations."
+    },
+    {
+      "id": "Q94",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank wants to build trust with a community that has historically distrusted financial institutions due to negative cultural experiences. Which combination of strategies from the manual would most directly target this specific barrier?",
+      "opts": [
+        "Reduce Costs and Product Adaptation only",
+        "Partnerships with Local Organizations and Hyperlocal Dialogues to build credibility and relationships",
+        "Digital Resources and Mobile Banking Units only",
+        "Learning Sessions on interest rates alone"
+      ],
+      "ans": "Partnerships with Local Organizations and Hyperlocal Dialogues to build credibility and relationships",
+      "exp": "The manual states that partnerships with local organizations help banks gain credibility and trust, and that hyperlocal dialogues help build relationships and foster trust directly."
+    },
+    {
+      "id": "Q95",
+      "module": 3,
+      "type": "mcq",
+      "q": "A class exercise describes a rural community where 75% of residents lack bank accounts, but 85% are aware of the banking system. What does this awareness-adoption gap most directly suggest, based on the engagement strategies discussed in the manual?",
+      "opts": [
+        "That awareness campaigns alone are the only strategy needed going forward",
+        "That barriers other than awareness — such as cost, documentation, trust, or physical access — are likely preventing adoption despite existing awareness",
+        "That the community fundamentally opposes formal banking on principle",
+        "That mobile banking would have no relevance to this community"
+      ],
+      "ans": "That barriers other than awareness — such as cost, documentation, trust, or physical access — are likely preventing adoption despite existing awareness",
+      "exp": "Since awareness (85%) substantially exceeds adoption (25% banked), the gap points to practical or structural barriers, not lack of knowledge."
+    },
+    {
+      "id": "Q96",
+      "module": 3,
+      "type": "mcq",
+      "q": "In the rural community scenario where awareness (85%) far exceeds account ownership (25%), which manual-cited strategy would most directly help convert awareness into actual adoption?",
+      "opts": [
+        "Additional Workshops and Seminars repeating the same general awareness content",
+        "Simplify Account Opening and Reduce Costs to remove the practical barriers preventing conversion",
+        "Digital Resources providing more tutorials on concepts residents already understand",
+        "Targeting Specific Demographics unrelated to this community's actual profile"
+      ],
+      "ans": "Simplify Account Opening and Reduce Costs to remove the practical barriers preventing conversion",
+      "exp": "Since the gap in this scenario is between knowing about banking and actually opening accounts, simplifying account opening and reducing costs directly target the practical barriers most likely responsible."
+    },
+    {
+      "id": "Q97",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which statement most accurately distinguishes 'Financial Literacy' as a reason for being unbanked from 'Financial Literacy Programs' as an engagement strategy?",
+      "opts": [
+        "They are unrelated concepts appearing in different modules",
+        "The former is the barrier (a knowledge gap contributing to unbanked status); the latter is the manual's proposed response to that barrier through workshops, learning sessions, and digital resources",
+        "Financial Literacy Programs cause the Financial Literacy barrier",
+        "Both terms refer exclusively to digital-only educational content"
+      ],
+      "ans": "The former is the barrier (a knowledge gap contributing to unbanked status); the latter is the manual's proposed response to that barrier through workshops, learning sessions, and digital resources",
+      "exp": "The manual first identifies Financial Literacy as a reason individuals remain unbanked, then later proposes Financial Literacy Programs as the direct engagement strategy addressing that specific barrier."
+    },
+    {
+      "id": "Q98",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank wants to address both the documentation barrier and the cost barrier simultaneously for a specific unbanked segment. Which single manual-cited approach targets both barriers at once?",
+      "opts": [
+        "Hyperlocal Dialogues alone",
+        "The Nigerian turnover-restricted savings account requiring only an introduction and passport photo, combined with no minimum balance requirements",
+        "Practical Applications using case studies",
+        "Targeting Specific Demographics through immigrant programs"
+      ],
+      "ans": "The Nigerian turnover-restricted savings account requiring only an introduction and passport photo, combined with no minimum balance requirements",
+      "exp": "The manual's example of Nigerian savings accounts requiring only an introduction and passport photograph directly addresses the documentation barrier, while offering such accounts without minimum balance requirements addresses the cost barrier."
+    },
+    {
+      "id": "Q99",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following statements about the EFInA 2023 and Centre for Financial Inclusion figures cited across the manual is accurate?",
+      "opts": [
+        "Both figures measure identical concepts and can be used interchangeably",
+        "The EFInA figure (26% excluded, meaning inclusion via formal or informal means) differs from the Centre for Financial Inclusion figure (40% lacking formal financial services specifically)",
+        "The Centre for Financial Inclusion figure is more recent than the EFInA figure",
+        "Both figures apply exclusively to rural populations"
+      ],
+      "ans": "The EFInA figure (26% excluded, meaning inclusion via formal or informal means) differs from the Centre for Financial Inclusion figure (40% lacking formal financial services specifically)",
+      "exp": "The manual's Module 1 figure (40% lacking formal financial services) measures formal access specifically, while the EFInA 2023 figure (26% excluded) measures financial exclusion inclusive of informal means."
+    },
+    {
+      "id": "Q100",
+      "module": 3,
+      "type": "mcq",
+      "q": "A community outreach officer wants to address financial exclusion among Nigerian youth specifically. Which manual-cited component of the financial literacy strategy is most directly designed for this kind of demographic-specific tailoring?",
+      "opts": [
+        "Digital Resources generically applied to all age groups",
+        "Targeting Specific Demographics, which tailors programs to unique challenges faced by different groups within the unbanked population",
+        "Learning Sessions on interest rates with no demographic customization",
+        "Mobile Banking Units deployed without regard to audience"
+      ],
+      "ans": "Targeting Specific Demographics, which tailors programs to unique challenges faced by different groups within the unbanked population",
+      "exp": "The manual explicitly describes Targeting Specific Demographics as tailoring financial literacy programs to address unique challenges faced by different groups."
+    },
+    {
+      "id": "Q101",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following would NOT be classified as one of the five broad engagement strategy categories described in the manual for reaching unbanked individuals?",
+      "opts": [
+        "Eliminate Barriers to Access",
+        "Financial Literacy Programs",
+        "Currency Devaluation Management",
+        "Mobile Banking Solutions"
+      ],
+      "ans": "Currency Devaluation Management",
+      "exp": "The manual's five engagement strategy categories are Eliminate Barriers to Access, Financial Literacy Programs, Product Adaptation, Community Outreach, and Mobile Banking Solutions."
+    },
+    {
+      "id": "Q102",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank's engagement strategy successfully reduces documentation and cost barriers, but adoption remains low because residents still don't trust the institution. Based on the manual's framework, what is the most likely next step to pursue?",
+      "opts": [
+        "Further reduce account fees, since cost is clearly still the main barrier",
+        "Pursue Community Outreach — specifically Partnerships with Local Organizations and Hyperlocal Dialogues — to directly address the trust deficit",
+        "Introduce more complex digital products to demonstrate technical sophistication",
+        "Discontinue the simplified account opening process since it has already succeeded"
+      ],
+      "ans": "Pursue Community Outreach — specifically Partnerships with Local Organizations and Hyperlocal Dialogues — to directly address the trust deficit",
+      "exp": "Since documentation and cost barriers have already been addressed but trust remains the unresolved issue, Community Outreach strategies are specifically designed to build credibility and trust."
+    },
+    {
+      "id": "Q103",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which statement best reflects how the manual frames the relationship between 'Reasons for Being Unbanked' (E.2.2) and 'Engagement Strategies' (E.2.3)?",
+      "opts": [
+        "The two sections are unrelated and cover entirely separate topics",
+        "Each engagement strategy is designed to directly counter one or more of the specific barriers identified as reasons for exclusion",
+        "Engagement strategies exist independently of any specific barrier and apply universally without distinction",
+        "Reasons for being unbanked are caused by engagement strategies rather than the reverse"
+      ],
+      "ans": "Each engagement strategy is designed to directly counter one or more of the specific barriers identified as reasons for exclusion",
+      "exp": "The manual's structure moves from diagnosing specific barriers to proposing strategies that map directly onto them."
+    },
+    {
+      "id": "Q104",
+      "module": 3,
+      "type": "mcq",
+      "q": "A researcher notes that despite CBN agent banking expansion (Module 1) reaching 1.4 million agents by 2022, EFInA's 2023 survey still found 26% of Nigerians financially excluded. What does this juxtaposition best illustrate?",
+      "opts": [
+        "Agent banking expansion has had no measurable effect on financial inclusion",
+        "Infrastructure expansion alone does not eliminate all barriers — deeper issues like trust, literacy, and documentation continue to constrain adoption even where access points exist",
+        "The EFInA and CBN figures are contradictory and one must be incorrect",
+        "Agent banking is exclusively responsible for the entire 26% that remains excluded"
+      ],
+      "ans": "Infrastructure expansion alone does not eliminate all barriers — deeper issues like trust, literacy, and documentation continue to constrain adoption even where access points exist",
+      "exp": "The persistence of exclusion despite substantial physical infrastructure growth reflects that barriers to inclusion are multidimensional."
+    },
+    {
+      "id": "Q105",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which specific evidence would most directly support the claim that trust issues, rather than cost or documentation barriers, are the dominant reason a particular community remains unbanked?",
+      "opts": [
+        "Residents report account fees as unaffordable despite having valid identification",
+        "Residents possess valid identification and can afford basic accounts, but decline to open them due to negative experiences with a past bank failure",
+        "Residents are unaware banks exist in their area",
+        "Residents lack any form of government identification"
+      ],
+      "ans": "Residents possess valid identification and can afford basic accounts, but decline to open them due to negative experiences with a past bank failure",
+      "exp": "Trust Issues are specifically distinguished by negative past experiences or cultural beliefs about banking driving avoidance, even when practical barriers are not the limiting factor."
+    },
+    {
+      "id": "Q106",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank's community outreach team wants to identify unbanked populations more effectively before designing tailored products. According to the manual's engagement framework, which step should logically precede Product Adaptation?",
+      "opts": [
+        "Mobile Banking Units deployment",
+        "Partnerships with Local Organizations to identify unbanked populations and facilitate outreach",
+        "Reducing account fees to zero",
+        "Launching digital resources without community input"
+      ],
+      "ans": "Partnerships with Local Organizations to identify unbanked populations and facilitate outreach",
+      "exp": "The manual describes Partnerships with Local Organizations as helping identify unbanked populations and facilitate outreach — a foundational step preceding Product Adaptation."
+    },
+    {
+      "id": "Q107",
+      "module": 3,
+      "type": "mcq",
+      "q": "Considering both Module 1's CBN agent banking data and Module 3's engagement strategies, which statement best synthesizes how physical infrastructure and community-level engagement strategies work together to increase inclusion?",
+      "opts": [
+        "Physical infrastructure and community engagement strategies are redundant and only one is needed",
+        "Physical infrastructure such as agent banking provides the access points, while engagement strategies such as financial literacy programs and trust-building outreach convert that access into actual adoption",
+        "Community engagement strategies replace the need for any physical banking infrastructure",
+        "Agent banking expansion automatically resolves trust and literacy barriers without additional intervention"
+      ],
+      "ans": "Physical infrastructure such as agent banking provides the access points, while engagement strategies such as financial literacy programs and trust-building outreach convert that access into actual adoption",
+      "exp": "Physical infrastructure provides the necessary access points, but engagement strategies are what convert proximity to an access point into actual account adoption."
+    },
+    {
+      "id": "Q108",
+      "module": 3,
+      "type": "mcq",
+      "q": "A retail bank is designing an engagement plan for a community exhibiting high awareness, low trust, moderate documentation gaps, and significant cost sensitivity. Which sequencing of manual-cited strategies would most logically address all four factors without redundant effort?",
+      "opts": [
+        "Financial Literacy Programs first, since awareness is already the community's strength and should be reinforced repeatedly",
+        "Simplify Account Opening and Reduce Costs to address documentation and cost, paired with Community Outreach to build trust — skipping redundant awareness-focused literacy content",
+        "Mobile Banking Units alone, since technology resolves all four factors simultaneously",
+        "Product Adaptation alone, without addressing trust or cost directly"
+      ],
+      "ans": "Simplify Account Opening and Reduce Costs to address documentation and cost, paired with Community Outreach to build trust — skipping redundant awareness-focused literacy content",
+      "exp": "Given that awareness is already high in this scenario, directly addressing the community's actual gaps is more efficient: Simplify Account Opening and Reduce Costs target documentation and cost, while Community Outreach targets the trust deficit."
+    },
+    {
+      "id": "Q109",
+      "module": 4,
+      "type": "mcq",
+      "q": "According to the revised National Financial Inclusion Strategy cited in the manual, financial inclusion is achieved when adult Nigerians have easy access to a broad range of formal financial services meeting their needs at what condition?",
+      "opts": [
+        "Premium costs reflecting service quality",
+        "Affordable costs",
+        "No cost whatsoever",
+        "Costs set exclusively by individual banks without regulation"
+      ],
+      "ans": "Affordable costs",
+      "exp": "The manual quotes the CBN's revised NFIS stating financial inclusion is achieved when adults have easy access to a broad range of formal financial services that meet their needs at affordable costs."
+    },
+    {
+      "id": "Q110",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is NOT listed among the formal financial services named in the CBN's revised National Financial Inclusion Strategy?",
+      "opts": [
+        "Pension products",
+        "Capital market products",
+        "Foreign currency speculation products",
+        "Insurance"
+      ],
+      "ans": "Foreign currency speculation products",
+      "exp": "The manual lists payments, savings, credit, insurance, pension, and capital market products as the services covered by the strategy."
+    },
+    {
+      "id": "Q111",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which statement best captures the manual's definition of customer-centricity in designing bank products?",
+      "opts": [
+        "Providing solutions based on a profound understanding of the needs, preferences, and behaviour of the customer",
+        "Maximizing the number of products offered regardless of customer needs",
+        "Designing exclusively for the bank's most profitable customer segment",
+        "Standardizing all products to reduce operational complexity"
+      ],
+      "ans": "Providing solutions based on a profound understanding of the needs, preferences, and behaviour of the customer",
+      "exp": "The manual defines customer-centricity as providing solutions based on a profound understanding of customers' needs, preferences, and behaviour."
+    },
+    {
+      "id": "Q112",
+      "module": 4,
+      "type": "mcq",
+      "q": "In the four-dimension financial inclusion framework presented in the manual (Access, Quality, Usage, Welfare), which dimension specifically concerns whether product attributes match customer needs?",
+      "opts": [
+        "Access",
+        "Quality",
+        "Usage",
+        "Welfare"
+      ],
+      "ans": "Quality",
+      "exp": "The manual's framework describes Quality as concerning whether product attributes match the needs of customers."
+    },
+    {
+      "id": "Q113",
+      "module": 4,
+      "type": "mcq",
+      "q": "In the same four-dimension framework, which dimension is concerned specifically with the actual regularity, frequency, and length of time financial products are used?",
+      "opts": [
+        "Access",
+        "Quality",
+        "Usage",
+        "Welfare"
+      ],
+      "ans": "Usage",
+      "exp": "The manual describes Usage as the actual usage of financial services/products, measured by regularity, frequency, and length of time used."
+    },
+    {
+      "id": "Q114",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank in Nigeria develops a tiered savings account product specifically to accommodate daily wage earners and farmers with irregular income. Which customer-demographic factor does this address?",
+      "opts": [
+        "Geographic Location",
+        "Income Level",
+        "Cultural and Social Norms",
+        "Sample Size"
+      ],
+      "ans": "Income Level",
+      "exp": "The manual specifically cites the tiered savings account product as an example of tailoring based on Income Level."
+    },
+    {
+      "id": "Q115",
+      "module": 4,
+      "type": "mcq",
+      "q": "Branchless banking through agency banking, popularly known as POS agents, is cited in the manual as an example of tailoring products based on which customer demographic factor?",
+      "opts": [
+        "Income Level",
+        "Cultural and Social Norms",
+        "Geographic Location",
+        "Sample Size"
+      ],
+      "ans": "Geographic Location",
+      "exp": "The manual specifically identifies POS agents (agency banking) as a CBN solution addressing Geographic Location."
+    },
+    {
+      "id": "Q116",
+      "module": 4,
+      "type": "mcq",
+      "q": "Offering Sharia-compliant banking for customers in predominantly Muslim communities is cited in the manual as an example of respecting which customer demographic factor?",
+      "opts": [
+        "Income Level",
+        "Geographic Location",
+        "Cultural and Social Norms",
+        "Sample Size"
+      ],
+      "ans": "Cultural and Social Norms",
+      "exp": "The manual specifically cites Sharia-compliant banking as respecting Cultural and Social Norms."
+    },
+    {
+      "id": "Q117",
+      "module": 4,
+      "type": "mcq",
+      "q": "Why does the manual emphasize engaging with a wide range of users, rather than a narrow group, when designing financial products for a given demographic segment?",
+      "opts": [
+        "Because regulatory requirements mandate a fixed minimum number of survey respondents",
+        "Because even within a single demographic group, needs and circumstances vary, and a large sample size ensures diversity is accommodated",
+        "Because larger samples always produce statistically significant marketing results",
+        "Because it reduces the overall cost of product development"
+      ],
+      "ans": "Because even within a single demographic group, needs and circumstances vary, and a large sample size ensures diversity is accommodated",
+      "exp": "The manual explains that even within demographic groups, needs and circumstances vary, so a large sample size ensures this diversity is accommodated in product design."
+    },
+    {
+      "id": "Q118",
+      "module": 4,
+      "type": "mcq",
+      "q": "HSBC UK developed accessible debit cards and 'No Fixed Address' accounts by including which group directly in its design process, according to the manual?",
+      "opts": [
+        "Regulatory auditors only",
+        "Customers with lived experiences facing challenges such as housing insecurity",
+        "Competing banks' product design teams",
+        "Only internal bank employees without external customer input"
+      ],
+      "ans": "Customers with lived experiences facing challenges such as housing insecurity",
+      "exp": "The manual states HSBC UK developed these products by including customers with lived experiences in the design process."
+    },
+    {
+      "id": "Q119",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which principle does the HSBC UK example (accessible debit cards, 'No Fixed Address' accounts) primarily illustrate in the manual's customer-centric design framework?",
+      "opts": [
+        "Sample Size",
+        "Customer Involvement",
+        "Cultural and Social Norms",
+        "Income Level"
+      ],
+      "ans": "Customer Involvement",
+      "exp": "The manual presents the HSBC UK example specifically under Customer Involvement."
+    },
+    {
+      "id": "Q120",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank offers tiered fee structures for mobile banking services based on transaction values, aimed at low-income earners. Which affordability principle does this exemplify?",
+      "opts": [
+        "Fee Transparency",
+        "Cost-Effective Services",
+        "Alternative Credit Scoring Methods",
+        "Sample Size"
+      ],
+      "ans": "Cost-Effective Services",
+      "exp": "The manual specifically cites tiered fee structures for mobile banking based on transaction values as an example of Cost-Effective Services."
+    },
+    {
+      "id": "Q121",
+      "module": 4,
+      "type": "mcq",
+      "q": "Why does the manual emphasize Fee Transparency as an affordability principle in inclusive product design?",
+      "opts": [
+        "It is a legal requirement with no bearing on customer relationships",
+        "It clearly communicates costs to build trust and avoid customer disillusionment",
+        "It allows banks to hide fees more effectively within complex product structures",
+        "It replaces the need for any actual cost reduction"
+      ],
+      "ans": "It clearly communicates costs to build trust and avoid customer disillusionment",
+      "exp": "The manual states Fee Transparency clearly communicates costs to build trust and avoid customer disillusionment."
+    },
+    {
+      "id": "Q122",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank extends credit access to individuals without a formal credit history by evaluating their utility bill payments and rental history. Which affordability principle does this best illustrate?",
+      "opts": [
+        "Fee Transparency",
+        "Cost-Effective Services",
+        "Alternative Credit Scoring Methods",
+        "Customer Involvement"
+      ],
+      "ans": "Alternative Credit Scoring Methods",
+      "exp": "The manual describes Alternative Credit Scoring Methods as using non-traditional data sources like utility bill payments or rental history in credit assessments."
+    },
+    {
+      "id": "Q123",
+      "module": 4,
+      "type": "mcq",
+      "q": "Why does the manual emphasize simplicity, clear language, and intuitive navigation as central to developing user-friendly digital interfaces?",
+      "opts": [
+        "Because these factors are purely aesthetic and have no bearing on usability",
+        "Because they are central to improving customer experience and ensuring customers can easily use financial products and services",
+        "Because regulatory bodies mandate specific font sizes for all banking apps",
+        "Because simplicity eliminates the need for any customer support"
+      ],
+      "ans": "Because they are central to improving customer experience and ensuring customers can easily use financial products and services",
+      "exp": "The manual states user-friendly digital interfaces are central to improving customer experience and ensuring users can easily use financial products and services."
+    },
+    {
+      "id": "Q124",
+      "module": 4,
+      "type": "mcq",
+      "q": "How many language options does the manual state Nigerian ATMs provide, allowing customers to transact in the language they are most conversant in?",
+      "opts": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "ans": "4",
+      "exp": "The manual specifically states that in Nigeria, ATMs provide 4 language options."
+    },
+    {
+      "id": "Q125",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following best describes what the manual means by 'Low-Tech Solutions' in the context of digital financial inclusion?",
+      "opts": [
+        "Services accessible without smartphones or stable internet, such as SMS or USSD codes",
+        "Advanced AI-powered chatbots requiring high-speed broadband",
+        "Biometric authentication systems requiring specialized hardware",
+        "Blockchain-based settlement systems"
+      ],
+      "ans": "Services accessible without smartphones or stable internet, such as SMS or USSD codes",
+      "exp": "The manual defines Low-Tech Solutions as offering services accessible without smartphones or stable internet, specifically citing SMS or USSD codes."
+    },
+    {
+      "id": "Q126",
+      "module": 4,
+      "type": "mcq",
+      "q": "Enabling seamless interaction with different payment platforms and financial services — described in the manual as 'omnichannel banking' — refers to which technology-adoption principle?",
+      "opts": [
+        "Digital Payment Systems",
+        "Low-Tech Solutions",
+        "Interoperability",
+        "Fee Transparency"
+      ],
+      "ans": "Interoperability",
+      "exp": "The manual explicitly defines Interoperability as enabling seamless interaction with different payment platforms and financial services, described as omnichannel banking."
+    },
+    {
+      "id": "Q127",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following combinations correctly matches each technology-adoption example to its corresponding principle, as described in the manual?",
+      "opts": [
+        "Mobile wallets and QR codes → Interoperability; omnichannel banking → Digital Payment Systems",
+        "Mobile wallets and QR codes → Digital Payment Systems; omnichannel banking → Interoperability",
+        "SMS and USSD codes → Digital Payment Systems; mobile wallets → Low-Tech Solutions",
+        "Omnichannel banking → Low-Tech Solutions; SMS codes → Interoperability"
+      ],
+      "ans": "Mobile wallets and QR codes → Digital Payment Systems; omnichannel banking → Interoperability",
+      "exp": "The manual correctly associates mobile wallets, QR codes, and USSD banking with Digital Payment Systems, and omnichannel banking with Interoperability."
+    },
+    {
+      "id": "Q128",
+      "module": 4,
+      "type": "mcq",
+      "q": "According to the manual, what is the primary purpose of creating channels such as focus groups, surveys, or beta testing programs during product development?",
+      "opts": [
+        "To satisfy a mandatory regulatory checklist with no bearing on the final product",
+        "To gather insights from users during the development phase to refine products before or during launch",
+        "To replace the need for a customer-centric design approach entirely",
+        "To reduce the number of product features before launch, regardless of user feedback"
+      ],
+      "ans": "To gather insights from users during the development phase to refine products before or during launch",
+      "exp": "The manual states that creating channels for testing allows banks to gather insights from users during the development phase, helping refine products."
+    },
+    {
+      "id": "Q129",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is explicitly listed in the manual as a Key Performance Indicator (KPI) banks can monitor to gauge financial inclusion progress?",
+      "opts": [
+        "Number of competing banks in the market",
+        "Account activation, service utilization, and customer satisfaction",
+        "Total shareholder dividend payouts",
+        "Number of physical branches closed annually"
+      ],
+      "ans": "Account activation, service utilization, and customer satisfaction",
+      "exp": "The manual specifically lists account activation, service utilization, and customer satisfaction as KPIs for monitoring inclusion progress."
+    },
+    {
+      "id": "Q130",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank modifies and updates its mobile banking app based on real-world usage patterns and customer complaints received after launch. Which testing and feedback principle does this best illustrate?",
+      "opts": [
+        "Customer Feedback",
+        "Iterative Design",
+        "Key Performance Indicators",
+        "Fee Transparency"
+      ],
+      "ans": "Iterative Design",
+      "exp": "The manual describes Iterative Design specifically as modifying and updating products based on real-world usage and feedback."
+    },
+    {
+      "id": "Q131",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank continuously collects and analyzes input directly from customers in order to refine its financial products and improve services. Which testing and feedback principle does this most directly represent?",
+      "opts": [
+        "Iterative Design",
+        "Key Performance Indicators",
+        "Customer Feedback",
+        "Alternative Credit Scoring Methods"
+      ],
+      "ans": "Customer Feedback",
+      "exp": "The manual describes Customer Feedback as continuously gathering feedback from customers to refine products and improve services."
+    },
+    {
+      "id": "Q132",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank is designing a new savings product for rural farmers with irregular seasonal income, limited smartphone access, and cultural preference for in-person transactions. Which combination of manual-cited principles would most comprehensively address all three factors?",
+      "opts": [
+        "Tiered savings structure (Income Level) alone, ignoring the other two factors",
+        "A tiered savings structure for irregular income (Income Level), Low-Tech Solutions such as USSD/SMS for limited smartphone access, and agency banking (Geographic Location) to accommodate in-person preference",
+        "Sharia-compliant banking only, since it addresses cultural preferences broadly",
+        "Alternative Credit Scoring Methods alone, since irregular income is the only relevant factor"
+      ],
+      "ans": "A tiered savings structure for irregular income (Income Level), Low-Tech Solutions such as USSD/SMS for limited smartphone access, and agency banking (Geographic Location) to accommodate in-person preference",
+      "exp": "This scenario combines three distinct customer-centric design factors — Income Level, Low-Tech Solutions, and Geographic Location via agency banking — requiring a combined response."
+    },
+    {
+      "id": "Q133",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank wants to extend credit to gig-economy workers who lack traditional payroll records but consistently pay their rent and utility bills on time. Which manual-cited principle directly supports this scenario?",
+      "opts": [
+        "Fee Transparency",
+        "Alternative Credit Scoring Methods",
+        "Customer Involvement",
+        "Interoperability"
+      ],
+      "ans": "Alternative Credit Scoring Methods",
+      "exp": "The manual's Alternative Credit Scoring Methods principle specifically addresses using non-traditional data sources such as utility bill payments and rental history."
+    },
+    {
+      "id": "Q134",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which statement best distinguishes the manual's concept of 'Sample Size' from 'Customer Involvement' in the customer-centric design framework?",
+      "opts": [
+        "They are identical concepts describing the same design activity",
+        "Sample Size concerns engaging a sufficiently broad range of users to capture diversity within a segment, while Customer Involvement concerns directly including specific customers with lived experiences in the design process itself",
+        "Sample Size refers only to statistical significance testing unrelated to product design",
+        "Customer Involvement refers only to internal employee headcount during development"
+      ],
+      "ans": "Sample Size concerns engaging a sufficiently broad range of users to capture diversity within a segment, while Customer Involvement concerns directly including specific customers with lived experiences in the design process itself",
+      "exp": "Sample Size ensures engagement with a wide range of users to accommodate diversity, while Customer Involvement specifically means including customers with lived experiences directly in the design process."
+    },
+    {
+      "id": "Q135",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank rolls out a new mobile banking interface but fails to test it with visually impaired users before launch, resulting in poor screen-reader compatibility discovered only after widespread complaints. Which principle from the manual, if applied earlier, would most directly have prevented this outcome?",
+      "opts": [
+        "Fee Transparency, since cost communication was the actual issue",
+        "Testing and Feedback Mechanisms — specifically engaging diverse users, including those with disabilities, before full-scale launch",
+        "Alternative Credit Scoring Methods, since credit assessment was unrelated to this issue",
+        "Interoperability, since the issue concerned cross-platform payment integration"
+      ],
+      "ans": "Testing and Feedback Mechanisms — specifically engaging diverse users, including those with disabilities, before full-scale launch",
+      "exp": "The manual emphasizes engaging users, including those with disabilities, in testing and feedback processes before launch to identify usability issues."
+    },
+    {
+      "id": "Q136",
+      "module": 4,
+      "type": "mcq",
+      "q": "How does the manual connect digital accessibility (introduced in Module 1) to the customer segmentation and design principles discussed in Module 4?",
+      "opts": [
+        "The two are entirely unrelated and appear in different, disconnected contexts",
+        "Digital accessibility is described as a tool for achieving effective segmentation, and its efficiency and effectiveness in retail banking segmentation is explicitly highlighted",
+        "Digital accessibility replaces the need for customer-centric design entirely",
+        "Digital accessibility is relevant only to elderly customers, not to segmentation broadly"
+      ],
+      "ans": "Digital accessibility is described as a tool for achieving effective segmentation, and its efficiency and effectiveness in retail banking segmentation is explicitly highlighted",
+      "exp": "The manual explicitly states that digital accessibility also drives efficiency and effectiveness in retail banking segmentation."
+    },
+    {
+      "id": "Q137",
+      "module": 4,
+      "type": "mcq",
+      "q": "A retail bank wants to design a product that is both affordable for low-income earners and appropriately priced without appearing to under-deliver value. Which manual principle addresses this specific tension?",
+      "opts": [
+        "Sample Size, since a larger user base automatically balances pricing concerns",
+        "Affordability combined with Fee Transparency — pricing products accessibly while clearly communicating costs to maintain trust",
+        "Interoperability alone, since cross-platform access resolves pricing concerns",
+        "Cultural and Social Norms, since pricing is a cultural rather than financial matter"
+      ],
+      "ans": "Affordability combined with Fee Transparency — pricing products accessibly while clearly communicating costs to maintain trust",
+      "exp": "The manual frames Affordability and Fee Transparency together as addressing exactly this tension."
+    },
+    {
+      "id": "Q138",
+      "module": 4,
+      "type": "mcq",
+      "q": "Considering the manual's guidance across Modules 2 and 4, which statement best reflects how 'Flexibility and Adaptability' (Module 2) relates to 'Alternative Credit Scoring Methods' (Module 4)?",
+      "opts": [
+        "They are unrelated principles from entirely separate design frameworks",
+        "Both reflect the broader principle that inclusive design must move away from one-size-fits-all approaches — Flexibility and Adaptability at the product-terms level, and Alternative Credit Scoring at the assessment-methodology level",
+        "Alternative Credit Scoring Methods contradicts the principle of Flexibility and Adaptability",
+        "Flexibility and Adaptability applies only to loan terms and has no connection to credit assessment"
+      ],
+      "ans": "Both reflect the broader principle that inclusive design must move away from one-size-fits-all approaches — Flexibility and Adaptability at the product-terms level, and Alternative Credit Scoring at the assessment-methodology level",
+      "exp": "Both principles reflect the broader theme that inclusive banking must move beyond standardized, one-size-fits-all models."
+    },
+    {
+      "id": "Q139",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank's testing phase reveals that a majority of beta users struggle to complete transactions due to complex navigation, despite the product being technically functional. Based on the manual, what should the bank's next step be?",
+      "opts": [
+        "Proceed to full-scale launch, since the product is technically functional",
+        "Apply Iterative Design to modify the interface based on this real-world usage feedback before wider rollout",
+        "Discontinue the testing and feedback process entirely, since it identified a problem",
+        "Reduce the product's price to compensate for the navigation issue"
+      ],
+      "ans": "Apply Iterative Design to modify the interface based on this real-world usage feedback before wider rollout",
+      "exp": "The manual's Iterative Design principle specifically calls for modifying and updating products based on real-world usage and feedback."
+    },
+    {
+      "id": "Q140",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which statement best reflects the manual's overall emphasis in Module 4 regarding the relationship between customer-centric design and financial inclusion outcomes?",
+      "opts": [
+        "Product design has no measurable connection to inclusion outcomes",
+        "A genuine commitment to understanding a diverse customer base, through customer-centric design, accessibility, affordability, and robust testing, enables offerings that cater to a broad audience and enhance financial inclusion",
+        "Financial inclusion is achieved solely through regulatory mandates, independent of product design",
+        "Customer-centric design applies only to premium banking products for high-income customers"
+      ],
+      "ans": "A genuine commitment to understanding a diverse customer base, through customer-centric design, accessibility, affordability, and robust testing, enables offerings that cater to a broad audience and enhance financial inclusion",
+      "exp": "The manual's Module Summary explicitly states that commitment to understanding a diverse customer base through customer-centric design principles enables offerings catering to a broad audience."
+    },
+    {
+      "id": "Q141",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank is deciding whether to prioritize Digital Payment Systems or Low-Tech Solutions for a community with mixed smartphone penetration — some residents have smartphones and stable internet, others do not. Based on the manual, what is the most appropriate design response?",
+      "opts": [
+        "Offer only Digital Payment Systems, since they represent the more modern approach",
+        "Offer both Digital Payment Systems and Low-Tech Solutions in parallel, ensuring residents without smartphones or stable internet are not excluded",
+        "Offer only Low-Tech Solutions, since they are simpler to implement across the board",
+        "Delay any digital offering until universal smartphone penetration is achieved"
+      ],
+      "ans": "Offer both Digital Payment Systems and Low-Tech Solutions in parallel, ensuring residents without smartphones or stable internet are not excluded",
+      "exp": "Digital Payment Systems and Low-Tech Solutions are complementary, not mutually exclusive, technology-adoption strategies."
+    },
+    {
+      "id": "Q142",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following best summarizes the distinction the manual draws between 'Digital Accessibility' (Module 1, C.2.2) and 'Developing User Friendly Digital Interfaces' (Module 4, F.2.2)?",
+      "opts": [
+        "They are identical concepts covering the same content with no meaningful distinction",
+        "Digital Accessibility in Module 1 focuses on inclusion for people with disabilities specifically (screen readers, alternative communication methods), while Module 4's interface design principles address broader usability for all users (simplicity, language options, low-tech access, interoperability), though the two overlap and reinforce each other",
+        "Module 4 supersedes and replaces all content from Module 1's digital accessibility discussion",
+        "Digital Accessibility applies only to ATMs, while User Friendly Digital Interfaces applies only to mobile apps"
+      ],
+      "ans": "Digital Accessibility in Module 1 focuses on inclusion for people with disabilities specifically (screen readers, alternative communication methods), while Module 4's interface design principles address broader usability for all users (simplicity, language options, low-tech access, interoperability), though the two overlap and reinforce each other",
+      "exp": "Module 1's Digital Accessibility centers specifically on disability-inclusive design, whereas Module 4's interface principles address broader usability for the full customer base."
+    },
+    {
+      "id": "Q143",
+      "module": 5,
+      "type": "mcq",
+      "q": "In which year did the CBN approve the mobile money policy allowing non-bank institutions to operate as Mobile Money Operators (MMOs)?",
+      "opts": [
+        "2011",
+        "2017",
+        "2021",
+        "2022"
+      ],
+      "ans": "2011",
+      "exp": "The manual states the CBN approved the mobile money policy in 2011, allowing non-bank institutions to operate as MMOs."
+    },
+    {
+      "id": "Q144",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following best describes 'SMS Banking' as defined in the manual?",
+      "opts": [
+        "A service requiring high-speed internet and a smartphone app",
+        "A service allowing owners of basic phones to carry out simple financial transactions through text messaging, ensuring inclusivity",
+        "A service exclusively for large corporate account holders",
+        "A biometric authentication method used at bank branches"
+      ],
+      "ans": "A service allowing owners of basic phones to carry out simple financial transactions through text messaging, ensuring inclusivity",
+      "exp": "The manual defines SMS Banking as allowing owners of basic phones to carry out simple financial transactions through SMS."
+    },
+    {
+      "id": "Q145",
+      "module": 5,
+      "type": "mcq",
+      "q": "Access Closa agents are cited in the manual as an example of which mobile-phone-enabled service delivery model?",
+      "opts": [
+        "SMS Banking",
+        "Mobile Money Services",
+        "Agency Banking",
+        "Digital ID Verification"
+      ],
+      "ans": "Agency Banking",
+      "exp": "The manual specifically describes Access Closa agents as facilitating Agency Banking."
+    },
+    {
+      "id": "Q146",
+      "module": 5,
+      "type": "mcq",
+      "q": "Paga and MTN MoMo are cited in the manual as examples of which mobile-phone-enabled service?",
+      "opts": [
+        "Agency Banking",
+        "Mobile Money Services",
+        "SMS Banking",
+        "Digital ID Systems"
+      ],
+      "ans": "Mobile Money Services",
+      "exp": "The manual identifies Paga and MTN MoMo as Mobile Money Operators enabling secure and convenient financial services."
+    },
+    {
+      "id": "Q147",
+      "module": 5,
+      "type": "mcq",
+      "q": "How does the manual describe the way mobile money services empower women and vulnerable groups?",
+      "opts": [
+        "By requiring male family members to co-sign all transactions",
+        "By facilitating financial independence, enabling women to engage in economic activities without relying on male family members",
+        "By restricting mobile money access exclusively to women-only accounts",
+        "By eliminating the need for any financial literacy among women"
+      ],
+      "ans": "By facilitating financial independence, enabling women to engage in economic activities without relying on male family members",
+      "exp": "The manual states mobile money services facilitate financial independence, enabling women to engage in economic activities without relying on male family members."
+    },
+    {
+      "id": "Q148",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which two Nigerian platforms does the manual specifically cite as enabling users to save and invest directly from their mobile devices, promoting a savings culture?",
+      "opts": [
+        "Paga and MTN MoMo",
+        "Piggyvest and Cowrywise",
+        "Paystack and Flutterwave",
+        "Carbon and FairMoney"
+      ],
+      "ans": "Piggyvest and Cowrywise",
+      "exp": "The manual specifically names Piggyvest and Cowrywise as services allowing users to save and invest directly from mobile devices."
+    },
+    {
+      "id": "Q149",
+      "module": 5,
+      "type": "mcq",
+      "q": "An artisan receives payment for goods directly through a mobile money platform, improving cash flow and enabling reinvestment in the business. Which benefit of mobile phone use in financial inclusion does this best illustrate?",
+      "opts": [
+        "Cost-Effectiveness",
+        "Increased Economic Participation",
+        "Empowerment of Women and Vulnerable Groups",
+        "Increased Savings and Investment Opportunities"
+      ],
+      "ans": "Increased Economic Participation",
+      "exp": "The manual specifically uses artisans and businesses receiving payments through mobile money platforms as its example of Increased Economic Participation."
+    },
+    {
+      "id": "Q150",
+      "module": 5,
+      "type": "mcq",
+      "q": "According to the manual, why can mobile phone transactions be cheaper than traditional banking methods for low-income individuals?",
+      "opts": [
+        "Mobile money services reduce transaction costs, providing a more affordable means to save, borrow, and invest",
+        "Mobile transactions are entirely free of charge in all cases",
+        "Traditional banks are legally required to charge higher fees than mobile operators",
+        "Mobile phone companies subsidize all transaction costs for low-income users"
+      ],
+      "ans": "Mobile money services reduce transaction costs, providing a more affordable means to save, borrow, and invest",
+      "exp": "The manual states mobile money services reduce transaction costs and provide a more affordable means for individuals to save, borrow, and invest."
+    },
+    {
+      "id": "Q151",
+      "module": 5,
+      "type": "mcq",
+      "q": "The manual cites a smartphone priced at ₦50,000 as an example illustrating which specific challenge to mobile-phone-driven financial inclusion?",
+      "opts": [
+        "Digital Literacy and Education",
+        "Affordability and Access to Technology",
+        "Regulatory and Infrastructure Challenges",
+        "Security Concerns"
+      ],
+      "ans": "Affordability and Access to Technology",
+      "exp": "The manual uses the ₦50,000 smartphone example specifically to illustrate Affordability and Access to Technology."
+    },
+    {
+      "id": "Q152",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which challenge does the manual describe as including 'understanding how to navigate apps, carry out digital transactions and protect personal information'?",
+      "opts": [
+        "Affordability and Access to Technology",
+        "Digital Literacy and Education",
+        "Regulatory and Infrastructure Challenges",
+        "Limited Product Offerings"
+      ],
+      "ans": "Digital Literacy and Education",
+      "exp": "The manual explicitly defines Digital Literacy and Education as including the ability to navigate apps, carry out digital transactions, and protect personal information."
+    },
+    {
+      "id": "Q153",
+      "module": 5,
+      "type": "mcq",
+      "q": "Unreliable electricity and poor telecommunications networks disrupting service delivery are cited in the manual under which specific mobile banking challenge?",
+      "opts": [
+        "Security Concerns",
+        "Digital Literacy and Education",
+        "Regulatory and Infrastructure Challenges",
+        "Limited Product Offerings"
+      ],
+      "ans": "Regulatory and Infrastructure Challenges",
+      "exp": "The manual specifically attributes unreliable electricity and poor telecommunications networks to Regulatory and Infrastructure Challenges."
+    },
+    {
+      "id": "Q154",
+      "module": 5,
+      "type": "mcq",
+      "q": "Users worrying about the safety of their personal and financial information due to risks such as fraud and cyberattacks is described in the manual under which challenge to mobile financial services adoption?",
+      "opts": [
+        "Limited Product Offerings",
+        "Security Concerns",
+        "Affordability and Access to Technology",
+        "Regulatory and Infrastructure Challenges"
+      ],
+      "ans": "Security Concerns",
+      "exp": "The manual explicitly names Security Concerns as posing a significant challenge, with users worried about fraud and cyberattacks."
+    },
+    {
+      "id": "Q155",
+      "module": 5,
+      "type": "mcq",
+      "q": "Mobile financial products that are either too limited in scope and transaction limits, or too complicated to use, are described in the manual under which specific challenge?",
+      "opts": [
+        "Limited Product Offerings",
+        "Security Concerns",
+        "Digital Literacy and Education",
+        "Affordability and Access to Technology"
+      ],
+      "ans": "Limited Product Offerings",
+      "exp": "The manual specifically names Limited Product Offerings as the challenge where many existing mobile financial products do not adequately cater to all customers' needs."
+    },
+    {
+      "id": "Q156",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which platforms does the manual cite as allowing users to perform transactions, pay bills, and transfer money directly from mobile devices, illustrating accessibility to financial services?",
+      "opts": [
+        "Paga and Flutterwave",
+        "Piggyvest and Cowrywise",
+        "Interswitch and Kuda Bank",
+        "Carbon and FairMoney"
+      ],
+      "ans": "Paga and Flutterwave",
+      "exp": "The manual specifically cites Paga and Flutterwave as fintechs allowing users to perform transactions, pay bills, and transfer money directly from mobile devices."
+    },
+    {
+      "id": "Q157",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which platforms does the manual identify as enabling small and medium enterprises to process payments seamlessly, improving e-commerce through internet access?",
+      "opts": [
+        "Paga and MTN MoMo",
+        "Paystack and Flutterwave",
+        "Piggyvest and Cowrywise",
+        "Carbon and FairMoney"
+      ],
+      "ans": "Paystack and Flutterwave",
+      "exp": "The manual states that internet access has allowed platforms like Paystack and Flutterwave to significantly improve e-commerce."
+    },
+    {
+      "id": "Q158",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which platforms does the manual cite as providing online courses and resources that help individuals understand financial products, budgeting, and investment strategies?",
+      "opts": [
+        "Smart Stewards and Money Africa",
+        "Piggyvest and Cowrywise",
+        "Carbon and FairMoney",
+        "Paga and Opay"
+      ],
+      "ans": "Smart Stewards and Money Africa",
+      "exp": "The manual specifically names Smart Stewards and Money Africa as platforms providing online courses and resources for financial education."
+    },
+    {
+      "id": "Q159",
+      "module": 5,
+      "type": "mcq",
+      "q": "Digital wallets like Opay and Paga are cited in the manual as illustrating which specific benefit of internet access to financial inclusion?",
+      "opts": [
+        "Enhanced Security and Transparency",
+        "Cost-Effective Transactions",
+        "Digital Literacy and Financial Education",
+        "Support for Innovative Financial Products"
+      ],
+      "ans": "Cost-Effective Transactions",
+      "exp": "The manual specifically cites Opay and Paga as charging lower fees for money transfers and bill payments, illustrating Cost-Effective Transactions."
+    },
+    {
+      "id": "Q160",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which platform does the manual cite as ensuring users' financial information is protected through secure payment gateways and encryption technologies, thereby building trust in digital financial services?",
+      "opts": [
+        "Kuda Bank",
+        "Interswitch",
+        "Opay",
+        "Smart Stewards"
+      ],
+      "ans": "Interswitch",
+      "exp": "The manual specifically names Interswitch as implementing secure payment gateways and encryption technologies."
+    },
+    {
+      "id": "Q161",
+      "module": 5,
+      "type": "mcq",
+      "q": "Kuda Bank is cited in the manual as an example of which benefit of internet access to financial inclusion, specifically due to its zero maintenance fees and easy loan access catering to the unbanked population?",
+      "opts": [
+        "Enhanced Security and Transparency",
+        "Cost-Effective Transactions",
+        "Support for Innovative Financial Products",
+        "Digital Literacy and Financial Education"
+      ],
+      "ans": "Support for Innovative Financial Products",
+      "exp": "The manual specifically describes Kuda Bank, a neobank, as illustrating Support for Innovative Financial Products."
+    },
+    {
+      "id": "Q162",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which two Nigerian identification systems does the manual identify as central to enabling digital identity verification for financial inclusion?",
+      "opts": [
+        "Bank Verification Number (BVN) and Voter's Card",
+        "National Identification Number (NIN) and Bank Verification Number (BVN)",
+        "Passport Number and Driver's License",
+        "National Identification Number (NIN) and Tax Identification Number (TIN)"
+      ],
+      "ans": "National Identification Number (NIN) and Bank Verification Number (BVN)",
+      "exp": "The manual specifically states Nigeria has made significant progress with initiatives such as the National Identification Number (NIN) and Bank Verification Number (BVN)."
+    },
+    {
+      "id": "Q163",
+      "module": 5,
+      "type": "mcq",
+      "q": "The integration of NIN with BVN is cited in the manual as directly reducing which specific problem in Nigerian banks?",
+      "opts": [
+        "High transaction fees",
+        "Identity fraud",
+        "Slow internet connectivity",
+        "Currency exchange volatility"
+      ],
+      "ans": "Identity fraud",
+      "exp": "The manual states the integration of NIN with BVN has reduced the incidences of identity fraud in Nigerian banks."
+    },
+    {
+      "id": "Q164",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which platforms does the manual cite as relying on digital IDs to approve microloans, illustrating how verified identities build trust enabling access to credit?",
+      "opts": [
+        "Carbon and Fair Money",
+        "Paga and Flutterwave",
+        "Piggyvest and Cowrywise",
+        "Interswitch and Kuda Bank"
+      ],
+      "ans": "Carbon and Fair Money",
+      "exp": "The manual specifically names Carbon and Fair Money as platforms relying on digital IDs to approve microloans."
+    },
+    {
+      "id": "Q165",
+      "module": 5,
+      "type": "mcq",
+      "q": "Digital IDs such as NIN facilitating the efficient distribution of government subsidies and social benefits through financial institutions or mobile money operators is described in the manual as which benefit of digital ID systems?",
+      "opts": [
+        "KYC Simplification",
+        "Access to Credit",
+        "Government-to-Person Payments",
+        "Inclusivity for Underserved Populations"
+      ],
+      "ans": "Government-to-Person Payments",
+      "exp": "The manual explicitly names Government-to-Person Payments as the benefit whereby digital IDs like NIN facilitate efficient distribution of subsidies and social benefits."
+    },
+    {
+      "id": "Q166",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which population groups does the manual specifically identify as benefiting from Digital IDs enabling their inclusion despite historically lacking formal documentation?",
+      "opts": [
+        "High-net-worth individuals and corporate executives",
+        "Old people, women, and rural populations",
+        "University students and recent graduates only",
+        "Foreign nationals and diplomatic staff"
+      ],
+      "ans": "Old people, women, and rural populations",
+      "exp": "The manual specifically names old people, women, and rural populations as vulnerable groups often excluded due to lack of formal documentation."
+    },
+    {
+      "id": "Q167",
+      "module": 5,
+      "type": "mcq",
+      "q": "Limited internet penetration and smartphone adoption in rural areas is identified in the manual as which specific challenge to the integration of mobile phones, internet access, and digital ID systems?",
+      "opts": [
+        "Data Privacy Concerns",
+        "Digital Divide",
+        "Infrastructure Gaps",
+        "Regulatory and Infrastructure Challenges (as discussed in G.2.1)"
+      ],
+      "ans": "Digital Divide",
+      "exp": "The manual specifically names Digital Divide as limited internet penetration and smartphone adoption in rural areas."
+    },
+    {
+      "id": "Q168",
+      "module": 5,
+      "type": "mcq",
+      "q": "Risks associated with storing and sharing digital identities are described in the manual under which specific challenge in the Challenges and Opportunities section (G.2.3)?",
+      "opts": [
+        "Digital Divide",
+        "Data Privacy Concerns",
+        "Infrastructure Gaps",
+        "Limited Product Offerings"
+      ],
+      "ans": "Data Privacy Concerns",
+      "exp": "The manual specifically names Data Privacy Concerns as the risks associated with storing and sharing digital identities."
+    },
+    {
+      "id": "Q169",
+      "module": 5,
+      "type": "mcq",
+      "q": "Inconsistent electricity and mobile network coverage is specifically identified in the manual's Challenges and Opportunities section (G.2.3) under which challenge category?",
+      "opts": [
+        "Digital Divide",
+        "Data Privacy Concerns",
+        "Infrastructure Gaps",
+        "Security Concerns"
+      ],
+      "ans": "Infrastructure Gaps",
+      "exp": "The manual names Infrastructure Gaps specifically as inconsistent electricity and mobile network coverage, within the G.2.3 section."
+    },
+    {
+      "id": "Q170",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which opportunity does the manual identify as involving collaborations to expand mobile and internet connectivity?",
+      "opts": [
+        "Capacity Building",
+        "Regulatory Frameworks",
+        "Public-Private Partnerships",
+        "KYC Simplification"
+      ],
+      "ans": "Public-Private Partnerships",
+      "exp": "The manual names Public-Private Partnerships as the opportunity involving collaborations to expand mobile and internet connectivity."
+    },
+    {
+      "id": "Q171",
+      "module": 5,
+      "type": "mcq",
+      "q": "Education campaigns to promote digital literacy are identified in the manual as which specific opportunity for addressing financial inclusion challenges?",
+      "opts": [
+        "Public-Private Partnerships",
+        "Capacity Building",
+        "Regulatory Frameworks",
+        "Digital Divide"
+      ],
+      "ans": "Capacity Building",
+      "exp": "The manual explicitly names Capacity Building as education campaigns to promote digital literacy."
+    },
+    {
+      "id": "Q172",
+      "module": 5,
+      "type": "mcq",
+      "q": "Policies to enhance data security and support fintech innovation are identified in the manual as which opportunity for advancing financial inclusion?",
+      "opts": [
+        "Capacity Building",
+        "Public-Private Partnerships",
+        "Regulatory Frameworks",
+        "Government-to-Person Payments"
+      ],
+      "ans": "Regulatory Frameworks",
+      "exp": "The manual names Regulatory Frameworks as policies to enhance data security and support fintech innovation."
+    },
+    {
+      "id": "Q173",
+      "module": 5,
+      "type": "mcq",
+      "q": "A rural community has limited internet penetration and low smartphone adoption, but strong existing SMS network coverage. Based on the manual's mobile banking and digital ID content, which combination of services would be most appropriate to prioritize?",
+      "opts": [
+        "Blockchain-based smart contracts requiring high-speed internet",
+        "SMS Banking combined with NIN/BVN-based KYC simplification for account verification",
+        "Exclusively app-based digital wallets requiring smartphones",
+        "In-person branch banking only, avoiding any digital tools"
+      ],
+      "ans": "SMS Banking combined with NIN/BVN-based KYC simplification for account verification",
+      "exp": "Given strong SMS coverage but limited internet/smartphone access, SMS Banking combined with NIN/BVN digital ID verification for streamlined KYC would maximize inclusion."
+    },
+    {
+      "id": "Q174",
+      "module": 5,
+      "type": "mcq",
+      "q": "A fintech startup wants to extend credit to unbanked users who have valid national identification but no formal credit or banking history. Which combination of manual-cited digital tools would most directly enable this?",
+      "opts": [
+        "Interswitch's payment gateway alone",
+        "Digital ID verification (NIN/BVN) for KYC, combined with alternative credit assessment platforms like Carbon or Fair Money",
+        "Piggyvest's savings features alone",
+        "Sole reliance on physical branch verification, bypassing digital ID systems entirely"
+      ],
+      "ans": "Digital ID verification (NIN/BVN) for KYC, combined with alternative credit assessment platforms like Carbon or Fair Money",
+      "exp": "Digital ID systems (NIN/BVN) simplify KYC and build trust, while platforms like Carbon and Fair Money specifically rely on digital IDs to approve microloans."
+    },
+    {
+      "id": "Q175",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which statement best reflects the manual's overall framing of the relationship between mobile phones, internet access, and digital ID systems in enhancing financial inclusion?",
+      "opts": [
+        "Each of the three technologies operates entirely independently with no meaningful interaction",
+        "All three are integral and complementary — mobile phones and internet access extend service delivery, while digital ID systems enable trust and verification, together enhancing financial inclusion despite persistent challenges",
+        "Digital ID systems alone are sufficient to achieve full financial inclusion, regardless of connectivity",
+        "Internet access has superseded the need for mobile phones and digital ID systems entirely"
+      ],
+      "ans": "All three are integral and complementary — mobile phones and internet access extend service delivery, while digital ID systems enable trust and verification, together enhancing financial inclusion despite persistent challenges",
+      "exp": "The manual's Module Summary explicitly states that mobile phones, internet access, and digital ID systems are integral to enhancing financial inclusion, working together."
+    },
+    {
+      "id": "Q176",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank is designing a strategy to reach a community with limited internet penetration, low digital literacy, and no formal identification documents. Considering the full manual, which sequencing of the module's opportunities and prior modules' engagement strategies would be most appropriate?",
+      "opts": [
+        "Immediately deploy sophisticated blockchain-based products requiring high digital literacy",
+        "Pair Public-Private Partnerships to expand connectivity infrastructure with Capacity Building for digital literacy, while addressing documentation barriers through simplified account-opening approaches from Module 3",
+        "Wait until universal internet penetration is achieved before offering any services",
+        "Focus exclusively on Regulatory Frameworks, since data privacy is this community's primary concern"
+      ],
+      "ans": "Pair Public-Private Partnerships to expand connectivity infrastructure with Capacity Building for digital literacy, while addressing documentation barriers through simplified account-opening approaches from Module 3",
+      "exp": "This community exhibits infrastructure, literacy, and documentation gaps simultaneously — requiring a combined response drawing on Public-Private Partnerships, Capacity Building, and Module 3's simplified account-opening strategies."
+    },
+    {
+      "id": "Q177",
+      "module": 5,
+      "type": "mcq",
+      "q": "Considering the manual's full discussion of digital identity (Module 5) and its earlier reference to CBN's 95% formal inclusion goal (Module 1), which statement best captures how digital ID systems support that broader national target?",
+      "opts": [
+        "Digital ID systems are unrelated to the CBN's formal inclusion targets",
+        "By simplifying KYC, enabling credit access, and including previously undocumented vulnerable groups, digital ID systems directly address several structural barriers — such as lack of documentation (Module 3) — that stand in the way of reaching the CBN's 95% inclusion target",
+        "The CBN's 95% target applies only to mobile money, not digital ID systems",
+        "Digital ID systems have already fully achieved the CBN's 95% target as of the manual's writing"
+      ],
+      "ans": "By simplifying KYC, enabling credit access, and including previously undocumented vulnerable groups, digital ID systems directly address several structural barriers — such as lack of documentation (Module 3) — that stand in the way of reaching the CBN's 95% inclusion target",
+      "exp": "Digital ID systems directly address the 'lack of documentation' barrier identified in Module 3, while also enabling credit access and inclusion of vulnerable groups — connecting Module 5's mechanisms to Module 1's stated CBN goal of 95% formal inclusion."
+    },
+    {
+      "id": "Q178",
+      "module": 5,
+      "type": "mcq",
+      "q": "Reflecting on the manual as a whole, which statement best synthesizes how Modules 1 through 5 collectively frame the path to full financial inclusion in Nigeria?",
+      "opts": [
+        "Financial inclusion is achieved through a single intervention — expanding mobile money access — with no other contributing factors",
+        "Financial inclusion requires a combination of foundational access initiatives (Module 1), strategic retail banking commitment (Module 2), targeted engagement of the unbanked (Module 3), customer-centric product design (Module 4), and enabling technologies like mobile phones, internet, and digital ID (Module 5) — each addressing distinct but interconnected barriers",
+        "Only regulatory bodies such as the CBN are responsible for financial inclusion; retail banks play no meaningful role",
+        "Digital accessibility, discussed in Module 1, has no bearing on the technology-driven strategies discussed in Module 5"
+      ],
+      "ans": "Financial inclusion requires a combination of foundational access initiatives (Module 1), strategic retail banking commitment (Module 2), targeted engagement of the unbanked (Module 3), customer-centric product design (Module 4), and enabling technologies like mobile phones, internet, and digital ID (Module 5) — each addressing distinct but interconnected barriers",
+      "exp": "Across the five modules, the manual builds a layered argument: Module 1 establishes the foundational case, Module 2 frames inclusive banking as retail strategy, Module 3 addresses unbanked barriers, Module 4 translates this into product design, and Module 5 supplies enabling technologies."
+    }
+  ]
+}

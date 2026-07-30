@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
 <style>
+    /* (all styles – copy from the previous version, they're unchanged) */
     :root {
         --bg: #f1f3f8;
         --panel-bg: #ffffff;
@@ -79,7 +80,6 @@
     .card input{width:100%;padding:6px 8px;border:1px solid var(--border);border-radius:6px;background:var(--btn-bg);color:var(--text);font-family:var(--font);font-size:0.9rem}
     .empty-state{text-align:center;padding:60px 20px;color:var(--text-secondary)}
 
-    /* Excel-style sheet tabs */
     .sheet-tabs-bar{display:flex;align-items:center;gap:2px;padding:6px 16px;background:var(--panel-bg);border-bottom:1px solid var(--border);flex-shrink:0;overflow-x:auto}
     .sheet-tab{display:flex;align-items:center;gap:6px;padding:6px 12px;border:1px solid var(--border);border-bottom:none;border-radius:6px 6px 0 0;background:var(--btn-bg);color:var(--text-secondary);cursor:pointer;font-size:0.82rem;white-space:nowrap;position:relative}
     .sheet-tab.active{background:var(--panel-bg);color:var(--accent);font-weight:700;border-color:var(--accent)}
@@ -138,38 +138,184 @@ const EQU_TABS = {
 };
 
 function App() {
+    // --- State ---
     const [darkMode, setDarkMode] = useState(() => localStorage.getItem('wb_dark') === 'true');
     const [userId, setUserId] = useState(() => localStorage.getItem('wb_user') || '');
     const [pin, setPin] = useState('');
     const [isHubLogin, setIsHubLogin] = useState(false);
     const [syncStatus, setSyncStatus] = useState('');
     const [saveStatus, setSaveStatus] = useState('');
-    const [dataVersion, setDataVersion] = useState(0);
 
+    // The main data: { subjects: [...] }
     const [data, setData] = useState({ subjects: [] });
     const [view, setView] = useState('subjects');
     const [activeSubjectId, setActiveSubjectId] = useState(null);
     const [activeSheetIdx, setActiveSheetIdx] = useState(0);
 
+    // Editing states
     const [editingSubject, setEditingSubject] = useState(null);
     const [editingSheet, setEditingSheet] = useState(null);
-
     const [showEquEditor, setShowEquEditor] = useState(false);
     const [equTab, setEquTab] = useState('Operators');
     const [latexCode, setLatexCode] = useState('');
     const [equPreview, setEquPreview] = useState('');
+    const [mceError, setMceError] = useState('');
 
+    // Refs
     const editorRef = useRef(null);
     const equSetterRef = useRef(null);
     const editorWrapRef = useRef(null);
+    const idsRef = useRef({});
 
     const activeSubject = data.subjects.find(s => s.id === activeSubjectId) || null;
     const activeSheet = activeSubject ? activeSubject.sheets[activeSheetIdx] : null;
 
-    const idsRef = useRef({});
-    useEffect(() => { idsRef.current = { activeSubjectId, activeSheetIdx }; }, [activeSubjectId, activeSheetIdx]);
+    // --- Helper: get storage key for current user ---
+    const getStorageKey = useCallback(() => {
+        return 'wb_data_' + (userId || 'default');
+    }, [userId]);
 
-    /* ---- Hub login ---- */
+    // --- Save to localStorage (immediate) ---
+    const saveLocal = useCallback((newData) => {
+        try {
+            localStorage.setItem(getStorageKey(), JSON.stringify(newData));
+            setSaveStatus('💾 Saved ' + new Date().toLocaleTimeString());
+            setTimeout(() => setSaveStatus(''), 3000);
+            return true;
+        } catch (e) {
+            console.warn('localStorage save failed', e);
+            return false;
+        }
+    }, [getStorageKey]);
+
+    // --- Load from localStorage ---
+    const loadLocal = useCallback(() => {
+        try {
+            const raw = localStorage.getItem(getStorageKey());
+            if (raw) {
+                const parsed = JSON.parse(raw);
+                // Ensure it has a subjects array
+                if (parsed && Array.isArray(parsed.subjects)) {
+                    return parsed;
+                }
+            }
+        } catch (e) {
+            console.warn('localStorage load failed', e);
+        }
+        return null;
+    }, [getStorageKey]);
+
+    // --- Push to cloud (background) ---
+    const pushToCloud = useCallback((subjectsData) => {
+        if (userId && /^\d{4}$/.test(pin)) {
+            import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => {
+                pushWorkbooksToCloud(userId, subjectsData);
+                setSyncStatus('☁️ Uploaded');
+                setTimeout(() => setSyncStatus(''), 3000);
+            }).catch(() => {});
+        }
+    }, [userId, pin]);
+
+    // --- Pull from cloud (manual restore only) ---
+    const pullFromCloud = useCallback(() => {
+        if (!userId || !/^\d{4}$/.test(pin)) {
+            alert('Please enter a valid 4‑digit PIN to restore from cloud.');
+            return;
+        }
+        if (!confirm('This will replace all your current workbooks with the cloud version. Continue?')) return;
+        setSyncStatus('☁️ Restoring…');
+        import('./workbook-sync.js').then(({ verifyAndPullWorkbooks }) => {
+            verifyAndPullWorkbooks(userId, pin).then(result => {
+                if (!result.ok) {
+                    setSyncStatus('⚠ ' + result.reason);
+                    setTimeout(() => setSyncStatus(''), 4000);
+                    return;
+                }
+                if (result.data && Array.isArray(result.data)) {
+                    const cloudData = { subjects: result.data };
+                    setData(cloudData);
+                    saveLocal(cloudData);
+                    setSyncStatus('☁️ Restored from cloud');
+                    setTimeout(() => setSyncStatus(''), 3000);
+                } else {
+                    setSyncStatus('☁️ No cloud data found');
+                    setTimeout(() => setSyncStatus(''), 3000);
+                }
+            }).catch(err => {
+                setSyncStatus('⚠ Restore failed');
+                setTimeout(() => setSyncStatus(''), 3000);
+                console.warn(err);
+            });
+        }).catch(() => {});
+    }, [userId, pin, saveLocal]);
+
+    // --- Load on userId or page load ---
+    useEffect(() => {
+        // Load from localStorage
+        const local = loadLocal();
+        if (local && local.subjects && local.subjects.length > 0) {
+            setData(local);
+            setView('subjects');
+            setActiveSubjectId(null);
+            setDataVersion(v => v + 1);
+            setSyncStatus('✅ Loaded from local');
+            setTimeout(() => setSyncStatus(''), 2000);
+        } else {
+            // No local data – check cloud only if we have a PIN
+            if (userId && /^\d{4}$/.test(pin)) {
+                setSyncStatus('☁️ Checking cloud…');
+                import('./workbook-sync.js').then(({ verifyAndPullWorkbooks }) => {
+                    verifyAndPullWorkbooks(userId, pin).then(result => {
+                        if (result.ok && result.data && Array.isArray(result.data) && result.data.length > 0) {
+                            const cloudData = { subjects: result.data };
+                            setData(cloudData);
+                            saveLocal(cloudData);
+                            setSyncStatus('☁️ Restored from cloud');
+                            setTimeout(() => setSyncStatus(''), 2000);
+                        } else {
+                            // Nothing anywhere – start empty
+                            setData({ subjects: [] });
+                            saveLocal({ subjects: [] });
+                            setSyncStatus('📓 Ready');
+                            setTimeout(() => setSyncStatus(''), 2000);
+                        }
+                    }).catch(() => {
+                        // Cloud unavailable – start empty
+                        setData({ subjects: [] });
+                        saveLocal({ subjects: [] });
+                        setSyncStatus('⚠ Offline mode');
+                        setTimeout(() => setSyncStatus(''), 2000);
+                    });
+                }).catch(() => {
+                    // Sync module failed – start empty
+                    setData({ subjects: [] });
+                    saveLocal({ subjects: [] });
+                    setSyncStatus('⚠ Offline');
+                    setTimeout(() => setSyncStatus(''), 2000);
+                });
+            } else {
+                // No PIN – start empty
+                setData({ subjects: [] });
+                saveLocal({ subjects: [] });
+                setSyncStatus('📓 Ready');
+                setTimeout(() => setSyncStatus(''), 2000);
+            }
+        }
+    }, [userId, pin, loadLocal, saveLocal]);
+
+    // --- Auto-save to localStorage whenever data changes ---
+    useEffect(() => {
+        if (data && data.subjects) {
+            saveLocal(data);
+            // Also upload to cloud in background (debounced)
+            const timer = setTimeout(() => {
+                pushToCloud(data.subjects);
+            }, 800);
+            return () => clearTimeout(timer);
+        }
+    }, [data, saveLocal, pushToCloud]);
+
+    // --- Hub login detection ---
     useEffect(() => {
         const name = localStorage.getItem('qb_global_user');
         const hubPin = localStorage.getItem('qb_global_pin');
@@ -178,101 +324,9 @@ function App() {
 
     useEffect(() => { if (userId) localStorage.setItem('wb_user', userId); }, [userId]);
     useEffect(() => { localStorage.setItem('wb_dark', darkMode); document.body.className = darkMode ? 'dark' : ''; }, [darkMode]);
+    useEffect(() => { idsRef.current = { activeSubjectId, activeSheetIdx }; }, [activeSubjectId, activeSheetIdx]);
 
-    /* ---- Push to cloud helper (with console logging) ---- */
-    const pushToCloud = useCallback((subjectsData) => {
-        if (userId && /^\d{4}$/.test(pin)) {
-            import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => {
-                pushWorkbooksToCloud(userId, subjectsData);
-            }).catch(err => console.warn('push import failed', err));
-        } else {
-            console.warn('push skipped – no valid PIN');
-        }
-    }, [userId, pin]);
-
-    /* ============================ SAFE LOAD LOGIC ============================ */
-    useEffect(() => {
-        const storageKey = 'wb_data_' + (userId || 'default');
-        let localData = null;
-        let localLastModified = 0;
-
-        // 1. Read local storage
-        try {
-            const saved = localStorage.getItem(storageKey);
-            if (saved) {
-                localData = JSON.parse(saved);
-                localLastModified = localData._lastModified || 0;
-                delete localData._lastModified;
-            }
-        } catch (e) { console.warn('local parse error', e); }
-
-        // 2. Set UI from local storage immediately (fast)
-        const initialSubjects = localData && localData.subjects ? localData.subjects : [];
-        setData({ subjects: initialSubjects });
-        setView('subjects');
-        setActiveSubjectId(null);
-        setDataVersion(v => v + 1);
-
-        // 3. If no PIN, we're done – local storage is the source of truth
-        if (!userId || !/^\d{4}$/.test(pin)) {
-            setSyncStatus('');
-            return;
-        }
-
-        // 4. Check cloud – but NEVER overwrite local with empty cloud data
-        setSyncStatus('☁️ Checking…');
-        import('./workbook-sync.js').then(({ verifyAndPullWorkbooks }) => {
-            verifyAndPullWorkbooks(userId, pin).then(result => {
-                if (!result.ok) { setSyncStatus('⚠ ' + result.reason); return; }
-
-                const cloudData = result.data;
-                const cloudUpdatedAt = result.updatedAt || 0;
-
-                const localHasData = localData && localData.subjects && localData.subjects.length > 0;
-                const cloudHasData = cloudData && Array.isArray(cloudData) && cloudData.length > 0;
-
-                console.log('Local has data:', localHasData, 'Last mod:', localLastModified);
-                console.log('Cloud has data:', cloudHasData, 'Updated:', cloudUpdatedAt);
-
-                // DECISION: If local has data, we ALWAYS keep it and push to cloud.
-                if (localHasData) {
-                    // Push local to cloud so the cloud catches up (even if cloud is newer but empty)
-                    pushToCloud(userId, localData.subjects);
-                    setSyncStatus('☁️ Synced (local kept, cloud updated)');
-                }
-                // If local is empty but cloud has data → restore from cloud
-                else if (!localHasData && cloudHasData) {
-                    setData({ subjects: cloudData });
-                    localStorage.setItem(storageKey, JSON.stringify({ subjects: cloudData, _lastModified: cloudUpdatedAt }));
-                    setSyncStatus('☁️ Synced (restored from cloud)');
-                }
-                // If both empty → nothing
-                else {
-                    setSyncStatus('☁️ Synced (no data)');
-                }
-                setDataVersion(v => v + 1);
-            }).catch(err => { setSyncStatus('⚠ Sync unavailable'); console.warn(err); });
-        }).catch(err => { setSyncStatus('⚠ Sync unavailable'); console.warn(err); });
-    }, [userId, pin, pushToCloud]);
-
-    /* ---- Persist locally + push to cloud on every change ---- */
-    useEffect(() => {
-        const storageKey = 'wb_data_' + (userId || 'default');
-        const now = Date.now();
-        const dataToSave = { ...data, _lastModified: now };
-        localStorage.setItem(storageKey, JSON.stringify(dataToSave));
-        setSaveStatus('💾 Saved ' + new Date().toLocaleTimeString());
-        const t = setTimeout(() => setSaveStatus(''), 3000);
-
-        // Debounced cloud push (only if PIN valid)
-        const timer = setTimeout(() => {
-            pushToCloud(data.subjects);
-        }, 600);
-        return () => { clearTimeout(t); clearTimeout(timer); };
-    }, [data, userId, pushToCloud]);
-
-    /* ---- TinyMCE init (unchanged) ---- */
-    const [mceError, setMceError] = useState('');
+    // --- TinyMCE (unchanged) ---
     useEffect(() => {
         let attempts = 0;
         const tryInit = () => {
@@ -320,9 +374,9 @@ function App() {
 
     useEffect(() => {
         if (editorRef.current && activeSheet) editorRef.current.setContent(activeSheet.content || '');
-    }, [activeSubjectId, activeSheetIdx, dataVersion]);
+    }, [activeSubjectId, activeSheetIdx]);
 
-    /* ---- Equation modal (unchanged) ---- */
+    // --- Equation modal (unchanged) ---
     useEffect(() => { equSetterRef.current = setShowEquEditor; }, []);
     const updatePreview = (code) => {
         try { setEquPreview(katex.renderToString(code, { throwOnError: false })); } catch { setEquPreview(''); }
@@ -365,7 +419,7 @@ function App() {
         </div>, document.body
     ) : null;
 
-    /* ---- Subject CRUD (unchanged) ---- */
+    // --- Subject CRUD (unchanged) ---
     const addSubject = () => {
         const name = prompt('Name this subject/course (e.g. "Accounting"):');
         if (!name || !name.trim()) return;
@@ -381,10 +435,9 @@ function App() {
         setActiveSubjectId(id);
         setActiveSheetIdx(0);
         setView('editor');
-        setDataVersion(v => v + 1);
     };
 
-    /* ---- Sheet CRUD (unchanged) ---- */
+    // --- Sheet CRUD (unchanged) ---
     const addSheet = () => {
         if (!activeSubject) return;
         const nextNum = activeSubject.sheets.length + 1;
@@ -403,10 +456,9 @@ function App() {
         if (!confirm('Delete this sheet?')) return;
         setData(prev => ({ subjects: prev.subjects.map(s => s.id !== activeSubjectId ? s : { ...s, sheets: s.sheets.filter((_, i) => i !== idx) }) }));
         setActiveSheetIdx(prev => Math.max(0, Math.min(prev, activeSubject.sheets.length - 2)));
-        setDataVersion(v => v + 1);
     };
 
-    /* ---- Export/Import (unchanged) ---- */
+    // --- Export/Import (unchanged) ---
     const exportJSON = () => {
         const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
         const a = document.createElement('a');
@@ -462,21 +514,18 @@ function App() {
         setTimeout(() => win.print(), 500);
     };
 
-    const manualSync = () => {
+    // --- Manual sync (push) and restore (pull) ---
+    const manualPush = () => {
         if (!userId || !/^\d{4}$/.test(pin)) {
             setSyncStatus('⚠ Enter a valid 4‑digit PIN first');
             setTimeout(() => setSyncStatus(''), 3000);
             return;
         }
-        setSyncStatus('☁️ Syncing…');
-        import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => {
-            pushWorkbooksToCloud(userId, data.subjects);
-            setSyncStatus('☁️ Synced');
-            setTimeout(() => setSyncStatus(''), 2000);
-        }).catch(() => setSyncStatus('⚠ Sync failed'));
+        setSyncStatus('☁️ Uploading…');
+        pushToCloud(data.subjects);
     };
 
-    /* ================= RENDER ================= */
+    // --- Render ---
     return (
         <React.Fragment>
             <div className="toolbar">
@@ -493,7 +542,8 @@ function App() {
                 <button onClick={() => document.getElementById('importInput')?.click()}>📥 Import JSON</button>
                 <input id="importInput" type="file" accept=".json" style={{ display: 'none' }} onChange={importJSON} />
                 <button onClick={exportPDF}>📄 PDF</button>
-                <button onClick={manualSync} title="Push to cloud now">☁️ Sync Now</button>
+                <button onClick={manualPush} title="Push to cloud">☁️ Sync Now</button>
+                <button onClick={pullFromCloud} title="Restore from cloud (overwrites local)">⬇️ Restore from Cloud</button>
                 {saveStatus && <span className="save-indicator">{saveStatus}</span>}
                 {syncStatus && <span className={'sync-indicator' + (syncStatus.includes('⚠') ? ' error' : '')}>{syncStatus}</span>}
             </div>

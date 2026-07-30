@@ -1,4 +1,10 @@
-/* workbook-sync.js — cross-device sync for the Practice Workbooks tool */
+/* workbook-sync.js — cross-device backup/restore for Practice Workbooks
+ * ============================================================
+ * This module does NOT control the app state. It only provides
+ * functions to push the current data to Firebase and to pull
+ * data on explicit user request.
+ * ============================================================ */
+
 import { initializeApp, getApps, getApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
 import {
   getFirestore,
@@ -52,16 +58,12 @@ export async function verifyAndPullWorkbooks(name, pin) {
     const wbSnap = await getDoc(wbRef);
     if (wbSnap.exists() && wbSnap.data().subjects) {
       try {
-        return {
-          ok: true,
-          data: JSON.parse(wbSnap.data().subjects),
-          updatedAt: wbSnap.data().updatedAt || 0
-        };
+        return { ok: true, data: JSON.parse(wbSnap.data().subjects) };
       } catch {
-        return { ok: true, data: null, updatedAt: 0 };
+        return { ok: true, data: null };
       }
     }
-    return { ok: true, data: null, updatedAt: 0 };
+    return { ok: true, data: null };
   } catch (e) {
     console.warn("workbook-sync: pull failed", e);
     return { ok: false, reason: "Network error – please try again later." };
@@ -72,10 +74,12 @@ let pushTimer = null;
 
 export function pushWorkbooksToCloud(name, subjectsArray) {
   const lname = (name || '').trim().toLowerCase();
+  // Only push if we have a verified user (i.e., a valid PIN)
   if (verifiedName !== lname || !verifiedPinHash) {
     console.warn("workbook-sync: push skipped – not verified for", lname);
     return;
   }
+
   clearTimeout(pushTimer);
   pushTimer = setTimeout(async () => {
     try {

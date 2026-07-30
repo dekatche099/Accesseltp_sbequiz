@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
 <style>
-    /* (all styles – copy from the previous version, they're unchanged) */
+    /* (all styles – same as before, copy from the previous full version) */
     :root {
         --bg: #f1f3f8;
         --panel-bg: #ffffff;
@@ -116,6 +116,12 @@
 <script type="text/babel">
 const { useState, useEffect, useRef, useCallback } = React;
 
+// Import sync module once (no repeated dynamic imports)
+import {
+    pushWorkbooksToCloud,
+    verifyAndPullWorkbooks
+} from './workbook-sync.js';
+
 function newId() { return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8); }
 function newSheet(name) { return { id: newId(), name: name, content: '' }; }
 function newSubject(name) { return { id: newId(), name, sheets: [newSheet('Sheet 1')] }; }
@@ -145,14 +151,14 @@ function App() {
     const [isHubLogin, setIsHubLogin] = useState(false);
     const [syncStatus, setSyncStatus] = useState('');
     const [saveStatus, setSaveStatus] = useState('');
+    // Flag to indicate that initial data has been loaded into state
+    const [loaded, setLoaded] = useState(false);
 
-    // The main data: { subjects: [...] }
     const [data, setData] = useState({ subjects: [] });
     const [view, setView] = useState('subjects');
     const [activeSubjectId, setActiveSubjectId] = useState(null);
     const [activeSheetIdx, setActiveSheetIdx] = useState(0);
 
-    // Editing states
     const [editingSubject, setEditingSubject] = useState(null);
     const [editingSheet, setEditingSheet] = useState(null);
     const [showEquEditor, setShowEquEditor] = useState(false);
@@ -166,162 +172,152 @@ function App() {
     const equSetterRef = useRef(null);
     const editorWrapRef = useRef(null);
     const idsRef = useRef({});
+    // Storage key – we lock it only after resolving the final user
+    const storageKeyRef = useRef(null);
+    // Timeout ID for status messages
+    const statusTimerRef = useRef(null);
 
     const activeSubject = data.subjects.find(s => s.id === activeSubjectId) || null;
     const activeSheet = activeSubject ? activeSubject.sheets[activeSheetIdx] : null;
 
-    // --- Helper: get storage key for current user ---
-    const getStorageKey = useCallback(() => {
-        return 'wb_data_' + (userId || 'default');
-    }, [userId]);
-
-    // --- Save to localStorage (immediate) ---
-    const saveLocal = useCallback((newData) => {
-        try {
-            localStorage.setItem(getStorageKey(), JSON.stringify(newData));
-            setSaveStatus('💾 Saved ' + new Date().toLocaleTimeString());
-            setTimeout(() => setSaveStatus(''), 3000);
-            return true;
-        } catch (e) {
-            console.warn('localStorage save failed', e);
-            return false;
-        }
-    }, [getStorageKey]);
-
-    // --- Load from localStorage ---
-    const loadLocal = useCallback(() => {
-        try {
-            const raw = localStorage.getItem(getStorageKey());
-            if (raw) {
-                const parsed = JSON.parse(raw);
-                // Ensure it has a subjects array
-                if (parsed && Array.isArray(parsed.subjects)) {
-                    return parsed;
-                }
-            }
-        } catch (e) {
-            console.warn('localStorage load failed', e);
-        }
-        return null;
-    }, [getStorageKey]);
-
-    // --- Push to cloud (background) ---
-    const pushToCloud = useCallback((subjectsData) => {
-        if (userId && /^\d{4}$/.test(pin)) {
-            import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => {
-                pushWorkbooksToCloud(userId, subjectsData);
-                setSyncStatus('☁️ Uploaded');
-                setTimeout(() => setSyncStatus(''), 3000);
-            }).catch(() => {});
-        }
-    }, [userId, pin]);
-
-    // --- Pull from cloud (manual restore only) ---
-    const pullFromCloud = useCallback(() => {
-        if (!userId || !/^\d{4}$/.test(pin)) {
-            alert('Please enter a valid 4‑digit PIN to restore from cloud.');
-            return;
-        }
-        if (!confirm('This will replace all your current workbooks with the cloud version. Continue?')) return;
-        setSyncStatus('☁️ Restoring…');
-        import('./workbook-sync.js').then(({ verifyAndPullWorkbooks }) => {
-            verifyAndPullWorkbooks(userId, pin).then(result => {
-                if (!result.ok) {
-                    setSyncStatus('⚠ ' + result.reason);
-                    setTimeout(() => setSyncStatus(''), 4000);
-                    return;
-                }
-                if (result.data && Array.isArray(result.data)) {
-                    const cloudData = { subjects: result.data };
-                    setData(cloudData);
-                    saveLocal(cloudData);
-                    setSyncStatus('☁️ Restored from cloud');
-                    setTimeout(() => setSyncStatus(''), 3000);
-                } else {
-                    setSyncStatus('☁️ No cloud data found');
-                    setTimeout(() => setSyncStatus(''), 3000);
-                }
-            }).catch(err => {
-                setSyncStatus('⚠ Restore failed');
-                setTimeout(() => setSyncStatus(''), 3000);
-                console.warn(err);
-            });
-        }).catch(() => {});
-    }, [userId, pin, saveLocal]);
-
-    // --- Load on userId or page load ---
-    useEffect(() => {
-        // Load from localStorage
-        const local = loadLocal();
-        if (local && local.subjects && local.subjects.length > 0) {
-            setData(local);
-            setView('subjects');
-            setActiveSubjectId(null);
-            setDataVersion(v => v + 1);
-            setSyncStatus('✅ Loaded from local');
-            setTimeout(() => setSyncStatus(''), 2000);
-        } else {
-            // No local data – check cloud only if we have a PIN
-            if (userId && /^\d{4}$/.test(pin)) {
-                setSyncStatus('☁️ Checking cloud…');
-                import('./workbook-sync.js').then(({ verifyAndPullWorkbooks }) => {
-                    verifyAndPullWorkbooks(userId, pin).then(result => {
-                        if (result.ok && result.data && Array.isArray(result.data) && result.data.length > 0) {
-                            const cloudData = { subjects: result.data };
-                            setData(cloudData);
-                            saveLocal(cloudData);
-                            setSyncStatus('☁️ Restored from cloud');
-                            setTimeout(() => setSyncStatus(''), 2000);
-                        } else {
-                            // Nothing anywhere – start empty
-                            setData({ subjects: [] });
-                            saveLocal({ subjects: [] });
-                            setSyncStatus('📓 Ready');
-                            setTimeout(() => setSyncStatus(''), 2000);
-                        }
-                    }).catch(() => {
-                        // Cloud unavailable – start empty
-                        setData({ subjects: [] });
-                        saveLocal({ subjects: [] });
-                        setSyncStatus('⚠ Offline mode');
-                        setTimeout(() => setSyncStatus(''), 2000);
-                    });
-                }).catch(() => {
-                    // Sync module failed – start empty
-                    setData({ subjects: [] });
-                    saveLocal({ subjects: [] });
-                    setSyncStatus('⚠ Offline');
-                    setTimeout(() => setSyncStatus(''), 2000);
-                });
-            } else {
-                // No PIN – start empty
-                setData({ subjects: [] });
-                saveLocal({ subjects: [] });
-                setSyncStatus('📓 Ready');
-                setTimeout(() => setSyncStatus(''), 2000);
-            }
-        }
-    }, [userId, pin, loadLocal, saveLocal]);
-
-    // --- Auto-save to localStorage whenever data changes ---
-    useEffect(() => {
-        if (data && data.subjects) {
-            saveLocal(data);
-            // Also upload to cloud in background (debounced)
-            const timer = setTimeout(() => {
-                pushToCloud(data.subjects);
-            }, 800);
-            return () => clearTimeout(timer);
-        }
-    }, [data, saveLocal, pushToCloud]);
+    // --- Helper to set sync status (clears previous timer) ---
+    const setSyncStatusWithTimeout = (msg, delay = 2000) => {
+        if (statusTimerRef.current) clearTimeout(statusTimerRef.current);
+        setSyncStatus(msg);
+        statusTimerRef.current = setTimeout(() => {
+            setSyncStatus('');
+            statusTimerRef.current = null;
+        }, delay);
+    };
 
     // --- Hub login detection ---
     useEffect(() => {
         const name = localStorage.getItem('qb_global_user');
         const hubPin = localStorage.getItem('qb_global_pin');
-        if (name && hubPin) { setIsHubLogin(true); setUserId(name); setPin(hubPin); }
+        if (name && hubPin) {
+            setIsHubLogin(true);
+            setUserId(name);
+            setPin(hubPin);
+        }
+        // Note: we don't set loaded here, we'll do that after loading data.
     }, []);
 
+    // --- Resolve storage key (only once, after we know the user) ---
+    const resolveStorageKey = useCallback(() => {
+        if (storageKeyRef.current) return storageKeyRef.current;
+
+        // Determine effective user: hub login takes priority over manual input
+        const effectiveUser = (isHubLogin && userId) ? userId : (userId || 'default');
+        const key = 'wb_data_' + effectiveUser;
+
+        // If hub login and we previously had a default key, migrate its content
+        if (isHubLogin && userId) {
+            const defaultKey = 'wb_data_default';
+            const hasDefault = localStorage.getItem(defaultKey) !== null;
+            const hasUser = localStorage.getItem(key) !== null;
+            if (hasDefault && !hasUser) {
+                try {
+                    const defaultData = JSON.parse(localStorage.getItem(defaultKey));
+                    localStorage.setItem(key, JSON.stringify(defaultData));
+                    localStorage.removeItem(defaultKey);
+                } catch (e) {}
+            }
+        }
+
+        storageKeyRef.current = key;
+        return key;
+    }, [isHubLogin, userId]);
+
+    // --- Loader: runs when userId or isHubLogin changes, but only if not yet loaded ---
+    useEffect(() => {
+        // Prevent re‑loading after initial load
+        if (loaded) return;
+
+        // Wait until we have a definitive user (either hub login resolved or user manually entered)
+        // If hub login is in progress but userId is empty, wait.
+        if (isHubLogin && !userId) return;
+
+        const key = resolveStorageKey();
+        let localData = null;
+        try {
+            const raw = localStorage.getItem(key);
+            if (raw) {
+                const parsed = JSON.parse(raw);
+                if (parsed && Array.isArray(parsed.subjects)) {
+                    localData = parsed;
+                }
+            }
+        } catch (e) {}
+
+        if (localData) {
+            setData(localData);
+            setLoaded(true);
+            setSyncStatusWithTimeout('✅ Loaded from local', 2000);
+        } else {
+            // No local data – try cloud if we have a PIN
+            if (userId && /^\d{4}$/.test(pin)) {
+                setSyncStatusWithTimeout('☁️ Checking cloud…', 6000);
+                verifyAndPullWorkbooks(userId, pin).then(result => {
+                    if (result.ok && result.data && Array.isArray(result.data) && result.data.length > 0) {
+                        const cloudData = { subjects: result.data };
+                        setData(cloudData);
+                        // Save to local
+                        localStorage.setItem(key, JSON.stringify(cloudData));
+                        setLoaded(true);
+                        setSyncStatusWithTimeout('☁️ Restored from cloud', 2000);
+                    } else {
+                        // Nothing – start empty
+                        setData({ subjects: [] });
+                        setLoaded(true);
+                        setSyncStatusWithTimeout('📓 Ready', 2000);
+                    }
+                }).catch(() => {
+                    // Cloud unavailable – start empty
+                    setData({ subjects: [] });
+                    setLoaded(true);
+                    setSyncStatusWithTimeout('⚠ Offline', 2000);
+                });
+            } else {
+                // No PIN – start empty
+                setData({ subjects: [] });
+                setLoaded(true);
+                setSyncStatusWithTimeout('📓 Ready', 2000);
+            }
+        }
+        // We do NOT write empty state here.
+    }, [userId, pin, isHubLogin, loaded, resolveStorageKey]);
+
+    // --- Autosave: whenever data changes (only after loaded) ---
+    const saveLocal = useCallback((newData) => {
+        if (!loaded) return; // still loading
+        const key = storageKeyRef.current;
+        if (!key) return;
+        try {
+            localStorage.setItem(key, JSON.stringify(newData));
+            setSaveStatus('💾 Saved ' + new Date().toLocaleTimeString());
+            const t = setTimeout(() => setSaveStatus(''), 3000);
+            return () => clearTimeout(t);
+        } catch (e) {
+            console.warn('localStorage save failed', e);
+            return false;
+        }
+    }, [loaded]);
+
+    useEffect(() => {
+        if (!loaded) return;
+        const key = storageKeyRef.current;
+        if (!key) return;
+        // Save to localStorage
+        saveLocal(data);
+        // Upload to cloud (only if PIN valid) – the sync module already debounces
+        if (userId && /^\d{4}$/.test(pin)) {
+            pushWorkbooksToCloud(userId, data.subjects);
+            // We set status briefly – will be overridden by sync module's internal status if needed.
+            setSyncStatusWithTimeout('☁️ Uploading…', 1000);
+        }
+    }, [data, userId, pin, loaded, saveLocal]);
+
+    // --- Other settings ---
     useEffect(() => { if (userId) localStorage.setItem('wb_user', userId); }, [userId]);
     useEffect(() => { localStorage.setItem('wb_dark', darkMode); document.body.className = darkMode ? 'dark' : ''; }, [darkMode]);
     useEffect(() => { idsRef.current = { activeSubjectId, activeSheetIdx }; }, [activeSubjectId, activeSheetIdx]);
@@ -517,12 +513,38 @@ function App() {
     // --- Manual sync (push) and restore (pull) ---
     const manualPush = () => {
         if (!userId || !/^\d{4}$/.test(pin)) {
-            setSyncStatus('⚠ Enter a valid 4‑digit PIN first');
-            setTimeout(() => setSyncStatus(''), 3000);
+            setSyncStatusWithTimeout('⚠ Enter a valid 4‑digit PIN first', 3000);
             return;
         }
-        setSyncStatus('☁️ Uploading…');
-        pushToCloud(data.subjects);
+        setSyncStatusWithTimeout('☁️ Uploading…', 3000);
+        pushWorkbooksToCloud(userId, data.subjects);
+    };
+
+    const pullFromCloud = () => {
+        if (!userId || !/^\d{4}$/.test(pin)) {
+            alert('Please enter a valid 4‑digit PIN to restore from cloud.');
+            return;
+        }
+        if (!confirm('This will replace all your current workbooks with the cloud version. Continue?')) return;
+        setSyncStatusWithTimeout('☁️ Restoring…', 5000);
+        verifyAndPullWorkbooks(userId, pin).then(result => {
+            if (!result.ok) {
+                setSyncStatusWithTimeout('⚠ ' + result.reason, 3000);
+                return;
+            }
+            if (result.data && Array.isArray(result.data)) {
+                const cloudData = { subjects: result.data };
+                setData(cloudData);
+                const key = storageKeyRef.current;
+                if (key) localStorage.setItem(key, JSON.stringify(cloudData));
+                setSyncStatusWithTimeout('☁️ Restored from cloud', 2000);
+            } else {
+                setSyncStatusWithTimeout('☁️ No cloud data found', 3000);
+            }
+        }).catch(err => {
+            setSyncStatusWithTimeout('⚠ Restore failed', 3000);
+            console.warn(err);
+        });
     };
 
     // --- Render ---

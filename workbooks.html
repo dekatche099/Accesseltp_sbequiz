@@ -10,6 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.8.3/tinymce.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.4.12/dist/purify.min.js"></script>
 <style>
     /* (all styles – same as before, copy from the previous full version) */
     :root {
@@ -108,22 +109,58 @@
     .equ-cancel-btn{padding:8px 20px;background:transparent;color:var(--text-secondary);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;font-size:0.9rem;float:right;margin-right:8px}
     .clearfix::after{content:"";display:table;clear:both}
 
+    /* Question panel (above the answer editor) + edit modal */
+    .question-add-row{padding:8px 16px;flex-shrink:0}
+    .question-add-row button{padding:6px 14px;border:1px dashed var(--accent);border-radius:var(--radius-sm);background:transparent;color:var(--accent);cursor:pointer;font-size:0.82rem;font-weight:600;font-family:var(--font)}
+    .question-panel{border:1px solid var(--border);border-radius:var(--radius);margin:0 16px 10px;background:var(--panel-bg);flex-shrink:0;overflow:hidden}
+    .question-panel-header{display:flex;align-items:center;gap:10px;padding:8px 14px;background:var(--btn-bg);border-bottom:1px solid var(--border)}
+    .question-panel-header .qp-label{font-weight:700;font-size:0.82rem;color:var(--text-secondary);flex:1}
+    .question-panel-header button{padding:4px 10px;font-size:0.75rem;border:1px solid var(--border);border-radius:6px;background:var(--panel-bg);color:var(--text);cursor:pointer;font-family:var(--font)}
+    .question-panel-body{padding:14px 16px;max-height:38vh;overflow-y:auto;font-size:0.92rem;line-height:1.5}
+    .question-panel-body table{border-collapse:collapse;max-width:100%}
+    .question-panel-body td,.question-panel-body th{border:1px solid var(--border);padding:5px 8px}
+    .question-panel-resize-handle{height:12px;display:flex;align-items:center;justify-content:center;cursor:ns-resize;background:var(--btn-bg);border-top:1px solid var(--border);user-select:none;touch-action:none}
+    .question-panel-resize-handle:hover{background:var(--btn-hover)}
+    .question-panel-resize-handle .grip{width:32px;height:3px;border-radius:2px;background:var(--border)}
+    .question-panel-resize-handle:hover .grip{background:var(--accent)}
+    .question-panel-hidden-strip{display:flex;align-items:center;padding:6px 14px;background:var(--btn-bg);border:1px solid var(--border);border-radius:var(--radius-sm);margin:0 16px 10px;flex-shrink:0;cursor:pointer;color:var(--text-secondary);font-size:0.8rem;font-weight:600}
+    .question-panel-hidden-strip:hover{background:var(--btn-hover)}
+
+    .question-modal{background:var(--panel-bg);border-radius:var(--radius);padding:20px;max-width:750px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,0.3);border:1px solid var(--border);max-height:90vh;display:flex;flex-direction:column}
+    .question-modal h3{margin-bottom:6px}
+    .question-modal .qm-hint{font-size:0.78rem;color:var(--text-secondary);margin-bottom:12px}
+    .question-editable{flex:1;min-height:260px;max-height:50vh;overflow-y:auto;border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;background:var(--btn-bg);color:var(--text);font-size:0.92rem;line-height:1.5;margin-bottom:14px}
+    .question-editable:focus{outline:2px solid var(--accent);outline-offset:-1px}
+    .question-editable table{border-collapse:collapse;max-width:100%}
+    .question-editable td,.question-editable th{border:1px solid var(--border);padding:5px 8px}
+    .question-editable:empty:before{content:attr(data-placeholder);color:var(--text-secondary);pointer-events:none}
+    .question-modal-actions{display:flex;justify-content:space-between;align-items:center}
+    .question-remove-btn{padding:8px 16px;background:transparent;color:var(--danger);border:1px solid var(--danger);border-radius:var(--radius-sm);cursor:pointer;font-size:0.85rem;font-family:var(--font)}
+
+    /* First-launch / on-demand guide */
+    .guide-modal{background:var(--panel-bg);border-radius:var(--radius);padding:24px 28px;max-width:600px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,0.3);border:1px solid var(--border);max-height:85vh;overflow-y:auto}
+    .guide-modal h2{margin-bottom:4px}
+    .guide-modal .guide-sub{font-size:0.85rem;color:var(--text-secondary);margin-bottom:18px}
+    .guide-step{display:flex;gap:12px;margin-bottom:16px}
+    .guide-step .g-icon{font-size:1.3rem;flex-shrink:0;width:32px;text-align:center}
+    .guide-step .g-text h4{font-size:0.92rem;margin-bottom:3px}
+    .guide-step .g-text p{font-size:0.82rem;color:var(--text-secondary);line-height:1.45}
+    .guide-close-btn{width:100%;padding:10px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius-sm);cursor:pointer;font-weight:600;font-size:0.9rem;margin-top:8px;font-family:var(--font)}
+    .guide-btn{padding:6px 10px;border:1px solid var(--border);border-radius:50%;background:var(--btn-bg);color:var(--text);cursor:pointer;font-weight:700;width:32px;height:32px;font-family:var(--font)}
+
     @media(max-width:600px){.content-area{padding:16px 12px}.breadcrumb{padding:8px 14px}}
 </style>
 </head>
 <body>
 <div id="root"></div>
-<script type="text/babel" data-type="module">
+<script type="text/babel">
 const { useState, useEffect, useRef, useCallback } = React;
 
-// Import sync module once (no repeated dynamic imports)
-import {
-    pushWorkbooksToCloud,
-    verifyAndPullWorkbooks
-} from './workbook-sync.js';
-
 function newId() { return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8); }
-function newSheet(name) { return { id: newId(), name: name, content: '' }; }
+function escapeHtml(str) {
+    return String(str ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function newSheet(name) { return { id: newId(), name: name, content: '', prompt: '', promptVisible: true }; }
 function newSubject(name) { return { id: newId(), name, sheets: [newSheet('Sheet 1')] }; }
 
 const EQU_TABS = {
@@ -168,11 +205,26 @@ function App() {
     const [latexCode, setLatexCode] = useState('');
     const [equPreview, setEquPreview] = useState('');
     const [mceError, setMceError] = useState('');
+    const [showQuestionModal, setShowQuestionModal] = useState(false);
+    const [showGuide, setShowGuide] = useState(false);
+
+    // First-launch guide: shows automatically once per browser, then only on request via the "?" button.
+    useEffect(() => {
+        try {
+            if (!localStorage.getItem('wb_guide_seen')) {
+                setShowGuide(true);
+                localStorage.setItem('wb_guide_seen', 'true');
+            }
+        } catch { /* localStorage unavailable — skip auto-show, "?" button still works */ }
+    }, []);
 
     // Refs
     const editorRef = useRef(null);
     const equSetterRef = useRef(null);
     const editorWrapRef = useRef(null);
+    const questionEditorRef = useRef(null);
+    const [questionPanelHeight, setQuestionPanelHeight] = useState(null); // null = use CSS default (38vh)
+    const resizeStateRef = useRef(null);
     const idsRef = useRef({});
     // Storage key – we lock it only after resolving the final user
     const storageKeyRef = useRef(null);
@@ -266,7 +318,7 @@ function App() {
             // No local data – try cloud if we have a PIN
             if (userId && /^\d{4}$/.test(pin)) {
                 setSyncStatusWithTimeout('☁️ Checking cloud…', 6000);
-                verifyAndPullWorkbooks(userId, pin).then(result => {
+                import('./workbook-sync.js').then(({ verifyAndPullWorkbooks }) => verifyAndPullWorkbooks(userId, pin)).then(result => {
                     if (result.ok && result.data && Array.isArray(result.data) && result.data.length > 0) {
                         const cloudData = { subjects: result.data };
                         setData(cloudData);
@@ -322,7 +374,7 @@ function App() {
         saveLocal(data);
         // Upload to cloud (only if PIN valid) – the sync module already debounces
         if (userId && /^\d{4}$/.test(pin)) {
-            pushWorkbooksToCloud(userId, data.subjects);
+            import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => pushWorkbooksToCloud(userId, data.subjects));
             // We set status briefly – will be overridden by sync module's internal status if needed.
             setSyncStatusWithTimeout('☁️ Uploading…', 1000);
         }
@@ -426,7 +478,119 @@ function App() {
         </div>, document.body
     ) : null;
 
-    // --- Subject CRUD (unchanged) ---
+    // --- Question panel: separate from the answer editor entirely. Opens a plain
+    // contenteditable modal (not TinyMCE) so pasted Word/Docs/webpage content keeps
+    // its tables and formatting. Sanitized with DOMPurify at the moment it's saved,
+    // and re-sanitized defensively whenever it's rendered back out. ---
+    const openQuestionModal = () => {
+        setShowQuestionModal(true);
+    };
+    useEffect(() => {
+        if (showQuestionModal && questionEditorRef.current) {
+            questionEditorRef.current.innerHTML = (activeSheet && activeSheet.prompt) || '';
+        }
+    }, [showQuestionModal]);
+    const saveQuestion = () => {
+        const raw = questionEditorRef.current ? questionEditorRef.current.innerHTML : '';
+        const clean = window.DOMPurify ? DOMPurify.sanitize(raw) : '';
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id !== activeSubjectId ? s : {
+                ...s, sheets: s.sheets.map((sh, i) => i === activeSheetIdx ? { ...sh, prompt: clean, promptVisible: true } : sh)
+            })
+        }));
+        setShowQuestionModal(false);
+    };
+    const removeQuestion = () => {
+        if (!confirm('Remove this question? Your answer in the editor below will not be affected.')) return;
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id !== activeSubjectId ? s : {
+                ...s, sheets: s.sheets.map((sh, i) => i === activeSheetIdx ? { ...sh, prompt: '' } : sh)
+            })
+        }));
+        setShowQuestionModal(false);
+    };
+    const toggleQuestionVisible = () => {
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id !== activeSubjectId ? s : {
+                ...s, sheets: s.sheets.map((sh, i) => i === activeSheetIdx ? { ...sh, promptVisible: !sh.promptVisible } : sh)
+            })
+        }));
+    };
+
+    // --- Question panel resize handle: drag to grow/shrink, works for both mouse and touch ---
+    const clampPanelHeight = (h) => Math.max(80, Math.min(window.innerHeight * 0.75, h));
+    const onResizeQuestionMove = (clientY) => {
+        if (!resizeStateRef.current) return;
+        const delta = clientY - resizeStateRef.current.startY;
+        setQuestionPanelHeight(clampPanelHeight(resizeStateRef.current.startHeight + delta));
+    };
+    const onResizeMouseMove = (e) => onResizeQuestionMove(e.clientY);
+    const onResizeTouchMove = (e) => { if (e.touches && e.touches[0]) onResizeQuestionMove(e.touches[0].clientY); };
+    const onResizeEnd = () => {
+        resizeStateRef.current = null;
+        document.removeEventListener('mousemove', onResizeMouseMove);
+        document.removeEventListener('mouseup', onResizeEnd);
+        document.removeEventListener('touchmove', onResizeTouchMove);
+        document.removeEventListener('touchend', onResizeEnd);
+    };
+    const startResizeQuestion = (e) => {
+        e.preventDefault();
+        const startY = e.touches ? e.touches[0].clientY : e.clientY;
+        const bodyEl = document.getElementById('question-panel-body-el');
+        const startHeight = questionPanelHeight || (bodyEl ? bodyEl.getBoundingClientRect().height : 200);
+        resizeStateRef.current = { startY, startHeight };
+        document.addEventListener('mousemove', onResizeMouseMove);
+        document.addEventListener('mouseup', onResizeEnd);
+        document.addEventListener('touchmove', onResizeTouchMove, { passive: false });
+        document.addEventListener('touchend', onResizeEnd);
+    };
+    const questionModal = showQuestionModal ? ReactDOM.createPortal(
+        <div className="modal-overlay" onClick={() => setShowQuestionModal(false)}>
+            <div className="question-modal" onClick={e => e.stopPropagation()}>
+                <h3>{activeSheet && activeSheet.prompt ? 'Edit Question' : 'Add Question'}</h3>
+                <div className="qm-hint">Paste from Word, a webpage, or a document — tables and formatting are kept. (Copying from a PDF often loses table structure; that's a PDF limitation, not this editor.)</div>
+                <div ref={questionEditorRef} className="question-editable" contentEditable="true"
+                    data-placeholder="Paste or type the question here…" suppressContentEditableWarning={true} />
+                <div className="question-modal-actions">
+                    <div>
+                        {activeSheet && activeSheet.prompt && (
+                            <button className="question-remove-btn" onClick={removeQuestion}>Remove Question</button>
+                        )}
+                    </div>
+                    <div className="clearfix">
+                        <button className="equ-cancel-btn" onClick={() => setShowQuestionModal(false)}>Cancel</button>
+                        <button className="equ-save-btn" onClick={saveQuestion}>Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>, document.body
+    ) : null;
+
+    // --- Guide: plain-language walkthrough, auto-shown once, reachable anytime via the "?" button ---
+    const GUIDE_STEPS = [
+        { icon: '📚', title: 'Subjects', text: 'Start by creating a Subject — a course or category, like "Accounting" or "Banking Operations." Everything else lives inside one.' },
+        { icon: '📑', title: 'Sheets', text: 'Inside a subject, sheets work like Excel tabs. Click "+" to add one, double-click a tab to rename it, click a tab to switch to it.' },
+        { icon: '✍️', title: 'Answer editor', text: 'The big box is where you write and practice — draw tables from the Table menu, format text, and use the Ω button for equations (fractions, Greek letters, and more).' },
+        { icon: '📄', title: 'Question panel', text: 'Click "+ Add Question" to paste in a question exactly as it appears in your textbook, a Word doc, or a webpage — tables and formatting are kept. It sits above the answer editor, separate from it, so you can read the question while you write. Edit or Hide it anytime; drag the bottom edge to resize it.' },
+        { icon: '☁️', title: 'Saving & sync', text: 'Everything saves automatically as you type. Enter a 4-digit PIN (top right) to sync your workbooks across devices using the same login as the rest of the platform.' },
+        { icon: '📤', title: 'Export', text: 'Use the Excel, PDF, or JSON buttons to export your work — the PDF includes both your questions and answers, so it reads as a complete study record.' }
+    ];
+    const guideModal = showGuide ? ReactDOM.createPortal(
+        <div className="modal-overlay" onClick={() => setShowGuide(false)}>
+            <div className="guide-modal" onClick={e => e.stopPropagation()}>
+                <h2>📓 Welcome to Practice Workbooks</h2>
+                <div className="guide-sub">A quick look at how everything fits together. You can reopen this anytime with the "?" button.</div>
+                {GUIDE_STEPS.map((step, i) => (
+                    <div className="guide-step" key={i}>
+                        <div className="g-icon">{step.icon}</div>
+                        <div className="g-text"><h4>{step.title}</h4><p>{step.text}</p></div>
+                    </div>
+                ))}
+                <button className="guide-close-btn" onClick={() => setShowGuide(false)}>Got it — let's start</button>
+            </div>
+        </div>, document.body
+    ) : null;
+
     const addSubject = () => {
         const name = prompt('Name this subject/course (e.g. "Accounting"):');
         if (!name || !name.trim()) return;
@@ -497,21 +661,34 @@ function App() {
     const exportPDF = () => {
         const win = window.open('', '_blank');
         if (!win) { alert('Please allow popups for this site.'); return; }
-        let html = `<html><head><title>Workbooks - ${userId || 'My Workbooks'}</title>
+        let html = `<html><head><title>Workbooks - ${escapeHtml(userId) || 'My Workbooks'}</title>
             <style>body{font-family:Arial,sans-serif;padding:30px;max-width:1000px;margin:auto}
             h1{color:#4f46e5;border-bottom:2px solid #ddd;padding-bottom:8px}
             .subject{page-break-before:always;margin-top:30px}
             .subject h2{color:#1c2230;margin:20px 0 10px}
             .sheet{margin:20px 0;border:1px solid #ddd;padding:16px;border-radius:8px;background:#fafafa}
             .sheet h3{margin:0 0 10px;color:#333}
+            .question-box{background:#eef2ff;border:1px solid #c7d2fe;border-left:4px solid #4f46e5;border-radius:6px;padding:10px 14px;margin-bottom:14px;font-size:13px;line-height:1.5}
+            .question-box .qb-label{font-weight:bold;color:#4f46e5;font-size:11px;text-transform:uppercase;letter-spacing:0.03em;display:block;margin-bottom:6px}
+            .question-box table{border-collapse:collapse;max-width:100%}
+            .question-box td,.question-box th{border:1px solid #c7d2fe;padding:4px 8px}
             .content{font-size:14px;line-height:1.6}
+            .content table{border-collapse:collapse;max-width:100%}
+            .content td,.content th{border:1px solid #ddd;padding:4px 8px}
             .footer{margin-top:40px;color:#777;text-align:center}
-    </style></head><body><h1>📓 Practice Workbooks</h1><p>User: ${userId || 'Not logged in'}</p>`;
+    </style></head><body><h1>📓 Practice Workbooks</h1><p>User: ${escapeHtml(userId) || 'Not logged in'}</p>`;
         data.subjects.forEach(subj => {
-            html += `<div class="subject"><h2>${subj.name}</h2>`;
+            html += `<div class="subject"><h2>${escapeHtml(subj.name)}</h2>`;
             subj.sheets.forEach((sh, idx) => {
-                const content = sh.content || '<em>Empty sheet</em>';
-                html += `<div class="sheet"><h3>${sh.name}</h3><div class="content">${content}</div></div>`;
+                const cleanPrompt = sh.prompt && window.DOMPurify ? DOMPurify.sanitize(sh.prompt) : '';
+                const questionBlock = cleanPrompt
+                    ? `<div class="question-box"><span class="qb-label">Question</span>${cleanPrompt}</div>`
+                    : '';
+                // sh.content is rich HTML from the answer editor — sanitize it here too, the same
+                // way sh.prompt already is. This matters most for imported JSON files (someone else's
+                // export), since that content never passed through TinyMCE's own filtering on this device.
+                const content = sh.content && window.DOMPurify ? DOMPurify.sanitize(sh.content) : (sh.content || '<em>Empty sheet</em>');
+                html += `<div class="sheet"><h3>${escapeHtml(sh.name)}</h3>${questionBlock}<div class="content">${content}</div></div>`;
             });
             html += `</div>`;
         });
@@ -528,7 +705,7 @@ function App() {
             return;
         }
         setSyncStatusWithTimeout('☁️ Uploading…', 3000);
-        pushWorkbooksToCloud(userId, data.subjects);
+        import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => pushWorkbooksToCloud(userId, data.subjects));
     };
 
     const pullFromCloud = () => {
@@ -538,7 +715,7 @@ function App() {
         }
         if (!confirm('This will replace all your current workbooks with the cloud version. Continue?')) return;
         setSyncStatusWithTimeout('☁️ Restoring…', 5000);
-        verifyAndPullWorkbooks(userId, pin).then(result => {
+        import('./workbook-sync.js').then(({ verifyAndPullWorkbooks }) => verifyAndPullWorkbooks(userId, pin)).then(result => {
             if (!result.ok) {
                 setSyncStatusWithTimeout('⚠ ' + result.reason, 3000);
                 return;
@@ -570,6 +747,7 @@ function App() {
                         <input value={pin} onChange={e => setPin(e.target.value.replace(/\D/g, '').slice(0, 4))} placeholder="PIN (optional)" maxLength={4} inputMode="numeric" style={{ width: 90 }} />
                     </React.Fragment>
                 )}
+                <button className="guide-btn" onClick={() => setShowGuide(true)} title="How this works">?</button>
                 <button onClick={() => setDarkMode(!darkMode)}>{darkMode ? '☀️' : '🌙'}</button>
                 <button onClick={exportJSON}>📤 Export JSON</button>
                 <button onClick={() => document.getElementById('importInput')?.click()}>📥 Import JSON</button>
@@ -643,6 +821,34 @@ function App() {
                 {activeSubject && <button className="sheet-tab-add" onClick={addSheet} title="Add sheet">+</button>}
             </div>
 
+            {view === 'editor' && activeSheet && !activeSheet.prompt && (
+                <div className="question-add-row">
+                    <button onClick={openQuestionModal}>+ Add Question</button>
+                </div>
+            )}
+
+            {view === 'editor' && activeSheet && activeSheet.prompt && activeSheet.promptVisible && (
+                <div className="question-panel">
+                    <div className="question-panel-header">
+                        <span className="qp-label">📄 Question</span>
+                        <button onClick={openQuestionModal}>Edit</button>
+                        <button onClick={toggleQuestionVisible}>Hide</button>
+                    </div>
+                    <div id="question-panel-body-el" className="question-panel-body"
+                        style={questionPanelHeight ? { height: questionPanelHeight + 'px', maxHeight: questionPanelHeight + 'px' } : undefined}
+                        dangerouslySetInnerHTML={{ __html: window.DOMPurify ? DOMPurify.sanitize(activeSheet.prompt) : '' }} />
+                    <div className="question-panel-resize-handle" onMouseDown={startResizeQuestion} onTouchStart={startResizeQuestion} title="Drag to resize">
+                        <div className="grip"></div>
+                    </div>
+                </div>
+            )}
+
+            {view === 'editor' && activeSheet && activeSheet.prompt && !activeSheet.promptVisible && (
+                <div className="question-panel-hidden-strip" onClick={toggleQuestionVisible}>
+                    ▸ Show Question
+                </div>
+            )}
+
             <div className="editor-wrap" style={{ display: (view === 'editor' && activeSubject) ? 'flex' : 'none' }} ref={editorWrapRef}>
                 <div className="editor-fill">
                     <textarea id="wb-rich-editor"></textarea>
@@ -654,6 +860,8 @@ function App() {
             )}
 
             {equationModal}
+            {questionModal}
+            {guideModal}
         </React.Fragment>
     );
 }

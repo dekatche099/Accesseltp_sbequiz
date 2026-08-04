@@ -1,0 +1,3907 @@
+{
+  "meta": {
+    "id": "ethical-banking",
+    "title": "Ethical Banking & Customer Trust",
+    "description": "275 MCQs covering ethics, compliance, integrity culture, moral reasoning, and transparent customer communication in retail banking",
+    "category": "",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      },
+      {
+        "count": 75,
+        "minutes": 90
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1: Introduction to Ethical Banking and Customer Trust"
+    },
+    {
+      "id": 2,
+      "title": "Module 2: Understanding the Role of Compliance in Retail Banking"
+    },
+    {
+      "id": 3,
+      "title": "Module 3: Building a Culture of Integrity in Retail Banking"
+    },
+    {
+      "id": 4,
+      "title": "Module 4: Ethical Decision-Making Framework: The Moral Reasoning Model"
+    },
+    {
+      "id": 5,
+      "title": "Module 5: Ethics, Transparency, and Customer Communication"
+    },
+    {
+      "id": 6,
+      "title": "Module 6: Case Studies — TrustBank, BrightBank, Wells Fargo & BankCCure"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary meaning of ethics in the context of retail banking?",
+      "opts": [
+        "A. Following all legal requirements without exception",
+        "B. Moral principles that guide behavior to ensure actions are right, fair, and just",
+        "C. Maximizing shareholder returns through efficient operations",
+        "D. Implementing the latest digital banking technologies"
+      ],
+      "ans": "B",
+      "exp": "Ethics refers to moral principles that guide individual or organizational behaviour, ensuring actions are right, fair, and just. In retail banking, this involves fostering trust, transparency, and fairness in all transactions and customer interactions."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which ethical principle requires a bank employee to be honest and moral in every action, even when no one is watching?",
+      "opts": [
+        "A. Transparency",
+        "B. Fairness",
+        "C. Integrity",
+        "D. Responsibility"
+      ],
+      "ans": "C",
+      "exp": "Integrity means being honest and moral in every action. An example is a bank employee refusing to manipulate loan applications to meet targets, even under pressure."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank employee ensures that all customers, regardless of their background, have equal access to loan products. Which ethical principle is being demonstrated?",
+      "opts": [
+        "A. Confidentiality",
+        "B. Fairness",
+        "C. Responsibility",
+        "D. Transparency"
+      ],
+      "ans": "B",
+      "exp": "Fairness involves treating all customers equitably. Ensuring equal access to loan products regardless of background is a direct application of this principle."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "Before a customer signs a mortgage agreement, the bank officer explains all associated fees, including processing charges and early repayment penalties. This action best reflects which ethical principle?",
+      "opts": [
+        "A. Integrity",
+        "B. Responsibility",
+        "C. Transparency",
+        "D. Confidentiality"
+      ],
+      "ans": "C",
+      "exp": "Transparency means clearly explaining products, services, and fees upfront. The example of explaining all mortgage fees before signing demonstrates this principle."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which ethical principle is violated when a bank employee shares a customer's personal financial data with a third party without authorization?",
+      "opts": [
+        "A. Fairness",
+        "B. Responsibility",
+        "C. Transparency",
+        "D. Confidentiality"
+      ],
+      "ans": "D",
+      "exp": "Confidentiality requires protecting customer privacy and data. Unauthorized disclosure of personal information is a direct breach of this principle."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "If a bank's online platform experiences an outage preventing customers from making transactions, which action best demonstrates the principle of responsibility?",
+      "opts": [
+        "A. Blaming the IT vendor for the issue",
+        "B. Acknowledging the issue publicly and providing timely updates",
+        "C. Waiting for the system to recover before communicating",
+        "D. Offering compensation only to customers who complain"
+      ],
+      "ans": "B",
+      "exp": "Responsibility involves owning up to actions and their outcomes. Acknowledging the issue publicly, providing timely updates, investigating the cause, and compensating affected customers are all part of responsible behavior."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "Selling a financial product to a customer who neither needs it nor can afford it, primarily to meet sales targets, is known as:",
+      "opts": [
+        "A. Fraud",
+        "B. Discrimination",
+        "C. Mis-selling",
+        "D. Data breach"
+      ],
+      "ans": "C",
+      "exp": "Mis-selling occurs when financial products are sold to customers who do not need them or cannot afford them, often driven by pressure to meet sales targets."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank employee fabricates loan documentation to approve a transaction that would otherwise be rejected. This action constitutes:",
+      "opts": [
+        "A. Mis-selling",
+        "B. Fraud",
+        "C. Discrimination",
+        "D. Negligence"
+      ],
+      "ans": "B",
+      "exp": "Fraud involves willfully lying to obtain an unfair or illegal financial advantage. Fabricating paperwork to authorize a loan is a clear example."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "Denying a loan application based solely on the applicant's ethnicity, without any financial justification, is an example of:",
+      "opts": [
+        "A. Mis-selling",
+        "B. Fraud",
+        "C. Discrimination",
+        "D. Data breach"
+      ],
+      "ans": "C",
+      "exp": "Discrimination means treating customers unfairly based on gender, ethnicity, religion, or other personal characteristics. Denying loans on ethnic grounds without valid financial reasons is a violation."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank employee sells customer data to a marketing firm for personal gain. This unethical act is classified as:",
+      "opts": [
+        "A. Mis-selling",
+        "B. Fraud",
+        "C. Discrimination",
+        "D. Data breach"
+      ],
+      "ans": "D",
+      "exp": "A data breach involves unauthorized access or sharing of customer data. Selling sensitive information for personal gain is a serious breach of confidentiality and security."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a direct consequence of unethical banking practices on customer relationships?",
+      "opts": [
+        "A. Increased customer loyalty",
+        "B. Lower regulatory scrutiny",
+        "C. Loss of customer trust",
+        "D. Higher employee morale"
+      ],
+      "ans": "C",
+      "exp": "Unethical practices like mis-selling, fraud, discrimination, and data breaches lead to customer distrust. Customers feel betrayed and may withdraw accounts or refuse future business."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "When a bank faces regulatory fines, lawsuits, and potential loss of licenses due to unethical conduct, this is categorized as:",
+      "opts": [
+        "A. Reputational damage",
+        "B. Loss of customer trust",
+        "C. Legal issues",
+        "D. Operational disruption"
+      ],
+      "ans": "C",
+      "exp": "Legal issues include regulatory fines, lawsuits, and potential loss of licenses. These are direct consequences of non-compliance and unethical practices."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "Public exposure of a bank's unethical behavior leading to negative press and a damaged brand image is referred to as:",
+      "opts": [
+        "A. Legal issues",
+        "B. Reputational damage",
+        "C. Financial loss",
+        "D. Customer churn"
+      ],
+      "ans": "B",
+      "exp": "Reputational damage occurs when public exposure of unethical behavior leads to negative press, harming the bank's brand and market position."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which factor is most essential for building long-term customer trust in retail banking?",
+      "opts": [
+        "A. High interest rates on savings",
+        "B. A wide network of ATMs",
+        "C. Consistent and reliable service delivery",
+        "D. Frequent promotional campaigns"
+      ],
+      "ans": "C",
+      "exp": "Consistency—reliable service delivery over time—is a key factor that builds trust. Customers value predictability and dependability in their banking relationships."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank advises a customer against purchasing an investment product because it does not suit the customer's risk profile, even though it would generate a commission for the bank. This action demonstrates which trust-building factor?",
+      "opts": [
+        "A. Delivering on promises",
+        "B. Effective communication",
+        "C. Honesty",
+        "D. Consistency"
+      ],
+      "ans": "C",
+      "exp": "Honesty means truthful communication about products and terms. Advising against unsuitable products, even at the cost of a sale, builds trust through integrity."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer discovers unexplained maintenance fees deducted from their 'zero charges' savings account. This experience primarily erodes trust through:",
+      "opts": [
+        "A. Data breaches",
+        "B. Hidden charges",
+        "C. Poor customer service",
+        "D. Inconsistent service"
+      ],
+      "ans": "B",
+      "exp": "Hidden charges—unexplained deductions from accounts—are a common complaint that erodes trust. When a bank markets 'zero charges' but deducts fees, customers feel misled."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best defines trust in the banking context?",
+      "opts": [
+        "A. A belief that the bank will always approve loan applications",
+        "B. The belief in the reliability, transparency, integrity, and competence of the bank",
+        "C. An assurance that the bank will offer the highest interest rates",
+        "D. A guarantee that all transactions will be free of charge"
+      ],
+      "ans": "B",
+      "exp": "Trust is the belief in the reliability, transparency, integrity, and competence of an organization. In banking, it allows customers to confidently rely on their bank for financial security."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank that clearly explains all fees, terms, and product features before a customer signs a contract is practicing:",
+      "opts": [
+        "A. Consistency",
+        "B. Delivering on promises",
+        "C. Effective communication",
+        "D. Honesty"
+      ],
+      "ans": "C",
+      "exp": "Effective communication involves providing clear explanations of fees, terms, and product features upfront. This builds trust by reducing surprises."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "When a bank guarantees fixed deposit terms and does not unexpectedly change them during the tenure, it is demonstrating:",
+      "opts": [
+        "A. Honesty",
+        "B. Delivering on promises",
+        "C. Effective communication",
+        "D. Transparency"
+      ],
+      "ans": "B",
+      "exp": "Delivering on promises means following through on commitments. Guaranteeing fixed deposit terms without unexpected changes builds trust."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT a factor that builds customer trust?",
+      "opts": [
+        "A. Consistency in service",
+        "B. Transparent communication",
+        "C. Unilateral changes to account terms",
+        "D. Honest advice about products"
+      ],
+      "ans": "C",
+      "exp": "Unilateral changes to account terms erode trust. Trust is built through consistency, honesty, delivering on promises, and effective communication—not arbitrary changes."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary responsibility of a banker as a custodian of customer funds and data?",
+      "opts": [
+        "A. Maximizing profits for the bank",
+        "B. Safeguarding money and sensitive information through strict security practices",
+        "C. Promoting the bank's newest products to every customer",
+        "D. Minimizing operational costs"
+      ],
+      "ans": "B",
+      "exp": "As custodians of customer funds and data, bankers must always safeguard money and sensitive information by following strict security practices. This is a core ethical duty."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "When a banker identifies a potential conflict of interest or unethical pressure from management, the appropriate response is to:",
+      "opts": [
+        "A. Ignore it to avoid confrontation",
+        "B. Report it to management or the compliance team",
+        "C. Follow the manager's instruction to maintain job security",
+        "D. Seek advice from a colleague informally"
+      ],
+      "ans": "B",
+      "exp": "Bankers must escalate concerns by reporting potential fraud or ethical issues to management or compliance teams. This is a key responsibility in upholding ethical standards."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "A banker who educates customers about financial products and risks to help them make informed decisions is fulfilling which responsibility?",
+      "opts": [
+        "A. Regulatory compliance",
+        "B. Transparency",
+        "C. Promoting financial literacy",
+        "D. Professional complaint handling"
+      ],
+      "ans": "C",
+      "exp": "Promoting financial literacy involves educating customers to make informed financial decisions. This helps customers understand products and risks, building long-term trust."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "When a customer raises a complaint, the ethical banker should:",
+      "opts": [
+        "A. Defend the bank's position without listening",
+        "B. Escalate the complaint immediately without investigation",
+        "C. Address the issue promptly and ethically",
+        "D. Advise the customer to write a formal letter"
+      ],
+      "ans": "C",
+      "exp": "Professional complaint handling requires addressing customer issues promptly and ethically. This preserves trust and demonstrates accountability."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "Balancing business goals with customer interests means:",
+      "opts": [
+        "A. Always prioritizing sales targets over customer needs",
+        "B. Achieving business objectives without compromising customer trust or interests",
+        "C. Giving customers whatever they ask for regardless of business viability",
+        "D. Focusing solely on regulatory compliance"
+      ],
+      "ans": "B",
+      "exp": "Balancing business and customer needs involves working on achieving business goals without compromising customer trust or interests. This requires ethical judgment."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a common ethical dilemma a banker might face?",
+      "opts": [
+        "A. Choosing between two equally profitable investments",
+        "B. Deciding whether to overlook a customer's minor violation to maintain a relationship",
+        "C. Selecting which software to use for data processing",
+        "D. Determining the best marketing strategy for a new product"
+      ],
+      "ans": "B",
+      "exp": "Common ethical dilemmas include conflicts of interest, deceptive sales practices, or unethical pressures—such as deciding whether to overlook a violation for relationship reasons."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the BankCCure case, the relationship officer convinced Mr. Jabari to invest in a fixed-term plan despite knowing he relied on his savings for daily expenses. This action was unethical primarily because:",
+      "opts": [
+        "A. The product had high returns",
+        "B. The officer misrepresented the withdrawal terms",
+        "C. The minimum investment was too high",
+        "D. The customer was not a high-net-worth individual"
+      ],
+      "ans": "B",
+      "exp": "The officer assured Mr. Jabari that he could withdraw funds at any time without penalties, which was contrary to the product's terms. This misrepresentation led to financial distress."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "type": "mcq",
+      "q": "What ethical principle did the BankCCure officer violate by not explaining the early withdrawal penalties?",
+      "opts": [
+        "A. Integrity",
+        "B. Transparency",
+        "C. Responsibility",
+        "D. Confidentiality"
+      ],
+      "ans": "B",
+      "exp": "Transparency requires clear explanation of terms and conditions. By failing to disclose the early withdrawal penalties, the officer violated transparency."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "type": "mcq",
+      "q": "To prevent mis-selling incidents like the BankCCure case, what process should the bank implement?",
+      "opts": [
+        "A. Increase sales targets to motivate staff",
+        "B. Require dual sign-off on product recommendations for high-risk customers",
+        "C. Reduce customer education efforts to speed up transactions",
+        "D. Allow verbal promises to override written terms"
+      ],
+      "ans": "B",
+      "exp": "Banks should implement processes such as dual sign-off on product recommendations, enhanced training, and clear disclosure requirements to prevent mis-selling."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "type": "mcq",
+      "q": "The TrustBank scandal in Ghana involved widespread misrepresentation of loan terms and unauthorized charges. What was a direct consequence of these unethical practices?",
+      "opts": [
+        "A. Increased market share",
+        "B. A 20% closure of customer accounts within six months",
+        "C. Higher employee satisfaction",
+        "D. Reduced regulatory oversight"
+      ],
+      "ans": "B",
+      "exp": "Over 20% of TrustBank's customers closed their accounts within six months due to the scandal, leading to a drop in market share and a GH₵5 billion regulatory fine."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the TrustBank case, employees revealed pressure to meet unrealistic sales targets, which contributed to unethical behaviour. This highlights the importance of:",
+      "opts": [
+        "A. Setting even higher targets to drive performance",
+        "B. Aligning incentive structures with ethical conduct",
+        "C. Ignoring employee morale when pursuing profits",
+        "D. Outsourcing sales functions"
+      ],
+      "ans": "B",
+      "exp": "Unrealistic sales targets can incentivize unethical behavior. Banks must align performance metrics and incentives with ethical conduct to prevent misconduct."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "type": "mcq",
+      "q": "What strategic step should TrustBank take to regain customer trust after the scandal?",
+      "opts": [
+        "A. Focus solely on profit recovery",
+        "B. Implement a transparent communication strategy and compensate affected customers",
+        "C. Avoid discussing the scandal publicly",
+        "D. Reduce customer service staff to cut costs"
+      ],
+      "ans": "B",
+      "exp": "Rebuilding trust requires transparency, compensation for affected customers, enhanced compliance measures, and visible leadership commitment to ethical reform."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best describes the relationship between ethics and long-term bank success?",
+      "opts": [
+        "A. Ethics is a secondary concern compared to profitability",
+        "B. Ethical banking builds trust, enhances reputation, and avoids legal troubles, driving sustainable success",
+        "C. Ethics only matters during regulatory audits",
+        "D. Ethics does not affect customer loyalty"
+      ],
+      "ans": "B",
+      "exp": "Ethical banking is essential for long-term success—it builds trust, enhances reputation, avoids legal penalties, and fosters customer loyalty, all of which contribute to sustainability."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank that consistently processes withdrawals and deposits without delays is building trust through which factor?",
+      "opts": [
+        "A. Honesty",
+        "B. Effective communication",
+        "C. Consistency",
+        "D. Delivering on promises"
+      ],
+      "ans": "C",
+      "exp": "Consistency means reliable service delivery over time. Processing transactions without delays is a direct example of consistency."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer who feels that the bank is not protecting their personal information from cyber threats is likely to experience:",
+      "opts": [
+        "A. Increased confidence",
+        "B. A stronger relationship",
+        "C. Erosion of trust",
+        "D. Higher satisfaction"
+      ],
+      "ans": "C",
+      "exp": "Data breaches and inadequate data protection erode trust. Customers feel unsafe if their personal and financial information is not securely protected."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a key responsibility of a banker in relation to regulatory compliance?",
+      "opts": [
+        "A. Avoiding all communication with regulators",
+        "B. Abiding by banking laws and ethical codes to avoid legal or reputational risks",
+        "C. Interpreting laws in the bank's favor",
+        "D. Delegating compliance duties to non-banking staff"
+      ],
+      "ans": "B",
+      "exp": "Regulatory compliance requires bankers to abide by banking laws and ethical codes, protecting the bank from legal and reputational risks."
+    },
+    {
+      "id": "Q37",
+      "module": 1,
+      "type": "mcq",
+      "q": "When a banker encounters a situation where personal gain conflicts with the customer's best interest, what is the ethical course of action?",
+      "opts": [
+        "A. Prioritize personal gain since the bank rewards performance",
+        "B. Choose the option that benefits the customer while disclosing the conflict",
+        "C. Ignore the conflict and proceed with the transaction",
+        "D. Withdraw from the decision entirely without explanation"
+      ],
+      "ans": "B",
+      "exp": "When conflicts of interest arise, the ethical banker should prioritize the customer's interest, disclose the conflict, and seek guidance to ensure fairness."
+    },
+    {
+      "id": "Q38",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which characteristic of ethical leadership is most directly tied to building a culture of integrity?",
+      "opts": [
+        "A. Charisma",
+        "B. Setting short-term profit goals",
+        "C. Modeling ethical behavior consistently",
+        "D. Delegating all ethical decisions"
+      ],
+      "ans": "C",
+      "exp": "Ethical leaders model the behavior they expect from others. Consistent demonstration of integrity, fairness, and accountability inspires employees to uphold high standards."
+    },
+    {
+      "id": "Q39",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of banking, transparency primarily means:",
+      "opts": [
+        "A. Keeping all operational details confidential from customers",
+        "B. Providing clear, honest information about products, fees, and terms",
+        "C. Offering the lowest fees in the market",
+        "D. Guaranteeing returns on all investments"
+      ],
+      "ans": "B",
+      "exp": "Transparency involves providing clear, honest information about products, fees, and terms. This helps customers make informed decisions and builds trust."
+    },
+    {
+      "id": "Q40",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank employee who notices a colleague engaging in fraudulent activity has an ethical obligation to:",
+      "opts": [
+        "A. Confront the colleague privately without reporting",
+        "B. Report the concern through the appropriate whistleblowing channel",
+        "C. Ignore it to protect team harmony",
+        "D. Join the activity to avoid being singled out"
+      ],
+      "ans": "B",
+      "exp": "Employees are obliged to report suspected fraud or misconduct through established whistleblowing channels. This protects the bank and upholds ethical standards."
+    },
+    {
+      "id": "Q41",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is the most effective way for a bank to demonstrate responsibility after a service failure?",
+      "opts": [
+        "A. Avoid public acknowledgment",
+        "B. Blame the customer for the failure",
+        "C. Acknowledge the failure, investigate, and compensate affected customers",
+        "D. Offer a small discount without explanation"
+      ],
+      "ans": "C",
+      "exp": "Responsibility requires owning up to failures. Acknowledging the issue, investigating the cause, taking corrective action, and compensating affected customers demonstrates accountability."
+    },
+    {
+      "id": "Q42",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank that refuses to offer loans to customers from a particular region, despite their strong creditworthiness, is violating which ethical principle?",
+      "opts": [
+        "A. Confidentiality",
+        "B. Transparency",
+        "C. Fairness",
+        "D. Responsibility"
+      ],
+      "ans": "C",
+      "exp": "Fairness requires treating all customers equitably. Denying loans based on regional bias without financial justification is discrimination and violates fairness."
+    },
+    {
+      "id": "Q43",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary purpose of a bank's ethical code of conduct?",
+      "opts": [
+        "A. To limit employee freedom",
+        "B. To outline expected behaviors and principles to ensure professionalism and integrity",
+        "C. To increase regulatory complexity",
+        "D. To reduce customer complaints"
+      ],
+      "ans": "B",
+      "exp": "An ethical code of conduct outlines expected behaviors, principles, and guidelines for employees, ensuring professionalism and integrity in the banking sector."
+    },
+    {
+      "id": "Q44",
+      "module": 1,
+      "type": "mcq",
+      "q": "A banker who keeps customer information confidential and only discloses it when legally required is upholding which aspect of ethical banking?",
+      "opts": [
+        "A. Professional competence",
+        "B. Avoidance of conflicts of interest",
+        "C. Confidentiality",
+        "D. Fairness"
+      ],
+      "ans": "C",
+      "exp": "Confidentiality requires protecting customer information and only disclosing it when authorized by law or with customer consent. This is a core ethical obligation."
+    },
+    {
+      "id": "Q45",
+      "module": 1,
+      "type": "mcq",
+      "q": "When a bank's share price falls by 40% due to a scandal, as happened with TrustBank, this is a manifestation of:",
+      "opts": [
+        "A. Operational inefficiency",
+        "B. Reputational and financial damage",
+        "C. Regulatory overreach",
+        "D. Market volatility unrelated to ethics"
+      ],
+      "ans": "B",
+      "exp": "The scandal led to reputational damage, which in turn caused a drop in share price—a clear financial consequence of unethical behavior."
+    },
+    {
+      "id": "Q46",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following actions would most directly rebuild trust after a data breach?",
+      "opts": [
+        "A. Issuing a public apology and implementing enhanced security measures",
+        "B. Offering a discount on future services",
+        "C. Firing the IT team responsible",
+        "D. Ignoring the incident to avoid panic"
+      ],
+      "ans": "A",
+      "exp": "Rebuilding trust after a breach requires transparency (public apology), corrective action (enhanced security), and compensation where appropriate."
+    },
+    {
+      "id": "Q47",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank employee who refuses to accept a gift from a vendor to avoid any appearance of bias is demonstrating:",
+      "opts": [
+        "A. Professional competence",
+        "B. Integrity and avoidance of conflicts of interest",
+        "C. Transparency",
+        "D. Responsibility"
+      ],
+      "ans": "B",
+      "exp": "Refusing gifts prevents conflicts of interest and demonstrates integrity. It ensures decisions are not influenced by personal gain."
+    },
+    {
+      "id": "Q48",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of banking, what is the relationship between ethical practices and customer loyalty?",
+      "opts": [
+        "A. Ethical practices have no effect on loyalty",
+        "B. Strong ethical practices foster trust, which increases customer retention and loyalty",
+        "C. Loyalty depends only on interest rates",
+        "D. Loyalty is unrelated to transparency"
+      ],
+      "ans": "B",
+      "exp": "Ethical practices build trust, which is the foundation of customer loyalty. Customers who trust their bank are more likely to remain loyal and engage in long-term relationships."
+    },
+    {
+      "id": "Q49",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of a banker promoting financial literacy?",
+      "opts": [
+        "A. Selling a complex product without explanation",
+        "B. Conducting a workshop on budgeting and savings for customers",
+        "C. Offering a high-interest account without disclosing fees",
+        "D. Recommending investments without assessing risk"
+      ],
+      "ans": "B",
+      "exp": "Promoting financial literacy involves educating customers to make informed decisions. Workshops on budgeting and savings are direct examples."
+    },
+    {
+      "id": "Q50",
+      "module": 1,
+      "type": "mcq",
+      "q": "The ultimate goal of building customer trust through ethical banking is:",
+      "opts": [
+        "A. Avoiding all regulatory inspections",
+        "B. Ensuring short-term profit spikes",
+        "C. Fostering long-term customer relationships and sustainable business success",
+        "D. Reducing competition from other banks"
+      ],
+      "ans": "C",
+      "exp": "Ethical banking and trust-building aim to foster long-term customer relationships, which drive sustainable business success and competitive advantage."
+    },
+    {
+      "id": "Q51",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary purpose of Know Your Customer (KYC) regulations in retail banking?",
+      "opts": [
+        "A. To increase the bank's customer base",
+        "B. To verify customer identities and combat fraud and financial crimes",
+        "C. To simplify the account opening process",
+        "D. To reduce operational costs"
+      ],
+      "ans": "B",
+      "exp": "KYC regulations focus on verifying customer identities to fight fraud and financial crimes. Banks must collect and verify customer information to understand their identity and financial behavior."
+    },
+    {
+      "id": "Q52",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a key component of KYC compliance?",
+      "opts": [
+        "A. Setting high interest rates",
+        "B. Collecting and verifying customer identification details",
+        "C. Offering loans without collateral",
+        "D. Reducing staff training requirements"
+      ],
+      "ans": "B",
+      "exp": "KYC requires collecting customer details like name, address, and ID numbers, and verifying these using official documents. This combats fraud, identity theft, and money laundering."
+    },
+    {
+      "id": "Q53",
+      "module": 2,
+      "type": "mcq",
+      "q": "A customer opening a new account provides a driver's license and a utility bill for address verification. This process is part of which regulatory requirement?",
+      "opts": [
+        "A. Anti-Money Laundering (AML)",
+        "B. Know Your Customer (KYC)",
+        "C. Data Privacy Protection",
+        "D. Fair Lending"
+      ],
+      "ans": "B",
+      "exp": "KYC regulations require banks to verify customer identities using government-issued IDs and proof of address. This example demonstrates the KYC verification step."
+    },
+    {
+      "id": "Q54",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the main objective of Anti-Money Laundering (AML) regulations?",
+      "opts": [
+        "A. To increase bank profitability",
+        "B. To prevent the use of the financial system for money laundering and terrorism financing",
+        "C. To reduce the number of customer complaints",
+        "D. To streamline cross-border transactions"
+      ],
+      "ans": "B",
+      "exp": "AML regulations are designed to prevent money laundering, terrorism financing, and other financial crimes by requiring banks to monitor transactions, report suspicious activities, and conduct due diligence."
+    },
+    {
+      "id": "Q55",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which Nigerian law serves as the primary legislation for money laundering prevention?",
+      "opts": [
+        "A. Nigeria Data Protection Act 2023",
+        "B. Terrorism (Prevention) Act 2011",
+        "C. Money Laundering (Prohibition) Act 2011 (Amended 2012)",
+        "D. Companies and Allied Matters Act"
+      ],
+      "ans": "C",
+      "exp": "The Money Laundering (Prohibition) Act 2011 (Amended 2012) is Nigeria's primary AML law. The Terrorism (Prevention) Act addresses terrorism financing."
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "type": "mcq",
+      "q": "In Kenya, the primary AML legislation is:",
+      "opts": [
+        "A. Proceeds of Crime and Anti-Money Laundering Act (POCAMLA) 2009",
+        "B. Financial Intelligence Centre Act (FICA) 2001",
+        "C. Money Laundering (Prohibition) Act",
+        "D. Prevention of Terrorism Act 2012"
+      ],
+      "ans": "A",
+      "exp": "Kenya's primary AML law is the Proceeds of Crime and Anti-Money Laundering Act (POCAMLA) 2009, amended in 2017. FICA is South African."
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which South African law is the main AML legislation?",
+      "opts": [
+        "A. Money Laundering (Prohibition) Act",
+        "B. Financial Intelligence Centre Act (FICA) 2001",
+        "C. Proceeds of Crime and Anti-Money Laundering Act (POCAMLA)",
+        "D. Protection of Constitutional Democracy Against Terrorist and Related Activities Act"
+      ],
+      "ans": "B",
+      "exp": "South Africa's primary AML law is the Financial Intelligence Centre Act (FICA) 2001, amended in 2017."
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which Nigerian regulatory authority is primarily responsible for AML compliance enforcement?",
+      "opts": [
+        "A. Central Bank of Nigeria (CBN)",
+        "B. Nigeria Financial Intelligence Unit (NFIU)",
+        "C. Economic and Financial Crimes Commission (EFCC)",
+        "D. All of the above"
+      ],
+      "ans": "B",
+      "exp": "While CBN and EFCC play roles, the NFIU is the central agency for AML compliance, issuing guidelines, monitoring activities, and enforcing penalties. (Note: The manual lists all three as regulatory authorities; the question asks for the primary enforcement body, which is NFIU.)"
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "type": "mcq",
+      "q": "In Kenya, the regulatory body responsible for receiving suspicious activity reports is:",
+      "opts": [
+        "A. Central Bank of Kenya (CBK)",
+        "B. Financial Reporting Centre (FRC)",
+        "C. Kenya Institute of Bankers (KIB)",
+        "D. Banking Fraud Investigation Unit (BFIU)"
+      ],
+      "ans": "B",
+      "exp": "The Financial Reporting Centre (FRC) is Kenya's financial intelligence unit, which receives suspicious transaction reports from financial institutions."
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "type": "mcq",
+      "q": "In South Africa, suspicious transaction reports are filed with:",
+      "opts": [
+        "A. South African Reserve Bank (SARB)",
+        "B. Financial Intelligence Centre (FIC)",
+        "C. Institute of Bankers in South Africa (IBSA)",
+        "D. Financial Sector Conduct Authority (FSCA)"
+      ],
+      "ans": "B",
+      "exp": "The Financial Intelligence Centre (FIC) receives suspicious transaction reports (STRs) from institutions as part of AML compliance."
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the minimum record-keeping period for financial transactions under Nigerian AML regulations?",
+      "opts": [
+        "A. 3 years",
+        "B. 5 years",
+        "C. 7 years",
+        "D. 10 years"
+      ],
+      "ans": "B",
+      "exp": "Nigeria requires institutions to maintain transaction records for at least five years. Kenya requires seven years, while South Africa also mandates five years."
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which country requires financial institutions to keep transaction records for seven years?",
+      "opts": [
+        "A. Nigeria",
+        "B. Kenya",
+        "C. South Africa",
+        "D. Ghana"
+      ],
+      "ans": "B",
+      "exp": "Kenya mandates a seven-year record-keeping period, longer than Nigeria and South Africa (five years each)."
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Nigerian Financial Intelligence Unit (NFIU) enforces AML compliance by:",
+      "opts": [
+        "A. Issuing guidelines, monitoring activities, and imposing penalties",
+        "B. Conducting bank audits only",
+        "C. Providing loans to banks",
+        "D. Setting interest rates"
+      ],
+      "ans": "A",
+      "exp": "The NFIU enforces AML compliance by issuing guidelines, monitoring financial activities, leading investigations, enforcing penalties, and conducting capacity building and public awareness."
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is a key similarity in AML approaches across Nigeria, Kenya, and South Africa?",
+      "opts": [
+        "A. All use the same regulatory agency",
+        "B. All enforce KYC/CDD measures, suspicious activity reporting, and record-keeping",
+        "C. All require records for exactly five years",
+        "D. All have identical terrorism financing laws"
+      ],
+      "ans": "B",
+      "exp": "All three countries enforce KYC/CDD measures, suspicious activity reporting, record-keeping, and staff training. Differences exist in regulatory agencies and specific record-keeping periods."
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "type": "mcq",
+      "q": "A customer consistently deposits amounts just below the reporting threshold. What is the appropriate AML compliance step?",
+      "opts": [
+        "A. Ignore the transactions since they are below the threshold",
+        "B. Monitor the activity and file a suspicious activity report if warranted",
+        "C. Close the customer's account immediately",
+        "D. Congratulate the customer on their savings habit"
+      ],
+      "ans": "B",
+      "exp": "Transactions structured to avoid reporting thresholds are a red flag for money laundering. The bank should monitor and report suspicious activity to the NFIU or relevant FIU."
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "type": "mcq",
+      "q": "During a routine check, you notice several large, unexplained transfers from a dormant account. The correct AML procedure is:",
+      "opts": [
+        "A. View it as an oversight and ignore it",
+        "B. Send a notification email to the account owner",
+        "C. Investigate the origin and purpose, freeze the account if needed, and report if suspicious",
+        "D. Close the account without investigation"
+      ],
+      "ans": "C",
+      "exp": "The correct flow is: investigate the transfers, freeze the account to prevent further activity if warranted, and report to the NFIU if suspicious. This follows the 'Step 1: Investigate, Step 2: Freeze, Step 3: Report' sequence."
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a red flag for money laundering?",
+      "opts": [
+        "A. A customer depositing a regular salary cheque",
+        "B. A customer making frequent transactions just below the reporting threshold",
+        "C. A customer withdrawing cash for a vacation",
+        "D. A student depositing a scholarship check"
+      ],
+      "ans": "B",
+      "exp": "Transactions structured to avoid reporting thresholds (also called 'smurfing') are classic red flags for money laundering. Regular salary or scholarship deposits are normal."
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary regulatory focus of the Nigerian Data Protection Act 2023?",
+      "opts": [
+        "A. Increasing bank profitability",
+        "B. Setting rules for collecting, storing, and using personal data",
+        "C. Establishing interest rate caps",
+        "D. Regulating foreign exchange"
+      ],
+      "ans": "B",
+      "exp": "The Nigerian Data Protection Act 2023 sets rules for the collection, storage, and use of personal data, aiming to protect privacy and prevent breaches."
+    },
+    {
+      "id": "Q69",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT a secure information handling practice?",
+      "opts": [
+        "A. Encrypting sensitive data during transmission",
+        "B. Limiting data access to authorized personnel",
+        "C. Conducting regular security audits",
+        "D. Storing customer data on unsecured public servers"
+      ],
+      "ans": "D",
+      "exp": "Secure practices include encryption, access controls, regular audits, and employee training. Storing data on unsecured servers is a major security risk."
+    },
+    {
+      "id": "Q70",
+      "module": 2,
+      "type": "mcq",
+      "q": "The 2017 Equifax breach is an example of:",
+      "opts": [
+        "A. A successful AML investigation",
+        "B. A data breach with significant penalties and reputational harm",
+        "C. A mis-selling scandal",
+        "D. A successful KYC implementation"
+      ],
+      "ans": "B",
+      "exp": "The Equifax breach exposed customer data, leading to legal fines, financial losses, and reputational harm. It is a cautionary example of data breach consequences."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "type": "mcq",
+      "q": "Under the Nigerian Data Protection Act 2023, a bank that suffers a data breach may face:",
+      "opts": [
+        "A. Only a warning from the regulator",
+        "B. Penalties and reputational damage",
+        "C. No consequences if they report it immediately",
+        "D. A reduction in interest rates"
+      ],
+      "ans": "B",
+      "exp": "Data breaches can result in regulatory penalties, financial losses, and reputational harm, as seen in cases under NDPR/NDPA."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "type": "mcq",
+      "q": "Ethical banking requires banks to engage in responsible lending. This means:",
+      "opts": [
+        "A. Approving every loan application",
+        "B. Assessing creditworthiness and avoiding predatory practices",
+        "C. Charging the highest possible interest rates",
+        "D. Reducing loan officers' discretion"
+      ],
+      "ans": "B",
+      "exp": "Responsible lending involves assessing customers' ability to repay, transparency in terms, and avoiding predatory practices that exploit vulnerable customers."
+    },
+    {
+      "id": "Q73",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is an example of a predatory lending practice?",
+      "opts": [
+        "A. Offering a loan with a clear explanation of interest rates",
+        "B. Charging excessively high fees and interest without transparent disclosure",
+        "C. Conducting a thorough credit check",
+        "D. Providing a loan repayment schedule"
+      ],
+      "ans": "B",
+      "exp": "Predatory lending involves deceptive or unfair practices, such as hidden fees, excessive charges, and lack of transparency about loan terms."
+    },
+    {
+      "id": "Q74",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the purpose of fair lending laws?",
+      "opts": [
+        "A. To ensure banks make profits",
+        "B. To prevent discrimination in lending and ensure equal access to credit",
+        "C. To reduce the number of loans issued",
+        "D. To standardize interest rates across all banks"
+      ],
+      "ans": "B",
+      "exp": "Fair lending laws prohibit discrimination based on race, gender, ethnicity, etc., and ensure that credit is fairly and equally accessible to all qualified applicants."
+    },
+    {
+      "id": "Q75",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank that charges higher interest rates to customers from a certain ethnic group, despite similar credit profiles, would be violating:",
+      "opts": [
+        "A. AML regulations",
+        "B. KYC requirements",
+        "C. Fair lending laws",
+        "D. Data privacy rules"
+      ],
+      "ans": "C",
+      "exp": "Fair lending laws prohibit discriminatory practices in lending, including differential treatment based on ethnicity."
+    },
+    {
+      "id": "Q76",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following best describes the relationship between compliance and customer trust?",
+      "opts": [
+        "A. Compliance is unrelated to trust",
+        "B. Strong compliance ensures the bank operates ethically and legally, which builds trust",
+        "C. Compliance is only for regulators, not customers",
+        "D. Customers are not affected by compliance failures"
+      ],
+      "ans": "B",
+      "exp": "Compliance ensures banks operate ethically and legally, protecting customers and the financial system. This fosters trust as customers feel secure."
+    },
+    {
+      "id": "Q77",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is a key difference between Nigeria's and Kenya's AML regulatory frameworks?",
+      "opts": [
+        "A. Nigeria uses multiple agencies (CBN, NFIU, EFCC) while Kenya relies mainly on CBK and FRC",
+        "B. Kenya has no AML laws",
+        "C. Nigeria does not require suspicious activity reporting",
+        "D. South Africa has no record-keeping requirements"
+      ],
+      "ans": "A",
+      "exp": "Nigeria has multiple agencies (CBN, NFIU, EFCC) while Kenya relies on CBK and FRC. Both have AML laws and require SARs."
+    },
+    {
+      "id": "Q78",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which South African regulator oversees the conduct of bankers and fair treatment of customers?",
+      "opts": [
+        "A. South African Reserve Bank (SARB)",
+        "B. Financial Sector Conduct Authority (FSCA)",
+        "C. Institute of Bankers in South Africa (IBSA)",
+        "D. Financial Intelligence Centre (FIC)"
+      ],
+      "ans": "B",
+      "exp": "The FSCA is responsible for regulating financial institutions and ensuring fair treatment of customers. IBSA is a professional body without regulatory powers."
+    },
+    {
+      "id": "Q79",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which Nigerian body is responsible for investigating banking fraud and misconduct?",
+      "opts": [
+        "A. Nigeria Financial Intelligence Unit (NFIU)",
+        "B. Economic and Financial Crimes Commission (EFCC)",
+        "C. Central Bank of Nigeria (CBN)",
+        "D. All of the above"
+      ],
+      "ans": "D",
+      "exp": "In Nigeria, the NFIU, EFCC, and CBN all have roles in investigating financial crimes. The manual lists them as regulatory authorities in AML."
+    },
+    {
+      "id": "Q80",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a critical step in customer due diligence (CDD) under KYC?",
+      "opts": [
+        "A. Accepting customer information without verification",
+        "B. Monitoring transaction patterns and updating customer records periodically",
+        "C. Avoiding background checks for frequent customers",
+        "D. Relying solely on verbal declarations"
+      ],
+      "ans": "B",
+      "exp": "CDD involves verifying identity, assessing risk, and ongoing monitoring of customer transactions and behavior. Regular updates are essential."
+    },
+    {
+      "id": "Q81",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the purpose of enhanced due diligence (EDD) under AML frameworks?",
+      "opts": [
+        "A. To simplify account opening for all customers",
+        "B. To apply additional scrutiny to high-risk customers, such as politically exposed persons (PEPs)",
+        "C. To reduce staff workload",
+        "D. To avoid reporting suspicious transactions"
+      ],
+      "ans": "B",
+      "exp": "EDD applies to high-risk customers (e.g., PEPs, those from high-risk countries) with more rigorous verification and monitoring."
+    },
+    {
+      "id": "Q82",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following best describes the risk-based approach in AML?",
+      "opts": [
+        "A. Applying the same level of scrutiny to all customers",
+        "B. Allocating more resources to higher-risk customers and transactions",
+        "C. Avoiding any risk assessment",
+        "D. Focusing only on large transactions"
+      ],
+      "ans": "B",
+      "exp": "A risk-based approach means banks assess customer risk levels and apply proportionate due diligence measures, with enhanced scrutiny for high-risk cases."
+    },
+    {
+      "id": "Q83",
+      "module": 2,
+      "type": "mcq",
+      "q": "In Nigeria, what is the role of the Central Bank of Nigeria (CBN) in AML?",
+      "opts": [
+        "A. Issuing banking licenses only",
+        "B. Setting AML guidelines and supervising banks' compliance",
+        "C. Prosecuting money laundering offenders",
+        "D. Handling all suspicious transaction reports"
+      ],
+      "ans": "B",
+      "exp": "The CBN issues regulations and supervises banks for AML compliance, while the NFIU handles financial intelligence and EFCC prosecutes offenses."
+    },
+    {
+      "id": "Q84",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which Kenyan institution is responsible for investigating misconduct and fraud in the banking sector?",
+      "opts": [
+        "A. Central Bank of Kenya (CBK)",
+        "B. Financial Reporting Centre (FRC)",
+        "C. Banking Fraud Investigation Unit (BFIU)",
+        "D. Kenya Institute of Bankers (KIB)"
+      ],
+      "ans": "C",
+      "exp": "The BFIU, under the CBK, investigates misconduct and fraud within Kenya's banking sector."
+    },
+    {
+      "id": "Q85",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the general requirement for staff training under AML regulations in the three African countries discussed?",
+      "opts": [
+        "A. No mandatory training",
+        "B. Voluntary training for interested staff",
+        "C. Mandatory AML training programs for employees and compliance officers",
+        "D. Training only for senior management"
+      ],
+      "ans": "C",
+      "exp": "All three countries mandate AML training for financial institution employees to ensure they can detect and report suspicious activities."
+    },
+    {
+      "id": "Q86",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is an example of a data privacy best practice in banking?",
+      "opts": [
+        "A. Sharing customer data with marketing partners without consent",
+        "B. Encrypting customer data in transit and at rest",
+        "C. Allowing all employees access to all customer records",
+        "D. Disposing of hard copies in regular trash"
+      ],
+      "ans": "B",
+      "exp": "Encryption protects data during transmission and storage. Access controls, audits, and secure disposal are also best practices."
+    },
+    {
+      "id": "Q87",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank customer discovers that their personal information was shared with an external vendor without their consent. This is a violation of:",
+      "opts": [
+        "A. AML regulations",
+        "B. Fair lending laws",
+        "C. Data privacy regulations",
+        "D. KYC requirements"
+      ],
+      "ans": "C",
+      "exp": "Unauthorized sharing of personal information violates data privacy regulations, such as the Nigerian Data Protection Act or GDPR."
+    },
+    {
+      "id": "Q88",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the most immediate consequence for a bank that fails to comply with AML regulations?",
+      "opts": [
+        "A. Increased customer loyalty",
+        "B. Regulatory fines and sanctions",
+        "C. Lower interest rates",
+        "D. Positive media coverage"
+      ],
+      "ans": "B",
+      "exp": "Non-compliance can result in regulatory fines, sanctions, and loss of license, as well as reputational damage."
+    },
+    {
+      "id": "Q89",
+      "module": 2,
+      "type": "mcq",
+      "q": "In the context of compliance, what does the acronym 'CDD' stand for?",
+      "opts": [
+        "A. Customer Due Diligence",
+        "B. Central Data Department",
+        "C. Compliance Directive Document",
+        "D. Customer Detection Database"
+      ],
+      "ans": "A",
+      "exp": "CDD stands for Customer Due Diligence, the process of verifying customer identities and assessing risk."
+    },
+    {
+      "id": "Q90",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the key difference between KYC and AML regulations?",
+      "opts": [
+        "A. KYC focuses on identity verification, while AML covers broader financial crime prevention",
+        "B. KYC is only for corporate customers, AML for individuals",
+        "C. They are the same thing",
+        "D. AML is only for international transactions"
+      ],
+      "ans": "A",
+      "exp": "KYC is a subset of AML focusing on verifying customer identity; AML encompasses broader measures to combat money laundering and terrorist financing."
+    },
+    {
+      "id": "Q91",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank that fails to report a suspicious transaction to the NFIU could face:",
+      "opts": [
+        "A. No consequences",
+        "B. A warning only",
+        "C. Penalties and legal action",
+        "D. Increased business"
+      ],
+      "ans": "C",
+      "exp": "Non-reporting of suspicious transactions can lead to penalties, fines, and legal action by regulators."
+    },
+    {
+      "id": "Q92",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a key aspect of the African Union Convention on Cyber Security and Personal Data Protection?",
+      "opts": [
+        "A. Harmonizing data protection standards across African countries",
+        "B. Regulating interest rates",
+        "C. Setting capital requirements",
+        "D. Establishing a single African currency"
+      ],
+      "ans": "A",
+      "exp": "The African Union Convention aims to harmonize cyber security and data protection laws across member states, setting common standards."
+    },
+    {
+      "id": "Q93",
+      "module": 2,
+      "type": "mcq",
+      "q": "A Nigerian bank's data breach under the NDPR 2023 could lead to:",
+      "opts": [
+        "A. Only reputational damage",
+        "B. Fines and potential loss of license",
+        "C. A mere warning",
+        "D. No regulatory action"
+      ],
+      "ans": "B",
+      "exp": "The NDPR/NDPA imposes penalties and fines for data breaches, which can be substantial and affect the bank's operations."
+    },
+    {
+      "id": "Q94",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary role of the Nigerian Financial Intelligence Unit (NFIU) in AML?",
+      "opts": [
+        "A. Issuing banking licenses",
+        "B. Collecting and analyzing financial intelligence to combat money laundering and terrorism financing",
+        "C. Setting monetary policy",
+        "D. Providing deposit insurance"
+      ],
+      "ans": "B",
+      "exp": "The NFIU is Nigeria's financial intelligence unit, responsible for analyzing financial reports, sharing intelligence, and enforcing compliance."
+    },
+    {
+      "id": "Q95",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT a requirement under KYC regulations?",
+      "opts": [
+        "A. Collecting customer identification details",
+        "B. Verifying the authenticity of documents",
+        "C. Reporting all deposits over a certain amount",
+        "D. Assessing customer risk profile"
+      ],
+      "ans": "C",
+      "exp": "Reporting certain deposits is an AML requirement, not specifically KYC. KYC focuses on identity verification and risk assessment."
+    },
+    {
+      "id": "Q96",
+      "module": 2,
+      "type": "mcq",
+      "q": "In South Africa, the institution responsible for promoting ethical standards in banking through professional development is:",
+      "opts": [
+        "A. South African Reserve Bank (SARB)",
+        "B. Financial Sector Conduct Authority (FSCA)",
+        "C. Institute of Bankers in South Africa (IBSA)",
+        "D. Financial Intelligence Centre (FIC)"
+      ],
+      "ans": "C",
+      "exp": "The IBSA is the professional body focusing on developing skills, offering certifications, and maintaining professional standards, though it does not have regulatory powers."
+    },
+    {
+      "id": "Q97",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank employee who fails to follow data encryption protocols could contribute to:",
+      "opts": [
+        "A. Increased trust",
+        "B. Reduced compliance costs",
+        "C. A data breach",
+        "D. Higher customer satisfaction"
+      ],
+      "ans": "C",
+      "exp": "Ignoring encryption and other security protocols increases the risk of data breaches, which harm customers and the bank."
+    },
+    {
+      "id": "Q98",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a key element of a risk-based approach to AML?",
+      "opts": [
+        "A. Applying the same controls to all customers",
+        "B. Conducting enhanced due diligence for high-risk customers",
+        "C. Avoiding monitoring of low-value transactions",
+        "D. Relying solely on automated systems without human oversight"
+      ],
+      "ans": "B",
+      "exp": "A risk-based approach means applying more resources to higher-risk customers, such as PEPs, and using enhanced due diligence measures."
+    },
+    {
+      "id": "Q99",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the main purpose of suspicious activity reporting (SAR) in AML compliance?",
+      "opts": [
+        "A. To report every transaction to the regulator",
+        "B. To alert authorities to potentially illegal financial activity",
+        "C. To ensure all deposits are recorded",
+        "D. To help banks meet their profit targets"
+      ],
+      "ans": "B",
+      "exp": "SARs are filed when a bank suspects transactions may involve money laundering, terrorism financing, or other crimes, enabling authorities to investigate."
+    },
+    {
+      "id": "Q100",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank that implements strong compliance practices is likely to experience:",
+      "opts": [
+        "A. Higher regulatory penalties",
+        "B. Increased customer trust and reduced legal risk",
+        "C. Lower profitability",
+        "D. More customer complaints"
+      ],
+      "ans": "B",
+      "exp": "Strong compliance builds trust by ensuring the bank operates ethically and legally, reducing legal risks and protecting customers."
+    },
+    {
+      "id": "Q101",
+      "module": 3,
+      "type": "mcq",
+      "q": "What role does leadership play in shaping a culture of integrity in retail banking?",
+      "opts": [
+        "A. Leaders should focus only on financial performance",
+        "B. Leaders set the tone by demonstrating ethical behaviour and prioritising ethics over short-term gains",
+        "C. Leaders should delegate all ethical decisions to compliance teams",
+        "D. Leaders are not responsible for employee behaviour"
+      ],
+      "ans": "B",
+      "exp": "Leadership plays a critical role by demonstrating ethical behaviour, setting expectations, and reinforcing integrity over short-term profits. This fosters trust among employees, customers, and stakeholders."
+    },
+    {
+      "id": "Q102",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which characteristic is essential for ethical leadership in banking?",
+      "opts": [
+        "A. Focus solely on quarterly profits",
+        "B. Modelling integrity, fairness, and accountability consistently",
+        "C. Avoiding difficult conversations about ethics",
+        "D. Delegating all decisions to subordinates"
+      ],
+      "ans": "B",
+      "exp": "Ethical leaders model integrity, fairness, and accountability. They inspire others by their actions and create an environment where ethical behaviour is the norm."
+    },
+    {
+      "id": "Q103",
+      "module": 3,
+      "type": "mcq",
+      "q": "In the Wells Fargo fake accounts scandal, what was the root cause of the unethical behaviour?",
+      "opts": [
+        "A. Lack of customer demand",
+        "B. Aggressive sales targets that incentivised fraudulent account creation",
+        "C. Technical glitches in the banking system",
+        "D. Competitors' unfair practices"
+      ],
+      "ans": "B",
+      "exp": "Wells Fargo employees, under immense pressure to meet aggressive sales targets, created millions of unauthorized accounts. Leadership prioritised sales growth over ethics, fostering a toxic culture."
+    },
+    {
+      "id": "Q104",
+      "module": 3,
+      "type": "mcq",
+      "q": "What ethical values did Wells Fargo's leadership ignore, leading to the fake accounts scandal?",
+      "opts": [
+        "A. Integrity, fairness, and transparency",
+        "B. Confidentiality and data privacy",
+        "C. Professional competence only",
+        "D. Financial literacy"
+      ],
+      "ans": "A",
+      "exp": "Leaders ignored integrity (creating false accounts), fairness (hurting customers), and transparency (concealing the practices). They sacrificed ethics for sales targets."
+    },
+    {
+      "id": "Q105",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the primary purpose of an ethical code of conduct in the banking sector?",
+      "opts": [
+        "A. To increase regulatory paperwork",
+        "B. To outline expected behaviors, principles, and guidelines to ensure professionalism and integrity",
+        "C. To restrict employee freedom in all areas",
+        "D. To reduce competition among banks"
+      ],
+      "ans": "B",
+      "exp": "An ethical code of conduct provides a framework for employee behaviour, ensuring professionalism, integrity, and trust in the banking sector."
+    },
+    {
+      "id": "Q106",
+      "module": 3,
+      "type": "mcq",
+      "q": "In Nigeria, which professional body regulates the ethical conduct of bankers?",
+      "opts": [
+        "A. Central Bank of Nigeria (CBN)",
+        "B. Chartered Institute of Bankers of Nigeria (CIBN)",
+        "C. Nigeria Financial Intelligence Unit (NFIU)",
+        "D. Economic and Financial Crimes Commission (EFCC)"
+      ],
+      "ans": "B",
+      "exp": "The CIBN regulates professional conduct and ethics for bankers in Nigeria, aligning with CBN guidelines."
+    },
+    {
+      "id": "Q107",
+      "module": 3,
+      "type": "mcq",
+      "q": "In Kenya, which institution is the primary regulator of banking conduct and ethical standards?",
+      "opts": [
+        "A. Kenya Institute of Bankers (KIB)",
+        "B. Central Bank of Kenya (CBK)",
+        "C. Financial Reporting Centre (FRC)",
+        "D. Banking Fraud Investigation Unit (BFIU)"
+      ],
+      "ans": "B",
+      "exp": "The CBK is the primary regulator, overseeing bank conduct, enforcing compliance, and setting ethical standards. KIB is a professional body without regulatory authority."
+    },
+    {
+      "id": "Q108",
+      "module": 3,
+      "type": "mcq",
+      "q": "In South Africa, which authority regulates financial institutions and ensures fair customer treatment?",
+      "opts": [
+        "A. South African Reserve Bank (SARB)",
+        "B. Financial Sector Conduct Authority (FSCA)",
+        "C. Institute of Bankers in South Africa (IBSA)",
+        "D. Financial Intelligence Centre (FIC)"
+      ],
+      "ans": "B",
+      "exp": "The FSCA regulates financial institutions and enforces fair treatment of customers. IBSA focuses on professional development, not regulation."
+    },
+    {
+      "id": "Q109",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a key principle of the ethical code of conduct for bankers across Nigeria, Kenya, and South Africa?",
+      "opts": [
+        "A. Maximizing shareholder returns above all else",
+        "B. Integrity, confidentiality, professional competence, and avoidance of conflicts of interest",
+        "C. Aggressive sales tactics",
+        "D. Reducing customer education efforts"
+      ],
+      "ans": "B",
+      "exp": "Across these countries, codes emphasise integrity, confidentiality, professional competence, and avoiding conflicts of interest. These principles build trust and professionalism."
+    },
+    {
+      "id": "Q110",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank employee shares a customer's transaction details with an external vendor without approval. Which code of conduct principle is violated?",
+      "opts": [
+        "A. Integrity",
+        "B. Confidentiality",
+        "C. Professional competence",
+        "D. Avoidance of conflicts of interest"
+      ],
+      "ans": "B",
+      "exp": "Confidentiality requires protecting customer information. Unauthorised sharing violates this principle, as highlighted in the manual's chart."
+    },
+    {
+      "id": "Q111",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does the principle of 'professional competence' require of bankers?",
+      "opts": [
+        "A. They must maintain and develop knowledge and skills to provide high-quality service",
+        "B. They must always maximise profits",
+        "C. They must avoid any communication with customers",
+        "D. They must work overtime without pay"
+      ],
+      "ans": "A",
+      "exp": "Professional competence means bankers must keep their knowledge and skills current, staying updated on regulations and best practices to serve customers effectively."
+    },
+    {
+      "id": "Q112",
+      "module": 3,
+      "type": "mcq",
+      "q": "How should a banker handle a conflict of interest?",
+      "opts": [
+        "A. Ignore it and proceed with the transaction",
+        "B. Disclose it to management and take steps to manage or avoid the conflict",
+        "C. Use it for personal benefit",
+        "D. Keep it confidential to avoid paperwork"
+      ],
+      "ans": "B",
+      "exp": "Conflicts must be identified, disclosed, and managed appropriately. Transparency and avoidance are key to maintaining integrity."
+    },
+    {
+      "id": "Q113",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which Nigerian body provides training, certification, and promotes professionalism in banking?",
+      "opts": [
+        "A. Central Bank of Nigeria (CBN)",
+        "B. Chartered Institute of Bankers of Nigeria (CIBN)",
+        "C. Nigeria Financial Intelligence Unit (NFIU)",
+        "D. Federal Ministry of Finance"
+      ],
+      "ans": "B",
+      "exp": "The CIBN is the professional body that provides training, certification, and promotes ethics and professionalism among bankers."
+    },
+    {
+      "id": "Q114",
+      "module": 3,
+      "type": "mcq",
+      "q": "In Kenya, which organisation focuses on training, certification, and setting educational standards for bankers, but does not have regulatory authority?",
+      "opts": [
+        "A. Central Bank of Kenya (CBK)",
+        "B. Kenya Institute of Bankers (KIB)",
+        "C. Financial Reporting Centre (FRC)",
+        "D. Banking Fraud Investigation Unit (BFIU)"
+      ],
+      "ans": "B",
+      "exp": "KIB promotes professional development and ethical behaviour but lacks regulatory powers; that role belongs to CBK."
+    },
+    {
+      "id": "Q115",
+      "module": 3,
+      "type": "mcq",
+      "q": "In South Africa, the Institute of Bankers (IBSA) primarily focuses on:",
+      "opts": [
+        "A. Regulatory enforcement and penalties",
+        "B. Professional development, certifications, and maintaining standards",
+        "C. Investigating banking fraud",
+        "D. Setting interest rates"
+      ],
+      "ans": "B",
+      "exp": "IBSA focuses on skills development, certifications, and professional standards, while SARB and FSCA handle regulation and enforcement."
+    },
+    {
+      "id": "Q116",
+      "module": 3,
+      "type": "mcq",
+      "q": "What are the consequences when ethical codes are not employed in banking operations?",
+      "opts": [
+        "A. Increased customer trust",
+        "B. Loss of trust, legal penalties, reputational damage, financial losses, and operational disruptions",
+        "C. Higher employee morale",
+        "D. Reduced competition"
+      ],
+      "ans": "B",
+      "exp": "Ignoring ethical codes leads to trust erosion, legal issues, reputation damage, and financial losses. The manual lists these as key setbacks."
+    },
+    {
+      "id": "Q117",
+      "module": 3,
+      "type": "mcq",
+      "q": "An ethical code of conduct provides a unified framework to:",
+      "opts": [
+        "A. Limit customer choice",
+        "B. Guide employee behaviour and prevent misconduct",
+        "C. Reduce regulatory oversight",
+        "D. Increase complexity"
+      ],
+      "ans": "B",
+      "exp": "A code guides behaviour, sets expectations, and prevents misconduct by providing clear standards for employees."
+    },
+    {
+      "id": "Q118",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is an effective way to promote ethical behaviour in a bank?",
+      "opts": [
+        "A. Offering incentives and recognition for ethical conduct",
+        "B. Ignoring minor breaches to save time",
+        "C. Increasing sales targets without ethical checks",
+        "D. Reducing training on ethics"
+      ],
+      "ans": "A",
+      "exp": "Rewarding ethical behaviour, such as through 'Integrity in Action' awards, reinforces positive conduct and encourages a culture of integrity."
+    },
+    {
+      "id": "Q119",
+      "module": 3,
+      "type": "mcq",
+      "q": "What challenge to promoting ethics arises from aggressive sales targets?",
+      "opts": [
+        "A. Employees feel motivated to work harder",
+        "B. Employees may mislead customers or cut corners to meet quotas",
+        "C. Customers receive better products",
+        "D. Regulatory compliance improves"
+      ],
+      "ans": "B",
+      "exp": "When targets are unrealistic, employees may resort to mis-selling or misrepresentation to achieve them, as seen in the Wells Fargo and BrightBank cases."
+    },
+    {
+      "id": "Q120",
+      "module": 3,
+      "type": "mcq",
+      "q": "What happens when unethical actions are left unchecked due to internal connections or lack of accountability?",
+      "opts": [
+        "A. The bank's reputation improves",
+        "B. Integrity erodes and misconduct spreads",
+        "C. Employees become more honest",
+        "D. Customers appreciate the flexibility"
+      ],
+      "ans": "B",
+      "exp": "Lack of accountability fosters a culture where unethical behaviour is tolerated, leading to widespread misconduct and loss of trust."
+    },
+    {
+      "id": "Q121",
+      "module": 3,
+      "type": "mcq",
+      "q": "How should a bank officer respond when a customer complains about being misled on loan terms?",
+      "opts": [
+        "A. Defend the bank and dismiss the complaint",
+        "B. Listen actively, investigate, and provide a transparent explanation or remedy",
+        "C. Ignore the complaint if it's not in writing",
+        "D. Blame the customer for not reading the terms"
+      ],
+      "ans": "B",
+      "exp": "Ethical complaint handling involves active listening, investigation, and transparency. The officer should acknowledge the concern and work to resolve it fairly."
+    },
+    {
+      "id": "Q122",
+      "module": 3,
+      "type": "mcq",
+      "q": "In the BrightBank case, what was a key ethical failure related to loan approvals?",
+      "opts": [
+        "A. Loan officers refused to approve loans",
+        "B. Loan officers accepted bribes to fast-track approvals",
+        "C. All loans were automatically approved",
+        "D. Customers were not interested in loans"
+      ],
+      "ans": "B",
+      "exp": "BrightBank's problems included bribery in loan approvals, misrepresentation of products, and a toxic culture where whistleblowers were silenced."
+    },
+    {
+      "id": "Q123",
+      "module": 3,
+      "type": "mcq",
+      "q": "How should leadership demonstrate commitment to integrity when rebuilding trust after a scandal?",
+      "opts": [
+        "A. Blame employees and fire all staff",
+        "B. Implement comprehensive reforms, communicate openly, and hold leaders accountable",
+        "C. Focus only on marketing to improve reputation",
+        "D. Reduce compliance staff to cut costs"
+      ],
+      "ans": "B",
+      "exp": "Rebuilding trust requires visible leadership commitment, structural reforms, cultural change, and accountability at all levels."
+    },
+    {
+      "id": "Q124",
+      "module": 3,
+      "type": "mcq",
+      "q": "What elements should BrightBank include in its new ethical code after the scandal?",
+      "opts": [
+        "A. Only rules about loan approvals",
+        "B. Clear standards on integrity, transparency, anti-bribery, whistleblower protection, and accountability",
+        "C. Guidelines on increasing sales targets",
+        "D. A focus on reducing customer complaints"
+      ],
+      "ans": "B",
+      "exp": "A comprehensive code should address the failures: anti-bribery, transparency, whistleblower protection, and accountability, while fostering an ethical culture."
+    },
+    {
+      "id": "Q125",
+      "module": 3,
+      "type": "mcq",
+      "q": "What practical step can a bank take to promote ethical behaviour across all levels?",
+      "opts": [
+        "A. Provide regular ethics training and create safe channels for reporting misconduct",
+        "B. Increase pressure to meet targets",
+        "C. Eliminate all oversight to simplify operations",
+        "D. Outsource all compliance functions"
+      ],
+      "ans": "A",
+      "exp": "Regular training, visible leadership, rewards for integrity, and safe reporting channels are key to embedding ethics throughout the organisation."
+    },
+    {
+      "id": "Q126",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following best describes the relationship between organisational culture and ethical behaviour?",
+      "opts": [
+        "A. Culture has no impact on ethics",
+        "B. A strong, values-driven culture encourages ethical behaviour and accountability",
+        "C. Only regulations determine behaviour",
+        "D. Culture only affects customer service, not ethics"
+      ],
+      "ans": "B",
+      "exp": "Organisational culture—shared values and behaviours—shapes how employees act. A culture that prioritises integrity promotes ethical decisions."
+    },
+    {
+      "id": "Q127",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a common reason employees resist new ethical policies?",
+      "opts": [
+        "A. They are too simple to follow",
+        "B. They view them as burdensome rather than protective",
+        "C. They increase profits",
+        "D. They reduce workload"
+      ],
+      "ans": "B",
+      "exp": "Resistance often occurs when employees see policies as extra red tape rather than safeguards. Clear communication about the benefits can help overcome this."
+    },
+    {
+      "id": "Q128",
+      "module": 3,
+      "type": "mcq",
+      "q": "When employees observe unethical behaviour, what should be their first step?",
+      "opts": [
+        "A. Ignore it to avoid conflict",
+        "B. Report it through internal channels such as a whistleblower hotline or to a compliance officer",
+        "C. Confront the individual publicly",
+        "D. Post about it on social media"
+      ],
+      "ans": "B",
+      "exp": "Internal reporting channels protect confidentiality and allow proper investigation. This is the recommended ethical approach."
+    },
+    {
+      "id": "Q129",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the role of a bank's Board of Directors in the whistleblowing program?",
+      "opts": [
+        "A. They are not involved",
+        "B. They approve the whistleblower program",
+        "C. They investigate every complaint personally",
+        "D. They only handle legal issues"
+      ],
+      "ans": "B",
+      "exp": "Per Access Bank's whistleblowing policy, the Board approves the program. Executive management implements it, while other stakeholders have specific responsibilities."
+    },
+    {
+      "id": "Q130",
+      "module": 3,
+      "type": "mcq",
+      "q": "Who receives whistleblowing complaints from the public on bank misconduct in Access Bank's structure?",
+      "opts": [
+        "A. Only the Compliance Officer",
+        "B. DELOITTE, CBN, and NDIC",
+        "C. Only the CEO",
+        "D. The Board of Directors"
+      ],
+      "ans": "B",
+      "exp": "Access Bank's policy states that DELOITTE, CBN, and NDIC receive whistleblowing complaints from the public on misconduct by banks and executives."
+    },
+    {
+      "id": "Q131",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which department in Access Bank conducts investigations of reported whistleblowing cases?",
+      "opts": [
+        "A. Legal Department",
+        "B. Group Internal Audit",
+        "C. Strategic Business Units",
+        "D. Executive Management"
+      ],
+      "ans": "B",
+      "exp": "Group Internal Audit conducts investigations and provides feedback for reporting to CBN and DELOITTE, and reports outcomes to the Board Audit Committee."
+    },
+    {
+      "id": "Q132",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the responsibility of the Chief Conduct and Compliance Officer (CCCO) in Access Bank's whistleblowing framework?",
+      "opts": [
+        "A. To approve the whistleblower program",
+        "B. To receive complaints and monitor investigation outcomes, reporting to CBN and DELOITTE",
+        "C. To conduct all investigations personally",
+        "D. To handle legal issues for the bank"
+      ],
+      "ans": "B",
+      "exp": "The CCCO receives complaints, monitors investigations, and reports to CBN quarterly and DELOITTE monthly, as per Access Bank policy."
+    },
+    {
+      "id": "Q133",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a stakeholder with whistleblowing responsibility as per Access Bank's policy?",
+      "opts": [
+        "A. Vendors and contractors",
+        "B. Customers",
+        "C. Competitors",
+        "D. All employees"
+      ],
+      "ans": "C",
+      "exp": "Stakeholders include employees, management, directors, shareholders, job applicants, customers, vendors, and contractors. Competitors are not listed."
+    },
+    {
+      "id": "Q134",
+      "module": 3,
+      "type": "mcq",
+      "q": "What types of concerns should employees report under Access Bank's whistleblowing policy?",
+      "opts": [
+        "A. Only large-scale fraud",
+        "B. Violations of law, breaches of policy, misconduct, and deliberate avoidance of controls",
+        "C. Only personal grievances",
+        "D. Only cases involving senior management"
+      ],
+      "ans": "B",
+      "exp": "Employees must report violations of law, policy breaches, misconduct, departures from standards, and control manipulations, regardless of severity."
+    },
+    {
+      "id": "Q135",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the requirement for employees regarding the severity of concerns before escalation?",
+      "opts": [
+        "A. Employees must determine severity before reporting",
+        "B. Employees must escalate all concerns regardless of severity",
+        "C. Only significant concerns need reporting",
+        "D. Employees should consult a lawyer first"
+      ],
+      "ans": "B",
+      "exp": "The policy states that employees need not determine severity; they must escalate all concerns as per the policy ABP.CIC.0712.070."
+    },
+    {
+      "id": "Q136",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is considered a 'concern' under Access Bank's whistleblowing policy?",
+      "opts": [
+        "A. A grievance or report of suspected breach of law or group policy",
+        "B. A routine operational issue",
+        "C. A customer's complaint about interest rates",
+        "D. A suggestion for improving customer service"
+      ],
+      "ans": "A",
+      "exp": "The policy defines a concern as a grievance or report of a suspected breach of law or group policy."
+    },
+    {
+      "id": "Q137",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is an example of 'corruption' as defined in Access Bank's whistleblowing policy?",
+      "opts": [
+        "A. Offering or receiving anything of value to influence improperly the actions of another party",
+        "B. Failing to meet a sales target",
+        "C. Making an error in a customer's account",
+        "D. Providing a loan without collateral"
+      ],
+      "ans": "A",
+      "exp": "Corruption is defined as offering, giving, receiving, or soliciting anything of value to influence improperly another party's actions."
+    },
+    {
+      "id": "Q138",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is 'misconduct' under Access Bank's policy?",
+      "opts": [
+        "A. A minor error in record-keeping",
+        "B. Failure by bank personnel to observe the bank's codes of conduct",
+        "C. A disagreement between colleagues",
+        "D. A customer's late loan repayment"
+      ],
+      "ans": "B",
+      "exp": "Misconduct is defined as failure by Bank Personnel to observe the bank's codes of conduct."
+    },
+    {
+      "id": "Q139",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is an example of 'collusive practices' as defined in the whistleblowing policy?",
+      "opts": [
+        "A. An arrangement between two or more parties designed to achieve an improper purpose",
+        "B. A single employee acting alone to defraud the bank",
+        "C. A customer refusing to pay fees",
+        "D. A bank manager reporting a colleague"
+      ],
+      "ans": "A",
+      "exp": "Collusive practices are arrangements between two or more parties designed to achieve an improper purpose, such as influencing actions improperly."
+    },
+    {
+      "id": "Q140",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Access Bank's policy, which of the following is covered as an 'insider abuse'?",
+      "opts": [
+        "A. Fraud against the bank",
+        "B. Bullying, physical/sexual harassment, and dignity-at-work issues",
+        "C. Money laundering",
+        "D. Non-disclosure of interest"
+      ],
+      "ans": "B",
+      "exp": "Insider abuse includes bullying, harassment, and other issues concerning dignity at work, as well as other misconduct."
+    },
+    {
+      "id": "Q141",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why is a culture of integrity important for retail banking?",
+      "opts": [
+        "A. It reduces the need for compliance",
+        "B. It builds trust, ensures long-term success, and protects the bank from legal and reputational risks",
+        "C. It increases short-term profits",
+        "D. It reduces customer complaints by avoiding all communication"
+      ],
+      "ans": "B",
+      "exp": "Integrity fosters trust, which is essential for customer retention and sustainable success. It also mitigates legal and reputational risks."
+    },
+    {
+      "id": "Q142",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of an organisation with a strong culture of integrity?",
+      "opts": [
+        "A. Ethical behaviour is rewarded, and misconduct is addressed promptly",
+        "B. Employees are afraid to speak up",
+        "C. Targets are prioritised over ethics",
+        "D. Whistleblowers are penalised"
+      ],
+      "ans": "A",
+      "exp": "A strong integrity culture rewards ethical behaviour and addresses misconduct fairly, encouraging transparency and accountability."
+    },
+    {
+      "id": "Q143",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank that implements monthly 'Integrity in Action' awards is using which method to promote ethics?",
+      "opts": [
+        "A. Punishment",
+        "B. Incentive and recognition",
+        "C. Regulation",
+        "D. Outsourcing"
+      ],
+      "ans": "B",
+      "exp": "Recognising employees who demonstrate ethical behaviour encourages others to act similarly, reinforcing a positive culture."
+    },
+    {
+      "id": "Q144",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a common consequence when leadership ignores unethical behaviour?",
+      "opts": [
+        "A. Increased trust",
+        "B. Erosion of morale and increased misconduct",
+        "C. Higher profits",
+        "D. Lower turnover"
+      ],
+      "ans": "B",
+      "exp": "When unethical actions go unchecked, employees lose confidence in leadership, morale suffers, and misconduct becomes more prevalent."
+    },
+    {
+      "id": "Q145",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the first step a bank should take when rebuilding integrity after a scandal?",
+      "opts": [
+        "A. Change the bank's name",
+        "B. Conduct a thorough internal investigation and hold accountable those responsible",
+        "C. Focus only on marketing campaigns",
+        "D. Avoid discussing the past"
+      ],
+      "ans": "B",
+      "exp": "Rebuilding starts with acknowledging failures, investigating thoroughly, and holding wrongdoers accountable. This demonstrates commitment to change."
+    },
+    {
+      "id": "Q146",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a principle commonly found in ethical codes of conduct for bankers?",
+      "opts": [
+        "A. Integrity",
+        "B. Confidentiality",
+        "C. Aggressive sales promotion",
+        "D. Avoidance of conflicts of interest"
+      ],
+      "ans": "C",
+      "exp": "Codes emphasise integrity, confidentiality, and conflict avoidance. Aggressive sales promotion is not an ethical principle; it's often a source of unethical behaviour."
+    },
+    {
+      "id": "Q147",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Banking Fraud Investigation Unit (BFIU) in Kenya operates under which institution?",
+      "opts": [
+        "A. Kenya Institute of Bankers (KIB)",
+        "B. Central Bank of Kenya (CBK)",
+        "C. Financial Reporting Centre (FRC)",
+        "D. Ministry of Finance"
+      ],
+      "ans": "B",
+      "exp": "The BFIU is a unit under the CBK, responsible for investigating misconduct and fraud in the banking sector."
+    },
+    {
+      "id": "Q148",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the role of the Financial Sector Conduct Authority (FSCA) in South Africa?",
+      "opts": [
+        "A. To set monetary policy",
+        "B. To regulate financial institutions and ensure fair treatment of customers",
+        "C. To provide banking services",
+        "D. To act as a central bank"
+      ],
+      "ans": "B",
+      "exp": "The FSCA regulates financial institutions and enforces fair customer treatment, distinct from SARB's monetary policy role."
+    },
+    {
+      "id": "Q149",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following best describes the approach to promoting ethical behaviour in banks?",
+      "opts": [
+        "A. Rely solely on laws and regulations",
+        "B. Combine leadership commitment, clear codes, training, incentives, and accountability",
+        "C. Focus only on punishment",
+        "D. Leave ethics to individual discretion"
+      ],
+      "ans": "B",
+      "exp": "An effective approach combines multiple elements: leadership modelling, clear policies, training, recognition, and enforcement. No single measure is sufficient."
+    },
+    {
+      "id": "Q150",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a key lesson from the Wells Fargo scandal regarding ethical culture?",
+      "opts": [
+        "A. Sales targets should be set extremely high to motivate staff",
+        "B. Leadership must prioritise ethical conduct over aggressive performance metrics",
+        "C. Customers prefer fake accounts",
+        "D. Scandals do not affect bank stock prices"
+      ],
+      "ans": "B",
+      "exp": "The scandal demonstrated that when leadership prioritises sales targets over ethics, misconduct flourishes. Ethical leadership must set the right tone and hold all accountable."
+    },
+    {
+      "id": "Q151",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the first step in the Moral Reasoning Model for ethical decision-making?",
+      "opts": [
+        "A. Identify stakeholders",
+        "B. Gather relevant facts",
+        "C. Consider alternatives",
+        "D. Make a decision"
+      ],
+      "ans": "B",
+      "exp": "The Moral Reasoning Model is a 5-step framework. Step 1 is to gather relevant facts—collecting comprehensive, verified information before proceeding to other steps."
+    },
+    {
+      "id": "Q152",
+      "module": 4,
+      "type": "mcq",
+      "q": "Why is gathering facts the first step in ethical decision-making?",
+      "opts": [
+        "A. It is the easiest step",
+        "B. It ensures decisions are based on comprehensive, verified information rather than assumptions",
+        "C. It is required by law",
+        "D. It allows the banker to delay making a decision"
+      ],
+      "ans": "B",
+      "exp": "Gathering factual, reliable, and complete data from credible sources prevents decisions based on assumptions or incomplete information."
+    },
+    {
+      "id": "Q153",
+      "module": 4,
+      "type": "mcq",
+      "q": "In the Moral Reasoning Model, what should a banker do after gathering the relevant facts?",
+      "opts": [
+        "A. Immediately make a decision",
+        "B. Identify all stakeholders affected by the decision",
+        "C. Ignore the facts and rely on intuition",
+        "D. Consult a lawyer"
+      ],
+      "ans": "B",
+      "exp": "Step 2 is to identify stakeholders—all parties who may be affected by the decision, including customers, employees, shareholders, and regulators."
+    },
+    {
+      "id": "Q154",
+      "module": 4,
+      "type": "mcq",
+      "q": "When identifying stakeholders in a loan approval decision, which of the following groups should be considered?",
+      "opts": [
+        "A. Only the applicant",
+        "B. The applicant, other customers, shareholders, employees, and regulatory bodies",
+        "C. Only shareholders",
+        "D. Only the bank's executives"
+      ],
+      "ans": "B",
+      "exp": "Stakeholders include the applicant, other customers (who rely on the bank's stability), shareholders, employees, and regulators. Considering all ensures a balanced decision."
+    },
+    {
+      "id": "Q155",
+      "module": 4,
+      "type": "mcq",
+      "q": "Step 3 of the Moral Reasoning Model requires the banker to:",
+      "opts": [
+        "A. Gather more facts",
+        "B. Consider alternatives and evaluate possible courses of action",
+        "C. Make a final decision immediately",
+        "D. Ignore stakeholders' interests"
+      ],
+      "ans": "B",
+      "exp": "Step 3 involves considering alternatives—evaluating different options, weighing risks, benefits, and ethical implications before choosing."
+    },
+    {
+      "id": "Q156",
+      "module": 4,
+      "type": "mcq",
+      "q": "In a loan approval scenario where the applicant has a marginal financial situation, what might be an appropriate alternative?",
+      "opts": [
+        "A. Approve the loan unconditionally",
+        "B. Deny the loan outright",
+        "C. Approve with safeguards such as collateral or a co-signer",
+        "D. Delay the decision indefinitely"
+      ],
+      "ans": "C",
+      "exp": "A defensible ethical decision might approve the loan with safeguards to mitigate risk, balancing customer needs with bank prudence."
+    },
+    {
+      "id": "Q157",
+      "module": 4,
+      "type": "mcq",
+      "q": "Step 4 of the Moral Reasoning Model involves:",
+      "opts": [
+        "A. Gathering facts",
+        "B. Making a decision that is defensible from ethical and legal standpoints",
+        "C. Identifying stakeholders",
+        "D. Evaluating the outcome"
+      ],
+      "ans": "B",
+      "exp": "Step 4 is making the decision—choosing the course of action that is ethically and legally defensible, based on the facts, stakeholder analysis, and alternatives considered."
+    },
+    {
+      "id": "Q158",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the final step of the Moral Reasoning Model?",
+      "opts": [
+        "A. Make a decision",
+        "B. Gather more facts",
+        "C. Evaluate the outcome and reflect on the decision's impact",
+        "D. Ignore the outcome"
+      ],
+      "ans": "C",
+      "exp": "Step 5 is to evaluate the outcome—assessing the decision's impact, learning from it, and making adjustments for future decisions."
+    },
+    {
+      "id": "Q159",
+      "module": 4,
+      "type": "mcq",
+      "q": "A loan officer is deciding whether to approve a borderline loan. Which step involves assessing how the decision might affect other customers?",
+      "opts": [
+        "A. Gather facts",
+        "B. Identify stakeholders",
+        "C. Consider alternatives",
+        "D. Make a decision"
+      ],
+      "ans": "B",
+      "exp": "Identifying stakeholders includes considering how the decision affects all parties, including other customers who depend on the bank's financial stability."
+    },
+    {
+      "id": "Q160",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the key question a banker should ask when considering alternatives in the Moral Reasoning Model?",
+      "opts": [
+        "A. Which option is easiest to implement?",
+        "B. Which option is most defensible ethically and legally?",
+        "C. Which option generates the most short-term profit?",
+        "D. Which option requires the least paperwork?"
+      ],
+      "ans": "B",
+      "exp": "The decision should be defensible from both ethical and legal standpoints. This ensures integrity and compliance."
+    },
+    {
+      "id": "Q161",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which step of the Moral Reasoning Model is most directly concerned with identifying potentially impacted parties?",
+      "opts": [
+        "A. Gather facts",
+        "B. Identify stakeholders",
+        "C. Consider alternatives",
+        "D. Evaluate the outcome"
+      ],
+      "ans": "B",
+      "exp": "Step 2 explicitly requires identifying stakeholders—all parties who may be affected, including those not immediately apparent."
+    },
+    {
+      "id": "Q162",
+      "module": 4,
+      "type": "mcq",
+      "q": "A banker who approves a risky loan without proper safeguards would be failing which step of the Moral Reasoning Model?",
+      "opts": [
+        "A. Gather facts",
+        "B. Consider alternatives",
+        "C. Evaluate the outcome",
+        "D. All of the above"
+      ],
+      "ans": "B",
+      "exp": "Failing to consider safeguards or alternative actions skips proper evaluation of options, which is Step 3. This could lead to an unethical or imprudent decision."
+    },
+    {
+      "id": "Q163",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a conflict of interest in the banking context?",
+      "opts": [
+        "A. A disagreement between two employees",
+        "B. A situation where personal, financial, or professional interests interfere with the duty to act in the organization's best interest",
+        "C. A conflict between two customers over account terms",
+        "D. A dispute between the bank and a regulator"
+      ],
+      "ans": "B",
+      "exp": "A conflict of interest arises when personal interests—such as relationships, gifts, or outside activities—could impair objectivity and interfere with the duty to the bank and its customers."
+    },
+    {
+      "id": "Q164",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a common conflict of interest in retail banking?",
+      "opts": [
+        "A. A banker who has no personal relationships with customers",
+        "B. A banker showing favoritism toward family or friends in loan approvals",
+        "C. A banker who declines all gifts",
+        "D. A banker who strictly follows all policies"
+      ],
+      "ans": "B",
+      "exp": "Personal relationships with customers can lead to favouritism, which is a common conflict of interest in banking."
+    },
+    {
+      "id": "Q165",
+      "module": 4,
+      "type": "mcq",
+      "q": "Accepting an expensive gift from a vendor could create what type of ethical issue?",
+      "opts": [
+        "A. A conflict of interest",
+        "B. A data privacy violation",
+        "C. A mis-selling case",
+        "D. A fraud investigation"
+      ],
+      "ans": "A",
+      "exp": "Accepting gifts from customers or vendors may lead to biased decisions and is considered a conflict of interest."
+    },
+    {
+      "id": "Q166",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank employee who runs a side business providing financial advice to clients of the bank is potentially creating:",
+      "opts": [
+        "A. A professional development opportunity",
+        "B. A conflict of interest",
+        "C. A training program",
+        "D. A compliance improvement"
+      ],
+      "ans": "B",
+      "exp": "Outside business activities related to finance can create conflicts with the bank's interests, as they may involve competing products or services."
+    },
+    {
+      "id": "Q167",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the first step in managing a conflict of interest?",
+      "opts": [
+        "A. Ignore it if it seems minor",
+        "B. Identify and recognize the conflict",
+        "C. Disclose it publicly",
+        "D. Resign from the position"
+      ],
+      "ans": "B",
+      "exp": "The first step is to recognize and identify the conflict. Without awareness, it cannot be managed properly."
+    },
+    {
+      "id": "Q168",
+      "module": 4,
+      "type": "mcq",
+      "q": "After identifying a conflict of interest, what should a bank employee do?",
+      "opts": [
+        "A. Keep it confidential to avoid embarrassment",
+        "B. Disclose it to their manager or compliance officer",
+        "C. Proceed as if nothing is wrong",
+        "D. Wait for someone else to notice"
+      ],
+      "ans": "B",
+      "exp": "Transparency is essential—employees must disclose potential conflicts to their manager or compliance officer to ensure proper management."
+    },
+    {
+      "id": "Q169",
+      "module": 4,
+      "type": "mcq",
+      "q": "If a conflict of interest is identified, what should be done to resolve it?",
+      "opts": [
+        "A. Take steps to remove or mitigate the conflict",
+        "B. Continue with the conflicting activity",
+        "C. Avoid discussing it",
+        "D. Resign immediately"
+      ],
+      "ans": "A",
+      "exp": "Once a conflict is identified, steps should be taken to remove or mitigate it—for example, recusing oneself from a decision or ceasing the conflicting activity."
+    },
+    {
+      "id": "Q170",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank manager approves a personal loan for their cousin without any additional review. This is:",
+      "opts": [
+        "A. An acceptable practice",
+        "B. A conflict of interest that should have been disclosed",
+        "C. A normal banking operation",
+        "D. A data breach"
+      ],
+      "ans": "B",
+      "exp": "Approving a loan for a family member without additional review is a conflict of interest. The manager should have disclosed the relationship and recused themselves."
+    },
+    {
+      "id": "Q171",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank employee refuses an expensive gift from a client. This action:",
+      "opts": [
+        "A. Is unnecessary and may offend the client",
+        "B. Demonstrates good practice in avoiding conflicts of interest",
+        "C. Is required only for senior staff",
+        "D. Shows poor customer relations"
+      ],
+      "ans": "B",
+      "exp": "Refusing gifts prevents potential bias and demonstrates integrity. It is a key practice for avoiding conflicts of interest."
+    },
+    {
+      "id": "Q172",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is whistleblowing in the banking context?",
+      "opts": [
+        "A. Reporting a colleague's minor mistake",
+        "B. Reporting unethical behaviour or violations of laws and regulations through protected channels",
+        "C. Complaining about a manager to HR",
+        "D. Reporting a customer's late payment"
+      ],
+      "ans": "B",
+      "exp": "Whistleblowing allows employees to report unethical behaviour, fraud, or regulatory violations without fear of retaliation, maintaining transparency and accountability."
+    },
+    {
+      "id": "Q173",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is NOT a purpose of whistleblowing?",
+      "opts": [
+        "A. Detecting and preventing fraud",
+        "B. Maintaining transparency and accountability",
+        "C. Punishing innocent employees",
+        "D. Protecting the bank's integrity"
+      ],
+      "ans": "C",
+      "exp": "Whistleblowing aims to detect misconduct, ensure accountability, and protect integrity—not to punish innocent employees."
+    },
+    {
+      "id": "Q174",
+      "module": 4,
+      "type": "mcq",
+      "q": "What protection should be provided to whistleblowers?",
+      "opts": [
+        "A. No protection—they should face consequences",
+        "B. Protection from termination, confidentiality, and anti-retaliation measures",
+        "C. A financial reward only",
+        "D. Promotion to management"
+      ],
+      "ans": "B",
+      "exp": "Legal safeguards include protection from termination, confidentiality, and anti-retaliation measures to encourage reporting without fear."
+    },
+    {
+      "id": "Q175",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is an ethical consideration for whistleblowers before reporting?",
+      "opts": [
+        "A. Reports should be based on factual evidence and proportional to the misconduct",
+        "B. Reports should be made anonymously without any evidence",
+        "C. Whistleblowers should always go to the media first",
+        "D. Reports should be made only if the misconduct is severe"
+      ],
+      "ans": "A",
+      "exp": "Whistleblowers should base reports on factual evidence and ensure the concern is proportional to the misconduct. This ensures credibility and fairness."
+    },
+    {
+      "id": "Q176",
+      "module": 4,
+      "type": "mcq",
+      "q": "If an employee is unsure about an ethical concern, the recommended course of action is:",
+      "opts": [
+        "A. Ignore it",
+        "B. Seek guidance from a supervisor, compliance officer, or ethics hotline",
+        "C. Post about it on social media",
+        "D. Resign immediately"
+      ],
+      "ans": "B",
+      "exp": "Seeking guidance from supervisors, compliance officers, or ethics hotlines is the appropriate step when unsure about ethical concerns."
+    },
+    {
+      "id": "Q177",
+      "module": 4,
+      "type": "mcq",
+      "q": "According to Access Bank's whistleblowing policy, who is responsible for receiving whistleblowing complaints and monitoring investigation outcomes?",
+      "opts": [
+        "A. The CEO",
+        "B. The Chief Conduct and Compliance Officer (CCCO)",
+        "C. The Board of Directors",
+        "D. The Legal Department"
+      ],
+      "ans": "B",
+      "exp": "The CCCO receives complaints, monitors investigations, and reports to CBN quarterly and DELOITTE monthly, as per the policy."
+    },
+    {
+      "id": "Q178",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which external party receives whistleblowing complaints from the public under Access Bank's policy?",
+      "opts": [
+        "A. Only the CCCO",
+        "B. DELOITTE, CBN, and NDIC",
+        "C. Only the Board",
+        "D. The CEO's office"
+      ],
+      "ans": "B",
+      "exp": "Access Bank's policy states that DELOITTE, CBN, and NDIC receive whistleblowing complaints from the public."
+    },
+    {
+      "id": "Q179",
+      "module": 4,
+      "type": "mcq",
+      "q": "Who conducts investigations of whistleblowing cases within Access Bank?",
+      "opts": [
+        "A. Legal Department",
+        "B. Group Internal Audit",
+        "C. Strategic Business Units",
+        "D. The CCCO personally"
+      ],
+      "ans": "B",
+      "exp": "Group Internal Audit conducts investigations and reports outcomes to the Board Audit Committee."
+    },
+    {
+      "id": "Q180",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the role of the Legal Department in Access Bank's whistleblowing framework?",
+      "opts": [
+        "A. To conduct investigations",
+        "B. To handle legal issues for the bank on reported cases",
+        "C. To approve the whistleblower program",
+        "D. To receive public complaints"
+      ],
+      "ans": "B",
+      "exp": "The Legal Department handles legal issues arising from reported cases, as per the stakeholder responsibilities."
+    },
+    {
+      "id": "Q181",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a 'concern' under Access Bank's whistleblowing policy?",
+      "opts": [
+        "A. A suggestion for process improvement",
+        "B. A grievance or report of a suspected breach of law or group policy",
+        "C. A customer complaint about service",
+        "D. A routine operational error"
+      ],
+      "ans": "B",
+      "exp": "The policy defines a concern as a grievance or report of suspected breach of law or group policy."
+    },
+    {
+      "id": "Q182",
+      "module": 4,
+      "type": "mcq",
+      "q": "Under Access Bank's policy, employees are expected to report concerns regarding:",
+      "opts": [
+        "A. Only fraud",
+        "B. Violations of law, policy breaches, misconduct, and deliberate avoidance of controls",
+        "C. Only cases involving senior management",
+        "D. Only financial irregularities"
+      ],
+      "ans": "B",
+      "exp": "Employees must report violations of law, policy breaches, misconduct, departures from standards, and control manipulations."
+    },
+    {
+      "id": "Q183",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the policy requirement regarding the severity of concerns before escalation?",
+      "opts": [
+        "A. Employees must determine if the concern is significant",
+        "B. Employees must escalate all concerns regardless of severity",
+        "C. Employees must consult a lawyer before escalating",
+        "D. Employees should only escalate if they have proof"
+      ],
+      "ans": "B",
+      "exp": "Employees need not determine severity—they must escalate all concerns as per policy ABP.CIC.0712.070."
+    },
+    {
+      "id": "Q184",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is NOT listed as a type of concern under Access Bank's whistleblowing policy?",
+      "opts": [
+        "A. Fraud and corruption",
+        "B. Coercive and collusive practices",
+        "C. Minor disagreements between colleagues",
+        "D. Money laundering and terrorism financing"
+      ],
+      "ans": "C",
+      "exp": "The policy covers fraud, corruption, coercive/collusive practices, money laundering, misconduct, and insider abuse. Minor disagreements are not listed."
+    },
+    {
+      "id": "Q185",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is 'coercive practice' as defined in Access Bank's whistleblowing policy?",
+      "opts": [
+        "A. Impairing or threatening to impair any party to influence improperly their actions",
+        "B. Offering a gift to a customer",
+        "C. Failing to meet a sales target",
+        "D. Making an honest error"
+      ],
+      "ans": "A",
+      "exp": "Coercive practices involve impairing or threatening to harm a party or their property to influence their actions improperly."
+    },
+    {
+      "id": "Q186",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is 'insider abuse' under Access Bank's policy?",
+      "opts": [
+        "A. Any financial crime",
+        "B. Bullying, physical/sexual harassment, and dignity-at-work issues",
+        "C. A customer complaint",
+        "D. A regulatory violation"
+      ],
+      "ans": "B",
+      "exp": "Insider abuse includes bullying, harassment, and other issues concerning dignity at work, as well as other misconduct."
+    },
+    {
+      "id": "Q187",
+      "module": 4,
+      "type": "mcq",
+      "q": "Why is whistleblowing important for ethical banking?",
+      "opts": [
+        "A. It reduces the need for audits",
+        "B. It helps detect and prevent fraud, corruption, and regulatory violations",
+        "C. It makes employees afraid to speak up",
+        "D. It only benefits senior management"
+      ],
+      "ans": "B",
+      "exp": "Whistleblowing maintains transparency, accountability, and integrity by detecting and preventing misconduct before it escalates."
+    },
+    {
+      "id": "Q188",
+      "module": 4,
+      "type": "mcq",
+      "q": "A banker who faces pressure to approve a loan for a relative should:",
+      "opts": [
+        "A. Approve it to maintain the relationship",
+        "B. Disclose the relationship and recuse themselves from the decision",
+        "C. Approve it secretly",
+        "D. Deny it without explanation"
+      ],
+      "ans": "B",
+      "exp": "When a conflict exists, the banker should disclose it and recuse themselves to ensure objectivity and fairness."
+    },
+    {
+      "id": "Q189",
+      "module": 4,
+      "type": "mcq",
+      "q": "What should a banker do if they witness a colleague committing fraud?",
+      "opts": [
+        "A. Join the fraud to avoid being targeted",
+        "B. Report it through the appropriate whistleblowing channel",
+        "C. Ignore it to protect team harmony",
+        "D. Confront the colleague but not report"
+      ],
+      "ans": "B",
+      "exp": "Witnessing fraud creates an obligation to report through appropriate channels to protect the bank and uphold ethical standards."
+    },
+    {
+      "id": "Q190",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which step of the Moral Reasoning Model involves reflecting on the decision after it has been made?",
+      "opts": [
+        "A. Gather facts",
+        "B. Identify stakeholders",
+        "C. Consider alternatives",
+        "D. Evaluate the outcome"
+      ],
+      "ans": "D",
+      "exp": "The final step is evaluating the outcome—assessing the decision's impact, learning from it, and making adjustments for future decisions."
+    },
+    {
+      "id": "Q191",
+      "module": 4,
+      "type": "mcq",
+      "q": "In a loan approval scenario, which stakeholders might be negatively affected if a risky loan defaults?",
+      "opts": [
+        "A. Only the borrower",
+        "B. Other depositors and shareholders who rely on the bank's stability",
+        "C. The bank's competitors",
+        "D. The regulator only"
+      ],
+      "ans": "B",
+      "exp": "A default can affect depositors, shareholders, and the bank's financial stability, impacting many stakeholders beyond the borrower."
+    },
+    {
+      "id": "Q192",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the key to making an ethically defensible decision under the Moral Reasoning Model?",
+      "opts": [
+        "A. Relying solely on intuition",
+        "B. Following a structured process that considers facts, stakeholders, alternatives, and outcomes",
+        "C. Always choosing the option that benefits the bank most",
+        "D. Always choosing the option that benefits the customer most"
+      ],
+      "ans": "B",
+      "exp": "The model provides a structured, thoughtful approach that ensures all relevant factors are considered before making a decision."
+    },
+    {
+      "id": "Q193",
+      "module": 4,
+      "type": "mcq",
+      "q": "A banker who accepts a gift from a vendor and then approves their contract is exhibiting:",
+      "opts": [
+        "A. Professional competence",
+        "B. A conflict of interest",
+        "C. Ethical leadership",
+        "D. Responsible lending"
+      ],
+      "ans": "B",
+      "exp": "Accepting a gift and then making a favourable decision creates a conflict where personal benefit influences professional duty."
+    },
+    {
+      "id": "Q194",
+      "module": 4,
+      "type": "mcq",
+      "q": "What should a banker do if they have an outside business that provides financial advice?",
+      "opts": [
+        "A. Continue the business without informing the bank",
+        "B. Disclose the business to the bank and ensure it doesn't conflict with bank duties",
+        "C. Only provide advice to non-customers",
+        "D. Resign from the bank"
+      ],
+      "ans": "B",
+      "exp": "Disclosure is essential. The bank can then assess whether the activity conflicts and ensure it doesn't compromise the banker's duties."
+    },
+    {
+      "id": "Q195",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is an example of appropriate whistleblowing?",
+      "opts": [
+        "A. Reporting a colleague's minor personal issue",
+        "B. Reporting a suspected fraudulent transaction through the ethics hotline",
+        "C. Posting a complaint about a manager on social media",
+        "D. Reporting a customer's late payment"
+      ],
+      "ans": "B",
+      "exp": "Appropriate whistleblowing involves reporting suspected legal or regulatory violations through protected internal channels."
+    },
+    {
+      "id": "Q196",
+      "module": 4,
+      "type": "mcq",
+      "q": "In the Nandi case scenario, what is the ethical course of action for the project coordinator?",
+      "opts": [
+        "A. Continue recording inflated figures to keep her job",
+        "B. Report the fraud to the compliance department or whistleblowing channel",
+        "C. Confront her boss privately without reporting",
+        "D. Ignore it and hope the issue resolves"
+      ],
+      "ans": "B",
+      "exp": "Nandi should report the fraud through appropriate channels. Continuing to manipulate records makes her complicit and exposes her to risk."
+    },
+    {
+      "id": "Q197",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary benefit of having a structured ethical decision-making framework like the Moral Reasoning Model?",
+      "opts": [
+        "A. It guarantees the correct decision every time",
+        "B. It promotes consistent, thoughtful, and defensible decisions",
+        "C. It eliminates the need for ethics training",
+        "D. It ensures all decisions are profitable"
+      ],
+      "ans": "B",
+      "exp": "The framework promotes consistent, rigorous thinking and helps bankers make decisions that are defensible ethically and legally."
+    },
+    {
+      "id": "Q198",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which Access Bank stakeholder is responsible for reporting misconduct to be whistleblown?",
+      "opts": [
+        "A. Only the CCCO",
+        "B. All members of staff",
+        "C. Only senior management",
+        "D. Only external parties"
+      ],
+      "ans": "B",
+      "exp": "All members of staff are responsible for reporting misconduct that should be whistleblown, as per the policy."
+    },
+    {
+      "id": "Q199",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the purpose of having clear, confidential reporting channels for whistleblowing?",
+      "opts": [
+        "A. To encourage reporting without fear of retaliation",
+        "B. To make whistleblowing difficult",
+        "C. To ensure all complaints are public",
+        "D. To reduce the number of complaints"
+      ],
+      "ans": "A",
+      "exp": "Confidential channels protect whistleblowers and encourage reporting, which helps detect and prevent misconduct."
+    },
+    {
+      "id": "Q200",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the overarching goal of the Moral Reasoning Model in retail banking?",
+      "opts": [
+        "A. To increase loan approvals",
+        "B. To ensure all decisions are made quickly",
+        "C. To promote integrity, accountability, and ethical decision-making in banking operations",
+        "D. To reduce paperwork"
+      ],
+      "ans": "C",
+      "exp": "The framework aims to embed integrity and accountability into decision-making, ensuring banking operations are ethical and transparent."
+    },
+    {
+      "id": "Q201",
+      "module": 5,
+      "type": "mcq",
+      "q": "Why is transparent communication an ethical responsibility in retail banking?",
+      "opts": [
+        "A. It reduces the bank's paperwork",
+        "B. It is the foundation for trust-building and ensuring products align with customer needs",
+        "C. It eliminates the need for compliance",
+        "D. It guarantees higher profits"
+      ],
+      "ans": "B",
+      "exp": "Transparent communication builds trust, manages expectations, and ensures customers understand products, which is both an ethical duty and a practical necessity."
+    },
+    {
+      "id": "Q202",
+      "module": 5,
+      "type": "mcq",
+      "q": "What does transparent communication require from bankers?",
+      "opts": [
+        "A. Using technical jargon to sound professional",
+        "B. Providing simple, jargon-free explanations of banking products",
+        "C. Avoiding detailed discussions about fees",
+        "D. Relying on written contracts alone"
+      ],
+      "ans": "B",
+      "exp": "Customers deserve clear, simple explanations. Jargon-free communication prevents misunderstandings and legal risks."
+    },
+    {
+      "id": "Q203",
+      "module": 5,
+      "type": "mcq",
+      "q": "Instead of saying 'net asset value,' how should a banker explain this concept to a customer?",
+      "opts": [
+        "A. 'The value of your investments adjusted for market fluctuations'",
+        "B. 'How your investment grows over time'",
+        "C. 'The net present value of future cash flows'",
+        "D. 'The liquidation value of your portfolio'"
+      ],
+      "ans": "B",
+      "exp": "The manual suggests explaining 'net asset value' as 'how your investment grows over time' to make it accessible and customer-friendly."
+    },
+    {
+      "id": "Q204",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the first step in building rapport with a customer?",
+      "opts": [
+        "A. Immediately pitching a product",
+        "B. Active listening and showing engagement",
+        "C. Asking for personal information",
+        "D. Presenting the bank's credentials"
+      ],
+      "ans": "B",
+      "exp": "Building rapport starts with active listening—showing engagement through eye contact, follow-up questions, and genuine attention to the customer's concerns."
+    },
+    {
+      "id": "Q205",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following demonstrates empathy in customer communication?",
+      "opts": [
+        "A. Acknowledging a customer's frustration and offering reassurance",
+        "B. Defending the bank's policies without listening",
+        "C. Offering a solution immediately without understanding the problem",
+        "D. Using a formal, distant tone"
+      ],
+      "ans": "A",
+      "exp": "Empathy involves acknowledging the customer's feelings and offering reassurance. This builds trust and de-escalates tension."
+    },
+    {
+      "id": "Q206",
+      "module": 5,
+      "type": "mcq",
+      "q": "What tone and body language are recommended for effective customer communication?",
+      "opts": [
+        "A. Formal, rigid, and authoritative",
+        "B. Warm, open, and non-judgmental",
+        "C. Fast-paced and dismissive",
+        "D. Neutral and unemotional"
+      ],
+      "ans": "B",
+      "exp": "A warm, open, and non-judgmental demeanor makes customers feel heard and respected, fostering a positive relationship."
+    },
+    {
+      "id": "Q207",
+      "module": 5,
+      "type": "mcq",
+      "q": "How should a banker overcome a language barrier with a customer?",
+      "opts": [
+        "A. Speak louder and repeat the same words",
+        "B. Use translators or bilingual staff",
+        "C. Ask the customer to bring a friend",
+        "D. End the conversation politely"
+      ],
+      "ans": "B",
+      "exp": "Using translators or bilingual staff is an effective way to overcome language barriers and ensure clear communication."
+    },
+    {
+      "id": "Q208",
+      "module": 5,
+      "type": "mcq",
+      "q": "When a customer is emotionally distressed, how should a banker respond?",
+      "opts": [
+        "A. Rush through the conversation",
+        "B. Offer patience and clear explanations",
+        "C. Refer them to a different department",
+        "D. Ignore the emotional state and focus on facts"
+      ],
+      "ans": "B",
+      "exp": "Emotional distress requires patience and clarity. Calm, clear explanations help the customer understand and feel supported."
+    },
+    {
+      "id": "Q209",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key ethical obligation regarding disclosure of fees and charges?",
+      "opts": [
+        "A. Disclose fees only if the customer asks",
+        "B. Clearly explain all charges upfront",
+        "C. Include fees in the fine print only",
+        "D. Disclose fees after the customer has signed"
+      ],
+      "ans": "B",
+      "exp": "Financial transparency is a legal and ethical obligation. Banks must clearly explain charges—such as ATM fees, interest rates, and penalties—upfront."
+    },
+    {
+      "id": "Q210",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the consequence of hidden fees in banking?",
+      "opts": [
+        "A. Increased customer loyalty",
+        "B. Loss of trust and potential legal trouble",
+        "C. Higher customer satisfaction",
+        "D. Reduced regulatory scrutiny"
+      ],
+      "ans": "B",
+      "exp": "Hidden fees erode trust and can lead to legal action. Transparency is essential to maintain customer confidence."
+    },
+    {
+      "id": "Q211",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which regulatory body requires banks to disclose fees and charges in a clear, understandable manner in Nigeria?",
+      "opts": [
+        "A. Nigeria Financial Intelligence Unit (NFIU)",
+        "B. Central Bank of Nigeria (CBN)",
+        "C. Economic and Financial Crimes Commission (EFCC)",
+        "D. Federal Ministry of Finance"
+      ],
+      "ans": "B",
+      "exp": "The CBN requires banks to disclose fees transparently. The manual cites CBN and the UK's FCA as examples of regulators enforcing fee disclosure."
+    },
+    {
+      "id": "Q212",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the Truth In Lending Act (TILA) primarily concerned with?",
+      "opts": [
+        "A. Data privacy",
+        "B. Full disclosure of costs associated with lending",
+        "C. Anti-money laundering",
+        "D. Whistleblower protection"
+      ],
+      "ans": "B",
+      "exp": "TILA (U.S.A.) requires lenders to fully disclose costs and terms, protecting consumers from hidden fees and deceptive practices."
+    },
+    {
+      "id": "Q213",
+      "module": 5,
+      "type": "mcq",
+      "q": "How should banks balance transparency without overwhelming customers with information?",
+      "opts": [
+        "A. Provide no information to avoid confusion",
+        "B. Focus on the most critical charges while providing detailed terms on request",
+        "C. Include every possible detail in all communications",
+        "D. Only discuss fees if the customer asks"
+      ],
+      "ans": "B",
+      "exp": "Banks should highlight key charges that directly impact customers, while making detailed terms available upon request—avoiding information overload."
+    },
+    {
+      "id": "Q214",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a best practice for handling customer complaints ethically?",
+      "opts": [
+        "A. Denying the issue to protect the bank",
+        "B. Listening actively and saying, 'I understand your frustration—let's resolve this'",
+        "C. Blaming the customer for the misunderstanding",
+        "D. Escalating every complaint without investigation"
+      ],
+      "ans": "B",
+      "exp": "Active listening and acknowledging the customer's frustration is the first step in ethical complaint resolution. This validates their concerns and builds trust."
+    },
+    {
+      "id": "Q215",
+      "module": 5,
+      "type": "mcq",
+      "q": "What should a banker do after acknowledging a customer's complaint?",
+      "opts": [
+        "A. Offer a solution and ensure customer satisfaction",
+        "B. End the conversation quickly",
+        "C. Refer the customer to another department without follow-up",
+        "D. Defend the bank's position"
+      ],
+      "ans": "A",
+      "exp": "After listening and acknowledging, the banker should offer a solution and follow through to ensure the customer is satisfied."
+    },
+    {
+      "id": "Q216",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer tells a banker, 'I want a savings account that grows my money, has no hidden fees, and gives me easy access to my funds.' The banker offers a fixed-term deposit with high interest. Did they make the right recommendation?",
+      "opts": [
+        "A. Yes, because high interest means more savings",
+        "B. No, because fixed-term deposits limit access to funds",
+        "C. Maybe—it depends on how well the bank explained the terms",
+        "D. The bank should have asked more questions before suggesting a product"
+      ],
+      "ans": "D",
+      "exp": "The customer explicitly wanted easy access. The banker should have asked clarifying questions before recommending a product that restricts access. This tests active listening."
+    },
+    {
+      "id": "Q217",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key strategy for maintaining customer satisfaction while upholding bank policies?",
+      "opts": [
+        "A. Ignoring policies to satisfy customers",
+        "B. Setting clear expectations upfront",
+        "C. Changing policies for every customer",
+        "D. Avoiding policy discussions"
+      ],
+      "ans": "B",
+      "exp": "Setting clear expectations upfront prevents future dissatisfaction. This balances policy adherence with customer understanding."
+    },
+    {
+      "id": "Q218",
+      "module": 5,
+      "type": "mcq",
+      "q": "How can banks empower staff to resolve minor issues while upholding policies?",
+      "opts": [
+        "A. Give staff unlimited discretion",
+        "B. Allow staff flexibility within defined limits to resolve issues",
+        "C. Require all decisions to go through management",
+        "D. Avoid empowering staff to prevent errors"
+      ],
+      "ans": "B",
+      "exp": "Empowering staff with defined flexibility enables them to resolve issues promptly while staying within policy boundaries."
+    },
+    {
+      "id": "Q219",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the relationship between transparency and customer loyalty?",
+      "opts": [
+        "A. Transparency has no effect on loyalty",
+        "B. Transparent practices build trust, which increases customer retention and long-term loyalty",
+        "C. Loyalty depends only on interest rates",
+        "D. Transparency only matters for regulatory compliance"
+      ],
+      "ans": "B",
+      "exp": "Transparency builds trust, and trust is the foundation of customer loyalty. Customers who feel informed and fairly treated are more likely to stay."
+    },
+    {
+      "id": "Q220",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is NOT a best practice for transparent communication?",
+      "opts": [
+        "A. Explaining fees upfront",
+        "B. Using technical jargon to appear knowledgeable",
+        "C. Providing clear product descriptions",
+        "D. Avoiding misleading promises"
+      ],
+      "ans": "B",
+      "exp": "Technical jargon confuses customers and undermines transparency. Bankers should use simple, clear language."
+    },
+    {
+      "id": "Q221",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank that clearly explains the terms of a loan, including all interest rates and penalties, is demonstrating:",
+      "opts": [
+        "A. Regulatory avoidance",
+        "B. Ethical transparency",
+        "C. Salesmanship",
+        "D. Risk-taking"
+      ],
+      "ans": "B",
+      "exp": "Clear disclosure of loan terms is a core aspect of ethical transparency, helping customers make informed decisions."
+    },
+    {
+      "id": "Q222",
+      "module": 5,
+      "type": "mcq",
+      "q": "What should a banker do if a customer is having difficulty understanding financial concepts?",
+      "opts": [
+        "A. Proceed with the transaction anyway",
+        "B. Take time to explain concepts in simple terms and check for understanding",
+        "C. Recommend a different bank",
+        "D. Hand the customer a brochure and walk away"
+      ],
+      "ans": "B",
+      "exp": "Promoting financial literacy is a banker's responsibility. Taking time to explain and confirm understanding builds trust."
+    },
+    {
+      "id": "Q223",
+      "module": 5,
+      "type": "mcq",
+      "q": "How does active listening contribute to customer trust?",
+      "opts": [
+        "A. It shows customers that their concerns are valued and understood",
+        "B. It speeds up transactions",
+        "C. It reduces the need for documentation",
+        "D. It allows the banker to sell more products"
+      ],
+      "ans": "A",
+      "exp": "Active listening demonstrates respect and care, making customers feel valued and heard—essential for trust-building."
+    },
+    {
+      "id": "Q224",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary goal of handling a complaint professionally?",
+      "opts": [
+        "A. To avoid admitting fault",
+        "B. To restore trust and strengthen customer loyalty",
+        "C. To reduce paperwork",
+        "D. To punish the customer"
+      ],
+      "ans": "B",
+      "exp": "Professional complaint handling can transform a negative experience into a positive one, restoring trust and reinforcing loyalty."
+    },
+    {
+      "id": "Q225",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer complains about an unexpected fee. What is the ethical first step for the banker?",
+      "opts": [
+        "A. Defend the fee as standard policy",
+        "B. Listen to the customer's concern without interrupting",
+        "C. Offer a refund immediately",
+        "D. Escalate the complaint without discussion"
+      ],
+      "ans": "B",
+      "exp": "Listening without interrupting shows respect and allows the banker to fully understand the issue before responding."
+    },
+    {
+      "id": "Q226",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a barrier to effective customer communication?",
+      "opts": [
+        "A. Active listening",
+        "B. Financial literacy gaps",
+        "C. Empathy",
+        "D. Clear explanations"
+      ],
+      "ans": "B",
+      "exp": "Limited financial literacy is a barrier that bankers must address by explaining concepts clearly and patiently."
+    },
+    {
+      "id": "Q227",
+      "module": 5,
+      "type": "mcq",
+      "q": "Why is it important to focus on key charges rather than every minor detail when disclosing fees?",
+      "opts": [
+        "A. To hide important fees",
+        "B. To avoid overwhelming customers while still being transparent",
+        "C. To reduce compliance costs",
+        "D. To speed up the transaction"
+      ],
+      "ans": "B",
+      "exp": "Overloading customers with details can confuse them. Focusing on key charges while making details available on request balances transparency and clarity."
+    },
+    {
+      "id": "Q228",
+      "module": 5,
+      "type": "mcq",
+      "q": "What does the principle of 'delivering on promises' mean in customer communication?",
+      "opts": [
+        "A. Making promises you cannot keep",
+        "B. Following through on commitments made to customers",
+        "C. Avoiding any promises",
+        "D. Promising high returns regardless of risk"
+      ],
+      "ans": "B",
+      "exp": "Delivering on promises means honoring commitments, which builds trust through reliability and accountability."
+    },
+    {
+      "id": "Q229",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following actions would most effectively build trust with a new customer?",
+      "opts": [
+        "A. Immediately pitching the bank's most profitable products",
+        "B. Taking time to understand the customer's financial goals and needs",
+        "C. Emphasizing the bank's size and reputation",
+        "D. Offering a promotional gift"
+      ],
+      "ans": "B",
+      "exp": "Understanding a customer's needs demonstrates care and helps tailor recommendations, which builds trust from the outset."
+    },
+    {
+      "id": "Q230",
+      "module": 5,
+      "type": "mcq",
+      "q": "A banker who uses follow-up questions to understand a customer's situation is practicing:",
+      "opts": [
+        "A. Active listening",
+        "B. Salesmanship",
+        "C. Persuasion",
+        "D. Defensiveness"
+      ],
+      "ans": "A",
+      "exp": "Follow-up questions are a key element of active listening, showing engagement and a genuine interest in understanding the customer."
+    },
+    {
+      "id": "Q231",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key ethical risk of using overly complex language with customers?",
+      "opts": [
+        "A. Customers may feel impressed",
+        "B. Customers may misunderstand terms and make poor decisions",
+        "C. It reduces the bank's liability",
+        "D. It speeds up the sales process"
+      ],
+      "ans": "B",
+      "exp": "Complex language can lead to misunderstanding, causing customers to agree to products they don't fully comprehend—this is unethical."
+    },
+    {
+      "id": "Q232",
+      "module": 5,
+      "type": "mcq",
+      "q": "How can bankers overcome barriers caused by low financial literacy?",
+      "opts": [
+        "A. Use analogies and simple examples to explain concepts",
+        "B. Avoid discussing details",
+        "C. Only offer simple savings accounts",
+        "D. Refer customers to a third-party advisor"
+      ],
+      "ans": "A",
+      "exp": "Analogies and simple examples help demystify complex concepts, making banking accessible to customers with varying literacy levels."
+    },
+    {
+      "id": "Q233",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the impact of effective complaint resolution on customer retention?",
+      "opts": [
+        "A. It has no impact",
+        "B. It can strengthen loyalty and increase retention",
+        "C. It leads to more complaints",
+        "D. It reduces the bank's reputation"
+      ],
+      "ans": "B",
+      "exp": "When handled well, complaints become opportunities to demonstrate care and commitment, strengthening the customer relationship."
+    },
+    {
+      "id": "Q234",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a sign that a banker is practicing empathetic communication?",
+      "opts": [
+        "A. Using a monotone voice",
+        "B. Acknowledging the customer's emotions and concerns",
+        "C. Avoiding eye contact",
+        "D. Interrupting the customer frequently"
+      ],
+      "ans": "B",
+      "exp": "Empathy involves recognizing and validating the customer's feelings, which builds rapport and trust."
+    },
+    {
+      "id": "Q235",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer is upset because a transaction was declined. The banker's ethical response should include:",
+      "opts": [
+        "A. Blaming the system and walking away",
+        "B. Explaining the reason calmly and offering help to resolve the issue",
+        "C. Suggesting the customer switch banks",
+        "D. Ignoring the customer's frustration"
+      ],
+      "ans": "B",
+      "exp": "A calm explanation and offer of assistance demonstrates responsibility and care, turning a difficult situation into a trust-building opportunity."
+    },
+    {
+      "id": "Q236",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of setting clear expectations upfront in banking relationships?",
+      "opts": [
+        "A. To prevent future dissatisfaction and misunderstandings",
+        "B. To make the bank look more formal",
+        "C. To increase the bank's legal protection",
+        "D. To reduce customer questions"
+      ],
+      "ans": "A",
+      "exp": "Clear expectations align understanding between the bank and customer, preventing dissatisfaction from unmet assumptions."
+    },
+    {
+      "id": "Q237",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is an example of non-transparent fee disclosure?",
+      "opts": [
+        "A. Listing all fees in a table on the bank's website",
+        "B. Explaining fees verbally before the customer signs",
+        "C. Including fees only in the fine print of a lengthy contract",
+        "D. Providing a fee schedule upon request"
+      ],
+      "ans": "C",
+      "exp": "Hiding fees in fine print is not transparent. Disclosures should be clear, prominent, and understandable."
+    },
+    {
+      "id": "Q238",
+      "module": 5,
+      "type": "mcq",
+      "q": "A banker who says, 'I understand why this is frustrating for you' is demonstrating:",
+      "opts": [
+        "A. Apathy",
+        "B. Empathy",
+        "C. Sympathy",
+        "D. Indifference"
+      ],
+      "ans": "B",
+      "exp": "Empathy involves understanding and acknowledging another's feelings. This statement validates the customer's frustration."
+    },
+    {
+      "id": "Q239",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the most important outcome of transparent communication in banking?",
+      "opts": [
+        "A. Higher sales",
+        "B. Informed customers who can make sound financial decisions",
+        "C. Reduced compliance costs",
+        "D. Fewer customer visits"
+      ],
+      "ans": "B",
+      "exp": "The ultimate goal is empowering customers with the information they need to make informed decisions, which builds trust and loyalty."
+    },
+    {
+      "id": "Q240",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer with limited English proficiency visits the bank. What is the ethical approach?",
+      "opts": [
+        "A. Proceed with the transaction using gestures",
+        "B. Arrange for a translator or bilingual staff member",
+        "C. Ask the customer to return with a translator",
+        "D. Provide written materials only"
+      ],
+      "ans": "B",
+      "exp": "Arranging translation ensures the customer fully understands the products and terms, which is an ethical obligation."
+    },
+    {
+      "id": "Q241",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following reflects ethical communication about investment risks?",
+      "opts": [
+        "A. Emphasizing only the potential returns",
+        "B. Clearly explaining both the potential returns and the risks involved",
+        "C. Avoiding discussion of risks to prevent concern",
+        "D. Presenting worst-case scenarios only"
+      ],
+      "ans": "B",
+      "exp": "Ethical communication requires a balanced presentation of both opportunities and risks, allowing customers to make informed choices."
+    },
+    {
+      "id": "Q242",
+      "module": 5,
+      "type": "mcq",
+      "q": "A banker who follows up with a customer after resolving a complaint is:",
+      "opts": [
+        "A. Wasting time",
+        "B. Demonstrating commitment to customer satisfaction",
+        "C. Harassing the customer",
+        "D. Violating privacy"
+      ],
+      "ans": "B",
+      "exp": "Follow-up shows care and ensures the resolution was effective, reinforcing the customer's trust in the bank."
+    },
+    {
+      "id": "Q243",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the ethical obligation regarding fees for late payments?",
+      "opts": [
+        "A. Never charge late fees",
+        "B. Disclose late fees clearly at the time the account is opened",
+        "C. Charge the maximum allowed by law without disclosure",
+        "D. Apply late fees retroactively"
+      ],
+      "ans": "B",
+      "exp": "Late fees and penalties must be clearly disclosed upfront so customers can make informed decisions and avoid surprises."
+    },
+    {
+      "id": "Q244",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer is unsure about which product to choose. The banker should:",
+      "opts": [
+        "A. Recommend the product with the highest commission",
+        "B. Ask questions to understand the customer's goals and recommend a suitable product",
+        "C. Provide a list and let the customer decide alone",
+        "D. Recommend the simplest product regardless of fit"
+      ],
+      "ans": "B",
+      "exp": "Understanding the customer's needs is essential to ethical recommendations. The banker should act as a trusted advisor."
+    },
+    {
+      "id": "Q245",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following best describes the link between transparency and regulatory compliance?",
+      "opts": [
+        "A. Transparency is optional",
+        "B. Regulatory compliance often requires transparent disclosure of fees and terms",
+        "C. Compliance eliminates the need for transparency",
+        "D. Transparency only applies to marketing"
+      ],
+      "ans": "B",
+      "exp": "Regulators like the CBN and FCA mandate fee disclosure, making transparency both an ethical duty and a legal requirement."
+    },
+    {
+      "id": "Q246",
+      "module": 5,
+      "type": "mcq",
+      "q": "A banker who says, 'I'll personally make sure this is resolved' is making:",
+      "opts": [
+        "A. An empty promise",
+        "B. A commitment that builds trust if followed through",
+        "C. A legal guarantee",
+        "D. A marketing statement"
+      ],
+      "ans": "B",
+      "exp": "Personal commitments, when honored, build strong trust. The key is following through on such promises."
+    },
+    {
+      "id": "Q247",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is a key principle of ethical persuasion in banking?",
+      "opts": [
+        "A. Convince the customer regardless of their needs",
+        "B. Present options honestly and help the customer choose what's best for them",
+        "C. Use pressure tactics to close sales",
+        "D. Avoid discussing alternatives"
+      ],
+      "ans": "B",
+      "exp": "Ethical persuasion involves honest presentation and helping customers choose what aligns with their best interests, not the bank's targets."
+    },
+    {
+      "id": "Q248",
+      "module": 5,
+      "type": "mcq",
+      "q": "How should a banker handle a customer who is confused about their account statement?",
+      "opts": [
+        "A. Hand them a brochure and end the conversation",
+        "B. Walk through the statement line by line, explaining each entry",
+        "C. Suggest they use online banking",
+        "D. Advise them to hire an accountant"
+      ],
+      "ans": "B",
+      "exp": "Patiently walking through the statement educates the customer and resolves confusion, building trust and financial literacy."
+    },
+    {
+      "id": "Q249",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the ultimate benefit of building trust through transparent communication?",
+      "opts": [
+        "A. Short-term profit spikes",
+        "B. Long-term customer relationships and sustainable business success",
+        "C. Reduced need for compliance",
+        "D. Elimination of all customer complaints"
+      ],
+      "ans": "B",
+      "exp": "Trust-based relationships lead to customer loyalty, positive word-of-mouth, and sustainable growth—the foundation of long-term success."
+    },
+    {
+      "id": "Q250",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following represents the 'Access Bank vision' mentioned in the manual?",
+      "opts": [
+        "A. To be the largest bank in Africa",
+        "B. To be the world's most respected African bank",
+        "C. To have the most branches in Nigeria",
+        "D. To offer the highest interest rates"
+      ],
+      "ans": "B",
+      "exp": "The manual states Access Bank's vision: 'To be the world's most respected African bank.' This vision is underpinned by ethical practices and customer trust."
+    },
+    {
+      "id": "Q251",
+      "module": 6,
+      "type": "mcq",
+      "q": "A major retail bank in Ghana faced a scandal involving misrepresentation of loan terms and unauthorized charges. Customers were misled into signing high-interest loans under false pretenses. What was a direct consequence of these practices?",
+      "opts": [
+        "A. Increased market share",
+        "B. Over 20% of customers closed their accounts within six months",
+        "C. Higher employee morale",
+        "D. Reduced regulatory oversight"
+      ],
+      "ans": "B",
+      "exp": "Based on the TrustBank case, over 20% of customers closed their accounts, and the bank faced a GH₵5 billion fine and a 40% drop in share price."
+    },
+    {
+      "id": "Q252",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the TrustBank case, employees revealed pressure to meet unrealistic sales targets that contributed to unethical behavior. What lesson does this highlight for banks?",
+      "opts": [
+        "A. Sales targets should be eliminated entirely",
+        "B. Incentive structures must be aligned with ethical conduct",
+        "C. Employees should not be held accountable for sales",
+        "D. Only senior managers need ethics training"
+      ],
+      "ans": "B",
+      "exp": "Unrealistic targets incentivize misconduct. Banks must align performance metrics with ethical standards to prevent such scandals."
+    },
+    {
+      "id": "Q253",
+      "module": 6,
+      "type": "mcq",
+      "q": "After the TrustBank scandal, what strategic step would be most effective in regaining customer trust?",
+      "opts": [
+        "A. Focusing solely on cost-cutting",
+        "B. Implementing transparent communication and compensating affected customers",
+        "C. Changing the bank's name",
+        "D. Avoiding public discussion of the scandal"
+      ],
+      "ans": "B",
+      "exp": "Rebuilding trust requires transparency, compensation, visible reforms, and accountability—not avoidance or cosmetic changes."
+    },
+    {
+      "id": "Q254",
+      "module": 6,
+      "type": "mcq",
+      "q": "TrustBank's share price fell by 40% within a year after the scandal. This demonstrates:",
+      "opts": [
+        "A. Market volatility unrelated to ethics",
+        "B. The financial impact of reputational damage from unethical conduct",
+        "C. The strength of the Ghanaian economy",
+        "D. Normal stock market fluctuations"
+      ],
+      "ans": "B",
+      "exp": "The scandal directly caused reputational and financial damage, showing that ethical failures have material consequences."
+    },
+    {
+      "id": "Q255",
+      "module": 6,
+      "type": "mcq",
+      "q": "BrightBank in Nigeria faced allegations of bribery in loan approvals and misrepresentation of products. What was a key ethical failure in loan approvals?",
+      "opts": [
+        "A. Loan officers refused all applications",
+        "B. Loan officers accepted bribes to fast-track approvals",
+        "C. The bank charged the lowest interest rates",
+        "D. All loans were automatically approved"
+      ],
+      "ans": "B",
+      "exp": "BrightBank's loan officers accepted bribes, which is a clear violation of integrity and fairness principles."
+    },
+    {
+      "id": "Q256",
+      "module": 6,
+      "type": "mcq",
+      "q": "BrightBank had a toxic workplace culture where whistleblowers were silenced or penalized. What should leadership do to address this?",
+      "opts": [
+        "A. Continue with the existing culture",
+        "B. Implement a robust whistleblower protection program and encourage reporting",
+        "C. Fire all employees who reported",
+        "D. Ignore the culture and focus on profits"
+      ],
+      "ans": "B",
+      "exp": "A strong whistleblower protection program encourages reporting and demonstrates commitment to integrity."
+    },
+    {
+      "id": "Q257",
+      "module": 6,
+      "type": "mcq",
+      "q": "What elements should BrightBank include in its reformed ethical code to address its failures?",
+      "opts": [
+        "A. Only rules about loan approvals",
+        "B. Anti-bribery provisions, transparency requirements, and whistleblower protections",
+        "C. Higher sales targets",
+        "D. Reduced customer service standards"
+      ],
+      "ans": "B",
+      "exp": "The code should directly address the failures: bribery, misrepresentation, and lack of accountability—with strong protections for reporters."
+    },
+    {
+      "id": "Q258",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the Wells Fargo fake accounts scandal, what was the primary driver of unethical behaviour?",
+      "opts": [
+        "A. Lack of customer interest",
+        "B. Aggressive sales targets that incentivized fraud",
+        "C. Technical system failures",
+        "D. Competitor pressure"
+      ],
+      "ans": "B",
+      "exp": "Pressure to meet aggressive sales targets drove employees to create millions of unauthorized accounts, as leadership prioritized sales over ethics."
+    },
+    {
+      "id": "Q259",
+      "module": 6,
+      "type": "mcq",
+      "q": "Wells Fargo's leadership was criticized for ignoring which ethical values?",
+      "opts": [
+        "A. Profitability and efficiency",
+        "B. Integrity, fairness, and transparency",
+        "C. Innovation and technology",
+        "D. Customer service and speed"
+      ],
+      "ans": "B",
+      "exp": "Leaders ignored integrity (falsifying accounts), fairness (harming customers), and transparency (concealing the practice), leading to a scandal."
+    },
+    {
+      "id": "Q260",
+      "module": 6,
+      "type": "mcq",
+      "q": "The Wells Fargo scandal demonstrates the importance of:",
+      "opts": [
+        "A. Setting higher sales targets",
+        "B. Leadership prioritizing ethical conduct over short-term performance metrics",
+        "C. Reducing employee oversight",
+        "D. Outsourcing sales functions"
+      ],
+      "ans": "B",
+      "exp": "When leadership prioritizes ethics over aggressive metrics, misconduct is prevented. The scandal showed the reverse."
+    },
+    {
+      "id": "Q261",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the BankCCure case (Kenya), the officer mis-sold a fixed-term investment plan to Mr. Jabari, who needed accessible savings for daily expenses. What ethical principle did the officer violate?",
+      "opts": [
+        "A. Confidentiality",
+        "B. Transparency (by misrepresenting withdrawal terms)",
+        "C. Professional competence",
+        "D. Data privacy"
+      ],
+      "ans": "B",
+      "exp": "The officer assured Mr. Jabari he could withdraw anytime, which was false. This violated transparency and honesty."
+    },
+    {
+      "id": "Q262",
+      "module": 6,
+      "type": "mcq",
+      "q": "What could BankCCure have done to prevent the mis-selling to Mr. Jabari?",
+      "opts": [
+        "A. Increase sales targets",
+        "B. Require dual sign-off on product recommendations for vulnerable customers",
+        "C. Remove all product disclosures",
+        "D. Encourage verbal promises over written terms"
+      ],
+      "ans": "B",
+      "exp": "Dual sign-off, enhanced training, and clear written disclosures would have prevented the misrepresentation."
+    },
+    {
+      "id": "Q263",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the BankCCure case, Mr. Jabari faced financial distress due to early withdrawal penalties. This illustrates the importance of:",
+      "opts": [
+        "A. High minimum investments",
+        "B. Clear disclosure of all product terms and penalties",
+        "C. Offering only short-term products",
+        "D. Avoiding customer questions"
+      ],
+      "ans": "B",
+      "exp": "Full disclosure of penalties would have allowed Mr. Jabari to make an informed choice, preventing his distress."
+    },
+    {
+      "id": "Q264",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank that discovers widespread mis-selling, like TrustBank, should take which immediate action?",
+      "opts": [
+        "A. Ignore it to avoid panic",
+        "B. Conduct an internal audit and compensate affected customers",
+        "C. Increase sales targets to recover revenue",
+        "D. Blame junior employees"
+      ],
+      "ans": "B",
+      "exp": "Immediate investigation and compensation demonstrate accountability and begin the process of rebuilding trust."
+    },
+    {
+      "id": "Q265",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is a common factor across the TrustBank, BrightBank, and Wells Fargo scandals?",
+      "opts": [
+        "A. They all occurred in the same country",
+        "B. Aggressive sales targets incentivized unethical behaviour",
+        "C. All banks had strong ethical cultures",
+        "D. No regulatory action was taken"
+      ],
+      "ans": "B",
+      "exp": "In all three cases, performance pressure led employees to engage in misconduct—mis-selling, fraud, or bribery."
+    },
+    {
+      "id": "Q266",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the BrightBank case, what was a consequence of silencing whistleblowers?",
+      "opts": [
+        "A. Increased reporting",
+        "B. Worsening of unethical practices and loss of trust",
+        "C. Higher employee morale",
+        "D. Improved regulatory ratings"
+      ],
+      "ans": "B",
+      "exp": "Silencing whistleblowers allows misconduct to fester, worsening the problems and ultimately damaging trust and reputation."
+    },
+    {
+      "id": "Q267",
+      "module": 6,
+      "type": "mcq",
+      "q": "What role should the Board of Directors play in preventing scandals like BrightBank's?",
+      "opts": [
+        "A. They should focus only on profits",
+        "B. They should oversee ethical culture and ensure robust compliance systems",
+        "C. They should manage day-to-day operations",
+        "D. They should ignore whistleblower reports"
+      ],
+      "ans": "B",
+      "exp": "The Board has oversight responsibility for ethical culture and compliance, ensuring systems are in place to prevent and detect misconduct."
+    },
+    {
+      "id": "Q268",
+      "module": 6,
+      "type": "mcq",
+      "q": "After the Wells Fargo scandal, the bank faced significant fines and reputational harm. What is the primary lesson for ethical banking?",
+      "opts": [
+        "A. Ethics are secondary to profitability",
+        "B. Short-term gains from unethical practices can lead to long-term devastation",
+        "C. Customers prefer lower fees over ethics",
+        "D. Scandals have no lasting impact"
+      ],
+      "ans": "B",
+      "exp": "The scandal demonstrates that unethical shortcuts for short-term gains cause massive long-term damage to reputation and finances."
+    },
+    {
+      "id": "Q269",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the TrustBank case, customers aired grievances on social media. How should a bank respond to public criticism after a scandal?",
+      "opts": [
+        "A. Ignore social media posts",
+        "B. Engage transparently, acknowledge issues, and communicate corrective actions",
+        "C. Delete negative comments",
+        "D. Blame customers for misunderstanding"
+      ],
+      "ans": "B",
+      "exp": "Transparent engagement and acknowledgment of issues are essential to rebuilding trust in the public eye."
+    },
+    {
+      "id": "Q270",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is a key similarity between the BankCCure mis-selling and the TrustBank loan misrepresentation?",
+      "opts": [
+        "A. Both involved data breaches",
+        "B. Both involved misleading customers about product terms",
+        "C. Both involved fraud against the bank",
+        "D. Both involved discrimination"
+      ],
+      "ans": "B",
+      "exp": "In both cases, customers were misled about key terms—withdrawal penalties in BankCCure and loan terms in TrustBank."
+    },
+    {
+      "id": "Q271",
+      "module": 6,
+      "type": "mcq",
+      "q": "What does the Wells Fargo scandal reveal about the role of leadership in ethical culture?",
+      "opts": [
+        "A. Leadership has no influence on employee behaviour",
+        "B. Leadership sets the tone—if they prioritize sales over ethics, misconduct follows",
+        "C. Leadership should only focus on strategy",
+        "D. Leadership is not responsible for ethical failures"
+      ],
+      "ans": "B",
+      "exp": "Leadership sets the cultural tone. When they prioritize short-term metrics over ethics, employees feel pressure to cut corners."
+    },
+    {
+      "id": "Q272",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the BrightBank case, what would be a practical step to rebuild integrity?",
+      "opts": [
+        "A. Increase sales targets to boost morale",
+        "B. Implement regular ethics training and create safe reporting channels",
+        "C. Reduce compliance staff",
+        "D. Outsource customer service"
+      ],
+      "ans": "B",
+      "exp": "Training and safe reporting channels embed ethical behavior and encourage reporting, essential for cultural change."
+    },
+    {
+      "id": "Q273",
+      "module": 6,
+      "type": "mcq",
+      "q": "The BankCCure officer convinced Mr. Jabari to invest despite knowing he needed accessible savings. This shows a failure of:",
+      "opts": [
+        "A. Balancing business and customer needs",
+        "B. Confidentiality",
+        "C. Professional competence",
+        "D. Data security"
+      ],
+      "ans": "A",
+      "exp": "The officer prioritized meeting sales targets over the customer's genuine needs, failing to balance business goals with customer welfare."
+    },
+    {
+      "id": "Q274",
+      "module": 6,
+      "type": "mcq",
+      "q": "What should a bank's response be when an employee reports a conflict of interest, as in the BrightBank bribery case?",
+      "opts": [
+        "A. Ignore the report",
+        "B. Investigate thoroughly and take appropriate corrective action",
+        "C. Transfer the employee to a different department",
+        "D. Reward the employee for reporting"
+      ],
+      "ans": "B",
+      "exp": "Thorough investigation and corrective action demonstrate that the bank takes ethics seriously and protects whistleblowers."
+    },
+    {
+      "id": "Q275",
+      "module": 6,
+      "type": "mcq",
+      "q": "Across all the case studies, what is the ultimate consequence of prioritizing short-term profits over ethical conduct?",
+      "opts": [
+        "A. Sustained profitability",
+        "B. Loss of customer trust, regulatory penalties, and long-term financial damage",
+        "C. Increased customer loyalty",
+        "D. Reduced regulatory scrutiny"
+      ],
+      "ans": "B",
+      "exp": "All cases show that unethical short-term focus leads to trust erosion, regulatory penalties, and lasting financial harm—proving ethics is essential for sustainability."
+    }
+  ]
+}

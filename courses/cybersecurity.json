@@ -1,0 +1,5179 @@
+{
+  "meta": {
+    "id": "cybersecurity-access-bank",
+    "title": "Cybersecurity — Access Bank ELTP",
+    "description": "Access Bank Entry Level Training Program: Cybersecurity fundamentals, password management, email security, cybersecurity tools, principles, and ethical considerations.",
+    "category": "cybersecurity",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1: Understanding the Fundamentals of Cybersecurity"
+    },
+    {
+      "id": 2,
+      "title": "Module 2: Password Management & Authentication"
+    },
+    {
+      "id": 3,
+      "title": "Module 3: Email & Social Engineering"
+    },
+    {
+      "id": 4,
+      "title": "Module 4: Types of Cybersecurity Tools"
+    },
+    {
+      "id": 5,
+      "title": "Module 5: Principles of Cybersecurity — Part 1"
+    },
+    {
+      "id": 6,
+      "title": "Module 6: Principles of Cybersecurity — Part 2"
+    },
+    {
+      "id": 7,
+      "title": "Module 7: Ethical Considerations — Part 1"
+    },
+    {
+      "id": 8,
+      "title": "Module 8: Ethical Considerations — Part 2"
+    },
+    {
+      "id": 9,
+      "title": "Module 9: Regulatory & Integration Topics"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does cybersecurity primarily protect?",
+      "opts": [
+        "Only financial data",
+        "Applications, networks, and data",
+        "Only hardware devices",
+        "Only employee records"
+      ],
+      "ans": "B",
+      "exp": "Cybersecurity is defined as the practice of protecting applications, networks, and data from unauthorized access, attacks, or criminal use (Manual p.7)."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best describes the CIA Triad?",
+      "opts": [
+        "A framework for password management",
+        "A model for ensuring confidentiality, integrity, and availability",
+        "A regulatory compliance standard for banks",
+        "A type of encryption protocol"
+      ],
+      "ans": "B",
+      "exp": "The CIA Triad is the core cybersecurity principle comprising Confidentiality, Integrity, and Availability (Manual p.7)."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "Confidentiality in cybersecurity ensures that data is:",
+      "opts": [
+        "Always available to authorized users",
+        "Protected from unauthorized access",
+        "Accurate and completely unaltered",
+        "Regularly backed up offsite"
+      ],
+      "ans": "B",
+      "exp": "Confidentiality focuses on protecting data from unauthorized access, using encryption and access controls (Manual p.8)."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "Integrity in the CIA Triad primarily concerns ensuring that data is:",
+      "opts": [
+        "Kept secret from unauthorized users",
+        "Accurate and free from tampering",
+        "Available whenever it is needed",
+        "Encrypted during transmission"
+      ],
+      "ans": "B",
+      "exp": "Integrity ensures data is authentic, accurate, and reliable, often maintained through hashing, encryption, or digital signatures (Manual p.8,26)."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "Availability in cybersecurity means that systems and data are:",
+      "opts": [
+        "Accessible only to top management",
+        "Accessible when needed by authorized users",
+        "Encrypted at all times",
+        "Stored only as backup copies"
+      ],
+      "ans": "B",
+      "exp": "Availability ensures that systems, networks, and applications function as they should and when they should, supported by redundancy and disaster recovery (Manual p.8,26)."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which security measure directly supports the confidentiality principle?",
+      "opts": [
+        "Redundant servers for failover",
+        "Access controls and permissions",
+        "Disaster recovery planning",
+        "Hashing for data verification"
+      ],
+      "ans": "B",
+      "exp": "Access controls are a direct measure for confidentiality, restricting who can view or use data. Redundancy supports availability; hashing supports integrity (Manual p.8)."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank implements data hashing to verify that transaction records have not been altered. This directly supports:",
+      "opts": [
+        "Confidentiality of sensitive data",
+        "Integrity of transaction records",
+        "Availability of banking services",
+        "Accountability of staff actions"
+      ],
+      "ans": "B",
+      "exp": "Data hashing is used to verify that data has not been tampered with, directly supporting integrity (Manual p.8)."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "An online banking system goes down due to a server failure, but transactions continue through a backup data center. This exemplifies:",
+      "opts": [
+        "Confidentiality of customer records",
+        "Integrity of financial transactions",
+        "Availability of banking services",
+        "Non-repudiation of transactions"
+      ],
+      "ans": "C",
+      "exp": "Redundancy and disaster recovery ensure systems remain available, supporting the Availability principle (Manual p.8)."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a method used to ensure data integrity?",
+      "opts": [
+        "Encryption of stored data",
+        "Digital signatures and hashing",
+        "Firewalls and network filters",
+        "Access control lists for users"
+      ],
+      "ans": "B",
+      "exp": "Digital signatures, along with hashing and encryption, help ensure data integrity by verifying authenticity and that data has not been altered (Manual p.8)."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer's personal information is encrypted before being stored in the bank's database. This primarily protects:",
+      "opts": [
+        "Availability of the database",
+        "Integrity of the records",
+        "Confidentiality of the data",
+        "Authentication of the user"
+      ],
+      "ans": "C",
+      "exp": "Encrypting stored data protects it from unauthorized access, which is the essence of confidentiality (Manual p.8)."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary purpose of encryption?",
+      "opts": [
+        "To permanently delete sensitive data",
+        "To convert data into an unreadable format",
+        "To speed up data transmission over networks",
+        "To duplicate data for backup purposes"
+      ],
+      "ans": "B",
+      "exp": "Encryption converts data into an unreadable format to protect it during transmission or storage, ensuring only authorized parties with the correct key can read it (Manual p.9)."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which type of encryption uses a single key for both encryption and decryption?",
+      "opts": [
+        "Asymmetric encryption",
+        "Symmetric encryption",
+        "Public-key encryption",
+        "Hashing algorithms"
+      ],
+      "ans": "B",
+      "exp": "Symmetric encryption uses the same private key for both encrypting and decrypting data, unlike asymmetric which uses a public-private key pair (Manual p.9)."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "Asymmetric encryption is also known as:",
+      "opts": [
+        "Private-key encryption",
+        "Public-key encryption",
+        "Shared-key encryption",
+        "Single-key encryption"
+      ],
+      "ans": "B",
+      "exp": "Asymmetric encryption uses a public-private key pair, hence it is also called public-key encryption (Manual p.9)."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank uses asymmetric encryption to secure customer login credentials. Which key is kept secret by the bank?",
+      "opts": [
+        "The public key for encryption",
+        "The private key for decryption",
+        "Both public and private keys",
+        "Neither key is kept secret"
+      ],
+      "ans": "B",
+      "exp": "In asymmetric encryption, the private key is kept secret while the public key can be shared. The private key decrypts data encrypted with the corresponding public key (Manual p.9)."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "Decryption is the process of:",
+      "opts": [
+        "Converting plaintext into ciphertext",
+        "Reverting encrypted data to its original readable form",
+        "Creating a hash of the data",
+        "Compressing data for storage"
+      ],
+      "ans": "B",
+      "exp": "Decryption is the reverse of encryption — it reverts encrypted data back to its original form using the appropriate key (Manual p.9)."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which use case is most appropriate for symmetric encryption in a banking environment?",
+      "opts": [
+        "Securing internal database backups",
+        "Exchanging keys with external partners",
+        "Creating digital signatures on contracts",
+        "Encrypting emails between two banks"
+      ],
+      "ans": "A",
+      "exp": "Symmetric encryption is efficient for encrypting data at rest, such as internal backups, where key distribution is manageable. Public-key encryption is preferred for external communications (Manual p.9)."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is Transport Layer Security (TLS) primarily designed to do?",
+      "opts": [
+        "Scan for malware on endpoint devices",
+        "Secure data during transmission across networks",
+        "Manage passwords for multiple user accounts",
+        "Filter network traffic at the perimeter"
+      ],
+      "ans": "B",
+      "exp": "TLS is a protocol designed to secure data during transmission, creating a protected communication channel between systems (Manual p.9)."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "TLS ensures that sensitive information like PINs and account balances are:",
+      "opts": [
+        "Stored in plaintext for faster access",
+        "Encrypted before leaving a device",
+        "Only accessible via biometrics",
+        "Shared with third-party vendors automatically"
+      ],
+      "ans": "B",
+      "exp": "TLS encrypts sensitive data before it leaves a device, so even if intercepted, it cannot be read (Manual p.9)."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which attack does TLS primarily help prevent?",
+      "opts": [
+        "Phishing of user credentials",
+        "Man-in-the-Middle (MITM) attacks",
+        "Denial of Service (DoS) attacks",
+        "Brute-force password cracking attempts"
+      ],
+      "ans": "B",
+      "exp": "TLS prevents MITM attacks by verifying both communicating parties and securing the channel with cryptographic keys (Manual p.9)."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "TLS protects the integrity of financial transactions by:",
+      "opts": [
+        "Making all transactions irreversible",
+        "Ensuring data is not altered during transmission",
+        "Automatically notifying the bank of fraud",
+        "Storing transaction records indefinitely"
+      ],
+      "ans": "B",
+      "exp": "TLS ensures data is not altered, manipulated, or corrupted during transmission, which is critical for transaction integrity (Manual p.9)."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why is TLS important for regulatory compliance in banking?",
+      "opts": [
+        "It replaces the need for audit trails",
+        "It is mandatory under financial regulations and industry standards",
+        "It eliminates all cyber risks completely",
+        "It reduces the need for customer authentication"
+      ],
+      "ans": "B",
+      "exp": "Secure communication protocols like TLS are mandatory under financial regulations; robust TLS implementation helps meet compliance requirements (Manual p.9)."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "TLS is used to secure all of the following banking platforms EXCEPT:",
+      "opts": [
+        "Mobile banking applications",
+        "Online payment gateways",
+        "Physical branch security cameras",
+        "Application Programming Interfaces (APIs)"
+      ],
+      "ans": "C",
+      "exp": "TLS secures digital platforms like websites, apps, APIs, and payment gateways. Physical security cameras are not typically secured by TLS (Manual p.10)."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer uses their bank's mobile app to transfer funds. TLS protects this transaction by:",
+      "opts": [
+        "Encrypting the data between the app and the bank's servers",
+        "Storing the transaction data locally on the phone",
+        "Sending the data over a dedicated phone line",
+        "Displaying a confirmation message on the screen"
+      ],
+      "ans": "A",
+      "exp": "TLS creates an encrypted channel between the mobile app and bank servers, protecting the transaction data in transit (Manual p.9)."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which statement best describes TLS's role in safeguarding digital platforms?",
+      "opts": [
+        "It is optional for internal banking systems",
+        "It has become a core component for securing websites, APIs, and backend systems",
+        "It only applies to email communication channels",
+        "It is replaced by firewalls in modern banking"
+      ],
+      "ans": "B",
+      "exp": "As banking moves online, TLS has become a core component for securing websites, mobile apps, APIs, and backend systems (Manual p.10)."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "Multi-Factor Authentication (MFA) requires users to:",
+      "opts": [
+        "Rely on a single password for access",
+        "Provide multiple credentials for verification",
+        "Update their password on a daily basis",
+        "Use biometric verification exclusively"
+      ],
+      "ans": "B",
+      "exp": "MFA requires users to verify their identity using more than one credential, combining factors like something you know, have, and are (Manual p.10)."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of the 'Something You Know' factor in MFA?",
+      "opts": [
+        "A fingerprint scan",
+        "A hardware security token",
+        "A personal identification number (PIN)",
+        "A facial recognition scan"
+      ],
+      "ans": "C",
+      "exp": "Something You Know refers to knowledge-based credentials such as passwords, PINs, or security answers (Manual p.10)."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank-issued OTP device falls under which MFA category?",
+      "opts": [
+        "Something You Know",
+        "Something You Have",
+        "Something You Are",
+        "Something You Remember"
+      ],
+      "ans": "B",
+      "exp": "Hardware tokens, OTP devices, and mobile app soft tokens are physical items a user possesses, falling under 'Something You Have' (Manual p.10)."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "type": "mcq",
+      "q": "Fingerprint and facial recognition are examples of:",
+      "opts": [
+        "Something You Know",
+        "Something You Have",
+        "Something You Are",
+        "Something You Remember"
+      ],
+      "ans": "C",
+      "exp": "Biometric identifiers such as fingerprints, facial recognition, iris scans, and voice authentication are unique to an individual, falling under 'Something You Are' (Manual p.10)."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why is MFA considered one of the strongest cybersecurity controls in banking?",
+      "opts": [
+        "It eliminates the need for passwords entirely",
+        "It reduces the risk of identity theft and account takeover even if a password is stolen",
+        "It guarantees 100% protection from all cyberattacks",
+        "It is required by all mobile devices by default"
+      ],
+      "ans": "B",
+      "exp": "MFA adds layers of protection; even if a password is compromised via phishing, attackers still need the additional factor, significantly reducing unauthorized access (Manual p.10)."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which banking scenario most clearly demonstrates the value of MFA?",
+      "opts": [
+        "A customer logs in with a password only",
+        "A customer logs in with a password and then receives a one-time code on their phone",
+        "A customer uses their account number to check balance",
+        "A customer provides their date of birth"
+      ],
+      "ans": "B",
+      "exp": "The combination of password (Something You Know) and OTP on phone (Something You Have) is a classic MFA implementation that thwarts attackers even if the password is compromised (Manual p.10)."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "type": "mcq",
+      "q": "Banks implement MFA to protect all of the following EXCEPT:",
+      "opts": [
+        "Customer login to online banking",
+        "Access to high-risk transactions",
+        "Employee access to internal systems",
+        "Public-facing marketing websites"
+      ],
+      "ans": "D",
+      "exp": "MFA is implemented for customer login, high-risk transactions, employee internal access, and administrative database access — not for public marketing sites (Manual p.10)."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "type": "mcq",
+      "q": "SMS verification is a type of MFA that uses:",
+      "opts": [
+        "Something You Are",
+        "Something You Have",
+        "Something You Know",
+        "Something You Create"
+      ],
+      "ans": "B",
+      "exp": "SMS verification sends a one-time password to the user's phone, a physical device they possess, thus it falls under 'Something You Have' (Manual p.14)."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "type": "mcq",
+      "q": "Authenticator apps are preferred over SMS verification because:",
+      "opts": [
+        "They are easier for users to set up",
+        "They are less susceptible to SIM-swapping attacks",
+        "They require less battery power to operate",
+        "They are completely free to use"
+      ],
+      "ans": "B",
+      "exp": "Authenticator apps generate time-based codes locally and are not reliant on the cellular network, making them more secure than SMS which can be intercepted via SIM-swapping (Manual p.14)."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which benefit of MFA refers to ensuring that data is accessed only by verified identities?",
+      "opts": [
+        "Reduced risk of phishing",
+        "Data integrity protection",
+        "Identity assurance",
+        "Cost effectiveness"
+      ],
+      "ans": "C",
+      "exp": "Identity assurance ensures that the person accessing data is who they claim to be, a primary benefit of MFA (Manual p.14)."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "type": "mcq",
+      "q": "The generational evolution of cybersecurity begins with perimeter defenses and currently includes:",
+      "opts": [
+        "Signature-based detection methods",
+        "Behavioral analysis techniques",
+        "AI and Machine Learning models",
+        "Zero Trust security frameworks"
+      ],
+      "ans": "D",
+      "exp": "The five generations are: 1st Perimeter, 2nd Signature-Based, 3rd Behavioral, 4th AI/ML, 5th Zero Trust. Zero Trust is the current generation (Manual p.8-9)."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which cybersecurity generation is characterized by anomaly detection and behavior-based analysis?",
+      "opts": [
+        "1st Generation of cybersecurity",
+        "2nd Generation of cybersecurity",
+        "3rd Generation of cybersecurity",
+        "4th Generation of cybersecurity"
+      ],
+      "ans": "C",
+      "exp": "The 3rd Generation is Behavioral Analysis, using anomaly detection and behavior-based analysis (Manual p.8-9)."
+    },
+    {
+      "id": "Q37",
+      "module": 1,
+      "type": "mcq",
+      "q": "Antivirus and signature-based detection belong to which generation of cybersecurity?",
+      "opts": [
+        "1st Generation of cybersecurity",
+        "2nd Generation of cybersecurity",
+        "3rd Generation of cybersecurity",
+        "5th Generation of cybersecurity"
+      ],
+      "ans": "B",
+      "exp": "The 2nd Generation is Signature-Based, characterized by antivirus and signature-based detection (Manual p.8-9)."
+    },
+    {
+      "id": "Q38",
+      "module": 1,
+      "type": "mcq",
+      "q": "The Zero Trust model operates on the principle of:",
+      "opts": [
+        "Trusting all internal network traffic",
+        "Trusting nothing and verifying everything",
+        "Trusting only external business partners",
+        "Trusting based on IP addresses"
+      ],
+      "ans": "B",
+      "exp": "Zero Trust (5th Generation) is based on the principle of trusting nothing and verifying everything (Manual p.8-9)."
+    },
+    {
+      "id": "Q39",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which generation introduced machine learning to identify threats?",
+      "opts": [
+        "2nd Generation of cybersecurity",
+        "3rd Generation of cybersecurity",
+        "4th Generation of cybersecurity",
+        "5th Generation of cybersecurity"
+      ],
+      "ans": "C",
+      "exp": "The 4th Generation (AI and Machine Learning) uses machine learning to identify threats (Manual p.8-9)."
+    },
+    {
+      "id": "Q40",
+      "module": 1,
+      "type": "mcq",
+      "q": "Firewalls as a perimeter defense are characteristic of which cybersecurity generation?",
+      "opts": [
+        "1st Generation of cybersecurity",
+        "2nd Generation of cybersecurity",
+        "3rd Generation of cybersecurity",
+        "4th Generation of cybersecurity"
+      ],
+      "ans": "A",
+      "exp": "The 1st Generation (Traditional) relied on perimeter defenses such as firewalls (Manual p.8-9)."
+    },
+    {
+      "id": "Q41",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT a reason why cybersecurity is important for an organization?",
+      "opts": [
+        "Protects data from theft and damage",
+        "Enables defense against data breach campaigns",
+        "Guarantees increased profit margins",
+        "Prevents high reputational and monetary costs"
+      ],
+      "ans": "C",
+      "exp": "Cybersecurity protects data, defends against breaches, and prevents costs, but it does not directly guarantee increased profit margins (Manual p.11)."
+    },
+    {
+      "id": "Q42",
+      "module": 1,
+      "type": "mcq",
+      "q": "A data breach at a bank could lead to:",
+      "opts": [
+        "Improved customer relationships",
+        "Legal suits and loss of customer trust",
+        "Lower insurance premiums for the bank",
+        "Reduced regulatory oversight"
+      ],
+      "ans": "B",
+      "exp": "The absence of cybersecurity can ruin customer relationships and lead to legal suits (Manual p.11)."
+    },
+    {
+      "id": "Q43",
+      "module": 1,
+      "type": "mcq",
+      "q": "The CIA Triad is foundational because it balances:",
+      "opts": [
+        "Speed, cost, and security",
+        "Confidentiality, integrity, and availability",
+        "Prevention, detection, and response",
+        "People, process, and technology"
+      ],
+      "ans": "B",
+      "exp": "The CIA Triad consists of Confidentiality, Integrity, and Availability — the three core pillars of cybersecurity (Manual p.7)."
+    },
+    {
+      "id": "Q44",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's disaster recovery plan directly supports which CIA principle?",
+      "opts": [
+        "Confidentiality of customer data",
+        "Integrity of transaction records",
+        "Availability of banking services",
+        "Authentication of user access"
+      ],
+      "ans": "C",
+      "exp": "Disaster recovery planning ensures that systems can be restored and remain available, supporting the Availability principle (Manual p.8)."
+    },
+    {
+      "id": "Q45",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which statement correctly distinguishes symmetric from asymmetric encryption?",
+      "opts": [
+        "Symmetric uses two keys; asymmetric uses one",
+        "Symmetric uses one key; asymmetric uses a key pair",
+        "Both use the same type of encryption key",
+        "Symmetric is only used for emails"
+      ],
+      "ans": "B",
+      "exp": "Symmetric encryption uses a single shared key; asymmetric uses a public-private key pair (Manual p.9)."
+    },
+    {
+      "id": "Q46",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which TLS feature ensures that a customer's transaction details are not read by an attacker intercepting the network traffic?",
+      "opts": [
+        "Data hashing for verification",
+        "Encryption of the communication channel",
+        "Firewall rules blocking IPs",
+        "Antivirus scanning of packets"
+      ],
+      "ans": "B",
+      "exp": "TLS encrypts the communication channel, ensuring that intercepted data is unreadable (Manual p.9)."
+    },
+    {
+      "id": "Q47",
+      "module": 1,
+      "type": "mcq",
+      "q": "When a bank employee accesses a customer's account, TLS protects the session by:",
+      "opts": [
+        "Verifying the employee's fingerprint",
+        "Encrypting the data between the employee's device and the bank server",
+        "Logging the employee's keystrokes",
+        "Blocking the employee if they make an error"
+      ],
+      "ans": "B",
+      "exp": "TLS secures the communication channel between the device and the server, encrypting all data in transit (Manual p.9)."
+    },
+    {
+      "id": "Q48",
+      "module": 1,
+      "type": "mcq",
+      "q": "A phishing attack that steals a customer's password is ineffective if the bank uses MFA because:",
+      "opts": [
+        "MFA changes the password daily",
+        "The attacker still needs the second factor",
+        "MFA deletes the customer's account",
+        "MFA notifies the police automatically"
+      ],
+      "ans": "B",
+      "exp": "MFA requires a second factor beyond the password; without it, the stolen password alone is insufficient to access the account (Manual p.10)."
+    },
+    {
+      "id": "Q49",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of a 'hardware token' used in MFA?",
+      "opts": [
+        "SMS one-time password",
+        "A bank-issued OTP device",
+        "A password manager",
+        "A security question"
+      ],
+      "ans": "B",
+      "exp": "Hardware tokens are physical devices, such as bank-issued OTP devices, used as a 'Something You Have' factor (Manual p.10)."
+    },
+    {
+      "id": "Q50",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's commitment to protecting customer data from unauthorized access, maintaining its accuracy, and ensuring it is always available reflects:",
+      "opts": [
+        "The CIA Triad",
+        "The principle of least privilege",
+        "The separation of duties",
+        "The fail secure principle"
+      ],
+      "ans": "A",
+      "exp": "Confidentiality (unauthorized access), Integrity (accuracy), and Availability (always available) together define the CIA Triad (Manual p.7-8)."
+    },
+    {
+      "id": "Q51",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which cryptographic method is used to verify that a downloaded software update has not been tampered with?",
+      "opts": [
+        "Symmetric encryption",
+        "Hashing algorithms",
+        "Asymmetric decryption",
+        "TLS handshake"
+      ],
+      "ans": "B",
+      "exp": "Hashing generates a unique digest of the file; any tampering changes the digest, verifying integrity. This is explained in the context of data integrity (Manual p.8)."
+    },
+    {
+      "id": "Q52",
+      "module": 1,
+      "type": "mcq",
+      "q": "TLS uses cryptographic keys to:",
+      "opts": [
+        "Store user passwords securely",
+        "Establish a secure session between client and server",
+        "Scan for viruses on endpoints",
+        "Filter spam emails"
+      ],
+      "ans": "B",
+      "exp": "TLS uses cryptographic keys to authenticate parties and establish a secure, encrypted session (Manual p.9)."
+    },
+    {
+      "id": "Q53",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following would be a violation of the confidentiality principle in a bank?",
+      "opts": [
+        "A teller viewing a customer's account balance with permission",
+        "A system administrator viewing customer data without authorization",
+        "A backup server restoring data after an outage",
+        "A customer checking their own transaction history"
+      ],
+      "ans": "B",
+      "exp": "Confidentiality prevents unauthorized access. An administrator viewing customer data without a legitimate need violates this principle (Manual p.8)."
+    },
+    {
+      "id": "Q54",
+      "module": 1,
+      "type": "mcq",
+      "q": "Integrity is most at risk from:",
+      "opts": [
+        "Unauthorized viewing of data",
+        "Unauthorized modification of data",
+        "Denial of service attacks",
+        "Phishing emails"
+      ],
+      "ans": "B",
+      "exp": "Integrity is concerned with ensuring data is accurate and unaltered; unauthorized modification directly threatens it (Manual p.8)."
+    },
+    {
+      "id": "Q55",
+      "module": 1,
+      "type": "mcq",
+      "q": "Availability is most at risk from:",
+      "opts": [
+        "Data encryption",
+        "A distributed denial-of-service (DDoS) attack",
+        "Phishing",
+        "Password cracking"
+      ],
+      "ans": "B",
+      "exp": "A DDoS attack overwhelms systems and makes them unavailable to legitimate users, directly threatening the Availability principle (Manual p.8,21 mentions firewalls mitigating DDoS)."
+    },
+    {
+      "id": "Q56",
+      "module": 1,
+      "type": "mcq",
+      "q": "Symmetric encryption is generally faster than asymmetric encryption, making it suitable for:",
+      "opts": [
+        "Encrypting large volumes of data at rest",
+        "Secure key exchange",
+        "Digital signatures",
+        "Establishing TLS handshakes"
+      ],
+      "ans": "A",
+      "exp": "Symmetric encryption is computationally faster and is often used for bulk data encryption, while asymmetric is used for key exchange and signatures (Manual p.9)."
+    },
+    {
+      "id": "Q57",
+      "module": 1,
+      "type": "mcq",
+      "q": "A digital signature ensures both integrity and:",
+      "opts": [
+        "Confidentiality",
+        "Non-repudiation",
+        "Availability",
+        "Authorization"
+      ],
+      "ans": "B",
+      "exp": "Digital signatures, mentioned as a method for integrity, also provide non-repudiation by verifying the sender's identity (Manual p.8)."
+    },
+    {
+      "id": "Q58",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a regulatory reason for banks to implement strong cybersecurity measures?",
+      "opts": [
+        "To increase employee satisfaction",
+        "To meet industry standards and avoid penalties",
+        "To reduce operational costs",
+        "To simplify IT infrastructure"
+      ],
+      "ans": "B",
+      "exp": "Regulatory compliance is a key driver; failure to implement required security measures can result in penalties (Manual p.9 discusses TLS for compliance)."
+    },
+    {
+      "id": "Q59",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's mobile app uses TLS to secure API calls. What is the primary benefit for the customer?",
+      "opts": [
+        "Faster transaction processing",
+        "Assurance that their data is protected during transmission",
+        "Ability to use the app offline",
+        "Lower transaction fees"
+      ],
+      "ans": "B",
+      "exp": "TLS ensures the customer's data is encrypted and protected from interception during transmission (Manual p.9)."
+    },
+    {
+      "id": "Q60",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best describes the 'Generational Landscape' of cybersecurity?",
+      "opts": [
+        "A list of cybersecurity certifications",
+        "The chronological evolution of cybersecurity approaches from perimeter defenses to Zero Trust",
+        "A ranking of cyber threats by severity",
+        "The lifecycle of a malware infection"
+      ],
+      "ans": "B",
+      "exp": "The generational landscape describes the evolution from 1st Generation (perimeter) to 5th Generation (Zero Trust) (Manual p.8-9)."
+    },
+    {
+      "id": "Q61",
+      "module": 1,
+      "type": "mcq",
+      "q": "The transition from 4th Generation to 5th Generation represents a shift from:",
+      "opts": [
+        "Detecting known threats to detecting unknown threats",
+        "Trusting internal networks to verifying every access request",
+        "Using signatures to using behavior analysis",
+        "On-premise to cloud security"
+      ],
+      "ans": "B",
+      "exp": "Zero Trust shifts from implicit trust in internal networks to verifying every access request regardless of location (Manual p.8-9)."
+    },
+    {
+      "id": "Q62",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT listed as a key concept in cybersecurity fundamentals?",
+      "opts": [
+        "Encryption",
+        "Firewalls",
+        "Blockchain",
+        "TLS"
+      ],
+      "ans": "C",
+      "exp": "Blockchain is not mentioned as a key concept in Module 1; encryption, firewalls, and TLS are discussed in the fundamentals (Manual p.7-10)."
+    },
+    {
+      "id": "Q63",
+      "module": 1,
+      "type": "mcq",
+      "q": "The primary goal of TLS in a banking context is to:",
+      "opts": [
+        "Replace all other security controls",
+        "Provide a secure communication channel for sensitive data",
+        "Authenticate users at login",
+        "Scan emails for phishing"
+      ],
+      "ans": "B",
+      "exp": "TLS provides a protected communication channel, ensuring confidentiality and integrity of data in transit, but does not replace other controls (Manual p.9)."
+    },
+    {
+      "id": "Q64",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which MFA factor is considered the most difficult to duplicate or steal?",
+      "opts": [
+        "Something You Know",
+        "Something You Have",
+        "Something You Are",
+        "Something You Remember"
+      ],
+      "ans": "C",
+      "exp": "Biometric factors (Something You Are) are unique to each individual and cannot easily be duplicated, making them highly secure (Manual p.10)."
+    },
+    {
+      "id": "Q65",
+      "module": 1,
+      "type": "mcq",
+      "q": "A cybercriminal steals a customer's password. Which MFA factor would still prevent account access?",
+      "opts": [
+        "Security question answers",
+        "The customer's registered phone receiving an OTP",
+        "The customer's date of birth",
+        "The customer's email address"
+      ],
+      "ans": "B",
+      "exp": "The OTP sent to the registered phone (Something You Have) is a second factor; without it, the password alone is insufficient (Manual p.10)."
+    },
+    {
+      "id": "Q66",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which statement about encryption and decryption is accurate?",
+      "opts": [
+        "Encryption and decryption use the same process",
+        "Encryption converts plaintext to ciphertext; decryption reverses it",
+        "Decryption is faster than encryption",
+        "Both require the same key in asymmetric encryption"
+      ],
+      "ans": "B",
+      "exp": "Encryption converts readable data to unreadable; decryption reverts it to readable form (Manual p.9)."
+    },
+    {
+      "id": "Q67",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank uses TLS to secure its public website. This protects customers from:",
+      "opts": [
+        "Malware infections on their devices",
+        "Eavesdropping on their connection",
+        "Phishing emails",
+        "Insider threats"
+      ],
+      "ans": "B",
+      "exp": "TLS encrypts the connection, preventing eavesdropping and MITM attacks, but does not protect against malware, phishing, or insider threats directly (Manual p.9)."
+    },
+    {
+      "id": "Q68",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a benefit of MFA that directly addresses the risk of password theft?",
+      "opts": [
+        "Enhanced Security",
+        "Reduced Risk of Phishing",
+        "Identity Assurance",
+        "Cost effectiveness"
+      ],
+      "ans": "B",
+      "exp": "MFA reduces the risk of phishing by ensuring that even if a password is phished, the attacker cannot access the account without the additional factors (Manual p.14)."
+    },
+    {
+      "id": "Q69",
+      "module": 1,
+      "type": "mcq",
+      "q": "The 5th Generation of cybersecurity (Zero Trust) challenges the traditional assumption that:",
+      "opts": [
+        "External threats are more dangerous than internal",
+        "Internal network traffic can be trusted",
+        "Firewalls are obsolete",
+        "Passwords are sufficient"
+      ],
+      "ans": "B",
+      "exp": "Zero Trust rejects the assumption that internal traffic is safe; it requires verification for every access request (Manual p.8-9)."
+    },
+    {
+      "id": "Q70",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which action would most directly protect the availability of a bank's online services?",
+      "opts": [
+        "Encrypting all customer data",
+        "Implementing redundant servers and networks",
+        "Training employees on phishing",
+        "Installing antivirus software"
+      ],
+      "ans": "B",
+      "exp": "Redundancy in servers and networks ensures that if one system fails, another takes over, maintaining availability (Manual p.8)."
+    },
+    {
+      "id": "Q71",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank discovers that a hacker has intercepted a customer's data in transit. Which security control would have prevented this?",
+      "opts": [
+        "Strong password policy",
+        "TLS encryption",
+        "Employee background checks",
+        "Physical access controls"
+      ],
+      "ans": "B",
+      "exp": "TLS encrypts data in transit, preventing interception and reading of the data (Manual p.9)."
+    },
+    {
+      "id": "Q72",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the relationship between encryption and confidentiality?",
+      "opts": [
+        "Encryption is the only method to achieve confidentiality",
+        "Encryption is a key tool for ensuring confidentiality",
+        "Encryption does not affect confidentiality",
+        "Encryption ensures availability, not confidentiality"
+      ],
+      "ans": "B",
+      "exp": "Encryption is a primary tool for protecting confidentiality by making data unreadable to unauthorized parties (Manual p.8)."
+    },
+    {
+      "id": "Q73",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which generation of cybersecurity relies on signature-based detection that is ineffective against zero-day attacks?",
+      "opts": [
+        "1st Generation of cybersecurity",
+        "2nd Generation of cybersecurity",
+        "3rd Generation of cybersecurity",
+        "5th Generation of cybersecurity"
+      ],
+      "ans": "B",
+      "exp": "Signature-based detection (2nd Gen) can only detect known threats; it cannot detect zero-day attacks without a signature (Manual p.8-9)."
+    },
+    {
+      "id": "Q74",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which cybersecurity principle is most directly violated when a customer cannot access their online account due to a prolonged system outage?",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Non-repudiation"
+      ],
+      "ans": "C",
+      "exp": "Availability ensures systems are accessible when needed; an outage violates this principle (Manual p.8)."
+    },
+    {
+      "id": "Q75",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's security team uses asymmetric encryption to securely exchange session keys for a TLS connection. This demonstrates:",
+      "opts": [
+        "The use of symmetric encryption for bulk data and asymmetric for key exchange",
+        "The redundancy of symmetric encryption",
+        "The obsolescence of TLS",
+        "The weakness of MFA"
+      ],
+      "ans": "A",
+      "exp": "TLS handshakes often use asymmetric encryption to securely exchange a symmetric session key, which is then used for bulk data encryption (Manual p.9)."
+    },
+    {
+      "id": "Q76",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a common implementation of MFA in banking mobile apps?",
+      "opts": [
+        "Password + fingerprint",
+        "Password only",
+        "Username + password",
+        "Account number + PIN"
+      ],
+      "ans": "A",
+      "exp": "Mobile apps often combine password (Something You Know) with fingerprint or facial recognition (Something You Are) as MFA (Manual p.10,14)."
+    },
+    {
+      "id": "Q77",
+      "module": 1,
+      "type": "mcq",
+      "q": "The term 'ciphertext' refers to:",
+      "opts": [
+        "Data that is readable",
+        "Data that has been encrypted",
+        "Data that has been hashed",
+        "Data that has been compressed"
+      ],
+      "ans": "B",
+      "exp": "Ciphertext is the unreadable, encrypted form of data, as opposed to plaintext (Manual p.9)."
+    },
+    {
+      "id": "Q78",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following correctly lists the cybersecurity generations in chronological order?",
+      "opts": [
+        "Signature-Based, Perimeter, Behavioral, AI/ML, Zero Trust",
+        "Perimeter, Signature-Based, Behavioral, AI/ML, Zero Trust",
+        "Behavioral, Perimeter, Signature-Based, AI/ML, Zero Trust",
+        "Zero Trust, AI/ML, Behavioral, Signature-Based, Perimeter"
+      ],
+      "ans": "B",
+      "exp": "The correct order is 1st Perimeter, 2nd Signature-Based, 3rd Behavioral, 4th AI/ML, 5th Zero Trust (Manual p.8-9)."
+    },
+    {
+      "id": "Q79",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer receives an email asking them to verify their bank password. The email looks official but contains several spelling errors and an unfamiliar sender address. This is likely a:",
+      "opts": [
+        "Phishing attempt",
+        "Legitimate bank communication",
+        "TLS handshake request",
+        "Password reset confirmation"
+      ],
+      "ans": "A",
+      "exp": "Spelling errors and unfamiliar sender addresses are red flags for phishing attacks (Manual p.16, though phishing is covered in Module 3, this tests cross-module application)."
+    },
+    {
+      "id": "Q80",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a key difference between TLS and MFA?",
+      "opts": [
+        "TLS secures data in transit; MFA secures authentication",
+        "MFA secures data in transit; TLS secures authentication",
+        "Both secure data at rest",
+        "Both are used for password management"
+      ],
+      "ans": "A",
+      "exp": "TLS is a protocol for securing data during transmission; MFA is an authentication mechanism requiring multiple credentials. They address different aspects of security (Manual p.9-10)."
+    },
+    {
+      "id": "Q81",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is password management?",
+      "opts": [
+        "A system for encrypting all stored data",
+        "A set of practices and tools for creating, storing, and managing passwords",
+        "A biometric verification method",
+        "A firewall configuration process"
+      ],
+      "ans": "B",
+      "exp": "Password management refers to practices and tools used to create, store, retrieve, rotate, and enforce policies for passwords (Manual p.13)."
+    },
+    {
+      "id": "Q82",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT a component of password management?",
+      "opts": [
+        "Password creation",
+        "Password encryption",
+        "Password storage",
+        "Password retrieval"
+      ],
+      "ans": "B",
+      "exp": "The listed components are creation, storage, retrieval, rotation, and policy enforcement. Password encryption is a related concept but not named as a component (Manual p.13)."
+    },
+    {
+      "id": "Q83",
+      "module": 2,
+      "type": "mcq",
+      "q": "Password rotation refers to:",
+      "opts": [
+        "Changing passwords only when a breach occurs",
+        "Regularly updating passwords according to a schedule or policy",
+        "Sharing passwords with colleagues",
+        "Storing passwords in a password manager"
+      ],
+      "ans": "B",
+      "exp": "Password rotation is the practice of regularly updating passwords as part of a password management policy (Manual p.13)."
+    },
+    {
+      "id": "Q84",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which practice involves using a service to generate and securely store complex passwords for multiple accounts?",
+      "opts": [
+        "Two-step verification",
+        "Password managers",
+        "Security questions",
+        "Biometric verification"
+      ],
+      "ans": "B",
+      "exp": "Password managers are tools designed to generate, store, and manage complex, unique passwords for multiple accounts (Manual p.13)."
+    },
+    {
+      "id": "Q85",
+      "module": 2,
+      "type": "mcq",
+      "q": "A password that is long, contains a mix of characters, and is not a dictionary word is considered:",
+      "opts": [
+        "Weak",
+        "Strong",
+        "Medium strength",
+        "Unsafe"
+      ],
+      "ans": "B",
+      "exp": "Strong passwords use a mix of uppercase, lowercase, numbers, and special characters, and avoid common words (Manual p.13)."
+    },
+    {
+      "id": "Q86",
+      "module": 2,
+      "type": "mcq",
+      "q": "Using the same password across multiple online accounts violates which password management best practice?",
+      "opts": [
+        "Regular updates",
+        "Password uniqueness",
+        "Two-step verification",
+        "Monitoring"
+      ],
+      "ans": "B",
+      "exp": "Password uniqueness means using different passwords for each account; reusing passwords increases risk (Manual p.13)."
+    },
+    {
+      "id": "Q87",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which best practice helps protect against credential stuffing attacks where stolen credentials are tried across multiple sites?",
+      "opts": [
+        "Strong passwords",
+        "Password uniqueness",
+        "Regular updates",
+        "Security questions"
+      ],
+      "ans": "B",
+      "exp": "Credential stuffing relies on users reusing passwords; uniqueness ensures one stolen password doesn't compromise multiple accounts (Manual p.13)."
+    },
+    {
+      "id": "Q88",
+      "module": 2,
+      "type": "mcq",
+      "q": "Two-step verification is a subset of:",
+      "opts": [
+        "Password creation",
+        "Multi-Factor Authentication",
+        "Password storage",
+        "Password rotation"
+      ],
+      "ans": "B",
+      "exp": "Two-step verification (2SV) is an MFA implementation that adds an extra step to the login process beyond just password entry (Manual p.13)."
+    },
+    {
+      "id": "Q89",
+      "module": 2,
+      "type": "mcq",
+      "q": "Security questions fall under which authentication category?",
+      "opts": [
+        "Something You Are",
+        "Something You Know",
+        "Something You Have",
+        "Something You Do"
+      ],
+      "ans": "B",
+      "exp": "Security questions are knowledge-based credentials, making them 'Something You Know' (Manual p.13)."
+    },
+    {
+      "id": "Q90",
+      "module": 2,
+      "type": "mcq",
+      "q": "Monitoring in password management involves:",
+      "opts": [
+        "Watching employees type their passwords",
+        "Checking for compromised passwords and suspicious account activity",
+        "Recording all passwords in a spreadsheet",
+        "Changing passwords every month"
+      ],
+      "ans": "B",
+      "exp": "Monitoring includes checking if passwords have been leaked in breaches and watching for suspicious login attempts (Manual p.13)."
+    },
+    {
+      "id": "Q91",
+      "module": 2,
+      "type": "mcq",
+      "q": "Phishing awareness, as a password management practice, helps users:",
+      "opts": [
+        "Create stronger passwords",
+        "Recognize and avoid attempts to trick them into revealing passwords",
+        "Store passwords more securely",
+        "Rotate passwords more frequently"
+      ],
+      "ans": "B",
+      "exp": "Phishing awareness educates users to identify deceptive attempts to steal credentials, a key part of password security (Manual p.13)."
+    },
+    {
+      "id": "Q92",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the fundamental purpose of authentication?",
+      "opts": [
+        "To encrypt all user data",
+        "To verify the identity of a person, system, or service",
+        "To authorize specific actions",
+        "To log user activity"
+      ],
+      "ans": "B",
+      "exp": "Authentication is the process of verifying that an entity is who or what it claims to be (Manual p.13)."
+    },
+    {
+      "id": "Q93",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following correctly lists the three categories of authentication factors?",
+      "opts": [
+        "Something You Know, Something You Have, Something You Do",
+        "Something You Know, Something You Have, Something You Are",
+        "Something You Have, Something You Are, Something You Remember",
+        "Something You Know, Something You Are, Something You Feel"
+      ],
+      "ans": "B",
+      "exp": "The three categories are: Something You Know, Something You Have, and Something You Are (Manual p.13)."
+    },
+    {
+      "id": "Q94",
+      "module": 2,
+      "type": "mcq",
+      "q": "A password is categorized as:",
+      "opts": [
+        "Something You Have",
+        "Something You Know",
+        "Something You Are",
+        "Something You Control"
+      ],
+      "ans": "B",
+      "exp": "Passwords, PINs, and security answers are all 'Something You Know' (Manual p.13)."
+    },
+    {
+      "id": "Q95",
+      "module": 2,
+      "type": "mcq",
+      "q": "A hardware security token is categorized as:",
+      "opts": [
+        "Something You Know",
+        "Something You Have",
+        "Something You Are",
+        "Something You Remember"
+      ],
+      "ans": "B",
+      "exp": "Hardware tokens are physical items a user possesses, so they are 'Something You Have' (Manual p.13)."
+    },
+    {
+      "id": "Q96",
+      "module": 2,
+      "type": "mcq",
+      "q": "A fingerprint scan is categorized as:",
+      "opts": [
+        "Something You Know",
+        "Something You Have",
+        "Something You Are",
+        "Something You Think"
+      ],
+      "ans": "C",
+      "exp": "Fingerprints are biometric traits, which are 'Something You Are' (Manual p.13)."
+    },
+    {
+      "id": "Q97",
+      "module": 2,
+      "type": "mcq",
+      "q": "MFA enhances security by requiring:",
+      "opts": [
+        "Only a password and username",
+        "Two or more different types of verification credentials",
+        "A single biometric factor",
+        "Multiple attempts to log in"
+      ],
+      "ans": "B",
+      "exp": "MFA requires at least two different types of verification from the three categories (Manual p.13-14)."
+    },
+    {
+      "id": "Q98",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which MFA method sends a one-time password to a user's phone via text message?",
+      "opts": [
+        "Authenticator App",
+        "SMS Verification",
+        "Hardware Token",
+        "Biometric Verification"
+      ],
+      "ans": "B",
+      "exp": "SMS Verification sends a code via text message to the user's registered phone number (Manual p.14)."
+    },
+    {
+      "id": "Q99",
+      "module": 2,
+      "type": "mcq",
+      "q": "Google Authenticator and Microsoft Authenticator are examples of:",
+      "opts": [
+        "Hardware tokens",
+        "Authenticator apps",
+        "SMS verification services",
+        "Biometric scanners"
+      ],
+      "ans": "B",
+      "exp": "These are software-based authenticator apps that generate time-based OTPs (Manual p.14)."
+    },
+    {
+      "id": "Q100",
+      "module": 2,
+      "type": "mcq",
+      "q": "A physical USB device that generates a one-time code is an example of:",
+      "opts": [
+        "Biometric verification",
+        "Hardware token",
+        "Authenticator app",
+        "Password manager"
+      ],
+      "ans": "B",
+      "exp": "Hardware tokens are physical devices like USB keys or OTP generators used for MFA (Manual p.14)."
+    },
+    {
+      "id": "Q101",
+      "module": 2,
+      "type": "mcq",
+      "q": "Facial recognition and iris scans are used in which MFA method?",
+      "opts": [
+        "SMS Verification",
+        "Biometric Verification",
+        "Hardware Token",
+        "Security Questions"
+      ],
+      "ans": "B",
+      "exp": "Biometric verification uses unique physical traits like fingerprints, facial recognition, iris scans, and voice patterns (Manual p.14)."
+    },
+    {
+      "id": "Q102",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which benefit of MFA refers to making it significantly harder for attackers to gain unauthorized access?",
+      "opts": [
+        "Ease of Use",
+        "Enhanced Security",
+        "Regulatory Compliance",
+        "Cost effectiveness"
+      ],
+      "ans": "B",
+      "exp": "Enhanced Security is the primary benefit—MFA adds layers that make unauthorized access much more difficult (Manual p.14)."
+    },
+    {
+      "id": "Q103",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which MFA benefit directly addresses the vulnerability of passwords to phishing?",
+      "opts": [
+        "Data Integrity",
+        "Reduced Risk of Phishing",
+        "Identity Assurance",
+        "Ease of Use"
+      ],
+      "ans": "B",
+      "exp": "MFA reduces phishing risk because even if a user gives away their password, the attacker lacks the second factor (Manual p.14)."
+    },
+    {
+      "id": "Q104",
+      "module": 2,
+      "type": "mcq",
+      "q": "Data Integrity as a benefit of MFA ensures:",
+      "opts": [
+        "Data is always encrypted",
+        "Data is accessed only by verified identities, reducing tampering risk",
+        "Data is backed up daily",
+        "Data is stored in multiple locations"
+      ],
+      "ans": "B",
+      "exp": "By ensuring only authenticated users access data, MFA helps maintain data integrity—preventing unauthorized modifications (Manual p.14)."
+    },
+    {
+      "id": "Q105",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which MFA benefit is most relevant to meeting regulatory requirements in the banking industry?",
+      "opts": [
+        "Identity Assurance",
+        "Regulatory Compliance",
+        "Ease of Use",
+        "Cost effectiveness"
+      ],
+      "ans": "B",
+      "exp": "Regulatory Compliance ensures that banks meet mandated security standards, avoiding penalties (Manual p.14)."
+    },
+    {
+      "id": "Q106",
+      "module": 2,
+      "type": "mcq",
+      "q": "Identity Assurance, as a benefit of MFA, provides confidence that:",
+      "opts": [
+        "The user is who they claim to be",
+        "The password is strong enough",
+        "The network is secure",
+        "The transaction is fast"
+      ],
+      "ans": "A",
+      "exp": "Identity Assurance confirms the user's claimed identity, a cornerstone of secure banking (Manual p.14)."
+    },
+    {
+      "id": "Q107",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank implements MFA for all employees accessing internal systems. This protects against:",
+      "opts": [
+        "Only external hackers",
+        "Both external hackers and compromised internal credentials",
+        "Only physical theft",
+        "Only phishing attacks"
+      ],
+      "ans": "B",
+      "exp": "MFA protects against any unauthorized access, whether from external attackers or from internal users whose credentials were compromised (Manual p.10)."
+    },
+    {
+      "id": "Q108",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT listed as a benefit of MFA in the manual?",
+      "opts": [
+        "Reduced Risk of Phishing",
+        "Cost effectiveness",
+        "Guaranteed 100% security",
+        "Identity Assurance"
+      ],
+      "ans": "C",
+      "exp": "MFA provides enhanced security but does not guarantee 100% security. It is not listed as a benefit (Manual p.14)."
+    },
+    {
+      "id": "Q109",
+      "module": 2,
+      "type": "mcq",
+      "q": "A user who forgets their password but still has their phone can potentially log in using:",
+      "opts": [
+        "SMS verification only, if set up as MFA",
+        "Password recovery via security questions",
+        "Biometric verification only",
+        "Hardware token only"
+      ],
+      "ans": "A",
+      "exp": "If MFA is configured with SMS or authenticator app as the second factor, they might still authenticate using that factor if the system allows it as a fallback, though the manual primarily discusses it as a second step (Manual p.14)."
+    },
+    {
+      "id": "Q110",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which password management practice involves periodically changing passwords to limit the window of opportunity for attackers?",
+      "opts": [
+        "Strong passwords",
+        "Regular updates",
+        "Password uniqueness",
+        "Two-step verification"
+      ],
+      "ans": "B",
+      "exp": "Regular updates (rotation) limit the time a compromised password remains valid (Manual p.13)."
+    },
+    {
+      "id": "Q111",
+      "module": 2,
+      "type": "mcq",
+      "q": "A password policy requiring a mix of uppercase, lowercase, numbers, and symbols supports:",
+      "opts": [
+        "Password uniqueness",
+        "Strong passwords",
+        "Regular updates",
+        "Two-step verification"
+      ],
+      "ans": "B",
+      "exp": "Such complexity makes passwords harder to guess or crack, defining a strong password (Manual p.13)."
+    },
+    {
+      "id": "Q112",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which password management practice is MOST effective against brute-force attacks?",
+      "opts": [
+        "Using common words",
+        "Using long, complex passwords",
+        "Sharing passwords with IT support",
+        "Writing passwords on sticky notes"
+      ],
+      "ans": "B",
+      "exp": "Long, complex passwords increase the search space, making brute-force attacks computationally infeasible (Manual p.13)."
+    },
+    {
+      "id": "Q113",
+      "module": 2,
+      "type": "mcq",
+      "q": "What differentiates MFA from standard single-factor authentication?",
+      "opts": [
+        "MFA uses only biometrics",
+        "MFA uses two or more different factor types",
+        "MFA is less secure than single-factor",
+        "MFA requires hardware tokens exclusively"
+      ],
+      "ans": "B",
+      "exp": "Single-factor uses one type (e.g., password); MFA requires at least two different types from the three categories (Manual p.13-14)."
+    },
+    {
+      "id": "Q114",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a 'Something You Are' factor?",
+      "opts": [
+        "PIN",
+        "Voice pattern",
+        "Security token",
+        "Password"
+      ],
+      "ans": "B",
+      "exp": "Voice pattern is a biometric identifier, falling under 'Something You Are' (Manual p.10)."
+    },
+    {
+      "id": "Q115",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a 'Something You Have' factor that is not a physical hardware token?",
+      "opts": [
+        "Fingerprint",
+        "Soft token on a mobile app",
+        "Security question",
+        "Password"
+      ],
+      "ans": "B",
+      "exp": "Soft tokens are software-based, but still a physical possession (the phone) qualifies as 'Something You Have' (Manual p.10)."
+    },
+    {
+      "id": "Q116",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank's online platform requires a password AND a one-time code from an authenticator app. This is:",
+      "opts": [
+        "Single-factor authentication",
+        "Two-factor authentication (2FA)",
+        "Biometric-only authentication",
+        "Passwordless authentication"
+      ],
+      "ans": "B",
+      "exp": "The combination of password (Something You Know) and authenticator app (Something You Have) is 2FA, a common MFA implementation (Manual p.14)."
+    },
+    {
+      "id": "Q117",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which MFA method is generally considered MORE secure than SMS verification?",
+      "opts": [
+        "Authenticator apps",
+        "Security questions",
+        "Password rotation",
+        "Password manager"
+      ],
+      "ans": "A",
+      "exp": "Authenticator apps are less vulnerable to SIM-swapping and interception than SMS (Manual p.14)."
+    },
+    {
+      "id": "Q118",
+      "module": 2,
+      "type": "mcq",
+      "q": "Password management policy enforcement ensures:",
+      "opts": [
+        "Users can choose any password",
+        "Users comply with organizational password rules",
+        "Passwords are automatically reset daily",
+        "Users are locked out permanently"
+      ],
+      "ans": "B",
+      "exp": "Policy enforcement ensures adherence to password rules like complexity, length, and rotation (Manual p.13)."
+    },
+    {
+      "id": "Q119",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following would be a weakness in password management?",
+      "opts": [
+        "Using a password manager",
+        "Using the same password for work and personal accounts",
+        "Enabling two-step verification",
+        "Regularly updating passwords"
+      ],
+      "ans": "B",
+      "exp": "Reusing passwords across accounts violates uniqueness and increases risk of credential stuffing (Manual p.13)."
+    },
+    {
+      "id": "Q120",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which password best practice protects against social engineering where an attacker tries to learn personal details?",
+      "opts": [
+        "Avoiding common words",
+        "Using security questions with unguessable answers (or false answers)",
+        "Regular updates",
+        "Two-step verification"
+      ],
+      "ans": "B",
+      "exp": "Security questions can be vulnerable if based on publicly known info; using unique, unguessable answers mitigates this (Manual p.13)."
+    },
+    {
+      "id": "Q121",
+      "module": 2,
+      "type": "mcq",
+      "q": "Authenticator apps generate codes that:",
+      "opts": [
+        "Are sent via SMS",
+        "Are time-based and generated locally",
+        "Are physical hardware devices",
+        "Are biometric scans"
+      ],
+      "ans": "B",
+      "exp": "Authenticator apps generate time-based one-time passwords (TOTP) locally on the user's device (Manual p.14)."
+    },
+    {
+      "id": "Q122",
+      "module": 2,
+      "type": "mcq",
+      "q": "A SIM-swapping attack would most likely compromise which MFA method?",
+      "opts": [
+        "Authenticator App",
+        "SMS Verification",
+        "Biometric Verification",
+        "Hardware Token"
+      ],
+      "ans": "B",
+      "exp": "SMS verification relies on the phone number; an attacker who hijacks the phone number via SIM-swapping can intercept SMS codes (Manual p.14 discusses relative security)."
+    },
+    {
+      "id": "Q123",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which password management practice helps protect against keyloggers?",
+      "opts": [
+        "Strong passwords",
+        "Two-step verification / MFA",
+        "Password uniqueness",
+        "Avoiding common words"
+      ],
+      "ans": "B",
+      "exp": "If a keylogger captures the password, MFA still requires the second factor, preventing access (Manual p.13-14)."
+    },
+    {
+      "id": "Q124",
+      "module": 2,
+      "type": "mcq",
+      "q": "Password storage, as a component of password management, refers to:",
+      "opts": [
+        "Writing passwords in plaintext files",
+        "Securely saving passwords for later retrieval",
+        "Memorizing all passwords",
+        "Printing passwords on paper"
+      ],
+      "ans": "B",
+      "exp": "Secure password storage ensures passwords are saved in an encrypted or hashed format for safe retrieval (Manual p.13)."
+    },
+    {
+      "id": "Q125",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which benefit of MFA provides assurance to regulators and auditors that the bank is protecting customer accounts?",
+      "opts": [
+        "Ease of Use",
+        "Regulatory Compliance",
+        "Cost effectiveness",
+        "Enhanced Security"
+      ],
+      "ans": "B",
+      "exp": "Regulatory Compliance demonstrates adherence to standards, satisfying auditors and regulators (Manual p.14)."
+    },
+    {
+      "id": "Q126",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following represents the MOST secure password management configuration?",
+      "opts": [
+        "Simple password, no MFA",
+        "Strong unique password + MFA with authenticator app",
+        "Complex password, no MFA",
+        "Regular password updates, no uniqueness"
+      ],
+      "ans": "B",
+      "exp": "The combination of a strong, unique password with an authenticator app provides the highest security (Manual p.13-14)."
+    },
+    {
+      "id": "Q127",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which MFA factor is typically the LEAST expensive to implement across a large user base?",
+      "opts": [
+        "Hardware tokens",
+        "Biometric scanners",
+        "Software-based authenticator apps",
+        "Physical OTP devices"
+      ],
+      "ans": "C",
+      "exp": "Software-based authenticator apps are cost-effective as they use existing smartphones, unlike hardware tokens which require physical distribution (Manual p.14 lists cost effectiveness as a benefit)."
+    },
+    {
+      "id": "Q128",
+      "module": 2,
+      "type": "mcq",
+      "q": "Password retrieval in password management involves:",
+      "opts": [
+        "Reset procedures for forgotten passwords",
+        "Reusing old passwords",
+        "Sharing passwords with helpdesk",
+        "Storing passwords in a password manager"
+      ],
+      "ans": "A",
+      "exp": "Retrieval includes processes to securely recover or reset passwords when users forget them (Manual p.13)."
+    },
+    {
+      "id": "Q129",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which attack is specifically mitigated by password uniqueness?",
+      "opts": [
+        "Phishing",
+        "Credential stuffing",
+        "Keylogging",
+        "Man-in-the-Middle"
+      ],
+      "ans": "B",
+      "exp": "Credential stuffing relies on password reuse; uniqueness prevents it (Manual p.13)."
+    },
+    {
+      "id": "Q130",
+      "module": 2,
+      "type": "mcq",
+      "q": "A password manager can help users avoid:",
+      "opts": [
+        "Using MFA",
+        "Creating weak or reused passwords",
+        "Using biometrics",
+        "Security questions"
+      ],
+      "ans": "B",
+      "exp": "Password managers generate and store strong, unique passwords, preventing weak or reused passwords (Manual p.13)."
+    },
+    {
+      "id": "Q131",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT a type of MFA listed in the manual?",
+      "opts": [
+        "SMS Verification",
+        "Authenticator Apps",
+        "Voice Pattern Verification",
+        "Hardware Tokens"
+      ],
+      "ans": "C",
+      "exp": "Voice pattern is listed as a biometric example (Something You Are), but SMS, Authenticator, and Hardware are the specific MFA types listed (Manual p.14)."
+    },
+    {
+      "id": "Q132",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank uses a risk-based authentication system that requests additional factors for high-value transactions. This demonstrates:",
+      "opts": [
+        "A weakness in the password policy",
+        "An adaptive application of MFA",
+        "The obsolescence of passwords",
+        "A violation of data integrity"
+      ],
+      "ans": "B",
+      "exp": "Adaptive MFA applies additional factors based on risk, enhancing security without inconveniencing users for low-risk activities (Manual p.10 discusses MFA for high-risk transactions)."
+    },
+    {
+      "id": "Q133",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which password management best practice involves educating users to avoid clicking on suspicious links in emails claiming to be from the bank?",
+      "opts": [
+        "Strong passwords",
+        "Phishing awareness",
+        "Regular updates",
+        "Password uniqueness"
+      ],
+      "ans": "B",
+      "exp": "Phishing awareness educates users to recognize and avoid phishing attempts that seek to steal credentials (Manual p.13)."
+    },
+    {
+      "id": "Q134",
+      "module": 2,
+      "type": "mcq",
+      "q": "If a bank employee's password is compromised but the account has MFA enabled with a hardware token, what would the attacker still need?",
+      "opts": [
+        "The employee's username",
+        "The employee's physical hardware token",
+        "The employee's email address",
+        "The employee's security question answers"
+      ],
+      "ans": "B",
+      "exp": "The hardware token is a physical possession; without it, the attacker cannot complete authentication (Manual p.10)."
+    },
+    {
+      "id": "Q135",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which statement about authentication factors is accurate?",
+      "opts": [
+        "Something You Are factors can be easily changed",
+        "Something You Have factors are physical items that can be lost or stolen",
+        "Something You Know factors are the most secure",
+        "All three factors are equally secure"
+      ],
+      "ans": "B",
+      "exp": "Something You Have are physical items (like tokens or phones) that can indeed be lost or stolen, which is a known vulnerability (Manual p.10)."
+    },
+    {
+      "id": "Q136",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is a phishing attack?",
+      "opts": [
+        "A type of malware that encrypts files",
+        "A fraudulent message designed to trick victims into revealing sensitive information",
+        "A physical security breach of bank premises",
+        "A network intrusion using stolen credentials"
+      ],
+      "ans": "B",
+      "exp": "Phishing is a cyberattack where attackers send spoofed messages to trick victims into revealing sensitive information (Manual p.16)."
+    },
+    {
+      "id": "Q137",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a common red flag in a phishing email?",
+      "opts": [
+        "Correct spelling and grammar throughout",
+        "A sender email address that matches the bank's official domain",
+        "Urgent or threatening language demanding immediate action",
+        "Professional formatting and company logos"
+      ],
+      "ans": "C",
+      "exp": "Urgent or threatening language is a red flag, designed to pressure victims into acting without thinking (Manual p.16)."
+    },
+    {
+      "id": "Q138",
+      "module": 3,
+      "type": "mcq",
+      "q": "An employee receives an email from 'accessbank-secure@mail.com' asking them to verify their login credentials. This is suspicious because:",
+      "opts": [
+        "The subject line is too short",
+        "The sender email address doesn't match the bank's official domain",
+        "The email is written in formal language",
+        "The email contains a PDF attachment"
+      ],
+      "ans": "B",
+      "exp": "Unfamiliar sender email addresses that don't match the supposed organization's domain are a red flag for phishing (Manual p.16)."
+    },
+    {
+      "id": "Q139",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a red flag to look out for in phishing attacks?",
+      "opts": [
+        "Spelling and grammar errors",
+        "Urgent or threatening language",
+        "Professional formatting with correct logos",
+        "URLs that don't match the supposed sender"
+      ],
+      "ans": "C",
+      "exp": "Professional formatting can be spoofed; red flags include errors, urgency, unfamiliar senders, and mismatched URLs (Manual p.16)."
+    },
+    {
+      "id": "Q140",
+      "module": 3,
+      "type": "mcq",
+      "q": "A phishing email claims to be from the bank and says 'Your account will be locked in 24 hours unless you click this link.' This uses which common tactic?",
+      "opts": [
+        "Calm and reassuring language",
+        "Urgent or threatening language",
+        "A request for non-sensitive information",
+        "A low-pressure approach"
+      ],
+      "ans": "B",
+      "exp": "Urgent or threatening language is designed to create panic and bypass rational judgment (Manual p.16)."
+    },
+    {
+      "id": "Q141",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which phishing red flag is present if a link in an email shows 'https://access-bank-verify.net' but claims to be from Access Bank?",
+      "opts": [
+        "Spelling and grammar errors",
+        "Unfamiliar sender email address",
+        "URLs that don't match the supposed sender",
+        "Urgent language"
+      ],
+      "ans": "C",
+      "exp": "Mismatched URLs — where the link doesn't match the legitimate organization's domain — are a key red flag (Manual p.16)."
+    },
+    {
+      "id": "Q142",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the first line of defense for your email?",
+      "opts": [
+        "Email encryption",
+        "A strong, unique password",
+        "Two-factor authentication",
+        "Avoiding public Wi-Fi"
+      ],
+      "ans": "B",
+      "exp": "A strong, unique password is identified as the first line of defense for email security (Manual p.17)."
+    },
+    {
+      "id": "Q143",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which email security measure involves adding an extra verification step beyond the password?",
+      "opts": [
+        "Encryption",
+        "Two-Factor Authentication",
+        "Strong passwords",
+        "Attachment safety"
+      ],
+      "ans": "B",
+      "exp": "Two-Factor Authentication adds an extra verification step, providing additional email security (Manual p.17)."
+    },
+    {
+      "id": "Q144",
+      "module": 3,
+      "type": "mcq",
+      "q": "Using email encryption is recommended for:",
+      "opts": [
+        "Internal casual conversations",
+        "Sensitive communication",
+        "Marketing newsletters",
+        "Spam messages"
+      ],
+      "ans": "B",
+      "exp": "Email encryption is specifically recommended for sensitive communication (Manual p.17)."
+    },
+    {
+      "id": "Q145",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a risk of accessing email on public Wi-Fi?",
+      "opts": [
+        "Stronger connection speeds",
+        "Interception of unencrypted data",
+        "Automatic malware removal",
+        "Faster email delivery"
+      ],
+      "ans": "B",
+      "exp": "Unsecured public Wi-Fi networks can allow attackers to intercept data; the manual advises never accessing email on them (Manual p.17)."
+    },
+    {
+      "id": "Q146",
+      "module": 3,
+      "type": "mcq",
+      "q": "An employee receives an email with an attachment from an unknown sender. According to email security best practices, they should:",
+      "opts": [
+        "Open it immediately to check if it's important",
+        "Not open it and mark it as suspicious",
+        "Forward it to all colleagues",
+        "Save it to the desktop and then open it"
+      ],
+      "ans": "B",
+      "exp": "Don't open attachments from unknown or untrusted sources; this is a fundamental email security tip (Manual p.17)."
+    },
+    {
+      "id": "Q147",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why should users always log out from email when using public or shared computers?",
+      "opts": [
+        "To save battery life",
+        "To prevent unauthorized access to their account",
+        "To clear browser cookies",
+        "To speed up the computer"
+      ],
+      "ans": "B",
+      "exp": "Logging out prevents the next user from accessing the account, protecting against unauthorized access (Manual p.17)."
+    },
+    {
+      "id": "Q148",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which email security practice helps protect the content of emails from being read by unauthorized parties during transmission?",
+      "opts": [
+        "Strong passwords",
+        "Two-factor authentication",
+        "Encryption",
+        "Logging out"
+      ],
+      "ans": "C",
+      "exp": "Email encryption protects the content of sensitive communication from unauthorized viewing (Manual p.17)."
+    },
+    {
+      "id": "Q149",
+      "module": 3,
+      "type": "mcq",
+      "q": "A user receives an email with spelling errors, a suspicious sender address, and a request to click a link to update their account. This is most likely:",
+      "opts": [
+        "A legitimate bank notification",
+        "A phishing attempt",
+        "A spam marketing email",
+        "A system update alert"
+      ],
+      "ans": "B",
+      "exp": "Multiple red flags (spelling errors, suspicious sender, urgent action requested) indicate a phishing attempt (Manual p.16-17)."
+    },
+    {
+      "id": "Q150",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which email security tip would be most effective against a credential phishing attack?",
+      "opts": [
+        "Using encryption",
+        "Enabling two-factor authentication",
+        "Avoiding public Wi-Fi",
+        "Regular logout"
+      ],
+      "ans": "B",
+      "exp": "2FA ensures that even if credentials are phished, the attacker cannot access the account without the second factor (Manual p.17)."
+    },
+    {
+      "id": "Q151",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank employee receives an email that says 'Your account has been compromised — click here to reset your password immediately.' This email is likely:",
+      "opts": [
+        "A routine security alert",
+        "A phishing attempt using urgent language",
+        "A password reset confirmation",
+        "A system maintenance notification"
+      ],
+      "ans": "B",
+      "exp": "Urgent language claiming account compromise and requesting immediate action is a classic phishing tactic (Manual p.16)."
+    },
+    {
+      "id": "Q152",
+      "module": 3,
+      "type": "mcq",
+      "q": "What should an employee do if they receive a suspicious email claiming to be from the bank's IT department?",
+      "opts": [
+        "Reply with their password for verification",
+        "Forward it to the bank's official security team for investigation",
+        "Delete it without reporting",
+        "Click all links to see where they go"
+      ],
+      "ans": "B",
+      "exp": "Suspicious emails should be reported to the security team, not engaged with directly (Manual p.17, combined with phishing red flags)."
+    },
+    {
+      "id": "Q153",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following increases the effectiveness of email security?",
+      "opts": [
+        "Using the same password for all email accounts",
+        "Enabling two-factor authentication",
+        "Clicking links in unsolicited emails",
+        "Disabling spam filters"
+      ],
+      "ans": "B",
+      "exp": "Two-factor authentication is listed as a key email security tip (Manual p.17)."
+    },
+    {
+      "id": "Q154",
+      "module": 3,
+      "type": "mcq",
+      "q": "A phishing email often creates a sense of urgency to:",
+      "opts": [
+        "Allow the user time to think",
+        "Pressure the user into acting without careful consideration",
+        "Comply with regulatory requirements",
+        "Reduce the number of responses"
+      ],
+      "ans": "B",
+      "exp": "Urgent language is designed to bypass rational judgment and provoke immediate, unthinking action (Manual p.16)."
+    },
+    {
+      "id": "Q155",
+      "module": 3,
+      "type": "mcq",
+      "q": "What type of attack is specifically designed to trick individuals into revealing sensitive information through deceptive emails?",
+      "opts": [
+        "Malware infection",
+        "Phishing",
+        "Denial of Service",
+        "Man-in-the-Middle"
+      ],
+      "ans": "B",
+      "exp": "Phishing is defined as fraudulent messages designed to trick victims into revealing sensitive information (Manual p.16)."
+    },
+    {
+      "id": "Q156",
+      "module": 3,
+      "type": "mcq",
+      "q": "An employee logs into their email on a public library computer and forgets to log out. What risk does this pose?",
+      "opts": [
+        "The computer will automatically shut down",
+        "The next user could access the employee's email account",
+        "The employee will be locked out",
+        "The computer will restart"
+      ],
+      "ans": "B",
+      "exp": "Failing to log out from shared computers allows the next user to access the account (Manual p.17)."
+    },
+    {
+      "id": "Q157",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a recommended email security practice when receiving attachments?",
+      "opts": [
+        "Open attachments from all sources",
+        "Avoid opening attachments from unknown or untrusted sources",
+        "Only open attachments with .exe extensions",
+        "Forward attachments to colleagues"
+      ],
+      "ans": "B",
+      "exp": "Attachment safety involves not opening attachments from unknown or untrusted sources (Manual p.17)."
+    },
+    {
+      "id": "Q158",
+      "module": 3,
+      "type": "mcq",
+      "q": "A spoofed email address is one that:",
+      "opts": [
+        "Is from a legitimate bank domain",
+        "Appears to be from a trusted source but is actually forged",
+        "Has been verified by the email provider",
+        "Contains no errors"
+      ],
+      "ans": "B",
+      "exp": "Spoofed addresses are forged to appear as if they're from a legitimate source; unfamiliar sender addresses are a red flag (Manual p.16)."
+    },
+    {
+      "id": "Q159",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following email security measures protects against unauthorized access even if a password is compromised?",
+      "opts": [
+        "Strong passwords",
+        "Two-factor authentication",
+        "Logging out",
+        "Encryption"
+      ],
+      "ans": "B",
+      "exp": "2FA requires a second factor, so a compromised password alone is insufficient for access (Manual p.17)."
+    },
+    {
+      "id": "Q160",
+      "module": 3,
+      "type": "mcq",
+      "q": "A user receives an email from 'access.bank.service@gmail.com' asking for their account number. This is suspicious because:",
+      "opts": [
+        "The email uses proper grammar",
+        "The sender domain is a free email service, not the bank's official domain",
+        "The email has no attachments",
+        "The email is short"
+      ],
+      "ans": "B",
+      "exp": "Legitimate banks use their own domains, not free email services; unfamiliar or mismatched domains are a red flag (Manual p.16)."
+    },
+    {
+      "id": "Q161",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the purpose of email security tips in the context of banking?",
+      "opts": [
+        "To reduce email volume",
+        "To protect customer and organizational information from cyber threats",
+        "To limit employee communication",
+        "To increase internet speed"
+      ],
+      "ans": "B",
+      "exp": "Email security protects sensitive banking information from phishing, interception, and unauthorized access (Manual p.17)."
+    },
+    {
+      "id": "Q162",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which red flag in a phishing email would most likely be noticed by someone carefully reading the email address?",
+      "opts": [
+        "Urgent language",
+        "Spelling errors",
+        "An unfamiliar sender email address",
+        "Threatening language"
+      ],
+      "ans": "C",
+      "exp": "Carefully checking the sender's email address reveals mismatches with legitimate domains, a key red flag (Manual p.16)."
+    },
+    {
+      "id": "Q163",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a recommended email security tip from the manual?",
+      "opts": [
+        "Use strong passwords",
+        "Enable two-factor authentication",
+        "Use email encryption for sensitive communication",
+        "Access email on public Wi-Fi for convenience"
+      ],
+      "ans": "D",
+      "exp": "The manual specifically advises never accessing email on unsecured public Wi-Fi (Manual p.17)."
+    },
+    {
+      "id": "Q164",
+      "module": 3,
+      "type": "mcq",
+      "q": "A phishing email that appears to come from a bank's CEO requesting an urgent funds transfer is an example of:",
+      "opts": [
+        "Whaling (spear-phishing targeting executives)",
+        "Standard spam",
+        "A DDoS attack",
+        "Malware distribution"
+      ],
+      "ans": "A",
+      "exp": "While not explicitly named as 'whaling,' the scenario describes a targeted phishing attack against a senior executive, which is a form of spear-phishing. The manual's phishing principles apply (Manual p.16-17)."
+    },
+    {
+      "id": "Q165",
+      "module": 3,
+      "type": "mcq",
+      "q": "What should users do if they suspect an email is a phishing attempt?",
+      "opts": [
+        "Reply to ask if it's legitimate",
+        "Click the link to verify",
+        "Report it to the security team and delete it",
+        "Forward it to colleagues for their opinion"
+      ],
+      "ans": "C",
+      "exp": "Users should not engage; they should report suspicious emails to the security team (Manual p.17, implied by security awareness principles)."
+    },
+    {
+      "id": "Q166",
+      "module": 3,
+      "type": "mcq",
+      "q": "A link in a phishing email shows 'https://accessbank.com' but actually redirects to a malicious site. This technique is called:",
+      "opts": [
+        "URL spoofing / link obfuscation",
+        "Encryption",
+        "Password cracking",
+        "Biometric verification"
+      ],
+      "ans": "A",
+      "exp": "URL spoofing makes a link appear legitimate while actually directing to a malicious site; mismatched URLs are a red flag (Manual p.16)."
+    },
+    {
+      "id": "Q167",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following would be the MOST secure response to an unsolicited email requesting sensitive banking information?",
+      "opts": [
+        "Provide the information after verifying the email looks official",
+        "Call the bank using a publicly verified number to check the request",
+        "Reply to confirm the sender's identity",
+        "Ignore the request but don't report it"
+      ],
+      "ans": "B",
+      "exp": "The safest approach is to independently verify the request using official channels, not through the email (Manual p.17, security awareness context)."
+    },
+    {
+      "id": "Q168",
+      "module": 3,
+      "type": "mcq",
+      "q": "Phishing attacks in a banking context often target:",
+      "opts": [
+        "Only customer accounts",
+        "Customer accounts, employee credentials, and internal systems",
+        "Only internal systems",
+        "Only physical bank branches"
+      ],
+      "ans": "B",
+      "exp": "Phishing targets credentials that can compromise customer accounts, employee access, and internal banking systems (Manual p.16-17)."
+    },
+    {
+      "id": "Q169",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which email security tip involves protecting the integrity and confidentiality of message content?",
+      "opts": [
+        "Strong passwords",
+        "Two-factor authentication",
+        "Encryption",
+        "Logging out"
+      ],
+      "ans": "C",
+      "exp": "Encryption protects message content from being read or altered by unauthorized parties (Manual p.17)."
+    },
+    {
+      "id": "Q170",
+      "module": 3,
+      "type": "mcq",
+      "q": "A user notices that an email contains several grammatical mistakes and a misspelled bank name. This is a sign of:",
+      "opts": [
+        "A legitimate email from a busy executive",
+        "A poorly crafted phishing attempt",
+        "An encrypted email",
+        "A system-generated alert"
+      ],
+      "ans": "B",
+      "exp": "Spelling and grammar errors are common red flags in phishing emails (Manual p.16)."
+    },
+    {
+      "id": "Q171",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following best describes the relationship between phishing and social engineering?",
+      "opts": [
+        "Phishing is unrelated to social engineering",
+        "Phishing is a type of social engineering attack",
+        "Social engineering is a type of phishing",
+        "They are the same as malware"
+      ],
+      "ans": "B",
+      "exp": "Phishing uses deception to manipulate people (social engineering) into revealing information (Manual p.16)."
+    },
+    {
+      "id": "Q172",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why is it dangerous to click links in unsolicited emails?",
+      "opts": [
+        "It consumes too much data",
+        "It may redirect to malicious websites that steal information or install malware",
+        "It always results in account lockout",
+        "It sends an automatic reply to the sender"
+      ],
+      "ans": "B",
+      "exp": "Clicking suspicious links can lead to credential theft, malware infection, or other cyberattacks (Manual p.16-17)."
+    },
+    {
+      "id": "Q173",
+      "module": 3,
+      "type": "mcq",
+      "q": "An employee at a bank receives an email with an attachment labeled 'Invoice_Q4_2026.pdf.exe'. What should they do?",
+      "opts": [
+        "Open it to review the invoice",
+        "Not open it because .exe files can be malicious",
+        "Save it to the network drive",
+        "Rename it to .pdf and then open it"
+      ],
+      "ans": "B",
+      "exp": ".exe attachments from unknown sources are dangerous and should not be opened. Files with double extensions (.pdf.exe) are often used to hide malware (Manual p.17)."
+    },
+    {
+      "id": "Q174",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of a social engineering attack?",
+      "opts": [
+        "Technical exploitation of software vulnerabilities",
+        "Psychological manipulation of individuals",
+        "Physical damage to hardware",
+        "Automated brute-force attacks"
+      ],
+      "ans": "B",
+      "exp": "Phishing and social engineering rely on manipulation, not technical exploits (Manual p.16)."
+    },
+    {
+      "id": "Q175",
+      "module": 3,
+      "type": "mcq",
+      "q": "An email with a subject line 'URGENT: ACTION REQUIRED TO SECURE YOUR ACCOUNT' contains which red flag?",
+      "opts": [
+        "Spelling error",
+        "Unfamiliar sender",
+        "Urgent or threatening language",
+        "Mismatched URL"
+      ],
+      "ans": "C",
+      "exp": "The subject line uses urgency ('URGENT' and 'ACTION REQUIRED') to pressure the recipient (Manual p.16)."
+    },
+    {
+      "id": "Q176",
+      "module": 3,
+      "type": "mcq",
+      "q": "A user receives an email that appears to be from the bank's fraud department, but the 'reply-to' address is different from the 'from' address. This indicates:",
+      "opts": [
+        "A legitimate bank practice",
+        "An attempt to intercept replies (a possible phishing sign)",
+        "An encryption error",
+        "A password reset notification"
+      ],
+      "ans": "B",
+      "exp": "Mismatched 'from' and 'reply-to' addresses can be a sign of spoofing; recipients should be cautious (Manual p.16)."
+    },
+    {
+      "id": "Q177",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is an effective defense against social engineering attacks like phishing?",
+      "opts": [
+        "Using complex passwords only",
+        "Regular security awareness training",
+        "Installing more firewalls",
+        "Updating antivirus software"
+      ],
+      "ans": "B",
+      "exp": "Awareness training helps users recognize manipulation tactics, making them less vulnerable to phishing (Manual p.23 mentions security awareness training)."
+    },
+    {
+      "id": "Q178",
+      "module": 3,
+      "type": "mcq",
+      "q": "A user receives an email congratulating them on a 'win' and asking for bank account details to deposit the prize. This is likely:",
+      "opts": [
+        "A legitimate prize notification",
+        "A phishing attempt",
+        "An antivirus notification",
+        "A bank marketing email"
+      ],
+      "ans": "B",
+      "exp": "Unsolicited offers requesting sensitive information are classic phishing tactics (Manual p.16-17)."
+    },
+    {
+      "id": "Q179",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the recommended action for suspicious emails that may contain phishing links?",
+      "opts": [
+        "Click the link to report it as suspicious",
+        "Hover over the link to see the actual URL without clicking",
+        "Forward it to all colleagues to warn them",
+        "Reply to the sender to ask for clarification"
+      ],
+      "ans": "B",
+      "exp": "Hovering reveals the true destination URL, allowing users to spot mismatches without clicking (Manual p.16)."
+    },
+    {
+      "id": "Q180",
+      "module": 3,
+      "type": "mcq",
+      "q": "A phishing email that appears to come from a bank's legitimate address but has a subtle misspelling (e.g., 'accessbanck.com') is using:",
+      "opts": [
+        "Encryption",
+        "Typosquatting / domain spoofing",
+        "Biometric verification",
+        "Two-factor authentication"
+      ],
+      "ans": "B",
+      "exp": "Typosquatting uses misspelled domains to trick users into thinking they're on a legitimate site (Manual p.16)."
+    },
+    {
+      "id": "Q181",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which email security tip helps protect against email-based attacks that exploit human error?",
+      "opts": [
+        "Encryption",
+        "Two-factor authentication",
+        "Regular security awareness training",
+        "Avoiding public Wi-Fi"
+      ],
+      "ans": "C",
+      "exp": "Security awareness training educates users to recognize and avoid human-targeted attacks (Manual p.23 mentions security awareness training)."
+    },
+    {
+      "id": "Q182",
+      "module": 3,
+      "type": "mcq",
+      "q": "An employee suspects a phishing email but isn't sure. What is the BEST course of action?",
+      "opts": [
+        "Ignore it and assume it's not a threat",
+        "Forward it to the bank's security operations team for verification",
+        "Reply to ask if it's legitimate",
+        "Click the link to see where it goes"
+      ],
+      "ans": "B",
+      "exp": "Reporting suspicious emails to the security team is the safest course of action (Manual p.17)."
+    },
+    {
+      "id": "Q183",
+      "module": 3,
+      "type": "mcq",
+      "q": "Phishing emails often contain links that claim to be from a bank but actually lead to:",
+      "opts": [
+        "The bank's official website",
+        "A fake website designed to steal credentials",
+        "The user's account settings",
+        "The bank's contact page"
+      ],
+      "ans": "B",
+      "exp": "Phishing links lead to fake, lookalike sites designed to harvest login credentials (Manual p.16)."
+    },
+    {
+      "id": "Q184",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following email security tips is most relevant for users who travel frequently and use various networks?",
+      "opts": [
+        "Avoiding public Wi-Fi for email access",
+        "Using complex passwords only",
+        "Disabling two-factor authentication for convenience",
+        "Using the same password for all accounts"
+      ],
+      "ans": "A",
+      "exp": "Traveling users often connect to public Wi-Fi, which poses interception risks (Manual p.17)."
+    },
+    {
+      "id": "Q185",
+      "module": 3,
+      "type": "mcq",
+      "q": "An organization that regularly runs simulated phishing tests on employees is demonstrating:",
+      "opts": [
+        "A lack of trust in employees",
+        "A commitment to security awareness and behavior improvement",
+        "An inefficient use of resources",
+        "A violation of privacy"
+      ],
+      "ans": "B",
+      "exp": "Simulated phishing is a common security awareness training practice to improve real-world defenses (Manual p.23 mentions security awareness training)."
+    },
+    {
+      "id": "Q186",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary purpose of a firewall in cybersecurity?",
+      "opts": [
+        "To scan for viruses on endpoint devices",
+        "To act as a digital barrier between internal networks and the internet",
+        "To manage employee passwords",
+        "To encrypt sensitive email communications"
+      ],
+      "ans": "B",
+      "exp": "A firewall is a digital barrier that stands guard between an internal network and the internet (Manual p.19,21)."
+    },
+    {
+      "id": "Q187",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which type of firewall examines the headers of network packets to decide whether to allow or block them?",
+      "opts": [
+        "Application-level firewall",
+        "Packet-filtering firewall",
+        "Stateful inspection firewall",
+        "Proxy firewall"
+      ],
+      "ans": "B",
+      "exp": "Packet-filtering firewalls examine packet headers only, making decisions based on IP addresses, ports, and protocols (Manual p.19)."
+    },
+    {
+      "id": "Q188",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which type of firewall examines the actual content of network packets, not just the headers?",
+      "opts": [
+        "Packet-filtering firewall",
+        "Application-level firewall",
+        "Circuit-level gateway",
+        "Next-generation firewall"
+      ],
+      "ans": "B",
+      "exp": "Application-level firewalls inspect the content (payload) of packets to make more granular decisions (Manual p.19)."
+    },
+    {
+      "id": "Q189",
+      "module": 4,
+      "type": "mcq",
+      "q": "A firewall that can inspect the content of web traffic to block specific malicious requests is most likely:",
+      "opts": [
+        "A packet-filtering firewall",
+        "An application-level firewall",
+        "A router with ACLs",
+        "A basic hardware firewall"
+      ],
+      "ans": "B",
+      "exp": "Application-level firewalls examine content, making them suitable for inspecting web traffic and blocking specific requests (Manual p.19)."
+    },
+    {
+      "id": "Q190",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which use of a firewall involves preventing hackers from gaining unauthorized access to a network?",
+      "opts": [
+        "Blocking malware",
+        "Blocking hacking attempts",
+        "Mitigating DDoS attacks",
+        "Filtering spam"
+      ],
+      "ans": "B",
+      "exp": "Firewalls can prevent unauthorized access by blocking hacking attempts (Manual p.21)."
+    },
+    {
+      "id": "Q191",
+      "module": 4,
+      "type": "mcq",
+      "q": "How do firewalls contribute to blocking malware from entering the network?",
+      "opts": [
+        "By scanning all files for viruses",
+        "By filtering traffic and blocking known malicious patterns or addresses",
+        "By deleting all email attachments",
+        "By encrypting all inbound data"
+      ],
+      "ans": "B",
+      "exp": "Firewalls can block malware by filtering traffic and identifying malicious patterns (Manual p.21)."
+    },
+    {
+      "id": "Q192",
+      "module": 4,
+      "type": "mcq",
+      "q": "During a DDoS attack, a firewall can help by:",
+      "opts": [
+        "Encrypting all incoming requests",
+        "Blocking traffic from the attack sources",
+        "Storing all requests for later analysis",
+        "Redirecting traffic to a backup server"
+      ],
+      "ans": "B",
+      "exp": "Firewalls can block traffic from DDoS attacks, mitigating the impact (Manual p.21)."
+    },
+    {
+      "id": "Q193",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'Access Control' function of a firewall refers to:",
+      "opts": [
+        "Allowing only authorized network traffic to pass through",
+        "Encrypting all data leaving the network",
+        "Authenticating users before they access the internet",
+        "Logging all user activity"
+      ],
+      "ans": "A",
+      "exp": "Firewalls filter traffic, allowing only authorized traffic to pass through, which is access control (Manual p.22)."
+    },
+    {
+      "id": "Q194",
+      "module": 4,
+      "type": "mcq",
+      "q": "Modern firewalls use intrusion detection to:",
+      "opts": [
+        "Block all traffic by default",
+        "Spot and block suspicious activities",
+        "Allow all internal traffic unconditionally",
+        "Decrypt all SSL traffic"
+      ],
+      "ans": "B",
+      "exp": "Modern firewalls use threat detection capabilities to identify and block suspicious activities (Manual p.22)."
+    },
+    {
+      "id": "Q195",
+      "module": 4,
+      "type": "mcq",
+      "q": "Firewalls provide 'Application Security' by:",
+      "opts": [
+        "Allowing all applications to run freely",
+        "Protecting against application-layer threats like malware",
+        "Installing antivirus on all application servers",
+        "Managing application passwords"
+      ],
+      "ans": "B",
+      "exp": "Firewalls provide security at the application level against threats like malware (Manual p.22)."
+    },
+    {
+      "id": "Q196",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is antivirus software primarily designed to do?",
+      "opts": [
+        "Block unauthorized network access",
+        "Detect, prevent, and remove malicious software",
+        "Encrypt all data on a computer",
+        "Manage user passwords"
+      ],
+      "ans": "B",
+      "exp": "Antivirus software is designed to detect, prevent, and remove malware (Manual p.20)."
+    },
+    {
+      "id": "Q197",
+      "module": 4,
+      "type": "mcq",
+      "q": "How does antivirus software typically detect malware?",
+      "opts": [
+        "By blocking all incoming emails",
+        "By scanning files and processes for known malware signatures and behaviors",
+        "By encrypting all system files",
+        "By monitoring network traffic"
+      ],
+      "ans": "B",
+      "exp": "Antivirus scans files and processes in real-time, searching for known malware signatures and behaviors (Manual p.20)."
+    },
+    {
+      "id": "Q198",
+      "module": 4,
+      "type": "mcq",
+      "q": "The 'Preventive Measures' function of antivirus software involves:",
+      "opts": [
+        "Removing malware after infection",
+        "Blocking suspicious files and websites to prevent infection",
+        "Encrypting all outbound data",
+        "Logging all user activity"
+      ],
+      "ans": "B",
+      "exp": "Preventive measures help stop infections by blocking suspicious files and websites before they can execute (Manual p.20)."
+    },
+    {
+      "id": "Q199",
+      "module": 4,
+      "type": "mcq",
+      "q": "Why do antivirus programs perform regular system scans?",
+      "opts": [
+        "To improve system performance",
+        "To identify and eliminate hidden threats that may have evaded real-time protection",
+        "To update the operating system",
+        "To backup user data"
+      ],
+      "ans": "B",
+      "exp": "Regular scans identify and remove hidden threats, complementing real-time protection (Manual p.20)."
+    },
+    {
+      "id": "Q200",
+      "module": 4,
+      "type": "mcq",
+      "q": "Antivirus software requires regular updates to:",
+      "opts": [
+        "Improve the user interface",
+        "Keep its database of known threats up-to-date",
+        "Install new operating system features",
+        "Increase scanning speed"
+      ],
+      "ans": "B",
+      "exp": "Regular updates are crucial to maintain the antivirus signature database for detecting new threats (Manual p.20)."
+    },
+    {
+      "id": "Q201",
+      "module": 4,
+      "type": "mcq",
+      "q": "Why is installing software updates important for cybersecurity?",
+      "opts": [
+        "They add new features only",
+        "They often contain important security fixes for known vulnerabilities",
+        "They improve application aesthetics",
+        "They increase network speed"
+      ],
+      "ans": "B",
+      "exp": "Software updates frequently include patches for security vulnerabilities, making them critical for protection (Manual p.22)."
+    },
+    {
+      "id": "Q202",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a benefit of timely software updates?",
+      "opts": [
+        "Reduced system compatibility",
+        "Improved performance and compatibility",
+        "Increased vulnerability to attacks",
+        "Automatic password reset"
+      ],
+      "ans": "B",
+      "exp": "Updates can improve performance, add features, and maintain compatibility, alongside security fixes (Manual p.22)."
+    },
+    {
+      "id": "Q203",
+      "module": 4,
+      "type": "mcq",
+      "q": "Risk mitigation through patching involves:",
+      "opts": [
+        "Ignoring vulnerabilities",
+        "Fixing known vulnerabilities to reduce the risk of exploitation",
+        "Removing all software",
+        "Installing multiple antivirus programs"
+      ],
+      "ans": "B",
+      "exp": "Patching known vulnerabilities directly reduces the risk of cyberattacks exploiting those weaknesses (Manual p.23)."
+    },
+    {
+      "id": "Q204",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a regular audit in the context of patch administration?",
+      "opts": [
+        "An inspection of employee desks",
+        "A review to identify systems and applications that require patches",
+        "A review of the company's financial records",
+        "A review of employee passwords"
+      ],
+      "ans": "B",
+      "exp": "Regular audits identify systems and applications needing patches to maintain security (Manual p.23)."
+    },
+    {
+      "id": "Q205",
+      "module": 4,
+      "type": "mcq",
+      "q": "Why should patches be tested before deployment?",
+      "opts": [
+        "To ensure they are legitimate",
+        "To ensure they won't disrupt critical operations",
+        "To determine their cost",
+        "To check if they are compatible with all browsers"
+      ],
+      "ans": "B",
+      "exp": "Testing patches in a controlled environment ensures they don't cause system disruptions before deployment (Manual p.23)."
+    },
+    {
+      "id": "Q206",
+      "module": 4,
+      "type": "mcq",
+      "q": "'Timely deployment' of patches means:",
+      "opts": [
+        "Deploying patches only after a breach",
+        "Promptly applying patches, especially for high-risk systems",
+        "Waiting for user approval",
+        "Scheduling patches for the next year"
+      ],
+      "ans": "B",
+      "exp": "Timely deployment ensures critical vulnerabilities are addressed quickly, especially for high-risk systems (Manual p.23)."
+    },
+    {
+      "id": "Q207",
+      "module": 4,
+      "type": "mcq",
+      "q": "A system administrator patches a critical server within hours of a vulnerability announcement. This exemplifies:",
+      "opts": [
+        "Negligence",
+        "Timely deployment of security updates",
+        "Unnecessary risk-taking",
+        "Violation of change management policy"
+      ],
+      "ans": "B",
+      "exp": "Prompt application of patches is the definition of timely deployment (Manual p.23)."
+    },
+    {
+      "id": "Q208",
+      "module": 4,
+      "type": "mcq",
+      "q": "What does an Intrusion Detection System (IDS) do?",
+      "opts": [
+        "Blocks all malicious traffic",
+        "Monitors network traffic and system activities for malicious activity",
+        "Scans for viruses on endpoint devices",
+        "Encrypts sensitive data"
+      ],
+      "ans": "B",
+      "exp": "An IDS monitors network traffic and system activities to detect malicious activity (Manual p.23)."
+    },
+    {
+      "id": "Q209",
+      "module": 4,
+      "type": "mcq",
+      "q": "What does an Intrusion Prevention System (IPS) do that an IDS does not?",
+      "opts": [
+        "Detect threats",
+        "Log security events",
+        "Block malicious network traffic and activities in real-time",
+        "Monitor system activities"
+      ],
+      "ans": "C",
+      "exp": "An IPS blocks malicious traffic in real-time, whereas an IDS typically only alerts (Manual p.23)."
+    },
+    {
+      "id": "Q210",
+      "module": 4,
+      "type": "mcq",
+      "q": "An IDS alerts the security team about suspicious traffic, but the team must manually respond. An IPS would:",
+      "opts": [
+        "Also only alert",
+        "Automatically block the suspicious traffic",
+        "Ignore the traffic",
+        "Forward the traffic to the backup server"
+      ],
+      "ans": "B",
+      "exp": "An IPS actively blocks malicious traffic in real-time, not just alert (Manual p.23)."
+    },
+    {
+      "id": "Q211",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a key difference between IDS and IPS?",
+      "opts": [
+        "IDS blocks traffic; IPS monitors",
+        "IDS monitors; IPS monitors and blocks",
+        "Both monitor and block",
+        "Neither monitors traffic"
+      ],
+      "ans": "B",
+      "exp": "IDS monitors; IPS monitors and blocks malicious activity (Manual p.23)."
+    },
+    {
+      "id": "Q212",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank deploys an IPS at its network perimeter to protect against known attack patterns. This demonstrates:",
+      "opts": [
+        "Reactive security",
+        "Proactive real-time threat prevention",
+        "A backup solution",
+        "User education"
+      ],
+      "ans": "B",
+      "exp": "IPS actively blocks threats in real-time, providing proactive prevention (Manual p.23)."
+    },
+    {
+      "id": "Q213",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary purpose of a Data Loss Prevention (DLP) system?",
+      "opts": [
+        "To prevent data from being encrypted",
+        "To prevent sensitive data from leaving the network perimeter",
+        "To prevent cyberattacks from external sources",
+        "To prevent data from being backed up"
+      ],
+      "ans": "B",
+      "exp": "DLP prevents sensitive data from leaving the network perimeter (Manual p.23)."
+    },
+    {
+      "id": "Q214",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which security tool is specifically designed to prevent employees from emailing customer financial data to external parties?",
+      "opts": [
+        "Firewall",
+        "IDS",
+        "DLP system",
+        "Antivirus"
+      ],
+      "ans": "C",
+      "exp": "DLP systems monitor and block sensitive data from leaving the network, such as via email (Manual p.23)."
+    },
+    {
+      "id": "Q215",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the purpose of security awareness training?",
+      "opts": [
+        "To teach employees advanced programming",
+        "To educate employees on cybersecurity best practices",
+        "To certify employees in network administration",
+        "To install antivirus software"
+      ],
+      "ans": "B",
+      "exp": "Security awareness training educates employees on cybersecurity best practices (Manual p.23)."
+    },
+    {
+      "id": "Q216",
+      "module": 4,
+      "type": "mcq",
+      "q": "An organization conducts phishing simulations as part of its security awareness training. The goal is to:",
+      "opts": [
+        "Punish employees who fail",
+        "Improve employees' ability to recognize and avoid phishing",
+        "Test the firewall's effectiveness",
+        "Generate reports for auditors"
+      ],
+      "ans": "B",
+      "exp": "Simulations help reinforce best practices and improve human defenses against phishing (Manual p.23)."
+    },
+    {
+      "id": "Q217",
+      "module": 4,
+      "type": "mcq",
+      "q": "What does an Incident Response Plan provide?",
+      "opts": [
+        "A framework for developing new software",
+        "A framework for responding to security incidents",
+        "A list of antivirus software vendors",
+        "A template for password policies"
+      ],
+      "ans": "B",
+      "exp": "An Incident Response Plan provides a framework for responding to security incidents (Manual p.24)."
+    },
+    {
+      "id": "Q218",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank's Incident Response Plan outlines how to detect, respond to, and recover from security incidents. This is important because:",
+      "opts": [
+        "It guarantees no breaches will occur",
+        "It ensures a structured response to minimize damage",
+        "It replaces the need for other security tools",
+        "It is only used for regulatory audits"
+      ],
+      "ans": "B",
+      "exp": "An incident response plan ensures timely and organized responses to mitigate the impact of breaches (Manual p.24)."
+    },
+    {
+      "id": "Q219",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which cybersecurity tool is most appropriate for blocking a known malicious IP address from accessing the corporate network?",
+      "opts": [
+        "Antivirus",
+        "Firewall",
+        "DLP",
+        "Security awareness training"
+      ],
+      "ans": "B",
+      "exp": "Firewalls filter traffic based on rules, including blocking specific IP addresses (Manual p.21)."
+    },
+    {
+      "id": "Q220",
+      "module": 4,
+      "type": "mcq",
+      "q": "A user's computer is infected with a file-encrypting ransomware. Which tool would have been the primary defense if it had detected the file before execution?",
+      "opts": [
+        "Firewall",
+        "Antivirus software",
+        "IDS",
+        "IPS"
+      ],
+      "ans": "B",
+      "exp": "Antivirus scans files for malware signatures before execution, preventing infections (Manual p.20)."
+    },
+    {
+      "id": "Q221",
+      "module": 4,
+      "type": "mcq",
+      "q": "An analyst notices unusual outbound traffic containing customer credit card numbers. Which tool would alert and block this?",
+      "opts": [
+        "Firewall",
+        "IPS",
+        "DLP system",
+        "Antivirus"
+      ],
+      "ans": "C",
+      "exp": "DLP systems detect and block sensitive data from leaving the network (Manual p.23)."
+    },
+    {
+      "id": "Q222",
+      "module": 4,
+      "type": "mcq",
+      "q": "A security monitoring team receives an alert about a potential network attack. They investigate and take manual action. This describes the function of:",
+      "opts": [
+        "IPS",
+        "IDS",
+        "DLP",
+        "Firewall"
+      ],
+      "ans": "B",
+      "exp": "IDS alerts on potential threats but does not automatically block them, requiring manual response (Manual p.23)."
+    },
+    {
+      "id": "Q223",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which type of firewall inspects the entire data packet, including its content, to make access decisions?",
+      "opts": [
+        "Packet-filtering firewall",
+        "Application-level firewall",
+        "Stateful firewall",
+        "Circuit-level firewall"
+      ],
+      "ans": "B",
+      "exp": "Application-level firewalls inspect the content of packets, not just headers (Manual p.19)."
+    },
+    {
+      "id": "Q224",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which statement about packet-filtering firewalls is accurate?",
+      "opts": [
+        "They inspect the content of packets",
+        "They make decisions based on packet headers only",
+        "They are more secure than application-level firewalls",
+        "They block all encrypted traffic"
+      ],
+      "ans": "B",
+      "exp": "Packet-filtering firewalls examine headers to make decisions (Manual p.19)."
+    },
+    {
+      "id": "Q225",
+      "module": 4,
+      "type": "mcq",
+      "q": "A network administrator configures a firewall to allow web traffic but block certain applications. This is an example of:",
+      "opts": [
+        "Access control",
+        "Malware scanning",
+        "Data encryption",
+        "Password management"
+      ],
+      "ans": "A",
+      "exp": "Firewalls filter traffic, allowing authorized traffic through, which is access control (Manual p.22)."
+    },
+    {
+      "id": "Q226",
+      "module": 4,
+      "type": "mcq",
+      "q": "Antivirus software's 'real-time' protection means:",
+      "opts": [
+        "It scans the entire system only at scheduled times",
+        "It continuously scans files and processes as they are accessed",
+        "It only scans external devices",
+        "It operates only when the computer is idle"
+      ],
+      "ans": "B",
+      "exp": "Real-time protection continuously monitors files and processes as they are accessed (Manual p.20)."
+    },
+    {
+      "id": "Q227",
+      "module": 4,
+      "type": "mcq",
+      "q": "A DLP system can help a bank comply with data privacy regulations by:",
+      "opts": [
+        "Encrypting all emails",
+        "Ensuring sensitive customer data is not exfiltrated",
+        "Blocking all internet traffic",
+        "Managing employee access to systems"
+      ],
+      "ans": "B",
+      "exp": "DLP prevents data leakage, helping meet privacy obligations (Manual p.23)."
+    },
+    {
+      "id": "Q228",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which cybersecurity tool is considered the 'digital barrier' between a trusted internal network and an untrusted external network?",
+      "opts": [
+        "Firewall",
+        "Antivirus",
+        "IDS",
+        "DLP"
+      ],
+      "ans": "A",
+      "exp": "This is the definition of a firewall — a barrier between internal networks and the internet (Manual p.19,21)."
+    },
+    {
+      "id": "Q229",
+      "module": 4,
+      "type": "mcq",
+      "q": "The primary difference between a packet-filtering and an application-level firewall is:",
+      "opts": [
+        "Where they are located in the network",
+        "The depth of inspection (headers vs. content)",
+        "The cost of implementation",
+        "The operating system they run on"
+      ],
+      "ans": "B",
+      "exp": "Packet-filtering inspects headers; application-level inspects content (Manual p.19)."
+    },
+    {
+      "id": "Q230",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank's security policy requires all software patches to be tested before deployment. Which patch administration principle does this reflect?",
+      "opts": [
+        "Risk Mitigation",
+        "Regular Audits",
+        "Testing",
+        "Timely Deployment"
+      ],
+      "ans": "C",
+      "exp": "Testing ensures patches don't disrupt operations before deployment (Manual p.23)."
+    },
+    {
+      "id": "Q231",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following would be the correct order of action when deploying a critical security patch?",
+      "opts": [
+        "Deploy immediately, then test",
+        "Test in a controlled environment, then deploy if stable",
+        "Deploy without testing to save time",
+        "Ignore the patch if it's not a critical vulnerability"
+      ],
+      "ans": "B",
+      "exp": "Best practice is to test patches before deploying to production (Manual p.23)."
+    },
+    {
+      "id": "Q232",
+      "module": 4,
+      "type": "mcq",
+      "q": "An Intrusion Prevention System (IPS) is deployed inline with network traffic. This means:",
+      "opts": [
+        "It only monitors traffic passively",
+        "It sits in the traffic path and can actively block it",
+        "It is only used for logging",
+        "It operates after a breach has occurred"
+      ],
+      "ans": "B",
+      "exp": "Inline deployment allows the IPS to block traffic in real-time (Manual p.23)."
+    },
+    {
+      "id": "Q233",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the difference between DLP and traditional firewalls?",
+      "opts": [
+        "DLP focuses on data leakage; firewalls focus on network access",
+        "They are the same thing",
+        "DLP encrypts data; firewalls decrypt data",
+        "DLP is hardware; firewalls are software"
+      ],
+      "ans": "A",
+      "exp": "DLP prevents sensitive data from leaving the network; firewalls control network access (Manual p.21,23)."
+    },
+    {
+      "id": "Q234",
+      "module": 4,
+      "type": "mcq",
+      "q": "A security awareness training program should include all of the following EXCEPT:",
+      "opts": [
+        "Phishing red flags",
+        "Password management",
+        "How to install operating systems",
+        "Reporting suspicious incidents"
+      ],
+      "ans": "C",
+      "exp": "Security awareness covers security-related behaviors; installing operating systems is a technical function, not typically part of awareness training (Manual p.23)."
+    },
+    {
+      "id": "Q235",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which tool is specifically designed to handle the aftermath of a security incident?",
+      "opts": [
+        "Firewall",
+        "Antivirus",
+        "Incident Response Plan",
+        "IDS"
+      ],
+      "ans": "C",
+      "exp": "An Incident Response Plan provides a framework for responding to and recovering from incidents (Manual p.24)."
+    },
+    {
+      "id": "Q236",
+      "module": 4,
+      "type": "mcq",
+      "q": "If a bank's firewall identifies and blocks a connection from a known malicious IP address, this is an example of:",
+      "opts": [
+        "Threat detection",
+        "Malware removal",
+        "Vulnerability scanning",
+        "Incident recovery"
+      ],
+      "ans": "A",
+      "exp": "Firewalls with threat detection can identify and block suspicious sources (Manual p.22)."
+    },
+    {
+      "id": "Q237",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is NOT listed as an important cybersecurity tool in the manual?",
+      "opts": [
+        "Firewalls",
+        "Antivirus",
+        "Blockchain",
+        "DLP"
+      ],
+      "ans": "C",
+      "exp": "Blockchain is not listed; Firewalls, Antivirus, IDS, IPS, DLP, and Incident Response are listed (Manual p.21-24)."
+    },
+    {
+      "id": "Q238",
+      "module": 4,
+      "type": "mcq",
+      "q": "How do application-level firewalls provide better protection than packet-filtering firewalls?",
+      "opts": [
+        "By being faster",
+        "By understanding the application protocols and detecting malicious content",
+        "By being cheaper",
+        "By requiring no configuration"
+      ],
+      "ans": "B",
+      "exp": "Application-level firewalls inspect content, enabling detection of application-specific threats (Manual p.19)."
+    },
+    {
+      "id": "Q239",
+      "module": 4,
+      "type": "mcq",
+      "q": "An employee receives a phishing email. Which tool could help prevent them from clicking a malicious link?",
+      "opts": [
+        "DLP",
+        "Firewall",
+        "Security awareness training",
+        "IDS"
+      ],
+      "ans": "C",
+      "exp": "Awareness training educates employees to recognize and avoid phishing links (Manual p.23)."
+    },
+    {
+      "id": "Q240",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is an example of proactive cybersecurity?",
+      "opts": [
+        "Deploying an IPS",
+        "Responding to a breach",
+        "Using an Incident Response Plan after an attack",
+        "Recovering data from a backup"
+      ],
+      "ans": "A",
+      "exp": "IPS proactively blocks threats in real-time, preventing them from reaching the target (Manual p.23)."
+    },
+    {
+      "id": "Q241",
+      "module": 4,
+      "type": "mcq",
+      "q": "A firewall's access control function allows a bank to:",
+      "opts": [
+        "Allow only traffic from approved countries or IP ranges",
+        "Scan for viruses on all connected devices",
+        "Manage employee salaries",
+        "Encrypt all stored data"
+      ],
+      "ans": "A",
+      "exp": "Access control filters traffic based on rules, including source/destination IPs (Manual p.22)."
+    },
+    {
+      "id": "Q242",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which tool would a bank use to ensure that an employee does not upload confidential client lists to a public cloud service?",
+      "opts": [
+        "Firewall",
+        "IDS",
+        "DLP",
+        "Antivirus"
+      ],
+      "ans": "C",
+      "exp": "DLP monitors and prevents sensitive data from leaving the network, including uploads (Manual p.23)."
+    },
+    {
+      "id": "Q243",
+      "module": 4,
+      "type": "mcq",
+      "q": "An organization's patch management process includes identifying systems that need patches. This is called:",
+      "opts": [
+        "Testing",
+        "Timely Deployment",
+        "Regular Audits",
+        "Risk Mitigation"
+      ],
+      "ans": "C",
+      "exp": "Regular audits identify systems and applications that require patches (Manual p.23)."
+    },
+    {
+      "id": "Q244",
+      "module": 4,
+      "type": "mcq",
+      "q": "A DDoS attack floods a network with traffic. A firewall can help mitigate this by:",
+      "opts": [
+        "Encrypting all traffic",
+        "Blocking traffic from the flood sources",
+        "Redirecting traffic to the antivirus",
+        "Increasing network bandwidth"
+      ],
+      "ans": "B",
+      "exp": "Firewalls can block traffic from DDoS attacks (Manual p.21)."
+    },
+    {
+      "id": "Q245",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which type of malware would an antivirus most likely detect by comparing a file's signature against a database of known threats?",
+      "opts": [
+        "Zero-day malware",
+        "Known ransomware variants",
+        "A custom, unknown exploit",
+        "A hardware failure"
+      ],
+      "ans": "B",
+      "exp": "Antivirus detects known threats by signature matching; zero-day threats may evade signature detection (Manual p.20)."
+    },
+    {
+      "id": "Q246",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank deploys both an IDS and an IPS. The IDS provides monitoring and alerts, while the IPS provides:",
+      "opts": [
+        "Reporting only",
+        "Active blocking",
+        "Encryption",
+        "Password management"
+      ],
+      "ans": "B",
+      "exp": "IPS actively blocks threats, while IDS primarily alerts (Manual p.23)."
+    },
+    {
+      "id": "Q247",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of a modern firewall's threat detection capability?",
+      "opts": [
+        "It only blocks known IP addresses",
+        "It uses signatures and behavior analysis to spot suspicious activity",
+        "It requires manual configuration for every new threat",
+        "It only works on internal networks"
+      ],
+      "ans": "B",
+      "exp": "Modern firewalls use intrusion detection and threat intelligence to spot and block suspicious activities (Manual p.22)."
+    },
+    {
+      "id": "Q248",
+      "module": 4,
+      "type": "mcq",
+      "q": "A company experiences a data breach due to an unpatched vulnerability in its web server. This could have been prevented by:",
+      "opts": [
+        "Deploying an IDS only",
+        "Implementing a patch management process",
+        "Installing a DLP system",
+        "Increasing firewall rules"
+      ],
+      "ans": "B",
+      "exp": "Patch management addresses known vulnerabilities; unpatched servers remain vulnerable (Manual p.23)."
+    },
+    {
+      "id": "Q249",
+      "module": 4,
+      "type": "mcq",
+      "q": "An organization that has never conducted security awareness training is most vulnerable to:",
+      "opts": [
+        "DDoS attacks",
+        "Phishing and social engineering attacks",
+        "Hardware failures",
+        "Network misconfigurations"
+      ],
+      "ans": "B",
+      "exp": "Awareness training is specifically targeted at human errors like falling for phishing (Manual p.23)."
+    },
+    {
+      "id": "Q250",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which cybersecurity tool is considered a 'framework' rather than a technical control?",
+      "opts": [
+        "Firewall",
+        "Incident Response Plan",
+        "IDS",
+        "Antivirus"
+      ],
+      "ans": "B",
+      "exp": "An Incident Response Plan is a documented framework for responding to incidents, not a technical tool (Manual p.24)."
+    },
+    {
+      "id": "Q251",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary purpose of cybersecurity principles?",
+      "opts": [
+        "To provide strategic guidance on protecting systems and data from cyber threats",
+        "To replace all technical security controls",
+        "To outline marketing strategies for security products",
+        "To serve as a legal framework for prosecution"
+      ],
+      "ans": "A",
+      "exp": "Cybersecurity principles provide strategic guidance on how organizations can protect their systems and data from cyber threats (Manual p.26)."
+    },
+    {
+      "id": "Q252",
+      "module": 5,
+      "type": "mcq",
+      "q": "Cybersecurity principles ensure that employees are:",
+      "opts": [
+        "Aware of the organization's profit targets",
+        "Informed of ways they can contribute to preventing cyberattacks",
+        "Trained in advanced programming",
+        "Certified in network administration"
+      ],
+      "ans": "B",
+      "exp": "The principles ensure employees are informed of the various ways they can contribute to keeping the organization safe from cyberattacks (Manual p.26)."
+    },
+    {
+      "id": "Q253",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle involves efforts to make sure data is kept secret or private?",
+      "opts": [
+        "Integrity",
+        "Availability",
+        "Confidentiality",
+        "Compliance"
+      ],
+      "ans": "C",
+      "exp": "Confidentiality involves the efforts of an organization to ensure data is kept secret or private (Manual p.26)."
+    },
+    {
+      "id": "Q254",
+      "module": 5,
+      "type": "mcq",
+      "q": "The 'Least Privilege' principle in cybersecurity means:",
+      "opts": [
+        "Everyone should have full access to all data",
+        "Individuals should have only the minimum privileges necessary to perform a task",
+        "Only senior management should have access to systems",
+        "All employees should have the same level of access"
+      ],
+      "ans": "B",
+      "exp": "The Least Privilege principle states that individuals should have only the minimum privileges necessary to perform their tasks to prevent misuse and fraud (Manual p.27)."
+    },
+    {
+      "id": "Q255",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle states that no unauthorized sharing of data should occur?",
+      "opts": [
+        "Compliance",
+        "Confidentiality",
+        "Availability",
+        "Simplicity"
+      ],
+      "ans": "B",
+      "exp": "Confidentiality involves ensuring no unauthorized sharing of data — only those with a need should have access (Manual p.26)."
+    },
+    {
+      "id": "Q256",
+      "module": 5,
+      "type": "mcq",
+      "q": "The principle that only HR staff should have access to employee personal information is an example of:",
+      "opts": [
+        "Availability",
+        "Least Privilege",
+        "Compliance",
+        "Fail Secure"
+      ],
+      "ans": "B",
+      "exp": "This is an example of Least Privilege—only HR staff need access to such sensitive data. The manual explicitly uses this example: 'least privilege – only HR staff should have access to personal info' (Manual p.26)."
+    },
+    {
+      "id": "Q257",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle ensures that data is trustworthy and free from tampering?",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Simplicity"
+      ],
+      "ans": "B",
+      "exp": "Integrity ensures data is authentic, accurate, and reliable (Manual p.26)."
+    },
+    {
+      "id": "Q258",
+      "module": 5,
+      "type": "mcq",
+      "q": "Hashing, encryption, and digital certificates are methods used to maintain:",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Compliance"
+      ],
+      "ans": "B",
+      "exp": "The manual lists hashing, encryption, digital certificates, and digital signatures as methods for maintaining data integrity (Manual p.26)."
+    },
+    {
+      "id": "Q259",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle ensures that systems, networks, and applications are functioning as they should and when they should?",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Compliance"
+      ],
+      "ans": "C",
+      "exp": "Availability means systems and applications must function as they should and when they should (Manual p.26)."
+    },
+    {
+      "id": "Q260",
+      "module": 5,
+      "type": "mcq",
+      "q": "A Disaster Recovery Plan directly supports which cybersecurity principle?",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Least Privilege"
+      ],
+      "ans": "C",
+      "exp": "Availability is supported by disaster recovery plans and redundant networks, servers, and applications (Manual p.26)."
+    },
+    {
+      "id": "Q261",
+      "module": 5,
+      "type": "mcq",
+      "q": "Redundant networks, servers, and applications are used to ensure:",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Compliance"
+      ],
+      "ans": "C",
+      "exp": "Redundancy is explicitly listed as a method to ensure availability (Manual p.26)."
+    },
+    {
+      "id": "Q262",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle emphasizes that having policies is not enough — compliance is essential?",
+      "opts": [
+        "Confidentiality",
+        "Availability",
+        "Compliance",
+        "Simplicity"
+      ],
+      "ans": "C",
+      "exp": "The manual states: 'Having Cybersecurity policies isn't enough — Complying to these policies could be the difference between a failed and successful cyberattack' (Manual p.26)."
+    },
+    {
+      "id": "Q263",
+      "module": 5,
+      "type": "mcq",
+      "q": "The principle of 'Simplicity' in cybersecurity suggests that:",
+      "opts": [
+        "Systems should be as complex as possible",
+        "Simplified systems reduce attack surface area and risk of misconfigurations",
+        "Simplicity makes systems easier to hack",
+        "Simplicity is irrelevant to security"
+      ],
+      "ans": "B",
+      "exp": "Simplicity of systems will reduce attack surface area and the risk of misconfigurations (Manual p.27)."
+    },
+    {
+      "id": "Q264",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank's IT department deploys a new system with minimal configuration options to reduce errors. This reflects which principle?",
+      "opts": [
+        "Compliance",
+        "Simplicity",
+        "Availability",
+        "Integrity"
+      ],
+      "ans": "B",
+      "exp": "Reducing complexity to minimize misconfiguration risk is an application of the Simplicity principle (Manual p.27)."
+    },
+    {
+      "id": "Q265",
+      "module": 5,
+      "type": "mcq",
+      "q": "The principle of 'Consistency' in cybersecurity means:",
+      "opts": [
+        "Security policies should be applied to all devices uniformly",
+        "Each department should have its own security policies",
+        "Only critical systems need security policies",
+        "Security policies should change daily"
+      ],
+      "ans": "A",
+      "exp": "Consistency means security policies must be applied to all devices, and default security capabilities should not be assumed sufficient (Manual p.27)."
+    },
+    {
+      "id": "Q266",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle warns against assuming that default security capabilities are enough?",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "Consistency",
+        "Compliance"
+      ],
+      "ans": "C",
+      "exp": "The manual states: 'Never assume that default security capabilities are enough' under the Consistency principle (Manual p.27)."
+    },
+    {
+      "id": "Q267",
+      "module": 5,
+      "type": "mcq",
+      "q": "The 'Separation of Duties' principle is described as:",
+      "opts": [
+        "A method to reduce system complexity",
+        "A fundamental fraud prevention principle requiring more than one person to complete a process",
+        "A technique to improve system availability",
+        "A way to eliminate the need for oversight"
+      ],
+      "ans": "B",
+      "exp": "Separation of Duties requires more than one person to complete a process and is described as a fundamental fraud prevention principle (Manual p.27)."
+    },
+    {
+      "id": "Q268",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank requires two employees to authorize any transfer over $1 million. This implements the principle of:",
+      "opts": [
+        "Least Privilege",
+        "Separation of Duties",
+        "Compliance",
+        "Fail Secure"
+      ],
+      "ans": "B",
+      "exp": "Requiring multiple people for authorization is Separation of Duties, a fraud prevention measure (Manual p.27)."
+    },
+    {
+      "id": "Q269",
+      "module": 5,
+      "type": "mcq",
+      "q": "The 'Fail Secure' principle means:",
+      "opts": [
+        "Systems should always fail completely",
+        "A backup protection plan should safeguard the system when it fails or goes down",
+        "System failures should create vulnerabilities",
+        "Failures are acceptable and do not need to be addressed"
+      ],
+      "ans": "B",
+      "exp": "Fail Secure means when a system fails or goes down, a backup protection plan should safeguard it, and failures should not create vulnerabilities (Manual p.27)."
+    },
+    {
+      "id": "Q270",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle ensures that system downtimes or failures do not create vulnerabilities?",
+      "opts": [
+        "Confidentiality",
+        "Availability",
+        "Fail Secure",
+        "Least Privilege"
+      ],
+      "ans": "C",
+      "exp": "The Fail Secure principle states that system downtimes or failures should not create vulnerabilities (Manual p.27)."
+    },
+    {
+      "id": "Q271",
+      "module": 5,
+      "type": "mcq",
+      "q": "The 'No Trust without Evidence' principle requires:",
+      "opts": [
+        "Trusting all users by default",
+        "Using evidence to measure trustworthiness",
+        "Trusting only senior executives",
+        "Eliminating all trust systems"
+      ],
+      "ans": "B",
+      "exp": "Evidence must be used to measure trustworthiness; all evidences required must be provided and validated (Manual p.27)."
+    },
+    {
+      "id": "Q272",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank requires employees to present valid credentials and undergo multi-factor authentication before accessing systems. This reflects:",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "No Trust without Evidence",
+        "Compliance"
+      ],
+      "ans": "C",
+      "exp": "Requiring proof of identity before granting access is an application of 'No Trust without Evidence' (Manual p.27)."
+    },
+    {
+      "id": "Q273",
+      "module": 5,
+      "type": "mcq",
+      "q": "The 'Least Privilege Basis' is also described as:",
+      "opts": [
+        "Giving everyone full access",
+        "Minimum privileges necessary to perform a task",
+        "Maximum privileges for all employees",
+        "Equal access for all roles"
+      ],
+      "ans": "B",
+      "exp": "Least Privilege means individuals should have only the minimum privileges necessary to perform their tasks (Manual p.27)."
+    },
+    {
+      "id": "Q274",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle emphasizes integrating security measures from the beginning of system development?",
+      "opts": [
+        "Simplicity",
+        "Consistency",
+        "Security as Overarching Design",
+        "Fail Secure"
+      ],
+      "ans": "C",
+      "exp": "Security as Overarching Design means integrating security from the beginning of system or software development so security is not an afterthought (Manual p.27)."
+    },
+    {
+      "id": "Q275",
+      "module": 5,
+      "type": "mcq",
+      "q": "'Security as Overarching Design' ensures that security is:",
+      "opts": [
+        "An afterthought added at the end",
+        "An inherent part of the design and development process",
+        "Only applied to external-facing systems",
+        "Handled exclusively by the IT department"
+      ],
+      "ans": "B",
+      "exp": "Security should be an inherent part of the design and development process, not an afterthought (Manual p.27)."
+    },
+    {
+      "id": "Q276",
+      "module": 5,
+      "type": "mcq",
+      "q": "The 'Vendor Security' principle requires banks to:",
+      "opts": [
+        "Trust all third-party vendors without verification",
+        "Assess and monitor the security practices of third-party vendors with access to systems or data",
+        "Share all internal data with vendors",
+        "Avoid using any third-party vendors"
+      ],
+      "ans": "B",
+      "exp": "Vendor Security involves assessing and monitoring third-party vendors' security practices and ensuring they adhere to standards (Manual p.27)."
+    },
+    {
+      "id": "Q277",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank conducts a security audit of its cloud service provider. This reflects which cybersecurity principle?",
+      "opts": [
+        "Separation of Duties",
+        "Vendor Security",
+        "Simplicity",
+        "Fail Secure"
+      ],
+      "ans": "B",
+      "exp": "Assessing and monitoring third-party vendors' security practices is Vendor Security (Manual p.27)."
+    },
+    {
+      "id": "Q278",
+      "module": 5,
+      "type": "mcq",
+      "q": "'Incident Security' as a principle emphasizes:",
+      "opts": [
+        "Ignoring incidents until they escalate",
+        "Timely response to mitigate the impact of cyberattacks",
+        "Only reporting incidents to the CEO",
+        "Waiting for the attacker to stop"
+      ],
+      "ans": "B",
+      "exp": "Timely response is crucial to mitigating the impact of cyberattacks (Manual p.27)."
+    },
+    {
+      "id": "Q279",
+      "module": 5,
+      "type": "mcq",
+      "q": "The 'Secure by Default' principle means:",
+      "opts": [
+        "Systems should have security features added later",
+        "Systems must be as secure as possible by default without requiring add-ons",
+        "Users must configure all security features manually",
+        "Default configurations are always insecure"
+      ],
+      "ans": "B",
+      "exp": "Secure by Default means systems must be as secure as possible by default, with security features built in without needing add-ons (Manual p.27-28)."
+    },
+    {
+      "id": "Q280",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle requires that security features be built into devices without the need for add-ons?",
+      "opts": [
+        "Simplicity",
+        "Consistency",
+        "Secure by Default",
+        "Incident Security"
+      ],
+      "ans": "C",
+      "exp": "Secure by Default means security features must be built into devices without the need for add-ons (Manual p.28)."
+    },
+    {
+      "id": "Q281",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank designs a new mobile banking app with encryption and authentication features from the start. This best demonstrates:",
+      "opts": [
+        "Secure by Default",
+        "Vendor Security",
+        "Separation of Duties",
+        "Fail Secure"
+      ],
+      "ans": "A",
+      "exp": "Building security features into the system by default reflects Secure by Default (Manual p.28)."
+    },
+    {
+      "id": "Q282",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle is a fundamental fraud prevention principle requiring more than one person to complete a critical process?",
+      "opts": [
+        "Least Privilege",
+        "Separation of Duties",
+        "Compliance",
+        "Fail Secure"
+      ],
+      "ans": "B",
+      "exp": "Separation of Duties is explicitly described as a fundamental fraud prevention principle (Manual p.27)."
+    },
+    {
+      "id": "Q283",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which two principles are most directly about managing access and permissions?",
+      "opts": [
+        "Confidentiality and Integrity",
+        "Least Privilege and No Trust without Evidence",
+        "Availability and Compliance",
+        "Simplicity and Consistency"
+      ],
+      "ans": "B",
+      "exp": "Least Privilege limits access; No Trust without Evidence requires proof before granting access (Manual p.27)."
+    },
+    {
+      "id": "Q284",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank experiences a ransomware attack and follows its pre-defined response procedures to contain and recover. This demonstrates:",
+      "opts": [
+        "Least Privilege",
+        "Incident Security",
+        "Vendor Security",
+        "Secure by Default"
+      ],
+      "ans": "B",
+      "exp": "Having a well-defined incident response plan and following it during an attack reflects the Incident Security principle (Manual p.27)."
+    },
+    {
+      "id": "Q285",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle is violated when an employee has access to customer data they do not need for their job?",
+      "opts": [
+        "Integrity",
+        "Least Privilege",
+        "Availability",
+        "Compliance"
+      ],
+      "ans": "B",
+      "exp": "Least Privilege requires only the minimum access necessary; excess access violates it (Manual p.27)."
+    },
+    {
+      "id": "Q286",
+      "module": 5,
+      "type": "mcq",
+      "q": "The principle that systems must function as they should and when they should is most critical in which banking context?",
+      "opts": [
+        "Customer service calls",
+        "Online banking availability during business hours",
+        "Marketing campaigns",
+        "Employee training"
+      ],
+      "ans": "B",
+      "exp": "Availability ensures systems are accessible when needed — critical for online banking availability (Manual p.26)."
+    },
+    {
+      "id": "Q287",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank ensures that all departments follow the same security policies and procedures. This reflects:",
+      "opts": [
+        "Consistency",
+        "Simplicity",
+        "Compliance",
+        "Integrity"
+      ],
+      "ans": "A",
+      "exp": "Applying security policies uniformly to all devices and departments is Consistency (Manual p.27)."
+    },
+    {
+      "id": "Q288",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle is most directly about the relationship between complexity and security?",
+      "opts": [
+        "Availability",
+        "Simplicity",
+        "Integrity",
+        "Compliance"
+      ],
+      "ans": "B",
+      "exp": "Simplicity reduces attack surface and misconfiguration risk; complexity increases them (Manual p.27)."
+    },
+    {
+      "id": "Q289",
+      "module": 5,
+      "type": "mcq",
+      "q": "A vendor with access to a bank's systems suffers a breach. The bank could have mitigated this by applying:",
+      "opts": [
+        "Vendor Security",
+        "Separation of Duties",
+        "Fail Secure",
+        "Secure by Default"
+      ],
+      "ans": "A",
+      "exp": "Vendor Security requires assessing and monitoring third-party vendors' security practices (Manual p.27)."
+    },
+    {
+      "id": "Q290",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle is violated when a system failure exposes data that would otherwise have been secure?",
+      "opts": [
+        "Availability",
+        "Integrity",
+        "Fail Secure",
+        "Least Privilege"
+      ],
+      "ans": "C",
+      "exp": "Fail Secure ensures system failures do not create vulnerabilities (Manual p.27)."
+    },
+    {
+      "id": "Q291",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank conducts security training for all employees on recognizing social engineering attacks. This supports which principle?",
+      "opts": [
+        "Least Privilege",
+        "Incident Security",
+        "Compliance",
+        "No Trust without Evidence"
+      ],
+      "ans": "C",
+      "exp": "Compliance with security policies, including training, is essential (Manual p.26)."
+    },
+    {
+      "id": "Q292",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which cybersecurity principle is most closely related to data accuracy and trustworthiness?",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Compliance"
+      ],
+      "ans": "B",
+      "exp": "Integrity ensures data is authentic, accurate, and reliable (Manual p.26)."
+    },
+    {
+      "id": "Q293",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank implements a policy requiring biometric verification for access to its data center. This reflects:",
+      "opts": [
+        "No Trust without Evidence",
+        "Integrity",
+        "Compliance",
+        "Simplicity"
+      ],
+      "ans": "A",
+      "exp": "Requiring biometric evidence before granting access is an application of No Trust without Evidence (Manual p.27)."
+    },
+    {
+      "id": "Q294",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle requires that evidence be provided and validated before granting trust?",
+      "opts": [
+        "Least Privilege",
+        "No Trust without Evidence",
+        "Separation of Duties",
+        "Incident Security"
+      ],
+      "ans": "B",
+      "exp": "No Trust without Evidence states all evidence required must be provided and validated (Manual p.27)."
+    },
+    {
+      "id": "Q295",
+      "module": 5,
+      "type": "mcq",
+      "q": "The 'Incident Security' principle is also referred to as:",
+      "opts": [
+        "Incident Response",
+        "Incident Recovery",
+        "Incident Prevention",
+        "Incident Auditing"
+      ],
+      "ans": "A",
+      "exp": "Incident Security involves developing a well-defined incident response plan (Manual p.27)."
+    },
+    {
+      "id": "Q296",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank's security policy requires that system configurations are kept as simple as possible while still meeting requirements. This reflects:",
+      "opts": [
+        "Simplicity",
+        "Consistency",
+        "Compliance",
+        "Integrity"
+      ],
+      "ans": "A",
+      "exp": "Simplicity reduces attack surface and misconfiguration risk (Manual p.27)."
+    },
+    {
+      "id": "Q297",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle is most directly about preventing fraud through oversight and collaboration?",
+      "opts": [
+        "Least Privilege",
+        "Separation of Duties",
+        "Compliance",
+        "Vendor Security"
+      ],
+      "ans": "B",
+      "exp": "Separation of Duties is a fundamental fraud prevention principle requiring multiple people for critical processes (Manual p.27)."
+    },
+    {
+      "id": "Q298",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank develops a new software application and includes security requirements from the initial design phase. This reflects:",
+      "opts": [
+        "Security as Overarching Design",
+        "Secure by Default",
+        "Compliance",
+        "Integrity"
+      ],
+      "ans": "A",
+      "exp": "Security as Overarching Design means integrating security from the beginning of development (Manual p.27)."
+    },
+    {
+      "id": "Q299",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which principle ensures that employees have access to only the data and systems necessary for their specific job functions?",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "Least Privilege",
+        "Compliance"
+      ],
+      "ans": "C",
+      "exp": "Least Privilege ensures minimum necessary access for each role (Manual p.27)."
+    },
+    {
+      "id": "Q300",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank fails to apply the same security patch to all of its servers, leaving some vulnerable. This violates:",
+      "opts": [
+        "Availability",
+        "Consistency",
+        "Integrity",
+        "Compliance"
+      ],
+      "ans": "B",
+      "exp": "Consistency requires security policies and measures to be applied uniformly to all devices (Manual p.27)."
+    },
+    {
+      "id": "Q301",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which principle emphasizes the importance of having a backup plan when systems fail?",
+      "opts": [
+        "Fail Secure",
+        "Integrity",
+        "Availability",
+        "Compliance"
+      ],
+      "ans": "A",
+      "exp": "Fail Secure requires a backup protection plan when systems fail or go down (Manual p.27)."
+    },
+    {
+      "id": "Q302",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank's security awareness program teaches employees to verify all requests for sensitive information. This supports:",
+      "opts": [
+        "Integrity",
+        "No Trust without Evidence",
+        "Availability",
+        "Simplicity"
+      ],
+      "ans": "B",
+      "exp": "Verifying requests before trusting them is an application of No Trust without Evidence (Manual p.27)."
+    },
+    {
+      "id": "Q303",
+      "module": 6,
+      "type": "mcq",
+      "q": "The principle that security features must be built into devices without the need for add-ons is:",
+      "opts": [
+        "Secure by Default",
+        "Security as Overarching Design",
+        "Compliance",
+        "Fail Secure"
+      ],
+      "ans": "A",
+      "exp": "Secure by Default means built-in security without add-ons (Manual p.28)."
+    },
+    {
+      "id": "Q304",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is NOT listed as a principle of cybersecurity in the manual?",
+      "opts": [
+        "Simplicity",
+        "Separation of Duties",
+        "Blockchain Security",
+        "Fail Secure"
+      ],
+      "ans": "C",
+      "exp": "Blockchain Security is not listed among the cybersecurity principles. The principles include Confidentiality, Integrity, Availability, Compliance, Simplicity, Consistency, Separation of Duties, Fail Secure, No Trust without Evidence, Least Privilege, Security as Overarching Design, Vendor Security, Incident Security, and Secure by Default (Manual p.26-28)."
+    },
+    {
+      "id": "Q305",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which principle would be most relevant when a bank is selecting a new cloud service provider?",
+      "opts": [
+        "Vendor Security",
+        "Separation of Duties",
+        "Fail Secure",
+        "Secure by Default"
+      ],
+      "ans": "A",
+      "exp": "Vendor Security involves assessing and monitoring the security practices of third-party vendors (Manual p.27)."
+    },
+    {
+      "id": "Q306",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank's ability to continue operations during a cyberattack is most directly supported by:",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Compliance"
+      ],
+      "ans": "C",
+      "exp": "Availability ensures systems function as they should, including during an attack (Manual p.26)."
+    },
+    {
+      "id": "Q307",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which principle would most likely prevent an employee from accidentally deleting critical data?",
+      "opts": [
+        "Least Privilege",
+        "Separation of Duties",
+        "Integrity",
+        "Confidentiality"
+      ],
+      "ans": "A",
+      "exp": "Least Privilege limits permissions to only what's necessary, reducing the risk of accidental deletion or misuse (Manual p.27)."
+    },
+    {
+      "id": "Q308",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank implements end-to-end encryption for all customer data in transit and at rest. This primarily supports:",
+      "opts": [
+        "Confidentiality",
+        "Availability",
+        "Compliance",
+        "Simplicity"
+      ],
+      "ans": "A",
+      "exp": "Encryption protects data from unauthorized access, supporting confidentiality (Manual p.26)."
+    },
+    {
+      "id": "Q309",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which principle is violated when a single employee has the authority to initiate and approve a large financial transaction without oversight?",
+      "opts": [
+        "Least Privilege",
+        "Separation of Duties",
+        "Compliance",
+        "Integrity"
+      ],
+      "ans": "B",
+      "exp": "Separation of Duties requires more than one person for critical processes; a single person with both roles violates it (Manual p.27)."
+    },
+    {
+      "id": "Q310",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank's security team recommends simplifying network architecture to reduce potential vulnerabilities. This reflects:",
+      "opts": [
+        "Simplicity",
+        "Consistency",
+        "Availability",
+        "Integrity"
+      ],
+      "ans": "A",
+      "exp": "Simplified systems reduce attack surface and misconfiguration risk (Manual p.27)."
+    },
+    {
+      "id": "Q311",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which principle ensures that even if a system is compromised, the attacker cannot access sensitive data due to restricted permissions?",
+      "opts": [
+        "Least Privilege",
+        "Fail Secure",
+        "Integrity",
+        "Compliance"
+      ],
+      "ans": "A",
+      "exp": "Least Privilege limits permissions, so even if a system is compromised, the attacker's access is restricted (Manual p.27)."
+    },
+    {
+      "id": "Q312",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank conducts regular drills to test its incident response procedures. This supports:",
+      "opts": [
+        "Incident Security",
+        "Vendor Security",
+        "Compliance",
+        "Simplicity"
+      ],
+      "ans": "A",
+      "exp": "Incident Security involves developing and testing an incident response plan (Manual p.27)."
+    },
+    {
+      "id": "Q313",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which principle addresses the need to assess third-party security practices?",
+      "opts": [
+        "Vendor Security",
+        "Separation of Duties",
+        "Fail Secure",
+        "Consistency"
+      ],
+      "ans": "A",
+      "exp": "Vendor Security requires assessing and monitoring third-party vendors' security (Manual p.27)."
+    },
+    {
+      "id": "Q314",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank implements a policy where no single individual can approve a transaction without a second authorized person. This best illustrates:",
+      "opts": [
+        "Least Privilege",
+        "Separation of Duties",
+        "Compliance",
+        "Vendor Security"
+      ],
+      "ans": "B",
+      "exp": "This is the definition of Separation of Duties — more than one person required for a critical process (Manual p.27)."
+    },
+    {
+      "id": "Q315",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which principle is most directly about ensuring that data remains unaltered and trustworthy?",
+      "opts": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Compliance"
+      ],
+      "ans": "B",
+      "exp": "Integrity ensures data is authentic, accurate, and reliable (Manual p.26)."
+    },
+    {
+      "id": "Q316",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank ensures all software used by the organization is from verified vendors. This reflects:",
+      "opts": [
+        "Vendor Security",
+        "Integrity",
+        "Compliance",
+        "Least Privilege"
+      ],
+      "ans": "A",
+      "exp": "Vendor Security involves ensuring third-party vendors adhere to security standards (Manual p.27)."
+    },
+    {
+      "id": "Q317",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which principle requires that security controls be considered from the earliest stages of a project?",
+      "opts": [
+        "Secure by Default",
+        "Security as Overarching Design",
+        "Compliance",
+        "Fail Secure"
+      ],
+      "ans": "B",
+      "exp": "Security as Overarching Design means integrating security from the beginning of development (Manual p.27)."
+    },
+    {
+      "id": "Q318",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank requires employees to report any suspected security incidents immediately. This supports:",
+      "opts": [
+        "Incident Security",
+        "Confidentiality",
+        "Integrity",
+        "Simplicity"
+      ],
+      "ans": "A",
+      "exp": "Incident Security involves timely detection and response to incidents (Manual p.27)."
+    },
+    {
+      "id": "Q319",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which principle would most likely prevent a bank from suffering reputational damage due to a data breach caused by a third party?",
+      "opts": [
+        "Vendor Security",
+        "Separation of Duties",
+        "Least Privilege",
+        "Compliance"
+      ],
+      "ans": "A",
+      "exp": "Vendor Security requires monitoring third-party security, reducing the risk of breaches originating from vendors (Manual p.27)."
+    },
+    {
+      "id": "Q320",
+      "module": 6,
+      "type": "mcq",
+      "q": "The cybersecurity principles collectively provide guidance on:",
+      "opts": [
+        "How to maximize profits",
+        "How to protect systems, data, and people from cyber threats",
+        "How to market security products",
+        "How to reduce IT staffing costs"
+      ],
+      "ans": "B",
+      "exp": "The principles provide strategic guidance on protecting systems and data from cyber threats (Manual p.26)."
+    },
+    {
+      "id": "Q321",
+      "module": 7,
+      "type": "mcq",
+      "q": "Why are ethical considerations of utmost importance in the banking industry?",
+      "opts": [
+        "They increase profit margins",
+        "Trust and responsible handling of sensitive information are critical",
+        "They reduce the need for cybersecurity tools",
+        "They eliminate all cyber threats"
+      ],
+      "ans": "B",
+      "exp": "Ethical considerations in cybersecurity are critical in banking, where trust and responsible handling of sensitive information are paramount (Manual p.30)."
+    },
+    {
+      "id": "Q322",
+      "module": 7,
+      "type": "mcq",
+      "q": "Ethical practices guide cybersecurity professionals to:",
+      "opts": [
+        "Ignore data privacy concerns",
+        "Make morally sound decisions regarding information security",
+        "Prioritize profits over security",
+        "Avoid all compliance requirements"
+      ],
+      "ans": "B",
+      "exp": "Ethical practices guide professionals in making morally sound decisions and actions regarding information security (Manual p.30)."
+    },
+    {
+      "id": "Q323",
+      "module": 7,
+      "type": "mcq",
+      "q": "Data de-identification in banking refers to:",
+      "opts": [
+        "Encrypting all data with symmetric keys",
+        "Protecting individual identity by anonymizing data when possible",
+        "Deleting all customer data",
+        "Sharing data with all third parties"
+      ],
+      "ans": "B",
+      "exp": "Data de-identification or anonymization protects the identity of individuals while still allowing legitimate business analysis (Manual p.31)."
+    },
+    {
+      "id": "Q324",
+      "module": 7,
+      "type": "mcq",
+      "q": "A bank de-identifies customer data before using it for business analysis. This practice:",
+      "opts": [
+        "Violates privacy regulations",
+        "Protects personal information while allowing legitimate analysis",
+        "Makes the data unusable",
+        "Is optional according to ethical guidelines"
+      ],
+      "ans": "B",
+      "exp": "De-identification protects personal information while still allowing legitimate business analysis (Manual p.31)."
+    },
+    {
+      "id": "Q325",
+      "module": 7,
+      "type": "mcq",
+      "q": "Ethical data sharing and collaboration requires banks to:",
+      "opts": [
+        "Share all customer data with any partner",
+        "Ensure data-sharing agreements uphold ethical standards for confidentiality and privacy",
+        "Never share data with third parties",
+        "Share data without agreements"
+      ],
+      "ans": "B",
+      "exp": "Banks should ensure data-sharing agreements with partners uphold the same ethical standards for data confidentiality and privacy (Manual p.31)."
+    },
+    {
+      "id": "Q326",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is the purpose of data ethics training in a bank?",
+      "opts": [
+        "To teach employees how to code",
+        "To educate employees about data ethics, privacy, and confidentiality",
+        "To increase employee salaries",
+        "To reduce the need for cybersecurity tools"
+      ],
+      "ans": "B",
+      "exp": "Banks should invest in training and awareness programs to educate employees about data ethics, privacy, and confidentiality (Manual p.31)."
+    },
+    {
+      "id": "Q327",
+      "module": 7,
+      "type": "mcq",
+      "q": "Fostering a culture of ethical data handling in a bank involves:",
+      "opts": [
+        "Only training IT staff",
+        "Providing data ethics training to all employees",
+        "Relying solely on automated systems",
+        "Outsourcing all data handling"
+      ],
+      "ans": "B",
+      "exp": "Banks should invest in training and awareness programs for employees to foster a culture of ethical data handling (Manual p.31)."
+    },
+    {
+      "id": "Q328",
+      "module": 7,
+      "type": "mcq",
+      "q": "Transparency in data handling means:",
+      "opts": [
+        "Hiding data practices from customers",
+        "Clear and open communication of data handling practices and policies",
+        "Only sharing data practices with regulators",
+        "Making all data publicly available"
+      ],
+      "ans": "B",
+      "exp": "Transparency involves providing customers with a comprehensive understanding of how their data is collected, used, and protected (Manual p.31)."
+    },
+    {
+      "id": "Q329",
+      "module": 7,
+      "type": "mcq",
+      "q": "A bank publishes a clear privacy policy explaining how customer data is used and protected. This demonstrates:",
+      "opts": [
+        "Confidentiality",
+        "Transparency",
+        "Accountability",
+        "De-identification"
+      ],
+      "ans": "B",
+      "exp": "Transparency involves clear communication of data handling practices (Manual p.31)."
+    },
+    {
+      "id": "Q330",
+      "module": 7,
+      "type": "mcq",
+      "q": "Accountability in data protection means:",
+      "opts": [
+        "Avoiding responsibility for breaches",
+        "Taking responsibility for the security and privacy of customer data",
+        "Only being accountable to shareholders",
+        "Delegating all security responsibility to vendors"
+      ],
+      "ans": "B",
+      "exp": "Accountability involves taking responsibility for the security and privacy of customer data (Manual p.32)."
+    },
+    {
+      "id": "Q331",
+      "module": 7,
+      "type": "mcq",
+      "q": "When a data breach occurs, accountability requires the bank to:",
+      "opts": [
+        "Cover up the breach",
+        "Respond promptly, take corrective actions, and mitigate harm",
+        "Delay response until legal review",
+        "Ignore the breach if it's small"
+      ],
+      "ans": "B",
+      "exp": "Accountability involves responding promptly, taking corrective actions, and mitigating harm to affected individuals (Manual p.32)."
+    },
+    {
+      "id": "Q332",
+      "module": 7,
+      "type": "mcq",
+      "q": "The ethical principles of honesty and integrity in banking require:",
+      "opts": [
+        "Withholding information from customers",
+        "Truthfulness, sincerity, and ethical conduct in all banking activity",
+        "Prioritizing profits over ethics",
+        "Only reporting positive outcomes"
+      ],
+      "ans": "B",
+      "exp": "Honesty and integrity underscore the importance of truthfulness, sincerity, and ethical conduct in all banking activity (Manual p.32)."
+    },
+    {
+      "id": "Q333",
+      "module": 7,
+      "type": "mcq",
+      "q": "A bank employee who knowingly conceals a system vulnerability from customers is violating which ethical principle?",
+      "opts": [
+        "Honesty and Integrity",
+        "Confidentiality",
+        "Availability",
+        "De-identification"
+      ],
+      "ans": "A",
+      "exp": "Honesty and integrity require truthfulness and ethical conduct; concealing vulnerabilities violates these principles (Manual p.32)."
+    },
+    {
+      "id": "Q334",
+      "module": 7,
+      "type": "mcq",
+      "q": "Avoiding conflicts of interest in banking requires individuals to:",
+      "opts": [
+        "Prioritize personal gain over customer interests",
+        "Act in the best interests of customers and stakeholders without compromising duties",
+        "Pursue personal financial opportunities at the expense of customers",
+        "Ignore third-party relationships"
+      ],
+      "ans": "B",
+      "exp": "Avoiding conflicts of interest requires acting in the best interests of customers and stakeholders, without compromising duties due to personal gain (Manual p.33)."
+    },
+    {
+      "id": "Q335",
+      "module": 7,
+      "type": "mcq",
+      "q": "Fair lending practices require banks to:",
+      "opts": [
+        "Grant loans based on personal relationships",
+        "Make lending decisions based on creditworthiness, not personal interests or relationships",
+        "Grant loans to all applicants",
+        "Only lend to preferred customers"
+      ],
+      "ans": "B",
+      "exp": "Fair lending practices require decisions based on creditworthiness, avoiding personal interests or relationships (Manual p.33)."
+    },
+    {
+      "id": "Q336",
+      "module": 7,
+      "type": "mcq",
+      "q": "A bank loan officer approves a loan for a relative despite poor credit history. This is a violation of:",
+      "opts": [
+        "Availability",
+        "Fair lending practices",
+        "Integrity",
+        "Compliance"
+      ],
+      "ans": "B",
+      "exp": "Fair lending practices require decisions based on creditworthiness, not personal relationships (Manual p.33)."
+    },
+    {
+      "id": "Q337",
+      "module": 7,
+      "type": "mcq",
+      "q": "In investment advisory services, banks must prioritize:",
+      "opts": [
+        "The potential for commissions",
+        "The financial well-being of clients over commissions or fees",
+        "Selling the most profitable products",
+        "Internal targets over client needs"
+      ],
+      "ans": "B",
+      "exp": "Banks offering investment advice must prioritize client financial well-being over potential commissions or fees (Manual p.33)."
+    },
+    {
+      "id": "Q338",
+      "module": 7,
+      "type": "mcq",
+      "q": "A financial advisor recommends a high-fee product that earns them a large commission, even though a lower-cost option is better for the client. This violates:",
+      "opts": [
+        "Data confidentiality",
+        "Ethical investment advisory practices",
+        "De-identification",
+        "Whistleblower protection"
+      ],
+      "ans": "B",
+      "exp": "Investment advisory services must prioritize client well-being over commissions (Manual p.33)."
+    },
+    {
+      "id": "Q339",
+      "module": 7,
+      "type": "mcq",
+      "q": "When engaging with third-party vendors, banks should select partners based on:",
+      "opts": [
+        "Personal connections",
+        "Ability to provide quality services",
+        "Lowest cost only",
+        "Familiarity with bank employees"
+      ],
+      "ans": "B",
+      "exp": "Banks should select partners based on their ability to provide quality services rather than personal connections or incentives (Manual p.33)."
+    },
+    {
+      "id": "Q340",
+      "module": 7,
+      "type": "mcq",
+      "q": "A bank chooses a vendor because the CEO is a family friend, despite better options being available. This represents:",
+      "opts": [
+        "Conflict of interest",
+        "Transparency",
+        "Due diligence",
+        "Compliance"
+      ],
+      "ans": "A",
+      "exp": "Selecting vendors based on personal connections rather than quality of service is a conflict of interest (Manual p.33)."
+    },
+    {
+      "id": "Q341",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is the purpose of ethical hacking in the banking sector?",
+      "opts": [
+        "To illegally access customer accounts",
+        "To identify and rectify vulnerabilities in digital systems",
+        "To spy on competitors",
+        "To steal sensitive data"
+      ],
+      "ans": "B",
+      "exp": "Ethical hacking is an essential practice to identify and rectify vulnerabilities in digital systems, applications, and networks (Manual p.33)."
+    },
+    {
+      "id": "Q342",
+      "module": 7,
+      "type": "mcq",
+      "q": "Penetration testing in banking involves:",
+      "opts": [
+        "Testing physical security of branches",
+        "Testing digital systems for vulnerabilities by simulating attacks",
+        "Testing employee honesty",
+        "Testing customer satisfaction"
+      ],
+      "ans": "B",
+      "exp": "Penetration testing involves identifying vulnerabilities in digital systems, applications, and networks (Manual p.33)."
+    },
+    {
+      "id": "Q343",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is 'responsible disclosure' in the context of ethical hacking?",
+      "opts": [
+        "Publicly disclosing vulnerabilities immediately",
+        "An ethical framework for reporting vulnerabilities to affected organizations, allowing time to fix them",
+        "Selling vulnerability information to the highest bidder",
+        "Ignoring discovered vulnerabilities"
+      ],
+      "ans": "B",
+      "exp": "Responsible disclosure is an ethical framework guiding how security researchers report vulnerabilities to affected organizations, allowing time to address them (Manual p.33-34)."
+    },
+    {
+      "id": "Q344",
+      "module": 7,
+      "type": "mcq",
+      "q": "An ethical hacker discovers a vulnerability in a bank's mobile app. Responsible disclosure requires them to:",
+      "opts": [
+        "Publish the vulnerability on social media",
+        "Report it to the bank and give them time to fix it",
+        "Exploit the vulnerability for profit",
+        "Share it with other hackers"
+      ],
+      "ans": "B",
+      "exp": "Responsible disclosure requires reporting vulnerabilities to the affected organization and allowing time to fix them (Manual p.33-34)."
+    },
+    {
+      "id": "Q345",
+      "module": 8,
+      "type": "mcq",
+      "q": "What is whistleblower protection in banking?",
+      "opts": [
+        "A program to reward employees for staying silent",
+        "A framework that safeguards employees who report unethical or illegal activities from retaliation",
+        "A system to monitor employee emails",
+        "A program to outsource whistleblowing to third parties"
+      ],
+      "ans": "B",
+      "exp": "Whistleblower protection safeguards employees who report unethical or illegal activities within the organization from retaliation (Manual p.35)."
+    },
+    {
+      "id": "Q346",
+      "module": 8,
+      "type": "mcq",
+      "q": "Whistleblower protection encourages employees to:",
+      "opts": [
+        "Keep all issues internal",
+        "Come forward with information about wrongdoing without fear of retaliation",
+        "Report only to the media",
+        "Avoid reporting any concerns"
+      ],
+      "ans": "B",
+      "exp": "Whistleblower protection encourages individuals to come forward with information about wrongdoing without fear of retaliation (Manual p.35)."
+    },
+    {
+      "id": "Q347",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is a benefit of whistleblowing in banking?",
+      "opts": [
+        "It increases fraud",
+        "It helps detect financial misconduct and fraud early",
+        "It reduces regulatory compliance",
+        "It harms the bank's reputation unnecessarily"
+      ],
+      "ans": "B",
+      "exp": "Whistleblowers play a crucial role in uncovering financial misconduct and fraud, leading to early detection or prevention (Manual p.35)."
+    },
+    {
+      "id": "Q348",
+      "module": 8,
+      "type": "mcq",
+      "q": "Failure to establish whistleblower protection programs can result in:",
+      "opts": [
+        "Increased employee morale",
+        "Regulatory penalties",
+        "Reduced fraud",
+        "Better customer relationships"
+      ],
+      "ans": "B",
+      "exp": "Many banking regulations require whistleblower protection programs; failure to comply can result in regulatory penalties (Manual p.35)."
+    },
+    {
+      "id": "Q349",
+      "module": 8,
+      "type": "mcq",
+      "q": "Whistleblower protection fosters an ethical banking culture by:",
+      "opts": [
+        "Encouraging employees to ignore wrongdoing",
+        "Encouraging employees to act as ethical guardians and report wrongdoing",
+        "Discouraging all reporting",
+        "Promoting silence"
+      ],
+      "ans": "B",
+      "exp": "Whistleblower protection fosters an ethical banking culture by encouraging employees to act as ethical guardians and report wrongdoing, promoting trust and integrity (Manual p.35)."
+    },
+    {
+      "id": "Q350",
+      "module": 8,
+      "type": "mcq",
+      "q": "A bank employee discovers that a colleague is embezzling funds. The employee should:",
+      "opts": [
+        "Ignore the discovery",
+        "Report the misconduct through proper whistleblowing channels",
+        "Confront the colleague privately",
+        "Keep the information confidential"
+      ],
+      "ans": "B",
+      "exp": "Whistleblower protection encourages employees to report wrongdoing through appropriate channels (Manual p.35)."
+    },
+    {
+      "id": "Q351",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which ethical principle is violated when a bank employee uses customer data for personal financial gain?",
+      "opts": [
+        "Honesty and Integrity",
+        "Data confidentiality",
+        "Conflict of Interest",
+        "All of the above"
+      ],
+      "ans": "D",
+      "exp": "Using customer data for personal gain violates multiple principles: confidentiality (misuse of data), honesty/integrity (deceitful conduct), and conflict of interest (personal gain over duty) (Manual p.31-33)."
+    },
+    {
+      "id": "Q352",
+      "module": 8,
+      "type": "mcq",
+      "q": "A bank that conducts regular ethical hacking assessments is demonstrating:",
+      "opts": [
+        "A lack of trust in its employees",
+        "A proactive approach to identifying and fixing vulnerabilities",
+        "An unnecessary expense",
+        "A violation of customer privacy"
+      ],
+      "ans": "B",
+      "exp": "Ethical hacking is a proactive practice to identify and rectify vulnerabilities before attackers exploit them (Manual p.33)."
+    },
+    {
+      "id": "Q353",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is NOT a principle of ethical data handling in banking?",
+      "opts": [
+        "Data De-Identification",
+        "Ethical Data Sharing",
+        "Data Ethics Training",
+        "Data Monetization"
+      ],
+      "ans": "D",
+      "exp": "Data monetization is not listed as an ethical principle; the principles include de-identification, ethical sharing, training, transparency, and accountability (Manual p.31-32)."
+    },
+    {
+      "id": "Q354",
+      "module": 8,
+      "type": "mcq",
+      "q": "A bank provides customers with clear information about how their data will be used and protected. This demonstrates:",
+      "opts": [
+        "Transparency",
+        "Confidentiality",
+        "Availability",
+        "Integrity"
+      ],
+      "ans": "A",
+      "exp": "Transparency involves clear and open communication of data handling practices to customers (Manual p.31)."
+    },
+    {
+      "id": "Q355",
+      "module": 8,
+      "type": "mcq",
+      "q": "A bank responds to a data breach by notifying affected customers, offering credit monitoring, and fixing the vulnerability. This demonstrates:",
+      "opts": [
+        "Transparency",
+        "Accountability",
+        "Honesty",
+        "All of the above"
+      ],
+      "ans": "D",
+      "exp": "Notifying customers (transparency), taking corrective action and mitigating harm (accountability), and acting honestly all demonstrate ethical responsibility (Manual p.32)."
+    },
+    {
+      "id": "Q356",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which ethical principle ensures that security researchers are protected when reporting vulnerabilities?",
+      "opts": [
+        "Responsible Disclosure",
+        "Whistleblower Protection",
+        "Data De-Identification",
+        "Transparency"
+      ],
+      "ans": "A",
+      "exp": "Responsible disclosure provides a framework for security researchers to report vulnerabilities safely (Manual p.33-34). Note: Whistleblower protection is for employees reporting internal wrongdoing."
+    },
+    {
+      "id": "Q357",
+      "module": 8,
+      "type": "mcq",
+      "q": "A bank discovers that a third-party vendor has weak security practices that could expose customer data. The bank should:",
+      "opts": [
+        "Ignore the issue",
+        "Assess and monitor the vendor's security practices and ensure they meet standards",
+        "Terminate all vendor relationships",
+        "Blame the vendor publicly"
+      ],
+      "ans": "B",
+      "exp": "Ethical data sharing requires ensuring third parties uphold the same ethical standards for confidentiality and privacy (Manual p.31)."
+    },
+    {
+      "id": "Q358",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which ethical principle in banking involves ensuring that employees act in the best interests of customers, not personal gain?",
+      "opts": [
+        "Avoiding Conflict of Interest",
+        "Data De-Identification",
+        "Whistleblower Protection",
+        "Transparency"
+      ],
+      "ans": "A",
+      "exp": "Avoiding conflicts of interest requires acting in the best interests of customers and stakeholders (Manual p.33)."
+    },
+    {
+      "id": "Q359",
+      "module": 8,
+      "type": "mcq",
+      "q": "A bank implements a policy that allows customers to opt out of data sharing with third parties. This demonstrates:",
+      "opts": [
+        "Honesty",
+        "Transparency and customer privacy",
+        "De-identification",
+        "Conflict of Interest"
+      ],
+      "ans": "B",
+      "exp": "Allowing customers to control data sharing demonstrates transparency and respect for privacy (Manual p.31)."
+    },
+    {
+      "id": "Q360",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which ethical practice involves ensuring that data used for analysis cannot be traced back to specific individuals?",
+      "opts": [
+        "Data Encryption",
+        "Data De-Identification",
+        "Data Sharing",
+        "Data Backup"
+      ],
+      "ans": "B",
+      "exp": "De-identification protects the identity of individuals while still allowing legitimate business analysis (Manual p.31)."
+    },
+    {
+      "id": "Q361",
+      "module": 9,
+      "type": "mcq",
+      "q": "A bank employee who reports a colleague's unethical behavior is protected from retaliation by:",
+      "opts": [
+        "Conflict of Interest policies",
+        "Whistleblower Protection",
+        "Data De-Identification",
+        "Transparency policies"
+      ],
+      "ans": "B",
+      "exp": "Whistleblower protection safeguards employees who report wrongdoing from retaliation (Manual p.35)."
+    },
+    {
+      "id": "Q362",
+      "module": 9,
+      "type": "mcq",
+      "q": "A bank chooses an investment product for a client based on the high commission it generates, despite a cheaper alternative being better. This violates:",
+      "opts": [
+        "Honesty and Integrity",
+        "Conflict of Interest avoidance",
+        "Investment advisory ethics",
+        "All of the above"
+      ],
+      "ans": "D",
+      "exp": "This violates multiple principles: honesty/integrity (misleading client), conflict of interest (prioritizing commission), and advisory ethics (not prioritizing client well-being) (Manual p.32-33)."
+    },
+    {
+      "id": "Q363",
+      "module": 9,
+      "type": "mcq",
+      "q": "Which of the following demonstrates a bank's commitment to ethical data handling?",
+      "opts": [
+        "Sharing customer data without consent",
+        "Providing data ethics training to all employees",
+        "Keeping data practices secret",
+        "Using data for unauthorized purposes"
+      ],
+      "ans": "B",
+      "exp": "Data ethics training for employees demonstrates a commitment to ethical data handling (Manual p.31)."
+    },
+    {
+      "id": "Q364",
+      "module": 9,
+      "type": "mcq",
+      "q": "What is the relationship between regulatory compliance and whistleblower protection?",
+      "opts": [
+        "They are unrelated",
+        "Many regulations require institutions to establish whistleblower protection programs to ensure compliance",
+        "Whistleblower protection replaces regulatory compliance",
+        "Regulations discourage whistleblowing"
+      ],
+      "ans": "B",
+      "exp": "Many banking regulations require whistleblower protection programs to ensure compliance; failure can result in penalties (Manual p.35)."
+    },
+    {
+      "id": "Q365",
+      "module": 9,
+      "type": "mcq",
+      "q": "A bank's ethical framework should guide all of the following EXCEPT:",
+      "opts": [
+        "How customer data is handled",
+        "How conflicts of interest are managed",
+        "How to maximize shareholder returns at any cost",
+        "How employees report unethical behavior"
+      ],
+      "ans": "C",
+      "exp": "Ethics guide responsible conduct, not profit maximization at any cost. Ethical considerations in banking prioritize trust, confidentiality, fairness, and responsible reporting (Manual p.30-35)."
+    }
+  ]
+}

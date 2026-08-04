@@ -1,0 +1,4297 @@
+{
+  "meta": {
+    "id": "bank-lending-credit-management",
+    "title": "Bank Lending & Credit Management",
+    "description": "Bank Lending & Credit Management: credit analysis fundamentals, the credit environment, credit basics (7 Cs), credit structuring, financial statement analysis, credit risk, loan documentation, portfolio monitoring & remedial management, and regulatory/miscellaneous credit issues.",
+    "category": "credit-lending",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1: Introduction to Credit Analysis"
+    },
+    {
+      "id": 2,
+      "title": "Module 2: The Environment of Credit"
+    },
+    {
+      "id": 3,
+      "title": "Module 3: Credit Basics"
+    },
+    {
+      "id": 4,
+      "title": "Module 4: Fundamentals of Credit Structuring"
+    },
+    {
+      "id": 5,
+      "title": "Module 5: Practical Application of Financial Statements"
+    },
+    {
+      "id": 6,
+      "title": "Module 6: Credit Risk"
+    },
+    {
+      "id": 7,
+      "title": "Module 7: Loan Documentation and Consideration"
+    },
+    {
+      "id": 8,
+      "title": "Module 8: Loan Portfolio Monitoring & Remedial Management"
+    },
+    {
+      "id": 9,
+      "title": "Module 9: Miscellaneous Credit Issues"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the fundamental definition of credit risk in a banking context?",
+      "opts": [
+        "The possibility that a borrower's collateral value falls below the loan amount.",
+        "The likelihood that a borrower will be unable to repay the principal and interest when due.",
+        "The risk that a bank's liquidity position deteriorates due to loan defaults.",
+        "The chance that market interest rates rise above the loan's fixed rate."
+      ],
+      "ans": "B",
+      "exp": "Credit risk is defined as the likelihood that a borrower will be unable to repay the principal sum and interest when due. This is the core expectation a bank has in any lending situation — timely repayment of principal and payment of interest. Collateral decline (A) is a related risk but not the definition; liquidity (C) and rate (D) are separate risk categories."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank's expectation in a lending situation comprises two key elements. What are they?",
+      "opts": [
+        "Adequate collateral and a strong guarantor.",
+        "Timely repayment of principal and timely payment of interest.",
+        "High profitability and low operating costs.",
+        "Compliance with regulations and good customer relations."
+      ],
+      "ans": "B",
+      "exp": "A bank expects a borrower to (1) repay the principal sum on time and (2) pay interest as it falls due. Collateral and guarantees are secondary protections, not primary expectations. Profitability and compliance are bank-side concerns, not borrower obligations."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT a reason why banks engage in lending activities?",
+      "opts": [
+        "To promote national economic growth through capital investment.",
+        "To generate profit as lending is the primary income source.",
+        "To reduce the bank's exposure to regulatory requirements.",
+        "To manage liquidity by using deposits to earn income while meeting customer demands."
+      ],
+      "ans": "C",
+      "exp": "Banks lend to promote economic growth (A), generate profit (B), and manage liquidity (D). Regulatory requirements actually encourage lending, but they do not reduce exposure — they set minimum lending levels. Lending does not reduce regulatory requirements; rather, it helps meet them."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which macroeconomic factor most directly influences a bank's decision to lend to a particular industry?",
+      "opts": [
+        "The bank's internal risk acceptance criteria.",
+        "The industry's historical profitability.",
+        "The current phase of the business cycle and its impact on that sector.",
+        "The personal relationship between the banker and the borrower."
+      ],
+      "ans": "C",
+      "exp": "Lending decisions are heavily influenced by the business cycle phase because different industries are co-cyclical or non-cyclical. Banks must be sensitive to key indicators of the next phase to determine credit risk strategy. Internal criteria (A) and historical profitability (B) are relevant but secondary; personal relationships (D) should never override economic realities."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "During a recession, which borrower behavior is most characteristic?",
+      "opts": [
+        "Aggressive expansion and acquisition of fixed assets.",
+        "Liquidating inventory and cutting production while reducing bank borrowing.",
+        "Issuing long-term bonds to lock in low interest rates.",
+        "Increasing leverage to take advantage of low asset prices."
+      ],
+      "ans": "B",
+      "exp": "In a recession, marginal customers liquidate, face order cancellations, cut production, and reduce bank borrowing as they rely more on internal financing. Expansion (A) occurs in recovery/boom phases; long-term bond issuance (C) is more common in expansion; increasing leverage (D) is speculative and not typical of recessionary caution."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the first step in the credit thought process according to the study material?",
+      "opts": [
+        "Financial analysis of the borrower's statements.",
+        "Identification of the borrower and gathering key information.",
+        "Industry and market analysis.",
+        "Determining the appropriate loan structure."
+      ],
+      "ans": "B",
+      "exp": "The credit thought process begins with identification of the borrower — the analyst must know what key information and documents are needed to influence the decision. Financial analysis (A) and industry analysis (C) follow after information gathering; structuring (D) comes later in the decision-making phase."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "A borrower approaches your bank for a loan to modernize its production machinery. This borrowing purpose falls under which category?",
+      "opts": [
+        "Working capital needs.",
+        "Capital investment.",
+        "Debt consolidation.",
+        "Leverage opportunity."
+      ],
+      "ans": "B",
+      "exp": "Modernizing production machinery is a long-term investment in fixed assets, which is a capital investment need. Working capital (A) covers short-term operational funding; debt consolidation (C) involves refinancing existing debts; leverage (D) is using borrowed funds to amplify returns, not for asset replacement."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a fundamental credit issue that a banker must evaluate before lending?",
+      "opts": [
+        "The borrower's social media presence.",
+        "The borrower's willingness to maintain a high account balance.",
+        "The borrower's character and capacity to repay.",
+        "The borrower's preference for digital banking channels."
+      ],
+      "ans": "C",
+      "exp": "Character and capacity are two of the core 'C's of credit and are fundamental to any lending decision. Social media (A), account balances (B), and digital preferences (D) are not primary credit considerations."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "A company experiences a slowdown in its collection period from 45 days to 75 days. This situation is likely to create a need for borrowing under which cause?",
+      "opts": [
+        "Seasonal sales growth.",
+        "Collection slowdown.",
+        "Fixed asset procurement.",
+        "Business cycle downturn."
+      ],
+      "ans": "B",
+      "exp": "A slowdown in collection means cash inflows are delayed, increasing the funding gap — this is directly a 'collection slowdown' borrowing cause. Seasonal sales (A) would be temporary; fixed asset procurement (C) is long-term; business cycle (D) is broader and may include multiple factors."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary distinction between the 'analysis' phase and the 'decision' phase in the credit cycle?",
+      "opts": [
+        "Analysis focuses on marketing, while decision focuses on documentation.",
+        "Analysis evaluates financial stability and risk, while decision determines whether to lend and how to structure.",
+        "Analysis is done by the relationship manager, while decision is made by the credit committee.",
+        "Analysis reviews past performance, while decision projects future cash flows."
+      ],
+      "ans": "B",
+      "exp": "The analysis phase reviews financial stability and risk assessment; the decision phase involves the final choice to lend or not, and loan structuring. Marketing (A) precedes analysis; while relationship managers and committees are involved, the functional distinction is as in B. Analysis uses past and present data; decision uses that analysis to structure future repayments (D is partially true but incomplete)."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which skill is identified as sacrosanct and indispensable for a credit analyst?",
+      "opts": [
+        "Problem-solving skill.",
+        "Extensive legal knowledge.",
+        "Proficiency in programming languages.",
+        "Public speaking ability."
+      ],
+      "ans": "A",
+      "exp": "Problem-solving is highlighted as one of the key attributes of a good credit analyst, essential for analyzing complex borrower situations. Legal knowledge (B) is helpful but not the primary; programming (C) and public speaking (D) are not listed as core requirements."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the credit cycle, what is the purpose of the 'collection' phase?",
+      "opts": [
+        "To market loan products to potential customers.",
+        "To analyze the borrower's financial statements.",
+        "To terminate the loan and conduct post-loan analysis.",
+        "To recover the principal and interest as they fall due."
+      ],
+      "ans": "C",
+      "exp": "The collection phase involves loan termination and post-loan analysis. It is the final stage where the loan is closed and performance is reviewed. Marketing (A) is the first phase; analysis (B) is the second; recovery (D) is part of monitoring if there is default, but collection here refers to the normal end of the cycle."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank that lends to a manufacturing company during an economic expansion is most likely to experience which loan behavior?",
+      "opts": [
+        "Increased loan defaults due to over-optimism.",
+        "Strong loan demand with improving credit quality.",
+        "Reduced loan demand as companies rely on internal funds.",
+        "Stagnant loan volumes with high competition from bonds."
+      ],
+      "ans": "B",
+      "exp": "During expansion, loan volume picks up, credit quality improves as borrowers strengthen balance sheets, and earnings rise. Defaults (A) are typical of recession; internal funding (C) may increase but not reduce loan demand; bond competition (D) may exist but is less pronounced than during booms."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following best illustrates the 'asset conversion' lending rationale in practice?",
+      "opts": [
+        "A five-year term loan for a new factory.",
+        "An overdraft secured by a fixed deposit.",
+        "A 90-day loan to finance inventory that will be sold and converted to cash.",
+        "A mortgage loan for residential property."
+      ],
+      "ans": "C",
+      "exp": "Asset conversion lending finances assets that are expected to generate revenue and be converted to cash within the operating cycle, typically 90-120 days. Inventory financing is a classic example. A is cash flow lending; B is asset protection; D is mortgage (cash flow or asset protection)."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "A key success factor for a credit analyst is 'time management'. Why is this particularly important?",
+      "opts": [
+        "It allows the analyst to process more loan applications.",
+        "It ensures that loan decisions are made before the borrower's need becomes urgent.",
+        "It helps in meeting regulatory reporting deadlines.",
+        "It reduces the bank's cost of funds."
+      ],
+      "ans": "B",
+      "exp": "Time management is critical because lending involves timing — if a borrower's need becomes urgent due to delays, the bank may lose the opportunity or be forced into a hasty decision. While processing more applications (A) is a benefit, the primary reason is to align with the borrower's business cycle. Regulatory (C) and cost (D) are secondary."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "A business owner seeks a loan to take advantage of a temporary discount on bulk raw materials. This borrowing cause is best classified as:",
+      "opts": [
+        "Seasonal sales growth.",
+        "Leverage opportunity.",
+        "Fixed asset procurement.",
+        "Collection slowdown."
+      ],
+      "ans": "B",
+      "exp": "Leverage opportunities arise when a borrower can use borrowed funds to profit from a temporary market condition, such as bulk discounts. Seasonal sales (A) relates to regular cycles; fixed assets (C) are long-term; collection slowdown (D) is a cash flow timing issue."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "When assessing a borrower's creditworthiness, which of the following is an example of a 'demand shock' that could impact their ability to repay?",
+      "opts": [
+        "A sudden increase in the cost of raw materials.",
+        "A new competitor entering the market and reducing sales.",
+        "A change in the central bank's monetary policy raising interest rates.",
+        "A labor strike at the borrower's factory."
+      ],
+      "ans": "B",
+      "exp": "A demand shock is an event that affects demand for goods and services. A new competitor reducing sales directly impacts demand. Raw material cost (A) is a supply shock; monetary policy (C) is an economic policy shift; labor strike (D) is a production risk."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following statements best describes the relationship between the business cycle and lender behavior during the boom phase?",
+      "opts": [
+        "Lenders become cautious and tighten credit standards.",
+        "Lenders become overly generous, increasing amounts loaned against rising cash flows.",
+        "Lenders shift focus to long-term fixed-rate loans to lock in yields.",
+        "Lenders reduce reliance on collateral and emphasize character."
+      ],
+      "ans": "B",
+      "exp": "During a boom, optimism mounts; lenders become overly generous, lending against rising cash flows, and lose judgment of what constitutes good credit. Caution (A) is more typical of recession; long-term focus (C) is not characteristic; reducing collateral (D) is risky and not standard."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "A borrower requests a loan to finance a contract to supply goods to a government agency, with payment expected after delivery. The bank should primarily assess which lending rationale?",
+      "opts": [
+        "Cash flow lending, because the repayment depends on future cash flows.",
+        "Asset conversion lending, because the goods will be converted to cash.",
+        "Asset protection lending, because the government is a reliable payer.",
+        "Overdraft lending, because the need is short-term."
+      ],
+      "ans": "A",
+      "exp": "Contract financing where repayment is from a future payment is a form of cash flow lending because repayment depends on the cash flow from the contract, not the conversion of inventory within a short cycle. Asset conversion (B) typically involves inventory that is sold quickly; asset protection (C) is secured by existing assets; overdraft (D) is a flexible facility, not a specific contract finance."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of lending, what is the meaning of 'credit marketing' within the credit cycle?",
+      "opts": [
+        "The process of analyzing the borrower's financial statements.",
+        "The initial phase where the bank identifies and approaches potential borrowers.",
+        "The legal documentation phase where loan agreements are signed.",
+        "The monitoring phase where the bank tracks loan performance."
+      ],
+      "ans": "B",
+      "exp": "Credit marketing is the first phase of the credit cycle, involving application submission, data gathering, and initial contact with the borrower. Analysis (A) is the second phase; documentation (C) is later; monitoring (D) comes after disbursement."
+    },
+    {
+      "id": "Q21",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following best describes the 'top-down' approach to credit analysis?",
+      "opts": [
+        "Starting with the company's financial statements and working outward to the industry.",
+        "Analyzing the global economy first, then national economy, then industry, and finally the company.",
+        "Focusing exclusively on the borrower's management quality and internal controls.",
+        "Evaluating collateral first, then the borrower's capacity, and finally the economic environment."
+      ],
+      "ans": "B",
+      "exp": "The top-down approach starts with the broader economic landscape (global/national), moves to industry analysis, and ends with company-specific factors. This provides context for industry and company factors. A is bottom-up; C and D omit the macroeconomic context entirely."
+    },
+    {
+      "id": "Q22",
+      "module": 2,
+      "type": "mcq",
+      "q": "A credit analyst evaluating a Nigerian manufacturing company begins by assessing international oil prices and global trade dynamics. This approach is consistent with:",
+      "opts": [
+        "Bottom-up analysis.",
+        "Porter's Five Forces.",
+        "Top-down analysis.",
+        "Asset conversion lending analysis."
+      ],
+      "ans": "C",
+      "exp": "Starting with global economic factors (oil prices, trade) is the first step of top-down analysis. Bottom-up (A) starts with the company; Porter's (B) is industry-level; asset conversion (D) is a lending rationale, not an analytical approach."
+    },
+    {
+      "id": "Q23",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is an example of a 'demand shock' that could affect a borrower's industry?",
+      "opts": [
+        "A sudden increase in the price of imported raw materials.",
+        "A new government regulation that raises production costs.",
+        "A sharp decline in consumer spending due to a recession.",
+        "A labor strike at a key supplier's factory."
+      ],
+      "ans": "C",
+      "exp": "A demand shock is an event that affects demand for goods and services. A recession reducing consumer spending directly affects demand. Raw material prices (A) and production costs (B) are supply shocks; labor strikes (D) are production/supply risks, not demand shocks."
+    },
+    {
+      "id": "Q24",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary tool of fiscal policy that influences economic activity?",
+      "opts": [
+        "Manipulation of the money supply.",
+        "Government spending and taxing actions.",
+        "Adjustment of reserve requirements.",
+        "Setting the discount rate."
+      ],
+      "ans": "B",
+      "exp": "Fiscal policy involves government spending and taxation. The net effect is seen in the budget surplus or deficit — a deficit stimulates the economy by increasing demand for goods via spending. Money supply (A), reserve requirements (C), and discount rates (D) are tools of monetary policy."
+    },
+    {
+      "id": "Q25",
+      "module": 2,
+      "type": "mcq",
+      "q": "During the 'recovery and expansion' phase of the business cycle, which borrower behavior is most typical?",
+      "opts": [
+        "Liquidation of inventory and cost-cutting.",
+        "Building up inventory and receivables while increasing productivity.",
+        "Anticipatory buying and increasing prices beyond sustainable levels.",
+        "Reluctance to use long-term financing and substitution of short-term credits."
+      ],
+      "ans": "B",
+      "exp": "In recovery and expansion, borrowers make efforts to improve balance sheets, inventory and receivables build up, productivity and earnings increase. A is recession behavior; C and D are typical of the boom phase where optimism mounts and profit margins narrow."
+    },
+    {
+      "id": "Q26",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following industries is most likely to be 'co-cyclical' with high sensitivity to the economic cycle?",
+      "opts": [
+        "Food processors.",
+        "Pharmaceutical companies.",
+        "Automobile manufacturers.",
+        "Public utilities."
+      ],
+      "ans": "C",
+      "exp": "Co-cyclical industries have above-average sensitivity to the economy — producers of consumer durables like automobiles and capital goods are prime examples. Food (A), pharmaceuticals (B), and utilities (D) are non-cyclical with low sensitivity."
+    },
+    {
+      "id": "Q27",
+      "module": 2,
+      "type": "mcq",
+      "q": "In Michael Porter's Five Forces model, which force is most likely to be high when customers are concentrated, buy in volume, and the products are undifferentiated?",
+      "opts": [
+        "Threat of new entrants.",
+        "Bargaining power of buyers.",
+        "Bargaining power of suppliers.",
+        "Threat of substitute products."
+      ],
+      "ans": "B",
+      "exp": "Buyer power is high when customers are concentrated, buy in volume, and products are undifferentiated (easy to switch suppliers). This directly matches the description. New entrants (A) relate to barriers; supplier power (C) applies to inputs; substitutes (D) relate to alternative products."
+    },
+    {
+      "id": "Q28",
+      "module": 2,
+      "type": "mcq",
+      "q": "What does a budget deficit indicate about fiscal policy's effect on the economy?",
+      "opts": [
+        "It reduces the demand for goods and services.",
+        "It has no effect on economic activity.",
+        "It stimulates the economy by increasing demand for goods more than it reduces demand via taxes.",
+        "It is a contractionary policy that lowers inflation."
+      ],
+      "ans": "C",
+      "exp": "A deficit stimulates the economy because government spending increases demand for goods by more than the tax increases reduce demand. A is the effect of a surplus; B is false; D is contractionary fiscal policy, not deficit-driven."
+    },
+    {
+      "id": "Q29",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a tool of monetary policy used by the Central Bank of Nigeria?",
+      "opts": [
+        "Changing tax rates.",
+        "Adjusting government spending on infrastructure.",
+        "Open market operations.",
+        "Issuing treasury bills to fund budget deficits."
+      ],
+      "ans": "C",
+      "exp": "Monetary policy tools include open market operations, discount rate, and reserve requirements. Tax rates (A) and government spending (B) are fiscal policy tools; issuing treasury bills (D) is a government financing operation, not a monetary policy tool per se."
+    },
+    {
+      "id": "Q30",
+      "module": 2,
+      "type": "mcq",
+      "q": "An analyst observes that an industry has a small number of dominant, highly concentrated suppliers with few good substitute raw materials available. According to Porter, this indicates:",
+      "opts": [
+        "High threat of new entrants.",
+        "High bargaining power of suppliers.",
+        "High intensity of rivalry.",
+        "High bargaining power of buyers."
+      ],
+      "ans": "B",
+      "exp": "Supplier power is high when a small number of dominant, concentrated suppliers exist, few good substitutes are available, and switching costs are high. This is the classic condition for high supplier bargaining power."
+    },
+    {
+      "id": "Q31",
+      "module": 2,
+      "type": "mcq",
+      "q": "During a 'boom' phase, which lender behavior is most characteristic and poses the greatest risk?",
+      "opts": [
+        "Cautious credit expansion with more reliance on security.",
+        "High dependence on cash flow for repayment and overly generous lending.",
+        "Reducing lending volumes and focusing on loan recovery.",
+        "Restricting credit to only short-term self-liquidating facilities."
+      ],
+      "ans": "B",
+      "exp": "In a boom, lenders become overly generous, susceptible to euphoria, and lose judgment of good credit. They lend against rising cash flows and high dependence on cash flow for repayment. A and D are recession behaviors; C is also recession/recovery focused."
+    },
+    {
+      "id": "Q32",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is NOT one of the five competitive forces in Porter's model?",
+      "opts": [
+        "Threat of substitutes.",
+        "Bargaining power of employees.",
+        "Rivalry among existing competitors.",
+        "Threat of new entrants."
+      ],
+      "ans": "B",
+      "exp": "Porter's Five Forces are: threat of substitutes, bargaining power of buyers, rivalry among competitors, threat of new entrants, and bargaining power of suppliers. Employees (B) are not one of the five; they relate to labor but are not a formal force in this framework."
+    },
+    {
+      "id": "Q33",
+      "module": 2,
+      "type": "mcq",
+      "q": "A supply-side policy aimed at creating an environment for maximum production incentive would most likely focus on:",
+      "opts": [
+        "Increasing the money supply to lower interest rates.",
+        "Adjusting tax policy to improve incentives to work and invest.",
+        "Increasing government spending on public works.",
+        "Raising reserve requirements for banks."
+      ],
+      "ans": "B",
+      "exp": "Supply-side policies focus on creating incentives for workers and capital owners to produce. Tax policy is central — progressive vs. regressive taxation affects incentives. A and D are monetary policy; C is fiscal demand-side policy."
+    },
+    {
+      "id": "Q34",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why is it important for lending bankers to be sensitive to the business cycle?",
+      "opts": [
+        "To determine the appropriate interest rate for each loan.",
+        "To adjust credit risk strategy based on the phase of the cycle.",
+        "To ensure compliance with regulatory requirements.",
+        "To assess the borrower's character and capacity."
+      ],
+      "ans": "B",
+      "exp": "Bankers need to be sensitive to key indicators of the next business cycle phase to determine their credit risk strategy. Interest rates (A) and compliance (C) are related but not the primary reason; character (D) is part of borrower-specific assessment."
+    },
+    {
+      "id": "Q35",
+      "module": 2,
+      "type": "mcq",
+      "q": "In the industry life cycle, which stage is typically characterized by slowing sales growth and minimal or negative growth?",
+      "opts": [
+        "Start-up.",
+        "Consolidation.",
+        "Maturity.",
+        "Relative decline."
+      ],
+      "ans": "D",
+      "exp": "The relative decline stage has minimal or negative sales growth. Start-up has rapid and increasing growth; consolidation has stable growth; maturity has slowing growth."
+    },
+    {
+      "id": "Q36",
+      "module": 2,
+      "type": "mcq",
+      "q": "An analyst reviewing a company in the 'flour milling industry' notices intense price competition and several firms operating at similar scale. The market structure is best described as:",
+      "opts": [
+        "Monopoly.",
+        "Duopoly.",
+        "Oligopoly.",
+        "Monopolistic competition."
+      ],
+      "ans": "C",
+      "exp": "Flour milling in Nigeria typically has few dominant players (oligopoly). Oligopoly is characterized by few producers and competitive rivalry. Monopoly (A) single producer; duopoly (B) two producers; monopolistic competition (D) has many firms with differentiated products."
+    },
+    {
+      "id": "Q37",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following best describes the relationship between fiscal policy and the budget surplus/deficit?",
+      "opts": [
+        "A surplus stimulates the economy because it increases government savings.",
+        "A surplus reduces demand for goods by more than it reduces demand via taxes.",
+        "A deficit stimulates the economy by increasing spending more than reducing demand through taxes.",
+        "A deficit has a contractionary effect on the economy."
+      ],
+      "ans": "C",
+      "exp": "A deficit stimulates the economy because increased government spending raises demand for goods more than the tax increases reduce demand. Surpluses (A,B) have the opposite effect; deficits are expansionary, not contractionary (D)."
+    },
+    {
+      "id": "Q38",
+      "module": 2,
+      "type": "mcq",
+      "q": "The Nigerian economy is heavily affected by international oil market developments because:",
+      "opts": [
+        "Nigeria exports oil and depends on receipts to finance imports and domestic production.",
+        "Nigeria is a net importer of refined petroleum products.",
+        "Oil prices directly determine the Central Bank's monetary policy.",
+        "Oil is the only sector that creates employment in Nigeria."
+      ],
+      "ans": "A",
+      "exp": "Nigeria's huge dependence on oil export receipts to finance imports and domestic production makes it vulnerable to international oil market movements. While B is true, it's not the primary reason for macroeconomic vulnerability; C and D are overstatements."
+    },
+    {
+      "id": "Q39",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a characteristic of non-cyclical industries?",
+      "opts": [
+        "High beta relative to the economy.",
+        "Little sensitivity to the business cycle.",
+        "Above-average growth during recessions.",
+        "High sensitivity to interest rate changes."
+      ],
+      "ans": "B",
+      "exp": "Non-cyclical industries have little sensitivity to the business cycle (low beta). Examples include food, pharmaceuticals, and utilities. High beta (A) is co-cyclical; above-average growth during recessions (C) is counter-cyclical (rare); interest rate sensitivity (D) is not the defining characteristic."
+    },
+    {
+      "id": "Q40",
+      "module": 2,
+      "type": "mcq",
+      "q": "A credit analyst is concerned about a borrower's industry because the relative price of substitute products is declining and consumers' switching costs are falling. Which Porter force is intensifying?",
+      "opts": [
+        "Bargaining power of suppliers.",
+        "Threat of new entrants.",
+        "Threat of substitute products.",
+        "Rivalry among existing competitors."
+      ],
+      "ans": "C",
+      "exp": "The threat of substitutes is high when the relative price of substitutes declines and switching costs fall. This directly matches the description. Supplier power (A) relates to inputs; new entrants (B) to barriers; rivalry (D) to competitor intensity."
+    },
+    {
+      "id": "Q41",
+      "module": 2,
+      "type": "mcq",
+      "q": "In the 'boom' phase of the business cycle, which of the following borrower behaviors is most likely to create credit risk?",
+      "opts": [
+        "Reducing bank borrowing and relying on internal financing.",
+        "Engaging in anticipatory buying of supplies and raw materials at rising prices.",
+        "Liquidating inventory to pay down debt.",
+        "Renegotiating loan terms to extend maturity."
+      ],
+      "ans": "B",
+      "exp": "In a boom, borrowers engage in anticipatory buying, increasing prices and creating inventory positions that may become unsustainable. This leads to profit margin narrowing and increased leverage. A and C are recession behaviors; D is a restructuring action, not typical of boom."
+    },
+    {
+      "id": "Q42",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a key reason for using the top-down approach in credit analysis?",
+      "opts": [
+        "It focuses exclusively on the borrower's historical financial performance.",
+        "It provides a comprehensive view linking macroeconomic risks to industry and company factors.",
+        "It simplifies the analysis by ignoring industry-specific variables.",
+        "It guarantees accurate prediction of default."
+      ],
+      "ans": "B",
+      "exp": "The top-down approach provides a comprehensive view of the broader economy, helping analysts understand the context for industry and company factors. It does not ignore industry (C) nor does it guarantee accuracy (D). A describes bottom-up."
+    },
+    {
+      "id": "Q43",
+      "module": 2,
+      "type": "mcq",
+      "q": "An industry characterized by a single producer that controls the market is considered:",
+      "opts": [
+        "A monopoly — good credit risk likely lower, but consider price elasticity.",
+        "An oligopoly — selective lending to firms doing well.",
+        "A duopoly — characterized by action and reaction.",
+        "Monopolistic competition — highly competitive with differentiation."
+      ],
+      "ans": "A",
+      "exp": "Monopoly has a single producer; credit risk is likely lower due to market control, but the analyst must consider price elasticity of demand. B is oligopoly; C is duopoly; D is monopolistic competition."
+    },
+    {
+      "id": "Q44",
+      "module": 2,
+      "type": "mcq",
+      "q": "During a recession, which of the following is the most appropriate lender behavior?",
+      "opts": [
+        "Aggressively expanding the credit portfolio to gain market share.",
+        "Reducing reliance on collateral and emphasizing cash flow.",
+        "Exercising cautious credit expansion, increasing reliance on security, and focusing on loan recovery.",
+        "Increasing the tenor of loans to support borrowers."
+      ],
+      "ans": "C",
+      "exp": "In a recession, lenders should exercise caution, ensure credit quality, rely more on security, and focus on recovery. Aggressive expansion (A) is boom behavior; reducing collateral (B) is risky; increasing tenor (D) without risk assessment could worsen exposure."
+    },
+    {
+      "id": "Q45",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following factors is considered a 'macroeconomic variable' in the domestic economy analysis?",
+      "opts": [
+        "The company's inventory turnover ratio.",
+        "The industry's competitive intensity.",
+        "The GDP growth rate and inflation.",
+        "The borrower's personal net worth."
+      ],
+      "ans": "C",
+      "exp": "GDP growth and inflation are key macroeconomic variables. Inventory turnover (A) is a company-level activity ratio; competitive intensity (B) is industry-level; net worth (D) is borrower-specific."
+    },
+    {
+      "id": "Q46",
+      "module": 2,
+      "type": "mcq",
+      "q": "A new entrant is considering joining an industry with strong customer loyalty, high capital requirements, and limited distribution channels. According to Porter, this industry has:",
+      "opts": [
+        "Low threat of substitutes.",
+        "High bargaining power of buyers.",
+        "High barriers to entry.",
+        "Low intensity of rivalry."
+      ],
+      "ans": "C",
+      "exp": "Strong customer loyalty, high capital requirements, and lack of distribution channels are all barriers to entry. This makes it difficult for new entrants, thus high barriers. This does not directly indicate substitutes (A), buyer power (B), or rivalry (D), though it may affect them indirectly."
+    },
+    {
+      "id": "Q47",
+      "module": 2,
+      "type": "mcq",
+      "q": "An analyst observes that rivalry among competitors is intensifying because the number of competitors is increasing, industry growth is slowing, and fixed costs are high. This situation is likely to lead to:",
+      "opts": [
+        "Higher industry profits.",
+        "Declining industry profits.",
+        "Increased barriers to entry.",
+        "Reduced bargaining power of suppliers."
+      ],
+      "ans": "B",
+      "exp": "As rivalry intensifies (more competitors, slow growth, high fixed costs), industry profits tend to decline, sometimes to the point of unattractiveness. This is a key insight of Porter's model. A is opposite; C and D are unrelated to rivalry intensity."
+    },
+    {
+      "id": "Q48",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary difference between demand-side and supply-side economic policies?",
+      "opts": [
+        "Demand-side policies focus on government spending; supply-side focus on money supply.",
+        "Demand-side policies target aggregate demand through fiscal/monetary tools; supply-side focus on production incentives through tax and regulatory policy.",
+        "Demand-side policies are implemented by the central bank; supply-side by the government.",
+        "Demand-side policies are expansionary; supply-side are contractionary."
+      ],
+      "ans": "B",
+      "exp": "Demand-side policies (fiscal and monetary) target aggregate demand; supply-side policies create an environment for production through tax policy, deregulation, and incentives. A is incorrect (money supply is monetary policy, part of demand-side); C is not strictly accurate; D is false."
+    },
+    {
+      "id": "Q49",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following best describes the attitude of some Nigerian borrowers toward bank loans as identified in the study material?",
+      "opts": [
+        "They view loans as a way to build a long-term banking relationship.",
+        "They see loans as getting a share of the 'national cake' and may have schemes to deceive the bank.",
+        "They are generally transparent and provide all required information upfront.",
+        "They prioritize project feasibility over collateral."
+      ],
+      "ans": "B",
+      "exp": "The material notes that many Nigerian borrowers view bank loans as a share of the 'national cake,' and some have schemes to deceive banks regarding documentation and collateral. A and C are not characteristic; D is the opposite of typical behavior."
+    },
+    {
+      "id": "Q50",
+      "module": 3,
+      "type": "mcq",
+      "q": "In the 7 C's of Credit framework, which 'C' refers to management's integrity and willingness to repay the loan?",
+      "opts": [
+        "Capacity.",
+        "Character.",
+        "Conditions.",
+        "Collateral."
+      ],
+      "ans": "B",
+      "exp": "Character refers to management's integrity, honesty, and commitment to repay. Capacity (A) is ability to generate cash; Conditions (C) is the economic environment; Collateral (D) is pledged assets."
+    },
+    {
+      "id": "Q51",
+      "module": 3,
+      "type": "mcq",
+      "q": "A borrower has a strong credit history and a successful track record in their industry, but their business is experiencing a temporary downturn due to a recession. Which of the 7 C's would be most affected by this recession?",
+      "opts": [
+        "Character.",
+        "Capacity.",
+        "Collateral.",
+        "Connection."
+      ],
+      "ans": "B",
+      "exp": "Capacity is the ability to generate adequate cash flow to repay debt. A recession directly affects cash flow, reducing capacity. Character (A) is not affected by external economic conditions; Collateral (C) may be affected but not primarily; Connection (D) is about relationships and networks."
+    },
+    {
+      "id": "Q52",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT one of the 'C's of Bad Credit' as identified in the material?",
+      "opts": [
+        "Complacency.",
+        "Carelessness.",
+        "Contingencies.",
+        "Collateral."
+      ],
+      "ans": "D",
+      "exp": "The C's of Bad Credit are Complacency, Carelessness, Poor Communication, Contingencies, and Competition. Collateral (D) is a good credit 'C', not a bad one."
+    },
+    {
+      "id": "Q53",
+      "module": 3,
+      "type": "mcq",
+      "q": "An obligor type that requires a Board Resolution to authorize borrowing is most likely:",
+      "opts": [
+        "A sole proprietorship.",
+        "A partnership.",
+        "A limited liability company.",
+        "A club or society."
+      ],
+      "ans": "C",
+      "exp": "Only corporations and partnerships have Board Resolutions; sole proprietorships and clubs do not. However, partnerships may also have resolutions, but the material specifically mentions that Board Resolutions are signed by directors and are for corporations. The question asks 'most likely,' and limited liability companies are the classic entity with a board."
+    },
+    {
+      "id": "Q54",
+      "module": 3,
+      "type": "mcq",
+      "q": "When evaluating a commercial loan request, the first step a credit analyst should take is:",
+      "opts": [
+        "Assess the collateral offered.",
+        "Understand the nature of the business and industry characteristics.",
+        "Determine the interest rate to charge.",
+        "Review the borrower's personal net worth."
+      ],
+      "ans": "B",
+      "exp": "The first step is to gather information about the borrower and understand the nature of the business and industry characteristics, as well as the bank's credit policy. Collateral (A) and interest rate (C) come later; personal net worth (D) is more relevant for individual borrowers."
+    },
+    {
+      "id": "Q55",
+      "module": 3,
+      "type": "mcq",
+      "q": "In the context of borrowing, 'capacity' refers to:",
+      "opts": [
+        "The borrower's personal assets.",
+        "The borrower's ability to generate adequate cash flow to repay debt.",
+        "The borrower's willingness to repay.",
+        "The borrower's business connections and reputation."
+      ],
+      "ans": "B",
+      "exp": "Capacity is the ability to generate cash flow to cover interest, principal, and charges. It's about the firm's liquidity position. A is capital; C is character; D is connection."
+    },
+    {
+      "id": "Q56",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is an example of a 'non-financial covenant' that a bank might impose on a borrower?",
+      "opts": [
+        "Maintaining a current ratio above 1.5.",
+        "Not selling more than 10% of assets without the bank's consent.",
+        "Limiting total debt to equity to a certain percentage.",
+        "Achieving minimum sales growth each year."
+      ],
+      "ans": "B",
+      "exp": "Non-financial covenants protect assets and ensure timely information; they include restrictions on selling assets. Financial covenants (A, C, D) relate to leverage, liquidity, or profitability metrics."
+    },
+    {
+      "id": "Q57",
+      "module": 3,
+      "type": "mcq",
+      "q": "A borrower who obtains a loan for a valid purpose but shifts the funds to an unrelated venture without informing the bank is exhibiting:",
+      "opts": [
+        "An honest mistake.",
+        "A common attitude of some Nigerian borrowers as described in the material.",
+        "A prudent business decision.",
+        "A regulatory requirement."
+      ],
+      "ans": "B",
+      "exp": "The material explicitly notes that some borrowers obtain loans for a valid purpose but shift purpose without informing the bank. This is a known attitude among some Nigerian borrowers."
+    },
+    {
+      "id": "Q58",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following best describes the difference between collateral and security?",
+      "opts": [
+        "There is no difference; they are interchangeable terms.",
+        "Collateral is pledged assets; security is the legal documentation for the loan.",
+        "Collateral is the primary source of repayment; security is the secondary source.",
+        "Collateral refers to tangible assets, while security includes guarantees and indemnities."
+      ],
+      "ans": "A",
+      "exp": "In practice, banks use the terms interchangeably, though some may differentiate but the material does not emphasize a distinction. The question probes understanding; the correct answer is that there is no practical difference."
+    },
+    {
+      "id": "Q59",
+      "module": 3,
+      "type": "mcq",
+      "q": "A credit analyst is assessing a borrower who has a high debt-to-equity ratio. Which of the 7 C's is most directly indicated as a concern?",
+      "opts": [
+        "Character.",
+        "Capital.",
+        "Conditions.",
+        "Cash flow."
+      ],
+      "ans": "B",
+      "exp": "Capital refers to the money invested in the business. A high debt-to-equity ratio indicates that the owner's stake is low relative to debt, which is a capital concern. It also affects capacity, but the direct 'C' is capital."
+    },
+    {
+      "id": "Q60",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a feature of an 'unauthorized lending' situation?",
+      "opts": [
+        "A loan that is approved by the credit committee.",
+        "A loan granted above the officer's discretionary powers without due process.",
+        "A loan that is fully secured by cash collateral.",
+        "A loan that is repaid on time."
+      ],
+      "ans": "B",
+      "exp": "Unauthorized lending is any credit granted which does not follow due process, or if an officer grants a loan above his discretionary powers. A is authorized; C and D do not define unauthorized."
+    },
+    {
+      "id": "Q61",
+      "module": 3,
+      "type": "mcq",
+      "q": "In evaluating a loan request, why is it important to check the borrower's repayment history on existing credit relationships?",
+      "opts": [
+        "It is a guaranteed predictor of future performance.",
+        "It provides an indicator of future repayment performance, though it is not a guarantee.",
+        "It is required by law for all loans.",
+        "It primarily assesses the borrower's character."
+      ],
+      "ans": "B",
+      "exp": "Repayment history is considered an indicator (though not a guarantee) of future performance. The material notes this is a 'fallacy' to rely solely on it, but it is still a consideration. A is too strong; C is false; D is a component but the broader purpose is capacity and willingness."
+    },
+    {
+      "id": "Q62",
+      "module": 3,
+      "type": "mcq",
+      "q": "A borrower provides a Certificate of Occupancy (C of O) as security for a loan. This is an example of:",
+      "opts": [
+        "A debenture.",
+        "A legal mortgage.",
+        "An equitable mortgage.",
+        "A pledge."
+      ],
+      "ans": "B",
+      "exp": "A Certificate of Occupancy is a title document for land sold by the government; when registered in favor of the bank, it creates a legal mortgage. An equitable mortgage (C) is mere deposit of title documents without registration."
+    },
+    {
+      "id": "Q63",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the primary purpose of conditions and covenants in a loan agreement?",
+      "opts": [
+        "To increase the bank's profitability.",
+        "To ensure the borrower's operations comply with environmental standards.",
+        "To protect the bank by ensuring the borrower's cash flow is sufficient and assets are not depleted.",
+        "To allow the borrower to renegotiate terms mid-term."
+      ],
+      "ans": "C",
+      "exp": "Conditions and covenants protect the bank by ensuring the borrower generates enough cash and does not dispose of assets without consent. They are not primarily for profitability (A), though they may indirectly affect it; they are not limited to environmental standards (B); renegotiation (D) is not their purpose."
+    },
+    {
+      "id": "Q64",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a typical 'negative covenant' in a loan agreement?",
+      "opts": [
+        "Borrower must maintain adequate insurance.",
+        "Borrower must provide quarterly financial statements.",
+        "Borrower cannot pledge assets to a third party during the tenor.",
+        "Borrower must maintain a debt-to-equity ratio below a certain level."
+      ],
+      "ans": "C",
+      "exp": "Negative covenants restrict actions, e.g., not pledging assets to others. A and B are affirmative covenants; D is a financial covenant (can be affirmative or negative but here it's restrictive, but the clearest negative is C)."
+    },
+    {
+      "id": "Q65",
+      "module": 3,
+      "type": "mcq",
+      "q": "In the credit assessment process, the analyst should avoid disclosing:",
+      "opts": [
+        "The bank's credit policy guidelines.",
+        "Personal interest or relationship with the borrower.",
+        "The borrower's financial statements to the committee.",
+        "The interest rate charged."
+      ],
+      "ans": "B",
+      "exp": "The analyst must avoid or disclose any personal interest or relationship with the borrower to maintain objectivity. The bank's credit policy (A) is relevant; financial statements (C) are disclosed; interest rate (D) is normal."
+    },
+    {
+      "id": "Q66",
+      "module": 3,
+      "type": "mcq",
+      "q": "An obligor type that is characterized by a single owner, unlimited liability, and no board resolution for borrowing is a:",
+      "opts": [
+        "Partnership.",
+        "Limited liability company.",
+        "Sole proprietorship.",
+        "Club or society."
+      ],
+      "ans": "C",
+      "exp": "Sole proprietorship has one owner, unlimited liability, and does not have a Board Resolution. Partnerships (A) have multiple partners; limited companies (B) have a board; clubs/societies (D) are non-profit organizations."
+    },
+    {
+      "id": "Q67",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following statements best describes the 'conditions' C of Credit?",
+      "opts": [
+        "It refers to the borrower's personal financial situation.",
+        "It refers to the socio-economic environment and the specific terms of the loan.",
+        "It refers to the borrower's business connections.",
+        "It refers to the collateral's marketability."
+      ],
+      "ans": "B",
+      "exp": "Conditions include the socio-economic environment (national economy, industry) and the specific loan terms (amount, interest rate, tenor). A is capacity; C is connection; D is collateral."
+    },
+    {
+      "id": "Q68",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank's decision to lend is often influenced by the borrower's 'connection'. This refers to:",
+      "opts": [
+        "The borrower's internet connectivity.",
+        "The borrower's network of business relationships and the caliber of people they know.",
+        "The borrower's family background.",
+        "The borrower's credit score from the credit bureau."
+      ],
+      "ans": "B",
+      "exp": "Connection refers to the borrower's business relationships, industry expertise, or people in their circle that enhance their reputation or income. It is not about internet (A) or family (C) solely; credit bureau (D) is separate."
+    },
+    {
+      "id": "Q69",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is a sign of 'carelessness' as a C of Bad Credit?",
+      "opts": [
+        "Over-reliance on past successes.",
+        "Inadequate loan documentation and lack of current financial information.",
+        "Following competitors' lending standards.",
+        "Ignoring circumstances that may cause default."
+      ],
+      "ans": "B",
+      "exp": "Carelessness is evidenced by inadequate loan documentation, lack of current financial information, and lack of protective covenants. A is complacency; C is competition; D is contingencies."
+    },
+    {
+      "id": "Q70",
+      "module": 3,
+      "type": "mcq",
+      "q": "A borrower who is a limited liability company is required to provide which document to authorize a loan?",
+      "opts": [
+        "A letter of intent.",
+        "A Board Resolution signed by directors.",
+        "A personal guarantee from the CEO.",
+        "A statement of net worth."
+      ],
+      "ans": "B",
+      "exp": "Companies must pass a Board Resolution authorizing the borrowing, signed by directors. A is not a standard authorization; C may be additional but not the primary; D is for individuals."
+    },
+    {
+      "id": "Q71",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is an example of a financial covenant?",
+      "opts": [
+        "Borrower must not sell more than 10% of assets without bank consent.",
+        "Borrower must maintain a current ratio of at least 1.5.",
+        "Borrower must submit quarterly financial statements within 30 days.",
+        "Borrower must maintain adequate insurance on assets."
+      ],
+      "ans": "B",
+      "exp": "Financial covenants relate to financial ratios, such as current ratio, leverage, or net worth. A is non-financial; C is reporting (affirmative non-financial); D is insurance (also non-financial)."
+    },
+    {
+      "id": "Q72",
+      "module": 3,
+      "type": "mcq",
+      "q": "A credit analyst reviewing a commercial loan request should first understand the borrower's business model. Which of the following is an example of a franchise business model?",
+      "opts": [
+        "A company that produces its own goods and sells them directly.",
+        "A retailer that operates under a well-known brand by paying fees to the brand owner.",
+        "A company that arranges transportation for goods without owning vehicles.",
+        "A firm that sells products on behalf of producers for a commission."
+      ],
+      "ans": "B",
+      "exp": "A franchise operates under a brand owner's license, paying fees. Manufacturing (A) is production; logistics (C) is third-party; brokers (D) are commission-based."
+    },
+    {
+      "id": "Q73",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following attitudes of some Nigerian borrowers is most problematic for loan recovery?",
+      "opts": [
+        "Providing full cooperation after loan disbursement.",
+        "Viewing bank loans as a 'national cake' to be shared.",
+        "Maintaining stable residential and official addresses.",
+        "Seeking project feasibility studies before applying."
+      ],
+      "ans": "B",
+      "exp": "Viewing loans as a share of the 'national cake' implies entitlement and potential default. A is good behavior; C and D are positive traits."
+    },
+    {
+      "id": "Q74",
+      "module": 3,
+      "type": "mcq",
+      "q": "In assessing a borrower's 'capital', which ratio would a lender typically examine?",
+      "opts": [
+        "Gross profit margin.",
+        "Debt-to-equity ratio.",
+        "Current ratio.",
+        "Return on assets."
+      ],
+      "ans": "B",
+      "exp": "Capital is about ownership stake; the debt-to-equity ratio measures how much debt relative to owner's investment. Profitability (A,D) and liquidity (C) are other aspects."
+    },
+    {
+      "id": "Q75",
+      "module": 3,
+      "type": "mcq",
+      "q": "A borrower has a history of doctoring financial statements to appear creditworthy. This behavior primarily affects which of the 7 C's?",
+      "opts": [
+        "Capacity.",
+        "Character.",
+        "Capital.",
+        "Collateral."
+      ],
+      "ans": "B",
+      "exp": "Doctoring statements reflects a lack of integrity and honesty, which directly impacts character. Capacity (A) may be misrepresented, but the issue is the false portrayal, so character is the primary."
+    },
+    {
+      "id": "Q76",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT a typical obligor type for bank lending?",
+      "opts": [
+        "Joint accounts.",
+        "Sole proprietorship.",
+        "Non-governmental organizations.",
+        "Multinational corporations."
+      ],
+      "ans": "C",
+      "exp": "The listed obligor types include personal accounts, sole proprietorship, joint accounts, partnerships, clubs and societies, limited liability companies, and multinational corporations. Non-governmental organizations (NGOs) are not explicitly listed."
+    },
+    {
+      "id": "Q77",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank's credit process in Access Bank includes 'Credit Analysis' as a key step. What is the primary objective of this step?",
+      "opts": [
+        "To market the bank's loan products to potential borrowers.",
+        "To review financial stability and assess risk before decision-making.",
+        "To complete the legal documentation and disburse funds.",
+        "To monitor loan performance post-disbursement."
+      ],
+      "ans": "B",
+      "exp": "Credit Analysis is the review of financial stability and risk assessment. Marketing (A) is earlier; documentation (C) is later; monitoring (D) is after disbursement."
+    },
+    {
+      "id": "Q78",
+      "module": 3,
+      "type": "mcq",
+      "q": "In the context of lending, 'conditions subsequent' to drawdown refer to:",
+      "opts": [
+        "Conditions that must be met before the borrower can access the funds.",
+        "Covenants that become operative after the loan has been disbursed.",
+        "Conditions that are optional for the borrower.",
+        "The repayment terms of the loan."
+      ],
+      "ans": "B",
+      "exp": "Conditions subsequent (often called covenants) are operative after drawdown, as opposed to conditions precedent which are before. A describes conditions precedent; C is incorrect; D is separate."
+    },
+    {
+      "id": "Q79",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary purpose of credit structuring in banking?",
+      "opts": [
+        "To maximize the bank's interest income from all loans.",
+        "To design credit products that meet borrower needs while managing associated risks.",
+        "To ensure all loans are fully collateralized.",
+        "To standardize all loan products across the bank."
+      ],
+      "ans": "B",
+      "exp": "Credit structuring involves designing and customizing credit products to meet the specific needs and risk profiles of borrowers and lenders. Maximizing income (A) is a goal but not the primary purpose; collateral (C) is one component; standardization (D) is the opposite of customization."
+    },
+    {
+      "id": "Q80",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a common flaw in credit structuring?",
+      "opts": [
+        "Using a term loan to finance working capital needs.",
+        "Matching facility tenor to the asset conversion cycle.",
+        "Requiring equity contribution from the borrower.",
+        "Structuring repayment to match cash flow patterns."
+      ],
+      "ans": "A",
+      "exp": "Using a term loan (long-term) to finance working capital (short-term) is a structural mismatch and a common flaw. B, C, and D are good practices."
+    },
+    {
+      "id": "Q81",
+      "module": 4,
+      "type": "mcq",
+      "q": "A borrower requests a loan to finance inventory that will be sold within 90 days. The appropriate lending rationale is:",
+      "opts": [
+        "Cash flow lending.",
+        "Asset conversion lending.",
+        "Asset protection lending.",
+        "Project finance."
+      ],
+      "ans": "B",
+      "exp": "Asset conversion lending finances short-term assets (inventory) that will be converted to cash within the operating cycle (90-120 days). Cash flow lending (A) is for longer-term; asset protection (C) is security-based; project finance (D) is long-term."
+    },
+    {
+      "id": "Q82",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which type of lending rationale is characterized by financing permanent working capital needs with security backing?",
+      "opts": [
+        "Asset conversion lending.",
+        "Asset protection lending.",
+        "Cash flow lending.",
+        "Trade finance."
+      ],
+      "ans": "B",
+      "exp": "Asset protection lending is security-based lending for a continuous working capital need, typically backed by collateral and often rolled over. Asset conversion (A) is transactional; cash flow (C) is long-term; trade finance (D) is a subset of asset conversion."
+    },
+    {
+      "id": "Q83",
+      "module": 4,
+      "type": "mcq",
+      "q": "A five-year loan to finance a new factory with repayment from future cash flows is an example of:",
+      "opts": [
+        "Asset conversion lending.",
+        "Asset protection lending.",
+        "Cash flow lending.",
+        "Overdraft."
+      ],
+      "ans": "C",
+      "exp": "Cash flow lending is for loans longer than a year, where repayment comes from the cash flow generated by the asset or project financed. A is short-term; B is security-based; D is short-term working capital."
+    },
+    {
+      "id": "Q84",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the maximum tenor typically allowed for an overdraft facility?",
+      "opts": [
+        "90 days.",
+        "180 days.",
+        "1 year.",
+        "5 years."
+      ],
+      "ans": "C",
+      "exp": "Overdrafts typically have a maximum tenor of 1 year, but they are usually reviewed every 90-180 days for swings/cleanup. They are expected to revolve and show good turnover."
+    },
+    {
+      "id": "Q85",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a risk specific to overdraft facilities?",
+      "opts": [
+        "The borrower may not use the facility at all.",
+        "The facility may become 'evergreen' with hardcore borrowing.",
+        "The collateral value always exceeds the loan amount.",
+        "The interest rate is always fixed."
+      ],
+      "ans": "B",
+      "exp": "Overdrafts can become 'evergreen' when the borrower maintains a hardcore balance without swinging, indicating structural borrowing. A is not a risk; C is not always true; D is false (rates are adjustable)."
+    },
+    {
+      "id": "Q86",
+      "module": 4,
+      "type": "mcq",
+      "q": "A 'time loan' is characterized by:",
+      "opts": [
+        "Regular installment payments of principal and interest.",
+        "A bullet repayment of principal and interest at maturity.",
+        "Flexible drawdown and repayment.",
+        "A tenor exceeding 10 years."
+      ],
+      "ans": "B",
+      "exp": "A time loan has a backend, one-off, bullet repayment of principal and interest for a tenor of up to 12 months. A describes a term loan; C describes overdraft; D is too long."
+    },
+    {
+      "id": "Q87",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the key difference between a finance lease and an operating lease?",
+      "opts": [
+        "Finance leases are short-term; operating leases are long-term.",
+        "Operating leases transfer ownership at the end; finance leases do not.",
+        "Finance leases transfer substantially all risks and rewards of ownership; operating leases are essentially rentals.",
+        "Operating leases appear on the balance sheet; finance leases do not."
+      ],
+      "ans": "C",
+      "exp": "Finance leases transfer substantially all risks and rewards of ownership; operating leases are essentially rentals. A is reversed; B is reversed (finance may transfer ownership); D is reversed (finance leases appear on the balance sheet)."
+    },
+    {
+      "id": "Q88",
+      "module": 4,
+      "type": "mcq",
+      "q": "In a finance lease, who bears the insurance, maintenance, and taxes on the leased asset?",
+      "opts": [
+        "The lessor.",
+        "The lessee.",
+        "The manufacturer.",
+        "The bank."
+      ],
+      "ans": "B",
+      "exp": "In a finance lease, the lessee bears insurance, maintenance, and taxes — similar to ownership. In an operating lease, the lessor bears these costs."
+    },
+    {
+      "id": "Q89",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is true regarding the difference between a finance lease and a term loan?",
+      "opts": [
+        "A term loan has equal rental sums; a finance lease has principal and interest payments.",
+        "A finance lease has equal rental sums; a term loan has principal and interest payments.",
+        "Both have identical payment structures.",
+        "A term loan transfers ownership of the asset at inception."
+      ],
+      "ans": "B",
+      "exp": "In a finance lease, equal rental sums are paid over the period; in a term loan, principal and interest are paid separately. A is reversed; C is false; D is false (term loan does not transfer ownership at inception)."
+    },
+    {
+      "id": "Q90",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the primary purpose of a moratorium in a term loan?",
+      "opts": [
+        "To increase the interest rate.",
+        "To allow the borrower time to complete the project before principal repayment begins.",
+        "To extend the loan tenor indefinitely.",
+        "To reduce the borrower's equity contribution."
+      ],
+      "ans": "B",
+      "exp": "A moratorium (on principal and/or interest) allows the borrower time to complete the project before repayment starts. It does not increase rates (A), extend indefinitely (C), or reduce equity (D)."
+    },
+    {
+      "id": "Q91",
+      "module": 4,
+      "type": "mcq",
+      "q": "An import finance facility in Nigeria is typically supported by which document?",
+      "opts": [
+        "Form M.",
+        "Form NXP.",
+        "Form A.",
+        "Form C."
+      ],
+      "ans": "A",
+      "exp": "Import finance in Nigeria is supported by a Form M. Form NXP is for exports. Forms A and C are not standard for import finance."
+    },
+    {
+      "id": "Q92",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which document supports export financing in Nigeria?",
+      "opts": [
+        "Form M.",
+        "Form NXP.",
+        "Certificate of Occupancy.",
+        "Board Resolution."
+      ],
+      "ans": "B",
+      "exp": "Before financing an export contract, a valid Form NXP with satisfactory terms must be in place. Form M is for imports."
+    },
+    {
+      "id": "Q93",
+      "module": 4,
+      "type": "mcq",
+      "q": "What type of financing uses a company's receivables as collateral?",
+      "opts": [
+        "Inventory financing.",
+        "LPO financing.",
+        "Receivables discounting.",
+        "Mortgage loan."
+      ],
+      "ans": "C",
+      "exp": "Receivables discounting (accounts receivable financing) uses receivables as collateral. Inventory financing (A) uses stock; LPO (B) uses purchase orders; mortgage (D) uses property."
+    },
+    {
+      "id": "Q94",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a feature of LPO financing?",
+      "opts": [
+        "It finances the acquisition of fixed assets.",
+        "It provides capital to pay suppliers upfront for verified purchase orders.",
+        "It is typically a long-term facility.",
+        "It does not require collateral."
+      ],
+      "ans": "B",
+      "exp": "LPO financing provides capital to pay suppliers upfront for verified purchase orders. A is incorrect (it's short-term, for goods to be supplied); C is incorrect; D is false (it often requires collateral)."
+    },
+    {
+      "id": "Q95",
+      "module": 4,
+      "type": "mcq",
+      "q": "A Banker's Acceptance (BA) is best described as:",
+      "opts": [
+        "A long-term debt instrument issued by the bank.",
+        "A draft drawn on and accepted by a bank, with a maximum tenor of 180 days.",
+        "An unsecured promissory note issued by a blue-chip company.",
+        "A loan facility with bullet repayment."
+      ],
+      "ans": "B",
+      "exp": "A Banker's Acceptance is a draft drawn on and accepted by a bank, with a regulated maximum tenor of 180 days, not renewable. A is incorrect (short-term); C describes a commercial paper; D is a time loan."
+    },
+    {
+      "id": "Q96",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the risk exposure for a bank that arranges a Commercial Paper issuance for a borrower?",
+      "opts": [
+        "Credit risk on the principal amount.",
+        "Reputational risk only, unless the bank guarantees the CP.",
+        "Market risk on the interest rate.",
+        "Operational risk on the issuance process."
+      ],
+      "ans": "B",
+      "exp": "The bank carries no credit risk on a Commercial Paper unless it guarantees it; the risk is primarily reputational. A is incorrect; C and D are secondary."
+    },
+    {
+      "id": "Q97",
+      "module": 4,
+      "type": "mcq",
+      "q": "In a syndicated loan, which party is typically responsible for the day-to-day administration of the facility?",
+      "opts": [
+        "The borrower.",
+        "The agent bank.",
+        "The lead arranger.",
+        "The regulatory authority."
+      ],
+      "ans": "B",
+      "exp": "The agent bank administers the facility on behalf of the syndicate. The lead arranger (C) structures the deal; the borrower (A) repays; regulators (D) oversee but do not administer."
+    },
+    {
+      "id": "Q98",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank guarantee that assures payment if a contractor fails to complete a project is called:",
+      "opts": [
+        "Advance payment guarantee.",
+        "Performance guarantee.",
+        "Payment guarantee.",
+        "Bid bond."
+      ],
+      "ans": "B",
+      "exp": "A performance guarantee (performance bond) assures that the contractor will complete the project. Advance payment guarantee (A) covers prepayments; payment guarantee (C) covers payment obligations; bid bond (D) covers tender bids."
+    },
+    {
+      "id": "Q99",
+      "module": 4,
+      "type": "mcq",
+      "q": "The Commercial Agriculture Credit Scheme (CACS) is a partnership between:",
+      "opts": [
+        "The Federal Government and State Governments.",
+        "CBN and the Federal Ministry of Agriculture and Rural Development.",
+        "The Federal Government and commercial banks.",
+        "CBN and the Bank of Industry."
+      ],
+      "ans": "B",
+      "exp": "CACS is a partnership between the CBN and the Federal Ministry of Agriculture and Rural Development. It is a NGN200 billion fund established to support agriculture."
+    },
+    {
+      "id": "Q100",
+      "module": 4,
+      "type": "mcq",
+      "q": "Under the Agricultural Development Trust Fund Credit (ADTF), the CBN guarantees what percentage of the unsecured margin?",
+      "opts": [
+        "75%.",
+        "50%.",
+        "25%.",
+        "100%."
+      ],
+      "ans": "A",
+      "exp": "The CBN guarantees 75% of the unsecured margin of 50% under the ADTF scheme. The borrower saves 25%, the trust fund provider sets aside 25%, and the lender provides 100% of working capital."
+    },
+    {
+      "id": "Q101",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is an eligibility criterion for Bank of Industry loans?",
+      "opts": [
+        "The project must be in the retail sector.",
+        "The enterprise must have high employment generation capacity.",
+        "The company must be listed on the stock exchange.",
+        "The project must be completed within 6 months."
+      ],
+      "ans": "B",
+      "exp": "BOI considers enterprises with high employment generation capacity, among other criteria. Retail (A) is not specifically targeted; stock exchange listing (C) is not required; project duration (D) is not a BOI criterion."
+    },
+    {
+      "id": "Q102",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the interest rate for the Rice Intervention Fund under BOI/CBN?",
+      "opts": [
+        "9% per annum.",
+        "7% per annum.",
+        "6% per annum.",
+        "4% per annum."
+      ],
+      "ans": "D",
+      "exp": "The Rice Intervention Fund of NGN10 billion is designed for rice self-sufficiency at an interest rate of 4% per annum. 9% is CACS; 7% is CBN Manufacturing Intervention Fund; 6% is CTG Fund."
+    },
+    {
+      "id": "Q103",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is NOT a feature of asset conversion lending?",
+      "opts": [
+        "It is short-term financing.",
+        "It is self-liquidating.",
+        "It is typically unsecured.",
+        "Repayment must be completed within one operating cycle."
+      ],
+      "ans": "C",
+      "exp": "Asset conversion lending is generally said to be unsecured? The material notes it is 'generally said to be unsecured?' with a question mark, but the underlying assets and domiciliation are used as collateral. The key point is that it is NOT typically unsecured; it uses underlying assets. A, B, and D are true features."
+    },
+    {
+      "id": "Q104",
+      "module": 4,
+      "type": "mcq",
+      "q": "In asset conversion lending, the primary source of repayment is:",
+      "opts": [
+        "Sale of collateral.",
+        "The borrower's cash flow from operations.",
+        "The conversion of assets into cash within the operating cycle.",
+        "The guarantor's personal assets."
+      ],
+      "ans": "C",
+      "exp": "In asset conversion lending, repayment comes from the conversion of assets (inventory to receivables to cash) within the operating cycle. A is secondary; B is more for cash flow lending; D is a secondary source."
+    },
+    {
+      "id": "Q105",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which ratio is most relevant for analyzing asset conversion lending?",
+      "opts": [
+        "Debt-to-equity ratio.",
+        "Stock turnover period.",
+        "Return on assets.",
+        "Interest coverage ratio."
+      ],
+      "ans": "B",
+      "exp": "Stock turnover period, debtor's turnover period, and creditor's turnover period are used in asset conversion lending to measure the operating cycle. Debt-to-equity (A) is leverage; ROA (C) is profitability; interest coverage (D) is cash flow."
+    },
+    {
+      "id": "Q106",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a key limitation of asset conversion lending analysis?",
+      "opts": [
+        "It is forward-looking and difficult to predict.",
+        "It is static, historical, and distorted by seasonal business.",
+        "It does not consider collateral.",
+        "It ignores the borrower's character."
+      ],
+      "ans": "B",
+      "exp": "The material notes that asset conversion lending analysis is limited because it is static, historical, and distorted by seasonal business. It is not forward-looking (A); it does consider collateral (C); it does consider character indirectly."
+    },
+    {
+      "id": "Q107",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following products is an example of asset protection lending?",
+      "opts": [
+        "A 90-day loan to finance inventory.",
+        "An overdraft secured by a fixed deposit.",
+        "A five-year term loan for a factory.",
+        "A lease for office equipment."
+      ],
+      "ans": "B",
+      "exp": "Asset protection lending is security-based; an overdraft secured by a fixed deposit is a prime example. A is asset conversion; C is cash flow; D is a lease."
+    },
+    {
+      "id": "Q108",
+      "module": 4,
+      "type": "mcq",
+      "q": "In cash flow lending, the primary source of repayment is:",
+      "opts": [
+        "The liquidation of assets.",
+        "The sale of collateral.",
+        "The stream of earnings and cash flow generated by the project.",
+        "The borrower's existing cash reserves."
+      ],
+      "ans": "C",
+      "exp": "Cash flow lending relies on the project's earnings/cash flow for repayment. Asset liquidation (A) and collateral sale (B) are secondary; existing cash (D) is not the source of repayment."
+    },
+    {
+      "id": "Q109",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is a key risk of cash flow lending?",
+      "opts": [
+        "The borrower may not have sufficient collateral.",
+        "Counterparty risk and cash flow volatility.",
+        "The tenor is too short.",
+        "The interest rate is fixed."
+      ],
+      "ans": "B",
+      "exp": "Cash flow lending is subject to counterparty risk and cash flow volatility; the material advises looking at cash flow with skepticism. Collateral (A) is not the primary issue; tenor (C) is usually long; interest rate (D) can be fixed or variable."
+    },
+    {
+      "id": "Q110",
+      "module": 4,
+      "type": "mcq",
+      "q": "A customer applies for a loan to purchase a new warehouse. The loan is to be repaid over 15 years. This is an example of:",
+      "opts": [
+        "Asset conversion lending.",
+        "Asset protection lending.",
+        "Cash flow lending.",
+        "Overdraft."
+      ],
+      "ans": "C",
+      "exp": "A 15-year loan for a warehouse is a long-term loan where repayment comes from cash flow — this is cash flow lending. A is short-term; B is security-based; D is short-term."
+    },
+    {
+      "id": "Q111",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a condition precedent to drawdown of a facility?",
+      "opts": [
+        "Maintaining a current ratio above 1.5.",
+        "Submitting quarterly financial statements.",
+        "Executing a valid legal mortgage.",
+        "Not selling assets without the bank's consent."
+      ],
+      "ans": "C",
+      "exp": "Conditions precedent must be met BEFORE drawdown; executing a legal mortgage is a condition precedent. A and B are covenants (conditions subsequent); D is a negative covenant."
+    },
+    {
+      "id": "Q112",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the purpose of 'transaction dynamics' in credit structuring?",
+      "opts": [
+        "To determine the interest rate.",
+        "To outline the step-by-step flow of credit events from start to repayment.",
+        "To describe the borrower's business model.",
+        "To assess the borrower's character."
+      ],
+      "ans": "B",
+      "exp": "Transaction dynamics states the step-by-step flow of credit events, from loan booking to utilization to full repayment. A is pricing; C is business analysis; D is character assessment."
+    },
+    {
+      "id": "Q113",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a common documentation error in credit structuring?",
+      "opts": [
+        "Perfecting security before disbursement.",
+        "Accepting forged or cloned documentation.",
+        "Executing a loan agreement with all parties.",
+        "Obtaining board resolution for a company loan."
+      ],
+      "ans": "B",
+      "exp": "Accepting forged or cloned documentation is a major documentation error. A, C, and D are good practices."
+    },
+    {
+      "id": "Q114",
+      "module": 4,
+      "type": "mcq",
+      "q": "In a mortgage loan, the bank's interest in the property is protected through:",
+      "opts": [
+        "A floating charge.",
+        "A legal or equitable mortgage.",
+        "A debenture.",
+        "A letter of hypothecation."
+      ],
+      "ans": "B",
+      "exp": "Mortgage loans are secured by a legal or equitable mortgage on the property. A floating charge (A) applies to current assets; debenture (C) is a written acknowledgment; letter of hypothecation (D) is an equitable charge on goods."
+    },
+    {
+      "id": "Q115",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the 'clean-up cycle' in asset protection lending?",
+      "opts": [
+        "The period when the loan is fully repaid.",
+        "The successful completion of several operating cycles to demonstrate repayment capacity.",
+        "The time between disbursement and first repayment.",
+        "The period when the borrower cleans up their financial statements."
+      ],
+      "ans": "B",
+      "exp": "In asset protection lending, clean-up cycles refer to the completion of several operating cycles to prove repayment capacity before rollover. A is the end; C is a moratorium; D is not a real concept."
+    },
+    {
+      "id": "Q116",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a feature of an 'evergreen' overdraft?",
+      "opts": [
+        "The facility is fully repaid each year.",
+        "The borrower consistently maintains a hardcore balance without swinging.",
+        "The interest rate decreases over time.",
+        "The facility is automatically renewed without review."
+      ],
+      "ans": "B",
+      "exp": "An evergreen overdraft is one that does not swing — the borrower maintains a hardcore balance, indicating structural (not temporary) need. A is ideal; C is not true; D may occur but the key is the hardcore balance."
+    },
+    {
+      "id": "Q117",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is a regulatory intervention credit product?",
+      "opts": [
+        "Overdraft.",
+        "Commercial Agriculture Credit Scheme (CACS).",
+        "Finance lease.",
+        "Banker's Acceptance."
+      ],
+      "ans": "B",
+      "exp": "CACS is a regulatory intervention product initiated by CBN and the Federal Ministry of Agriculture. A, C, and D are standard banking products."
+    },
+    {
+      "id": "Q118",
+      "module": 4,
+      "type": "mcq",
+      "q": "Under the Cotton Textile and Garment (CTG) Fund, the interest rate is:",
+      "opts": [
+        "4% per annum.",
+        "5% per annum.",
+        "6% per annum.",
+        "7% per annum."
+      ],
+      "ans": "C",
+      "exp": "The CTG Fund has an interest rate of 6% per annum. 4% is Rice Intervention; 5% is Dangote-BOI; 7% is CBN Manufacturing Intervention."
+    },
+    {
+      "id": "Q119",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the Dangote-BOI Fund interest rate for small businesses?",
+      "opts": [
+        "4% per annum.",
+        "5% per annum.",
+        "6% per annum.",
+        "7% per annum."
+      ],
+      "ans": "B",
+      "exp": "The Dangote-BOI NGN5 billion Fund for small businesses has an interest rate of 5% per annum."
+    },
+    {
+      "id": "Q120",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following products is described as a 'discounting instrument' with upfront interest?",
+      "opts": [
+        "Overdraft.",
+        "Term loan.",
+        "Banker's Acceptance.",
+        "Mortgage loan."
+      ],
+      "ans": "C",
+      "exp": "Banker's Acceptances are discounting instruments with upfront interest deducted. Overdrafts (A) and term loans (B) accrue interest; mortgages (D) also accrue."
+    },
+    {
+      "id": "Q121",
+      "module": 4,
+      "type": "mcq",
+      "q": "A customer who requires a facility to finance the construction of a residential property over 20 years would typically use:",
+      "opts": [
+        "A time loan.",
+        "An overdraft.",
+        "A mortgage loan.",
+        "A Banker's Acceptance."
+      ],
+      "ans": "C",
+      "exp": "A mortgage loan is for residential property acquisition, typically with a 20-year or more tenor. Time loans (A) are under 12 months; overdrafts (B) are short-term; BAs (D) are 180 days."
+    },
+    {
+      "id": "Q122",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the maximum tenor for a Banker's Acceptance?",
+      "opts": [
+        "30 days.",
+        "90 days.",
+        "180 days.",
+        "270 days."
+      ],
+      "ans": "C",
+      "exp": "Banker's Acceptances have a regulated maximum tenor of 180 days and are not renewable. 270 days is for Commercial Paper; 90/30 days are shorter."
+    },
+    {
+      "id": "Q123",
+      "module": 4,
+      "type": "mcq",
+      "q": "In credit structuring, why is 'equity contribution' considered important?",
+      "opts": [
+        "It reduces the bank's interest income.",
+        "It ensures the borrower has a stake in the project and increases commitment.",
+        "It is a regulatory requirement for all loans.",
+        "It eliminates the need for collateral."
+      ],
+      "ans": "B",
+      "exp": "Equity contribution reinforces the borrower's commitment to the business and is often required for transaction-tied financing. It does not reduce income (A); it is not required for all loans (C); it does not eliminate the need for collateral (D)."
+    },
+    {
+      "id": "Q124",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is data mining in the context of retail banking?",
+      "opts": [
+        "The physical extraction of data from customer files.",
+        "The use of technology to explore, analyze, and visualize large databases to discover patterns and correlations.",
+        "The process of manually reviewing loan applications.",
+        "The creation of customer profiles based on gut feeling."
+      ],
+      "ans": "B",
+      "exp": "Data mining is a sophisticated data search capability using statistical algorithms to discover patterns and correlations in large databases. It allows banks to predict loan performance and make informed decisions."
+    },
+    {
+      "id": "Q125",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a key application of data mining in retail banking?",
+      "opts": [
+        "Manual credit scoring.",
+        "Cross-selling by predicting what customers are likely to buy.",
+        "Determining collateral values.",
+        "Conducting site visits."
+      ],
+      "ans": "B",
+      "exp": "Data mining helps cross-sell retail banking products by predicting customer preferences. Manual scoring (A) is not data mining; collateral (C) and site visits (D) are not applications."
+    },
+    {
+      "id": "Q126",
+      "module": 5,
+      "type": "mcq",
+      "q": "Data mining creates a decision tree model primarily to:",
+      "opts": [
+        "Increase the bank's marketing budget.",
+        "Predict the likelihood of loans being performing or non-performing.",
+        "Replace all human credit analysis.",
+        "Determine the interest rate on deposits."
+      ],
+      "ans": "B",
+      "exp": "The decision tree model predicts loan performance, reducing non-performing loan provisions. It is a tool to assist, not replace, human judgment."
+    },
+    {
+      "id": "Q127",
+      "module": 5,
+      "type": "mcq",
+      "q": "Net worth is calculated as:",
+      "opts": [
+        "Total assets plus total liabilities.",
+        "Total assets minus total liabilities.",
+        "Total liabilities minus total assets.",
+        "Total assets divided by total liabilities."
+      ],
+      "ans": "B",
+      "exp": "Net worth = Assets - Liabilities. It represents the owner's equity at a given date, not available cash."
+    },
+    {
+      "id": "Q128",
+      "module": 5,
+      "type": "mcq",
+      "q": "A personal financial statement is essentially:",
+      "opts": [
+        "A personal income statement showing cash flows.",
+        "A personal balance sheet showing assets, liabilities, and net worth.",
+        "A summary of bank account transactions.",
+        "A list of monthly expenses."
+      ],
+      "ans": "B",
+      "exp": "A Personal Financial Statement (PFS) is a personal balance sheet. It shows what one owns (assets) and what one owes (liabilities), with net worth as the difference."
+    },
+    {
+      "id": "Q129",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following increases an individual's net worth?",
+      "opts": [
+        "Increasing spending on luxury goods.",
+        "Reducing the value of investments.",
+        "Increasing savings and income.",
+        "Taking on more debt."
+      ],
+      "ans": "C",
+      "exp": "Net worth increases by increasing savings/income, reducing spending, or increasing investment values. Luxury spending (A) and debt (D) reduce net worth; reducing investments (B) also decreases it."
+    },
+    {
+      "id": "Q130",
+      "module": 5,
+      "type": "mcq",
+      "q": "The 'months living expenses covered ratio' measures:",
+      "opts": [
+        "How much debt an individual can afford.",
+        "How many months of living expenses can be covered with current monetary assets.",
+        "The ratio of debt to income.",
+        "The percentage of income saved."
+      ],
+      "ans": "B",
+      "exp": "This ratio tells how many months of living expenses can be covered with present monetary assets. It is a liquidity measure, not debt (A) or savings (D)."
+    },
+    {
+      "id": "Q131",
+      "module": 5,
+      "type": "mcq",
+      "q": "A current ratio of less than 1.0 for an individual suggests:",
+      "opts": [
+        "Sufficient liquid assets to cover short-term debts.",
+        "Inadequate liquid assets to cover expenses currently due.",
+        "Excess savings.",
+        "High net worth."
+      ],
+      "ans": "B",
+      "exp": "A current ratio below 1.0 indicates insufficient liquid assets to cover current liabilities. Ratio above 2.0 is recommended."
+    },
+    {
+      "id": "Q132",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the recommended 'months living expenses covered ratio' rule of thumb?",
+      "opts": [
+        "1 to 2 months.",
+        "3 to 6 months.",
+        "12 to 18 months.",
+        "24 months or more."
+      ],
+      "ans": "B",
+      "exp": "The rule of thumb for the months living expenses ratio is 3 to 6 months of expenses. This ensures sufficient buffer for emergencies."
+    },
+    {
+      "id": "Q133",
+      "module": 5,
+      "type": "mcq",
+      "q": "The 'savings ratio' is defined as:",
+      "opts": [
+        "Monthly debt payments divided by net income.",
+        "Amount saved per month divided by take-home pay.",
+        "Total liabilities divided by net worth.",
+        "Net income divided by total assets."
+      ],
+      "ans": "B",
+      "exp": "Savings ratio = Amount saved per month / Take-home pay. It tells the proportion of after-tax income saved."
+    },
+    {
+      "id": "Q134",
+      "module": 5,
+      "type": "mcq",
+      "q": "In a credit scoring system for retail lending, which characteristic typically receives the highest weight?",
+      "opts": [
+        "Annual gross income.",
+        "Residence stability.",
+        "Bank relationship.",
+        "Credit history."
+      ],
+      "ans": "A",
+      "exp": "Annual gross income typically has the highest weight (up to 60 points in the example). The weights vary by model, but income is a key factor."
+    },
+    {
+      "id": "Q135",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the minimum score for automatic credit approval in the example credit scoring system?",
+      "opts": [
+        "150.",
+        "200.",
+        "250.",
+        "300."
+      ],
+      "ans": "B",
+      "exp": "In the example, the minimum score for automatic credit approval is 200. Scores 150-195 are for judgmental evaluation; below 150 is automatic denial."
+    },
+    {
+      "id": "Q136",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a sign of possible 'window dressing' in corporate financial statements?",
+      "opts": [
+        "Consistent accounting policies year-over-year.",
+        "Unexplained changes in accounting policy.",
+        "Regular external audits by reputable firms.",
+        "Clear notes to the financial statements."
+      ],
+      "ans": "B",
+      "exp": "Unexplained changes in accounting policy can indicate window dressing. Consistent policies (A), reputable audits (C), and clear notes (D) are positive signs."
+    },
+    {
+      "id": "Q137",
+      "module": 5,
+      "type": "mcq",
+      "q": "When analyzing corporate financial statements, a qualified external auditor's opinion indicates:",
+      "opts": [
+        "The financial statements are perfectly accurate.",
+        "The auditor has reservations about the financial statements.",
+        "The company has high profitability.",
+        "The company is being audited for the first time."
+      ],
+      "ans": "B",
+      "exp": "A qualified opinion means the auditor has reservations or exceptions. Unqualified (clean) opinion indicates accuracy."
+    },
+    {
+      "id": "Q138",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary purpose of ratio analysis in credit assessment?",
+      "opts": [
+        "To determine the company's market share.",
+        "To focus attention on areas important for credit decisions.",
+        "To calculate the company's tax liability.",
+        "To predict the stock price."
+      ],
+      "ans": "B",
+      "exp": "Ratio analysis focuses attention on areas important for making an informed credit decision — profitability, liquidity, leverage, and activity."
+    },
+    {
+      "id": "Q139",
+      "module": 5,
+      "type": "mcq",
+      "q": "The current ratio is calculated as:",
+      "opts": [
+        "Current assets / Current liabilities.",
+        "Current liabilities / Current assets.",
+        "(Current assets - Inventory) / Current liabilities.",
+        "Cash / Current liabilities."
+      ],
+      "ans": "A",
+      "exp": "Current ratio = Current Assets / Current Liabilities. B is the inverse; C is the quick ratio; D is the cash ratio."
+    },
+    {
+      "id": "Q140",
+      "module": 5,
+      "type": "mcq",
+      "q": "A current ratio of 3.0 is generally viewed as:",
+      "opts": [
+        "Too low and risky.",
+        "Ideal and safe.",
+        "Too high, possibly indicating poor management of current assets.",
+        "Irrelevant to credit analysis."
+      ],
+      "ans": "C",
+      "exp": "A current ratio above 2.0 may indicate poor management of current assets (too much tied in inventory/ receivables). 1.5 to 2.0 is typical."
+    },
+    {
+      "id": "Q141",
+      "module": 5,
+      "type": "mcq",
+      "q": "The quick ratio (acid test) differs from the current ratio by:",
+      "opts": [
+        "Including inventory.",
+        "Excluding inventory.",
+        "Including long-term assets.",
+        "Excluding current liabilities."
+      ],
+      "ans": "B",
+      "exp": "Quick ratio = (Current Assets - Inventory) / Current Liabilities. It measures ability to pay short-term liabilities without selling inventory."
+    },
+    {
+      "id": "Q142",
+      "module": 5,
+      "type": "mcq",
+      "q": "A company's gross profit margin increased from 30% to 35%. This is likely due to:",
+      "opts": [
+        "Higher operating expenses.",
+        "Lower cost of goods sold relative to sales.",
+        "Higher interest costs.",
+        "Lower sales volume."
+      ],
+      "ans": "B",
+      "exp": "Gross profit margin = Gross Profit / Sales. An increase indicates lower COGS or higher selling prices, not operating expenses (A) or interest (C) which affect net profit."
+    },
+    {
+      "id": "Q143",
+      "module": 5,
+      "type": "mcq",
+      "q": "Return on Assets (ROA) measures:",
+      "opts": [
+        "Profit per unit of sales.",
+        "Profit earned on every N1 of assets.",
+        "Profit available to shareholders.",
+        "The ability to pay short-term debts."
+      ],
+      "ans": "B",
+      "exp": "ROA = Profit After Tax / Total Assets. It shows return on every N1 of assets. A is net profit margin; C is ROE; D is liquidity."
+    },
+    {
+      "id": "Q144",
+      "module": 5,
+      "type": "mcq",
+      "q": "A high debt-to-equity ratio indicates:",
+      "opts": [
+        "Low financial leverage.",
+        "High reliance on borrowed funds.",
+        "Strong equity position.",
+        "Low credit risk."
+      ],
+      "ans": "B",
+      "exp": "Debt-to-equity = Total Debt / Networth. A high ratio means more debt relative to equity, indicating high leverage and higher risk."
+    },
+    {
+      "id": "Q145",
+      "module": 5,
+      "type": "mcq",
+      "q": "The interest coverage ratio is calculated as:",
+      "opts": [
+        "EBIT / Interest expense.",
+        "EBITDA / Interest expense.",
+        "Net profit / Interest expense.",
+        "EBIT / (Interest + Principal)."
+      ],
+      "ans": "A",
+      "exp": "Interest coverage = EBIT / Interest expense. It measures how many times profits can cover interest. B is sometimes used but the material uses EBIT; D is burden coverage."
+    },
+    {
+      "id": "Q146",
+      "module": 5,
+      "type": "mcq",
+      "q": "Debtor days on hand (collection period) is computed as:",
+      "opts": [
+        "Average Debtors × 365 / Turnover.",
+        "Average Inventory × 365 / Cost of Sales.",
+        "Average Creditors × 365 / Cost of Sales.",
+        "Total Debtors / Total Assets."
+      ],
+      "ans": "A",
+      "exp": "Debtor days = Average Debtors × 365 / Turnover (revenue). B is inventory days; C is creditor days."
+    },
+    {
+      "id": "Q147",
+      "module": 5,
+      "type": "mcq",
+      "q": "Inventory days on hand is calculated using:",
+      "opts": [
+        "Turnover.",
+        "Cost of Sales.",
+        "Total Assets.",
+        "Net Profit."
+      ],
+      "ans": "B",
+      "exp": "Inventory days = Average Inventory × 365 / Cost of Sales. It measures how long inventory is held before sale."
+    },
+    {
+      "id": "Q148",
+      "module": 5,
+      "type": "mcq",
+      "q": "The cash conversion cycle (financing need) is computed as:",
+      "opts": [
+        "Debtor days + Inventory days.",
+        "Debtor days + Inventory days - Creditor days.",
+        "Inventory days + Creditor days - Debtor days.",
+        "Debtor days - Inventory days - Creditor days."
+      ],
+      "ans": "B",
+      "exp": "CCC = DDOH + InvDOH - CDOH. It measures the number of days working capital is financed by non-spontaneous sources."
+    },
+    {
+      "id": "Q149",
+      "module": 5,
+      "type": "mcq",
+      "q": "A longer cash conversion cycle typically implies:",
+      "opts": [
+        "Lower financing need.",
+        "Higher financing need.",
+        "Better profitability.",
+        "Lower risk."
+      ],
+      "ans": "B",
+      "exp": "A longer CCC means more days between paying suppliers and collecting from customers, so higher working capital financing need."
+    },
+    {
+      "id": "Q150",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which ratio would a lender use to determine if a borrower can pay debt charges from operating cash flow?",
+      "opts": [
+        "Current ratio.",
+        "Debt-to-equity ratio.",
+        "Cash flow to debt service coverage.",
+        "Gross profit margin."
+      ],
+      "ans": "C",
+      "exp": "Cash flow to debt service coverage = Operating Cashflow / (Interest + Principal + Lease payments). It measures cash from operations ability to service debt."
+    },
+    {
+      "id": "Q151",
+      "module": 5,
+      "type": "mcq",
+      "q": "An analyst notices that a company's gross profit margin is high but net profit margin is low. This suggests:",
+      "opts": [
+        "The company has high direct costs.",
+        "The company has high indirect costs and expenses.",
+        "The company is in a highly competitive industry.",
+        "The company has low sales volume."
+      ],
+      "ans": "B",
+      "exp": "High gross profit means good direct cost control, but low net profit suggests high indirect costs (operating expenses, interest, taxes)."
+    },
+    {
+      "id": "Q152",
+      "module": 5,
+      "type": "mcq",
+      "q": "In financial analysis, a company with a debt-to-equity ratio of 2:1 means:",
+      "opts": [
+        "There is N2 of debt for every N1 of equity.",
+        "There is N2 of equity for every N1 of debt.",
+        "The company is bankruptcy-proof.",
+        "The company has no debt."
+      ],
+      "ans": "A",
+      "exp": "Debt-to-equity = Debt/Equity, so 2:1 means N2 debt per N1 equity. B is the inverse; C and D are false."
+    },
+    {
+      "id": "Q153",
+      "module": 5,
+      "type": "mcq",
+      "q": "A company's current assets are N10 million and current liabilities are N8 million. The current ratio is:",
+      "opts": [
+        "0.8.",
+        "1.25.",
+        "1.8.",
+        "2.0."
+      ],
+      "ans": "B",
+      "exp": "Current ratio = 10/8 = 1.25. A is inverse; C and D are incorrect."
+    },
+    {
+      "id": "Q154",
+      "module": 5,
+      "type": "mcq",
+      "q": "If a company has current assets of N15 million, inventory of N5 million, and current liabilities of N10 million, the quick ratio is:",
+      "opts": [
+        "0.5.",
+        "1.0.",
+        "1.5.",
+        "2.0."
+      ],
+      "ans": "B",
+      "exp": "Quick ratio = (Current Assets - Inventory) / Current Liabilities = (15-5)/10 = 1.0."
+    },
+    {
+      "id": "Q155",
+      "module": 5,
+      "type": "mcq",
+      "q": "A company has EBIT of N2 million and interest expense of N500,000. The interest coverage ratio is:",
+      "opts": [
+        "2.0.",
+        "4.0.",
+        "2.5.",
+        "0.25."
+      ],
+      "ans": "B",
+      "exp": "Interest coverage = EBIT/Interest = 2,000,000/500,000 = 4.0."
+    },
+    {
+      "id": "Q156",
+      "module": 5,
+      "type": "mcq",
+      "q": "A company's revenue is N100 million, cost of sales is N70 million, so gross profit margin is:",
+      "opts": [
+        "30%.",
+        "70%.",
+        "20%.",
+        "50%."
+      ],
+      "ans": "A",
+      "exp": "Gross profit = 100-70=30; GPM = 30/100 = 30%. B is cost margin; others are incorrect."
+    },
+    {
+      "id": "Q157",
+      "module": 5,
+      "type": "mcq",
+      "q": "A company has total assets of N50 million and profit after tax of N5 million. ROA is:",
+      "opts": [
+        "5%.",
+        "10%.",
+        "15%.",
+        "20%."
+      ],
+      "ans": "B",
+      "exp": "ROA = 5/50 = 10%."
+    },
+    {
+      "id": "Q158",
+      "module": 5,
+      "type": "mcq",
+      "q": "If a company's debtor days are 60, inventory days 90, and creditor days 45, the cash conversion cycle is:",
+      "opts": [
+        "105 days.",
+        "60 days.",
+        "15 days.",
+        "195 days."
+      ],
+      "ans": "A",
+      "exp": "CCC = 60 + 90 - 45 = 105 days."
+    },
+    {
+      "id": "Q159",
+      "module": 5,
+      "type": "mcq",
+      "q": "A company's average debtors are N8 million and annual turnover is N80 million. The debtor days on hand is approximately:",
+      "opts": [
+        "36.5 days.",
+        "73 days.",
+        "8 days.",
+        "100 days."
+      ],
+      "ans": "A",
+      "exp": "Debtor days = 8/80 × 365 = 36.5 days."
+    },
+    {
+      "id": "Q160",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is not a category of accounting ratios?",
+      "opts": [
+        "Liquidity ratios.",
+        "Profitability ratios.",
+        "Market value ratios.",
+        "Activity ratios."
+      ],
+      "ans": "C",
+      "exp": "The major categories are liquidity, profitability, leverage, and activity (turnover) ratios. Market value ratios are not typically used in credit analysis."
+    },
+    {
+      "id": "Q161",
+      "module": 5,
+      "type": "mcq",
+      "q": "When interpreting financial statements for lending, the past performance is considered:",
+      "opts": [
+        "A guarantee of future results.",
+        "A prologue to the future.",
+        "Irrelevant to the loan decision.",
+        "The only factor to consider."
+      ],
+      "ans": "B",
+      "exp": "The past is a prologue to the future — it informs but does not guarantee. Future cash flows are the primary source of repayment."
+    },
+    {
+      "id": "Q162",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the primary limitation of using historical financial statements for lending decisions?",
+      "opts": [
+        "They are always inaccurate.",
+        "They reflect past transactions, while loan repayment depends on future cash flows.",
+        "They are too detailed.",
+        "They don't include depreciation."
+      ],
+      "ans": "B",
+      "exp": "Financial statements record past transactions, but loan repayment comes from future operations. Analysts must project forward."
+    },
+    {
+      "id": "Q163",
+      "module": 5,
+      "type": "mcq",
+      "q": "In personal cash flow analysis, the 'debt payments-to-income ratio' is used to determine:",
+      "opts": [
+        "How much debt an individual can handle.",
+        "The individual's net worth.",
+        "The individual's savings rate.",
+        "The individual's liquidity."
+      ],
+      "ans": "A",
+      "exp": "This ratio measures monthly debt payments divided by net monthly income (excluding house payment) to assess capacity to handle debt."
+    },
+    {
+      "id": "Q164",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a source of information for preparing a Personal Financial Statement?",
+      "opts": [
+        "Social media profiles.",
+        "Tax records and financial services records.",
+        "Credit card advertisements.",
+        "Online news articles."
+      ],
+      "ans": "B",
+      "exp": "PFS is prepared from personal/employment records, money management and bank records, tax records, financial services records, credit records, and consumer purchase records."
+    },
+    {
+      "id": "Q165",
+      "module": 5,
+      "type": "mcq",
+      "q": "What does a negative net worth indicate?",
+      "opts": [
+        "The individual has no debt.",
+        "Liabilities exceed assets.",
+        "Assets exceed liabilities.",
+        "The individual has high income."
+      ],
+      "ans": "B",
+      "exp": "Negative net worth means liabilities are greater than assets. A is opposite; C is positive; D is unrelated."
+    },
+    {
+      "id": "Q166",
+      "module": 5,
+      "type": "mcq",
+      "q": "Data mining in banking is particularly valuable for:",
+      "opts": [
+        "Determining collateral valuations.",
+        "Analyzing customer digital trails to support product development.",
+        "Manual loan underwriting.",
+        "Physical security of bank branches."
+      ],
+      "ans": "B",
+      "exp": "Data mining maps digital trails to understand customer behavior, supporting product development and channel selection. It is not for collateral (A) or physical security (D)."
+    },
+    {
+      "id": "Q167",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following areas in banking benefits from data mining?",
+      "opts": [
+        "Customer experience management.",
+        "Cash handling.",
+        "Branch construction.",
+        "Staff recruitment."
+      ],
+      "ans": "A",
+      "exp": "Data mining benefits customer experience management, market analysis, channel performance, and credit risk management. Cash handling (B) and branch construction (C) are not related; staff recruitment (D) may use analytics but not typical."
+    },
+    {
+      "id": "Q168",
+      "module": 5,
+      "type": "mcq",
+      "q": "In retail credit scoring, a score of 175 would typically result in:",
+      "opts": [
+        "Automatic approval.",
+        "Automatic denial.",
+        "Judgmental evaluation.",
+        "Referral to senior management."
+      ],
+      "ans": "C",
+      "exp": "Scores 150-195 are for judgmental evaluation (not automatic). Automatic approval is 200+, denial below 150."
+    },
+    {
+      "id": "Q169",
+      "module": 5,
+      "type": "mcq",
+      "q": "Why should a lender check for inexplicable changes in the external auditor?",
+      "opts": [
+        "It indicates the company is profitable.",
+        "It may signal financial reporting irregularities or disputes with the auditor.",
+        "It is a requirement of the Central Bank.",
+        "It shows the auditor is independent."
+      ],
+      "ans": "B",
+      "exp": "A change of auditor without explanation can signal financial problems or disagreements. It is a red flag, not an indicator of profitability."
+    },
+    {
+      "id": "Q170",
+      "module": 5,
+      "type": "mcq",
+      "q": "An unqualified auditor's opinion on a company's financial statements means:",
+      "opts": [
+        "The auditor found significant errors.",
+        "The financial statements are presented fairly in all material respects.",
+        "The company is financially healthy.",
+        "The auditor refused to express an opinion."
+      ],
+      "ans": "B",
+      "exp": "An unqualified (clean) opinion means the financial statements are fairly presented. It does not guarantee health (C) nor indicate errors (A)."
+    },
+    {
+      "id": "Q171",
+      "module": 5,
+      "type": "mcq",
+      "q": "In ratio analysis, what does a high inventory turnover indicate?",
+      "opts": [
+        "Slow-moving inventory.",
+        "Efficient inventory management and strong sales.",
+        "High inventory levels.",
+        "Low demand."
+      ],
+      "ans": "B",
+      "exp": "High inventory turnover means inventory is sold quickly, indicating efficient management and strong sales. Slow-moving (A) would be low turnover."
+    },
+    {
+      "id": "Q172",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following is a profitability ratio?",
+      "opts": [
+        "Current ratio.",
+        "Debt-to-equity ratio.",
+        "Return on Equity (ROE).",
+        "Inventory turnover."
+      ],
+      "ans": "C",
+      "exp": "ROE is a profitability ratio. A is liquidity; B is leverage; D is activity."
+    },
+    {
+      "id": "Q173",
+      "module": 5,
+      "type": "mcq",
+      "q": "A company has a net profit margin of 5% and a total asset turnover of 2.0. Its ROA is:",
+      "opts": [
+        "2.5%.",
+        "5%.",
+        "10%.",
+        "15%."
+      ],
+      "ans": "C",
+      "exp": "ROA = Net Profit Margin × Asset Turnover = 5% × 2.0 = 10%."
+    },
+    {
+      "id": "Q174",
+      "module": 5,
+      "type": "mcq",
+      "q": "The burden coverage ratio (fixed charge coverage) is calculated as:",
+      "opts": [
+        "EBIT / Interest.",
+        "EBIT / (Interest + Principal).",
+        "Operating Cashflow / (Interest + Principal + Lease payments).",
+        "Net Profit / (Interest + Principal)."
+      ],
+      "ans": "C",
+      "exp": "Burden coverage (cash flow to debt service) = Operating Cashflow / (Interest + Principal + Lease payments). B uses EBIT, not cashflow."
+    },
+    {
+      "id": "Q175",
+      "module": 5,
+      "type": "mcq",
+      "q": "In the example credit scoring system, an applicant with annual gross income of N5 million, monthly debt payment of 25% of income, and DDA & Savings relationship would score:",
+      "opts": [
+        "30 + 20 + 50 = 100.",
+        "45 + 35 + 50 = 130.",
+        "45 + 20 + 50 = 115.",
+        "30 + 35 + 30 = 95."
+      ],
+      "ans": "A",
+      "exp": "Income N5M = 30 (3-6M bracket); monthly debt 25% = 20 (20-30% bracket); DDA+Savings = 50. Total 100."
+    },
+    {
+      "id": "Q176",
+      "module": 5,
+      "type": "mcq",
+      "q": "What does the 'operating cycle' of a business represent in financial analysis?",
+      "opts": [
+        "The time from ordering inventory to collecting cash from sales.",
+        "The time from the start of production to the end of the year.",
+        "The period between interest payments.",
+        "The time a loan is outstanding."
+      ],
+      "ans": "A",
+      "exp": "Operating cycle = DDOH + InvDOH, representing the time from ordering inventory to collecting cash from customers."
+    },
+    {
+      "id": "Q177",
+      "module": 5,
+      "type": "mcq",
+      "q": "A company's creditor days on hand has increased significantly. This may indicate:",
+      "opts": [
+        "The company is paying suppliers faster.",
+        "The company is taking longer to pay suppliers, possibly due to cash flow problems.",
+        "The company has negotiated better discounts.",
+        "The company's sales have increased."
+      ],
+      "ans": "B",
+      "exp": "Increased creditor days means slower payment to suppliers, which can indicate cash flow pressure. A is opposite; C is not necessarily true; D is unrelated."
+    },
+    {
+      "id": "Q178",
+      "module": 5,
+      "type": "mcq",
+      "q": "In lending, the 'free cash flow' of a business is important because:",
+      "opts": [
+        "It represents the cash available for debt service after capital expenditures.",
+        "It shows the company's profitability.",
+        "It is the same as operating profit.",
+        "It includes non-cash items."
+      ],
+      "ans": "A",
+      "exp": "Free cash flow is cash from operations less capital expenditures; it is available for debt service, dividends, and growth. It is not profitability (B) nor same as operating profit (C), and it excludes non-cash items."
+    },
+    {
+      "id": "Q179",
+      "module": 6,
+      "type": "mcq",
+      "q": "According to the Basel III framework, credit risk is defined as:",
+      "opts": [
+        "The risk of loss due to changes in market interest rates.",
+        "The potential that a bank borrower or counterparty will fail to meet its obligations in accordance with agreed terms.",
+        "The risk of operational failure in a bank's systems.",
+        "The chance that a bank's reputation will be damaged."
+      ],
+      "ans": "B",
+      "exp": "Basel III defines credit risk as the potential that a bank borrower or counterparty will fail to meet its obligations in accordance with agreed terms. Market risk (A), operational risk (C), and reputational risk (D) are separate risk categories."
+    },
+    {
+      "id": "Q180",
+      "module": 6,
+      "type": "mcq",
+      "q": "Credit risk is also referred to as:",
+      "opts": [
+        "Market risk and liquidity risk.",
+        "Default risk, performance risk, or counterparty risk.",
+        "Operational risk and system risk.",
+        "Interest rate risk and currency risk."
+      ],
+      "ans": "B",
+      "exp": "Credit risk is also called default risk, performance risk, or counterparty risk. These all refer to the impact of credit effects on a firm's transactions."
+    },
+    {
+      "id": "Q181",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is NOT a characteristic that defines credit risk?",
+      "opts": [
+        "Exposure to a party that may default.",
+        "The probability of default.",
+        "The recovery rate in the event of default.",
+        "The market volatility of the borrower's stock."
+      ],
+      "ans": "D",
+      "exp": "The three characteristics defining credit risk are exposure, default probability, and recovery rate. Market volatility (D) relates to market risk, not credit risk."
+    },
+    {
+      "id": "Q182",
+      "module": 6,
+      "type": "mcq",
+      "q": "The formula for credit risk is expressed as:",
+      "opts": [
+        "Exposure × Probability of default × (1 - Recovery rate).",
+        "Exposure × Probability of default × Recovery rate.",
+        "Probability of default × Recovery rate / Exposure.",
+        "(1 - Recovery rate) × Exposure / Probability of default."
+      ],
+      "ans": "A",
+      "exp": "Credit risk = Exposure × Probability of default × (1 - Recovery rate). The larger the exposure and default probability, the greater the risk. The higher the recovery rate, the lower the risk."
+    },
+    {
+      "id": "Q183",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a borrower-specific factor that causes credit risk?",
+      "opts": [
+        "Economic downturns.",
+        "Interest rate changes.",
+        "Weak financial condition.",
+        "Industry downturns."
+      ],
+      "ans": "C",
+      "exp": "Borrower-specific factors include weak financial condition, lack of credit history, and changes in personal circumstances. A, B, and D are economic/external factors."
+    },
+    {
+      "id": "Q184",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the operating cycle of a borrower, supply risk refers to:",
+      "opts": [
+        "The risk that customers will not buy the products.",
+        "The uncertainty in accessing inputs/inventory for production.",
+        "The risk that production will not be completed.",
+        "The risk of not converting receivables to cash."
+      ],
+      "ans": "B",
+      "exp": "Supply risk is the uncertainty in accessing supply of inputs and inventory for production. Demand risk (A) is about customers; production risk (C) is about completing production; collection risk (D) is about receivables."
+    },
+    {
+      "id": "Q185",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which factor should be considered when assessing supply risk?",
+      "opts": [
+        "The number of major suppliers and factors affecting their prices.",
+        "The company's competitive advantage in pricing.",
+        "The quality of the product and market penetration.",
+        "The customers' credibility and credit terms."
+      ],
+      "ans": "A",
+      "exp": "Supply risk assessment considers number of suppliers, price factors, substitute availability, regulatory policies, and delivery capabilities. B relates to demand risk; C to marketing risk; D to collection risk."
+    },
+    {
+      "id": "Q186",
+      "module": 6,
+      "type": "mcq",
+      "q": "Demand risk encompasses:",
+      "opts": [
+        "The uncertainty in accessing raw materials.",
+        "The risk that the company may not generate enough patronage for its products.",
+        "The risk of not completing production.",
+        "The risk of not collecting receivables."
+      ],
+      "ans": "B",
+      "exp": "Demand risk is the risk that the company may not be able to generate enough patronage for its products/services. A is supply risk; C is production risk; D is collection risk."
+    },
+    {
+      "id": "Q187",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following factors affects demand risk?",
+      "opts": [
+        "Labor relations.",
+        "The condition of the company's plant and equipment.",
+        "The intensity of rivalry and selling strategies.",
+        "Customers' credibility."
+      ],
+      "ans": "C",
+      "exp": "Demand risk factors include competitive advantage, intensity of rivalry, selling strategies, mode of payment, government policies, and economic conditions. A and B relate to production risk; D relates to collection risk."
+    },
+    {
+      "id": "Q188",
+      "module": 6,
+      "type": "mcq",
+      "q": "Production risk is the uncertainty associated with:",
+      "opts": [
+        "Selling the company's products.",
+        "Completing production of finished goods/services.",
+        "Accessing raw materials.",
+        "Generating customer demand."
+      ],
+      "ans": "B",
+      "exp": "Production risk is the uncertainty of not being able to complete production due to labor relations, plant/equipment adequacy, or regulatory policies. A is marketing risk; C is supply risk; D is demand risk."
+    },
+    {
+      "id": "Q189",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a factor that contributes to marketing risk?",
+      "opts": [
+        "The number of suppliers.",
+        "The quality of product and target market.",
+        "Labor relations.",
+        "Customers' credibility."
+      ],
+      "ans": "B",
+      "exp": "Marketing risk involves the risk that the company may not be able to sell its products. Factors include product quality, market penetration, target market, pricing, and marketing incentives. A is supply risk; C is production risk; D is collection risk."
+    },
+    {
+      "id": "Q190",
+      "module": 6,
+      "type": "mcq",
+      "q": "Collection risk is primarily concerned with:",
+      "opts": [
+        "The risk of not selling products.",
+        "The risk that accounts receivables will not be converted to cash.",
+        "The risk of not accessing inputs.",
+        "The risk of not completing production."
+      ],
+      "ans": "B",
+      "exp": "Collection risk is the risk that accounts receivables will not be converted to cash. Factors include customers' credibility and credit terms and management."
+    },
+    {
+      "id": "Q191",
+      "module": 6,
+      "type": "mcq",
+      "q": "In credit risk management, the first step in the process is:",
+      "opts": [
+        "Measuring the potential loss.",
+        "Controlling credit risk exposure.",
+        "Identifying credit risk by carefully assessing all potential borrowers.",
+        "Monitoring credit risk exposures."
+      ],
+      "ans": "C",
+      "exp": "The credit risk management process begins with identification — carefully assessing all potential borrowers and counterparties. Measurement (A), control (B), and monitoring (D) follow."
+    },
+    {
+      "id": "Q192",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which credit risk management method involves adjusting interest rates based on the perceived credit risk of borrowers?",
+      "opts": [
+        "Collateralization.",
+        "Credit scoring models.",
+        "Risk-based pricing.",
+        "Portfolio diversification."
+      ],
+      "ans": "C",
+      "exp": "Risk-based pricing adjusts rates, fees, and terms based on credit risk, charging higher rates to higher-risk borrowers. Collateralization (A) is securing with assets; scoring (B) is assessment; diversification (D) is spreading risk."
+    },
+    {
+      "id": "Q193",
+      "module": 6,
+      "type": "mcq",
+      "q": "The concept of 'expected loss' in credit risk management is calculated as:",
+      "opts": [
+        "Exposure at Default (EAD) × Loss Given Default (LGD).",
+        "Probability of Default (PD) × Loss Given Default (LGD) × Exposure at Default (EAD).",
+        "Probability of Default (PD) × Exposure at Default (EAD).",
+        "Loss Given Default (LGD) × Recovery rate."
+      ],
+      "ans": "B",
+      "exp": "Expected Loss (EL) = PD × LGD × EAD. It represents the average loss a lender anticipates from a loan portfolio over a specific period."
+    },
+    {
+      "id": "Q194",
+      "module": 6,
+      "type": "mcq",
+      "q": "A loan has a Probability of Default of 5%, Loss Given Default of 60%, and Exposure at Default of N10 million. The Expected Loss is:",
+      "opts": [
+        "N300,000.",
+        "N600,000.",
+        "N1,500,000.",
+        "N3,000,000."
+      ],
+      "ans": "A",
+      "exp": "EL = 5% × 60% × N10,000,000 = 0.05 × 0.60 × 10,000,000 = N300,000."
+    },
+    {
+      "id": "Q195",
+      "module": 6,
+      "type": "mcq",
+      "q": "Why do regulators require banks to hold capital buffers for unexpected losses?",
+      "opts": [
+        "Expected losses are always zero.",
+        "Unexpected losses can be significant, especially during economic downturns.",
+        "Banks prefer to hold excess capital.",
+        "It is a voluntary recommendation."
+      ],
+      "ans": "B",
+      "exp": "Unexpected losses can be significant during economic downturns when defaults rise. Regulators require capital buffers to absorb these unexpected losses."
+    },
+    {
+      "id": "Q196",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a risk specific to inventory financing?",
+      "opts": [
+        "The third-party debtor may be insolvent.",
+        "The LPO may not be valid.",
+        "Stocks may become obsolete or the market price may fall below book value.",
+        "The borrower may exceed the overdraft limit."
+      ],
+      "ans": "C",
+      "exp": "Inventory financing risks include obsolescence, price decline, and quality issues. A is receivable financing risk; B is LPO risk; D is overdraft risk."
+    },
+    {
+      "id": "Q197",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which mitigation measure is appropriate for the risk of financing spurious receivables?",
+      "opts": [
+        "Check product expiry dates.",
+        "Confirm the genuineness of accounts receivables and analyze debtor creditworthiness.",
+        "Establish validity of the LPO.",
+        "Monitor account activity and cash flow patterns."
+      ],
+      "ans": "B",
+      "exp": "For receivable financing, the bank should confirm the genuineness of receivables and analyze debtor creditworthiness. A is for inventory; C is for LPO; D is for overdraft."
+    },
+    {
+      "id": "Q198",
+      "module": 6,
+      "type": "mcq",
+      "q": "An LPO financing facility should verify:",
+      "opts": [
+        "That the borrower has sufficient collateral.",
+        "The validity and genuineness of the LPO, and the competence of the borrower to execute the contract.",
+        "That the borrower has no other loans.",
+        "The borrower's personal net worth."
+      ],
+      "ans": "B",
+      "exp": "LPO financing requires establishing validity and genuineness of the LPO, borrower competence, issuer financial status, and goods availability. Collateral (A) is secondary; other loans (C) and personal net worth (D) are not the primary focus."
+    },
+    {
+      "id": "Q199",
+      "module": 6,
+      "type": "mcq",
+      "q": "\"Hardcore borrowing\" in an overdraft facility refers to:",
+      "opts": [
+        "The borrower repaying the overdraft in full each month.",
+        "The borrower maintaining a permanent outstanding balance without swinging to credit.",
+        "The borrower using the facility for the first time.",
+        "The borrower requesting a reduction in the limit."
+      ],
+      "ans": "B",
+      "exp": "Hardcore borrowing occurs when a borrower maintains a permanent balance without swinging to credit, indicating the overdraft has become structural rather than temporary."
+    },
+    {
+      "id": "Q200",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a mitigation for the risk of financing inventory to which the borrower has no legal title?",
+      "opts": [
+        "Review the company's marketing strategy.",
+        "Verify ownership of the pledged inventories.",
+        "Analyze the company's profitability.",
+        "Monitor the company's share price."
+      ],
+      "ans": "B",
+      "exp": "Verifying ownership of pledged inventories mitigates the risk of financing inventory to which the borrower has no legal title. Other options do not address this specific risk."
+    },
+    {
+      "id": "Q201",
+      "module": 6,
+      "type": "mcq",
+      "q": "Business risk is defined as:",
+      "opts": [
+        "The risk inherent in a company's method of operation and the basic nature of the business that could prevent completion of the asset conversion cycle.",
+        "The risk of not collecting receivables.",
+        "The risk of not completing production.",
+        "The risk of generating insufficient demand."
+      ],
+      "ans": "A",
+      "exp": "Business risk is the risk inherent in a company's method of operation and the basic nature of the business that could prevent completion of the asset conversion cycle. It is a function of cycle length, value added, and asset volatility."
+    },
+    {
+      "id": "Q202",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a mitigation measure for overdraft facilities?",
+      "opts": [
+        "Ensuring the LPO is validly issued.",
+        "Monitoring account activity and cash flow patterns.",
+        "Confirming the genuineness of receivables.",
+        "Verifying ownership of inventory."
+      ],
+      "ans": "B",
+      "exp": "Overdraft facilities require monitoring account activity and cash flow patterns to detect overutilization and hardcore borrowing. A is LPO mitigation; C is receivable mitigation; D is inventory mitigation."
+    },
+    {
+      "id": "Q203",
+      "module": 6,
+      "type": "mcq",
+      "q": "In credit risk management, 'credit scoring models' are used to:",
+      "opts": [
+        "Assign credit scores or ratings based on quantitative and qualitative factors.",
+        "Determine the collateral value.",
+        "Calculate the interest rate for deposits.",
+        "Monitor loan performance."
+      ],
+      "ans": "A",
+      "exp": "Credit scoring models assign scores/ratings based on factors to assess default likelihood and standardize credit risk assessment. They are not for collateral (B), deposits (C), or monitoring (D) per se."
+    },
+    {
+      "id": "Q204",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is an example of 'credit risk transfer'?",
+      "opts": [
+        "Requiring collateral from the borrower.",
+        "Diversifying the loan portfolio across industries.",
+        "Purchasing credit default swaps or credit insurance.",
+        "Conducting stress tests on the portfolio."
+      ],
+      "ans": "C",
+      "exp": "Credit risk transfer involves mechanisms like credit insurance, credit derivatives, securitization, or reinsurance to transfer risk to third parties. A is collateralization; B is diversification; D is stress testing."
+    },
+    {
+      "id": "Q205",
+      "module": 6,
+      "type": "mcq",
+      "q": "'Stress testing and scenario analysis' in credit risk management is used to:",
+      "opts": [
+        "Assess the resilience of credit portfolios to adverse economic conditions.",
+        "Determine the interest rate for loans.",
+        "Calculate the expected loss for individual loans.",
+        "Determine the borrower's character."
+      ],
+      "ans": "A",
+      "exp": "Stress testing assesses portfolio resilience to adverse conditions and market shocks. It identifies vulnerabilities and evaluates capital adequacy."
+    },
+    {
+      "id": "Q206",
+      "module": 6,
+      "type": "mcq",
+      "q": "Why are 'early warning systems' important in credit risk management?",
+      "opts": [
+        "They automatically approve all loans.",
+        "They identify deteriorating credit quality and emerging risks before defaults occur.",
+        "They replace the need for credit analysis.",
+        "They guarantee full loan recovery."
+      ],
+      "ans": "B",
+      "exp": "Early warning systems monitor delinquency rates, default rates, and credit migration trends to detect warning signs of potential defaults. They do not approve loans (A), replace analysis (C), or guarantee recovery (D)."
+    },
+    {
+      "id": "Q207",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a risk specific to receivable financing?",
+      "opts": [
+        "The risk that the borrower may not be able to source goods from the market.",
+        "The risk that the third-party debtor is insolvent.",
+        "The risk that stocks become obsolete.",
+        "The risk of overutilization of the facility."
+      ],
+      "ans": "B",
+      "exp": "Receivable financing risks include the debtor being insolvent or not honoring obligations, and repudiation of domiciliation. A is LPO risk; C is inventory risk; D is overdraft risk."
+    },
+    {
+      "id": "Q208",
+      "module": 6,
+      "type": "mcq",
+      "q": "A mitigation for the risk of loss of goods due to fraud or lack of internal controls in inventory financing is:",
+      "opts": [
+        "Check product expiry dates.",
+        "Physical inspection of location and safety.",
+        "Confirm financial status of the issuer.",
+        "Analyze debtor creditworthiness."
+      ],
+      "ans": "B",
+      "exp": "Physical inspection of location and safety is a mitigation for loss of goods due to fraud or lack of internal controls. A is for expiry risk; C is for LPO; D is for receivables."
+    },
+    {
+      "id": "Q209",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the context of credit risk, what is Loss Given Default (LGD)?",
+      "opts": [
+        "The likelihood that a borrower will default.",
+        "The portion of the loan amount unlikely to be recovered after default.",
+        "The outstanding loan amount at the time of default.",
+        "The interest rate charged on the loan."
+      ],
+      "ans": "B",
+      "exp": "LGD is the portion of the loan amount the lender is unlikely to recover after default, even after collateral sales. PD (A) is probability; EAD (C) is exposure; interest rate (D) is unrelated."
+    },
+    {
+      "id": "Q210",
+      "module": 6,
+      "type": "mcq",
+      "q": "A credit analyst observes that a manufacturing company has a high number of major suppliers and easy access to substitute inputs. This indicates:",
+      "opts": [
+        "High supply risk.",
+        "Low supply risk.",
+        "High demand risk.",
+        "High production risk."
+      ],
+      "ans": "B",
+      "exp": "Having many suppliers and easy substitutes reduces supply risk (uncertainty in accessing inputs). Few suppliers and lack of substitutes would indicate high supply risk."
+    },
+    {
+      "id": "Q211",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a factor affecting collection risk?",
+      "opts": [
+        "The intensity of rivalry.",
+        "The company's competitive advantage.",
+        "Customers' credibility and credit terms.",
+        "The condition of the company's plant."
+      ],
+      "ans": "C",
+      "exp": "Collection risk factors include customers' credibility and credit terms management. A and B relate to demand; D relates to production."
+    },
+    {
+      "id": "Q212",
+      "module": 6,
+      "type": "mcq",
+      "q": "Why is it important to check for subsisting charges when financing inventory?",
+      "opts": [
+        "To ensure the borrower has good credit history.",
+        "To avoid financing inventory that is already encumbered to another lender.",
+        "To determine the market price of the inventory.",
+        "To verify the borrower's character."
+      ],
+      "ans": "B",
+      "exp": "Checking for subsisting charges ensures the bank does not finance inventory already pledged to another lender, which would create priority issues."
+    },
+    {
+      "id": "Q213",
+      "module": 6,
+      "type": "mcq",
+      "q": "In credit risk management, 'portfolio diversification' helps to:",
+      "opts": [
+        "Eliminate all credit risk.",
+        "Reduce concentration risk by spreading exposure across various sectors.",
+        "Increase interest income.",
+        "Automate loan approvals."
+      ],
+      "ans": "B",
+      "exp": "Portfolio diversification spreads credit risk across asset classes, industries, and regions to reduce concentration risk. It does not eliminate all risk (A), increase income (C), or automate approvals (D)."
+    },
+    {
+      "id": "Q214",
+      "module": 6,
+      "type": "mcq",
+      "q": "A manufacturing company's accounts receivables have not been collected for 120 days. This situation primarily indicates:",
+      "opts": [
+        "Marketing risk.",
+        "Production risk.",
+        "Collection risk.",
+        "Supply risk."
+      ],
+      "ans": "C",
+      "exp": "Uncollected receivables indicate collection risk — the risk that receivables will not be converted to cash. Marketing (A) is about selling; production (B) is about completing goods; supply (D) is about inputs."
+    },
+    {
+      "id": "Q215",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is a mitigation for the risk of financing an LPO that has expired before delivery?",
+      "opts": [
+        "Verify availability of goods from the ultimate supplier.",
+        "Analyze debtor creditworthiness.",
+        "Check product expiry dates.",
+        "Monitor account activity and cash flow patterns."
+      ],
+      "ans": "A",
+      "exp": "Verifying availability of goods from the ultimate supplier mitigates the risk of stale LPOs. B is for receivables; C is for inventory; D is for overdraft."
+    },
+    {
+      "id": "Q216",
+      "module": 6,
+      "type": "mcq",
+      "q": "The concept of 'unexpected loss' in credit risk management is important because:",
+      "opts": [
+        "It represents the average loss a bank expects.",
+        "It is used to set aside provisions for anticipated losses.",
+        "It represents losses that exceed expected levels and require capital buffers.",
+        "It is always zero in well-managed banks."
+      ],
+      "ans": "C",
+      "exp": "Unexpected losses exceed expected levels and require capital buffers. Expected losses (A) are the average; provisions cover expected losses (B); unexpected losses are not always zero (D)."
+    },
+    {
+      "id": "Q217",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is the primary purpose of loan documentation in a credit relationship?",
+      "opts": [
+        "To increase the bank's profitability through fees.",
+        "To serve as a legal and binding contract detailing terms and conditions.",
+        "To market the bank's loan products to new customers.",
+        "To replace the need for collateral."
+      ],
+      "ans": "B",
+      "exp": "Loan documents serve as a legal and binding contract between lender and borrower, detailing terms, conditions, and securing collateral. While fees (A) may be part of documents, the primary purpose is contractual."
+    },
+    {
+      "id": "Q218",
+      "module": 7,
+      "type": "mcq",
+      "q": "Which of the following is an example of loan documentation?",
+      "opts": [
+        "A verbal agreement with the borrower.",
+        "A signed offer letter and loan agreement.",
+        "A handshake deal.",
+        "A social media message."
+      ],
+      "ans": "B",
+      "exp": "Loan documentation includes written materials such as letters, signed agreements, intra-office memos, drafts, and other formal communications. Verbal agreements (A, C, D) are not proper documentation."
+    },
+    {
+      "id": "Q219",
+      "module": 7,
+      "type": "mcq",
+      "q": "Why is documentation important in lending?",
+      "opts": [
+        "To confirm the relationship, terms, and responsibilities of both parties.",
+        "To increase the bank's market share.",
+        "To reduce the interest rate.",
+        "To eliminate the need for collateral."
+      ],
+      "ans": "A",
+      "exp": "Documentation confirms relationship, terms, responsibilities, default definition, rights and duties, enforcement procedures, and third-party obligations. It is not about market share (B), rates (C), or eliminating collateral (D)."
+    },
+    {
+      "id": "Q220",
+      "module": 7,
+      "type": "mcq",
+      "q": "The document that states the terms and conditions of the offer and specifies limits, conditions precedent, and pricing is the:",
+      "opts": [
+        "Board Resolution.",
+        "Loan Agreement.",
+        "Offer Letter.",
+        "Security Documentation."
+      ],
+      "ans": "C",
+      "exp": "The Offer Letter states terms, conditions, limit, availability period, pricing, repayment schedule, conditions precedent/subsequent, and security. A Board Resolution authorizes borrowing; Loan Agreement is broader; Security Documentation covers collateral."
+    },
+    {
+      "id": "Q221",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is the primary purpose of a Loan Agreement?",
+      "opts": [
+        "To authorize the directors to borrow.",
+        "To detail obligations, rights, and responsibilities of both parties.",
+        "To value the collateral.",
+        "To provide a personal guarantee."
+      ],
+      "ans": "B",
+      "exp": "A Loan Agreement details obligations, rights, responsibilities, relationship definition, terms, collateral, and warranties. A Board Resolution (A) authorizes borrowing; Collateral valuation (C) is separate; Guarantees (D) are separate documents."
+    },
+    {
+      "id": "Q222",
+      "module": 7,
+      "type": "mcq",
+      "q": "A Board Resolution is required for:",
+      "opts": [
+        "Sole proprietorship loans.",
+        "Partnership loans.",
+        "Corporate loans.",
+        "Personal loans."
+      ],
+      "ans": "C",
+      "exp": "Board Resolutions are only for Corporations and Partnerships (though partnerships may not always have a formal board). The question asks most likely, and corporations are the classic entity requiring Board Resolution. Sole proprietorships and individuals do not."
+    },
+    {
+      "id": "Q223",
+      "module": 7,
+      "type": "mcq",
+      "q": "What should a banker verify when reviewing a Board Resolution?",
+      "opts": [
+        "That it is signed by at least two directors or a director and the company secretary.",
+        "That the borrower has a high credit score.",
+        "That the company is listed on the stock exchange.",
+        "That the company has never defaulted before."
+      ],
+      "ans": "A",
+      "exp": "Board Resolutions must be signed by two directors or a director and the company secretary, and these must be the most recent directors per CO2 and CO7. Credit score (B), listing (C), and past defaults (D) are not part of the resolution verification."
+    },
+    {
+      "id": "Q224",
+      "module": 7,
+      "type": "mcq",
+      "q": "In lending, collateral is defined as:",
+      "opts": [
+        "The primary source of repayment.",
+        "An asset pledged to provide an exit route should risks crystallize.",
+        "The borrower's personal guarantee.",
+        "The bank's internal credit policy."
+      ],
+      "ans": "B",
+      "exp": "Collateral provides an exit route if certain risks crystallize. It is not the primary source (cash flow is), not a guarantee (C), nor policy (D)."
+    },
+    {
+      "id": "Q225",
+      "module": 7,
+      "type": "mcq",
+      "q": "Which of the following is a benefit of collateral to the bank?",
+      "opts": [
+        "It increases the cost of credit.",
+        "It reduces the incentive for the borrower to take risk.",
+        "It reduces the problem of information asymmetry.",
+        "It allows the bank to lend at higher rates."
+      ],
+      "ans": "B",
+      "exp": "Collateral reduces the borrower's incentive to take risk, enhances repayment probability, and reduces information asymmetry. It may increase credit cost for borrower but that's not a bank benefit."
+    },
+    {
+      "id": "Q226",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is the typical collateral coverage ratio for a bank loan?",
+      "opts": [
+        "100% of the loan amount.",
+        "120-130% of the loan amount.",
+        "50% of the loan amount.",
+        "Exactly the same as the loan amount."
+      ],
+      "ans": "B",
+      "exp": "Banks do not lend 100% of collateral value; collateral value is higher than the loan amount to cover potential fall in asset value, accrued interest, and sale costs. 120-130% is common."
+    },
+    {
+      "id": "Q227",
+      "module": 7,
+      "type": "mcq",
+      "q": "Which of the following is a feature of an equitable mortgage?",
+      "opts": [
+        "The borrower registers a legal transfer of title in favor of the bank.",
+        "The borrower deposits title documents with the bank with intention to give security.",
+        "The bank takes physical possession of the property.",
+        "The mortgage requires a court order before sale."
+      ],
+      "ans": "B",
+      "exp": "Equitable mortgage is created by mere deposit of title documents with intention to give security. Legal mortgage (A) requires registration; possession (C) is not taken; while court order may be required for equitable mortgage, the defining feature is deposit of documents."
+    },
+    {
+      "id": "Q228",
+      "module": 7,
+      "type": "mcq",
+      "q": "A Fixed Charge Debenture covers:",
+      "opts": [
+        "All assets of the company.",
+        "Specific listed immovable assets excluding land.",
+        "Current assets and stock-in-trade.",
+        "Only the company's cash."
+      ],
+      "ans": "B",
+      "exp": "A Fixed Charge Debenture is a charge on specific listed IMMOVABLE assets excluding landed properties. Floating Charge (C) covers current assets; All Asset Debenture (A) covers all assets excluding land; cash is not a separate category."
+    },
+    {
+      "id": "Q229",
+      "module": 7,
+      "type": "mcq",
+      "q": "A Floating Charge Debenture is characterized by:",
+      "opts": [
+        "The borrower cannot sell the charged assets without bank consent.",
+        "The charge is fixed on specific assets.",
+        "The borrower can sell the charged assets before default without bank consent.",
+        "It has priority over all other charges."
+      ],
+      "ans": "C",
+      "exp": "A Floating Charge on current assets allows the borrower to sell assets without bank consent prior to default. It does not give priority over fixed charges (D)."
+    },
+    {
+      "id": "Q230",
+      "module": 7,
+      "type": "mcq",
+      "q": "Which type of security is created when a third party undertakes to repay the loan should the borrower fail?",
+      "opts": [
+        "Pledge.",
+        "Guarantee.",
+        "Indemnity.",
+        "Letter of hypothecation."
+      ],
+      "ans": "B",
+      "exp": "A guarantee operates when a third party (guarantor) holds himself liable to pay if the borrower fails. An indemnity (C) makes the indemnifier primary obligor from inception; pledge (A) involves possession of property; letter of hypothecation (D) is an equitable charge on goods."
+    },
+    {
+      "id": "Q231",
+      "module": 7,
+      "type": "mcq",
+      "q": "A Letter of Comfort is considered a 'quasi-security' because:",
+      "opts": [
+        "It is legally enforceable.",
+        "No liability is attached to such letters.",
+        "It requires collateral.",
+        "It is registered with the Corporate Affairs Commission."
+      ],
+      "ans": "B",
+      "exp": "A Letter of Comfort is quasi-security because no liability is attached; it is merely a statement of fitness. It is usually issued by reputable companies but is not enforceable as a security."
+    },
+    {
+      "id": "Q232",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is the danger of not perfecting a legal mortgage?",
+      "opts": [
+        "The bank may lose priority to other creditors.",
+        "The borrower automatically defaults.",
+        "The interest rate increases.",
+        "The loan tenor extends automatically."
+      ],
+      "ans": "A",
+      "exp": "Not perfecting security means the bank loses priority, and in the event of default, becomes an unsecured creditor. It does not cause automatic default (B), rate changes (C), or tenor extension (D)."
+    },
+    {
+      "id": "Q233",
+      "module": 7,
+      "type": "mcq",
+      "q": "Which of the following is a major documentation error/pitfall?",
+      "opts": [
+        "Properly executed loan agreements.",
+        "Acceptance of forged or cloned documentation.",
+        "Perfecting security before disbursement.",
+        "Obtaining board resolution for corporate loans."
+      ],
+      "ans": "B",
+      "exp": "Accepting forged or cloned documentation is a major pitfall. A, C, and D are good practices."
+    },
+    {
+      "id": "Q234",
+      "module": 7,
+      "type": "mcq",
+      "q": "A charge on a company's assets not registered at the CAC within 90 days of creation is:",
+      "opts": [
+        "Automatically valid.",
+        "Void, and the bank needs a court order to revive it.",
+        "Still enforceable after 180 days.",
+        "Subject to renegotiation."
+      ],
+      "ans": "B",
+      "exp": "If not registered within 90 days of creation, the charge is void and the bank needs a court order to revive it. It is not automatically valid (A) or enforceable (C)."
+    },
+    {
+      "id": "Q235",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is the purpose of a 'negative pledge' clause in a loan agreement?",
+      "opts": [
+        "To require the borrower to pledge specific assets.",
+        "To restrict the borrower from encumbering assets in favor of third parties.",
+        "To grant the bank a fixed charge.",
+        "To eliminate all collateral requirements."
+      ],
+      "ans": "B",
+      "exp": "A negative pledge is a commitment not to encumber assets in favor of third parties. It does not confer rights over assets but restricts the borrower's ability to give security to others."
+    },
+    {
+      "id": "Q236",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is a 'right of set-off' in banking?",
+      "opts": [
+        "The right to sell the borrower's collateral.",
+        "The right to use the credit balance in one account to offset a debit balance in another.",
+        "The right to demand immediate repayment.",
+        "The right to increase the interest rate."
+      ],
+      "ans": "B",
+      "exp": "Right of set-off allows the bank to offset credit balances in one account against debit balances in another. It is not the right to sell collateral (A), demand repayment (C), or change rates (D)."
+    },
+    {
+      "id": "Q237",
+      "module": 7,
+      "type": "mcq",
+      "q": "A 'Letter of Hypothecation' is most commonly used when:",
+      "opts": [
+        "The borrower pledges land.",
+        "It is impracticable to give possession of goods to the bank.",
+        "The borrower provides a personal guarantee.",
+        "The bank holds cash as security."
+      ],
+      "ans": "B",
+      "exp": "A Letter of Hypothecation is used when it is impracticable to give possession of goods or title documents to the bank. It confers a right in preference to other creditors."
+    },
+    {
+      "id": "Q238",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is an 'All Asset Debenture'?",
+      "opts": [
+        "A charge over all assets of the company including land.",
+        "A charge over all assets excluding land, which must be specifically mortgaged.",
+        "A charge over current assets only.",
+        "A personal guarantee from all directors."
+      ],
+      "ans": "B",
+      "exp": "All Asset Debenture covers all assets excluding land, which must be specifically mortgaged. Mortgage Debenture (A) includes land; Floating Charge (C) covers current assets; guarantees (D) are separate."
+    },
+    {
+      "id": "Q239",
+      "module": 7,
+      "type": "mcq",
+      "q": "Why should a bank obtain an independent valuation of collateral?",
+      "opts": [
+        "To increase the loan amount.",
+        "To confirm marketability and value, and to perform regular reviews.",
+        "To reduce the interest rate.",
+        "To eliminate the need for insurance."
+      ],
+      "ans": "B",
+      "exp": "Independent valuation confirms value and marketability. It should be reviewed regularly, and any shortfall should be covered. It is not to increase the loan (A), reduce rates (C), or eliminate insurance (D)."
+    },
+    {
+      "id": "Q240",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is the significance of the bank being named as 'loss payee' in an insurance policy?",
+      "opts": [
+        "The bank receives any insurance proceeds in case of loss.",
+        "The bank pays the insurance premium.",
+        "The bank is liable for any damages.",
+        "The bank is exempt from insurance requirements."
+      ],
+      "ans": "A",
+      "exp": "Being named as loss payee ensures the bank receives insurance proceeds to cover the loan in case of loss. The bank does not pay premiums (B), assume liability (C), or become exempt (D)."
+    },
+    {
+      "id": "Q241",
+      "module": 7,
+      "type": "mcq",
+      "q": "A 'Pari Passu' debenture means:",
+      "opts": [
+        "The bank has exclusive rights over all assets.",
+        "Multiple creditors rank equally in priority.",
+        "The borrower cannot take any more loans.",
+        "The debenture is unsecured."
+      ],
+      "ans": "B",
+      "exp": "Pari Passu means creditors rank equally in priority. It does not give exclusive rights (A), restrict further borrowing (C), or imply unsecured (D)."
+    },
+    {
+      "id": "Q242",
+      "module": 7,
+      "type": "mcq",
+      "q": "When should a bank register its interest in collateral?",
+      "opts": [
+        "Only after default.",
+        "Immediately after the loan is granted or at least commence registration before disbursement.",
+        "Within 365 days of creation.",
+        "Registration is not necessary."
+      ],
+      "ans": "B",
+      "exp": "Banks must register interest immediately after the loan is granted or at least commence registration before disbursement. After default (A) is too late; 365 days (C) is incorrect; registration is necessary (D)."
+    },
+    {
+      "id": "Q243",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is the difference between a guarantee and an indemnity?",
+      "opts": [
+        "A guarantee is primary, an indemnity is secondary.",
+        "An indemnity makes the indemnifier the primary obligor; a guarantee is secondary.",
+        "There is no difference.",
+        "Guarantees require collateral; indemnities do not."
+      ],
+      "ans": "B",
+      "exp": "In a guarantee, the guarantor is secondary (pay if borrower fails). In an indemnity, the indemnifier is primary from inception, making it direct exposure. A is reversed; C is false; D is not always true."
+    },
+    {
+      "id": "Q244",
+      "module": 7,
+      "type": "mcq",
+      "q": "Why should a bank obtain a statement of net worth signed as an affidavit from a personal guarantor?",
+      "opts": [
+        "To calculate the loan interest.",
+        "To make false statements punishable as perjury.",
+        "To eliminate the need for collateral.",
+        "To determine the guarantor's credit score."
+      ],
+      "ans": "B",
+      "exp": "An affidavit makes false statements punishable as perjury, adding legal weight to the information. It is not for interest calculation (A), eliminating collateral (C), or credit score (D)."
+    },
+    {
+      "id": "Q245",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is a 'Legal Mortgage'?",
+      "opts": [
+        "An agreement to deposit title documents.",
+        "A registered transfer of legal interest to the mortgagee.",
+        "A verbal agreement.",
+        "A personal guarantee."
+      ],
+      "ans": "B",
+      "exp": "A Legal Mortgage is created when the mortgagor conveys legal interest by registering an instrument of transfer in favor of the mortgagee. A is equitable mortgage; C and D are not mortgages."
+    },
+    {
+      "id": "Q246",
+      "module": 7,
+      "type": "mcq",
+      "q": "An 'Equitable Mortgage' is weaker than a Legal Mortgage because:",
+      "opts": [
+        "It requires the consent of the court to sell on default.",
+        "It cannot be registered.",
+        "It does not require any documentation.",
+        "It is not legally recognized."
+      ],
+      "ans": "A",
+      "exp": "Equitable mortgage requires court order to sell on default; Legal mortgage allows sale without court order. Equitable mortgage is recognized (D) and documented (C is false), but weaker due to court requirement."
+    },
+    {
+      "id": "Q247",
+      "module": 7,
+      "type": "mcq",
+      "q": "Which of the following is required for a valid mortgage on landed property in Nigeria?",
+      "opts": [
+        "Certificate of Occupancy or Registered Deed of Assignment.",
+        "A verbal promise.",
+        "A bank guarantee.",
+        "A letter of comfort."
+      ],
+      "ans": "A",
+      "exp": "Valid title documentation such as Certificate of Occupancy or Registered Deed of Assignment is required. Verbal promises (B), guarantees (C), and letters of comfort (D) are not sufficient."
+    },
+    {
+      "id": "Q248",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is a 'Debenture' under CAMA?",
+      "opts": [
+        "A mortgage on land.",
+        "A written acknowledgment of indebtedness by a company.",
+        "A personal loan agreement.",
+        "A certificate of deposit."
+      ],
+      "ans": "B",
+      "exp": "Section 650(1) CAMA defines a debenture as a written acknowledgment of indebtedness by the company, setting terms and including debenture stock, bonds, and securities of the company."
+    },
+    {
+      "id": "Q249",
+      "module": 7,
+      "type": "mcq",
+      "q": "A 'Pledge' is created when:",
+      "opts": [
+        "The borrower transfers legal title to the lender.",
+        "The borrower makes a physical or constructive transfer of property to the lender as security.",
+        "A third party guarantees repayment.",
+        "The lender takes possession of the borrower's land."
+      ],
+      "ans": "B",
+      "exp": "A pledge involves physical or constructive transfer of property to the lender as security, while the borrower keeps legal title. A is mortgage; C is guarantee; D is mortgage on land."
+    },
+    {
+      "id": "Q250",
+      "module": 7,
+      "type": "mcq",
+      "q": "Which of the following securities gives the lender the right to sell the security to offset the loan in case of default?",
+      "opts": [
+        "Letter of comfort.",
+        "Negative pledge.",
+        "Pledge.",
+        "Letter of hypothecation."
+      ],
+      "ans": "C",
+      "exp": "A pledge gives the lender the right to sell the security to offset the loan in default. Letter of comfort (A) has no liability; negative pledge (B) restricts encumbrance; letter of hypothecation (D) is an equitable charge, but pledge is the clearest."
+    },
+    {
+      "id": "Q251",
+      "module": 7,
+      "type": "mcq",
+      "q": "What should a bank do if the borrower provides a certificate of occupancy that is a leasehold of short remaining period?",
+      "opts": [
+        "Accept it without question.",
+        "Require additional security or consider the lease term.",
+        "Reject the loan entirely.",
+        "Increase the loan amount."
+      ],
+      "ans": "B",
+      "exp": "A short lease may lose value; the bank should require additional security or consider the term. Accepting without question (A) is risky; rejecting entirely (C) may be too harsh; increasing loan (D) is not logical."
+    },
+    {
+      "id": "Q252",
+      "module": 7,
+      "type": "mcq",
+      "q": "Which of the following is an example of a 'fixed charge' asset?",
+      "opts": [
+        "Inventory.",
+        "Accounts receivable.",
+        "Land and buildings.",
+        "Cash."
+      ],
+      "ans": "C",
+      "exp": "Fixed charges apply to immovable assets such as land and buildings. Inventory (A) and receivables (B) are floating charge assets; cash is not typically a charge asset."
+    },
+    {
+      "id": "Q253",
+      "module": 7,
+      "type": "mcq",
+      "q": "What is the consequence of accepting a 'Letter of Comfort' as the only security?",
+      "opts": [
+        "It is as good as a guarantee.",
+        "The bank has no recourse if the borrower defaults.",
+        "It is automatically enforceable.",
+        "It provides priority over other creditors."
+      ],
+      "ans": "B",
+      "exp": "A Letter of Comfort carries no liability and is not enforceable; thus the bank has no recourse if used as the only security. A, C, and D are false."
+    },
+    {
+      "id": "Q254",
+      "module": 8,
+      "type": "mcq",
+      "q": "What is the primary objective of the loan monitoring process in a bank?",
+      "opts": [
+        "To increase the bank's interest income from the facility.",
+        "To track loan performance and identify potential problems early.",
+        "To reduce the bank's administrative costs.",
+        "To ensure the borrower maintains a minimum account balance."
+      ],
+      "ans": "B",
+      "exp": "Loan monitoring aims to track performance and identify problems early. It is a function of both relationship management and risk management. Income generation (A), cost reduction (C), and account balance (D) are not primary objectives."
+    },
+    {
+      "id": "Q255",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is an 'account activity' early warning signal?",
+      "opts": [
+        "The borrower's refusal to provide financial statements.",
+        "Frequent excesses over the approved facility limit.",
+        "Loss of key customers.",
+        "Declining sales and increasing receivables."
+      ],
+      "ans": "B",
+      "exp": "Account activity signals include frequent excess over limit, inability to service interest/principal, sticky accounts with little turnover, high incidence of returned cheques, and failure of overdraft to revolve. A is an information/management signal; C is a business signal; D is an income statement signal."
+    },
+    {
+      "id": "Q256",
+      "module": 8,
+      "type": "mcq",
+      "q": "An overdraft facility that consistently shows no swings and maintains a hardcore balance is exhibiting:",
+      "opts": [
+        "Normal overdraft behavior.",
+        "An early warning signal of potential problems.",
+        "Improved cash flow management.",
+        "A sign of high profitability."
+      ],
+      "ans": "B",
+      "exp": "Failure of an overdraft to revolve within the cash cycle (no swings) is an account activity early warning signal. It indicates the facility may be funding structural rather than temporary needs."
+    },
+    {
+      "id": "Q257",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is a 'management' early warning signal?",
+      "opts": [
+        "High incidence of returned cheques.",
+        "Loss of key product lines.",
+        "Changing behavior and lack of cooperation.",
+        "Declining cash flow from operations."
+      ],
+      "ans": "C",
+      "exp": "Management signals include changing behavior/personal habits, marital/gambling problems, lack of cooperation, failure to meet personal obligations, poor planning, excessive risk-taking, and poor financial systems. A is account activity; B is business; D is cash flow."
+    },
+    {
+      "id": "Q258",
+      "module": 8,
+      "type": "mcq",
+      "q": "A borrower who consistently delays rendition of financial statements and is impatient with banker enquiries is exhibiting:",
+      "opts": [
+        "Account activity signal.",
+        "Management signal.",
+        "Information signal.",
+        "Economic signal."
+      ],
+      "ans": "C",
+      "exp": "Information signals include customer impatience, snubbing invitations, delaying financial statements, frequent unplanned trips abroad, sudden disappearance, credit enquiries by other banks, and reduction in supplier credits."
+    },
+    {
+      "id": "Q259",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is a 'business' early warning signal?",
+      "opts": [
+        "Reducing yield on the account to the bank.",
+        "Rapidly changing business or industry.",
+        "Excessive withdrawals or payout.",
+        "Oversupply in the industry."
+      ],
+      "ans": "B",
+      "exp": "Business signals include rapidly changing business/industry, poor use of people/resources, loss of key product lines/distribution rights/supply sources, loss of significant customers, large jumps in orders (straining capacity), speculative inventory purchases, and poor maintenance of fixed assets. A is account activity; C is cash flow; D is economic."
+    },
+    {
+      "id": "Q260",
+      "module": 8,
+      "type": "mcq",
+      "q": "Declining sales, especially with high fixed costs, is categorized as:",
+      "opts": [
+        "Cash flow signal.",
+        "Management signal.",
+        "Income statement signal.",
+        "Account activity signal."
+      ],
+      "ans": "C",
+      "exp": "Income statement signals include declining sales (especially with high fixed costs), rapidly growing sales (beyond sustainable growth), rapidly rising assets, significant decline in margin, rising selling/general/admin expenses, rising finance charges, and increasing receivable/stock days."
+    },
+    {
+      "id": "Q261",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is a 'cash flow' early warning signal?",
+      "opts": [
+        "Rapidly growing sales beyond sustainable growth.",
+        "Changing technology and taste.",
+        "Declining cash flow or deficits.",
+        "High incidence of returned cheques."
+      ],
+      "ans": "C",
+      "exp": "Cash flow signals include declining cash flow or deficits, acquiring assets that represent 'wants' vs. 'needs', excessive and growing debt service, excessive withdrawals/payouts, and growing income with falling cash from operations. A is income statement; B is economic; D is account activity."
+    },
+    {
+      "id": "Q262",
+      "module": 8,
+      "type": "mcq",
+      "q": "Oversupply, inadequate demand, and increasing intra-industry rivalry are examples of:",
+      "opts": [
+        "Management signals.",
+        "Business signals.",
+        "Economic signals.",
+        "Cash flow signals."
+      ],
+      "ans": "C",
+      "exp": "Economic signals include oversupply, inadequate demand, increasing intra-industry rivalry, changing technology and taste, recession vulnerability, government restrictive policy, and influx of new entrants."
+    },
+    {
+      "id": "Q263",
+      "module": 8,
+      "type": "mcq",
+      "q": "What is the purpose of 'call in' in loan recovery?",
+      "opts": [
+        "To restructure the loan with new terms.",
+        "To make a full demand for repayment of the entire outstanding balance.",
+        "To write off the loan against bank profits.",
+        "To sell the borrower's collateral."
+      ],
+      "ans": "B",
+      "exp": "Call in means the bank makes a full demand for repayment of the entire outstanding balance. This occurs when the customer defaults and fails to regularize the loan."
+    },
+    {
+      "id": "Q264",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is a 'workout' technique in loan recovery?",
+      "opts": [
+        "Full demand for repayment.",
+        "Sale of deposited security.",
+        "Rescheduling of repayments to match cash flow patterns.",
+        "Writing off the loan."
+      ],
+      "ans": "C",
+      "exp": "Workout techniques include granting moratorium, rescheduling repayments, reducing interest rate, enhancing working capital, converting overdraft to term loan, and administrative efforts. A is call-in; B is realization of security; D is charge-off."
+    },
+    {
+      "id": "Q265",
+      "module": 8,
+      "type": "mcq",
+      "q": "What does 'realization of security' refer to in loan recovery?",
+      "opts": [
+        "Restructuring the loan terms.",
+        "Amending the repayment schedule.",
+        "Sale of deposited security when the borrower is unable to pay.",
+        "Writing off the loan against bank profits."
+      ],
+      "ans": "C",
+      "exp": "Realization of security is the sale of deposited collateral when the borrower cannot repay. It is the bank's resort when default persists and call-in fails."
+    },
+    {
+      "id": "Q266",
+      "module": 8,
+      "type": "mcq",
+      "q": "When a loan is written off against the bank's profit, this is known as:",
+      "opts": [
+        "Call in.",
+        "Workout.",
+        "Realization of security.",
+        "Charge-off."
+      ],
+      "ans": "D",
+      "exp": "Charge-off means writing the loan off against the bank's profit. It requires approval from the credit committee and may still be pursued."
+    },
+    {
+      "id": "Q267",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is an example of restructuring a problematic loan?",
+      "opts": [
+        "Converting an overdraft into a term loan.",
+        "Filing a lawsuit against the borrower.",
+        "Demanding full repayment immediately.",
+        "Selling the borrower's collateral."
+      ],
+      "ans": "A",
+      "exp": "Restructuring includes converting overdraft to term loan, rebooking for longer tenor, converting import finance to warehouse finance, and converting arrears into term loan. B is legal action; C is call-in; D is realization of security."
+    },
+    {
+      "id": "Q268",
+      "module": 8,
+      "type": "mcq",
+      "q": "What is the first phase of loan recovery management?",
+      "opts": [
+        "Legal action against the borrower.",
+        "Realization of security.",
+        "Working out a solution in cooperation with the customer.",
+        "Writing off the loan."
+      ],
+      "ans": "C",
+      "exp": "The early phase of recovery focuses on working out a solution with the customer, protecting the customer relationship. Later phases shift to protecting assets and minimizing losses."
+    },
+    {
+      "id": "Q269",
+      "module": 8,
+      "type": "mcq",
+      "q": "In the late phase of loan recovery, the focus shifts to:",
+      "opts": [
+        "Protecting the customer relationship.",
+        "Protecting assets and minimizing losses.",
+        "Extending the loan tenor.",
+        "Reducing the interest rate."
+      ],
+      "ans": "B",
+      "exp": "The late phase shifts from protecting the customer relationship to protecting assets and minimizing losses. The aim is to recover the highest volume of assets possible."
+    },
+    {
+      "id": "Q270",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is a loan recovery method used by banks?",
+      "opts": [
+        "Reducing the principal amount.",
+        "Moral suasion and appeals.",
+        "Increasing the interest rate.",
+        "Eliminating all covenants."
+      ],
+      "ans": "B",
+      "exp": "Recovery methods include moral suasion and appeals, formal letters of demand, foreclosure on collateral, referral to solicitors for legal action, reporting to CBN and Credit Bureaux, and appointment of receiver manager."
+    },
+    {
+      "id": "Q271",
+      "module": 8,
+      "type": "mcq",
+      "q": "A borrower's account shows declining turnover and sticky balances. This is an example of:",
+      "opts": [
+        "Management signal.",
+        "Business signal.",
+        "Account activity signal.",
+        "Economic signal."
+      ],
+      "ans": "C",
+      "exp": "Sticky accounts with little turnover and reducing yield are account activity signals. These indicate the account is not being used as intended."
+    },
+    {
+      "id": "Q272",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is a 'management' signal of potential loan problems?",
+      "opts": [
+        "Loss of significant customers.",
+        "Excessive risk-taking by management.",
+        "Oversupply in the industry.",
+        "Rapidly rising assets."
+      ],
+      "ans": "B",
+      "exp": "Management signals include excessive risk-taking, poor planning, lack of successor management, neglect of business, and unrealistic pricing. A is business; C is economic; D is income statement."
+    },
+    {
+      "id": "Q273",
+      "module": 8,
+      "type": "mcq",
+      "q": "A borrower who is snubbing invitations and rebuffing telephone calls from the bank is showing:",
+      "opts": [
+        "Account activity signal.",
+        "Management signal.",
+        "Information signal.",
+        "Business signal."
+      ],
+      "ans": "C",
+      "exp": "Snubbing invitations, rebuffing calls, and feigning inaccessibility are information signals — the borrower is not cooperating with the bank's information requests."
+    },
+    {
+      "id": "Q274",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is a 'business' signal of potential loan problems?",
+      "opts": [
+        "High incidence of returned cheques.",
+        "Poor maintenance of fixed assets.",
+        "Excessive withdrawals from the business.",
+        "Declining cash flow."
+      ],
+      "ans": "B",
+      "exp": "Poor maintenance of fixed assets is a business signal. A is account activity; C is cash flow; D is cash flow signal."
+    },
+    {
+      "id": "Q275",
+      "module": 8,
+      "type": "mcq",
+      "q": "A borrower has rapidly growing sales beyond what the business can sustainably support. This is an:",
+      "opts": [
+        "Account activity signal.",
+        "Management signal.",
+        "Income statement signal.",
+        "Economic signal."
+      ],
+      "ans": "C",
+      "exp": "Rapidly growing sales (beyond sustainable growth) is an income statement signal. It indicates potential overtrading and strain on resources."
+    },
+    {
+      "id": "Q276",
+      "module": 8,
+      "type": "mcq",
+      "q": "Which of the following is a 'cash flow' signal of potential loan problems?",
+      "opts": [
+        "Increasing intra-industry rivalry.",
+        "Growing income with falling cash from operations.",
+        "Loss of key product lines.",
+        "Frequent excesses over the limit."
+      ],
+      "ans": "B",
+      "exp": "Growing income with falling cash from operations is a cash flow signal — it indicates quality of earnings issue. A is economic; C is business; D is account activity."
+    },
+    {
+      "id": "Q277",
+      "module": 8,
+      "type": "mcq",
+      "q": "A borrower who has declining cash flow and is acquiring assets that represent 'wants' vs. 'needs' is showing:",
+      "opts": [
+        "Income statement signal.",
+        "Management signal.",
+        "Cash flow signal.",
+        "Economic signal."
+      ],
+      "ans": "C",
+      "exp": "Declining cash flow and acquiring assets that represent 'wants' vs. 'needs' are both cash flow early warning signals."
+    },
+    {
+      "id": "Q278",
+      "module": 8,
+      "type": "mcq",
+      "q": "When a borrower's industry is facing changing technology and taste, this is an:",
+      "opts": [
+        "Account activity signal.",
+        "Business signal.",
+        "Economic signal.",
+        "Cash flow signal."
+      ],
+      "ans": "C",
+      "exp": "Changing technology and taste are economic signals — they represent external factors affecting the borrower's industry and repayment capacity."
+    },
+    {
+      "id": "Q279",
+      "module": 8,
+      "type": "mcq",
+      "q": "What should the bank's ultimate aim be in loan recovery?",
+      "opts": [
+        "To minimize legal costs.",
+        "To recover and settle the defaulting loan within the shortest possible time at maximum return.",
+        "To maintain a positive relationship with the borrower.",
+        "To restructure all non-performing loans."
+      ],
+      "ans": "B",
+      "exp": "The ultimate aim is to recover and settle the defaulting loan within the shortest possible time at maximum return for the bank."
+    },
+    {
+      "id": "Q280",
+      "module": 8,
+      "type": "mcq",
+      "q": "A borrower has an overdraft facility that is consistently at the limit with no swings. The Relationship Manager should:",
+      "opts": [
+        "Automatically increase the limit.",
+        "Consider converting the overdraft to a term loan or investigate the cause.",
+        "Ignore the situation as normal.",
+        "Call in the entire facility immediately."
+      ],
+      "ans": "B",
+      "exp": "When an overdraft shows no swings and maintains a hardcore balance, it indicates structural need rather than temporary working capital. The bank should consider restructuring (converting to term loan) or investigate the cause. Immediate call-in (D) may not be the first step."
+    },
+    {
+      "id": "Q281",
+      "module": 9,
+      "type": "mcq",
+      "q": "What is the primary objective of the Basel Accords?",
+      "opts": [
+        "To standardize interest rates across all banks globally.",
+        "To develop a framework that strengthens financial soundness and introduces strong risk management practices in banks.",
+        "To eliminate all credit risk from the banking system.",
+        "To increase bank profitability through regulatory arbitrage."
+      ],
+      "ans": "B",
+      "exp": "The Basel Accord objectives are to strengthen financial soundness, introduce reliable risk management practices, and ensure global consistency. It does not standardize rates (A), eliminate risk (C), or increase profitability through arbitrage (D)."
+    },
+    {
+      "id": "Q282",
+      "module": 9,
+      "type": "mcq",
+      "q": "Basel I (1988) considered which types of risk for capital allocation?",
+      "opts": [
+        "Credit risk and market risk.",
+        "Credit risk, market risk, and operational risk.",
+        "Credit risk only.",
+        "Market risk and operational risk only."
+      ],
+      "ans": "A",
+      "exp": "Basel I considered two risks: Credit Risk and Market Risk. Basel II added Operational Risk to make three. Basel I did not consider only credit risk (C) or market/operational only (D)."
+    },
+    {
+      "id": "Q283",
+      "module": 9,
+      "type": "mcq",
+      "q": "Basel II (2004) introduced which innovation in risk-based capital regulation?",
+      "opts": [
+        "A uniform one-size-fits-all risk weight for all assets.",
+        "The concept of three Pillars: minimum capital adequacy, supervisory review, and market discipline.",
+        "The elimination of credit risk from capital calculations.",
+        "A single tier of capital requirement."
+      ],
+      "ans": "B",
+      "exp": "Basel II introduced the Three Pillars: (a) minimum capital adequacy, (b) supervisory review, and (c) market discipline. It also considered three risk classes and allowed asset quality to determine risk weights (not uniform)."
+    },
+    {
+      "id": "Q284",
+      "module": 9,
+      "type": "mcq",
+      "q": "Under Basel III, what is the total minimum common equity requirement as a percentage of Risk-Weighted Assets (RWA)?",
+      "opts": [
+        "4.4%.",
+        "7%.",
+        "8%.",
+        "10.5%."
+      ],
+      "ans": "B",
+      "exp": "Basel III requires 4.4% minimum common equity plus a 2.5% capital conservation buffer, totaling 7% of RWA. 8% was the Basel I total capital adequacy ratio (all tiers). 10.5% includes additional buffers."
+    },
+    {
+      "id": "Q285",
+      "module": 9,
+      "type": "mcq",
+      "q": "What is the purpose of the 'capital conservation buffer' introduced under Basel III?",
+      "opts": [
+        "To increase bank profitability.",
+        "To ensure banks maintain additional capital during good times that can be drawn down during stress.",
+        "To eliminate the need for Tier 2 capital.",
+        "To allow banks to reduce their capital requirements."
+      ],
+      "ans": "B",
+      "exp": "The capital conservation buffer of 2.5% of RWA ensures banks build up capital during good times to absorb losses during stress. It does not increase profitability (A), eliminate Tier 2 (C), or reduce requirements (D)."
+    },
+    {
+      "id": "Q286",
+      "module": 9,
+      "type": "mcq",
+      "q": "Which of the following is classified as Tier 1 (Core Capital) under Basel?",
+      "opts": [
+        "Revaluation reserves.",
+        "Subordinated debt.",
+        "Equity and disclosed reserves.",
+        "General provisions."
+      ],
+      "ans": "C",
+      "exp": "Tier 1 Core Capital includes equity and disclosed reserves. Revaluation reserves (A), subordinated debt (B), and general provisions (D) are Tier 2 Supplementary Capital."
+    },
+    {
+      "id": "Q287",
+      "module": 9,
+      "type": "mcq",
+      "q": "Tier 2 (Supplementary Capital) is limited to what percentage of Tier 1 capital?",
+      "opts": [
+        "50%.",
+        "100%.",
+        "150%.",
+        "200%."
+      ],
+      "ans": "B",
+      "exp": "Tier 2 Supplementary Capital is limited to 100% of Tier 1 Core Capital. This prevents banks from relying too heavily on lower-quality capital."
+    },
+    {
+      "id": "Q288",
+      "module": 9,
+      "type": "mcq",
+      "q": "Which of the following is an example of Tier 3 capital?",
+      "opts": [
+        "Equity.",
+        "Revaluation reserves.",
+        "Short-term subordinated debt.",
+        "General loan loss reserves."
+      ],
+      "ans": "C",
+      "exp": "Tier 3 capital is short-term subordinated debt. Equity (A) is Tier 1; revaluation reserves (B) and general loan loss reserves (D) are Tier 2."
+    },
+    {
+      "id": "Q289",
+      "module": 9,
+      "type": "mcq",
+      "q": "Basel II introduced which new risk class that was not explicitly covered in Basel I?",
+      "opts": [
+        "Credit risk.",
+        "Market risk.",
+        "Operational risk.",
+        "Liquidity risk."
+      ],
+      "ans": "C",
+      "exp": "Basel II added Operational Risk to Credit Risk and Market Risk (which were in Basel I). Liquidity risk was later addressed in Basel III."
+    },
+    {
+      "id": "Q290",
+      "module": 9,
+      "type": "mcq",
+      "q": "What is the purpose of the 'countercyclical buffer' introduced under Basel III?",
+      "opts": [
+        "To reduce bank profitability during economic expansions.",
+        "To avoid systemic risk by building capital during periods of excessive credit growth.",
+        "To eliminate credit risk entirely.",
+        "To increase lending during recessions."
+      ],
+      "ans": "B",
+      "exp": "The countercyclical buffer of 0-2.5% aims to avoid systemic risk by building capital during periods of excessive credit growth. It is not about reducing profitability (A) or eliminating risk (C)."
+    },
+    {
+      "id": "Q291",
+      "module": 9,
+      "type": "mcq",
+      "q": "The Asset Management Corporation of Nigeria (AMCON) was established primarily to:",
+      "opts": [
+        "Provide loans to small businesses.",
+        "Act as an emergency bank rescue vehicle to resolve banking challenges.",
+        "Regulate the Nigerian banking industry.",
+        "Manage the Central Bank's foreign reserves."
+      ],
+      "ans": "B",
+      "exp": "AMCON is an emergency bank rescue vehicle to intervene within a period of time to resolve banking challenges. It is not primarily for SME loans (A), regulation (C) — that's CBN, or reserves management (D)."
+    },
+    {
+      "id": "Q292",
+      "module": 9,
+      "type": "mcq",
+      "q": "What was one of AMCON's notable achievements?",
+      "opts": [
+        "Acquiring over 12,500 banking sector NPLs worth N1.845 trillion.",
+        "Providing loans to all commercial banks.",
+        "Eliminating all non-performing loans from the banking system.",
+        "Establishing the Nigerian Stock Exchange."
+      ],
+      "ans": "A",
+      "exp": "AMCON acquired over 12,500 NPLs worth N1.845 trillion and reduced banking sector NPLs to less than 5%. It did not eliminate all NPLs (C) or establish the stock exchange (D)."
+    },
+    {
+      "id": "Q293",
+      "module": 9,
+      "type": "mcq",
+      "q": "The Credit Risk Management System (CRMS) was established by the CBN to:",
+      "opts": [
+        "Provide insurance for bank deposits.",
+        "Provide a database of borrowing customers and their performance on borrowed funds.",
+        "Regulate the interest rates on loans.",
+        "Manage the foreign exchange market."
+      ],
+      "ans": "B",
+      "exp": "CRMS provides a database of borrowing customers and their performance on borrowed funds. It does not provide deposit insurance (A), regulate rates (C), or manage forex (D)."
+    },
+    {
+      "id": "Q294",
+      "module": 9,
+      "type": "mcq",
+      "q": "Which of the following is an objective of the Credit Risk Management System (CRMS)?",
+      "opts": [
+        "To strengthen the credit appraisal procedures of banks.",
+        "To eliminate all credit losses.",
+        "To determine the maximum interest rate banks can charge.",
+        "To approve all loans before disbursement."
+      ],
+      "ans": "A",
+      "exp": "CRMS objectives include strengthening credit appraisal procedures, storing/disseminating credit data, monitoring over-exposure, and facilitating consistent classification of credits. It does not eliminate losses (B), determine rates (C), or approve loans (D)."
+    },
+    {
+      "id": "Q295",
+      "module": 9,
+      "type": "mcq",
+      "q": "What information does a CRC Consumer Credit Report typically include?",
+      "opts": [
+        "The borrower's social media activity.",
+        "Personal details, address history, employment history, and credit facility history.",
+        "The borrower's medical records.",
+        "The borrower's investment portfolio."
+      ],
+      "ans": "B",
+      "exp": "A CRC Consumer Credit Report includes personal details, address history, employment history, inquiries, credit facility history, security details, suit filed details, and dishonour of cheque details. It does not include social media (A), medical records (C), or investment portfolios (D)."
+    },
+    {
+      "id": "Q296",
+      "module": 9,
+      "type": "mcq",
+      "q": "A credit rating is defined as an opinion of:",
+      "opts": [
+        "The future profitability of a company.",
+        "The future ability, legal obligation, and willingness of an obligor to make full and timely payments.",
+        "The current market price of a company's stock.",
+        "The quality of a company's management team."
+      ],
+      "ans": "B",
+      "exp": "A credit rating is an opinion of the future ability, legal obligation, and willingness of an obligor to make full and timely payments on principal and interest. It is not profitability (A), stock price (C), or management quality (D) alone."
+    },
+    {
+      "id": "Q297",
+      "module": 9,
+      "type": "mcq",
+      "q": "An obligor with a credit rating of 'AAA' would typically have:",
+      "opts": [
+        "Below investment grade credit.",
+        "Impeccable capacity to meet obligations with overwhelming transaction dynamics.",
+        "Weak financial condition.",
+        "Deteriorating capacity requiring refinancing."
+      ],
+      "ans": "B",
+      "exp": "AAA is the highest rating (Investment Grade), indicating impeccable capacity to meet obligations, overwhelming transaction dynamics, and overwhelming cash flows. A, C, and D describe lower ratings."
+    },
+    {
+      "id": "Q298",
+      "module": 9,
+      "type": "mcq",
+      "q": "A credit rating of 'BB' is considered:",
+      "opts": [
+        "Investment Grade.",
+        "Below Investment Grade (High Yield/Junk).",
+        "Default.",
+        "No rating requested."
+      ],
+      "ans": "B",
+      "exp": "'BB' is Below Investment Grade (High Yield/Junk) with scores of 50-59%, indicating deteriorating capacity based on refinancing ability. AAA to BBB are Investment Grade."
+    },
+    {
+      "id": "Q299",
+      "module": 9,
+      "type": "mcq",
+      "q": "Under Basel III, what additional requirement applies to Systemically Important Financial Institutions (SIFI)?",
+      "opts": [
+        "They are exempt from capital requirements.",
+        "They must hold additional buffers beyond Basel III requirements.",
+        "They only need to meet Basel I requirements.",
+        "They are not subject to any regulation."
+      ],
+      "ans": "B",
+      "exp": "Systemically Important Financial Institutions (SIFI) must hold additional buffers beyond Basel III requirements. They are not exempt (A), not limited to Basel I (C), and are subject to regulation (D)."
+    },
+    {
+      "id": "Q300",
+      "module": 9,
+      "type": "mcq",
+      "q": "The 'Pillar 2' of Basel II addresses:",
+      "opts": [
+        "Minimum capital adequacy requirements.",
+        "Supervisory review and enterprise-wide risk management.",
+        "Market discipline and disclosure.",
+        "Liquidity requirements."
+      ],
+      "ans": "B",
+      "exp": "Pillar 2 is Supervisory Review, addressing enterprise-wide risk management, ICAAP requirements, governance, and off-balance sheet capital. Pillar 1 (A) is capital adequacy; Pillar 3 (C) is market discipline; liquidity is Basel III."
+    },
+    {
+      "id": "Q301",
+      "module": 9,
+      "type": "mcq",
+      "q": "Which of the following is NOT an achievement of AMCON?",
+      "opts": [
+        "Acquiring over 12,500 banking sector NPLs.",
+        "Restructuring N600 billion of NPLs.",
+        "Establishing three bridge banks and selling two.",
+        "Eliminating all bank failures in Nigeria."
+      ],
+      "ans": "D",
+      "exp": "AMCON acquired NPLs, restructured N600 billion, and established/sold bridge banks. It did not eliminate all bank failures — though it reduced NPLs significantly. D is the only claim not made in the material."
+    },
+    {
+      "id": "Q302",
+      "module": 9,
+      "type": "mcq",
+      "q": "A 'D' credit rating indicates:",
+      "opts": [
+        "Investment grade credit.",
+        "The instrument is in default.",
+        "No rating requested.",
+        "Significant non-credit risks."
+      ],
+      "ans": "B",
+      "exp": "A 'D' rating indicates the instrument is in default. 'R' indicates significant non-credit risks; 'NR' means no rating requested or insufficient information."
+    }
+  ]
+}

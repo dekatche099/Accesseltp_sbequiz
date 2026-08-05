@@ -55,9 +55,6 @@
     .tier-header:first-of-type { margin-top: 0; }
     .tier-header h2 { color: white; font-size: 1.3rem; }
     .tier-count { background: rgba(255,255,255,0.1); color: #c8d6e5; font-size: 0.75rem; padding: 3px 12px; border-radius: 100px; }
-    .tier-note { color: #8fa3b8; font-size: 0.8rem; margin: -10px 0 20px; }
-    .sub-header { color: #6ee7b7; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; margin: 22px 0 10px; }
-    .sub-header:first-of-type { margin-top: 0; }
     .tier-inprogress .course-card.available { border-color: rgba(251,191,36,0.4); }
     .tier-inprogress .course-card.available:hover { border-color: #fbbf24; background: rgba(251,191,36,0.12); }
     .tier-done .course-card { opacity: 0.82; }
@@ -315,8 +312,8 @@
     })();
 
     // ---- Course data, grouped into 3 tiers based on the 2026 ELTP 14-21 calendar ----
-    // Tier 1 (top): being worked on right now — module is today/upcoming on the calendar.
-    //   Sub-grouped: JSON-engine courses (course.html?course=) first, legacy standalone HTML pages after.
+    // Tier 1 (top): being worked on right now — module is today/upcoming on the calendar
+    //   (JSON course.html links listed first, legacy standalone HTML pages after).
     // Tier 2 (middle): coming soon — no quiz built yet at all.
     // Tier 3 (bottom): already done — module's calendar date has already passed.
     // Notes / assumptions to double check:
@@ -332,67 +329,45 @@
     const courseGroups = [
       {
         key: "inprogress",
-        label: "🔧 In Progress — Building Now",
-        note: "Ordered by how soon the module comes up on the calendar. Unmatched items are appended at the end.",
-        sub: [
-          {
-            label: "JSON course engine (course.html)",
-            courses: [
-              { title: "Building Customer Trust and Ethical Banking Practices", status: "available", link: "course.html?course=ethical-banking", desc: "240 MCQs" },
-              { title: "Sales Effectiveness in a Digital World", status: "available", link: "course.html?course=sedw", desc: "Quiz now live — question bank added" },
-              { title: "Retail Banking", status: "available", link: "course.html?course=retail-banking", desc: "240 MCQs" },
-              { title: "Credit Policy Guide Review", status: "available", link: "course.html?course=cpg-question-bank", desc: "550 unique dual‑mode questions" },
-              { title: "Bank Lending & Credit Management", status: "available", link: "course.html?course=bank-lending-credit-management", desc: "Quiz now live — question bank added" },
-              { title: "Innovative Product Development for Retail Banking", status: "available", link: "course.html?course=ipd_full_question_bank", desc: "Quiz now live — question bank added" },
-              { title: "Innovation and Design Thinking", status: "available", link: "course.html?course=innovation-design-thinking", desc: "350 MCQs covering key concepts" },
-              { title: "Financial Inclusion and Digital Accessibility", status: "available", link: "course.html?course=financial-inclusion", desc: "240 MCQs" },
-              { title: "Customer Service Excellence", status: "available", link: "course.html?course=customer-service-excellence", desc: "250 MCQs + 45 flashcards — 295 total" },
-              { title: "Selling & Marketing of Financial Services", status: "available", link: "course.html?course=smfs", desc: "Quiz now live — question bank added" }
-            ]
-          },
-          {
-            label: "Legacy standalone HTML pages (not yet on the platform)",
-            courses: []
-          }
+        label: "🔧 In Progress",
+        courses: [
+          { title: "Building Customer Trust and Ethical Banking Practices", status: "available", link: "course.html?course=ethical-banking", desc: "240 MCQs" },
+          { title: "Sales Effectiveness in a Digital World", status: "available", link: "course.html?course=sedw", desc: "Quiz now live — question bank added" },
+          { title: "Retail Banking", status: "available", link: "course.html?course=retail-banking", desc: "240 MCQs" },
+          { title: "Credit Policy Guide Review", status: "available", link: "course.html?course=cpg-question-bank", desc: "550 unique dual‑mode questions" },
+          { title: "Bank Lending & Credit Management", status: "available", link: "course.html?course=bank-lending-credit-management", desc: "Quiz now live — question bank added" },
+          { title: "Innovative Product Development for Retail Banking", status: "available", link: "course.html?course=ipd_full_question_bank", desc: "Quiz now live — question bank added" },
+          { title: "Innovation and Design Thinking", status: "available", link: "course.html?course=innovation-design-thinking", desc: "350 MCQs covering key concepts" },
+          { title: "Financial Inclusion and Digital Accessibility", status: "available", link: "course.html?course=financial-inclusion", desc: "240 MCQs" },
+          { title: "Customer Service Excellence", status: "available", link: "course.html?course=customer-service-excellence", desc: "250 MCQs + 45 flashcards — 295 total" },
+          { title: "Selling & Marketing of Financial Services", status: "available", link: "course.html?course=smfs", desc: "Quiz now live — question bank added" }
         ]
       },
       {
         key: "coming",
         label: "⏳ Coming Soon",
-        note: null,
-        sub: [
-          {
-            label: null,
-            courses: [
-              { title: "Nigerian Deposit Insurance Scheme", status: "coming", link: "#", desc: "Coming soon" },
-              { title: "Risk Management in Retail Banking", status: "coming", link: "#", desc: "Coming soon" }
-            ]
-          }
+        courses: [
+          { title: "Nigerian Deposit Insurance Scheme", status: "coming", link: "#", desc: "Coming soon" },
+          { title: "Risk Management in Retail Banking", status: "coming", link: "#", desc: "Coming soon" }
         ]
       },
       {
         key: "done",
         label: "✅ Already Done",
-        note: null,
-        sub: [
-          {
-            label: null,
-            courses: [
-              { title: "Intra‑Africa Trade", status: "available", link: "afcfta-quiz.html", desc: "49 MCQs + 21 flashcards — 70 total" },
-              { title: "Economics Quiz", status: "available", link: "course.html?course=economics", desc: "98 MCQs + 42 flashcards — 140 total" },
-              { title: "Introduction to Cyber Security", status: "available", link: "course.html?course=cybersecurity", desc: "Quiz now live — question bank added" },
-              { title: "Elements of Banking", status: "available", link: "course.html?course=eob", desc: "140 MCQs + 60 flashcards — 200 total" },
-              { title: "Understanding Modern Retail Banking", status: "available", link: "retail-banking-quiz.html", desc: "90 MCQs + 30 flashcards — 120 total" },
-              { title: "Digital Technology in Banking", status: "available", link: "course.html?course=digital-banking", desc: "310 MCQs" },
-              { title: "Basic Accounting", status: "available", link: "course.html?course=accounting-quiz-mcq", desc: "264 MCQs + 264 flashcards — 528 total" },
-              { title: "Use of English & Business Writing", status: "available", link: "business-communication-writing.html", desc: "110 MCQs + 35 flashcards — 145 total" },
-              { title: "Data Analysis (Power BI and Excel)", status: "available", link: "course.html?course=data-analysis", desc: "480 MCQs covering key concepts" },
-              { title: "Banking Regulations", status: "available", link: "course.html?course=banking-regulation-2023", desc: "250 MCQs covering key concepts" },
-              { title: "Basic Banking Operations", status: "available", link: "course.html?course=basic-banking-operations", desc: "150 MCQs + 39 flashcards — 189 total" },
-              { title: "Customer Acquisition, Retention, and Relationship Management", status: "available", link: "course.html?course=access-bank-cust-acq-retention", desc: "Practice quiz covering customer acquisition, retention strategies, and relationship management" },
-              { title: "Strategic Marketing and Brand Management", status: "available", link: "course.html?course=access-bank-strategic-marketing", desc: "42 MCQs + 18 flashcards — 60 total" }
-            ]
-          }
+        courses: [
+          { title: "Intra‑Africa Trade", status: "available", link: "afcfta-quiz.html", desc: "49 MCQs + 21 flashcards — 70 total" },
+          { title: "Economics Quiz", status: "available", link: "course.html?course=economics", desc: "98 MCQs + 42 flashcards — 140 total" },
+          { title: "Introduction to Cyber Security", status: "available", link: "course.html?course=cybersecurity", desc: "Quiz now live — question bank added" },
+          { title: "Elements of Banking", status: "available", link: "course.html?course=eob", desc: "140 MCQs + 60 flashcards — 200 total" },
+          { title: "Understanding Modern Retail Banking", status: "available", link: "retail-banking-quiz.html", desc: "90 MCQs + 30 flashcards — 120 total" },
+          { title: "Digital Technology in Banking", status: "available", link: "course.html?course=digital-banking", desc: "310 MCQs" },
+          { title: "Basic Accounting", status: "available", link: "course.html?course=accounting-quiz-mcq", desc: "264 MCQs + 264 flashcards — 528 total" },
+          { title: "Use of English & Business Writing", status: "available", link: "business-communication-writing.html", desc: "110 MCQs + 35 flashcards — 145 total" },
+          { title: "Data Analysis (Power BI and Excel)", status: "available", link: "course.html?course=data-analysis", desc: "480 MCQs covering key concepts" },
+          { title: "Banking Regulations", status: "available", link: "course.html?course=banking-regulation-2023", desc: "250 MCQs covering key concepts" },
+          { title: "Basic Banking Operations", status: "available", link: "course.html?course=basic-banking-operations", desc: "150 MCQs + 39 flashcards — 189 total" },
+          { title: "Customer Acquisition, Retention, and Relationship Management", status: "available", link: "course.html?course=access-bank-cust-acq-retention", desc: "Practice quiz covering customer acquisition, retention strategies, and relationship management" },
+          { title: "Strategic Marketing and Brand Management", status: "available", link: "course.html?course=access-bank-strategic-marketing", desc: "42 MCQs + 18 flashcards — 60 total" }
         ]
       }
     ];
@@ -434,17 +409,9 @@
     function render() {
       let html = '';
       courseGroups.forEach(group => {
-        const total = group.sub.reduce((sum, s) => sum + s.courses.length, 0);
-        if (total === 0) return; // skip empty tiers entirely
-        html += `<div class="tier-header"><h2>${group.label}</h2><span class="tier-count">${total}</span></div>`;
-        if (group.note) html += `<div class="tier-note">${escapeHtml(group.note)}</div>`;
-        html += `<div class="tier-${group.key}">`;
-        group.sub.forEach(sub => {
-          if (sub.courses.length === 0) return; // skip empty subgroups
-          if (sub.label) html += `<div class="sub-header">${escapeHtml(sub.label)}</div>`;
-          html += `<div class="course-grid">${sub.courses.map(cardHtml).join('')}</div>`;
-        });
-        html += `</div>`;
+        if (group.courses.length === 0) return; // skip empty tiers entirely
+        html += `<div class="tier-header"><h2>${group.label}</h2><span class="tier-count">${group.courses.length}</span></div>`;
+        html += `<div class="course-grid tier-${group.key}">${group.courses.map(cardHtml).join('')}</div>`;
       });
       container.innerHTML = html;
 

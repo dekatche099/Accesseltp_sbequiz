@@ -1,0 +1,2395 @@
+{
+  "meta": {
+    "id": "ipd",
+    "title": "Innovative Product Development for Retail Banking",
+    "description": "Question bank covering innovation concepts, types of innovation, retail product lifecycle management, product launch, customer-centric design, and practical innovation case studies. Designed for the ELTP Innovative Product Development for Retail Banking course.",
+    "category": "Retail Banking",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Understanding Innovation Concept in Retail Banking"
+    },
+    {
+      "id": 2,
+      "title": "Types of Innovation in Retail Banking"
+    },
+    {
+      "id": 3,
+      "title": "Retail Product Lifecycle Management"
+    },
+    {
+      "id": 4,
+      "title": "Retail Product Launch"
+    },
+    {
+      "id": 5,
+      "title": "Designing Products for Changing Customer Needs"
+    },
+    {
+      "id": 6,
+      "title": "Practical Innovation"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the context of retail banking, which of the following best defines innovation?",
+      "opts": [
+        "A. The replacement of physical bank branches with digital-only channels, regardless of customer feedback",
+        "B. The introduction of new or improved products, services, or processes that enhance how banking is delivered to customers while remaining commercially viable",
+        "C. The adoption of any new software system by a bank's IT department",
+        "D. The introduction of new regulatory requirements that banks must comply with"
+      ],
+      "ans": "B",
+      "exp": "Innovation in retail banking covers new products, services, and processes aimed at improving delivery to customers - and critically, it must remain profitable. Option A mistakes one tactic (branch closure) for the whole concept and ignores that customer needs should guide the change. Option C confuses a single IT upgrade with innovation broadly - internal software adoption alone isn't innovation unless it changes what customers experience. Option D confuses a regulatory driver of innovation with innovation itself."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank introduces an AI-driven chatbot that handles customer inquiries and simple transactions around the clock. Which type of innovation does this best exemplify?",
+      "opts": [
+        "A. Process innovation",
+        "B. Service innovation",
+        "C. Product innovation",
+        "D. Business model innovation"
+      ],
+      "ans": "B",
+      "exp": "24/7 automated customer support is service innovation - it enhances or creates an entirely new service experience for the customer. Process innovation (A) is tempting because automation is involved, but process innovation refers to internal efficiency gains (e.g., automated risk assessment), not the customer-facing service itself. Product innovation (C) would apply to a new banking product like a digital wallet, and business model innovation (D) involves rethinking how the bank creates and delivers value overall."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "The EU's PSD2 framework, which requires banks to grant third-party providers access to customer account data with consent, illustrates which key driver of innovation in retail banking?",
+      "opts": [
+        "A. Customer expectations",
+        "B. Regulatory changes",
+        "C. Technological advancements",
+        "D. Global economic factors"
+      ],
+      "ans": "B",
+      "exp": "PSD2 is a regulatory framework - governments and regulators imposing new rules that force banks to innovate to remain compliant while staying profitable. It is not itself a technology (C) or an economic shift (D), and while it eventually affects customer experience, the driver here is the legal mandate, not customer demand (A)."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "A fintech startup begins offering fully digital banking services that bypass traditional bank branches entirely, fundamentally changing how customers access financial services. This best represents:",
+      "opts": [
+        "A. Incremental innovation",
+        "B. Radical (disruptive) innovation",
+        "C. Process innovation within an existing bank",
+        "D. A routine service upgrade"
+      ],
+      "ans": "B",
+      "exp": "This scenario matches the manual's own example of radical innovation - fintech startups providing digital-only banking that bypasses traditional banks entirely. It's a complete overhaul of how banking is done, not a gradual improvement (A, D), and it isn't happening inside an existing bank's operations (C)."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which statement best captures the relationship between radical and incremental innovation in retail banking?",
+      "opts": [
+        "A. Incremental innovation is more important because it directly disrupts competitors",
+        "B. Radical innovations tend to attract more attention for their disruptive potential, while incremental improvements support long-term growth and stability",
+        "C. Radical innovation should always be prioritized over incremental innovation since it is more profitable",
+        "D. Incremental and radical innovation cannot coexist within the same bank's strategy"
+      ],
+      "ans": "B",
+      "exp": "Both innovation types matter: radical innovation gets more attention because of its disruptive nature, but incremental improvements are what sustain long-term growth. Option A reverses the disruptive role. Option C overgeneralizes profitability, which isn't guaranteed by radical innovation alone. Option D is false - banks routinely pursue both simultaneously."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is an example of incremental innovation in retail banking?",
+      "opts": [
+        "A. A fintech startup launching a fully branchless digital bank",
+        "B. Adding an in-app bill payment feature to an existing mobile banking app",
+        "C. The emergence of a blockchain network that eliminates the need for banks in cross-border transfers",
+        "D. A new peer-to-peer lending platform bypassing traditional banks"
+      ],
+      "ans": "B",
+      "exp": "Adding a feature to an existing app is a gradual, continuous improvement - the definition of incremental innovation. Options A, C, and D all describe disruptive innovations that create new markets or displace existing players entirely, which is a fundamentally different category."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does innovation help a retail bank in a crowded marketplace?",
+      "opts": [
+        "A. It guarantees regulatory approval for new products automatically",
+        "B. It allows the bank to differentiate itself by offering better, faster, and more convenient services",
+        "C. It eliminates the need for the bank to monitor competitors",
+        "D. It removes the need for ongoing customer support"
+      ],
+      "ans": "B",
+      "exp": "Innovation drives competition by helping banks stand out through better, faster, more convenient offerings, attracting more customers. Option A is false - innovation doesn't bypass regulatory scrutiny. Options C and D describe outcomes not supported anywhere in the module; differentiation still requires monitoring competitors and supporting customers well."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank redesigns its mobile app to offer faster transactions and a more intuitive interface based on customer complaints. What is the primary benefit this pursues, according to the module?",
+      "opts": [
+        "A. Reduced regulatory reporting requirements",
+        "B. Increased customer loyalty and satisfaction",
+        "C. Lower interest rates on savings products",
+        "D. Elimination of the need for physical branches"
+      ],
+      "ans": "B",
+      "exp": "Innovations that meet customer needs - such as easier interfaces and faster transactions - increase customer loyalty and satisfaction. Reduced regulatory burden (A), interest rate changes (C), and branch elimination (D) are not identified as outcomes of this kind of customer-driven redesign."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why does the module warn that banks risk 'obsolescence' if they fail to keep pace with trends like AI, blockchain, and cybersecurity developments?",
+      "opts": [
+        "A. Because customers will file regulatory complaints against the bank",
+        "B. Because failing to adapt to technological advancements can make the bank uncompetitive as the industry evolves",
+        "C. Because banks are legally required to adopt every new technology within one year",
+        "D. Because obsolescence only affects a bank's internal IT department, not its customers"
+      ],
+      "ans": "B",
+      "exp": "The module frames technological advancement as something retail banks must keep pace with to remain competitive - falling behind risks the bank becoming irrelevant to customers who expect modern tools. Option A misattributes the risk to regulatory action. Option C invents a legal requirement not in the material. Option D wrongly limits the impact to IT alone, when customer-facing competitiveness is the real concern."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the module, why is continuous innovation often necessary from a regulatory compliance standpoint?",
+      "opts": [
+        "A. Regulators require banks to redesign their logo every few years",
+        "B. Evolving regulatory standards must be met without compromising customer service quality, which often requires innovative solutions",
+        "C. Compliance requirements only apply to newly licensed banks",
+        "D. Innovation removes the need for compliance departments entirely"
+      ],
+      "ans": "B",
+      "exp": "As regulatory standards evolve, banks need innovative approaches to stay compliant while still delivering good service - compliance and customer experience aren't meant to trade off against each other. Options A, C, and D describe things not supported by the material and misrepresent the relationship between compliance and innovation."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "A North American bank invests heavily in AI-driven customer support, blockchain for secure transactions, and forms partnerships with fintech companies under an open banking model. Which region's innovation trend does this most closely reflect?",
+      "opts": [
+        "A. Europe",
+        "B. North America",
+        "C. Asia-Pacific",
+        "D. Africa"
+      ],
+      "ans": "B",
+      "exp": "This combination - AI-driven support, blockchain, and open banking collaboration with FinTechs - is specifically identified as the North American trend. Europe's trend (A) centers more narrowly on Open Banking's third-party data access for personalized services and loan efficiency, without the same emphasis on blockchain and AI-driven support described here."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "In Europe, the rise of Open Banking - allowing third-party providers to access customer data with consent - is primarily leading to which outcome?",
+      "opts": [
+        "A. The elimination of all traditional banks within the region",
+        "B. New product development such as personalized banking services and more efficient loan processes",
+        "C. A complete ban on FinTech partnerships",
+        "D. Mandatory adoption of cryptocurrency by all banks"
+      ],
+      "ans": "B",
+      "exp": "Open Banking in Europe is driving new product development - notably personalized services and streamlined loan processes - by giving third parties consented access to customer data. Options A, C, and D describe outcomes with no basis in the module's discussion of the European trend."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "In markets such as China and India, mobile banking and digital wallets are prominent, and smart banking with AI and big data analytics is gaining traction primarily for:",
+      "opts": [
+        "A. Reducing the number of licensed banks in the region",
+        "B. Risk management and fraud detection",
+        "C. Eliminating the need for customer identification",
+        "D. Replacing all in-branch services with vending machines"
+      ],
+      "ans": "B",
+      "exp": "The Asia-Pacific trend specifically ties AI and big data analytics to risk management and fraud detection, alongside widespread mobile-first adoption. Options A, C, and D are fabricated outcomes not discussed in the module."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "M-Pesa is cited in the module as having revolutionized financial inclusion through mobile-based financial services. In which country did this innovation originate and take hold?",
+      "opts": [
+        "A. Nigeria",
+        "B. Kenya",
+        "C. South Africa",
+        "D. Ghana"
+      ],
+      "ans": "B",
+      "exp": "The module specifically names Kenya as the country where M-Pesa drove mobile payment adoption and financial inclusion. Nigeria, South Africa, and Ghana are other African markets but are not the ones cited for M-Pesa's origin in this context."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank operating in a region with a large unbanked population launches a mobile savings account paired with a micro-lending platform to expand financial access. Which regional innovation trend does this best align with?",
+      "opts": [
+        "A. North America",
+        "B. Latin America",
+        "C. Europe",
+        "D. Asia-Pacific"
+      ],
+      "ans": "B",
+      "exp": "Micro-lending platforms and mobile savings accounts targeting unbanked populations are specifically identified as the Latin American innovation focus, driven by financial inclusion and accessibility needs. The other regions' trends center on different priorities - open banking collaboration (North America), regulated data-sharing (Europe), and mobile-first plus AI-driven risk tools (Asia-Pacific)."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT listed among the key drivers of innovation in retail banking?",
+      "opts": [
+        "A. Technological advancements",
+        "B. Employee turnover rates",
+        "C. Regulatory changes",
+        "D. Customer expectations"
+      ],
+      "ans": "B",
+      "exp": "The module identifies four key drivers: technological advancements, regulatory changes, customer expectations, and global economic factors. Employee turnover is never discussed as a driver of innovation in this module, making it the correct exception."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank notices that customers increasingly expect seamless, personalized experiences across both its app and its physical branches. Which key driver of innovation does this scenario primarily illustrate?",
+      "opts": [
+        "A. Global economic factors",
+        "B. Customer expectations",
+        "C. Regulatory changes",
+        "D. Technological advancements"
+      ],
+      "ans": "B",
+      "exp": "Rising demand for convenience, flexibility, and personalization across digital and physical platforms is precisely how the module defines customer expectations as a driver. While technology may be the tool used to respond, the driver behind the pressure in this scenario is what customers are demanding, not the technology itself."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "A retail bank is deciding how to respond to a new fintech competitor that has entered its market with a fully digital, branchless model. Based on the module's discussion of innovation drivers and their impact, which consideration should most appropriately guide this decision?",
+      "opts": [
+        "A. Whether the competitor's marketing budget is larger than the bank's",
+        "B. The bank's assessment of shifting customer expectations, competitive pressure, and its capacity to adapt technologically and regulatorily without sacrificing profitability",
+        "C. Whether the fintech competitor has more social media followers",
+        "D. The number of years the bank has been in operation"
+      ],
+      "ans": "B",
+      "exp": "The module frames sound innovation decisions as balancing multiple drivers together - customer expectations, competition, technology, regulation - while keeping profitability intact, rather than reacting to any single superficial factor. Options A, C, and D isolate irrelevant metrics that don't reflect the module's actual framework for evaluating innovation responses."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "When a bank's innovation efforts are explicitly driven by customer desires for convenience, security, and ease of access, this reflects which of the module's four key concepts of innovation?",
+      "opts": [
+        "A. New Product Development",
+        "B. Customer-Centric Approach",
+        "C. Process Innovation",
+        "D. Regulatory Compliance"
+      ],
+      "ans": "B",
+      "exp": "The Customer-Centric Approach is specifically defined as innovation driven by customer needs and desires such as convenience, security, and ease of access. New Product Development (A) refers to creating new offerings, and Process Innovation (C) refers to internal efficiency gains - neither is defined by what motivates the innovation, unlike the customer-centric approach."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the module's four key concepts of innovation refers specifically to the creation of new banking products such as digital wallets and mobile banking apps?",
+      "opts": [
+        "A. Service Innovation",
+        "B. New Product Development",
+        "C. Customer-Centric Approach",
+        "D. Process Innovation"
+      ],
+      "ans": "B",
+      "exp": "New Product Development is defined specifically as the creation of new banking products like digital wallets and mobile banking apps. Service Innovation (A) instead covers enhancements to existing services or entirely new services, such as 24/7 chatbot support, rather than the products themselves."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "Beyond developing new products, the module states that innovation in retail banking also encompasses significant changes in which two areas?",
+      "opts": [
+        "A. Employee dress codes and branch signage",
+        "B. Processes and organizational structures that improve efficiency and customer experience",
+        "C. Shareholder dividend policy and stock price",
+        "D. Marketing budgets and office furniture"
+      ],
+      "ans": "B",
+      "exp": "The module explicitly states that innovation encompasses not only new product development but also significant changes in processes and organizational structures that improve efficiency and customer experience. The other options describe superficial or unrelated areas never mentioned in this context."
+    },
+    {
+      "id": "Q22",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank launches a mobile application allowing customers to store payment cards digitally and make contactless purchases from their phones. Which type of innovation does this represent?",
+      "opts": [
+        "A. Process innovation",
+        "B. Product innovation",
+        "C. Business model innovation",
+        "D. Service innovation"
+      ],
+      "ans": "B",
+      "exp": "A digital wallet is a new banking product - product innovation involves developing new or enhanced offerings like this. Process innovation (A) would apply to internal efficiency changes, service innovation (D) to customer experience enhancements around an existing offering, and business model innovation (C) to a shift in how the bank generates and delivers value overall."
+    },
+    {
+      "id": "Q23",
+      "module": 2,
+      "type": "mcq",
+      "q": "An automated platform uses algorithms to offer portfolio management and financial advice at lower cost than a human advisor. What is this type of product called?",
+      "opts": [
+        "A. A micro-investment platform",
+        "B. A robo-advisor",
+        "C. A digital wallet",
+        "D. A neo-bank"
+      ],
+      "ans": "B",
+      "exp": "Robo-advisors are automated platforms offering algorithm-driven financial advice or portfolio management. Micro-investment platforms (A) instead allow small, diversified investment amounts; digital wallets (C) manage payments, not portfolios; and neo-banks (D) are entirely digital banks, not investment-advisory tools."
+    },
+    {
+      "id": "Q24",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank replaces its manual loan risk assessment with an AI system that evaluates applications, automates risk scoring, and predicts defaults more accurately, reducing approval times. This is best classified as:",
+      "opts": [
+        "A. Service innovation",
+        "B. Process innovation",
+        "C. Product innovation",
+        "D. Disruptive innovation"
+      ],
+      "ans": "B",
+      "exp": "Using AI to improve internal loan-processing efficiency and accuracy is process innovation - it enhances the bank's internal operations, not a customer-facing product or service. Service innovation (A) would involve a new customer-facing offering; disruptive innovation (D) would involve a market-altering shift, which a single bank's internal process upgrade does not represent."
+    },
+    {
+      "id": "Q25",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is an example of process innovation, as distinct from service innovation?",
+      "opts": [
+        "A. Offering customers personalized financial advice based on data analytics",
+        "B. Eliminating physical paperwork through digital statements and e-signatures",
+        "C. Issuing debit cards instantly to customers at bank branches",
+        "D. Providing instant credit approval through AI-driven decision-making"
+      ],
+      "ans": "B",
+      "exp": "Paperless banking is a process innovation - it improves internal operational efficiency (eliminating physical documentation). Options A, C, and D are all service innovations, since they directly change what the customer experiences and receives, not just how the bank operates behind the scenes."
+    },
+    {
+      "id": "Q26",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank begins offering credit card and debit card issuance immediately at branches, rather than requiring customers to wait for cards to be mailed. What role does AI and data analytics typically play in this and similar service innovations?",
+      "opts": [
+        "A. They eliminate the need for any customer verification",
+        "B. They enable faster, more personalized decision-making, such as instant eligibility assessment",
+        "C. They are not involved in service innovation at all",
+        "D. They are used only for marketing campaigns"
+      ],
+      "ans": "B",
+      "exp": "Service innovations like instant card issuance and instant credit approval rely on AI and data analytics to make fast, personalized decisions about eligibility. Verification (A) is not eliminated, and data analytics plays a far broader role than marketing alone (D)."
+    },
+    {
+      "id": "Q27",
+      "module": 2,
+      "type": "mcq",
+      "q": "A traditional bank forms a partnership with a fintech firm to jointly offer peer-to-peer lending services under the bank's brand. This is best described as:",
+      "opts": [
+        "A. Product innovation",
+        "B. Business model innovation",
+        "C. Process innovation",
+        "D. Incremental innovation"
+      ],
+      "ans": "B",
+      "exp": "Rethinking how the bank creates and delivers value by partnering with FinTech firms to offer new types of services is business model innovation, not simply a new product or an internal process change. It reflects a shift in the overall value-delivery approach, not a single feature or workflow tweak."
+    },
+    {
+      "id": "Q28",
+      "module": 2,
+      "type": "mcq",
+      "q": "A Payment Services Bank (PSB) primarily provides payment services rather than traditional products like loans and deposits, and is especially prevalent in regions with large unbanked populations. What is its main contribution, per the module?",
+      "opts": [
+        "A. Reducing the total number of banks operating in a country",
+        "B. Improving financial inclusion",
+        "C. Eliminating the need for any banking regulation",
+        "D. Replacing all commercial banks within five years"
+      ],
+      "ans": "B",
+      "exp": "PSBs are highlighted specifically for helping improve financial inclusion in regions with large unbanked populations, by focusing on accessible payment services rather than the full suite of traditional banking products. Options A, C, and D make claims not supported anywhere in the module."
+    },
+    {
+      "id": "Q29",
+      "module": 2,
+      "type": "mcq",
+      "q": "What distinguishes a digital-only bank from a traditional bank pursuing digital transformation, according to the module?",
+      "opts": [
+        "A. Digital-only banks operate entirely online with lower operational costs, challenging traditional banks by focusing on the digital-first customer",
+        "B. Digital-only banks are legally prohibited from offering loans",
+        "C. Digital-only banks cannot use mobile apps",
+        "D. Digital-only banks only operate in North America"
+      ],
+      "ans": "B",
+      "exp": "The correct distinction is operational: digital-only banks run entirely online, which generally lowers costs and lets them focus on digital-first customer experience. Options B, C, and D are fabricated restrictions with no basis in the module."
+    },
+    {
+      "id": "Q30",
+      "module": 2,
+      "type": "mcq",
+      "q": "Blockchain and cryptocurrency are cited as disruptive innovations primarily because they:",
+      "opts": [
+        "A. Increase the fees banks can charge on international transfers",
+        "B. Enable decentralized transactions without intermediaries like traditional banks",
+        "C. Require government approval before any transaction can occur",
+        "D. Only function within a single country's banking system"
+      ],
+      "ans": "B",
+      "exp": "Blockchain and cryptocurrency disrupt traditional banking specifically by enabling transactions - especially international transfers and digital assets - without needing a bank as intermediary. Options A, C, and D contradict the decentralized, intermediary-free nature that makes this technology disruptive in the first place."
+    },
+    {
+      "id": "Q31",
+      "module": 2,
+      "type": "mcq",
+      "q": "Peer-to-peer lending platforms are considered disruptive because they:",
+      "opts": [
+        "A. Require borrowers to visit a physical bank branch",
+        "B. Allow individuals to lend and borrow directly from each other, bypassing traditional banks",
+        "C. Are owned and operated exclusively by central banks",
+        "D. Only offer savings accounts, not loans"
+      ],
+      "ans": "B",
+      "exp": "P2P lending platforms disrupt traditional banking by connecting borrowers and lenders directly, removing the bank's traditional role as intermediary in the lending market. Options A, C, and D describe the opposite of how these platforms actually function."
+    },
+    {
+      "id": "Q32",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank rolls out a minor update to its mobile app that improves the user interface and adds an in-app payment feature. This is best classified as:",
+      "opts": [
+        "A. Disruptive innovation",
+        "B. Incremental innovation",
+        "C. Business model innovation",
+        "D. Radical innovation"
+      ],
+      "ans": "B",
+      "exp": "Small, continuous refinements to an existing product - like a UI improvement or added feature - are incremental innovation. Disruptive and radical innovation (A, D) involve fundamentally reshaping the market, which a routine app update does not do; business model innovation (C) would involve rethinking how value is delivered altogether."
+    },
+    {
+      "id": "Q33",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following would NOT typically be classified as an incremental innovation?",
+      "opts": [
+        "A. Strengthening encryption and adding multi-factor authentication to an existing app",
+        "B. A fintech startup launching a fully digital bank that bypasses branches entirely",
+        "C. Adjusting a credit card rewards structure to better match customer preferences",
+        "D. Expanding online chat support options for customer service"
+      ],
+      "ans": "B",
+      "exp": "Launching an entirely new digital-only bank that bypasses branches is a disruptive innovation - it creates a new competitive model rather than refining an existing one. Options A, C, and D are all small, continuous improvements to existing offerings, which is the definition of incremental innovation."
+    },
+    {
+      "id": "Q34",
+      "module": 2,
+      "type": "mcq",
+      "q": "A customer receives tailored investment recommendations generated by a bank's data analytics system, based on their unique financial situation and goals. Which type of innovation does this reflect?",
+      "opts": [
+        "A. Process innovation",
+        "B. Service innovation",
+        "C. Disruptive innovation",
+        "D. Incremental innovation"
+      ],
+      "ans": "B",
+      "exp": "Customized financial advice delivered through data analytics is a service innovation - it focuses on improving convenience and personalization for the customer directly. It is not an internal efficiency measure (process innovation) nor a market-altering shift (disruptive innovation)."
+    },
+    {
+      "id": "Q35",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why do incremental innovations, despite receiving less attention than radical ones, remain essential to a bank's strategy?",
+      "opts": [
+        "A. They are legally mandated by financial regulators",
+        "B. They ensure long-term growth and stability by maintaining customer satisfaction and competitiveness",
+        "C. They eliminate the need for any radical innovation going forward",
+        "D. They are the only type of innovation banks are permitted to pursue"
+      ],
+      "ans": "B",
+      "exp": "Incremental improvements sustain long-term growth and stability, keeping products competitive and customers satisfied even without a market-altering breakthrough. Options A, C, and D introduce claims about legal mandates or exclusivity that the module does not support."
+    },
+    {
+      "id": "Q36",
+      "module": 2,
+      "type": "mcq",
+      "q": "A neo-bank enters the market offering only digital account management with no physical branches, directly challenging incumbent banks focused on the digital-first customer. Which type of innovation is being described?",
+      "opts": [
+        "A. Business model innovation",
+        "B. Process innovation",
+        "C. Service innovation",
+        "D. Incremental innovation"
+      ],
+      "ans": "A",
+      "exp": "A digital-only, branchless operating approach represents business model innovation - it is a fundamental shift in how the bank operates and delivers value, not merely a new feature, internal process, or customer-facing service tweak."
+    },
+    {
+      "id": "Q37",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which pairing correctly matches an innovation type with its primary focus?",
+      "opts": [
+        "A. Process innovation - customer convenience and financial accessibility",
+        "B. Product innovation - customer convenience and financial accessibility",
+        "C. Service innovation - internal operational efficiency",
+        "D. Business model innovation - a minor upgrade to an existing offering"
+      ],
+      "ans": "B",
+      "exp": "Product innovations, such as digital wallets and mobile banking apps, are specifically noted for catering to customer convenience and financial accessibility. Process innovation (A) actually targets operational efficiency, service innovation (C) targets customer experience rather than internal operations, and business model innovation (D) is a fundamental shift, not a minor upgrade."
+    },
+    {
+      "id": "Q38",
+      "module": 2,
+      "type": "mcq",
+      "q": "A micro-investment platform allows customers to invest small amounts of money into diversified portfolios. What is its primary contribution to the retail banking landscape?",
+      "opts": [
+        "A. Restricting investment access to high-net-worth individuals only",
+        "B. Making investment accessible to a broader audience",
+        "C. Replacing all traditional savings accounts",
+        "D. Requiring a minimum investment threshold set by regulators"
+      ],
+      "ans": "B",
+      "exp": "Micro-investment platforms are specifically designed to broaden access to investing by allowing small amounts to be invested in diversified portfolios - the opposite of restricting access to wealthy customers, as option A incorrectly suggests."
+    },
+    {
+      "id": "Q39",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank is evaluating two proposals: one to upgrade its existing mobile app's security features, and another to launch an entirely new digital-only banking subsidiary targeting a new customer segment. How would these two proposals be classified?",
+      "opts": [
+        "A. Both are examples of incremental innovation",
+        "B. The app security upgrade is incremental innovation; the digital-only subsidiary is business model innovation",
+        "C. The app security upgrade is disruptive innovation; the digital-only subsidiary is process innovation",
+        "D. Both are examples of business model innovation"
+      ],
+      "ans": "B",
+      "exp": "A security upgrade to an existing app is a gradual refinement (incremental innovation), while launching an entirely new digital-only banking entity represents a fundamental shift in how value is delivered to a new segment (business model innovation). Options A, C, and D misclassify one or both proposals."
+    },
+    {
+      "id": "Q40",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following best distinguishes disruptive innovation from incremental innovation in retail banking?",
+      "opts": [
+        "A. Disruptive innovation creates new markets or value networks, often displacing established players, while incremental innovation refines existing offerings",
+        "B. Disruptive innovation only applies to marketing campaigns",
+        "C. Incremental innovation always requires more capital investment than disruptive innovation",
+        "D. There is no meaningful difference between the two"
+      ],
+      "ans": "A",
+      "exp": "Disruptive innovation is defined by its capacity to create new markets or value networks and displace established competitors, while incremental innovation focuses on small, continuous refinements. Options B, C, and D misrepresent or deny this well-established distinction."
+    },
+    {
+      "id": "Q41",
+      "module": 2,
+      "type": "mcq",
+      "q": "A customer-facing chatbot handling routine inquiries and a back-office AI system flagging fraudulent transactions are both described as involving automation. What key distinction separates them in terms of innovation type?",
+      "opts": [
+        "A. The chatbot is service innovation because it is customer-facing; the fraud system is process innovation because it improves internal operations",
+        "B. Both are process innovations because they both use automation",
+        "C. Both are service innovations because both involve AI",
+        "D. The chatbot is process innovation; the fraud system is service innovation"
+      ],
+      "ans": "A",
+      "exp": "The distinction is not about the underlying technology (automation/AI) but about who experiences the change: a customer-facing chatbot is service innovation, while an internal fraud-detection system improving operations is process innovation. Options B, C, and D collapse this distinction incorrectly by grouping both under the same category simply because both use automation."
+    },
+    {
+      "id": "Q42",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why might a bank choose to pursue a business model innovation, such as partnering with a neo-bank, rather than simply developing a new product internally?",
+      "opts": [
+        "A. To rethink how it creates and delivers value, potentially reaching new customer segments or offering services outside its traditional scope",
+        "B. Because business model innovation is legally required before launching any new product",
+        "C. Because it is always cheaper than product innovation",
+        "D. Because it eliminates the need for regulatory approval"
+      ],
+      "ans": "A",
+      "exp": "Business model innovation is pursued when a bank wants to fundamentally rethink how value is created and delivered - often to reach new markets or capabilities beyond what an internal product update alone could achieve. Options B, C, and D introduce claims about legal requirements, cost, or regulation that are not supported by the module."
+    },
+    {
+      "id": "Q43",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank observes that a competing fintech's P2P lending platform is gaining significant market share by cutting banks out of the lending process entirely. What type of innovation does the fintech's platform represent, and what is the most fitting strategic implication for the bank?",
+      "opts": [
+        "A. It is a disruptive innovation, and the bank should assess whether to compete, partner, or adapt its own lending model in response",
+        "B. It is an incremental innovation, so no strategic response is necessary",
+        "C. It is a process innovation, so the bank should focus only on improving its internal loan processing speed",
+        "D. It is a product innovation, so the bank should simply rebrand its existing loan products"
+      ],
+      "ans": "A",
+      "exp": "P2P lending platforms are disruptive innovations that bypass banks as intermediaries - a genuine strategic threat that warrants evaluating competitive response options (compete, partner, or adapt), not a minor internal fix. Options B, C, and D understate the disruption's significance and offer inadequate or misdirected responses."
+    },
+    {
+      "id": "Q44",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank wants to simultaneously improve efficiency, enhance customer experience, and modernize how it delivers value, but has limited resources to invest this quarter. Which combination of innovation types would most directly address all three goals if pursued together?",
+      "opts": [
+        "A. Process innovation only, since it addresses all needs at once",
+        "B. Process innovation (efficiency), service innovation (customer experience), and business model innovation (value delivery) pursued as complementary initiatives",
+        "C. Only business model innovation, since it is the most comprehensive category",
+        "D. Only incremental innovation, since it is the lowest-risk option"
+      ],
+      "ans": "B",
+      "exp": "Each goal maps to a distinct innovation type - efficiency to process innovation, customer experience to service innovation, and value delivery to business model innovation - so addressing all three requires treating them as complementary rather than assuming one category covers everything. Options A and C oversimplify by assuming a single category can meet needs it isn't designed for, and option D addresses none of the stated goals directly."
+    },
+    {
+      "id": "Q45",
+      "module": 2,
+      "type": "mcq",
+      "q": "Considering the module's classification of innovation types, which statement most accurately reflects how product, process, service, and business model innovations relate to one another?",
+      "opts": [
+        "A. They are mutually exclusive categories that a bank must choose only one of at any given time",
+        "B. They are distinct but complementary categories, each addressing a different dimension of how a bank creates and delivers value, and can be pursued together",
+        "C. Only product and process innovation are relevant to retail banking; service and business model innovation apply only to other industries",
+        "D. Business model innovation always subsumes and replaces the need for the other three types"
+      ],
+      "ans": "B",
+      "exp": "The four types are distinct lenses on innovation - new offerings, internal efficiency, customer experience, and value delivery - and banks commonly pursue several simultaneously, as seen throughout the module's examples (e.g., a bank using AI for both process gains and service personalization). Options A, C, and D impose artificial exclusivity or hierarchy that the module does not support."
+    },
+    {
+      "id": "Q46",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank has just launched a new savings product with limited market awareness, and its main focus is educating potential customers about the product's existence and benefits. Which stage of the retail product lifecycle is this?",
+      "opts": [
+        "A. Growth stage",
+        "B. Introduction stage",
+        "C. Maturity stage",
+        "D. Decline stage"
+      ],
+      "ans": "B",
+      "exp": "Limited market awareness combined with a focus on building awareness and educating potential customers is characteristic of the Introduction stage. Growth (A) involves increasing adoption and expanding market share, Maturity (C) involves peak market share and retention focus, and Decline (D) involves falling sales as newer alternatives emerge."
+    },
+    {
+      "id": "Q47",
+      "module": 3,
+      "type": "mcq",
+      "q": "During which stage of the product lifecycle is the primary goal to expand market share, maximize customer acquisition, and enhance functionality based on feedback?",
+      "opts": [
+        "A. Introduction stage",
+        "B. Growth stage",
+        "C. Maturity stage",
+        "D. Decline stage"
+      ],
+      "ans": "B",
+      "exp": "The Growth stage is defined by increasing traction and awareness, with the bank's focus shifting to expanding market share, acquiring customers, and refining the product based on real feedback. The Introduction stage instead centers on initial awareness-building, not expansion."
+    },
+    {
+      "id": "Q48",
+      "module": 3,
+      "type": "mcq",
+      "q": "A retail banking product has reached its peak market share, sales growth has slowed, and competition has intensified. The bank shifts its marketing focus toward retention rather than new adoption. This describes the:",
+      "opts": [
+        "A. Growth stage",
+        "B. Decline stage",
+        "C. Maturity stage",
+        "D. Introduction stage"
+      ],
+      "ans": "C",
+      "exp": "Peak market share, slowing growth, rising competition, and a shift toward retention-focused marketing are all hallmarks of the Maturity stage. The Decline stage instead involves falling sales as the product loses relevance, not merely slowing growth at its peak."
+    },
+    {
+      "id": "Q49",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which set of activities is most closely associated with the Introduction stage of a retail product's lifecycle?",
+      "opts": [
+        "A. Cost-cutting measures and simplifying features to protect margins",
+        "B. Tailoring the product to regulatory requirements, running heavy awareness campaigns, and ensuring robust customer support",
+        "C. Deciding whether to retire, refresh, or bundle the product with others",
+        "D. Broadening distribution across physical and digital channels to capture more customers"
+      ],
+      "ans": "B",
+      "exp": "The Introduction stage's strategies center on product design tailored to basic needs and compliance, heavy marketing to build awareness, and strong customer support for early adopters. Option A describes Maturity-stage optimization, C describes Decline-stage decisions, and D describes Growth-stage distribution expansion."
+    },
+    {
+      "id": "Q50",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank notices that sales of one of its older loan products are steadily falling as newer, more flexible alternatives from competitors enter the market. What is the bank's primary focus at this stage?",
+      "opts": [
+        "A. Building initial awareness of the product among new customers",
+        "B. Managing costs while deciding whether to retire, refresh, or replace the product",
+        "C. Expanding distribution channels to accelerate customer acquisition",
+        "D. Fine-tuning the product purely for profitability while sales remain at their peak"
+      ],
+      "ans": "B",
+      "exp": "This scenario describes the Decline stage, where the focus shifts to cost management and a decision between retiring the product, refreshing it, or replacing it entirely. Option A describes Introduction, C describes Growth, and D describes Maturity, where sales are at their peak rather than falling."
+    },
+    {
+      "id": "Q51",
+      "module": 3,
+      "type": "mcq",
+      "q": "Feature enhancement based on customer feedback, distribution expansion across physical and digital channels, and refined customer segmentation are product development strategies most associated with which lifecycle stage?",
+      "opts": [
+        "A. Introduction stage",
+        "B. Growth stage",
+        "C. Maturity stage",
+        "D. Decline stage"
+      ],
+      "ans": "B",
+      "exp": "These three strategies - feature enhancement, distribution expansion, and refined segmentation - are specifically identified as Growth-stage strategies, aimed at capturing the increasing traction the product is experiencing. They are not associated with the other three stages, each of which has its own distinct strategic focus."
+    },
+    {
+      "id": "Q52",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following best describes 'differentiation' as a strategy during the Maturity stage of a product's lifecycle?",
+      "opts": [
+        "A. Withdrawing the product from the market entirely",
+        "B. Adding differentiating features or enhancing customer experience to maintain loyalty in a competitive market",
+        "C. Reducing marketing spend to zero since awareness is already established",
+        "D. Bundling the product exclusively with insurance offerings"
+      ],
+      "ans": "B",
+      "exp": "Differentiation in the Maturity stage means adding features or enhancing the customer experience specifically to retain loyalty as competition intensifies. Option A describes Decline-stage retirement, C misrepresents the marketing focus (which shifts to retention, not elimination), and D narrows bundling to a single unsupported example."
+    },
+    {
+      "id": "Q53",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank decides to withdraw an underperforming credit card product from the market due to low profitability and the rise of newer alternatives. This decision reflects which lifecycle management strategy?",
+      "opts": [
+        "A. Product refresh",
+        "B. Product retirement",
+        "C. Feature enhancement",
+        "D. Distribution expansion"
+      ],
+      "ans": "B",
+      "exp": "Withdrawing a product from the market due to low profitability or obsolescence is product retirement. Product refresh (A) instead involves introducing minor updates to reinvigorate the product rather than removing it, and the other two options describe Growth-stage strategies that don't apply to a declining product being withdrawn."
+    },
+    {
+      "id": "Q54",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which factor is NOT explicitly identified as informing decisions on when to innovate, retire, or refresh a retail banking product?",
+      "opts": [
+        "A. Customer needs",
+        "B. The bank's total number of branches nationwide",
+        "C. Market conditions",
+        "D. Internal performance"
+      ],
+      "ans": "B",
+      "exp": "The module identifies customer needs, market conditions, and internal performance (profitability, customer feedback) as the three factors guiding lifecycle decisions. The total number of branches is never cited as a factor in this decision-making process."
+    },
+    {
+      "id": "Q55",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank regularly reviews the competitive landscape, market trends, and emerging technologies to decide whether it's time to innovate or phase out a product. Which of the three lifecycle management factors does this reflect?",
+      "opts": [
+        "A. Internal performance",
+        "B. Customer needs",
+        "C. Market conditions",
+        "D. Regulatory compliance"
+      ],
+      "ans": "C",
+      "exp": "Analyzing the competitive landscape, market trends, and emerging technologies specifically maps to market conditions as a lifecycle management factor. Internal performance (A) instead concerns profitability and feedback data, and customer needs (B) concerns direct monitoring of customer preferences and behavior."
+    },
+    {
+      "id": "Q56",
+      "module": 3,
+      "type": "mcq",
+      "q": "Calculating the direct and indirect costs associated with a product - including production, distribution, marketing, and customer support - is part of which financial assessment?",
+      "opts": [
+        "A. Break-even analysis",
+        "B. Cost analysis",
+        "C. Profitability metrics",
+        "D. Customer segmentation"
+      ],
+      "ans": "B",
+      "exp": "Cost analysis specifically involves calculating direct and indirect costs across production, distribution, marketing, and support. Break-even analysis (A) instead identifies the point at which the product becomes profitable, and profitability metrics (C) track revenue, margin, and ROI over time rather than costs alone."
+    },
+    {
+      "id": "Q57",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank wants to determine at what point a newly launched product will start generating profit and whether it is meeting its revenue targets over time. Which analysis should it perform?",
+      "opts": [
+        "A. Cost analysis",
+        "B. Customer segmentation analysis",
+        "C. Break-even analysis",
+        "D. Distribution channel analysis"
+      ],
+      "ans": "C",
+      "exp": "Break-even analysis identifies the specific point at which a product becomes profitable and tracks progress against revenue targets across the lifecycle. Cost analysis (A) only tallies expenses without identifying the profitability turning point."
+    },
+    {
+      "id": "Q58",
+      "module": 3,
+      "type": "mcq",
+      "q": "A product has consistently generated insufficient returns over several reporting periods despite steady marketing investment. According to the module, what should the bank consider doing?",
+      "opts": [
+        "A. Increase marketing spend indefinitely regardless of returns",
+        "B. Discontinue the product or reinvest in innovation",
+        "C. Ignore the financial data since customer satisfaction may still be high",
+        "D. Automatically extend the product's lifecycle through bundling without further analysis"
+      ],
+      "ans": "B",
+      "exp": "The module states that products consistently underperforming on returns may need to be discontinued or reinvested in through innovation - a decision guided by regular financial assessment, not indefinite spending (A) or ignoring the data (C). Bundling (D) is one possible extension strategy, but it isn't presented as an automatic default without further evaluation."
+    },
+    {
+      "id": "Q59",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank adds AI-driven personal finance recommendations to an existing mobile banking app to keep it relevant as it enters the later stages of its lifecycle. Which extension strategy does this represent?",
+      "opts": [
+        "A. Bundling",
+        "B. New features",
+        "C. Marketing efforts",
+        "D. Product retirement"
+      ],
+      "ans": "B",
+      "exp": "Introducing innovative features or capabilities that address emerging customer needs - such as adding AI functionality to an app - is the 'new features' extension strategy. Bundling (A) instead involves combining the product with complementary offerings, and marketing efforts (C) involve reinforcing campaigns rather than adding functionality."
+    },
+    {
+      "id": "Q60",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank combines a personal loan product with insurance coverage and an investment option into a single package to make it more attractive to customers as it matures. This extension strategy is called:",
+      "opts": [
+        "A. Bundling",
+        "B. New features",
+        "C. Break-even analysis",
+        "D. Product retirement"
+      ],
+      "ans": "A",
+      "exp": "Combining a product with complementary services or products - like pairing a loan with insurance and investment options - is specifically the bundling strategy for extending a product's lifecycle. It is distinct from adding new features (B), which involves functional enhancements rather than combining separate offerings."
+    },
+    {
+      "id": "Q61",
+      "module": 3,
+      "type": "mcq",
+      "q": "Citi's Smart Banking App is presented in the module as a case study illustrating lifecycle extension from which transition?",
+      "opts": [
+        "A. Introduction to Growth",
+        "B. Growth to Maturity",
+        "C. Maturity to Decline",
+        "D. Decline back to Introduction"
+      ],
+      "ans": "B",
+      "exp": "Citi's Smart Banking App is cited as extending its lifecycle from Growth into Maturity by gradually incorporating features like AI-driven personal finance management and real-time notifications, sustaining engagement well past initial adoption. It is not framed as a Decline-stage recovery case, unlike the Bank of America example."
+    },
+    {
+      "id": "Q62",
+      "module": 3,
+      "type": "mcq",
+      "q": "Bank of America's e-Banking product is used as a case study for which lifecycle stage, and what action did the bank take to extend its relevance?",
+      "opts": [
+        "A. Introduction stage; the bank ran an initial awareness campaign",
+        "B. Decline stage; the bank introduced seamless mobile app integration and expanded into investment platforms",
+        "C. Growth stage; the bank expanded to new geographic markets",
+        "D. Maturity stage; the bank reduced fees to attract new customers"
+      ],
+      "ans": "B",
+      "exp": "Bank of America's e-Banking product had lost relevance to mobile-first competitors and was in the Decline stage; the bank responded by integrating seamless mobile app functionality and expanding into investment platforms to extend its lifecycle. The other options misidentify the stage and the specific actions taken."
+    },
+    {
+      "id": "Q63",
+      "module": 3,
+      "type": "mcq",
+      "q": "What common lesson do both the Citi Smart Banking App and Bank of America e-Banking case studies illustrate about extending a product's lifecycle?",
+      "opts": [
+        "A. Products should be retired immediately once growth slows",
+        "B. Introducing new features and capabilities can re-engage customers and delay or reverse decline",
+        "C. Marketing is the only effective lifecycle extension tool",
+        "D. Digital features are irrelevant to lifecycle management"
+      ],
+      "ans": "B",
+      "exp": "Both cases show that adding new features - AI-driven finance tools for Citi, mobile integration and investment platforms for Bank of America - helped re-engage customers and extend relevance. Option A contradicts the entire premise of extension strategies, and C and D misstate what the case studies actually demonstrate."
+    },
+    {
+      "id": "Q64",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which method involves analysing customer behaviour through digital touchpoints, such as app usage patterns and transaction history, to inform product improvements?",
+      "opts": [
+        "A. Customer surveys",
+        "B. Behavioural data analysis",
+        "C. Break-even analysis",
+        "D. Cost analysis"
+      ],
+      "ans": "B",
+      "exp": "Analysing digital touchpoints like app usage and transaction history is behavioural data analysis, distinct from customer surveys (A), which rely on direct questions and interviews rather than observed behaviour."
+    },
+    {
+      "id": "Q65",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank's customer service representatives report a recurring complaint pattern about a specific feature of a savings product. What role does this play in lifecycle management, according to the module?",
+      "opts": [
+        "A. It is irrelevant unless confirmed by a formal survey first",
+        "B. Customer support interactions can provide valuable insights into common issues that may require attention",
+        "C. It automatically triggers product retirement",
+        "D. It only affects marketing strategy, not product design"
+      ],
+      "ans": "B",
+      "exp": "Customer support interactions are explicitly identified as a valuable source of insight into recurring issues that may require product attention, working alongside surveys and behavioural data rather than requiring separate confirmation (A) or triggering automatic retirement (C)."
+    },
+    {
+      "id": "Q66",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why does the module emphasize that feedback loops are essential throughout the product lifecycle, rather than only at launch?",
+      "opts": [
+        "A. Because feedback is only useful for pricing decisions",
+        "B. Because feedback ensures continuous product improvement and helps the bank remain aligned with evolving market trends and customer expectations",
+        "C. Because regulators require feedback collection only during the Introduction stage",
+        "D. Because feedback loops replace the need for cost and profitability analysis"
+      ],
+      "ans": "B",
+      "exp": "Continuous feedback throughout the lifecycle - not just at launch - keeps the bank aligned with shifting customer expectations and market trends, supporting ongoing improvement. Feedback complements, rather than replaces, financial analysis like cost and profitability tracking (D)."
+    },
+    {
+      "id": "Q67",
+      "module": 3,
+      "type": "mcq",
+      "q": "A savings product is showing strong adoption growth, but the bank has not yet expanded its distribution beyond a single digital channel. Based on Growth-stage strategies, what should the bank most likely prioritize next?",
+      "opts": [
+        "A. Retiring the product to make way for a newer one",
+        "B. Broadening distribution across both physical and digital channels to capture more of the expanding demand",
+        "C. Cutting the marketing budget since awareness is already established",
+        "D. Bundling the product with unrelated services immaturely"
+      ],
+      "ans": "B",
+      "exp": "In the Growth stage, distribution expansion across physical and digital channels is a core strategy to capture rising demand - retiring the product (A) contradicts its strong growth trajectory, and cutting marketing (C) or premature bundling (D) don't align with a product that's still building market share."
+    },
+    {
+      "id": "Q68",
+      "module": 3,
+      "type": "mcq",
+      "q": "A product manager is evaluating whether a mature savings account should be refreshed or allowed to continue unchanged. Which combination of factors should most appropriately guide this decision?",
+      "opts": [
+        "A. Only the number of years since the product's original launch",
+        "B. Customer needs, market conditions, and internal performance data considered together",
+        "C. The preferences of the bank's marketing department alone",
+        "D. Whichever option requires the least paperwork"
+      ],
+      "ans": "B",
+      "exp": "The module frames lifecycle decisions as requiring an integrated view of customer needs, market conditions, and internal performance - not a single narrow factor like product age (A), departmental preference (C), or administrative convenience (D)."
+    },
+    {
+      "id": "Q69",
+      "module": 3,
+      "type": "mcq",
+      "q": "A retail loan product is in the Decline stage, but customer feedback suggests strong latent demand for a related feature that competitors have not yet introduced. What is the most strategically sound next step, based on the module's lifecycle framework?",
+      "opts": [
+        "A. Immediately retire the product without further analysis",
+        "B. Evaluate a product refresh or new-feature extension strategy before deciding on retirement",
+        "C. Increase the price of the product to offset declining sales",
+        "D. Ignore the feedback since the product is already in decline"
+      ],
+      "ans": "B",
+      "exp": "Even in Decline, the module frames retirement as one of several options alongside refresh and extension strategies - strong latent demand for an unmet feature is exactly the kind of signal that should prompt evaluating a refresh before defaulting to retirement (A) or dismissing the feedback outright (D)."
+    },
+    {
+      "id": "Q70",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following best explains why 'optimization' is emphasized as a Maturity-stage strategy rather than a Growth-stage one?",
+      "opts": [
+        "A. Optimization is only relevant when a product is being retired",
+        "B. In Maturity, sales growth has slowed and competition has increased, so efficiency and profitability become the priority over expansion",
+        "C. Optimization and Growth-stage feature enhancement are identical strategies with different names",
+        "D. Optimization is unrelated to profitability"
+      ],
+      "ans": "B",
+      "exp": "Maturity-stage optimization focuses on efficiency and profitability precisely because growth has plateaued and competition has intensified - a different priority than Growth-stage feature enhancement, which is about capturing expanding demand rather than protecting margins. Options A, C, and D misstate the purpose or timing of optimization."
+    },
+    {
+      "id": "Q71",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank is deciding between two options for an aging credit card product: bundling it with a new investment offering, or launching an aggressive new customer acquisition marketing campaign. Which factor should most influence this choice, per the module's lifecycle framework?",
+      "opts": [
+        "A. Whichever option the competitor chose first",
+        "B. Whether the product's core issue is a lack of awareness (favoring marketing) or declining relevance and value (favoring bundling or new features)",
+        "C. The number of employees available to work on the campaign",
+        "D. Flip a coin, since both options are equally valid regardless of the product's condition"
+      ],
+      "ans": "B",
+      "exp": "Extension strategies should match the underlying problem: marketing re-engagement suits a product that has lost visibility, while bundling or new features suit a product losing relevance or value. Choosing based on competitor behavior (A), staffing (C), or randomly (D) ignores the diagnostic step the module emphasizes."
+    },
+    {
+      "id": "Q72",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the primary purpose of profitability metrics such as revenue, margin, and return on investment (ROI) in lifecycle management?",
+      "opts": [
+        "A. To determine which stage of the lifecycle a product is legally required to be in",
+        "B. To monitor financial performance over the lifecycle stages and flag products that no longer generate sufficient returns",
+        "C. To replace customer feedback as the sole basis for product decisions",
+        "D. To calculate a product's marketing budget automatically"
+      ],
+      "ans": "B",
+      "exp": "Profitability metrics track financial performance across the lifecycle specifically to identify when a product is underperforming and may need reconsideration - they work alongside customer feedback (not replacing it, as C claims) and are not tied to legal stage requirements (A) or automatic budgeting (D)."
+    },
+    {
+      "id": "Q73",
+      "module": 3,
+      "type": "mcq",
+      "q": "A new mobile-only savings product has been live for three months. Adoption is slow, and customer support has fielded numerous questions about how the product works. According to Introduction-stage strategy, what should the bank prioritize?",
+      "opts": [
+        "A. Immediately retiring the product due to slow adoption",
+        "B. Strengthening customer education and support while continuing to build market awareness",
+        "C. Bundling the product with three unrelated services to boost appeal",
+        "D. Shifting entirely to a retention-focused marketing strategy"
+      ],
+      "ans": "B",
+      "exp": "Slow early adoption paired with customer confusion is typical of the Introduction stage, where the priority is robust customer support and continued awareness-building - not premature retirement (A, appropriate only much later), immature bundling (C), or a retention focus (D), which belongs to Maturity."
+    },
+    {
+      "id": "Q74",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which statement most accurately reflects the overall purpose of product lifecycle management (PLM) in retail banking, as introduced in the module?",
+      "opts": [
+        "A. PLM exists solely to determine when to close bank branches",
+        "B. PLM is the strategic approach to developing, managing, and optimizing banking products from inception to decline, supporting resource allocation and strategic planning",
+        "C. PLM only applies to digital products, not traditional accounts or loans",
+        "D. PLM is a one-time assessment performed only at a product's launch"
+      ],
+      "ans": "B",
+      "exp": "PLM is defined as an ongoing strategic approach spanning a product's full lifecycle - from inception to decline - supporting resource allocation and planning decisions throughout, not a one-time launch assessment (D) or something limited to digital products or branch decisions (A, C)."
+    },
+    {
+      "id": "Q75",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank is reviewing three products: one newly launched with low awareness, one at peak market share facing rising competition, and one with steadily falling sales. Which sequence correctly matches each product to its lifecycle stage?",
+      "opts": [
+        "A. Introduction, Decline, Maturity",
+        "B. Introduction, Maturity, Decline",
+        "C. Growth, Maturity, Introduction",
+        "D. Maturity, Introduction, Decline"
+      ],
+      "ans": "B",
+      "exp": "Low awareness at launch is Introduction; peak market share with rising competition is Maturity; steadily falling sales is Decline - so the correct sequence is Introduction, Maturity, Decline. The other orderings mismatch at least one product to the wrong stage."
+    },
+    {
+      "id": "Q76",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank conducts thorough research into customer needs, market gaps, competitor offerings, and technological trends before launching a new product. What is the primary purpose of this activity, according to the module?",
+      "opts": [
+        "A. To satisfy a legal requirement before any product can be advertised",
+        "B. To identify unique selling propositions and develop a product that addresses existing problems or unmet needs",
+        "C. To determine the exact launch date and nothing else",
+        "D. To eliminate the need for customer segmentation later"
+      ],
+      "ans": "B",
+      "exp": "Market research is conducted specifically to uncover unique selling propositions and unmet needs that the product can address - it directly informs product positioning, not merely a legal formality (A) or a scheduling exercise (C), and it complements rather than replaces segmentation (D)."
+    },
+    {
+      "id": "Q77",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank determines the key features, benefits, and value propositions that will differentiate its new product from existing offerings in the market. This activity is known as:",
+      "opts": [
+        "A. Product positioning",
+        "B. Customer onboarding",
+        "C. Stakeholder engagement",
+        "D. Break-even analysis"
+      ],
+      "ans": "A",
+      "exp": "Product positioning specifically involves determining features, benefits, and value propositions that resonate with the target audience and differentiate the product. Customer onboarding (B) instead concerns helping customers use the product post-launch, and stakeholder engagement (C) concerns internal and external relationship-building."
+    },
+    {
+      "id": "Q78",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank divides its target audience by demographic, geographic, psychographic, and behavioural factors before launching a new savings product. What is the primary benefit of this approach?",
+      "opts": [
+        "A. It allows the bank to tailor marketing efforts and product features to different customer groups",
+        "B. It eliminates the need for any further market research",
+        "C. It guarantees regulatory approval for the product",
+        "D. It replaces the need for a go-to-market strategy entirely"
+      ],
+      "ans": "A",
+      "exp": "Segmentation allows the bank to tailor marketing and product features to distinct customer groups, improving relevance and effectiveness. It is one component within the broader go-to-market strategy (D), not a substitute for it, and has no bearing on regulatory approval (C)."
+    },
+    {
+      "id": "Q79",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank explicitly defines its new investment product as being designed for young professionals rather than retirees or small business owners. This activity is best described as:",
+      "opts": [
+        "A. Target audience definition",
+        "B. Stakeholder engagement",
+        "C. Break-even analysis",
+        "D. Customer onboarding"
+      ],
+      "ans": "A",
+      "exp": "Explicitly defining who a product is for - such as young professionals versus retirees - is target audience definition, ensuring the product's features align with a specific group's needs. This is distinct from onboarding (D), which happens after a customer has already adopted the product."
+    },
+    {
+      "id": "Q80",
+      "module": 4,
+      "type": "mcq",
+      "q": "Before launching a new product, a bank engages its marketing, operations, and customer service departments early to ensure alignment and smooth execution. This reflects which component of a go-to-market strategy?",
+      "opts": [
+        "A. Internal stakeholder engagement",
+        "B. External stakeholder engagement",
+        "C. Customer segmentation",
+        "D. Product positioning"
+      ],
+      "ans": "A",
+      "exp": "Engaging internal departments like marketing, operations, and customer service early in the process is internal stakeholder engagement, which ensures organizational alignment. External stakeholder engagement (B) instead involves parties like technology providers, vendors, and regulators."
+    },
+    {
+      "id": "Q81",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank builds relationships with a technology provider and a regulatory body to ensure a new product meets compliance requirements and integrates smoothly with existing systems. This is an example of:",
+      "opts": [
+        "A. Internal stakeholder engagement",
+        "B. External stakeholder engagement",
+        "C. Launch promotion",
+        "D. Customer onboarding"
+      ],
+      "ans": "B",
+      "exp": "Technology providers and regulatory bodies are external parties, so building relationships with them for compliance and integration purposes is external stakeholder engagement, distinct from the internal, cross-departmental alignment described under internal stakeholder engagement (A)."
+    },
+    {
+      "id": "Q82",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank's marketing campaign for a new product not only promotes its features but also actively teaches customers how to use it effectively. What is this second element called?",
+      "opts": [
+        "A. Customer education",
+        "B. Break-even analysis",
+        "C. Product positioning",
+        "D. Distribution expansion"
+      ],
+      "ans": "A",
+      "exp": "Ensuring marketing campaigns teach customers about a product's benefits, features, and usage - beyond just promoting it - is customer education, a distinct goal from simple awareness-building or promotion."
+    },
+    {
+      "id": "Q83",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank offers a limited-time bonus interest rate to customers who open a new savings account within the product's first month. This tactic is best classified as:",
+      "opts": [
+        "A. A launch promotion",
+        "B. Customer onboarding",
+        "C. External stakeholder engagement",
+        "D. Behavioural segmentation"
+      ],
+      "ans": "A",
+      "exp": "Limited-time offers such as bonus rates or reduced fees to attract early adopters are launch promotions, designed to create urgency and encourage immediate adoption - distinct from onboarding, which supports customers after they've already signed up."
+    },
+    {
+      "id": "Q84",
+      "module": 4,
+      "type": "mcq",
+      "q": "Consistently communicating a product's brand and message across all channels, so customers clearly understand its benefits and what makes it stand out, is known as:",
+      "opts": [
+        "A. Branding and messaging",
+        "B. Employee preparation",
+        "C. Break-even analysis",
+        "D. Customer segmentation"
+      ],
+      "ans": "A",
+      "exp": "Consistent communication of a product's brand and value proposition across channels is branding and messaging - a component of promotion distinct from employee preparation (B), which concerns training staff rather than customer-facing communication."
+    },
+    {
+      "id": "Q85",
+      "module": 4,
+      "type": "mcq",
+      "q": "Before a new product launch, a bank trains customer-facing staff so they can answer questions, provide accurate product information, and guide customers through onboarding. This activity falls under:",
+      "opts": [
+        "A. Training staff",
+        "B. External stakeholder engagement",
+        "C. Product positioning",
+        "D. Adoption rate tracking"
+      ],
+      "ans": "A",
+      "exp": "Preparing customer-facing employees to handle inquiries and support onboarding is the training staff component of a product launch, distinct from external stakeholder engagement, which involves outside parties like vendors and regulators rather than internal employees."
+    },
+    {
+      "id": "Q86",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank develops product manuals, FAQs, and troubleshooting guides so its staff can provide excellent customer support after launch. This is part of which key component of a product launch?",
+      "opts": [
+        "A. Training programs",
+        "B. Launch promotions",
+        "C. Market research",
+        "D. Break-even analysis"
+      ],
+      "ans": "A",
+      "exp": "Developing manuals, FAQs, and troubleshooting guides for staff is specifically part of training programs, which equip employees to support customers - distinct from launch promotions, which are customer-facing incentives rather than internal training materials."
+    },
+    {
+      "id": "Q87",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank sets up phone, email, chat, and in-branch assistance channels so customers can get help with a new product whenever needed. Which key launch component does this represent?",
+      "opts": [
+        "A. Customer support channels",
+        "B. Product positioning",
+        "C. Stakeholder engagement",
+        "D. Segmentation strategy"
+      ],
+      "ans": "A",
+      "exp": "Establishing multiple channels - phone, email, chat, in-branch - for customer assistance is the customer support channels component, ensuring customers can access help through their preferred medium after a product launches."
+    },
+    {
+      "id": "Q88",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank creates video tutorials and step-by-step guides to help customers quickly understand how to use a newly launched product's features. This is best described as:",
+      "opts": [
+        "A. Customer onboarding",
+        "B. Launch promotion",
+        "C. Internal stakeholder engagement",
+        "D. Break-even analysis"
+      ],
+      "ans": "A",
+      "exp": "Onboarding materials like tutorials and guides that help customers understand a product's features constitute customer onboarding, which is distinct from a launch promotion (an incentive to adopt) or internal stakeholder engagement (cross-departmental alignment)."
+    },
+    {
+      "id": "Q89",
+      "module": 4,
+      "type": "mcq",
+      "q": "After a product launch, a bank continues to use newsletters, social media, and direct customer interactions to keep customers engaged and informed over time. This reflects which communication principle?",
+      "opts": [
+        "A. Ongoing communication",
+        "B. Clear messaging at launch only",
+        "C. Internal stakeholder engagement",
+        "D. Product positioning"
+      ],
+      "ans": "A",
+      "exp": "Continuing communication throughout the post-launch period - rather than stopping once the launch itself concludes - is the ongoing communication principle. Clear messaging (B) refers specifically to the initial, detailed communication of the launch itself, not the sustained follow-up."
+    },
+    {
+      "id": "Q90",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank tracks the number of sign-ups, activations, and usage rates for a newly launched mobile banking feature. Which key performance indicator is it measuring?",
+      "opts": [
+        "A. Adoption rate",
+        "B. Net Promoter Score",
+        "C. Break-even point",
+        "D. Cost of production"
+      ],
+      "ans": "A",
+      "exp": "Sign-ups, activations, and usage rates are all measures of adoption rate - how quickly customers begin using a product after launch. Net Promoter Score (B) instead measures loyalty and likelihood to recommend, a different dimension of evaluation."
+    },
+    {
+      "id": "Q91",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank asks customers how likely they are to recommend a newly launched product to others, and uses the responses to calculate a loyalty score. This metric is known as:",
+      "opts": [
+        "A. Net Promoter Score (NPS)",
+        "B. Adoption rate",
+        "C. Break-even point",
+        "D. Cost analysis"
+      ],
+      "ans": "A",
+      "exp": "Measuring customer loyalty by asking how likely customers are to recommend a product defines the Net Promoter Score. Adoption rate (B) instead measures how quickly customers begin using the product, not how likely they are to recommend it."
+    },
+    {
+      "id": "Q92",
+      "module": 4,
+      "type": "mcq",
+      "q": "Six months after launch, a bank finds that a new product has a high adoption rate but a low Net Promoter Score. What would this combination most likely suggest?",
+      "opts": [
+        "A. The product is failing to attract any customers at all",
+        "B. Many customers are trying the product, but their experience isn't strong enough to make them recommend it to others",
+        "C. The product has already reached the Decline stage of its lifecycle",
+        "D. The bank should immediately discontinue all marketing efforts"
+      ],
+      "ans": "B",
+      "exp": "A high adoption rate shows customers are signing up and using the product, but a low NPS signals that their experience isn't compelling enough to generate advocacy - a specific mismatch worth investigating, rather than indicating zero attraction (A) or requiring an immediate lifecycle or marketing decision (C, D) without further analysis."
+    },
+    {
+      "id": "Q93",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following best explains why the module treats adoption rate, customer feedback, and profitability as complementary rather than interchangeable KPIs?",
+      "opts": [
+        "A. Because only one of the three is ever necessary to evaluate a launch",
+        "B. Because each captures a different dimension of success - usage speed, customer sentiment, and financial performance - and together they give a fuller picture than any one alone",
+        "C. Because profitability data always contradicts adoption rate data",
+        "D. Because customer feedback is only collected after profitability targets are missed"
+      ],
+      "ans": "B",
+      "exp": "Each KPI measures something distinct - how fast customers adopt, how they feel about the product, and whether it is financially performing - so using them together gives a more complete evaluation than relying on any single metric, as options A, C, and D incorrectly suggest."
+    },
+    {
+      "id": "Q94",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank launches a new product and, three months in, finds strong adoption but the product has not yet reached its break-even point. Based on the module's KPI framework, what should the bank do next?",
+      "opts": [
+        "A. Immediately discontinue the product since it isn't yet profitable",
+        "B. Continue tracking profitability metrics and break-even progress alongside adoption and feedback data before making a decision",
+        "C. Stop collecting customer feedback since adoption is already strong",
+        "D. Assume the product will never become profitable"
+      ],
+      "ans": "B",
+      "exp": "The module frames KPI tracking as an ongoing process across the lifecycle - strong early adoption with a break-even point not yet reached is not itself a reason for alarm, especially for a newly launched product, and continued tracking across all three KPI dimensions is the appropriate response rather than premature discontinuation (A) or abandoning feedback collection (C)."
+    },
+    {
+      "id": "Q95",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which stakeholder group would most likely be responsible for confirming that a new product complies with all applicable regulatory requirements before launch?",
+      "opts": [
+        "A. Internal marketing department",
+        "B. External regulatory bodies engaged through external stakeholder engagement",
+        "C. The bank's customer support representatives",
+        "D. Early-adopter customers providing feedback surveys"
+      ],
+      "ans": "B",
+      "exp": "Regulatory compliance confirmation falls under external stakeholder engagement, which specifically involves building relationships with bodies like regulators to ensure the product meets all requirements - a role distinct from internal marketing (A) or customer support (C)."
+    },
+    {
+      "id": "Q96",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank skips employee training ahead of a major product launch to save time, assuming customers will figure out the product on their own. What risk does this most directly create, according to the module's framework?",
+      "opts": [
+        "A. No risk, since training staff is optional for successful launches",
+        "B. Customer-facing staff may be unable to answer questions or guide customers effectively, undermining the customer experience during onboarding",
+        "C. The product's break-even point will automatically be reached faster",
+        "D. Regulatory approval will be denied"
+      ],
+      "ans": "B",
+      "exp": "Training staff is presented as essential precisely because customer-facing employees need to answer questions and guide onboarding effectively - skipping it risks undermining the customer experience, not accelerating break-even (C) or affecting regulatory approval (D), which are unrelated to staff training."
+    },
+    {
+      "id": "Q97",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank is planning the launch of a new product targeted at small business owners. Which sequence best reflects the go-to-market planning process described in the module?",
+      "opts": [
+        "A. Launch promotions first, then market research, then stakeholder engagement",
+        "B. Market research and product positioning, followed by customer segmentation, then stakeholder engagement and marketing campaign planning",
+        "C. Customer onboarding first, followed by product design",
+        "D. Break-even analysis first, followed by product positioning"
+      ],
+      "ans": "B",
+      "exp": "The go-to-market strategy logically begins with research and positioning to understand the market and define the product's value, followed by segmentation to identify the audience, then stakeholder engagement and campaign planning to execute the launch. The other sequences place execution-stage or evaluation-stage activities before the foundational research is even done."
+    },
+    {
+      "id": "Q98",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank's new product launch receives strong initial marketing traction but customer support wait times spike due to unanswered onboarding questions. Which launch component was most likely under-resourced?",
+      "opts": [
+        "A. Product positioning",
+        "B. Customer support channels and onboarding materials",
+        "C. External stakeholder engagement",
+        "D. Break-even analysis"
+      ],
+      "ans": "B",
+      "exp": "Spiking support wait times tied to onboarding confusion point directly to under-resourced customer support channels and onboarding materials - not a positioning issue (A), which concerns how the product is marketed rather than how customers are supported once they've signed up."
+    },
+    {
+      "id": "Q99",
+      "module": 4,
+      "type": "mcq",
+      "q": "Why does the module recommend that marketing campaigns include both digital and traditional channels, such as email, social media, and influencer partnerships, rather than a single channel?",
+      "opts": [
+        "A. To design a robust campaign that reaches the target audience across the channels they actually use",
+        "B. Because regulators require at least three marketing channels for any launch",
+        "C. Because traditional channels are always more effective than digital ones",
+        "D. Because a single channel is illegal for financial products"
+      ],
+      "ans": "A",
+      "exp": "Combining channels is recommended to build a robust campaign that reaches the target audience effectively, not because of a regulatory mandate (B, D) or an inherent superiority of one channel type over another (C), neither of which the module supports."
+    },
+    {
+      "id": "Q100",
+      "module": 4,
+      "type": "mcq",
+      "q": "A product launch is evaluated six months post-launch and found to have low adoption despite a comprehensive marketing campaign. Which earlier go-to-market activity, if flawed, would most plausibly explain this outcome?",
+      "opts": [
+        "A. Market research or target audience definition, since a mismatch here could mean the product doesn't address a real, well-targeted need",
+        "B. Employee training, since it has no bearing on adoption",
+        "C. Break-even analysis, since it is only relevant after adoption is already high",
+        "D. The choice of office location for the bank's headquarters"
+      ],
+      "ans": "A",
+      "exp": "Low adoption despite strong marketing most plausibly traces back to a mismatch at the research or audience-definition stage - if the product doesn't address a genuine, well-targeted need, no amount of marketing volume will offset that. Employee training (B) and headquarters location (D) are unrelated to adoption outcomes, and break-even analysis (C) is a financial metric that follows from adoption rather than explaining its absence."
+    },
+    {
+      "id": "Q101",
+      "module": 4,
+      "type": "mcq",
+      "q": "According to the module, what is the primary reason a successful product launch is described as more than 'just introducing a product to the market'?",
+      "opts": [
+        "A. Because it requires comprehensive planning, strategic marketing, and continuous evaluation to ensure the product meets expectations and maintains long-term relevance",
+        "B. Because a launch is legally considered complete only after five years",
+        "C. Because introducing a product to the market has no connection to customer expectations",
+        "D. Because marketing alone determines whether a launch succeeds"
+      ],
+      "ans": "A",
+      "exp": "The module frames a successful launch as requiring integrated planning, marketing, and ongoing evaluation - not marketing alone (D) - to sustain relevance over time, rather than treating the launch as a single, brief event as options B and C imply."
+    },
+    {
+      "id": "Q102",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank wants to know whether its new product launch strategy should prioritize aggressive promotional discounts or a stronger emphasis on staff training and customer support. Given moderate adoption but a wave of customer complaints about confusion, which choice better aligns with the module's guidance?",
+      "opts": [
+        "A. Aggressive promotional discounts, since adoption numbers are the only metric that matters",
+        "B. Strengthening staff training and customer support, since the complaints point to an onboarding and support gap rather than an awareness or incentive problem",
+        "C. Neither, since customer complaints should be ignored once a product has launched",
+        "D. Reducing the product's price to zero regardless of the complaints' content"
+      ],
+      "ans": "B",
+      "exp": "Complaints centered on confusion signal a support and onboarding gap, not a lack of awareness or incentive - so strengthening training and support channels addresses the actual root cause, whereas discounts (A, D) would not resolve confusion, and ignoring complaints (C) contradicts the module's emphasis on continuous feedback."
+    },
+    {
+      "id": "Q103",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following most accurately summarizes the relationship between go-to-market strategy (Module 4.2.1) and the key launch components (Module 4.2.2)?",
+      "opts": [
+        "A. They are unrelated phases handled by entirely separate teams with no shared inputs",
+        "B. Go-to-market strategy sets the overall plan - research, positioning, segmentation, stakeholder engagement - while the key launch components (promotion, training, support, communication) are the operational activities that execute that plan",
+        "C. Key launch components must be completed before any go-to-market planning begins",
+        "D. Go-to-market strategy is only relevant after the product has already launched"
+      ],
+      "ans": "B",
+      "exp": "The go-to-market strategy provides the strategic foundation - who the product is for and how it's positioned - while the key launch components are the tactical execution of that plan at launch. Reversing this order (C) or treating the two as unrelated (A) or post-launch only (D) misrepresents how the module sequences the launch process."
+    },
+    {
+      "id": "Q104",
+      "module": 4,
+      "type": "mcq",
+      "q": "What distinguishes 'customer education' (under marketing campaigns) from 'clear messaging' (under communication strategies) in the module's product launch framework?",
+      "opts": [
+        "A. Customer education teaches customers how to use the product's benefits and features effectively, while clear messaging focuses on communicating the launch's purpose and benefits clearly to all stakeholders",
+        "B. They are identical concepts described twice for emphasis",
+        "C. Customer education applies only to staff, while clear messaging applies only to customers",
+        "D. Clear messaging happens only after the product has been discontinued"
+      ],
+      "ans": "A",
+      "exp": "Customer education is specifically about teaching customers to use the product effectively as part of marketing campaigns, while clear messaging is about communicating the launch's purpose and benefits clearly to all stakeholders as part of the broader communication strategy - two related but distinct activities, not duplicates (B) or role-reversed as in option C."
+    },
+    {
+      "id": "Q105",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which sequence best reflects the full retail product launch cycle as presented across the module, from initial planning through post-launch evaluation?",
+      "opts": [
+        "A. Training staff, then planning, then promotion, then go-to-market strategy",
+        "B. Go-to-market strategy (research, positioning, segmentation) leads into key launch components (promotion, training, support, communication), which are then assessed through evaluation KPIs (adoption rate, feedback, profitability)",
+        "C. Evaluation KPIs first, followed by go-to-market strategy, followed by training staff",
+        "D. Promotion, then evaluation, then planning, then training"
+      ],
+      "ans": "B",
+      "exp": "The module's logical flow moves from strategic planning (go-to-market strategy) into tactical execution (the key launch components) and finally into measurement (evaluation KPIs) - the other sequences place evaluation or execution steps before the foundational planning has occurred, which doesn't match how the module builds its framework."
+    },
+    {
+      "id": "Q106",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank categorizes customers based on demographics, income levels, transaction behaviour, and lifestyle using data analytics to design more targeted products. This approach is known as:",
+      "opts": [
+        "A. Data-driven segmentation",
+        "B. Dynamic pricing",
+        "C. Design Thinking",
+        "D. Break-even analysis"
+      ],
+      "ans": "A",
+      "exp": "Categorizing customers by demographics, income, transaction behaviour, and lifestyle using data analytics is data-driven segmentation. Dynamic pricing (B) instead refers to offering different terms or rates based on individual profiles, a related but distinct concept."
+    },
+    {
+      "id": "Q107",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank analyses customers' spending habits, saving patterns, and digital interactions to identify needs that are not immediately obvious. This refines segmentation through:",
+      "opts": [
+        "A. Behavioural segmentation",
+        "B. Product positioning",
+        "C. Break-even analysis",
+        "D. Stakeholder engagement"
+      ],
+      "ans": "A",
+      "exp": "Analysing behaviour - spending habits, saving patterns, digital interactions - to uncover non-obvious needs is behavioural segmentation, which builds on and refines the broader data-driven segmentation approach."
+    },
+    {
+      "id": "Q108",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank designs a mobile-first savings app with automatic spending roundups and investment options aligned with sustainability. Which customer segment is this product most likely targeting?",
+      "opts": [
+        "A. Seniors",
+        "B. Gen Z",
+        "C. Small business owners",
+        "D. High-net-worth retirees"
+      ],
+      "ans": "B",
+      "exp": "Gen Z is specifically described as valuing digital-first experiences, social responsibility, and financial independence - mobile-first apps, automatic roundup savings tools, and sustainability-aligned investing directly match this profile, unlike the preferences described for Seniors, who favour simpler platforms and enhanced support."
+    },
+    {
+      "id": "Q109",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank emphasizes ease of use, security, and flexibility in an app-based banking product with budgeting tools and online lending options. Which segment does this most closely match?",
+      "opts": [
+        "A. Millennials",
+        "B. Seniors",
+        "C. Gen Z",
+        "D. None of the described segments"
+      ],
+      "ans": "A",
+      "exp": "Millennials are described as tech-savvy and mobile-first, with interest in app-based banking, budgeting tools, and online lending, emphasizing ease of use, security, and flexibility - a slightly different emphasis than Gen Z's focus on social responsibility and sustainability-aligned products."
+    },
+    {
+      "id": "Q110",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank designs a product with enhanced customer support, an easy-to-navigate interface, and additional security features. Which customer segment does this design most directly address?",
+      "opts": [
+        "A. Gen Z",
+        "B. Seniors",
+        "C. Millennials",
+        "D. Small business owners"
+      ],
+      "ans": "B",
+      "exp": "Seniors are specifically noted as preferring in-branch services or simpler online platforms, with products emphasizing enhanced support, easy navigation, and tailored security - distinct from the digital-first, mobile-app-centric preferences of Gen Z and Millennials."
+    },
+    {
+      "id": "Q111",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank offers a credit card with customizable rewards and a savings account with an interest rate that adjusts based on a customer's individual spending patterns and financial history. This reflects:",
+      "opts": [
+        "A. Customer segmentation",
+        "B. Personalized financial products",
+        "C. Break-even analysis",
+        "D. External stakeholder engagement"
+      ],
+      "ans": "B",
+      "exp": "Tailoring specific product features - like customizable rewards or interest rates based on individual history - to an individual customer is personalized financial products, a step beyond broad segmentation, which groups customers rather than tailoring to individuals."
+    },
+    {
+      "id": "Q112",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank offers better interest rates to high-value customers or those with a long-standing relationship with the bank, while offering standard rates to others. This practice is known as:",
+      "opts": [
+        "A. Dynamic pricing",
+        "B. Behavioural segmentation",
+        "C. Design Thinking",
+        "D. Customer onboarding"
+      ],
+      "ans": "A",
+      "exp": "Offering different terms, fees, and rates based on individual customer profiles is dynamic pricing - a specific application of personalization to pricing decisions, distinct from behavioural segmentation, which groups customers rather than adjusting individual terms."
+    },
+    {
+      "id": "Q113",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank designs a rewards program that offers discounts and exclusive offers tailored to each customer's individual spending and saving habits. What is the primary goal of this strategy?",
+      "opts": [
+        "A. Encouraging customers to remain loyal to the bank",
+        "B. Reducing the bank's regulatory reporting burden",
+        "C. Eliminating the need for customer segmentation",
+        "D. Replacing the need for a go-to-market strategy"
+      ],
+      "ans": "A",
+      "exp": "Customer loyalty programs tailored to individual habits are designed specifically to encourage customers to remain loyal, offering tangible tailored benefits. This is unrelated to regulatory reporting (B) and does not eliminate the need for other strategic tools like segmentation (C) or go-to-market planning (D)."
+    },
+    {
+      "id": "Q114",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank uses machine learning algorithms to predict that a customer who recently changed jobs may soon need a mortgage pre-approval, and proactively offers one. This reflects:",
+      "opts": [
+        "A. Behavioural insights",
+        "B. Break-even analysis",
+        "C. External stakeholder engagement",
+        "D. Launch promotion"
+      ],
+      "ans": "A",
+      "exp": "Using machine learning to predict future customer needs based on life events - such as a new job triggering a mortgage need - is the behavioural insights application described in the module, distinct from unrelated concepts like break-even analysis or stakeholder engagement."
+    },
+    {
+      "id": "Q115",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank uses AI to analyze vast amounts of customer data and recommend investment products aligned with a customer's recent home purchase. Which AI application does this represent?",
+      "opts": [
+        "A. Fraud prevention",
+        "B. Predictive analytics",
+        "C. Customer segmentation only",
+        "D. Break-even analysis"
+      ],
+      "ans": "B",
+      "exp": "Recommending products based on predicted future needs tied to life events, like a home purchase, is predictive analytics. Fraud prevention (A) instead involves identifying unusual transaction patterns to detect fraudulent activity, a different AI application entirely."
+    },
+    {
+      "id": "Q116",
+      "module": 5,
+      "type": "mcq",
+      "q": "An AI system identifies an unusual pattern in a customer's transaction history and flags it for review, helping protect the customer's funds. This is an example of:",
+      "opts": [
+        "A. Predictive analytics for product recommendations",
+        "B. Fraud prevention",
+        "C. Dynamic pricing",
+        "D. Customer onboarding"
+      ],
+      "ans": "B",
+      "exp": "Detecting unusual transaction patterns to protect customer funds is fraud prevention - a distinct AI application from predictive analytics, which focuses on anticipating future product needs rather than identifying suspicious activity."
+    },
+    {
+      "id": "Q117",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank uses big data to gain deeper insights into customer behaviour, preferences, and financial goals, then applies this information to design highly relevant and targeted products. What is this primary application of big data called?",
+      "opts": [
+        "A. Customer insights",
+        "B. Break-even analysis",
+        "C. Stakeholder engagement",
+        "D. Launch promotion"
+      ],
+      "ans": "A",
+      "exp": "Using big data to understand behaviour, preferences, and goals for the purpose of designing relevant products is the customer insights application, distinct from personalized experiences, which apply those insights to individual-level product offers like tailored credit card offers."
+    },
+    {
+      "id": "Q118",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank sends a customer a tailored credit card offer based on their specific transaction history, and delivers a personalized financial recommendation through the mobile app. This reflects which big data application?",
+      "opts": [
+        "A. Customer insights",
+        "B. Personalized experiences",
+        "C. Fraud prevention",
+        "D. External stakeholder engagement"
+      ],
+      "ans": "B",
+      "exp": "Delivering individually tailored offers and recommendations based on transaction history is the personalized experiences application of big data - applying insights at the individual customer level, as opposed to customer insights (A), which is the broader analytical process of understanding behaviour and preferences."
+    },
+    {
+      "id": "Q119",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank regularly gathers feedback through surveys, interviews, and social media to identify areas for improvement and features customers desire. This reflects which principle of customer-centric product design?",
+      "opts": [
+        "A. Continuous improvement through feedback loops",
+        "B. Dynamic pricing",
+        "C. Break-even analysis",
+        "D. Launch promotion"
+      ],
+      "ans": "A",
+      "exp": "Regularly gathering feedback to guide ongoing refinement is the continuous improvement/feedback loop principle of customer-centric design, distinct from dynamic pricing, which is a personalization tactic rather than a feedback mechanism."
+    },
+    {
+      "id": "Q120",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank conducts usability testing with real customers to confirm that a product design aligns with their expectations before finalizing it. This activity is known as:",
+      "opts": [
+        "A. User testing",
+        "B. Break-even analysis",
+        "C. Behavioural segmentation",
+        "D. External stakeholder engagement"
+      ],
+      "ans": "A",
+      "exp": "Conducting usability testing with real customers to validate alignment with expectations is user testing - closely related to, but distinct from, the broader Design Thinking 'Test' stage, which applies this principle specifically within a structured five-stage methodology."
+    },
+    {
+      "id": "Q121",
+      "module": 5,
+      "type": "mcq",
+      "q": "In the Design Thinking methodology, a team conducts user research through surveys and observation to understand the pain points, problems, and goals of small business owners. Which stage does this represent?",
+      "opts": [
+        "A. Define",
+        "B. Empathize",
+        "C. Ideate",
+        "D. Prototype"
+      ],
+      "ans": "B",
+      "exp": "Understanding customer needs, problems, and goals through research and observation is the Empathize stage - the first step in Design Thinking, which precedes clearly articulating the problem in the Define stage."
+    },
+    {
+      "id": "Q122",
+      "module": 5,
+      "type": "mcq",
+      "q": "After conducting user research, a team clearly articulates the specific pain points and design requirements based on the insights gathered. Which Design Thinking stage is this?",
+      "opts": [
+        "A. Empathize",
+        "B. Define",
+        "C. Ideate",
+        "D. Test"
+      ],
+      "ans": "B",
+      "exp": "Clearly defining customer pain points and design requirements based on research insights is the Define stage, which follows Empathize and precedes Ideate in the Design Thinking sequence."
+    },
+    {
+      "id": "Q123",
+      "module": 5,
+      "type": "mcq",
+      "q": "A team organizes a brainstorming session generating multiple possible solutions to a defined problem, prioritizing quantity and creativity over quality in the early stages. This is the:",
+      "opts": [
+        "A. Empathize stage",
+        "B. Define stage",
+        "C. Ideate stage",
+        "D. Prototype stage"
+      ],
+      "ans": "C",
+      "exp": "Brainstorming a wide range of solutions, favouring quantity and creativity initially before narrowing down, is the Ideate stage, distinct from the Define stage, which focuses on articulating the problem rather than generating solutions."
+    },
+    {
+      "id": "Q124",
+      "module": 5,
+      "type": "mcq",
+      "q": "A team creates low-fidelity sketches and wireframes of the most promising product ideas so they can be visualized and refined before high-fidelity design work begins. This is the:",
+      "opts": [
+        "A. Ideate stage",
+        "B. Prototype stage",
+        "C. Test stage",
+        "D. Define stage"
+      ],
+      "ans": "B",
+      "exp": "Creating low-fidelity sketches, wireframes, or mock-ups to visualize and refine solutions is the Prototype stage, which comes after Ideate (generating ideas) and before Test (validating them with users)."
+    },
+    {
+      "id": "Q125",
+      "module": 5,
+      "type": "mcq",
+      "q": "A team conducts user acceptance testing to confirm that a persona's identified challenges with a bank product have been addressed to their satisfaction. This is the:",
+      "opts": [
+        "A. Prototype stage",
+        "B. Test stage",
+        "C. Empathize stage",
+        "D. Define stage"
+      ],
+      "ans": "B",
+      "exp": "Confirming through user acceptance testing that identified challenges have been resolved to the customer's satisfaction is the Test stage - the final step in the Design Thinking cycle, which validates the outcome of the preceding Empathize, Define, Ideate, and Prototype stages."
+    },
+    {
+      "id": "Q126",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which sequence correctly reflects the order of the Design Thinking methodology as presented in the module?",
+      "opts": [
+        "A. Define, Empathize, Prototype, Ideate, Test",
+        "B. Empathize, Define, Ideate, Prototype, Test",
+        "C. Ideate, Empathize, Define, Test, Prototype",
+        "D. Empathize, Ideate, Define, Test, Prototype"
+      ],
+      "ans": "B",
+      "exp": "The correct sequence is Empathize (understand the customer), Define (articulate the problem), Ideate (generate solutions), Prototype (build a testable version), and Test (validate with users) - the other orderings scramble this logical progression."
+    },
+    {
+      "id": "Q127",
+      "module": 5,
+      "type": "mcq",
+      "q": "A product team skips the Empathize stage entirely and moves straight to brainstorming solutions for retirees. What risk does this most directly introduce?",
+      "opts": [
+        "A. No risk, since Ideate can function independently of Empathize",
+        "B. The team may generate solutions based on assumptions rather than actual customer pain points and needs",
+        "C. The product will automatically fail Test stage regardless of quality",
+        "D. Regulatory approval will be denied"
+      ],
+      "ans": "B",
+      "exp": "Skipping Empathize removes the grounding in real customer research, so any ideas generated risk being based on assumptions rather than genuine pain points - a foundational risk, since Ideate is meant to build on insights gathered in Empathize and Define, not replace them."
+    },
+    {
+      "id": "Q128",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank wants to design a new product for millennials but has limited data on their specific pain points with existing offerings. Which combination of module concepts would be most appropriate to apply first?",
+      "opts": [
+        "A. Jump directly to the Prototype stage of Design Thinking",
+        "B. Use data-driven and behavioural segmentation to understand the millennial segment, then apply the Empathize stage of Design Thinking to gather deeper qualitative insight",
+        "C. Rely solely on dynamic pricing to solve the problem",
+        "D. Skip research entirely and launch based on assumptions about millennials"
+      ],
+      "ans": "B",
+      "exp": "Combining segmentation (to understand the broad group) with Design Thinking's Empathize stage (to gather deeper, qualitative insight into specific pain points) is the most appropriate sequence - jumping to Prototype (A) or relying on pricing alone (C) skips the foundational research the module emphasizes, and launching on assumptions (D) contradicts the module's customer-centric approach entirely."
+    },
+    {
+      "id": "Q129",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank has successfully used AI-driven predictive analytics to recommend products, but customer complaints about privacy and lack of transparency in these recommendations are rising. Which underlying principle from the module is most directly at risk here?",
+      "opts": [
+        "A. Break-even analysis accuracy",
+        "B. Customer trust and the customer-centric approach that innovations should be driven by customer needs, including convenience and security",
+        "C. Employee training standards",
+        "D. External stakeholder engagement with regulators only"
+      ],
+      "ans": "B",
+      "exp": "The module frames customer-centric innovation as being driven by needs such as convenience, security, and ease of access - privacy and transparency concerns strike directly at this trust-based foundation, rather than at unrelated areas like break-even accuracy (A) or employee training (C)."
+    },
+    {
+      "id": "Q130",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank designs a product specifically for seniors that emphasizes simplicity and enhanced support, but customer feedback later reveals many seniors in this segment are highly comfortable with mobile technology. What does this scenario best illustrate about segmentation?",
+      "opts": [
+        "A. Segmentation is entirely unreliable and should never be used",
+        "B. Segment-level generalizations should be validated and refined with ongoing customer feedback and behavioural data, since individuals within a segment can vary",
+        "C. Seniors should always be excluded from digital product design",
+        "D. Behavioural segmentation and demographic segmentation always produce identical results"
+      ],
+      "ans": "B",
+      "exp": "This scenario illustrates why the module pairs segmentation with continuous feedback loops and behavioural data - broad segment characteristics are a starting point, not a fixed rule, and should be refined as real customer behaviour is observed, rather than assuming segmentation is worthless (A) or that any single segment is monolithic (C, D)."
+    },
+    {
+      "id": "Q131",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which statement best explains the relationship between personalization/customization and customer segmentation, as presented in the module?",
+      "opts": [
+        "A. They are identical concepts with different names",
+        "B. Segmentation groups customers into broader categories with shared characteristics, while personalization tailors products or pricing to individual customers, often building on segmentation insights",
+        "C. Personalization always replaces the need for segmentation",
+        "D. Segmentation is only used for marketing, while personalization is only used for product design"
+      ],
+      "ans": "B",
+      "exp": "Segmentation operates at the group level, identifying shared characteristics across customer categories, while personalization applies at the individual level - often using segmentation as a starting point rather than replacing it (C) or being restricted to a single function each (D)."
+    },
+    {
+      "id": "Q132",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank wants to reduce fraud losses while also increasing cross-sell rates for investment products. Which combination of AI applications would most directly address both goals, per the module?",
+      "opts": [
+        "A. Fraud prevention for reducing losses, and predictive analytics for identifying cross-sell opportunities based on life events and behaviour",
+        "B. Predictive analytics alone addresses both goals equally well",
+        "C. Fraud prevention alone addresses both goals equally well",
+        "D. Neither AI application is relevant to these goals"
+      ],
+      "ans": "A",
+      "exp": "The two AI applications serve distinct purposes: fraud prevention identifies unusual transaction patterns to protect funds, while predictive analytics anticipates future needs for product recommendations - addressing both goals requires both applications together, not just one (B, C), and both are directly relevant per the module (contradicting D)."
+    },
+    {
+      "id": "Q133",
+      "module": 5,
+      "type": "mcq",
+      "q": "A team has completed the Prototype stage for a new savings product aimed at Gen Z customers. What should happen next, according to the Design Thinking sequence, and why?",
+      "opts": [
+        "A. Return immediately to the Empathize stage and restart the entire process",
+        "B. Move to the Test stage to validate the prototype with real users and confirm the design meets their needs before finalizing",
+        "C. Skip directly to a full market launch without further validation",
+        "D. Move to the Define stage to reconsider the original problem statement"
+      ],
+      "ans": "B",
+      "exp": "After Prototype, the Design Thinking sequence moves to Test, where real users validate whether the design meets their needs - this step should not be skipped in favour of a full launch (C), and there's no indication the process needs to restart from Empathize (A) or revisit Define (D) unless testing reveals a fundamental misalignment."
+    },
+    {
+      "id": "Q134",
+      "module": 5,
+      "type": "mcq",
+      "q": "Why does the module emphasize that Design Thinking is a 'human-centred' methodology specifically for retail banking product development?",
+      "opts": [
+        "A. Because it removes the need for any technology in the design process",
+        "B. Because it centers each stage of product development around genuinely understanding and validating solutions against real customer needs, rather than starting from assumptions",
+        "C. Because it only applies to physical branch design, not digital products",
+        "D. Because it eliminates the need for cost or profitability analysis"
+      ],
+      "ans": "B",
+      "exp": "The human-centred framing reflects that every stage - from Empathize through Test - keeps real customer needs and validation at the center of the process, rather than beginning from internal assumptions. It doesn't exclude technology (A) or physical/digital scope (C), and it operates alongside, not instead of, financial analysis (D)."
+    },
+    {
+      "id": "Q135",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank is designing a new product and must choose between relying solely on demographic segmentation data or supplementing it with Design Thinking's Empathize stage before finalizing the design. Which approach better reflects the module's overall guidance on designing for changing customer needs?",
+      "opts": [
+        "A. Demographic data alone is sufficient, since customer needs rarely change once a segment is defined",
+        "B. Supplementing demographic segmentation with direct, ongoing qualitative research (such as Empathize-stage interviews) better captures evolving needs that static demographic data alone may miss",
+        "C. Neither approach is useful; product design should be based purely on competitor benchmarking",
+        "D. Demographic data should be discarded entirely in favour of qualitative research only"
+      ],
+      "ans": "B",
+      "exp": "The module frames customer needs as dynamic and evolving, which is why it pairs data-driven segmentation with ongoing qualitative methods like Empathize-stage research and continuous feedback loops - relying on demographic data alone (A) risks missing this evolution, while discarding it entirely (D) throws away useful quantitative grounding, and competitor benchmarking (C) isn't the customer-centric approach the module advocates."
+    },
+    {
+      "id": "Q136",
+      "module": 6,
+      "type": "mcq",
+      "q": "Monzo is described in the module as a UK-based digital bank built around which core approach?",
+      "opts": [
+        "A. A branch-heavy, traditional banking model with minimal digital features",
+        "B. A fully mobile-first, transparent, and customer-centric approach",
+        "C. A model focused exclusively on cryptocurrency trading",
+        "D. A business-only banking model with no retail customer offerings"
+      ],
+      "ans": "B",
+      "exp": "Monzo is specifically characterized as fully mobile-first, transparent, and customer-centric - not branch-heavy (A), crypto-exclusive (C), or business-only (D), none of which the module attributes to Monzo."
+    },
+    {
+      "id": "Q137",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is listed among Monzo's innovative features?",
+      "opts": [
+        "A. Fee-free international withdrawals",
+        "B. Mandatory in-branch account opening",
+        "C. Cryptocurrency-only account funding",
+        "D. A minimum balance requirement of significant size"
+      ],
+      "ans": "A",
+      "exp": "Fee-free international withdrawals, alongside real-time notifications, intuitive app design, and spending analysis tools, are specifically listed as Monzo's innovative features. The other options describe restrictions the module never attributes to Monzo."
+    },
+    {
+      "id": "Q138",
+      "module": 6,
+      "type": "mcq",
+      "q": "What does the module identify as Monzo's key success factor?",
+      "opts": [
+        "A. Its focus on simplicity, transparency, and empowering customers to take control of their finances",
+        "B. Its exclusive focus on institutional investors",
+        "C. Its refusal to use any mobile technology",
+        "D. Its partnership exclusively with government agencies"
+      ],
+      "ans": "A",
+      "exp": "Monzo's success is attributed to simplicity, transparency, and customer empowerment - a description that directly contradicts the other options, none of which the module associates with Monzo's strategy."
+    },
+    {
+      "id": "Q139",
+      "module": 6,
+      "type": "mcq",
+      "q": "Revolut is described as a global financial technology company offering which range of services?",
+      "opts": [
+        "A. Only traditional savings accounts",
+        "B. Banking, trading, and cryptocurrency exchange",
+        "C. Only insurance products",
+        "D. Only mortgage lending"
+      ],
+      "ans": "B",
+      "exp": "Revolut's described service range spans banking, trading, and cryptocurrency exchange - a broader scope than any of the single-service options presented in A, C, or D."
+    },
+    {
+      "id": "Q140",
+      "module": 6,
+      "type": "mcq",
+      "q": "According to the module, which factors have allowed Revolut to disrupt traditional banking models and grow its customer base?",
+      "opts": [
+        "A. Aggressive international expansion, focus on low-cost banking, and continuous product diversification",
+        "B. Exclusive focus on a single domestic market with no expansion",
+        "C. Avoiding any use of cryptocurrency-related services",
+        "D. Charging premium fees well above traditional bank rates"
+      ],
+      "ans": "A",
+      "exp": "Revolut's key success factors are aggressive international expansion, low-cost banking, and continuous product diversification - directly contradicting the single-market focus (B), crypto avoidance (C), and premium-pricing strategy (D) described in the other options."
+    },
+    {
+      "id": "Q141",
+      "module": 6,
+      "type": "mcq",
+      "q": "Ally Bank is described in the module as a U.S.-based online bank focused on which combination of factors?",
+      "opts": [
+        "A. Competitive rates, low fees, and exceptional customer service",
+        "B. High fees paired with minimal customer service",
+        "C. Physical branches as its primary channel",
+        "D. Exclusive partnerships with cryptocurrency exchanges"
+      ],
+      "ans": "A",
+      "exp": "Ally Bank's described focus is on competitive rates, low fees, and exceptional customer service - not high fees (B), physical branches as a primary channel (C), or cryptocurrency partnerships (D), none of which the module attributes to Ally Bank."
+    },
+    {
+      "id": "Q142",
+      "module": 6,
+      "type": "mcq",
+      "q": "The module notes that some Nigerian Payment Services Banks, such as OPay and Moneypoint, have adopted which model to attract customers from traditional incumbent banks?",
+      "opts": [
+        "A. The Wells Fargo model of premium account fees",
+        "B. The Ally Bank model of low transaction fees and related innovations",
+        "C. A branch-expansion-only model",
+        "D. A model focused solely on cryptocurrency trading"
+      ],
+      "ans": "B",
+      "exp": "The module specifically states that OPay and Moneypoint adopted Ally Bank's model of low transaction fees and other innovations - not a high-fee model (A), a branch-focused approach (C), or a crypto-only model (D), which are not discussed in this context."
+    },
+    {
+      "id": "Q143",
+      "module": 6,
+      "type": "mcq",
+      "q": "Across the case studies of Monzo, Revolut, and Ally Bank, which attribute do the module's key takeaways identify as common among successful retail banking innovators?",
+      "opts": [
+        "A. A strong focus on customer experience, seamless digital interfaces, and an ability to disrupt traditional banking models through value-added services",
+        "B. A shared strategy of avoiding all technology investment",
+        "C. Exclusive reliance on traditional branch networks",
+        "D. A common refusal to expand beyond their home country"
+      ],
+      "ans": "A",
+      "exp": "The shared attributes across these innovators are customer experience focus, seamless digital interfaces, and disruptive value-added services - directly opposing the technology-avoidance (B), branch-reliance (C), and no-expansion (D) options."
+    },
+    {
+      "id": "Q144",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank promotes a flat organizational structure so that employees at all levels can contribute ideas to the innovation process. This reflects which aspect of fostering creativity?",
+      "opts": [
+        "A. Empowering employees",
+        "B. Investment in R&D",
+        "C. Pilot programs",
+        "D. Break-even analysis"
+      ],
+      "ans": "A",
+      "exp": "Promoting a flat structure so employees at all levels can contribute is the empowering employees element of fostering creativity, distinct from R&D investment (B), which concerns resource allocation for experimentation with new technologies rather than organizational structure."
+    },
+    {
+      "id": "Q145",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank establishes an 'innovation lab' where teams collaborate on new product ideas and technological advancements. This reflects which creativity-fostering practice?",
+      "opts": [
+        "A. Idea generation",
+        "B. Safe failures",
+        "C. Agile methodology",
+        "D. Customer-driven innovation"
+      ],
+      "ans": "A",
+      "exp": "Establishing innovation labs or think tanks for collaborative idea development is specifically the idea generation practice, distinct from safe failures (B), which concerns embracing calculated risk rather than structuring idea collaboration."
+    },
+    {
+      "id": "Q146",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank brings together employees from marketing, technology, and compliance to collaborate on a new product idea, ensuring diverse perspectives shape the outcome. This reflects:",
+      "opts": [
+        "A. Cross-functional teams",
+        "B. External stakeholder engagement",
+        "C. Break-even analysis",
+        "D. Product positioning"
+      ],
+      "ans": "A",
+      "exp": "Collaborating across departments to bring diverse perspectives to innovation projects is specifically the cross-functional teams practice within fostering creativity, distinct from external stakeholder engagement, which involves outside parties rather than internal departments."
+    },
+    {
+      "id": "Q147",
+      "module": 6,
+      "type": "mcq",
+      "q": "An innovative bank allows teams to experiment and learn from failed pilot projects without fear of repercussions. This mindset is described in the module as:",
+      "opts": [
+        "A. Safe failures",
+        "B. Product retirement",
+        "C. Dynamic pricing",
+        "D. Customer segmentation"
+      ],
+      "ans": "A",
+      "exp": "Embracing calculated risk and allowing experimentation and learning from failure without fear of repercussions is the safe failures mindset within encouraging risk-taking, distinct from unrelated concepts like product retirement or segmentation."
+    },
+    {
+      "id": "Q148",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank allocates significant financial resources specifically to experiment with emerging technologies and new business models. This reflects:",
+      "opts": [
+        "A. Investment in R&D",
+        "B. Launch promotion",
+        "C. Customer onboarding",
+        "D. Break-even analysis"
+      ],
+      "ans": "A",
+      "exp": "Allocating resources specifically to research and development for experimenting with emerging technologies and business models is investment in R&D, distinct from launch promotions, which are customer-facing incentives rather than internal resource allocation."
+    },
+    {
+      "id": "Q149",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank tests a new savings product with a limited customer base before rolling it out company-wide. This approach is known as:",
+      "opts": [
+        "A. A pilot program",
+        "B. Product retirement",
+        "C. External stakeholder engagement",
+        "D. Break-even analysis"
+      ],
+      "ans": "A",
+      "exp": "Launching a small-scale test with a limited customer base before scaling up is a pilot program - a specific method of support for experimentation, distinct from product retirement, which involves withdrawing a product entirely rather than testing a new one."
+    },
+    {
+      "id": "Q150",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank adopts short iteration cycles and continuous feedback to test, refine, and innovate more efficiently. This practice is known as:",
+      "opts": [
+        "A. Agile methodology",
+        "B. Product positioning",
+        "C. Dynamic pricing",
+        "D. External stakeholder engagement"
+      ],
+      "ans": "A",
+      "exp": "Short iteration cycles paired with continuous feedback describe agile methodology, a support-for-experimentation practice distinct from product positioning, which concerns how a product is marketed rather than how it is developed and refined."
+    },
+    {
+      "id": "Q151",
+      "module": 6,
+      "type": "mcq",
+      "q": "According to the module, leaders in innovative organizations set the tone for a culture of innovation primarily through which two responsibilities?",
+      "opts": [
+        "A. Providing a clear vision for the future and allocating necessary resources - financial, technological, and human capital",
+        "B. Approving every individual product feature personally",
+        "C. Avoiding any communication with cross-functional teams",
+        "D. Focusing exclusively on cost-cutting rather than growth"
+      ],
+      "ans": "A",
+      "exp": "Visionary leadership and resource allocation are the two specific responsibilities the module attributes to leaders in fostering an innovation culture - not micromanaging individual features (B), avoiding team communication (C), or pursuing cost-cutting alone (D)."
+    },
+    {
+      "id": "Q152",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank leverages customer data, feedback, and market research to identify unmet needs and design products that genuinely resonate with its target audience. This reflects which key characteristic of innovative companies?",
+      "opts": [
+        "A. Customer-driven innovation",
+        "B. Agility",
+        "C. Continuous learning",
+        "D. Leadership support"
+      ],
+      "ans": "A",
+      "exp": "Using customer data, feedback, and research to identify unmet needs is specifically customer-driven innovation, distinct from agility, which concerns rapid adaptation to market changes rather than the sourcing of product ideas."
+    },
+    {
+      "id": "Q153",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank invests in ongoing employee training and establishes learning platforms so staff can share knowledge and best practices across teams. This reflects which key characteristic?",
+      "opts": [
+        "A. Continuous learning",
+        "B. Agility",
+        "C. Customer-driven innovation",
+        "D. Leadership support"
+      ],
+      "ans": "A",
+      "exp": "Investing in workforce training and knowledge-sharing platforms is the continuous learning characteristic, distinct from agility, which is about adapting quickly to change rather than developing employee skills over time."
+    },
+    {
+      "id": "Q154",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank quickly pivots its product features and business strategy in response to shifting customer feedback and market changes. This reflects which key characteristic of innovative companies?",
+      "opts": [
+        "A. Agility",
+        "B. Continuous learning",
+        "C. Customer-driven innovation",
+        "D. Leadership support"
+      ],
+      "ans": "A",
+      "exp": "Rapidly adapting strategy and product features to market changes and feedback defines agility - specifically the rapid response to change and flexibility in operations aspects, distinct from continuous learning, which concerns workforce development rather than strategic pivoting."
+    },
+    {
+      "id": "Q155",
+      "module": 6,
+      "type": "mcq",
+      "q": "N26 is described in the module as a digital bank that disrupted traditional banking with a mobile-first experience. Which of the following is listed among its key success factors?",
+      "opts": [
+        "A. Simplified user experience with an intuitive app and fee transparency",
+        "B. A strict policy against any FinTech partnerships",
+        "C. Charging foreign transaction fees higher than competitors",
+        "D. A branch-first expansion strategy"
+      ],
+      "ans": "A",
+      "exp": "N26's key success factors include a simplified, intuitive app experience and fee transparency - not FinTech-partnership avoidance (B), high foreign transaction fees (C, when the module specifically notes N26 charges none), or a branch-first strategy (D), which contradicts its mobile-first identity."
+    },
+    {
+      "id": "Q156",
+      "module": 6,
+      "type": "mcq",
+      "q": "According to the module, what is the key takeaway from N26's success?",
+      "opts": [
+        "A. The importance of customer-centric design and seamless integration of technology to meet evolving customer demands",
+        "B. That physical branch networks are essential for any bank's success",
+        "C. That fee transparency has no impact on customer trust",
+        "D. That partnerships with FinTech startups always fail"
+      ],
+      "ans": "A",
+      "exp": "N26's key takeaway centers on customer-centric design and technology integration meeting evolving demands - the opposite of what options B, C, and D claim, none of which are supported by the case study."
+    },
+    {
+      "id": "Q157",
+      "module": 6,
+      "type": "mcq",
+      "q": "Wells Fargo launched a mobile wallet app intended to compete with Apple Pay and Google Wallet. What ultimately happened to this product, according to the module?",
+      "opts": [
+        "A. It became the most widely adopted mobile wallet in the U.S.",
+        "B. It struggled with adoption and was eventually discontinued",
+        "C. It was acquired by a competing bank",
+        "D. It was rebranded and relaunched successfully within a year"
+      ],
+      "ans": "B",
+      "exp": "The module explicitly states the Wells Fargo wallet app struggled with adoption and was eventually discontinued - not that it succeeded (A), was acquired (C), or was successfully relaunched (D), none of which the case study describes."
+    },
+    {
+      "id": "Q158",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is cited as a reason for the failure of Wells Fargo's mobile wallet app?",
+      "opts": [
+        "A. Lack of differentiation from competitors and poor user experience",
+        "B. Excessive investment in customer support infrastructure",
+        "C. Overly aggressive international expansion",
+        "D. Too much positive brand trust following prior scandals"
+      ],
+      "ans": "A",
+      "exp": "The module cites lack of differentiation, poor user experience and limited functionality, and trust issues from prior scandals as reasons for failure - the reverse of option D, which incorrectly claims trust was excessive rather than damaged, and options B and C describe factors not discussed in this case."
+    },
+    {
+      "id": "Q159",
+      "module": 6,
+      "type": "mcq",
+      "q": "How did Wells Fargo's prior scandals contribute to the failure of its mobile wallet app, according to the module?",
+      "opts": [
+        "A. They created trust issues that undermined customer confidence in adopting the new app",
+        "B. They had no impact on the wallet app's adoption whatsoever",
+        "C. They caused regulators to ban the app outright",
+        "D. They increased customer enthusiasm for anything new from the bank"
+      ],
+      "ans": "A",
+      "exp": "The module explicitly links prior scandals to trust issues that undermined the app's adoption - not a regulatory ban (C), no impact at all (B), or increased enthusiasm (D), none of which the case study supports."
+    },
+    {
+      "id": "Q160",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the key takeaway the module draws from the Wells Fargo mobile wallet failure?",
+      "opts": [
+        "A. Banks should never attempt to launch mobile wallet products",
+        "B. A product must provide unique value, solve real customer problems, and foster trust among users to succeed",
+        "C. Mobile wallets are inherently less profitable than physical cards",
+        "D. Only banks with no prior scandals should ever launch new products"
+      ],
+      "ans": "B",
+      "exp": "The key takeaway emphasizes the need for unique value, solving real problems, and fostering trust - a broader lesson about product design and trust, not a blanket prohibition on mobile wallets (A) or a claim about scandal history disqualifying future launches (D)."
+    },
+    {
+      "id": "Q161",
+      "module": 6,
+      "type": "mcq",
+      "q": "Monzo is presented as an example of evolving from a prepaid card provider into a full-scale digital bank. What did the module identify as its key success factors in this evolution?",
+      "opts": [
+        "A. Data-driven product development, focus on customer experience and community engagement, and scalable technology architecture",
+        "B. A strict avoidance of any third-party partnerships",
+        "C. Exclusive focus on institutional and corporate clients",
+        "D. Refusal to iterate on the product after its initial prepaid card launch"
+      ],
+      "ans": "A",
+      "exp": "Monzo's evolution is attributed to data-driven development, customer experience and community focus, and scalable technology supporting rapid iteration - directly contradicting the partnership avoidance (B), corporate-only focus (C), and lack of iteration (D) described in the other options."
+    },
+    {
+      "id": "Q162",
+      "module": 6,
+      "type": "mcq",
+      "q": "What does Monzo's evolution from prepaid card to full-scale bank demonstrate, according to the module's key takeaway?",
+      "opts": [
+        "A. That incremental innovations, driven by customer insights and agile practices, can lead to a comprehensive and impactful banking platform",
+        "B. That prepaid cards are always a dead end for banking innovation",
+        "C. That customer feedback is irrelevant once a product has scaled",
+        "D. That agile practices only apply to newly founded banks, not established ones"
+      ],
+      "ans": "A",
+      "exp": "The takeaway is that incremental innovation, guided by customer insight and agile practices, can build toward a comprehensive platform over time - the opposite of dismissing prepaid cards as a dead end (B) or feedback as irrelevant post-scale (C)."
+    },
+    {
+      "id": "Q163",
+      "module": 6,
+      "type": "mcq",
+      "q": "Comparing N26's success and Wells Fargo's failure, what is the most important distinguishing factor the module points to?",
+      "opts": [
+        "A. N26 focused on simplicity, transparency, and technology integration meeting real customer demands, while Wells Fargo's app lacked differentiation and suffered from trust issues tied to prior scandals",
+        "B. N26 succeeded purely because it charged higher fees than Wells Fargo",
+        "C. Wells Fargo failed simply because it was a larger bank than N26",
+        "D. The two case studies show no meaningful differences in approach"
+      ],
+      "ans": "A",
+      "exp": "The key distinction lies in customer-centric design and trust for N26 versus a lack of differentiation and damaged trust for Wells Fargo - not fee levels (B), bank size (C), or an absence of meaningful contrast (D), none of which the module identifies as the deciding factor."
+    },
+    {
+      "id": "Q164",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank wants to build a culture that supports sustained innovation. Based on the module's key characteristics of innovative companies, which combination would be most complete?",
+      "opts": [
+        "A. Leadership support only, since it covers all other characteristics automatically",
+        "B. Leadership support, customer-driven innovation, continuous learning, and agility, pursued together",
+        "C. Agility alone, since speed is the only factor that matters",
+        "D. Continuous learning alone, since employee skill is sufficient for innovation"
+      ],
+      "ans": "B",
+      "exp": "The module presents all four characteristics - leadership support, customer-driven innovation, continuous learning, and agility - as complementary components of a sustained innovation culture, none of which alone (A, C, D) is presented as sufficient on its own."
+    },
+    {
+      "id": "Q165",
+      "module": 6,
+      "type": "mcq",
+      "q": "A bank's leadership approves a new pilot program and allocates a dedicated budget for a cross-functional team to test an AI-driven lending tool with a small customer segment before wider rollout. Which combination of culture-of-innovation practices does this scenario reflect?",
+      "opts": [
+        "A. Cross-functional teams, investment in R&D, and pilot programs, all supported by leadership resource allocation",
+        "B. Only agile methodology, since iteration is the sole factor described",
+        "C. Only customer-driven innovation, since a customer segment is involved",
+        "D. None of the described practices, since this scenario is unrelated to organizational culture"
+      ],
+      "ans": "A",
+      "exp": "This scenario combines several distinct practices at once - cross-functional collaboration, dedicated R&D-style budget allocation, and a small-scale pilot program - all enabled by leadership's resource-allocation role, rather than reflecting only a single isolated practice as options B and C suggest."
+    },
+    {
+      "id": "Q166",
+      "module": 6,
+      "type": "mcq",
+      "q": "Based on the module's case studies as a whole (Monzo, Revolut, Ally Bank, N26, and Wells Fargo), which conclusion is best supported?",
+      "opts": [
+        "A. Success in retail banking innovation is driven mainly by company size and age",
+        "B. Success tends to follow customer-centric design, transparency, and genuine value differentiation, while failure tends to follow poor differentiation and unresolved trust issues",
+        "C. Digital-only banks always fail compared to traditional banks",
+        "D. Case studies show that innovation success is entirely unpredictable and offers no transferable lessons"
+      ],
+      "ans": "B",
+      "exp": "Across the successful cases (Monzo, Revolut, Ally Bank, N26), customer-centricity, transparency, and genuine differentiation recur as success drivers, while the Wells Fargo failure traces to the opposite - poor differentiation and unresolved trust issues. This pattern contradicts claims that size/age (A) or digital-only status (C) determine outcomes, and shows the case studies do offer transferable lessons, contrary to option D."
+    },
+    {
+      "id": "Q167",
+      "module": 6,
+      "type": "mcq",
+      "q": "A retail bank is preparing a group pitch for a new digital product and wants to avoid repeating Wells Fargo's mistakes while emulating N26's and Monzo's success factors. Which set of priorities would best reflect the lessons from this module?",
+      "opts": [
+        "A. Prioritize genuine differentiation from existing competitor offerings, a simple and transparent user experience, and proactive trust-building, while validating the concept through a pilot program before full launch",
+        "B. Prioritize matching competitor pricing exactly and skip any pilot testing to launch faster",
+        "C. Prioritize aggressive marketing spend over product differentiation or trust-building",
+        "D. Prioritize expanding to as many countries as possible before validating the core product with any customers"
+      ],
+      "ans": "A",
+      "exp": "This combines the specific success factors from N26 and Monzo (differentiation, simplicity, transparency) with the support-for-experimentation practice of piloting before full launch, and directly addresses what caused Wells Fargo's failure (lack of differentiation, trust issues). Options B, C, and D each ignore the very factors the module identifies as decisive, favouring speed or scale over validated, differentiated, trustworthy product design."
+    }
+  ]
+}

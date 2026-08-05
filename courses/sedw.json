@@ -1,0 +1,3193 @@
+{
+  "meta": {
+    "id": "sedw",
+    "title": "Sales Effectiveness in the Digital World",
+    "description": "Question bank covering digital customer acquisition trends, key digital sales channels, social selling and online engagement, cross-selling/upselling and SMART targets, objection handling and closing techniques, and future trends in digital banking sales. Designed for the Access Bank School of Banking Excellence ELTP course.",
+    "category": "Retail Banking Sales",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 60,
+        "minutes": 90
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Evolving Customer Acquisition Landscape & Customer Behaviour"
+    },
+    {
+      "id": 2,
+      "title": "Overview of Key Digital Channels for Sales"
+    },
+    {
+      "id": 3,
+      "title": "Strategies for Social Selling & Online Engagement"
+    },
+    {
+      "id": 4,
+      "title": "Cross-Selling, Upselling, and SMART Sales Targets"
+    },
+    {
+      "id": 5,
+      "title": "Handling Objections and Closing Deals Online"
+    },
+    {
+      "id": 6,
+      "title": "Future Trends in Digital Sales (incl. Practical Case Studies)"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "Before the 2000s, retail banking sales in Nigeria relied primarily on which service delivery model?",
+      "opts": [
+        "A. A self-service model centred on USSD codes and AI-powered chatbots",
+        "B. A branch-centric model requiring customers to visit physical locations for most services",
+        "C. An internet-banking model centred on online portals for balance checks and transfers",
+        "D. A siloed digital model where online and offline systems operated independently"
+      ],
+      "ans": "B",
+      "exp": "The pre-2000s era was defined by branch-centric, relationship banking. Option C describes the Early Digital Evolution era; Option D describes a transitional challenge of that same later era; Option A reflects tools (USSD, chatbots) from the Digital Revolution era, all well after the traditional model."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the traditional era of retail banking sales, how long did loan processing typically take under the manual, paper-based approval process?",
+      "opts": [
+        "A. 1\u20132 days, since branch staff could approve loans on the spot",
+        "B. 7\u201310 days, due to paper applications and in-person verification",
+        "C. 24 hours, once telephone banking was introduced",
+        "D. 2\u20133 weeks, pending head-office sign-off on every application"
+      ],
+      "ans": "B",
+      "exp": "Manual, paper-based processes with in-person verification made loan approval cycles slow \u2014 7\u201310 days was typical. The other options either overstate speed unrealistic for that era or invent a delay not supported by the material."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the 1990s, how did Access Bank's sales strategy reflect the traditional era's approach to growth?",
+      "opts": [
+        "A. It ran targeted email campaigns to cross-sell fixed deposits",
+        "B. It expanded branch networks and used in-person meetings to cross-sell products like savings accounts",
+        "C. It deployed an AI chatbot to handle high transaction volumes",
+        "D. It partnered with fintechs to distribute microloans via USSD"
+      ],
+      "ans": "B",
+      "exp": "Access Bank's 1990s strategy was branch-network expansion paired with face-to-face cross-selling \u2014 the hallmark of the branch-centric era. Email campaigns, chatbots, and fintech partnerships all belong to later digital eras."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which set of channels characterised retail banking sales during the traditional, pre-2000s era?",
+      "opts": [
+        "A. Mobile apps, WhatsApp, and social media",
+        "B. Branches, telephones, and direct mail, with ATMs still nascent and transactional",
+        "C. Internet banking portals and SMS alerts",
+        "D. Chatbots, voice assistants, and biometric logins"
+      ],
+      "ans": "B",
+      "exp": "Sales in this era relied on branches, telephones, and direct mail; ATMs existed but were limited to basic transactions. The remaining options describe channels that only emerged in later digital eras."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "When Access Bank launched its first internet banking platform in the mid-2000s, what was the primary aim of its early campaigns?",
+      "opts": [
+        "A. To replace branch-based relationship managers entirely",
+        "B. To promote online bill payments and reduce branch congestion",
+        "C. To introduce AI-driven personal loan recommendations",
+        "D. To launch a rewards-based mobile app for tech-savvy customers"
+      ],
+      "ans": "B",
+      "exp": "The Early Digital Evolution era's internet banking push targeted tech-savvy urban customers, with campaigns promoting online bill payments specifically to ease branch footfall \u2014 not to eliminate relationship banking, which persisted alongside it."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "What capability did SMS banking and early mobile apps provide customers during the Early Digital Evolution era (2000s\u20132010s)?",
+      "opts": [
+        "A. Full loan application and instant approval",
+        "B. Basic self-service such as alerts and mini-statements",
+        "C. AI-powered financial advice through chatbots",
+        "D. Voice-activated balance enquiries"
+      ],
+      "ans": "B",
+      "exp": "Early mobile technology in this era was limited to basic self-service functions like alerts and mini-statements. Instant loan approval, AI chatbots, and voice banking are Digital Revolution and Current Landscape developments."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank in the 2000s begins digitizing its customer records well enough to separate high-net-worth customers from mass-retail customers. What does this represent?",
+      "opts": [
+        "A. Hyper-personalization powered by machine learning",
+        "B. Rudimentary segmentation enabled by early data collection",
+        "C. Predictive analytics forecasting future product needs",
+        "D. Omni-channel integration across digital and physical touchpoints"
+      ],
+      "ans": "B",
+      "exp": "Digitizing records to distinguish customer categories like high-net-worth vs. retail is the rudimentary segmentation described as an Early Digital Evolution outcome \u2014 a precursor to, but distinct from, the later hyper-personalization and predictive analytics of subsequent eras."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "During the Early Digital Evolution era, a customer starts a loan application online but is unable to complete it at a branch because the two systems don't share data. Which transitional challenge does this illustrate?",
+      "opts": [
+        "A. Resistance to change among older customers",
+        "B. Siloed channels, where online and offline systems operate independently",
+        "C. A shortage of internet banking adoption",
+        "D. An absence of digitized customer records"
+      ],
+      "ans": "B",
+      "exp": "This is the defining case of siloed channels \u2014 online and offline systems running independently so that a process can't move seamlessly between them, distinct from resistance to change, which concerns people's willingness to adopt tools rather than system integration."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which statement best distinguishes 'resistance to change' from 'siloed channels' as transitional challenges of the Early Digital Evolution era?",
+      "opts": [
+        "A. Resistance to change is a technology limitation; siloed channels is a customer attitude problem",
+        "B. Resistance to change concerns customer and staff hesitancy to adopt digital tools; siloed channels concerns disconnected online/offline systems",
+        "C. Both terms describe the same underlying problem of slow loan processing",
+        "D. Resistance to change refers only to fintech competitors; siloed channels refers only to branch staff"
+      ],
+      "ans": "B",
+      "exp": "Resistance to change is a human/adoption issue (older customers and staff hesitating to use digital tools), while siloed channels is a systems/architecture issue (online and offline platforms not talking to each other). Option A reverses the definitions; C and D misattribute both."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which development is identified as a catalyst for the Digital Revolution era (2010s\u20132020) rather than an outcome of the earlier Early Digital Evolution era?",
+      "opts": [
+        "A. SMS banking enabling mini-statements",
+        "B. Smartphone proliferation making mobile apps the primary banking interface",
+        "C. Digitized customer records enabling basic segmentation",
+        "D. Internet banking portals for balance checks"
+      ],
+      "ans": "B",
+      "exp": "Smartphone proliferation \u2014 exemplified by Access Bank's Access Mobile app becoming a primary interface \u2014 is a Digital Revolution catalyst. The other three options describe Early Digital Evolution developments that preceded it."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "How did fintech disruption shape the Digital Revolution era of retail banking sales in Nigeria?",
+      "opts": [
+        "A. Fintechs like Paystack and Flutterwave forced traditional banks to slow their digital investment",
+        "B. Agile, customer-centric fintech startups challenged traditional banks and pushed them toward digital-first strategies",
+        "C. Fintechs replaced the need for banks to maintain any physical branches",
+        "D. Fintechs primarily competed on branch network size rather than technology"
+      ],
+      "ans": "B",
+      "exp": "Paystack and Flutterwave are cited as fintech disruptors whose agile, customer-centric solutions pressured traditional banks to modernize \u2014 not as forces slowing investment or eliminating branches, which contradicts the material."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank moves from simply processing transactions to offering instant loan approvals and other seamless digital experiences. Which Digital Revolution shift does this best represent?",
+      "opts": [
+        "A. Rise of self-service",
+        "B. From transactions to experiences",
+        "C. Early personalization",
+        "D. Omni-channel integration"
+      ],
+      "ans": "B",
+      "exp": "This shift is specifically framed as banks moving 'from transactions to experiences' \u2014 instant approvals being the cited example. Rise of self-service refers to DIY tools like chatbots; early personalization refers to CRM-driven offers; omni-channel integration is a Current Landscape (post-2020) development."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "Customers increasingly preferring chatbots for FAQs and AI-driven financial advice over speaking to a banker illustrates which Digital Revolution shift?",
+      "opts": [
+        "A. Early personalization",
+        "B. Rise of self-service",
+        "C. From transactions to experiences",
+        "D. Digital-first mindset"
+      ],
+      "ans": "B",
+      "exp": "A preference for DIY tools like chatbots is precisely the 'rise of self-service' shift. Early personalization instead refers to basic CRM-driven offers (e.g. birthday messages); digital-first mindset is a later, post-pandemic Current Landscape trend."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "Sending a customer a birthday offer or renewal reminder using a basic CRM system, during the Digital Revolution era, is an example of which shift?",
+      "opts": [
+        "A. Hyper-personalization",
+        "B. Early personalization",
+        "C. Omni-channel integration",
+        "D. Predictive analytics"
+      ],
+      "ans": "B",
+      "exp": "Basic CRM-triggered birthday offers and renewal reminders are explicitly labelled 'early personalization' \u2014 a simpler, rules-based precursor to the AI-driven hyper-personalization of the Current Landscape era."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "When Access Bank introduced its first AI-powered chatbot in 2018, what dual purpose did the wider initiative serve?",
+      "opts": [
+        "A. 24/7 customer support and offering microloans via USSD to unbanked rural populations",
+        "B. Replacing all branch staff and discontinuing telephone banking",
+        "C. Verifying customer identity through blockchain and biometric logins",
+        "D. Predicting car loan needs through Salesforce Einstein-style analytics"
+      ],
+      "ans": "B",
+      "exp": "The 2018 initiative combined 24/7 AI chatbot support with a fintech partnership offering microloans via USSD codes targeting unbanked rural Nigerians. The other options describe unrelated technologies (blockchain, biometrics, Salesforce Einstein) introduced elsewhere in the material."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "By 2023, what proportion of Nigerian banking customers were reported to prefer mobile apps for routine transactions, reflecting the post-pandemic digital-first mindset?",
+      "opts": [
+        "A. 50%",
+        "B. 72%",
+        "C. 25%",
+        "D. 90%"
+      ],
+      "ans": "B",
+      "exp": "The material cites 72% of Nigerian banking customers preferring mobile apps for routine transactions by 2023, driven by pandemic-accelerated digital adoption. The other figures are drawn from unrelated statistics elsewhere in the module (e.g. GTBank's 25% branch-sales drop)."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer browsing travel insurance on Access Bank's app subsequently receives a personalized loan offer for vacation funding. Which Current Landscape trend does this illustrate?",
+      "opts": [
+        "A. Early personalization",
+        "B. Hyper-personalization, where AI analyzes real-time data to deliver targeted offers",
+        "C. Siloed channel integration",
+        "D. Rudimentary segmentation"
+      ],
+      "ans": "B",
+      "exp": "This is the material's own example of hyper-personalization \u2014 AI and machine learning analyzing real-time behaviour (like browsing activity) to deliver a highly targeted offer, distinct from the simpler, rules-based 'early personalization' of the Digital Revolution era."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "A customer starts a mortgage application online, uploads supporting documents via WhatsApp, and finalizes the process in-branch. Which Current Landscape trend does this best demonstrate?",
+      "opts": [
+        "A. Rise of self-service",
+        "B. Omni-channel integration, blending physical and digital channels seamlessly",
+        "C. Early personalization",
+        "D. Siloed channels"
+      ],
+      "ans": "B",
+      "exp": "Seamlessly blending online, WhatsApp, and in-branch steps into one continuous process is the definition of omni-channel integration in the Current Landscape era \u2014 the opposite of the earlier 'siloed channels' problem where systems didn't connect."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which technological pillar of modern sales is illustrated by tools such as Salesforce Einstein flagging a customer likely to need a car loan based on spending habits?",
+      "opts": [
+        "A. Blockchain & Open Banking",
+        "B. AI & Predictive Analytics",
+        "C. Voice & Biometric Banking",
+        "D. Omni-Channel Integration"
+      ],
+      "ans": "B",
+      "exp": "Predicting a customer's future need (a car loan) from behavioural data is the defining function of the AI & Predictive Analytics pillar, as exemplified by Salesforce Einstein \u2014 distinct from blockchain (data security/sharing) or biometric banking (identity verification)."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "Access Bank's API integrations with third-party budgeting apps, enabling secure data sharing, exemplify which technological pillar of modern sales?",
+      "opts": [
+        "A. AI & Predictive Analytics",
+        "B. Blockchain & Open Banking",
+        "C. Voice & Biometric Banking",
+        "D. Hyper-Personalization"
+      ],
+      "ans": "B",
+      "exp": "Secure, API-based data sharing between a bank and third-party apps is specifically the Blockchain & Open Banking pillar, separate from AI-driven prediction or voice/biometric identity tools."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "'Hey Access Bank, what's my balance?' and facial recognition for secure logins are examples of which technological pillar?",
+      "opts": [
+        "A. Blockchain & Open Banking",
+        "B. Voice & Biometric Banking",
+        "C. AI & Predictive Analytics",
+        "D. Real-Time Data Use"
+      ],
+      "ans": "B",
+      "exp": "Voice-activated queries and facial recognition are the defining examples of the Voice & Biometric Banking pillar, which focuses on interaction and authentication rather than prediction (AI & Predictive Analytics) or secure data sharing (Blockchain & Open Banking)."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "GTBank observed a 25% drop in branch-based sales in 2019. What was cited as the underlying cause?",
+      "opts": [
+        "A. A rise in fraudulent transactions at branches",
+        "B. Customers increasingly preferring online banking",
+        "C. A reduction in the number of branch staff",
+        "D. Regulatory restrictions on branch operating hours"
+      ],
+      "ans": "B",
+      "exp": "The case attributes GTBank's branch-sales decline directly to a customer shift toward online banking, not staffing, fraud, or regulation \u2014 none of which appear in the material."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following was NOT part of GTBank's response to its 2019 branch-sales decline?",
+      "opts": [
+        "A. WhatsApp banking for real-time interactions",
+        "B. Discontinuing all branch operations nationwide",
+        "C. AI-driven chatbots recommending products based on transaction history",
+        "D. Automated digital customer profiling to personalize marketing"
+      ],
+      "ans": "B",
+      "exp": "GTBank's response combined AI chatbots, automated profiling, and WhatsApp banking \u2014 it did not involve discontinuing branches; branches continued to exist, just with reduced sales volume. This distractor tests whether students overgeneralize 'digital-first' into 'branch elimination.'"
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "What outcomes did GTBank report after implementing AI chatbots, automated profiling, and WhatsApp banking?",
+      "opts": [
+        "A. A 40% increase in digital loan applications and a 50% drop in in-branch sales queries",
+        "B. A 60% increase in branch footfall and a 20% rise in complaints",
+        "C. A 25% decrease in digital loan applications alongside stable branch activity",
+        "D. No measurable change in either digital or branch-based sales"
+      ],
+      "ans": "B",
+      "exp": "The reported outcome was a 40% increase in digital loan applications alongside a 50% drop in in-branch sales queries \u2014 evidence that customers shifted their sales interactions to digital channels rather than abandoning the bank altogether."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the key lesson Access Bank is meant to draw from GTBank's digital-first transformation?",
+      "opts": [
+        "A. Branch expansion remains the most reliable growth strategy",
+        "B. Digital engagement must be proactive, data-driven, and personalized to match customer preference for convenience",
+        "C. AI chatbots should fully replace human customer service",
+        "D. WhatsApp banking is unsuitable for regulated financial products"
+      ],
+      "ans": "B",
+      "exp": "The stated lesson is that digital engagement needs to be proactive, data-driven, and personalized because customers prefer digital convenience \u2014 not that branches should expand, chatbots should fully replace staff, or WhatsApp is unsuitable, none of which the case supports."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "type": "mcq",
+      "q": "Access Bank launched QuickBucks to address which specific business challenge?",
+      "opts": [
+        "A. Low customer awareness of savings products",
+        "B. High demand for quick loans combined with slow manual approval processes",
+        "C. A shortage of branch locations in rural areas",
+        "D. Excessive fraud in existing digital lending products"
+      ],
+      "ans": "B",
+      "exp": "QuickBucks was built specifically to close the gap between strong loan demand and slow approval processes \u2014 not to address awareness, branch coverage, or fraud, which are not cited as the driving challenge."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "type": "mcq",
+      "q": "How does QuickBucks approve loans faster than traditional processes?",
+      "opts": [
+        "A. By requiring in-person verification at a branch before approval",
+        "B. By using AI to analyze transaction history and credit scores, approving loans in under 5 minutes",
+        "C. By outsourcing approval decisions to a third-party fintech",
+        "D. By eliminating credit checks entirely for SME applicants"
+      ],
+      "ans": "B",
+      "exp": "QuickBucks is an AI-driven platform that analyzes transaction history and credit scores to approve loans in under 5 minutes \u2014 it doesn't eliminate credit checks or require branch verification, both of which would contradict its speed advantage."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "type": "mcq",
+      "q": "What result did QuickBucks deliver for SME and retail customers by 2022?",
+      "opts": [
+        "A. A 60% reduction in loan defaults",
+        "B. A 40% increase in loan uptake among SMEs and retail customers",
+        "C. A 25% decline in application volume due to stricter criteria",
+        "D. No measurable change in loan uptake"
+      ],
+      "ans": "B",
+      "exp": "QuickBucks is credited with a 40% increase in loan uptake among SMEs and retail customers in 2022 \u2014 the speed and accessibility of AI-driven approval directly translated into higher adoption, not reduced defaults or declining volume."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the primary function of Customer Relationship Management (CRM) tools such as Salesforce and HubSpot in modern sales strategies?",
+      "opts": [
+        "A. Processing card payments securely across borders",
+        "B. Tracking customer interactions and predicting future needs",
+        "C. Verifying customer identity through biometric data",
+        "D. Automating branch staff scheduling"
+      ],
+      "ans": "B",
+      "exp": "CRM platforms like Salesforce and HubSpot exist to track customer interactions and history so banks can anticipate future needs \u2014 not to process payments, verify identity, or manage staffing, which are separate systems."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "type": "mcq",
+      "q": "The material compares predictive analytics in banking to Netflix's recommendation engine. What is the point of this comparison?",
+      "opts": [
+        "A. Both systems rely exclusively on customer complaints to improve service",
+        "B. Both use past behaviour to anticipate future preferences and drive proactive engagement",
+        "C. Both eliminate the need for any customer data collection",
+        "D. Both are limited to entertainment-related recommendations"
+      ],
+      "ans": "B",
+      "exp": "The Netflix analogy illustrates that predictive analytics \u2014 like a recommendation engine \u2014 analyzes past behaviour to anticipate what a customer will want next, enabling proactive rather than reactive engagement, not that either system avoids data collection."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "type": "mcq",
+      "q": "What advantage does real-time data use (e.g. live transaction history) provide during a sales interaction, according to the material?",
+      "opts": [
+        "A. It removes the need for CRM systems entirely",
+        "B. It enables tailored offers to be made on the spot during the interaction",
+        "C. It guarantees regulatory compliance automatically",
+        "D. It replaces the need for predictive analytics"
+      ],
+      "ans": "B",
+      "exp": "Leveraging live data allows for on-the-spot, tailored offers during a sales conversation \u2014 it complements rather than replaces CRM systems and predictive analytics, and has no stated link to automatic regulatory compliance."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "type": "mcq",
+      "q": "Revolut challenged traditional banks primarily by offering what kind of banking experience?",
+      "opts": [
+        "A. Branch-based relationship banking with extended hours",
+        "B. Fast, personalized banking experiences",
+        "C. Exclusively cash-based transaction services",
+        "D. Manual, paper-heavy loan processing"
+      ],
+      "ans": "B",
+      "exp": "Revolut's competitive edge, as described, was speed and personalization \u2014 the direct opposite of the branch-based, manual, paper-heavy model traditional banks struggled to move away from."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following was NOT among Revolut's stated strategies for outcompeting traditional banks?",
+      "opts": [
+        "A. AI-driven upselling based on spending behaviour",
+        "B. Expanding a nationwide network of physical branches",
+        "C. Instant digital loan approvals without human intervention",
+        "D. Push notifications with hyper-personalized product recommendations"
+      ],
+      "ans": "B",
+      "exp": "Revolut's strategy centred on AI-driven upselling, instant digital approvals, and hyper-personalized push notifications \u2014 expanding physical branches is the opposite of its digital-first approach and is not mentioned in the case."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "type": "mcq",
+      "q": "An SME banking team wants to apply the Revolut case study's central lesson to their own product launch. Which action best reflects that lesson?",
+      "opts": [
+        "A. Prioritizing branch renovation to improve the in-person experience",
+        "B. Designing the launch around speed, personalization, and minimal customer friction",
+        "C. Focusing exclusively on print advertising to build brand awareness",
+        "D. Requiring in-branch verification for all new product sign-ups"
+      ],
+      "ans": "B",
+      "exp": "The Revolut case's lesson for Access Bank is that customers prefer speed, personalization, and minimal friction \u2014 an SME team applying this would design digital-first, low-friction processes rather than adding branch or paperwork requirements."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does an omni-channel sales strategy specifically aim to achieve, as distinct from simply offering multiple digital channels?",
+      "opts": [
+        "A. Maximizing the number of channels available regardless of consistency",
+        "B. A seamless, consistent customer experience whether interacting via app, website, WhatsApp, or in-branch",
+        "C. Restricting customers to a single preferred channel for all interactions",
+        "D. Automating every customer interaction without human involvement"
+      ],
+      "ans": "B",
+      "exp": "Omni-channel is defined by consistency and fluidity across channels \u2014 not by channel quantity, single-channel restriction, or full automation, any of which would miss the seamlessness that defines the strategy."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why does the material emphasize that customers 'expect seamless transitions between channels' as the core importance of omni-channel strategy?",
+      "opts": [
+        "A. Because seamless transitions reduce a bank's operating costs above all else",
+        "B. Because inconsistent channel experiences undermine customer trust and satisfaction",
+        "C. Because regulators mandate a single unified banking channel",
+        "D. Because seamless transitions eliminate the need for a CRM system"
+      ],
+      "ans": "B",
+      "exp": "The stated importance is trust and satisfaction \u2014 customers who hit friction moving between channels lose confidence in the bank, which is a customer-experience rationale, not a cost-saving, regulatory, or CRM-replacement one."
+    },
+    {
+      "id": "Q37",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which practical tip is recommended for identifying pain points when implementing an omni-channel strategy?",
+      "opts": [
+        "A. Reducing the number of available channels to simplify testing",
+        "B. Using customer journey mapping to identify pain points in transitions between channels",
+        "C. Outsourcing channel management entirely to a single vendor",
+        "D. Restricting omni-channel features to premium customers only"
+      ],
+      "ans": "B",
+      "exp": "Customer journey mapping is the specifically recommended tool for spotting where transitions between channels break down \u2014 the other options (reducing channels, outsourcing, restricting to premium tiers) aren't part of the stated guidance."
+    },
+    {
+      "id": "Q38",
+      "module": 1,
+      "type": "mcq",
+      "q": "In 2021, Access Bank found that what proportion of customers researching loans online never completed their applications?",
+      "opts": [
+        "A. 40%",
+        "B. 65%",
+        "C. 25%",
+        "D. 50%"
+      ],
+      "ans": "B",
+      "exp": "The figure cited is 65% of online loan researchers abandoning their applications before completion \u2014 the trigger for Access Bank's subsequent omni-channel improvements. The other percentages belong to different case studies in the module."
+    },
+    {
+      "id": "Q39",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following was NOT one of Access Bank's solutions to reduce abandoned online loan applications in 2021?",
+      "opts": [
+        "A. Using AI-driven chatbots to follow up with customers who abandoned applications",
+        "B. Discontinuing the option to apply for loans online altogether",
+        "C. Connecting digital sales teams with branch advisors for seamless offline transitions",
+        "D. Enabling a 'Start Online, Complete in Branch' option for hesitant customers"
+      ],
+      "ans": "B",
+      "exp": "Access Bank's actual solutions expanded digital-to-branch connectivity rather than removing the online option \u2014 chatbot follow-ups, advisor handoffs, and a hybrid 'start online, complete in branch' path. Discontinuing online applications would contradict the entire digital strategy."
+    },
+    {
+      "id": "Q40",
+      "module": 1,
+      "type": "mcq",
+      "q": "What outcome did Access Bank achieve after integrating its digital and offline loan sales channels in 2021?",
+      "opts": [
+        "A. A 10% increase in branch footfall with no change in conversions",
+        "B. A 25% increase in loan conversion rates and 30% fewer abandoned applications",
+        "C. A 65% increase in loan conversion rates with no change in abandonment",
+        "D. A decline in loan conversions despite fewer abandoned applications"
+      ],
+      "ans": "B",
+      "exp": "The reported result was a 25% increase in loan conversion rates alongside a 30% reduction in abandoned applications \u2014 directly tied to bridging the previously siloed online and offline experience, not to branch footfall changes."
+    },
+    {
+      "id": "Q41",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank is designing a new digital lending product and wants to apply the combined lesson of the GTBank, QuickBucks, and Access Bank omni-channel cases. Which approach best reflects that combined lesson?",
+      "opts": [
+        "A. Build a fully manual application process to avoid technology risk",
+        "B. Combine AI-driven speed and personalization with a seamless handoff between digital and human/branch support when customers hesitate",
+        "C. Restrict the product to branch-only distribution to maintain control",
+        "D. Automate the entire process with no option for human or branch involvement"
+      ],
+      "ans": "B",
+      "exp": "Across all three cases, the winning pattern is AI-driven speed and personalization paired with a safety net of human or branch support for hesitant customers \u2014 not pure automation (which ignores hesitant customers) and not a manual or branch-only approach (which ignores what drove each case's success)."
+    },
+    {
+      "id": "Q42",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary role of a bank's website within the digital sales funnel?",
+      "opts": [
+        "A. To handle only post-sale customer complaints",
+        "B. To act as the digital storefront that establishes credibility and encourages conversions",
+        "C. To replace the need for a mobile app entirely",
+        "D. To serve exclusively as a static repository of regulatory disclosures"
+      ],
+      "ans": "B",
+      "exp": "The website is framed as the organization's 'digital storefront' \u2014 its job is establishing credibility and driving conversions, not handling complaints or serving as a purely static or regulatory page, and it doesn't substitute for a mobile app, which serves a distinct convenience-and-loyalty role."
+    },
+    {
+      "id": "Q43",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which combination of features is identified as key to a website's effectiveness as a sales channel?",
+      "opts": [
+        "A. A large product catalogue and frequent pop-up advertisements",
+        "B. User-friendly navigation, optimized calls-to-action, and mobile responsiveness",
+        "C. Exclusive desktop-only design for security purposes",
+        "D. Minimal content to reduce page load times above all else"
+      ],
+      "ans": "B",
+      "exp": "The three named key features are intuitive UI/navigation, optimized CTAs like 'Apply Now,' and mobile responsiveness \u2014 not desktop-only design, minimal content, or pop-up-heavy layouts, none of which appear in the material."
+    },
+    {
+      "id": "Q44",
+      "module": 2,
+      "type": "mcq",
+      "q": "After streamlining its loan application process on its website, what result did Access Bank report in 2023?",
+      "opts": [
+        "A. A 30% increase in online loan applications",
+        "B. A 30% decrease in website traffic",
+        "C. A 65% increase in branch visits",
+        "D. A 15% increase in email conversions"
+      ],
+      "ans": "B",
+      "exp": "The cited outcome is a 30% increase in online applications following the streamlined process \u2014 not a traffic decline, branch-visit increase, or email metric, which belong to other cases in the module."
+    },
+    {
+      "id": "Q45",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following best describes the primary role of mobile apps in a bank's digital sales strategy?",
+      "opts": [
+        "A. Enhancing convenience and fostering customer loyalty through on-the-go solutions",
+        "B. Serving solely as a marketing brochure with no transactional capability",
+        "C. Replacing the CRM system used by relationship managers",
+        "D. Functioning only as a channel for regulatory notices"
+      ],
+      "ans": "B",
+      "exp": "Mobile apps are positioned as convenience-and-loyalty drivers through on-the-go functionality \u2014 not as a brochure-only tool, a CRM replacement, or a regulatory-notice channel, none of which reflect their described transactional and personalization role."
+    },
+    {
+      "id": "Q46",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which key feature is NOT listed among the mobile app capabilities described in the material?",
+      "opts": [
+        "A. Push notifications for promotional offers and account alerts",
+        "B. Secure in-app transactions that build trust and usability",
+        "C. Integration with other channels for an omni-channel experience",
+        "D. Automatic legal contract signing without customer verification"
+      ],
+      "ans": "B",
+      "exp": "The three genuine features are push notifications, secure in-app transactions, and cross-channel integration. Automatic contract signing without verification is invented and would actually undermine the trust the app is meant to build."
+    },
+    {
+      "id": "Q47",
+      "module": 2,
+      "type": "mcq",
+      "q": "Access Bank's mobile app delivering tailored product suggestions based on user behaviour achieved what reported result?",
+      "opts": [
+        "A. A 25% increase in cross-sell uptake",
+        "B. A 40% reduction in app downloads",
+        "C. A 15% increase in email open rates",
+        "D. A 70% reduction in customer inquiries"
+      ],
+      "ans": "B",
+      "exp": "The cited result is a 25% increase in cross-sell uptake from behaviour-based product suggestions in the app \u2014 the other figures belong to different channels (email, live chat) described elsewhere in the module."
+    },
+    {
+      "id": "Q48",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is identified as the primary strength of social media as a digital sales channel?",
+      "opts": [
+        "A. Guaranteed instant sales conversion on first contact",
+        "B. Direct engagement opportunities and brand-building avenues",
+        "C. Complete elimination of the need for paid advertising",
+        "D. Automatic regulatory compliance for all financial promotions"
+      ],
+      "ans": "B",
+      "exp": "Social platforms are valued for direct engagement and brand-building \u2014 not guaranteed instant conversion (the channel comparison table explicitly notes social media has 'limited direct sales conversions'), free advertising, or automatic compliance, none of which are supported by the text."
+    },
+    {
+      "id": "Q49",
+      "module": 2,
+      "type": "mcq",
+      "q": "LinkedIn campaigns promoting Access Bank's SME banking services in 2022 reached how many potential clients?",
+      "opts": [
+        "A. 50,000",
+        "B. Over 100,000",
+        "C. 25,000",
+        "D. 250,000"
+      ],
+      "ans": "B",
+      "exp": "The material states the LinkedIn campaign reached over 100,000 potential clients \u2014 a figure specific to this SME campaign, not to be confused with other statistics (e.g. Citibank's or Revolut's outcomes) elsewhere in the module."
+    },
+    {
+      "id": "Q50",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the main advantage of email as a digital sales channel, according to the material?",
+      "opts": [
+        "A. It guarantees the highest engagement rate of any channel",
+        "B. It is a cost-effective tool for customer retention and lead nurturing",
+        "C. It eliminates the need for customer segmentation",
+        "D. It is best suited for real-time, instant customer support"
+      ],
+      "ans": "B",
+      "exp": "Email's defined strength is cost-effective retention and lead nurturing through automated sequences and segmentation \u2014 real-time support is the domain of live chat, and segmentation is a feature email relies on, not eliminates."
+    },
+    {
+      "id": "Q51",
+      "module": 2,
+      "type": "mcq",
+      "q": "Targeted email campaigns promoting savings plans resulted in what improvement, according to the material?",
+      "opts": [
+        "A. A 15% conversion rate improvement",
+        "B. A 40% increase in digital loan applications",
+        "C. A 70% reduction in initial customer inquiries",
+        "D. A 25% increase in Instagram followers"
+      ],
+      "ans": "B",
+      "exp": "The stated figure is a 15% conversion rate improvement from targeted savings-plan email campaigns \u2014 the other statistics belong to different case studies (Citibank AI, live chat, First Bank Instagram) described elsewhere."
+    },
+    {
+      "id": "Q52",
+      "module": 2,
+      "type": "mcq",
+      "q": "On Access Bank's platform, a chatbot increased savings account openings largely by doing what?",
+      "opts": [
+        "A. Escalating all inquiries directly to human agents",
+        "B. Handling 70% of initial customer inquiries",
+        "C. Sending SMS reminders to abandoned applicants",
+        "D. Verifying customer identity via blockchain"
+      ],
+      "ans": "B",
+      "exp": "The chatbot's stated contribution was handling 70% of initial customer inquiries, freeing human agents for complex cases \u2014 it did not escalate everything to humans (which would defeat its purpose) nor perform the blockchain or SMS functions described in other cases."
+    },
+    {
+      "id": "Q53",
+      "module": 2,
+      "type": "mcq",
+      "q": "According to the digital sales channel comparison table, what is the main limitation of live chat and AI chatbots?",
+      "opts": [
+        "A. High cost relative to other digital channels",
+        "B. Struggling with complex customer queries, requiring human support backup",
+        "C. Inability to operate outside business hours",
+        "D. Requiring extensive customer data protection compliance"
+      ],
+      "ans": "B",
+      "exp": "Live chat/chatbots are strong on 24/7 instant responses but explicitly noted as struggling with complex queries, needing human backup \u2014 cost, operating hours, and data-protection compliance are limitations attributed to other channels (website/app and WhatsApp respectively)."
+    },
+    {
+      "id": "Q54",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which limitation is specifically attributed to WhatsApp and messaging apps as a digital sales channel, despite their high engagement and conversion rates?",
+      "opts": [
+        "A. Limited ability to hold one-on-one conversations",
+        "B. The need for compliance with strict banking data protection regulations",
+        "C. Complete inability to be used for lead nurturing",
+        "D. A lack of real-time communication capability"
+      ],
+      "ans": "B",
+      "exp": "WhatsApp's stated limitation is regulatory compliance around data protection \u2014 not an inability to hold one-on-one conversations or communicate in real time, which are precisely its stated strengths."
+    },
+    {
+      "id": "Q55",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which limitation is most closely associated with email and SMS marketing as a digital sales channel?",
+      "opts": [
+        "A. Messages can be ignored and require high-quality content to avoid being marked as spam",
+        "B. Inability to personalize communication for individual customers",
+        "C. Extremely high cost compared to social media advertising",
+        "D. A complete lack of analytics or performance tracking"
+      ],
+      "ans": "B",
+      "exp": "Email/SMS marketing's stated limitation is that messages can be ignored or flagged as spam without high-quality messaging \u2014 the channel is actually praised for being cost-effective and personalized, and does offer analytical tracking, contradicting the other options."
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "type": "mcq",
+      "q": "Citibank noticed that many online loan applications were abandoned midway. What was identified as the primary reason?",
+      "opts": [
+        "A. High interest rates compared to competitors",
+        "B. Customer hesitation and lack of immediate support",
+        "C. Excessive documentation requirements",
+        "D. Poor mobile app performance"
+      ],
+      "ans": "B",
+      "exp": "The stated cause is customer hesitation combined with a lack of immediate support during the application \u2014 not interest rates, documentation burden, or app performance, which are not mentioned as factors in this case."
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following was NOT part of Citibank's multi-channel solution to reduce abandoned loan applications?",
+      "opts": [
+        "A. An AI-powered chatbot answering loan-related queries in real time",
+        "B. Discontinuing SMS communication with customers entirely",
+        "C. Personalized WhatsApp and SMS reminders for customers who abandoned applications",
+        "D. Video explainers on the website to clarify loan benefits"
+      ],
+      "ans": "B",
+      "exp": "Citibank's solution actively used SMS reminders as part of its multi-channel approach \u2014 discontinuing SMS would directly contradict the case, which credits SMS-based follow-up with part of the improved outcome."
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "type": "mcq",
+      "q": "What outcomes did Citibank report from its multi-channel digital sales initiative?",
+      "opts": [
+        "A. A 30% increase in completed loan applications and 40% higher engagement from WhatsApp follow-ups",
+        "B. A 10% decrease in completed loan applications despite higher engagement",
+        "C. A 60% increase in branch visits and no change in online completions",
+        "D. No measurable change in either engagement or completions"
+      ],
+      "ans": "B",
+      "exp": "The reported results were a 30% increase in completed applications and 40% higher engagement from WhatsApp-based follow-ups \u2014 both metrics moved positively together, unlike the incorrect pairings in the other options."
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the core lesson Access Bank is meant to draw from Citibank's multi-channel case study?",
+      "opts": [
+        "A. A single dominant channel should be used for the entire customer journey",
+        "B. Customers use different channels at different stages of the buying journey, so multi-channel integration is essential",
+        "C. WhatsApp should replace all other communication channels",
+        "D. Video content is unnecessary if a chatbot is already deployed"
+      ],
+      "ans": "B",
+      "exp": "The stated lesson is that customers move across channels at different buying-journey stages, making integration essential \u2014 not that any single channel (WhatsApp, video, or otherwise) should dominate or replace the rest."
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary function of behavioural analytics tools such as Google Analytics in digital customer profiling?",
+      "opts": [
+        "A. Processing loan repayments automatically",
+        "B. Tracking customer behaviour on websites and apps to identify high-potential customers",
+        "C. Verifying customer identity for KYC purposes",
+        "D. Managing internal staff scheduling and performance"
+      ],
+      "ans": "B",
+      "exp": "Behavioural analytics tools track on-site/app behaviour to identify high-potential customers and measure engagement \u2014 they are not payment-processing, KYC, or staff-management tools, which are separate systems entirely."
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "type": "mcq",
+      "q": "When Access Bank used CRM data to identify customers nearing loan maturity and offered them refinancing options, what result was achieved?",
+      "opts": [
+        "A. A 20% loan renewal rate",
+        "B. A 40% reduction in loan defaults",
+        "C. A 60% increase in new customer acquisition",
+        "D. A 15% decrease in refinancing requests"
+      ],
+      "ans": "B",
+      "exp": "The stated result of this CRM-driven refinancing campaign was a 20% loan renewal rate \u2014 distinct from other statistics involving loan defaults, acquisition, or refinancing declines, none of which appear in this specific case."
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "type": "mcq",
+      "q": "In the digital sales funnel, which combination of channels is recommended for the 'Awareness' stage, where a customer first learns about a product?",
+      "opts": [
+        "A. Mobile app, WhatsApp, and personalized email follow-ups",
+        "B. Social media, website content, and YouTube ads",
+        "C. Email and app notifications only",
+        "D. Live chat and relationship manager outreach"
+      ],
+      "ans": "B",
+      "exp": "Awareness-stage channels are social media, website content, and YouTube ads (e.g. Instagram posts showcasing a new product) \u2014 mobile app/WhatsApp fit the Decision stage, and relationship manager outreach fits Retention & Loyalty."
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "type": "mcq",
+      "q": "A customer is actively evaluating loan options and interacting with a chatbot to get FAQ answers before applying. Which stage of the digital sales funnel does this represent?",
+      "opts": [
+        "A. Awareness",
+        "B. Consideration",
+        "C. Decision",
+        "D. Retention & Loyalty"
+      ],
+      "ans": "B",
+      "exp": "Evaluating options via website, WhatsApp, live chat, or email marketing \u2014 such as a chatbot guiding FAQ questions \u2014 is the Consideration stage, which precedes the Decision stage where the customer is ready to purchase."
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "type": "mcq",
+      "q": "Sending a customer a direct WhatsApp message offering a pre-approved loan with a limited-time incentive best fits which stage of the digital sales funnel?",
+      "opts": [
+        "A. Awareness",
+        "B. Consideration",
+        "C. Decision",
+        "D. Retention & Loyalty"
+      ],
+      "ans": "B",
+      "exp": "This is the Decision-stage example given in the material \u2014 the customer is ready to purchase, and the direct, incentivized WhatsApp offer is designed to convert that readiness into action, distinct from earlier awareness/consideration activity."
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "type": "mcq",
+      "q": "Automated emails sharing financial tips and cross-selling investment opportunities to existing customers are positioned at which stage of the digital sales funnel?",
+      "opts": [
+        "A. Awareness",
+        "B. Consideration",
+        "C. Decision",
+        "D. Retention & Loyalty"
+      ],
+      "ans": "B",
+      "exp": "This is explicitly the Retention & Loyalty stage \u2014 ongoing engagement with existing customers via email, app notifications, and relationship manager outreach, rather than the earlier funnel stages focused on first attracting or converting a prospect."
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank wants to run a campaign specifically targeting customers who are still comparing options and have not yet committed to applying. Which combination of channels would be most appropriate, based on the digital sales funnel?",
+      "opts": [
+        "A. YouTube ads and Instagram posts only",
+        "B. Website content, WhatsApp, live chat, and email marketing",
+        "C. Relationship manager outreach exclusively",
+        "D. App notifications sent once a week"
+      ],
+      "ans": "B",
+      "exp": "Customers still comparing options are in the Consideration stage, best served by website content, WhatsApp, live chat, and email marketing \u2014 YouTube/Instagram fit Awareness, and relationship manager outreach fits Retention & Loyalty, neither matching the comparison-stage need."
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "type": "mcq",
+      "q": "LinkedIn is best suited for which type of digital sales activity in banking, according to the platform comparison?",
+      "opts": [
+        "A. B2C engagement through visually appealing posts",
+        "B. B2B engagement and thought leadership, such as generating corporate banking leads",
+        "C. Real-time customer service conversations",
+        "D. Personalized one-on-one direct sales via chat"
+      ],
+      "ans": "B",
+      "exp": "LinkedIn's stated strength is B2B engagement and thought leadership \u2014 generating corporate banking leads and posting finance insights \u2014 whereas real-time customer service fits Twitter and one-on-one direct sales fits WhatsApp Business."
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which platform is identified as best suited for personalized follow-ups and direct sales conversations, such as sending pre-approved loan offers?",
+      "opts": [
+        "A. Facebook",
+        "B. WhatsApp Business",
+        "C. Twitter",
+        "D. Instagram"
+      ],
+      "ans": "B",
+      "exp": "WhatsApp Business is specifically named as best for personalized follow-ups and direct sales, including sending pre-approved loan offers via chat \u2014 Facebook is positioned for community-building/targeted ads, and Twitter for real-time engagement."
+    },
+    {
+      "id": "Q69",
+      "module": 2,
+      "type": "mcq",
+      "q": "What was First Bank of Nigeria's primary challenge that motivated its Instagram growth strategy?",
+      "opts": [
+        "A. Excessive spending on physical branch renovations",
+        "B. Poor engagement and product awareness among younger customers",
+        "C. A decline in mobile app downloads",
+        "D. Regulatory restrictions on social media advertising"
+      ],
+      "ans": "B",
+      "exp": "The stated challenge was low engagement and product awareness specifically among younger customers \u2014 not branch spending, app downloads, or regulatory restrictions, none of which are mentioned in this case."
+    },
+    {
+      "id": "Q70",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following was NOT part of First Bank of Nigeria's Instagram strategy?",
+      "opts": [
+        "A. Weekly financial literacy live sessions",
+        "B. Interactive Q&A polls to engage followers",
+        "C. Paid Twitter advertising targeted at SME owners",
+        "D. Behind-the-scenes content showcasing staff and customer success stories"
+      ],
+      "ans": "B",
+      "exp": "First Bank's strategy was entirely Instagram-based: live sessions, polls, and behind-the-scenes content. Paid Twitter advertising is not part of this case and would misattribute a different platform's activity to it."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "type": "mcq",
+      "q": "What outcomes did First Bank of Nigeria report from its Instagram growth strategy?",
+      "opts": [
+        "A. A 120% increase in Instagram followers and higher engagement on loan and savings campaigns",
+        "B. A 50% decrease in Instagram followers with stable engagement",
+        "C. No measurable change in engagement despite follower growth",
+        "D. A 25% increase in branch visits attributed to Instagram activity"
+      ],
+      "ans": "B",
+      "exp": "The reported result was a 120% increase in Instagram followers alongside higher engagement on loan and savings product campaigns \u2014 not a follower decline, flat engagement, or a branch-visit effect, none of which the case supports."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the central lesson drawn from First Bank of Nigeria's Instagram case for other banks?",
+      "opts": [
+        "A. Paid advertising alone drives the strongest social media engagement",
+        "B. Financial education and transparency, combined with humanizing the brand, drive stronger customer connections",
+        "C. Younger customers respond only to price-based promotions",
+        "D. Social media engagement has no measurable link to product campaign performance"
+      ],
+      "ans": "B",
+      "exp": "The stated lesson is that financial education, transparency, and humanizing the brand \u2014 not paid ads or price promotions alone \u2014 are what drove stronger engagement and connection with younger, digitally active customers."
+    },
+    {
+      "id": "Q73",
+      "module": 2,
+      "type": "mcq",
+      "q": "A relationship manager wants to sell an SME loan product using LinkedIn. Which sequence correctly reflects the 4-Step Social Selling Framework applied to this scenario?",
+      "opts": [
+        "A. Convert & Follow-Up \u2192 Identify & Research \u2192 Nurture & Educate \u2192 Engage & Connect",
+        "B. Identify & Research \u2192 Engage & Connect \u2192 Nurture & Educate \u2192 Convert & Follow-Up",
+        "C. Engage & Connect \u2192 Convert & Follow-Up \u2192 Identify & Research \u2192 Nurture & Educate",
+        "D. Nurture & Educate \u2192 Identify & Research \u2192 Convert & Follow-Up \u2192 Engage & Connect"
+      ],
+      "ans": "B",
+      "exp": "The framework's correct order is Identify & Research (find SME owners via LinkedIn Sales Navigator), Engage & Connect (build relationships before pitching), Nurture & Educate (share value first), then Convert & Follow-Up (close via messaging) \u2014 reordering any of these breaks the trust-building logic the framework is built on."
+    },
+    {
+      "id": "Q74",
+      "module": 2,
+      "type": "mcq",
+      "q": "In the LinkedIn SME loan example, what should Step 3 (sending a direct message) avoid doing?",
+      "opts": [
+        "A. Referencing anything about the prospect's business",
+        "B. Opening with an overtly salesy pitch rather than a non-salesy, observation-based message",
+        "C. Offering a free consultation",
+        "D. Mentioning that the company appears to be expanding"
+      ],
+      "ans": "B",
+      "exp": "The example explicitly models a non-salesy message ('I noticed your company is expanding \u2014 have you considered financing options?') \u2014 the framework specifically warns against leading with a hard sales pitch, while referencing the business and offering a free consultation are both encouraged."
+    },
+    {
+      "id": "Q75",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following best distinguishes 'personalized follow-ups' from 'loyalty programs' as customer retention strategies in the digital space?",
+      "opts": [
+        "A. Personalized follow-ups reward repeat purchases with points or discounts; loyalty programs send tailored messages based on past interactions",
+        "B. Personalized follow-ups send tailored messages based on past interactions; loyalty programs reward repeat customers with points, discounts, or exclusive offers",
+        "C. Both terms describe the same retention mechanism using different language",
+        "D. Personalized follow-ups apply only to new customers, while loyalty programs apply only to existing customers"
+      ],
+      "ans": "B",
+      "exp": "Personalized follow-ups are about tailored communication based on history (e.g. a loan renewal reminder), while loyalty programs are reward-based mechanisms (points, discounts, exclusive offers, as in the Starbucks example) \u2014 Option A reverses the two definitions."
+    },
+    {
+      "id": "Q76",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank notices a segment of customers hasn't used their credit cards in six months and sends them a targeted discount offer. Which retention concept does this best illustrate?",
+      "opts": [
+        "A. A loyalty program rewarding frequent use",
+        "B. Using analytics to predict and re-engage at-risk (churning) customers",
+        "C. Early personalization via basic CRM birthday offers",
+        "D. Omni-channel integration across physical and digital channels"
+      ],
+      "ans": "B",
+      "exp": "This is the material's own example of using behavioural data to identify churn risk and re-engage at-risk customers with targeted offers \u2014 distinct from a loyalty program (which rewards existing frequent use) or basic CRM personalization (which isn't churn-focused)."
+    },
+    {
+      "id": "Q77",
+      "module": 3,
+      "type": "mcq",
+      "q": "How does the material define 'social selling'?",
+      "opts": [
+        "A. Running paid advertising campaigns exclusively on Facebook",
+        "B. Using social media platforms to find, connect with, and build relationships with potential customers by providing value over time",
+        "C. Cold-calling prospects identified through social media profiles",
+        "D. Automating all customer interactions through chatbots on social platforms"
+      ],
+      "ans": "B",
+      "exp": "Social selling is defined as using social platforms to find, connect with, and build relationships by providing value and establishing credibility over time \u2014 it is explicitly contrasted with traditional cold-calling, and is not synonymous with paid advertising or full automation."
+    },
+    {
+      "id": "Q78",
+      "module": 3,
+      "type": "mcq",
+      "q": "What proportion of retail banking customers is cited as researching financial products online before making a decision?",
+      "opts": [
+        "A. 50%",
+        "B. 70%",
+        "C. 65%",
+        "D. 40%"
+      ],
+      "ans": "B",
+      "exp": "The material states that 70% of retail banking customers research financial products online before deciding \u2014 a distinct figure from the 65% of loan researchers who abandoned applications, cited elsewhere in the module."
+    },
+    {
+      "id": "Q79",
+      "module": 3,
+      "type": "mcq",
+      "q": "According to the material, why does trust and credibility specifically drive digital banking sales?",
+      "opts": [
+        "A. Because customers are legally required to verify a bank's social media presence",
+        "B. Because customers rely on social proof, expert content, and peer recommendations when deciding",
+        "C. Because trust eliminates the need for any regulatory disclosures",
+        "D. Because credibility is only relevant to corporate, not retail, banking customers"
+      ],
+      "ans": "B",
+      "exp": "The stated reasoning is that customers lean on social proof, expert content, and peer recommendations to build confidence in a digital-first decision \u2014 not legal requirements or regulatory shortcuts, and the point applies broadly, not just to corporate banking."
+    },
+    {
+      "id": "Q80",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which statement best distinguishes 'transparency' from 'authenticity' as trust-building concepts in digital interactions?",
+      "opts": [
+        "A. Transparency means avoiding all product recommendations; authenticity means recommending every available product",
+        "B. Transparency is about clear, honest, and consistent communication; authenticity is about showing genuine interest and avoiding overly scripted interactions",
+        "C. Both terms refer exclusively to how quickly a sales representative responds to messages",
+        "D. Transparency applies only to pricing; authenticity applies only to product features"
+      ],
+      "ans": "B",
+      "exp": "Transparency concerns the honesty and consistency of communication itself, while authenticity concerns genuine engagement with the customer's actual needs rather than scripted responses \u2014 the other options invent restrictions not present in the material."
+    },
+    {
+      "id": "Q81",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following is NOT listed among the practical methods for building trust online?",
+      "opts": [
+        "A. Showcasing testimonials and customer success stories",
+        "B. Responding promptly to comments and messages with a friendly, approachable tone",
+        "C. Using customer names and acknowledging their specific needs",
+        "D. Offering the lowest interest rate in the market regardless of customer profile"
+      ],
+      "ans": "B",
+      "exp": "The three genuine practical methods are testimonials, interactive engagement, and personalized communication. Universally offering the lowest rate regardless of customer profile isn't a trust-building method described in the material and would undermine sound, personalized advice."
+    },
+    {
+      "id": "Q82",
+      "module": 3,
+      "type": "mcq",
+      "q": "What challenge was JPMorgan Chase trying to solve with its LinkedIn strategy for private banking?",
+      "opts": [
+        "A. A shortage of qualified relationship managers",
+        "B. Traditional outreach methods were ineffective at attracting high-net-worth individuals (HNWIs)",
+        "C. Excessive competition on Instagram for HNWI attention",
+        "D. Regulatory restrictions preventing any social media use by private bankers"
+      ],
+      "ans": "B",
+      "exp": "The stated challenge was that traditional outreach wasn't working to attract HNWIs for private banking services \u2014 not a staffing shortage, Instagram competition, or a regulatory ban, none of which are part of this case."
+    },
+    {
+      "id": "Q83",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following was NOT part of JPMorgan Chase's LinkedIn solution for attracting HNWIs?",
+      "opts": [
+        "A. Relationship managers posting financial insights to position themselves as experts",
+        "B. Purchasing sponsored Instagram Stories targeting HNWIs",
+        "C. Engaging in LinkedIn discussions on wealth management topics",
+        "D. Using LinkedIn Sales Navigator to identify and connect with potential clients"
+      ],
+      "ans": "B",
+      "exp": "JPMorgan Chase's strategy was entirely LinkedIn-based \u2014 posting insights, joining discussions, and using Sales Navigator. Instagram Stories advertising is not part of this case and would misattribute a different platform's tactic."
+    },
+    {
+      "id": "Q84",
+      "module": 3,
+      "type": "mcq",
+      "q": "What outcomes did JPMorgan Chase report from its LinkedIn thought-leadership strategy?",
+      "opts": [
+        "A. A 300% increase in LinkedIn engagement and a 40% boost in wealth management inquiries",
+        "B. A 40% decrease in engagement despite a 300% rise in inquiries",
+        "C. No measurable change in either engagement or inquiries",
+        "D. A 300% increase in inquiries with flat engagement"
+      ],
+      "ans": "B",
+      "exp": "The reported results were a 300% increase in engagement and a 40% boost in wealth management inquiries from social leads \u2014 both metrics moved together, unlike the mismatched pairings in the other options."
+    },
+    {
+      "id": "Q85",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the central lesson Access Bank is meant to take from the JPMorgan Chase case?",
+      "opts": [
+        "A. Direct selling is more effective than building expertise-based trust",
+        "B. Thought leadership and engagement generate high-value leads, and trust built through expertise outperforms direct selling",
+        "C. LinkedIn is ineffective for high-net-worth client acquisition",
+        "D. Sales Navigator should be avoided in favour of manual prospecting"
+      ],
+      "ans": "B",
+      "exp": "The explicit lesson is that thought leadership and expertise-based engagement generate higher-value leads than direct selling \u2014 the opposite of Option A, and the case actually credits Sales Navigator and LinkedIn as effective tools, contradicting C and D."
+    },
+    {
+      "id": "Q86",
+      "module": 3,
+      "type": "mcq",
+      "q": "According to the cited social media adoption data, which platform took the shortest time to reach 50 million users worldwide?",
+      "opts": [
+        "A. Facebook, at 1 year",
+        "B. Twitter, at 0.75 years",
+        "C. The internet, at 3 years",
+        "D. Radio, at 38 years"
+      ],
+      "ans": "B",
+      "exp": "Twitter reached 50 million users fastest, at 0.75 years, compared to Facebook's 1 year, the internet's 3 years, and radio's 38 years \u2014 illustrating how rapidly social platforms can achieve reach compared to traditional media."
+    },
+    {
+      "id": "Q87",
+      "module": 3,
+      "type": "mcq",
+      "q": "Based on the same social media adoption data, how does radio's time to reach 50 million users compare to television's?",
+      "opts": [
+        "A. Radio took less time than television",
+        "B. Radio took considerably longer than television \u2014 38 years versus 13 years",
+        "C. Both took exactly the same amount of time",
+        "D. Television never reached 50 million users"
+      ],
+      "ans": "B",
+      "exp": "Radio took 38 years to reach 50 million users, far longer than television's 13 years \u2014 illustrating the accelerating pace of technology adoption that culminated in social media's near-instant reach."
+    },
+    {
+      "id": "Q88",
+      "module": 3,
+      "type": "mcq",
+      "q": "How does the material define 'leveraging social media' in a sales context?",
+      "opts": [
+        "A. Posting content without any strategic objective",
+        "B. Using platforms strategically to promote products, engage prospects, and drive sales by aligning platform features with sales objectives",
+        "C. Relying solely on paid advertisements rather than organic content",
+        "D. Outsourcing all social media activity to a third-party agency"
+      ],
+      "ans": "B",
+      "exp": "Leveraging social media means strategic use \u2014 understanding each platform's unique features and aligning them with sales objectives \u2014 not posting without purpose, relying solely on paid ads, or full outsourcing, none of which the definition supports."
+    },
+    {
+      "id": "Q89",
+      "module": 3,
+      "type": "mcq",
+      "q": "A relationship manager wants to share financial planning tips and connect with potential leads through group discussions. Which platform-specific technique does this best reflect?",
+      "opts": [
+        "A. Instagram's story and reel content strategy",
+        "B. LinkedIn's approach of sharing insightful posts and engaging in group discussions",
+        "C. Twitter's hashtag-based real-time engagement",
+        "D. Facebook's targeted advertising strategy"
+      ],
+      "ans": "B",
+      "exp": "Sharing expertise-based posts and engaging in group discussions to connect with leads is specifically the LinkedIn technique described \u2014 Instagram uses stories/reels, Twitter uses hashtags for real-time conversations, and Facebook relies more on targeted ads."
+    },
+    {
+      "id": "Q90",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which technique is associated with Instagram and Facebook for B2C engagement, according to the platform-specific strategies?",
+      "opts": [
+        "A. Sending personalized LinkedIn connection requests",
+        "B. Using stories and reels, hosting live Q&A sessions, and posting behind-the-scenes content",
+        "C. Publishing long-form thought-leadership articles only",
+        "D. Relying exclusively on hashtag-driven real-time updates"
+      ],
+      "ans": "B",
+      "exp": "Instagram and Facebook's B2C techniques are stories/reels, live Q&A sessions, and behind-the-scenes content \u2014 LinkedIn connection requests belong to a different platform's strategy, and hashtag-driven real-time updates are Twitter's technique."
+    },
+    {
+      "id": "Q91",
+      "module": 3,
+      "type": "mcq",
+      "q": "Twitter is described as ideal for which type of digital sales activity?",
+      "opts": [
+        "A. Long-form thought leadership content for HNWI clients",
+        "B. Real-time updates, trending topics, and customer service through hashtags and concise tweets",
+        "C. Deep one-on-one personalized sales conversations",
+        "D. Static product catalogues with detailed specifications"
+      ],
+      "ans": "B",
+      "exp": "Twitter's stated strength is real-time engagement \u2014 trending topics and customer service via hashtags and concise, value-packed tweets \u2014 not long-form content, one-on-one deep conversations, or static catalogues, which fit other channels better."
+    },
+    {
+      "id": "Q92",
+      "module": 3,
+      "type": "mcq",
+      "q": "What function do social media management tools like Hootsuite and Buffer serve, according to the material?",
+      "opts": [
+        "A. Automatically approving loan applications submitted via social media",
+        "B. Scheduling posts, analyzing performance metrics, and engaging with audiences efficiently",
+        "C. Verifying customer identity for KYC compliance",
+        "D. Replacing the need for a CRM system entirely"
+      ],
+      "ans": "B",
+      "exp": "Hootsuite and Buffer are named specifically as scheduling, analytics, and audience-engagement tools \u2014 not loan-approval, KYC, or CRM-replacement systems, which serve entirely different functions in the sales stack."
+    },
+    {
+      "id": "Q93",
+      "module": 3,
+      "type": "mcq",
+      "q": "How does the material define 'sales conversion' in the context of social media?",
+      "opts": [
+        "A. The process of increasing a brand's follower count",
+        "B. Turning a prospect into a paying customer by building relationships, generating interest, and guiding them through the sales funnel",
+        "C. The number of likes and comments a post receives",
+        "D. The frequency with which a bank posts new content"
+      ],
+      "ans": "B",
+      "exp": "Sales conversion is specifically defined as turning a prospect into a paying customer via relationship-building and funnel guidance \u2014 follower counts, likes/comments, and posting frequency are engagement metrics, not the definition of conversion itself."
+    },
+    {
+      "id": "Q94",
+      "module": 3,
+      "type": "mcq",
+      "q": "Access Bank's LinkedIn campaign targeting SME owners with personalized financial solutions led to what result?",
+      "opts": [
+        "A. A 20% increase in inquiries",
+        "B. A 40% decrease in engagement",
+        "C. A 65% increase in loan conversion rates",
+        "D. A 120% increase in followers"
+      ],
+      "ans": "B",
+      "exp": "The stated outcome of this specific SME-focused LinkedIn campaign was a 20% increase in inquiries \u2014 the other figures belong to different case studies in the module (First Bank's Instagram followers, Access Bank's 2021 omni-channel conversion rates)."
+    },
+    {
+      "id": "Q95",
+      "module": 3,
+      "type": "mcq",
+      "q": "According to the platform selection table, which platform is best suited for community-building and running targeted ads such as mortgage promotions to segmented audiences?",
+      "opts": [
+        "A. Twitter",
+        "B. Facebook",
+        "C. LinkedIn",
+        "D. WhatsApp Business"
+      ],
+      "ans": "B",
+      "exp": "Facebook is specifically named as best for community-building and targeted advertising, with mortgage promotions to segmented audiences given as the example use case \u2014 Twitter fits real-time engagement, LinkedIn fits B2B, and WhatsApp Business fits direct personalized follow-ups."
+    },
+    {
+      "id": "Q96",
+      "module": 3,
+      "type": "mcq",
+      "q": "According to the platform selection table, sharing investment tips and responding to banking queries in real time is the example use case for which platform?",
+      "opts": [
+        "A. Facebook",
+        "B. Twitter",
+        "C. Instagram",
+        "D. LinkedIn"
+      ],
+      "ans": "B",
+      "exp": "Twitter's example use case is sharing investment tips and responding to banking queries in real time \u2014 Facebook's example is mortgage promotions to segmented audiences, and LinkedIn's is generating corporate leads."
+    },
+    {
+      "id": "Q97",
+      "module": 3,
+      "type": "mcq",
+      "q": "A relationship manager posts LinkedIn content that reads like a direct sales pitch on the first message to a prospect. Which principle from the LinkedIn SME loan example does this violate?",
+      "opts": [
+        "A. The principle of identifying prospects using Sales Navigator",
+        "B. The principle of sending a non-salesy first message that builds rapport before pitching",
+        "C. The principle of offering a free consultation",
+        "D. The principle of engaging with a prospect's posts before messaging"
+      ],
+      "ans": "B",
+      "exp": "The framework explicitly models a non-salesy opening message \u2014 leading with an overt pitch skips the relationship-building step the framework is built around, even if the manager did correctly identify the prospect via Sales Navigator."
+    },
+    {
+      "id": "Q98",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank wants to launch a digital banking presence for a new SME loan product, drawing on the module's role-play scenario. Which sequence of actions best reflects the recommended approach?",
+      "opts": [
+        "A. Send a generic mass message to all followers, then decide which platform to use afterward",
+        "B. Choose a social media platform for lead generation, draft platform-appropriate content, then develop a tailored direct messaging strategy",
+        "C. Skip platform selection and rely solely on paid search advertising",
+        "D. Develop the direct messaging strategy before deciding what content to post"
+      ],
+      "ans": "B",
+      "exp": "The recommended workflow moves from platform selection, to crafting a post suited to that platform, to a targeted direct-messaging strategy \u2014 reversing this order (as in the other options) undermines the relationship-building logic that underpins effective social selling."
+    },
+    {
+      "id": "Q99",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following best explains why 'personalized communication' is listed as a trust-building method distinct from simply 'responding promptly'?",
+      "opts": [
+        "A. Personalized communication requires no interaction with the customer at all",
+        "B. Personalized communication involves using the customer's name and tailoring solutions to their specific needs, beyond just response speed",
+        "C. They are identical concepts described with different terminology",
+        "D. Personalized communication applies only to email, never to social media"
+      ],
+      "ans": "B",
+      "exp": "Personalized communication is about tailoring the substance of the interaction (name, specific needs) \u2014 a distinct dimension from interactive engagement, which is about response speed and tone; the material treats them as related but separate trust-building methods."
+    },
+    {
+      "id": "Q100",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank's LinkedIn thought-leadership strategy for HNWIs is working, but the bank wants to replicate similar success on Instagram for mass-market retail customers. Which adjustment best reflects the platform-specific strategies described?",
+      "opts": [
+        "A. Repost the same long-form LinkedIn articles unchanged on Instagram",
+        "B. Shift toward visually engaging formats like stories, reels, and live Q&A sessions suited to Instagram's B2C audience",
+        "C. Discontinue Instagram activity since LinkedIn already works",
+        "D. Use LinkedIn Sales Navigator to identify Instagram followers"
+      ],
+      "ans": "B",
+      "exp": "Instagram's B2C audience responds to visual, interactive formats \u2014 stories, reels, and live Q&A \u2014 which differ from LinkedIn's B2B, insight-sharing approach; simply reposting LinkedIn content or applying LinkedIn-specific tools to Instagram misapplies each platform's strength."
+    },
+    {
+      "id": "Q101",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why does the material emphasize that social selling should focus on 'providing value' before pitching a product?",
+      "opts": [
+        "A. Because regulators require a cooling-off period before any product can be discussed",
+        "B. Because establishing credibility and addressing prospect needs first builds the trust needed for eventual conversion",
+        "C. Because value-first content generates more advertising revenue for the platform",
+        "D. Because pitching a product immediately is always illegal on social media"
+      ],
+      "ans": "B",
+      "exp": "The value-first approach exists to build credibility and trust before asking for a sale \u2014 a sales-effectiveness rationale, not a regulatory, revenue, or legal one, none of which appear anywhere in the material."
+    },
+    {
+      "id": "Q102",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following pairs correctly matches a digital sales channel from Module 2 with the primary social selling technique from Module 3 that complements it for SME lead generation?",
+      "opts": [
+        "A. Email marketing paired with Twitter's real-time hashtag engagement",
+        "B. LinkedIn's B2B networking paired with the 4-Step Social Selling Framework's Identify & Research stage",
+        "C. WhatsApp Business paired with LinkedIn Sales Navigator",
+        "D. Live chat paired with Instagram Stories"
+      ],
+      "ans": "B",
+      "exp": "LinkedIn's B2B, professional-networking strength aligns naturally with the framework's first stage \u2014 identifying and researching prospects (e.g. via LinkedIn Sales Navigator) \u2014 whereas the other pairings mismatch channels and techniques that serve different purposes."
+    },
+    {
+      "id": "Q103",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank's social media manager wants to measure which LinkedIn posts are resonating most with SME owners before scaling the campaign. Which tool capability, as described in the material, supports this directly?",
+      "opts": [
+        "A. AI-driven upselling recommendations",
+        "B. Analytics tools within platforms like Hootsuite or Buffer that provide insight into which posts resonate most with the audience",
+        "C. Blockchain-based digital identity verification",
+        "D. Predictive analytics for loan maturity dates"
+      ],
+      "ans": "B",
+      "exp": "Hootsuite/Buffer-style analytics tools are specifically described as providing insight into audience resonance \u2014 the other options describe unrelated technologies (upselling AI, blockchain identity, loan-maturity prediction) from different modules."
+    },
+    {
+      "id": "Q104",
+      "module": 3,
+      "type": "mcq",
+      "q": "Why is 'authenticity' specifically linked to 'avoiding overly scripted interactions' in the material's trust-building guidance?",
+      "opts": [
+        "A. Because scripts are prohibited by banking regulation",
+        "B. Because genuine interest in customer needs is undermined when responses feel mechanical or rehearsed",
+        "C. Because scripted responses take longer to type than spontaneous ones",
+        "D. Because scripts cannot be used on any digital channel"
+      ],
+      "ans": "B",
+      "exp": "The reasoning is that authenticity requires customers to sense genuine engagement \u2014 an overly scripted, mechanical response undercuts that impression, regardless of speed or regulatory status, neither of which the material links to authenticity."
+    },
+    {
+      "id": "Q105",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank relationship manager builds credibility with SME owners by regularly commenting thoughtfully on their LinkedIn posts before ever messaging them directly. Which stage of the 4-Step Social Selling Framework does this action primarily belong to?",
+      "opts": [
+        "A. Identify & Research",
+        "B. Engage & Connect",
+        "C. Nurture & Educate",
+        "D. Convert & Follow-Up"
+      ],
+      "ans": "B",
+      "exp": "Commenting and engaging with a prospect's existing content \u2014 building the relationship before any pitch \u2014 is the Engage & Connect stage, which comes after identifying the prospect but before the value-sharing (Nurture & Educate) and closing (Convert & Follow-Up) stages."
+    },
+    {
+      "id": "Q106",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following would most clearly violate the module's guidance on transparency in digital sales interactions?",
+      "opts": [
+        "A. Clearly stating a product's fees upfront before the customer asks",
+        "B. Omitting a known limitation of a product specifically because it might discourage the sale",
+        "C. Responding to a customer's question with a direct, honest answer",
+        "D. Consistently using the same tone and messaging across WhatsApp and email"
+      ],
+      "ans": "B",
+      "exp": "Deliberately omitting a known limitation to protect a sale directly contradicts transparency's core requirement of clear, honest, and consistent communication \u2014 the other three options are all positive examples of transparency in practice."
+    },
+    {
+      "id": "Q107",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank is comparing Twitter and Facebook for an upcoming campaign promoting a new mortgage product to a geographically segmented audience. Based on the platform comparison table, which platform is the better fit and why?",
+      "opts": [
+        "A. Twitter, because it specializes in geographically targeted advertising",
+        "B. Facebook, because it is best suited for community-building and targeted ads to segmented audiences, as shown by its mortgage-promotion use case",
+        "C. Twitter, because mortgage products require real-time customer service above all else",
+        "D. Neither platform is suitable for financial product promotion"
+      ],
+      "ans": "B",
+      "exp": "Facebook's stated strength \u2014 community-building and targeted advertising \u2014 directly matches this need, and mortgage promotion to segmented audiences is its named example use case; Twitter's strength lies in real-time engagement, not targeted ad segmentation."
+    },
+    {
+      "id": "Q108",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which statement best captures why the material treats 'thought leadership' (as in the JPMorgan Chase case) as a distinct strategy from simply 'posting frequently' on social media?",
+      "opts": [
+        "A. Thought leadership requires posting only once a year for maximum impact",
+        "B. Thought leadership is about establishing expertise and credibility through valuable insights, not the sheer frequency of posts",
+        "C. Posting frequency and thought leadership are the same concept measured differently",
+        "D. Thought leadership applies only to Instagram, not LinkedIn"
+      ],
+      "ans": "B",
+      "exp": "JPMorgan Chase's success came from relationship managers sharing genuinely valuable financial insights and engaging in substantive discussions \u2014 a quality-and-credibility strategy, not a volume-of-posting one, and the case is explicitly LinkedIn-based, not Instagram-based."
+    },
+    {
+      "id": "Q109",
+      "module": 3,
+      "type": "mcq",
+      "q": "A bank wants to reduce the risk of prospects feeling 'sold to' too early in a social selling relationship. Which combination of the module's principles addresses this most directly?",
+      "opts": [
+        "A. Skipping the Identify & Research stage and messaging prospects immediately",
+        "B. Leading with authenticity and value (Nurture & Educate) before the Convert & Follow-Up stage",
+        "C. Using only paid advertising instead of organic engagement",
+        "D. Sending the same scripted pitch to every connection"
+      ],
+      "ans": "B",
+      "exp": "Combining authentic, value-first engagement with the framework's sequencing \u2014 nurturing and educating before converting \u2014 is precisely what prevents prospects from feeling prematurely sold to; skipping stages or scripting pitches would increase, not reduce, that risk."
+    },
+    {
+      "id": "Q110",
+      "module": 3,
+      "type": "mcq",
+      "q": "Based on the social media adoption statistics, what does the dramatic difference between radio's 38-year and Twitter's 0.75-year timeline to reach 50 million users suggest for a bank's digital sales strategy?",
+      "opts": [
+        "A. Traditional media remains more reliable for reaching large audiences than social media",
+        "B. Social platforms can build large-scale audience reach far faster than traditional channels, making them a high-leverage investment for engagement",
+        "C. The speed of user adoption has no bearing on how quickly a bank can build engagement",
+        "D. Newer platforms should be avoided until they mature over multiple decades"
+      ],
+      "ans": "B",
+      "exp": "The dramatically compressed adoption timeline illustrates social media's capacity for rapid, large-scale reach \u2014 supporting the module's broader argument for investing in social selling, rather than suggesting traditional media is more reliable or that new platforms should be avoided."
+    },
+    {
+      "id": "Q111",
+      "module": 3,
+      "type": "mcq",
+      "q": "Considering both the JPMorgan Chase and Access Bank SME LinkedIn cases together, what common factor most directly explains their success?",
+      "opts": [
+        "A. Both relied exclusively on paid advertising rather than organic engagement",
+        "B. Both combined platform-appropriate content with a value-led approach \u2014 insights and personalized solutions \u2014 rather than a direct sales push",
+        "C. Both cases achieved success without using LinkedIn Sales Navigator or any targeting tool",
+        "D. Both targeted the same customer segment using identical messaging"
+      ],
+      "ans": "B",
+      "exp": "Despite targeting different segments (HNWIs vs. SME owners), both cases succeeded through value-led, platform-appropriate engagement \u2014 expert insights and personalized financial solutions \u2014 rather than direct selling or identical, one-size-fits-all messaging."
+    },
+    {
+      "id": "Q112",
+      "module": 4,
+      "type": "mcq",
+      "q": "How does the material define cross-selling?",
+      "opts": [
+        "A. Encouraging a customer to purchase a higher-tier version of a product they intended to buy",
+        "B. Offering complementary products or services to customers based on their existing purchases or needs",
+        "C. Replacing a customer's existing product with a cheaper alternative",
+        "D. Selling only to entirely new customers who have no prior relationship with the bank"
+      ],
+      "ans": "B",
+      "exp": "Cross-selling is defined as offering complementary products based on existing purchases or needs \u2014 e.g. suggesting a savings account to someone opening a current account. Encouraging an upgrade to a higher tier is upselling, not cross-selling."
+    },
+    {
+      "id": "Q113",
+      "module": 4,
+      "type": "mcq",
+      "q": "How does the material define upselling?",
+      "opts": [
+        "A. Offering a complementary product alongside an existing purchase",
+        "B. Encouraging customers to purchase a higher-tier product or service than the one they initially intended to buy",
+        "C. Reducing a customer's fees to retain their business",
+        "D. Targeting only customers who have never held an account with the bank"
+      ],
+      "ans": "B",
+      "exp": "Upselling specifically means encouraging an upgrade to a higher-tier product \u2014 such as recommending a platinum credit card instead of a standard one \u2014 distinct from cross-selling, which introduces a separate complementary product."
+    },
+    {
+      "id": "Q114",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank recommends a fixed deposit account to a customer who already holds a savings account. Which sales strategy does this represent?",
+      "opts": [
+        "A. Upselling",
+        "B. Cross-selling",
+        "C. Churn prevention",
+        "D. Predictive analytics"
+      ],
+      "ans": "B",
+      "exp": "This is the material's own example of cross-selling \u2014 a complementary product (fixed deposit) offered alongside an existing one (savings account), rather than an upgrade of the same product type, which would be upselling."
+    },
+    {
+      "id": "Q115",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank encourages a customer to move from a basic savings account to a premium banking account. Which sales strategy does this represent?",
+      "opts": [
+        "A. Cross-selling",
+        "B. Upselling",
+        "C. Customer retention",
+        "D. Behavioural analytics"
+      ],
+      "ans": "B",
+      "exp": "Upgrading within the same product category \u2014 basic to premium savings \u2014 is the material's own example of upselling, distinct from cross-selling, which introduces a different, complementary product."
+    },
+    {
+      "id": "Q116",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is NOT cited as a reason cross-selling and upselling matter in retail banking?",
+      "opts": [
+        "A. They increase customer lifetime value by expanding a customer's product portfolio",
+        "B. They eliminate the need for banks to acquire any new customers",
+        "C. They strengthen customer relationships by demonstrating an understanding of customer needs",
+        "D. They drive revenue growth for the bank"
+      ],
+      "ans": "B",
+      "exp": "The three stated benefits are increased lifetime value, stronger relationships, and revenue growth \u2014 cross-selling and upselling complement, but do not eliminate, the need for new customer acquisition, which is not a claim made anywhere in the material."
+    },
+    {
+      "id": "Q117",
+      "module": 4,
+      "type": "mcq",
+      "q": "What challenge prompted GTBank's cross-selling and upselling strategy?",
+      "opts": [
+        "A. Excessive fees driving customers to competitors",
+        "B. Customers with only one product were more likely to leave for competitors",
+        "C. A shortage of qualified relationship managers",
+        "D. Regulatory pressure to reduce product bundling"
+      ],
+      "ans": "B",
+      "exp": "GTBank's stated challenge was single-product customers being more likely to churn to competitors \u2014 not fee levels, staffing, or regulation, none of which are mentioned as drivers of this initiative."
+    },
+    {
+      "id": "Q118",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following was NOT part of GTBank's cross-selling and upselling solution?",
+      "opts": [
+        "A. Automated 'Next Best Product' recommendations in mobile banking",
+        "B. Discontinuing single-product accounts entirely",
+        "C. Using customer transaction data to send targeted cross-sell offers",
+        "D. Providing incentives such as discounted fees for bundled product sign-ups"
+      ],
+      "ans": "B",
+      "exp": "GTBank's actual solution combined automated recommendations, data-driven targeting, and bundling incentives \u2014 it did not discontinue single-product accounts, which would eliminate rather than grow its customer base."
+    },
+    {
+      "id": "Q119",
+      "module": 4,
+      "type": "mcq",
+      "q": "What outcomes did GTBank report from its cross-selling and upselling strategy?",
+      "opts": [
+        "A. A 25% increase in new product sign-ups and a 40% boost in customer retention",
+        "B. A 40% decrease in new product sign-ups despite improved retention",
+        "C. No measurable change in either sign-ups or retention",
+        "D. A 25% decrease in retention alongside higher sign-ups"
+      ],
+      "ans": "B",
+      "exp": "The reported results were a 25% increase in new product sign-ups and a 40% boost in retention \u2014 both metrics improved together, unlike the mismatched pairings in the other options."
+    },
+    {
+      "id": "Q120",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the central lesson Access Bank is meant to draw from GTBank's cross-selling case?",
+      "opts": [
+        "A. Bundling incentives should be avoided as they reduce profitability",
+        "B. Cross-selling strengthens customer loyalty, and personalized recommendations drive higher conversion rates",
+        "C. Single-product customers are the most valuable segment to retain",
+        "D. Automated recommendations are less effective than manual outreach"
+      ],
+      "ans": "B",
+      "exp": "The stated lesson is that cross-selling builds loyalty and that personalization drives conversion \u2014 directly contradicting the idea that bundling incentives hurt profitability or that automation underperforms manual outreach, neither of which the case supports."
+    },
+    {
+      "id": "Q121",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which method for identifying cross-selling and upselling opportunities involves reviewing transaction history, account activity, and product usage through a CRM system?",
+      "opts": [
+        "A. Leveraging predictive analytics",
+        "B. Analyzing customer data",
+        "C. Listening for cues during interactions",
+        "D. Setting SMART sales targets"
+      ],
+      "ans": "B",
+      "exp": "Reviewing CRM-held transaction history, account activity, and product usage to spot patterns or gaps is specifically 'analyzing customer data' \u2014 distinct from predictive analytics, which uses AI/ML to project future needs, and from listening for cues, which relies on direct conversation."
+    },
+    {
+      "id": "Q122",
+      "module": 4,
+      "type": "mcq",
+      "q": "A customer repeatedly asks a relationship manager about international money transfer fees during routine interactions. Which method for identifying cross-selling opportunities does this best illustrate?",
+      "opts": [
+        "A. Analyzing customer data",
+        "B. Listening for cues during interactions",
+        "C. Leveraging predictive analytics",
+        "D. Setting SMART sales targets"
+      ],
+      "ans": "B",
+      "exp": "Customer queries or complaints signalling an unmet need \u2014 here, interest in international transfers \u2014 is exactly what 'listening for cues during interactions' captures, as distinct from data analysis, which is CRM-driven rather than conversation-driven."
+    },
+    {
+      "id": "Q123",
+      "module": 4,
+      "type": "mcq",
+      "q": "AI and machine learning tools predicting which products a customer is likely to need, based on similar customer profiles, exemplify which method of identifying opportunities?",
+      "opts": [
+        "A. Analyzing customer data",
+        "B. Leveraging predictive analytics",
+        "C. Listening for cues during interactions",
+        "D. Behavioural triggers"
+      ],
+      "ans": "B",
+      "exp": "Predicting needs from similar customer profiles using AI/ML is specifically 'leveraging predictive analytics' \u2014 a forward-looking, model-based method distinct from the more retrospective 'analyzing customer data' approach."
+    },
+    {
+      "id": "Q124",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank notices a customer making frequent international transactions and offers them a multi-currency card. Which data-driven cross-selling approach does this best illustrate?",
+      "opts": [
+        "A. Customer lifecycle stage",
+        "B. Behavioural triggers",
+        "C. Transaction history alone, without any interpretation",
+        "D. SMART target tracking"
+      ],
+      "ans": "B",
+      "exp": "This is the material's own example of a behavioural trigger \u2014 detecting a specific financial habit (frequent international transactions) and responding with a matched product (multi-currency card), distinct from lifecycle-stage targeting, which is tied to life events rather than habits."
+    },
+    {
+      "id": "Q125",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank offers a home loan product specifically to customers who have recently gotten married. Which data-driven cross-selling approach does this best illustrate?",
+      "opts": [
+        "A. Behavioural triggers",
+        "B. Customer lifecycle stage",
+        "C. Predictive analytics using Salesforce Einstein",
+        "D. Analyzing customer data via CRM"
+      ],
+      "ans": "B",
+      "exp": "Offering the right product at the right life event \u2014 a home loan for newlyweds \u2014 is the material's own example of targeting by customer lifecycle stage, distinct from behavioural triggers, which respond to observed habits rather than life-stage milestones."
+    },
+    {
+      "id": "Q126",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which statement best distinguishes 'transaction history' from 'behavioural triggers' as data sources for cross-selling, as used in the material?",
+      "opts": [
+        "A. They are identical concepts described using different terminology",
+        "B. Transaction history identifies spending behaviours to tailor offers broadly; behavioural triggers detect specific financial habits that point to a particular product need",
+        "C. Transaction history applies only to loan products; behavioural triggers apply only to savings products",
+        "D. Behavioural triggers require no customer data at all"
+      ],
+      "ans": "B",
+      "exp": "Transaction history is used broadly to tailor offers based on spending behaviour, while behavioural triggers are the identification of a specific habit (like frequent international transactions) pointing to one particular product \u2014 the two work together but are described as distinct data uses."
+    },
+    {
+      "id": "Q127",
+      "module": 4,
+      "type": "mcq",
+      "q": "What challenge was Citibank trying to address with AI-driven customer segmentation?",
+      "opts": [
+        "A. A decline in mobile app downloads",
+        "B. Low adoption of investment products among existing customers",
+        "C. High customer attrition among SME clients",
+        "D. Regulatory non-compliance in loan processing"
+      ],
+      "ans": "B",
+      "exp": "Citibank's stated challenge was increasing adoption of investment products among its existing customer base \u2014 not app downloads, SME attrition, or compliance, none of which appear in this case."
+    },
+    {
+      "id": "Q128",
+      "module": 4,
+      "type": "mcq",
+      "q": "In Citibank's AI-driven segmentation strategy, which product was recommended specifically to customers with high account balances?",
+      "opts": [
+        "A. Retirement investment plans",
+        "B. High-yield savings accounts",
+        "C. Credit cards with travel rewards",
+        "D. Multi-currency debit cards"
+      ],
+      "ans": "B",
+      "exp": "High-yield savings accounts were matched to customers with high balances \u2014 travel-reward credit cards were matched to frequent international travelers, and retirement plans to older account holders, each targeted by a distinct segment characteristic."
+    },
+    {
+      "id": "Q129",
+      "module": 4,
+      "type": "mcq",
+      "q": "In Citibank's AI-driven segmentation strategy, which customer segment was matched with credit cards offering travel rewards?",
+      "opts": [
+        "A. Older account holders nearing retirement",
+        "B. Frequent international travelers",
+        "C. Customers with consistently low account balances",
+        "D. New-to-bank customers within their first month"
+      ],
+      "ans": "B",
+      "exp": "Travel-reward credit cards were specifically matched to frequent international travelers based on their spending patterns \u2014 the other segments (high-balance customers, older account holders) were matched to different products in this same case."
+    },
+    {
+      "id": "Q130",
+      "module": 4,
+      "type": "mcq",
+      "q": "What outcome did Citibank report from its AI-driven cross-selling segmentation?",
+      "opts": [
+        "A. A 25% decline in credit card sign-ups despite improved targeting",
+        "B. A 50% increase in credit card sign-ups from AI-powered recommendations",
+        "C. No measurable change in credit card adoption",
+        "D. A 50% increase in complaints about irrelevant recommendations"
+      ],
+      "ans": "B",
+      "exp": "The reported result was a 50% increase in credit card sign-ups specifically attributed to the AI-powered recommendations \u2014 alongside higher customer satisfaction from more relevant advice, not increased complaints."
+    },
+    {
+      "id": "Q131",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the stated lesson from Citibank's AI-driven cross-selling case?",
+      "opts": [
+        "A. AI-driven segmentation should be limited to credit card products only",
+        "B. AI and predictive analytics can significantly improve cross-selling effectiveness",
+        "C. Customer segmentation reduces the relevance of financial advice",
+        "D. High-balance customers should be excluded from cross-sell campaigns"
+      ],
+      "ans": "B",
+      "exp": "The explicit lesson is that AI and predictive analytics meaningfully improve cross-selling effectiveness \u2014 not that its use should be restricted to one product type, and the case shows segmentation *increasing*, not reducing, advice relevance."
+    },
+    {
+      "id": "Q132",
+      "module": 4,
+      "type": "mcq",
+      "q": "In the SMART framework for sales targets, what does the 'S' specifically require?",
+      "opts": [
+        "A. That targets be reviewed only once a year",
+        "B. That sales goals be clearly and specifically defined",
+        "C. That targets always exceed the previous year's performance by a fixed percentage",
+        "D. That targets be set exclusively by senior management"
+      ],
+      "ans": "B",
+      "exp": "'Specific' requires clearly defined, targeted goals \u2014 the framework doesn't mandate annual-only review, a fixed percentage increase, or management-only goal-setting, none of which are part of the SMART definition given."
+    },
+    {
+      "id": "Q133",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which SMART criterion is satisfied by tracking key performance indicators (KPIs) to monitor progress toward a sales goal?",
+      "opts": [
+        "A. Specific",
+        "B. Measurable",
+        "C. Relevant",
+        "D. Time-Bound"
+      ],
+      "ans": "B",
+      "exp": "'Measurable' is specifically about tracking KPIs to quantify progress \u2014 distinct from 'Specific' (clarity of the goal itself), 'Relevant' (alignment with strategy), and 'Time-Bound' (having a deadline)."
+    },
+    {
+      "id": "Q134",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which SMART criterion requires that a sales goal be realistic yet challenging, rather than impossible or trivially easy?",
+      "opts": [
+        "A. Specific",
+        "B. Achievable",
+        "C. Relevant",
+        "D. Time-Bound"
+      ],
+      "ans": "B",
+      "exp": "'Achievable' specifically addresses the realistic-yet-challenging balance \u2014 'Specific' concerns clarity, and the other criteria concern strategic fit and deadlines rather than the difficulty calibration of the target itself."
+    },
+    {
+      "id": "Q135",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which SMART criterion ensures that a sales target aligns with the bank's overall growth strategy rather than existing in isolation?",
+      "opts": [
+        "A. Measurable",
+        "B. Relevant",
+        "C. Achievable",
+        "D. Specific"
+      ],
+      "ans": "B",
+      "exp": "'Relevant' is the criterion that ties a target back to the bank's broader strategic goals \u2014 Measurable concerns tracking, Achievable concerns feasibility, and Specific concerns clarity, none of which address strategic alignment directly."
+    },
+    {
+      "id": "Q136",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which SMART criterion is satisfied by setting a deadline such as 'within six months' for achieving a sales target?",
+      "opts": [
+        "A. Achievable",
+        "B. Time-Bound",
+        "C. Relevant",
+        "D. Measurable"
+      ],
+      "ans": "B",
+      "exp": "'Time-Bound' specifically requires a deadline for achieving the target \u2014 Measurable concerns quantifiable tracking rather than the presence of a deadline itself, even though both often appear together in a well-formed target."
+    },
+    {
+      "id": "Q137",
+      "module": 4,
+      "type": "mcq",
+      "q": "Consider the SMART target: 'Convert 30% of existing savings account holders into fixed deposit customers within six months through targeted in-app and email campaigns.' Which two SMART elements are most directly satisfied by the phrase 'within six months'?",
+      "opts": [
+        "A. Specific and Achievable",
+        "B. Time-Bound, and \u2014 combined with the 30% figure \u2014 Measurable",
+        "C. Relevant and Achievable only",
+        "D. None of the SMART elements are satisfied by this phrase"
+      ],
+      "ans": "B",
+      "exp": "'Within six months' sets the deadline (Time-Bound), and together with the quantified '30%' figure it also supports Measurable tracking of progress \u2014 the phrase alone doesn't establish Achievability or Relevance, which depend on separate justification (e.g. past performance, strategic fit)."
+    },
+    {
+      "id": "Q138",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which tools are specifically named for tracking and measuring progress toward SMART sales targets?",
+      "opts": [
+        "A. Google Analytics and Buffer",
+        "B. Tableau and Salesforce",
+        "C. Hootsuite and LinkedIn Sales Navigator",
+        "D. WhatsApp Business and HubSpot"
+      ],
+      "ans": "B",
+      "exp": "Tableau and Salesforce are the specific dashboard/analytics tools named for monitoring SMART target progress \u2014 Google Analytics and Hootsuite/Buffer are named elsewhere for website behaviour and social media scheduling respectively, not SMART tracking."
+    },
+    {
+      "id": "Q139",
+      "module": 4,
+      "type": "mcq",
+      "q": "A sales team's SMART target infographic shows last year's monthly sales increase was $25,000, and this year's target is to increase turnover to $30,000 a month. Based on the Achievable criterion, why would this new target likely be considered realistic?",
+      "opts": [
+        "A. Because it is lower than last year's increase, making it effortless to reach",
+        "B. Because it represents a modest increase over a demonstrated prior increase of $25,000, making it challenging but plausible",
+        "C. Because SMART targets do not need to reference past performance",
+        "D. Because the target has no connection to the team's historical performance"
+      ],
+      "ans": "B",
+      "exp": "Achievability is grounded in referencing genuine prior performance \u2014 a $30,000 target built on a demonstrated $25,000 prior increase is a stretch but plausible goal, not an effortless or disconnected one, which is precisely what makes a target 'realistic yet challenging' rather than arbitrary."
+    },
+    {
+      "id": "Q140",
+      "module": 4,
+      "type": "mcq",
+      "q": "A team sets a target to 'maintain client satisfaction' with a monthly NPS above 8.0, noting that last year's NPS survey average was 8.7. Which SMART element does citing the prior 8.7 average primarily support?",
+      "opts": [
+        "A. Time-Bound, by establishing a hard deadline",
+        "B. Achievable, by showing the target is grounded in demonstrated past performance",
+        "C. Specific, by defining what NPS means",
+        "D. Relevant, by linking the target to sales team headcount"
+      ],
+      "ans": "B",
+      "exp": "Referencing last year's 8.7 average NPS demonstrates that a target above 8.0 is realistically attainable given historical performance \u2014 supporting Achievability, not Time-Bound (no deadline is set here) or Relevant (which would require a strategic-fit justification, not a historical figure)."
+    },
+    {
+      "id": "Q141",
+      "module": 4,
+      "type": "mcq",
+      "q": "A sales manager writes the goal: 'Increase sales.' Which SMART elements are most clearly missing from this statement?",
+      "opts": [
+        "A. Only Relevant is missing; the rest are implied",
+        "B. Specific, Measurable, and Time-Bound are all missing \u2014 there is no defined target, no metric, and no deadline",
+        "C. Only Achievable is missing, since the goal cannot be judged as realistic",
+        "D. Nothing is missing; this qualifies as a complete SMART goal"
+      ],
+      "ans": "B",
+      "exp": "'Increase sales' lacks a defined scope (Specific), a quantifiable metric (Measurable), and a deadline (Time-Bound) \u2014 it may or may not be Achievable or Relevant, but those can't even be assessed without the missing elements first being defined."
+    },
+    {
+      "id": "Q142",
+      "module": 4,
+      "type": "mcq",
+      "q": "A relationship manager reviews a customer's CRM record and notices high transaction volume but a very low account balance. Applying the module's guidance, what should this pattern suggest as a cross-selling opportunity?",
+      "opts": [
+        "A. The customer should be offered a retirement investment plan immediately",
+        "B. The customer may be a good candidate for a savings-oriented product designed to convert transactional activity into stored value",
+        "C. The customer should be flagged as a fraud risk and reported",
+        "D. No cross-selling opportunity exists without an international transaction history"
+      ],
+      "ans": "B",
+      "exp": "High transaction volume with a low balance is a classic CRM-detected gap suggesting the customer could benefit from a savings-oriented cross-sell offer (mirroring the module's own Case Study 1 scenario) \u2014 it is not, on its own, evidence of fraud or a reason to require international transaction data first."
+    },
+    {
+      "id": "Q143",
+      "module": 4,
+      "type": "mcq",
+      "q": "Comparing the GTBank and Citibank cross-selling cases, what factor is common to both banks' successful outcomes?",
+      "opts": [
+        "A. Both relied entirely on manual, non-automated outreach",
+        "B. Both used customer data \u2014 transactional or behavioural \u2014 to personalize recommendations rather than applying a one-size-fits-all offer",
+        "C. Both cases focused exclusively on new customers rather than existing ones",
+        "D. Neither case involved any use of automation or AI"
+      ],
+      "ans": "B",
+      "exp": "Despite different tools (automated 'Next Best Product' recommendations vs. AI-driven segmentation), both banks succeeded by personalizing offers using customer data \u2014 not by relying on manual outreach, and both explicitly targeted existing customers, not new ones."
+    },
+    {
+      "id": "Q144",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank sets the SMART target: 'Achieve a 10% increase in premium product subscriptions within two months, tracked through weekly reports, by training staff on product knowledge and deploying targeted email campaigns.' Which SMART element is most directly addressed by 'tracked through weekly reports'?",
+      "opts": [
+        "A. Specific",
+        "B. Measurable",
+        "C. Achievable",
+        "D. Relevant"
+      ],
+      "ans": "B",
+      "exp": "Tracking through weekly reports is the mechanism for measuring progress toward the 10% figure \u2014 supporting Measurable, while the 10% target itself and the 'within two months' deadline separately support Specific and Time-Bound respectively."
+    },
+    {
+      "id": "Q145",
+      "module": 4,
+      "type": "mcq",
+      "q": "Why does the material emphasize that a target must be 'challenging' as well as 'realistic' under the Achievable criterion, rather than simply realistic?",
+      "opts": [
+        "A. Because a target with no challenge fails to drive meaningful performance improvement, even if it is easily attainable",
+        "B. Because challenging targets are always impossible to measure",
+        "C. Because only challenging targets qualify as Time-Bound",
+        "D. Because realistic targets are inherently unmeasurable"
+      ],
+      "ans": "A",
+      "exp": "The Achievable criterion balances two things: a target must be attainable (realistic) but should still stretch performance (challenging) \u2014 a target that is realistic but trivially easy wouldn't meaningfully improve results, which is why both qualities are required together, not either alone."
+    },
+    {
+      "id": "Q146",
+      "module": 4,
+      "type": "mcq",
+      "q": "A sales director wants to apply predictive analytics to identify upselling opportunities, similar to Citibank's approach, but for a different product category. Which action best reflects the correct application of this method?",
+      "opts": [
+        "A. Manually reviewing each customer's file individually with no automated modelling",
+        "B. Using AI/ML to analyze spending patterns across the customer base and flag similar-profile customers for a matched premium product",
+        "C. Offering the same premium product to every customer regardless of profile",
+        "D. Waiting for customers to request an upgrade before making any recommendation"
+      ],
+      "ans": "B",
+      "exp": "Predictive analytics, as demonstrated in the Citibank case, means using AI/ML to analyze patterns across the customer base and flag likely candidates for a specific product \u2014 not manual, one-by-one review, a blanket offer to everyone, or a purely reactive wait-and-see approach."
+    },
+    {
+      "id": "Q147",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank wants to design a cross-selling campaign using the module's guidance holistically. Which sequence best reflects the correct order of applying the concepts covered in this module?",
+      "opts": [
+        "A. Set a SMART target first, then identify opportunities through data afterward, with no connection between the two",
+        "B. Identify opportunities through customer data and predictive analytics, design a personalized offer, then set a SMART target to track and measure the campaign's success",
+        "C. Track results with Tableau before any customer data has been analyzed",
+        "D. Set an upselling goal without first distinguishing it from cross-selling"
+      ],
+      "ans": "B",
+      "exp": "The module's logical flow is: identify opportunities using data/analytics, build a personalized offer around them, then define a SMART target to measure the campaign \u2014 tracking before analysis, or setting goals with no data foundation, inverts this sequence and undermines both accuracy and measurability."
+    },
+    {
+      "id": "Q148",
+      "module": 4,
+      "type": "mcq",
+      "q": "Both the GTBank and Citibank cases report specific percentage outcomes (25%/40% and 50% respectively). Which SMART element do these kinds of post-campaign statistics most directly demonstrate the *importance* of, when designing a future target?",
+      "opts": [
+        "A. Specific, because a percentage defines the customer segment",
+        "B. Measurable, because quantified outcomes are what allow a campaign's success to be evaluated against a target",
+        "C. Time-Bound, because percentages inherently imply a deadline",
+        "D. Relevant, because percentages by themselves prove strategic alignment"
+      ],
+      "ans": "B",
+      "exp": "Reporting concrete percentages after a campaign is only meaningful because a Measurable target was set beforehand \u2014 quantified outcomes are precisely what let a bank judge success against a benchmark, unlike Specific (defines the goal, not the segment), Time-Bound (a percentage doesn't imply a deadline), or Relevant (strategic fit isn't proven by a number alone)."
+    },
+    {
+      "id": "Q149",
+      "module": 5,
+      "type": "mcq",
+      "q": "How does the material define an 'objection' in a digital sales context?",
+      "opts": [
+        "A. A formal complaint escalated to a regulator",
+        "B. A concern, hesitation, or doubt a customer expresses before committing to a purchase",
+        "C. A rejection that ends the sales process permanently",
+        "D. A technical error preventing a transaction from completing"
+      ],
+      "ans": "B",
+      "exp": "An objection is defined as a concern, hesitation, or doubt raised before commitment \u2014 addressing it effectively is framed as crucial to moving the sale forward, not as a final rejection, regulatory matter, or technical fault."
+    },
+    {
+      "id": "Q150",
+      "module": 5,
+      "type": "mcq",
+      "q": "According to the material, objections in digital sales most commonly arise from customer uncertainty about which factors?",
+      "opts": [
+        "A. Branch opening hours and staff availability",
+        "B. Security, fees, and the value of a product",
+        "C. The bank's annual financial statements",
+        "D. The colour scheme of the mobile app"
+      ],
+      "ans": "B",
+      "exp": "Customers raise objections mainly when uncertain about security, fees, or a product's value \u2014 not about operational details like branch hours or app aesthetics, which aren't cited as objection drivers."
+    },
+    {
+      "id": "Q151",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer says, 'I don't trust online banking transactions.' According to the objection-handling table, what is the underlying reason for this objection?",
+      "opts": [
+        "A. Comparison with other banks' interest rates",
+        "B. Fear of fraud and security breaches",
+        "C. Lack of familiarity with digital banking tools",
+        "D. Not understanding how the product benefits them"
+      ],
+      "ans": "B",
+      "exp": "This specific objection is attributed to fear of fraud and security breaches \u2014 distinct from the reasons behind other listed objections, such as unfamiliarity with tools (branch-preference objection) or rate comparisons (fees objection)."
+    },
+    {
+      "id": "Q152",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the recommended way to overcome the objection 'I don't trust online banking transactions,' according to the table?",
+      "opts": [
+        "A. Offering a discount on the first transaction",
+        "B. Highlighting security features such as encryption, multi-factor authentication, and fraud protection policies",
+        "C. Insisting the customer visit a branch instead",
+        "D. Ignoring the objection and proceeding with the sale"
+      ],
+      "ans": "B",
+      "exp": "The recommended response is to highlight concrete security features \u2014 encryption, MFA, fraud protection \u2014 directly addressing the fear driving the objection, rather than redirecting to a branch or dismissing the concern."
+    },
+    {
+      "id": "Q153",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer objects, 'I don't see the need for this product.' What does the table identify as both the reason and the recommended response?",
+      "opts": [
+        "A. Reason: fear of fraud; Response: highlight security features",
+        "B. Reason: the customer doesn't understand how the product benefits them; Response: personalize the pitch by relating it to their financial goals",
+        "C. Reason: high fees; Response: focus on value-added benefits like cashback",
+        "D. Reason: unfamiliarity with digital tools; Response: offer video tutorials"
+      ],
+      "ans": "B",
+      "exp": "This objection stems from the customer not seeing personal relevance \u2014 the correct response is to personalize the pitch around their specific financial goals, not to address security, fees, or general digital-tool unfamiliarity, which are the reasons behind other objections in the table."
+    },
+    {
+      "id": "Q154",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer says, 'Your interest rates/fees are too high,' after comparing with other banks. Which recommended response does the table associate with this objection?",
+      "opts": [
+        "A. Highlighting encryption and multi-factor authentication",
+        "B. Focusing on value-added benefits like cashback, lower transfer fees, or exclusive rewards",
+        "C. Offering guided video tutorials and live chat support",
+        "D. Personalizing the pitch around the customer's financial goals"
+      ],
+      "ans": "B",
+      "exp": "For a fee/rate comparison objection, the table recommends reframing around value-added benefits \u2014 cashback, lower transfer fees, exclusive rewards \u2014 rather than security features, tutorials, or a general needs-based pitch, which address different objections."
+    },
+    {
+      "id": "Q155",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer says, 'I prefer visiting a branch instead,' reflecting a lack of familiarity with digital tools. What does the table recommend as the response?",
+      "opts": [
+        "A. Reducing the product's price to incentivize digital use",
+        "B. Offering guided video tutorials, live chat, or phone support to ease the transition",
+        "C. Insisting the branch option is no longer available",
+        "D. Ignoring the preference and defaulting to online-only processing"
+      ],
+      "ans": "B",
+      "exp": "For this familiarity-driven objection, the recommended response is easing the transition through guided support \u2014 video tutorials, live chat, or phone support \u2014 not removing the branch option or discounting the price, neither of which the table suggests."
+    },
+    {
+      "id": "Q156",
+      "module": 5,
+      "type": "mcq",
+      "q": "What challenge prompted GTBank's 2021 initiative to overcome digital banking skepticism around its AI-driven personal loan product?",
+      "opts": [
+        "A. A shortage of loan officers to process applications",
+        "B. Customer resistance driven by fear of high interest rates, online fraud concerns, and a preference for in-branch consultation",
+        "C. A regulatory requirement to offer only in-branch loans",
+        "D. Excessive marketing spend with low returns"
+      ],
+      "ans": "B",
+      "exp": "GTBank's stated challenge combined three specific customer concerns \u2014 high interest rate fears, fraud concerns, and a preference for in-branch consultation \u2014 not staffing shortages, regulation, or marketing inefficiency, none of which appear in this case."
+    },
+    {
+      "id": "Q157",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following was NOT part of GTBank's solution to overcome digital banking skepticism?",
+      "opts": [
+        "A. A loan calculator tool showing real-time interest rates and repayment schedules",
+        "B. Discontinuing the mobile loan product until skepticism subsided",
+        "C. Video testimonials from satisfied customers using the digital loan service",
+        "D. Live customer support chat to guide hesitant users"
+      ],
+      "ans": "B",
+      "exp": "GTBank's actual solution combined a loan calculator, video testimonials, and live chat support \u2014 it did not discontinue the product, which would contradict the entire purpose of addressing the skepticism rather than retreating from digital lending."
+    },
+    {
+      "id": "Q158",
+      "module": 5,
+      "type": "mcq",
+      "q": "What outcomes did GTBank report after implementing its objection-handling solution for digital loan skepticism?",
+      "opts": [
+        "A. A 35% increase in mobile loan applications and a 20% increase in digital trust scores",
+        "B. A 35% decrease in mobile loan applications despite improved trust scores",
+        "C. No measurable change in either applications or trust scores",
+        "D. A 20% decrease in digital trust scores alongside higher applications"
+      ],
+      "ans": "B",
+      "exp": "The reported results were a 35% increase in mobile loan applications within six months and a 20% increase in digital trust scores \u2014 both metrics moved positively together, unlike the mismatched pairings in the other options."
+    },
+    {
+      "id": "Q159",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the central lesson Access Bank is meant to draw from the GTBank digital skepticism case?",
+      "opts": [
+        "A. Objections should be avoided rather than addressed directly",
+        "B. Proactively addressing objections builds customer confidence, and digital tools like calculators and chat support ease concerns",
+        "C. In-branch consultation should be eliminated entirely once a digital product launches",
+        "D. Video testimonials are ineffective compared to written reviews"
+      ],
+      "ans": "B",
+      "exp": "The stated lesson is that proactive objection-handling \u2014 using tools like calculators and live chat \u2014 builds confidence, not that objections should be avoided, that branches should be eliminated, or that video testimonials underperform, none of which the case claims."
+    },
+    {
+      "id": "Q160",
+      "module": 5,
+      "type": "mcq",
+      "q": "In the A.P.P.A. objection-handling framework, what does the 'A' in the first step stand for, and what does it require?",
+      "opts": [
+        "A. Automate \u2014 deploy a chatbot to handle the objection instantly",
+        "B. Acknowledge \u2014 show empathy and recognize the customer's concern",
+        "C. Analyze \u2014 calculate the financial impact of the objection",
+        "D. Advertise \u2014 promote an alternative product immediately"
+      ],
+      "ans": "B",
+      "exp": "The first step is Acknowledge \u2014 showing empathy and recognizing the customer's concern before responding substantively \u2014 not an immediate automation, calculation, or product-swap response, which would skip past the customer's expressed concern."
+    },
+    {
+      "id": "Q161",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which step of the A.P.P.A. framework involves using facts, testimonials, or security policies to respond to an objection?",
+      "opts": [
+        "A. Acknowledge",
+        "B. Provide Evidence",
+        "C. Personalize the Solution",
+        "D. Ask Open-Ended Questions"
+      ],
+      "ans": "B",
+      "exp": "'Provide Evidence' is specifically the step where facts, testimonials, or policy details are used to substantiate a response \u2014 distinct from Acknowledge (empathy first) and Personalize (relating the product to the customer's specific situation)."
+    },
+    {
+      "id": "Q162",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which step of the A.P.P.A. framework is illustrated by relating a product directly to a customer's specific financial needs?",
+      "opts": [
+        "A. Provide Evidence",
+        "B. Personalize the Solution",
+        "C. Acknowledge",
+        "D. Ask Open-Ended Questions"
+      ],
+      "ans": "B",
+      "exp": "'Personalize the Solution' is the step focused on tailoring the response to the customer's specific circumstances \u2014 Provide Evidence instead focuses on general facts/testimonials, and Acknowledge focuses on empathetic recognition rather than tailoring."
+    },
+    {
+      "id": "Q163",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the purpose of the final A.P.P.A. step, 'Ask Open-Ended Questions'?",
+      "opts": [
+        "A. To close the conversation as quickly as possible",
+        "B. To uncover deeper objections and provide reassurance",
+        "C. To redirect the customer to a branch immediately",
+        "D. To avoid discussing the product further"
+      ],
+      "ans": "B",
+      "exp": "The final step exists to surface any deeper, unstated objections and offer further reassurance \u2014 not to end the conversation abruptly, redirect away from digital channels, or avoid further product discussion, none of which serve the framework's goal."
+    },
+    {
+      "id": "Q164",
+      "module": 5,
+      "type": "mcq",
+      "q": "In the WhatsApp banking objection example, a customer says, 'I'm not comfortable using WhatsApp for banking transactions.' Which A.P.P.A. step does the response 'I understand why you'd be concerned about security' represent?",
+      "opts": [
+        "A. Provide Evidence",
+        "B. Acknowledge",
+        "C. Personalize the Solution",
+        "D. Ask Open-Ended Questions"
+      ],
+      "ans": "B",
+      "exp": "This response recognizes and validates the customer's concern without yet offering facts or a tailored solution \u2014 it is the Acknowledge step, which precedes Provide Evidence ('Our WhatsApp banking is fully encrypted...') in the example."
+    },
+    {
+      "id": "Q165",
+      "module": 5,
+      "type": "mcq",
+      "q": "In the same WhatsApp banking example, which A.P.P.A. step does 'Would you like me to guide you through a test transaction?' represent?",
+      "opts": [
+        "A. Acknowledge",
+        "B. Personalize",
+        "C. Provide Evidence",
+        "D. Ask Open-Ended Questions"
+      ],
+      "ans": "B",
+      "exp": "Offering to personally guide the customer through a test transaction tailors the response to that individual customer's hesitation \u2014 this is the Personalize step, which follows Acknowledge and Provide Evidence in the worked example."
+    },
+    {
+      "id": "Q166",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following best reflects the material's guidance on building trust through communication in online sales?",
+      "opts": [
+        "A. Using highly technical jargon to demonstrate expertise",
+        "B. Using professional but approachable language, consistent across all digital platforms",
+        "C. Varying the bank's messaging tone significantly between each channel",
+        "D. Avoiding any personal tone to maintain strict formality"
+      ],
+      "ans": "B",
+      "exp": "The guidance calls for professional yet approachable language applied consistently across platforms \u2014 not heavy jargon, deliberately inconsistent tone across channels, or strict impersonal formality, none of which the material recommends."
+    },
+    {
+      "id": "Q167",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following best illustrates the persuasive technique of 'highlighting benefits over features'?",
+      "opts": [
+        "A. 'This app has automated payment functionality.'",
+        "B. 'This app saves you time by automating payments.'",
+        "C. 'This app was built using the latest software architecture.'",
+        "D. 'This app has a dark mode setting.'"
+      ],
+      "ans": "B",
+      "exp": "This is the material's own paired example \u2014 framing a feature (automated payments) in terms of its customer benefit (saved time) \u2014 as opposed to Option A, which is the material's explicit example of a features-only statement lacking benefit framing."
+    },
+    {
+      "id": "Q168",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which example best illustrates the persuasive technique of creating appropriate urgency in a digital sales message?",
+      "opts": [
+        "A. 'This product may be available at some point in the future.'",
+        "B. 'Limited-time offer \u2014 only a few slots left.'",
+        "C. 'Feel free to consider this whenever convenient.'",
+        "D. 'This product has no expiration or availability constraints.'"
+      ],
+      "ans": "B",
+      "exp": "'Limited-time offer' and 'only a few slots left' are the material's own examples of appropriate urgency \u2014 the other options either lack urgency entirely or actively undercut it by suggesting no time pressure exists."
+    },
+    {
+      "id": "Q169",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer writes, 'I'm worried about the fees on this account.' Which response best demonstrates active listening, as described in the material?",
+      "opts": [
+        "A. 'Let's move on to discuss the account's other features.'",
+        "B. 'I understand that you're worried about fees; let me explain how our pricing compares to competitors.'",
+        "C. 'Fees are non-negotiable, so there's nothing more to discuss.'",
+        "D. 'Please contact our fees department for more information.'"
+      ],
+      "ans": "B",
+      "exp": "Active listening in text-based communication means acknowledging what the customer said before responding \u2014 this is the material's own example, whereas the other options either deflect, dismiss, or redirect without first acknowledging the stated concern."
+    },
+    {
+      "id": "Q170",
+      "module": 5,
+      "type": "mcq",
+      "q": "How does the material define 'closing a deal'?",
+      "opts": [
+        "A. Ending a customer conversation without a resolution",
+        "B. Securing a customer's commitment to purchase a product or service",
+        "C. Reducing a product's price to encourage a sale",
+        "D. Escalating a sales inquiry to a supervisor"
+      ],
+      "ans": "B",
+      "exp": "Closing a deal is defined specifically as securing the customer's commitment to purchase \u2014 not merely ending a conversation, discounting a price, or escalating an inquiry, none of which necessarily result in a completed sale."
+    },
+    {
+      "id": "Q171",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which closing technique involves restating key benefits and confirming the next step?",
+      "opts": [
+        "A. The Scarcity Close",
+        "B. The Summary Close",
+        "C. The Trial Close",
+        "D. The Guarantee Close"
+      ],
+      "ans": "B",
+      "exp": "The Summary Close is specifically defined as restating key benefits and confirming next steps \u2014 distinct from Scarcity (urgency-based), Trial (a soft closing question), and Guarantee (a risk-free commitment)."
+    },
+    {
+      "id": "Q172",
+      "module": 5,
+      "type": "mcq",
+      "q": "'This loan offer expires in 24 hours!' is the material's example of which closing technique?",
+      "opts": [
+        "A. The Summary Close",
+        "B. The Scarcity Close",
+        "C. The Trial Close",
+        "D. The Guarantee Close"
+      ],
+      "ans": "B",
+      "exp": "This is the material's own example of the Scarcity Close, which highlights urgency to prompt a decision \u2014 distinct from the Summary Close, which restates benefits rather than creating time pressure."
+    },
+    {
+      "id": "Q173",
+      "module": 5,
+      "type": "mcq",
+      "q": "'Would you like me to send you the signup link?' is the material's example of which closing technique?",
+      "opts": [
+        "A. The Guarantee Close",
+        "B. The Trial Close",
+        "C. The Scarcity Close",
+        "D. The Summary Close"
+      ],
+      "ans": "B",
+      "exp": "This soft, low-pressure closing question is the material's own example of the Trial Close \u2014 testing readiness to proceed without the urgency of a Scarcity Close or the risk-reduction framing of a Guarantee Close."
+    },
+    {
+      "id": "Q174",
+      "module": 5,
+      "type": "mcq",
+      "q": "'You can cancel within 30 days if unsatisfied' is the material's example of which closing technique?",
+      "opts": [
+        "A. The Trial Close",
+        "B. The Guarantee Close",
+        "C. The Summary Close",
+        "D. The Scarcity Close"
+      ],
+      "ans": "B",
+      "exp": "Offering a risk-free commitment such as a 30-day cancellation window is the material's own example of the Guarantee Close \u2014 distinct from the Trial Close's soft questioning approach or the Scarcity Close's urgency framing."
+    },
+    {
+      "id": "Q175",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which digital tools does the material specifically recommend for addressing last-minute hesitations and providing personalized assistance during closing?",
+      "opts": [
+        "A. Push notifications and SMS reminders only",
+        "B. Live chat tools, plus screen-sharing or video call options",
+        "C. Blockchain-based identity verification",
+        "D. Predictive analytics dashboards"
+      ],
+      "ans": "B",
+      "exp": "The material specifically names live chat and screen-sharing/video calls as tools for addressing hesitation at the closing stage \u2014 SMS reminders, blockchain identity, and predictive dashboards are relevant to other parts of the sales process, not specifically to closing."
+    },
+    {
+      "id": "Q176",
+      "module": 5,
+      "type": "mcq",
+      "q": "What challenge did Revolut face regarding its online credit card application process?",
+      "opts": [
+        "A. Applications were being approved too quickly, causing compliance concerns",
+        "B. Customers abandoned online credit card applications midway",
+        "C. Customers were completing applications but not activating their cards",
+        "D. The application form contained factual errors"
+      ],
+      "ans": "B",
+      "exp": "Revolut's stated challenge was mid-application abandonment \u2014 not overly fast approvals, post-completion inactivity, or form errors, none of which appear in this case."
+    },
+    {
+      "id": "Q177",
+      "module": 5,
+      "type": "mcq",
+      "q": "Which of the following was NOT part of Revolut's AI-driven solution to reduce credit card application abandonment?",
+      "opts": [
+        "A. AI-driven chatbots sending real-time assistance offers to incomplete applicants",
+        "B. Requiring customers to restart the entire application from scratch if interrupted",
+        "C. Personalized follow-up emails offering exclusive interest rates",
+        "D. One-click resumption of an application to remove friction"
+      ],
+      "ans": "B",
+      "exp": "Revolut's actual solution specifically enabled one-click resumption to reduce friction \u2014 requiring a full restart would add friction and directly contradict the case's stated approach and outcome."
+    },
+    {
+      "id": "Q178",
+      "module": 5,
+      "type": "mcq",
+      "q": "What outcomes did Revolut report from its AI-driven closing strategy?",
+      "opts": [
+        "A. A 42% increase in credit card completions and a 30% reduction in drop-off rates",
+        "B. A 42% decrease in completions despite reduced drop-off",
+        "C. No measurable change in completions or drop-off",
+        "D. A 30% increase in drop-off rates alongside higher completions"
+      ],
+      "ans": "B",
+      "exp": "The reported outcomes were a 42% increase in credit card completions and a 30% reduction in drop-off rates \u2014 both improving together, unlike the mismatched pairings offered in the other options."
+    },
+    {
+      "id": "Q179",
+      "module": 5,
+      "type": "mcq",
+      "q": "What is the stated lesson from Revolut's AI-driven closing case for Access Bank?",
+      "opts": [
+        "A. Automated follow-ups improve conversions, and reducing friction in the application process boosts closure rates",
+        "B. Manual follow-up calls are more effective than automated messaging",
+        "C. Credit card applications should require additional verification steps to improve completion",
+        "D. AI chatbots should only be used after a sale has already closed"
+      ],
+      "ans": "B",
+      "exp": "The explicit lesson is that automated follow-ups improve conversion and reduced friction boosts closure \u2014 the opposite of adding verification steps or preferring manual calls, and the case shows AI chatbots acting *during*, not after, the sales process."
+    },
+    {
+      "id": "Q180",
+      "module": 5,
+      "type": "mcq",
+      "q": "A customer has engaged positively throughout a WhatsApp sales conversation but hasn't yet committed. Which closing technique would be most appropriate as a low-pressure next step, based on the module's guidance?",
+      "opts": [
+        "A. The Scarcity Close, by immediately imposing a strict deadline",
+        "B. The Trial Close, by asking a soft question like whether they'd like the signup link sent",
+        "C. Ending the conversation without any closing attempt",
+        "D. Repeating the product's features without asking anything"
+      ],
+      "ans": "B",
+      "exp": "A soft, low-pressure closing question \u2014 the Trial Close \u2014 is the appropriate next step for a positively engaged but uncommitted customer, rather than an aggressive Scarcity Close, silence, or simply repeating information already covered."
+    },
+    {
+      "id": "Q181",
+      "module": 5,
+      "type": "mcq",
+      "q": "A relationship manager wants to reduce hesitation for a customer close to finalizing a savings account application but unsure about a specific fee. Which combination of techniques from this module would be most appropriate?",
+      "opts": [
+        "A. Ignore the fee concern and proceed directly to a Scarcity Close",
+        "B. Apply the A.P.P.A. framework to address the fee objection, then use a Trial or Guarantee Close once reassured",
+        "C. Escalate immediately to a supervisor without further discussion",
+        "D. Offer a Summary Close without addressing the fee concern first"
+      ],
+      "ans": "B",
+      "exp": "The logical sequence is to resolve the underlying objection first \u2014 using A.P.P.A. to acknowledge and address the fee concern \u2014 before attempting a close; skipping straight to closing (Scarcity or Summary) while ignoring the stated concern risks losing the sale."
+    },
+    {
+      "id": "Q182",
+      "module": 5,
+      "type": "mcq",
+      "q": "Comparing the GTBank and Revolut cases in this module, what factor is common to both banks' approaches to overcoming customer hesitation?",
+      "opts": [
+        "A. Both relied exclusively on discounted pricing to overcome hesitation",
+        "B. Both combined digital tools (calculators, chatbots) with reassurance mechanisms (testimonials, personalized offers) to build confidence at the point of friction",
+        "C. Both eliminated online applications in favour of in-branch processing",
+        "D. Neither case involved any use of AI or automation"
+      ],
+      "ans": "B",
+      "exp": "Both cases used digital tools paired with reassurance \u2014 GTBank's calculator and testimonials, Revolut's chatbot assistance and personalized offers \u2014 to reduce friction at the exact point customers hesitated, rather than relying on pricing discounts or reverting to branch-only processing."
+    },
+    {
+      "id": "Q183",
+      "module": 5,
+      "type": "mcq",
+      "q": "In the module's role-play scenario, a customer objects: 'I've heard online savings accounts have hidden fees. I prefer visiting a branch instead.' Applying A.P.P.A., which response sequence is most appropriate as the first two steps?",
+      "opts": [
+        "A. Immediately offer a Scarcity Close, then explain fees only if asked",
+        "B. Acknowledge the concern about fees, then provide evidence such as a clear, transparent fee schedule",
+        "C. Ask an open-ended question first, skipping acknowledgment entirely",
+        "D. Personalize the solution before acknowledging the concern"
+      ],
+      "ans": "B",
+      "exp": "A.P.P.A.'s correct order begins with Acknowledge (validating the fee concern) followed by Provide Evidence (a transparent fee schedule) \u2014 skipping straight to closing, asking questions before acknowledging, or personalizing before acknowledging all invert the framework's intended sequence."
+    },
+    {
+      "id": "Q184",
+      "module": 5,
+      "type": "mcq",
+      "q": "Why does the material caution against pairing the correct answer's justification with distractors that offer no justification at all when designing a persuasive sales message?",
+      "opts": [
+        "A. Because customers cannot process any justification in digital messages",
+        "B. Because a message's persuasive power comes from consistent reasoning, and one-sided reasoning fails to address a customer's actual objection",
+        "C. Because justifications are prohibited by advertising regulation",
+        "D. Because shorter messages always outperform longer ones"
+      ],
+      "ans": "B",
+      "exp": "This question tests the underlying logic of the A.P.P.A. framework itself \u2014 a persuasive response needs Provide Evidence and Personalize working together, not just an assertion; the framework fails if reasoning is one-sided rather than addressing the customer's actual stated concern."
+    },
+    {
+      "id": "Q185",
+      "module": 5,
+      "type": "mcq",
+      "q": "A bank wants to design a digital closing sequence for a WhatsApp-based savings account objection, combining this module's frameworks. Which sequence best reflects the correct integrated approach?",
+      "opts": [
+        "A. Skip A.P.P.A. entirely and jump straight to a Guarantee Close",
+        "B. Use A.P.P.A. to resolve the objection (Acknowledge \u2192 Provide Evidence \u2192 Personalize \u2192 Ask Open-Ended Questions), then apply an appropriate closing technique such as Trial or Guarantee Close",
+        "C. Use only the Scarcity Close regardless of the objection raised",
+        "D. Apply active listening only, with no objection-handling framework or closing technique"
+      ],
+      "ans": "B",
+      "exp": "The correct integrated flow resolves the objection fully via A.P.P.A. before attempting to close \u2014 jumping straight to closing, using only one aggressive technique regardless of context, or omitting a formal framework altogether all skip steps the module treats as necessary for effective conversion."
+    },
+    {
+      "id": "Q186",
+      "module": 5,
+      "type": "mcq",
+      "q": "Considering both this module's objection-handling table and the GTBank/Revolut case studies together, what broader principle do they collectively support?",
+      "opts": [
+        "A. Objections should be minimized by hiding potentially concerning information",
+        "B. Directly addressing the specific concern behind an objection \u2014 with the right tool or technique matched to that concern \u2014 builds trust and improves conversion",
+        "C. All customer objections stem from the same underlying cause and require an identical response",
+        "D. Digital sales conversion is unrelated to how effectively objections are handled"
+      ],
+      "ans": "B",
+      "exp": "Across the objection table and both cases, the consistent principle is matching the right tool or technique to the specific concern behind each objection \u2014 not hiding information, treating all objections as identical, or dismissing objection-handling as unrelated to conversion outcomes."
+    },
+    {
+      "id": "Q187",
+      "module": 5,
+      "type": "mcq",
+      "q": "A relationship manager successfully applies A.P.P.A. to resolve a customer's fee objection, but the customer still hesitates to commit. Based on the module's guidance, what should the manager do next?",
+      "opts": [
+        "A. End the conversation, since the objection was already addressed",
+        "B. Move to an appropriate closing technique, such as a Trial Close, to gauge and secure the customer's commitment",
+        "C. Repeat the same A.P.P.A. sequence from the beginning",
+        "D. Escalate to a supervisor without attempting a close"
+      ],
+      "ans": "B",
+      "exp": "Resolving an objection is a precondition for closing, not a substitute for it \u2014 the manager should proceed to an appropriate closing technique to test and secure commitment, rather than ending the conversation, repeating the same framework, or escalating unnecessarily."
+    },
+    {
+      "id": "Q188",
+      "module": 6,
+      "type": "mcq",
+      "q": "According to the module overview, what four forces are identified as shaping the future of digital banking sales?",
+      "opts": [
+        "A. Branch expansion, telephone banking, direct mail, and paper processing",
+        "B. Artificial intelligence, automation, hyper-personalization, and blockchain technologies",
+        "C. Internet banking, SMS alerts, mini-statements, and early CRM systems",
+        "D. Regulatory reform, interest rate policy, inflation, and currency devaluation"
+      ],
+      "ans": "B",
+      "exp": "The module explicitly names AI, automation, hyper-personalization, and blockchain as the four forces shaping the future of digital sales \u2014 the other option sets describe either past-era technologies or unrelated macroeconomic factors not discussed in this module."
+    },
+    {
+      "id": "Q189",
+      "module": 6,
+      "type": "mcq",
+      "q": "What risk does the module identify for banks that fail to adapt to AI, automation, hyper-personalization, and blockchain?",
+      "opts": [
+        "A. A temporary dip in quarterly profits with no long-term consequences",
+        "B. Losing market share to fintech disruptors",
+        "C. Increased regulatory scrutiny only, with no competitive impact",
+        "D. A mandatory merger with a larger institution"
+      ],
+      "ans": "B",
+      "exp": "The module warns specifically that banks failing to adapt risk losing market share to fintech disruptors \u2014 not a temporary profit dip, purely regulatory consequences, or a forced merger, none of which the material states."
+    },
+    {
+      "id": "Q190",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which three specific actions does AI enable in transforming digital sales, according to the module?",
+      "opts": [
+        "A. Processing physical cash deposits, printing statements, and issuing debit cards",
+        "B. Analyzing customer behaviour to predict needs, automating personalized cross-sell/upsell recommendations, and improving lead scoring for high-value customers",
+        "C. Setting interest rates, approving all loans automatically, and closing branches",
+        "D. Managing payroll, scheduling staff shifts, and processing tax filings"
+      ],
+      "ans": "B",
+      "exp": "The three AI-enabled actions specifically named are behaviour-based need prediction, automated personalized recommendations, and improved lead scoring \u2014 not cash handling, blanket loan approval, or internal HR/operations functions, none of which fall under this module's AI discussion."
+    },
+    {
+      "id": "Q191",
+      "module": 6,
+      "type": "mcq",
+      "q": "What challenge was Citibank trying to solve with its AI-powered sales assistant for digital loan applications?",
+      "opts": [
+        "A. A shortage of loan products to offer customers",
+        "B. Wanting to increase digital loan applications but struggling with customer drop-offs",
+        "C. Excessive fraud in its existing loan portfolio",
+        "D. Regulatory pressure to reduce loan approval speed"
+      ],
+      "ans": "B",
+      "exp": "Citibank's stated challenge was increasing digital loan applications while struggling with customer drop-offs \u2014 not a product shortage, fraud issue, or regulatory pressure to slow approvals, none of which appear in this case."
+    },
+    {
+      "id": "Q192",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following was NOT part of Citibank's AI-powered sales assistant solution?",
+      "opts": [
+        "A. Analyzing transaction history to predict which customers needed loans",
+        "B. Discontinuing mobile notifications in favour of postal mail only",
+        "C. Sending personalized loan offers via mobile notifications",
+        "D. Integrating AI-powered chatbots for real-time Q&A on loan applications"
+      ],
+      "ans": "B",
+      "exp": "Citibank's actual solution relied on mobile notifications and AI chatbots \u2014 shifting to postal mail would contradict the digital-first, real-time nature of the solution described and is not mentioned anywhere in the case."
+    },
+    {
+      "id": "Q193",
+      "module": 6,
+      "type": "mcq",
+      "q": "What outcomes did Citibank report from its AI-powered sales assistant initiative?",
+      "opts": [
+        "A. A 60% increase in digital loan applications and higher conversion rates from personalized outreach",
+        "B. A 60% decrease in applications despite improved conversion rates",
+        "C. No measurable change in either applications or conversion rates",
+        "D. Higher applications but a decline in conversion rates"
+      ],
+      "ans": "B",
+      "exp": "The reported outcome was a 60% increase in digital loan applications alongside higher conversion rates from the personalized outreach \u2014 both metrics improving together, unlike the mismatched pairings in the other options."
+    },
+    {
+      "id": "Q194",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the stated lesson from Citibank's AI sales optimization case for Access Bank?",
+      "opts": [
+        "A. AI-driven insights improve product targeting, and banks must integrate AI-powered engagement tools for digital sales success",
+        "B. AI tools should be limited to fraud detection only",
+        "C. Personalized outreach is less effective than mass, undifferentiated marketing",
+        "D. Mobile notifications should be discontinued in favour of in-branch consultation"
+      ],
+      "ans": "B",
+      "exp": "The explicit lesson is that AI-driven insight improves targeting and that AI-powered engagement tools are necessary for digital sales success \u2014 the opposite of restricting AI to fraud detection, preferring undifferentiated marketing, or abandoning mobile notifications."
+    },
+    {
+      "id": "Q195",
+      "module": 6,
+      "type": "mcq",
+      "q": "According to the module, what is the primary role of automation in digital sales engagement?",
+      "opts": [
+        "A. Replacing all customer-facing roles with fully autonomous systems",
+        "B. Streamlining repetitive tasks such as email follow-ups and onboarding processes",
+        "C. Setting monetary policy for the central bank",
+        "D. Eliminating the need for any human oversight in lending decisions"
+      ],
+      "ans": "B",
+      "exp": "Automation's stated role is streamlining repetitive tasks like follow-ups and onboarding \u2014 not eliminating all customer-facing roles or human lending oversight entirely, and it has no connection to central bank monetary policy."
+    },
+    {
+      "id": "Q196",
+      "module": 6,
+      "type": "mcq",
+      "q": "What challenge was Access Bank trying to solve with its AI chatbot for lead generation, as described in Module 6?",
+      "opts": [
+        "A. A lack of digital marketing budget",
+        "B. Wanting to reduce loan application drop-off rates on its website",
+        "C. Excessive branch congestion during peak hours",
+        "D. Low awareness of its mobile app among younger customers"
+      ],
+      "ans": "B",
+      "exp": "Access Bank's stated challenge was reducing loan application drop-off rates on its website \u2014 not budget constraints, branch congestion, or app awareness, none of which appear in this specific case."
+    },
+    {
+      "id": "Q197",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following was NOT part of Access Bank's AI chatbot solution for lead generation?",
+      "opts": [
+        "A. Engaging website visitors with real-time product recommendations",
+        "B. Automating the initial loan screening process to reduce response time",
+        "C. Redirecting high-value leads to human sales agents for personalized support",
+        "D. Requiring every visitor to complete a mandatory phone interview before proceeding"
+      ],
+      "ans": "B",
+      "exp": "Access Bank's actual solution combined real-time recommendations, automated initial screening, and escalation of high-value leads to human agents \u2014 a mandatory phone interview for every visitor would add friction and contradicts the automation-driven design of this solution."
+    },
+    {
+      "id": "Q198",
+      "module": 6,
+      "type": "mcq",
+      "q": "What outcomes did Access Bank report from its AI chatbot lead-generation initiative?",
+      "opts": [
+        "A. A 35% increase in online product inquiries and a 50% reduction in response time",
+        "B. A 35% decrease in inquiries despite faster response times",
+        "C. No measurable change in inquiries or response time",
+        "D. Faster response time but a decline in conversion rates"
+      ],
+      "ans": "B",
+      "exp": "The reported outcomes were a 35% increase in online product inquiries and a 50% reduction in response time to customer sales queries \u2014 both improving together, unlike the mismatched pairings offered in the other options."
+    },
+    {
+      "id": "Q199",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the stated lesson from Access Bank's AI chatbot case regarding the balance between automation and human interaction?",
+      "opts": [
+        "A. Automated chatbots should fully replace human sales agents",
+        "B. Automated chatbots improve efficiency but must be complemented by human interaction, and personalized AI-driven conversations enhance customer experience",
+        "C. Human interaction should be avoided entirely once a chatbot is deployed",
+        "D. Chatbots are ineffective and should be phased out in favour of manual processes"
+      ],
+      "ans": "B",
+      "exp": "The explicit lesson balances efficiency gains from automation with the continued need for human interaction, particularly for high-value leads \u2014 not full replacement of humans, elimination of human involvement, or abandoning chatbots altogether."
+    },
+    {
+      "id": "Q200",
+      "module": 6,
+      "type": "mcq",
+      "q": "According to the module, what is the primary role of blockchain technology in financial services sales?",
+      "opts": [
+        "A. Setting interest rates for savings products",
+        "B. Securing transactions and ensuring transparency",
+        "C. Managing employee payroll and benefits",
+        "D. Designing marketing content for social media"
+      ],
+      "ans": "B",
+      "exp": "Blockchain's stated role is securing transactions and ensuring transparency \u2014 not setting interest rates, managing payroll, or designing marketing content, none of which fall within blockchain's function as described."
+    },
+    {
+      "id": "Q201",
+      "module": 6,
+      "type": "mcq",
+      "q": "What challenge did HSBC face regarding its online loan application process before adopting blockchain technology?",
+      "opts": [
+        "A. Slow loan approval times unrelated to any security issue",
+        "B. High fraud risks in online loan applications due to identity theft",
+        "C. A shortage of digital loan products",
+        "D. Regulatory prohibition on digital lending"
+      ],
+      "ans": "B",
+      "exp": "HSBC's stated challenge was high fraud risk from identity theft in online loan applications \u2014 not a general speed issue, product shortage, or regulatory ban, none of which are mentioned in this case."
+    },
+    {
+      "id": "Q202",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following was NOT part of HSBC's blockchain-powered digital identity verification solution?",
+      "opts": [
+        "A. Allowing instant KYC (Know Your Customer) checks",
+        "B. Discontinuing all digital loan applications in favour of in-branch processing",
+        "C. Reducing loan fraud by ensuring verified digital identities",
+        "D. Enhancing transaction security through encrypted blockchain-based contracts"
+      ],
+      "ans": "B",
+      "exp": "HSBC's actual solution kept digital applications running while securing them \u2014 instant KYC checks, verified identities, and encrypted contracts \u2014 discontinuing digital applications entirely would contradict the purpose of the initiative, which was to make digital lending safer, not eliminate it."
+    },
+    {
+      "id": "Q203",
+      "module": 6,
+      "type": "mcq",
+      "q": "What outcomes did HSBC report from its blockchain-powered digital identity verification initiative?",
+      "opts": [
+        "A. A 40% faster loan approval process and a 60% reduction in fraudulent loan applications",
+        "B. A 40% slower approval process despite reduced fraud",
+        "C. No measurable change in approval speed or fraud levels",
+        "D. Reduced approval speed and increased fraud simultaneously"
+      ],
+      "ans": "B",
+      "exp": "The reported outcomes were 40% faster loan approvals and a 60% reduction in fraudulent applications \u2014 both improving together as a direct result of instant, blockchain-verified KYC checks, unlike the mismatched pairings offered in the other options."
+    },
+    {
+      "id": "Q204",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is the stated lesson from HSBC's blockchain case for Access Bank?",
+      "opts": [
+        "A. Blockchain enhances identity verification and fraud prevention, and banks must integrate blockchain solutions for fraud-proof digital sales",
+        "B. Blockchain should be avoided as it slows down digital transactions",
+        "C. Identity verification is unnecessary once a customer has an existing account",
+        "D. Blockchain is only useful for cross-border payments, not loan applications"
+      ],
+      "ans": "B",
+      "exp": "The explicit lesson is that blockchain strengthens identity verification and fraud prevention and should be integrated for fraud-proof digital sales \u2014 directly contradicting the idea that it slows transactions, that verification becomes unnecessary, or that it's limited to cross-border payments only."
+    },
+    {
+      "id": "Q205",
+      "module": 6,
+      "type": "mcq",
+      "q": "According to the module, what is the primary role of Big Data Analytics in digital banking sales?",
+      "opts": [
+        "A. Replacing the need for any customer relationship management software",
+        "B. Driving better decision-making by analyzing large volumes of customer data, such as for predictive cross-selling and upselling",
+        "C. Setting the bank's annual regulatory capital requirements",
+        "D. Managing the physical security of branch locations"
+      ],
+      "ans": "B",
+      "exp": "Big Data Analytics is specifically described as driving better decision-making through large-scale customer data analysis, with predictive cross-selling/upselling given as the example \u2014 not CRM replacement, regulatory capital requirements, or physical branch security, none of which relate to this pillar."
+    },
+    {
+      "id": "Q206",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which two technologies from Module 6, when combined, best explain how a bank could both predict a customer's need for a loan AND verify their identity securely and instantly during the application?",
+      "opts": [
+        "A. Social media management tools and email marketing",
+        "B. AI & Predictive Analytics (to predict the need) combined with Blockchain (to verify identity securely)",
+        "C. Live chat and behavioural analytics tools alone",
+        "D. SMART targets and the A.P.P.A. framework"
+      ],
+      "ans": "B",
+      "exp": "AI & Predictive Analytics is the pillar responsible for anticipating customer needs (as in the Citibank case), while Blockchain is the pillar responsible for secure, instant identity verification (as in the HSBC case) \u2014 the other technology pairings named don't address both the prediction and verification functions together."
+    },
+    {
+      "id": "Q207",
+      "module": 6,
+      "type": "mcq",
+      "q": "According to the module, what does 'personalization' mean as a trend in customer expectations, illustrated by dynamic product suggestions on banking apps?",
+      "opts": [
+        "A. Customers expect identical offers regardless of individual preferences",
+        "B. Customers expect tailored recommendations based on their preferences",
+        "C. Customers expect all products to be free of charge",
+        "D. Customers expect only human-delivered, non-digital recommendations"
+      ],
+      "ans": "B",
+      "exp": "Personalization as a customer expectation trend means tailored recommendations based on individual preferences \u2014 dynamic product suggestions being the cited example \u2014 not identical offers for everyone, free products, or a rejection of digital recommendation tools."
+    },
+    {
+      "id": "Q208",
+      "module": 6,
+      "type": "mcq",
+      "q": "'Instant gratification,' illustrated by real-time loan approvals via digital platforms, refers to what customer expectation trend?",
+      "opts": [
+        "A. Customers expect faster response times and streamlined processes as non-negotiable",
+        "B. Customers expect banks to offer free products in exchange for loyalty",
+        "C. Customers expect exclusively in-person service for all transactions",
+        "D. Customers expect unlimited free international transfers"
+      ],
+      "ans": "B",
+      "exp": "Instant gratification specifically refers to faster response times and streamlined processes becoming non-negotiable customer expectations \u2014 real-time loan approval is the cited example \u2014 not free products, exclusively in-person service, or unrelated transfer benefits."
+    },
+    {
+      "id": "Q209",
+      "module": 6,
+      "type": "mcq",
+      "q": "'Mobile-first experiences,' illustrated by apps with intuitive interfaces for on-the-go users, reflect what broader customer trend?",
+      "opts": [
+        "A. A declining reliance on smartphones for banking decisions",
+        "B. Increasing reliance on smartphones for banking and purchasing decisions",
+        "C. A shift back toward desktop-based online banking",
+        "D. A preference for paper-based application forms"
+      ],
+      "ans": "B",
+      "exp": "Mobile-first experiences reflect an *increasing*, not declining, reliance on smartphones for banking and purchasing decisions \u2014 directly contradicting a shift back to desktop or paper-based processes, neither of which the module describes as a trend."
+    },
+    {
+      "id": "Q210",
+      "module": 6,
+      "type": "mcq",
+      "q": "What is 'Metaverse Banking,' as identified among the future trends to watch in the module?",
+      "opts": [
+        "A. A system for processing physical cash deposits remotely",
+        "B. Virtual bank branches operating within platforms like Decentraland",
+        "C. A blockchain-based cryptocurrency exclusive to one bank",
+        "D. A rebranding of existing mobile banking apps"
+      ],
+      "ans": "B",
+      "exp": "Metaverse Banking is specifically defined as virtual branches within platforms like Decentraland \u2014 not a cash-processing system, a proprietary cryptocurrency, or simply a mobile app rebrand, none of which match the module's definition."
+    },
+    {
+      "id": "Q211",
+      "module": 6,
+      "type": "mcq",
+      "q": "An Access Bank API allowing Uber to offer car loans directly within its own app is the module's example of which future trend?",
+      "opts": [
+        "A. Metaverse Banking",
+        "B. Embedded Finance \u2014 banking services integrated into non-financial apps",
+        "C. Voice & Biometric Banking",
+        "D. Behavioural Analytics"
+      ],
+      "ans": "B",
+      "exp": "This is the module's own example of Embedded Finance \u2014 banking services (car loans) integrated directly into a non-financial app (Uber) via API \u2014 distinct from Metaverse Banking (virtual branches) or Voice & Biometric Banking (interaction/authentication tools)."
+    },
+    {
+      "id": "Q212",
+      "module": 6,
+      "type": "mcq",
+      "q": "According to the module's case study prompt, what strategic approach has allowed Nubank to dominate its market and build customer loyalty?",
+      "opts": [
+        "A. An extensive physical branch network across multiple countries",
+        "B. A mobile-first strategy",
+        "C. Exclusive reliance on traditional print advertising",
+        "D. A focus solely on corporate, rather than retail, banking clients"
+      ],
+      "ans": "B",
+      "exp": "The module specifically frames Nubank's success around a mobile-first strategy \u2014 the opposite of relying on physical branches, print advertising, or a corporate-only focus, none of which are associated with Nubank in the material."
+    },
+    {
+      "id": "Q213",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is NOT identified as an evolving skillset requirement for retail banking sales teams in the digital era?",
+      "opts": [
+        "A. Data literacy to interpret analytics and make data-driven decisions",
+        "B. Advanced skill in manual, paper-based loan documentation",
+        "C. Adoption of technology to enhance efficiency and customer engagement",
+        "D. Placing the customer at the core of sales efforts (customer-centric strategies)"
+      ],
+      "ans": "B",
+      "exp": "The stated evolving skillsets are data literacy, technology adoption, and customer-centricity \u2014 manual, paper-based documentation skill is the opposite of what's required, reflecting the traditional era the digital shift is moving away from."
+    },
+    {
+      "id": "Q214",
+      "module": 6,
+      "type": "mcq",
+      "q": "What does the module mean by 'collaborative approaches' as an implication for retail banking sales teams?",
+      "opts": [
+        "A. Sales teams should operate entirely independently of marketing and IT",
+        "B. Aligning sales teams with marketing and IT for seamless execution of digital initiatives",
+        "C. Outsourcing all collaboration to external consultants",
+        "D. Merging the sales and compliance departments into a single unit"
+      ],
+      "ans": "B",
+      "exp": "'Collaborative approaches' specifically means aligning sales with marketing and IT teams for seamless digital execution \u2014 not operating in isolation, full outsourcing, or merging with compliance, none of which the module describes."
+    },
+    {
+      "id": "Q215",
+      "module": 6,
+      "type": "mcq",
+      "q": "A sales team uses data to offer a mortgage to a customer who has been searching for real estate on the banking app. Which strategic shift does this best illustrate?",
+      "opts": [
+        "A. Investing in cybersecurity",
+        "B. From Product-Centric to Customer-Centric: using data to anticipate needs",
+        "C. Upskilling sales teams as digital consultants",
+        "D. Collaborative approaches with marketing and IT"
+      ],
+      "ans": "B",
+      "exp": "This is the module's own example of the Product-Centric to Customer-Centric shift \u2014 using behavioural data (real estate searches) to anticipate a specific need (a mortgage offer) \u2014 distinct from cybersecurity investment or team upskilling, which are separate strategic shifts."
+    },
+    {
+      "id": "Q216",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the module's Case Study 1 ('Cross-Selling in a Digital Banking Environment'), which customer segment does the retail bank's sales team specifically target for a savings plan campaign?",
+      "opts": [
+        "A. Customers with low transaction volumes and high account balances",
+        "B. Customers with high transaction volumes but low account balances",
+        "C. Customers who have never held any account with the bank",
+        "D. Customers exclusively in the SME segment"
+      ],
+      "ans": "B",
+      "exp": "The case specifically targets customers with high transaction volumes but low account balances \u2014 a CRM-identified pattern suggesting they could benefit from a savings-oriented cross-sell, not customers with the opposite profile, no prior relationship, or an SME-only focus."
+    },
+    {
+      "id": "Q217",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which of the following is listed as a key point to analyze in Case Study 1 on cross-selling in a digital banking environment?",
+      "opts": [
+        "A. The bank's total number of physical branches",
+        "B. The effectiveness of the CRM data utilization and strategies used to personalize the outreach",
+        "C. The colour scheme used in the campaign's marketing materials",
+        "D. The number of years the bank has been in operation"
+      ],
+      "ans": "B",
+      "exp": "The case study's key analysis points are CRM data utilization, personalization strategy, and campaign success metrics \u2014 branch count, marketing colour scheme, and years in operation are not part of the stated analytical framework for this case."
+    },
+    {
+      "id": "Q218",
+      "module": 6,
+      "type": "mcq",
+      "q": "In Case Study 2 ('Leveraging AI for Sales Conversion'), what three functions do the digital-first bank's AI chatbots perform for prospects?",
+      "opts": [
+        "A. Approving loans, closing accounts, and issuing debit cards",
+        "B. Handling FAQs, recommending suitable products, and guiding customers through the application process",
+        "C. Setting interest rates, managing payroll, and auditing financial statements",
+        "D. Conducting credit checks, filing tax returns, and processing insurance claims"
+      ],
+      "ans": "B",
+      "exp": "Case Study 2's chatbots specifically handle FAQs, product recommendations, and application guidance \u2014 not loan approval, account closure, payroll, or unrelated back-office/compliance functions, none of which are described in this case."
+    },
+    {
+      "id": "Q219",
+      "module": 6,
+      "type": "mcq",
+      "q": "According to the material, what is an action plan?",
+      "opts": [
+        "A. A general statement of company values with no specific steps",
+        "B. A structured strategy outlining specific steps to achieve a goal, including responsibilities, timelines, and success metrics",
+        "C. A single-page marketing brochure describing a product",
+        "D. A legal document required only for regulatory audits"
+      ],
+      "ans": "B",
+      "exp": "An action plan is defined as a structured strategy with specific steps, assigned responsibilities, timelines, and success metrics \u2014 not a general values statement, a marketing brochure, or a purely regulatory document, none of which match the definition given."
+    },
+    {
+      "id": "Q220",
+      "module": 6,
+      "type": "mcq",
+      "q": "Which is the correct first step in the material's four-step process for creating an action plan?",
+      "opts": [
+        "A. Set Metrics",
+        "B. Define Objectives \u2014 clarify the sales goals",
+        "C. Assign Responsibilities",
+        "D. Identify Key Activities"
+      ],
+      "ans": "B",
+      "exp": "The four-step sequence begins with Define Objectives (clarifying the goal, e.g. increasing cross-sell revenue by 15% in Q3), followed by Identify Key Activities, Assign Responsibilities, and finally Set Metrics \u2014 starting with metrics or responsibilities before the objective is defined would invert this logical order."
+    },
+    {
+      "id": "Q221",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the worked action-plan example for improving upselling rates on premium banking products, which activities are specifically listed?",
+      "opts": [
+        "A. Reducing product prices and removing eligibility criteria",
+        "B. Conducting staff training on product knowledge and deploying targeted email campaigns",
+        "C. Closing underperforming branches and reallocating staff",
+        "D. Outsourcing the entire upselling function to a third party"
+      ],
+      "ans": "B",
+      "exp": "The worked example specifically lists staff training on product knowledge and targeted email campaigns as the key activities \u2014 not price cuts, branch closures, or full outsourcing, none of which appear in this example."
+    },
+    {
+      "id": "Q222",
+      "module": 6,
+      "type": "mcq",
+      "q": "In the same worked action-plan example, what is the stated success metric, and within what timeframe?",
+      "opts": [
+        "A. A 25% increase in branch footfall within one month",
+        "B. A 10% increase in premium product subscriptions within two months",
+        "C. A 40% increase in customer satisfaction scores within one year",
+        "D. A 60% reduction in customer complaints within three months"
+      ],
+      "ans": "B",
+      "exp": "The stated metric is a 10% increase in premium product subscriptions within two months \u2014 the other figures and timeframes belong to different case studies or examples elsewhere in the module and are not part of this specific worked example."
+    },
+    {
+      "id": "Q223",
+      "module": 6,
+      "type": "mcq",
+      "q": "A relationship manager is designing an action plan for a new SME loan campaign and has already defined the objective and key activities. What should be determined next, before the plan is considered complete?",
+      "opts": [
+        "A. Nothing further is needed once objectives and activities are defined",
+        "B. Assign responsibilities to team members with clear deadlines, then set metrics for measuring success",
+        "C. Immediately launch the campaign without assigning any responsibilities",
+        "D. Delete the defined objective and start over with a new one"
+      ],
+      "ans": "B",
+      "exp": "Following the four-step sequence, after objectives and activities are defined the plan still needs responsibilities assigned with deadlines, followed by success metrics \u2014 skipping these final two steps would leave the plan without clear ownership or a way to measure whether it succeeded."
+    },
+    {
+      "id": "Q224",
+      "module": 6,
+      "type": "mcq",
+      "q": "Drawing on both practical case studies and the action-plan framework together, which approach best reflects how Access Bank should structure a new digital cross-selling initiative end-to-end?",
+      "opts": [
+        "A. Launch the campaign first, then decide afterward which customer segment and CRM data to use",
+        "B. Use CRM/behavioural data to identify the target segment and personalize the offer (as in Case Study 1), then define a SMART-aligned action plan with clear objectives, activities, responsibilities, and metrics to execute and track it",
+        "C. Skip data analysis entirely and apply the same offer uniformly to all customers",
+        "D. Define success metrics before deciding what the campaign objective actually is"
+      ],
+      "ans": "B",
+      "exp": "The end-to-end approach combines the case study's data-driven segmentation and personalization with the action-plan framework's structured sequence (objectives before activities, activities before responsibilities, responsibilities before metrics) \u2014 launching before targeting, skipping data analysis, or setting metrics before an objective all invert the logical order the material establishes."
+    }
+  ]
+}

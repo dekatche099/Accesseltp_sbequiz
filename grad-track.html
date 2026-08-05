@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graduate Track – Banking Quiz Hub</title>
+  <title>Retail Track – Banking Quiz Hub</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -16,7 +16,7 @@
     .back-link {
       display: inline-block;
       margin-bottom: 30px;
-      color: #93c5fd;
+      color: #6ee7b7;
       text-decoration: none;
       font-weight: 500;
       transition: 0.2s;
@@ -25,8 +25,8 @@
     h1 { color: white; font-size: 2rem; margin-bottom: 8px; }
     .track-badge {
       display: inline-block;
-      background: rgba(59,130,246,0.3);
-      color: #93c5fd;
+      background: rgba(16,185,129,0.3);
+      color: #6ee7b7;
       padding: 4px 14px;
       border-radius: 100px;
       font-size: 0.8rem;
@@ -55,9 +55,6 @@
     .tier-header:first-of-type { margin-top: 0; }
     .tier-header h2 { color: white; font-size: 1.3rem; }
     .tier-count { background: rgba(255,255,255,0.1); color: #c8d6e5; font-size: 0.75rem; padding: 3px 12px; border-radius: 100px; }
-    .tier-note { color: #8fa3b8; font-size: 0.8rem; margin: -10px 0 20px; }
-    .sub-header { color: #93c5fd; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; margin: 22px 0 10px; }
-    .sub-header:first-of-type { margin-top: 0; }
     .tier-inprogress .course-card.available { border-color: rgba(251,191,36,0.4); }
     .tier-inprogress .course-card.available:hover { border-color: #fbbf24; background: rgba(251,191,36,0.12); }
     .tier-done .course-card { opacity: 0.82; }
@@ -75,8 +72,8 @@
     }
     .course-card.available { cursor: pointer; }
     .course-card.available:hover {
-      background: rgba(59,130,246,0.2);
-      border-color: #3b82f6;
+      background: rgba(16,185,129,0.2);
+      border-color: #10b981;
       transform: translateY(-4px);
     }
     .course-card.coming-soon {
@@ -106,8 +103,8 @@
       align-items: center;
       margin-bottom: 20px;
       padding: 10px 16px;
-      background: rgba(59,130,246,0.12);
-      border: 1px solid rgba(59,130,246,0.25);
+      background: rgba(16,185,129,0.12);
+      border: 1px solid rgba(16,185,129,0.25);
       border-radius: 10px;
       color: #c8d6e5;
       font-size: 0.9rem;
@@ -116,7 +113,7 @@
       margin-right: auto;
     }
     .logged-in-bar.visible { display: flex; }
-    .logged-in-bar strong { color: #93c5fd; }
+    .logged-in-bar strong { color: #6ee7b7; }
     .logged-in-bar button {
       background: rgba(255,255,255,0.08);
       border: 1px solid rgba(255,255,255,0.2);
@@ -154,7 +151,7 @@
     .modal-box h2 {
       font-size: 1.6rem;
       margin-bottom: 10px;
-      color: #93c5fd;
+      color: #6ee7b7;
     }
     .modal-box p {
       color: #cbd5e1;
@@ -169,14 +166,14 @@
     }
     .modal-box li {
       padding: 6px 0 6px 28px;
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%2393c5fd" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>') left center no-repeat;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%236ee7b7" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>') left center no-repeat;
       background-size: 16px;
       color: #e2e8f0;
     }
     .modal-box .btn-primary {
-      background: #3b82f6;
+      background: #10b981;
       border: none;
-      color: white;
+      color: #0f172a;
       font-weight: 600;
       padding: 10px 28px;
       border-radius: 40px;
@@ -184,7 +181,7 @@
       font-size: 1rem;
       transition: background 0.2s;
     }
-    .modal-box .btn-primary:hover { background: #60a5fa; }
+    .modal-box .btn-primary:hover { background: #34d399; }
     @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
 
     @media (max-width: 550px) {
@@ -203,8 +200,8 @@
 
   <div class="container">
     <a href="index.html" class="back-link">← Back to tracks</a>
-    <h1>🎓 Graduate Track</h1>
-    <div class="track-badge">ELTP 14 · 15 · 16 · 17</div>
+    <h1>🏦 Retail Track</h1>
+    <div class="track-badge">ELTP 18 · 19 · 20 · 21</div>
 
     <a href="workbooks.html" class="workbooks-banner">
       <div class="wb-info">
@@ -277,7 +274,7 @@
         document.getElementById('trackUser').textContent = name;
 
         window.applyCredentialsToLinks = function() {
-          // no-op
+          // no-op – credentials are read from localStorage on target pages
         };
 
         document.getElementById('trackLogout').addEventListener('click', function() {
@@ -315,73 +312,62 @@
     })();
 
     // ---- Course data, grouped into 3 tiers based on the 2026 ELTP 14-21 calendar ----
-    // Tier 1 (top): being worked on right now — module is today/upcoming on the calendar.
-    //   Sub-grouped: JSON-engine courses (course.html?course=) first, legacy standalone HTML pages after.
+    // Tier 1 (top): being worked on right now — module is today/upcoming on the calendar
+    //   (JSON course.html links listed first, legacy standalone HTML pages after).
     // Tier 2 (middle): coming soon — no quiz built yet at all.
     // Tier 3 (bottom): already done — module's calendar date has already passed.
+    // Notes / assumptions to double check:
+    // - "Customer Service Excellence" and "Selling & Marketing of Financial Services" have no matching
+    //   date on the retail calendar (only on the grad one), so they stay in "In Progress" as a safe default.
+    // - "Retail Banking" is matched to "Retail Banking Strategy and Business Models" (08-11).
+    // - Added 3 courses that weren't listed here before, now that their JSON files exist:
+    //   "Introduction to Cyber Security" (cybersecurity.json, calendar 06-27 → Already Done for retail),
+    //   "Sales Effectiveness in a Digital World" (sedw.json, calendar 08-06),
+    //   "Bank Lending & Credit Management" (bank-lending-credit-management.json — assumed this is the
+    //   retail counterpart of the grad course, based on the calendar listing it as ".../Retail" 08-18 —
+    //   please confirm this slug is correct).
     const courseGroups = [
       {
         key: "inprogress",
-        label: "🔧 In Progress — Building Now",
-        note: "Ordered by how soon the module comes up on the calendar.",
-        sub: [
-          {
-            label: "JSON course engine (course.html)",
-            courses: [
-              { title: "International Trade Finance", status: "available", link: "course.html?course=itf", desc: "70 MCQs + 70 flashcards — 140 total" },
-              { title: "Introduction to Cyber Security", status: "available", link: "course.html?course=cybersecurity", desc: "Quiz now live — question bank added" },
-              { title: "Compliance & Ethics", status: "available", link: "course.html?course=compliance-banking", desc: "200 MCQs + 45 flashcards — 245 total" },
-              { title: "Enterprise Risk Management", status: "available", link: "course.html?course=erm", desc: "50 MCQs + 50 flashcards — 100 total" },
-              { title: "Credit Policy Guide Review", status: "available", link: "course.html?course=cpg-question-bank", desc: "550 unique dual‑mode questions" },
-              { title: "Basic Banking Operations", status: "available", link: "course.html?course=basic-banking-operations", desc: "150 MCQs + 39 flashcards — 189 total" },
-              { title: "Bank Lending & Credit Management", status: "available", link: "course.html?course=bank-lending-and-credit", desc: "133 MCQs + 60 flashcards — 193 total" },
-              { title: "Banking Regulations", status: "available", link: "course.html?course=banking-regulation-2023", desc: "250 MCQs covering key concepts" },
-              { title: "Selling & Marketing of Financial Services", status: "available", link: "course.html?course=smfs", desc: "Quiz now live — question bank added" }
-            ]
-          },
-          {
-            label: "Legacy standalone HTML pages (not yet on the platform)",
-            courses: [
-              { title: "Intra‑Africa Trade", status: "available", link: "afcfta-quiz.html", desc: "49 MCQs + 21 flashcards — 70 total" },
-              { title: "Finance in Global Markets", status: "available", link: "fgm-quiz.html", desc: "98 MCQs + 98 flashcards — 196 total" },
-              { title: "Money Laundering with KYC/AML/CFT", status: "available", link: "aml-quiz.html", desc: "70 MCQs + 25 flashcards — 95 total" }
-            ]
-          }
+        label: "🔧 In Progress",
+        courses: [
+          { title: "Building Customer Trust and Ethical Banking Practices", status: "available", link: "course.html?course=ethical-banking", desc: "240 MCQs" },
+          { title: "Sales Effectiveness in a Digital World", status: "available", link: "course.html?course=sedw", desc: "Quiz now live — question bank added" },
+          { title: "Retail Banking", status: "available", link: "course.html?course=retail-banking", desc: "240 MCQs" },
+          { title: "Credit Policy Guide Review", status: "available", link: "course.html?course=cpg-question-bank", desc: "550 unique dual‑mode questions" },
+          { title: "Bank Lending & Credit Management", status: "available", link: "course.html?course=bank-lending-credit-management", desc: "Quiz now live — question bank added" },
+          { title: "Innovative Product Development for Retail Banking", status: "available", link: "course.html?course=ipd_full_question_bank", desc: "Quiz now live — question bank added" },
+          { title: "Innovation and Design Thinking", status: "available", link: "course.html?course=innovation-design-thinking", desc: "350 MCQs covering key concepts" },
+          { title: "Financial Inclusion and Digital Accessibility", status: "available", link: "course.html?course=financial-inclusion", desc: "240 MCQs" },
+          { title: "Customer Service Excellence", status: "available", link: "course.html?course=customer-service-excellence", desc: "250 MCQs + 45 flashcards — 295 total" },
+          { title: "Selling & Marketing of Financial Services", status: "available", link: "course.html?course=smfs", desc: "Quiz now live — question bank added" }
         ]
       },
       {
         key: "coming",
         label: "⏳ Coming Soon",
-        note: null,
-        sub: [
-          {
-            label: null,
-            courses: []
-          }
+        courses: [
+          { title: "Nigerian Deposit Insurance Scheme", status: "coming", link: "#", desc: "Coming soon" },
+          { title: "Risk Management in Retail Banking", status: "coming", link: "#", desc: "Coming soon" }
         ]
       },
       {
         key: "done",
         label: "✅ Already Done",
-        note: null,
-        sub: [
-          {
-            label: null,
-            courses: [
-              { title: "Customer Service Excellence", status: "available", link: "course.html?course=customer-service-excellence", desc: "250 MCQs + 45 flashcards — 295 total" },
-              { title: "Micro & Macro Economics Quiz", status: "available", link: "course.html?course=economics", desc: "98 MCQs + 42 flashcards — 140 total" },
-              { title: "Fraud Risk Management & Detection", status: "available", link: "course.html?course=fraud-risk-management", desc: "150 MCQs covering key concepts" },
-              { title: "Elements of Banking", status: "available", link: "course.html?course=eob", desc: "140 MCQs + 60 flashcards — 200 total" },
-              { title: "Data Analysis (Power BI and Excel)", status: "available", link: "course.html?course=data-analysis", desc: "480 MCQs covering key concepts" },
-              { title: "Digital Technology in Banking", status: "available", link: "course.html?course=digital-banking", desc: "200 MCQs covering key concepts" },
-              { title: "Basic Accounting", status: "available", link: "course.html?course=accounting-quiz-mcq", desc: "264 MCQs + 264 flashcards — 528 total" },
-              { title: "Elements of Finance", status: "available", link: "course.html?course=eof", desc: "280 MCQs covering key concepts" },
-              { title: "Innovation and Design Thinking", status: "available", link: "course.html?course=innovation-design-thinking", desc: "350 MCQs covering key concepts" },
-              { title: "Banking & Insurance Fundamentals", status: "available", link: "course.html?course=role-of-insurance-banking", desc: "65 MCQs covering key concepts" },
-              { title: "Legal Aspects of Banking & Securities for Lending", status: "available", link: "course.html?course=legal-aspects-of-banking", desc: "322 MCQs covering key concepts" },
-              { title: "Financial Statement Analysis", status: "available", link: "course.html?course=fsa-eltp", desc: "343 MCQs + 60 Case Study Questions covering key concepts" }
-            ]
-          }
+        courses: [
+          { title: "Intra‑Africa Trade", status: "available", link: "afcfta-quiz.html", desc: "49 MCQs + 21 flashcards — 70 total" },
+          { title: "Economics Quiz", status: "available", link: "course.html?course=economics", desc: "98 MCQs + 42 flashcards — 140 total" },
+          { title: "Introduction to Cyber Security", status: "available", link: "course.html?course=cybersecurity", desc: "Quiz now live — question bank added" },
+          { title: "Elements of Banking", status: "available", link: "course.html?course=eob", desc: "140 MCQs + 60 flashcards — 200 total" },
+          { title: "Understanding Modern Retail Banking", status: "available", link: "retail-banking-quiz.html", desc: "90 MCQs + 30 flashcards — 120 total" },
+          { title: "Digital Technology in Banking", status: "available", link: "course.html?course=digital-banking", desc: "310 MCQs" },
+          { title: "Basic Accounting", status: "available", link: "course.html?course=accounting-quiz-mcq", desc: "264 MCQs + 264 flashcards — 528 total" },
+          { title: "Use of English & Business Writing", status: "available", link: "business-communication-writing.html", desc: "110 MCQs + 35 flashcards — 145 total" },
+          { title: "Data Analysis (Power BI and Excel)", status: "available", link: "course.html?course=data-analysis", desc: "480 MCQs covering key concepts" },
+          { title: "Banking Regulations", status: "available", link: "course.html?course=banking-regulation-2023", desc: "250 MCQs covering key concepts" },
+          { title: "Basic Banking Operations", status: "available", link: "course.html?course=basic-banking-operations", desc: "150 MCQs + 39 flashcards — 189 total" },
+          { title: "Customer Acquisition, Retention, and Relationship Management", status: "available", link: "course.html?course=access-bank-cust-acq-retention", desc: "Practice quiz covering customer acquisition, retention strategies, and relationship management" },
+          { title: "Strategic Marketing and Brand Management", status: "available", link: "course.html?course=access-bank-strategic-marketing", desc: "42 MCQs + 18 flashcards — 60 total" }
         ]
       }
     ];
@@ -423,17 +409,9 @@
     function render() {
       let html = '';
       courseGroups.forEach(group => {
-        const total = group.sub.reduce((sum, s) => sum + s.courses.length, 0);
-        if (total === 0) return; // skip empty tiers entirely
-        html += `<div class="tier-header"><h2>${group.label}</h2><span class="tier-count">${total}</span></div>`;
-        if (group.note) html += `<div class="tier-note">${escapeHtml(group.note)}</div>`;
-        html += `<div class="tier-${group.key}">`;
-        group.sub.forEach(sub => {
-          if (sub.courses.length === 0) return; // skip empty subgroups
-          if (sub.label) html += `<div class="sub-header">${escapeHtml(sub.label)}</div>`;
-          html += `<div class="course-grid">${sub.courses.map(cardHtml).join('')}</div>`;
-        });
-        html += `</div>`;
+        if (group.courses.length === 0) return; // skip empty tiers entirely
+        html += `<div class="tier-header"><h2>${group.label}</h2><span class="tier-count">${group.courses.length}</span></div>`;
+        html += `<div class="course-grid tier-${group.key}">${group.courses.map(cardHtml).join('')}</div>`;
       });
       container.innerHTML = html;
 

@@ -203,7 +203,7 @@
 <script>
   (function () {
     try {
-      if (localStorage.getItem('qb_theme') === 'dark') document.body.classList.add('dark');
+      if (localStorage.getItem('qb_theme') !== 'light') document.body.classList.add('dark');
     } catch (e) { /* default to day mode */ }
   })();
 </script>

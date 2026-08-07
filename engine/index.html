@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELTP Quiz Hub</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg-grad-1: #eef1f8;
+      --bg-grad-2: #dde3f0;
+      --text-primary: #1c2230;
+      --text-secondary: #5b6478;
+      --text-muted: #7a8296;
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+      --success: #16a34a;
+      --error: #dc2626;
+      --warning: #d97706;
+      --card-bg: rgba(255, 255, 255, 0.75);
+      --card-border: rgba(28, 34, 48, 0.10);
+      --overlay-1: rgba(0, 0, 0, 0.035);
+      --overlay-2: rgba(0, 0, 0, 0.06);
+      --input-bg: rgba(0, 0, 0, 0.035);
+      --input-border: rgba(28, 34, 48, 0.15);
+      --shadow-color: rgba(28, 34, 48, 0.15);
+      --modal-bg: #ffffff;
+      --modal-border: #dde1eb;
+      --on-accent: #ffffff;
+    }
+    body.dark {
+      --bg-grad-1: #0f2027;
+      --bg-grad-2: #203a43;
+      --text-primary: #ffffff;
+      --text-secondary: #94a3b8;
+      --text-muted: #6b7f94;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --success: #22c55e;
+      --error: #ef4444;
+      --warning: #fbbf24;
+      --card-bg: rgba(255, 255, 255, 0.06);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --overlay-1: rgba(255, 255, 255, 0.05);
+      --overlay-2: rgba(255, 255, 255, 0.08);
+      --input-bg: rgba(0, 0, 0, 0.3);
+      --input-border: rgba(255, 255, 255, 0.15);
+      --shadow-color: rgba(0, 0, 0, 0.5);
+      --modal-bg: #1e293b;
+      --modal-border: #334155;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, var(--bg-grad-1) 0%, var(--bg-grad-2) 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container { max-width: 900px; width: 100%; }
+
+    #theme-toggle-btn {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border-radius: 50%;
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-primary);
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 12px var(--shadow-color);
+      z-index: 500;
+    }
+
+    .info-btn {
+      background: none;
+      border: 1px solid var(--card-border);
+      color: var(--text-secondary);
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background: var(--modal-bg);
+      border: 1px solid var(--modal-border);
+      border-radius: 16px;
+      padding: 24px;
+      max-width: 500px;
+      width: 90%;
+      color: var(--text-primary);
+      text-align: left;
+    }
+    .modal-content h3 { margin-top: 0; }
+    .modal-content ul { padding-left: 20px; line-height: 1.8; }
+    .modal-content button {
+      background: var(--accent);
+      border: none;
+      color: var(--on-accent);
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 16px;
+    }
+
+    .auth-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 32px 28px;
+      margin-bottom: 36px;
+      box-shadow: 0 20px 40px var(--shadow-color);
+    }
+    .auth-tabs { display: flex; gap: 12px; margin-bottom: 28px; }
+    .auth-tab {
+      flex: 1; text-align: center; padding: 12px;
+      background: var(--overlay-1); border-radius: 12px;
+      color: var(--text-secondary); cursor: pointer; font-weight: 600;
+      transition: all 0.3s;
+    }
+    .auth-tab.active { background: var(--accent); color: var(--on-accent); }
+    .auth-form { display: none; }
+    .auth-form.active { display: block; }
+
+    .form-row { margin-bottom: 18px; }
+    .form-row label { display: block; color: var(--text-secondary); margin-bottom: 6px; font-size: 0.9rem; }
+    .form-row input, .form-row select {
+      width: 100%; padding: 14px; border-radius: 12px;
+      border: 1px solid var(--input-border);
+      background: var(--input-bg); color: var(--text-primary); font-size: 1rem;
+    }
+    .form-row input:focus, .form-row select:focus { outline: none; border-color: var(--accent); }
+    .btn {
+      width: 100%; padding: 14px; border-radius: 12px;
+      background: var(--accent); color: var(--on-accent); border: none;
+      font-size: 1rem; font-weight: 700; cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: var(--accent-hover); }
+    .btn:disabled { background: var(--overlay-2); color: var(--text-muted); cursor: not-allowed; }
+
+    .auth-message { text-align: center; margin-top: 12px; font-size: 0.9rem; min-height: 22px; }
+    .auth-message.error { color: var(--error); }
+    .auth-message.success { color: var(--success); }
+
+    h1 { text-align: center; color: var(--text-primary); font-size: 2.4rem; margin-bottom: 8px; }
+    .subtitle { text-align: center; color: var(--text-secondary); font-size: 1rem; margin-bottom: 48px; }
+    .track-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .track-card {
+      border-radius: 20px; padding: 36px 28px; text-decoration: none;
+      color: var(--text-primary); display: flex; flex-direction: column; align-items: center;
+      text-align: center; gap: 14px; transition: all 0.3s ease;
+      cursor: pointer; border: 1px solid var(--card-border);
+    }
+    .track-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px var(--shadow-color); border-color: var(--accent); }
+    .track-icon { font-size: 3rem; }
+    .track-card.grad { background: linear-gradient(145deg, rgba(59,130,246,0.18), rgba(30,64,175,0.12)); }
+    .track-card.retail { background: linear-gradient(145deg, rgba(16,185,129,0.18), rgba(5,150,105,0.12)); }
+    .track-card h2 { font-size: 1.4rem; font-weight: 700; }
+    .track-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5; }
+    .track-badge {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 4px 14px; border-radius: 100px; margin-top: 4px;
+    }
+    .grad .track-badge { background: rgba(59,130,246,0.25); color: #2563eb; }
+    .retail .track-badge { background: rgba(16,185,129,0.25); color: #047857; }
+    body.dark .grad .track-badge { color: #93c5fd; }
+    body.dark .retail .track-badge { color: #6ee7b7; }
+    .arrow { font-size: 1.5rem; margin-top: 6px; transition: transform 0.3s; }
+    .track-card:hover .arrow { transform: translateY(4px); }
+    .footer { text-align: center; color: var(--text-muted); font-size: 0.82rem; margin-top: 44px; }
+
+    .saved-users { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .saved-user-chip {
+      background: var(--overlay-1); border: 1px solid var(--card-border);
+      border-radius: 20px; padding: 4px 12px; font-size: 0.8rem; color: var(--text-secondary);
+      cursor: pointer; transition: background 0.2s;
+    }
+    .saved-user-chip:hover { background: rgba(59,130,246,0.2); }
+
+    @media (max-width: 700px) { .track-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<script>
+  (function () {
+    try {
+      if (localStorage.getItem('qb_theme') === 'dark') document.body.classList.add('dark');
+    } catch (e) { /* default to day mode */ }
+  })();
+</script>
+<button id="theme-toggle-btn" type="button" title="Switch between day and night mode" aria-label="Toggle day/night theme">🌙</button>
+<script>
+  // Kept in its own plain (non-module) script so the toggle always works,
+  // even if the Firebase module below fails to load (e.g. no connection).
+  (function () {
+    const btn = document.getElementById('theme-toggle-btn');
+    function syncIcon() {
+      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    }
+    syncIcon();
+    btn.addEventListener('click', () => {
+      const isDark = document.body.classList.toggle('dark');
+      try { localStorage.setItem('qb_theme', isDark ? 'dark' : 'light'); } catch (e) { /* ignore */ }
+      syncIcon();
+    });
+  })();
+</script>
+<div class="container">
+  <h1>📚 ELTP Quiz Hub</h1>
+  <p class="subtitle">Select your track to begin practicing</p>
+
+  <!-- Info button & modal -->
+  <div style="text-align:center;">
+    <button class="info-btn" id="infoBtn">ℹ️ How it works</button>
+  </div>
+  <div class="modal-overlay" id="infoModal">
+    <div class="modal-content">
+      <h3>🔐 How It Works</h3>
+      <ul>
+        <li><strong>One account for all courses.</strong><br>Create a username and a 4‑digit PIN on this page.</li>
+        <li>✅ After logging in, every quiz automatically knows who you are — no more typing your name or PIN on each course.</li>
+        <li>📱 <strong>Progress syncs across devices.</strong> Open a quiz on your phone, continue on your laptop.</li>
+        <li>🔒 Your PIN keeps your progress private.</li>
+        <li>⚠ <strong>Lost PIN = lost account.</strong> Write it down!</li>
+      </ul>
+      <button id="closeInfo">Got it</button>
+    </div>
+  </div>
+
+  <!-- Auth card -->
+  <div class="auth-card" id="authCard">
+    <div class="auth-tabs">
+      <div class="auth-tab active" id="tabLogin">🔐 Login</div>
+      <div class="auth-tab" id="tabRegister">✨ Register</div>
+    </div>
+
+    <!-- Login form -->
+    <div class="auth-form active" id="formLogin">
+      <div class="form-row">
+        <label for="loginUsername">Username</label>
+        <input type="text" id="loginUsername" placeholder="Your username" autocomplete="off">
+        <div class="saved-users" id="savedUsers"></div>
+      </div>
+      <div class="form-row">
+        <label for="loginPin">4‑digit PIN</label>
+        <input type="password" id="loginPin" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="••••">
+      </div>
+      <button class="btn" id="loginBtn">Log In</button>
+      <div class="auth-message" id="loginMsg"></div>
+    </div>
+
+    <!-- Register form -->
+    <div class="auth-form" id="formRegister">
+      <div class="form-row">
+        <label for="regUsername">Choose a Username</label>
+        <input type="text" id="regUsername" placeholder="e.g. chidi" autocomplete="off">
+      </div>
+      <div class="form-row">
+        <label for="regPin">Create a 4‑digit PIN</label>
+        <input type="password" id="regPin" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="••••">
+      </div>
+      <div class="form-row">
+        <label for="regPin2">Confirm PIN</label>
+        <input type="password" id="regPin2" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="••••">
+      </div>
+      <div class="form-row">
+        <label for="regTrack">Your Track</label>
+        <select id="regTrack">
+          <option value="">Select a track…</option>
+          <option value="grad">Graduate Track</option>
+          <option value="retail">Retail Track</option>
+        </select>
+      </div>
+      <button class="btn" id="registerBtn">Create Account & Go</button>
+      <div class="auth-message" id="registerMsg"></div>
+    </div>
+  </div>
+
+  <!-- Track cards -->
+  <div class="track-grid">
+    <a href="grad-track.html" class="track-card grad" id="gradCard">
+      <div class="track-icon">🎓</div>
+      <h2>Graduate Track</h2>
+      <p>ELTP 14 · 15 · 16 · 17</p>
+      <div class="track-badge">Grad Track</div>
+      <div class="arrow">↓</div>
+    </a>
+    <a href="retail-track.html" class="track-card retail" id="retailCard">
+      <div class="track-icon">🏦</div>
+      <h2>Retail Track</h2>
+      <p>ELTP 18 · 19 · 20 · 21</p>
+      <div class="track-badge">Retail Track</div>
+      <div class="arrow">↓</div>
+    </a>
+  </div>
+  <p class="footer">All quizzes run in your browser. <strong>Log in above</strong> to sync progress across devices.</p>
+</div>
+
+<script type="module">
+  import { registerUser, verifyAndPull } from "./cloud-sync.js";
+
+  // ====== YOUR REAL FIREBASE CONFIG (SAME AS IN CLOUD-SYNC.JS) ======
+  const firebaseConfig = {
+    apiKey: "AIzaSyA_JY5U0fzc92X_sPZJHmqkQGaib0EALtI",
+    authDomain: "accesswarrior-f8f34.firebaseapp.com",
+    projectId: "accesswarrior-f8f34",
+    storageBucket: "accesswarrior-f8f34.firebasestorage.app",
+    messagingSenderId: "592765280433",
+    appId: "1:592765280433:web:08799c90034244660d0290",
+    measurementId: "G-JE664K1H0C"
+  };
+
+  const { initializeApp } = await import("https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js");
+  const { getFirestore, doc, getDoc } = await import("https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js");
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  async function hashPin(pin) {
+    const enc = new TextEncoder().encode("qbsalt_" + pin);
+    const buf = await crypto.subtle.digest("SHA-256", enc);
+    return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, "0")).join("");
+  }
+
+  // ---- Tab switching ----
+  const tabLogin = document.getElementById('tabLogin');
+  const tabRegister = document.getElementById('tabRegister');
+  const formLogin = document.getElementById('formLogin');
+  const formRegister = document.getElementById('formRegister');
+  tabLogin.addEventListener('click', () => {
+    tabLogin.classList.add('active'); tabRegister.classList.remove('active');
+    formLogin.classList.add('active'); formRegister.classList.remove('active');
+  });
+  tabRegister.addEventListener('click', () => {
+    tabRegister.classList.add('active'); tabLogin.classList.remove('active');
+    formRegister.classList.add('active'); formLogin.classList.remove('active');
+  });
+
+  // ---- Remembered usernames ----
+  const USERS_KEY = 'qb_saved_usernames';
+  function getSavedUsers() {
+    try { return JSON.parse(localStorage.getItem(USERS_KEY)) || []; } catch { return []; }
+  }
+  function saveUsername(name) {
+    const users = getSavedUsers().filter(u => u.toLowerCase() !== name.toLowerCase());
+    users.unshift(name);
+    localStorage.setItem(USERS_KEY, JSON.stringify(users.slice(0, 10)));
+  }
+  function renderSavedUsers() {
+    const container = document.getElementById('savedUsers');
+    const users = getSavedUsers();
+    container.innerHTML = users.map(u => `<span class="saved-user-chip" data-name="${u}">${u}</span>`).join('');
+    document.querySelectorAll('.saved-user-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.getElementById('loginUsername').value = chip.dataset.name;
+      });
+    });
+  }
+  renderSavedUsers();
+
+  // ---- Update track card links ----
+  function updateTrackLinks() {
+    const name = localStorage.getItem('qb_global_user');
+    const pin = localStorage.getItem('qb_global_pin');
+    const params = (name && pin) ? `?u=${encodeURIComponent(name)}&p=${encodeURIComponent(pin)}` : '';
+    document.getElementById('gradCard').href = 'grad-track.html' + params;
+    document.getElementById('retailCard').href = 'retail-track.html' + params;
+  }
+
+  // ---- Login ----
+  document.getElementById('loginBtn').addEventListener('click', async () => {
+    const name = document.getElementById('loginUsername').value.trim();
+    const pin = document.getElementById('loginPin').value.trim();
+    const msg = document.getElementById('loginMsg');
+    msg.textContent = ''; msg.className = 'auth-message';
+
+    if (!name || !/^\d{4}$/.test(pin)) {
+      msg.textContent = 'Please enter username and a 4‑digit PIN.';
+      msg.classList.add('error');
+      return;
+    }
+
+    try {
+      const userRef = doc(db, "users", name.toLowerCase());
+      const snap = await getDoc(userRef);
+      if (!snap.exists()) {
+        msg.textContent = 'Username not found. Did you register?';
+        msg.classList.add('error');
+        return;
+      }
+      const userData = snap.data();
+      const enteredHash = await hashPin(pin);
+      if (userData.pinHash !== enteredHash) {
+        msg.textContent = 'Wrong PIN.';
+        msg.classList.add('error');
+        return;
+      }
+
+      // Success
+      localStorage.setItem('qb_global_user', name);
+      localStorage.setItem('qb_global_pin', pin);
+      saveUsername(name);
+      updateTrackLinks();
+      msg.textContent = 'Logged in! You can now click a track.';
+      msg.classList.add('success');
+      renderSavedUsers();
+    } catch (e) {
+      msg.textContent = 'Connection error. Check your internet.';
+      msg.classList.add('error');
+    }
+  });
+
+  // ---- Register ----
+  document.getElementById('registerBtn').addEventListener('click', async () => {
+    const name = document.getElementById('regUsername').value.trim();
+    const pin = document.getElementById('regPin').value.trim();
+    const pin2 = document.getElementById('regPin2').value.trim();
+    const track = document.getElementById('regTrack').value;
+    const msg = document.getElementById('registerMsg');
+    msg.textContent = ''; msg.className = 'auth-message';
+
+    if (!name || !/^\d{4}$/.test(pin) || !/^\d{4}$/.test(pin2)) {
+      msg.textContent = 'All fields required. PIN must be exactly 4 digits.';
+      msg.classList.add('error');
+      return;
+    }
+    if (pin !== pin2) {
+      msg.textContent = 'PINs do not match.';
+      msg.classList.add('error');
+      return;
+    }
+    if (!track) {
+      msg.textContent = 'Please choose your track.';
+      msg.classList.add('error');
+      return;
+    }
+
+    try {
+      const result = await registerUser(name, pin, track);
+      if (!result.ok) {
+        msg.textContent = result.reason;
+        msg.classList.add('error');
+        return;
+      }
+      // Registration successful – log in automatically
+      localStorage.setItem('qb_global_user', name);
+      localStorage.setItem('qb_global_pin', pin);
+      saveUsername(name);
+      updateTrackLinks();
+      msg.textContent = 'Account created! Redirecting to your track…';
+      msg.classList.add('success');
+      const dest = track === 'retail' ? 'retail-track.html' : 'grad-track.html';
+      window.location.href = dest + '?u=' + encodeURIComponent(name) + '&p=' + encodeURIComponent(pin);
+    } catch (e) {
+      msg.textContent = 'Connection error. Please try again.';
+      msg.classList.add('error');
+    }
+  });
+
+  // ---- Modal logic ----
+  document.getElementById('infoBtn').addEventListener('click', () => {
+    document.getElementById('infoModal').style.display = 'flex';
+  });
+  document.getElementById('closeInfo').addEventListener('click', () => {
+    document.getElementById('infoModal').style.display = 'none';
+  });
+  if (!localStorage.getItem('info_shown')) {
+    document.getElementById('infoModal').style.display = 'flex';
+    localStorage.setItem('info_shown', '1');
+  }
+
+  updateTrackLinks();
+</script>
+</body>
+</html>

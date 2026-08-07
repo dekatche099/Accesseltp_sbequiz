@@ -165,18 +165,26 @@ export class ExamEngine {
 
   selectAnswer(optionIndex) {
     const { session } = this.state.get();
-    if (session.userAnswers[session.currentIndex] !== null) return; // already answered
-    const q = session.questionSet[session.currentIndex];
+    const alreadyAnswered = session.userAnswers[session.currentIndex] !== null;
+    // Practice mode locks the answer in place once picked (so the
+    // correct/wrong reveal underneath it stays meaningful). Timed mode
+    // has no reveal, so the pick must stay changeable right up until
+    // the learner moves on or submits — same as the exam-sheet's
+    // setExamAnswer(), which never locks either.
+    if (session.testMode === 'practice' && alreadyAnswered) return;
+
     const userAnswers = [...session.userAnswers];
     userAnswers[session.currentIndex] = optionIndex;
-    const correct = q.opts[optionIndex] === q.ans;
-    this.state.set({
-      session: {
-        userAnswers,
-        correctCount: session.correctCount + (correct ? 1 : 0),
-        wrongCount: session.wrongCount + (correct ? 0 : 1)
+    let correct = 0;
+    let wrong = 0;
+    userAnswers.forEach((ans, idx) => {
+      if (ans !== null) {
+        const q = session.questionSet[idx];
+        if (q.opts[ans] === q.ans) correct++;
+        else wrong++;
       }
     });
+    this.state.set({ session: { userAnswers, correctCount: correct, wrongCount: wrong } });
     this.persist();
   }
 

@@ -33,6 +33,7 @@ export class UIRenderer {
 
   init() {
     this.cacheDom();
+    this.initTheme();
     this.populateCourseChrome();
     this.applyLoginState();
     this.bindEvents();
@@ -50,6 +51,27 @@ export class UIRenderer {
         else this.endSession(true);
       }
     });
+  }
+
+  // ---- Day / night theme (light is the default, matching the workbook) ----
+  initTheme() {
+    this.themeToggleBtn = document.getElementById('theme-toggle-btn');
+    if (!this.themeToggleBtn) return;
+    this.syncThemeIcon();
+    this.themeToggleBtn.addEventListener('click', () => this.toggleTheme());
+  }
+
+  toggleTheme() {
+    const isDark = document.body.classList.toggle('dark');
+    try { localStorage.setItem('qb_theme', isDark ? 'dark' : 'light'); } catch (e) { /* ignore */ }
+    this.syncThemeIcon();
+  }
+
+  syncThemeIcon() {
+    if (!this.themeToggleBtn) return;
+    const isDark = document.body.classList.contains('dark');
+    // Icon shows the mode a click will switch you INTO.
+    this.themeToggleBtn.textContent = isDark ? '☀️' : '🌙';
   }
 
   cacheDom() {
@@ -481,14 +503,18 @@ export class UIRenderer {
         radio.type = 'radio';
         radio.name = 'quiz-option';
         radio.value = idx;
+        // Clicking anywhere on the row (label) forwards to the radio.
+        // Radios stay enabled and back in sync with state, so the choice
+        // can be changed right up until Next / Submit — same as the
+        // exam-sheet view, which never locks an answer either.
         radio.onchange = () => this.selectAnswer(idx);
         const textSpan = document.createElement('span');
         textSpan.textContent = label;
         row.appendChild(radio);
         row.appendChild(textSpan);
-        if (session.userAnswers[session.currentIndex] !== null) {
-          radio.disabled = true;
-          if (idx === session.userAnswers[session.currentIndex]) radio.checked = true;
+        if (idx === session.userAnswers[session.currentIndex]) {
+          radio.checked = true;
+          row.classList.add('selected');
         }
         optionsList.appendChild(row);
       }

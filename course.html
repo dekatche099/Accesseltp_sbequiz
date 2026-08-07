@@ -202,6 +202,7 @@
         .option-btn {
             text-align: left;
             background-color: var(--bg-tertiary);
+            color: var(--text-primary);
             border: 2px solid transparent;
             padding: 16px;
             border-radius: var(--border-radius);
@@ -581,7 +582,7 @@
   // Applied before the app boots, to avoid a flash of the wrong theme.
   (function () {
     try {
-      if (localStorage.getItem('qb_theme') === 'dark') document.body.classList.add('dark');
+      if (localStorage.getItem('qb_theme') !== 'light') document.body.classList.add('dark');
     } catch (e) { /* localStorage unavailable — default to day mode */ }
   })();
 </script>

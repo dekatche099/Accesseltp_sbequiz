@@ -1,0 +1,2709 @@
+{
+  "meta": {
+    "id": "erm-eltp",
+    "title": "Enterprise Risk Management (ERM)",
+    "description": "The Enterprise Risk Management (ERM) course provides a structured approach to identifying, assessing, and mitigating risks within an organization, combining theoretical knowledge with practical applications for the Access Bank ELTP.",
+    "category": "Risk Management",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Understanding ERM"
+    },
+    {
+      "id": 2,
+      "title": "The Team"
+    },
+    {
+      "id": 3,
+      "title": "International Convention on ERM"
+    },
+    {
+      "id": 4,
+      "title": "Environment and Social Risk Governance"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "type": "mcq",
+      "q": "What best describes the overall orientation of Enterprise Risk Management (ERM) within an organization?",
+      "opts": [
+        "A single department's compliance-monitoring function",
+        "A top-down, firm-wide strategy for identifying and preparing for potential losses",
+        "A response process activated only after a loss occurs",
+        "A one-off project completed during the annual audit cycle"
+      ],
+      "ans": "A top-down, firm-wide strategy for identifying and preparing for potential losses",
+      "exp": "ERM looks at risk management strategically from the perspective of the entire firm, identifying, assessing, and preparing for potential losses before they occur (Manual, 1.1). The other options describe traditional, siloed, reactive, or one-off risk practices that contradict ERM's proactive, ongoing, firm-wide nature."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "type": "mcq",
+      "q": "An ERM framework typically follows which general sequence of activities?",
+      "opts": [
+        "Transfer the risk, then set the risk appetite, then identify events",
+        "Identify events, assess likelihood and impact, determine a response, monitor the process",
+        "Appoint a Chief Risk Officer, then draft the strategic plan, then report to regulators",
+        "Report to regulators, then design internal controls, then assign risk owners"
+      ],
+      "ans": "Identify events, assess likelihood and impact, determine a response, monitor the process",
+      "exp": "The ERM framework involves identifying events relevant to objectives, assessing likelihood/impact, determining a response strategy, and monitoring (Manual, 1.1). The other sequences reorder or substitute unrelated governance steps."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "type": "mcq",
+      "q": "By proactively addressing risks and opportunities, ERM primarily helps a business enterprise achieve which outcome?",
+      "opts": [
+        "Elimination of all uncertainty across daily operations",
+        "Protection and creation of value for its stakeholders",
+        "Reduction of the organization's regulatory reporting obligations",
+        "Replacement of departmental risk functions with centralized teams"
+      ],
+      "ans": "Protection and creation of value for its stakeholders",
+      "exp": "ERM's stated purpose is protecting and creating value for stakeholders including owners, employees, customers, regulators, and society (Manual, 1.1). ERM does not claim to eliminate uncertainty, cut reporting duties, or replace unit-level functions."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is listed in the manual as an advantage of ERM?",
+      "opts": [
+        "Removal of the need for a risk appetite statement",
+        "Alignment of risk management with vision, mission, values, and goals",
+        "A guarantee that no strategic objective will be missed",
+        "Removal of board-level risk oversight requirements"
+      ],
+      "ans": "Alignment of risk management with vision, mission, values, and goals",
+      "exp": "ERM helps align risk management with the organisation's vision, mission, values, and goals, among the listed benefits (Manual, 1.2). ERM offers no such guarantee and does not remove appetite statements or board oversight."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank adopts ERM and later reports greater resilience, agility, and innovation in a changing environment. Which stated ERM benefit does this illustrate?",
+      "opts": [
+        "Meeting fixed shareholder dividend targets each fiscal year",
+        "Gaining competitive advantage through improved decision-making and adaptability",
+        "Reducing headcount required to maintain compliance functions",
+        "Avoiding future regulatory examinations through minimal disclosure"
+      ],
+      "ans": "Gaining competitive advantage through improved decision-making and adaptability",
+      "exp": "ERM is described as helping organizations gain competitive advantage, improve decision-making, increase resilience and agility, and foster innovation (Manual, 1.2)."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "type": "mcq",
+      "q": "According to the manual, ERM should be understood as which of the following?",
+      "opts": [
+        "A compliance exercise completed once and filed away",
+        "An ongoing process requiring continuous monitoring and improvement",
+        "A rigid template applied identically across all organizations",
+        "A function operating independently of the organization's mission"
+      ],
+      "ans": "An ongoing process requiring continuous monitoring and improvement",
+      "exp": "ERM is explicitly described as not a one-time project or compliance exercise, but an ongoing process requiring continuous monitoring, evaluation, and improvement, and one tailored to each organization (Manual, 1.2)."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "type": "mcq",
+      "q": "What is the key scope difference between Traditional Risk Management (TRM) and ERM?",
+      "opts": [
+        "TRM covers the entire organization while ERM covers finance alone",
+        "TRM is siloed within specific departments while ERM is holistic across the entity",
+        "TRM and ERM cover identical scope but differ in reporting frequency",
+        "TRM applies only to regulators while ERM applies only to auditors"
+      ],
+      "ans": "TRM is siloed within specific departments while ERM is holistic across the entity",
+      "exp": "TRM is a siloed, fragmented approach focused on specific departments, whereas ERM is holistic and integrated across the entire organization (Manual, 1.3)."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "type": "mcq",
+      "q": "In terms of methodology, how does ERM differ from Traditional Risk Management?",
+      "opts": [
+        "ERM is reactive and tactical while TRM is proactive and strategic",
+        "ERM is proactive and strategic while TRM is reactive and tactical",
+        "Both are equally proactive, differing only by department",
+        "ERM addresses risk only after it occurs, exactly like TRM"
+      ],
+      "ans": "ERM is proactive and strategic while TRM is reactive and tactical",
+      "exp": "ERM is a proactive and strategic approach aligned with the organisation's goals, while TRM is reactive and tactical, dealing with risks after they occur (Manual, 1.3)."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which outcome is associated with ERM rather than Traditional Risk Management?",
+      "opts": [
+        "A value-protecting outcome limited to one department",
+        "A value-creating, performance-enhancing outcome protecting long-term success",
+        "An outcome focused solely on minimizing insurance premiums",
+        "An outcome addressing risk only after penalties are issued"
+      ],
+      "ans": "A value-creating, performance-enhancing outcome protecting long-term success",
+      "exp": "ERM is described as value-creating and performance-enhancing, helping the organization anticipate and manage risk to protect reputation, assets, and long-term success (Manual, 1.3)."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "type": "mcq",
+      "q": "A manufacturing company keeps a risk team responsible only for factory-floor safety, with no coordination across other departments. This arrangement matches which approach?",
+      "opts": [
+        "Enterprise Risk Management, since safety is a strategic risk",
+        "Traditional Risk Management, since the effort is confined to one department",
+        "The COSO framework, since it involves a control activity",
+        "The Three Lines of Defense model, since it involves oversight"
+      ],
+      "ans": "Traditional Risk Management, since the effort is confined to one department",
+      "exp": "A department-confined, siloed risk effort matches the manual's example of Traditional Risk Management rather than holistic ERM (Manual, 1.3)."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is a challenge to ERM implementation stemming from senior leadership?",
+      "opts": [
+        "Excessive board involvement in daily risk decisions",
+        "Lack of management support and commitment",
+        "Overly clear organizational risk appetite statements",
+        "Overuse of digital technologies in risk monitoring"
+      ],
+      "ans": "Lack of management support and commitment",
+      "exp": "Without senior management and board buy-in, ERM may not receive adequate attention, direction, or resources (Manual, 1.4). The other options describe conditions the manual does not treat as problems."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "type": "mcq",
+      "q": "Different departments within a bank hold conflicting views on risk appetite and how risks should be assessed. Which ERM implementation challenge does this reflect?",
+      "opts": [
+        "Limited access to data and technology",
+        "Different management priorities and perspectives",
+        "Failure to leverage digital technologies",
+        "Inadequate governance and oversight"
+      ],
+      "ans": "Different management priorities and perspectives",
+      "exp": "Different functions and stakeholders may hold different risk appetites, definitions, and assessments, leading to conflicts or gaps in ERM processes (Manual, 1.4)."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "type": "mcq",
+      "q": "A division declines to share loss data with the enterprise risk team, citing competitive concerns. Which challenge does this reflect?",
+      "opts": [
+        "Lack of a common risk language and framework",
+        "Reluctance to share sensitive information",
+        "Difficulties in quantifying and measuring risks",
+        "Failure to leverage digital technologies"
+      ],
+      "ans": "Reluctance to share sensitive information",
+      "exp": "Confidentiality, security, or competitive concerns can make parties reluctant to disclose risk-related information, limiting risk identification, analysis, and reporting quality (Manual, 1.4)."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the following is NOT listed among the challenges of ERM implementation in the manual?",
+      "opts": [
+        "Difficulties in quantifying and measuring risks",
+        "Overstaffing of the internal audit function",
+        "Lack of a common risk language and framework",
+        "Limited access to data and technology"
+      ],
+      "ans": "Overstaffing of the internal audit function",
+      "exp": "The manual lists challenges such as difficulty quantifying risk, lack of common language, and limited data access; internal audit overstaffing is not among them (Manual, 1.4)."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "type": "mcq",
+      "q": "An organization can integrate data across sources but has not adopted AI, blockchain, or IoT to predict emerging risks. Which challenge does this describe?",
+      "opts": [
+        "Limited access to data and technology",
+        "Failure to leverage the power of digital technologies",
+        "Lack of a common risk language and framework",
+        "Inadequate governance and oversight"
+      ],
+      "ans": "Failure to leverage the power of digital technologies",
+      "exp": "This challenge concerns not leveraging AI, blockchain, and IoT to enhance risk management capabilities, and is distinct from simply lacking data-integration tools (Manual, 1.4)."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which challenge relates to the absence of a designated risk committee overseeing ERM policies and procedures?",
+      "opts": [
+        "Different management priorities and perspectives",
+        "Inadequate governance and oversight",
+        "Reluctance to share sensitive information",
+        "Difficulties in quantifying and measuring risks"
+      ],
+      "ans": "Inadequate governance and oversight",
+      "exp": "This challenge concerns the absence of a clear governance structure or designated risk committee to oversee ERM policy and provide feedback (Manual, 1.4)."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the ERM components cycle, what immediately follows the setting of Key Business Goals?",
+      "opts": [
+        "Risk Treatment",
+        "Risk Identification",
+        "Monitoring and Reporting",
+        "Risk Assessment"
+      ],
+      "ans": "Risk Identification",
+      "exp": "The cycle moves from Key Business Goals to Risk Identification before Risk Assessment (Manual, 1.5)."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "type": "mcq",
+      "q": "In the ERM components cycle, what is the purpose of the Risk Assessment stage?",
+      "opts": [
+        "Migrating, transferring, tolerating, terminating, or exploiting identified risks",
+        "Evaluating identified risks and their possible impact",
+        "Determining the organization's key business goals",
+        "Reporting risks and treatment plans to stakeholders"
+      ],
+      "ans": "Evaluating identified risks and their possible impact",
+      "exp": "Risk Assessment involves evaluating the risks that have been identified and their possible impact on the organization, prior to Risk Treatment (Manual, 1.5)."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "type": "mcq",
+      "q": "The four categories of risk shown within the ERM components cycle are which of the following?",
+      "opts": [
+        "Credit, Market, Liquidity, and Operational",
+        "Strategic, Operational, Compliance, and Financial",
+        "Political, Legal, Reputational, and Technological",
+        "Internal, External, Systemic, and Idiosyncratic"
+      ],
+      "ans": "Strategic, Operational, Compliance, and Financial",
+      "exp": "The ERM components cycle shows Strategic, Operational, Compliance, and Financial Risks nested within it (Manual, 1.5)."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "type": "mcq",
+      "q": "Tracking risks and treatment plans and communicating them to stakeholders corresponds to which stage of the ERM components cycle?",
+      "opts": [
+        "Risk Identification",
+        "Monitoring and Reporting",
+        "Risk Treatment",
+        "Risk Assessment"
+      ],
+      "ans": "Monitoring and Reporting",
+      "exp": "Monitoring and Reporting is the stage concerned with tracking risks and treatment plans and communicating them (Manual, 1.5)."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "type": "mcq",
+      "q": "When a company sets far-reaching strategic goals, what does Goals and Objective Setting require it to consider?",
+      "opts": [
+        "Considering only the internal risks tied to the plan",
+        "Aligning objectives with the company's risk appetite",
+        "Delaying objective-setting until all risk is eliminated",
+        "Setting objectives independently of the company's risk appetite"
+      ],
+      "ans": "Aligning objectives with the company's risk appetite",
+      "exp": "As a company sets far-reaching objectives, it must align them with its risk appetite and be aware of the internal or external risks those goals may create (Manual, 1.5.1)."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank expanding into a new regulatory jurisdiction hires additional compliance staff familiar with that jurisdiction. This is an example of which action?",
+      "opts": [
+        "Discontinuing the expansion plan entirely to avoid risk",
+        "Aligning operational measures with the company's strategic goals",
+        "Risk sharing through a third-party insurance arrangement",
+        "Risk acceptance with no changes to current operations"
+      ],
+      "ans": "Aligning operational measures with the company's strategic goals",
+      "exp": "The manual gives hiring additional regulatory staff for an unfamiliar expansion area as an example of aligning measures with goals under Goals and Objective Setting (Manual, 1.5.1)."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "type": "mcq",
+      "q": "Under Risk/Event Identification, which of the following is an example of a strategic risk event?",
+      "opts": [
+        "A natural disaster forcing offices to temporarily close",
+        "A government regulation outlawing the company's primary product line",
+        "An employee error on a routine transaction",
+        "A minor delay in a scheduled software update"
+      ],
+      "ans": "A government regulation outlawing the company's primary product line",
+      "exp": "The manual gives government regulation outlawing a company's primary product line as an example of a strategic risk event, distinct from operational risks like natural disasters (Manual, 1.5.2)."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why does Risk/Event Identification require capturing both positive and negative events?",
+      "opts": [
+        "Only negative events are relevant to ERM assessments",
+        "Both positive and negative events can significantly affect outcomes",
+        "Positive events fall outside the scope of the framework",
+        "Negative events are always more likely than positive ones"
+      ],
+      "ans": "Both positive and negative events can significantly affect outcomes",
+      "exp": "The manual notes that positive events may have great impact while negative events may have detrimental outcomes on operations, so both are within scope (Manual, 1.5.2)."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "type": "mcq",
+      "q": "Beyond direct risk, what additional type of risk does Risk Assessment instruct organizations to consider?",
+      "opts": [
+        "Emerging risk not yet identified by any existing framework",
+        "Residual risk, such as employees not feeling safe returning",
+        "Systemic risk shared across the entire banking sector",
+        "Political risk arising from a change in government"
+      ],
+      "ans": "Residual risk, such as employees not feeling safe returning",
+      "exp": "Risk Assessment considers not only direct risk (e.g., a disaster making an office unusable) but residual risk (e.g., employees not feeling safe returning), per the manual (1.5.3)."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "type": "mcq",
+      "q": "The manual encourages quantifying risk during Risk Assessment along which two dimensions?",
+      "opts": [
+        "Regulatory classification and audit frequency",
+        "Percentage chance of occurrence and dollar impact",
+        "Number of departments affected and staff turnover",
+        "Insurance premium cost and claim history"
+      ],
+      "ans": "Percentage chance of occurrence and dollar impact",
+      "exp": "The ERM framework encourages quantifying risks by assessing the percent chance of occurrence as well as the dollar impact (Manual, 1.5.3)."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "type": "mcq",
+      "q": "A company discontinues a product line entirely rather than accept its associated risk. Which risk response does this represent?",
+      "opts": [
+        "Risk reduction",
+        "Risk avoidance",
+        "Risk sharing",
+        "Risk acceptance"
+      ],
+      "ans": "Risk avoidance",
+      "exp": "Risk avoidance results in the company leaving the activity that causes the risk, as with discontinuing a product line, per the manual's example (1.5.4)."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "type": "mcq",
+      "q": "A company keeps a product line active but invests more heavily in quality control and consumer education. Which risk response does this represent?",
+      "opts": [
+        "Risk avoidance",
+        "Risk reduction",
+        "Risk sharing",
+        "Risk acceptance"
+      ],
+      "ans": "Risk reduction",
+      "exp": "Risk reduction involves staying engaged in the activity while minimizing the likelihood or magnitude of the risk, as in the quality-control example (Manual, 1.5.4)."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "type": "mcq",
+      "q": "Purchasing an insurance policy so a third party absorbs part of a potential loss, for a fee, is which risk response?",
+      "opts": [
+        "Risk acceptance",
+        "Risk sharing",
+        "Risk reduction",
+        "Risk avoidance"
+      ],
+      "ans": "Risk sharing",
+      "exp": "Risk sharing involves leveraging an independent third party to share in potential loss for a fee, with insurance given as the manual's example (1.5.4)."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "type": "mcq",
+      "q": "A company reviews a product line's risk profile, decides mitigation is not financially worthwhile, and keeps operations unchanged. Which risk response does this reflect?",
+      "opts": [
+        "Risk sharing",
+        "Risk acceptance",
+        "Risk avoidance",
+        "Risk reduction"
+      ],
+      "ans": "Risk acceptance",
+      "exp": "Risk acceptance involves analyzing outcomes and determining whether mitigation is financially worthwhile, then keeping the activity unchanged, as described in the manual (1.5.4)."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which of the four risk responses involves the company proceeding as-is with its current risk profile, without further mitigation or transfer?",
+      "opts": [
+        "Risk sharing",
+        "Risk acceptance",
+        "Risk reduction",
+        "Risk avoidance"
+      ],
+      "ans": "Risk acceptance",
+      "exp": "Risk acceptance is the response where the company proceeds with the current risk profile after weighing whether mitigation is financially justified (Manual, 1.5.4)."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "type": "mcq",
+      "q": "What does Risk Monitoring and Reporting require beyond tracking response performance?",
+      "opts": [
+        "Escalating risks only to external regulators directly",
+        "Capturing lessons learned and identifying framework gaps",
+        "Eliminating all risks the organization previously accepted",
+        "Reassigning all risk ownership to internal audit"
+      ],
+      "ans": "Capturing lessons learned and identifying framework gaps",
+      "exp": "This component includes capturing and applying lessons learned toward improving the framework and identifying gaps or weaknesses in it (Manual, 1.5.5)."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "type": "mcq",
+      "q": "Beyond communicating risk information to stakeholders, what additional activity does Risk Monitoring and Reporting involve?",
+      "opts": [
+        "Setting the organization's initial risk appetite",
+        "Getting feedback and informing management of unprotected risks",
+        "Selecting third-party insurers for risk transfer",
+        "Drafting the company's original strategic plan"
+      ],
+      "ans": "Getting feedback and informing management of unprotected risks",
+      "exp": "Beyond tracking and reporting, this component involves getting feedback, analyzing data, and informing management of unprotected risks (Manual, 1.5.5)."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which step of integrating ERM into strategy analyzes internal and external factors such as stakeholders, resources, competitors, and market trends?",
+      "opts": [
+        "Build the plan",
+        "Understand the environment",
+        "Execute the plan",
+        "Review and revise"
+      ],
+      "ans": "Understand the environment",
+      "exp": "'Understand the environment' involves analysing internal and external factors and identifying potential risks and opportunities arising from them (Manual, 1.6)."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "type": "mcq",
+      "q": "During which step does an organization determine its risk appetite and tolerance while developing strategic goals?",
+      "opts": [
+        "Understand the environment",
+        "Build the plan",
+        "Execute the plan",
+        "Review and revise"
+      ],
+      "ans": "Build the plan",
+      "exp": "'Build the plan' involves developing the strategic plan while assessing and prioritizing risks and opportunities and determining risk appetite and tolerance (Manual, 1.6)."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which step involves allocating resources and responsibilities for risk response actions while implementing the plan?",
+      "opts": [
+        "Understand the environment",
+        "Execute the plan",
+        "Build the plan",
+        "Review and revise"
+      ],
+      "ans": "Execute the plan",
+      "exp": "'Execute the plan' involves implementing the strategic plan, applying risk responses, and allocating resources and responsibilities for those actions (Manual, 1.6)."
+    },
+    {
+      "id": "Q37",
+      "module": 1,
+      "type": "mcq",
+      "q": "In what year was the Basel Committee on Banking Supervision (BCBS) founded, and what was its original stated aim?",
+      "opts": [
+        "1988, focused exclusively on credit-risk capital rules",
+        "1974, to enhance financial stability through better supervisory know-how worldwide",
+        "2004, to expand supervisory scope to market and operational risk",
+        "2010, in response to the global financial crisis"
+      ],
+      "ans": "1974, to enhance financial stability through better supervisory know-how worldwide",
+      "exp": "The BCBS was founded in 1974, describing its original aim as enhancing financial stability by improving supervisory know-how and the quality of banking supervision worldwide (Manual, 1.7)."
+    },
+    {
+      "id": "Q38",
+      "module": 1,
+      "type": "mcq",
+      "q": "Why are the Basel Accords named after Basel, Switzerland?",
+      "opts": [
+        "Basel hosted the original Bretton Woods currency agreement in 1944",
+        "The BCBS is headquartered at the Bank for International Settlements in Basel",
+        "The first G10 capital-adequacy meeting was held there in 1988",
+        "Basel hosts the IFC's annual meetings each year"
+      ],
+      "ans": "The BCBS is headquartered at the Bank for International Settlements in Basel",
+      "exp": "The meetings are named Basel Accords because the BCBS is headquartered at the Bank for International Settlements in Basel, Switzerland (Manual, 1.7)."
+    },
+    {
+      "id": "Q39",
+      "module": 1,
+      "type": "mcq",
+      "q": "What international financial context prompted G10 central bankers to originally organize Basel I?",
+      "opts": [
+        "Introduction of the euro as a common currency",
+        "Building new structures after Bretton Woods' collapse",
+        "Founding of the International Finance Corporation",
+        "A coordinated response to the Lehman Brothers collapse"
+      ],
+      "ans": "Building new structures after Bretton Woods' collapse",
+      "exp": "Basel I was organized by G10 central bankers working toward new international financial structures to replace the recently collapsed Bretton Woods system (Manual, 1.7)."
+    },
+    {
+      "id": "Q40",
+      "module": 1,
+      "type": "mcq",
+      "q": "Under Basel I, into how many risk categories are financial institution assets classified?",
+      "opts": [
+        "Three categories",
+        "Five categories: 0%, 10%, 20%, 50%, 100%",
+        "Four categories: 0%, 20%, 50%, 100%",
+        "Two categories: high and low risk"
+      ],
+      "ans": "Five categories: 0%, 10%, 20%, 50%, 100%",
+      "exp": "Basel I categorizes assets into five risk categories: 0%, 10%, 20%, 50%, and 100% (Manual, 1.7.1)."
+    },
+    {
+      "id": "Q41",
+      "module": 1,
+      "type": "mcq",
+      "q": "A bank operating internationally under Basel I has risk-weighted assets of $200 million. What minimum total capital must it hold?",
+      "opts": [
+        "$10 million",
+        "$16 million",
+        "$20 million",
+        "$8 million"
+      ],
+      "ans": "$16 million",
+      "exp": "Basel I requires internationally active banks to hold capital equal to at least 8% of risk-weighted assets; 8% of $200 million is $16 million (Manual, 1.7.1)."
+    },
+    {
+      "id": "Q42",
+      "module": 1,
+      "type": "mcq",
+      "q": "Under Basel I's 8% minimum capital requirement, how is that 8% split between Tier 1 and Tier 2?",
+      "opts": [
+        "6% Tier 1 and 2% Tier 2",
+        "4% Tier 1 and 4% Tier 2",
+        "8% Tier 1 with no Tier 2 requirement",
+        "2% Tier 1 and 6% Tier 2"
+      ],
+      "ans": "4% Tier 1 and 4% Tier 2",
+      "exp": "Basel I's 8% minimum is split evenly, requiring 4% Tier 1 capital plus 4% Tier 2 capital (Manual, 1.7.1)."
+    },
+    {
+      "id": "Q43",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which statement correctly distinguishes Tier 1 from Tier 2 capital under Basel I?",
+      "opts": [
+        "Tier 1 is hybrid capital while Tier 2 is the primary funding source",
+        "Tier 1 is the most liquid, primary funding source; Tier 2 includes less liquid hybrid instruments",
+        "Tier 1 and Tier 2 differ only in name, not function",
+        "Tier 1 applies only to insurers, Tier 2 only to banks"
+      ],
+      "ans": "Tier 1 is the most liquid, primary funding source; Tier 2 includes less liquid hybrid instruments",
+      "exp": "Tier 1 capital is the most liquid and primary funding source, while Tier 2 includes less liquid hybrid capital instruments, loan-loss and revaluation reserves, and undisclosed reserves (Manual, 1.7.1)."
+    },
+    {
+      "id": "Q44",
+      "module": 1,
+      "type": "mcq",
+      "q": "Basel II, the Revised Capital Framework, organizes its focus around which structure?",
+      "opts": [
+        "A single pillar covering minimum capital only",
+        "Three pillars: minimum capital, supervisory review, and market discipline",
+        "Five pillars covering credit, market, operational, liquidity, and reputational risk",
+        "Two pillars: capital adequacy and stress testing"
+      ],
+      "ans": "Three pillars: minimum capital, supervisory review, and market discipline",
+      "exp": "Basel II focuses on three main areas, known as the three pillars: minimum capital requirements, supervisory review of capital adequacy, and disclosure to strengthen market discipline (Manual, 1.7.2)."
+    },
+    {
+      "id": "Q45",
+      "module": 1,
+      "type": "mcq",
+      "q": "How many tiers of eligible regulatory capital did Basel II introduce, compared with Basel I?",
+      "opts": [
+        "Basel II reduced capital from three tiers to two",
+        "Basel II divided capital into three tiers, up from Basel I's two",
+        "Basel II kept the same two tiers as Basel I",
+        "Basel II introduced four tiers of capital"
+      ],
+      "ans": "Basel II divided capital into three tiers, up from Basel I's two",
+      "exp": "Basel II divided the eligible regulatory capital of a bank from two tiers into three tiers (Manual, 1.7.2)."
+    },
+    {
+      "id": "Q46",
+      "module": 1,
+      "type": "mcq",
+      "q": "What did Basel II's Tier 3 capital support, and what happened to it under Basel III?",
+      "opts": [
+        "Credit risk; expanded under Basel III",
+        "Market, commodities, and foreign-currency risk; rescinded under Basel III",
+        "Operational risk; unchanged under Basel III",
+        "Tier 1 capital's functions; made mandatory under Basel III"
+      ],
+      "ans": "Market, commodities, and foreign-currency risk; rescinded under Basel III",
+      "exp": "Tier 3 capital supported market risk, commodities risk, and foreign currency risk from trading activities, and was subsequently rescinded under Basel III (Manual, 1.7.2)."
+    },
+    {
+      "id": "Q47",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which factors did the BCBS identify as contributing to the 2008 collapse that prompted Basel III?",
+      "opts": [
+        "Excessive capital buffers and overly conservative lending",
+        "Poor governance, inappropriate incentives, and an overleveraged banking industry",
+        "Strict enforcement of Basel II's three pillars",
+        "Overuse of Tier 1 relative to Tier 2 capital"
+      ],
+      "ans": "Poor governance, inappropriate incentives, and an overleveraged banking industry",
+      "exp": "The BCBS considered poor governance and risk management, inappropriate incentive structures, and an overleveraged banking industry as reasons for the collapse that prompted Basel III (Manual, 1.7.3)."
+    },
+    {
+      "id": "Q48",
+      "module": 1,
+      "type": "mcq",
+      "q": "Basel III introduced additional requirements targeting which category of institution?",
+      "opts": [
+        "Institutions operating only within a single jurisdiction",
+        "Systemically important banks considered 'too big to fail'",
+        "Non-bank financial institutions with no deposit-taking function",
+        "Institutions with risk-weighted assets below a set minimum"
+      ],
+      "ans": "Systemically important banks considered 'too big to fail'",
+      "exp": "Basel III includes additional requirements for what it calls 'systemically important banks,' referring to institutions considered too big to fail (Manual, 1.7.3)."
+    },
+    {
+      "id": "Q49",
+      "module": 1,
+      "type": "mcq",
+      "q": "Under the final Basel III framework, when does the output floor reach full phase-in, and at what level does it start in 2023?",
+      "opts": [
+        "Starting at 72.5% in 2023, fully phased in by 2028",
+        "Starting at 50% in 2023, fully phased in at 72.5% from 2028",
+        "Starting at 50% in 2028, with no further increases",
+        "Starting at 8% in 2023, rising to 10.5% by 2028"
+      ],
+      "ans": "Starting at 50% in 2023, fully phased in at 72.5% from 2028",
+      "exp": "The output floor starts at 50% on January 1, 2023, rising in annual 5% steps to be fully phased in at 72.5% from January 2028 (Manual, 1.7.3)."
+    },
+    {
+      "id": "Q50",
+      "module": 1,
+      "type": "mcq",
+      "q": "The post-2023 Basel III measures, including the output floor phase-in, are also commonly referred to by which term?",
+      "opts": [
+        "Basel I Revised",
+        "Basel 3.1 or Basel IV",
+        "The Bretton Woods Accord",
+        "The Dodd-Frank Framework"
+      ],
+      "ans": "Basel 3.1 or Basel IV",
+      "exp": "These 2023-onward measures have been referred to as Basel 3.1 or Basel IV (Manual, 1.7.3)."
+    },
+    {
+      "id": "Q51",
+      "module": 1,
+      "type": "mcq",
+      "q": "Comparing risk-weighting across the Basel Accords, which statement is accurate?",
+      "opts": [
+        "Basel I used internal models; Basel II used fixed categories",
+        "Basel I used fixed categories; Basel II allowed internal models for risk weights",
+        "Both accords relied exclusively on internal bank models",
+        "Basel III replaced risk-weighting with a single leverage ratio"
+      ],
+      "ans": "Basel I used fixed categories; Basel II allowed internal models for risk weights",
+      "exp": "Basel I categorized assets into fixed risk-weight bands, while under Basel II, banks use their internal models to calculate risk weights for different exposures (Manual, 1.7.3 comparison table)."
+    },
+    {
+      "id": "Q52",
+      "module": 1,
+      "type": "mcq",
+      "q": "Comparing minimum capital requirements across the Basel Accords, which sequence is correct?",
+      "opts": [
+        "8% (4% Tier 1) under Basel I, 8% (6% Tier 1) under Basel II, 10.5% with buffers under Basel III",
+        "10.5% (4% Tier 1) under Basel I, 8% (6% Tier 1) under Basel II, 8% under Basel III",
+        "8% (4% Tier 1) under all three accords with no change over time",
+        "6% (2% Tier 1) under Basel I, 8% (4% Tier 1) under Basel II, 10.5% under Basel III"
+      ],
+      "ans": "8% (4% Tier 1) under Basel I, 8% (6% Tier 1) under Basel II, 10.5% with buffers under Basel III",
+      "exp": "Basel I required 8% minimum capital (4% Tier 1), Basel II required 8% minimum (6% Tier 1), and Basel III raised this to 10.5%, adding the capital conservation and countercyclical buffers (Manual, 1.7.3 comparison table)."
+    },
+    {
+      "id": "Q53",
+      "module": 1,
+      "type": "mcq",
+      "q": "Which Basel Accord first introduced a leverage ratio alongside liquidity ratios?",
+      "opts": [
+        "Basel I, with an 8% minimum leverage ratio requirement",
+        "Basel III, with a 3% leverage ratio, the LCR, and the NSFR",
+        "Basel II, through its three-pillar supervisory review structure",
+        "None of the accords address leverage or liquidity requirements"
+      ],
+      "ans": "Basel III, with a 3% leverage ratio, the LCR, and the NSFR",
+      "exp": "Basel III introduced a leverage ratio of 3% and two liquidity ratios, the LCR and NSFR; Basel I and Basel II did not address this area (Manual, 1.7.3 comparison table)."
+    },
+    {
+      "id": "Q54",
+      "module": 1,
+      "type": "mcq",
+      "q": "How did risk coverage expand from Basel I to Basel II?",
+      "opts": [
+        "Basel I covered market and operational risk; Basel II narrowed to credit risk",
+        "Basel I covered credit risk; Basel II added market and operational risk",
+        "Both accords covered identical risk types with no expansion at all",
+        "Basel II removed credit-risk coverage from the original framework entirely"
+      ],
+      "ans": "Basel I covered credit risk; Basel II added market and operational risk",
+      "exp": "Basel I focused principally on credit risk, while Basel II expanded the scope to include market risk and operational risk (Manual, 1.7 and comparison table)."
+    },
+    {
+      "id": "Q55",
+      "module": 1,
+      "type": "mcq",
+      "q": "A regulator requires a bank to hold capital against a stress-absorption buffer plus a further buffer that varies with credit-cycle conditions, on top of the base minimum. Which Basel III feature does this describe?",
+      "opts": [
+        "The Tier 3 capital allowance",
+        "The capital conservation buffer and counter-cyclical buffer",
+        "The original Basel I 8% minimum alone",
+        "The Basel II supervisory review pillar alone"
+      ],
+      "ans": "The capital conservation buffer and counter-cyclical buffer",
+      "exp": "Basel III introduced the capital conservation buffer of 2.5% and a counter-cyclical buffer of 0-2.5% on top of the 10.5% minimum capital requirement (Manual, 1.7.3 comparison table)."
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "type": "mcq",
+      "q": "According to the manual, what is a core role of the Board in ERM?",
+      "opts": [
+        "Executing day-to-day risk controls personally instead of delegating",
+        "Defining the bank's strategic direction and tolerance level for each risk element",
+        "Approving every individual customer transaction across all business units",
+        "Preparing the bank's quarterly financial statements for external auditors"
+      ],
+      "ans": "Defining the bank's strategic direction and tolerance level for each risk element",
+      "exp": "The Board's role includes defining the bank's overall strategic direction and tolerance level for each risk element (Manual, 2.1)."
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "type": "mcq",
+      "q": "Beyond setting direction, what must the Board ensure regarding the people managing individual risks?",
+      "opts": [
+        "That they report only to external regulators, not to management",
+        "That they possess sound expertise and knowledge to accomplish the risk management function",
+        "That they rotate across departments every calendar quarter without exception",
+        "That they hold no professional certifications relevant to their role"
+      ],
+      "ans": "That they possess sound expertise and knowledge to accomplish the risk management function",
+      "exp": "The Board must ensure senior management and individuals responsible for managing risks possess sound expertise and knowledge (Manual, 2.1)."
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a Board responsibility listed in the manual?",
+      "opts": [
+        "Drafting individual loan agreements for each retail banking customer",
+        "Ensuring appropriate plans and procedures for managing individual risk elements are in place",
+        "Conducting daily transaction reconciliations across all branch locations",
+        "Setting individual employee performance bonuses across departments each year"
+      ],
+      "ans": "Ensuring appropriate plans and procedures for managing individual risk elements are in place",
+      "exp": "The Board must ensure appropriate plans and procedures for managing individual risk elements are in place (Manual, 2.1)."
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why does the Code of Corporate Governance for Banks in Nigeria require the Board Chairman not to sit on the Board Risk Management Committee (BRMC)?",
+      "opts": [
+        "To reduce the Chairman's overall workload",
+        "To secure the independence of the BRMC",
+        "To allow the Chairman to focus on shareholder relations",
+        "To comply with international accounting standards"
+      ],
+      "ans": "To secure the independence of the BRMC",
+      "exp": "Excluding the Chairman from BRMC membership secures the committee's independence, in line with the Code of Corporate Governance for Banks in Nigeria (Manual, 2.1)."
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the minimum non-executive director composition required for the BRMC?",
+      "opts": [
+        "One non-executive director, with no independence requirement",
+        "At least two non-executive directors, one of whom is independent",
+        "Three executive directors and no non-executive directors",
+        "Exactly one independent director and no non-executive directors"
+      ],
+      "ans": "At least two non-executive directors, one of whom is independent",
+      "exp": "BRMC membership must include at least two non-executive directors, one of whom should be an independent director (Manual, 2.1)."
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why is the MD/CEO included as a member of the BRMC?",
+      "opts": [
+        "To chair the committee in place of a non-executive director",
+        "To complement the MD/CEO's oversight role as chief executive of the bank",
+        "To replace the need for a non-executive chairman",
+        "To ensure the committee meets a quorum requirement only"
+      ],
+      "ans": "To complement the MD/CEO's oversight role as chief executive of the bank",
+      "exp": "The MD/CEO is a BRMC member to complement his oversight role as the Chief Executive Officer of the bank (Manual, 2.1)."
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is a management responsibility listed for effective bank risk management?",
+      "opts": [
+        "Setting the bank's overall risk tolerance independently of the board",
+        "Translating the board's goals into operating standards understood by personnel",
+        "Approving the bank's external audit appointment",
+        "Determining shareholder dividend policy"
+      ],
+      "ans": "Translating the board's goals into operating standards understood by personnel",
+      "exp": "Management must develop and implement procedures that translate the board's goals, objectives, and risk tolerances into operating standards well understood by personnel (Manual, 2.2)."
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which activity is listed among management's minimum responsibilities for risk management?",
+      "opts": [
+        "Establishing lines of authority and responsibility for managing individual risk elements",
+        "Setting the bank's dividend payout ratio each fiscal year",
+        "Appointing external auditors without any board involvement at all",
+        "Approving the annual general meeting agenda for shareholders directly"
+      ],
+      "ans": "Establishing lines of authority and responsibility for managing individual risk elements",
+      "exp": "Management is responsible for establishing lines of authority and responsibility for managing individual risk elements, in line with the board's overall direction (Manual, 2.2)."
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "type": "mcq",
+      "q": "What must management ensure regarding the bank's risk policies, appetite, and tolerance?",
+      "opts": [
+        "That they remain confidential to senior executives only",
+        "That they are well-documented and communicated throughout the bank",
+        "That they are reviewed only once every five years",
+        "That they are set exclusively by the external auditor"
+      ],
+      "ans": "That they are well-documented and communicated throughout the bank",
+      "exp": "Management must ensure that risk policies, appetite, and tolerance are well-documented and communicated throughout the bank (Manual, 2.2)."
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank introduces measurable indicators to track both risk exposure and performance across departments. Which operationalizing step does this describe?",
+      "opts": [
+        "Conducting training and awareness programs for all employees",
+        "Establishing Key Risk Indicators (KRIs) and Key Performance Indicators (KPIs)",
+        "Investing in ERM software and tools for reporting",
+        "Assigning accountability to specific departmental risk owners"
+      ],
+      "ans": "Establishing Key Risk Indicators (KRIs) and Key Performance Indicators (KPIs)",
+      "exp": "Establishing KRIs and KPIs to track risk and performance is a listed step in operationalizing ERM within management (Manual, 2.2)."
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which step in operationalizing ERM assigns specific individuals or departments responsibility for monitoring assigned risks?",
+      "opts": [
+        "Establishing Key Risk Indicators and Performance Indicators annually",
+        "Assigning accountability to specific individuals or departments as risk owners",
+        "Investing in ERM software and tools company-wide",
+        "Periodically reviewing and updating the ERM framework"
+      ],
+      "ans": "Assigning accountability to specific individuals or departments as risk owners",
+      "exp": "Assigning accountability to specific individuals or departments, making them responsible risk owners, is a listed operationalizing step (Manual, 2.2)."
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why does the manual list training and awareness programs as part of operationalizing ERM?",
+      "opts": [
+        "To satisfy an unrelated human-resources compliance requirement",
+        "To educate employees on risk management's importance and their roles",
+        "To reduce the number of risk owners needed overall",
+        "To replace the need for KRIs and KPIs entirely"
+      ],
+      "ans": "To educate employees on risk management's importance and their roles",
+      "exp": "Training and awareness programs are meant to educate employees about the importance of risk management and their roles in it (Manual, 2.2)."
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is listed as a step for operationalizing ERM within management?",
+      "opts": [
+        "Investing in ERM software and tools for data and reporting",
+        "Eliminating the internal audit function from the organization entirely",
+        "Transferring all risk ownership away from management to the Board",
+        "Suspending risk reporting during periods of high performance"
+      ],
+      "ans": "Investing in ERM software and tools for data and reporting",
+      "exp": "Investing in ERM software and tools to streamline risk data collection, analysis, and reporting is one of the listed operationalizing steps (Manual, 2.2)."
+    },
+    {
+      "id": "Q69",
+      "module": 2,
+      "type": "mcq",
+      "q": "An internal auditor evaluates whether the bank's methods for estimating potential losses under various risk scenarios use appropriate models and data. Which auditor role does this describe?",
+      "opts": [
+        "Risk Reporting to Senior Management",
+        "Risk Measurement and Quantification",
+        "Control Testing of Mitigation Controls",
+        "Fraud Detection and Prevention"
+      ],
+      "ans": "Risk Measurement and Quantification",
+      "exp": "Risk Measurement and Quantification involves evaluating the bank's methods for quantifying risk, including whether appropriate models and data are used (Manual, 2.3)."
+    },
+    {
+      "id": "Q70",
+      "module": 2,
+      "type": "mcq",
+      "q": "An internal auditor checks whether risk reports are accurate, timely, and comply with regulatory requirements. Which auditor role does this describe?",
+      "opts": [
+        "Risk Assessment",
+        "Risk Reporting",
+        "Regulatory Compliance",
+        "Control Testing"
+      ],
+      "ans": "Risk Reporting",
+      "exp": "Risk Reporting involves reviewing the bank's risk reporting process to ensure information is accurate, timely, useful, and compliant with regulatory requirements (Manual, 2.3)."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "type": "mcq",
+      "q": "An internal auditor conducts tests to determine whether risk mitigation controls are consistently applied and free of deficiencies. Which auditor role does this describe?",
+      "opts": [
+        "Risk Measurement and Quantification",
+        "Control Testing",
+        "Continuous Monitoring",
+        "Risk Management Policies and Procedures"
+      ],
+      "ans": "Control Testing",
+      "exp": "Control Testing involves determining whether risk mitigation controls are effective, consistently applied, and free of deficiencies (Manual, 2.3)."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "type": "mcq",
+      "q": "An internal auditor reviews transactional data and processes to identify potentially fraudulent activities. Which auditor role does this describe?",
+      "opts": [
+        "Risk Assessment",
+        "Fraud Detection",
+        "Risk Reporting",
+        "Regulatory Compliance"
+      ],
+      "ans": "Fraud Detection",
+      "exp": "Fraud Detection involves reviewing transactional data, processes, and systems to identify potentially fraudulent activities (Manual, 2.3)."
+    },
+    {
+      "id": "Q73",
+      "module": 2,
+      "type": "mcq",
+      "q": "An internal auditor ensures the bank complies with Basel III, the Dodd-Frank Act, and Anti-Money Laundering regulations. Which auditor role does this describe?",
+      "opts": [
+        "Risk Management Policies and Procedures",
+        "Regulatory Compliance",
+        "Risk Assessment",
+        "Continuous Monitoring"
+      ],
+      "ans": "Regulatory Compliance",
+      "exp": "Regulatory Compliance involves ensuring the bank complies with relevant regulatory requirements such as Basel III, Dodd-Frank, and AML regulations (Manual, 2.3)."
+    },
+    {
+      "id": "Q74",
+      "module": 2,
+      "type": "mcq",
+      "q": "An internal auditor performs ongoing monitoring to ensure risk profiles stay current and the bank responds appropriately to emerging risks. Which auditor role does this describe?",
+      "opts": [
+        "Continuous Monitoring",
+        "Risk Reporting",
+        "Control Testing",
+        "Risk Assessment"
+      ],
+      "ans": "Continuous Monitoring",
+      "exp": "Continuous Monitoring involves ongoing monitoring of risks to ensure risk profiles are up-to-date and the bank responds appropriately to emerging risks (Manual, 2.3)."
+    },
+    {
+      "id": "Q75",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following is listed as part of the internal auditor's role in ERM assessment?",
+      "opts": [
+        "Setting the bank's overall risk appetite independently of the board",
+        "Evaluating the effectiveness of risk assessment methodologies used by the bank",
+        "Approving the bank's annual dividend distribution to shareholders",
+        "Chairing the Board Risk Management Committee each year"
+      ],
+      "ans": "Evaluating the effectiveness of risk assessment methodologies used by the bank",
+      "exp": "Internal auditors assist in identifying and assessing risks and evaluate the effectiveness of the risk assessment methodologies used by the bank (Manual, 2.3)."
+    },
+    {
+      "id": "Q76",
+      "module": 2,
+      "type": "mcq",
+      "q": "When auditing ERM effectiveness, what does reviewing the risk appetite statement and strategic risk management plan primarily verify?",
+      "opts": [
+        "That mitigation controls are free of deficiencies",
+        "That they align with the bank's business objectives",
+        "That stress testing results have been integrated into decisions",
+        "That cybersecurity measures meet a minimum standard"
+      ],
+      "ans": "That they align with the bank's business objectives",
+      "exp": "Auditing ERM effectiveness includes reviewing the risk appetite statement and strategic risk management plan to ensure alignment with business objectives (Manual, 2.3)."
+    },
+    {
+      "id": "Q77",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which activity is part of auditing ERM effectiveness, according to the manual?",
+      "opts": [
+        "Reviewing risk mitigation strategies and controls to determine their adequacy",
+        "Approving the bank's annual marketing and advertising budget",
+        "Drafting the bank's original risk appetite from scratch",
+        "Selecting the bank's external legal counsel each year"
+      ],
+      "ans": "Reviewing risk mitigation strategies and controls to determine their adequacy",
+      "exp": "Auditing ERM effectiveness includes reviewing the bank's risk mitigation strategies and controls to determine their adequacy and effectiveness (Manual, 2.3)."
+    },
+    {
+      "id": "Q78",
+      "module": 2,
+      "type": "mcq",
+      "q": "Why does auditing ERM effectiveness include evaluating the bank's cybersecurity measures?",
+      "opts": [
+        "Because cybersecurity is unrelated to technology risk management",
+        "Because technology risk management is part of what auditors assess for ERM effectiveness",
+        "Because cybersecurity replaces the need for control testing",
+        "Because it is required only for banks without an internal audit function"
+      ],
+      "ans": "Because technology risk management is part of what auditors assess for ERM effectiveness",
+      "exp": "Auditing ERM effectiveness includes evaluating the bank's cybersecurity measures and technology risk management (Manual, 2.3)."
+    },
+    {
+      "id": "Q79",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which activity is part of auditing ERM effectiveness beyond controls and reporting?",
+      "opts": [
+        "Ensuring stress testing results are integrated into the bank's decision-making processes",
+        "Personally approving each individual customer loan application directly",
+        "Replacing the Board Risk Management Committee's oversight role",
+        "Setting the bank's external audit fee each year"
+      ],
+      "ans": "Ensuring stress testing results are integrated into the bank's decision-making processes",
+      "exp": "Auditing ERM effectiveness includes ensuring stress testing results are integrated into the bank's decision-making processes (Manual, 2.3)."
+    },
+    {
+      "id": "Q80",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary responsibility of the Chief Risk Officer (CRO) within an ERM system?",
+      "opts": [
+        "Overseeing only the bank's IT security and systems function",
+        "Overseeing all aspects of the organization's risk management efforts",
+        "Managing the bank's customer-facing sales and marketing targets",
+        "Approving the bank's annual financial statements without auditor input"
+      ],
+      "ans": "Overseeing all aspects of the organization's risk management efforts",
+      "exp": "The CRO is a senior executive responsible for overseeing all aspects of the organization's risk management efforts, ensuring risks are managed to protect and enhance value and reputation while ensuring compliance (Manual, 2.4)."
+    },
+    {
+      "id": "Q81",
+      "module": 2,
+      "type": "mcq",
+      "q": "A risk officer analyzes data and historical trends to determine how significant each identified risk is. Which risk officer function does this describe?",
+      "opts": [
+        "Risk Identification",
+        "Risk Assessment",
+        "Risk Measurement",
+        "Risk Reporting"
+      ],
+      "ans": "Risk Assessment",
+      "exp": "Risk Assessment involves analyzing data, historical trends, and qualitative information to determine the significance of each risk (Manual, 2.4)."
+    },
+    {
+      "id": "Q82",
+      "module": 2,
+      "type": "mcq",
+      "q": "A risk officer uses financial modelling, stress testing, and key risk indicators to gauge the magnitude of risks. Which risk officer function does this describe?",
+      "opts": [
+        "Risk Identification",
+        "Risk Measurement",
+        "Risk Monitoring",
+        "Risk Reporting"
+      ],
+      "ans": "Risk Measurement",
+      "exp": "Risk Measurement uses methods such as financial modelling, stress testing, scenario analysis, and KRIs to measure the magnitude of risks (Manual, 2.4)."
+    },
+    {
+      "id": "Q83",
+      "module": 2,
+      "type": "mcq",
+      "q": "A risk officer documents both internal and external risks affecting the organization, including financial, operational, and reputational risks. Which risk officer function does this describe?",
+      "opts": [
+        "Risk Identification",
+        "Risk Measurement",
+        "Risk Monitoring",
+        "Risk Assessment"
+      ],
+      "ans": "Risk Identification",
+      "exp": "Risk Identification involves identifying and documenting all potential risks, both internal and external, including financial, operational, regulatory, market, and reputational risks (Manual, 2.4)."
+    },
+    {
+      "id": "Q84",
+      "module": 2,
+      "type": "mcq",
+      "q": "A risk officer maintains a dashboard to track whether new or changed risks are promptly identified and assessed. Which risk officer function does this describe?",
+      "opts": [
+        "Risk Reporting",
+        "Risk Monitoring",
+        "Risk Identification",
+        "Risk Measurement"
+      ],
+      "ans": "Risk Monitoring",
+      "exp": "Risk Monitoring involves continuous tracking and reporting on the status of risks, often via a dashboard, ensuring changes or new risks are promptly identified (Manual, 2.4)."
+    },
+    {
+      "id": "Q85",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following describes the risk officer's Risk Reporting function?",
+      "opts": [
+        "Building financial models to estimate potential losses",
+        "Communicating risk information to senior management, the board, and other stakeholders",
+        "Documenting internal and external risks facing the organization",
+        "Testing whether mitigation controls are consistently applied"
+      ],
+      "ans": "Communicating risk information to senior management, the board, and other stakeholders",
+      "exp": "Risk Reporting involves the risk officer communicating risk information to senior management, the board of directors, and other stakeholders (Manual, 2.4)."
+    },
+    {
+      "id": "Q86",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which unit forms the first line of defense in the Three Lines of Defense model?",
+      "opts": [
+        "The internal audit function operating independently company-wide",
+        "Operational business units and teams engaged in daily activities",
+        "External auditors and government regulators jointly",
+        "The Board Risk Management Committee acting alone"
+      ],
+      "ans": "Operational business units and teams engaged in daily activities",
+      "exp": "The first line of defense consists of operational business units, departments, and teams engaged in day-to-day activities, responsible for identifying, assessing, and managing risks (Manual, 2.5)."
+    },
+    {
+      "id": "Q87",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is a key responsibility of the first line of defense in the 3LoD model?",
+      "opts": [
+        "Providing independent assurance to the board of directors",
+        "Setting risk tolerances, implementing controls, and taking corrective action",
+        "Conducting independent audits of the second line",
+        "Reporting exclusively to external regulators rather than internally"
+      ],
+      "ans": "Setting risk tolerances, implementing controls, and taking corrective action",
+      "exp": "First-line responsibilities include setting risk tolerances, implementing controls, monitoring, reporting on risks, and taking immediate corrective actions when risks are identified (Manual, 2.5)."
+    },
+    {
+      "id": "Q88",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which functions make up the second line of defense in the 3LoD model?",
+      "opts": [
+        "Front-line operational staff working without any oversight",
+        "Risk management, compliance, and control functions",
+        "External audit firms hired on an annual basis",
+        "The Board of Directors acting exclusively alone"
+      ],
+      "ans": "Risk management, compliance, and control functions",
+      "exp": "The second line of defense comprises risk management, compliance, and control functions that provide oversight, guidance, and support to the first line (Manual, 2.5)."
+    },
+    {
+      "id": "Q89",
+      "module": 2,
+      "type": "mcq",
+      "q": "What role does the second line of defense play regarding the first line's risk processes?",
+      "opts": [
+        "It independently assesses and validates the effectiveness of first-line risk management processes",
+        "It performs the day-to-day operational activities itself",
+        "It reports directly to external regulators only, bypassing the board",
+        "It replaces the need for a designated risk committee"
+      ],
+      "ans": "It independently assesses and validates the effectiveness of first-line risk management processes",
+      "exp": "The second line independently assesses and validates the effectiveness of risk management processes, ensures compliance, and provides guidance on mitigation strategies (Manual, 2.5)."
+    },
+    {
+      "id": "Q90",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which function operates independently from both the first and second lines of defense in the 3LoD model?",
+      "opts": [
+        "Risk management and compliance functions",
+        "The internal audit function",
+        "Front-line operational management",
+        "The external marketing department"
+      ],
+      "ans": "The internal audit function",
+      "exp": "The third line of defense is represented by the internal audit function, which operates independently from both the first and second lines (Manual, 2.5)."
+    },
+    {
+      "id": "Q91",
+      "module": 2,
+      "type": "mcq",
+      "q": "What is the primary purpose of the third line of defense's audits and reviews?",
+      "opts": [
+        "To implement day-to-day operational controls directly within units",
+        "To provide an objective evaluation of the first and second lines",
+        "To set the bank's risk appetite for the coming year",
+        "To replace the compliance function within the organization entirely"
+      ],
+      "ans": "To provide an objective evaluation of the first and second lines",
+      "exp": "Internal auditors provide an objective, unbiased evaluation of the effectiveness of risk management and control processes across the first and second lines (Manual, 2.5)."
+    },
+    {
+      "id": "Q92",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which strength of the 3LoD model relates to helping everyone in the organization understand their role in managing risk?",
+      "opts": [
+        "Efficient Use of Resources",
+        "Clear Accountability",
+        "Comprehensive Risk Management",
+        "Alignment with Regulatory Expectations"
+      ],
+      "ans": "Clear Accountability",
+      "exp": "Clear Accountability establishes clear roles and responsibilities, helping ensure everyone understands their role in managing risk, improving accountability (Manual, 2.6)."
+    },
+    {
+      "id": "Q93",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which strength of the 3LoD model describes operational teams focusing on core activities while specialized teams provide oversight and internal audit provides assurance?",
+      "opts": [
+        "Effective Risk Governance",
+        "Efficient Use of Resources",
+        "Clear Accountability",
+        "Comprehensive Risk Management"
+      ],
+      "ans": "Efficient Use of Resources",
+      "exp": "Efficient Use of Resources allows operational teams to focus on core activities while risk and compliance teams provide expertise, and internal audit provides independent assurance (Manual, 2.6)."
+    },
+    {
+      "id": "Q94",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which strength of the 3LoD model reflects support from banking and financial regulatory authorities?",
+      "opts": [
+        "Comprehensive Risk Management",
+        "Alignment with Regulatory Expectations",
+        "Clear Accountability",
+        "Effective Risk Governance"
+      ],
+      "ans": "Alignment with Regulatory Expectations",
+      "exp": "Many regulatory bodies support or require the 3LoD model, so adhering to it helps organizations meet regulatory compliance expectations (Manual, 2.6)."
+    },
+    {
+      "id": "Q95",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which weakness of the 3LoD model describes confusion about which line is responsible for specific risk tasks?",
+      "opts": [
+        "Resistance to Change",
+        "Overlaps and Gaps",
+        "Dependency on Culture",
+        "Resource Constraints"
+      ],
+      "ans": "Overlaps and Gaps",
+      "exp": "Overlaps and Gaps can occur in practice, leading to confusion about who is responsible for specific risk management tasks, potentially resulting in inadequate risk management (Manual, 2.6)."
+    },
+    {
+      "id": "Q96",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which weakness of the 3LoD model describes each line focusing narrowly on its own responsibilities and losing sight of overall risk?",
+      "opts": [
+        "Silos",
+        "Complexity",
+        "Resource Constraints",
+        "Resistance to Change"
+      ],
+      "ans": "Silos",
+      "exp": "The model may inadvertently create Silos, where each line focuses primarily on its own responsibilities and lacks a holistic view of risks (Manual, 2.6)."
+    },
+    {
+      "id": "Q97",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which weakness of the 3LoD model relates to smaller organizations struggling to maintain distinct lines and specialized staff?",
+      "opts": [
+        "Overlaps and Gaps",
+        "Resource Constraints",
+        "Silos",
+        "Complexity"
+      ],
+      "ans": "Resource Constraints",
+      "exp": "Smaller organizations may struggle to implement the model effectively due to resource limitations, finding it hard to maintain distinct lines of defense (Manual, 2.6)."
+    },
+    {
+      "id": "Q98",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which weakness of the 3LoD model reflects the model's effectiveness depending on the organization's culture?",
+      "opts": [
+        "Dependency on Culture",
+        "Resistance to Change",
+        "Complexity",
+        "Overlaps and Gaps"
+      ],
+      "ans": "Dependency on Culture",
+      "exp": "Dependency on Culture means the model may not function as intended if the organization lacks a strong culture of risk management and accountability (Manual, 2.6)."
+    },
+    {
+      "id": "Q99",
+      "module": 2,
+      "type": "mcq",
+      "q": "Employees viewing the 3LoD model as bureaucratic and adding unnecessary layers of oversight best illustrates which weakness?",
+      "opts": [
+        "Complexity in coordination",
+        "Resistance to Change",
+        "Silos between lines",
+        "Resource Constraints internally"
+      ],
+      "ans": "Resistance to Change",
+      "exp": "Resistance to Change reflects employees and managers resisting the model's implementation, viewing it as bureaucratic (Manual, 2.6)."
+    },
+    {
+      "id": "Q100",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank's second-line compliance team and risk management team each perform the same monitoring task without coordinating, creating confusion over ownership. Which combination of factors does this scenario best illustrate?",
+      "opts": [
+        "A strength in Clear Accountability across the lines",
+        "The Overlaps and Gaps weakness of the 3LoD model",
+        "A strength in Efficient Use of Resources overall",
+        "The Dependency on Culture weakness of the model"
+      ],
+      "ans": "The Overlaps and Gaps weakness of the 3LoD model",
+      "exp": "Duplicated, uncoordinated tasks between lines with unclear ownership match the manual's description of the Overlaps and Gaps weakness (Manual, 2.6)."
+    },
+    {
+      "id": "Q101",
+      "module": 2,
+      "type": "mcq",
+      "q": "A large bank finds that coordinating interactions between its three lines of defense is difficult and creates inefficiencies as the organization grows. Which weakness does this best illustrate?",
+      "opts": [
+        "Silos",
+        "Complexity",
+        "Resistance to Change",
+        "Resource Constraints"
+      ],
+      "ans": "Complexity",
+      "exp": "Complexity reflects the difficulty of managing interactions and coordination between the three lines, especially in large organizations, potentially leading to inefficiencies (Manual, 2.6)."
+    },
+    {
+      "id": "Q102",
+      "module": 2,
+      "type": "mcq",
+      "q": "Which of the following best distinguishes the role of internal auditors from that of the second line of defense?",
+      "opts": [
+        "Internal auditors set the risk tolerances that the first line implements",
+        "Internal auditors independently evaluate the first and second lines' effectiveness",
+        "Internal auditors are part of the second line and share its duties",
+        "Internal auditors have no reporting relationship to the board of directors"
+      ],
+      "ans": "Internal auditors independently evaluate the first and second lines' effectiveness",
+      "exp": "The third line (internal audit) independently evaluates whether the first and second lines are functioning effectively, adhering to policies, and achieving risk objectives, distinct from the second line's ongoing oversight role (Manual, 2.5)."
+    },
+    {
+      "id": "Q103",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank's Chief Risk Officer reports that risks are being identified and assessed, but not consistently monitored for changes over time. Which risk officer function needs strengthening?",
+      "opts": [
+        "Risk Identification",
+        "Risk Monitoring",
+        "Risk Assessment",
+        "Risk Measurement"
+      ],
+      "ans": "Risk Monitoring",
+      "exp": "Risk Monitoring is the function responsible for continuous tracking of risks to ensure changes or new risks are promptly identified and assessed (Manual, 2.4)."
+    },
+    {
+      "id": "Q104",
+      "module": 2,
+      "type": "mcq",
+      "q": "During an ERM audit, the internal auditor finds that risk reports reach senior management late and contain inconsistent figures. Which auditor role most directly addresses this finding?",
+      "opts": [
+        "Fraud Detection",
+        "Risk Reporting",
+        "Control Testing",
+        "Regulatory Compliance"
+      ],
+      "ans": "Risk Reporting",
+      "exp": "Risk Reporting review ensures risk information is accurate, timely, and useful to senior management and the board, which directly covers late or inconsistent reports (Manual, 2.3)."
+    },
+    {
+      "id": "Q105",
+      "module": 2,
+      "type": "mcq",
+      "q": "A bank's board wants assurance that its risk appetite statement genuinely reflects the risks the institution is willing to take on. Which auditing activity provides this assurance?",
+      "opts": [
+        "Fraud Detection procedures across all transaction types",
+        "Reviewing the appetite statement for business-objective alignment",
+        "Establishing Key Risk Indicators and Performance Indicators together",
+        "Investing in ERM software and analytical tools broadly"
+      ],
+      "ans": "Reviewing the appetite statement for business-objective alignment",
+      "exp": "Auditing ERM effectiveness includes reviewing the risk appetite statement and strategic risk management plan to ensure alignment with business objectives (Manual, 2.3)."
+    },
+    {
+      "id": "Q106",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does the acronym COSO stand for?",
+      "opts": [
+        "Committee of Standard Operations",
+        "Committee of Sponsoring Organizations of the Treadway Commission",
+        "Council of Strategic Oversight and Operations",
+        "Committee for Supervisory Oversight of Organizations"
+      ],
+      "ans": "Committee of Sponsoring Organizations of the Treadway Commission",
+      "exp": "COSO stands for the Committee of Sponsoring Organizations of the Treadway Commission (Manual, 3.0)."
+    },
+    {
+      "id": "Q107",
+      "module": 3,
+      "type": "mcq",
+      "q": "What was COSO originally established to combat?",
+      "opts": [
+        "Rising insurance premiums across industries",
+        "Corporate fraud, through a joint initiative",
+        "Excessive government banking regulation",
+        "Currency exchange-rate volatility"
+      ],
+      "ans": "Corporate fraud, through a joint initiative",
+      "exp": "COSO is described as a joint initiative to combat corporate fraud (Manual, 3.0)."
+    },
+    {
+      "id": "Q108",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following areas is COSO established to guide executive management and governance entities on?",
+      "opts": [
+        "Product pricing strategy and market segmentation practices",
+        "Governance, business ethics, internal control, ERM, and financial reporting",
+        "Employee recruitment and payroll administration processes",
+        "Foreign exchange trading and treasury operations management"
+      ],
+      "ans": "Governance, business ethics, internal control, ERM, and financial reporting",
+      "exp": "COSO guides executive management and governance entities on organizational governance, business ethics, internal control, enterprise risk management, fraud, and financial reporting (Manual, 3.0)."
+    },
+    {
+      "id": "Q109",
+      "module": 3,
+      "type": "mcq",
+      "q": "What has COSO established that companies can use to assess their own control systems?",
+      "opts": [
+        "A mandatory annual licensing fee",
+        "A common internal control model",
+        "A single global regulatory body",
+        "A standardized employee bonus structure"
+      ],
+      "ans": "A common internal control model",
+      "exp": "COSO has established a common internal control model against which companies and organizations may assess their control systems (Manual, 3.0)."
+    },
+    {
+      "id": "Q110",
+      "module": 3,
+      "type": "mcq",
+      "q": "According to the manual's introductory list, which of the following is one of COSO's eight components?",
+      "opts": [
+        "Governance and Culture",
+        "Employee Recruitment",
+        "Product Pricing",
+        "Treasury Management"
+      ],
+      "ans": "Governance and Culture",
+      "exp": "The COSO ERM Framework consists of eight components including Governance and Culture, along with Strategy and Objective-Setting, Performance, Review and Revision, Information, Communication, Reporting, and Monitoring (Manual, 3.0)."
+    },
+    {
+      "id": "Q111",
+      "module": 3,
+      "type": "mcq",
+      "q": "What is the overall purpose of the COSO ERM Framework, according to the manual?",
+      "opts": [
+        "To eliminate the need for internal audit functions",
+        "To integrate risk management into strategic planning and decision-making",
+        "To replace external regulatory reporting entirely",
+        "To standardize employee compensation across industries"
+      ],
+      "ans": "To integrate risk management into strategic planning and decision-making",
+      "exp": "The COSO ERM Framework helps organizations integrate risk management into their strategic planning and decision-making processes (Manual, 3.0)."
+    },
+    {
+      "id": "Q112",
+      "module": 3,
+      "type": "mcq",
+      "q": "Across how many organizational levels does the COSO Integrated Framework apply its eight components?",
+      "opts": [
+        "A single, entity-wide level applied uniformly",
+        "Entity, Division/Subsidiary, and Strategic Business Unit levels",
+        "Two levels only: national and international offices",
+        "Four levels defined solely by employee headcount"
+      ],
+      "ans": "Entity, Division/Subsidiary, and Strategic Business Unit levels",
+      "exp": "The framework covers eight components across all relevant levels: Enterprise/Entity Level, Division and Subsidiary Level, and Strategic Business Unit Levels (Manual, 3.1)."
+    },
+    {
+      "id": "Q113",
+      "module": 3,
+      "type": "mcq",
+      "q": "The COSO Integrated Framework ensures achievement of which set of entity objectives?",
+      "opts": [
+        "Marketing, Sales, Production, and Distribution",
+        "Strategic, Operations, Reporting, and Compliance",
+        "Growth, Profitability, Liquidity, and Solvency",
+        "Innovation, Efficiency, Quality, and Speed"
+      ],
+      "ans": "Strategic, Operations, Reporting, and Compliance",
+      "exp": "The framework ensures achievement of the entity's Strategic, Operations, Reporting, and Compliance objectives (Manual, 3.1)."
+    },
+    {
+      "id": "Q114",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Side 1 of the ERM Framework, what do Strategic Objectives represent?",
+      "opts": [
+        "High-level goals for the entity",
+        "Efficient management of the entity's resources",
+        "Reliable reports and feedback processes",
+        "Applicable laws and policies"
+      ],
+      "ans": "High-level goals for the entity",
+      "exp": "Strategic Objectives are described as the entity's high-level goals (Manual, 3.1.1, Side 1)."
+    },
+    {
+      "id": "Q115",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Side 1 of the ERM Framework, what do Operations Objectives concern?",
+      "opts": [
+        "High-level entity goals set by the board",
+        "Efficient management of the entity's resources",
+        "Applicable laws and regulatory policies",
+        "Reliable internal and external reports"
+      ],
+      "ans": "Efficient management of the entity's resources",
+      "exp": "Operations Objectives concern the efficient management of the entity's resources (Manual, 3.1.1, Side 1)."
+    },
+    {
+      "id": "Q116",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Side 1 of the ERM Framework, what do Compliance Objectives address?",
+      "opts": [
+        "Efficient use of the entity's resources overall",
+        "Applicable laws and policies the entity follows",
+        "High-level strategic goals set by the board",
+        "Reliable feedback processes used for reporting"
+      ],
+      "ans": "Applicable laws and policies the entity follows",
+      "exp": "Compliance Objectives address applicable laws and policies (Manual, 3.1.1, Side 1)."
+    },
+    {
+      "id": "Q117",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which of the following correctly describes the Internal Environment component of the ERM Framework?",
+      "opts": [
+        "Identifying internal and external events affecting objectives",
+        "The tone and risk culture of the entity",
+        "The entity's ability to analyze potential risks",
+        "Policies and procedures put in place by the entity"
+      ],
+      "ans": "The tone and risk culture of the entity",
+      "exp": "Internal Environment refers to the tone and risk culture of the entity, one of the eight components listed under Side 2 (Manual, 3.1.1, Side 2)."
+    },
+    {
+      "id": "Q118",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which component of the ERM Framework is described as ensuring management sets realistic objectives?",
+      "opts": [
+        "Monitoring",
+        "Objective Setting",
+        "Control Activities",
+        "Risk Assessment"
+      ],
+      "ans": "Objective Setting",
+      "exp": "Objective Setting requires management to set realistic objectives, per the eight components under Side 2 (Manual, 3.1.1, Side 2)."
+    },
+    {
+      "id": "Q119",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which component of the ERM Framework concerns internal and external events affecting the entity?",
+      "opts": [
+        "Event Identification",
+        "Control Activities",
+        "Information and Communication",
+        "Risk Response"
+      ],
+      "ans": "Event Identification",
+      "exp": "Event Identification addresses internal and external events, one of the eight components under Side 2 (Manual, 3.1.1, Side 2)."
+    },
+    {
+      "id": "Q120",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which component of the ERM Framework reflects the entity's ability to analyze risks?",
+      "opts": [
+        "Objective Setting",
+        "Risk Assessment",
+        "Monitoring",
+        "Internal Environment"
+      ],
+      "ans": "Risk Assessment",
+      "exp": "Risk Assessment reflects the entity's ability to analyze risks, one of the eight components under Side 2 (Manual, 3.1.1, Side 2)."
+    },
+    {
+      "id": "Q121",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which component of the ERM Framework covers avoiding, accepting, reducing, or sharing risks?",
+      "opts": [
+        "Risk Response",
+        "Event Identification",
+        "Control Activities",
+        "Information and Communication"
+      ],
+      "ans": "Risk Response",
+      "exp": "Risk Response covers avoiding, accepting, reducing, or sharing risks, one of the eight components under Side 2 (Manual, 3.1.1, Side 2)."
+    },
+    {
+      "id": "Q122",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which component of the ERM Framework refers to policies and procedures put in place by the entity?",
+      "opts": [
+        "Control Activities",
+        "Objective Setting",
+        "Monitoring",
+        "Internal Environment"
+      ],
+      "ans": "Control Activities",
+      "exp": "Control Activities refers to the policies and procedures put in place, one of the eight components under Side 2 (Manual, 3.1.1, Side 2)."
+    },
+    {
+      "id": "Q123",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which component of the ERM Framework involves getting all relevant information to the right people?",
+      "opts": [
+        "Risk Assessment",
+        "Information and Communication",
+        "Event Identification",
+        "Risk Response"
+      ],
+      "ans": "Information and Communication",
+      "exp": "Information and Communication involves getting all relevant information, one of the eight components under Side 2 (Manual, 3.1.1, Side 2)."
+    },
+    {
+      "id": "Q124",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which component of the ERM Framework ensures effective monitoring of the entity's risks?",
+      "opts": [
+        "Monitoring",
+        "Control Activities",
+        "Objective Setting",
+        "Risk Response"
+      ],
+      "ans": "Monitoring",
+      "exp": "Monitoring ensures effective monitoring of the entity's risks, the eighth component under Side 2 (Manual, 3.1.1, Side 2)."
+    },
+    {
+      "id": "Q125",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Side 3 of the ERM Framework, which units are identified as levels the framework should cover?",
+      "opts": [
+        "Subsidiaries, Business Units, Divisions, and Entity Level",
+        "Regulators, Auditors, Customers, and Shareholders",
+        "Front Office, Middle Office, Back Office, and Compliance",
+        "Retail, Corporate, Investment, and Treasury Banking"
+      ],
+      "ans": "Subsidiaries, Business Units, Divisions, and Entity Level",
+      "exp": "Side 3 identifies Subsidiaries, Business Units, Divisions, and Entity Level as the units the ERM framework should cover (Manual, 3.1.1, Side 3)."
+    },
+    {
+      "id": "Q126",
+      "module": 3,
+      "type": "mcq",
+      "q": "How do the COSO principles integrate the 8 components with an entity's objectives across different units?",
+      "opts": [
+        "By ensuring components are aligned with objectives and work together to achieve them",
+        "By assigning each unit a separate, unrelated framework",
+        "By eliminating the need for objectives at the divisional level",
+        "By applying components only at the entity level, not divisional or unit levels"
+      ],
+      "ans": "By ensuring components are aligned with objectives and work together to achieve them",
+      "exp": "The COSO principles integrate its 8 components with an entity's objectives across different units by ensuring the components are aligned with objectives and work together to achieve them (Manual, 3.2)."
+    },
+    {
+      "id": "Q127",
+      "module": 3,
+      "type": "mcq",
+      "q": "Who sets the tone at the top within the Internal Environment component?",
+      "opts": [
+        "External regulators overseeing the industry",
+        "The organization's leaders, communicated throughout the organization",
+        "Individual employees at the operational level",
+        "The external auditor appointed annually"
+      ],
+      "ans": "The organization's leaders, communicated throughout the organization",
+      "exp": "The tone at the top is set by the organization's leaders and should be communicated throughout the organization (Manual, 3.2)."
+    },
+    {
+      "id": "Q128",
+      "module": 3,
+      "type": "mcq",
+      "q": "What does the organization's culture emphasize under the Internal Environment component?",
+      "opts": [
+        "The importance of risk management and taking responsibility for managing risks",
+        "The importance of maximizing short-term profit above all else",
+        "The importance of minimizing employee training costs",
+        "The importance of avoiding all forms of disclosure"
+      ],
+      "ans": "The importance of risk management and taking responsibility for managing risks",
+      "exp": "The organization's culture should emphasize the importance of risk management and the need to take responsibility for managing risks (Manual, 3.2)."
+    },
+    {
+      "id": "Q129",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Objective Setting, how should an organization treat its objectives over time?",
+      "opts": [
+        "Set them once at founding and never revisit them",
+        "Regularly review them to ensure they remain relevant and achievable",
+        "Delegate them entirely to external consultants",
+        "Keep them undocumented to preserve flexibility"
+      ],
+      "ans": "Regularly review them to ensure they remain relevant and achievable",
+      "exp": "The organization should regularly review its objectives to ensure that they are still relevant and achievable (Manual, 3.2)."
+    },
+    {
+      "id": "Q130",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Event Identification, how are events that may have a positive impact treated?",
+      "opts": [
+        "They are ignored since only negative events matter",
+        "They represent opportunities channeled back to strategy setting",
+        "They are reclassified as compliance objectives",
+        "They are excluded from the ERM framework entirely"
+      ],
+      "ans": "They represent opportunities channeled back to strategy setting",
+      "exp": "Identifying events with a positive impact represents natural offsets, or opportunities, which management channels back to strategy setting (Manual, 3.2)."
+    },
+    {
+      "id": "Q131",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which methods does the manual suggest for identifying potential events under Event Identification?",
+      "opts": [
+        "Only mandatory external regulatory audits",
+        "Brainstorming, interviews, and risk assessments",
+        "Employee exit interviews exclusively",
+        "Customer satisfaction surveys exclusively"
+      ],
+      "ans": "Brainstorming, interviews, and risk assessments",
+      "exp": "The organization should use a variety of methods to identify potential events, such as brainstorming, interviews, and risk assessments (Manual, 3.2)."
+    },
+    {
+      "id": "Q132",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Risk Assessment, what does the manual say likelihood refers to?",
+      "opts": [
+        "The consequences of the event if it occurs",
+        "The probability that the event will occur",
+        "The number of departments an event affects",
+        "The financial cost of preventing the event"
+      ],
+      "ans": "The probability that the event will occur",
+      "exp": "Likelihood refers to the probability that the event will occur, distinguished from impact, which refers to the consequences (Manual, 3.2)."
+    },
+    {
+      "id": "Q133",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which two types of analysis does the manual mention for assessing likelihood and impact of potential events?",
+      "opts": [
+        "Regulatory analysis and compliance analysis",
+        "Quantitative analysis and qualitative analysis",
+        "Horizontal analysis and vertical analysis",
+        "Technical analysis and fundamental analysis"
+      ],
+      "ans": "Quantitative analysis and qualitative analysis",
+      "exp": "The organization should use a variety of methods to assess likelihood and impact, such as quantitative analysis and qualitative analysis (Manual, 3.2)."
+    },
+    {
+      "id": "Q134",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Risk Response, what does the manual say about selecting a response strategy?",
+      "opts": [
+        "Responses are selected based on evaluating the portfolio of risks and responses",
+        "The same response strategy is applied to every risk identified",
+        "Response strategies are selected entirely by external auditors",
+        "Only risk avoidance is permitted under the COSO framework"
+      ],
+      "ans": "Responses are selected based on evaluating the portfolio of risks and responses",
+      "exp": "The Risk Response component selects and executes a response based on evaluation of the portfolio of risks and responses (Manual, 3.2)."
+    },
+    {
+      "id": "Q135",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which four strategy types are listed under the Risk Response component?",
+      "opts": [
+        "Avoiding, transferring, reducing likelihood, or reducing impact of the risk",
+        "Insuring, litigating, disclosing, or ignoring the risk",
+        "Escalating, delegating, documenting, or archiving the risk",
+        "Merging, divesting, restructuring, or liquidating the risk"
+      ],
+      "ans": "Avoiding, transferring, reducing likelihood, or reducing impact of the risk",
+      "exp": "Risk Response strategies can include avoiding the risk, transferring the risk, reducing the likelihood of the risk, or reducing the impact of the risk (Manual, 3.2)."
+    },
+    {
+      "id": "Q136",
+      "module": 3,
+      "type": "mcq",
+      "q": "What types of control can Control Activities be, according to the manual?",
+      "opts": [
+        "Preventive, detective, or corrective",
+        "Optional, mandatory, or discretionary",
+        "Internal, external, or hybrid",
+        "Manual, automated, or outsourced"
+      ],
+      "ans": "Preventive, detective, or corrective",
+      "exp": "Control Activities can be preventive, detective, or corrective (Manual, 3.2)."
+    },
+    {
+      "id": "Q137",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Information and Communication, what three qualities should information have?",
+      "opts": [
+        "Confidential, restricted, and archived",
+        "Timely, accurate, and accessible",
+        "Brief, informal, and verbal",
+        "Quarterly, retrospective, and unaudited"
+      ],
+      "ans": "Timely, accurate, and accessible",
+      "exp": "Information should be timely, accurate, and accessible to the people who need it (Manual, 3.2)."
+    },
+    {
+      "id": "Q138",
+      "module": 3,
+      "type": "mcq",
+      "q": "Through which methods can the Monitoring component be carried out, according to the manual?",
+      "opts": [
+        "Self-assessment, internal audits, or external audits",
+        "Employee surveys, customer feedback, or press releases",
+        "Shareholder votes, board resolutions, or bylaws",
+        "Marketing analytics, sales reports, or budgets"
+      ],
+      "ans": "Self-assessment, internal audits, or external audits",
+      "exp": "Monitoring can be done through self-assessment, internal audits, or external audits (Manual, 3.2)."
+    },
+    {
+      "id": "Q139",
+      "module": 3,
+      "type": "mcq",
+      "q": "How does the manual define internal control?",
+      "opts": [
+        "A voluntary practice with no relation to legal compliance",
+        "A system or process used to achieve operational, reporting, and compliance goals",
+        "A role held exclusively by the external auditor",
+        "A committee that only meets during annual audits"
+      ],
+      "ans": "A system or process used to achieve operational, reporting, and compliance goals",
+      "exp": "Internal control is defined as a system or process that an organization uses to achieve its operational goals, financial reporting goals, or legal and regulatory compliance goals (Manual, 3.3)."
+    },
+    {
+      "id": "Q140",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which limitation of the COSO framework relates to it providing principles without specific implementation instructions?",
+      "opts": [
+        "The framework is not a silver bullet",
+        "The framework is not prescriptive",
+        "The framework is difficult to monitor and evaluate",
+        "The framework is not always adaptable to different industries"
+      ],
+      "ans": "The framework is not prescriptive",
+      "exp": "The framework is not prescriptive: it provides principles and concepts but no specific instructions on implementation, which can make it hard to know where to start (Manual, 3.3)."
+    },
+    {
+      "id": "Q141",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which limitation of the COSO framework reflects that it cannot guarantee an organization avoids all risks?",
+      "opts": [
+        "The framework is not prescriptive",
+        "The framework is not a silver bullet",
+        "The framework can be complex and time-consuming",
+        "The framework can be difficult to monitor"
+      ],
+      "ans": "The framework is not a silver bullet",
+      "exp": "The framework is not a silver bullet: it is a tool to help manage risk but is not a substitute for good judgment and is no guarantee against all risks (Manual, 3.3)."
+    },
+    {
+      "id": "Q142",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which limitation of the COSO framework is a particular barrier for small organizations with limited resources?",
+      "opts": [
+        "The framework is not adaptable to different industries",
+        "The framework can be complex and time-consuming to implement",
+        "The framework is difficult to monitor and evaluate",
+        "The framework is not a silver bullet"
+      ],
+      "ans": "The framework can be complex and time-consuming to implement",
+      "exp": "The framework is comprehensive and can be complex and time-consuming to implement, which can be a barrier for small organizations with limited resources (Manual, 3.3)."
+    },
+    {
+      "id": "Q143",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which limitation of the COSO framework concerns organizations facing widely varying risk profiles?",
+      "opts": [
+        "The framework is not always adaptable across industries",
+        "The framework is not prescriptive about implementation steps",
+        "The framework can be complex and costly to implement",
+        "The framework is not a guaranteed silver bullet"
+      ],
+      "ans": "The framework is not always adaptable across industries",
+      "exp": "The framework may not be possible to adapt to all organizations, since the risks different organizations face can vary widely (Manual, 3.3)."
+    },
+    {
+      "id": "Q144",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which limitation of the COSO framework concerns the ongoing measurement of its effectiveness?",
+      "opts": [
+        "The framework is difficult to monitor and evaluate",
+        "The framework is not a silver bullet",
+        "The framework is not prescriptive",
+        "The framework can be time-consuming to implement"
+      ],
+      "ans": "The framework is difficult to monitor and evaluate",
+      "exp": "The framework is designed to be monitored and evaluated on an ongoing basis, which can be difficult since it requires a good understanding of the framework and how to measure effectiveness (Manual, 3.3)."
+    },
+    {
+      "id": "Q145",
+      "module": 3,
+      "type": "mcq",
+      "q": "Which tip does the manual recommend for mitigating COSO's limitations related to organizational fit?",
+      "opts": [
+        "Customize the framework to the specific needs of the organization",
+        "Apply the framework identically across all business units without changes",
+        "Avoid providing employees with any framework-related training",
+        "Delay top management involvement until after implementation"
+      ],
+      "ans": "Customize the framework to the specific needs of the organization",
+      "exp": "Customizing the framework to the specific needs of the organization is recommended to help ensure it is effective and not overly complex to implement (Manual, 3.3)."
+    },
+    {
+      "id": "Q146",
+      "module": 4,
+      "type": "mcq",
+      "q": "What are the Equator Principles, as described in the manual?",
+      "opts": [
+        "A set of mandatory capital adequacy ratios for banks",
+        "A set of environmental and social guidelines for financial institutions",
+        "A set of internal audit procedures for project financing",
+        "A set of currency-risk hedging requirements for lenders"
+      ],
+      "ans": "A set of environmental and social guidelines for financial institutions",
+      "exp": "The Equator Principles are a set of environmental and social guidelines for financial institutions (Manual, Module 4)."
+    },
+    {
+      "id": "Q147",
+      "module": 4,
+      "type": "mcq",
+      "q": "In what year were the Equator Principles first introduced?",
+      "opts": [
+        "1998",
+        "2003",
+        "2010",
+        "2015"
+      ],
+      "ans": "2003",
+      "exp": "The Equator Principles were first introduced in 2003 (Manual, Module 4)."
+    },
+    {
+      "id": "Q148",
+      "module": 4,
+      "type": "mcq",
+      "q": "What growing need prompted the introduction of the Equator Principles?",
+      "opts": [
+        "The need for standardized retail lending interest rates",
+        "The growing need for sustainable project financing",
+        "The need for a common global bankruptcy code",
+        "The need for uniform cross-border tax reporting"
+      ],
+      "ans": "The growing need for sustainable project financing",
+      "exp": "The Equator Principles were introduced as a response to the growing need for sustainable project financing (Manual, Module 4)."
+    },
+    {
+      "id": "Q149",
+      "module": 4,
+      "type": "mcq",
+      "q": "How many major international banks initially adopted the Equator Principles?",
+      "opts": [
+        "Five banks",
+        "Ten banks",
+        "Twenty banks",
+        "Fifty banks"
+      ],
+      "ans": "Ten banks",
+      "exp": "Ten major international banks initially adopted the Equator Principles (Manual, Module 4)."
+    },
+    {
+      "id": "Q150",
+      "module": 4,
+      "type": "mcq",
+      "q": "During which event did the initial adopting banks first agree to the Equator Principles?",
+      "opts": [
+        "A meeting of the Basel Committee on Banking Supervision",
+        "The International Finance Corporation's annual meetings in Washington D.C.",
+        "A United Nations climate summit in Paris",
+        "The World Bank's annual bond issuance conference"
+      ],
+      "ans": "The International Finance Corporation's annual meetings in Washington D.C.",
+      "exp": "The initial banks adopted the principles during the International Finance Corporation's annual meetings in Washington D.C. (Manual, Module 4)."
+    },
+    {
+      "id": "Q151",
+      "module": 4,
+      "type": "mcq",
+      "q": "What recognition served as the impetus behind the Equator Principles?",
+      "opts": [
+        "Recognition that project financing should be entirely government-funded",
+        "Recognition of the role financial institutions play in shaping sustainable development",
+        "Recognition that environmental risk was purely a regulatory concern",
+        "Recognition that project financing volumes were declining globally"
+      ],
+      "ans": "Recognition of the role financial institutions play in shaping sustainable development",
+      "exp": "The impetus for the Equator Principles came from a recognition of the role financial institutions play in shaping sustainable development (Manual, Module 4)."
+    },
+    {
+      "id": "Q152",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following is listed as a purpose of the Equator Principles?",
+      "opts": [
+        "Guaranteeing a fixed rate of return on all project loans",
+        "Risk Mitigation, by identifying, assessing, and managing environmental and social risks",
+        "Eliminating the need for host-country environmental laws",
+        "Standardizing interest rates across all project financing"
+      ],
+      "ans": "Risk Mitigation, by identifying, assessing, and managing environmental and social risks",
+      "exp": "Risk Mitigation is a listed purpose: providing a framework to identify, assess, and manage environmental and social risks associated with project financing (Manual, Module 4)."
+    },
+    {
+      "id": "Q153",
+      "module": 4,
+      "type": "mcq",
+      "q": "How do the Equator Principles contribute to Promoting Sustainable Development?",
+      "opts": [
+        "By financing only government-owned infrastructure projects",
+        "By supporting projects that are financially viable and environmentally and socially responsible",
+        "By eliminating the need for project-level risk assessments",
+        "By requiring all financed projects to be relocated to developed countries"
+      ],
+      "ans": "By supporting projects that are financially viable and environmentally and socially responsible",
+      "exp": "By adhering to the Equator Principles, institutions contribute to developing projects that are financially viable and also environmentally and socially responsible (Manual, Module 4)."
+    },
+    {
+      "id": "Q154",
+      "module": 4,
+      "type": "mcq",
+      "q": "With which global standards do the Equator Principles align, according to the manual?",
+      "opts": [
+        "The Basel III leverage ratio and liquidity coverage ratio requirements",
+        "The IFC's Performance Standards and the World Bank's E&S Guidelines",
+        "The COSO ERM Framework's eight internal control components",
+        "The Nigerian Code of Corporate Governance for Banks"
+      ],
+      "ans": "The IFC's Performance Standards and the World Bank's E&S Guidelines",
+      "exp": "The Equator Principles align with the IFC's Performance Standards and the World Bank's Environmental, Health, and Safety Guidelines (Manual, Module 4)."
+    },
+    {
+      "id": "Q155",
+      "module": 4,
+      "type": "mcq",
+      "q": "How do the Equator Principles enhance a bank's reputation and brand value?",
+      "opts": [
+        "By reducing the bank's disclosure obligations to regulators",
+        "By demonstrating a commitment to responsible banking that appeals to sustainability-focused stakeholders",
+        "By allowing banks to bypass host-country environmental laws",
+        "By reducing the number of stakeholders a bank must consult"
+      ],
+      "ans": "By demonstrating a commitment to responsible banking that appeals to sustainability-focused stakeholders",
+      "exp": "Banks that adopt the Equator Principles demonstrate a commitment to responsible banking, enhancing reputation and appealing to stakeholders who prioritize sustainability (Manual, Module 4)."
+    },
+    {
+      "id": "Q156",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which Equator Principle involves categorizing projects based on their potential environmental and social impacts?",
+      "opts": [
+        "Independent Review",
+        "Review and Categorization",
+        "Consultation and Disclosure",
+        "Environmental and Social Assessment"
+      ],
+      "ans": "Review and Categorization",
+      "exp": "Review and Categorization commits financial institutions to categorizing projects based on their potential environmental and social impacts (Manual, Module 4)."
+    },
+    {
+      "id": "Q157",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which Equator Principle requires rigorous assessments for high-risk projects to identify impacts and mitigation measures?",
+      "opts": [
+        "Review and Categorization Process",
+        "Environmental and Social Assessment",
+        "Grievance Mechanism for Communities",
+        "Covenants in Loan Agreements"
+      ],
+      "ans": "Environmental and Social Assessment",
+      "exp": "Environmental and Social Assessment requires rigorous assessments for high-risk projects to identify potential impacts and develop mitigation measures (Manual, Module 4)."
+    },
+    {
+      "id": "Q158",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which Equator Principle requires projects to comply with host-country laws as well as international standards?",
+      "opts": [
+        "Applicable Environmental and Social Standards",
+        "Independent Monitoring and Reporting Process",
+        "Consultation and Disclosure Requirements",
+        "Climate Change Risk Provisions"
+      ],
+      "ans": "Applicable Environmental and Social Standards",
+      "exp": "Applicable Environmental and Social Standards requires projects to comply with the host country's environmental and social laws and regulations, as well as international standards (Manual, Module 4)."
+    },
+    {
+      "id": "Q159",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which Equator Principle requires borrowers to implement a system addressing environmental and social risks throughout the project lifecycle?",
+      "opts": [
+        "Environmental and Social Management System",
+        "Independent Review of Projects",
+        "Review and Categorization Steps",
+        "Covenants within Loan Agreements"
+      ],
+      "ans": "Environmental and Social Management System",
+      "exp": "Environmental and Social Management System requires borrowers to implement a management system to address environmental and social risks throughout the project lifecycle (Manual, Module 4)."
+    },
+    {
+      "id": "Q160",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which Equator Principle emphasizes meaningful stakeholder engagement and transparent disclosure of project information?",
+      "opts": [
+        "Grievance Mechanism",
+        "Consultation and Disclosure",
+        "Independent Review",
+        "Climate Change"
+      ],
+      "ans": "Consultation and Disclosure",
+      "exp": "Consultation and Disclosure requires meaningful stakeholder engagement and transparent disclosure of project information as crucial components of responsible development (Manual, Module 4)."
+    },
+    {
+      "id": "Q161",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which Equator Principle requires effective mechanisms for resolving grievances from affected communities?",
+      "opts": [
+        "Grievance Mechanism",
+        "Independent Monitoring and Reporting",
+        "Applicable Environmental and Social Standards",
+        "Covenants"
+      ],
+      "ans": "Grievance Mechanism",
+      "exp": "Grievance Mechanism requires effective mechanisms to be in place for addressing and resolving grievances from affected communities and stakeholders (Manual, Module 4)."
+    },
+    {
+      "id": "Q162",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which Equator Principle requires high-risk projects to undergo review to ensure compliance with the principles?",
+      "opts": [
+        "Independent Review",
+        "Review and Categorization",
+        "Environmental and Social Assessment",
+        "Consultation and Disclosure"
+      ],
+      "ans": "Independent Review",
+      "exp": "Independent Review requires high-risk projects to undergo independent review to ensure compliance with the Equator Principles (Manual, Module 4)."
+    },
+    {
+      "id": "Q163",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which Equator Principle involves financial institutions embedding compliance requirements directly into loan agreements?",
+      "opts": [
+        "Covenants",
+        "Grievance Mechanism",
+        "Climate Change",
+        "Independent Review"
+      ],
+      "ans": "Covenants",
+      "exp": "Covenants requires financial institutions to include covenants in loan agreements to ensure ongoing compliance with the Equator Principles (Manual, Module 4)."
+    },
+    {
+      "id": "Q164",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which Equator Principle covers ongoing tracking and reporting on a project's environmental and social performance?",
+      "opts": [
+        "Independent Monitoring and Reporting",
+        "Applicable Environmental and Social Standards",
+        "Review and Categorization",
+        "Environmental and Social Management System"
+      ],
+      "ans": "Independent Monitoring and Reporting",
+      "exp": "Independent Monitoring and Reporting covers ongoing monitoring and reporting on project performance regarding environmental and social risks (Manual, Module 4)."
+    },
+    {
+      "id": "Q165",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which Equator Principle includes specific provisions related to greenhouse gas emissions and climate risk assessment?",
+      "opts": [
+        "Climate Change",
+        "Consultation and Disclosure",
+        "Grievance Mechanism",
+        "Covenants"
+      ],
+      "ans": "Climate Change",
+      "exp": "Climate Change recognizes the significance of climate change and includes specific provisions related to greenhouse gas emissions and climate risk assessment (Manual, Module 4)."
+    },
+    {
+      "id": "Q166",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank finances a high-risk project and requires an independent third party to confirm the project meets the Equator Principles before disbursing funds. Which principle does this action primarily reflect?",
+      "opts": [
+        "Review and Categorization",
+        "Independent Review",
+        "Consultation and Disclosure",
+        "Covenants"
+      ],
+      "ans": "Independent Review",
+      "exp": "Requiring independent confirmation that a high-risk project complies with the Equator Principles reflects the Independent Review principle (Manual, Module 4)."
+    },
+    {
+      "id": "Q167",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank sorts a proposed project into a risk category based on its likely environmental and social impact before deciding whether to finance it. Which principle does this action primarily reflect?",
+      "opts": [
+        "Review and Categorization",
+        "Climate Change",
+        "Independent Monitoring and Reporting",
+        "Grievance Mechanism"
+      ],
+      "ans": "Review and Categorization",
+      "exp": "Sorting a project into a risk category based on potential environmental and social impact reflects the Review and Categorization principle (Manual, Module 4)."
+    },
+    {
+      "id": "Q168",
+      "module": 4,
+      "type": "mcq",
+      "q": "A community affected by a financed project has a formal channel to raise and resolve a complaint about the project's impact. Which principle does this reflect?",
+      "opts": [
+        "Consultation and Disclosure",
+        "Grievance Mechanism",
+        "Covenants",
+        "Applicable Environmental and Social Standards"
+      ],
+      "ans": "Grievance Mechanism",
+      "exp": "A formal channel for affected communities to raise and resolve complaints reflects the Grievance Mechanism principle (Manual, Module 4)."
+    },
+    {
+      "id": "Q169",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which of the following best describes the origin of the Nigerian Sustainable Banking Principles?",
+      "opts": [
+        "A set of guidelines forming the bedrock of sustainable banking practices in Nigeria",
+        "A set of capital adequacy rules issued exclusively by the Basel Committee",
+        "A voluntary code applicable only to foreign banks operating in Nigeria",
+        "A framework limited exclusively to anti-money-laundering compliance"
+      ],
+      "ans": "A set of guidelines forming the bedrock of sustainable banking practices in Nigeria",
+      "exp": "The Nigerian Sustainable Banking Principles are a set of guidelines that form the bedrock of sustainable banking practices in Nigeria (Manual, Module 4)."
+    },
+    {
+      "id": "Q170",
+      "module": 4,
+      "type": "mcq",
+      "q": "What is the overall aim of the Nigerian Sustainable Banking Principles?",
+      "opts": [
+        "To align banking operations with social and environmental considerations",
+        "To eliminate the need for financial inclusion initiatives",
+        "To restrict banking services to large corporate clients only",
+        "To remove board oversight of environmental and social risk"
+      ],
+      "ans": "To align banking operations with social and environmental considerations",
+      "exp": "The principles aim to align banking operations with social and environmental considerations, contributing to a more sustainable and inclusive financial sector (Manual, Module 4)."
+    },
+    {
+      "id": "Q171",
+      "module": 4,
+      "type": "mcq",
+      "q": "How many Nigerian Sustainable Banking Principles are listed in the manual?",
+      "opts": [
+        "Seven",
+        "Eight",
+        "Nine",
+        "Ten"
+      ],
+      "ans": "Nine",
+      "exp": "The manual lists nine Nigerian Sustainable Banking Principles (Manual, Module 4)."
+    },
+    {
+      "id": "Q172",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which principle centers on incorporating robust risk assessment frameworks that factor in environmental and societal impacts?",
+      "opts": [
+        "Environmental and Social Risk Management",
+        "Capacity Building for Bank Staff",
+        "Financial Inclusion of Communities",
+        "Collaborative Partnerships with Regulators"
+      ],
+      "ans": "Environmental and Social Risk Management",
+      "exp": "Environmental and Social Risk Management centers on identifying, assessing, and managing environmental and social risks through robust risk assessment frameworks (Manual, Module 4)."
+    },
+    {
+      "id": "Q173",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which principle emphasizes tracking and reporting on a bank's resource consumption and emissions to reduce negative impact?",
+      "opts": [
+        "Environmental and Social Footprint",
+        "Human Rights of Affected Communities",
+        "Reporting on Bank Performance",
+        "Environmental and Social Governance Structures"
+      ],
+      "ans": "Environmental and Social Footprint",
+      "exp": "Environmental and Social Footprint emphasizes measuring and reducing a bank's footprint by tracking and reporting on resource consumption, emissions, and other impacts (Manual, Module 4)."
+    },
+    {
+      "id": "Q174",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which two Nigerian Sustainable Banking Principles are regarded as the 'Umbrella Principles'?",
+      "opts": [
+        "Human Rights and Women's Economic Empowerment Principles",
+        "Environmental and Social Risk Management and Footprint",
+        "Financial Inclusion and Capacity Building Principles",
+        "Collaborative Partnerships and Reporting Principles"
+      ],
+      "ans": "Environmental and Social Risk Management and Footprint",
+      "exp": "The first two principles, Environmental and Social Risk Management and Environmental and Social Footprint, are regarded as the Umbrella Principles (Manual, Module 4)."
+    },
+    {
+      "id": "Q175",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which principle calls for banks to ensure their operations do not infringe upon land rights or cultural heritage of affected communities?",
+      "opts": [
+        "Human Rights",
+        "Financial Inclusion",
+        "Women's Economic Empowerment",
+        "Environmental and Social Governance"
+      ],
+      "ans": "Human Rights",
+      "exp": "Human Rights calls for banks to ensure operations do not infringe upon the rights of individuals, communities, or stakeholders, including cultural heritage and land rights (Manual, Module 4)."
+    },
+    {
+      "id": "Q176",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which principle promotes policies supporting women's access to financial services, entrepreneurship, and leadership roles?",
+      "opts": [
+        "Women's Economic Empowerment",
+        "Financial Inclusion",
+        "Human Rights",
+        "Capacity Building"
+      ],
+      "ans": "Women's Economic Empowerment",
+      "exp": "Women's Economic Empowerment promotes gender equality by encouraging policies that support women's access to financial services, entrepreneurship, and leadership roles (Manual, Module 4)."
+    },
+    {
+      "id": "Q177",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which principle urges banks to provide access to financial services for underserved and marginalized populations?",
+      "opts": [
+        "Financial Inclusion",
+        "Environmental and Social Governance",
+        "Reporting",
+        "Collaborative Partnerships"
+      ],
+      "ans": "Financial Inclusion",
+      "exp": "Financial Inclusion urges banks to proactively work toward providing financial services access for underserved and marginalized populations, reducing poverty (Manual, Module 4)."
+    },
+    {
+      "id": "Q178",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which principle calls for integrating environmental and social considerations into board oversight and decision-making?",
+      "opts": [
+        "Environmental and Social Governance",
+        "Capacity Building",
+        "Human Rights",
+        "Environmental and Social Footprint"
+      ],
+      "ans": "Environmental and Social Governance",
+      "exp": "Environmental and Social Governance emphasizes strong governance structures, including the integration of environmental and social considerations into board oversight and decision-making (Manual, Module 4)."
+    },
+    {
+      "id": "Q179",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which principle encourages banks to invest in staff training and development for sustainable practices?",
+      "opts": [
+        "Capacity Building",
+        "Collaborative Partnerships",
+        "Reporting",
+        "Women's Economic Empowerment"
+      ],
+      "ans": "Capacity Building",
+      "exp": "Capacity Building encourages banks to invest in training and development so staff have the skills to implement sustainable banking practices effectively (Manual, Module 4)."
+    },
+    {
+      "id": "Q180",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which principle advocates for banks, regulators, and civil society to pool resources and expertise to address sustainability challenges?",
+      "opts": [
+        "Collaborative Partnerships",
+        "Environmental and Social Governance",
+        "Financial Inclusion",
+        "Human Rights"
+      ],
+      "ans": "Collaborative Partnerships",
+      "exp": "Collaborative Partnerships advocates for collaboration between banks, regulators, civil society, and other stakeholders to address complex sustainability challenges (Manual, Module 4)."
+    },
+    {
+      "id": "Q181",
+      "module": 4,
+      "type": "mcq",
+      "q": "Which principle underscores the importance of regular, transparent disclosure of a bank's sustainability performance?",
+      "opts": [
+        "Reporting",
+        "Environmental and Social Risk Management",
+        "Capacity Building",
+        "Environmental and Social Footprint"
+      ],
+      "ans": "Reporting",
+      "exp": "Reporting underscores the importance of regular and transparent reporting on a bank's performance against the Nigerian Sustainable Banking Principles (Manual, Module 4)."
+    },
+    {
+      "id": "Q182",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank launches a program offering micro-loans and basic savings accounts to rural communities previously excluded from banking services. Which Nigerian Sustainable Banking Principle does this best reflect?",
+      "opts": [
+        "Financial Inclusion",
+        "Capacity Building",
+        "Reporting",
+        "Environmental and Social Governance"
+      ],
+      "ans": "Financial Inclusion",
+      "exp": "Extending financial services to previously excluded populations directly reflects the Financial Inclusion principle (Manual, Module 4)."
+    },
+    {
+      "id": "Q183",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank partners with an NGO and a regulator to jointly develop solutions for reducing plastic waste financed by its lending portfolio. Which principle does this best reflect?",
+      "opts": [
+        "Collaborative Partnerships",
+        "Human Rights",
+        "Women's Economic Empowerment",
+        "Environmental and Social Risk Management"
+      ],
+      "ans": "Collaborative Partnerships",
+      "exp": "Partnering with external stakeholders to pool resources and expertise on a sustainability challenge reflects the Collaborative Partnerships principle (Manual, Module 4)."
+    },
+    {
+      "id": "Q184",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank publishes an annual disclosure detailing its progress against each of the nine sustainability principles for stakeholder review. Which principle does this action directly fulfill?",
+      "opts": [
+        "Reporting",
+        "Environmental and Social Footprint",
+        "Capacity Building",
+        "Human Rights"
+      ],
+      "ans": "Reporting",
+      "exp": "Publishing regular, transparent disclosure of sustainability performance directly fulfills the Reporting principle (Manual, Module 4)."
+    },
+    {
+      "id": "Q185",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank requires all financed construction projects to obtain independent confirmation of compliance before receiving disbursement, and embeds ongoing compliance clauses in the loan contract. Which two Equator Principles does this scenario combine?",
+      "opts": [
+        "Independent Review and Covenants",
+        "Grievance Mechanism and Climate Change",
+        "Review and Categorization and Consultation and Disclosure",
+        "Applicable Standards and Independent Monitoring and Reporting"
+      ],
+      "ans": "Independent Review and Covenants",
+      "exp": "Requiring independent confirmation before disbursement reflects Independent Review, while embedding ongoing compliance clauses in the loan contract reflects Covenants (Manual, Module 4)."
+    },
+    {
+      "id": "Q186",
+      "module": 4,
+      "type": "mcq",
+      "q": "Both the Equator Principles and the Nigerian Sustainable Banking Principles share which general orientation, according to the manual?",
+      "opts": [
+        "Both focus exclusively on currency risk in project financing",
+        "Both provide frameworks to manage environmental and social risk in banking activity",
+        "Both apply only to state-owned development banks",
+        "Both replace the need for a bank's internal risk management function"
+      ],
+      "ans": "Both provide frameworks to manage environmental and social risk in banking activity",
+      "exp": "Both frameworks provide guidelines for identifying and managing environmental and social risk in banking and project financing activity, aligning with sustainable development (Manual, Module 4)."
+    },
+    {
+      "id": "Q187",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank finances a large infrastructure project and, before approval, conducts a rigorous impact study identifying likely harms and how they will be mitigated. Which Equator Principle does this best reflect?",
+      "opts": [
+        "Environmental and Social Assessment",
+        "Review and Categorization of Projects",
+        "Independent Review by Third Parties",
+        "Covenants within the Loan Agreement"
+      ],
+      "ans": "Environmental and Social Assessment",
+      "exp": "A rigorous impact study identifying potential harms and mitigation measures for a high-risk project reflects the Environmental and Social Assessment principle (Manual, Module 4)."
+    },
+    {
+      "id": "Q188",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank ensures its lending decisions do not disproportionately favor male-owned businesses and actively funds women-led enterprise programs. Which Nigerian Sustainable Banking Principle does this best reflect?",
+      "opts": [
+        "Women's Economic Empowerment",
+        "Human Rights",
+        "Financial Inclusion",
+        "Environmental and Social Governance"
+      ],
+      "ans": "Women's Economic Empowerment",
+      "exp": "Actively promoting equitable access to financing and supporting women-led enterprise programs directly reflects the Women's Economic Empowerment principle (Manual, Module 4)."
+    },
+    {
+      "id": "Q189",
+      "module": 4,
+      "type": "mcq",
+      "q": "A borrower is required to maintain an ongoing internal system that identifies and manages environmental and social risk for the entire duration of a financed project, not just at approval. Which Equator Principle does this best reflect?",
+      "opts": [
+        "Environmental and Social Management System",
+        "Review and Categorization at Approval",
+        "Independent Review of Compliance",
+        "Grievance Mechanism for Stakeholders"
+      ],
+      "ans": "Environmental and Social Management System",
+      "exp": "An ongoing internal system managing environmental and social risk throughout the project lifecycle reflects the Environmental and Social Management System principle (Manual, Module 4)."
+    },
+    {
+      "id": "Q190",
+      "module": 4,
+      "type": "mcq",
+      "q": "A bank's sustainability report shows strong performance on Environmental and Social Risk Management and Environmental and Social Footprint but is silent on the other seven Nigerian principles. What is the most accurate characterization of this report?",
+      "opts": [
+        "It fully satisfies all nine principles since these two are the most important",
+        "It addresses only the two Umbrella Principles and omits the remaining seven",
+        "It addresses only Financial Inclusion and Human Rights",
+        "It fails to address any of the nine principles"
+      ],
+      "ans": "It addresses only the two Umbrella Principles and omits the remaining seven",
+      "exp": "Environmental and Social Risk Management and Environmental and Social Footprint are the two Umbrella Principles; reporting only on these leaves the remaining seven principles unaddressed (Manual, Module 4)."
+    }
+  ]
+}

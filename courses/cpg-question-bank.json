@@ -2,8 +2,8 @@
   "meta": {
     "id": "credit-policy-guide-consolidated-v4",
     "title": "Access Bank CPG – Consolidated Question Bank (2024 Verified)",
-    "description": "687 unique questions across 12 modules, IDs renumbered Q1-Q687 (contiguous).",
-    "version": "4.2.0"
+    "description": "717 unique questions across 12 modules.",
+    "version": "5.0.0"
   },
   "examSettings": {
     "sizes": [
@@ -926,13 +926,13 @@
       "id": "Q68",
       "module": 3,
       "type": "mcq",
-      "q": "Section 20 (1a) of the Banks and Other Financial Institutions Act (BOFIA) 1991 as amended states that a Bank shall not grant more than 50% of its shareholders' funds unimpaired by losses to a company, its subsidiaries and associates",
+      "q": "Section 19 (1a) of the Bank and Other Financial Institutions Act (BOFIA) 2020, as amended, states that a Bank shall not grant more than 50% of its shareholders' funds unimpaired by losses to a company, its subsidiaries and associates.",
       "opts": [
         "True",
         "False"
       ],
       "ans": "False",
-      "exp": "False on both percentage and citation – correct is 20% and Section 19(1a) of BOFIA 2020."
+      "exp": "False — CPG §5.3.2: the correct limit is 20%, not 50%. (Also corrected citation: current law is BOFIA 2020 §19(1a); the prior stem cited the obsolete 'BOFIA 1991' and wrong section number.)"
     },
     {
       "id": "Q69",
@@ -1310,13 +1310,13 @@
       "id": "Q98",
       "module": 3,
       "type": "mcq",
-      "q": "Any temporary accommodation that remains outstanding after 20 days shall be classified as a Past Due Loan",
+      "q": "A temporary accommodation outstanding after 30 days shall be classified as a Past Due Loan.",
       "opts": [
         "True",
         "False"
       ],
-      "ans": "False",
-      "exp": "False – the correct threshold is 30 days, not 20."
+      "ans": "True",
+      "exp": "CPG: a temporary overdraft outstanding for longer than 30 days is classified as a Past Due Loan."
     },
     {
       "id": "Q99",
@@ -3736,6 +3736,18 @@
       "id": "Q277",
       "module": 10,
       "type": "mcq",
+      "q": "Under Access Bank's agricultural financing policy, start-ups and businesses in the first cycle of their operations shall not be considered for funding.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §10.3.3: Excluded Projects, confirmed verbatim."
+    },
+    {
+      "id": "Q278",
+      "module": 10,
+      "type": "mcq",
       "q": "For the purposes of applying Risk Rating Limits, is a single, uniform method used to determine which obligor risk rating governs, regardless of entity type?",
       "opts": [
         "The obligor self-declares its rating",
@@ -3747,7 +3759,7 @@
       "exp": "Reinforces Module 3's Q81."
     },
     {
-      "id": "Q278",
+      "id": "Q279",
       "module": 10,
       "type": "mcq",
       "q": "Any increases to Total Facilities, whether caused by new facilities or increases to existing facilities, must be approved based on the new Total Facilities amount, per the Credit Facility Approval Grid",
@@ -3759,7 +3771,7 @@
       "exp": "Consistent with the Credit Facility Approval Grid's general re-approval principle."
     },
     {
-      "id": "Q279",
+      "id": "Q280",
       "module": 10,
       "type": "mcq",
       "q": "Recommendation and approval of facilities shall be by a minimum of how many Credit Officers, at least one of whom must have the authority to approve the recommended amount?",
@@ -3773,7 +3785,7 @@
       "exp": "Confirmed against the CPG's approval process requirement."
     },
     {
-      "id": "Q280",
+      "id": "Q281",
       "module": 10,
       "type": "mcq",
       "q": "An approval may be given by a designee other than the primary named approval authority",
@@ -3785,7 +3797,7 @@
       "exp": "Consistent with the CPG's repeated use of '(or their designees)' language."
     },
     {
-      "id": "Q281",
+      "id": "Q282",
       "module": 10,
       "type": "mcq",
       "q": "Discussions and negotiation in respect of repayment or waiver terms on a lost exposure are the responsibility of which unit?",
@@ -3799,7 +3811,7 @@
       "exp": "Reinforces Module 6's Q175."
     },
     {
-      "id": "Q282",
+      "id": "Q283",
       "module": 10,
       "type": "mcq",
       "q": "The release of collateral, guarantees or support for any type of credit transaction requires confirmation of what, before release?",
@@ -3813,7 +3825,7 @@
       "exp": "Reinforces Module 2's Q59."
     },
     {
-      "id": "Q283",
+      "id": "Q284",
       "module": 10,
       "type": "mcq",
       "q": "Adequate security shall be taken for temporary overdrafts not supported by confirmed drafts. Is this a correct statement of policy?",
@@ -3825,7 +3837,7 @@
       "exp": "Consistent with the CPG's overdraft/TOD security expectations."
     },
     {
-      "id": "Q284",
+      "id": "Q285",
       "module": 10,
       "type": "mcq",
       "q": "Normally, the maximum tenor for a warehouse financing facility is 12 months. Does the CPG allow this to vary depending on the nature of the goods financed?",
@@ -3839,7 +3851,7 @@
       "exp": "Reinforces Module 4's Q124 with additional nuance."
     },
     {
-      "id": "Q285",
+      "id": "Q286",
       "module": 2,
       "type": "mcq",
       "q": "The risk management policies and procedures of the bank are articulated mainly by:",
@@ -3853,7 +3865,7 @@
       "exp": "CPG (page 17) – risk management policies are articulated by the Risk and Management Control function (Credit Risk Management)."
     },
     {
-      "id": "Q286",
+      "id": "Q287",
       "module": 2,
       "type": "mcq",
       "q": "Where will all issues regarding credit risk management emanating from or covering the banks branches in other contain other thank Nigeria be treated?",
@@ -3867,7 +3879,7 @@
       "exp": "CPG (page 17) – all issues are referred to the Head Office."
     },
     {
-      "id": "Q287",
+      "id": "Q288",
       "module": 2,
       "type": "mcq",
       "q": "Credit Risk Management at head Office is responsible for setting overall policies on all issues relating to credit risk management in every country where Access Bank in represented",
@@ -3879,7 +3891,7 @@
       "exp": "CPG (page 17) confirms this."
     },
     {
-      "id": "Q288",
+      "id": "Q289",
       "module": 2,
       "type": "mcq",
       "q": "The Banks representative is other countries may institute this own independent credit risk management policies",
@@ -3893,7 +3905,7 @@
       "exp": "They may adapt policies, but not independent; they must be in compliance with Head Office policies (page 17)."
     },
     {
-      "id": "Q289",
+      "id": "Q290",
       "module": 2,
       "type": "mcq",
       "q": "Any local policy in any of the Bank's representative officers which turns out to be at variance of Head office policies.",
@@ -3907,7 +3919,7 @@
       "exp": "CPG (page 17) – any local policy at variance with HO policies must be approved at the same level as HO policies."
     },
     {
-      "id": "Q290",
+      "id": "Q291",
       "module": 2,
       "type": "mcq",
       "q": "Under what circumstance will the country office be permitted to institute their own local credit risk policies?",
@@ -3921,7 +3933,7 @@
       "exp": "CPG (page 17) lists all three."
     },
     {
-      "id": "Q291",
+      "id": "Q292",
       "module": 2,
       "type": "mcq",
       "q": "According to the CPG, such local policies of the country office would not be endorsed by Head Office Credit Risk Management, but must be approved by the Deputy Managing Director or Managing Director/CEO.",
@@ -3933,7 +3945,7 @@
       "exp": "They must be endorsed by Head Office CRM (page 17)."
     },
     {
-      "id": "Q292",
+      "id": "Q293",
       "module": 2,
       "type": "mcq",
       "q": "Where authority to approved is delegated, such designation can be writing",
@@ -3945,7 +3957,7 @@
       "exp": "Designation must be in writing and state terms (page 18)."
     },
     {
-      "id": "Q293",
+      "id": "Q294",
       "module": 2,
       "type": "mcq",
       "q": "This manual will guide you in managing loans",
@@ -3957,7 +3969,7 @@
       "exp": "The CPG is the primary guide for credit risk management."
     },
     {
-      "id": "Q294",
+      "id": "Q295",
       "module": 2,
       "type": "mcq",
       "q": "The Board of Trustees of the Bank has approved these policies for use Banking.",
@@ -3969,7 +3981,7 @@
       "exp": "Approved by Board of Directors, not Trustees (page 17)."
     },
     {
-      "id": "Q295",
+      "id": "Q296",
       "module": 2,
       "type": "mcq",
       "q": "This guide eliminates the need for personal judgment in Banking.",
@@ -3981,7 +3993,7 @@
       "exp": "Judgment is still required; the guide provides guidelines (page 17)."
     },
     {
-      "id": "Q296",
+      "id": "Q297",
       "module": 2,
       "type": "mcq",
       "q": "Any deviations from these policies must always be explained and justified in writing.",
@@ -3993,7 +4005,7 @@
       "exp": "Deviations require written justification (page 17)."
     },
     {
-      "id": "Q297",
+      "id": "Q298",
       "module": 2,
       "type": "mcq",
       "q": "This guide may be altered or even withdrawn as the need arises. The change in the above cases must be communicated to all concerned parties.",
@@ -4005,7 +4017,7 @@
       "exp": "CPG (page 18) – amendments are communicated to all concerned."
     },
     {
-      "id": "Q298",
+      "id": "Q299",
       "module": 2,
       "type": "mcq",
       "q": "Most of the topics in this guide are based on a few principles",
@@ -4017,7 +4029,7 @@
       "exp": "The guide is based on core principles."
     },
     {
-      "id": "Q299",
+      "id": "Q300",
       "module": 2,
       "type": "mcq",
       "q": "The guide is designed to be holistic frame work for creating and managing risk assets.",
@@ -4029,7 +4041,7 @@
       "exp": "It provides a comprehensive framework (page 16)."
     },
     {
-      "id": "Q300",
+      "id": "Q301",
       "module": 2,
       "type": "mcq",
       "q": "The Bank's credit risk Management framework is made up of - distinct modules for the proactive creation and deliberate management of credit risk exposures in the Bank.",
@@ -4043,7 +4055,7 @@
       "exp": "CPG (page 76) states five distinct modules."
     },
     {
-      "id": "Q301",
+      "id": "Q302",
       "module": 2,
       "type": "mcq",
       "q": "All Cash, Immaterial and Passive Risk Rating Limit Exceptions (RRLEs) require approval from the Managing Director/CEO and Chief Risk Officer.",
@@ -4055,7 +4067,7 @@
       "exp": "CPG (page 74) – Cash, Immaterial, Passive RRLEs require Line ED and CRO (not GMD)."
     },
     {
-      "id": "Q302",
+      "id": "Q303",
       "module": 2,
       "type": "mcq",
       "q": "On an annual basis, the Head of credit & Risk Management will review all risk rating limit exceptions including exception that have aged past their originally established and approval resolution period.",
@@ -4067,7 +4079,7 @@
       "exp": "CPG (page 75) – review is quarterly, not annual."
     },
     {
-      "id": "Q303",
+      "id": "Q304",
       "module": 2,
       "type": "mcq",
       "q": "Is it right to state that the it is the responsibility of the Head credit risk Management to ensure that actual OSUC stays within the Risk Rating Limit.",
@@ -4079,7 +4091,7 @@
       "exp": "Responsibility is the Relationship Manager (page 75)."
     },
     {
-      "id": "Q304",
+      "id": "Q305",
       "module": 2,
       "type": "mcq",
       "q": "Issuance of guarantee / bonds must be reviewed by the Head of credit RISK Management for adequate wording to protect the interest of the bank.",
@@ -4091,7 +4103,7 @@
       "exp": "Reviewed by Legal Counsel (page 34)."
     },
     {
-      "id": "Q305",
+      "id": "Q306",
       "module": 2,
       "type": "mcq",
       "q": "The over all responsibility of sustaining the quality of credit risk exposures is certainly that of credit risk management.",
@@ -4103,7 +4115,7 @@
       "exp": "Primary responsibility is Relationship Manager (page 133)."
     },
     {
-      "id": "Q306",
+      "id": "Q307",
       "module": 2,
       "type": "mcq",
       "q": "In cases of erroneous interest or charges debited to a customer's amount, credit Risk Management is authorized to approve reasonable of such erroneous changes or interests.",
@@ -4115,7 +4127,7 @@
       "exp": "Approval is by MD (page 199)."
     },
     {
-      "id": "Q307",
+      "id": "Q308",
       "module": 2,
       "type": "mcq",
       "q": "The CPG proposes a system of multiple standards for the measurement of credit risk in order to ensure consisting across business, stability in methodologies and transparency of risk.",
@@ -4127,7 +4139,7 @@
       "exp": "It proposes a single set of standards (page 106)."
     },
     {
-      "id": "Q308",
+      "id": "Q309",
       "module": 2,
       "type": "mcq",
       "q": "Risk Management policies are approval by the Board Credit committee to enable informed decision making and approval, and establish / maintain an appropriate environment for risk Management.",
@@ -4139,7 +4151,7 @@
       "exp": "Approved by Board of Directors, not just BCC (page 17)."
     },
     {
-      "id": "Q309",
+      "id": "Q310",
       "module": 2,
       "type": "mcq",
       "q": "All Access Bank employees involved in the creation and management of risk exposures shall comply at all times with the risk management policies, and procedures as approved.",
@@ -4151,7 +4163,7 @@
       "exp": "CPG requires all involved employees to comply (page 17)."
     },
     {
-      "id": "Q310",
+      "id": "Q311",
       "module": 2,
       "type": "mcq",
       "q": "The risk management unit shall have specific and overall responsibility for ensuring compliance with the Risk management Policies.",
@@ -4163,7 +4175,7 @@
       "exp": "Risk Management Unit has that responsibility (page 42)."
     },
     {
-      "id": "Q311",
+      "id": "Q312",
       "module": 2,
       "type": "mcq",
       "q": "Cash, Immaterial and Passive Risk Rating Limit Exceptions (RRLEs) require approval from Line ED and the Chief Risk Officer (or their designees)",
@@ -4175,7 +4187,7 @@
       "exp": "Confirmed against section 5.3.5.6, with an updated title: the current manual specifies 'Chief Risk Officer,' not 'Head of Credit Risk Management' (that title has been retired). True in substance."
     },
     {
-      "id": "Q312",
+      "id": "Q313",
       "module": 2,
       "type": "mcq",
       "q": "All Risk Rating Limit Exceptions other than Cash, Immaterial, and Passive require approval by the Management Credit Committee (MCC)",
@@ -4187,7 +4199,7 @@
       "exp": "Confirmed against section 5.3.5.6: 'All other RRLEs require approval by MCC.' (The earlier phrasing incorrectly implied Line ED and Head of CRM were also required for this category — that combination applies only to Cash/Immaterial/Passive exceptions, not to this broader 'all other' category.)"
     },
     {
-      "id": "Q313",
+      "id": "Q314",
       "module": 2,
       "type": "mcq",
       "q": "Marketing letters will be jointly approved by the business head or ED and the Head of Credit Risk Management.",
@@ -4199,7 +4211,7 @@
       "exp": "CPG (page 75) – marketing letters are jointly approved by business head/ED and Head of Risk."
     },
     {
-      "id": "Q314",
+      "id": "Q315",
       "module": 2,
       "type": "mcq",
       "q": "All extensions of credit in the bank need not be approved incompliance with the Credit Risk Management Policy Guide.",
@@ -4211,7 +4223,7 @@
       "exp": "All extensions must be approved in compliance with CPG (page 115)."
     },
     {
-      "id": "Q315",
+      "id": "Q316",
       "module": 2,
       "type": "mcq",
       "q": "Drawdown of facilities classified 'doubtful' and worse need not be approved by the Chief Risk Officer at a minimum.",
@@ -4223,7 +4235,7 @@
       "exp": "False — this inverts the rule. Drawdown of facilities classified 'doubtful' and worse DOES require approval by the Chief Risk Officer (or designee) at minimum, per section 6.4 drawdown requirements."
     },
     {
-      "id": "Q316",
+      "id": "Q317",
       "module": 2,
       "type": "mcq",
       "q": "Facilities below N5MM will only be approved under a Credit Program. Countries may establish local limits, which must be endorsed by the Regional Head of Credit Risk Management and approved by the Head of Credit Risk Management at the Head Office.",
@@ -4235,7 +4247,7 @@
       "exp": "CPG (page 146) – correct."
     },
     {
-      "id": "Q317",
+      "id": "Q318",
       "module": 3,
       "type": "mcq",
       "q": "Where is this meeting most suitable to take place?",
@@ -4249,7 +4261,7 @@
       "exp": "Credit calls should be at business location and bank premises (page 141)."
     },
     {
-      "id": "Q318",
+      "id": "Q319",
       "module": 3,
       "type": "mcq",
       "q": "Under the CRG RM must conduct and document site visit prior to disbursement of funds under:",
@@ -4263,7 +4275,7 @@
       "exp": "CPG (page 174) – site visit required prior to term loan disbursement."
     },
     {
-      "id": "Q319",
+      "id": "Q320",
       "module": 3,
       "type": "mcq",
       "q": "Customers request for withdrawal against uncleared effects or drafts will not be approved for one of the following reasons:",
@@ -4277,7 +4289,7 @@
       "exp": "Drawings against company's own cheque and excess drawings are not allowed (page 29)."
     },
     {
-      "id": "Q320",
+      "id": "Q321",
       "module": 3,
       "type": "mcq",
       "q": "How many parties are there to a typical transaction involving the issuance of a bond by the bank?",
@@ -4291,7 +4303,7 @@
       "exp": "Bank, applicant, and beneficiary (page 33)."
     },
     {
-      "id": "Q321",
+      "id": "Q322",
       "module": 3,
       "type": "mcq",
       "q": "In what instance(s) will a bond /guarantee be issued on a clean basis to a client?",
@@ -4305,7 +4317,7 @@
       "exp": "CPG (page 33) – clean bonds may be issued to better rated obligors with appropriate clauses."
     },
     {
-      "id": "Q322",
+      "id": "Q323",
       "module": 3,
       "type": "mcq",
       "q": "Which of the following statement is false with regards to the issuance of bond/guarantees?",
@@ -4319,7 +4331,7 @@
       "exp": "CPG (page 34) – issuance to support offshore is strongly discouraged."
     },
     {
-      "id": "Q323",
+      "id": "Q324",
       "module": 3,
       "type": "mcq",
       "q": "What kind of risk is the bank exposed to on ALL commercial papers it intermediates?",
@@ -4333,7 +4345,7 @@
       "exp": "CPG (page 35) – bank is exposed to reputation risk on all CPs it intermediates."
     },
     {
-      "id": "Q324",
+      "id": "Q325",
       "module": 3,
       "type": "mcq",
       "q": "When the Bank does not guarantee the CP's it issues, what role does the bank play?",
@@ -4347,7 +4359,7 @@
       "exp": "CPG (page 35) – without guarantee, the bank performs an agency role."
     },
     {
-      "id": "Q325",
+      "id": "Q326",
       "module": 3,
       "type": "mcq",
       "q": "In a lease facility, what is the most important consideration?",
@@ -4361,7 +4373,7 @@
       "exp": "CPG (page 29) – ability to take possession is key."
     },
     {
-      "id": "Q326",
+      "id": "Q327",
       "module": 3,
       "type": "mcq",
       "q": "How many parties are there in a lease arrangement?",
@@ -4375,7 +4387,7 @@
       "exp": "Bank, lessee, and supplier (page 29)."
     },
     {
-      "id": "Q327",
+      "id": "Q328",
       "module": 3,
       "type": "mcq",
       "q": "What is the most important consideration for the bank when undertaking warehouse financing?",
@@ -4389,7 +4401,7 @@
       "exp": "CPG (page 30) – bank must take physical control using an independent agent."
     },
     {
-      "id": "Q328",
+      "id": "Q329",
       "module": 3,
       "type": "mcq",
       "q": "In general, warehouse financing should NOT be considered where:",
@@ -4403,7 +4415,7 @@
       "exp": "CPG (page 30) – FSV must be adequate at all times."
     },
     {
-      "id": "Q329",
+      "id": "Q330",
       "module": 3,
       "type": "mcq",
       "q": "Which one of the following consideration is not important in establishing the bank's lending rate?",
@@ -4417,7 +4429,7 @@
       "exp": "CPG (page 110) – pricing considerations do not include poor banks' rates."
     },
     {
-      "id": "Q330",
+      "id": "Q331",
       "module": 3,
       "type": "mcq",
       "q": "What resource material will be most appropriate to find the average value of a share?",
@@ -4431,7 +4443,7 @@
       "exp": "CPG (page 163) – value based on SEDOL average, best sourced from bank-approved broker."
     },
     {
-      "id": "Q331",
+      "id": "Q332",
       "module": 3,
       "type": "mcq",
       "q": "According to the Bank's Risk Management Philosophy, the Bank \"considers risk management philosophy and culture as the set of shared beliefs, values, attitudes and characterizing how the Bank considers risk in everything it does, from strategy development and implementation to its day-to-day activities\".",
@@ -4445,7 +4457,19 @@
       "exp": "CPG (page 19) – the correct word is 'practices'."
     },
     {
-      "id": "Q332",
+      "id": "Q333",
+      "module": 3,
+      "type": "mcq",
+      "q": "As a Systemically Important Bank (SIB) in Nigeria, Access Bank's risk practices are geared toward achieving/sustaining Moderate risk outcomes.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.4.1: Risk Appreciation Programme intro, confirmed verbatim."
+    },
+    {
+      "id": "Q334",
       "module": 3,
       "type": "mcq",
       "q": "The following are all guiding principles for the Bank's risk culture except: Management and staff shall:",
@@ -4459,7 +4483,7 @@
       "exp": "The principle says to consider both business unit and Bank-wide best interests (page 20)."
     },
     {
-      "id": "Q333",
+      "id": "Q335",
       "module": 3,
       "type": "mcq",
       "q": "Warehouse financing is best suited where:",
@@ -4473,7 +4497,7 @@
       "exp": "CPG (page 30) – all conditions apply."
     },
     {
-      "id": "Q334",
+      "id": "Q336",
       "module": 3,
       "type": "mcq",
       "q": "Where a warehouse financing facility is granted which of the following is necessary to be done:",
@@ -4487,7 +4511,7 @@
       "exp": "CPG (page 30) – all are required."
     },
     {
-      "id": "Q335",
+      "id": "Q337",
       "module": 3,
       "type": "mcq",
       "q": "Under what condition will the Bank assume lead roles in syndication?",
@@ -4501,7 +4525,7 @@
       "exp": "CPG (page 105) – bank will only lead if it has the expertise and capacity."
     },
     {
-      "id": "Q336",
+      "id": "Q338",
       "module": 3,
       "type": "mcq",
       "q": "Advance Payment, Bid Bonds and Guarantees should contain all of the following elements except:",
@@ -4515,7 +4539,7 @@
       "exp": "Bank may charge a fee (page 33)."
     },
     {
-      "id": "Q337",
+      "id": "Q339",
       "module": 3,
       "type": "mcq",
       "q": "The manual also reviews the different types of products offered by the Bank.",
@@ -4527,7 +4551,7 @@
       "exp": "CPG section 3.6 reviews products."
     },
     {
-      "id": "Q338",
+      "id": "Q340",
       "module": 3,
       "type": "mcq",
       "q": "If the CPG differs from regulations then the marketer will decide the approach the Bank will use. He will also resolve other conflicts that may arise from time to time.",
@@ -4539,7 +4563,7 @@
       "exp": "Regulations override; decisions are not made by marketer alone."
     },
     {
-      "id": "Q339",
+      "id": "Q341",
       "module": 3,
       "type": "mcq",
       "q": "The Bank may need to change these policies and procedures as laws, market conditions and the Bank's strategy change.",
@@ -4551,7 +4575,19 @@
       "exp": "CPG (page 18) – policies may change as needed."
     },
     {
-      "id": "Q340",
+      "id": "Q342",
+      "module": 3,
+      "type": "mcq",
+      "q": "One objective of the Risk Appreciation Programme (RAP) is to entrench a uniform risk culture within the organisation.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "Confirmed — CPG §3.4.1: RAP objectives include entrenching a uniform risk culture within the organisation."
+    },
+    {
+      "id": "Q343",
       "module": 3,
       "type": "mcq",
       "q": "The Bank's main activity is to manage risk.",
@@ -4563,7 +4599,7 @@
       "exp": "Banking is about managing risk."
     },
     {
-      "id": "Q341",
+      "id": "Q344",
       "module": 3,
       "type": "mcq",
       "q": "Risk, simply defined, is the variability of possible outcomes.",
@@ -4575,7 +4611,7 @@
       "exp": "Common definition."
     },
     {
-      "id": "Q342",
+      "id": "Q345",
       "module": 3,
       "type": "mcq",
       "q": "For every transaction you must learn to identify and minimize all the potential risks in that transaction. One method is to think through the transaction step by step.",
@@ -4587,7 +4623,7 @@
       "exp": "Prudent risk management approach."
     },
     {
-      "id": "Q343",
+      "id": "Q346",
       "module": 3,
       "type": "mcq",
       "q": "For every risk the Bank takes we must have a matching return for taking that risk.",
@@ -4599,7 +4635,7 @@
       "exp": "Risk-return principle."
     },
     {
-      "id": "Q344",
+      "id": "Q347",
       "module": 3,
       "type": "mcq",
       "q": "An element of accuracy is being specific on all aspects of the transaction. Nothing must be ambiguous or left to interpretation.",
@@ -4611,7 +4647,7 @@
       "exp": "Precision is essential."
     },
     {
-      "id": "Q345",
+      "id": "Q348",
       "module": 3,
       "type": "mcq",
       "q": "Independently verified information helps to reduce risk considerably",
@@ -4623,7 +4659,7 @@
       "exp": "Independent verification reduces risk."
     },
     {
-      "id": "Q346",
+      "id": "Q349",
       "module": 3,
       "type": "mcq",
       "q": "This is a very wide principle that occurs in several diverse forms.",
@@ -4635,7 +4671,7 @@
       "exp": "Many principles apply broadly."
     },
     {
-      "id": "Q347",
+      "id": "Q350",
       "module": 3,
       "type": "mcq",
       "q": "The Bank operates under a license",
@@ -4647,7 +4683,7 @@
       "exp": "Banks are licensed."
     },
     {
-      "id": "Q348",
+      "id": "Q351",
       "module": 3,
       "type": "mcq",
       "q": "By not complying we not only breach our contract with the authorities we also risk loosing our license or incurring penalties.",
@@ -4659,7 +4695,7 @@
       "exp": "Non-compliance leads to penalties."
     },
     {
-      "id": "Q349",
+      "id": "Q352",
       "module": 3,
       "type": "mcq",
       "q": "Also if we assume that Government regulations are in the best interest of the country, then we work against this interest when we break them.",
@@ -4671,7 +4707,7 @@
       "exp": "Breaking regulations harms national interest."
     },
     {
-      "id": "Q350",
+      "id": "Q353",
       "module": 3,
       "type": "mcq",
       "q": "BA is usually revolving and available for periods up to 9 months.",
@@ -4683,7 +4719,7 @@
       "exp": "Banker's Acceptance typically up to 9 months."
     },
     {
-      "id": "Q351",
+      "id": "Q354",
       "module": 3,
       "type": "mcq",
       "q": "Usually, the line is available on standby to fund any type of transaction.",
@@ -4695,7 +4731,7 @@
       "exp": "General description of BA lines."
     },
     {
-      "id": "Q352",
+      "id": "Q355",
       "module": 3,
       "type": "mcq",
       "q": "Commercial Paper (CP) are secured short- term promissory notes (usually between 30- 180 days) of corporate bodies, issued directly to the investing public sometimes through an issuing house. We will only issue Commercial Paper on behalf of companies whose risk ratings are not lower than 2 and where this classification is not due to strong collateral.",
@@ -4707,7 +4743,7 @@
       "exp": "CPs are unsecured (page 35)."
     },
     {
-      "id": "Q353",
+      "id": "Q356",
       "module": 3,
       "type": "mcq",
       "q": "Although CPs are issued unsecured and carry no direct credit exposure for the Bank, the Bank's reputation is put on the line each time we issue a CP",
@@ -4719,7 +4755,7 @@
       "exp": "Reputation risk exists (page 35)."
     },
     {
-      "id": "Q354",
+      "id": "Q357",
       "module": 3,
       "type": "mcq",
       "q": "The title of the asset resides with the client until the last installment is paid and the client exercises its option to purchase the asset at the pre-determined price stated in the lease agreement.",
@@ -4731,7 +4767,7 @@
       "exp": "Title remains with the bank until option exercised (page 29)."
     },
     {
-      "id": "Q355",
+      "id": "Q358",
       "module": 3,
       "type": "mcq",
       "q": "We intend to meet all the finance needs of all customers.",
@@ -4743,7 +4779,7 @@
       "exp": "Bank focuses on target market (page 80)."
     },
     {
-      "id": "Q356",
+      "id": "Q359",
       "module": 3,
       "type": "mcq",
       "q": "Client focus identifies the specific customers outside that target market for whom we wish to be the primary Bank.",
@@ -4755,7 +4791,7 @@
       "exp": "Client focus is within target market, not outside."
     },
     {
-      "id": "Q357",
+      "id": "Q360",
       "module": 3,
       "type": "mcq",
       "q": "Lending to these customers will be dependent on their meeting our Risk Acceptance Criteria.",
@@ -4767,7 +4803,7 @@
       "exp": "All lending must meet RAC."
     },
     {
-      "id": "Q358",
+      "id": "Q361",
       "module": 3,
       "type": "mcq",
       "q": "You must clearly see how your marketing goals fit into the Bank's strategy",
@@ -4779,7 +4815,7 @@
       "exp": "Alignment with strategy is essential."
     },
     {
-      "id": "Q359",
+      "id": "Q362",
       "module": 3,
       "type": "mcq",
       "q": "The Bank, according to the guide, will play across the entire chain of its customers business.",
@@ -4791,7 +4827,7 @@
       "exp": "Bank intends to play across value chain (page 27)."
     },
     {
-      "id": "Q360",
+      "id": "Q363",
       "module": 3,
       "type": "mcq",
       "q": "The risk asset portfolio of the bank shall be deliberately managed to ensure concentration of risk to choice industries, market sectors and individual customers to ensure portfolio liquidity",
@@ -4803,7 +4839,7 @@
       "exp": "The bank avoids concentration (page 75)."
     },
     {
-      "id": "Q361",
+      "id": "Q364",
       "module": 3,
       "type": "mcq",
       "q": "Direct lending risk is that actual customer obligation and contingent obligations will not be repaid on time.",
@@ -4815,7 +4851,31 @@
       "exp": "Direct lending risk is only actual obligations, not contingent (page 24)."
     },
     {
-      "id": "Q362",
+      "id": "Q365",
+      "module": 3,
+      "type": "mcq",
+      "q": "Loans to staff will comply with the guidelines stated in the Staff Loan Policy, which shall be subject to periodic review by the Board.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.6.6: Loans to Staff, confirmed verbatim."
+    },
+    {
+      "id": "Q366",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Access Bank's warehouse financing conditions, release from stocks should be on a FIFO (first-in, first-out) basis.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.6.5: Warehouse Financing conditions, confirmed verbatim."
+    },
+    {
+      "id": "Q367",
       "module": 3,
       "type": "mcq",
       "q": "In underwriting and distribution activities, in the event of a commitment to purchase a security or bother debt instrument from an issue or seller, there is a risk of inability to sell instrument within a predetermined distribution period to an investor or purchaser.",
@@ -4827,7 +4887,19 @@
       "exp": "Issuer risk includes distribution risk (page 24)."
     },
     {
-      "id": "Q363",
+      "id": "Q368",
+      "module": 3,
+      "type": "mcq",
+      "q": "Country risk is a broad risk category that encompasses political risk, transfer risk and convertibility risk.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.5.14: Country Risk, confirmed verbatim."
+    },
+    {
+      "id": "Q369",
       "module": 3,
       "type": "mcq",
       "q": "Cleaning risk may occur when funds are transferred on a customer's instructions to transfer or to order the transfer of funds before the bank receives reimbursement or the customer's accounts is funded.",
@@ -4839,7 +4911,19 @@
       "exp": "Correct (page 25)."
     },
     {
-      "id": "Q364",
+      "id": "Q370",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Risk Appreciation Programme's (RAP) target participants include all Senior Lending Officers scoring 'Above Average' or 'High' on the Credit Officer Risk Rating (CORR).",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.4.1: RAP target participants, confirmed verbatim."
+    },
+    {
+      "id": "Q371",
       "module": 3,
       "type": "mcq",
       "q": "Price risk is the risk that market conditions may change for an individual instrument or for all securities of the same general clears.",
@@ -4851,7 +4935,7 @@
       "exp": "Correct (page 25)."
     },
     {
-      "id": "Q365",
+      "id": "Q372",
       "module": 3,
       "type": "mcq",
       "q": "Liquidity risk is the risk that the bank may be unable to meet its financial commitments to customers or markets when due.",
@@ -4863,7 +4947,7 @@
       "exp": "Correct (page 25)."
     },
     {
-      "id": "Q366",
+      "id": "Q373",
       "module": 3,
       "type": "mcq",
       "q": "Fiduciary risk occurs when the bank in charged with the responsibilities of acting as a trustee for third parties i.e. in the event that a trust agreement is not in place clearly out timing the duties and responsibilities of the bank and when the bank may be exposed to potential or real conflict of interest.",
@@ -4875,7 +4959,7 @@
       "exp": "Correct (page 26)."
     },
     {
-      "id": "Q367",
+      "id": "Q374",
       "module": 3,
       "type": "mcq",
       "q": "Disclosure risk is the risk that there is disclosure of information that the bank knows or should have known to be incorrect.",
@@ -4887,7 +4971,7 @@
       "exp": "Correct (page 26)."
     },
     {
-      "id": "Q368",
+      "id": "Q375",
       "module": 3,
       "type": "mcq",
       "q": "Country risk is the risk that an event in a country will impair the value of the Bank's assets or will adversely affect the ability of obligations within that country to honor their obligation to the Bank.",
@@ -4899,7 +4983,7 @@
       "exp": "Correct (page 26)."
     },
     {
-      "id": "Q369",
+      "id": "Q376",
       "module": 3,
       "type": "mcq",
       "q": "In line with the bank's planning cycle, risk portfolio plans shall be developed approval at the over all bank level only.",
@@ -4911,7 +4995,7 @@
       "exp": "Portfolio plans are developed at both bank and business unit levels (page 77)."
     },
     {
-      "id": "Q370",
+      "id": "Q377",
       "module": 3,
       "type": "mcq",
       "q": "In best efforts undertaking through the Bank does not assure a legal commitment to find any distribution shortfall, it will appear that there may be risk in the form of franchise damage associated with a failed undertaking.",
@@ -4923,7 +5007,7 @@
       "exp": "Franchise damage risk exists (page 24)."
     },
     {
-      "id": "Q371",
+      "id": "Q378",
       "module": 3,
       "type": "mcq",
       "q": "Revolving credits are short term facilities with predefined cycles that relate to the customer's objectives and plans",
@@ -4935,7 +5019,7 @@
       "exp": "They relate to customer's trading cycle (page 28)."
     },
     {
-      "id": "Q372",
+      "id": "Q379",
       "module": 3,
       "type": "mcq",
       "q": "Customer may be allowed a DAUD/DAUE where cheques are drawn on person or organizations that are considered and or rated as \"No Risk' by the bank.",
@@ -4947,7 +5031,7 @@
       "exp": "Allowed only against 'Low Risk' rated drawers (page 29)."
     },
     {
-      "id": "Q373",
+      "id": "Q380",
       "module": 3,
       "type": "mcq",
       "q": "From your knowledge of issuance of bond, guarantees, is it right to state that in some cases, the bonds may be issued on a clean basis?",
@@ -4959,7 +5043,7 @@
       "exp": "Clean basis possible for better rated obligors (page 33)."
     },
     {
-      "id": "Q374",
+      "id": "Q381",
       "module": 3,
       "type": "mcq",
       "q": "The bank's obligation in a bond could be limited to a specific amount, but this is not always necessary.",
@@ -4971,7 +5055,7 @@
       "exp": "It must be limited to a specific amount (page 34)."
     },
     {
-      "id": "Q375",
+      "id": "Q382",
       "module": 3,
       "type": "mcq",
       "q": "The Bank may guarantee a commercial paper issuance. Typically CPs have tenors between 45 days and 270 days.",
@@ -4983,7 +5067,19 @@
       "exp": "CPG (page 35) – typical tenor 30-180 days, but guarantee possible."
     },
     {
-      "id": "Q376",
+      "id": "Q383",
+      "module": 3,
+      "type": "mcq",
+      "q": "The Risk Appreciation Programme's (RAP) target participants include all Group Heads, both market-facing and non-market-facing.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.4.1: RAP target participants list, confirmed verbatim."
+    },
+    {
+      "id": "Q384",
       "module": 3,
       "type": "mcq",
       "q": "In warehouse financing, it is always that the bank takes physical control of the goods; sometimes it is sufficient if a reportable warehousing agent is appointed.",
@@ -4995,7 +5091,7 @@
       "exp": "Bank takes physical control via agent (page 30)."
     },
     {
-      "id": "Q377",
+      "id": "Q385",
       "module": 3,
       "type": "mcq",
       "q": "Normally maximum tenor for warehouse financing facility is 12 months, however depending on the nature of the goods financial it may be granted for a longer tenor.",
@@ -5007,7 +5103,7 @@
       "exp": "Maximum 12 months, no longer (page 30)."
     },
     {
-      "id": "Q378",
+      "id": "Q386",
       "module": 3,
       "type": "mcq",
       "q": "Generally, goods financed under a warehouse financing on a LIFO basis.",
@@ -5019,7 +5115,7 @@
       "exp": "Should be FIFO (page 30)."
     },
     {
-      "id": "Q379",
+      "id": "Q387",
       "module": 3,
       "type": "mcq",
       "q": "Periodic stock taking in desirable to verify the quantity and quality of goods financed.",
@@ -5031,7 +5127,7 @@
       "exp": "Required (page 30)."
     },
     {
-      "id": "Q380",
+      "id": "Q388",
       "module": 3,
       "type": "mcq",
       "q": "The FSV of the goods ought to be adequate to cover the bank's exposure at the commencement of the facility.",
@@ -5043,7 +5139,43 @@
       "exp": "Must be adequate at all times (page 30)."
     },
     {
-      "id": "Q381",
+      "id": "Q389",
+      "module": 3,
+      "type": "mcq",
+      "q": "Counterparty risk is the risk that a counterparty to a transaction will fail to perform according to the terms and conditions of the contract, causing the holder of the claim to suffer a loss.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.5.1: Counterparty Risk definition, confirmed verbatim."
+    },
+    {
+      "id": "Q390",
+      "module": 3,
+      "type": "mcq",
+      "q": "Cross default risk is the risk that default on one debt obligation will trigger the automatic declaration of default on another debt obligation.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.5.1: Cross Default Risk definition, confirmed verbatim."
+    },
+    {
+      "id": "Q391",
+      "module": 3,
+      "type": "mcq",
+      "q": "Access Bank shall maintain a minimum leverage ratio of 4% at all times, guided by CBN and Basel requirements.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.5.4: Leverage Ratio, confirmed verbatim."
+    },
+    {
+      "id": "Q392",
       "module": 3,
       "type": "mcq",
       "q": "Documentation risk is the risk that documentary evidence on which the bank depends to enforce rights under contracts or transactions will always be complete, covered and enforceable.",
@@ -5055,7 +5187,7 @@
       "exp": "Risk is that it may not be complete/enforceable (page 26)."
     },
     {
-      "id": "Q382",
+      "id": "Q393",
       "module": 3,
       "type": "mcq",
       "q": "Legal and regulatory risks may occur when the Bank is subject to, a change in exposure resulting from legal or criminal sanctions or litigations.",
@@ -5067,7 +5199,7 @@
       "exp": "Correct (page 26)."
     },
     {
-      "id": "Q383",
+      "id": "Q394",
       "module": 3,
       "type": "mcq",
       "q": "Liquidity risk is that the bank will be able to meet all of its financial commitments to customers and markets when done.",
@@ -5079,7 +5211,55 @@
       "exp": "It is the risk of inability (page 25)."
     },
     {
-      "id": "Q384",
+      "id": "Q395",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under the one-obligor concept, credits extended to any member of a related group must be aggregated to determine both the total facility exposure and the appropriate level of approval.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §5.3.2: One Obligor Concept — purpose of aggregation, confirmed verbatim."
+    },
+    {
+      "id": "Q396",
+      "module": 3,
+      "type": "mcq",
+      "q": "Equity risk encompasses potential conflicts with the Bank's normal senior creditor role, as well as exposure to permanent declines in carrying values.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.5.7: Equity Risk, confirmed verbatim."
+    },
+    {
+      "id": "Q397",
+      "module": 3,
+      "type": "mcq",
+      "q": "Access Bank will only place funds with banks for which there are approved placement lines, and placements should generally be for tenors of less than 1 year.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.6.7: Local Placements and Takings from Banks, confirmed verbatim."
+    },
+    {
+      "id": "Q398",
+      "module": 3,
+      "type": "mcq",
+      "q": "Under Access Bank's warehouse financing conditions, periodic stock-taking is required to verify the quantity and quality of the goods financed.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §3.6.5: Warehouse Financing conditions, confirmed verbatim."
+    },
+    {
+      "id": "Q399",
       "module": 3,
       "type": "mcq",
       "q": "What is the maximum tenor for a Commercial Paper (CP) as described in the CPG?",
@@ -5093,7 +5273,7 @@
       "exp": "CPs have tenors between 30 and 180 days (page 35)."
     },
     {
-      "id": "Q385",
+      "id": "Q400",
       "module": 3,
       "type": "mcq",
       "q": "In a lease facility, who holds legal title to the asset during the lease period?",
@@ -5107,7 +5287,7 @@
       "exp": "Title remains with the bank until option exercised (page 29)."
     },
     {
-      "id": "Q386",
+      "id": "Q401",
       "module": 3,
       "type": "mcq",
       "q": "Which of the following best describes \"Pre‑settlement Risk\"?",
@@ -5121,7 +5301,7 @@
       "exp": "Correct definition (page 24)."
     },
     {
-      "id": "Q387",
+      "id": "Q402",
       "module": 3,
       "type": "mcq",
       "q": "What is the maximum tenor for warehouse financing?",
@@ -5135,7 +5315,7 @@
       "exp": "CPG (page 30) – maximum 12 months."
     },
     {
-      "id": "Q388",
+      "id": "Q403",
       "module": 3,
       "type": "mcq",
       "q": "Although distribution efforts are similar to an underwriting, a Best Efforts undertaking also entails a legal commitment to fund any distribution shortfall. However, there is risk here in the franchise damage associated with a failed undertaking.",
@@ -5147,7 +5327,7 @@
       "exp": "False — a Best Efforts undertaking does NOT entail a legal commitment to fund any distribution shortfall (that is what distinguishes it from a full underwriting commitment). The risk instead is franchise/reputational damage if the undertaking fails, not a funding obligation."
     },
     {
-      "id": "Q389",
+      "id": "Q404",
       "module": 3,
       "type": "mcq",
       "q": "In Assignments and Participations the distribution of Underwritten Position is normally accomplished by assignments, in which an investor assumes his pro rata share of a transaction on a full risk basis, with no recourse or future funding risk to the underwriter.",
@@ -5159,7 +5339,7 @@
       "exp": "Correct as per CPG."
     },
     {
-      "id": "Q390",
+      "id": "Q405",
       "module": 3,
       "type": "mcq",
       "q": "Revolving credits are long term/tenured facilities with predefined cycles that relate to the customer's business/trading cycle",
@@ -5171,7 +5351,7 @@
       "exp": "False — this inverts the rule. Revolving credits are SHORT term facilities, not long term (section 3.6.2)."
     },
     {
-      "id": "Q391",
+      "id": "Q406",
       "module": 4,
       "type": "mcq",
       "q": "Information gathered from credit calls are properly documented and circulated via:",
@@ -5185,7 +5365,7 @@
       "exp": "CPG (page 141) – documented and circulated via call memo."
     },
     {
-      "id": "Q392",
+      "id": "Q407",
       "module": 4,
       "type": "mcq",
       "q": "What is the frequency of the conduct of physical verification of all credit documentation",
@@ -5199,7 +5379,7 @@
       "exp": "Physical verification conducted annually (page 142)."
     },
     {
-      "id": "Q393",
+      "id": "Q408",
       "module": 4,
       "type": "mcq",
       "q": "Review of security documentation frequency",
@@ -5213,7 +5393,7 @@
       "exp": "Annual review (page 142)."
     },
     {
-      "id": "Q394",
+      "id": "Q409",
       "module": 4,
       "type": "mcq",
       "q": "Review of Security Documentation recipients",
@@ -5227,7 +5407,7 @@
       "exp": "Recipients are business units."
     },
     {
-      "id": "Q395",
+      "id": "Q410",
       "module": 4,
       "type": "mcq",
       "q": "Deferral of any security document for facility under N1bn will require the approval of:",
@@ -5241,7 +5421,7 @@
       "exp": "Terminology updated: the current manual uses 'Managing Director/CEO' and 'Deputy Managing Director,' not the retired 'GMD'/'GDMD' titles. (Underlying approval-level answer preserved from the legacy source, which could not be independently re-confirmed against a specific 'deferral under N1bn' clause in this manual — flagged for awareness.)"
     },
     {
-      "id": "Q396",
+      "id": "Q411",
       "module": 4,
       "type": "mcq",
       "q": "The CPG provides that the discovery of any declining risk exposure must be brought to the notice of the Chairman of Criticized Assets Committee within:",
@@ -5255,7 +5435,7 @@
       "exp": "CPG (page 134) – within one week."
     },
     {
-      "id": "Q397",
+      "id": "Q412",
       "module": 4,
       "type": "mcq",
       "q": "Whose responsibility is it under the CPG to develop and implement a collateral management plan in respect of each facility?",
@@ -5269,7 +5449,7 @@
       "exp": "CRM is responsible for collateral management (page 124)."
     },
     {
-      "id": "Q398",
+      "id": "Q413",
       "module": 4,
       "type": "mcq",
       "q": "In the event of non-compliance with collateralization conditions, whose responsibility is it to report to the Chairman, CAC?",
@@ -5283,7 +5463,7 @@
       "exp": "CRM reports breaches (page 133)."
     },
     {
-      "id": "Q399",
+      "id": "Q414",
       "module": 4,
       "type": "mcq",
       "q": "Under the CPG, the responsibility for delinquency Management shall be that of?",
@@ -5297,7 +5477,7 @@
       "exp": "Remedial Assets Unit handles delinquency (page 45)."
     },
     {
-      "id": "Q400",
+      "id": "Q415",
       "module": 4,
       "type": "mcq",
       "q": "Discussions and negotiation in respect of repayment / waiver is the responsibility of:",
@@ -5311,7 +5491,7 @@
       "exp": "Remedial Assets Unit handles negotiations (page 198)."
     },
     {
-      "id": "Q401",
+      "id": "Q416",
       "module": 4,
       "type": "mcq",
       "q": "Under the CPG, which of the following statement is True?",
@@ -5325,7 +5505,7 @@
       "exp": "Both statements are true (page 17)."
     },
     {
-      "id": "Q402",
+      "id": "Q417",
       "module": 4,
       "type": "mcq",
       "q": "Which of the following is a function of the MCC?",
@@ -5339,7 +5519,7 @@
       "exp": "Corrected: the MCC IS the highest management approval body for credit facilities (section 4.2.1.3) and does approve lending decisions exceeding individual limits — the prior version of this question incorrectly claimed the opposite."
     },
     {
-      "id": "Q403",
+      "id": "Q418",
       "module": 4,
       "type": "mcq",
       "q": "Whose responsibility is it to ensure the integrity of the credit process and proper documentation of the credit decision?",
@@ -5353,7 +5533,7 @@
       "exp": "CORRECTED: integrity of the credit process and proper documentation of the credit decision is the responsibility of Relationship Management / the Relationship Manager-Originating Officer, per CPG §6.2.10.4 (page 115) — not Credit Risk Management."
     },
     {
-      "id": "Q404",
+      "id": "Q419",
       "module": 4,
       "type": "mcq",
       "q": "The policy manual is intended for",
@@ -5367,7 +5547,7 @@
       "exp": "CPG is for all personnel involved (page 12)."
     },
     {
-      "id": "Q405",
+      "id": "Q420",
       "module": 4,
       "type": "mcq",
       "q": "Armament Loans & Gambling LoansAccess Bank policy will be not to finance such loans in any form. What exceptions, if any, exist in the CPG",
@@ -5381,7 +5561,7 @@
       "exp": "Board approval required for restricted lines (page 52)."
     },
     {
-      "id": "Q406",
+      "id": "Q421",
       "module": 4,
       "type": "mcq",
       "q": "Under the approval framework, is the MCC's credit approval limit a single flat Naira figure, or does it vary?",
@@ -5395,7 +5575,33 @@
       "exp": "CORRECTED: the flat 'N500 million' figure is outdated. Current MCC limits are risk-rating-banded per the Group MCC/BCC/Board Limit table (section 6.2.10.4.3), ranging from roughly N2-5bn up to N40bn depending on the obligor's risk rating — not a single flat amount."
     },
     {
-      "id": "Q407",
+      "id": "Q422",
+      "module": 4,
+      "type": "mcq",
+      "q": "Under the Cash Backed Facilities approval table, an individual transaction up to N2.5 billion requires approval from:",
+      "opts": [
+        "SM Business Head + Min of SM in CRM",
+        "AGM Business Head + Head of Risk in CRM",
+        "ED Business + Head of Risk in CRM",
+        "DMD + Head of Risk in CRM"
+      ],
+      "ans": "AGM Business Head + Head of Risk in CRM",
+      "exp": "CPG Cash Backed Facilities table: transactions up to N2.5bn require AGM Business Head + Head of Risk in CRM approval."
+    },
+    {
+      "id": "Q423",
+      "module": 4,
+      "type": "mcq",
+      "q": "The Management Credit Committee shall meet bi-weekly to review and consider credit facility requests.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §4.2.1.4: MCC Meeting Frequency, confirmed verbatim."
+    },
+    {
+      "id": "Q424",
       "module": 4,
       "type": "mcq",
       "q": "For a MCC meeting to be valid, the Chairman or the Vice Chairman must be present to preside over the meeting. Where either of the will not be available for a meeting, they may delegate any member of the Committee to serve as Chairman. The Chairman or Vice Chairman, the Secretary and at least 2 other members shall form a quorum.",
@@ -5407,7 +5613,7 @@
       "exp": "Quorum includes Chairman or VC, Secretary, Legal rep, and at least two Group Heads (page 41)."
     },
     {
-      "id": "Q408",
+      "id": "Q425",
       "module": 4,
       "type": "mcq",
       "q": "According to the CPG, the credit Risk Group of the bank is presently made up of how much division?",
@@ -5421,7 +5627,7 @@
       "exp": "Credit Risk Group has 4 divisions (page 36)."
     },
     {
-      "id": "Q409",
+      "id": "Q426",
       "module": 4,
       "type": "mcq",
       "q": "Whose responsibility is it to ensure that the provisions of the CPG remain relevant and adequate?",
@@ -5435,7 +5641,7 @@
       "exp": "All involved personnel are responsible (page 18)."
     },
     {
-      "id": "Q410",
+      "id": "Q427",
       "module": 4,
       "type": "mcq",
       "q": "You must initiate changes to the CPG where you spot areas for improvement.",
@@ -5447,7 +5653,19 @@
       "exp": "Staff should propose improvements (page 18)."
     },
     {
-      "id": "Q411",
+      "id": "Q428",
+      "module": 4,
+      "type": "mcq",
+      "q": "Changes to the Credit Policy Guide are approved by the Board Credit Committee, acting on delegated authority from the Board, on the recommendation of the Management Credit Committee.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §4.2.1.2: Board Credit Committee functions, confirmed verbatim."
+    },
+    {
+      "id": "Q429",
       "module": 4,
       "type": "mcq",
       "q": "They will help you with day- to- day credit decision- making, especially when you come across new situations.",
@@ -5459,7 +5677,7 @@
       "exp": "CPG provides guidance."
     },
     {
-      "id": "Q412",
+      "id": "Q430",
       "module": 4,
       "type": "mcq",
       "q": "It is easy to forget the importance of integrity. In credit functions you are far removed from the depositors who have entrusted their money to you.",
@@ -5471,7 +5689,7 @@
       "exp": "Integrity must never be forgotten."
     },
     {
-      "id": "Q413",
+      "id": "Q431",
       "module": 4,
       "type": "mcq",
       "q": "We must be accurate and diverse.",
@@ -5483,7 +5701,7 @@
       "exp": "Accurate, but 'diverse' is not a principle."
     },
     {
-      "id": "Q414",
+      "id": "Q432",
       "module": 4,
       "type": "mcq",
       "q": "A key principle of credit policy is that the Bank will always comply with all Government regulations",
@@ -5495,7 +5713,7 @@
       "exp": "Compliance is a key principle."
     },
     {
-      "id": "Q415",
+      "id": "Q433",
       "module": 4,
       "type": "mcq",
       "q": "Credit risk is described as the potential that a bank borrower or customer party will fail to meet obligation in accordance with agreed terms.",
@@ -5507,7 +5725,7 @@
       "exp": "Correct definition."
     },
     {
-      "id": "Q416",
+      "id": "Q434",
       "module": 4,
       "type": "mcq",
       "q": "The Board Credit Committee is comprised of 6 non-executive directors, the Managing Director/CEO, the Deputy Managing Director and a few executive directors.",
@@ -5519,7 +5737,19 @@
       "exp": "Composition not as stated; BCC has NEDs and others."
     },
     {
-      "id": "Q417",
+      "id": "Q435",
+      "module": 4,
+      "type": "mcq",
+      "q": "The composition of the Board Credit Committee and the frequency of its meetings are governed by the Charter for the Board Credit Committee.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §4.2.1.2.1: Composition, Quorum and Frequency, confirmed verbatim."
+    },
+    {
+      "id": "Q436",
       "module": 4,
       "type": "mcq",
       "q": "For an MCC meeting to be valid, the CPG provides that such a meeting must be presided over by the Managing Director/CEO or Deputy Managing Director only.",
@@ -5531,7 +5761,7 @@
       "exp": "Chairman may delegate (page 41)."
     },
     {
-      "id": "Q418",
+      "id": "Q437",
       "module": 4,
       "type": "mcq",
       "q": "It is not always necessary for members of MCC to attend meetings; approvals can also be obtained by circulation of credit memo for the benefit of the absenting numbers.",
@@ -5543,7 +5773,7 @@
       "exp": "CORRECTED: True. Section 4.2.1.4 confirms that in exceptional circumstances, MCC approvals may be obtained by telephone/video conference or written comments properly captured in the minutes — members do not always have to attend in person."
     },
     {
-      "id": "Q419",
+      "id": "Q438",
       "module": 4,
       "type": "mcq",
       "q": "The criticize Assets committee shall be convened normally every month to review all qualifying assets and take decision on remedial actions and /or provisioning.",
@@ -5555,7 +5785,7 @@
       "exp": "Convened quarterly (page 42)."
     },
     {
-      "id": "Q420",
+      "id": "Q439",
       "module": 4,
       "type": "mcq",
       "q": "The decision to transfer non-performing facilities to the remedial assets management unit must be taken at the Management Credit Committee (MCC) meeting under the chairmanship of the Managing Director/CEO.",
@@ -5567,7 +5797,7 @@
       "exp": "Decision taken at CAC (page 200-201)."
     },
     {
-      "id": "Q421",
+      "id": "Q440",
       "module": 4,
       "type": "mcq",
       "q": "Risk rating limits are establish by the Head of credit Risk Management and approved criticized assets committee.",
@@ -5579,7 +5809,7 @@
       "exp": "Approved by MCC (page 73)."
     },
     {
-      "id": "Q422",
+      "id": "Q441",
       "module": 4,
       "type": "mcq",
       "q": "All risk rating limits exceptions will be reported quarterly to the Management credit committee",
@@ -5591,7 +5821,7 @@
       "exp": "Reported monthly (page 75)."
     },
     {
-      "id": "Q423",
+      "id": "Q442",
       "module": 4,
       "type": "mcq",
       "q": "All credit requests that are above the limit of the Executive Director for Rest of Africa must be approved at the next higher appropriate level — Deputy Managing Director/Managing Director/CEO/MCC/BCC/Board.",
@@ -5603,7 +5833,7 @@
       "exp": "Approval grid escalation (page 119)."
     },
     {
-      "id": "Q424",
+      "id": "Q443",
       "module": 4,
       "type": "mcq",
       "q": "When the amount of a credit facility is reduced or cancelled or tenor is reduced, the RM should if he deems it necessary advice the credit Risk Management in writing.",
@@ -5615,7 +5845,7 @@
       "exp": "RM must promptly advise CRM (page 125)."
     },
     {
-      "id": "Q425",
+      "id": "Q444",
       "module": 4,
       "type": "mcq",
       "q": "In the course of reallocation of approved facilities, who has the responsibilities & material change?",
@@ -5629,7 +5859,7 @@
       "exp": "CRO determines materiality (page 125)."
     },
     {
-      "id": "Q426",
+      "id": "Q445",
       "module": 4,
       "type": "mcq",
       "q": "Though armaments and gambling are undesirable lines of business, the Board of directors may, from time to time approve credit extension to these sectors.",
@@ -5641,7 +5871,7 @@
       "exp": "Board may approve (page 52)."
     },
     {
-      "id": "Q427",
+      "id": "Q446",
       "module": 4,
       "type": "mcq",
       "q": "Credit fees and services charges are periodically review by credit Risk Management to ensure competitiveness in the in the market place.",
@@ -5653,7 +5883,7 @@
       "exp": "CRM reviews fees."
     },
     {
-      "id": "Q428",
+      "id": "Q447",
       "module": 4,
       "type": "mcq",
       "q": "will be responsible for overall credit quality review of all outstanding risk exposures.",
@@ -5667,7 +5897,7 @@
       "exp": "RM is responsible for credit quality review (page 133)."
     },
     {
-      "id": "Q429",
+      "id": "Q448",
       "module": 4,
       "type": "mcq",
       "q": "Who is responsible for the implementation of the collateral management plan?",
@@ -5681,7 +5911,7 @@
       "exp": "CRM implements (page 124)."
     },
     {
-      "id": "Q430",
+      "id": "Q449",
       "module": 4,
       "type": "mcq",
       "q": "Who develops the plan of delinquency management?",
@@ -5695,7 +5925,7 @@
       "exp": "CRM develops delinquency plan (page 138)."
     },
     {
-      "id": "Q431",
+      "id": "Q450",
       "module": 4,
       "type": "mcq",
       "q": "The responsibility for delinquency management shall be referred to legal department.",
@@ -5707,7 +5937,7 @@
       "exp": "Responsibility is Remedial Assets Unit."
     },
     {
-      "id": "Q432",
+      "id": "Q451",
       "module": 4,
       "type": "mcq",
       "q": "Under the CPG, the authority to approve credit shall be exclusively exercised by the bank's credit risk management function.",
@@ -5719,7 +5949,7 @@
       "exp": "Authority is jointly exercised with business (page 114)."
     },
     {
-      "id": "Q433",
+      "id": "Q452",
       "module": 4,
       "type": "mcq",
       "q": "The bank's portfolio Management process provides for backend definition of target risk stratification and on an ongoing basis, tracks the actual composition of the risk asset portfolio against desired structure.",
@@ -5731,7 +5961,7 @@
       "exp": "Portfolio management process (page 204)."
     },
     {
-      "id": "Q434",
+      "id": "Q453",
       "module": 4,
       "type": "mcq",
       "q": "Credit portfolio risk limits may be proposed by credit Management and approval by Management credit committee.",
@@ -5743,7 +5973,7 @@
       "exp": "Yes (page 73)."
     },
     {
-      "id": "Q435",
+      "id": "Q454",
       "module": 4,
       "type": "mcq",
       "q": "Under the CPG, it is the responsibility of Management and Board of Directors to ensure the integrity of the credit process and proper documentation of credit decision.",
@@ -5755,7 +5985,19 @@
       "exp": "False — this names the wrong party. Section 6.2.10.4 assigns this specifically to the Relationship Manager/Originating Officer, not to 'Management and Board of Directors' generally, and not primarily to Credit Risk Management either."
     },
     {
-      "id": "Q436",
+      "id": "Q455",
+      "module": 4,
+      "type": "mcq",
+      "q": "The Board of Directors, not the Board Credit Committee, is the highest approval authority for both credit risk policies and credit facility requests.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §4.2.1: the BOD is the highest approval authority; BCC acts under delegated authority."
+    },
+    {
+      "id": "Q456",
       "module": 4,
       "type": "mcq",
       "q": "The Board Credit Committee is headed by the Managing Director/CEO and by the Deputy Managing Director in his absence.",
@@ -5767,7 +6009,7 @@
       "exp": "Headed by a non-executive director (page 39)."
     },
     {
-      "id": "Q437",
+      "id": "Q457",
       "module": 4,
       "type": "mcq",
       "q": "The Criticized Assets Committee is headed by the Deputy Managing Director and convenes once every month to review all qualifying assets and take decisions on remedial action and/or provisioning.",
@@ -5779,7 +6021,7 @@
       "exp": "Headed by MD or designate, meets quarterly (page 42)."
     },
     {
-      "id": "Q438",
+      "id": "Q458",
       "module": 4,
       "type": "mcq",
       "q": "Loans that show little or no movement during their tenor or which fail to be liquidated on due date are to be regarded as delinquent.",
@@ -5791,7 +6033,7 @@
       "exp": "Delinquent loans are those not moving (page 41)."
     },
     {
-      "id": "Q439",
+      "id": "Q459",
       "module": 4,
       "type": "mcq",
       "q": "The decision to transfer non-performing facility to the remedial states Management unit is normally taken at Management credit committee meetings.",
@@ -5803,7 +6045,7 @@
       "exp": "Taken at CAC (page 200-201)."
     },
     {
-      "id": "Q440",
+      "id": "Q460",
       "module": 4,
       "type": "mcq",
       "q": "Compliance with the CPG shall be monitored on an ongoing basis by credit Risk Management and reported on a quarterly basis to the MCC.",
@@ -5815,7 +6057,7 @@
       "exp": "CRM monitors and reports to MCC (page 42)."
     },
     {
-      "id": "Q441",
+      "id": "Q461",
       "module": 4,
       "type": "mcq",
       "q": "Which committee is responsible for reviewing all assets that show little or no movement and taking decisions on remedial actions?",
@@ -5829,7 +6071,7 @@
       "exp": "CAC reviews delinquent assets (page 41)."
     },
     {
-      "id": "Q442",
+      "id": "Q462",
       "module": 4,
       "type": "mcq",
       "q": "Who is responsible for the final approval of credit risk policies?",
@@ -5843,7 +6085,7 @@
       "exp": "Board approves policies (page 17)."
     },
     {
-      "id": "Q443",
+      "id": "Q463",
       "module": 4,
       "type": "mcq",
       "q": "Which department is responsible for safe custody of credit files and maintaining records of file movement?",
@@ -5857,7 +6099,7 @@
       "exp": "CRM is responsible for safe custody (page 144)."
     },
     {
-      "id": "Q444",
+      "id": "Q464",
       "module": 4,
       "type": "mcq",
       "q": "Who must approve a waiver of interest and charges on a non‑performing exposure?",
@@ -5871,7 +6113,7 @@
       "exp": "MD approves all waivers (page 198)."
     },
     {
-      "id": "Q445",
+      "id": "Q465",
       "module": 4,
       "type": "mcq",
       "q": "Who is responsible for preparing and registering the mortgage in accordance with relevant laws?",
@@ -5885,19 +6127,31 @@
       "exp": "External legal advocates handle registration (page 267)."
     },
     {
-      "id": "Q446",
+      "id": "Q466",
       "module": 4,
       "type": "mcq",
-      "q": "Credit Audit or Review does not ascertain the value of the loan on the Bank’s books and compliance with credit policies and procedures.",
+      "q": "Credit Audit ensures adherence to appraisal standards, while the Credit Review Mechanism (CRM) evaluates adherence to loan policies and procedures.",
       "opts": [
         "True",
         "False"
       ],
-      "ans": "False",
-      "exp": "Credit Audit does ascertain value and compliance (page 145)."
+      "ans": "True",
+      "exp": "CPG §6.8 'Credit Audit' and §6.8.1 'Credit Review Mechanism', confirmed verbatim."
     },
     {
-      "id": "Q447",
+      "id": "Q467",
+      "module": 4,
+      "type": "mcq",
+      "q": "The Management Credit Committee (MCC) includes the Head of Legal, or their nominee as approved by the Managing Director/CEO, as a member.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §4.2.1.4: MCC Composition, confirmed verbatim."
+    },
+    {
+      "id": "Q468",
       "module": 4,
       "type": "mcq",
       "q": "All unusual/special risks shall require approval at Management Credit Committee / Board Credit Committee or Board of Directors subject to applicable limits.",
@@ -5909,7 +6163,7 @@
       "exp": "Unusual risks require appropriate approval (page 52)."
     },
     {
-      "id": "Q448",
+      "id": "Q469",
       "module": 4,
       "type": "mcq",
       "q": "The process to approve the Aged Inventory memorandum must be documented as part of the Credit Program. Required approvers must include a Business ED and the Head of Credit Risk Management.",
@@ -5921,19 +6175,21 @@
       "exp": "CPG requires these approvers."
     },
     {
-      "id": "Q449",
+      "id": "Q470",
       "module": 4,
       "type": "mcq",
-      "q": "Credits above N6 Bn must be approved by the Board Credit Committee",
+      "q": "Under the Cash Backed Facilities approval table, credit above 10% of shareholders' funds (unimpaired by losses) for an individual transaction requires approval from:",
       "opts": [
-        "True",
-        "False"
+        "Management Credit Committee (MCC)",
+        "Board Credit Committee (BCC)",
+        "Managing Director/CEO",
+        "Deputy Managing Director"
       ],
-      "ans": "False",
-      "exp": "The flat N6bn threshold is outdated. Current MCC/BCC/Board limits are risk-rating-banded (e.g. BCC limit ranges from N5bn at Risk Rating 3- up to N60bn at Risk Rating 1), not a single flat cutoff — see the Group MCC/BCC/Board Limit table."
+      "ans": "Board Credit Committee (BCC)",
+      "exp": "CPG Cash Backed Facilities table: above 10% of shareholders' funds (unimpaired by losses) requires BCC approval; up to 10% requires MCC."
     },
     {
-      "id": "Q450",
+      "id": "Q471",
       "module": 4,
       "type": "mcq",
       "q": "Credit Analysis and Review Issues must be communicated to Unit Head / Group Heads by mail.",
@@ -5945,7 +6201,7 @@
       "exp": "Communication via mail."
     },
     {
-      "id": "Q451",
+      "id": "Q472",
       "module": 5,
       "type": "mcq",
       "q": "Unsecured credit to bank's directors must be:",
@@ -5959,7 +6215,7 @@
       "exp": "Board approval required and ratification (page 52)."
     },
     {
-      "id": "Q452",
+      "id": "Q473",
       "module": 5,
       "type": "mcq",
       "q": "How often must the MCC Institute periodic reviews of exposure in the bank?",
@@ -5973,7 +6229,7 @@
       "exp": "MCC reviews exposures quarterly (page 127)."
     },
     {
-      "id": "Q453",
+      "id": "Q474",
       "module": 5,
       "type": "mcq",
       "q": "Under the CPG all credit facility write offs require approval by...?",
@@ -5987,7 +6243,7 @@
       "exp": "Board approval required (page 198)."
     },
     {
-      "id": "Q454",
+      "id": "Q475",
       "module": 5,
       "type": "mcq",
       "q": "Which of the following is not a type of Credit Exposures?",
@@ -6001,7 +6257,7 @@
       "exp": "Legal commitments are not a type of credit exposure; they are documentation."
     },
     {
-      "id": "Q455",
+      "id": "Q476",
       "module": 5,
       "type": "mcq",
       "q": "A credit extension made known to the borrower and to which the Bank is committed (As long as the borrower fulfils prior conditions) is......",
@@ -6015,7 +6271,7 @@
       "exp": "Advised facility is communicated (page 63)."
     },
     {
-      "id": "Q456",
+      "id": "Q477",
       "module": 5,
       "type": "mcq",
       "q": "To manage the Bank's exposure effectively, an Account Officer may choose not to advise the full amount of the facility approved and available for a client. This may be done for one of the following reasons",
@@ -6029,7 +6285,7 @@
       "exp": "Unadvised facilities are used for flexibility (page 63)."
     },
     {
-      "id": "Q457",
+      "id": "Q478",
       "module": 5,
       "type": "mcq",
       "q": "Policy Loans are exceptional or unsecured credit extensions to certain companies and/or individual having special relationships with the Bank, some of which are already subject to certain restrictions by law except:",
@@ -6043,7 +6299,7 @@
       "exp": "Staff loans are not policy loans; they are covered separately (page 30)."
     },
     {
-      "id": "Q458",
+      "id": "Q479",
       "module": 5,
       "type": "mcq",
       "q": "What is the nature of the limit that the CPG imposes on the bank concerning takings from other bank?",
@@ -6057,7 +6313,21 @@
       "exp": "No limits on takings (page 30)."
     },
     {
-      "id": "Q459",
+      "id": "Q480",
+      "module": 5,
+      "type": "mcq",
+      "q": "It is an offence under BOFIA for bank staff to fail to declare their interest in a loan request; offenders are liable to a fine and up to how many years' imprisonment on conviction?",
+      "opts": [
+        "1 year",
+        "2 years",
+        "3 years",
+        "5 years"
+      ],
+      "ans": "3 years",
+      "exp": "CPG §5.3.3.1: Regulatory Considerations, confirmed verbatim."
+    },
+    {
+      "id": "Q481",
       "module": 5,
       "type": "mcq",
       "q": "The concept of one obligor is taken further to include any company belonging to a group whose management are linked by virtue of their related ownership structure and in particular, where the fortune of one entity can readily pass to the other.",
@@ -6069,7 +6339,7 @@
       "exp": "One obligor concept includes group companies (page 65)."
     },
     {
-      "id": "Q460",
+      "id": "Q482",
       "module": 5,
       "type": "mcq",
       "q": "It shall be the responsibility of the Relationship Manager to determine whether or not related company obligations shall be aggregated.",
@@ -6081,7 +6351,19 @@
       "exp": "False — this names the wrong party. Section 5.3.2 confirms it is the responsibility of the Approving Officers, not the Relationship Manager, to determine whether related company obligations shall be aggregated (consistent with Module 3's finding on this same fact)."
     },
     {
-      "id": "Q461",
+      "id": "Q483",
+      "module": 5,
+      "type": "mcq",
+      "q": "In addition to BOFIA, Access Bank's core lending activities are impacted by the Failed Banks Act, the EFCC Act, and the Money Laundering Prohibition Act 2011.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §5.3.3.1: Regulatory Considerations — list of governing laws, confirmed verbatim."
+    },
+    {
+      "id": "Q484",
       "module": 5,
       "type": "mcq",
       "q": "Any less than 50% owned affiliate where the borrower exercises management control. Also where, in the opinion of the lending officer, the commercial fortunes of the affiliate are strongly influenced by the borrower.",
@@ -6093,7 +6375,7 @@
       "exp": "Included (page 66)."
     },
     {
-      "id": "Q462",
+      "id": "Q485",
       "module": 5,
       "type": "mcq",
       "q": "Any obligor related to the borrower as a result of guarantees, endorsements, or other similar arrangements in favor of the Bank.",
@@ -6105,7 +6387,7 @@
       "exp": "Included (page 66)."
     },
     {
-      "id": "Q463",
+      "id": "Q486",
       "module": 5,
       "type": "mcq",
       "q": "All obligor under common ownership or control of a corporation or individual",
@@ -6117,7 +6399,7 @@
       "exp": "Included (page 66)."
     },
     {
-      "id": "Q464",
+      "id": "Q487",
       "module": 5,
       "type": "mcq",
       "q": "Under the Group EXCO limits, what is an Executive Director's approval limit for new credits of Standard Grade?",
@@ -6131,7 +6413,7 @@
       "exp": "CORRECTED: the flat N75 million figure is outdated. Current ED limits (Group EXCO Limits table) are N200mm for Standard Grade new credits, N250mm for Investment Grade names, and N300mm for renewals — confirmed consistent with Module 2's finding."
     },
     {
-      "id": "Q465",
+      "id": "Q488",
       "module": 5,
       "type": "mcq",
       "q": "However, in the absence of the Managing Director/CEO, the Deputy Managing Director automatically assumes the lending limit of the Managing Director/CEO.",
@@ -6143,7 +6425,7 @@
       "exp": "Formal delegation required (page 18)."
     },
     {
-      "id": "Q466",
+      "id": "Q489",
       "module": 5,
       "type": "mcq",
       "q": "Two examples of the application of the integrity principle are, avoiding conflicts of interest (for instance loans to the Bank's auditors) and not complying with Government regulations.",
@@ -6155,7 +6437,7 @@
       "exp": "Not complying is wrong."
     },
     {
-      "id": "Q467",
+      "id": "Q490",
       "module": 5,
       "type": "mcq",
       "q": "This may involve an outside expert or a member of staff.",
@@ -6167,7 +6449,7 @@
       "exp": "Independent verification may use internal or external experts."
     },
     {
-      "id": "Q468",
+      "id": "Q491",
       "module": 5,
       "type": "mcq",
       "q": "The principle is not simply that certain items should be matched but that we need to understand corresponding items",
@@ -6179,7 +6461,7 @@
       "exp": "Matching principle includes deliberate mismatching."
     },
     {
-      "id": "Q469",
+      "id": "Q492",
       "module": 5,
       "type": "mcq",
       "q": "Loans and advances form the bulk of a Commercial Bank's total asset base.",
@@ -6191,7 +6473,7 @@
       "exp": "Loans are largest asset."
     },
     {
-      "id": "Q470",
+      "id": "Q493",
       "module": 5,
       "type": "mcq",
       "q": "The net income from loans is the bulk of the Bank's total earnings.",
@@ -6203,7 +6485,7 @@
       "exp": "Net interest income is major earnings."
     },
     {
-      "id": "Q471",
+      "id": "Q494",
       "module": 5,
       "type": "mcq",
       "q": "Loans represent the Bank's single largest exposure to jeopardy.",
@@ -6215,7 +6497,7 @@
       "exp": "Loans are largest risk exposure."
     },
     {
-      "id": "Q472",
+      "id": "Q495",
       "module": 5,
       "type": "mcq",
       "q": "For an OD line formal notice to the customer is not required if the line is to be cancelled, frozen or the account closed. Unilateral decision, if not properly communicated, may exposure the Bank to litigation. For account closure (unless due to fraud, or bad debt) good relationship management dictates that notice should be given to enable the customer make alternative arrangement with another Bank",
@@ -6227,7 +6509,7 @@
       "exp": "Notice is generally required (page 28)."
     },
     {
-      "id": "Q473",
+      "id": "Q496",
       "module": 5,
       "type": "mcq",
       "q": "According to the guide, there may be client's of the Bank who will have several units responsible for approving all credit extension related to the client.",
@@ -6239,7 +6521,7 @@
       "exp": "Multiple units may be involved."
     },
     {
-      "id": "Q474",
+      "id": "Q497",
       "module": 5,
       "type": "mcq",
       "q": "Risk rating limits is the only mechanism to control the Bank's portfolio of credit exposures.",
@@ -6251,7 +6533,7 @@
       "exp": "Primary mechanism, not only (page 73)."
     },
     {
-      "id": "Q475",
+      "id": "Q498",
       "module": 5,
       "type": "mcq",
       "q": "Is it right to state that Risk rating limits no matter how appropriate are subject to legal launching limits?",
@@ -6263,7 +6545,7 @@
       "exp": "Legal lending limits prevail (page 73)."
     },
     {
-      "id": "Q476",
+      "id": "Q499",
       "module": 5,
       "type": "mcq",
       "q": "Risk rating limits shall be established for the following classes of borrowers except:",
@@ -6277,7 +6559,7 @@
       "exp": "Individuals not included (page 73)."
     },
     {
-      "id": "Q477",
+      "id": "Q500",
       "module": 5,
       "type": "mcq",
       "q": "For purposes of applying Risk raking limits which of the following is true: the obligor risk rating that must be used for",
@@ -6291,7 +6573,7 @@
       "exp": "All correct (page 73)."
     },
     {
-      "id": "Q478",
+      "id": "Q501",
       "module": 5,
       "type": "mcq",
       "q": "Exposure against Risk rating limit is measured as the outstanding and unusual commitments (OSUC) to a given relationship.",
@@ -6303,7 +6585,7 @@
       "exp": "OSUC definition (page 73)."
     },
     {
-      "id": "Q479",
+      "id": "Q502",
       "module": 5,
       "type": "mcq",
       "q": "For purposes of measuring exposure against risk rating limits, OSUC may be considered gross of reductions resulting from sales of assets and risk mitigation efforts.",
@@ -6315,7 +6597,7 @@
       "exp": "OSUC may be considered net of reductions (page 74)."
     },
     {
-      "id": "Q480",
+      "id": "Q503",
       "module": 5,
       "type": "mcq",
       "q": "For purposes of measuring exposures against Risk Rating Limits tenor buckets, contractual principal repayments may not be taken into consideration.",
@@ -6327,7 +6609,7 @@
       "exp": "May be taken into consideration (page 73)."
     },
     {
-      "id": "Q481",
+      "id": "Q504",
       "module": 5,
       "type": "mcq",
       "q": "An offer letter is a firm commitment by the bank to lend to customers.",
@@ -6339,7 +6621,7 @@
       "exp": "Offer letter is a commitment (page 126)."
     },
     {
-      "id": "Q482",
+      "id": "Q505",
       "module": 5,
       "type": "mcq",
       "q": "In view of the nature of syndicated loans, such facilities may not be subject to the same high standards required under the policy.",
@@ -6351,7 +6633,7 @@
       "exp": "They must meet same high standards (page 103)."
     },
     {
-      "id": "Q483",
+      "id": "Q506",
       "module": 5,
       "type": "mcq",
       "q": "Unsecured credit extensions may be made to bank directors, to companies where bank directors are also directors, or companies owned or controlled by close associates or relatives of direction of the bank.",
@@ -6363,7 +6645,7 @@
       "exp": "These are policy loans, but require Board approval (page 52)."
     },
     {
-      "id": "Q484",
+      "id": "Q507",
       "module": 5,
       "type": "mcq",
       "q": "Loan in this category must be approved by the Board prior to drawdown & ratifies at the next Board meeting.",
@@ -6375,7 +6657,7 @@
       "exp": "Board approval and ratification (page 52)."
     },
     {
-      "id": "Q485",
+      "id": "Q508",
       "module": 5,
       "type": "mcq",
       "q": "According to the CPG all write offs require approval by the board of Director and the Central bank of Nigeria.",
@@ -6387,7 +6669,7 @@
       "exp": "Board and CBN approval required (page 198)."
     },
     {
-      "id": "Q486",
+      "id": "Q509",
       "module": 5,
       "type": "mcq",
       "q": "Regardless of Risk Rating Limits, Legal Lending Limits will always prevail.",
@@ -6399,7 +6681,7 @@
       "exp": "Legal limits override (page 73)."
     },
     {
-      "id": "Q487",
+      "id": "Q510",
       "module": 5,
       "type": "mcq",
       "q": "OSUC to may not include settlement and clearing exposure, or the underwritten position of a credit under listing transaction unless the position becomes aged beyond the extension period.",
@@ -6411,7 +6693,7 @@
       "exp": "Excluded unless aged (page 73)."
     },
     {
-      "id": "Q488",
+      "id": "Q511",
       "module": 5,
       "type": "mcq",
       "q": "What level of approval does Cash Exception (RRLE) require?",
@@ -6425,7 +6707,7 @@
       "exp": "Cash RRLE requires Line ED and CRO (page 74)."
     },
     {
-      "id": "Q489",
+      "id": "Q512",
       "module": 5,
       "type": "mcq",
       "q": "What level of approval does Long-term conditioning (RRLE) require?",
@@ -6439,7 +6721,7 @@
       "exp": "Long-term RRLE requires MCC (page 74)."
     },
     {
-      "id": "Q490",
+      "id": "Q513",
       "module": 5,
       "type": "mcq",
       "q": "An approved Risk Rating Limit exception does not need to be re- approved during the annual review process.",
@@ -6451,7 +6733,7 @@
       "exp": "No re-approval needed, but must be noted (page 75)."
     },
     {
-      "id": "Q491",
+      "id": "Q514",
       "module": 5,
       "type": "mcq",
       "q": "Which document must a customer execute to accept an advised facility?",
@@ -6465,7 +6747,7 @@
       "exp": "Board Resolution required (page 63)."
     },
     {
-      "id": "Q492",
+      "id": "Q515",
       "module": 5,
       "type": "mcq",
       "q": "What is the maximum exposure limit to a single obligor (group of related borrowers) under BOFIA?",
@@ -6479,7 +6761,7 @@
       "exp": "BOFIA limit is 20% (page 66)."
     },
     {
-      "id": "Q493",
+      "id": "Q516",
       "module": 5,
       "type": "mcq",
       "q": "What is the \"One Obligor Concept\" at Access Bank?",
@@ -6493,7 +6775,7 @@
       "exp": "Aggregation of related parties (page 65)."
     },
     {
-      "id": "Q494",
+      "id": "Q517",
       "module": 5,
       "type": "mcq",
       "q": "Compliance shall be monitored on an ongoing basis by the bank’s Internal Audit Unit and reported on a quarterly basis to the Board of Directors.",
@@ -6505,7 +6787,7 @@
       "exp": "Monitored by CRM, reported to MCC (page 42)."
     },
     {
-      "id": "Q495",
+      "id": "Q518",
       "module": 5,
       "type": "mcq",
       "q": "Risk Rating Limits, shall always prevail over Legal Lending Limits set by the Regulators.",
@@ -6517,7 +6799,19 @@
       "exp": "Legal limits prevail (page 73)."
     },
     {
-      "id": "Q496",
+      "id": "Q519",
+      "module": 5,
+      "type": "mcq",
+      "q": "No single facility shall be considered in isolation for credit exposure purposes; the wider 'one obligor' concept shall be applied in all instances.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §6.2.10.4.2: Guidelines for Determining Approval Authority and Level, confirmed verbatim."
+    },
+    {
+      "id": "Q520",
       "module": 5,
       "type": "mcq",
       "q": "For the purposes of applying Risk Rating Limits, the obligor risk rating that is used must be: I. For corporations, the obligor risk rating of the parent company II. For banks, the risk rating of the lead bank. III. For other entity types, the risk rating as determined in accordance.",
@@ -6529,7 +6823,7 @@
       "exp": "Correct (page 73)."
     },
     {
-      "id": "Q497",
+      "id": "Q521",
       "module": 5,
       "type": "mcq",
       "q": "OSUC (Outstandings and Unused Commitments) is the sum of all Outstandings (including Direct and Contingent Exposure) against Total Facilities, as well as the unused portion of any Committed Facility included in Total Facilities",
@@ -6541,7 +6835,7 @@
       "exp": "Confirmed verbatim against section 5.3.5.1."
     },
     {
-      "id": "Q498",
+      "id": "Q522",
       "module": 5,
       "type": "mcq",
       "q": "Approval requirements for a Risk Rating Limit Exception are determined by the RRLE type",
@@ -6553,7 +6847,7 @@
       "exp": "Confirmed against section 5.3.5.3: required approvers depend on the RRLE type."
     },
     {
-      "id": "Q499",
+      "id": "Q523",
       "module": 5,
       "type": "mcq",
       "q": "Limit exceptions, defined as overages up to 10% of Risk Rating Limit. Is a material exception.",
@@ -6565,7 +6859,7 @@
       "exp": "Immaterial exceptions are up to 10% (page 74)."
     },
     {
-      "id": "Q500",
+      "id": "Q524",
       "module": 5,
       "type": "mcq",
       "q": "Passive exceptions need not be pre-approved, instead, they are flagged as part of the regular reporting process, and must be reviewed and their associated action plan must be approved as soon as possible after they occur, (but no later than the next quarterly review of Risk Rating Exceptions.",
@@ -6577,7 +6871,7 @@
       "exp": "Correct (page 74)."
     },
     {
-      "id": "Q501",
+      "id": "Q525",
       "module": 5,
       "type": "mcq",
       "q": "Passive exceptions must be pre-approved, need not be flagged as part of the regular reporting process, need not be reviewed, and their action plan need not be approved promptly (may be later than the next quarterly review)",
@@ -6589,7 +6883,7 @@
       "exp": "False — this inverts the actual rule. Section 5.3.5.4: passive exceptions do NOT need pre-approval; instead they ARE flagged in regular reporting, ARE reviewed, and their action plan MUST be approved as soon as possible, no later than the next quarterly review."
     },
     {
-      "id": "Q502",
+      "id": "Q526",
       "module": 5,
       "type": "mcq",
       "q": "All other RRLEs require approval by MCC.",
@@ -6601,7 +6895,7 @@
       "exp": "All other RRLEs require MCC (page 74)."
     },
     {
-      "id": "Q503",
+      "id": "Q527",
       "module": 5,
       "type": "mcq",
       "q": "Cash, Immaterial and Passive Risk Rating Limit Exceptions RRLEs require by MCC.",
@@ -6613,7 +6907,7 @@
       "exp": "They require Line ED and CRO (page 74)."
     },
     {
-      "id": "Q504",
+      "id": "Q528",
       "module": 5,
       "type": "mcq",
       "q": "Marketing letters must be jointly approved by the MCC and the managing Director.",
@@ -6625,7 +6919,7 @@
       "exp": "Approved by business head/ED and Head of Risk (page 75)."
     },
     {
-      "id": "Q505",
+      "id": "Q529",
       "module": 5,
       "type": "mcq",
       "q": "Unusual risk policies approved by MCC is limited to, the following: Exposures to director related accounts Exposures to politically exposed entities Exposures to gambling entities.",
@@ -6637,7 +6931,7 @@
       "exp": "MCC may approve other unusual risks as well."
     },
     {
-      "id": "Q506",
+      "id": "Q530",
       "module": 5,
       "type": "mcq",
       "q": "Under no circumstance can the periodic (annual) review be temporarily extended",
@@ -6649,7 +6943,7 @@
       "exp": "False — the periodic review CAN be temporarily extended under the defined tiers (up to 30 days via Business ED + Head of Risk, up to 60 days via DMD, and up to 180 days depending on exposure amount), per section 5.2.10."
     },
     {
-      "id": "Q507",
+      "id": "Q531",
       "module": 5,
       "type": "mcq",
       "q": "If total facilities exceed the Risk rating limit, is it alright to determine that the level purpose of the facilities are reasonable, that there is an effective process to ensure that actual OSUC remains within the Risk Rating limit?",
@@ -6661,7 +6955,7 @@
       "exp": "If Total Facilities exceed limit, approvers must ensure OSUC stays within limit (page 122)."
     },
     {
-      "id": "Q508",
+      "id": "Q532",
       "module": 5,
       "type": "mcq",
       "q": "Is it right to state that the purpose and other terms and conditions may not be specified in the original approval of total facilities?",
@@ -6673,7 +6967,7 @@
       "exp": "For guidance limits, purpose may not be specified (page 62)."
     },
     {
-      "id": "Q509",
+      "id": "Q533",
       "module": 5,
       "type": "mcq",
       "q": "Is it always in all situations that careful consideration must be given to the adequacy of collateral for additional exposure?",
@@ -6685,7 +6979,7 @@
       "exp": "Always consider collateral adequacy (page 62)."
     },
     {
-      "id": "Q510",
+      "id": "Q534",
       "module": 5,
       "type": "mcq",
       "q": "Is it right to state that in the distribution of an underwritten position through assignment, the bank remains obligated in the event that the participants fail to fund.",
@@ -6697,7 +6991,7 @@
       "exp": "In assignment, bank may have recourse risk."
     },
     {
-      "id": "Q511",
+      "id": "Q535",
       "module": 6,
       "type": "mcq",
       "q": "Why is it critical for Marketing/relationship management officers to maintain direct contact with customers through periodic visits after extending credit?",
@@ -6711,7 +7005,7 @@
       "exp": "CPG (page 141) – visits provide ongoing management information."
     },
     {
-      "id": "Q512",
+      "id": "Q536",
       "module": 6,
       "type": "mcq",
       "q": "What determines the frequency of credit calls?",
@@ -6725,7 +7019,7 @@
       "exp": "Frequency depends on risk and exposure size (page 141)."
     },
     {
-      "id": "Q513",
+      "id": "Q537",
       "module": 6,
       "type": "mcq",
       "q": "Why is Bank and trade check an important component of the credit process?",
@@ -6739,7 +7033,7 @@
       "exp": "Bank and trade checks confirm ongoing viability (page 141)."
     },
     {
-      "id": "Q514",
+      "id": "Q538",
       "module": 6,
       "type": "mcq",
       "q": "The ongoing administration of the quality and performance of loans depends on:",
@@ -6753,7 +7047,7 @@
       "exp": "Both are required (page 141)."
     },
     {
-      "id": "Q515",
+      "id": "Q539",
       "module": 6,
       "type": "mcq",
       "q": "All legal documentation in respect of approved credit exposure are kept in:",
@@ -6767,7 +7061,7 @@
       "exp": "Secured location required (page 142)."
     },
     {
-      "id": "Q516",
+      "id": "Q540",
       "module": 6,
       "type": "mcq",
       "q": "How often does CRM and relevant approval authority review all outstanding credit transactions and commitments?",
@@ -6781,7 +7075,7 @@
       "exp": "Annual review (page 142)."
     },
     {
-      "id": "Q517",
+      "id": "Q541",
       "module": 6,
       "type": "mcq",
       "q": "How often must obligor and facility exposure quality and performance grades be reviewed?",
@@ -6795,7 +7089,7 @@
       "exp": "Quarterly reviews (page 133)."
     },
     {
-      "id": "Q518",
+      "id": "Q542",
       "module": 6,
       "type": "mcq",
       "q": "What is the primary information source for decision-making on credits and customer relationships?",
@@ -6809,7 +7103,7 @@
       "exp": "Credit files are primary (page 142)."
     },
     {
-      "id": "Q519",
+      "id": "Q543",
       "module": 6,
       "type": "mcq",
       "q": "Credit files must contain at a minimum:",
@@ -6823,7 +7117,7 @@
       "exp": "Correspondence is required (page 143)."
     },
     {
-      "id": "Q520",
+      "id": "Q544",
       "module": 6,
       "type": "mcq",
       "q": "How often must credit files be reviewed?",
@@ -6837,7 +7131,7 @@
       "exp": "Files reviewed periodically (page 143)."
     },
     {
-      "id": "Q521",
+      "id": "Q545",
       "module": 6,
       "type": "mcq",
       "q": "How do you treat information of an unfavourable nature in the credit file e.g. a significant problem in the relationship?",
@@ -6851,7 +7145,7 @@
       "exp": "Must be permanently retained and marked (page 143)."
     },
     {
-      "id": "Q522",
+      "id": "Q546",
       "module": 6,
       "type": "mcq",
       "q": "How many components are there to each customer credit file?",
@@ -6865,7 +7159,7 @@
       "exp": "Two components: electronic and hard copy (page 144)."
     },
     {
-      "id": "Q523",
+      "id": "Q547",
       "module": 6,
       "type": "mcq",
       "q": "Excess Over Approval Limits recipients",
@@ -6879,7 +7173,7 @@
       "exp": "Reports go to business units."
     },
     {
-      "id": "Q524",
+      "id": "Q548",
       "module": 6,
       "type": "mcq",
       "q": "On what basis does the bank extend credit facilities?",
@@ -6893,7 +7187,7 @@
       "exp": "Legal commitments in writing (page 114)."
     },
     {
-      "id": "Q525",
+      "id": "Q549",
       "module": 6,
       "type": "mcq",
       "q": "On repayment, a customer may re-borrow under the same condition provided that:",
@@ -6907,7 +7201,7 @@
       "exp": "Material change prevents re-borrowing (page 28)."
     },
     {
-      "id": "Q526",
+      "id": "Q550",
       "module": 6,
       "type": "mcq",
       "q": "What time frame does the CPG prescribe for the completion of preliminary screening of all credit facility requests?",
@@ -6921,7 +7215,7 @@
       "exp": "Preliminary screening within 1 working day (page 98)."
     },
     {
-      "id": "Q527",
+      "id": "Q551",
       "module": 6,
       "type": "mcq",
       "q": "What is the purpose of the preliminary credit screening?",
@@ -6935,7 +7229,7 @@
       "exp": "Early identification of unacceptable risks (page 97)."
     },
     {
-      "id": "Q528",
+      "id": "Q552",
       "module": 6,
       "type": "mcq",
       "q": "The CPG provides that all recommendation for denial of credit facility shall require the endorsement of",
@@ -6949,7 +7243,7 @@
       "exp": "Group Head endorsement required (page 97)."
     },
     {
-      "id": "Q529",
+      "id": "Q553",
       "module": 6,
       "type": "mcq",
       "q": "What is the primary outcome of the credit analysis process?",
@@ -6963,7 +7257,7 @@
       "exp": "Both risk rating and recommendation (page 101)."
     },
     {
-      "id": "Q530",
+      "id": "Q554",
       "module": 6,
       "type": "mcq",
       "q": "Which one of the following components must be included in a full credit review?",
@@ -6977,7 +7271,7 @@
       "exp": "Full review includes all (page 147)."
     },
     {
-      "id": "Q531",
+      "id": "Q555",
       "module": 6,
       "type": "mcq",
       "q": "Why does the CPG direct that risk ratings be assigned to each facility?",
@@ -6991,7 +7285,7 @@
       "exp": "Risk ratings serve both purposes (page 105)."
     },
     {
-      "id": "Q532",
+      "id": "Q556",
       "module": 6,
       "type": "mcq",
       "q": "Under the CPG, how long does the credit analyst have to do his work upon receipt of the credit request and complete information required for detailed analysis?",
@@ -7005,7 +7299,7 @@
       "exp": "2-3 working days (page 106)."
     },
     {
-      "id": "Q533",
+      "id": "Q557",
       "module": 6,
       "type": "mcq",
       "q": "How long does a customer have to accept a credit offer before it lapses?",
@@ -7019,7 +7313,7 @@
       "exp": "Acceptance within 30 days (page 123)."
     },
     {
-      "id": "Q534",
+      "id": "Q558",
       "module": 6,
       "type": "mcq",
       "q": "What mode(s) of acceptance of facility offer is / are required by the CPG?",
@@ -7033,7 +7327,7 @@
       "exp": "Written acceptance required (page 123)."
     },
     {
-      "id": "Q535",
+      "id": "Q559",
       "module": 6,
       "type": "mcq",
       "q": "In the event that a single bank customer has multiple exposures and facilities with more than one Market facing unit, how many credit files should be maintained?",
@@ -7047,7 +7341,7 @@
       "exp": "Single file per customer (page 123)."
     },
     {
-      "id": "Q536",
+      "id": "Q560",
       "module": 6,
       "type": "mcq",
       "q": "Who is responsible for the establishment of the customer's credit file?",
@@ -7061,7 +7355,7 @@
       "exp": "Credit Administration establishes file (page 123)."
     },
     {
-      "id": "Q537",
+      "id": "Q561",
       "module": 6,
       "type": "mcq",
       "q": "Whose responsibility shall it be to ensure complete and legally enforceable documentation of credit?",
@@ -7075,7 +7369,7 @@
       "exp": "RM with customer (page 123)."
     },
     {
-      "id": "Q538",
+      "id": "Q562",
       "module": 6,
       "type": "mcq",
       "q": "What may trigger the need for an Exposure Quality Review?",
@@ -7089,7 +7383,7 @@
       "exp": "Decline triggers review (page 127)."
     },
     {
-      "id": "Q539",
+      "id": "Q563",
       "module": 6,
       "type": "mcq",
       "q": "Which one of the following is True? Credit facilities may be restructured:",
@@ -7103,7 +7397,7 @@
       "exp": "Restructure can be initiated by obligor or RM (page 138)."
     },
     {
-      "id": "Q540",
+      "id": "Q564",
       "module": 6,
       "type": "mcq",
       "q": "Before granting credit to an individual or sole proprietorship you must do all the following except",
@@ -7117,7 +7411,7 @@
       "exp": "Personal relationship not required; financial assessment is key."
     },
     {
-      "id": "Q541",
+      "id": "Q565",
       "module": 6,
       "type": "mcq",
       "q": "Acceptance of an advised credit by a corporate client must be supported by a. among other requirements of the facility terms.",
@@ -7131,7 +7425,7 @@
       "exp": "Board Resolution required (page 63)."
     },
     {
-      "id": "Q542",
+      "id": "Q566",
       "module": 6,
       "type": "mcq",
       "q": "The tenor of revolving credits must not exceed",
@@ -7145,7 +7439,7 @@
       "exp": "Maximum 3 years (page 28)."
     },
     {
-      "id": "Q543",
+      "id": "Q567",
       "module": 6,
       "type": "mcq",
       "q": "An Overdraft (OD) is a line of credit that allows a customer write cheque for the actual balance on the account with a finance charge on the excess.",
@@ -7159,7 +7453,7 @@
       "exp": "Overdraft allows withdrawals exceeding balance (page 28)."
     },
     {
-      "id": "Q544",
+      "id": "Q568",
       "module": 6,
       "type": "mcq",
       "q": "It is imperative for an account officer to study the client's business and satisfy himself as to which of the following:",
@@ -7173,7 +7467,7 @@
       "exp": "All are important considerations (page 28)."
     },
     {
-      "id": "Q545",
+      "id": "Q569",
       "module": 6,
       "type": "mcq",
       "q": "For customers wishing to draw against confirmed drafts (\"DAU/D of DAUE\"), the facility shall be approved for",
@@ -7187,7 +7481,7 @@
       "exp": "Approved for clearing period (page 29)."
     },
     {
-      "id": "Q546",
+      "id": "Q570",
       "module": 6,
       "type": "mcq",
       "q": "The tenor of the Revolving Credit must not exceed The facility should be made available only to clients in more stable industries and who have strong financial planning systems. Draw down can be via Promissory Notes.",
@@ -7201,7 +7495,7 @@
       "exp": "Maximum 3 years (page 28)."
     },
     {
-      "id": "Q547",
+      "id": "Q571",
       "module": 6,
       "type": "mcq",
       "q": "What is the maximum tenure of a time loan?",
@@ -7215,7 +7509,7 @@
       "exp": "Time loan <=1 year (page 28)."
     },
     {
-      "id": "Q548",
+      "id": "Q572",
       "module": 6,
       "type": "mcq",
       "q": "Under the Group EXCO limits, what is the Deputy Managing Director's approval limit for new credits of Standard Grade?",
@@ -7229,21 +7523,33 @@
       "exp": "CORRECTED: the flat N150 million figure is outdated. Current DMD limits (Group EXCO Limits table) are N600mm for Standard Grade new credits, N700mm for Investment Grade, and N800mm for renewals — consistent with Module 2's finding. Note: title updated from 'GDMD' to 'Deputy Managing Director.'"
     },
     {
-      "id": "Q549",
+      "id": "Q573",
       "module": 6,
       "type": "mcq",
-      "q": "Recommendation and approval of facilities shall be by a minimum of how many bank officers, at least one of which must have the authority to approve the recommended amount?",
+      "q": "Where sale proceeds from recovery are in excess of the Bank's entitlement, the surplus shall be credited to the customer's account.",
       "opts": [
-        "4",
-        "5",
-        "2",
-        "3"
+        "True",
+        "False"
       ],
-      "ans": "3",
-      "exp": "Minimum 3 officers (page 116)."
+      "ans": "True",
+      "exp": "CPG §8.4.2: Guidelines for Recovery, confirmed verbatim."
     },
     {
-      "id": "Q550",
+      "id": "Q574",
+      "module": 6,
+      "type": "mcq",
+      "q": "By definition, for the purpose of credit creation at Access Bank, a group of companies is deemed to exist where one or more shareholders hold up to what percentage in another company?",
+      "opts": [
+        "10%",
+        "20%",
+        "30%",
+        "50%"
+      ],
+      "ans": "20%",
+      "exp": "CPG §6.2.10.4.2: a group of companies exists where one or more shareholders have up to 20% holding in another company."
+    },
+    {
+      "id": "Q575",
       "module": 6,
       "type": "mcq",
       "q": "The bank's pricing strategy shall be based on the following except:",
@@ -7257,7 +7563,7 @@
       "exp": "Pricing based on costs and risk, not customer ability (page 110)."
     },
     {
-      "id": "Q551",
+      "id": "Q576",
       "module": 6,
       "type": "mcq",
       "q": "Which of the following is not a consideration in ascertaining the margins to be applied in estimating lending rate:",
@@ -7271,7 +7577,7 @@
       "exp": "Size is not a margin consideration."
     },
     {
-      "id": "Q552",
+      "id": "Q577",
       "module": 6,
       "type": "mcq",
       "q": "An approval may be given by a designee other than the primary authority for such approval",
@@ -7283,7 +7589,7 @@
       "exp": "Delegation allowed if in writing (page 18)."
     },
     {
-      "id": "Q553",
+      "id": "Q578",
       "module": 6,
       "type": "mcq",
       "q": "It covers the marketing, analysis, processing, approval and reporting of loans.",
@@ -7295,7 +7601,7 @@
       "exp": "CPG covers entire credit cycle."
     },
     {
-      "id": "Q554",
+      "id": "Q579",
       "module": 6,
       "type": "mcq",
       "q": "If you follow this guide, you will have the confidence of knowing that you are using proven methods that will result in high quality loans that are efficiently managed",
@@ -7307,7 +7613,7 @@
       "exp": "CPG provides proven methods."
     },
     {
-      "id": "Q555",
+      "id": "Q580",
       "module": 6,
       "type": "mcq",
       "q": "As an Account Officer or Relationship Manager, you must know all aspects of the CPG.",
@@ -7319,7 +7625,7 @@
       "exp": "All involved must know CPG."
     },
     {
-      "id": "Q556",
+      "id": "Q581",
       "module": 6,
       "type": "mcq",
       "q": "You may not keep up to date with Banking laws, Central Bank credit guidelines and market trends.",
@@ -7331,7 +7637,7 @@
       "exp": "Must stay up to date."
     },
     {
-      "id": "Q557",
+      "id": "Q582",
       "module": 6,
       "type": "mcq",
       "q": "This is a confidential document. You must not reveal or discuss its contents with non-Bank staff without approval from a senior officer. You must return this guide to the Credit Administration Department if you leave the Bank.",
@@ -7343,7 +7649,7 @@
       "exp": "Confidentiality and return required."
     },
     {
-      "id": "Q558",
+      "id": "Q583",
       "module": 6,
       "type": "mcq",
       "q": "Understanding these principles will give you a better understanding of credit policy.",
@@ -7355,7 +7661,7 @@
       "exp": "Principles underpin policy."
     },
     {
-      "id": "Q559",
+      "id": "Q584",
       "module": 6,
       "type": "mcq",
       "q": "Individual and companies place their funds with us trusting our integrity in managing these funds.",
@@ -7367,7 +7673,7 @@
       "exp": "Trust is fundamental."
     },
     {
-      "id": "Q560",
+      "id": "Q585",
       "module": 6,
       "type": "mcq",
       "q": "As the funds you lend come from so many sources you often feel no specific responsibility.",
@@ -7379,7 +7685,7 @@
       "exp": "You must feel responsibility regardless of source."
     },
     {
-      "id": "Q561",
+      "id": "Q586",
       "module": 6,
       "type": "mcq",
       "q": "All too often we take the interest and fees we charge as fixed and simply apply our efforts to structuring a credit.",
@@ -7391,7 +7697,7 @@
       "exp": "Common pitfall."
     },
     {
-      "id": "Q562",
+      "id": "Q587",
       "module": 6,
       "type": "mcq",
       "q": "In many instances the return on the credit is far too low for the risk of lending. For instance, a 10% profit margin on a loan is a small compensation for losing the whole loan.",
@@ -7403,7 +7709,7 @@
       "exp": "Risk-return trade-off."
     },
     {
-      "id": "Q563",
+      "id": "Q588",
       "module": 6,
       "type": "mcq",
       "q": "In special cases we might decide to have an exposure to a company at a low return with the expectation of getting other business/accounts, which will improve the profitability of the name.",
@@ -7415,7 +7721,7 @@
       "exp": "Cross-selling may justify low return."
     },
     {
-      "id": "Q564",
+      "id": "Q589",
       "module": 6,
       "type": "mcq",
       "q": "A guiding principle of credit is that all information should be independently verified.",
@@ -7427,7 +7733,7 @@
       "exp": "Independent verification is key."
     },
     {
-      "id": "Q565",
+      "id": "Q590",
       "module": 6,
       "type": "mcq",
       "q": "An important aspect of independent verification is the separation controls. For instance, the person who prepares a credit should not be the one who approves it.",
@@ -7439,7 +7745,7 @@
       "exp": "Separation of duties is important."
     },
     {
-      "id": "Q566",
+      "id": "Q591",
       "module": 6,
       "type": "mcq",
       "q": "If we break regulations and this information reaches the market, our reputation will be diminished.",
@@ -7451,7 +7757,7 @@
       "exp": "Regulatory breaches harm reputation."
     },
     {
-      "id": "Q567",
+      "id": "Q592",
       "module": 6,
       "type": "mcq",
       "q": "An OD fluctuates regularly and even moves into credit periodically as the business cycle is completed.",
@@ -7463,7 +7769,7 @@
       "exp": "Overdraft fluctuates with business cycle."
     },
     {
-      "id": "Q568",
+      "id": "Q593",
       "module": 6,
       "type": "mcq",
       "q": "The company's ability to complete its asset conversion cycle, its profitability, relationships and exposures to other Banks are key considerations in fixing an initial overdraft limit for a client. The extent of utilization of the facility and turnover recorded on the client's account are principal issues to be considered when the facility is due for renewal; assuming the quality of the underlying credit still meets the CPG minimum rating.",
@@ -7475,7 +7781,7 @@
       "exp": "Key considerations for OD (page 28)."
     },
     {
-      "id": "Q569",
+      "id": "Q594",
       "module": 6,
       "type": "mcq",
       "q": "All temps shall be approved by officers who have authority to do so while clean accommodations should require one-up approval.",
@@ -7487,7 +7793,7 @@
       "exp": "Temporary overdraft approval rules."
     },
     {
-      "id": "Q570",
+      "id": "Q595",
       "module": 6,
       "type": "mcq",
       "q": "Good clients with substantial turnover, strong management can be offered direct credit (instant credit) for cheques lodged into their accounts for clearing.",
@@ -7499,7 +7805,7 @@
       "exp": "Direct credit possible for strong clients."
     },
     {
-      "id": "Q571",
+      "id": "Q596",
       "module": 6,
       "type": "mcq",
       "q": "Financial Institutions are often given direct credit if they carry a risk rating of 2 or 3.",
@@ -7511,7 +7817,7 @@
       "exp": "Require rating 1 or 2 (page 29)."
     },
     {
-      "id": "Q572",
+      "id": "Q597",
       "module": 6,
       "type": "mcq",
       "q": "Rollover of BAs is dependent on prompt liquidation of the earlier draw down. It is often discouraged that a standby OD line be put in place for the customer.",
@@ -7523,7 +7829,7 @@
       "exp": "Standby OD is often encouraged (page 29)."
     },
     {
-      "id": "Q573",
+      "id": "Q598",
       "module": 6,
       "type": "mcq",
       "q": "For a Revolving Credit, the customer may re-borrow sums as needed up to the limit of the facility. It is usually given to finance a company's permanent working capital and is ever- green for the period of the total facility.",
@@ -7535,7 +7841,7 @@
       "exp": "Revolving credit features (page 28)."
     },
     {
-      "id": "Q574",
+      "id": "Q599",
       "module": 6,
       "type": "mcq",
       "q": "Loans supported by unaudited statements are encouraged and will not require one- 1 approval.",
@@ -7547,19 +7853,19 @@
       "exp": "Unaudited statements are discouraged (page 101)."
     },
     {
-      "id": "Q575",
+      "id": "Q600",
       "module": 6,
       "type": "mcq",
-      "q": "The credit management cycle in Access Bank has 5 distinct phases.",
+      "q": "Access Bank's Credit Risk Management Framework is made up of five distinct modules.",
       "opts": [
         "True",
         "False"
       ],
       "ans": "True",
-      "exp": "Five modules (page 76)."
+      "exp": "CPG §6: the framework has five distinct MODULES (Risk Portfolio Planning; Exposure Development and Creation; Exposure Management; Delinquency Management/Loan Workout; Credit Recovery) — not an old 'credit management cycle' concept."
     },
     {
-      "id": "Q576",
+      "id": "Q601",
       "module": 6,
       "type": "mcq",
       "q": "The type of customer selected to be approached for banking services would depend on whether the company falls within the Bank's target market and that the company falls within our risk acceptance criteria.",
@@ -7571,19 +7877,19 @@
       "exp": "Target market and RAC determine selection."
     },
     {
-      "id": "Q577",
+      "id": "Q602",
       "module": 6,
       "type": "mcq",
-      "q": "Credit Analysis and Packaging does not include collecting information, analyzing the industry, the client and their financing need, judgment on ability to repay, negotiating or structuring appropriate facilities that meet the customer's needs while falling within our credit guidelines and obtaining necessary approvals for such credit request.",
+      "q": "Credit Analysis under the CPG requires detailed analysis of credit risk in respect of facility requests, performed by credit analysts within each marketing team, as a basis for informed credit approval decisions.",
       "opts": [
         "True",
         "False"
       ],
-      "ans": "False",
-      "exp": "Credit analysis includes all those steps."
+      "ans": "True",
+      "exp": "CPG §6.2.3 'Credit Analysis', confirmed verbatim."
     },
     {
-      "id": "Q578",
+      "id": "Q603",
       "module": 6,
       "type": "mcq",
       "q": "Developing the association with our clients and monitoring their business is unnecessary, not only to ensure repayment but also to explore new business opportunities and keep our competitive edge.",
@@ -7595,19 +7901,19 @@
       "exp": "Monitoring is necessary."
     },
     {
-      "id": "Q579",
+      "id": "Q604",
       "module": 6,
       "type": "mcq",
-      "q": "Credit Administration and Control are the step by step procedures a credit follows from initial contact to final repayment. They are necessary to keep our quality and consistently high.",
+      "q": "Administration of Existing Exposures under the CPG includes maintaining direct contact with customers through periodic visits, credit checking, and ongoing analysis of financial information to monitor exposure quality.",
       "opts": [
         "True",
         "False"
       ],
       "ans": "True",
-      "exp": "Credit administration ensures quality."
+      "exp": "CPG §6.6 'Administration of Existing Exposures' (§6.6.1 Customer Meetings and Call Reports, §6.6.2 Credit Checking, §6.6.3 Financial Information)."
     },
     {
-      "id": "Q580",
+      "id": "Q605",
       "module": 6,
       "type": "mcq",
       "q": "Establishment of a target market and a client focus form the basis of strategically strong business and credit relationships.",
@@ -7619,7 +7925,7 @@
       "exp": "Target market is strategic."
     },
     {
-      "id": "Q581",
+      "id": "Q606",
       "module": 6,
       "type": "mcq",
       "q": "The target markets are the industries a particular credit team concentrates its marketing efforts on.",
@@ -7631,7 +7937,19 @@
       "exp": "Target market definition (page 80)."
     },
     {
-      "id": "Q582",
+      "id": "Q607",
+      "module": 6,
+      "type": "mcq",
+      "q": "Recovery action, per the CPG's general recovery guidelines, may include legal proceedings against a defaulting obligor.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §8.4.2: Guidelines for Recovery, confirmed verbatim."
+    },
+    {
+      "id": "Q608",
       "module": 6,
       "type": "mcq",
       "q": "A good Account Officer is not one that aims at winning and retaining any client at all costs but the one that learns to say 'no' not just to low quality credit proposals but also those credit requests do not fit into our corporate strategy.",
@@ -7643,7 +7961,7 @@
       "exp": "Saying no is important."
     },
     {
-      "id": "Q583",
+      "id": "Q609",
       "module": 6,
       "type": "mcq",
       "q": "You must know clearly its target market to both at the industry level and the client level.",
@@ -7655,7 +7973,7 @@
       "exp": "Know target market."
     },
     {
-      "id": "Q584",
+      "id": "Q610",
       "module": 6,
       "type": "mcq",
       "q": "The authority to extend or approve credit is granted to individual credit office based upon their grades, portfolio and length of stay in the organization.",
@@ -7667,7 +7985,7 @@
       "exp": "Approval authority based on experience (page 114)."
     },
     {
-      "id": "Q585",
+      "id": "Q611",
       "module": 6,
       "type": "mcq",
       "q": "Credit approval officers are recommended by service members of risk and business management for approval by shareholders at general meeting.",
@@ -7679,7 +7997,7 @@
       "exp": "Recommended by senior management and approved by Board (page 114)."
     },
     {
-      "id": "Q586",
+      "id": "Q612",
       "module": 6,
       "type": "mcq",
       "q": "The level of authority required to approve credit will increase as amounts and transaction risks increase and as risk rating worsens.",
@@ -7691,7 +8009,7 @@
       "exp": "Higher risk requires higher authority (page 114)."
     },
     {
-      "id": "Q587",
+      "id": "Q613",
       "module": 6,
       "type": "mcq",
       "q": "Is it right to state that in the absence of approval credit programs, transaction for individual customers or customer relationships will be treated as individual/business credit?",
@@ -7703,7 +8021,7 @@
       "exp": "Individual/business credits apply (page 111)."
     },
     {
-      "id": "Q588",
+      "id": "Q614",
       "module": 6,
       "type": "mcq",
       "q": "As a result of their peculiar nature, all exposures to a customer or a group approval as individual/business credits must be aggregated and managed by credit risk management.",
@@ -7715,7 +8033,7 @@
       "exp": "Managed by relationship manager (page 112)."
     },
     {
-      "id": "Q589",
+      "id": "Q615",
       "module": 6,
       "type": "mcq",
       "q": "Is it right to state that credit approval is always required for the establishment of a credit facility.",
@@ -7727,7 +8045,7 @@
       "exp": "Approval always required (page 113)."
     },
     {
-      "id": "Q590",
+      "id": "Q616",
       "module": 6,
       "type": "mcq",
       "q": "A proposal or marketing letter does not require credit approval as long as it does not obligate the bank in any way.",
@@ -7739,7 +8057,7 @@
       "exp": "Marketing letters without commitment do not require approval (page 75)."
     },
     {
-      "id": "Q591",
+      "id": "Q617",
       "module": 6,
       "type": "mcq",
       "q": "When establishing total facilities for a relationship total facilities must include the seller risk in a securitization transaction, i.e. a minimum of 5% of the notional amount.",
@@ -7751,7 +8069,7 @@
       "exp": "Seller risk included (page 75)."
     },
     {
-      "id": "Q592",
+      "id": "Q618",
       "module": 6,
       "type": "mcq",
       "q": "The level of authority required for approval is a function of the facilities amount",
@@ -7763,7 +8081,7 @@
       "exp": "Approval amount based on facility size."
     },
     {
-      "id": "Q593",
+      "id": "Q619",
       "module": 6,
       "type": "mcq",
       "q": "All extensions of credit or individual / Business credit transactions shall require investment of at least 5 bank officers whose position involve responsibility for credit creation",
@@ -7775,7 +8093,7 @@
       "exp": "Minimum 3 officers (page 116)."
     },
     {
-      "id": "Q594",
+      "id": "Q620",
       "module": 6,
       "type": "mcq",
       "q": "Is it right of state that the sign off by at least one officer from credit Risk Management with exposure endorsement authority is not always a condition for approval of credit?",
@@ -7787,7 +8105,7 @@
       "exp": "Always required (page 116)."
     },
     {
-      "id": "Q595",
+      "id": "Q621",
       "module": 6,
       "type": "mcq",
       "q": "Availments under approval credit facilities shall be through availment note approval by an officer in credit risk Management.",
@@ -7799,7 +8117,7 @@
       "exp": "Requires drawdown memo approved by CRM and Legal (page 125)."
     },
     {
-      "id": "Q596",
+      "id": "Q622",
       "module": 6,
       "type": "mcq",
       "q": "Which of the following statements is not correct?",
@@ -7813,7 +8131,7 @@
       "exp": "Extensions beyond 60 days up to 180 days approved by MD, not MCC (page 63)."
     },
     {
-      "id": "Q597",
+      "id": "Q623",
       "module": 6,
       "type": "mcq",
       "q": "The use of unaudited financial statements for credit approval requests is generally discouraged but may suffice.",
@@ -7825,7 +8143,7 @@
       "exp": "Discouraged but may suffice (page 101)."
     },
     {
-      "id": "Q598",
+      "id": "Q624",
       "module": 6,
       "type": "mcq",
       "q": "When an established credit facility undergoes a material change in terms, total facility must be re-approved. Who determines materiality?",
@@ -7839,7 +8157,7 @@
       "exp": "CRO determines materiality (page 125)."
     },
     {
-      "id": "Q599",
+      "id": "Q625",
       "module": 6,
       "type": "mcq",
       "q": "The following are examples of credit products that can qualify as term loans except",
@@ -7853,7 +8171,7 @@
       "exp": "Term loans not for operating expenses (page 28)."
     },
     {
-      "id": "Q600",
+      "id": "Q626",
       "module": 6,
       "type": "mcq",
       "q": "Qualification for revolving credit facilities shall be limited to customers with establishment business in emerging markets.",
@@ -7865,7 +8183,7 @@
       "exp": "Limited to stable industries (page 28)."
     },
     {
-      "id": "Q601",
+      "id": "Q627",
       "module": 6,
       "type": "mcq",
       "q": "No drawings in excess of the approval DAUD/DAUE limits are allowed, however we may seek one up approval to accommodate customer.",
@@ -7877,7 +8195,7 @@
       "exp": "Excess requires approval."
     },
     {
-      "id": "Q602",
+      "id": "Q628",
       "module": 6,
       "type": "mcq",
       "q": "The issuance of guarantees to support offshore facilities is highly desirable and encouraged as long as Account officer obtains approval at the next higher level then is required under the Guide.",
@@ -7889,7 +8207,7 @@
       "exp": "Offshore guarantees are strongly discouraged (page 34)."
     },
     {
-      "id": "Q603",
+      "id": "Q629",
       "module": 6,
       "type": "mcq",
       "q": "The appointment of acceptable warehousing agents will be approval by MCC based on the recommendation of the relationship Manager.",
@@ -7901,7 +8219,7 @@
       "exp": "Based on recommendation of CRO (page 30)."
     },
     {
-      "id": "Q604",
+      "id": "Q630",
       "module": 6,
       "type": "mcq",
       "q": "Irrespective of the loan and amount, unsecured credit extension must be approved by the Managing Director/CEO ultimately.",
@@ -7913,7 +8231,7 @@
       "exp": "Unsecured credits require Managing Director/CEO approval (CPG §5.2.4, page 52). Title updated: 'GMD' is obsolete; current title is Managing Director/CEO."
     },
     {
-      "id": "Q605",
+      "id": "Q631",
       "module": 6,
       "type": "mcq",
       "q": "All credit extensions to corporate obligations must be secured by an all- assets debenture.",
@@ -7925,7 +8243,7 @@
       "exp": "All assets debenture required for corporates (page 159)."
     },
     {
-      "id": "Q606",
+      "id": "Q632",
       "module": 6,
       "type": "mcq",
       "q": "Preliminary screening of credit requests should be completed, ideally within 48 hrs of receipt of a credit facility request.",
@@ -7937,7 +8255,7 @@
       "exp": "Within 1 working day (page 98)."
     },
     {
-      "id": "Q607",
+      "id": "Q633",
       "module": 6,
       "type": "mcq",
       "q": "In the event that the outcome of the preliminary credit screening of a request is a conclusion that such facility does not acceptance criteria, the relationship Manager may make a passionate appeal to the Group head for a review.",
@@ -7949,7 +8267,7 @@
       "exp": "Facility shall be rejected (page 97)."
     },
     {
-      "id": "Q608",
+      "id": "Q634",
       "module": 6,
       "type": "mcq",
       "q": "In the event that a simple bank customer has multiple exposures and facilities, a single credit file may not be sufficient to maintain information on all the credit dealings with the bank.",
@@ -7961,7 +8279,7 @@
       "exp": "Single file is sufficient (page 123)."
     },
     {
-      "id": "Q609",
+      "id": "Q635",
       "module": 6,
       "type": "mcq",
       "q": "Waivers of any pre-availment condition included in the credit approval may not require approval in writing at the appropriate approval credit authority level as by as their Head credit Risk Management's concurrence.",
@@ -7973,7 +8291,7 @@
       "exp": "Require proper approval (page 124)."
     },
     {
-      "id": "Q610",
+      "id": "Q636",
       "module": 6,
       "type": "mcq",
       "q": "Availment and drawdown on approved credit facility should be subject to confirmation by legal department that all pre-availment & conditions are completed.",
@@ -7985,7 +8303,7 @@
       "exp": "Requires Credit Administration and Legal (page 125)."
     },
     {
-      "id": "Q611",
+      "id": "Q637",
       "module": 6,
       "type": "mcq",
       "q": "Exposure management entails on an on- going basis prompt and timely identification of decline in quality/ performance of a credit exposure.",
@@ -7997,7 +8315,7 @@
       "exp": "Exposure management includes identification (page 126)."
     },
     {
-      "id": "Q612",
+      "id": "Q638",
       "module": 6,
       "type": "mcq",
       "q": "According to the credit policy guide, it is the responsibility of the relationship manager to monitor the performance of credit facilities.",
@@ -8009,7 +8327,7 @@
       "exp": "RM monitors performance (page 127)."
     },
     {
-      "id": "Q613",
+      "id": "Q639",
       "module": 6,
       "type": "mcq",
       "q": "Whose responsibility is it to review credit facility performance?",
@@ -8023,7 +8341,7 @@
       "exp": "RM reviews performance (page 127)."
     },
     {
-      "id": "Q614",
+      "id": "Q640",
       "module": 6,
       "type": "mcq",
       "q": "Whose duty is it to confirm status and adequacy of collateral and legal documentation?",
@@ -8037,7 +8355,7 @@
       "exp": "CRM confirms collateral adequacy (page 127)."
     },
     {
-      "id": "Q615",
+      "id": "Q641",
       "module": 6,
       "type": "mcq",
       "q": "Whose duty is it to evaluate the impact of industry and market factors on the customer and customer's financial position?",
@@ -8051,7 +8369,7 @@
       "exp": "RM evaluates industry factors (page 127)."
     },
     {
-      "id": "Q616",
+      "id": "Q642",
       "module": 6,
       "type": "mcq",
       "q": "Exposure Management entails restructuring exposures as may be required.",
@@ -8063,7 +8381,7 @@
       "exp": "Restructuring is part of exposure management (page 126)."
     },
     {
-      "id": "Q617",
+      "id": "Q643",
       "module": 6,
       "type": "mcq",
       "q": "Decline in the quality of a risk exposure is to be brought to the attention of the Managing Director/CEO and Deputy Managing Director immediately.",
@@ -8075,7 +8393,7 @@
       "exp": "Brought to Business ED and CRO (page 134)."
     },
     {
-      "id": "Q618",
+      "id": "Q644",
       "module": 6,
       "type": "mcq",
       "q": "Delinquency in credit quality and performance can be as a result of a down grade in credit Risk Rating.",
@@ -8087,7 +8405,7 @@
       "exp": "Downgrade indicates delinquency."
     },
     {
-      "id": "Q619",
+      "id": "Q645",
       "module": 6,
       "type": "mcq",
       "q": "Relationship management shall maintain a watch list of the delinquent facilities for circulation to the CAC on a regular basis.",
@@ -8099,7 +8417,7 @@
       "exp": "CRM maintains watch list (page 125)."
     },
     {
-      "id": "Q620",
+      "id": "Q646",
       "module": 6,
       "type": "mcq",
       "q": "Where a proposed plan to restructure an existing credit exposure in presented, detailed credit risk analysis of the proposed credit structure may not be required.",
@@ -8111,7 +8429,7 @@
       "exp": "Detailed analysis may not be required (page 126)."
     },
     {
-      "id": "Q621",
+      "id": "Q647",
       "module": 6,
       "type": "mcq",
       "q": "As part of on- going exposure management, a credit facility may be restructured at the request of the obligor.",
@@ -8123,7 +8441,7 @@
       "exp": "Restructure can be at obligor request (page 126)."
     },
     {
-      "id": "Q622",
+      "id": "Q648",
       "module": 6,
       "type": "mcq",
       "q": "As soon as a credit facility is identified as delinquent adequate loan loss provision ought to be made in accordance with the bank's credit policy.",
@@ -8135,7 +8453,7 @@
       "exp": "Provisioning required upon delinquency (page 192)."
     },
     {
-      "id": "Q623",
+      "id": "Q649",
       "module": 6,
       "type": "mcq",
       "q": "According to the CPG, certain obligors and facilities may be assigned a risk rating in accordance with an approval Risk Rating process.",
@@ -8147,7 +8465,7 @@
       "exp": "Risk rating assignment is required (page 105)."
     },
     {
-      "id": "Q624",
+      "id": "Q650",
       "module": 6,
       "type": "mcq",
       "q": "Under the CPG there will be various standards across the bank for the origination, documentation and maintenance of extensions of credit.",
@@ -8159,7 +8477,7 @@
       "exp": "There will be single set of standards (page 106)."
     },
     {
-      "id": "Q625",
+      "id": "Q651",
       "module": 6,
       "type": "mcq",
       "q": "According to the CPG, for obligor to whom we have extension of credit, there will be several approvals across the bank towards problem recognition, the classification of problem exposure and remedial action.",
@@ -8171,7 +8489,7 @@
       "exp": "Problem recognition involves multiple approvals."
     },
     {
-      "id": "Q626",
+      "id": "Q652",
       "module": 6,
       "type": "mcq",
       "q": "Under the CPG, approval credit product programs shall demonstrate that the behavior of the portfolio will not be predictable.",
@@ -8183,7 +8501,7 @@
       "exp": "Must be predictable (page 31)."
     },
     {
-      "id": "Q627",
+      "id": "Q653",
       "module": 6,
       "type": "mcq",
       "q": "Individuals credits are applicable I respect of facility request and credit approvals for customers do not fit into credit product programmes and product offerings.",
@@ -8195,7 +8513,7 @@
       "exp": "Individual credits for non-program customers (page 111)."
     },
     {
-      "id": "Q628",
+      "id": "Q654",
       "module": 6,
       "type": "mcq",
       "q": "Individuals / business credits are suitable for which, if any, of the under listed.",
@@ -8209,7 +8527,7 @@
       "exp": "All are suitable (page 111)."
     },
     {
-      "id": "Q629",
+      "id": "Q655",
       "module": 6,
       "type": "mcq",
       "q": "Is it right to state that some credit activities in the Retail Banking business unit may be categorized as individual /business credits?",
@@ -8221,7 +8539,19 @@
       "exp": "Exceptional cases may apply (page 112)."
     },
     {
-      "id": "Q630",
+      "id": "Q656",
+      "module": 6,
+      "type": "mcq",
+      "q": "Where sale proceeds from recovery fall short of the Bank's full entitlement, a demand shall be made for the balance from the customer.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §8.4.2: Guidelines for Recovery, confirmed verbatim."
+    },
+    {
+      "id": "Q657",
       "module": 6,
       "type": "mcq",
       "q": "The relationship Manager is responsible for bringing industry, product and other specialists (e.g., Legal, Tax) when required.",
@@ -8233,7 +8563,7 @@
       "exp": "RM brings specialists (page 49)."
     },
     {
-      "id": "Q631",
+      "id": "Q658",
       "module": 12,
       "type": "mcq",
       "q": "What is the central objective of Digital Lending as described in the CPG?",
@@ -8247,7 +8577,7 @@
       "exp": "CPG (page 279) – central objectives of digital lending."
     },
     {
-      "id": "Q632",
+      "id": "Q659",
       "module": 6,
       "type": "mcq",
       "q": "Which statement best describes \"Credit Officer Risk Rating (CORR)\"?",
@@ -8261,7 +8591,7 @@
       "exp": "CPG (page 21) – CORR definition."
     },
     {
-      "id": "Q633",
+      "id": "Q660",
       "module": 6,
       "type": "mcq",
       "q": "What is the minimum required promoter’s contribution for most products and facilities?",
@@ -8275,7 +8605,7 @@
       "exp": "CPG (page 102) – minimum promoter contribution of 20%."
     },
     {
-      "id": "Q634",
+      "id": "Q661",
       "module": 6,
       "type": "mcq",
       "q": "What is the minimum tenor for loans under the Real Sector Support Fund (RSSF) via DCRR?",
@@ -8289,7 +8619,7 @@
       "exp": "CPG (page 224) – RSSF requires minimum 7 years tenor."
     },
     {
-      "id": "Q635",
+      "id": "Q662",
       "module": 6,
       "type": "mcq",
       "q": "Under the Prudential Guidelines, what is the maximum total exposure (on and off balance sheet) by the bank to all tiers of government and their agencies?",
@@ -8303,7 +8633,7 @@
       "exp": "CPG (page 67) – 10% limit."
     },
     {
-      "id": "Q636",
+      "id": "Q663",
       "module": 6,
       "type": "mcq",
       "q": "Which of the following is a required element in an Offer Letter?",
@@ -8317,7 +8647,7 @@
       "exp": "CPG (page 126) – offer letter must contain pricing and conditions."
     },
     {
-      "id": "Q637",
+      "id": "Q664",
       "module": 6,
       "type": "mcq",
       "q": "What is the maximum number of consecutive extensions permitted for a credit facility review?",
@@ -8331,7 +8661,7 @@
       "exp": "CPG (page 63) – not more than 2 consecutive extensions."
     },
     {
-      "id": "Q638",
+      "id": "Q665",
       "module": 6,
       "type": "mcq",
       "q": "How often must the Bank conduct stress testing of its credit risk exposures?",
@@ -8345,7 +8675,7 @@
       "exp": "CPG (page 108) – stress testing conducted quarterly."
     },
     {
-      "id": "Q639",
+      "id": "Q666",
       "module": 6,
       "type": "mcq",
       "q": "Who must approve the issuance of a guarantee to support an offshore facility?",
@@ -8359,7 +8689,7 @@
       "exp": "CPG (page 34) – offshore guarantees require next higher level approval."
     },
     {
-      "id": "Q640",
+      "id": "Q667",
       "module": 6,
       "type": "mcq",
       "q": "Which of the following is NOT a recognised type of credit derivative for credit risk mitigation?",
@@ -8373,7 +8703,7 @@
       "exp": "Eligible credit derivatives are CDS, TRS, CLN, options – not equity swaps on own shares (page 184)."
     },
     {
-      "id": "Q641",
+      "id": "Q668",
       "module": 6,
       "type": "mcq",
       "q": "Under the Prudential Guidelines, what is the minimum general provision required for outstanding credit facility balances not specifically provided for?",
@@ -8387,7 +8717,7 @@
       "exp": "CPG (page 193) – general provision of at least 2%."
     },
     {
-      "id": "Q642",
+      "id": "Q669",
       "module": 6,
       "type": "mcq",
       "q": "What is the minimum number of years of audited financial statements required for a Tier I corporate borrower?",
@@ -8401,7 +8731,7 @@
       "exp": "CPG (page 86) – Tier I requires minimum 3 years audited."
     },
     {
-      "id": "Q643",
+      "id": "Q670",
       "module": 6,
       "type": "mcq",
       "q": "Under the Temporary Overdraft Limits for Value Chain Names table, what is the Standard Grade TOD limit at the GM1 approval level?",
@@ -8415,7 +8745,7 @@
       "exp": "Confirmed against the TOD Limits for Value Chain Names table: GM1 = N300mn, GM2 = N500mn, ED = N700mn (all Standard Grade). The question is now specific to the GM1 level to avoid ambiguity, since the same table has three different figures depending on approval grade."
     },
     {
-      "id": "Q644",
+      "id": "Q671",
       "module": 6,
       "type": "mcq",
       "q": "What is the purpose of a \"Covenant Check‑off List\"?",
@@ -8429,19 +8759,59 @@
       "exp": "CPG (page 142) – covenant check-off list accompanies annual review."
     },
     {
-      "id": "Q645",
+      "id": "Q672",
       "module": 6,
       "type": "mcq",
-      "q": "Credit Marketing, Credit Analysis and Packaging, Relationship Management, Credit Administration and Control and Credit Audit or Review are the 5 distinct phases in the Credit Management Cycle in Access Bank.",
+      "q": "Which of the following correctly lists the five modules of Access Bank's Credit Risk Management Framework?",
+      "opts": [
+        "Risk Portfolio Planning; Exposure Development and Creation; Exposure Management; Delinquency Management/Loan Workout; Credit Recovery",
+        "Credit Marketing; Credit Analysis and Packaging; Relationship Management; Credit Administration and Control; Credit Audit or Review",
+        "Origination; Underwriting; Disbursement; Monitoring; Recovery",
+        "Planning; Analysis; Approval; Administration; Review"
+      ],
+      "ans": "Risk Portfolio Planning; Exposure Development and Creation; Exposure Management; Delinquency Management/Loan Workout; Credit Recovery",
+      "exp": "CPG §6 lists the five current modules verbatim. The second option is the old, obsolete five-phase list this question used to test as true — it's now a distractor."
+    },
+    {
+      "id": "Q673",
+      "module": 10,
+      "type": "mcq",
+      "q": "To qualify for Agricultural financing, a customer should generally have operated an account with the Bank for at least how long?",
+      "opts": [
+        "3 months",
+        "6 months",
+        "12 months",
+        "24 months"
+      ],
+      "ans": "6 months",
+      "exp": "CPG §10.3.1: Loan Administration and Disbursement, confirmed verbatim."
+    },
+    {
+      "id": "Q674",
+      "module": 10,
+      "type": "mcq",
+      "q": "When the Bank finances the acquisition of heavy equipment and machinery under Agricultural financing, disbursement shall be made directly to the vendors upon presentation of relevant invoices.",
       "opts": [
         "True",
         "False"
       ],
       "ans": "True",
-      "exp": "CPG (page 76) – the five modules."
+      "exp": "CPG §10.3.1: Loan Administration and Disbursement, confirmed verbatim."
     },
     {
-      "id": "Q646",
+      "id": "Q675",
+      "module": 10,
+      "type": "mcq",
+      "q": "Under the Bank's agricultural financing guidelines, moratoriums should generally be limited to principal repayments alone.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "ans": "True",
+      "exp": "CPG §10.3.1: Loan Administration and Disbursement, confirmed verbatim."
+    },
+    {
+      "id": "Q676",
       "module": 10,
       "type": "mcq",
       "q": "Which of the following is NOT a typical risk associated with Real Estate Project Finance?",
@@ -8455,7 +8825,7 @@
       "exp": "Clearing Risk is a type of credit risk related to payment systems and is not a specific risk associated with Real Estate Project Finance. Construction, Compliance, and Environmental Risks are typical (section 10.7.5)."
     },
     {
-      "id": "Q647",
+      "id": "Q677",
       "module": 10,
       "type": "mcq",
       "q": "For Real Estate Finance projects, the Bank will NOT finance:",
@@ -8469,7 +8839,7 @@
       "exp": "Access Bank will not finance the cost of land, professional and other fees. Lending shall be used entirely to finance construction cost components (section 10.7.11)."
     },
     {
-      "id": "Q648",
+      "id": "Q678",
       "module": 10,
       "type": "mcq",
       "q": "What is the minimum equity contribution for a Real Estate Finance project?",
@@ -8483,7 +8853,7 @@
       "exp": "The borrower must have equity in the project of not less than 30% of the total cost, including land (section 10.7.11)."
     },
     {
-      "id": "Q649",
+      "id": "Q679",
       "module": 10,
       "type": "mcq",
       "q": "What is the maximum loan tenor for direct loans to developers for financing housing estates (including any moratorium period)?",
@@ -8497,7 +8867,7 @@
       "exp": "Direct loans to developers for financing housing estates will be for a period or tenor not exceeding five years (including any moratorium period) (section 10.7.16)."
     },
     {
-      "id": "Q650",
+      "id": "Q680",
       "module": 10,
       "type": "mcq",
       "q": "In Project Finance, the primary source of loan repayment is:",
@@ -8511,7 +8881,7 @@
       "exp": "In project finance, the lender looks primarily to the revenues generated by a single project, both as the source of repayment and as security for the exposure (section 10.4)."
     },
     {
-      "id": "Q651",
+      "id": "Q681",
       "module": 10,
       "type": "mcq",
       "q": "Which type of risk is mitigated by a fixed‑price, fixed‑delivery Engineering, Procurement and Construction (EPC) contract in Project Finance?",
@@ -8525,7 +8895,7 @@
       "exp": "A General Constructor Agreement (or EPC contract) that provides a fixed price and a fixed delivery term is a key mitigant for Construction Risk (section 10.4)."
     },
     {
-      "id": "Q652",
+      "id": "Q682",
       "module": 10,
       "type": "mcq",
       "q": "What is the minimum sponsor equity contribution required for a Project Finance loan?",
@@ -8539,7 +8909,7 @@
       "exp": "The Sponsor has to ensure a minimum contribution of 20% to the project (section 10.4)."
     },
     {
-      "id": "Q653",
+      "id": "Q683",
       "module": 10,
       "type": "mcq",
       "q": "In Project Finance, what is the purpose of a Debt Service Reserve Account (DSRA)?",
@@ -8553,7 +8923,7 @@
       "exp": "A DSRA is built up to ensure debt service payments can be made even if project cash flows are insufficient (section 10.4)."
     },
     {
-      "id": "Q654",
+      "id": "Q684",
       "module": 10,
       "type": "mcq",
       "q": "Which of the following is a typical security for Project Finance loans?",
@@ -8567,7 +8937,7 @@
       "exp": "Project finance security includes assignment of operating revenues, mortgage on project facilities, pledge of bank accounts, etc. (section 10.4)."
     },
     {
-      "id": "Q655",
+      "id": "Q685",
       "module": 10,
       "type": "mcq",
       "q": "In Object Finance, which of the following is a major risk that must be mitigated?",
@@ -8581,7 +8951,7 @@
       "exp": "Major risks in Object Finance include Performance Risk, Repayment Risk, Diversion Risk, and Tenor Mismatch (section 10.6.3)."
     },
     {
-      "id": "Q656",
+      "id": "Q686",
       "module": 10,
       "type": "mcq",
       "q": "For Object Finance, what is the minimum equity contribution required from the customer?",
@@ -8595,7 +8965,7 @@
       "exp": "Customer shall make an equity contribution of 10% to 30% depending on the risk profile of the obligor and the transaction (section 10.6.2)."
     },
     {
-      "id": "Q657",
+      "id": "Q687",
       "module": 10,
       "type": "mcq",
       "q": "In Object Finance, a Marine surveyor report from an Access Bank approved Marine Surveyor shall be obtained as condition precedent to:",
@@ -8609,7 +8979,7 @@
       "exp": "Marine surveyor report from Access Bank approved Marine Surveyor shall be obtained as condition precedent to review/analysis for vessels that are not brand new (section 10.6.2)."
     },
     {
-      "id": "Q658",
+      "id": "Q688",
       "module": 10,
       "type": "mcq",
       "q": "Under Object Finance, the Marine Survey report must state the following, EXCEPT:",
@@ -8623,7 +8993,7 @@
       "exp": "The Marine Survey report must state the market value of the vessel, the date for the next special survey, and the date for the next dry docking. Forced Sale Value is not required (section 10.6.2)."
     },
     {
-      "id": "Q659",
+      "id": "Q689",
       "module": 10,
       "type": "mcq",
       "q": "In Object Finance, the customer must have a minimum of how many years of proven experience in the type of contract to be undertaken?",
@@ -8637,7 +9007,7 @@
       "exp": "Customer must have minimum of 5 years of proven experience in the type of contract to be undertaken (section 10.6.2)."
     },
     {
-      "id": "Q660",
+      "id": "Q690",
       "module": 10,
       "type": "mcq",
       "q": "In Object Finance, can a second‑hand vessel be financed if it is free from encumbrance and fit for purpose?",
@@ -8649,7 +9019,7 @@
       "exp": "Second hand vessel can be financed if it is free from encumbrance and fit for purpose (section 10.6.2)."
     },
     {
-      "id": "Q661",
+      "id": "Q691",
       "module": 10,
       "type": "mcq",
       "q": "In Reserve Based Lending (RBL), which type of reserves does the Bank primarily lend against?",
@@ -8663,7 +9033,7 @@
       "exp": "The lending shall be restricted to Proven, Developed, and Producing (PDP) reserves (section 10.5)."
     },
     {
-      "id": "Q662",
+      "id": "Q692",
       "module": 10,
       "type": "mcq",
       "q": "In Reserve Based Lending, the borrowing base is determined by:",
@@ -8677,7 +9047,7 @@
       "exp": "The borrowing base is determined by analysing previous production reports and independent engineering evaluations of proved reserves (section 10.5)."
     },
     {
-      "id": "Q663",
+      "id": "Q693",
       "module": 10,
       "type": "mcq",
       "q": "In Reserve Based Lending, what is the purpose of a Competent Persons Report (CPR)?",
@@ -8691,7 +9061,7 @@
       "exp": "The Competent Persons report (CPR) shall contain sufficient information and documentation to support the assumptions and the analysis used to derive the forecasted cash flows and discounted PV (section 10.5)."
     },
     {
-      "id": "Q664",
+      "id": "Q694",
       "module": 10,
       "type": "mcq",
       "q": "In Reserve Based Lending, how often is the borrowing base normally reset?",
@@ -8705,7 +9075,7 @@
       "exp": "The borrowing base is normally reset every six months (section 10.5)."
     },
     {
-      "id": "Q665",
+      "id": "Q695",
       "module": 10,
       "type": "mcq",
       "q": "In Reserve Based Lending, the Bank shall require an independent reserve audit every:",
@@ -8719,7 +9089,7 @@
       "exp": "The revaluation of the reserves shall require an independent reserve audit company to prepare or audit the reserve reports and shall be conducted every 4 years from the date of first availment (section 10.5)."
     },
     {
-      "id": "Q666",
+      "id": "Q696",
       "module": 10,
       "type": "mcq",
       "q": "Which of the following is a characteristic of Reserve Based Lending (RBL)?",
@@ -8733,7 +9103,7 @@
       "exp": "RBLs take the form of a borrowing base revolving credit facility secured by liens on oil and gas mineral interests (section 10.5)."
     },
     {
-      "id": "Q667",
+      "id": "Q697",
       "module": 10,
       "type": "mcq",
       "q": "In Reserve Based Lending, how is the borrowing base deficiency typically cured?",
@@ -8747,7 +9117,7 @@
       "exp": "The borrowing base deficiency shall be cured by the borrower adding additional oil and gas properties to the collateral base, or by monthly commitment reductions (section 10.5)."
     },
     {
-      "id": "Q668",
+      "id": "Q698",
       "module": 10,
       "type": "mcq",
       "q": "Under the Mining lending framework, which team acts as the Centre of Excellence for coordinating lending activities to Mining companies?",
@@ -8761,7 +9131,7 @@
       "exp": "The Corporate Banking team in South Africa will act as the Center of Excellence, responsible for coordinating the lending activities to Mining companies (section 10.10)."
     },
     {
-      "id": "Q669",
+      "id": "Q699",
       "module": 10,
       "type": "mcq",
       "q": "For a Mining transaction, what must be in place before any lending is considered?",
@@ -8775,7 +9145,7 @@
       "exp": "Mining Permit must be in place (section 10.8)."
     },
     {
-      "id": "Q670",
+      "id": "Q700",
       "module": 10,
       "type": "mcq",
       "q": "Which of the following is an example of a government‑sponsored agricultural financing scheme mentioned in the CPG?",
@@ -8789,7 +9159,7 @@
       "exp": "The CPG mentions CACS, ABP, AADS, Rice Distributors' Facility, Export Facilitation Initiative, etc. (section 10.3.5)."
     },
     {
-      "id": "Q671",
+      "id": "Q701",
       "module": 10,
       "type": "mcq",
       "q": "What is the maximum loan limit under the Commercial Agricultural Credit Scheme (CACS)?",
@@ -8803,7 +9173,7 @@
       "exp": "The SOL for CACS is set at N2 billion per project (section 10.3.5.1)."
     },
     {
-      "id": "Q672",
+      "id": "Q702",
       "module": 10,
       "type": "mcq",
       "q": "What is the all‑in interest rate for loans under the Anchor Borrowers' Programme (ABP)?",
@@ -8817,7 +9187,7 @@
       "exp": "Loans under the Anchor Borrowers' Programme are disbursed at an all‑in interest rate of 9% (section 10.3.5)."
     },
     {
-      "id": "Q673",
+      "id": "Q703",
       "module": 10,
       "type": "mcq",
       "q": "Which of the following is an excluded project under the Agricultural Finance Policy?",
@@ -8831,7 +9201,7 @@
       "exp": "Projects proposed by loss‑making or unprofitable companies are excluded (section 10.3.3)."
     },
     {
-      "id": "Q674",
+      "id": "Q704",
       "module": 10,
       "type": "mcq",
       "q": "For Agricultural financing, what is the target market segment?",
@@ -8845,7 +9215,7 @@
       "exp": "The target market includes these value chain activities (section 10.3.2)."
     },
     {
-      "id": "Q675",
+      "id": "Q705",
       "module": 10,
       "type": "mcq",
       "q": "In Project Finance, what is the purpose of a ‘Preferred Creditor Status’ protection?",
@@ -8859,7 +9229,7 @@
       "exp": "Multilateral development banks (i.e. IFC, AfDB) “Preferred Creditor Status” protection mitigates transfer and convertibility risk for B Loan participants (section 10.4)."
     },
     {
-      "id": "Q676",
+      "id": "Q706",
       "module": 10,
       "type": "mcq",
       "q": "In Project Finance, what is the typical maximum moratorium period?",
@@ -8873,7 +9243,7 @@
       "exp": "Under the RSSF scheme, moratorium period is 2 years; generally project finance moratoriums are set based on project gestation, not fixed, but often up to 2 years (section 10.4)."
     },
     {
-      "id": "Q677",
+      "id": "Q707",
       "module": 10,
       "type": "mcq",
       "q": "In Object Finance, the Bank shall ensure that the expiration of the certificate of class is at least:",
@@ -8887,7 +9257,7 @@
       "exp": "Only vessels that are in class shall be financed. The bank shall ensure that the expiration of the certificate of class is at least 24 months (section 10.6.2)."
     },
     {
-      "id": "Q678",
+      "id": "Q708",
       "module": 10,
       "type": "mcq",
       "q": "In Object Finance, the customer's contract must be a multi‑year time charter agreement – what is the preferred alternative if only a Letter of Intent (LOI) is available?",
@@ -8901,7 +9271,7 @@
       "exp": "The use of LOI is strongly discouraged, but the bank shall consider funding on a case‑by‑case basis where there is strong assurance of a firm contract within 6 months (section 10.6.2)."
     },
     {
-      "id": "Q679",
+      "id": "Q709",
       "module": 10,
       "type": "mcq",
       "q": "In Object Finance, what is the purpose of a Performance Bond (PB) from the ship builder (for new vessels)?",
@@ -8915,7 +9285,7 @@
       "exp": "Performance Bond is a risk mitigant for performance, delivery, and collateral (section 10.6.3)."
     },
     {
-      "id": "Q680",
+      "id": "Q710",
       "module": 10,
       "type": "mcq",
       "q": "In Object Finance, what is the maximum loan amount to one obligor (or group) as a percentage of the Bank's total shareholders' funds?",
@@ -8929,7 +9299,7 @@
       "exp": "Financing of objects from one obligor (or a group of related obligors) shall not be more than 20% of the Bank's total shareholders’ funds (section 10.6.11)."
     },
     {
-      "id": "Q681",
+      "id": "Q711",
       "module": 10,
       "type": "mcq",
       "q": "In Object Finance, the borrower must have a minimum of what percentage equity in the object's cost?",
@@ -8943,7 +9313,7 @@
       "exp": "The borrower must have minimum of 10% equity in the object’s cost (section 10.6.11)."
     },
     {
-      "id": "Q682",
+      "id": "Q712",
       "module": 10,
       "type": "mcq",
       "q": "In Real Estate Finance, which of the following is NOT a stage of risk associated with Real Estate Project Finance?",
@@ -8957,7 +9327,7 @@
       "exp": "The risks are associated with scheme design, construction, and operation stages; syndication is a funding method, not a risk stage (section 10.7.5)."
     },
     {
-      "id": "Q683",
+      "id": "Q713",
       "module": 10,
       "type": "mcq",
       "q": "In Real Estate Finance, the Bank shall not fund projects where the borrower is also the contractor, except under what condition?",
@@ -8971,7 +9341,7 @@
       "exp": "The bank shall not fund projects where the borrower is also the contractor except where the borrower is an established real estate developer (exception to this shall require one up approval) (section 10.7.13)."
     },
     {
-      "id": "Q684",
+      "id": "Q714",
       "module": 10,
       "type": "mcq",
       "q": "In Real Estate Finance, what is the maximum loan tenor for short‑term facilities?",
@@ -8985,7 +9355,7 @@
       "exp": "Short‑term facilities shall be for periods not exceeding 2 years (section 10.7.16)."
     },
     {
-      "id": "Q685",
+      "id": "Q715",
       "module": 11,
       "type": "mcq",
       "q": "What is the primary objective of the Bank's Environmental and Social Risk Management (ESRM) policy?",
@@ -8999,7 +9369,7 @@
       "exp": "The Bank shall insist on compliance with applicable National laws and regulations, the use of sound environmental, health & safety, and labour practices, as these are important factors in demonstrating effective corporate governance and ensuring commitment to loan obligations (section 11)."
     },
     {
-      "id": "Q686",
+      "id": "Q716",
       "module": 11,
       "type": "mcq",
       "q": "Under the ESRM policy, which type of projects will the Bank NOT provide financial services to?",
@@ -9013,7 +9383,7 @@
       "exp": "The Bank shall not provide financial services to clients and projects / activities that are on the exclusion list of the Environmental and Social Risks Management (ESRM) Manual (section 11)."
     },
     {
-      "id": "Q687",
+      "id": "Q717",
       "module": 11,
       "type": "mcq",
       "q": "The Bank's ESRM policy requires that all applicable projects be reviewed and approved in line with which documents?",

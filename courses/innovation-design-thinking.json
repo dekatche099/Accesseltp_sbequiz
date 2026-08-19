@@ -697,12 +697,12 @@
       "type": "mcq",
       "q": "A fintech startup introduces a mobile app that offers instant micro‑loans with no collateral, targeting customers who have never had a bank account. This most closely illustrates which innovation category?",
       "opts": [
-        "A. Sustaining innovation, because it improves existing lending products.",
-        "B. Disruptive innovation, because it serves overlooked customers with a simpler solution.",
-        "C. Incremental innovation, because it only adds a mobile interface.",
-        "D. Transformational innovation, because it changes the entire banking industry."
+        "Sustaining innovation, because it improves existing lending products.",
+        "Disruptive innovation, because it serves overlooked customers with a simpler solution.",
+        "Incremental innovation, because it only adds a mobile interface.",
+        "Transformational innovation, because it changes the entire banking industry."
       ],
-      "ans": "B. Disruptive innovation, because it serves overlooked customers with a simpler solution.",
+      "ans": "Disruptive innovation, because it serves overlooked customers with a simpler solution.",
       "exp": "Disruptive innovation enters with a simpler, cheaper solution for overlooked segments (new‑market disruption). It does not merely improve existing products (sustaining) nor make only small tweaks (incremental). It may become transformational later, but its entry point defines it as disruptive."
     },
     {
@@ -711,12 +711,12 @@
       "type": "mcq",
       "q": "A bank updates its mobile app to reduce login time from 8 seconds to 3 seconds and adds a biometric option. This change is best described as:",
       "opts": [
-        "A. Sustaining innovation, because it maintains competitiveness without changing the industry.",
-        "B. Transformational innovation, because it reimagines the entire customer experience.",
-        "C. Disruptive innovation, because it targets new customer segments.",
-        "D. Incremental innovation, because it is a small improvement to an existing process."
+        "Sustaining innovation, because it maintains competitiveness without changing the industry.",
+        "Transformational innovation, because it reimagines the entire customer experience.",
+        "Disruptive innovation, because it targets new customer segments.",
+        "Incremental innovation, because it is a small improvement to an existing process."
       ],
-      "ans": "D. Incremental innovation, because it is a small improvement to an existing process.",
+      "ans": "Incremental innovation, because it is a small improvement to an existing process.",
       "exp": "Incremental innovation involves small, gradual improvements to existing products or processes — here, faster login and biometrics improve usability without redefining banking. Sustaining innovations keep competitive but are usually larger; this is a minor tweak."
     },
     {
@@ -725,12 +725,12 @@
       "type": "mcq",
       "q": "A digital‑only bank offers zero‑fee accounts, instant onboarding via selfie verification, and AI‑driven budgeting tools. This challenges traditional banks by redefining how value is created and delivered. Which type of innovation does this represent?",
       "opts": [
-        "A. Product innovation, because the account itself is new.",
-        "B. Business model innovation, because the operating and revenue model is fundamentally different.",
-        "C. Technological innovation, because AI and selfie verification are novel.",
-        "D. Marketing innovation, because it targets digital‑native customers."
+        "Product innovation, because the account itself is new.",
+        "Business model innovation, because the operating and revenue model is fundamentally different.",
+        "Technological innovation, because AI and selfie verification are novel.",
+        "Marketing innovation, because it targets digital‑native customers."
       ],
-      "ans": "B. Business model innovation, because the operating and revenue model is fundamentally different.",
+      "ans": "Business model innovation, because the operating and revenue model is fundamentally different.",
       "exp": "Business model innovation changes how the bank creates, delivers, or captures value — not just the product or technology. Digital‑only banks with zero fees, instant onboarding, and AI tools represent a new operating model, not merely a product update."
     },
     {
@@ -739,12 +739,12 @@
       "type": "mcq",
       "q": "Which of the following is NOT one of Peter Drucker's seven sources of innovation ideas?",
       "opts": [
-        "A. Unexpected trends in the marketplace.",
-        "B. New scientific knowledge.",
-        "C. Process needs within existing operations.",
-        "D. Competitor market share data."
+        "Unexpected trends in the marketplace.",
+        "New scientific knowledge.",
+        "Process needs within existing operations.",
+        "Competitor market share data."
       ],
-      "ans": "D. Competitor market share data.",
+      "ans": "Competitor market share data.",
       "exp": "Drucker's seven sources are: Unexpected Trends, Incongruity, Process Needs, Structural Changes, Demographics, Perception, and New Knowledge. Competitor market share data is not one of them — it is a business intelligence input, not a source category."
     },
     {
@@ -753,12 +753,12 @@
       "type": "mcq",
       "q": "A bank's leadership decides to reorganise its product teams into agile squads, establish an innovation lab, and launch an intrapreneurship programme. This is an example of:",
       "opts": [
-        "A. Technological innovation in corporate banking.",
-        "B. Organisational innovation in retail banking.",
-        "C. Marketing innovation in corporate banking.",
-        "D. Product innovation in retail banking."
+        "Technological innovation in corporate banking.",
+        "Organisational innovation in retail banking.",
+        "Marketing innovation in corporate banking.",
+        "Product innovation in retail banking."
       ],
-      "ans": "B. Organisational innovation in retail banking.",
+      "ans": "Organisational innovation in retail banking.",
       "exp": "Organisational innovation refers to changes in internal structures, culture, and processes that help the bank innovate better. Agile squads, innovation labs, and intrapreneurship programmes specifically target retail banking organisational improvements."
     },
     {
@@ -767,12 +767,12 @@
       "type": "mcq",
       "q": "A corporate bank deploys an API gateway that allows its large business clients to initiate cross‑border payments directly from their ERP systems, reducing settlement time from days to hours. This is best classified as:",
       "opts": [
-        "A. Technological innovation in corporate banking.",
-        "B. Marketing innovation in corporate banking.",
-        "C. Organisational innovation in corporate banking.",
-        "D. Business model innovation in retail banking."
+        "Technological innovation in corporate banking.",
+        "Marketing innovation in corporate banking.",
+        "Organisational innovation in corporate banking.",
+        "Business model innovation in retail banking."
       ],
-      "ans": "A. Technological innovation in corporate banking.",
+      "ans": "Technological innovation in corporate banking.",
       "exp": "Technological innovation in corporate banking focuses on using digital tools, APIs, and automation for complex operations like trade finance and payments. The API‑based payments system is a technology‑driven solution for corporate clients."
     },
     {
@@ -781,12 +781,12 @@
       "type": "mcq",
       "q": "A retail bank introduces a 'gamified savings vault' that rewards customers with badges and interest bonuses for reaching savings milestones. This new financial product is an example of:",
       "opts": [
-        "A. Business model innovation.",
-        "B. Organisational innovation.",
-        "C. Product innovation in retail banking.",
-        "D. Technological innovation in corporate banking."
+        "Business model innovation.",
+        "Organisational innovation.",
+        "Product innovation in retail banking.",
+        "Technological innovation in corporate banking."
       ],
-      "ans": "C. Product innovation in retail banking.",
+      "ans": "Product innovation in retail banking.",
       "exp": "Product innovation in retail banking involves creating new or improved financial products for individuals. Gamified savings vaults are a new savings product designed to engage customers — not a change to the business model, organisation, or core technology."
     },
     {
@@ -795,12 +795,12 @@
       "type": "mcq",
       "q": "According to the ISO 56000 definition, innovation is best described as a practice that results in:",
       "opts": [
-        "A. A new product that is significantly different from competitors' offerings.",
-        "B. A new or changed entity that creates or redistributes value.",
-        "C. An invention that has never been seen before in any market.",
-        "D. A cost‑reduction measure that improves profitability."
+        "A new product that is significantly different from competitors' offerings.",
+        "A new or changed entity that creates or redistributes value.",
+        "An invention that has never been seen before in any market.",
+        "A cost‑reduction measure that improves profitability."
       ],
-      "ans": "B. A new or changed entity that creates or redistributes value.",
+      "ans": "A new or changed entity that creates or redistributes value.",
       "exp": "ISO 56000:2020 defines innovation as 'practices that result in a new or changed entity that creates or redistributes value.' The other options either narrow the definition to products alone, equate it with invention, or reduce it to cost savings."
     },
     {
@@ -809,12 +809,12 @@
       "type": "mcq",
       "q": "When a bank decides to standardise its best‑performing loan product across all branches and stops any further modifications, it is practising:",
       "opts": [
-        "A. Sustaining innovation.",
-        "B. Ex‑novation.",
-        "C. Disruptive innovation.",
-        "D. Process innovation."
+        "Sustaining innovation.",
+        "Ex‑novation.",
+        "Disruptive innovation.",
+        "Process innovation."
       ],
-      "ans": "B. Ex‑novation.",
+      "ans": "Ex‑novation.",
       "exp": "Ex‑novation is the opposite of innovation — it refers to standardising formerly best‑in‑class products or services to limit further innovation. Freezing a loan product to prevent changes fits this definition."
     },
     {
@@ -823,12 +823,12 @@
       "type": "mcq",
       "q": "A team is evaluating a new idea for a digital wallet. Which innovation tool would best help them collect, evaluate, and manage this idea systematically?",
       "opts": [
-        "A. Task monitoring software.",
-        "B. An idea dashboard.",
-        "C. Team bonding exercises.",
-        "D. Communication tools."
+        "Task monitoring software.",
+        "An idea dashboard.",
+        "Team bonding exercises.",
+        "Communication tools."
       ],
-      "ans": "B. An idea dashboard.",
+      "ans": "An idea dashboard.",
       "exp": "An idea dashboard is a centralised platform where ideas are collected, evaluated, and managed systematically. Communication tools and team bonding facilitate collaboration but not systematic tracking; task monitoring tracks execution, not ideation."
     },
     {
@@ -837,12 +837,12 @@
       "type": "mcq",
       "q": "A bank's marketing team runs a social media campaign featuring influencer partnerships and chatbot engagement to attract Gen Z customers. This is an example of:",
       "opts": [
-        "A. Marketing innovation in retail banking.",
-        "B. Organisational innovation in retail banking.",
-        "C. Product innovation in retail banking.",
-        "D. Technological innovation in corporate banking."
+        "Marketing innovation in retail banking.",
+        "Organisational innovation in retail banking.",
+        "Product innovation in retail banking.",
+        "Technological innovation in corporate banking."
       ],
-      "ans": "A. Marketing innovation in retail banking.",
+      "ans": "Marketing innovation in retail banking.",
       "exp": "Marketing innovation in retail banking involves changing how banks attract and retain retail customers using modern strategies — influencer partnerships, social media campaigns, and chatbot engagement are textbook examples."
     },
     {
@@ -851,12 +851,12 @@
       "type": "mcq",
       "q": "Which of the following best describes the difference between innovation and invention, as implied by the course material?",
       "opts": [
-        "A. Invention creates new knowledge; innovation creates new products.",
-        "B. Invention is the generation of an idea; innovation is the implementation that creates value.",
-        "C. Invention is always technological; innovation is always business‑related.",
-        "D. There is no difference — the terms are interchangeable."
+        "Invention creates new knowledge; innovation creates new products.",
+        "Invention is the generation of an idea; innovation is the implementation that creates value.",
+        "Invention is always technological; innovation is always business‑related.",
+        "There is no difference — the terms are interchangeable."
       ],
-      "ans": "B. Invention is the generation of an idea; innovation is the implementation that creates value.",
+      "ans": "Invention is the generation of an idea; innovation is the implementation that creates value.",
       "exp": "Though not stated in one sentence, the course defines innovation as 'generation and implementation of ideas or solutions that result in improvement in value.' Invention is the creation of something new, but innovation requires implementation and value creation."
     },
     {
@@ -865,12 +865,12 @@
       "type": "mcq",
       "q": "A retail bank introduces Buy Now Pay Later (BNPL) for its credit card customers. This new financial product is best classified as:",
       "opts": [
-        "A. Product innovation in corporate banking.",
-        "B. Product innovation in retail banking.",
-        "C. Business model innovation in corporate banking.",
-        "D. Technological innovation in retail banking."
+        "Product innovation in corporate banking.",
+        "Product innovation in retail banking.",
+        "Business model innovation in corporate banking.",
+        "Technological innovation in retail banking."
       ],
-      "ans": "B. Product innovation in retail banking.",
+      "ans": "Product innovation in retail banking.",
       "exp": "BNPL is a new financial product designed for retail (consumer) customers, making it product innovation in retail banking. It does not change the business model or involve corporate clients."
     },
     {
@@ -879,12 +879,12 @@
       "type": "mcq",
       "q": "A corporate bank launches a dynamic supply chain financing product that adjusts interest rates based on real‑time inventory data. This is an example of:",
       "opts": [
-        "A. Product innovation in corporate banking.",
-        "B. Marketing innovation in retail banking.",
-        "C. Organisational innovation in corporate banking.",
-        "D. Technological innovation in retail banking."
+        "Product innovation in corporate banking.",
+        "Marketing innovation in retail banking.",
+        "Organisational innovation in corporate banking.",
+        "Technological innovation in retail banking."
       ],
-      "ans": "A. Product innovation in corporate banking.",
+      "ans": "Product innovation in corporate banking.",
       "exp": "Dynamic supply chain financing is a new or improved financial product for businesses, fitting product innovation in corporate banking. It is not marketing, organisational, or retail‑focused."
     },
     {
@@ -893,12 +893,12 @@
       "type": "mcq",
       "q": "Which of Drucker's sources of innovation is illustrated by a bank noticing that its elderly customers are increasingly using mobile banking, while the bank had designed its app primarily for younger users?",
       "opts": [
-        "A. Demographics, because age composition is shifting.",
-        "B. Incongruity, because expectations and results diverge.",
-        "C. Perception, because how people view banking is changing.",
-        "D. Unexpected trends, because an unanticipated pattern emerged."
+        "Demographics, because age composition is shifting.",
+        "Incongruity, because expectations and results diverge.",
+        "Perception, because how people view banking is changing.",
+        "Unexpected trends, because an unanticipated pattern emerged."
       ],
-      "ans": "D. Unexpected trends, because an unanticipated pattern emerged.",
+      "ans": "Unexpected trends, because an unanticipated pattern emerged.",
       "exp": "The unexpected trend is the surprise increase in elderly mobile banking usage — Drucker's first source. Demographics would be a known population shift; incongruity is a gap between expectations and results; perception is about interpretation."
     },
     {
@@ -907,12 +907,12 @@
       "type": "mcq",
       "q": "A company decides to phase out its old cheque‑clearing system and replace it with a real‑time payment rail that significantly reduces settlement times. This change is best characterised as:",
       "opts": [
-        "A. Incremental innovation, because it only improves speed.",
-        "B. Sustaining innovation, because it maintains the bank's competitive position.",
-        "C. Transformational innovation, because it reimagines the entire payment infrastructure.",
-        "D. Disruptive innovation, because it targets underserved segments."
+        "Incremental innovation, because it only improves speed.",
+        "Sustaining innovation, because it maintains the bank's competitive position.",
+        "Transformational innovation, because it reimagines the entire payment infrastructure.",
+        "Disruptive innovation, because it targets underserved segments."
       ],
-      "ans": "C. Transformational innovation, because it reimagines the entire payment infrastructure.",
+      "ans": "Transformational innovation, because it reimagines the entire payment infrastructure.",
       "exp": "Transformational innovation involves game‑changing ideas that reimagine how an entire market works — replacing a legacy cheque system with real‑time payments is a fundamental shift in market infrastructure, not a small improvement or a low‑end disruption."
     },
     {
@@ -921,12 +921,12 @@
       "type": "mcq",
       "q": "A bank creates a subscription‑based banking package where customers pay a monthly fee for premium features (priority support, higher savings rates, travel insurance). This shifts the bank's revenue model from transaction‑based to fee‑based. This is:",
       "opts": [
-        "A. Product innovation in retail banking.",
-        "B. Business model innovation in retail banking.",
-        "C. Marketing innovation in retail banking.",
-        "D. Organisational innovation in retail banking."
+        "Product innovation in retail banking.",
+        "Business model innovation in retail banking.",
+        "Marketing innovation in retail banking.",
+        "Organisational innovation in retail banking."
       ],
-      "ans": "B. Business model innovation in retail banking.",
+      "ans": "Business model innovation in retail banking.",
       "exp": "Business model innovation changes how the bank creates, delivers, or captures value — moving from transaction fees to subscription fees is a revenue‑model shift. The subscription package is the vehicle, but the innovation is in the business model."
     },
     {
@@ -935,12 +935,12 @@
       "type": "mcq",
       "q": "According to Peter Drucker, which source of innovation is present when a bank identifies that its loan approval process takes 14 days while customer expectations are for 2 days, and designs a new automated underwriting system to close that gap?",
       "opts": [
-        "A. New Knowledge, because AI enables automation.",
-        "B. Process Needs, because the existing process has a bottleneck.",
-        "C. Incongruity, because expectations and results diverge.",
-        "D. Structural Changes, because the industry is shifting."
+        "New Knowledge, because AI enables automation.",
+        "Process Needs, because the existing process has a bottleneck.",
+        "Incongruity, because expectations and results diverge.",
+        "Structural Changes, because the industry is shifting."
       ],
-      "ans": "B. Process Needs, because the existing process has a bottleneck.",
+      "ans": "Process Needs, because the existing process has a bottleneck.",
       "exp": "Drucker's 'Process Needs' source is about weaknesses or bottlenecks in existing processes that demand better solutions. The 14‑day approval cycle is a clear process bottleneck. While incongruity (gap) might seem close, the explicit focus on a process weakness points to Process Needs."
     },
     {
@@ -1579,12 +1579,12 @@
       "type": "mcq",
       "q": "A bank's executive team consistently prioritises customer-centricity, cloud adoption, and data-driven decisions in every strategic review. This behaviour is best classified as which type of innovation driver?",
       "opts": [
-        "A. External driver — competitive pressure.",
-        "B. Internal driver — leadership vision.",
-        "C. External driver — regulatory change.",
-        "D. Internal driver — digital infrastructure."
+        "External driver — competitive pressure.",
+        "Internal driver — leadership vision.",
+        "External driver — regulatory change.",
+        "Internal driver — digital infrastructure."
       ],
-      "ans": "B. Internal driver — leadership vision.",
+      "ans": "Internal driver — leadership vision.",
       "exp": "Leadership vision is an internal driver — innovation accelerates when the executive team explicitly prioritises technology, data, and customer-centricity. The question describes exactly that: repeated strategic prioritisation by executives."
     },
     {
@@ -1593,12 +1593,12 @@
       "type": "mcq",
       "q": "A traditional bank's core banking platform was built in the 1990s and cannot interface with modern API-based fintech services. Any new feature requires months of custom coding. This is a classic example of:",
       "opts": [
-        "A. Siloed departments.",
-        "B. Bureaucratic processes.",
-        "C. Legacy systems.",
-        "D. Risk aversion."
+        "Siloed departments.",
+        "Bureaucratic processes.",
+        "Legacy systems.",
+        "Risk aversion."
       ],
-      "ans": "C. Legacy systems.",
+      "ans": "Legacy systems.",
       "exp": "Legacy systems are old core banking platforms that are difficult to upgrade and slow innovation cycles. The 1990s platform with no API compatibility and slow feature development matches the textbook definition."
     },
     {
@@ -1607,12 +1607,12 @@
       "type": "mcq",
       "q": "A fintech startup enters the market offering zero-fee transfers and instant account opening. A large incumbent bank's internal reports show this fintech is growing but currently serves only low-balance customers. According to the Innovator's Dilemma framework, why does the bank most likely hesitate to respond aggressively?",
       "opts": [
-        "A. The bank lacks the technology to compete.",
-        "B. The new market appears small and unprofitable today, so internal KPIs reward protecting existing profitable business.",
-        "C. The fintech is not regulated, so the bank sees no threat.",
-        "D. The bank's customers have not asked for zero-fee transfers."
+        "The bank lacks the technology to compete.",
+        "The new market appears small and unprofitable today, so internal KPIs reward protecting existing profitable business.",
+        "The fintech is not regulated, so the bank sees no threat.",
+        "The bank's customers have not asked for zero-fee transfers."
       ],
-      "ans": "B. The new market appears small and unprofitable today, so internal KPIs reward protecting existing profitable business.",
+      "ans": "The new market appears small and unprofitable today, so internal KPIs reward protecting existing profitable business.",
       "exp": "The Innovator's Dilemma explains that incumbents hesitate because their best customers are profitable today, new markets seem small or risky, and internal KPIs reward stability. Technology alone isn't the blocker; it's the misalignment of incentives."
     },
     {
@@ -1621,12 +1621,12 @@
       "type": "mcq",
       "q": "A bank's innovation team proposes a bold new digital lending product, but the proposal must pass through six committees, three legal reviews, and two compliance approvals before a pilot can begin. This describes which barrier?",
       "opts": [
-        "A. Legacy systems.",
-        "B. Silos and fragmentation.",
-        "C. Bureaucratic processes.",
-        "D. Limited talent capability."
+        "Legacy systems.",
+        "Silos and fragmentation.",
+        "Bureaucratic processes.",
+        "Limited talent capability."
       ],
-      "ans": "C. Bureaucratic processes.",
+      "ans": "Bureaucratic processes.",
       "exp": "Bureaucratic processes are long approval cycles and rigid structures that make experimentation difficult. Six committees and multiple reviews before a pilot is a perfect example of this barrier."
     },
     {
@@ -1635,12 +1635,12 @@
       "type": "mcq",
       "q": "A bank observes that its younger customers are switching to fintech apps that offer personalised spending insights and real-time budgeting tools. The bank decides to build a similar feature. This response is driven primarily by which external force?",
       "opts": [
-        "A. Regulatory changes.",
-        "B. Consumer behaviour shifts.",
-        "C. Macroeconomic pressures.",
-        "D. Technological advances."
+        "Regulatory changes.",
+        "Consumer behaviour shifts.",
+        "Macroeconomic pressures.",
+        "Technological advances."
       ],
-      "ans": "B. Consumer behaviour shifts.",
+      "ans": "Consumer behaviour shifts.",
       "exp": "Consumer behaviour shifts — customers are increasingly digital-first and expect instant, personalised service. The observation of young customers switching to fintech apps and the response to build similar features is a direct reaction to changing behaviour."
     },
     {
@@ -1649,12 +1649,12 @@
       "type": "mcq",
       "q": "Which of the following is NOT listed in the material as an internal driver of innovation for banks?",
       "opts": [
-        "A. Data maturity.",
-        "B. Competitive pressure from fintechs.",
-        "C. Digital infrastructure.",
-        "D. Innovation culture."
+        "Data maturity.",
+        "Competitive pressure from fintechs.",
+        "Digital infrastructure.",
+        "Innovation culture."
       ],
-      "ans": "B. Competitive pressure from fintechs.",
+      "ans": "Competitive pressure from fintechs.",
       "exp": "Competitive pressure from fintechs is an external driver, not internal. The internal drivers listed are: Leadership Vision, Talent & Skills, Data Maturity, Innovation Culture, and Digital Infrastructure."
     },
     {
@@ -1663,12 +1663,12 @@
       "type": "mcq",
       "q": "A bank's IT department and its business units each maintain separate data lakes, and product teams cannot access customer transaction histories without filing cross-departmental requests. This is a symptom of:",
       "opts": [
-        "A. Silos and fragmentation.",
-        "B. Legacy systems.",
-        "C. Risk aversion.",
-        "D. Slow partnership processes."
+        "Silos and fragmentation.",
+        "Legacy systems.",
+        "Risk aversion.",
+        "Slow partnership processes."
       ],
-      "ans": "A. Silos and fragmentation.",
+      "ans": "Silos and fragmentation.",
       "exp": "Silos and fragmentation occur when business units work in isolation, preventing cross-functional collaboration. Separate data lakes and filing requests across departments is textbook silo behaviour."
     },
     {
@@ -1677,12 +1677,12 @@
       "type": "mcq",
       "q": "Nigeria's Open Banking framework enables a fintech to, with customer consent, access that customer's transaction history across multiple banks and offer a consolidated credit score. This exemplifies which effect of Open Banking?",
       "opts": [
-        "A. Lowering the barrier for fintechs to build products.",
-        "B. Enabling cross-institution comparison and switching.",
-        "C. Improving personalisation through shared data.",
-        "D. Enabling embedded finance outside banking platforms."
+        "Lowering the barrier for fintechs to build products.",
+        "Enabling cross-institution comparison and switching.",
+        "Improving personalisation through shared data.",
+        "Enabling embedded finance outside banking platforms."
       ],
-      "ans": "C. Improving personalisation through shared data.",
+      "ans": "Improving personalisation through shared data.",
       "exp": "The scenario describes using shared data (transaction history across banks) to improve personalisation (consolidated credit score). While this also lowers barriers, the specific mechanism described is data sharing enabling personalisation."
     },
     {
@@ -1691,12 +1691,12 @@
       "type": "mcq",
       "q": "A bank has a 'fail fast' mantra in its innovation lab, but in practice, any project that underperforms in a pilot triggers a formal inquiry and executive scrutiny. This contradiction reflects which barrier?",
       "opts": [
-        "A. Legacy systems.",
-        "B. Risk aversion.",
-        "C. Limited talent capability.",
-        "D. Siloed departments."
+        "Legacy systems.",
+        "Risk aversion.",
+        "Limited talent capability.",
+        "Siloed departments."
       ],
-      "ans": "B. Risk aversion.",
+      "ans": "Risk aversion.",
       "exp": "Risk aversion — a culture that punishes failure even when claiming to encourage experimentation. The fear of regulatory penalties or internal scrutiny discourages bold ideas. The disconnect between mantra and practice is the key signal."
     },
     {
@@ -1705,12 +1705,12 @@
       "type": "mcq",
       "q": "MTN MoMo and Safaricom's M-PESA have successfully expanded financial services to millions of previously unbanked customers. Their primary competitive advantage over traditional banks, as described in the material, is:",
       "opts": [
-        "A. Superior interest rates on savings.",
-        "B. Extensive agent networks and access to millions of customers instantly.",
-        "C. More advanced AI credit scoring.",
-        "D. Lower regulatory compliance requirements."
+        "Superior interest rates on savings.",
+        "Extensive agent networks and access to millions of customers instantly.",
+        "More advanced AI credit scoring.",
+        "Lower regulatory compliance requirements."
       ],
-      "ans": "B. Extensive agent networks and access to millions of customers instantly.",
+      "ans": "Extensive agent networks and access to millions of customers instantly.",
       "exp": "Telcos' three major advantages are: access to millions of customers instantly, extensive agent networks in rural areas, and real-time transaction capabilities through airtime rails. Agent networks and customer access are the primary structural advantages."
     },
     {
@@ -1719,12 +1719,12 @@
       "type": "mcq",
       "q": "A bank's compliance team blocks a proposed innovation because it interprets existing regulations narrowly, even though competitors have launched similar products without penalty. This is best described as:",
       "opts": [
-        "A. Silos and fragmentation.",
-        "B. Regulatory caution as a barrier.",
-        "C. Legacy systems limiting speed.",
-        "D. Slow partnership processes."
+        "Silos and fragmentation.",
+        "Regulatory caution as a barrier.",
+        "Legacy systems limiting speed.",
+        "Slow partnership processes."
       ],
-      "ans": "B. Regulatory caution as a barrier.",
+      "ans": "Regulatory caution as a barrier.",
       "exp": "Regulatory caution — fear of non-compliance makes teams avoid bold ideas, even when competitors have shown it's permissible. This is explicitly listed as one reason traditional banks struggle to innovate."
     },
     {
@@ -1733,12 +1733,12 @@
       "type": "mcq",
       "q": "Open Banking Nigeria shifts power from incumbents to customers primarily by:",
       "opts": [
-        "A. Allowing customers to share their financial data securely with third-party providers with consent.",
-        "B. Mandating that banks lower their fees to match fintech pricing.",
-        "C. Requiring banks to provide free APIs to all fintechs without conditions.",
-        "D. Prohibiting banks from offering proprietary digital products."
+        "Allowing customers to share their financial data securely with third-party providers with consent.",
+        "Mandating that banks lower their fees to match fintech pricing.",
+        "Requiring banks to provide free APIs to all fintechs without conditions.",
+        "Prohibiting banks from offering proprietary digital products."
       ],
-      "ans": "A. Allowing customers to share their financial data securely with third-party providers with consent.",
+      "ans": "Allowing customers to share their financial data securely with third-party providers with consent.",
       "exp": "Open Banking Nigeria introduces a standardised framework enabling customers to share their financial data securely with third-party providers — with their consent. This shifts power from institutions to customers, not through fee mandates or API giveaways."
     },
     {
@@ -1747,12 +1747,12 @@
       "type": "mcq",
       "q": "A mid-sized bank struggles to attract experienced product managers, data scientists, and UX designers because it cannot match fintech salaries and its office culture is perceived as rigid. This barrier is categorised as:",
       "opts": [
-        "A. Legacy systems.",
-        "B. Risk aversion.",
-        "C. Limited talent capability.",
-        "D. Siloed departments."
+        "Legacy systems.",
+        "Risk aversion.",
+        "Limited talent capability.",
+        "Siloed departments."
       ],
-      "ans": "C. Limited talent capability.",
+      "ans": "Limited talent capability.",
       "exp": "Limited talent capability — many banks struggle to attract and retain digital and product talent. The inability to compete on salary and perceived rigid culture exactly matches this barrier."
     },
     {
@@ -1761,12 +1761,12 @@
       "type": "mcq",
       "q": "A bank's legal and procurement departments take an average of nine months to finalise a partnership agreement with a fintech. This delay is a manifestation of which barrier?",
       "opts": [
-        "A. Slow partnership processes.",
-        "B. Regulatory caution.",
-        "C. Bureaucratic processes.",
-        "D. Legacy systems."
+        "Slow partnership processes.",
+        "Regulatory caution.",
+        "Bureaucratic processes.",
+        "Legacy systems."
       ],
-      "ans": "A. Slow partnership processes.",
+      "ans": "Slow partnership processes.",
       "exp": "Slow partnership processes — procurement, legal, and compliance hurdles delay collaboration with fintechs. Nine months for a partnership agreement is the specific example aligned with this barrier, though it overlaps with bureaucracy."
     },
     {
@@ -1775,12 +1775,12 @@
       "type": "mcq",
       "q": "Which of the following is classified in the material as a market force shaping modern innovation, rather than an internal or external driver?",
       "opts": [
-        "A. Leadership vision and talent skills.",
-        "B. Digital-native consumers who prefer mobile-first experiences.",
-        "C. Data maturity and digital infrastructure.",
-        "D. Macroeconomic pressures."
+        "Leadership vision and talent skills.",
+        "Digital-native consumers who prefer mobile-first experiences.",
+        "Data maturity and digital infrastructure.",
+        "Macroeconomic pressures."
       ],
-      "ans": "B. Digital-native consumers who prefer mobile-first experiences.",
+      "ans": "Digital-native consumers who prefer mobile-first experiences.",
       "exp": "Market forces listed include: rise of fintechs, telcos expanding, agent networks, AI-powered personalisation, cross-border banking, and digital-native consumers. Leadership vision, data maturity are internal; macroeconomic pressures are external drivers."
     },
     {
@@ -1789,12 +1789,12 @@
       "type": "mcq",
       "q": "Equity Bank's transformation from a traditional bank into a technology-driven institution serving millions across East Africa is cited as an example of:",
       "opts": [
-        "A. A bank overcoming innovation barriers through digital investment.",
-        "B. A bank that failed to adapt to fintech competition.",
-        "C. A bank that exclusively partnered with telcos.",
-        "D. A bank that acquired a fintech to gain capability."
+        "A bank overcoming innovation barriers through digital investment.",
+        "A bank that failed to adapt to fintech competition.",
+        "A bank that exclusively partnered with telcos.",
+        "A bank that acquired a fintech to gain capability."
       ],
-      "ans": "A. A bank overcoming innovation barriers through digital investment.",
+      "ans": "A bank overcoming innovation barriers through digital investment.",
       "exp": "Equity Bank is cited as a case study of overcoming barriers — it invested heavily in digital channels, agent networks, and analytics to become technology-driven. The material does not say it failed, partnered exclusively, or acquired."
     },
     {
@@ -1803,12 +1803,12 @@
       "type": "mcq",
       "q": "Capitec's disruption of the South African market is attributed in the material not primarily to technology, but to:",
       "opts": [
-        "A. Low-interest loans.",
-        "B. Simple products, transparent fees, and digital-first operations with clarity and experience design.",
-        "C. Aggressive branch expansion.",
-        "D. Exclusive partnerships with global fintechs."
+        "Low-interest loans.",
+        "Simple products, transparent fees, and digital-first operations with clarity and experience design.",
+        "Aggressive branch expansion.",
+        "Exclusive partnerships with global fintechs."
       ],
-      "ans": "B. Simple products, transparent fees, and digital-first operations with clarity and experience design.",
+      "ans": "Simple products, transparent fees, and digital-first operations with clarity and experience design.",
       "exp": "Capitec disrupted with simple products, transparent fees, and digital-first operations — proving innovation is not only technology, but clarity and experience design. The material explicitly states this as the distinguishing factor."
     },
     {
@@ -1817,12 +1817,12 @@
       "type": "mcq",
       "q": "A bank's digital infrastructure is API-ready and cloud-native, but its product teams still struggle to innovate quickly because every initiative requires a full business case and board-level approval. This tension highlights the difference between:",
       "opts": [
-        "A. External and internal drivers.",
-        "B. Digital infrastructure and bureaucratic processes.",
-        "C. Market forces and regulatory constraints.",
-        "D. Leadership vision and talent skills."
+        "External and internal drivers.",
+        "Digital infrastructure and bureaucratic processes.",
+        "Market forces and regulatory constraints.",
+        "Leadership vision and talent skills."
       ],
-      "ans": "B. Digital infrastructure and bureaucratic processes.",
+      "ans": "Digital infrastructure and bureaucratic processes.",
       "exp": "The bank has the digital infrastructure (an internal driver) but faces bureaucratic processes (a barrier). The tension is between having the tools but being slowed by approval structures — the two are distinct dimensions."
     },
     {
@@ -1831,12 +1831,12 @@
       "type": "mcq",
       "q": "Which of the following is an example of an external driver of innovation, as defined in the material?",
       "opts": [
-        "A. A bank invests in cloud computing.",
-        "B. The central bank introduces a new digital identity policy.",
-        "C. The bank creates an innovation lab.",
-        "D. The CEO prioritises customer-centricity."
+        "A bank invests in cloud computing.",
+        "The central bank introduces a new digital identity policy.",
+        "The bank creates an innovation lab.",
+        "The CEO prioritises customer-centricity."
       ],
-      "ans": "B. The central bank introduces a new digital identity policy.",
+      "ans": "The central bank introduces a new digital identity policy.",
       "exp": "Regulatory changes (like a new digital identity policy) are listed as external drivers. Cloud investment and innovation labs are internal (digital infrastructure/organisational). CEO prioritisation is leadership vision (internal)."
     },
     {
@@ -1845,12 +1845,12 @@
       "type": "mcq",
       "q": "A bank's business units operate independently, each with its own product roadmaps and P&L statements, and they seldom share customer insights. This structural issue most directly leads to:",
       "opts": [
-        "A. Legacy system failures.",
-        "B. Reduced innovation quality from limited collaboration.",
-        "C. Excessive regulatory penalties.",
-        "D. Faster time-to-market."
+        "Legacy system failures.",
+        "Reduced innovation quality from limited collaboration.",
+        "Excessive regulatory penalties.",
+        "Faster time-to-market."
       ],
-      "ans": "B. Reduced innovation quality from limited collaboration.",
+      "ans": "Reduced innovation quality from limited collaboration.",
       "exp": "Siloed departments limit collaboration between IT, business, CX, and risk — which reduces innovation quality. This is explicitly stated in the material as one reason banks struggle to innovate."
     },
     {
@@ -1859,12 +1859,12 @@
       "type": "mcq",
       "q": "A large bank's CEO frequently states, 'We are a conservative institution — our job is to protect depositors' money, not to experiment like a tech startup.' This mindset is best characterised as which barrier?",
       "opts": [
-        "A. Product-led culture.",
-        "B. Risk-first mindset.",
-        "C. Complex governance.",
-        "D. Legacy systems."
+        "Product-led culture.",
+        "Risk-first mindset.",
+        "Complex governance.",
+        "Legacy systems."
       ],
-      "ans": "B. Risk-first mindset.",
+      "ans": "Risk-first mindset.",
       "exp": "Risk-first mindset — banks are historically designed to avoid failure, not encourage experimentation. The CEO's framing of 'protect depositors' money' versus 'experiment like a startup' captures this exact cultural barrier."
     },
     {
@@ -1873,12 +1873,12 @@
       "type": "mcq",
       "q": "Open Banking enables embedded finance — for example, a ride-hailing app offering instant loans to its drivers based on trip history data shared with consent. This specific capability is enabled by:",
       "opts": [
-        "A. Lowering barriers for fintechs to build products.",
-        "B. Enabling lending within non-bank platforms through shared data.",
-        "C. Fostering collaboration between banks and merchants.",
-        "D. Enabling cross-institution comparison."
+        "Lowering barriers for fintechs to build products.",
+        "Enabling lending within non-bank platforms through shared data.",
+        "Fostering collaboration between banks and merchants.",
+        "Enabling cross-institution comparison."
       ],
-      "ans": "B. Enabling lending within non-bank platforms through shared data.",
+      "ans": "Enabling lending within non-bank platforms through shared data.",
       "exp": "Embedded finance through Open Banking specifically involves enabling lending within non-bank platforms. The ride-hailing app offering loans based on trip data is the textbook example of this effect."
     },
     {
@@ -1887,12 +1887,12 @@
       "type": "mcq",
       "q": "Access Bank's evolution into Access Corporation (HoldCo) is cited as an example of:",
       "opts": [
-        "A. A bank responding to disruption by diversifying into a full ecosystem including banking, payments, lending, insurance, and business services.",
-        "B. A bank that failed due to over-diversification.",
-        "C. A bank that exclusively focused on corporate banking.",
-        "D. A bank that merged with a fintech."
+        "A bank responding to disruption by diversifying into a full ecosystem including banking, payments, lending, insurance, and business services.",
+        "A bank that failed due to over-diversification.",
+        "A bank that exclusively focused on corporate banking.",
+        "A bank that merged with a fintech."
       ],
-      "ans": "A. A bank responding to disruption by diversifying into a full ecosystem including banking, payments, lending, insurance, and business services.",
+      "ans": "A bank responding to disruption by diversifying into a full ecosystem including banking, payments, lending, insurance, and business services.",
       "exp": "Access Bank evolved into Access Corporation to diversify services, accelerate digital innovation, and build a full ecosystem — not due to failure or exclusive focus on corporate banking. The material frames it positively as overcoming barriers."
     },
     {
@@ -1901,12 +1901,12 @@
       "type": "mcq",
       "q": "A bank's risk department routinely vetoes new product ideas because they fear regulatory fines, even when the legal team has confirmed compliance. This dynamic is a symptom of:",
       "opts": [
-        "A. Silos and fragmentation.",
-        "B. Risk aversion and regulatory caution overlapping.",
-        "C. Legacy systems limiting data access.",
-        "D. Limited talent capability."
+        "Silos and fragmentation.",
+        "Risk aversion and regulatory caution overlapping.",
+        "Legacy systems limiting data access.",
+        "Limited talent capability."
       ],
-      "ans": "B. Risk aversion and regulatory caution overlapping.",
+      "ans": "Risk aversion and regulatory caution overlapping.",
       "exp": "This is an overlap of risk aversion (fear of failure) and regulatory caution (fear of non-compliance). Both are listed barriers; the scenario shows both operating together, with the risk department vetoing despite legal clearance."
     },
     {
@@ -1915,12 +1915,12 @@
       "type": "mcq",
       "q": "A bank wants to collaborate with a fintech to offer instant SME loans. However, the fintech's technology stack is cloud-native and agile, while the bank's approval and integration processes are rigid and paper-based. The bank's difficulty in moving forward best illustrates:",
       "opts": [
-        "A. Slow partnership processes.",
-        "B. Legacy systems and risk aversion.",
-        "C. Bureaucratic processes and siloed departments.",
-        "D. Limited talent capability."
+        "Slow partnership processes.",
+        "Legacy systems and risk aversion.",
+        "Bureaucratic processes and siloed departments.",
+        "Limited talent capability."
       ],
-      "ans": "C. Bureaucratic processes and siloed departments.",
+      "ans": "Bureaucratic processes and siloed departments.",
       "exp": "The scenario touches multiple barriers: bureaucratic processes (rigid approvals) and silos (paper-based integration, lack of cross-functional collaboration). While slow partnerships and legacy systems are also present, the combination of bureaucratic processes and silos is the most direct fit."
     },
     {
@@ -2349,12 +2349,12 @@
       "type": "mcq",
       "q": "A product team at a digital bank is told to start every project by deeply understanding customer pain points through interviews and data analysis. The product lead repeatedly says, 'Start with your user, all else will follow.' This approach most directly reflects which Google innovation pillar?",
       "opts": [
-        "A. Freedom to Innovate, because teams are empowered to explore.",
-        "B. Focus on the User, because empathy and data-driven insights drive decisions.",
-        "C. Think 10x, because it requires radical thinking about user needs.",
-        "D. Fail Fast, because rapid iteration with users is essential."
+        "Freedom to Innovate, because teams are empowered to explore.",
+        "Focus on the User, because empathy and data-driven insights drive decisions.",
+        "Think 10x, because it requires radical thinking about user needs.",
+        "Fail Fast, because rapid iteration with users is essential."
       ],
-      "ans": "B. Focus on the User, because empathy and data-driven insights drive decisions.",
+      "ans": "Focus on the User, because empathy and data-driven insights drive decisions.",
       "exp": "Google's Pillar I — Focus on the User — is defined by starting every project with user empathy, using the phrase 'Start with your user, all else will follow.' The scenario describes that exact principle in a banking context."
     },
     {
@@ -2363,12 +2363,12 @@
       "type": "mcq",
       "q": "A bank's innovation lab allows employees to dedicate one day per week to self-directed projects, provided they find sponsors and demonstrate potential value. This practice is directly modelled on:",
       "opts": [
-        "A. Google's 20% Project, which enables moonshot ideas to emerge organically.",
-        "B. IDEO's brainstorming rules, which encourage wild ideas.",
-        "C. Stanford d.School's prototyping phase, which tests concepts.",
-        "D. Christensen's Innovator's Dilemma, which requires building new businesses."
+        "Google's 20% Project, which enables moonshot ideas to emerge organically.",
+        "IDEO's brainstorming rules, which encourage wild ideas.",
+        "Stanford d.School's prototyping phase, which tests concepts.",
+        "Christensen's Innovator's Dilemma, which requires building new businesses."
       ],
-      "ans": "A. Google's 20% Project, which enables moonshot ideas to emerge organically.",
+      "ans": "Google's 20% Project, which enables moonshot ideas to emerge organically.",
       "exp": "Google's 20% Project allows employees to dedicate 20% of their work week to self-identified projects with sponsors. The scenario describes the exact structure: one day per week, sponsors required."
     },
     {
@@ -2377,12 +2377,12 @@
       "type": "mcq",
       "q": "A bank is evaluating two new product proposals: one that improves mobile app load time by 10%, and another that reimagines the entire onboarding process to take 10 seconds instead of 10 minutes. According to Google's innovation principles, which proposal is more aligned with their approach?",
       "opts": [
-        "A. The 10% improvement, because it is realistic and achievable.",
-        "B. The 10x improvement, because it represents moonshot thinking that creates step-change value.",
-        "C. Both are equally valuable and should be pursued.",
-        "D. Neither, because Google only pursues external acquisitions."
+        "The 10% improvement, because it is realistic and achievable.",
+        "The 10x improvement, because it represents moonshot thinking that creates step-change value.",
+        "Both are equally valuable and should be pursued.",
+        "Neither, because Google only pursues external acquisitions."
       ],
-      "ans": "B. The 10x improvement, because it represents moonshot thinking that creates step-change value.",
+      "ans": "The 10x improvement, because it represents moonshot thinking that creates step-change value.",
       "exp": "Google's Think 10x (Moonshot Thinking) demands radical innovation that yields 10-fold improvements, not 10% incremental gains. The 10-second onboarding (from 10 minutes) is a 60x improvement — the 10% load time would be rejected under this principle."
     },
     {
@@ -2391,12 +2391,12 @@
       "type": "mcq",
       "q": "Which of the following best describes the relationship between Google's three innovation pillars?",
       "opts": [
-        "A. They are independent and can be adopted separately.",
-        "B. They form a sequential process: first understand users, then free the team, then aim for radical solutions.",
-        "C. They are a hierarchy where Think 10x is most important.",
-        "D. They are optional guidelines rather than core principles."
+        "They are independent and can be adopted separately.",
+        "They form a sequential process: first understand users, then free the team, then aim for radical solutions.",
+        "They are a hierarchy where Think 10x is most important.",
+        "They are optional guidelines rather than core principles."
       ],
-      "ans": "B. They form a sequential process: first understand users, then free the team, then aim for radical solutions.",
+      "ans": "They form a sequential process: first understand users, then free the team, then aim for radical solutions.",
       "exp": "The material presents the pillars as a logical sequence: Focus on the User (understand the problem), Freedom to Innovate (create the culture), Think 10x (aim for radical solutions). They build on each other."
     },
     {
@@ -2405,12 +2405,12 @@
       "type": "mcq",
       "q": "A bank creates a psychological safety programme that encourages employees to challenge existing processes and propose unconventional solutions without fear of retribution. This initiative primarily implements which Google pillar?",
       "opts": [
-        "A. Focus on the User, because it improves customer outcomes.",
-        "B. Think 10x, because it encourages radical ideas.",
-        "C. Freedom to Innovate, because it removes restrictions and empowers risk-taking.",
-        "D. Fail Fast, because it embraces failure as learning."
+        "Focus on the User, because it improves customer outcomes.",
+        "Think 10x, because it encourages radical ideas.",
+        "Freedom to Innovate, because it removes restrictions and empowers risk-taking.",
+        "Fail Fast, because it embraces failure as learning."
       ],
-      "ans": "C. Freedom to Innovate, because it removes restrictions and empowers risk-taking.",
+      "ans": "Freedom to Innovate, because it removes restrictions and empowers risk-taking.",
       "exp": "Freedom to Innovate is the pillar that emphasizes a non-restrictive, psychologically safe environment where employees feel empowered to challenge conventional approaches. Psychological safety is the mechanism for this pillar."
     },
     {
@@ -2419,12 +2419,12 @@
       "type": "mcq",
       "q": "Google's 'Fail Fast' philosophy is most directly tied to which pillar, and why?",
       "opts": [
-        "A. Focus on the User — rapid failure means users are never disappointed.",
-        "B. Think 10x — moonshot ideas have high failure rates, so failure must be cheap and viewed as learning.",
-        "C. Freedom to Innovate — failure is a sign of creative freedom.",
-        "D. Pet Project Model — only projects that fail are discontinued."
+        "Focus on the User — rapid failure means users are never disappointed.",
+        "Think 10x — moonshot ideas have high failure rates, so failure must be cheap and viewed as learning.",
+        "Freedom to Innovate — failure is a sign of creative freedom.",
+        "Pet Project Model — only projects that fail are discontinued."
       ],
-      "ans": "B. Think 10x — moonshot ideas have high failure rates, so failure must be cheap and viewed as learning.",
+      "ans": "Think 10x — moonshot ideas have high failure rates, so failure must be cheap and viewed as learning.",
       "exp": "The material explicitly states that because moonshot ideas have a high likelihood of failure, the organisation must provide a framework where failure is cheap, rapid, and viewed as learning — this is a mechanism for Think 10x."
     },
     {
@@ -2433,12 +2433,12 @@
       "type": "mcq",
       "q": "A fintech startup's CEO encourages her team to identify a massive user problem, grant autonomy to pursue non-obvious solutions, and ensure any solution provides a step-change improvement. This approach is best described as:",
       "opts": [
-        "A. The Stanford Design Thinking process.",
-        "B. The Google Pet Project Model in action.",
-        "C. Christensen's Build strategy.",
-        "D. IDEO's brainstorming methodology."
+        "The Stanford Design Thinking process.",
+        "The Google Pet Project Model in action.",
+        "Christensen's Build strategy.",
+        "IDEO's brainstorming methodology."
       ],
-      "ans": "B. The Google Pet Project Model in action.",
+      "ans": "The Google Pet Project Model in action.",
       "exp": "The Pet Project Model is designed to: identify a massive user problem (Pillar I), grant autonomy to pursue non-obvious solutions (Pillar II), and ensure step-change improvement (Pillar III). The CEO's approach maps directly."
     },
     {
@@ -2447,12 +2447,12 @@
       "type": "mcq",
       "q": "The success of Gmail, which started as a single engineer's project, is cited in the material to validate:",
       "opts": [
-        "A. The importance of acquisition strategy.",
-        "B. The effectiveness of the 20% Project and Pet Project Model.",
-        "C. The superiority of Google's advertising model.",
-        "D. The need for external venture funding."
+        "The importance of acquisition strategy.",
+        "The effectiveness of the 20% Project and Pet Project Model.",
+        "The superiority of Google's advertising model.",
+        "The need for external venture funding."
       ],
-      "ans": "B. The effectiveness of the 20% Project and Pet Project Model.",
+      "ans": "The effectiveness of the 20% Project and Pet Project Model.",
       "exp": "Gmail's origin story validates the principles of providing sponsorship, breathing room, and a platform to share results — the Pet Project Model. It demonstrates how 20% projects can scale into global products."
     },
     {
@@ -2461,12 +2461,12 @@
       "type": "mcq",
       "q": "Google's principle of betting on technical insights means that innovation is:",
       "opts": [
-        "A. A matter of luck and intuition.",
-        "B. A data-driven process where insights from user behaviour are used to iterate and refine.",
-        "C. Entirely dependent on executive vision.",
-        "D. Focused exclusively on technology, not users."
+        "A matter of luck and intuition.",
+        "A data-driven process where insights from user behaviour are used to iterate and refine.",
+        "Entirely dependent on executive vision.",
+        "Focused exclusively on technology, not users."
       ],
-      "ans": "B. A data-driven process where insights from user behaviour are used to iterate and refine.",
+      "ans": "A data-driven process where insights from user behaviour are used to iterate and refine.",
       "exp": "The material states that innovation is not guesswork; it is a data-driven process. Technical insights gathered from user behaviour are used to iterate and refine — this is part of Pillar I (Focus on the User)."
     },
     {
@@ -2475,12 +2475,12 @@
       "type": "mcq",
       "q": "A bank's head of innovation wants to evolve products from simply reacting to customer commands to proactively providing structured information. This aspiration is directly aligned with which Google principle?",
       "opts": [
-        "A. From Reactive to Suggestive — a goal of Freedom to Innovate pillar.",
-        "B. Think 10x — only radical improvements matter.",
-        "C. Focus on the User — empathy is the foundation.",
-        "D. Fail Fast — rapid testing enables this evolution."
+        "From Reactive to Suggestive — a goal of Freedom to Innovate pillar.",
+        "Think 10x — only radical improvements matter.",
+        "Focus on the User — empathy is the foundation.",
+        "Fail Fast — rapid testing enables this evolution."
       ],
-      "ans": "A. From Reactive to Suggestive — a goal of Freedom to Innovate pillar.",
+      "ans": "From Reactive to Suggestive — a goal of Freedom to Innovate pillar.",
       "exp": "The material explicitly states that one goal under Freedom to Innovate is to evolve products from reactive to suggestive — providing structured information proactively. The bank's aspiration matches this precise principle."
     },
     {
@@ -2489,12 +2489,12 @@
       "type": "mcq",
       "q": "Google's acquisition of Android in 2005 and its subsequent launch in 2008 is an example of:",
       "opts": [
-        "A. A successful 20% Project outcome.",
-        "B. An acquisition that accelerated a platform innovation.",
-        "C. A moonshot that failed and was abandoned.",
-        "D. A new-market disruption strategy."
+        "A successful 20% Project outcome.",
+        "An acquisition that accelerated a platform innovation.",
+        "A moonshot that failed and was abandoned.",
+        "A new-market disruption strategy."
       ],
-      "ans": "B. An acquisition that accelerated a platform innovation.",
+      "ans": "An acquisition that accelerated a platform innovation.",
       "exp": "Android is listed as one of Google's key innovation products, acquired and then launched as a platform. It represents a strategic acquisition that accelerated capability building, not a 20% project, failure, or disruption strategy."
     },
     {
@@ -2503,12 +2503,12 @@
       "type": "mcq",
       "q": "Which of the following best captures the purpose of Google's 'Focus on the User' pillar?",
       "opts": [
-        "A. To maximise advertising revenue through user targeting.",
-        "B. To design products that genuinely meet user needs, solving real-world problems.",
-        "C. To collect as much user data as possible for analysis.",
-        "D. To ensure users remain within Google's ecosystem."
+        "To maximise advertising revenue through user targeting.",
+        "To design products that genuinely meet user needs, solving real-world problems.",
+        "To collect as much user data as possible for analysis.",
+        "To ensure users remain within Google's ecosystem."
       ],
-      "ans": "B. To design products that genuinely meet user needs, solving real-world problems.",
+      "ans": "To design products that genuinely meet user needs, solving real-world problems.",
       "exp": "Focus on the User means innovating to solve the 'messy' real-world problems users encounter, not just the textbook definition. It is about genuine needs, not data collection, ad revenue, or ecosystem lock-in."
     },
     {
@@ -3217,12 +3217,12 @@
       "type": "mcq",
       "q": "A new fintech enters the market offering basic savings accounts with no minimum balance and no fees, targeting customers who have never had a bank account. This is best described as:",
       "opts": [
-        "A. Low-end disruption, because it targets lower-tier customers who cannot afford traditional banking.",
-        "B. New-market disruption, because it enables people who had no access to now participate.",
-        "C. Sustaining innovation, because it improves existing savings products.",
-        "D. Transformational innovation, because it changes the entire banking system."
+        "Low-end disruption, because it targets lower-tier customers who cannot afford traditional banking.",
+        "New-market disruption, because it enables people who had no access to now participate.",
+        "Sustaining innovation, because it improves existing savings products.",
+        "Transformational innovation, because it changes the entire banking system."
       ],
-      "ans": "B. New-market disruption, because it enables people who had no access to now participate.",
+      "ans": "New-market disruption, because it enables people who had no access to now participate.",
       "exp": "New-market disruption occurs when a new service enables people who previously had no access to financial services to now participate. The scenario describes people who have never had a bank account — they are newly participating, not just lower-tier existing customers."
     },
     {
@@ -3231,12 +3231,12 @@
       "type": "mcq",
       "q": "A digital lender offers instant loans of ₦5,000–₦50,000 to customers who are already banked but cannot access traditional credit because they lack collateral. This is best classified as:",
       "opts": [
-        "A. New-market disruption, because it reaches previously unserved people.",
-        "B. Low-end disruption, because it targets lower-tier customers who cannot afford traditional banking services.",
-        "C. Sustaining innovation, because it improves existing lending.",
-        "D. Incremental innovation, because it only adds a digital interface."
+        "New-market disruption, because it reaches previously unserved people.",
+        "Low-end disruption, because it targets lower-tier customers who cannot afford traditional banking services.",
+        "Sustaining innovation, because it improves existing lending.",
+        "Incremental innovation, because it only adds a digital interface."
       ],
-      "ans": "B. Low-end disruption, because it targets lower-tier customers who cannot afford traditional banking services.",
+      "ans": "Low-end disruption, because it targets lower-tier customers who cannot afford traditional banking services.",
       "exp": "Low-end disruption targets the lower tier of the market — customers who cannot afford traditional banking services. These customers are already banked but lack access to credit, representing the lower tier. New-market disruption would involve people entirely unbanked."
     },
     {
@@ -3245,12 +3245,12 @@
       "type": "mcq",
       "q": "A fintech's core competitive advantage is that it releases new features weekly, while its incumbent banking partner takes months to approve any change. This advantage is best categorised as:",
       "opts": [
-        "A. Focus, because fintechs specialise and obsessively optimise.",
-        "B. Speed, because fintechs move quickly and make decisions based on real-time data.",
-        "C. User experience, because fintechs are frictionless and intuitive.",
-        "D. Embedded finance, because they integrate with other platforms."
+        "Focus, because fintechs specialise and obsessively optimise.",
+        "Speed, because fintechs move quickly and make decisions based on real-time data.",
+        "User experience, because fintechs are frictionless and intuitive.",
+        "Embedded finance, because they integrate with other platforms."
       ],
-      "ans": "B. Speed, because fintechs move quickly and make decisions based on real-time data.",
+      "ans": "Speed, because fintechs move quickly and make decisions based on real-time data.",
       "exp": "The material explicitly lists Speed as a fintech advantage: fintechs move quickly, launch updates weekly, and make decisions based on real-time data. The scenario focuses on the speed of feature release compared to the bank."
     },
     {
@@ -3259,12 +3259,12 @@
       "type": "mcq",
       "q": "A ride-hailing app offers its drivers instant loans based on trip history, powered by a bank's lending infrastructure but branded under the ride-hailing app. This is an example of:",
       "opts": [
-        "A. Low-end disruption.",
-        "B. New-market disruption.",
-        "C. Embedded finance.",
-        "D. Sustaining innovation."
+        "Low-end disruption.",
+        "New-market disruption.",
+        "Embedded finance.",
+        "Sustaining innovation."
       ],
-      "ans": "C. Embedded finance.",
+      "ans": "Embedded finance.",
       "exp": "Embedded finance occurs when financial services are offered inside non-financial platforms — ride-hailing apps, marketplaces, retail chains. The scenario describes a non-bank platform (ride-hailing app) offering loans via bank infrastructure."
     },
     {
@@ -3273,12 +3273,12 @@
       "type": "mcq",
       "q": "M-PESA's initial success in Kenya is cited in the material as a classic example of:",
       "opts": [
-        "A. A telco acquiring a bank to offer financial services.",
-        "B. A telco using its agent network and airtime rails to enable money transfers without bank accounts.",
-        "C. A bank partnering with a telco to offer mobile banking.",
-        "D. A government-mandated payment system."
+        "A telco acquiring a bank to offer financial services.",
+        "A telco using its agent network and airtime rails to enable money transfers without bank accounts.",
+        "A bank partnering with a telco to offer mobile banking.",
+        "A government-mandated payment system."
       ],
-      "ans": "B. A telco using its agent network and airtime rails to enable money transfers without bank accounts.",
+      "ans": "A telco using its agent network and airtime rails to enable money transfers without bank accounts.",
       "exp": "M-PESA enabled money transfers without bank accounts using telco advantages — extensive agent networks, customer reach, and airtime rails. It is the classic example of telco disruption, not acquisition, partnership, or government mandate."
     },
     {
@@ -3287,12 +3287,12 @@
       "type": "mcq",
       "q": "Which of the following is an example of low-end disruption, as defined in the material?",
       "opts": [
-        "A. A bank offers premium wealth management services to high-net-worth individuals.",
-        "B. USSD banking enabling rural and unbanked customers to access financial services.",
-        "C. Mobile money replacing cash for low-income users who had some banking access.",
-        "D. A digital-only bank offering AI-powered investment advice."
+        "A bank offers premium wealth management services to high-net-worth individuals.",
+        "USSD banking enabling rural and unbanked customers to access financial services.",
+        "Mobile money replacing cash for low-income users who had some banking access.",
+        "A digital-only bank offering AI-powered investment advice."
       ],
-      "ans": "C. Mobile money replacing cash for low-income users who had some banking access.",
+      "ans": "Mobile money replacing cash for low-income users who had some banking access.",
       "exp": "Low-end disruption targets the lower tier of the market — customers who cannot afford traditional services. Mobile money replacing cash for low-income users fits this. USSD banking for the unbanked is new-market disruption (those without access). The other options target higher-end or sustaining improvements."
     },
     {
@@ -3301,12 +3301,12 @@
       "type": "mcq",
       "q": "A bank's internal KPIs reward risk reduction and stability, and its executives are reluctant to launch a cheaper digital product that might cannibalise their profitable premium accounts. This dynamic is a direct example of:",
       "opts": [
-        "A. The Innovator's Dilemma, where incumbents hesitate to cannibalise themselves.",
-        "B. Blue Ocean Strategy, where new markets are ignored.",
-        "C. Low-end disruption, where lower-tier customers are targeted.",
-        "D. Sustaining innovation, where existing products are improved."
+        "The Innovator's Dilemma, where incumbents hesitate to cannibalise themselves.",
+        "Blue Ocean Strategy, where new markets are ignored.",
+        "Low-end disruption, where lower-tier customers are targeted.",
+        "Sustaining innovation, where existing products are improved."
       ],
-      "ans": "A. The Innovator's Dilemma, where incumbents hesitate to cannibalise themselves.",
+      "ans": "The Innovator's Dilemma, where incumbents hesitate to cannibalise themselves.",
       "exp": "The Innovator's Dilemma describes why incumbents fail to adopt new technologies or business models even when they see disruption happening. Internal KPIs rewarding stability, reluctance to cannibalise profitable accounts, and fear of self-disruption are textbook symptoms."
     },
     {
@@ -3315,12 +3315,12 @@
       "type": "mcq",
       "q": "A bank facing fintech competition decides to build its own digital-only subsidiary. This strategic response is classified as:",
       "opts": [
-        "A. Partner, because it creates a new entity.",
-        "B. Acquire, because it builds from scratch.",
-        "C. Build, because it creates in-house digital products and new business lines.",
-        "D. Invest, because it retains ownership."
+        "Partner, because it creates a new entity.",
+        "Acquire, because it builds from scratch.",
+        "Build, because it creates in-house digital products and new business lines.",
+        "Invest, because it retains ownership."
       ],
-      "ans": "C. Build, because it creates in-house digital products and new business lines.",
+      "ans": "Build, because it creates in-house digital products and new business lines.",
       "exp": "Build involves creating in-house digital products and new business lines (often Blue Ocean Strategy). Building a digital-only subsidiary internally is a Build strategy — not partnering, acquiring, or merely investing."
     },
     {
@@ -3329,12 +3329,12 @@
       "type": "mcq",
       "q": "A bank takes a minority stake in a fintech startup to gain early access to its innovation. This response is best classified as:",
       "opts": [
-        "A. Build, because the bank is building a relationship.",
-        "B. Invest, because the bank takes a minority stake without full ownership.",
-        "C. Acquire, because the bank gains control.",
-        "D. Partner, because the bank collaborates with the fintech."
+        "Build, because the bank is building a relationship.",
+        "Invest, because the bank takes a minority stake without full ownership.",
+        "Acquire, because the bank gains control.",
+        "Partner, because the bank collaborates with the fintech."
       ],
-      "ans": "B. Invest, because the bank takes a minority stake without full ownership.",
+      "ans": "Invest, because the bank takes a minority stake without full ownership.",
       "exp": "Invest involves taking minority stakes in startups to gain early access to innovation. The scenario specifically mentions a minority stake — this distinguishes it from acquisition (full ownership), build (in-house creation), or partnership (collaborative arrangement)."
     },
     {
@@ -3343,12 +3343,12 @@
       "type": "mcq",
       "q": "A corporate bank's treasury division rejects a proposal to offer API-based FX services to SMEs because the current manual process is still profitable and serves their largest clients well. This decision reflects:",
       "opts": [
-        "A. The Build strategy, because they are building for their largest clients.",
-        "B. The Innovator's Dilemma, where profitable existing business blocks new opportunities.",
-        "C. Low-end disruption, because SMEs are lower tier.",
-        "D. Blue Ocean Strategy, because they avoid competition."
+        "The Build strategy, because they are building for their largest clients.",
+        "The Innovator's Dilemma, where profitable existing business blocks new opportunities.",
+        "Low-end disruption, because SMEs are lower tier.",
+        "Blue Ocean Strategy, because they avoid competition."
       ],
-      "ans": "B. The Innovator's Dilemma, where profitable existing business blocks new opportunities.",
+      "ans": "The Innovator's Dilemma, where profitable existing business blocks new opportunities.",
       "exp": "The Innovator's Dilemma explains that incumbents' best customers are profitable today, making it hard to justify cheaper alternatives or new markets. The bank rejecting a new service because the existing process is profitable for large clients is a classic dilemma symptom."
     },
     {
@@ -3357,12 +3357,12 @@
       "type": "mcq",
       "q": "A fintech offering no-fee international transfers disrupts a bank's lucrative remittance business. The bank initially dismisses the threat because the fintech's transaction volumes are small, but over three years the fintech captures 30% of the market. This pattern best illustrates:",
       "opts": [
-        "A. New-market disruption, because the fintech served unbanked customers.",
-        "B. The process of disruptive innovation — starting with overlooked segments and moving upmarket.",
-        "C. Sustaining innovation, because transfers already existed.",
-        "D. Low-end disruption that never moved upmarket."
+        "New-market disruption, because the fintech served unbanked customers.",
+        "The process of disruptive innovation — starting with overlooked segments and moving upmarket.",
+        "Sustaining innovation, because transfers already existed.",
+        "Low-end disruption that never moved upmarket."
       ],
-      "ans": "B. The process of disruptive innovation — starting with overlooked segments and moving upmarket.",
+      "ans": "The process of disruptive innovation — starting with overlooked segments and moving upmarket.",
       "exp": "Disruptive innovation occurs when a smaller player enters with a simpler, cheaper solution for overlooked segments, improves over time, and gradually moves upmarket to capture mainstream customers. The pattern of small volumes → growing to 30% market share illustrates this process."
     },
     {
@@ -3371,12 +3371,12 @@
       "type": "mcq",
       "q": "The material states that disruption is not about having better technology. What is it about?",
       "opts": [
-        "A. Lower costs and higher profits.",
-        "B. Offering a better value proposition to customers incumbents ignore.",
-        "C. Faster marketing and brand recognition.",
-        "D. Stronger regulatory relationships."
+        "Lower costs and higher profits.",
+        "Offering a better value proposition to customers incumbents ignore.",
+        "Faster marketing and brand recognition.",
+        "Stronger regulatory relationships."
       ],
-      "ans": "B. Offering a better value proposition to customers incumbents ignore.",
+      "ans": "Offering a better value proposition to customers incumbents ignore.",
       "exp": "The material explicitly states: 'Disruption is not about having better technology. It's about offering a better value proposition to customers whom the incumbents ignore.' This is the core definition."
     },
     {
@@ -3385,12 +3385,12 @@
       "type": "mcq",
       "q": "A traditional bank's CEO says, 'We cannot offer instant micro-loans because they seem small and unprofitable, and we don't want to lose our reputation as a premium institution.' This attitude is most consistent with:",
       "opts": [
-        "A. Blue Ocean Strategy.",
-        "B. The Innovator's Dilemma.",
-        "C. Sustaining innovation.",
-        "D. Low-end disruption."
+        "Blue Ocean Strategy.",
+        "The Innovator's Dilemma.",
+        "Sustaining innovation.",
+        "Low-end disruption."
       ],
-      "ans": "B. The Innovator's Dilemma.",
+      "ans": "The Innovator's Dilemma.",
       "exp": "The Innovator's Dilemma includes the view that new markets served by disruptors seem small, unprofitable, or risky — and that transformation feels threatening to existing business units. The CEO's dismissal of micro-loans as small/unprofitable and concern about reputation are classic dilemma symptoms."
     },
     {
@@ -3399,12 +3399,12 @@
       "type": "mcq",
       "q": "A bank that chooses to 'Ignore' disruptive threats, as per Christensen's framework, is most likely to:",
       "opts": [
-        "A. Gain first-mover advantage in new markets.",
-        "B. Successfully protect its core business indefinitely.",
-        "C. Lose market share or become irrelevant over time.",
-        "D. Attract premium customers through exclusivity."
+        "Gain first-mover advantage in new markets.",
+        "Successfully protect its core business indefinitely.",
+        "Lose market share or become irrelevant over time.",
+        "Attract premium customers through exclusivity."
       ],
-      "ans": "C. Lose market share or become irrelevant over time.",
+      "ans": "Lose market share or become irrelevant over time.",
       "exp": "The material states that ignoring early signals is a high-risk strategy that often leads to loss of market share or irrelevance. It is described as a short-term survival option, not a sustainable strategy."
     },
     {
@@ -3413,12 +3413,12 @@
       "type": "mcq",
       "q": "Safaricom's M-PESA, MTN MoMo, and Airtel SmartCash are all examples of:",
       "opts": [
-        "A. Fintechs disrupting banking through focus and UX.",
-        "B. Telcos becoming major financial service providers through distribution and agent networks.",
-        "C. Banks partnering with telcos to expand reach.",
-        "D. Government-backed payment systems."
+        "Fintechs disrupting banking through focus and UX.",
+        "Telcos becoming major financial service providers through distribution and agent networks.",
+        "Banks partnering with telcos to expand reach.",
+        "Government-backed payment systems."
       ],
-      "ans": "B. Telcos becoming major financial service providers through distribution and agent networks.",
+      "ans": "Telcos becoming major financial service providers through distribution and agent networks.",
       "exp": "These are all telco-led mobile money services. The material explicitly lists them as examples of telcos disrupting financial services using their massive distribution, customer reach, and agent networks."
     },
     {
@@ -3427,12 +3427,12 @@
       "type": "mcq",
       "q": "A new digital bank offers a premium, high-fee account with personalised wealth management and concierge services. This does NOT qualify as disruptive innovation because:",
       "opts": [
-        "A. It is incremental innovation, not disruptive.",
-        "B. Disruption targets overlooked or underserved customers, not premium segments.",
-        "C. It uses better technology than incumbents.",
-        "D. It is a sustaining improvement, not a new offering."
+        "It is incremental innovation, not disruptive.",
+        "Disruption targets overlooked or underserved customers, not premium segments.",
+        "It uses better technology than incumbents.",
+        "It is a sustaining improvement, not a new offering."
       ],
-      "ans": "B. Disruption targets overlooked or underserved customers, not premium segments.",
+      "ans": "Disruption targets overlooked or underserved customers, not premium segments.",
       "exp": "Disruptive innovation occurs when a smaller player enters with a simpler, cheaper, or more accessible product that initially serves overlooked segments. Premium, high-fee services for wealth management target the top of the market — the opposite of disruption."
     },
     {
@@ -3441,12 +3441,12 @@
       "type": "mcq",
       "q": "A bank facing disruption from fintechs decides to partner with a fintech to power its SME lending platform. The bank provides the capital and regulatory licence; the fintech provides the technology and user experience. This is an example of:",
       "opts": [
-        "A. The Build strategy, because the bank builds a new product.",
-        "B. The Partner strategy, because the bank collaborates with a fintech to enhance services.",
-        "C. The Acquire strategy, because the bank gains the fintech's capabilities.",
-        "D. The Ignore strategy, because the bank doesn't compete directly."
+        "The Build strategy, because the bank builds a new product.",
+        "The Partner strategy, because the bank collaborates with a fintech to enhance services.",
+        "The Acquire strategy, because the bank gains the fintech's capabilities.",
+        "The Ignore strategy, because the bank doesn't compete directly."
       ],
-      "ans": "B. The Partner strategy, because the bank collaborates with a fintech to enhance services.",
+      "ans": "The Partner strategy, because the bank collaborates with a fintech to enhance services.",
       "exp": "Partner involves collaborating with fintechs to enhance services — banks powering fintech credit or partnering for agent networks are given examples. The scenario describes a collaboration where both parties contribute."
     },
     {
@@ -3455,12 +3455,12 @@
       "type": "mcq",
       "q": "Which of the following is identified in the material as a key mechanism of fintech disruption?",
       "opts": [
-        "A. Competing on lower regulatory compliance.",
-        "B. Providing superior user experience that is frictionless, intuitive, and fast.",
-        "C. Offering higher interest rates than banks.",
-        "D. Partnering exclusively with other fintechs."
+        "Competing on lower regulatory compliance.",
+        "Providing superior user experience that is frictionless, intuitive, and fast.",
+        "Offering higher interest rates than banks.",
+        "Partnering exclusively with other fintechs."
       ],
-      "ans": "B. Providing superior user experience that is frictionless, intuitive, and fast.",
+      "ans": "Providing superior user experience that is frictionless, intuitive, and fast.",
       "exp": "The material explicitly lists User Experience (UX) as a key fintech advantage: fintech apps are designed to be frictionless, intuitive, and fast, removing paperwork, queues, and complexity. This is a core mechanism."
     },
     {
@@ -3469,12 +3469,12 @@
       "type": "mcq",
       "q": "A bank's digital transformation office is using a 'future-back' strategy, imagining where the industry will be in 7 years and building toward that vision today. This approach is recommended in the material for:",
       "opts": [
-        "A. Reacting to current fintech competition.",
-        "B. Designing for future threats such as AI-native competitors, super-apps, and open banking.",
-        "C. Maintaining existing market share through stability.",
-        "D. Achieving short-term profitability gains."
+        "Reacting to current fintech competition.",
+        "Designing for future threats such as AI-native competitors, super-apps, and open banking.",
+        "Maintaining existing market share through stability.",
+        "Achieving short-term profitability gains."
       ],
-      "ans": "B. Designing for future threats such as AI-native competitors, super-apps, and open banking.",
+      "ans": "Designing for future threats such as AI-native competitors, super-apps, and open banking.",
       "exp": "The material states that to stay ahead of future disruption, banks must adopt a future-back strategy, imagining where the industry will be in 5-10 years and building toward that vision. Key future threats include AI-native competitors, super-apps, and open banking."
     },
     {
@@ -3483,12 +3483,12 @@
       "type": "mcq",
       "q": "A fintech offers instant, no-collateral loans through a mobile app with a 3-minute onboarding process. This disrupts traditional banks primarily through:",
       "opts": [
-        "A. Better interest rates than banks can offer.",
-        "B. Speed and user experience, removing friction from the lending process.",
-        "C. Offering larger loans than banks provide.",
-        "D. Compliance with more favourable regulations."
+        "Better interest rates than banks can offer.",
+        "Speed and user experience, removing friction from the lending process.",
+        "Offering larger loans than banks provide.",
+        "Compliance with more favourable regulations."
       ],
-      "ans": "B. Speed and user experience, removing friction from the lending process.",
+      "ans": "Speed and user experience, removing friction from the lending process.",
       "exp": "Fintechs disrupt through speed, focus, UX, and embedded finance. The scenario describes instant loans (speed), 3-minute onboarding (UX), and no-collateral (focus) — all advantages that incumbents struggle to match."
     },
     {
@@ -3497,12 +3497,12 @@
       "type": "mcq",
       "q": "Access Corporation acquiring strategic digital assets across Africa is an example of which strategic response to disruption?",
       "opts": [
-        "A. Build, because they are building new capabilities.",
-        "B. Partner, because they collaborate with acquired entities.",
-        "C. Acquire, because they buy fintechs or technology companies.",
-        "D. Invest, because they take minority stakes."
+        "Build, because they are building new capabilities.",
+        "Partner, because they collaborate with acquired entities.",
+        "Acquire, because they buy fintechs or technology companies.",
+        "Invest, because they take minority stakes."
       ],
-      "ans": "C. Acquire, because they buy fintechs or technology companies.",
+      "ans": "Acquire, because they buy fintechs or technology companies.",
       "exp": "Acquire involves buying fintechs or technology companies to accelerate capability building. Access Corporation acquiring strategic digital assets across Africa is explicitly cited as an acquisition strategy."
     },
     {
@@ -3511,12 +3511,12 @@
       "type": "mcq",
       "q": "A bank that successfully combines build, partner, and acquire strategies to respond to disruption is described in the material as:",
       "opts": [
-        "A. A bank that has no clear strategy.",
-        "B. A winning bank that uses multiple strategies rather than choosing just one.",
-        "C. A bank that over-diversifies and risks failure.",
-        "D. A bank that ignores core competencies."
+        "A bank that has no clear strategy.",
+        "A winning bank that uses multiple strategies rather than choosing just one.",
+        "A bank that over-diversifies and risks failure.",
+        "A bank that ignores core competencies."
       ],
-      "ans": "B. A winning bank that uses multiple strategies rather than choosing just one.",
+      "ans": "A winning bank that uses multiple strategies rather than choosing just one.",
       "exp": "The material states: 'Winning banks usually combine multiple strategies rather than choosing just one.' This is the recommended approach — using build, partner, acquire, and invest in combination."
     },
     {
@@ -3525,12 +3525,12 @@
       "type": "mcq",
       "q": "A telco's advantage of real-time transaction capabilities through airtime rails means that:",
       "opts": [
-        "A. Telcos can process payments faster than banks using their existing infrastructure.",
-        "B. Telcos must partner with banks to enable transactions.",
-        "C. Airtime rails are slower than bank payment rails.",
-        "D. Telcos cannot offer savings products because of airtime limitations."
+        "Telcos can process payments faster than banks using their existing infrastructure.",
+        "Telcos must partner with banks to enable transactions.",
+        "Airtime rails are slower than bank payment rails.",
+        "Telcos cannot offer savings products because of airtime limitations."
       ],
-      "ans": "A. Telcos can process payments faster than banks using their existing infrastructure.",
+      "ans": "Telcos can process payments faster than banks using their existing infrastructure.",
       "exp": "The material lists real-time transaction capabilities through airtime rails as one of telcos' three major advantages. This allows them to process payments faster than banks using existing telco infrastructure."
     },
     {
@@ -3539,12 +3539,12 @@
       "type": "mcq",
       "q": "A bank's head of retail banking says, 'We cannot justify a digital-only product that competes with our profitable branch network. Our branches serve our best customers.' This statement most directly illustrates:",
       "opts": [
-        "A. Blue Ocean Strategy prioritising new markets.",
-        "B. The Innovator's Dilemma — cannibalisation feels uncomfortable.",
-        "C. Low-end disruption targeting the right customers.",
-        "D. The Build strategy's focus on profitability."
+        "Blue Ocean Strategy prioritising new markets.",
+        "The Innovator's Dilemma — cannibalisation feels uncomfortable.",
+        "Low-end disruption targeting the right customers.",
+        "The Build strategy's focus on profitability."
       ],
-      "ans": "B. The Innovator's Dilemma — cannibalisation feels uncomfortable.",
+      "ans": "The Innovator's Dilemma — cannibalisation feels uncomfortable.",
       "exp": "The material lists 'Cannibalising existing revenue streams feels uncomfortable' as one reason banks face the Innovator's Dilemma. The executive's reluctance to compete with the profitable branch network perfectly illustrates this."
     },
     {
@@ -3553,12 +3553,12 @@
       "type": "mcq",
       "q": "A fintech's focus strategy — specializing in one thing and obsessively optimising it — gives it a competitive advantage over banks because:",
       "opts": [
-        "A. Banks are too focused on customer service.",
-        "B. Banks diversify across many products and cannot optimise each one as deeply.",
-        "C. Fintechs have larger budgets for product development.",
-        "D. Fintechs are not regulated."
+        "Banks are too focused on customer service.",
+        "Banks diversify across many products and cannot optimise each one as deeply.",
+        "Fintechs have larger budgets for product development.",
+        "Fintechs are not regulated."
       ],
-      "ans": "B. Banks diversify across many products and cannot optimise each one as deeply.",
+      "ans": "Banks diversify across many products and cannot optimise each one as deeply.",
       "exp": "Focus is a fintech advantage — they specialize in one thing (payments, lending, savings) and obsessively optimise it. Banks are diversified across many products, which makes it harder to match the depth of optimisation."
     },
     {
@@ -4127,12 +4127,12 @@
       "type": "mcq",
       "q": "A traditional bank partners with a fintech to offer instant SME loans. The bank provides the regulatory licence and capital; the fintech provides the technology and user experience. Which benefit does the bank primarily gain from this collaboration?",
       "opts": [
-        "A. Capital injection from the fintech.",
-        "B. Cost-efficiency through partnership with a low-overhead startup.",
-        "C. Direct access to the fintech's customer base.",
-        "D. Regulatory exemptions through the fintech."
+        "Capital injection from the fintech.",
+        "Cost-efficiency through partnership with a low-overhead startup.",
+        "Direct access to the fintech's customer base.",
+        "Regulatory exemptions through the fintech."
       ],
-      "ans": "B. Cost-efficiency through partnership with a low-overhead startup.",
+      "ans": "Cost-efficiency through partnership with a low-overhead startup.",
       "exp": "One incumbent benefit is cost-efficiency through partnership with low-overhead startups. The bank gains cost advantages by leveraging the fintech's technology rather than building it in-house. The fintech provides capital/revenue, not the other way around."
     },
     {
@@ -4141,12 +4141,12 @@
       "type": "mcq",
       "q": "A fintech startup partners with a large bank to offer its payment solution to the bank's corporate clients. What is the primary benefit for the fintech in this arrangement?",
       "opts": [
-        "A. Access to the bank's proprietary resources and credibility.",
-        "B. Reduced regulatory oversight through the bank.",
-        "C. Lower operational costs than working alone.",
-        "D. Immediate profitability without any effort."
+        "Access to the bank's proprietary resources and credibility.",
+        "Reduced regulatory oversight through the bank.",
+        "Lower operational costs than working alone.",
+        "Immediate profitability without any effort."
       ],
-      "ans": "A. Access to the bank's proprietary resources and credibility.",
+      "ans": "Access to the bank's proprietary resources and credibility.",
       "exp": "Fintech benefits include accessing the bank's proprietary resources (e.g., client base, regulatory licence) and gaining credibility through the incumbent partnership. The material explicitly lists these as key benefits."
     },
     {
@@ -4155,12 +4155,12 @@
       "type": "mcq",
       "q": "A bank invests seed capital in a fintech startup but fails to see any return after two years. This risk for the incumbent is best classified as:",
       "opts": [
-        "A. Brand dilution.",
-        "B. Unrealized ROI on seed investment.",
-        "C. Strategic uncertainty.",
-        "D. Resource wastage."
+        "Brand dilution.",
+        "Unrealized ROI on seed investment.",
+        "Strategic uncertainty.",
+        "Resource wastage."
       ],
-      "ans": "B. Unrealized ROI on seed investment.",
+      "ans": "Unrealized ROI on seed investment.",
       "exp": "The material lists 'Risk of unrealized ROI with seed investment in startups' as a risk for incumbents. The scenario describes exactly that — seed investment with no return."
     },
     {
@@ -4169,12 +4169,12 @@
       "type": "mcq",
       "q": "A fintech's rapid, agile development culture clashes with a bank's formal, compliance-driven approval processes, leading to delays and frustration on both sides. This is an example of:",
       "opts": [
-        "A. Resource wastage due to mismatched scaling.",
-        "B. Organisational culture clash.",
-        "C. Brand dilution and value erosion.",
-        "D. Mismatched enthusiasm for collaboration."
+        "Resource wastage due to mismatched scaling.",
+        "Organisational culture clash.",
+        "Brand dilution and value erosion.",
+        "Mismatched enthusiasm for collaboration."
       ],
-      "ans": "B. Organisational culture clash.",
+      "ans": "Organisational culture clash.",
       "exp": "Culture clash is listed as a risk for both incumbents and disruptors. The scenario describes different operating cultures creating friction — the fintech's agility vs the bank's formal processes."
     },
     {
@@ -4183,12 +4183,12 @@
       "type": "mcq",
       "q": "Which of the following is a benefit that disruptors gain from collaborating with incumbents, according to the material?",
       "opts": [
-        "A. Lower regulatory compliance costs.",
-        "B. Joint expansion of market and business opportunities.",
-        "C. Immediate brand recognition without effort.",
-        "D. Reduced competition from other fintechs."
+        "Lower regulatory compliance costs.",
+        "Joint expansion of market and business opportunities.",
+        "Immediate brand recognition without effort.",
+        "Reduced competition from other fintechs."
       ],
-      "ans": "B. Joint expansion of market and business opportunities.",
+      "ans": "Joint expansion of market and business opportunities.",
       "exp": "The material lists 'Joint expansion of market and business opportunities' as a benefit for disruptors. It also includes access to mentorship, capital, and credibility, but joint market expansion is explicitly stated."
     },
     {
@@ -4197,12 +4197,12 @@
       "type": "mcq",
       "q": "A bank's partnership with a fintech is strained because the fintech's founders are eager to experiment and iterate rapidly, while the bank's partnership team is cautious and demands extensive due diligence. This tension best reflects:",
       "opts": [
-        "A. Mismatched enthusiasm for collaboration.",
-        "B. Unreliable technology adoption.",
-        "C. Strategic uncertainty due to unproven innovation.",
-        "D. Bureaucratic roadblocks from the bank."
+        "Mismatched enthusiasm for collaboration.",
+        "Unreliable technology adoption.",
+        "Strategic uncertainty due to unproven innovation.",
+        "Bureaucratic roadblocks from the bank."
       ],
-      "ans": "A. Mismatched enthusiasm for collaboration.",
+      "ans": "Mismatched enthusiasm for collaboration.",
       "exp": "Mismatched enthusiasm for collaboration is listed as a risk — one party is eager, the other is cautious or slow. The scenario describes founders' eagerness clashing with the bank's caution."
     },
     {
@@ -4211,12 +4211,12 @@
       "type": "mcq",
       "q": "A bank partners with a fintech to offer a new lending product. However, customers perceive the fintech's branding as more prominent than the bank's, and some loyal customers express confusion about who is actually providing the loan. This risk is best described as:",
       "opts": [
-        "A. Strategic uncertainty due to unproven innovation.",
-        "B. Brand dilution and value erosion.",
-        "C. Resource wastage due to mismatched scaling.",
-        "D. Adoption of unreliable new technologies."
+        "Strategic uncertainty due to unproven innovation.",
+        "Brand dilution and value erosion.",
+        "Resource wastage due to mismatched scaling.",
+        "Adoption of unreliable new technologies."
       ],
-      "ans": "B. Brand dilution and value erosion.",
+      "ans": "Brand dilution and value erosion.",
       "exp": "Brand dilution and value erosion is listed as a risk for incumbents — customers may confuse the bank's brand with the fintech's, or the bank's brand may be weakened by association."
     },
     {
@@ -4225,12 +4225,12 @@
       "type": "mcq",
       "q": "A fintech partnering with a bank finds that the bank's legal and compliance processes take months, while the fintech's product roadmap requires weekly updates. The fintech experiences a loss of momentum and employee morale. This illustrates which risk for the disruptor?",
       "opts": [
-        "A. Dilution of entrepreneurial spirit and low morale.",
-        "B. Mismatched enthusiasm for collaboration.",
-        "C. Funding delays from incumbents.",
-        "D. Adoption of unreliable new technologies."
+        "Dilution of entrepreneurial spirit and low morale.",
+        "Mismatched enthusiasm for collaboration.",
+        "Funding delays from incumbents.",
+        "Adoption of unreliable new technologies."
       ],
-      "ans": "A. Dilution of entrepreneurial spirit and low morale.",
+      "ans": "Dilution of entrepreneurial spirit and low morale.",
       "exp": "The material lists 'Dilution of entrepreneurial spirit and low morale' as a risk for disruptors when partnering with incumbents — bureaucratic processes can sap the fintech's energy and enthusiasm."
     },
     {
@@ -4239,12 +4239,12 @@
       "type": "mcq",
       "q": "Which of the following is NOT listed as a benefit that incumbents gain from collaborating with disruptors?",
       "opts": [
-        "A. Expand revenue streams through strategic collaboration.",
-        "B. Cost-efficiency through partnership with low-overhead startups.",
-        "C. Acquire customer insights from startups.",
-        "D. Joint expansion of market opportunities with the fintech."
+        "Expand revenue streams through strategic collaboration.",
+        "Cost-efficiency through partnership with low-overhead startups.",
+        "Acquire customer insights from startups.",
+        "Joint expansion of market opportunities with the fintech."
       ],
-      "ans": "D. Joint expansion of market opportunities with the fintech.",
+      "ans": "Joint expansion of market opportunities with the fintech.",
       "exp": "Joint expansion of market opportunities is listed as a benefit for disruptors, not incumbents. Incumbent benefits include revenue expansion, cost-efficiency, customer insights, and potential absorption of entrepreneurial zeal."
     },
     {
@@ -4253,12 +4253,12 @@
       "type": "mcq",
       "q": "A bank's partnership with a fintech fails because the fintech's technology cannot scale to the bank's transaction volumes, leading to system crashes and customer complaints. This is an example of which risk for the bank?",
       "opts": [
-        "A. Resource wastage due to mismatched scaling.",
-        "B. Organisational culture clash.",
-        "C. Strategic uncertainty due to unproven innovation.",
-        "D. Brand dilution and value erosion."
+        "Resource wastage due to mismatched scaling.",
+        "Organisational culture clash.",
+        "Strategic uncertainty due to unproven innovation.",
+        "Brand dilution and value erosion."
       ],
-      "ans": "A. Resource wastage due to mismatched scaling.",
+      "ans": "Resource wastage due to mismatched scaling.",
       "exp": "Resource wastage due to mismatched scaling is listed as a risk — the bank invests resources in a partnership, but the fintech's technology or capacity is insufficient for the bank's scale, leading to wasted effort."
     },
     {
@@ -4267,12 +4267,12 @@
       "type": "mcq",
       "q": "A fintech partners with a bank to access the bank's customer base. However, the fintech loses some of its distinctive brand identity and innovative edge because of the bank's conservative culture. This illustrates which risk for the fintech?",
       "opts": [
-        "A. Funding delays from incumbents.",
-        "B. Organisational culture clash.",
-        "C. Mismatched enthusiasm for collaboration.",
-        "D. Dilution of entrepreneurial spirit."
+        "Funding delays from incumbents.",
+        "Organisational culture clash.",
+        "Mismatched enthusiasm for collaboration.",
+        "Dilution of entrepreneurial spirit."
       ],
-      "ans": "D. Dilution of entrepreneurial spirit.",
+      "ans": "Dilution of entrepreneurial spirit.",
       "exp": "Dilution of entrepreneurial spirit and low morale is a risk for disruptors — the fintech's innovative culture may be dampened by the bank's conservative environment, leading to loss of edge."
     },
     {
@@ -4281,12 +4281,12 @@
       "type": "mcq",
       "q": "A bank collaborates with a fintech to launch a new digital wallet. The collaboration allows the bank to offer the wallet much faster and cheaper than building it alone. The bank's primary benefit is:",
       "opts": [
-        "A. Absorption of entrepreneurial zeal.",
-        "B. Accelerated technological investment driven by disruptors.",
-        "C. Cost-efficiency through low-overhead startup partnership.",
-        "D. New revenue lines through disruptor acquisition."
+        "Absorption of entrepreneurial zeal.",
+        "Accelerated technological investment driven by disruptors.",
+        "Cost-efficiency through low-overhead startup partnership.",
+        "New revenue lines through disruptor acquisition."
       ],
-      "ans": "C. Cost-efficiency through low-overhead startup partnership.",
+      "ans": "Cost-efficiency through low-overhead startup partnership.",
       "exp": "Cost-efficiency through partnership with low-overhead startups is listed as an incumbent benefit. The scenario focuses on building faster and cheaper — this aligns with cost-efficiency."
     },
     {
@@ -4295,12 +4295,12 @@
       "type": "mcq",
       "q": "Which of the following is a risk that both incumbents and disruptors face in collaboration, according to the material?",
       "opts": [
-        "A. Unrealized ROI on seed investment.",
-        "B. Organisational culture clash.",
-        "C. Funding delays from incumbents.",
-        "D. Adoption of unreliable new technologies."
+        "Unrealized ROI on seed investment.",
+        "Organisational culture clash.",
+        "Funding delays from incumbents.",
+        "Adoption of unreliable new technologies."
       ],
-      "ans": "B. Organisational culture clash.",
+      "ans": "Organisational culture clash.",
       "exp": "Organisational culture clash is listed as a risk for both incumbents and disruptors. The other options are specific to one side: unrealized ROI (incumbents), funding delays (disruptors), unreliable tech adoption (incumbents)."
     },
     {
@@ -4309,12 +4309,12 @@
       "type": "mcq",
       "q": "A bank's partnership team is excited about a fintech's potential, but the bank's compliance department repeatedly raises objections that slow the process. The fintech begins to doubt the bank's commitment. This scenario reflects:",
       "opts": [
-        "A. Brand dilution for the bank.",
-        "B. Mismatched enthusiasm for collaboration and bureaucratic roadblocks.",
-        "C. Adoption of unreliable new technologies.",
-        "D. Resource wastage due to mismatched scaling."
+        "Brand dilution for the bank.",
+        "Mismatched enthusiasm for collaboration and bureaucratic roadblocks.",
+        "Adoption of unreliable new technologies.",
+        "Resource wastage due to mismatched scaling."
       ],
-      "ans": "B. Mismatched enthusiasm for collaboration and bureaucratic roadblocks.",
+      "ans": "Mismatched enthusiasm for collaboration and bureaucratic roadblocks.",
       "exp": "The scenario combines mismatched enthusiasm (bank's partnership team excited vs compliance cautious) and bureaucratic roadblocks (compliance slowing the process) — both are listed risks."
     },
     {
@@ -4883,12 +4883,12 @@
       "type": "mcq",
       "q": "A bank uses a generative AI tool to produce 50 variations of a new mobile app interface, including different layouts, colour schemes, and navigation flows. This capability best exemplifies which role of generative AI in innovation?",
       "opts": [
-        "A. Rapid prototyping and simulation, because it creates and tests variations autonomously.",
-        "B. Enhanced creativity and design, because it generates design variations and explores creative options.",
-        "C. Personalized customer experiences, because it tailors interfaces to users.",
-        "D. Insight mining, because it analyzes design patterns from data."
+        "Rapid prototyping and simulation, because it creates and tests variations autonomously.",
+        "Enhanced creativity and design, because it generates design variations and explores creative options.",
+        "Personalized customer experiences, because it tailors interfaces to users.",
+        "Insight mining, because it analyzes design patterns from data."
       ],
-      "ans": "B. Enhanced creativity and design, because it generates design variations and explores creative options.",
+      "ans": "Enhanced creativity and design, because it generates design variations and explores creative options.",
       "exp": "Enhanced Creativity and Design is listed as a generative AI capability — producing countless design variations, allowing businesses to explore creative options in product design, graphics, or layout. The scenario focuses on generating variations, not prototyping or personalization."
     },
     {
@@ -4897,12 +4897,12 @@
       "type": "mcq",
       "q": "A product team uses generative AI to analyze millions of customer transaction records, behaviour patterns, and market trends to generate ideas for new savings products. This process primarily demonstrates:",
       "opts": [
-        "A. Accelerating product development through rapid testing.",
-        "B. Transforming product ideation by analyzing diverse data sets and generating aligned ideas.",
-        "C. Enabling continuous development through feedback loops.",
-        "D. Insight mining for regulatory compliance."
+        "Accelerating product development through rapid testing.",
+        "Transforming product ideation by analyzing diverse data sets and generating aligned ideas.",
+        "Enabling continuous development through feedback loops.",
+        "Insight mining for regulatory compliance."
       ],
-      "ans": "B. Transforming product ideation by analyzing diverse data sets and generating aligned ideas.",
+      "ans": "Transforming product ideation by analyzing diverse data sets and generating aligned ideas.",
       "exp": "Generative AI transforms product ideation by processing vast data sets (transactions, behaviour, trends) and generating product ideas aligned with observed patterns. The scenario describes exactly that — analysis of diverse data to generate ideas."
     },
     {
@@ -4911,12 +4911,12 @@
       "type": "mcq",
       "q": "A bank uses generative AI to create multiple versions of a new loan product prototype, which are then tested with customer focus groups. The AI modifies the prototypes based on feedback within hours. This capability is best described as:",
       "opts": [
-        "A. Enhanced creativity and design, because it generates many versions.",
-        "B. Rapid prototyping and simulation, because it creates and tests numerous variations autonomously.",
-        "C. Personalized customer experiences, because it adapts to feedback.",
-        "D. Insight mining, because it extracts patterns from feedback."
+        "Enhanced creativity and design, because it generates many versions.",
+        "Rapid prototyping and simulation, because it creates and tests numerous variations autonomously.",
+        "Personalized customer experiences, because it adapts to feedback.",
+        "Insight mining, because it extracts patterns from feedback."
       ],
-      "ans": "B. Rapid prototyping and simulation, because it creates and tests numerous variations autonomously.",
+      "ans": "Rapid prototyping and simulation, because it creates and tests numerous variations autonomously.",
       "exp": "Rapid Prototyping and Simulation enables quicker development of prototypes by creating and testing numerous variations autonomously, reducing time from concept to prototype. The scenario of generating versions and testing with feedback fits this."
     },
     {
@@ -4925,12 +4925,12 @@
       "type": "mcq",
       "q": "A bank's AI system continuously analyses product performance data, identifies areas of concern, and generates potential solutions. This establishes a feedback loop for ongoing product refinement. This is best described as:",
       "opts": [
-        "A. Transforming product ideation.",
-        "B. Accelerating product development.",
-        "C. Enabling continuous product development.",
-        "D. Personalized customer experiences."
+        "Transforming product ideation.",
+        "Accelerating product development.",
+        "Enabling continuous product development.",
+        "Personalized customer experiences."
       ],
-      "ans": "C. Enabling continuous product development.",
+      "ans": "Enabling continuous product development.",
       "exp": "Enabling Continuous Product Development involves analyzing performance data, identifying patterns, generating solutions, and establishing a feedback loop for ongoing refinement. The scenario directly matches this."
     },
     {
@@ -4939,12 +4939,12 @@
       "type": "mcq",
       "q": "A bank uses generative AI to analyze customer service chat logs, transaction histories, and social media conversations to identify unmet needs and pain points. This process is referred to in the material as:",
       "opts": [
-        "A. Data privacy compliance.",
-        "B. Insight mining.",
-        "C. Product ideation.",
-        "D. Customer journey mapping."
+        "Data privacy compliance.",
+        "Insight mining.",
+        "Product ideation.",
+        "Customer journey mapping."
       ],
-      "ans": "B. Insight mining.",
+      "ans": "Insight mining.",
       "exp": "Insight mining is the heart of customer-centered product development — AI turns scattered data (transaction histories, customer service chats, complaint logs, social media) into actionable understanding."
     },
     {
@@ -4953,12 +4953,12 @@
       "type": "mcq",
       "q": "A bank that uses generative AI to develop new products must ensure that customer data is anonymized and that permissions are obtained. This requirement falls under which regulatory consideration?",
       "opts": [
-        "A. Data security.",
-        "B. Compliance.",
-        "C. Data privacy.",
-        "D. Risk management."
+        "Data security.",
+        "Compliance.",
+        "Data privacy.",
+        "Risk management."
       ],
-      "ans": "C. Data privacy.",
+      "ans": "Data privacy.",
       "exp": "Data Privacy includes obtaining necessary permissions to use customer data, ensuring data anonymization where appropriate, and implementing robust measures to safeguard data from breaches."
     },
     {
@@ -4967,12 +4967,12 @@
       "type": "mcq",
       "q": "Which of the following is NOT listed as a capability of generative AI in the material?",
       "opts": [
-        "A. Producing written content, music, or artwork.",
-        "B. Generating personalized content, recommendations, or solutions.",
-        "C. Making autonomous lending decisions without human oversight.",
-        "D. Producing synthetic data for testing and development."
+        "Producing written content, music, or artwork.",
+        "Generating personalized content, recommendations, or solutions.",
+        "Making autonomous lending decisions without human oversight.",
+        "Producing synthetic data for testing and development."
       ],
-      "ans": "C. Making autonomous lending decisions without human oversight.",
+      "ans": "Making autonomous lending decisions without human oversight.",
       "exp": "Generative AI can produce text, imagery, audio, synthetic data, design variations, and personalized content. Making autonomous lending decisions without human oversight is not listed — this would be a different AI application, not generative AI's described capabilities."
     },
     {
@@ -4981,12 +4981,12 @@
       "type": "mcq",
       "q": "A product manager uses generative AI to suggest product ideas deeply rooted in actual customer behaviours and preferences. According to the material, this results in products that are more likely to:",
       "opts": [
-        "A. Be technologically advanced.",
-        "B. Resonate with the target audience.",
-        "C. Reduce regulatory compliance costs.",
-        "D. Achieve immediate profitability."
+        "Be technologically advanced.",
+        "Resonate with the target audience.",
+        "Reduce regulatory compliance costs.",
+        "Achieve immediate profitability."
       ],
-      "ans": "B. Resonate with the target audience.",
+      "ans": "Resonate with the target audience.",
       "exp": "The material states that because ideas are deeply rooted in actual customer behaviours and preferences, the resulting products are more likely to resonate with the target audience."
     },
     {
@@ -4995,12 +4995,12 @@
       "type": "mcq",
       "q": "A bank deploying generative AI for product development adopts stringent encryption, secure training methodologies, and regular security audits. This approach addresses which regulatory consideration?",
       "opts": [
-        "A. Data privacy.",
-        "B. Compliance.",
-        "C. Data security.",
-        "D. Risk management."
+        "Data privacy.",
+        "Compliance.",
+        "Data security.",
+        "Risk management."
       ],
-      "ans": "C. Data security.",
+      "ans": "Data security.",
       "exp": "Data Security involves encrypting data, employing secure AI training methodologies, and implementing regular security audits. The scenario lists exactly these measures."
     },
     {
@@ -5009,12 +5009,12 @@
       "type": "mcq",
       "q": "A bank uses generative AI to generate personalized financial advice and product recommendations for each customer based on their spending patterns. This is an example of which generative AI capability?",
       "opts": [
-        "A. Enhanced creativity and design.",
-        "B. Rapid prototyping and simulation.",
-        "C. Personalized customer experiences.",
-        "D. Insight mining."
+        "Enhanced creativity and design.",
+        "Rapid prototyping and simulation.",
+        "Personalized customer experiences.",
+        "Insight mining."
       ],
-      "ans": "C. Personalized customer experiences.",
+      "ans": "Personalized customer experiences.",
       "exp": "Generative AI can generate personalized content, recommendations, or solutions for individual users, based on their behavior and preferences. The scenario describes personalized advice and recommendations."
     },
     {
@@ -5023,12 +5023,12 @@
       "type": "mcq",
       "q": "A bank's compliance team reviews a new AI-driven product to ensure it adheres to lending practices, risk management, and capital adequacy regulations. This process is described as:",
       "opts": [
-        "A. Data privacy compliance.",
-        "B. Data security compliance.",
-        "C. General regulatory compliance.",
-        "D. Product innovation approval."
+        "Data privacy compliance.",
+        "Data security compliance.",
+        "General regulatory compliance.",
+        "Product innovation approval."
       ],
-      "ans": "C. General regulatory compliance.",
+      "ans": "General regulatory compliance.",
       "exp": "Compliance involves adhering to regulations governing banking operations — lending practices, risk management, capital adequacy, etc. The scenario lists these specific areas."
     },
     {
@@ -5037,12 +5037,12 @@
       "type": "mcq",
       "q": "A bank uses generative AI to accelerate the prototyping stage of design thinking by creating multiple product versions for evaluation. This is listed in the material as a benefit of:",
       "opts": [
-        "A. AI for insight mining.",
-        "B. AI for accelerating product development.",
-        "C. AI for continuous development.",
-        "D. AI for regulatory compliance."
+        "AI for insight mining.",
+        "AI for accelerating product development.",
+        "AI for continuous development.",
+        "AI for regulatory compliance."
       ],
-      "ans": "B. AI for accelerating product development.",
+      "ans": "AI for accelerating product development.",
       "exp": "Accelerating Product Development specifically mentions helping accelerate the prototyping stage of design thinking by creating multiple product versions for evaluation."
     },
     {
@@ -5051,12 +5051,12 @@
       "type": "mcq",
       "q": "A bank's AI team analyzes complaint logs and social media conversations to identify emerging customer frustrations with the mobile app. This activity is a form of:",
       "opts": [
-        "A. Product development acceleration.",
-        "B. Continuous development feedback.",
-        "C. Insight mining.",
-        "D. Data privacy assessment."
+        "Product development acceleration.",
+        "Continuous development feedback.",
+        "Insight mining.",
+        "Data privacy assessment."
       ],
-      "ans": "C. Insight mining.",
+      "ans": "Insight mining.",
       "exp": "Insight mining analyzes complaint logs and social media conversations as sources of data to extract actionable understanding. This is explicitly listed."
     },
     {
@@ -5065,12 +5065,12 @@
       "type": "mcq",
       "q": "A bank is developing a new AI-powered lending product and must ensure compliance with data protection laws. Which of the following actions is NOT required for data privacy compliance?",
       "opts": [
-        "A. Obtaining customer consent to use their data.",
-        "B. Anonymizing customer data where appropriate.",
-        "C. Sharing customer data with all third-party providers by default.",
-        "D. Implementing safeguards to prevent data breaches."
+        "Obtaining customer consent to use their data.",
+        "Anonymizing customer data where appropriate.",
+        "Sharing customer data with all third-party providers by default.",
+        "Implementing safeguards to prevent data breaches."
       ],
-      "ans": "C. Sharing customer data with all third-party providers by default.",
+      "ans": "Sharing customer data with all third-party providers by default.",
       "exp": "Data privacy requires obtaining permissions, anonymization, and safeguards. Sharing customer data with all third-party providers by default is not required — data should only be shared with necessary parties and with consent."
     },
     {
@@ -5849,12 +5849,12 @@
       "type": "mcq",
       "q": "A product team begins a new project by conducting in-depth interviews with customers, observing their daily routines, and mapping their emotional responses to existing banking products. This activity corresponds to which stage of the Stanford d.School Design Thinking process?",
       "opts": [
-        "A. Define, because the team is gathering information to define the problem.",
-        "B. Empathize, because the team is deeply understanding users' experiences and needs.",
-        "C. Ideate, because they are generating ideas about user needs.",
-        "D. Prototype, because they are creating a model of user behaviour."
+        "Define, because the team is gathering information to define the problem.",
+        "Empathize, because the team is deeply understanding users' experiences and needs.",
+        "Ideate, because they are generating ideas about user needs.",
+        "Prototype, because they are creating a model of user behaviour."
       ],
-      "ans": "B. Empathize, because the team is deeply understanding users' experiences and needs.",
+      "ans": "Empathize, because the team is deeply understanding users' experiences and needs.",
       "exp": "The Empathize phase focuses on understanding the user through interviews, observations, and surveys to grasp their experiences, feelings, needs, and desires. The scenario describes exactly this."
     },
     {
@@ -5863,12 +5863,12 @@
       "type": "mcq",
       "q": "After conducting user research, a team synthesizes its findings and articulates the core problem as: 'Young professionals need a way to save small amounts automatically without feeling penalized.' This statement represents which stage of the Design Thinking process?",
       "opts": [
-        "A. Ideate, because it generates a solution direction.",
-        "B. Empathize, because it reflects user feelings.",
-        "C. Define, because it articulates the problem from the user's perspective.",
-        "D. Test, because it states what will be tested."
+        "Ideate, because it generates a solution direction.",
+        "Empathize, because it reflects user feelings.",
+        "Define, because it articulates the problem from the user's perspective.",
+        "Test, because it states what will be tested."
       ],
-      "ans": "C. Define, because it articulates the problem from the user's perspective.",
+      "ans": "Define, because it articulates the problem from the user's perspective.",
       "exp": "The Define phase involves synthesizing gathered information and crafting a human-centered problem statement. The articulation of the problem from the user's perspective is the key marker."
     },
     {
@@ -5877,12 +5877,12 @@
       "type": "mcq",
       "q": "A design team generates 150 potential solutions for a customer onboarding problem without judging any idea during the session. They build on each other's ideas and encourage wild suggestions. This session is best described as:",
       "opts": [
-        "A. Empathize, because they are focusing on user needs.",
-        "B. Define, because they are narrowing the problem.",
-        "C. Prototype, because they are creating solutions.",
-        "D. Ideate, because they are brainstorming broadly without immediate judgment."
+        "Empathize, because they are focusing on user needs.",
+        "Define, because they are narrowing the problem.",
+        "Prototype, because they are creating solutions.",
+        "Ideate, because they are brainstorming broadly without immediate judgment."
       ],
-      "ans": "D. Ideate, because they are brainstorming broadly without immediate judgment.",
+      "ans": "Ideate, because they are brainstorming broadly without immediate judgment.",
       "exp": "Ideation involves engaging in open-ended brainstorming sessions to generate a wide array of potential solutions without immediate judgment. The key features are generating many ideas and suspending judgment."
     },
     {
@@ -5891,12 +5891,12 @@
       "type": "mcq",
       "q": "A team creates a low-fidelity paper prototype of a new mobile banking feature and asks users to interact with it while observing their reactions. This activity represents which stage of Design Thinking?",
       "opts": [
-        "A. Define, because it defines how users react.",
-        "B. Ideate, because it generates new ideas from feedback.",
-        "C. Prototype, because it creates a tangible, low-fidelity version for exploration.",
-        "D. Test, because it gathers user feedback on a fully functional product."
+        "Define, because it defines how users react.",
+        "Ideate, because it generates new ideas from feedback.",
+        "Prototype, because it creates a tangible, low-fidelity version for exploration.",
+        "Test, because it gathers user feedback on a fully functional product."
       ],
-      "ans": "C. Prototype, because it creates a tangible, low-fidelity version for exploration.",
+      "ans": "Prototype, because it creates a tangible, low-fidelity version for exploration.",
       "exp": "Prototyping involves creating low-fidelity prototypes or models for tangible exploration and testing. The paper prototype is a classic low-fidelity example. While testing follows, the creation itself is prototyping."
     },
     {
@@ -5905,12 +5905,12 @@
       "type": "mcq",
       "q": "A team iterates on a prototype multiple times based on user feedback, each time refining the solution before a broader rollout. This reflects which key characteristic of Design Thinking?",
       "opts": [
-        "A. User-centric, because it focuses on users.",
-        "B. Collaborative, because teams work together.",
-        "C. Iterative, because ideas are continuously refined through cycles of prototyping and testing.",
-        "D. Creative and analytical, because it combines both modes of thinking."
+        "User-centric, because it focuses on users.",
+        "Collaborative, because teams work together.",
+        "Iterative, because ideas are continuously refined through cycles of prototyping and testing.",
+        "Creative and analytical, because it combines both modes of thinking."
       ],
-      "ans": "C. Iterative, because ideas are continuously refined through cycles of prototyping and testing.",
+      "ans": "Iterative, because ideas are continuously refined through cycles of prototyping and testing.",
       "exp": "Iterative is a key characteristic of Design Thinking — ideas are continuously refined and improved through cycles of prototyping and testing. The multiple refinements based on feedback exemplify this."
     },
     {
@@ -5919,12 +5919,12 @@
       "type": "mcq",
       "q": "Which of the following best describes the relationship between Design Thinking and innovation, according to the material?",
       "opts": [
-        "A. Design Thinking is a separate process that does not relate to innovation.",
-        "B. Design Thinking is a solution-focused methodology that enables user-centered innovation.",
-        "C. Design Thinking replaces the need for innovation in organizations.",
-        "D. Design Thinking only applies to product design, not innovation."
+        "Design Thinking is a separate process that does not relate to innovation.",
+        "Design Thinking is a solution-focused methodology that enables user-centered innovation.",
+        "Design Thinking replaces the need for innovation in organizations.",
+        "Design Thinking only applies to product design, not innovation."
       ],
-      "ans": "B. Design Thinking is a solution-focused methodology that enables user-centered innovation.",
+      "ans": "Design Thinking is a solution-focused methodology that enables user-centered innovation.",
       "exp": "The material presents Design Thinking as a solution-focused, problem-solving methodology used to address complex problems and create user-centered products, services, and experiences — enabling user-centered innovation."
     },
     {
@@ -5933,12 +5933,12 @@
       "type": "mcq",
       "q": "A bank's innovation team uses Zoom for interviews, Typeform for surveys, and observational site visits to understand customer pain points. According to the Design Thinking tools table, these are tools for which stage?",
       "opts": [
-        "A. Define.",
-        "B. Ideate.",
-        "C. Prototype.",
-        "D. Empathize."
+        "Define.",
+        "Ideate.",
+        "Prototype.",
+        "Empathize."
       ],
-      "ans": "D. Empathize.",
+      "ans": "Empathize.",
       "exp": "The Empathize stage tools include Zoom (face-to-face interviews), Typeform (survey design software), and observational methods. The scenario lists these exact tools."
     },
     {
@@ -5947,12 +5947,12 @@
       "type": "mcq",
       "q": "A team uses Miro and Xtensio's MakeMyPersona template to create detailed user personas representing different customer segments. These tools are associated with which Design Thinking stage?",
       "opts": [
-        "A. Empathize, because personas represent empathy.",
-        "B. Define, because they help articulate the problem and user characteristics.",
-        "C. Ideate, because they inspire ideas.",
-        "D. Prototype, because they are visual representations."
+        "Empathize, because personas represent empathy.",
+        "Define, because they help articulate the problem and user characteristics.",
+        "Ideate, because they inspire ideas.",
+        "Prototype, because they are visual representations."
       ],
-      "ans": "B. Define, because they help articulate the problem and user characteristics.",
+      "ans": "Define, because they help articulate the problem and user characteristics.",
       "exp": "The Define stage tools include MakeMyPersona, User Forge, and Miro. Creating personas is part of defining the problem and user characteristics, synthesizing empathy data."
     },
     {
@@ -5961,12 +5961,12 @@
       "type": "mcq",
       "q": "A team uses IdeaFlip, brainstorms with Session Lab, and creates mind maps using Xmind. These are tools for which stage of the Design Thinking process?",
       "opts": [
-        "A. Empathize, because they explore user feelings.",
-        "B. Define, because they define the problem space.",
-        "C. Ideate, because they generate and organize ideas.",
-        "D. Test, because they test concepts."
+        "Empathize, because they explore user feelings.",
+        "Define, because they define the problem space.",
+        "Ideate, because they generate and organize ideas.",
+        "Test, because they test concepts."
       ],
-      "ans": "C. Ideate, because they generate and organize ideas.",
+      "ans": "Ideate, because they generate and organize ideas.",
       "exp": "Ideate stage tools include IdeaFlip, Brainstorm, Session Lab, Mind Mapping, and Xmind. These are all brainstorming and idea organization tools."
     },
     {
@@ -5975,12 +5975,12 @@
       "type": "mcq",
       "q": "A product team creates interactive digital prototypes using Storm Boards and MockingBird, then tests them with real users. Storm Boards and MockingBird are tools for which Design Thinking stages respectively?",
       "opts": [
-        "A. Prototype and Test.",
-        "B. Ideate and Prototype.",
-        "C. Empathize and Define.",
-        "D. Define and Ideate."
+        "Prototype and Test.",
+        "Ideate and Prototype.",
+        "Empathize and Define.",
+        "Define and Ideate."
       ],
-      "ans": "A. Prototype and Test.",
+      "ans": "Prototype and Test.",
       "exp": "Storm Boards and MockingBird are listed as Prototype tools. While testing follows, these tools are specifically for creating prototypes, not testing."
     },
     {
@@ -6619,12 +6619,12 @@
       "type": "mcq",
       "q": "A bank creates a visual representation showing every step a customer takes from discovering the bank's loan product to receiving the funds. This representation is best described as:",
       "opts": [
-        "A. A service blueprint, because it shows customer steps.",
-        "B. A customer journey map, because it visualises the process a customer goes through to achieve a goal.",
-        "C. A touchpoint analysis, because it focuses on interactions.",
-        "D. A process flow diagram, because it shows internal workflows."
+        "A service blueprint, because it shows customer steps.",
+        "A customer journey map, because it visualises the process a customer goes through to achieve a goal.",
+        "A touchpoint analysis, because it focuses on interactions.",
+        "A process flow diagram, because it shows internal workflows."
       ],
-      "ans": "B. A customer journey map, because it visualises the process a customer goes through to achieve a goal.",
+      "ans": "A customer journey map, because it visualises the process a customer goes through to achieve a goal.",
       "exp": "A customer journey map is a visual representation of the process a customer or prospect goes through to achieve a goal with your company. The scenario describes the customer's end-to-end experience."
     },
     {
@@ -6633,12 +6633,12 @@
       "type": "mcq",
       "q": "A bank's customer journey map shows that customers feel anxious during the loan approval waiting period. The team notes this emotion in the map and designs a proactive SMS update system. In which component of the journey map would the anxiety be recorded?",
       "opts": [
-        "A. Buying Process, because it's part of the journey stages.",
-        "B. User Actions, because it's what customers do.",
-        "C. Emotions, because it captures how customers feel.",
-        "D. Solutions, because it will be addressed later."
+        "Buying Process, because it's part of the journey stages.",
+        "User Actions, because it's what customers do.",
+        "Emotions, because it captures how customers feel.",
+        "Solutions, because it will be addressed later."
       ],
-      "ans": "C. Emotions, because it captures how customers feel.",
+      "ans": "Emotions, because it captures how customers feel.",
       "exp": "Emotions are a component of the customer journey map — customers feel worry, stress, happiness, or excitement. Adding emotions helps mitigate negative feelings through targeted messaging."
     },
     {
@@ -6647,12 +6647,12 @@
       "type": "mcq",
       "q": "A customer journey map identifies that customers often abandon the account opening process at the document upload stage. This is best described as a:",
       "opts": [
-        "A. Touchpoint, because it's an interaction point.",
-        "B. Pain point, because it causes friction and negative emotion.",
-        "C. User action, because it's what the customer does.",
-        "D. Solution, because it requires fixing."
+        "Touchpoint, because it's an interaction point.",
+        "Pain point, because it causes friction and negative emotion.",
+        "User action, because it's what the customer does.",
+        "Solution, because it requires fixing."
       ],
-      "ans": "B. Pain point, because it causes friction and negative emotion.",
+      "ans": "Pain point, because it causes friction and negative emotion.",
       "exp": "Pain points occur where there is negative emotion or friction. The abandonment at document upload is a pain point that the team would identify and address."
     },
     {
@@ -6661,12 +6661,12 @@
       "type": "mcq",
       "q": "A team maps out the entire customer journey for a new payday loan product, including the stages from awareness to decision. This overall path is referred to in the material as:",
       "opts": [
-        "A. The user actions component.",
-        "B. The buying process component.",
-        "C. The emotions component.",
-        "D. The touchpoints component."
+        "The user actions component.",
+        "The buying process component.",
+        "The emotions component.",
+        "The touchpoints component."
       ],
-      "ans": "B. The buying process component.",
+      "ans": "The buying process component.",
       "exp": "The Buying Process component details the path from awareness to consideration and final decision that a business intends for a customer to take to reach a goal."
     },
     {
@@ -6675,12 +6675,12 @@
       "type": "mcq",
       "q": "Which of the following best distinguishes a customer journey map from a service blueprint?",
       "opts": [
-        "A. A journey map shows customer actions; a service blueprint shows internal processes that support the journey.",
-        "B. A journey map shows internal processes; a service blueprint shows customer actions.",
-        "C. Both show the same information but in different formats.",
-        "D. A journey map is for digital channels; a service blueprint is for physical channels."
+        "A journey map shows customer actions; a service blueprint shows internal processes that support the journey.",
+        "A journey map shows internal processes; a service blueprint shows customer actions.",
+        "Both show the same information but in different formats.",
+        "A journey map is for digital channels; a service blueprint is for physical channels."
       ],
-      "ans": "A. A journey map shows customer actions; a service blueprint shows internal processes that support the journey.",
+      "ans": "A journey map shows customer actions; a service blueprint shows internal processes that support the journey.",
       "exp": "A customer journey map visualises the customer's experience, while a service blueprint shows what the organization must do internally to support that journey — the hidden layers of processes, systems, approvals, and teams."
     },
     {
@@ -6689,12 +6689,12 @@
       "type": "mcq",
       "q": "A bank's customer journey map for ATM withdrawals shows that customers wait an average of 4 minutes in queue. The team brainstorms ways to reduce this waiting time. In which component would the brainstormed solution be recorded?",
       "opts": [
-        "A. Emotions, because waiting causes frustration.",
-        "B. Pain points, because waiting is a source of friction.",
-        "C. Solutions, because the team proposes ways to improve the process.",
-        "D. User actions, because waiting is what customers do."
+        "Emotions, because waiting causes frustration.",
+        "Pain points, because waiting is a source of friction.",
+        "Solutions, because the team proposes ways to improve the process.",
+        "User actions, because waiting is what customers do."
       ],
-      "ans": "C. Solutions, because the team proposes ways to improve the process.",
+      "ans": "Solutions, because the team proposes ways to improve the process.",
       "exp": "Solutions are the component where the team brainstorms potential ways to improve the buying process so that customers encounter fewer pain points and have a positive experience."
     },
     {
@@ -6703,12 +6703,12 @@
       "type": "mcq",
       "q": "A customer journey map includes elements like a Google review, a mobile app error message, a conversation with a call centre agent, and an ATM queue. These are all examples of:",
       "opts": [
-        "A. Pain points, because they cause friction.",
-        "B. Touchpoints, because they are interactions where customers form opinions.",
-        "C. User actions, because customers act on them.",
-        "D. Solutions, because they require improvement."
+        "Pain points, because they cause friction.",
+        "Touchpoints, because they are interactions where customers form opinions.",
+        "User actions, because customers act on them.",
+        "Solutions, because they require improvement."
       ],
-      "ans": "B. Touchpoints, because they are interactions where customers form opinions.",
+      "ans": "Touchpoints, because they are interactions where customers form opinions.",
       "exp": "A touchpoint is any interaction with a company where a customer or prospect can form an opinion. Examples include social media posts, phone interactions, mobile app errors, ATM queues, and Google reviews."
     }
   ]

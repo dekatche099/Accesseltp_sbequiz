@@ -16,7 +16,7 @@ Everything else here exists to feed into the workbook. **[`workbooks.html`](./wo
 - **Question panel** — paste a question exactly as it appears in your textbook, a Word doc, or a webpage, and the panel keeps the original tables and formatting intact. It sits above your answer space (not mixed into it), so you can read the question while you write. Resize it by dragging the bottom edge, or hide it entirely.
 - **Answer editor** — a full rich-text space to actually work through the answer: draw and fill in tables from the Table menu, format text, and use the **Ω** button to write proper equations (fractions, Greek letters, and more) via a TeX-based editor.
 - **Autosave + cross-device sync** — everything saves as you type. Add a 4-digit PIN (top right) to sync your workbooks across devices, using the same login as the rest of the platform.
-- **Export** — pull your work out as Excel, PDF, or JSON. The PDF export includes both your questions and your answers, so it reads back as a complete study record you can print or share.
+- **Export** — pull your work out as PDF or JSON. The PDF export includes both your questions and your answers, so it reads back as a complete study record you can print or share.
 - **Day / Night mode** — 🌙 / ☀️ toggle, remembers your preference.
 
 Open a workbook any time from the **Practice Workbooks** banner at the top of either track page — it isn't gated behind picking a course first.

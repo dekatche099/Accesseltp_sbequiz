@@ -1,0 +1,3311 @@
+{
+  "meta": {
+    "id": "risk-management-retail-banking",
+    "title": "Risk Management in Retail Banking",
+    "description": "Credit, operational, cybersecurity, pricing, and stress-testing risk across 7 modules for the Access Bank Entry Level Training Program.",
+    "category": "retail",
+    "version": "1.0.2"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 60,
+        "minutes": 75
+      },
+      {
+        "count": 80,
+        "minutes": 90
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Introduction to Risk Management in Retail Banking"
+    },
+    {
+      "id": 2,
+      "title": "Understanding Credit Risk in Retail Banking"
+    },
+    {
+      "id": 3,
+      "title": "Overview of Operational Risks"
+    },
+    {
+      "id": 4,
+      "title": "Risk-Based Pricing"
+    },
+    {
+      "id": 5,
+      "title": "Cybersecurity Risks in Retail Banking"
+    },
+    {
+      "id": 6,
+      "title": "Stress Testing and Scenario Analysis in Retail Banking"
+    },
+    {
+      "id": 7,
+      "title": "Continuous Improvement in Risk Management"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "q": "Risk is most accurately understood not merely as exposure to danger, but as a combination of which two elements?",
+      "opts": [
+        "Exposure and hazard",
+        "Danger and opportunity",
+        "Probability and severity",
+        "Loss and uncertainty"
+      ],
+      "ans": "B",
+      "exp": "Risk combines danger and opportunity - the narrower dictionary view treats it as pure exposure to danger or hazard, but the fuller picture recognizes upside potential as well. 'Exposure and hazard' merely restates the narrower view. (Module 1, C.2.1)"
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "q": "Which of the following best defines Risk Management in retail banking?",
+      "opts": [
+        "A process of pricing loan facilities according to a customer's ability to repay",
+        "A process of identifying, evaluating, controlling, monitoring and reporting risks tied to facilities given to retail customers",
+        "A process of verifying a customer's identity before onboarding",
+        "A process of testing a bank's resilience under adverse economic conditions"
+      ],
+      "ans": "B",
+      "exp": "Risk management in retail banking is identifying, evaluating, controlling, monitoring and reporting risks tied to facilities extended to retail customers. The distractors describe risk-based pricing (Module 4), KYC, and stress testing (Module 6) respectively. (Module 1, C.2.1)"
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "q": "Why can the importance of risk management in banking not be overemphasized?",
+      "opts": [
+        "Risk management exists primarily to satisfy shareholder dividend expectations",
+        "Banks face risk from multiple directions simultaneously, including customer behaviour, fraud, markets and regulation",
+        "Banks operate under a single dominant risk that risk management exists solely to control",
+        "Risk management is required only for banks serving low-income and small-scale customers"
+      ],
+      "ans": "B",
+      "exp": "Banks face risk from every angle - changing customer behaviours, fraud, uncertain markets, and regulatory compliance - which is why risk management is critical to stability. (Module 1, C.2.1)"
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "q": "Which of the following is NOT one of the six key risk categories in retail banking?",
+      "opts": [
+        "Liquidity risk",
+        "Concentration risk",
+        "Fraud risk",
+        "Compliance and regulatory risk"
+      ],
+      "ans": "B",
+      "exp": "The six key risks are credit, operational, market, fraud, liquidity, and compliance/regulatory risk. Concentration risk is real, but it is a specific type of credit risk (Module 2), not one of these six standalone categories. (Module 1, C.2.2)"
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "q": "Which statement best distinguishes Market Risk from Credit Risk?",
+      "opts": [
+        "Market risk concerns a borrower's failure to repay, while credit risk concerns fluctuations in interest and exchange rates",
+        "Market risk concerns exposure to fluctuations in variables like interest and exchange rates, while credit risk concerns a borrower's failure to repay",
+        "Market risk and credit risk both refer exclusively to a borrower's inability to service a facility",
+        "Market risk concerns fraudulent activity, while credit risk concerns insufficient liquidity to pay depositors"
+      ],
+      "ans": "B",
+      "exp": "Market risk is exposure to fluctuations in interest rates, exchange rates and other market variables; credit risk is a borrower's failure to repay. The first distractor simply reverses the pairing. (Module 1, C.2.2)"
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "q": "A branch experiences a service outage after outdated software fails during a routine update, disrupting customer transactions for several hours. Which risk category does this event primarily illustrate?",
+      "opts": [
+        "Market risk",
+        "Operational risk",
+        "Compliance and regulatory risk",
+        "Liquidity risk"
+      ],
+      "ans": "B",
+      "exp": "Operational risk covers potential losses from failed internal processes, including technological breakdown. A software failure disrupting service fits this category directly. (Module 1, C.2.2)"
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "q": "A customer service employee, without verifying the caller's identity, transfers funds after a convincing phone call impersonating a colleague. Which risk category is most directly illustrated?",
+      "opts": [
+        "Market risk",
+        "Fraud risk",
+        "Concentration risk",
+        "Liquidity risk"
+      ],
+      "ans": "B",
+      "exp": "Fraud risk is simply the risk of fraudulent activity; a deceptive impersonation resulting in an unauthorized transfer is a direct instance, distinct from operational failures caused by systems or untrained staff. (Module 1, C.2.2)"
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "q": "Which of the following best defines Liquidity Risk?",
+      "opts": [
+        "The risk that a borrower fails to repay a loan when due",
+        "The risk that a bank lacks sufficient liquidity to pay depositors their funds",
+        "The risk that a bank's capital reserves fall below required regulatory levels",
+        "The risk that fluctuating exchange rates erode a bank's asset value"
+      ],
+      "ans": "B",
+      "exp": "Liquidity risk is the risk of insufficient liquidity for a bank to pay depositors' funds. The distractors describe credit risk, capital adequacy, and market risk respectively. (Module 1, C.2.2)"
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "q": "A retail bank's deposit base falls sharply after a wave of unexpected large withdrawals, leaving the bank unable to meet immediate depositor demand. Which key risk category does this outcome most directly reflect?",
+      "opts": [
+        "Credit risk",
+        "Liquidity risk",
+        "Market risk",
+        "Operational risk"
+      ],
+      "ans": "B",
+      "exp": "Inability to meet depositor demand is precisely liquidity risk, distinct from a borrower's default (credit risk) or a process failure (operational risk). (Module 1, C.2.2)"
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "q": "What is the source of Compliance and Regulatory Risk for banks?",
+      "opts": [
+        "The risk of financial loss arising from poorly trained employees or failed internal processes",
+        "The obligation to comply with the various laws and regulations governing banking operations",
+        "The risk that fluctuations in interest rates erode profitability",
+        "The risk that a portion of the loan portfolio is concentrated in one borrower or sector"
+      ],
+      "ans": "B",
+      "exp": "Compliance and regulatory risk arises from the requirement that banks comply with various laws and regulations; failure exposes the bank to sanctions and reputational damage. (Module 1, C.2.2)"
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "q": "Which of the following is a recognized reason banks are regulated?",
+      "opts": [
+        "To maximize shareholder dividend payouts",
+        "To prevent money laundering and illicit financial activities",
+        "To standardize interest rates across all licensed banks",
+        "To eliminate competition between banking institutions"
+      ],
+      "ans": "B",
+      "exp": "Preventing money laundering and illicit financial activity is one of the explicit reasons regulators oversee banks, alongside safeguarding deposits and maintaining public trust. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "q": "A bank later discovers that a customer used forged documentation to open an account subsequently used to layer illicit funds through multiple transfers. Which compliance requirement was most directly undermined?",
+      "opts": [
+        "Consumer Protection Compliance",
+        "Anti-Money Laundering (AML) compliance",
+        "Data privacy and cybersecurity protocols",
+        "Deposit insurance and protection standards"
+      ],
+      "ans": "B",
+      "exp": "AML compliance exists specifically to prevent illegitimate funds from entering the legitimate financial system; layering illicit funds through a fraudulently opened account is a direct AML failure. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "q": "Which of the following is NOT a recognized objective of Know Your Customer (KYC) procedures?",
+      "opts": [
+        "Ensuring appropriate customer identification and verification",
+        "Setting the interest rate charged on a customer's credit facility",
+        "Monitoring transactions of a suspicious nature",
+        "Preventing banks from being used for money laundering activities"
+      ],
+      "ans": "B",
+      "exp": "KYC's objectives are customer identification/verification, monitoring suspicious transactions, and preventing criminal use of the bank. Setting interest rates belongs to risk-based pricing (Module 4), not KYC. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "q": "During onboarding, a bank requests documentation confirming a new customer's identity and later flags an unusually large transfer inconsistent with the customer's stated income. Which compliance process is being applied?",
+      "opts": [
+        "Risk-based pricing review",
+        "Know Your Customer",
+        "Credit scoring process",
+        "Stress testing exercise"
+      ],
+      "ans": "B",
+      "exp": "Verifying identity at onboarding and monitoring transactions for suspicious activity are the two objectives at the core of KYC. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "q": "What is the core purpose of AML compliance requirements?",
+      "opts": [
+        "To verify a customer's identity before an account is opened",
+        "To prevent illegitimate funds from entering the legitimate financial system",
+        "To ensure adequate capital is held against unexpected losses",
+        "To detect unauthorized access to a bank's IT systems"
+      ],
+      "ans": "B",
+      "exp": "AML compliance is about preventing the influx of illegitimate funds into the legitimate financial system; identity verification specifically is KYC's role. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "q": "A bank is found to have charged customers undisclosed fees while advertising a loan product as fee-free. Given how consumer protection compliance failures typically play out, what is the most likely consequence?",
+      "opts": [
+        "An automatic increase in the bank's capital adequacy ratio",
+        "Reputational harm and loss of clients",
+        "A reduction in the bank's exposure to market risk",
+        "Improved customer retention under risk-based pricing"
+      ],
+      "ans": "B",
+      "exp": "Violations of consumer protection - including deceptive practices or unfair fees - lead to reputational harm and loss of clients. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "q": "Why is data privacy and cybersecurity treated as a compliance concern rather than only a technical one?",
+      "opts": [
+        "Cybersecurity failures automatically trigger a downgrade in a bank's credit rating",
+        "Weak safeguards can lead to data breaches that compromise the trust banks must maintain with the public",
+        "Data privacy breaches are classified exclusively as market risk events",
+        "Cybersecurity is required only for banks that operate purely digital channels"
+      ],
+      "ans": "B",
+      "exp": "Banks have a duty to maintain public trust, and weak controls can lead to breaches compromising sensitive client information - the reason data privacy sits inside the compliance function. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "q": "An employee stores customer account numbers in an unencrypted spreadsheet that is later accessed by an unauthorized party. Which regulatory concern does this incident most directly engage?",
+      "opts": [
+        "Risk-based pricing strategy",
+        "Data privacy and cybersecurity",
+        "Credit scoring accuracy",
+        "Liquidity management practices"
+      ],
+      "ans": "B",
+      "exp": "Storing sensitive customer information without adequate protection directly engages the data privacy and cybersecurity compliance concern. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "q": "Which pair correctly matches an impact of regulation with its description?",
+      "opts": [
+        "Deposit insurance and protection - regulation governing the pricing of retail loan products",
+        "Safety and soundness - regulation supporting the stability of individual banking institutions",
+        "Market transparency - regulation requiring banks to disclose their annual dividend policy",
+        "Operational resilience - regulation limiting the interest rates banks may charge borrowers"
+      ],
+      "ans": "B",
+      "exp": "Safety and soundness refers to the stability of individual institutions. The other pairings attach real regulatory terms to descriptions that do not belong to them. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "q": "Which of the following is a recognized impact of banking regulation?",
+      "opts": [
+        "Guaranteed annual profit growth",
+        "Prudent corporate governance",
+        "Elimination of credit risk across the banking sector",
+        "Fixed foreign exchange rates for all licensed banks"
+      ],
+      "ans": "B",
+      "exp": "Prudent corporate governance is one of the recognized impacts of regulation, alongside financial stability, safety and soundness, and operational resilience. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "q": "Retail banking is sometimes described as reflecting 'the law of large numbers.' What does this best imply about why it remains viable despite serving individually risky customers?",
+      "opts": [
+        "Retail banking is viable only because regulators cap the number of risky customers a bank may serve",
+        "Risks that appear high for an individual customer become manageable when spread across a very large customer base",
+        "Retail customers are, on average, less risky than corporate borrowers",
+        "The law of large numbers eliminates the need for credit risk assessment in retail lending"
+      ],
+      "ans": "B",
+      "exp": "Although individual retail customers are regarded as risky, this category forms the largest share of bank customers, and identifying and mitigating risk across that large base is what makes retail banking profitable. (Module 1, C.1)"
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "q": "A bank continues extending small facilities to salary earners and small family businesses even though each individual customer is regarded as relatively risky. Which concept best explains this continued strategy?",
+      "opts": [
+        "Regulatory guidelines require banks to prioritize small-scale customers over corporate clients",
+        "These customer segments form the largest percentage of bank customers, and profitability follows once risks are identified and mitigated",
+        "Retail customers carry no measurable credit risk once KYC is completed",
+        "Small-scale customers are exempt from standard credit risk assessment"
+      ],
+      "ans": "B",
+      "exp": "Retail customers - small enterprises, salary earners, low-income groups - form the largest percentage of bank customers, and identifying/mitigating their risk is what makes the segment profitable. (Module 1, C.1)"
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "q": "A retail bank's leadership must decide where to focus limited compliance-monitoring resources this quarter: strengthening KYC checks at onboarding, or strengthening post-transaction monitoring for suspicious activity. Both address AML-related objectives. Which consideration should most influence the decision?",
+      "opts": [
+        "Onboarding checks should always take priority because they are the first KYC objective performed chronologically",
+        "Which stage - onboarding or ongoing monitoring - currently shows the greater gap relative to the bank's actual risk exposure",
+        "Whichever option is cheaper to implement regardless of the bank's current risk exposure",
+        "Post-transaction monitoring should always take priority because it addresses risk after account opening"
+      ],
+      "ans": "B",
+      "exp": "Since both onboarding verification and ongoing suspicious-transaction monitoring serve the same underlying AML/KYC objectives, a resource-allocation decision should be driven by where the actual exposure gap is greatest, not by sequence or cost alone. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "q": "Webster's dictionary defines risk narrowly as exposure to danger or hazard. What is the practical implication of instead favoring the broader framing of risk as danger mixed with opportunity?",
+      "opts": [
+        "It implies that opportunity-related outcomes fall outside the scope of risk management entirely",
+        "It positions risk management as enabling banks to pursue profitable opportunities responsibly, not merely to avoid harm",
+        "It means regulatory bodies assess only the danger component when reviewing a bank's risk framework",
+        "It suggests that risks classified as opportunities require no monitoring or control"
+      ],
+      "ans": "B",
+      "exp": "Defining risk as a mix of danger and opportunity frames risk management as something that lets banks pursue profitable retail lending responsibly, rather than as a purely defensive function. (Module 1, C.2.1)"
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "q": "A relationship manager, under pressure to bypass a documented dual-authorization step for a large withdrawal, does so because they personally trust the customer. Which two risk exposures does this decision create together?",
+      "opts": [
+        "Market risk and liquidity risk",
+        "Fraud risk and compliance/regulatory risk",
+        "Concentration risk and settlement risk",
+        "Country risk and counterparty risk"
+      ],
+      "ans": "B",
+      "exp": "Skipping dual authorization for convenience exposes the bank to both fraud risk and compliance breaches at once - the exact combination created by bypassing a control step. (Module 1, human error discussion)"
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "q": "Which statement accurately distinguishes Fraud Risk from Operational Risk?",
+      "opts": [
+        "Fraud risk and operational risk are identical categories with no meaningful distinction",
+        "Fraud risk is the risk of fraudulent activity specifically, while operational risk covers a broader range of losses from failed processes, people, or systems",
+        "Operational risk applies only to technology failures, while fraud risk covers all other losses",
+        "Fraud risk is a subtype of market risk arising from currency fluctuation"
+      ],
+      "ans": "B",
+      "exp": "Fraud risk is narrowly the risk of fraudulent activity; operational risk is the broader category covering losses from inadequate or failed processes, systems, people or external events - fraud can occur within it but is tracked as its own key risk. (Module 1, C.2.2)"
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "q": "Two proposals compete for board approval: one strengthens KYC verification, the other strengthens encryption of stored customer records. Both are framed as addressing the bank's duty to maintain public trust. Which framing best captures their distinct contributions?",
+      "opts": [
+        "Both proposals address the exact same underlying risk and are functionally interchangeable",
+        "KYC verification protects against the bank being used for illicit financial activity, while encryption protects against compromise of sensitive customer information",
+        "KYC verification exists only to satisfy market risk requirements, unrelated to public trust",
+        "Encryption is required only for banks operating outside the retail segment"
+      ],
+      "ans": "B",
+      "exp": "KYC and data privacy/cybersecurity are distinct compliance pillars addressing different threats - illicit use of accounts versus compromise of stored data - even though both ultimately protect public trust. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "q": "A jurisdiction weakens its enforcement of banking regulations over several years. Given the recognized impacts of regulation, which outcome is the most direct and predictable consequence?",
+      "opts": [
+        "An automatic reduction in banks' credit risk exposure",
+        "Erosion of financial stability and reduced market confidence in the banking system",
+        "Increased liquidity across all retail banks in the jurisdiction",
+        "Elimination of the need for capital adequacy requirements"
+      ],
+      "ans": "B",
+      "exp": "Financial stability, market transparency and discipline, and confidence are impacts regulation is meant to secure; weakening enforcement would predictably erode them. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "q": "A bank advertises a loan as having 'no hidden charges' but applies an undisclosed processing fee at disbursement, prompting several customer complaints. Which compliance category does this scenario primarily engage?",
+      "opts": [
+        "Anti-Money Laundering compliance",
+        "Consumer Protection Compliance",
+        "Data privacy and cybersecurity",
+        "Capital adequacy standards"
+      ],
+      "ans": "B",
+      "exp": "Consumer Protection Compliance requires fair and transparent dealings with consumers; undisclosed fees are precisely the kind of deceptive practice that leads to reputational harm. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "q": "Capital adequacy standards are one of the recognized impacts of banking regulation. What are they most directly meant to ensure?",
+      "opts": [
+        "That a bank's interest rates remain identical across all loan products",
+        "That a bank holds sufficient capital reserves relative to its risk exposure",
+        "That a bank's customer base is limited to low-risk borrowers only",
+        "That a bank discloses its marketing budget to regulators annually"
+      ],
+      "ans": "B",
+      "exp": "Capital adequacy standards ensure a bank holds reserves proportionate to the risks it carries, supporting the broader goal of financial stability. (Module 1, C.2.3)"
+    },
+    {
+      "id": "Q31",
+      "module": 2,
+      "q": "Which of the following best defines Credit Risk?",
+      "opts": [
+        "The risk that a bank lacks sufficient liquidity to meet depositor withdrawals",
+        "The risk that a borrower will not pay back the amount of credit granted by the bank",
+        "The risk that fluctuating interest rates erode the value of a loan portfolio",
+        "The risk that internal processes fail to prevent fraudulent transactions"
+      ],
+      "ans": "B",
+      "exp": "Credit risk is the risk that a borrower will not repay the credit granted by the bank. The distractors restate liquidity risk, market risk, and operational/fraud risk. (Module 2, D.2.1)"
+    },
+    {
+      "id": "Q32",
+      "module": 2,
+      "q": "What does 'adverse selection' mean in the context of credit defaults?",
+      "opts": [
+        "A default resulting purely from an economic downturn unrelated to the lender's assessment process",
+        "A default resulting from the lender's poor choice of borrower due to inadequate assessment of creditworthiness",
+        "A default resulting from a borrower deliberately falsifying loan documentation",
+        "A default resulting from the lender charging an interest rate below the borrower's risk profile"
+      ],
+      "ans": "B",
+      "exp": "Adverse selection occurs when a default results from the lender's poor choice of borrower due to inadequate assessment of creditworthiness. (Module 2, D.2.1)"
+    },
+    {
+      "id": "Q33",
+      "module": 2,
+      "q": "Which statement best distinguishes Default Risk from Counterparty Risk?",
+      "opts": [
+        "Default risk concerns the other party in a transaction failing contractual obligations, while counterparty risk concerns a borrower missing scheduled repayments",
+        "Default risk concerns a borrower failing to meet repayment obligations, while counterparty risk concerns the other party in a transaction failing to fulfil contractual obligations",
+        "Default risk concerns a transaction not settling as expected in cross-border dealings, while counterparty risk concerns a bank lacking sufficient liquidity to pay depositors' funds",
+        "Default risk and counterparty risk are both driven by overexposure to a single borrower, industry, or region, making them subtypes of concentration risk"
+      ],
+      "ans": "B",
+      "exp": "Default risk is the possibility a borrower fails to meet repayment obligations; counterparty risk specifically concerns the other party in a transaction failing to fulfil contractual obligations, particularly in OTC dealings. The other options each misapply a different real risk definition. (Module 2, D.2.1)"
+    },
+    {
+      "id": "Q34",
+      "module": 2,
+      "q": "Which of the following is NOT a recognized type of credit risk?",
+      "opts": [
+        "Concentration risk",
+        "Liquidity risk",
+        "Country (or Sovereign) risk",
+        "Settlement risk"
+      ],
+      "ans": "B",
+      "exp": "Liquidity risk is one of the six standalone key risk categories, not one of the five credit risk subtypes: default, counterparty, concentration, country/sovereign, and settlement. (Module 2, D.2.1)"
+    },
+    {
+      "id": "Q35",
+      "module": 2,
+      "q": "What circumstance does Concentration Risk specifically describe?",
+      "opts": [
+        "A bank's inability to settle a cross-border transaction as expected",
+        "A significant portion of a bank's credit portfolio being concentrated in a single borrower, industry, or region",
+        "A borrower's failure to meet scheduled repayment obligations",
+        "A change in a foreign government's regulatory regime affecting a specific borrower"
+      ],
+      "ans": "B",
+      "exp": "Concentration risk arises when a significant portion of a bank's credit portfolio is concentrated in a single borrower, industry, or geographic region, increasing vulnerability if that segment struggles. (Module 2, D.2.1)"
+    },
+    {
+      "id": "Q36",
+      "module": 2,
+      "q": "A retail bank finds that 40% of its loan portfolio is extended to businesses within a single regional agricultural sector, which is then hit by a prolonged drought. Which type of credit risk does this exposure primarily illustrate?",
+      "opts": [
+        "Settlement risk",
+        "Concentration risk",
+        "Counterparty risk",
+        "Country risk"
+      ],
+      "ans": "B",
+      "exp": "A large share of the portfolio tied to one sector and region is the textbook description of concentration risk - vulnerability increases when that segment experiences difficulties. (Module 2, D.2.1)"
+    },
+    {
+      "id": "Q37",
+      "module": 2,
+      "q": "A bank extends a facility to a borrower operating in a country that subsequently experiences sudden political instability, disrupting the borrower's ability to service the loan through normal channels. Which type of credit risk is most directly illustrated?",
+      "opts": [
+        "Default risk",
+        "Sovereign risk",
+        "Concentration risk",
+        "Settlement risk"
+      ],
+      "ans": "B",
+      "exp": "Country (or sovereign) risk covers potential losses from political instability, economic downturns, or regulatory change in a borrower's country of operation. (Module 2, D.2.1)"
+    },
+    {
+      "id": "Q38",
+      "module": 2,
+      "q": "In which type of transaction is Settlement Risk especially relevant?",
+      "opts": [
+        "Long-term mortgage lending to individual retail customers",
+        "Cross-border or foreign exchange transactions",
+        "Domestic salary-backed personal loans",
+        "Credit-scored small business lending"
+      ],
+      "ans": "B",
+      "exp": "Settlement risk is the risk that a transaction might not be settled as expected, especially in cross-border or foreign exchange dealings. (Module 2, D.2.1)"
+    },
+    {
+      "id": "Q39",
+      "module": 2,
+      "q": "A bank's derivatives desk enters an over-the-counter agreement with another financial institution. Which type of credit risk is most specifically relevant to this arrangement, beyond ordinary default risk?",
+      "opts": [
+        "Concentration risk",
+        "Counterparty risk",
+        "Country risk",
+        "Settlement risk"
+      ],
+      "ans": "B",
+      "exp": "Counterparty risk is particularly relevant to over-the-counter and derivative transactions, where the other party may fail to fulfil contractual obligations. (Module 2, D.2.1)"
+    },
+    {
+      "id": "Q40",
+      "module": 2,
+      "q": "Which of the following is part of Credit Analysis when identifying credit risk?",
+      "opts": [
+        "Verification of a customer's identity documents at account opening",
+        "Sensitivity analysis in which the borrower's cash flow is subjected to various stress testing",
+        "Calculation of the bank's capital adequacy ratio",
+        "Assessment of the bank's exposure to interest rate fluctuations"
+      ],
+      "ans": "B",
+      "exp": "Sensitivity analysis is part of credit analysis, alongside cash flow analysis, credit history review, and credit scoring. (Module 2, D.2.2)"
+    },
+    {
+      "id": "Q41",
+      "module": 2,
+      "q": "A credit officer reviewing a small business loan application examines the business's recent bank statements and projects whether monthly cash inflows will cover the proposed loan's principal and interest. Which credit risk identification step is being performed?",
+      "opts": [
+        "Credit scoring",
+        "Cash flow analysis",
+        "Sensitivity analysis",
+        "Review of risks and mitigants"
+      ],
+      "ans": "B",
+      "exp": "Cash flow analysis determines whether cash will be sufficient to pay loan principal and interest - exactly what the officer is projecting. (Module 2, D.2.2)"
+    },
+    {
+      "id": "Q42",
+      "module": 2,
+      "q": "How reliable is credit history as a factor in identifying credit risk?",
+      "opts": [
+        "It is the single most reliable indicator available to a credit officer",
+        "It shows how well a borrower repaid past loans, though this indicator might not be entirely reliable",
+        "It is used exclusively to calculate a borrower's Exposure at Default",
+        "It replaces the need for cash flow analysis in every case"
+      ],
+      "ans": "B",
+      "exp": "Credit history shows how well a borrower repaid past loans, though this indicator might not be entirely reliable - a caution against overreliance on it in isolation. (Module 2, D.2.2)"
+    },
+    {
+      "id": "Q43",
+      "module": 2,
+      "q": "Which of the following is one of the three most widely used measures associated with credit risk?",
+      "opts": [
+        "Obligor Risk Rating",
+        "Loss Given Default",
+        "Facility Risk Rating",
+        "Credit Scoring"
+      ],
+      "ans": "B",
+      "exp": "The three most widely used credit risk measures are Probability of Default, Loss Given Default, and Exposure at Default. Obligor Risk Rating, Facility Risk Rating and Credit Scoring are real terms but belong to the scoring-model discussion, not this trio. (Module 2, D.2.2)"
+    },
+    {
+      "id": "Q44",
+      "module": 2,
+      "q": "What does Probability of Default represent?",
+      "opts": [
+        "The amount of money a lender will lose if a borrower defaults, based on available collateral",
+        "The likelihood that a borrower will lack the financial capability to meet scheduled repayments, typically combining debt-to-income ratio and credit score for retail customers",
+        "The total loss exposure a lender faces at any point in time based on outstanding balances",
+        "The numerical score assigned to a borrower reflecting income, assets and credit history"
+      ],
+      "ans": "B",
+      "exp": "Probability of Default is the likelihood a borrower will lack the financial capability to meet scheduled repayments, typically combining debt-to-income ratio and credit score for retail customers. The distractors describe LGD, EAD, and the numerical scoring model. (Module 2, D.2.2)"
+    },
+    {
+      "id": "Q45",
+      "module": 2,
+      "q": "How do banks typically calculate Loss Given Default?",
+      "opts": [
+        "Based exclusively on a single borrower's most recent credit score",
+        "Based on a portfolio of loans rather than a single borrower",
+        "Based on the borrower's projected cash flow over the loan's remaining term",
+        "Based on the bank's total risk-weighted assets across all risk categories"
+      ],
+      "ans": "B",
+      "exp": "Banks typically calculate LGD based on a portfolio of loans rather than a single borrower, even though collateral and legal recovery ability influence it. (Module 2, D.2.2)"
+    },
+    {
+      "id": "Q46",
+      "module": 2,
+      "q": "A bank wants to estimate the total loss exposure it faces on a revolving credit line at a given point in time, based on the idea that risk depends on the balance that can accrue before default. Which measure is being applied?",
+      "opts": [
+        "Probability of Default",
+        "Exposure at Default",
+        "Loss Given Default",
+        "Obligor Risk Rating"
+      ],
+      "ans": "B",
+      "exp": "Exposure at Default is an assessment of total loss exposure based on the idea that risk depends on outstanding balances that can accrue before default. (Module 2, D.2.2)"
+    },
+    {
+      "id": "Q47",
+      "module": 2,
+      "q": "Two measures both influence how much capital a bank must hold against a defaulting borrower, but one estimates the chance of default occurring while the other estimates the monetary loss once default has occurred. Which pairing correctly matches measure to role?",
+      "opts": [
+        "Loss Given Default estimates the chance of default; Probability of Default estimates the resulting monetary loss",
+        "Probability of Default estimates the chance of default; Loss Given Default estimates the resulting monetary loss",
+        "Probability of Default estimates the chance of default; Exposure at Default estimates the resulting monetary loss",
+        "Loss Given Default estimates the chance of default; Credit Scoring estimates the resulting monetary loss"
+      ],
+      "ans": "B",
+      "exp": "PD measures the likelihood of default occurring; LGD measures the money lost once it has. The first distractor simply reverses the pairing. (Module 2, D.2.2)"
+    },
+    {
+      "id": "Q48",
+      "module": 2,
+      "q": "What characterizes the numerical-score type of credit scoring model?",
+      "opts": [
+        "It assigns a letter grade reflecting expected probability of default and expected recovery rate",
+        "It assigns a score based on characteristics such as income, assets and credit history, with a higher score indicating lower credit risk",
+        "It focuses primarily on the qualitative and quantitative aspects of the borrower independent of collateral",
+        "It focuses primarily on how liquid the pledged collateral is"
+      ],
+      "ans": "B",
+      "exp": "The numerical-score model assigns a score from characteristics like income, assets and credit history - the higher the score, the lower the credit risk. The distractors describe the credit rating model, ORR, and FRR. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q49",
+      "module": 2,
+      "q": "What does a Credit Rating Model assign to each borrower?",
+      "opts": [
+        "A purely numerical score derived only from income and assets",
+        "A letter grade or rating reflecting expected probability of default and expected recovery rate",
+        "A liquidity classification based solely on pledged collateral",
+        "A fixed interest rate applicable regardless of creditworthiness"
+      ],
+      "ans": "B",
+      "exp": "A Credit Rating Model assigns a letter grade or rating reflecting the borrower's expected probability of default and expected recovery rate in case of default. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q50",
+      "module": 2,
+      "q": "A bank's internal credit system evaluates a corporate borrower's financial statements and management quality under one component, and separately evaluates how easily the pledged real estate collateral could be liquidated under another. Which two components of the internal credit scoring system are being applied, respectively?",
+      "opts": [
+        "Facility Risk Rating, then Obligor Risk Rating",
+        "Obligor Risk Rating, then Facility Risk Rating",
+        "Probability of Default, then Exposure at Default",
+        "Credit Rating Model, then Numerical Scoring Model"
+      ],
+      "ans": "B",
+      "exp": "Obligor Risk Rating focuses on the qualitative and quantitative aspects of the borrower; Facility Risk Rating focuses on collateral liquidity - matching the order in the scenario. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q51",
+      "module": 2,
+      "q": "Which of the following is a recognized strategy for managing credit risk?",
+      "opts": [
+        "Elimination of all lending to small and medium enterprises",
+        "Diversification of the credit portfolio",
+        "Setting a single uniform interest rate for every borrower regardless of risk",
+        "Removing collateral requirements to simplify loan approval"
+      ],
+      "ans": "B",
+      "exp": "Diversification of the credit portfolio, spreading risk across borrowers, industries and geographies, is one of the eight recognized strategies. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q52",
+      "module": 2,
+      "q": "How does collateralization help mitigate credit risk?",
+      "opts": [
+        "It eliminates the need for ongoing credit monitoring after loan disbursement",
+        "It provides an additional source of repayment, such as real estate or inventory, in case of non-payment",
+        "It guarantees the borrower's probability of default falls to zero",
+        "It replaces the need for a formal credit analysis before approval"
+      ],
+      "ans": "B",
+      "exp": "Collateralization requires borrowers to pledge assets like real estate or inventory as an additional source of repayment in case of non-payment - it does not remove the need for other strategies. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q53",
+      "module": 2,
+      "q": "What protection does obtaining credit insurance provide?",
+      "opts": [
+        "Protection from losses arising from foreign exchange rate fluctuations",
+        "Protection from financial losses resulting from non-payment by customers or counterparties",
+        "Protection from regulatory penalties for AML non-compliance",
+        "Protection from operational losses caused by system downtime"
+      ],
+      "ans": "B",
+      "exp": "Credit insurance protects against financial losses from non-payment by customers or counterparties, distinct from market, compliance, or operational protections. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q54",
+      "module": 2,
+      "q": "A bank regularly reviews existing borrowers' financial statements after disbursement to catch early signs of deteriorating creditworthiness before default occurs. Which strategy for managing credit risk is being applied?",
+      "opts": [
+        "Comprehensive credit analysis",
+        "Regular credit monitoring",
+        "Diversification of credit portfolio",
+        "Stress testing"
+      ],
+      "ans": "B",
+      "exp": "Regular credit monitoring means monitoring borrowers' creditworthiness on an ongoing basis to identify changes in financial position, distinct from the one-time pre-approval credit analysis. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q55",
+      "module": 2,
+      "q": "Rather than concentrating lending in a single industry, a bank spreads its loan portfolio across multiple sectors, regions and borrower types. Which strategy is illustrated?",
+      "opts": [
+        "Comprehensive credit analysis",
+        "Diversification",
+        "Collateralization",
+        "Credit insurance"
+      ],
+      "ans": "B",
+      "exp": "Diversification means spreading credit risk across a diverse range of borrowers, industries and geographies to minimize concentration risk. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "q": "A bank's credit portfolio performs well under normal conditions, but leadership wants to understand how a sharp rise in unemployment would affect default rates before it happens. Which credit risk management strategy specifically addresses this forward-looking need?",
+      "opts": [
+        "Regular credit monitoring",
+        "Stress testing",
+        "Comprehensive credit analysis",
+        "Credit scoring models"
+      ],
+      "ans": "B",
+      "exp": "Stress testing assesses the impact of adverse economic conditions on the credit portfolio to identify vulnerabilities before they materialize - the forward-looking function described here. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "q": "What is a bank's first line of defense against credit risk?",
+      "opts": [
+        "Collateralization of the loan facility with pledged assets",
+        "Comprehensive credit analysis of the borrower's financial standing",
+        "Diversification of the credit portfolio across sectors",
+        "Purchase of credit insurance against borrower default"
+      ],
+      "ans": "B",
+      "exp": "Comprehensive credit analysis of the borrower's credit history and financial statements is a bank's first line of defense against credit risk. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "q": "A credit committee is reviewing a borrower with strong recent cash flow but a spotty repayment history several years ago, and must decide whether collateralization or enhanced regular monitoring is the more appropriate primary mitigant. Which consideration should most influence the choice?",
+      "opts": [
+        "Whichever strategy is conventionally applied first should always be used regardless of the borrower's specific circumstances",
+        "Whether the concern is best addressed by securing an alternative repayment source or by tracking the borrower's creditworthiness as it evolves going forward",
+        "Collateralization should always be chosen because it is the most commonly cited strategy",
+        "Regular monitoring should be skipped entirely once collateral has been secured"
+      ],
+      "ans": "B",
+      "exp": "Collateralization and regular monitoring serve different functions, securing an alternative repayment source versus tracking evolving creditworthiness, so the choice should follow which function actually addresses the committee's concern, not a fixed ordering. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "q": "A borrower's loan application is approved after a credit officer verifies income, checks credit history, and assigns a numerical score reflecting the borrower's overall risk profile, all before the facility is disbursed. Which two identification tools were combined in this process?",
+      "opts": [
+        "Cash flow analysis and sensitivity analysis",
+        "Credit history review and credit scoring",
+        "Obligor Risk Rating and Facility Risk Rating",
+        "Loss Given Default and Exposure at Default"
+      ],
+      "ans": "B",
+      "exp": "Checking past repayment behaviour and assigning a numerical risk score are, respectively, the credit history and credit scoring steps under identifying credit risk. (Module 2, D.2.2)"
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "q": "A bank's credit portfolio shows rising defaults concentrated among borrowers who were approved primarily on the strength of past repayment history, with limited verification of current cash flow. Which weakness in the credit risk identification process does this most likely reflect?",
+      "opts": [
+        "Excessive use of stress testing during the approval process",
+        "Overreliance on credit history despite its recognized unreliability as a standalone indicator",
+        "Overuse of collateralization as a primary mitigant",
+        "Excessive diversification across too many borrower segments"
+      ],
+      "ans": "B",
+      "exp": "Credit history is explicitly flagged as potentially unreliable on its own; leaning on it while skipping cash flow analysis is exactly the gap that caution warns against. (Module 2, D.2.2)"
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "q": "Besides assessing default probability, what other purposes can credit scoring models serve?",
+      "opts": [
+        "Determining a bank's liquidity coverage ratio and deposit insurance premium",
+        "Pricing loans, setting credit limits, managing portfolios and calculating capital requirements",
+        "Setting foreign exchange rates and hedging market risk exposure",
+        "Assigning employee performance ratings within the credit department"
+      ],
+      "ans": "B",
+      "exp": "Credit scoring models can be used for pricing loans, setting credit limits, managing portfolios, and calculating capital requirements, not merely for default assessment. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "q": "A relationship manager under pressure to meet a monthly lending target approves a facility without thoroughly verifying the borrower's creditworthiness or ensuring compliance with lending regulations. What does this best illustrate?",
+      "opts": [
+        "Settlement risk arising from a cross-border transaction failure",
+        "Adverse selection arising from inadequate assessment of the borrower's creditworthiness",
+        "Concentration risk arising from sector-specific exposure",
+        "Counterparty risk arising from an over-the-counter agreement"
+      ],
+      "ans": "B",
+      "exp": "Skipping proper creditworthiness verification under pressure is precisely adverse selection: a poor borrower choice resulting from inadequate assessment. (Module 2, D.2.1)"
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "q": "Which statement correctly distinguishes Country Risk from Concentration Risk?",
+      "opts": [
+        "Both risks refer to identical political and regulatory exposures within a single borrower's home country, and can be used interchangeably",
+        "Country risk concerns losses from political instability or regulatory change in a borrower's country, while concentration risk concerns overexposure to a single borrower, industry or region",
+        "Country risk concerns overexposure to a single borrower or industry, while concentration risk concerns a transaction failing to settle across borders",
+        "Country risk applies only to retail lending customers, while concentration risk applies only to large corporate borrowers"
+      ],
+      "ans": "B",
+      "exp": "Country risk is specifically tied to political and regulatory conditions in a borrower's country; concentration risk is the broader exposure to any single borrower, sector, or region. (Module 2, D.2.1)"
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "q": "Which factor is considered when measuring credit risk generally, alongside the borrower's financial health and the size of the credit extension?",
+      "opts": [
+        "The bank's marketing budget for the period",
+        "Historical trends in default rates",
+        "The number of branches the bank operates",
+        "The borrower's preferred communication channel"
+      ],
+      "ans": "B",
+      "exp": "Historical trends in default rates are considered alongside financial health, severity of consequences, and macroeconomic factors when measuring credit risk. (Module 2, D.2.2)"
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "q": "A bank tightens its lending criteria for a specific industry after stress testing reveals that sector's borrowers would experience the highest default rates under a modelled recession. Which two credit risk management strategies does this decision draw on together?",
+      "opts": [
+        "Collateralization and credit insurance",
+        "Stress testing and strengthened credit policy through tighter lending criteria",
+        "Diversification and regular credit monitoring",
+        "Comprehensive credit analysis alone, without any other strategy"
+      ],
+      "ans": "B",
+      "exp": "The scenario combines stress testing, identifying the vulnerable sector, with the resulting tightening of lending criteria - two distinct but complementary strategies. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "q": "A bank requires a borrower to pledge inventory as security before approving a working-capital facility, ensuring an alternative source of repayment exists if the borrower defaults. Which strategy is illustrated?",
+      "opts": [
+        "Credit insurance",
+        "Collateralization",
+        "Diversification of credit portfolio",
+        "Regular credit monitoring"
+      ],
+      "ans": "B",
+      "exp": "Requiring pledged inventory as an alternative repayment source is the definition of collateralization. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "q": "A bank with limited underwriting capacity this quarter must choose between expanding comprehensive credit analysis on new applications or expanding regular monitoring of the existing portfolio. Which framing best reflects the distinction between these two strategies?",
+      "opts": [
+        "Both strategies address exactly the same stage of the credit lifecycle and are interchangeable",
+        "Comprehensive credit analysis addresses risk before disbursement, while regular monitoring addresses risk that emerges after disbursement",
+        "Comprehensive credit analysis is only relevant after a loan has already defaulted",
+        "Regular monitoring replaces the need for credit analysis at the approval stage"
+      ],
+      "ans": "B",
+      "exp": "Comprehensive credit analysis is a bank's first line of defense before a facility is granted; regular monitoring is ongoing oversight of creditworthiness after disbursement. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "q": "A bank's Facility Risk Rating for a borrower is strong because the pledged collateral is highly liquid, but the Obligor Risk Rating is weak due to poor underlying financial performance. What does this combination most directly suggest about the credit risk involved?",
+      "opts": [
+        "The credit facility carries no meaningful credit risk because collateral fully offsets any weakness",
+        "The borrower's own creditworthiness is weak, but the loss the bank would suffer in a default may be limited by the quality of the collateral",
+        "The borrower's creditworthiness is strong, and the collateral rating is irrelevant to the bank's exposure",
+        "Both ratings measure the same underlying risk and cannot diverge in this way"
+      ],
+      "ans": "B",
+      "exp": "ORR reflects the borrower's own qualitative and quantitative strength; FRR reflects collateral liquidity - the two can diverge, and a strong FRR limits loss severity without erasing the underlying weakness the ORR reveals. (Module 2, D.2.3)"
+    },
+    {
+      "id": "Q69",
+      "module": 3,
+      "q": "Which of the following best defines operational risk?",
+      "opts": [
+        "Losses resulting exclusively from a borrower's failure to repay a credit facility",
+        "Losses resulting from inadequate or failed processes, systems, people, or external events",
+        "Losses resulting from fluctuations in interest rates, exchange rates, or other market variables",
+        "Losses resulting solely from a bank's inability to meet depositor withdrawal demands"
+      ],
+      "ans": "B",
+      "exp": "Operational risk is losses from inadequate or failed processes, systems, people, or external events, distinct from credit, market, and liquidity risk, which the distractors describe. (Module 3, E.2.1)"
+    },
+    {
+      "id": "Q70",
+      "module": 3,
+      "q": "Which of the following is a source of operational risk under 'Internal Processes'?",
+      "opts": [
+        "Breakdown of IT equipment resulting in service downtime",
+        "Lack of automation within transactions, creating workload bottlenecks and concentrated inefficiencies",
+        "Errors resulting from lack of familiarity or experience",
+        "Cyber breaches like phishing attacks aimed at sensitive customer information"
+      ],
+      "ans": "B",
+      "exp": "Lack of automation causing bottlenecks and inefficiencies falls under Internal Processes; the distractors belong to System Failures, Human Errors, and External Events respectively. (Module 3, E.2.1)"
+    },
+    {
+      "id": "Q71",
+      "module": 3,
+      "q": "A back-office team fails to apply a required secondary review step on large transactions because no control exists to flag transactions requiring it, resulting in several unreviewed errors going undetected. Which category of operational risk does this best illustrate?",
+      "opts": [
+        "Human errors - negligence or behavioural issues",
+        "Internal processes - mistakes of omission from a lack of adequate controls",
+        "System failures - breakdown of IT equipment",
+        "External events - changes in regulation or geo risk"
+      ],
+      "ans": "B",
+      "exp": "Mistakes of omission due to a lack of adequate controls, resulting in failures and errors, fall under Internal Processes. (Module 3, E.2.1)"
+    },
+    {
+      "id": "Q72",
+      "module": 3,
+      "q": "Under which category of operational risk does 'breach of internal policies and regulatory provisions' fall?",
+      "opts": [
+        "Human Errors",
+        "Internal Processes",
+        "System Failures",
+        "External Events"
+      ],
+      "ans": "B",
+      "exp": "Breach of internal policies and regulatory provisions is a source of operational risk under Internal Processes, alongside automation gaps and control-related mistakes of omission. (Module 3, E.2.1)"
+    },
+    {
+      "id": "Q73",
+      "module": 3,
+      "q": "A supervisor gives an ambiguous verbal instruction to a junior staff member, who processes a transaction incorrectly as a result. Which specific human-error source does this best illustrate?",
+      "opts": [
+        "Errors resulting from lack of familiarity or experience",
+        "Lack of communication resulting in incorrect instructions",
+        "Negligence, fraud, or other behavioural issues",
+        "Breach of internal policies and regulatory provisions"
+      ],
+      "ans": "B",
+      "exp": "Lack of communication resulting in incorrect instructions is a distinct source of human-error risk, separate from inexperience or negligence. (Module 3, E.2.1)"
+    },
+    {
+      "id": "Q74",
+      "module": 3,
+      "q": "Which of the following is a source of operational risk under 'System Failures'?",
+      "opts": [
+        "Lack of automation within transactions",
+        "Breakdown of IT equipment resulting in service downtime",
+        "Negligence, fraud, or other behavioural issues",
+        "Disasters like floods, fire, or earthquakes"
+      ],
+      "ans": "B",
+      "exp": "IT equipment breakdown causing service downtime falls under System Failures; the distractors belong to Internal Processes, Human Errors, and External Events respectively. (Module 3, E.2.1)"
+    },
+    {
+      "id": "Q75",
+      "module": 3,
+      "q": "What risk does the use of obsolete equipment pose to a bank's operations?",
+      "opts": [
+        "It automatically voids the bank's regulatory license",
+        "It is incapable of meeting current operational requirements",
+        "It eliminates the need for cybersecurity investment",
+        "It has no measurable effect on service delivery"
+      ],
+      "ans": "B",
+      "exp": "Obsolete equipment is incapable of meeting current requirements, contributing to system-failure risk. (Module 3, E.2.1)"
+    },
+    {
+      "id": "Q76",
+      "module": 3,
+      "q": "A branch continues using workstations with unpatched software long after security updates became available, and an intruder later exploits the gap to access customer records. Which source of system-failure risk does this illustrate?",
+      "opts": [
+        "Breakdown of IT equipment resulting in service downtime",
+        "Lack of appropriate software or hardware security leading to system breaches",
+        "Use of obsolete equipment incapable of meeting current requirements",
+        "Breach of internal policies and regulatory provisions"
+      ],
+      "ans": "B",
+      "exp": "Unpatched software creating an exploitable gap matches the description of lack of appropriate software or hardware security leading to system breaches. (Module 3, E.2.1)"
+    },
+    {
+      "id": "Q77",
+      "module": 3,
+      "q": "Which of the following is grouped under 'External Events' as a source of operational risk?",
+      "opts": [
+        "Lack of automation within transaction processing workflows",
+        "Changes in regulation or geo risk affecting banking operations",
+        "Errors resulting from a lack of staff experience",
+        "Use of obsolete equipment across bank branches"
+      ],
+      "ans": "B",
+      "exp": "Changes in regulation or geo risk fall under External Events, alongside natural disasters and cyber breaches. (Module 3, E.2.1)"
+    },
+    {
+      "id": "Q78",
+      "module": 3,
+      "q": "Which common cause of human error is rooted in a gap between an employee's understanding and their assigned role?",
+      "opts": [
+        "Stress in high-pressure environments",
+        "Inadequate training and onboarding",
+        "Lack of adherence to procedures",
+        "Dependency on third-party vendors"
+      ],
+      "ans": "B",
+      "exp": "Inadequate training and onboarding is a common cause of human error, occurring when employees do not fully understand their roles, responsibilities, or tasks. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q79",
+      "module": 3,
+      "q": "A newly recruited loan officer, insufficiently briefed on a bank's revised digital lending platform, repeatedly misguides customers through the application process, leading to a spike in abandoned applications. Which cause of human error does this best illustrate?",
+      "opts": [
+        "Stress in high-pressure environments",
+        "Inadequate training and onboarding",
+        "Lack of adherence to procedures",
+        "Negligence unrelated to training"
+      ],
+      "ans": "B",
+      "exp": "An employee not fully understanding a new platform due to insufficient briefing is a direct instance of inadequate training and onboarding. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q80",
+      "module": 3,
+      "q": "What outcome typically results from intense stress, tight deadlines, and constant pressure for top performance?",
+      "opts": [
+        "Improved accuracy from heightened focus under pressure",
+        "Burnout, diminished attention to detail, and impaired decision-making",
+        "A reduction in the need for regular credit monitoring",
+        "Elimination of the need for dual-authorization controls"
+      ],
+      "ans": "B",
+      "exp": "Intense stress and pressure can lead to burnout, diminished attention to detail, and impaired decision-making, particularly in fast-paced industries like banking. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q81",
+      "module": 3,
+      "q": "A relationship manager racing to meet an end-of-month lending target overlooks verifying a borrower's compliance with lending regulations before disbursement. Which cause of human error does this best illustrate?",
+      "opts": [
+        "Inadequate training and onboarding",
+        "Stress in high-pressure environments",
+        "Lack of adherence to procedures",
+        "Dependency on third-party vendors"
+      ],
+      "ans": "B",
+      "exp": "Overlooking critical verification steps while under pressure to meet targets matches stress in high-pressure environments leading to overlooked details. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q82",
+      "module": 3,
+      "q": "What exacerbates errors that arise when employees bypass established protocols to save time?",
+      "opts": [
+        "The presence of excessive automation in routine tasks",
+        "The absence of proper monitoring mechanisms",
+        "Overuse of collateralization in the credit process",
+        "Excessive diversification of duties across departments"
+      ],
+      "ans": "B",
+      "exp": "The absence of proper monitoring mechanisms exacerbates the issue when employees bypass established protocols. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q83",
+      "module": 3,
+      "q": "A back-office officer skips a required end-of-day balancing step because the instructions for when it applies are unclear, and the shortcut goes unnoticed for weeks. Which cause of human error does this best illustrate?",
+      "opts": [
+        "Inadequate training and onboarding, unrelated to monitoring",
+        "Lack of adherence to procedures, compounded by the absence of proper monitoring",
+        "Stress in high-pressure environments, unrelated to unclear instructions",
+        "Dependency on third-party vendors, unrelated to internal procedure"
+      ],
+      "ans": "B",
+      "exp": "Bypassing a protocol due to unclear instructions, going unnoticed for weeks, matches lack of adherence to procedures compounded by absent monitoring mechanisms. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q84",
+      "module": 3,
+      "q": "What forms the foundation of reducing human error through training?",
+      "opts": [
+        "Replacing all in-person training with generic e-learning modules",
+        "Tailoring training to specific roles and responsibilities, incorporating practical simulations",
+        "Limiting training exclusively to new hires within their first week",
+        "Restricting training content to regulatory compliance topics only"
+      ],
+      "ans": "B",
+      "exp": "Comprehensive training programs tailor training to specific roles and incorporate practical simulations so employees can handle real-life scenarios. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q85",
+      "module": 3,
+      "q": "Staff across a bank's branches receive hands-on simulation training on resolving login issues and app errors after a new digital platform launches, and customer complaints subsequently fall. Which mitigation strategy does this best illustrate?",
+      "opts": [
+        "Promoting a culture of accountability and support",
+        "Comprehensive training programs",
+        "Clear processes and regular audits",
+        "Business continuity planning"
+      ],
+      "ans": "B",
+      "exp": "Hands-on simulation training on real-world platform issues, reducing complaints, is a direct illustration of comprehensive training programs. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q86",
+      "module": 3,
+      "q": "What is the purpose of an internal channel that allows employees to anonymously report concerns about unethical practices or operational gaps?",
+      "opts": [
+        "To automatically escalate every report to external regulators",
+        "To promote accountability and give staff a platform to voice issues without fear of retribution",
+        "To replace the need for routine internal audits",
+        "To determine employee bonus eligibility each quarter"
+      ],
+      "ans": "B",
+      "exp": "Such a channel promotes accountability and ensures staff have a platform to raise concerns without fear of retribution, part of promoting a culture of accountability and support. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q87",
+      "module": 3,
+      "q": "What combination reduces the risk of errors through consistency?",
+      "opts": [
+        "Reduced documentation to speed up transaction processing",
+        "Clear workflows, detailed checklists, and routine audits",
+        "Elimination of dual-authorization requirements for efficiency",
+        "Outsourcing all internal review functions to third parties"
+      ],
+      "ans": "B",
+      "exp": "Clear workflows, detailed checklists, and routine audits ensure consistency and reduce the risk of errors. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q88",
+      "module": 3,
+      "q": "A routine internal audit finds that a branch has been skipping end-of-day reconciliation checks, causing discrepancies in cash balances. Based on typical corrective practice for such a finding, what is the most consistent response?",
+      "opts": [
+        "Suspending the branch's lending activity indefinitely",
+        "Retraining branch staff and implementing automated reconciliation systems",
+        "Transferring the reconciliation function to a third-party vendor",
+        "Removing the requirement for end-of-day reconciliation going forward"
+      ],
+      "ans": "B",
+      "exp": "After such an audit finding, the corrective response is retraining staff and implementing automated reconciliation systems. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q89",
+      "module": 3,
+      "q": "How are 'Outdated Systems' best defined as a technology risk?",
+      "opts": [
+        "Systems lacking multi-factor authentication for all customer logins",
+        "Legacy systems that interact poorly with newer systems, raising costs",
+        "Systems fully dependent on external vendors for core processing",
+        "Systems that have not undergone recent penetration testing reviews"
+      ],
+      "ans": "B",
+      "exp": "Outdated systems are legacy systems that do not interact well with newer systems, causing inefficiencies and high operational costs. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q90",
+      "module": 3,
+      "q": "What impact results from competitors adopting modern technology while a bank continues relying on outdated systems?",
+      "opts": [
+        "The bank automatically qualifies for reduced regulatory capital requirements",
+        "The bank loses competitive advantage as maintenance costs rise and operational efficiency declines",
+        "The bank's credit risk exposure falls as a direct result",
+        "The bank's customer base becomes exempt from KYC procedures"
+      ],
+      "ans": "B",
+      "exp": "Competitors adopting modern technology gain an advantage, while maintenance costs increase and operational efficiency declines for banks relying on legacy systems. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q91",
+      "module": 3,
+      "q": "A bank replaces its legacy core banking infrastructure with mobile- and internet-banking-ready systems, enabling real-time services across all digital channels. Which technology risk is this upgrade most directly addressing?",
+      "opts": [
+        "Cyber vulnerabilities",
+        "Outdated systems",
+        "Dependency on third-party vendors",
+        "Natural disaster exposure"
+      ],
+      "ans": "B",
+      "exp": "Replacing legacy core systems to enable faster, real-time digital services directly addresses the outdated-systems risk. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q92",
+      "module": 3,
+      "q": "Which combination characterizes cyber vulnerabilities in banking systems?",
+      "opts": [
+        "Legacy infrastructure incompatible with newer systems",
+        "Weak passwords, unpatched software, and unprotected networks",
+        "Reliance on external providers for payment processing",
+        "Absence of a documented business continuity plan"
+      ],
+      "ans": "B",
+      "exp": "Cyber vulnerabilities are weak passwords, unpatched software, and unprotected networks that make organizations vulnerable to attacks. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q93",
+      "module": 3,
+      "q": "A bank equips its mobile banking app with multi-factor authentication and biometric verification after a period of rising customer concern about account security. Which technology risk is this measure primarily intended to reduce?",
+      "opts": [
+        "Outdated systems",
+        "Cyber vulnerabilities",
+        "Dependency on third-party vendors",
+        "Natural disaster exposure"
+      ],
+      "ans": "B",
+      "exp": "MFA and biometric verification directly address cyber vulnerabilities and strengthen customer trust in digital transactions. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q94",
+      "module": 3,
+      "q": "What risk arises from a bank's dependency on external service providers for key processes?",
+      "opts": [
+        "Automatic breach of KYC obligations",
+        "Vendor failures or non-compliance with set regulatory requirements",
+        "Elimination of the need for credit scoring",
+        "Guaranteed reduction in operational costs"
+      ],
+      "ans": "B",
+      "exp": "Dependency on third-party vendors poses a risk of vendor failures or non-compliance with regulatory requirements, potentially causing service interruptions and penalties. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q95",
+      "module": 3,
+      "q": "A bank relies on a third-party provider to process online payments and requires that provider to undergo compliance audits and meet service-level agreements aligned with regulatory standards. Which risk is the bank primarily managing?",
+      "opts": [
+        "Outdated systems",
+        "Dependency on third-party vendors",
+        "Cyber vulnerabilities",
+        "Weak internal procedures"
+      ],
+      "ans": "B",
+      "exp": "Due diligence involving compliance audits and SLAs for a payment gateway provider directly manages third-party vendor dependency risk. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q96",
+      "module": 3,
+      "q": "A bank experiences a single incident in which an unpatched vulnerability in a legacy system was exploited through a compromised third-party integration. Which combination of technology risks does this incident reflect?",
+      "opts": [
+        "Cyber vulnerabilities only, since the other categories do not apply to integrations",
+        "Outdated systems, cyber vulnerabilities, and dependency on third-party vendors",
+        "Outdated systems only, since third-party involvement is unrelated to technology risk",
+        "Dependency on third-party vendors only, since the vulnerability originated internally"
+      ],
+      "ans": "B",
+      "exp": "The incident combines a legacy system (outdated systems), an unpatched exploit (cyber vulnerabilities), and a compromised external integration (third-party dependency) - all three technology risk categories at once. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q97",
+      "module": 3,
+      "q": "What is the purpose of conducting periodic evaluations of system performance under high-demand scenarios?",
+      "opts": [
+        "To determine eligibility for third-party vendor contracts",
+        "To identify vulnerabilities early and allow timely intervention that minimizes disruption",
+        "To calculate the bank's regulatory capital requirement",
+        "To replace the need for staff cybersecurity training"
+      ],
+      "ans": "B",
+      "exp": "Periodic evaluations under high-demand scenarios identify weak points early, allowing timely intervention that minimizes disruption. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q98",
+      "module": 3,
+      "q": "What benefit does developing and implementing backup systems and data recovery mechanisms provide?",
+      "opts": [
+        "Elimination of the need for periodic system evaluations",
+        "Reduced downtime, minimized data loss, and ensured business continuity after disruptions",
+        "Guaranteed compliance with consumer protection regulations",
+        "Automatic detection of fraudulent transactions in real time"
+      ],
+      "ans": "B",
+      "exp": "Backup systems and data recovery mechanisms reduce downtime, minimize data loss, and ensure business continuity. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q99",
+      "module": 3,
+      "q": "A bank deploys AI-driven tools to continuously scan transaction and system activity, flagging unusual patterns for immediate investigation. Which risk-mitigation function does this most directly serve?",
+      "opts": [
+        "Periodic staff performance appraisal and review",
+        "Real-time monitoring to detect and mitigate cyber threats",
+        "Routine reconciliation of end-of-day cash balances",
+        "Vendor service-level agreement enforcement and audits"
+      ],
+      "ans": "B",
+      "exp": "AI-driven real-time monitoring and anomaly detection prevents unauthorized access, detects suspicious activity early, and mitigates cyber threats. (Module 3, E.2.2)"
+    },
+    {
+      "id": "Q100",
+      "module": 3,
+      "q": "How can a bank maintain continuity of operations if a physical location is compromised by a natural disaster?",
+      "opts": [
+        "Concentrating all data storage in a single high-security headquarters",
+        "Establishing geographically distributed data centers and cloud storage solutions",
+        "Suspending all digital banking services until the disaster passes",
+        "Relying solely on third-party vendors to restore operations"
+      ],
+      "ans": "B",
+      "exp": "Investment in geographically distributed data centers and cloud storage ensures continuity even if one location is compromised. (Module 3, E.2.3)"
+    },
+    {
+      "id": "Q101",
+      "module": 3,
+      "q": "During severe flooding that renders several branches inaccessible, a bank encourages customers to conduct transactions through its mobile app and USSD codes instead of visiting a branch. Which external-event response strategy does this illustrate?",
+      "opts": [
+        "Business continuity planning through vendor diversification",
+        "Remote banking options reducing reliance on physical locations",
+        "Community support demonstrating corporate social responsibility",
+        "Scenario planning through regulatory simulation exercises"
+      ],
+      "ans": "B",
+      "exp": "Encouraging digital and USSD channels during a natural disaster is a direct example of remote banking options reducing reliance on physical branches. (Module 3, E.2.3)"
+    },
+    {
+      "id": "Q102",
+      "module": 3,
+      "q": "Beyond restoring its own operations, what additional action can a bank take in response to a natural disaster affecting its customers?",
+      "opts": [
+        "Suspending lending activity in the affected region indefinitely",
+        "Providing relief materials to affected communities, showcasing corporate social responsibility",
+        "Transferring all affected accounts to unaffected branches without notice",
+        "Waiving all future KYC requirements for affected customers"
+      ],
+      "ans": "B",
+      "exp": "Providing relief materials to affected communities demonstrates corporate social responsibility and maintains goodwill. (Module 3, E.2.3)"
+    },
+    {
+      "id": "Q103",
+      "module": 3,
+      "q": "What is the purpose of running regular cybersecurity awareness campaigns for customers and employees?",
+      "opts": [
+        "To satisfy an annual marketing requirement unrelated to security",
+        "To teach them how to spot phishing attempts and other digital dangers",
+        "To replace the need for two-factor authentication",
+        "To determine which customers qualify for digital banking access"
+      ],
+      "ans": "B",
+      "exp": "Cybersecurity awareness programs teach customers and employees to spot phishing attempts and other dangers. (Module 3, E.2.3)"
+    },
+    {
+      "id": "Q104",
+      "module": 3,
+      "q": "A bank's monitoring team detects and shuts down a fraudulent campaign impersonating the bank through fake emails and text messages before significant customer losses occur. Which preparation measure most directly enabled this rapid response?",
+      "opts": [
+        "Geographically distributed data centers for disaster recovery planning",
+        "Advanced threat monitoring through a Security Operations Center using AI",
+        "Vendor due diligence and service-level agreement audits",
+        "Loan restructuring for customers in economically affected industries"
+      ],
+      "ans": "B",
+      "exp": "Rapid detection of an impersonation scam is enabled by advanced threat monitoring through a Security Operations Center using AI tools to spot unusual behaviour. (Module 3, E.2.3)"
+    },
+    {
+      "id": "Q105",
+      "module": 3,
+      "q": "Which security measure is applied specifically to all online transactions to boost security?",
+      "opts": [
+        "Loan-to-value restrictions on mortgage lending",
+        "Two-Factor Authentication (2FA)",
+        "Obligor Risk Rating assessments",
+        "Currency devaluation hedging"
+      ],
+      "ans": "B",
+      "exp": "Two-Factor Authentication is a measure put in place for all online transactions to boost security against cyberattacks. (Module 3, E.2.3)"
+    },
+    {
+      "id": "Q106",
+      "module": 3,
+      "q": "During a major economic slowdown, a bank proactively restructures loan terms for clients in industries most affected, such as aviation and hospitality, rather than allowing accounts to default. Which stress scenario and response does this best illustrate?",
+      "opts": [
+        "A natural-disaster external event addressed through geographically distributed data centers",
+        "A market-shock external event addressed through proactive loan restructuring to preserve portfolio quality",
+        "A cyberattack external event addressed through two-factor authentication",
+        "An internal-process risk addressed through automated reconciliation systems"
+      ],
+      "ans": "B",
+      "exp": "Proactive restructuring of loans for clients in hard-hit sectors during an economic slowdown responds to a market-shock/regulatory-change external event. (Module 3, E.2.3)"
+    },
+    {
+      "id": "Q107",
+      "module": 3,
+      "q": "Which two general preparation strategies reduce the impact of external threats through anticipation and continuity of critical operations?",
+      "opts": [
+        "Comprehensive training programs, together with credit scoring models",
+        "Scenario planning and simulations, together with Business Continuity Plans",
+        "Collateralization, together with credit insurance",
+        "Regular credit monitoring, together with diversification"
+      ],
+      "ans": "B",
+      "exp": "Scenario planning and simulations, together with Business Continuity Plans, are general strategies for anticipating external events and ensuring critical operations continue despite disruption. (Module 3, E.2.3)"
+    },
+    {
+      "id": "Q108",
+      "module": 3,
+      "q": "A bank's leadership must decide whether to concentrate additional oversight resources on strengthening its own internal Business Continuity Plan or on strengthening third-party risk management across its IT and logistics vendors. Both are recognized preparation strategies for external threats. Which consideration should most influence the decision?",
+      "opts": [
+        "Internal continuity planning should always take priority since it is the more commonly cited strategy",
+        "Whether the bank's greatest current vulnerability lies within its own continuity arrangements or within the reliability of the external partners it depends on",
+        "Third-party risk management should always take priority since vendors are inherently less reliable than internal teams",
+        "Whichever strategy requires the least documentation should be chosen to conserve resources"
+      ],
+      "ans": "B",
+      "exp": "Since both strategies address different sources of exposure, internal continuity versus external vendor reliability, the decision should follow wherever the bank's actual current vulnerability is greatest, not a fixed ordering. (Module 3, E.2.3)"
+    },
+    {
+      "id": "Q109",
+      "module": 4,
+      "q": "Which of the following best defines risk-based pricing?",
+      "opts": [
+        "Setting a single loan interest rate applied uniformly to all borrowers regardless of risk",
+        "Setting loan prices, such as interest rates or fees, according to the risk level of each individual borrower",
+        "Setting deposit interest rates based on a bank's overall liquidity position",
+        "Setting collateral requirements based solely on a borrower's industry sector"
+      ],
+      "ans": "B",
+      "exp": "Risk-based pricing means setting loan prices according to each borrower's risk level, so that rates or fees correspond to customer creditworthiness. (Module 4, F.2.1)"
+    },
+    {
+      "id": "Q110",
+      "module": 4,
+      "q": "Why does risk-based pricing matter for the bank specifically?",
+      "opts": [
+        "It eliminates the need for any form of credit analysis before disbursement",
+        "It reduces credit losses by charging increased rates to higher-risk borrowers who are more likely to default",
+        "It guarantees zero non-performing loans across the entire portfolio",
+        "It removes the bank's obligation to comply with consumer protection regulations"
+      ],
+      "ans": "B",
+      "exp": "For the bank, risk-based pricing reduces credit losses by charging higher rates to higher-risk borrowers who are more likely to default. (Module 4, F.2.1)"
+    },
+    {
+      "id": "Q111",
+      "module": 4,
+      "q": "Why does risk-based pricing matter for the customer specifically?",
+      "opts": [
+        "It guarantees every customer receives an identical interest rate regardless of risk profile",
+        "Customers receive equitable treatment because loan prices reflect their specific creditworthiness evaluations",
+        "It removes the customer's obligation to provide any documentation during onboarding",
+        "It guarantees approval for every loan application regardless of credit history"
+      ],
+      "ans": "B",
+      "exp": "For the customer, risk-based pricing offers equitable treatment because loan prices reflect each customer's specific creditworthiness evaluation, rather than a flat rate applied to everyone. (Module 4, F.2.1)"
+    },
+    {
+      "id": "Q112",
+      "module": 4,
+      "q": "A bank offers a small business owner with strong financial records a lower interest rate than it offers a startup business with a limited credit history. Which concept does this practice most directly illustrate?",
+      "opts": [
+        "Customer Protection Compliance",
+        "Risk-based pricing applied through personalized loan products",
+        "Diversification of the credit portfolio",
+        "Stress testing of the credit portfolio"
+      ],
+      "ans": "B",
+      "exp": "Personalized loan products where creditworthiness, reflected in financial records and credit history, determines the rate offered is exactly what risk-based pricing describes. (Module 4, F.2.1)"
+    },
+    {
+      "id": "Q113",
+      "module": 4,
+      "q": "What does Risk Adjusted Pricing, as one component of balancing risk and reward, involve setting interest rates to cover?",
+      "opts": [
+        "Only the cost of funds, with all other expenses excluded",
+        "The cost of funds, operational expenses, and expected credit losses, while delivering a reasonable profit margin",
+        "Only expected credit losses, independent of operational expenses",
+        "Only a reasonable profit margin, independent of underlying costs"
+      ],
+      "ans": "B",
+      "exp": "Risk Adjusted Pricing sets interest rates that cover the cost of funds, operational expenses, and expected credit losses while still delivering a reasonable profit margin. (Module 4, F.2.2)"
+    },
+    {
+      "id": "Q114",
+      "module": 4,
+      "q": "What does Customer Retention, as the second component of balancing risk and reward, involve?",
+      "opts": [
+        "Restricting competitive rates to only the highest-risk borrower segment",
+        "Offering competitive rates to attract and retain low-risk customers",
+        "Eliminating interest-rate differentiation across all customer segments",
+        "Requiring all customers to accept identical loan terms to simplify retention"
+      ],
+      "ans": "B",
+      "exp": "Customer Retention means offering competitive rates specifically to attract and retain low-risk customers, balancing the risk-reward equation. (Module 4, F.2.2)"
+    },
+    {
+      "id": "Q115",
+      "module": 4,
+      "q": "A bank uses data analytics to offer premium customers with stable incomes lower interest rates on salary-backed loans, while charging high-risk borrowers higher rates to offset potential losses. Which two components does this practice combine?",
+      "opts": [
+        "Comprehensive credit analysis and collateralization",
+        "Risk Adjusted Pricing and Customer Retention",
+        "Stress testing and diversification of the credit portfolio",
+        "Credit insurance and regular credit monitoring"
+      ],
+      "ans": "B",
+      "exp": "This balances Risk Adjusted Pricing, higher rates for high-risk borrowers, with Customer Retention, competitive rates for premium, low-risk customers. (Module 4, F.2.2)"
+    },
+    {
+      "id": "Q116",
+      "module": 4,
+      "q": "How does risk-based pricing enhance revenue?",
+      "opts": [
+        "Riskier borrowers are refused financing entirely, eliminating potential losses",
+        "Riskier borrowers pay more in interest to compensate for default potential, while low-risk borrowers drive volume and cross-selling opportunities through competitive rates",
+        "Revenue is enhanced solely by eliminating all fee-based charges on loan products",
+        "Revenue is enhanced only by reducing the total number of loans issued each year"
+      ],
+      "ans": "B",
+      "exp": "Enhancing Revenue reflects riskier borrowers paying more to compensate for default potential, combined with volume and cross-selling opportunities driven by low-risk borrowers rewarded with competitive rates. (Module 4, F.2.3)"
+    },
+    {
+      "id": "Q117",
+      "module": 4,
+      "q": "After a bank introduces a digital lending product enabling real-time credit-scoring-based pricing, loan approvals for low-risk borrowers rise 20% without sacrificing margins from riskier segments. Which implication of risk-based pricing on profitability does this best illustrate?",
+      "opts": [
+        "Reducing Non-Performing Loans",
+        "Enhancing Revenue",
+        "Supporting Long-Term Growth",
+        "Strengthening Business Continuity Planning"
+      ],
+      "ans": "B",
+      "exp": "Real-time credit-scoring-based pricing driving a 20% rise in low-risk loan approvals without sacrificing margins on riskier segments is a direct illustration of Enhancing Revenue. (Module 4, F.2.3)"
+    },
+    {
+      "id": "Q118",
+      "module": 4,
+      "q": "How does risk-based pricing help reduce Non-Performing Loans (NPLs)?",
+      "opts": [
+        "By eliminating credit scoring entirely from the approval process",
+        "By preventing defaults through allowing only lower-risk borrowers to leverage up, supported by early identification of at-risk accounts",
+        "By requiring all borrowers to provide identical collateral regardless of risk",
+        "By removing interest-rate differentiation across the loan portfolio"
+      ],
+      "ans": "B",
+      "exp": "Reducing NPLs means preventing defaults by allowing primarily lower-risk borrowers to leverage up, with predictive analytics enabling early identification of at-risk accounts. (Module 4, F.2.3)"
+    },
+    {
+      "id": "Q119",
+      "module": 4,
+      "q": "A bank's use of predictive analytics identifies at-risk loan accounts early, enabling pre-emptive interventions such as loan restructuring before default occurs. Which implication of risk-based pricing on profitability does this best illustrate?",
+      "opts": [
+        "Enhancing Revenue",
+        "Reducing Non-Performing Loans",
+        "Supporting Long-Term Growth",
+        "Strengthening cybersecurity vulnerabilities"
+      ],
+      "ans": "B",
+      "exp": "Predictive analytics enabling pre-emptive interventions like loan restructuring before default occurs is a direct illustration of Reducing Non-Performing Loans. (Module 4, F.2.3)"
+    },
+    {
+      "id": "Q120",
+      "module": 4,
+      "q": "What underpins Supporting Long-Term Growth as an implication of risk-based pricing?",
+      "opts": [
+        "Maximizing short-term gains regardless of the effect on customer relationships",
+        "Balancing short-term gains with long-term customer relationships to strengthen the bank's brand and market position",
+        "Restricting lending exclusively to the lowest-risk customer segment",
+        "Eliminating competitive pricing to protect short-term margins"
+      ],
+      "ans": "B",
+      "exp": "Supporting Long-Term Growth means balancing short-term gains with long-term customer relationships, which strengthens the bank's brand and market position. (Module 4, F.2.3)"
+    },
+    {
+      "id": "Q121",
+      "module": 4,
+      "q": "A bank could maximize this quarter's interest income by charging every borrower the highest rate the market will bear, or it could offer more competitive rates to retain low-risk customers even though this reduces near-term margin. What is the risk of the first approach, given how Supporting Long-Term Growth is framed?",
+      "opts": [
+        "It would violate Anti-Money Laundering compliance requirements",
+        "It could undermine long-term customer relationships and the bank's brand and market position in favour of short-term gains",
+        "It would automatically increase the bank's Non-Performing Loan ratio regardless of borrower quality",
+        "It would eliminate the need for ongoing credit monitoring"
+      ],
+      "ans": "B",
+      "exp": "Long-term growth depends on balancing short-term gains against long-term customer relationships; prioritizing short-term revenue at the expense of that balance risks the brand and market-position benefits described. (Module 4, F.2.3)"
+    },
+    {
+      "id": "Q122",
+      "module": 4,
+      "q": "What is the stated purpose of Access Bank's Instant Business Loan program?",
+      "opts": [
+        "To provide long-term mortgage financing to individual retail customers",
+        "To provide quick and accessible financing to small and medium-sized enterprises (SMEs)",
+        "To provide subsidized financing exclusively for environmentally friendly projects",
+        "To provide overdraft facilities exclusively to premium salary-account holders"
+      ],
+      "ans": "B",
+      "exp": "The Instant Business Loan program is designed to provide quick and accessible financing to small and medium-sized enterprises. (Module 4, F.4)"
+    },
+    {
+      "id": "Q123",
+      "module": 4,
+      "q": "What does the Instant Business Loan program evaluate businesses on to assess financial health?",
+      "opts": [
+        "Their fixed-asset valuation and shareholder equity",
+        "Their transaction history and cash flow",
+        "Their number of years in operation and headcount",
+        "Their industry classification and geographic location alone"
+      ],
+      "ans": "B",
+      "exp": "The program evaluates businesses based on their transaction history and cash flow, allowing the bank to assess each enterprise's financial health. (Module 4, F.4)"
+    },
+    {
+      "id": "Q124",
+      "module": 4,
+      "q": "A business seeking financing under the Instant Business Loan program has an average monthly turnover of NGN18,000,000. Based on the program's stated terms, what is the maximum loan amount it can access?",
+      "opts": [
+        "NGN18,000,000, since the loan is uncapped for businesses with strong turnover",
+        "NGN9,000,000, since 50% of its turnover falls below the program's NGN10,000,000 cap",
+        "NGN10,000,000, since the cap always applies regardless of turnover",
+        "NGN4,500,000, since only 25% of turnover applies under the program"
+      ],
+      "ans": "B",
+      "exp": "Eligible businesses can access up to 50% of their average monthly turnover, capped at NGN10,000,000. Fifty percent of NGN18,000,000 is NGN9,000,000, which falls below the cap, so NGN9,000,000 is the maximum. (Module 4, F.4)"
+    },
+    {
+      "id": "Q125",
+      "module": 4,
+      "q": "A borrower under the Instant Business Loan program takes the maximum NGN10,000,000 facility. Excluding the 7.5% interest rate itself, what is the combined percentage of the facility charged as management, advisory, and insurance fees?",
+      "opts": [
+        "2.5%",
+        "3.5%",
+        "7.5%",
+        "4.5%"
+      ],
+      "ans": "B",
+      "exp": "The program charges a 1% management fee, 1% advisory fee, and 1.5% insurance cover, which together total 3.5%, separate from, and in addition to, the 7.5% interest rate. (Module 4, F.4)"
+    },
+    {
+      "id": "Q126",
+      "module": 4,
+      "q": "What is the loan tenor for facilities issued under the Instant Business Loan program?",
+      "opts": [
+        "90 days (3 months)",
+        "180 days (6 months)",
+        "365 days (12 months)",
+        "30 days (1 month)"
+      ],
+      "ans": "B",
+      "exp": "The program's loan tenor is 180 days, equivalent to 6 months. (Module 4, F.4)"
+    },
+    {
+      "id": "Q127",
+      "module": 4,
+      "q": "Beyond the 7.5% headline interest rate, the Instant Business Loan program applies a 1% management fee, 1% advisory fee, and 1.5% insurance cover. What does this fee structure most directly reflect about risk-based pricing?",
+      "opts": [
+        "That the advertised interest rate is misleading and unrelated to the program's actual cost",
+        "That risk-adjusted pricing incorporates more than the headline interest rate, with additional charges also forming part of covering costs and compensating for risk",
+        "That risk-based pricing applies only to the interest rate component and never to fees",
+        "That the fees exist purely for administrative convenience and are unrelated to risk-based pricing"
+      ],
+      "ans": "B",
+      "exp": "Risk Adjusted Pricing is defined broadly as setting prices to cover the cost of funds, operational expenses, and expected credit losses while delivering a margin - the additional fees are part of that same pricing structure alongside the interest rate. (Module 4, F.2.2, F.4)"
+    },
+    {
+      "id": "Q128",
+      "module": 4,
+      "q": "In what year did Access Bank issue its NGN15 billion corporate green bond?",
+      "opts": [
+        "2021",
+        "2019",
+        "2018",
+        "2020"
+      ],
+      "ans": "B",
+      "exp": "Access Bank issued the NGN15 billion (US$41 million) corporate green bond in March 2019. (Module 4, F.4)"
+    },
+    {
+      "id": "Q129",
+      "module": 4,
+      "q": "Which body certified Access Bank's corporate green bond?",
+      "opts": [
+        "The Central Bank of Nigeria",
+        "The Climate Bonds Initiative",
+        "The Basel Committee on Banking Supervision",
+        "The Nigeria Data Protection Regulation authority"
+      ],
+      "ans": "B",
+      "exp": "The green bond is certified by the Climate Bonds Initiative, supporting environmentally friendly projects. (Module 4, F.4)"
+    },
+    {
+      "id": "Q130",
+      "module": 4,
+      "q": "What is the stated purpose of the subsidized green loans developed alongside the green bond?",
+      "opts": [
+        "To offer discounted rates exclusively to first-time retail depositors",
+        "To finance projects that support decarbonization and promote sustainable practices",
+        "To fund the bank's own internal IT infrastructure upgrades",
+        "To provide short-term bridge financing for real estate developers"
+      ],
+      "ans": "B",
+      "exp": "The subsidized green loans finance projects that support decarbonization and promote sustainable practices, aligned with corporate social responsibility. (Module 4, F.4)"
+    },
+    {
+      "id": "Q131",
+      "module": 4,
+      "q": "How does the underlying purpose of the Instant Business Loan program differ from that of the green bond and subsidized green loans?",
+      "opts": [
+        "They serve an identical purpose, since both function purely as risk-based pricing tools for SME lending",
+        "The Instant Business Loan program prices financing to SME risk profiles, while the green bond and loans incentivize environmentally sustainable projects",
+        "The green bond exists solely to fund and expand the Instant Business Loan program's lending capacity",
+        "The Instant Business Loan program functions exclusively as a cybersecurity initiative unrelated to lending or pricing"
+      ],
+      "ans": "B",
+      "exp": "The Instant Business Loan program centers on evaluating and pricing individual SME risk, while the green bond and subsidized green loans center on incentivizing sustainability-linked financing - related case studies but with distinct underlying purposes. (Module 4, F.4)"
+    },
+    {
+      "id": "Q132",
+      "module": 4,
+      "q": "A bank's pricing committee is choosing between raising rates on all higher-risk borrowers to enhance near-term revenue, or extending more competitive rates to retain a growing base of low-risk customers, given both are recognized profitability levers. Which factor should most influence the decision?",
+      "opts": [
+        "Whichever lever is more conventionally emphasized should automatically take priority",
+        "Which lever better reflects the bank's actual current mix of low-risk versus high-risk borrowers in its portfolio",
+        "Rates on higher-risk borrowers should always be raised regardless of portfolio composition",
+        "Competitive retention rates should always be extended regardless of portfolio composition"
+      ],
+      "ans": "B",
+      "exp": "Both levers, charging riskier borrowers more and retaining low-risk borrowers through competitive rates, contribute to profitability, so the more relevant one depends on the bank's actual borrower mix rather than a fixed rule. (Module 4, F.2.3)"
+    },
+    {
+      "id": "Q133",
+      "module": 4,
+      "q": "A pricing committee is reviewing whether to expand predictive analytics for early at-risk account identification, or to expand digital-channel real-time credit scoring for new applications, given both are recognized profitability tools but limited resources allow only one this quarter. Which framing best reflects the distinction between what each investment primarily protects?",
+      "opts": [
+        "Both investments protect the exact same stage of the lending lifecycle and are interchangeable",
+        "Predictive analytics for at-risk accounts primarily protects against losses on the existing portfolio, while real-time credit scoring primarily supports growth in new low-risk originations",
+        "Predictive analytics for at-risk accounts is relevant only before a loan is disbursed, not after",
+        "Real-time credit scoring is relevant only for existing borrowers already flagged as at-risk"
+      ],
+      "ans": "B",
+      "exp": "The NPL-reduction case centers on identifying at-risk accounts already in the portfolio, while the revenue-enhancement case centers on scoring new applications in real time to grow low-risk origination - two distinct stages of the credit lifecycle. (Module 4, F.2.3)"
+    },
+    {
+      "id": "Q134",
+      "module": 5,
+      "q": "Which of the following best defines a Phishing Attack?",
+      "opts": [
+        "Malicious software that locks users out of their systems until a ransom is paid",
+        "Cybercriminals sending fake emails or messages that appear to come from a trusted source to collect valuable data",
+        "The exploitation of sensitive customer data already held within a bank's systems",
+        "A sudden surge of traffic intended to overwhelm and disable a bank's servers"
+      ],
+      "ans": "B",
+      "exp": "Phishing is cybercriminals sending fake emails or messages appearing to come from a trusted source in order to collect valuable data. The distractors describe ransomware, data breaches, and a denial-of-service pattern respectively. (Module 5, G.2.1)"
+    },
+    {
+      "id": "Q135",
+      "module": 5,
+      "q": "Which of the following best defines Ransomware?",
+      "opts": [
+        "Fake emails or messages designed to collect valuable customer data",
+        "Malicious software that locks users out of their systems until a ransom is paid",
+        "The unauthorized exploitation of sensitive customer data",
+        "A vendor's failure to meet agreed security service levels"
+      ],
+      "ans": "B",
+      "exp": "Ransomware is malicious software that locks users out of their systems until a ransom is paid, distinct from phishing's deception-based data theft. (Module 5, G.2.1)"
+    },
+    {
+      "id": "Q136",
+      "module": 5,
+      "q": "Which combination of measures directly counters data breaches?",
+      "opts": [
+        "Two-Factor Authentication and geographically distributed data centers",
+        "Multi-factor authentication (MFA) and advanced encryption for both data storage and transmission",
+        "Penetration testing and ISO 27001 certification alone",
+        "Business continuity planning and vendor due diligence"
+      ],
+      "ans": "B",
+      "exp": "To counter data breaches, multi-factor authentication and advanced encryption for both storage and transmission of data are the primary defenses. (Module 5, G.2.1)"
+    },
+    {
+      "id": "Q137",
+      "module": 5,
+      "q": "An employee receives an email appearing to be from the bank's IT helpdesk, asking them to confirm their login credentials through an embedded link. Which cyber threat does this best illustrate?",
+      "opts": [
+        "Ransomware",
+        "Phishing",
+        "Data breach",
+        "Third-party vendor failure"
+      ],
+      "ans": "B",
+      "exp": "A deceptive message impersonating a trusted source to collect credentials is a phishing attack. (Module 5, G.2.1)"
+    },
+    {
+      "id": "Q138",
+      "module": 5,
+      "q": "A bank's systems are suddenly encrypted by an unknown attacker who demands payment before restoring access. Which cyber threat does this best illustrate?",
+      "opts": [
+        "Phishing",
+        "Ransomware",
+        "A regulatory compliance breach",
+        "A third-party vendor risk"
+      ],
+      "ans": "B",
+      "exp": "Malicious software locking users out of systems until a ransom is paid is ransomware, distinct from phishing's deception-based approach. (Module 5, G.2.1)"
+    },
+    {
+      "id": "Q139",
+      "module": 5,
+      "q": "What vulnerability does 'Outdated Software' represent?",
+      "opts": [
+        "Poor password hygiene among employees and customers",
+        "Some organizations using legacy systems with old security updates",
+        "Vendors and partners with poor security measures",
+        "Insufficient staff training on phishing recognition"
+      ],
+      "ans": "B",
+      "exp": "Outdated Software refers to organizations using legacy systems with old security updates, one of three typical vulnerabilities alongside weak passwords and third-party risks. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q140",
+      "module": 5,
+      "q": "What risk does 'Weak Password Policies' create?",
+      "opts": [
+        "Legacy systems failing to receive security updates",
+        "Poor password hygiene in people, resulting in higher chances of data breaches",
+        "Vendors and partners opening doors for cyber criminals",
+        "Delayed detection of suspicious transaction patterns"
+      ],
+      "ans": "B",
+      "exp": "Weak Password Policies mean poor password hygiene that results in a higher chance of data breaches. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q141",
+      "module": 5,
+      "q": "What risk do 'Third-Party Risks' create specifically within banking system vulnerabilities?",
+      "opts": [
+        "Legacy systems being incompatible with newer core banking infrastructure",
+        "Vendors and partners with poor security measures opening doors for cyber criminals",
+        "Employees bypassing dual-authorization procedures to save time",
+        "Customers reusing the same password across multiple platforms"
+      ],
+      "ans": "B",
+      "exp": "Third-Party Risks specifically involve vendors and partners with poor security measures potentially opening doors for cyber criminals to exploit the bank's systems. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q142",
+      "module": 5,
+      "q": "What is the purpose of conducting penetration testing and risk assessments very often?",
+      "opts": [
+        "To satisfy an annual marketing disclosure requirement",
+        "To find and fix vulnerabilities before they can be exploited",
+        "To determine eligibility for the Instant Business Loan program",
+        "To calculate the bank's stressed capital adequacy ratio"
+      ],
+      "ans": "B",
+      "exp": "Penetration testing and risk assessments are done very often specifically to find and fix vulnerabilities before they can be exploited. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q143",
+      "module": 5,
+      "q": "What does the Central Bank of Nigeria (CBN) Cybersecurity Framework require banks to maintain?",
+      "opts": [
+        "A fixed annual cybersecurity budget disclosed to shareholders",
+        "Robust cybersecurity policies, regular audits, and real-time fraud monitoring",
+        "Exclusive use of biometric authentication for all digital channels",
+        "A minimum number of physical branches per region"
+      ],
+      "ans": "B",
+      "exp": "The CBN Cybersecurity Framework requires banks to maintain robust cybersecurity policies, conduct regular audits, and implement real-time fraud monitoring. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q144",
+      "module": 5,
+      "q": "What does ISO 27001 Compliance represent?",
+      "opts": [
+        "A Nigeria-specific regulation governing customer data privacy protections",
+        "A global standard for information security management that banks adhere to",
+        "A regulatory requirement specific to anti-money laundering compliance controls",
+        "A framework exclusively governing cross-border settlement transaction risk"
+      ],
+      "ans": "B",
+      "exp": "ISO 27001 Compliance is a global standard for information security management, which banks adhere to for securing digital operations. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q145",
+      "module": 5,
+      "q": "How do GDPR and NDPR relate to one another?",
+      "opts": [
+        "GDPR is Nigeria's data protection regulation, while NDPR is the general international standard",
+        "GDPR is the General Data Protection Regulation, while NDPR is the Nigeria Data Protection Regulation, both governing data privacy and protection",
+        "GDPR and NDPR are identical frameworks issued by the same regulatory body",
+        "GDPR governs cybersecurity technology standards, while NDPR governs customer authentication methods"
+      ],
+      "ans": "B",
+      "exp": "GDPR is the General Data Protection Regulation, and NDPR is the Nigeria Data Protection Regulation - both regulations governing data privacy and protection, for different jurisdictions. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q146",
+      "module": 5,
+      "q": "A bank must demonstrate compliance with a regulation requiring real-time fraud monitoring and regular audits, issued specifically by its national banking regulator. Which of the three regulatory frameworks does this describe?",
+      "opts": [
+        "ISO 27001 Compliance",
+        "CBN Cybersecurity Framework",
+        "GDPR",
+        "NDPR"
+      ],
+      "ans": "B",
+      "exp": "Real-time fraud monitoring and regular audits are the specific requirements attributed to the CBN Cybersecurity Framework, distinguishing it from the global ISO 27001 standard and the data-privacy-focused GDPR/NDPR. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q147",
+      "module": 5,
+      "q": "Which AI-driven function analyzes transaction patterns to flag suspicious activities?",
+      "opts": [
+        "Automate Threat Detection",
+        "Detect Fraud in Real-Time",
+        "Enhance Customer Authentication",
+        "Penetration testing exercises"
+      ],
+      "ans": "B",
+      "exp": "Detecting Fraud in Real-Time uses AI algorithms to analyze transaction patterns and flag suspicious activities. (Module 5, G.2.3)"
+    },
+    {
+      "id": "Q148",
+      "module": 5,
+      "q": "Which AI-driven function identifies cyber threats before they escalate?",
+      "opts": [
+        "Enhance Customer Authentication",
+        "Automate Threat Detection",
+        "Detect Fraud in Real-Time",
+        "Third-party vendor due diligence"
+      ],
+      "ans": "B",
+      "exp": "Automating Threat Detection identifies cyber threats before they escalate, distinct from fraud-pattern analysis and authentication functions. (Module 5, G.2.3)"
+    },
+    {
+      "id": "Q149",
+      "module": 5,
+      "q": "Which AI-driven function adds extra layers of security through biometric verification and facial recognition?",
+      "opts": [
+        "Detect Fraud in Real-Time",
+        "Enhance Customer Authentication",
+        "Automate Threat Detection",
+        "ISO 27001 Compliance"
+      ],
+      "ans": "B",
+      "exp": "Enhance Customer Authentication uses biometric verification and facial recognition to add extra layers of security. (Module 5, G.2.3)"
+    },
+    {
+      "id": "Q150",
+      "module": 5,
+      "q": "A bank deploys an AI system that continuously scans customer transactions and immediately flags a purchase pattern inconsistent with a customer's typical behaviour. Which AI-driven cybersecurity function does this most directly illustrate?",
+      "opts": [
+        "Enhance Customer Authentication",
+        "Detect Fraud in Real-Time",
+        "Automate Threat Detection alone, unrelated to transactions",
+        "Third-party vendor risk management"
+      ],
+      "ans": "B",
+      "exp": "Analyzing transaction patterns to flag suspicious activity is precisely the Detect Fraud in Real-Time function. (Module 5, G.2.3)"
+    },
+    {
+      "id": "Q151",
+      "module": 5,
+      "q": "A bank's systems remain vulnerable to a known exploit despite the release of a security patch months earlier. Which regulatory requirement is this most likely to place the bank at risk of failing?",
+      "opts": [
+        "GDPR alone, since NDPR does not address software patching",
+        "The CBN Cybersecurity Framework's requirement to maintain robust cybersecurity policies and conduct regular audits",
+        "Only the Instant Business Loan program's eligibility criteria",
+        "Only the guidance on risk-based pricing"
+      ],
+      "ans": "B",
+      "exp": "Failing to patch a known vulnerability directly conflicts with the CBN Cybersecurity Framework's requirement that banks maintain robust cybersecurity policies and conduct regular audits - the outdated-software vulnerability flagged separately. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q152",
+      "module": 5,
+      "q": "How does the scope of the CBN Cybersecurity Framework differ from that of ISO 27001 Compliance?",
+      "opts": [
+        "Both apply exclusively to cross-border transactions and international currency settlement processes",
+        "The CBN Framework is a national regulatory requirement for Nigerian banks, while ISO 27001 is a global information security standard",
+        "ISO 27001 applies only to customer authentication, while the CBN Framework applies only to data privacy",
+        "The CBN Framework governs AI system use exclusively, while ISO 27001 governs only staff training programs"
+      ],
+      "ans": "B",
+      "exp": "The CBN Cybersecurity Framework is a requirement for banks operating under Nigerian regulatory oversight, while ISO 27001 is a global standard for information security management. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q153",
+      "module": 5,
+      "q": "A bank introduces awareness campaigns specifically aimed at helping customers and employees identify phishing attempts. Which category of cybersecurity response does this represent?",
+      "opts": [
+        "A regulatory requirement under ISO 27001",
+        "A response to the phishing threat through customer and employee education",
+        "An AI-driven fraud detection function",
+        "A third-party vendor risk mitigation measure"
+      ],
+      "ans": "B",
+      "exp": "Awareness campaigns to sensitize customers and employees on phishing and how to identify attempts are a direct response to the phishing threat through education. (Module 5, G.2.1)"
+    },
+    {
+      "id": "Q154",
+      "module": 5,
+      "q": "A bank conducts large-scale cybersecurity fire drills simulating ransomware scenarios to test and, where necessary, redesign its incident response strategy. What is the primary purpose of this practice?",
+      "opts": [
+        "To satisfy the Instant Business Loan program's due diligence requirement",
+        "To ensure the bank's incident response strategy for ransomware is tested and improved where needed",
+        "To calculate the bank's stressed Tier 1 capital ratio",
+        "To determine eligibility for green bond financing"
+      ],
+      "ans": "B",
+      "exp": "Ransomware fire drills test incident response strategy, with redesign undertaken if required - a preparedness exercise distinct from regulatory capital or lending processes. (Module 5, G.2.1)"
+    },
+    {
+      "id": "Q155",
+      "module": 5,
+      "q": "How is cybersecurity best characterized as an ongoing organizational responsibility?",
+      "opts": [
+        "Primarily a technology-department responsibility with limited relevance to other bank functions",
+        "A continuous process combining technology, policies, and human oversight, not just an IT concern",
+        "Fully resolved once a bank achieves ISO 27001 certification and compliance",
+        "Only relevant after a bank has experienced a confirmed data breach incident"
+      ],
+      "ans": "B",
+      "exp": "Cybersecurity is a continuous process combining technology, policy, and human oversight, and staying ahead of threats is a critical business necessity, not just an IT concern. (Module 5, G.2.3)"
+    },
+    {
+      "id": "Q156",
+      "module": 5,
+      "q": "Which of the following is NOT one of the common cyber threats to retail banking covered in this material?",
+      "opts": [
+        "Phishing Attacks",
+        "Currency devaluation",
+        "Ransomware attacks",
+        "Data breaches"
+      ],
+      "ans": "B",
+      "exp": "Currency devaluation is a real concept, but it belongs to market risk and stress scenarios elsewhere in the material, not the three cyber threats covered here: phishing, ransomware, and data breaches. (Module 5, G.2.1)"
+    },
+    {
+      "id": "Q157",
+      "module": 5,
+      "q": "Which of the following is NOT one of the typical vulnerabilities in banking systems covered in this material?",
+      "opts": [
+        "Outdated Software",
+        "Concentration risk",
+        "Weak Password Policies",
+        "Third-Party Risks"
+      ],
+      "ans": "B",
+      "exp": "Concentration risk is a real concept, but it belongs to credit risk (Module 2), not the three system vulnerabilities covered here. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q158",
+      "module": 5,
+      "q": "A bank's IT security team has capacity to fully address only one gap this quarter: enforcing stronger password policies internally, or auditing the security practices of its external technology vendors. Which consideration should most influence the choice, given these are distinct vulnerability categories?",
+      "opts": [
+        "Password policy enforcement should always be prioritized because it is the more commonly cited vulnerability",
+        "Whichever vulnerability currently represents the greater actual point of exposure for the bank's systems",
+        "Vendor audits should always be prioritized because third parties are inherently less trustworthy than employees",
+        "Neither matters once ISO 27001 certification has been achieved"
+      ],
+      "ans": "B",
+      "exp": "Since Weak Password Policies and Third-Party Risks are distinct vulnerability sources with different root causes, the more urgent one depends on where the bank's actual current exposure lies, not a fixed ordering. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q159",
+      "module": 5,
+      "q": "A bank operating across borders must prioritize either full NDPR compliance for its Nigerian operations or full GDPR alignment for customers in a European jurisdiction, given limited compliance-team capacity this quarter. Which consideration should most reasonably guide this decision?",
+      "opts": [
+        "GDPR should always be prioritized because it is a broader international standard",
+        "Which jurisdiction's customer data the bank is currently handling and therefore legally obligated to protect under that specific regulation",
+        "NDPR should always be prioritized because it was introduced more recently",
+        "Neither regulation is relevant once ISO 27001 certification has been achieved"
+      ],
+      "ans": "B",
+      "exp": "GDPR and NDPR both govern data privacy and protection but for different jurisdictions; which one takes precedence for a given operation depends on whose customer data is actually being handled, not an inherent hierarchy between the two. (Module 5, G.2.2)"
+    },
+    {
+      "id": "Q160",
+      "module": 5,
+      "q": "A board member argues that once a bank has adopted AI-driven fraud detection tools, dedicated cybersecurity policy and staff oversight become largely unnecessary. Is this view consistent with how cybersecurity is treated as a continuous process?",
+      "opts": [
+        "Yes, since AI is described as fully replacing the need for policy and human oversight",
+        "No, since cybersecurity requires technology, policies, and human oversight together, not any one component alone",
+        "This question is not addressed anywhere in the material",
+        "It applies only to banks that have not yet adopted any AI-driven security tools"
+      ],
+      "ans": "B",
+      "exp": "Cybersecurity requires a combination of technology, policies, and human oversight - AI tools are one component of a proactive approach, not a substitute for the others. (Module 5, G.2.3)"
+    },
+    {
+      "id": "Q161",
+      "module": 6,
+      "q": "Which of the following best defines stress testing?",
+      "opts": [
+        "A process of assigning a numerical score to a borrower based on income and credit history",
+        "A computer simulation technique used to test the resilience of institutions and investment portfolios against possible future financial situations",
+        "A process of setting loan prices according to a borrower's risk level",
+        "A process of monitoring transaction patterns in real time to flag suspicious activity"
+      ],
+      "ans": "B",
+      "exp": "Stress testing is a computer simulation technique testing the resilience of institutions and portfolios against possible future financial situations. The distractors describe credit scoring, risk-based pricing, and AI fraud detection respectively. (Module 6, H.2.1)"
+    },
+    {
+      "id": "Q162",
+      "module": 6,
+      "q": "Besides gauging investment risk and asset adequacy, what additional purpose does stress testing serve within the financial industry?",
+      "opts": [
+        "Determining a customer's eligibility for a specific loan product",
+        "Helping evaluate a bank's internal processes and controls",
+        "Setting the interest rate charged on a retail credit facility",
+        "Replacing the need for regular credit monitoring after loan disbursement"
+      ],
+      "ans": "B",
+      "exp": "Stress testing is customarily used to help gauge investment risk and asset adequacy, as well as to help evaluate internal processes and controls. (Module 6, H.2.1)"
+    },
+    {
+      "id": "Q163",
+      "module": 6,
+      "q": "What does the Vulnerability Assessment objective of stress testing evaluate?",
+      "opts": [
+        "Adherence to regulatory requirements for maintaining capital adequacy standards",
+        "The vulnerability of a bank to economic shocks and operational disruptions",
+        "Whether the bank has sufficient capital and liquidity buffers overall",
+        "Whether preventative measures have been implemented to reduce potential losses"
+      ],
+      "ans": "B",
+      "exp": "Vulnerability Assessment evaluates a bank's vulnerability to economic shocks, market fluctuations, or operational disruptions and their impact on financial health and stability. (Module 6, H.2.1)"
+    },
+    {
+      "id": "Q164",
+      "module": 6,
+      "q": "What does the Regulatory Compliance objective of stress testing ensure?",
+      "opts": [
+        "That insights from stress tests are used to adjust a bank's strategies and risk appetite",
+        "Adherence to regulatory requirements and guidelines for maintaining capital adequacy and managing systemic risks",
+        "That a bank's vulnerability to market fluctuations is assessed",
+        "That preventative measures are implemented to reduce potential losses"
+      ],
+      "ans": "B",
+      "exp": "Regulatory Compliance ensures adherence to regulatory requirements and guidelines for maintaining capital adequacy and managing systemic risks, distinct from Strategic Planning, Vulnerability Assessment, and Proactive Risk Mitigation. (Module 6, H.2.1)"
+    },
+    {
+      "id": "Q165",
+      "module": 6,
+      "q": "A bank uses insights from a recent stress test to adjust its lending strategy and overall risk appetite going forward. Which objective of stress testing does this action best illustrate?",
+      "opts": [
+        "Vulnerability Assessment",
+        "Strategic Planning",
+        "Capital and Liquidity Management",
+        "Proactive Risk Mitigation"
+      ],
+      "ans": "B",
+      "exp": "Strategic Planning reflects insights from stress tests supporting informed decision-making, allowing banks to adjust their strategies and risk appetite - exactly what is described. (Module 6, H.2.1)"
+    },
+    {
+      "id": "Q166",
+      "module": 6,
+      "q": "What does the Capital and Liquidity Management objective of stress testing help determine?",
+      "opts": [
+        "Whether a bank's vulnerability to operational disruptions has been assessed",
+        "Whether the bank has sufficient capital and liquidity buffers to withstand adverse scenarios",
+        "Whether the bank's strategies and risk appetite require adjustment",
+        "Whether regulatory guidelines for systemic risk have been followed"
+      ],
+      "ans": "B",
+      "exp": "Capital and Liquidity Management helps determine whether the bank has sufficient capital and liquidity buffers to withstand adverse scenarios. (Module 6, H.2.1)"
+    },
+    {
+      "id": "Q167",
+      "module": 6,
+      "q": "After a stress test reveals a vulnerability, a bank implements preventative measures immediately rather than waiting for losses to materialize. Which objective does this best reflect?",
+      "opts": [
+        "Regulatory Compliance",
+        "Proactive Risk Mitigation",
+        "Strategic Planning",
+        "Capital and Liquidity Management"
+      ],
+      "ans": "B",
+      "exp": "Proactive Risk Mitigation is stress testing enabling early identification of risks, prompting implementation of preventative measures to reduce potential losses. (Module 6, H.2.1)"
+    },
+    {
+      "id": "Q168",
+      "module": 6,
+      "q": "A stress test finds that a bank's capital buffer would fall below the regulatory minimum under a severe recession scenario. Which two objectives of stress testing does this finding most directly connect?",
+      "opts": [
+        "Strategic Planning and Vulnerability Assessment",
+        "Capital and Liquidity Management and Regulatory Compliance",
+        "Proactive Risk Mitigation and Strategic Planning",
+        "Vulnerability Assessment and Proactive Risk Mitigation alone"
+      ],
+      "ans": "B",
+      "exp": "A capital shortfall under stress directly engages Capital and Liquidity Management (buffer adequacy) and Regulatory Compliance (meeting the regulatory minimum) simultaneously. (Module 6, H.2.1)"
+    },
+    {
+      "id": "Q169",
+      "module": 6,
+      "q": "Why have regulators increasingly required financial institutions to carry out stress tests?",
+      "opts": [
+        "To determine eligibility for green bond issuance",
+        "To ensure their capital holdings and other assets are adequate",
+        "To calculate KYC verification thresholds",
+        "To set uniform interest rates across the industry"
+      ],
+      "ans": "B",
+      "exp": "Regulators have required stress tests specifically to ensure financial institutions' capital holdings and other assets are adequate. (Module 6, H.2.1)"
+    },
+    {
+      "id": "Q170",
+      "module": 6,
+      "q": "What does the 'Define the Objective' step of scenario analysis primarily ensure?",
+      "opts": [
+        "That every possible macroeconomic variable is included regardless of relevance",
+        "That the analysis remains focused on addressing a specific problem or decision",
+        "That a range of uncertainty is assigned to each key factor",
+        "That the resulting scenarios are reviewed and updated periodically"
+      ],
+      "ans": "B",
+      "exp": "Defining the objective ensures the analysis remains focused on a specific problem or decision - such as assessing how a recession could affect a mortgage portfolio. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q171",
+      "module": 6,
+      "q": "What are 'Key Factors' as the second step of scenario analysis defines them?",
+      "opts": [
+        "The specific numeric outputs generated once all scenarios are modelled",
+        "Variables that significantly influence outcomes related to the analysis's objective, such as unemployment, interest rates, and regulatory changes",
+        "The remedial actions a bank commits to after results are evaluated",
+        "The capital buffers a bank must hold under Basel III"
+      ],
+      "ans": "B",
+      "exp": "Key Factors are variables significantly influencing outcomes related to the objective - unemployment rates, interest rates, repayment behaviour, regulatory changes, and inflation are examples. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q172",
+      "module": 6,
+      "q": "A bank determines that unemployment could range from 5% in an optimistic case to 12% in a pessimistic case as part of its scenario analysis. Which step in the process does this represent?",
+      "opts": [
+        "Identify Key Factors",
+        "Determine the Uncertainties",
+        "Construct Scenarios",
+        "Assess Potential Outcomes"
+      ],
+      "ans": "B",
+      "exp": "Assigning a range of possible values to a key factor to reflect a realistic spectrum of futures is precisely 'Determine the Uncertainties.' (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q173",
+      "module": 6,
+      "q": "What framework does the 'Construct Scenarios' step typically use to develop coherent, plausible outcomes?",
+      "opts": [
+        "A single deterministic forecast with no variation across factors",
+        "Best Case, Base Case, and Worst Case scenarios built from the identified factors and their uncertainties",
+        "A purely qualitative narrative with no reference to identified key factors",
+        "A fixed regulatory template mandated for all banks regardless of context"
+      ],
+      "ans": "B",
+      "exp": "Constructing scenarios uses identified factors and their uncertainties to develop coherent scenarios such as Best Case, Base Case, and Worst Case. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q174",
+      "module": 6,
+      "q": "A bank models a scenario with stable economic conditions and low defaults, alongside a separate scenario involving severe recession, high defaults, and significant losses. Which two scenario types does this pairing represent?",
+      "opts": [
+        "Base Case Scenario and Worst Case Scenario",
+        "Best Case Scenario and Worst Case Scenario",
+        "Best Case Scenario and Base Case Scenario",
+        "Base Case Scenario twice, modelled under different assumptions"
+      ],
+      "ans": "B",
+      "exp": "Stable conditions with low defaults matches the Best Case Scenario, while severe recession with high defaults and significant losses matches the Worst Case Scenario. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q175",
+      "module": 6,
+      "q": "What does the 'Assess Potential Outcomes' step quantify, using metrics such as non-performing loan ratios and net interest margins?",
+      "opts": [
+        "The specific range of uncertainty assigned to each key factor",
+        "The risks and opportunities associated with each constructed scenario",
+        "The bank's overall objective for conducting the analysis",
+        "The frequency with which scenarios should be revised"
+      ],
+      "ans": "B",
+      "exp": "Assessing Potential Outcomes quantifies the risks and opportunities associated with each scenario, considering metrics like NPL ratios, capital adequacy, and net interest margins. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q176",
+      "module": 6,
+      "q": "Based on its scenario analysis, a bank decides to build liquidity buffers to handle potential market disruptions. Which step in the scenario analysis process does this decision belong to?",
+      "opts": [
+        "Assess Potential Outcomes",
+        "Make Decisions and Develop Plans",
+        "Construct Scenarios",
+        "Monitor and Update"
+      ],
+      "ans": "B",
+      "exp": "Building liquidity buffers is a decision made under 'Make Decisions and Develop Plans,' where insights from the analysis inform robust, adaptable strategies. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q177",
+      "module": 6,
+      "q": "Why does scenario analysis require regular updates?",
+      "opts": [
+        "Because regulators mandate a fixed annual review cycle regardless of circumstances",
+        "Because the banking environment is dynamic, with new risks and opportunities emerging frequently",
+        "Because each scenario can only be used once before becoming invalid",
+        "Because Best, Base, and Worst Case scenarios must be replaced with new labels each cycle"
+      ],
+      "ans": "B",
+      "exp": "The 'Monitor and Update' step is grounded in the fact that the banking environment is dynamic, requiring banks to monitor key economic indicators and revise scenarios periodically. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q178",
+      "module": 6,
+      "q": "Why should scenario analysis not be treated as a one-time exercise?",
+      "opts": [
+        "Because a single scenario analysis is sufficient once regulatory approval has been obtained",
+        "Because the banking environment is dynamic, requiring ongoing monitoring of key indicators and periodic revision of scenarios",
+        "Because scenario analysis becomes invalid once a bank's Best Case Scenario materializes",
+        "Because only the Worst Case Scenario needs to be reassessed over time"
+      ],
+      "ans": "B",
+      "exp": "Scenario analysis is an ongoing process because new risks and opportunities emerge frequently in the banking environment, requiring regular monitoring and revision. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q179",
+      "module": 6,
+      "q": "A bank has already identified unemployment, interest rates, and regulatory change as its key factors, but has not yet decided what specific range of values each factor might take. Which step should it complete next?",
+      "opts": [
+        "Construct Scenarios",
+        "Determine the Uncertainties",
+        "Assess Potential Outcomes",
+        "Monitor and Update"
+      ],
+      "ans": "B",
+      "exp": "Once key factors are identified, the next step in the sequence is determining the range of uncertainty for each factor, before those ranges are used to construct scenarios. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q180",
+      "module": 6,
+      "q": "Which of the following best defines a stress scenario in the context of retail banking?",
+      "opts": [
+        "A routine variation in customer transaction volume within normal expected ranges",
+        "An extreme, yet plausible event that could significantly impact a bank's financial stability",
+        "A scheduled annual audit of a bank's credit portfolio",
+        "A standard component of every loan approval process"
+      ],
+      "ans": "B",
+      "exp": "Stress scenarios are extreme, yet plausible events that could significantly impact a bank's financial stability, including sudden downturns, market fluctuations, or operational disruptions. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q181",
+      "module": 6,
+      "q": "What impact does a sharp increase in unemployment have as an Economic Downturn stress scenario?",
+      "opts": [
+        "A reduction in a bank's exposure to foreign exchange risk",
+        "A surge in loan defaults, especially for consumer loans like credit cards and personal loans",
+        "An automatic increase in the bank's deposit base",
+        "A decrease in the bank's need for regulatory capital"
+      ],
+      "ans": "B",
+      "exp": "A sharp increase in unemployment leads to large-scale job losses that surge loan defaults, particularly on consumer loans such as credit cards and personal loans. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q182",
+      "module": 6,
+      "q": "A sharp contraction in economic activity reduces customer spending and borrowers' ability to repay loans across a bank's portfolio. Which Economic Downturn sub-scenario does this describe?",
+      "opts": [
+        "Sharp increase in unemployment",
+        "Significant GDP decline",
+        "Decreased consumer confidence",
+        "Currency devaluation"
+      ],
+      "ans": "B",
+      "exp": "Significant GDP decline is a sharp contraction in economic activity that impacts customer spending and loan repayment ability - matching the scenario exactly. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q183",
+      "module": 6,
+      "q": "What effect does Decreased Consumer Confidence have as an Economic Downturn stress scenario?",
+      "opts": [
+        "An increase in a bank's exposure to counterparty risk in derivative transactions",
+        "Lower deposit levels and decreased loan demand as spending falls",
+        "A guaranteed reduction in credit-scoring accuracy",
+        "An automatic tightening of capital adequacy requirements"
+      ],
+      "ans": "B",
+      "exp": "Decreased consumer confidence reduces consumer spending, which can lead to lower deposit levels and decreased loan demand. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q184",
+      "module": 6,
+      "q": "Falling consumer confidence during an economic slowdown leads a bank's deposit base to shrink while new loan applications decline sharply. Which Economic Downturn sub-scenario is illustrated?",
+      "opts": [
+        "Significant GDP decline",
+        "Decreased consumer confidence",
+        "Sharp increase in unemployment",
+        "Stock market crash"
+      ],
+      "ans": "B",
+      "exp": "Reduced deposits and declining loan demand tied specifically to falling consumer confidence match the Decreased Consumer Confidence sub-scenario. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q185",
+      "module": 6,
+      "q": "What effect do sudden interest rate hikes have under Market Fluctuations?",
+      "opts": [
+        "A reduction in loan default rates across variable-rate portfolios",
+        "A negative effect on borrowers with variable rate loans, leading to higher delinquency rates",
+        "An automatic increase in a bank's deposit insurance coverage",
+        "A guaranteed decrease in a bank's exposure to concentration risk"
+      ],
+      "ans": "B",
+      "exp": "Sudden interest rate hikes negatively affect borrowers with variable rate loans, leading to higher delinquency rates. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q186",
+      "module": 6,
+      "q": "A significant drop in stock prices reduces customer wealth and investment portfolio values, potentially decreasing spending and loan demand. Which Market Fluctuation sub-scenario is described?",
+      "opts": [
+        "Sudden interest rate hikes",
+        "Stock market crash",
+        "Currency devaluation",
+        "Significant GDP decline"
+      ],
+      "ans": "B",
+      "exp": "A stock market crash is a significant drop in stock prices impacting investment portfolios and reducing customer wealth, potentially decreasing spending and loan demand. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q187",
+      "module": 6,
+      "q": "What impact does currency devaluation have as a Market Fluctuation stress scenario?",
+      "opts": [
+        "A reduction in a bank's exposure to fraud risk specifically",
+        "An impact on international transactions and profitability for banks with cross-border operations",
+        "An automatic increase in a bank's domestic deposit base",
+        "A guaranteed reduction in a bank's regulatory capital requirement"
+      ],
+      "ans": "B",
+      "exp": "Currency devaluation is fluctuations in exchange rates impacting international transactions and profitability for banks with cross-border operations. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q188",
+      "module": 6,
+      "q": "A bank with significant cross-border lending activity is assessing which Market Fluctuation scenario poses the most direct threat to its profitability from exchange-rate movements. Which scenario should it prioritize?",
+      "opts": [
+        "Sudden interest rate hikes",
+        "Currency devaluation",
+        "Stock market crash",
+        "Significant GDP decline"
+      ],
+      "ans": "B",
+      "exp": "Currency devaluation is specifically tied to exchange-rate impact on cross-border operations, making it the most directly relevant scenario for a bank with significant cross-border lending. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q189",
+      "module": 6,
+      "q": "Which combination falls under Operational Risks as a key stress scenario category?",
+      "opts": [
+        "Sudden interest rate hikes and currency devaluation",
+        "Cybersecurity breaches, system failures, and fraudulent activity",
+        "Sharp unemployment increase and significant GDP decline",
+        "Stricter capital adequacy requirements and new consumer protection laws"
+      ],
+      "ans": "B",
+      "exp": "Cybersecurity breaches, system failures, and fraudulent activity are the three items under Operational Risks, distinct from Economic Downturns, Market Fluctuations, and Regulatory Changes. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q190",
+      "module": 6,
+      "q": "What effect do stricter capital adequacy requirements have as a Regulatory Change stress scenario?",
+      "opts": [
+        "A reduction in a bank's exposure to cybersecurity threats",
+        "New regulations forcing banks to increase capital reserves, impacting profitability",
+        "An automatic increase in loan origination volumes",
+        "A guaranteed reduction in loan-to-value restrictions"
+      ],
+      "ans": "B",
+      "exp": "Stricter capital adequacy requirements may force banks to increase capital reserves, which impacts profitability. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q191",
+      "module": 6,
+      "q": "New loan-to-value or debt-to-income ratio restrictions are introduced, significantly impacting a bank's loan origination volumes. Which Regulatory Changes sub-scenario is illustrated?",
+      "opts": [
+        "Stricter capital adequacy requirements",
+        "Changes in lending regulations",
+        "New consumer protection laws",
+        "Political instability"
+      ],
+      "ans": "B",
+      "exp": "Changes in lending regulations specifically describe new loan-to-value or debt-to-income ratio restrictions that could significantly impact loan origination volumes. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q192",
+      "module": 6,
+      "q": "Which combination falls under 'Other Potential Scenarios' as key stress scenarios?",
+      "opts": [
+        "Sudden interest rate hikes and stock market crash",
+        "Natural disasters, political instability, and large-scale customer withdrawals",
+        "Cybersecurity breaches and system failures",
+        "Stricter capital adequacy requirements and new consumer protection laws"
+      ],
+      "ans": "B",
+      "exp": "Natural disasters, political instability, and large-scale customer withdrawals fall under Other Potential Scenarios, distinct from the Economic Downturn, Market Fluctuation, Operational, and Regulatory categories. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q193",
+      "module": 6,
+      "q": "A sudden loss of confidence in a bank leads a large number of customers to withdraw their deposits simultaneously. Which category of stress scenario does this fall under, and how does it relate to the liquidity risk concept from Module 1?",
+      "opts": [
+        "It falls under Market Fluctuations, and it is unrelated to Module 1's liquidity risk concept",
+        "It falls under Other Potential Scenarios as large-scale customer withdrawals, and it is the specific stress event that can trigger the liquidity risk described in Module 1",
+        "It falls under Regulatory Changes, and it directly causes credit risk rather than liquidity risk",
+        "It falls under Operational Risks, and it is unrelated to any risk category discussed elsewhere"
+      ],
+      "ans": "B",
+      "exp": "Large-scale customer withdrawals sits under Other Potential Scenarios and is precisely the kind of stress event that could produce the liquidity risk Module 1 defines - insufficient liquidity to pay depositors. (Module 6, H.2.2; Module 1, C.2.2)"
+    },
+    {
+      "id": "Q194",
+      "module": 6,
+      "q": "How do Internal Analysis and External Analysis differ as approaches to identifying stress scenarios?",
+      "opts": [
+        "Internal Analysis monitors economic trends and regulatory landscape, while External Analysis evaluates the bank's own portfolio and operational vulnerabilities",
+        "Internal Analysis evaluates the bank's current portfolio, customer demographics, geographic exposure, and operational vulnerabilities, while External Analysis monitors economic trends, market conditions, and the regulatory landscape",
+        "Both approaches refer to the exact same evaluation process performed at different times of year",
+        "Internal Analysis applies only to credit risk, while External Analysis applies only to market risk"
+      ],
+      "ans": "B",
+      "exp": "Internal Analysis looks inward at the bank's own portfolio, demographics, exposure and vulnerabilities; External Analysis looks outward at economic trends, market conditions, and the regulatory landscape. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q195",
+      "module": 6,
+      "q": "A bank evaluates its current loan portfolio, customer demographics, geographic exposure, and operational vulnerabilities as part of identifying potential stress scenarios. Which approach is being applied?",
+      "opts": [
+        "External Analysis",
+        "Internal Analysis",
+        "Expert Input",
+        "Monitor and Update"
+      ],
+      "ans": "B",
+      "exp": "Evaluating the bank's own portfolio, demographics, exposure and vulnerabilities matches Internal Analysis exactly. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q196",
+      "module": 6,
+      "q": "A bank's risk committee must decide whether to rely primarily on Internal Analysis or External Analysis when identifying next year's stress scenarios, given both are recognized approaches. Which consideration should most influence the choice?",
+      "opts": [
+        "Internal Analysis should always be prioritized because it is the more commonly cited approach",
+        "Whether the greater source of uncertainty currently lies within the bank's own portfolio and operations or within the broader economic and regulatory environment",
+        "External Analysis should always be prioritized because economic trends are inherently more unpredictable than internal exposures",
+        "Expert Input should be disregarded entirely once Internal and External Analysis are complete"
+      ],
+      "ans": "B",
+      "exp": "Since Internal and External Analysis address different sources of uncertainty, the bank's own exposures versus the broader environment, the more useful approach depends on where the greater current uncertainty actually lies, not a fixed ordering. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q197",
+      "module": 6,
+      "q": "A stress test scenario models a severe recession combined with a simultaneous cyberattack disrupting the bank's core systems. Which two categories of stress scenario does this combined scenario draw from?",
+      "opts": [
+        "Market Fluctuations and Regulatory Changes",
+        "Economic Downturns and Operational Risks",
+        "Regulatory Changes and Other Potential Scenarios",
+        "Economic Downturns and Market Fluctuations"
+      ],
+      "ans": "B",
+      "exp": "A severe recession falls under Economic Downturns, while a cyberattack disrupting core systems falls under Operational Risks - a combined scenario drawing on both categories at once. (Module 6, H.2.2)"
+    },
+    {
+      "id": "Q198",
+      "module": 6,
+      "q": "When defining the scope of a stress test for credit risk, which factor is considered alongside portfolio composition and geographical regions?",
+      "opts": [
+        "The bank's marketing budget for the following fiscal year",
+        "Types of credit risk to focus on, such as counterparty risk, concentration risk, or sector-specific risks",
+        "The number of new products launched during the review period",
+        "The bank's employee headcount across all branches"
+      ],
+      "ans": "B",
+      "exp": "Defining the scope of a credit risk stress test involves considering portfolio composition, geographical regions, and types of credit risk such as counterparty, concentration, or sector-specific risks. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q199",
+      "module": 6,
+      "q": "Which of the following is NOT one of the common stress scenarios selected for credit risk stress testing?",
+      "opts": [
+        "Macroeconomic shocks",
+        "Insurance premiums",
+        "Market volatility",
+        "Pandemic scenarios"
+      ],
+      "ans": "B",
+      "exp": "The four common credit-risk stress scenarios are macroeconomic shocks, market volatility, geopolitical risks, and pandemic scenarios. Deposit insurance is a real regulatory-impact concept elsewhere in the material but not one of these four. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q200",
+      "module": 6,
+      "q": "Why is it important to choose a range of both 'baseline' and 'severe' scenarios when selecting stress scenarios for credit risk?",
+      "opts": [
+        "Because regulators require exactly two scenarios to be modelled at all times",
+        "To ensure the bank can assess potential outcomes across different risk levels, from normal to extreme conditions",
+        "Because baseline scenarios eliminate the need for severe scenarios once modelled",
+        "Because severe scenarios alone are sufficient for regulatory reporting purposes"
+      ],
+      "ans": "B",
+      "exp": "Choosing both baseline (normal) and severe (extreme) scenarios ensures the bank can assess potential outcomes across different risk levels. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q201",
+      "module": 6,
+      "q": "When developing stress testing models for credit risk, how do credit risk parameters differ from macroeconomic variables?",
+      "opts": [
+        "Credit risk parameters include GDP growth and inflation, while macroeconomic variables include PD, LGD, and EAD",
+        "Credit risk parameters include PD, LGD, and EAD, while macroeconomic variables include factors like GDP growth, unemployment, and interest rates used to model impact on creditworthiness",
+        "Both terms refer to the exact same set of variables used interchangeably",
+        "Credit risk parameters apply only to market risk stress testing, not credit risk"
+      ],
+      "ans": "B",
+      "exp": "Credit risk parameters (PD, LGD, EAD) are distinct from macroeconomic variables (GDP growth, unemployment, inflation, interest rates), which model how stress scenarios affect borrowers' creditworthiness. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q202",
+      "module": 6,
+      "q": "Which two measures do banks distinguish when calculating how much capital would be required to absorb potential losses under a stress scenario?",
+      "opts": [
+        "Probability of Default and Exposure at Default",
+        "Expected Loss and Unexpected Loss",
+        "Obligor Risk Rating and Facility Risk Rating",
+        "Value-at-Risk and Expected Shortfall"
+      ],
+      "ans": "B",
+      "exp": "Expected Loss is the average loss the bank expects under stressed conditions, while Unexpected Loss is the additional loss that may arise in extreme cases, beyond the expected loss. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q203",
+      "module": 6,
+      "q": "What does assessing capital adequacy involve when evaluating the results of a credit risk stress test?",
+      "opts": [
+        "Determining whether the bank's marketing spend aligns with projected quarterly revenue",
+        "Determining whether capital buffers are sufficient to cover losses under the worst-case scenario",
+        "Determining whether the bank's KYC procedures were correctly followed during onboarding",
+        "Determining whether the bank's third-party vendors meet agreed service-level agreements"
+      ],
+      "ans": "B",
+      "exp": "Capital adequacy assessment evaluates whether capital buffers, such as Tier 1 and Tier 2 capital, are sufficient to absorb losses under the worst-case stress scenario. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q204",
+      "module": 6,
+      "q": "A stress test reveals that a bank's credit portfolio is heavily exposed to the real estate sector and would suffer significant losses under a downturn scenario. Which remedial response is most directly applicable?",
+      "opts": [
+        "Eliminating all forms of credit scoring from the approval process",
+        "Reducing high-risk exposures by limiting lending to the vulnerable sector, combined with diversification into other sectors or regions",
+        "Suspending stress testing for the remainder of the fiscal year",
+        "Removing the requirement for regular credit monitoring going forward"
+      ],
+      "ans": "B",
+      "exp": "Reducing high-risk exposures and diversification are both recognized remedial actions for addressing sector-concentration vulnerabilities uncovered by stress testing. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q205",
+      "module": 6,
+      "q": "When defining the scope of a stress test for market risk, which factor is considered alongside portfolio composition and key market risk factors?",
+      "opts": [
+        "The bank's employee training completion rate",
+        "Risk exposure, including trading book positions and interest rate-sensitive assets",
+        "The number of active KYC verifications completed monthly",
+        "The bank's total number of retail branches"
+      ],
+      "ans": "B",
+      "exp": "Defining the scope of a market risk stress test involves portfolio composition, key market risk factors (interest rate, foreign exchange, equity price risk), and risk exposure including trading book positions and interest rate-sensitive assets. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q206",
+      "module": 6,
+      "q": "A bank simulates currency devaluations or appreciation to assess their effects on foreign-currency-denominated loans and liabilities. Which category of market risk stress scenario is being applied?",
+      "opts": [
+        "Interest Rate Shocks",
+        "Foreign Exchange Risk",
+        "Stock Market Volatility",
+        "Regulatory Compliance Breach"
+      ],
+      "ans": "B",
+      "exp": "Simulating currency devaluation or appreciation and its effects on foreign-currency-denominated loans and liabilities is precisely Foreign Exchange Risk within market risk stress testing. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q207",
+      "module": 6,
+      "q": "Which set of metrics is used to measure potential losses when developing stress testing models for market risk?",
+      "opts": [
+        "Probability of Default, Loss Given Default, and Exposure at Default",
+        "Value-at-risk (VaR), expected shortfall (ES), and duration analysis",
+        "Obligor Risk Rating and Facility Risk Rating",
+        "Non-performing loan ratio and net interest margin"
+      ],
+      "ans": "B",
+      "exp": "Value-at-risk, expected shortfall, and duration analysis are the market risk metrics used to measure potential losses, distinct from the PD/LGD/EAD trio used for credit risk. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q208",
+      "module": 6,
+      "q": "Which macroeconomic variables are incorporated into market risk stress testing models?",
+      "opts": [
+        "Debt-to-income ratio and credit score",
+        "Inflation rates, GDP growth, and central bank policies",
+        "Loan-to-value ratio and collateral liquidity",
+        "Deposit insurance coverage and branch headcount"
+      ],
+      "ans": "B",
+      "exp": "Inflation rates, GDP growth, and central bank policies are the macroeconomic variables incorporated into market risk stress testing models. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q209",
+      "module": 6,
+      "q": "When stress models are applied to a bank's market risk portfolio, what does this simulation calculate regarding trading positions?",
+      "opts": [
+        "The bank's total headcount required to manage the trading desk",
+        "The potential losses in trading positions and asset revaluations under extreme scenarios",
+        "The bank's KYC compliance rate for institutional counterparties",
+        "The number of branches affected by a natural disaster scenario"
+      ],
+      "ans": "B",
+      "exp": "Applying stress scenarios to the market risk portfolio calculates potential losses in trading positions and asset revaluations under extreme scenarios. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q210",
+      "module": 6,
+      "q": "A bank's market risk stress test reveals significant vulnerability to interest rate movements in its bond holdings. Which remedial response is most directly applicable?",
+      "opts": [
+        "Strengthening KYC verification at customer onboarding",
+        "Using hedging strategies, such as derivatives, to reduce exposure to interest rate risk",
+        "Increasing the frequency of credit history reviews for retail borrowers",
+        "Expanding the Instant Business Loan program's eligibility criteria"
+      ],
+      "ans": "B",
+      "exp": "Hedging strategies using derivatives to hedge against interest rate or currency risks are a recognized remedial action for market risk stress test findings. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q211",
+      "module": 6,
+      "q": "When defining the scope of a stress test for operational risk, which types of risk are the focus?",
+      "opts": [
+        "Concentration risk, country risk, and settlement risk",
+        "Cybersecurity threats, fraud, technology failures, and regulatory compliance breaches",
+        "Interest rate risk, foreign exchange risk, and equity price risk",
+        "Default risk, counterparty risk, and country risk"
+      ],
+      "ans": "B",
+      "exp": "Cybersecurity threats, fraud, technology failures, and regulatory compliance breaches are the types of operational risk considered when defining the scope of operational risk stress testing. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q212",
+      "module": 6,
+      "q": "A bank models the impact of a data breach or ransomware attack on its operations and reputation as part of its operational risk stress testing. Which selected stress scenario does this represent?",
+      "opts": [
+        "Technology Failure",
+        "Cyberattack Simulation",
+        "Fraudulent Activities",
+        "Foreign Exchange Risk"
+      ],
+      "ans": "B",
+      "exp": "Modelling the impact of a data breach or ransomware attack on operations and reputation is precisely the Cyberattack Simulation scenario within operational risk stress testing. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q213",
+      "module": 6,
+      "q": "What do Operational Risk Loss Models use to estimate potential financial losses?",
+      "opts": [
+        "Only the bank's current Tier 1 capital ratio",
+        "Historical loss data and statistical techniques",
+        "Only the bank's projected marketing expenditure",
+        "Only customer satisfaction survey results"
+      ],
+      "ans": "B",
+      "exp": "Operational Risk Loss Models use historical loss data and statistical techniques to estimate potential financial losses. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q214",
+      "module": 6,
+      "q": "When operational risk stress scenarios are applied to a bank's operations, what does this process quantify, beyond financial losses?",
+      "opts": [
+        "The bank's total number of active retail loan products",
+        "The bank's ability to recover critical functions after an operational shock",
+        "The bank's compliance with Anti-Money Laundering regulations specifically",
+        "The bank's exposure to sovereign credit risk"
+      ],
+      "ans": "B",
+      "exp": "Applying operational risk scenarios quantifies potential financial losses and assesses the ability to recover critical functions after an operational shock. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q215",
+      "module": 6,
+      "q": "An operational risk stress test reveals weaknesses in a bank's cybersecurity infrastructure and insufficient contingency planning. Which combination of remedial actions is most directly applicable?",
+      "opts": [
+        "Collateralization and credit insurance",
+        "Strengthening IT security measures and establishing robust Business Continuity Planning",
+        "Risk-based pricing and portfolio diversification",
+        "Hedging strategies and capital buffer enhancement for interest rate risk"
+      ],
+      "ans": "B",
+      "exp": "Strengthening IT security measures and Business Continuity Planning are both recognized remedial actions for the exact weaknesses described - cybersecurity gaps and insufficient contingency planning. (Module 6, H.2.3)"
+    },
+    {
+      "id": "Q216",
+      "module": 7,
+      "q": "What is meant by a bank's 'risk appetite'?",
+      "opts": [
+        "The specific numeric threshold a bank uses to calculate Loss Given Default",
+        "The level of risk a bank is willing to accept, which should align with its strategic objectives, values, and operational goals",
+        "The total capital reserves a bank holds under Basel III requirements",
+        "The maximum number of stress scenarios a bank must model each year"
+      ],
+      "ans": "B",
+      "exp": "Risk appetite is the level of risk a bank is willing to accept, and it should align with the bank's strategic objectives, values, and operational goals. (Module 7, I.2.1)"
+    },
+    {
+      "id": "Q217",
+      "module": 7,
+      "q": "Why is communicating a bank's risk appetite across all levels of the organization important?",
+      "opts": [
+        "To satisfy an annual shareholder disclosure requirement unrelated to daily operations",
+        "To ensure decision-making, policies, and processes reflect a balanced approach to risk and reward",
+        "To eliminate the need for regular monitoring and adjustment of risk appetite over time",
+        "To determine which employees qualify for performance-based bonuses"
+      ],
+      "ans": "B",
+      "exp": "Communicating risk appetite across all levels ensures decision-making, policies, and processes reflect a balanced approach to risk and reward, requiring regular monitoring and adjustment. (Module 7, I.2.1)"
+    },
+    {
+      "id": "Q218",
+      "module": 7,
+      "q": "A bank gives frontline staff the authority to flag and pause a suspicious transaction on their own judgment, and later recognizes a branch team publicly for catching a fraud attempt this way. Which element of building a risk-aware culture does this best illustrate?",
+      "opts": [
+        "Align Risk Appetite with Strategy",
+        "Empower and Engage Employees",
+        "Embed Risk Management into Processes",
+        "Evaluate and Improve Risk Culture"
+      ],
+      "ans": "B",
+      "exp": "Empower and Engage Employees means providing staff with the skills, tools, and authority to assess and manage risks, with recognition and rewards reinforcing proactive risk management. (Module 7, I.2.1)"
+    },
+    {
+      "id": "Q219",
+      "module": 7,
+      "q": "What does embedding risk management into a bank's processes, rather than treating it as a separate function, involve?",
+      "opts": [
+        "Assigning all risk-related decisions exclusively to a standalone risk department team",
+        "Defining clear roles so that risk considerations are built into planning and lending activities",
+        "Removing risk considerations entirely from day-to-day lending and investment decisions",
+        "Limiting all risk management activities strictly to an annual review cycle"
+      ],
+      "ans": "B",
+      "exp": "Embedding risk management into processes means defining clear roles, responsibilities, and risk-based decision-making so risk considerations are integrated into planning, budgeting, lending, and investment activities, not siloed into a separate function. (Module 7, I.2.1)"
+    },
+    {
+      "id": "Q220",
+      "module": 7,
+      "q": "A bank implements a system that automatically flags unusual transaction volumes the moment they occur, rather than relying solely on a periodic manual review. Which element of building a risk-aware culture does this best illustrate?",
+      "opts": [
+        "Enhance Risk Awareness and Communication",
+        "Embed Risk Management into Processes",
+        "Align Risk Appetite with Strategy",
+        "Evaluate and Improve Risk Culture"
+      ],
+      "ans": "B",
+      "exp": "Establishing automated risk alerts and monitoring systems to detect and address risks in real time is a direct example of embedding risk management into processes. (Module 7, I.2.1)"
+    },
+    {
+      "id": "Q221",
+      "module": 7,
+      "q": "What is essential to creating a risk-aware culture through communication?",
+      "opts": [
+        "Restricting risk-related communication exclusively to senior management",
+        "Continuous education, clear communication, and transparency, including targeted training relevant to employees' roles",
+        "Eliminating channels for reporting incidents to reduce administrative burden",
+        "Limiting risk messaging to formal written policy documents only"
+      ],
+      "ans": "B",
+      "exp": "Enhancing Risk Awareness and Communication requires continuous education, clear communication, and transparency, with employees receiving targeted risk training relevant to their roles. (Module 7, I.2.1)"
+    },
+    {
+      "id": "Q222",
+      "module": 7,
+      "q": "A bank designs risk training modules specific to each department's daily responsibilities, rather than issuing the same generic training to every employee. Which element of building a risk-aware culture does this best illustrate?",
+      "opts": [
+        "Embed Risk Management into Processes",
+        "Enhance Risk Awareness and Communication",
+        "Align Risk Appetite with Strategy",
+        "Evaluate and Improve Risk Culture"
+      ],
+      "ans": "B",
+      "exp": "Employees receiving risk training relevant to their specific roles falls under Enhance Risk Awareness and Communication. (Module 7, I.2.1)"
+    },
+    {
+      "id": "Q223",
+      "module": 7,
+      "q": "Why is periodically assessing a bank's risk culture recommended?",
+      "opts": [
+        "To determine which branches should be closed for underperformance",
+        "To identify gaps, weaknesses, and improvement areas, and to drive continuous improvement in risk culture",
+        "To calculate the bank's stressed Tier 1 capital ratio",
+        "To satisfy a one-time regulatory requirement that does not recur"
+      ],
+      "ans": "B",
+      "exp": "Risk culture should be assessed periodically to identify gaps, weaknesses, and improvement areas, driving continuous improvement so risk awareness remains core to operations. (Module 7, I.2.1)"
+    },
+    {
+      "id": "Q224",
+      "module": 7,
+      "q": "What two inputs help drive continuous improvement in a bank's risk culture?",
+      "opts": [
+        "Quarterly marketing analytics and customer acquisition cost",
+        "Stakeholder feedback and performance indicators",
+        "Loan-to-value ratios and collateral valuations",
+        "Foreign exchange rates and central bank policy announcements"
+      ],
+      "ans": "B",
+      "exp": "Seeking stakeholder feedback and using performance indicators are the two inputs that help drive continuous improvement in risk culture. (Module 7, I.2.1)"
+    },
+    {
+      "id": "Q225",
+      "module": 7,
+      "q": "Which of the following is NOT one of the five elements required to build a strong risk-aware culture?",
+      "opts": [
+        "Employee engagement",
+        "Collateralization",
+        "Embedded processes",
+        "Continuous evaluation"
+      ],
+      "ans": "B",
+      "exp": "The five elements are clear risk alignment, employee engagement, embedded processes, effective communication, and continuous evaluation. Collateralization is a real term, but it belongs to Module 2's credit risk mitigation strategies, not the risk-culture framework. (Module 7, I.2.1)"
+    },
+    {
+      "id": "Q226",
+      "module": 7,
+      "q": "What does 'Data-Driven Risk Assessment' involve?",
+      "opts": [
+        "Relying exclusively on a borrower's self-reported financial statements without any verification",
+        "Using predictive analytics on borrower behaviour and real-time monitoring to anticipate risks",
+        "Replacing all human underwriting judgment entirely with a single fixed formula",
+        "Limiting analytics use strictly to fraud investigation after losses have already occurred"
+      ],
+      "ans": "B",
+      "exp": "Data-Driven Risk Assessment uses predictive analytics on borrower behaviour, real-time monitoring for fraud and cybersecurity threats, and integration with external market trends to anticipate downturns, creditworthiness changes, or liquidity risks. (Module 7, I.2.2)"
+    },
+    {
+      "id": "Q227",
+      "module": 7,
+      "q": "A bank uses predictive analytics to analyze a borrower's transaction history and repayment patterns, generating an early estimate of default likelihood before the loan is even disbursed. Which capability does this best illustrate?",
+      "opts": [
+        "Operational Risk Monitoring",
+        "Data-Driven Risk Assessment",
+        "Enhancing Regulatory Compliance",
+        "Fraud Detection and Prevention"
+      ],
+      "ans": "B",
+      "exp": "Predictive analytics assessing credit risk by analyzing borrower behaviour is a direct example of Data-Driven Risk Assessment. (Module 7, I.2.2)"
+    },
+    {
+      "id": "Q228",
+      "module": 7,
+      "q": "What do AI-powered fraud detection systems analyze to flag unusual activities such as unauthorized transactions or account takeovers?",
+      "opts": [
+        "Only the borrower's most recent credit score in isolation",
+        "Historical and real-time data to identify irregular transaction patterns and suspicious activities",
+        "Only the bank's marketing campaign performance metrics",
+        "Only the number of branches a customer has visited in a given month"
+      ],
+      "ans": "B",
+      "exp": "AI-powered fraud detection systems analyze historical and real-time data to flag unusual activities such as unauthorized transactions or account takeovers. (Module 7, I.2.2)"
+    },
+    {
+      "id": "Q229",
+      "module": 7,
+      "q": "A bank's fraud monitoring system flags a transaction as suspicious because it deviates sharply from a customer's normal spending pattern, even though the transaction itself appears otherwise valid. Which capability is being applied?",
+      "opts": [
+        "Regulatory Technology (RegTech) automation",
+        "Behavioural analytics assessing deviations from normal customer transaction behaviour",
+        "Operational Risk Monitoring through key risk indicators",
+        "Credit scoring through Obligor Risk Rating"
+      ],
+      "ans": "B",
+      "exp": "Behavioural analytics strengthens fraud prevention by assessing deviations from a customer's normal transaction behaviour, distinct from static rule-based checks. (Module 7, I.2.2)"
+    },
+    {
+      "id": "Q230",
+      "module": 7,
+      "q": "What role does behavioural analytics play in fraud prevention?",
+      "opts": [
+        "It replaces the need for AI-powered fraud detection systems entirely",
+        "It further strengthens fraud prevention by assessing deviations from a customer's normal transaction behaviour",
+        "It is used exclusively to calculate a bank's regulatory capital requirement",
+        "It applies only to corporate accounts, not retail customer accounts"
+      ],
+      "ans": "B",
+      "exp": "Behavioural analytics further strengthens fraud prevention by assessing deviations from normal customer transaction behaviour, complementing AI-powered pattern detection. (Module 7, I.2.2)"
+    },
+    {
+      "id": "Q231",
+      "module": 7,
+      "q": "How do machine learning models enhance credit risk evaluation?",
+      "opts": [
+        "By eliminating the need for any human review of loan applications",
+        "By analyzing borrowers' historical repayment behaviour, financial status, and market trends to provide risk scores and early warning indicators",
+        "By setting a single fixed interest rate applicable to all borrowers",
+        "By replacing collateral requirements with a purely algorithmic guarantee"
+      ],
+      "ans": "B",
+      "exp": "Machine learning models analyze historical repayment behaviour, financial status, and market trends to provide risk scores and early warning indicators for credit risk. (Module 7, I.2.2)"
+    },
+    {
+      "id": "Q232",
+      "module": 7,
+      "q": "A machine learning model flags a borrower's risk score as deteriorating several months before any missed payment occurs, prompting the bank to offer a restructuring plan proactively. Which capability does this illustrate?",
+      "opts": [
+        "Operational Risk Monitoring through automated key risk indicators",
+        "Early warning indicators allowing preventive action before defaults occur",
+        "Regulatory Technology automating compliance and reporting processes",
+        "Blockchain-based transaction record-keeping and verification systems"
+      ],
+      "ans": "B",
+      "exp": "Machine learning models provide early warning indicators that allow banks to adjust credit terms or offer restructuring plans before defaults occur. (Module 7, I.2.2)"
+    },
+    {
+      "id": "Q233",
+      "module": 7,
+      "q": "What do automated risk dashboards and Key Risk Indicators (KRIs) help banks monitor in the context of operational risk?",
+      "opts": [
+        "Only the bank's total quarterly advertising and marketing spend",
+        "Performance metrics related to system failures, compliance breaches, and process inefficiencies",
+        "Only the number of new customer accounts opened each month",
+        "Only the bank's exposure to sovereign credit risk"
+      ],
+      "ans": "B",
+      "exp": "Automated risk dashboards and KRIs help banks monitor performance metrics tied to system failures, compliance breaches, and process inefficiencies. (Module 7, I.2.2)"
+    },
+    {
+      "id": "Q234",
+      "module": 7,
+      "q": "A bank builds a live dashboard tracking system uptime, fraud detection rates, and process error counts across all branches, visible to risk managers in real time. Which use of data analytics does this best illustrate?",
+      "opts": [
+        "Data-Driven Risk Assessment for credit risk",
+        "Operational Risk Monitoring through automated risk dashboards and KRIs",
+        "Enhancing Regulatory Compliance through RegTech",
+        "Fraud Detection and Prevention through behavioural analytics"
+      ],
+      "ans": "B",
+      "exp": "A live dashboard tracking system uptime and operational performance metrics matches Operational Risk Monitoring through automated dashboards and Key Risk Indicators. (Module 7, I.2.2)"
+    },
+    {
+      "id": "Q235",
+      "module": 7,
+      "q": "What is the role of Regulatory Technology (RegTech) solutions in enhancing regulatory compliance?",
+      "opts": [
+        "They replace the need for banks to maintain any internal compliance staff",
+        "They use AI to streamline compliance processes and automate regulatory reporting",
+        "They exist solely to calculate a bank's Loss Given Default",
+        "They apply only to cross-border settlement transactions"
+      ],
+      "ans": "B",
+      "exp": "RegTech solutions use AI to streamline compliance processes and automate regulatory reporting, reducing violations and penalties. (Module 7, I.2.2)"
+    },
+    {
+      "id": "Q236",
+      "module": 7,
+      "q": "A bank adopts a RegTech solution that automatically compiles and files its regulatory disclosures, reducing manual reporting errors. What outcome is most directly attributable to this kind of automation?",
+      "opts": [
+        "An automatic increase in the bank's Non-Performing Loan ratio",
+        "Reduced compliance violations and penalties through more accurate tracking, documentation, and reporting of risks",
+        "A guaranteed reduction in the bank's exposure to market risk",
+        "Elimination of the need for any customer feedback collection"
+      ],
+      "ans": "B",
+      "exp": "Data analytics and RegTech help ensure banks track, document, and report risks effectively, reducing compliance violations and penalties. (Module 7, I.2.2)"
+    },
+    {
+      "id": "Q237",
+      "module": 7,
+      "q": "Which of the following is a recognized channel for collecting customer feedback to identify risk vulnerabilities?",
+      "opts": [
+        "Internal staff performance appraisals",
+        "Surveys, complaints, social media, and customer service interactions",
+        "Quarterly shareholder earnings calls",
+        "Regulatory audit findings issued by the Central Bank"
+      ],
+      "ans": "B",
+      "exp": "Surveys, complaints, social media, and customer service interactions are the multiple channels through which customer feedback should be collected. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q238",
+      "module": 7,
+      "q": "Multiple customers report unauthorized transactions on their accounts around the same period. What does this signal, and what response is called for?",
+      "opts": [
+        "A market risk event requiring hedging through derivatives",
+        "A potential fraud risk, requiring enhanced fraud monitoring",
+        "A liquidity risk event requiring additional capital buffers",
+        "A concentration risk event requiring portfolio diversification"
+      ],
+      "ans": "B",
+      "exp": "Multiple reports of unauthorized transactions signal a potential fraud risk requiring enhanced fraud monitoring. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q239",
+      "module": 7,
+      "q": "Customers frequently complain about failed authentication attempts while using the bank's mobile app. What is the most directly indicated response, based on how risk controls are typically evaluated against customer feedback?",
+      "opts": [
+        "Suspending mobile banking services until further notice",
+        "Strengthening multi-factor authentication (MFA) systems",
+        "Discontinuing the collection of further customer feedback on this issue",
+        "Reclassifying the complaints as a market risk concern"
+      ],
+      "ans": "B",
+      "exp": "Frequent complaints about failed mobile authentication indicate the bank may need to strengthen its MFA systems. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q240",
+      "module": 7,
+      "q": "What does ensuring compliance and customer trust through customer feedback involve?",
+      "opts": [
+        "Ignoring customer concerns about security protocols to avoid reputational attention",
+        "Using feedback to verify regulatory compliance in areas such as data privacy, transaction security, KYC, and AML",
+        "Discontinuing risk education efforts once a product has launched successfully",
+        "Limiting compliance verification exclusively to internal audit findings"
+      ],
+      "ans": "B",
+      "exp": "Ensuring Compliance and Customer Trust includes using feedback to verify regulatory compliance across data privacy, transaction security, KYC, and AML. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q241",
+      "module": 7,
+      "q": "Customers express growing concern about phishing scams impersonating the bank. What is the most directly indicated response, based on the structured approach to customer feedback?",
+      "opts": [
+        "Discontinuing digital banking channels until the concern subsides",
+        "Implementing enhanced customer awareness programs on fraud prevention",
+        "Reclassifying the concern as a market risk issue",
+        "Removing the bank's customer complaint channels to reduce reported incidents"
+      ],
+      "ans": "B",
+      "exp": "Customer concerns about phishing scams should prompt enhanced customer awareness programs, as part of engaging customers in risk education. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q242",
+      "module": 7,
+      "q": "What does measuring success and continuously improving risk strategies based on customer feedback involve?",
+      "opts": [
+        "Discontinuing feedback collection once a risk measure has been implemented",
+        "Tracking improvements such as fraud prevention rates, and assessing customer sentiment after implementation",
+        "Relying solely on regulatory audit results without tracking customer sentiment",
+        "Applying identical risk measures indefinitely without any reassessment or review"
+      ],
+      "ans": "B",
+      "exp": "Measuring Success and Continuously Improving involves tracking improvements like fraud prevention rates and service efficiency, and assessing customer sentiment post-implementation. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q243",
+      "module": 7,
+      "q": "A bank observes that fraud complaints decline noticeably after implementing AI-based transaction monitoring. What is the most consistent next step?",
+      "opts": [
+        "Discontinue the AI-based monitoring since fewer complaints suggest it is no longer needed",
+        "Scale up the AI-based monitoring solution across the bank",
+        "Reclassify fraud risk as fully resolved and stop tracking related metrics",
+        "Redirect the monitoring budget entirely toward marketing"
+      ],
+      "ans": "B",
+      "exp": "If fraud complaints decrease after implementing AI-based transaction monitoring, the bank can scale up this solution. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q244",
+      "module": 7,
+      "q": "How are Artificial Intelligence (AI) and Machine Learning (ML) best characterized among emerging trends in risk management?",
+      "opts": [
+        "As tools used exclusively for marketing personalization, unrelated to risk",
+        "As technologies used to predict and manage risk by analyzing large data sets",
+        "As tools that eliminate the need for any regulatory oversight of banks",
+        "As technologies limited strictly to processing and resolving customer complaints"
+      ],
+      "ans": "B",
+      "exp": "AI and ML are increasingly used to predict and manage risk by analyzing large data sets, enabling real-time risk assessment, fraud detection, and credit scoring. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q245",
+      "module": 7,
+      "q": "What potential does Blockchain Technology hold as an emerging trend in risk management?",
+      "opts": [
+        "Eliminating the need for any customer identity verification",
+        "Enhanced transparency, security, and accountability in transactions and record-keeping, reducing fraud and operational risk",
+        "Replacing the need for capital adequacy standards entirely",
+        "Automatically resolving all currency devaluation risk"
+      ],
+      "ans": "B",
+      "exp": "Blockchain offers enhanced transparency, security, and accountability in transactions and record-keeping, with potential to reduce fraud and operational risk while supporting compliance. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q246",
+      "module": 7,
+      "q": "A bank strengthens its digital defenses by deploying multi-factor authentication, biometric security, end-to-end encryption, and AI-driven systems to predict cyber threats. Which emerging trend does this combination most directly represent?",
+      "opts": [
+        "Big Data Analytics",
+        "Cybersecurity Advancements",
+        "Blockchain Technology",
+        "Customer Behavior Analytics"
+      ],
+      "ans": "B",
+      "exp": "MFA, biometric security, end-to-end encryption, and AI-driven prediction of cyber threats are precisely the innovations grouped under Cybersecurity Advancements. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q247",
+      "module": 7,
+      "q": "What flexibility does Cloud Computing offer as an emerging trend supporting risk management?",
+      "opts": [
+        "It eliminates the need for any physical data backup",
+        "It enables banks to scale operations and manage data through on-demand computing resources",
+        "It replaces the need for KYC verification during onboarding",
+        "It guarantees full regulatory compliance without any further action"
+      ],
+      "ans": "B",
+      "exp": "Cloud computing enables banks to scale operations and manage data efficiently, offering flexibility through on-demand computing resources for disaster recovery, risk analytics, and data storage. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q248",
+      "module": 7,
+      "q": "What role does Big Data Analytics play in enhancing risk management frameworks?",
+      "opts": [
+        "It analyzes only structured numerical data while ignoring unstructured sources",
+        "It analyzes structured and unstructured data to identify emerging risks and assess creditworthiness",
+        "It replaces the need for any traditional credit scoring model entirely",
+        "It focuses exclusively on tracking employee performance metrics and reviews"
+      ],
+      "ans": "B",
+      "exp": "Big Data Analytics analyzes vast amounts of structured and unstructured data to identify emerging risks, optimize lending decisions, and assess creditworthiness more effectively. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q249",
+      "module": 7,
+      "q": "A bank analyzes data from multiple customer touchpoints to detect patterns that help predict potential defaults or unauthorized transactions before they occur. Which emerging trend does this activity best represent?",
+      "opts": [
+        "Regulatory Technology (RegTech)",
+        "Customer Behavior Analytics",
+        "Blockchain Technology",
+        "Cloud Computing"
+      ],
+      "ans": "B",
+      "exp": "Customer Behavior Analytics involves technologies to understand customer behaviour patterns from various touchpoints, key to detecting fraud and credit risks and predicting potential defaults or unauthorized transactions. (Module 7, I.2.3)"
+    },
+    {
+      "id": "Q250",
+      "module": 7,
+      "q": "Both Digital Transformation and Stress Testing/Scenario Analysis are recognized as emerging trends shaping risk management. A bank must decide where to focus its limited innovation budget: strengthening the resilience of its digital infrastructure against outages and breaches, or investing in more advanced stress-testing tools to model external shocks. Which consideration should most reasonably guide this decision?",
+      "opts": [
+        "Digital infrastructure investment should always be prioritized because it is the more commonly cited trend",
+        "Which trend addresses the risk currently posing the greater actual threat, heightened cybersecurity exposure or gaps in anticipating external shocks",
+        "Stress-testing tools should always be prioritized because they receive more detailed coverage elsewhere",
+        "Neither investment meaningfully matters once AI-driven fraud detection tools have been fully implemented"
+      ],
+      "ans": "B",
+      "exp": "Digital transformation raises operational and cybersecurity exposure that demands resilient infrastructure, while advanced stress testing addresses the bank's ability to anticipate external shocks - two distinct forms of exposure, so the more urgent investment depends on where the bank's actual current gap lies, not on emphasis or prior depth of coverage. (Module 7, I.2.3)"
+    }
+  ]
+}

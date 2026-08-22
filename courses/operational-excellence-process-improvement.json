@@ -1,0 +1,2653 @@
+{
+  "meta": {
+    "id": "operational-excellence-process-improvement",
+    "title": "Operational Excellence and Process Improvement",
+    "description": "Process optimization, Lean/Six Sigma methodologies, root cause analysis, and fraud prevention for retail banking operations",
+    "category": "retail",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      {
+        "count": 30,
+        "minutes": 40
+      },
+      {
+        "count": 40,
+        "minutes": 45
+      },
+      {
+        "count": 50,
+        "minutes": 60
+      }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Introduction to Operations Excellence"
+    },
+    {
+      "id": 2,
+      "title": "Continuous Process Improvement in Retail Banking"
+    },
+    {
+      "id": 3,
+      "title": "Lean Methodology for Process Optimization"
+    },
+    {
+      "id": 4,
+      "title": "Tools for Identifying and Mapping Inefficient Business Processes"
+    },
+    {
+      "id": 5,
+      "title": "Fraud Detection and Prevention in Retail Banking"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "q": "A framework that focuses on achieving consistent, superior performance by aligning processes, people, and technology is best described as which of the following?",
+      "opts": [
+        "Six Sigma",
+        "Operational Excellence",
+        "Business Process Re-Engineering",
+        "Total Quality Management"
+      ],
+      "ans": "B",
+      "exp": "Operational Excellence is defined precisely this way — a mindset/framework aligning processes, people, and technology. Six Sigma and BPR are specific methodologies used to achieve it, and TQM is a related quality philosophy; none is the umbrella term itself."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "q": "A branch reduces customer wait times by streamlining its processes and adding self-service kiosks. Which core element of Operational Excellence is most directly demonstrated by adding the kiosks specifically, as opposed to the streamlining itself?",
+      "opts": [
+        "Quality",
+        "Efficiency",
+        "Continuous Improvement",
+        "Customer Focus"
+      ],
+      "ans": "B",
+      "exp": "Self-service kiosks reduce waste and speed up service delivery — the definition of Efficiency in the manual's four-element breakdown. Streamlining the process is the efficiency action itself; the kiosks are the resource-optimization tool. Quality concerns error-free outcomes, Customer Focus concerns understanding needs, and Continuous Improvement concerns ongoing evaluation — none of which is the specific mechanism at work here."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "q": "Which of the following is NOT one of the four elements Operational Excellence emphasizes according to its definition?",
+      "opts": [
+        "Cost leadership",
+        "Quality",
+        "Continuous Improvement",
+        "Customer Focus"
+      ],
+      "ans": "A",
+      "exp": "The manual lists Efficiency, Quality, Customer Focus, and Continuous Improvement as the four defining elements. Cost leadership is a competitive-strategy term, not one of the four named elements — even though efficiency gains can indirectly reduce cost, cost leadership itself is never listed."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "q": "An operations head insists on personally sponsoring a new workflow redesign and communicating a clear vision for it before rollout. Which core principle of Operational Excellence is this an example of?",
+      "opts": [
+        "Employee Engagement",
+        "Leadership Commitment",
+        "Process Orientation",
+        "Customer-Centricity"
+      ],
+      "ans": "B",
+      "exp": "Leadership Commitment is defined as driving change through clear vision and active senior support. Employee Engagement concerns empowering staff to contribute ideas, Process Orientation concerns workflow design itself, and Customer-Centricity concerns prioritizing customer needs — the sponsoring/visioning behaviour described belongs to leadership, not the workforce."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "q": "Which pairing correctly matches a core principle of Operational Excellence with its focus?",
+      "opts": [
+        "Process Orientation — empowering staff to contribute solutions",
+        "Employee Engagement — fostering ownership of improvements among staff",
+        "Customer-Centricity — designing workflows around efficiency",
+        "Leadership Commitment — consistently prioritizing customer expectations"
+      ],
+      "ans": "B",
+      "exp": "Employee Engagement is specifically about empowering employees to contribute ideas and fostering ownership. The other three options each swap a principle with a different principle's actual definition — Process Orientation is workflow design (not staff empowerment), Customer-Centricity is about customer needs (not workflow design), and Leadership Commitment is about vision and support (not customer prioritization)."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "q": "A retail bank designs a new account-opening workflow specifically so that every step is oriented toward faster turnaround and fewer handoffs. This illustrates which core principle?",
+      "opts": [
+        "Customer-Centricity",
+        "Process Orientation",
+        "Leadership Commitment",
+        "Employee Engagement"
+      ],
+      "ans": "B",
+      "exp": "Process Orientation is defined as designing workflows that focus on efficiency and customer satisfaction — exactly what redesigning the account-opening steps for speed accomplishes. Customer-Centricity is about prioritizing customer needs broadly rather than workflow design specifically, and the other two principles concern leadership and staff, not workflow structure."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "q": "Nigeria's economy, despite being Africa's largest, is described in the manual as continuing to face which specific challenge that hinders productivity and sustainable growth?",
+      "opts": [
+        "A shortage of trained banking staff",
+        "Inefficiencies in business processes, infrastructure, and service delivery",
+        "Excessive regulatory oversight of the banking sector",
+        "Overreliance on foreign direct investment"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically attributes Nigeria's productivity and growth challenges to inefficiencies in business processes, infrastructure, and service delivery — not staffing shortages, regulatory overreach, or FDI dependence, none of which are mentioned in this context."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "q": "According to the manual, adopting structured methodologies such as Lean, Six Sigma, and Total Quality Management allows organizations to achieve all of the following EXCEPT:",
+      "opts": [
+        "Reduce inefficiencies",
+        "Guarantee regulatory approval for new products",
+        "Improve customer satisfaction",
+        "Drive long-term profitability"
+      ],
+      "ans": "B",
+      "exp": "The manual attributes reduced inefficiencies, improved customer satisfaction, and long-term profitability to these methodologies. Guaranteeing regulatory approval for new products is never claimed anywhere in the material — these frameworks address operational efficiency and quality, not regulatory clearance for product launches."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "q": "A bank shortens the time it takes to open a loan account by automating routine transaction-verification tasks. Under the Benefits of Operational Excellence framework, which benefit category does this fall under?",
+      "opts": [
+        "Cost Reduction",
+        "Enhanced Efficiency",
+        "Stronger Competitive Advantage",
+        "Improved Customer Satisfaction"
+      ],
+      "ans": "B",
+      "exp": "Enhanced Efficiency specifically covers shortened processing times for services like account openings and automation of routine tasks such as transaction verification. Cost Reduction concerns minimizing errors/overhead, and the other two categories concern market positioning and customer retention rather than the processing action itself."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "q": "Which of the following is listed as a way Operational Excellence delivers Cost Reduction, as distinct from Enhanced Efficiency?",
+      "opts": [
+        "Automating transaction verifications",
+        "Lowering overhead through streamlined processes and optimized resource allocation",
+        "Shortening loan processing times",
+        "Offering personalized experiences through data-driven insights"
+      ],
+      "ans": "B",
+      "exp": "Cost Reduction is specifically tied to minimizing manual errors/rework and lowering overhead via streamlined processes — the second option. The first and third options belong to Enhanced Efficiency, and the fourth belongs to Improved Customer Satisfaction; each is a real benefit from the manual, just filed under a different category."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "q": "A bank's data-driven insights allow it to tailor product offers to individual customers, and its faster service leads more customers to stay with the bank rather than switch. Which single benefit category captures both of these outcomes together?",
+      "opts": [
+        "Enhanced Efficiency",
+        "Improved Customer Satisfaction",
+        "Cost Reduction",
+        "Stronger Competitive Advantage"
+      ],
+      "ans": "B",
+      "exp": "Improved Customer Satisfaction explicitly covers both faster service delivery leading to higher retention and personalized experiences through data-driven insights — the two outcomes described. Stronger Competitive Advantage is a downstream effect of sustained customer satisfaction but is listed separately as staying ahead of competitors, not as these two specific mechanisms."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "q": "Consistently delivering superior customer experiences ahead of competitors is identified in the manual as contributing directly to which benefit?",
+      "opts": [
+        "Improved Customer Satisfaction",
+        "Stronger Competitive Advantage",
+        "Cost Reduction",
+        "Enhanced Efficiency"
+      ],
+      "ans": "B",
+      "exp": "Stronger Competitive Advantage is defined as staying ahead of competitors through consistently superior customer experiences. Improved Customer Satisfaction is the driver of retention and personalization, but the manual separately names competitive positioning relative to rivals as its own distinct benefit category."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "q": "Which statement correctly describes a benefit of Operational Excellence to employees, as distinct from a benefit to customers or the bank?",
+      "opts": [
+        "Employees gain access to personalized product offers through data-driven insights",
+        "Employees experience reduced frustration because seamless operations mean fewer customer escalations",
+        "Employees benefit from a stronger brand reputation relative to competitors",
+        "Employees see reduced loan processing times across the branch network"
+      ],
+      "ans": "B",
+      "exp": "The manual attributes reduced frustration from fewer escalations specifically to employees. Personalized offers benefit customers, stronger brand reputation is the competitive-advantage benefit to the bank, and shorter processing times is an efficiency benefit shared broadly — none of those three is filed under employee benefits specifically."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "q": "Automation freeing staff from repetitive tasks so they can focus on relationship management and sales is identified as which specific benefit to employees?",
+      "opts": [
+        "Improved Job Satisfaction",
+        "Higher Productivity",
+        "Reduced Frustration at Work",
+        "Better Performance Metrics"
+      ],
+      "ans": "B",
+      "exp": "Higher Productivity is specifically tied to automation freeing employees from repetitive tasks to focus on higher-value work like relationship management and sales. Improved Job Satisfaction is tied to fewer errors and rework instead, and the other two options describe separate, distinctly worded benefits in the manual."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "q": "Which employee benefit is specifically linked in the manual to fewer errors and less rework reducing workplace stress?",
+      "opts": [
+        "Higher Productivity",
+        "Improved Job Satisfaction",
+        "Better Performance Metrics",
+        "Reduced Frustration at Work"
+      ],
+      "ans": "B",
+      "exp": "Improved Job Satisfaction is explicitly tied to a well-functioning system producing fewer errors and rework, which reduces workplace stress. Higher Productivity is about automation freeing time for higher-value work rather than stress reduction, and the other two options describe different mechanisms entirely."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "q": "Employees working in high-performing branches or units are described as more likely to receive recognition and career growth opportunities. Which employee benefit does this describe?",
+      "opts": [
+        "Reduced Frustration at Work",
+        "Better Performance Metrics",
+        "Higher Productivity",
+        "Improved Job Satisfaction"
+      ],
+      "ans": "B",
+      "exp": "Better Performance Metrics is the benefit tied to recognition and career growth opportunities arising from strong branch/unit performance. The other three benefits concern escalation volume, task automation, and error-driven stress respectively — none addresses recognition or career advancement."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "q": "A commercial bank in Nigeria launches a digital account-opening channel that automates identity verification, cutting the time customers spend opening an account by close to half. This scenario is most directly modeled on which real outcome described in the manual?",
+      "opts": [
+        "GTBank's Quick Credit mobile loan process",
+        "Access Bank's 2021 digital account opening initiative, which reduced onboarding time by 40%",
+        "Zenith Bank's customer service ticket triage system",
+        "First Bank's Six Sigma-based reduction in teller errors"
+      ],
+      "ans": "B",
+      "exp": "This is modeled on Access Bank's 2021 case, where digital account opening automated identity verification and reduced onboarding time by 40% alongside fewer documentation errors. The other three cited cases involve a different bank, a different service (loans, complaints, teller errors), and different methodologies entirely."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "q": "A mid-sized bank eliminates redundant approval steps in its loan process and introduces automated tools, cutting average processing time from 10 days to 2 days. Which methodology does the manual's case study attribute this specific outcome to?",
+      "opts": [
+        "Business Process Re-Engineering",
+        "Lean principles",
+        "Six Sigma's DMAIC framework",
+        "The 5S methodology"
+      ],
+      "ans": "B",
+      "exp": "Case Study 1 in the manual attributes the 10-to-2-day loan approval improvement specifically to applying Lean principles. BPR, DMAIC, and 5S are all real methodologies discussed elsewhere in the course, but this particular case is explicitly framed as a Lean transformation, not any of the other three."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "q": "In 2021, Access Bank launched a mobile banking app with enhanced self-service features. Which outcome is specifically attributed to this initiative in the manual?",
+      "opts": [
+        "A 40% reduction in onboarding time",
+        "A 35% reduction in branch traffic",
+        "A 30% increase in new account openings",
+        "A 20% improvement in service delivery times"
+      ],
+      "ans": "B",
+      "exp": "The mobile banking app case specifically cites a 35% reduction in branch traffic alongside improved transaction speed and lower operational costs. The 40% and 30% figures belong to the separate digital account-opening/onboarding case, and the 20% figure belongs to a Zenith Bank 5S case from a later module."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "q": "A branch manager notices staff are reluctant to adopt a newly introduced digital workflow because they fear it threatens their roles. Which barrier to Operational Excellence does this best illustrate?",
+      "opts": [
+        "Legacy Systems",
+        "Resistance to Change",
+        "Regulatory Constraints",
+        "Poor Leadership Commitment"
+      ],
+      "ans": "B",
+      "exp": "Resistance to Change is defined specifically as employees feeling threatened by new processes or technologies. Legacy Systems concerns outdated technology limiting innovation, Regulatory Constraints concerns compliance limiting flexibility, and Poor Leadership Commitment is not one of the three barriers actually named in the manual."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "q": "Which action is recommended in the manual as the solution to employee resistance toward new processes or technologies?",
+      "opts": [
+        "Delay the rollout until turnover reduces resistance naturally",
+        "Conduct regular training and involve staff in planning and implementation",
+        "Mandate compliance through disciplinary policy",
+        "Restrict the change to a single pilot branch indefinitely"
+      ],
+      "ans": "B",
+      "exp": "The manual's stated solution to resistance to change is training plus involving staff in the planning and implementation phases to build trust and buy-in. The other three options — delaying rollout, mandating via discipline, or indefinite piloting — are not solutions described anywhere in the material."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "q": "A bank finds that its outdated core banking platform limits how far it can automate account-opening steps. Which barrier does this represent, and what is its recommended solution?",
+      "opts": [
+        "Regulatory Constraints; integrate compliance into process design",
+        "Legacy Systems; gradually migrate to modern platforms with minimal disruption",
+        "Resistance to Change; conduct staff training",
+        "Legacy Systems; replace the entire platform in a single migration event"
+      ],
+      "ans": "B",
+      "exp": "Outdated technology limiting improvement is defined as the Legacy Systems barrier, and its stated solution is gradual migration to modern platforms with minimal disruption — not a single abrupt replacement, which the manual does not recommend, nor the compliance or training solutions that belong to different barriers."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "q": "Compliance requirements are cited as limiting a bank's flexibility to redesign certain processes. What does the manual recommend as the solution to this specific barrier?",
+      "opts": [
+        "Petition regulators for exemptions on a case-by-case basis",
+        "Integrate compliance considerations into process designs to preserve efficiency without violating regulations",
+        "Prioritize efficiency gains over compliance until challenged",
+        "Outsource compliance-sensitive processes to third parties"
+      ],
+      "ans": "B",
+      "exp": "The Regulatory Constraints barrier's solution is explicitly to build compliance considerations into process design so efficiency and compliance are pursued together, not traded off. Petitioning for exemptions, deprioritizing compliance, or outsourcing are not solutions described in the manual."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "q": "Which of the following is NOT one of the three barriers to Operational Excellence discussed in the manual?",
+      "opts": [
+        "Legacy Systems",
+        "Talent Shortage",
+        "Resistance to Change",
+        "Regulatory Constraints"
+      ],
+      "ans": "B",
+      "exp": "The three named barriers are Resistance to Change, Legacy Systems, and Regulatory Constraints. Talent Shortage is never discussed as a barrier anywhere in the module, making it the one that doesn't belong."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "q": "A bank's compliance team and its process-improvement team historically work in isolation, with compliance reviewing redesigns only after they're finalized — often forcing costly rework. Which change would best align with the manual's recommended approach to the Regulatory Constraints barrier?",
+      "opts": [
+        "Have compliance review process redesigns only after full implementation to avoid slowing delivery",
+        "Involve compliance considerations at the design stage of process redesign, not after the fact",
+        "Remove compliance from process redesign discussions entirely to preserve efficiency",
+        "Escalate all process redesigns to the regulator directly for pre-approval"
+      ],
+      "ans": "B",
+      "exp": "Integrating compliance into process design from the outset — rather than reviewing after implementation or excluding it altogether — is the manual's actual recommendation, since bolting compliance on afterward is what causes the costly rework described in the scenario. Removing compliance or escalating everything to the regulator go well beyond what's recommended."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "q": "The manual introduces a formula, P=R-C, in the context of learning objectives. What is this formula meant to help participants understand?",
+      "opts": [
+        "The cost-benefit calculation for adopting Lean over Six Sigma",
+        "What is in it for the participant and Access Bank",
+        "The formula for calculating process cycle-time reduction",
+        "The ratio used to benchmark branch performance"
+      ],
+      "ans": "B",
+      "exp": "P=R-C is listed directly under the learning objectives as helping participants understand what is in it for them and for Access Bank — essentially a personal-and-institutional payoff framing, not a technical calculation for cycle time, methodology comparison, or branch benchmarking."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "q": "Mastering operational excellence and process improvement is described in the manual's 'Why This Matters' note as enhancing which of the following for the trainee?",
+      "opts": [
+        "Guaranteed promotion timelines",
+        "Professional recognition and opportunities for increased responsibility",
+        "Exemption from future compliance training requirements",
+        "Priority access to Access Bank's leadership programs"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically states mastery can enhance professional recognition, open opportunities for increased responsibility, and contribute to personal fulfilment. It does not promise guaranteed promotions, compliance exemptions, or priority program access — those are stronger claims than the source material makes."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "q": "A branch that has embraced Operational Excellence experiences fewer customer complaints, and its staff report a more enjoyable day-to-day work environment as a direct result of fewer escalations. Which two things does this scenario connect, according to the manual's framing?",
+      "opts": [
+        "Cost reduction and competitive advantage",
+        "Fewer complaints and reduced employee frustration",
+        "Regulatory compliance and improved job satisfaction",
+        "Legacy systems and employee engagement"
+      ],
+      "ans": "B",
+      "exp": "The manual directly links seamless operations reducing customer complaints to employees experiencing Reduced Frustration at Work through fewer escalations — the exact causal chain in the scenario. The other pairings combine benefit or barrier categories that aren't connected this way anywhere in the material."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "q": "Which of the following best distinguishes 'Efficiency' from 'Quality' as elements within the definition of Operational Excellence?",
+      "opts": [
+        "Efficiency ensures error-free service, while Quality reduces waste and optimizes resources",
+        "Efficiency reduces waste and optimizes resources, while Quality ensures error-free, expectation-meeting service",
+        "Efficiency and Quality both refer exclusively to minimizing operational transaction costs",
+        "Efficiency concerns customer needs and expectations, while Quality concerns competitive market positioning"
+      ],
+      "ans": "B",
+      "exp": "Efficiency is defined around reducing waste and optimizing resources for faster, cheaper service, while Quality is defined around delivering error-free products/services that meet or exceed expectations — two distinct elements. The first option reverses the two definitions, and the other two options misattribute both terms to concepts (cost minimization, customer needs, competitive positioning) that belong elsewhere."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "q": "An operations trainee is asked to identify which core principle is being tested when a bank consistently redesigns its customer complaint process around what customers actually say they need, rather than around what is easiest for staff to administer. Which principle is this?",
+      "opts": [
+        "Process Orientation",
+        "Customer-Centricity",
+        "Leadership Commitment",
+        "Employee Engagement"
+      ],
+      "ans": "B",
+      "exp": "Customer-Centricity is defined as consistently prioritizing the needs and expectations of customers — exactly the trade-off described, where the process is shaped around customer need rather than staff convenience. Process Orientation concerns designing workflows for efficiency generally, not specifically prioritizing the customer's stated needs over administrative ease."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "q": "A trainee argues that Operational Excellence is essentially the same thing as Six Sigma, since both aim to improve quality. Based on the manual's framing, why is this an oversimplification?",
+      "opts": [
+        "Operational Excellence and Six Sigma are unrelated and have no shared goals",
+        "Operational Excellence is the broader framework; Six Sigma is one methodology used to achieve it",
+        "Six Sigma is the broader framework, and Operational Excellence is one of its component tools",
+        "Operational Excellence applies only outside banking, while Six Sigma applies only within banking"
+      ],
+      "ans": "B",
+      "exp": "The manual positions Operational Excellence as the overarching framework/mindset, achieved partly through structured methodologies like Lean, Six Sigma, and TQM — making Six Sigma a tool within the broader goal, not synonymous with it. The other options either deny any relationship or reverse which term is the broader one."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "q": "A branch has strong leadership sponsorship and well-designed, efficient workflows, but frontline staff are never consulted on process changes and morale is low. Which specific core principle gap is most likely undermining sustained Operational Excellence here?",
+      "opts": [
+        "Process Orientation",
+        "Employee Engagement",
+        "Customer-Centricity",
+        "Leadership Commitment"
+      ],
+      "ans": "B",
+      "exp": "Employee Engagement — empowering employees to contribute ideas and fostering ownership — is the principle missing here, since leadership and process design are both already strong per the scenario. Process Orientation and Leadership Commitment are explicitly described as present, and Customer-Centricity isn't the gap described, which is specifically about internal staff consultation."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "q": "Two branches both digitize their loan-approval workflow. Branch A trains staff extensively and involves them in redesigning the new steps; Branch B rolls out the same system with only an email announcement. Based on the manual's discussion of barriers, which outcome is most likely?",
+      "opts": [
+        "Both branches will see identical adoption rates, since the technology is the same",
+        "Branch A will likely see smoother adoption, since staff involvement addresses Resistance to Change",
+        "Branch B will likely see smoother adoption, since a faster rollout avoids prolonged uncertainty",
+        "Neither branch's outcome depends on staff involvement, only on system reliability"
+      ],
+      "ans": "B",
+      "exp": "Since the manual identifies staff training and involvement in planning/implementation as the specific solution to Resistance to Change, Branch A's approach is the one aligned with that guidance and would be expected to see smoother adoption. The other options either ignore the barrier the manual identifies or assert the opposite of its recommendation."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "q": "A newly appointed operations lead is deciding how to prioritize three initiatives: migrating an outdated core system, training staff ahead of a new workflow, and building compliance checks into a redesign already underway. Which single principle unifies why the manual would endorse addressing all three concurrently rather than sequentially?",
+      "opts": [
+        "Each barrier requires an entirely separate department to resolve, so they cannot overlap",
+        "Legacy Systems, Resistance to Change, and Regulatory Constraints are separate barriers, each with its own independent solution",
+        "Only Legacy Systems is a genuine barrier; the other two are described as inevitable costs of doing business",
+        "Resolving Regulatory Constraints automatically resolves Resistance to Change, since compliance builds trust"
+      ],
+      "ans": "B",
+      "exp": "The manual presents the three barriers — Legacy Systems, Resistance to Change, Regulatory Constraints — as separate, each with its own distinct solution (migration, training/involvement, compliance-by-design), with nothing suggesting they must be resolved in sequence or that solving one resolves another. The other options invent dependencies or hierarchies the source never establishes."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "q": "A bank achieves a 35% drop in branch foot traffic after launching a mobile app, but branch staff report feeling their jobs are now less secure. Evaluating this against the manual's stated benefits of Operational Excellence to employees, which conclusion is best supported?",
+      "opts": [
+        "The manual guarantees job security as a direct outcome of Operational Excellence initiatives",
+        "The manual's employee benefits assume automation redirects staff toward higher-value work, not that reduced traffic itself threatens roles",
+        "Reduced branch traffic is explicitly listed in the manual as a risk to employee wellbeing",
+        "The manual recommends branches suspend digital channels if staff express job-security concerns"
+      ],
+      "ans": "B",
+      "exp": "The manual frames automation's benefit to employees as freeing them for higher-value work like relationship management and sales — it does not address or guarantee job security, nor does it list reduced traffic as a risk, nor recommend suspending digital initiatives over such concerns; those are inferences beyond what the source actually claims."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "q": "Considering the manual's Nigeria-context background alongside its five core-principle and four-benefit-to-employee frameworks together, which statement best reflects how the material connects national-level inefficiency challenges to individual branch-level practice?",
+      "opts": [
+        "National inefficiency is described as unrelated to what happens at individual branches, since it is a macroeconomic issue",
+        "The manual links national-level inefficiency to the same branch-level habits — leadership, engagement, process design, customer focus — that it teaches throughout",
+        "The manual argues that only government policy, not branch-level practice, can resolve Nigeria's operational inefficiencies",
+        "The manual treats Nigeria's economic size as proof that operational inefficiency is not a significant concern for Access Bank"
+      ],
+      "ans": "B",
+      "exp": "The manual opens by linking Nigeria's broader productivity challenges to organizational-level process inefficiencies, then proceeds to teach exactly the branch-level principles (leadership, engagement, process design, customer focus) meant to address that same inefficiency — connecting the macro framing directly to the individual practices taught later, rather than treating the two as separate or leaving resolution solely to policy."
+    },
+    {
+      "id": "Q37",
+      "module": 2,
+      "q": "Which of the following best defines Business Process Re-Engineering (BPR)?",
+      "opts": [
+        "A fundamental redesign of workflows to achieve significant improvements in cost, quality, service, and speed",
+        "A statistical method for reducing defects by removing sources of variability",
+        "A workplace organization method for maintaining an orderly workspace",
+        "A philosophy of small, incremental changes made continuously over time"
+      ],
+      "ans": "B",
+      "exp": "BPR is defined as the fundamental redesign of workflows and processes to achieve significant improvements in cost, quality, service, and speed. The other options describe Six Sigma, the 5S methodology, and Kaizen respectively — three distinct methodologies covered elsewhere in the course, each with its own separate definition."
+    },
+    {
+      "id": "Q38",
+      "module": 2,
+      "q": "Which sequence correctly reflects the key steps of BPR as described in the manual?",
+      "opts": [
+        "Analyze existing process, identify process, implement, redesign",
+        "Identify process, analyze existing process, redesign, implement and monitor",
+        "Redesign process, identify process, analyze, implement",
+        "Implement new process, identify process, analyze, redesign"
+      ],
+      "ans": "B",
+      "exp": "The manual's four BPR steps run in this exact order: identify the process, analyze it for inefficiencies, redesign to eliminate bottlenecks, then implement and monitor performance. The other three options scramble this sequence, placing redesign or implementation before the process has even been identified or analyzed."
+    },
+    {
+      "id": "Q39",
+      "module": 2,
+      "q": "A bank introduces automated document verification and AI-based credit risk assessment into its loan approval workflow, cutting the timeline from 15 days to 3 days. Which methodology's case study in the manual does this scenario describe?",
+      "opts": [
+        "Six Sigma's DMAIC approach applied to teller errors",
+        "BPR applied to Access Bank's loan approval process",
+        "Lean's 5S methodology applied to branch layout",
+        "Kaizen applied to customer queue management"
+      ],
+      "ans": "B",
+      "exp": "This is the manual's BPR case study, where Access Bank's loan approval process was redesigned with automated verification and AI risk assessment, reducing the timeline from 15 to 3 days — a 75% reduction. The other three options describe unrelated case studies from different methodologies covered elsewhere in the course."
+    },
+    {
+      "id": "Q40",
+      "module": 2,
+      "q": "In the Access Bank loan approval BPR case, which outcome is specifically attributed to the AI algorithms providing more accurate risk assessments, as distinct from the other reported outcomes?",
+      "opts": [
+        "A 40% increase in loan applications",
+        "A 20% reduction in default rates",
+        "Higher customer satisfaction scores",
+        "Increased customer retention and referrals"
+      ],
+      "ans": "B",
+      "exp": "The 20% reduction in default rates is specifically credited to more accurate risk assessments from the AI algorithms. The 40% increase in applications is attributed to improved efficiency generally, while satisfaction, retention, and referrals are downstream effects of the faster, more accurate process rather than the AI accuracy specifically."
+    },
+    {
+      "id": "Q41",
+      "module": 2,
+      "q": "GTBank's 'Quick Credit' process, cited as an example of streamlined operations, allows customers to do which of the following within minutes via a mobile app?",
+      "opts": [
+        "Dispute fraudulent transactions and request chargebacks",
+        "Complete account registration and access loans",
+        "File a formal complaint and track its resolution",
+        "Apply for a mortgage and schedule a valuation"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically cites GTBank's Quick Credit as enabling customers to complete account registration and access loans within minutes via the mobile app. Fraud disputes, complaint tracking, and mortgage applications are not part of this cited example anywhere in the material."
+    },
+    {
+      "id": "Q42",
+      "module": 2,
+      "q": "In 2020, Access Bank applied BPR to its customer onboarding process by integrating digital ID verification with automated KYC checks. What onboarding-time reduction and resulting increase in new account openings does the manual report?",
+      "opts": [
+        "A 40% reduction in onboarding time and a 20% increase in new accounts",
+        "A 60% reduction in onboarding time and a 30% increase in new accounts",
+        "A 75% reduction in onboarding time and a 40% increase in new accounts",
+        "A 30% reduction in onboarding time and a 60% increase in new accounts"
+      ],
+      "ans": "B",
+      "exp": "The 2020 onboarding BPR case reports a 60% reduction in onboarding time (from 7 days to under 3) and a resulting 30% increase in new account openings. The other options mix up these figures with statistics from the separate loan-approval BPR case (75% reduction, 40% increase in applications)."
+    },
+    {
+      "id": "Q43",
+      "module": 2,
+      "q": "Which statement best describes when incremental improvement, as opposed to BPR, is the more suitable approach according to the manual?",
+      "opts": [
+        "When a process has fundamental flaws requiring a complete overhaul and full stakeholder sign-off",
+        "When a process is fundamentally sound but needs small adjustments to optimize performance",
+        "When a process has never been formally documented or reviewed by any senior manager",
+        "When customer complaints about a process have stopped entirely for more than one quarter"
+      ],
+      "ans": "B",
+      "exp": "Incremental improvement is specifically recommended for processes that are fundamentally sound but need small adjustments, as distinct from BPR's role addressing processes with fundamental flaws requiring redesign. The other options describe situations the manual doesn't tie to this choice at all."
+    },
+    {
+      "id": "Q44",
+      "module": 2,
+      "q": "Which analogy does the manual use to practically distinguish BPR from incremental improvement?",
+      "opts": [
+        "BPR is like painting a single room, while incremental improvement is like rebuilding an entire wall",
+        "BPR is like rebuilding a house, while incremental improvement is like renovating one room at a time",
+        "BPR is like planting an entirely new garden, while incremental improvement is like mowing an existing lawn",
+        "BPR is like replacing a car's entire engine, while incremental improvement is like changing its worn tires"
+      ],
+      "ans": "B",
+      "exp": "The manual's stated analogy is that BPR is like rebuilding a house, while incremental improvement is like renovating one room at a time — capturing BPR's scale of change against incremental improvement's smaller, ongoing adjustments. The other analogies are plausible-sounding inventions not used anywhere in the material."
+    },
+    {
+      "id": "Q45",
+      "module": 2,
+      "q": "Six Sigma is best described in the manual as which type of methodology?",
+      "opts": [
+        "A workplace organization method aimed at reducing physical clutter across the branch floor",
+        "A data-driven methodology aimed at reducing defects by removing sources of variability",
+        "A visual tool for categorizing a process's suppliers, inputs, and customers together",
+        "A philosophy encouraging staff to suggest small daily improvements to their own workflow"
+      ],
+      "ans": "B",
+      "exp": "Six Sigma is defined as a data-driven methodology aimed at reducing defects and improving quality by identifying and removing sources of variability. The other options describe 5S, SIPOC diagrams, and Kaizen respectively — each a distinct tool or philosophy from a different part of the course."
+    },
+    {
+      "id": "Q46",
+      "module": 2,
+      "q": "Which of the following correctly lists the five phases of the DMAIC framework in order?",
+      "opts": [
+        "Measure, Define, Analyze, Control, Improve",
+        "Define, Measure, Analyze, Improve, Control",
+        "Define, Analyze, Measure, Improve, Control",
+        "Measure, Analyze, Define, Improve, Control"
+      ],
+      "ans": "B",
+      "exp": "DMAIC's five phases run in this fixed order: Define, Measure, Analyze, Improve, Control. The other three options rearrange the sequence, most commonly swapping Define and Measure or Measure and Analyze, which breaks the framework's actual logic of first defining the problem before anything is quantified."
+    },
+    {
+      "id": "Q47",
+      "module": 2,
+      "q": "During which DMAIC phase does a team collect data to establish a baseline and identify areas for improvement?",
+      "opts": [
+        "Define",
+        "Measure",
+        "Analyze",
+        "Improve"
+      ],
+      "ans": "B",
+      "exp": "The Measure phase is specifically where data is collected to establish a baseline and identify improvement areas. Define is where the problem and objectives are outlined, Analyze is where root causes of inefficiency are identified using tools like RCA, and Improve is where solutions are implemented."
+    },
+    {
+      "id": "Q48",
+      "module": 2,
+      "q": "A project team has already outlined the problem and its objectives, and is now using root-cause analysis tools to identify the sources of inefficiency in a process. Which DMAIC phase are they in?",
+      "opts": [
+        "Measure",
+        "Analyze",
+        "Define",
+        "Control"
+      ],
+      "ans": "B",
+      "exp": "Using root cause analysis tools to identify the sources of inefficiency is the defining activity of the Analyze phase, which follows Define (outlining the problem) and Measure (establishing a data baseline) and precedes Improve. Control, the final phase, is about monitoring the new process afterward, not diagnosing causes."
+    },
+    {
+      "id": "Q49",
+      "module": 2,
+      "q": "Monitoring a newly implemented process to ensure sustained performance corresponds to which phase of DMAIC?",
+      "opts": [
+        "Improve",
+        "Control",
+        "Measure",
+        "Define"
+      ],
+      "ans": "B",
+      "exp": "Control is the final DMAIC phase, specifically concerned with monitoring the new process to ensure the improvement holds over time. Improve is where solutions are implemented, Measure establishes the initial baseline, and Define sets out the problem — none of which concerns ongoing monitoring after implementation."
+    },
+    {
+      "id": "Q50",
+      "module": 2,
+      "q": "First Bank of Nigeria experienced high transaction error rates at teller desks. Applying Six Sigma's DMAIC approach in 2021, which specific actions did the bank take, according to the manual?",
+      "opts": [
+        "Redesigning the entire teller workflow and outsourcing verification to a third party",
+        "Analyzing the root causes of teller errors, training employees, and introducing validation checkpoints",
+        "Replacing all tellers with self-service kiosks across every branch",
+        "Migrating to a new core banking platform to eliminate manual entry"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically describes First Bank analyzing root causes, training employees on common mistakes, and introducing validation checkpoints as the DMAIC-driven interventions. Workflow outsourcing, full kiosk replacement, and platform migration are not part of this case anywhere in the material."
+    },
+    {
+      "id": "Q51",
+      "module": 2,
+      "q": "In the First Bank teller-error case, which outcome is specifically attributed to the introduction of validation checkpoints and employee training within six months?",
+      "opts": [
+        "A 30% reduction in customer complaints related to incorrect transactions",
+        "A 40% reduction in teller errors",
+        "A 15% improvement in transaction processing time",
+        "A 50% reduction in email notification delays"
+      ],
+      "ans": "B",
+      "exp": "The case reports a 40% reduction in teller errors within six months as the headline outcome, alongside a separate 15% processing-time improvement and 30% complaint reduction. The 50% email-delay figure belongs to an entirely different case — Zenith Bank's notification system — not this one."
+    },
+    {
+      "id": "Q52",
+      "module": 2,
+      "q": "Zenith Bank applied Six Sigma to optimize its email notification system. What specific improvement is reported?",
+      "opts": [
+        "A 40% reduction in delivery delays",
+        "A 50% reduction in delivery delays",
+        "A 30% reduction in delivery delays",
+        "A 60% reduction in delivery delays"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically reports a 50% reduction in delivery delays from this Six Sigma initiative. The other percentages are drawn from other cases in the module — 40% from teller errors, 30% from complaint reduction — and are distractors built from real figures misattributed to the wrong case."
+    },
+    {
+      "id": "Q53",
+      "module": 2,
+      "q": "In 2022, Zenith Bank applied Six Sigma to its customer service ticket resolution process by introducing a new triage system. What was the reported change in resolution time?",
+      "opts": [
+        "From 24 hours to 6 hours",
+        "From 48 hours to 12 hours",
+        "From 72 hours to 24 hours",
+        "From 36 hours to 9 hours"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically reports resolution times falling from 48 hours to 12 hours following the new triage system. The other options present plausible-sounding but fabricated hour pairs not found anywhere in the case description."
+    },
+    {
+      "id": "Q54",
+      "module": 2,
+      "q": "Which statement accurately reflects when BPR should be used, according to the manual's direct comparison with incremental improvement?",
+      "opts": [
+        "For stable processes where small, consistent improvements can yield significant results over time",
+        "For processes with fundamental flaws requiring significant redesign",
+        "For processes that have already been redesigned once before",
+        "For processes handled entirely by automated systems"
+      ],
+      "ans": "B",
+      "exp": "The manual states BPR is for processes with fundamental flaws requiring significant redesign, directly contrasted with incremental improvement's role for stable processes needing small adjustments. The first option describes incremental improvement's use case, not BPR's, making it the classic reversed-definition distractor."
+    },
+    {
+      "id": "Q55",
+      "module": 2,
+      "q": "A branch head notices a specific step in the loan-disbursement process consistently causes a two-day delay, but the rest of the workflow otherwise runs smoothly and meets targets. Based on the manual's guidance, which approach is more appropriate?",
+      "opts": [
+        "A full Business Process Re-Engineering of the entire loan-disbursement workflow",
+        "A targeted incremental improvement focused on the specific delaying step",
+        "Suspending loan disbursement until a company-wide redesign is completed",
+        "Escalating the delay to the regulator for a compliance review"
+      ],
+      "ans": "B",
+      "exp": "Since only one step is causing the delay while the rest of the process runs well, this fits the manual's description of a fundamentally sound process needing a small, targeted adjustment — incremental improvement — rather than the wholesale redesign BPR is reserved for. Suspending operations or escalating to a regulator go well beyond what either methodology calls for."
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "q": "A team has just finished implementing a fix for a defect-prone process step, and are about to move into monitoring its sustained performance. Which two consecutive DMAIC phases does this describe?",
+      "opts": [
+        "Analyze into Improve",
+        "Improve into Control",
+        "Measure into Analyze",
+        "Define into Measure"
+      ],
+      "ans": "B",
+      "exp": "Implementing a fix is the Improve phase, and monitoring sustained performance afterward is the Control phase — so this describes the Improve-into-Control transition. The other pairs describe earlier transitions in the framework that occur before any solution has actually been implemented."
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "q": "Which of the following would most likely appear as a distractor in a DMAIC exam question, precisely because it resembles the Measure phase without actually being it?",
+      "opts": [
+        "Collecting relevant data across multiple branches to establish an accurate baseline",
+        "Redesigning a process from scratch without first measuring its current performance",
+        "Quantifying the scope and scale of the problem before any analysis begins",
+        "Establishing a clear starting point against which future improvement will later be judged"
+      ],
+      "ans": "B",
+      "exp": "Redesigning a process outright without first establishing a measured baseline skips Measure entirely and behaves more like a BPR-style leap to redesign — the opposite of DMAIC's structured, data-first approach. The other three options are all genuine descriptions of what Measure actually involves, not confusable alternatives."
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "q": "Comparing the Access Bank loan-approval BPR case and the First Bank teller-error Six Sigma case, which distinction correctly separates the two methodologies as applied here?",
+      "opts": [
+        "BPR redesigned the workflow itself, while Six Sigma targeted variability within an existing workflow through data-driven root-cause analysis",
+        "Both cases redesigned their processes from the ground up using identical four-step BPR logic",
+        "Six Sigma redesigned the workflow itself, while BPR analyzed root causes using the 5 Whys",
+        "Neither case involved analyzing the existing process before making changes"
+      ],
+      "ans": "B",
+      "exp": "The loan-approval case fundamentally redesigned the workflow (automating verification and risk assessment) — true BPR — while the teller-error case used DMAIC's data-driven analysis to find and fix specific error sources within the existing workflow, the hallmark of Six Sigma. The other options either merge the two methodologies or swap which one did which."
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "q": "A process improvement lead wants to reduce variability in how long each of five branches takes to process the same type of transaction. Which methodology's underlying goal most directly matches this objective?",
+      "opts": [
+        "5S, since it focuses on workplace organization",
+        "Six Sigma, since it targets removing sources of variability to improve consistency",
+        "Kaizen, since it focuses on daily incremental suggestions from any one branch",
+        "BPR, since it always redesigns a process from the ground up"
+      ],
+      "ans": "B",
+      "exp": "Reducing variability across branches is precisely Six Sigma's defined goal — identifying and removing sources of variability to improve consistency and quality. 5S addresses workplace organization, Kaizen addresses ongoing small-scale suggestions rather than cross-branch consistency, and BPR is reserved for fundamentally flawed processes, not variability reduction specifically."
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "q": "Which of the following best reflects the manual's implied reasoning for why BPR was chosen over incremental improvement in the Access Bank loan-approval case, rather than the reverse?",
+      "opts": [
+        "The 15-day approval timeline reflected a fundamentally inefficient process structure, not a single fixable step",
+        "The bank wanted to test a new mobile app feature unrelated to loan processing",
+        "Regulatory requirements mandated a full process redesign for all loan products",
+        "Incremental improvement had already been attempted and failed twice before"
+      ],
+      "ans": "B",
+      "exp": "A 15-day timeline driven by redundant approval steps reflects the kind of fundamental, structural inefficiency BPR is meant to address — not a single delaying step that incremental improvement would target. The manual gives no indication of a regulatory mandate, an unrelated app feature, or a prior failed incremental attempt; those are unsupported inventions."
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "q": "A bank is deciding how to address a customer complaint-resolution process that works adequately but has one bottleneck step nobody has ever measured with real data. Which first move best aligns with a Six Sigma approach, as opposed to jumping straight to a fix?",
+      "opts": [
+        "Immediately redesign the entire complaint-resolution workflow without further investigation of the bottleneck",
+        "Measure the current process to establish a data baseline before analyzing root causes",
+        "Ask customers to stop submitting complaints through that particular channel going forward",
+        "Replace the staff responsible for that step without any further investigation at all"
+      ],
+      "ans": "B",
+      "exp": "Six Sigma's DMAIC structure requires establishing a measured baseline (Measure) before diagnosing causes (Analyze) and only then implementing a fix (Improve) — jumping straight to redesign or reassignment skips the data-driven diagnosis that distinguishes Six Sigma from an ad hoc fix. The other two options aren't process-improvement actions at all."
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "q": "Reflecting on both cases in this module together — Access Bank's loan-approval BPR and Zenith Bank's ticket-resolution Six Sigma initiative — which statement best characterizes what they share, despite using different methodologies?",
+      "opts": [
+        "Both relied on a completely automated system with no human role remaining at any stage",
+        "Both used a structured, staged approach to diagnose a problem before implementing a specific fix",
+        "Both cases specifically involved reducing fraud-related losses reported by customers at branch level",
+        "Neither case reported any measurable improvement in the outcome once the project concluded"
+      ],
+      "ans": "B",
+      "exp": "Despite BPR's redesign-first approach and Six Sigma's data-diagnosis-first approach being structurally different, both cases followed a staged, deliberate process — analyzing the existing situation before acting — rather than an unstructured fix. Neither case removed humans entirely, addressed fraud specifically, or lacked a measurable reported outcome."
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "q": "A newly onboarded process-improvement analyst is asked to recommend BPR for a process that already runs efficiently but occasionally produces a minor data-entry error. Evaluating this recommendation against the manual's guidance, what is the most accurate assessment?",
+      "opts": [
+        "The recommendation is appropriate, since any error at all justifies a full process redesign regardless of condition",
+        "The recommendation is a likely mismatch — a minor, occasional error fits incremental improvement, not BPR",
+        "The recommendation is appropriate only if the bank has never previously used BPR anywhere in operations",
+        "The recommendation cannot be evaluated at all without first knowing the branch's specific location"
+      ],
+      "ans": "B",
+      "exp": "The manual is explicit that BPR is reserved for processes with fundamental flaws, while a process that runs efficiently overall with only an occasional minor error fits the definition of a fundamentally sound process needing a small adjustment — incremental improvement's stated use case. Prior BPR history and branch location are not conditions the manual ties to this choice."
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "q": "Which of the following would be the most appropriate DMAIC 'Define' phase statement for a team addressing recurring delays in cheque clearance?",
+      "opts": [
+        "Cheque clearance currently averages 4.2 days against a 2-day target, based on the past quarter's data",
+        "The team believes staff training will resolve the cheque-clearance delay",
+        "The problem is that cheque clearance takes too long, and the objective is to fix it",
+        "Root causes for the cheque-clearance delay include understaffing and manual verification"
+      ],
+      "ans": "B",
+      "exp": "A well-formed Define statement clearly outlines the problem and objective, and a specific quantified target (2-day target versus a stated current average) does that precisely. A vague statement of the problem without specifics is underdeveloped, a proposed solution belongs in Improve, and named root causes belong in Analyze — not Define."
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "q": "Which pairing of methodology and its primary orientation is correctly matched?",
+      "opts": [
+        "BPR — data-driven variability reduction within an existing process",
+        "BPR — structural redesign of an entire workflow",
+        "Six Sigma — structural redesign of an entire workflow",
+        "Six Sigma — workplace organization and decluttering"
+      ],
+      "ans": "B",
+      "exp": "BPR's primary orientation is structural redesign of an entire workflow to achieve major performance gains. The first option swaps BPR's orientation with Six Sigma's actual focus (data-driven variability reduction), the third option makes the same swap in the other direction, and the fourth misattributes 5S's workplace-organization focus to Six Sigma."
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "q": "A process-improvement team skips directly from defining a customer-onboarding problem to implementing a proposed fix, without collecting any baseline data or analyzing root causes. Which DMAIC principle does this violate?",
+      "opts": [
+        "The Control phase's requirement to monitor sustained performance once a fix has been implemented",
+        "The requirement that Measure and Analyze precede Improve, so fixes are grounded in data",
+        "The requirement that every DMAIC project formally involve at least three separate departments",
+        "The requirement that the Define phase be revisited again after every subsequent phase"
+      ],
+      "ans": "B",
+      "exp": "DMAIC's core structure requires Measure and Analyze to precede Improve, so that any fix is grounded in an established baseline and a diagnosed root cause rather than assumption — skipping straight to implementation violates that sequencing. The other options describe requirements that are not part of the DMAIC framework as presented in the manual."
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "q": "Which statement about the relationship between BPR and Six Sigma is most accurate, based on how the manual presents both within Module 2?",
+      "opts": [
+        "They are mutually exclusive; a bank must choose one methodology permanently across every process it runs",
+        "They serve different situations — BPR for structural redesign, Six Sigma for reducing variability within a process",
+        "Six Sigma is a required first step before any BPR project is allowed to begin",
+        "BPR applies only to loan products, while Six Sigma applies only to customer service issues"
+      ],
+      "ans": "B",
+      "exp": "The manual presents BPR and Six Sigma as serving genuinely different situations — structural redesign versus variability/defect reduction — rather than as mutually exclusive bank-wide choices, a required sequence, or methodologies restricted to specific product lines, none of which the manual states or implies."
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "q": "A bank wants to reduce the number of customer complaints tied to a specific, identifiable transaction-verification step, without overhauling the surrounding workflow. Which framework's staged approach would let the bank pinpoint the exact source of the problem before acting?",
+      "opts": [
+        "The 5S methodology's five-step sequence",
+        "DMAIC's Define-Measure-Analyze-Improve-Control sequence",
+        "BPR's four-step redesign sequence",
+        "Kaizen's continuous small-changes philosophy"
+      ],
+      "ans": "B",
+      "exp": "DMAIC's staged sequence — particularly Measure and Analyze — is specifically designed to pinpoint an exact source of a problem with data before any fix is implemented, matching the scenario's need to isolate one step without a full overhaul. 5S addresses workspace organization, BPR is reserved for structural redesign of the whole workflow, and Kaizen is a general improvement philosophy rather than a diagnostic sequence."
+    },
+    {
+      "id": "Q69",
+      "module": 2,
+      "q": "Which of the following is the strongest reason the manual gives for treating 'Analyze' as distinct from 'Measure' within DMAIC, rather than merging the two into a single phase?",
+      "opts": [
+        "Measure quantifies the problem and establishes a baseline, while Analyze uses that data to identify the underlying causes — two different tasks requiring different tools",
+        "Measure and Analyze are functionally identical and are only separated for naming convention",
+        "Measure happens after Improve, while Analyze happens before Define",
+        "Analyze is only used when the Measure phase produces no usable data"
+      ],
+      "ans": "B",
+      "exp": "Measure and Analyze are kept distinct because they perform genuinely different tasks — quantifying the problem versus diagnosing its causes using tools like root cause analysis — which is why DMAIC treats them as separate, sequential phases rather than one combined step. The other options misstate their order or falsely claim they're interchangeable."
+    },
+    {
+      "id": "Q70",
+      "module": 2,
+      "q": "A trainee claims that because both BPR and DMAIC eventually produce a 'redesigned' or 'fixed' process, the two frameworks are functionally the same, just with different names for the same steps. What is the strongest counterpoint from the manual's material?",
+      "opts": [
+        "BPR involves no analysis phase at all, while DMAIC involves no implementation phase at all in practice",
+        "BPR restructures the workflow itself, while DMAIC eliminates a specific defect within the existing structure",
+        "The two frameworks are indeed identical in every respect, and the trainee's claim is entirely correct",
+        "DMAIC is simply BPR renamed for use specifically within the banking sector's regulatory context"
+      ],
+      "ans": "B",
+      "exp": "The two frameworks differ in scope, not just terminology — BPR restructures the workflow itself, while DMAIC works within an existing structure to eliminate a specific, data-identified source of defects or variability. BPR does include an analyze step (identifying inefficiencies), and DMAIC does include an implement step (Improve), so the first option misdescribes both frameworks."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "q": "A branch manager wants to apply the manual's process-improvement logic to a scenario not explicitly covered: a single teller station that is slower than five others doing identical work, with no other issues reported. Which approach best fits the manual's guidance?",
+      "opts": [
+        "Full BPR of the branch's entire transaction workflow from the ground up",
+        "A Six Sigma DMAIC investigation focused on that one station's variability",
+        "Immediate staff reassignment away from that station without any further investigation",
+        "A regulatory compliance review of the branch's entire operating license"
+      ],
+      "ans": "B",
+      "exp": "A single outlier station performing identically-defined work more slowly than five comparable stations is precisely the kind of variability-focused problem DMAIC is designed to diagnose and resolve, rather than a structurally flawed workflow needing full BPR, an unexamined staffing decision, or a compliance matter — none of which the scenario supports."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "q": "Which combination of DMAIC phases would a team most likely revisit if a Control-phase audit reveals that an implemented fix's performance is degrading again several months later?",
+      "opts": [
+        "Define and Control only, skipping both Measure and Analyze entirely from the process",
+        "Measure and Analyze, to re-establish the baseline and re-diagnose the root cause",
+        "Improve only, by re-implementing the exact same fix without any further diagnosis",
+        "None — DMAIC does not permit revisiting any earlier phase once Control begins"
+      ],
+      "ans": "B",
+      "exp": "Degrading performance after implementation signals a need to re-measure the current state and re-analyze root causes — since either the original cause has resurfaced or a new one has emerged — before simply re-applying the same fix or assuming DMAIC prohibits revisiting earlier phases, which the manual's iterative, data-driven logic does not support."
+    },
+    {
+      "id": "Q73",
+      "module": 2,
+      "q": "Which of the following best distinguishes the type of case example used to illustrate BPR (Access Bank loan approval) from the type used to illustrate Six Sigma (First Bank teller errors) in terms of what changed?",
+      "opts": [
+        "The BPR case restructured the workflow steps themselves, while the Six Sigma case kept the same workflow steps but reduced errors within them",
+        "The BPR case involved no technology, while the Six Sigma case involved only technology",
+        "The Six Sigma case restructured the workflow steps themselves, while the BPR case reduced errors within existing steps",
+        "Both cases restructured their workflows in structurally identical ways"
+      ],
+      "ans": "B",
+      "exp": "The loan-approval BPR case removed and automated entire steps (redesigning the workflow), while the teller-error Six Sigma case kept the existing teller workflow intact and instead reduced errors within it through training and validation checkpoints — a clear scope difference. The other options either reverse which case did which or falsely claim technology or structural identicalness."
+    },
+    {
+      "id": "Q74",
+      "module": 2,
+      "q": "A bank has just completed a Six Sigma project that reduced defects in its cheque-processing step by 35%, but a separate, unrelated bottleneck remains in a completely different part of the overall workflow. Based on the manual's framework, what should the bank consider next for the separate bottleneck?",
+      "opts": [
+        "Assume the Six Sigma project already resolved it, since defects were reduced elsewhere in the workflow",
+        "Independently assess whether the bottleneck reflects a structural flaw or a fixable variability issue",
+        "Escalate the separate bottleneck to the regulator automatically without any internal assessment first",
+        "Ignore it entirely, since only one process-improvement project is allowed to run at a time"
+      ],
+      "ans": "B",
+      "exp": "Since the bottleneck is in an unrelated part of the workflow, it requires its own independent assessment against the same BPR-versus-incremental-improvement logic used elsewhere in the module, rather than assuming an unrelated project already fixed it, escalating automatically, or treating process-improvement work as limited to one project at a time — none of which the manual supports."
+    },
+    {
+      "id": "Q75",
+      "module": 2,
+      "q": "Which of the following stems would most likely signal a Recognition-level question rather than an Analysis-level one, based on the style differences across this module?",
+      "opts": [
+        "A scenario describing two branches with different rollout approaches and asking which is likely to succeed",
+        "A direct question asking which methodology BPR is defined as",
+        "A scenario asking a team to decide their next DMAIC step given a described situation",
+        "A comparison question asking a trainee to evaluate a flawed recommendation"
+      ],
+      "ans": "B",
+      "exp": "A direct definitional question — asking what BPR is defined as, with no scenario or reasoning required — is the hallmark of a Recognition-level item. The other three all require applying a framework to a described situation or evaluating a judgment call, placing them at Application, Analysis, or Professional Judgment levels instead."
+    },
+    {
+      "id": "Q76",
+      "module": 2,
+      "q": "Considering the Access Bank onboarding BPR case (2020) and the Access Bank loan-approval BPR case together, what do both suggest about how BPR was applied within the same institution?",
+      "opts": [
+        "Access Bank applied BPR only once, and the two cases describe the same initiative twice",
+        "Access Bank applied BPR as a repeatable approach across distinct processes, not a one-off event",
+        "Access Bank abandoned BPR entirely after the onboarding case due to disappointing results",
+        "The two cases directly contradict each other regarding what BPR actually involves in practice"
+      ],
+      "ans": "B",
+      "exp": "The two separate cases — one on customer onboarding, one on loan approval, with different statistics and different specific automations — show BPR being applied as a repeatable approach to distinct structurally flawed processes within the same bank, not a single initiative described twice, an abandoned approach, or a contradiction in what BPR means."
+    },
+    {
+      "id": "Q77",
+      "module": 2,
+      "q": "A professional-judgment scenario: a regional operations director must choose between funding a BPR redesign of an aging loan-disbursement system (high cost, high potential gain, months of disruption) or a Six Sigma project targeting a narrower but currently active defect in the same system (lower cost, faster result, no structural change). Which factor from the manual's framework should most directly guide this decision?",
+      "opts": [
+        "Whichever option costs less should always be chosen, regardless of the process's underlying condition",
+        "Whether the system's core problem is a structural flaw favoring BPR, or a fixable defect favoring Six Sigma",
+        "Whichever option the regulator most recently approved for other banks in the sector",
+        "The decision should rest solely on which methodology is newer to the organization"
+      ],
+      "ans": "B",
+      "exp": "The manual's own distinction between BPR (for structurally flawed processes) and Six Sigma (for variability/defects within a sound structure) is exactly the factor that should drive this kind of resource-allocation decision — not cost alone, regulatory precedent elsewhere, or organizational familiarity, none of which the manual ties to this choice."
+    },
+    {
+      "id": "Q78",
+      "module": 2,
+      "q": "Reflecting on all of Module 2's case examples together, which conclusion about process-improvement outcomes is best supported by the pattern across them?",
+      "opts": [
+        "Only initiatives involving mobile technology produced any measurable improvement across the module's cases",
+        "Across both methodologies, reported improvements consistently pair a specific diagnostic action with a measurable outcome",
+        "None of the cited cases actually reported outcomes that could be meaningfully measured",
+        "Improvements were reported only in cases where a third-party consultant was directly involved"
+      ],
+      "ans": "B",
+      "exp": "Every case in the module — loan approval, onboarding, teller errors, email delays, ticket resolution — pairs a specific action (redesign, root-cause fix, triage system) with a quantified outcome (percentage reduction or increase), a consistent pattern across the module. No case mentions a third-party consultant, and several involve no mobile technology at all, ruling out those two claims."
+    },
+    {
+      "id": "Q79",
+      "module": 3,
+      "q": "Lean methodology is best defined in the manual as a systematic approach to improving efficiency by doing which of the following?",
+      "opts": [
+        "Reducing the number of staff involved in a process at every stage",
+        "Eliminating waste and focusing on activities that add value for the customer",
+        "Standardizing every branch's physical layout across the country",
+        "Increasing transaction volume regardless of processing time"
+      ],
+      "ans": "B",
+      "exp": "Lean is defined specifically as eliminating waste and focusing on customer-value-adding activities. Reducing staff count, standardizing layouts nationwide, and raising volume regardless of speed are not part of the definition — layout standardization is closer to 5S, a specific Lean tool, not the overall methodology's definition."
+    },
+    {
+      "id": "Q80",
+      "module": 3,
+      "q": "Which of the following correctly lists Lean's five core principles in the order the manual presents them?",
+      "opts": [
+        "Map the Value Stream, Define Value, Create Flow, Establish Pull, Pursue Continuous Improvement",
+        "Define Value, Map the Value Stream, Create Flow, Establish Pull, Pursue Continuous Improvement",
+        "Define Value, Create Flow, Map the Value Stream, Establish Pull, Pursue Continuous Improvement",
+        "Establish Pull, Define Value, Map the Value Stream, Create Flow, Pursue Continuous Improvement"
+      ],
+      "ans": "B",
+      "exp": "The correct order is Define Value, Map the Value Stream, Create Flow, Establish Pull, then Pursue Continuous Improvement. The other three options each swap the position of two adjacent principles, most commonly placing Value mapping before Value has even been defined."
+    },
+    {
+      "id": "Q81",
+      "module": 3,
+      "q": "Which Lean principle specifically involves visualizing all steps in a process to identify and remove waste?",
+      "opts": [
+        "Define Value",
+        "Map the Value Stream",
+        "Create Flow",
+        "Establish Pull"
+      ],
+      "ans": "B",
+      "exp": "Map the Value Stream is defined as visualizing all steps in a process to identify and remove waste. Define Value concerns understanding what the customer finds valuable, Create Flow concerns smooth task progression, and Establish Pull concerns aligning operations with actual demand — each a distinct step in the sequence."
+    },
+    {
+      "id": "Q82",
+      "module": 3,
+      "q": "A bank restructures its account-opening workflow so tasks progress smoothly without delays or bottlenecks between steps. Which Lean principle does this directly illustrate?",
+      "opts": [
+        "Establish Pull",
+        "Create Flow",
+        "Define Value",
+        "Pursue Continuous Improvement"
+      ],
+      "ans": "B",
+      "exp": "Create Flow is defined as ensuring smooth progression of tasks to avoid delays and bottlenecks — exactly what the restructured workflow accomplishes. Establish Pull concerns matching operations to actual demand rather than forecasts, and the other two principles concern customer value and ongoing review, not task progression itself."
+    },
+    {
+      "id": "Q83",
+      "module": 3,
+      "q": "Aligning branch staffing levels with actual customer footfall patterns rather than a fixed forecast schedule best reflects which Lean principle?",
+      "opts": [
+        "Create Flow",
+        "Establish Pull",
+        "Map the Value Stream",
+        "Define Value"
+      ],
+      "ans": "B",
+      "exp": "Establish Pull is defined as aligning operations with actual customer demand rather than forecasts — precisely what demand-based staffing does. Create Flow concerns smooth task progression once work is underway, and the other two principles concern customer value and process visualization, not demand alignment."
+    },
+    {
+      "id": "Q84",
+      "module": 3,
+      "q": "Regularly reviewing and refining a process on an ongoing basis, rather than treating a redesign as a one-time event, corresponds to which Lean principle?",
+      "opts": [
+        "Create Flow",
+        "Pursue Continuous Improvement",
+        "Establish Pull",
+        "Map the Value Stream"
+      ],
+      "ans": "B",
+      "exp": "Pursue Continuous Improvement is defined as committing to regularly reviewing and improving processes, a principle the manual also calls Kaizen. The other three principles concern task progression, demand alignment, and process visualization respectively — each a one-time or point-in-time activity rather than an ongoing commitment."
+    },
+    {
+      "id": "Q85",
+      "module": 3,
+      "q": "First Bank of Nigeria reduced transaction processing times by implementing Lean principles in its branch operations. What outcome does the manual report for 2022?",
+      "opts": [
+        "A 20% increase in customer throughput",
+        "A 30% increase in customer throughput",
+        "A 40% increase in customer throughput",
+        "A 25% increase in customer throughput"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically reports a 30% increase in customer throughput from First Bank's 2022 Lean initiative. The other percentages are plausible-sounding figures drawn from other cases elsewhere in the module — 25% belongs to a separate Access Bank queue-management case, for example."
+    },
+    {
+      "id": "Q86",
+      "module": 3,
+      "q": "Which of the following is a defining feature of a Value Stream Map, as distinct from a simple flowchart?",
+      "opts": [
+        "It only shows the first and last steps of a process",
+        "It categorizes each step in a process as either value-adding or non-value-adding",
+        "It is used exclusively for calculation-based problems",
+        "It replaces the need for any process documentation"
+      ],
+      "ans": "B",
+      "exp": "A Value Stream Map's defining feature is categorizing every step as value-adding or non-value-adding, which is what distinguishes it from a generic flowchart that simply sequences tasks. It documents every step (not only the endpoints), isn't restricted to calculations, and doesn't eliminate the need for documentation — it is a form of documentation."
+    },
+    {
+      "id": "Q87",
+      "module": 3,
+      "q": "Which sequence correctly reflects the manual's steps for creating a Value Stream Map?",
+      "opts": [
+        "Design a future-state map, identify the process, document steps, highlight waste",
+        "Identify the process, document current steps and timings, highlight waste, design a future-state map",
+        "Highlight waste, identify the process, document steps, design a future-state map",
+        "Document current steps, design a future-state map, identify the process, highlight waste"
+      ],
+      "ans": "B",
+      "exp": "The correct sequence is identify the process, document its current steps/timings/resources, highlight waste, then design the future-state map. The other options each place the future-state design or waste-identification step before the process has actually been identified and documented, breaking the tool's diagnostic logic."
+    },
+    {
+      "id": "Q88",
+      "module": 3,
+      "q": "GTBank applied Value Stream Mapping to its loan approval process. What reduction in processing time is reported, and what change is credited for it?",
+      "opts": [
+        "A 30% reduction, credited to hiring additional loan officers",
+        "A 40% reduction, credited to eliminating redundant steps and introducing automated decision-making tools",
+        "A 50% reduction, credited to outsourcing loan review to a third party",
+        "A 20% reduction, credited to extending branch operating hours"
+      ],
+      "ans": "B",
+      "exp": "The manual reports a 40% reduction in loan processing time, credited to eliminating redundant steps and introducing automated decision-making tools. Additional staffing, outsourcing, and extended hours are not part of this case — they are plausible-sounding but fabricated alternatives."
+    },
+    {
+      "id": "Q89",
+      "module": 3,
+      "q": "The 5S methodology is described in the manual as originating from which context?",
+      "opts": [
+        "A quality-control standard developed by the International Organization for Standardization",
+        "The Toyota Production System in Japan, following World War II",
+        "A customer-service framework developed by a European retail bank",
+        "A regulatory standard introduced by the Central Bank of Nigeria"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically traces 5S to Japan's Toyota Production System following World War II. It does not attribute 5S to an ISO standard, a European retail bank, or a CBN regulation — each a plausible-sounding but fabricated origin not found in the material."
+    },
+    {
+      "id": "Q90",
+      "module": 3,
+      "q": "Which of the following correctly lists the five steps of the 5S methodology in order?",
+      "opts": [
+        "Set in Order, Sort, Shine, Standardize, Sustain",
+        "Sort, Set in Order, Shine, Standardize, Sustain",
+        "Sort, Shine, Set in Order, Standardize, Sustain",
+        "Sort, Set in Order, Standardize, Shine, Sustain"
+      ],
+      "ans": "B",
+      "exp": "The correct 5S sequence is Sort, Set in Order, Shine, Standardize, Sustain. The other options each swap the position of two adjacent steps — most commonly reversing Sort and Set in Order, or swapping Shine and Standardize — breaking the methodology's intended progression."
+    },
+    {
+      "id": "Q91",
+      "module": 3,
+      "q": "Removing unnecessary items from a workspace corresponds to which specific step of the 5S methodology?",
+      "opts": [
+        "Set in Order",
+        "Sort",
+        "Shine",
+        "Standardize"
+      ],
+      "ans": "B",
+      "exp": "Sort is specifically defined as removing unnecessary items from the workspace. Set in Order concerns arranging the remaining essential items for easy access, Shine concerns regular cleaning and inspection, and Standardize concerns developing consistent procedures — each a distinct, later step in the sequence."
+    },
+    {
+      "id": "Q92",
+      "module": 3,
+      "q": "A branch develops a consistent, documented procedure so that every staff member organizes their workstation the same way going forward. Which 5S step does this represent?",
+      "opts": [
+        "Sustain",
+        "Standardize",
+        "Shine",
+        "Sort"
+      ],
+      "ans": "B",
+      "exp": "Standardize is defined as developing consistent procedures to maintain organization across staff and time. Sustain is the following step, concerned with long-term adherence through audits and training, while Shine and Sort concern cleaning and initial decluttering respectively — neither involves creating a documented standard procedure."
+    },
+    {
+      "id": "Q93",
+      "module": 3,
+      "q": "Ensuring long-term adherence to organizational standards through regular audits and staff training corresponds to which final step of 5S?",
+      "opts": [
+        "Standardize",
+        "Sustain",
+        "Shine",
+        "Set in Order"
+      ],
+      "ans": "B",
+      "exp": "Sustain is the fifth and final 5S step, defined specifically around regular audits and training to ensure long-term adherence. Standardize is the step immediately before it, concerned with creating the procedures in the first place rather than maintaining them over time."
+    },
+    {
+      "id": "Q94",
+      "module": 3,
+      "q": "A Zenith Bank branch decluttered workstations and created standardized filing systems. What improvement in service delivery times does the manual report?",
+      "opts": [
+        "A 15% improvement",
+        "A 20% improvement",
+        "A 25% improvement",
+        "A 10% improvement"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically reports a 20% improvement in service delivery times from this Zenith Bank 5S initiative. The other percentages are plausible figures associated with different cases elsewhere in the module rather than this particular one."
+    },
+    {
+      "id": "Q95",
+      "module": 3,
+      "q": "Kaizen is best described in the manual as which of the following?",
+      "opts": [
+        "A one-time redesign event led exclusively by senior management",
+        "A continuous improvement philosophy encouraging small, incremental changes to processes",
+        "A statistical framework for eliminating defects using data analysis",
+        "A workplace-organization method focused on decluttering physical space"
+      ],
+      "ans": "B",
+      "exp": "Kaizen is defined as a continuous improvement philosophy encouraging small, incremental process changes. A one-time senior-led redesign describes BPR rather than Kaizen, a statistical defect-elimination framework describes Six Sigma, and workplace decluttering describes 5S — three distinct methodologies confused with Kaizen here."
+    },
+    {
+      "id": "Q96",
+      "module": 3,
+      "q": "Which of the following correctly reflects the key steps of Kaizen as presented in the manual?",
+      "opts": [
+        "Implement large-scale changes, measure results, document the process formally",
+        "Identify improvement areas through feedback, implement small changes quickly, measure impact and iterate",
+        "Design a future-state value stream map, then eliminate all non-value-adding steps at once",
+        "Sort, organize, clean, standardize, then sustain the new workspace"
+      ],
+      "ans": "B",
+      "exp": "Kaizen's key steps are identifying improvement areas through feedback and observation, implementing small changes quickly, then measuring impact and iterating further. The other options describe large-scale BPR-style change, Value Stream Mapping, and 5S respectively — each a different tool from elsewhere in the module."
+    },
+    {
+      "id": "Q97",
+      "module": 3,
+      "q": "In 2021, Access Bank's branch staff proposed a specific change to manage customer queues more effectively during busy periods. What was proposed, and what outcome resulted?",
+      "opts": [
+        "A dedicated fast-track lane, reducing average wait times by 20%",
+        "A ticketing system, reducing peak-hour wait times by 15%",
+        "An appointment-booking app, reducing peak-hour wait times by 25%",
+        "Additional teller stations, reducing average wait times by 10%"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically credits this Kaizen example to branch staff proposing a ticketing system, which reduced peak-hour wait times by 15%. The other options describe plausible but fabricated alternatives not found in the case as written."
+    },
+    {
+      "id": "Q98",
+      "module": 3,
+      "q": "Which of the following is listed as a benefit of Lean methodology in retail banking, distinct from Cost Savings and Enhanced Customer Satisfaction?",
+      "opts": [
+        "Guaranteed regulatory compliance across every product line the bank offers",
+        "Increased Efficiency, through streamlining workflows to reduce delays and bottlenecks",
+        "Elimination of the need for any staff training or onboarding process",
+        "Automatic elimination of all operational and reputational risk company-wide"
+      ],
+      "ans": "B",
+      "exp": "Increased Efficiency is explicitly listed as a Lean benefit, alongside Cost Savings and Enhanced Customer Satisfaction. The other three options — guaranteed compliance, eliminating training needs, and eliminating operational risk entirely — are much stronger claims than anything the manual actually states about Lean's benefits."
+    },
+    {
+      "id": "Q99",
+      "module": 3,
+      "q": "Access Bank's 2020 Lean initiative to reduce branch congestion during peak hours introduced which specific tool, and with what reported result?",
+      "opts": [
+        "A ticketing system, resulting in a 15% improvement in wait times",
+        "A queue management system, resulting in a 25% improvement in customer satisfaction scores",
+        "A mobile check-in app, resulting in a 30% improvement in customer satisfaction scores",
+        "A dedicated express lane, resulting in a 20% improvement in wait times"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically credits this 2020 initiative to a queue management system, resulting in a 25% improvement in customer satisfaction scores. The 15% ticketing-system figure belongs to the separate 2021 Kaizen case, and the other two options are fabricated alternatives not in the material."
+    },
+    {
+      "id": "Q100",
+      "module": 3,
+      "q": "Which challenge of implementing Lean in banking is specifically tied to employees resisting changes to familiar workflows?",
+      "opts": [
+        "Measurement and Sustainability",
+        "Cultural Resistance",
+        "Regulatory Constraints",
+        "Legacy Systems"
+      ],
+      "ans": "B",
+      "exp": "Cultural Resistance is the Lean-specific challenge defined around employees resisting changes to familiar workflows. Measurement and Sustainability concerns maintaining improvements over time rather than initial resistance, while Regulatory Constraints and Legacy Systems are barriers discussed in Module 1 under a different framing, not the two Lean-specific challenges here."
+    },
+    {
+      "id": "Q101",
+      "module": 3,
+      "q": "What is the manual's recommended solution to the challenge of maintaining Lean improvements over time?",
+      "opts": [
+        "Conduct training and involve staff in Lean projects to encourage ownership",
+        "Establish metrics to track progress and assign accountability for maintaining standards",
+        "Escalate sustainability concerns to the regulator for review",
+        "Rotate staff between branches every quarter to spread best practices"
+      ],
+      "ans": "B",
+      "exp": "The manual's recommended solution to the Measurement and Sustainability challenge is establishing metrics and assigning accountability. Training and staff involvement is the recommended solution to Cultural Resistance instead — a different challenge — while regulator escalation and quarterly rotation are not solutions described anywhere in the material."
+    },
+    {
+      "id": "Q102",
+      "module": 3,
+      "q": "A branch manager introduces Lean tools but does not involve frontline staff in the process, resulting in low adoption. Which specific Lean challenge does this scenario illustrate?",
+      "opts": [
+        "Measurement and Sustainability",
+        "Cultural Resistance",
+        "Legacy Systems",
+        "Regulatory Constraints"
+      ],
+      "ans": "B",
+      "exp": "Low adoption stemming from staff not being involved or trained is precisely Cultural Resistance, whose stated solution is training and staff involvement — exactly what's missing in this scenario. Measurement and Sustainability concerns maintaining gains after they're achieved, not initial adoption, and the other two options aren't Lean-specific challenges at all."
+    },
+    {
+      "id": "Q103",
+      "module": 3,
+      "q": "Reviewing the five Lean case examples in this module together — First Bank throughput, GTBank VSM, Zenith Bank 5S, Access Bank Kaizen, and Access Bank queue management — which statement best characterizes what they collectively demonstrate?",
+      "opts": [
+        "Only technology-based Lean tools produced any measurable results across the five cases",
+        "Multiple distinct Lean tools each produced their own separately quantified improvement",
+        "None of the five cases involved any specific named Lean tool at all",
+        "All five cases reported identical percentage improvements across every metric measured"
+      ],
+      "ans": "B",
+      "exp": "Across the five cases, a distinct Lean tool or principle is applied each time — general Lean application, Value Stream Mapping, 5S, Kaizen, and a queue-management system — with its own separately reported statistic, showing Lean's breadth rather than reliance on one tool. The other options misstate this pattern; the Kaizen case (a staff-proposed ticketing system) isn't purely technological, and the percentages differ across cases."
+    },
+    {
+      "id": "Q104",
+      "module": 3,
+      "q": "A bank wants to reduce non-value-adding steps in its account-closing process but has never formally mapped the workflow before. Which Lean principle should be applied first, before flow or pull can meaningfully be addressed?",
+      "opts": [
+        "Establish Pull",
+        "Map the Value Stream",
+        "Pursue Continuous Improvement",
+        "Create Flow"
+      ],
+      "ans": "B",
+      "exp": "Since the workflow has never been mapped, Map the Value Stream — visualizing every step to identify waste — must come first, consistent with its position second in the five-principle sequence, right after Define Value. Flow and Pull both depend on first knowing where the waste and bottlenecks actually are, which mapping is what reveals."
+    },
+    {
+      "id": "Q105",
+      "module": 3,
+      "q": "Which distinction correctly separates 5S from Kaizen, given that both are described as originating from a philosophy of ongoing, incremental improvement?",
+      "opts": [
+        "5S is a one-time event, while Kaizen is a continuous ongoing philosophy applied daily",
+        "5S is a structured method with five fixed steps; Kaizen is a broader philosophy applicable to any process",
+        "Kaizen is a structured workplace-organization method, while 5S is the broader applicable philosophy",
+        "There is no meaningful distinction at all between 5S and Kaizen in the manual"
+      ],
+      "ans": "B",
+      "exp": "5S is a specific, structured method with five defined steps focused on workplace organization, while Kaizen is a broader continuous-improvement philosophy that can apply to any process, not physical space specifically — a scope difference, not simply a one-time-versus-ongoing distinction, since 5S itself includes an ongoing Sustain step."
+    },
+    {
+      "id": "Q106",
+      "module": 3,
+      "q": "A trainee argues that Value Stream Mapping and process mapping (from Module 4) are the same tool with different names. Based on the manual's framing of VSM specifically, what is the strongest distinction to raise?",
+      "opts": [
+        "Process mapping and VSM are indeed identical tools with no meaningful difference at all",
+        "VSM specifically categorizes each step as value-adding or non-value-adding, unlike general mapping",
+        "VSM is used only for calculation-based problems, while process mapping handles scenarios only",
+        "VSM cannot be applied to banking processes at all, while process mapping can"
+      ],
+      "ans": "B",
+      "exp": "VSM's defining feature — explicitly categorizing each step as value-adding or non-value-adding — is a specific lens that general process mapping tools like flowcharts don't inherently require, even though both are visual workflow tools. The other options either deny any distinction or invent restrictions the manual doesn't state for either tool."
+    },
+    {
+      "id": "Q107",
+      "module": 3,
+      "q": "A bank successfully applies Sort, Set in Order, and Shine to a branch's back office but never establishes standardized procedures or an audit routine. Which outcome is the manual's framework most likely to predict?",
+      "opts": [
+        "The improvements will automatically persist indefinitely without further action",
+        "The initial gains are likely to erode over time without Standardize and Sustain reinforcing them",
+        "The branch will have fully implemented 5S, since three of five steps is a majority",
+        "The missing steps only matter if the branch operates in a regulated product line"
+      ],
+      "ans": "B",
+      "exp": "Since 5S's own logic places Standardize and Sustain as the steps that lock in and maintain earlier gains through consistent procedure and ongoing audit, skipping them makes the initial improvements from Sort, Set in Order, and Shine likely to erode over time. Completing only three of five steps does not constitute full implementation, and nothing ties the missing steps' importance to regulatory status."
+    },
+    {
+      "id": "Q108",
+      "module": 3,
+      "q": "Considering the GTBank VSM case and the First Bank general-Lean case together, what do both suggest about how 'waste' can be defined across different Lean applications?",
+      "opts": [
+        "Waste refers only to unnecessary physical inventory sitting unused in both cited cases",
+        "Waste can take different forms — redundant steps in one case, general delays in the other",
+        "Neither case actually involved identifying or removing any waste from the process",
+        "Waste is defined identically as staff idle time specifically in both cited cases"
+      ],
+      "ans": "B",
+      "exp": "GTBank's case specifically eliminated redundant approval steps, while First Bank's case addressed transaction-processing delays more generally — two different manifestations of waste, both addressed through Lean's core waste-elimination focus rather than a single fixed definition like inventory or idle time specifically."
+    },
+    {
+      "id": "Q109",
+      "module": 3,
+      "q": "A branch manager wants to apply Kaizen but insists that only senior management should propose changes, since they have the most experience. Evaluating this against the manual's description of Kaizen, what is the most accurate assessment?",
+      "opts": [
+        "This approach is fully consistent with Kaizen, since senior management typically drives change",
+        "This conflicts with Kaizen, which the manual illustrates through frontline staff proposing changes",
+        "Kaizen requires that only external consultants propose changes, never any internal staff",
+        "Kaizen does not specify who may propose changes, so this approach is equally valid"
+      ],
+      "ans": "B",
+      "exp": "The manual's own Kaizen example features frontline branch staff — not senior management — proposing the ticketing-system change based on direct observation of the queue problem, making a senior-only approach a mismatch with how the manual illustrates the philosophy in practice. Kaizen is not shown as requiring external consultants either."
+    },
+    {
+      "id": "Q110",
+      "module": 3,
+      "q": "Which of the following best reflects a Professional Judgment-level evaluation of whether a bank should prioritize 5S or Kaizen first when starting a Lean journey in a chronically disorganized branch?",
+      "opts": [
+        "Kaizen should always come first, simply because it is listed after 5S in the manual",
+        "5S's structured steps may create a stable foundation Kaizen's ongoing changes can build on",
+        "Neither tool matters, since only VSM produces any measurable results according to the manual",
+        "5S and Kaizen must always be implemented simultaneously, never one before the other"
+      ],
+      "ans": "B",
+      "exp": "Since the branch's core problem is specifically disorganization, 5S's structured, physical-workspace-focused steps address that root issue directly, providing a stable base onto which Kaizen's ongoing incremental improvement can then be layered — a judgment call the manual's tool descriptions support, though it doesn't mandate a fixed order. Subtopic listing order is not itself a sequencing rule, and both VSM's relevance and a mandatory-simultaneity requirement go beyond what the manual establishes."
+    },
+    {
+      "id": "Q111",
+      "module": 3,
+      "q": "Reflecting on all three benefits of Lean (Increased Efficiency, Cost Savings, Enhanced Customer Satisfaction) together with the two named challenges (Cultural Resistance, Measurement and Sustainability), which conclusion is best supported?",
+      "opts": [
+        "The benefits and challenges are entirely unrelated to each other in the manual's framing",
+        "Realizing Lean's benefits depends on managing both challenges, since either can undermine the gains",
+        "Only Cost Savings is affected by either of the two named challenges",
+        "The challenges only apply to banks that have never implemented Lean before at all"
+      ],
+      "ans": "B",
+      "exp": "Since both challenges concern whether Lean changes actually take hold — staff adopting them (Cultural Resistance) and gains being maintained (Measurement and Sustainability) — unmanaged versions of either would plausibly erode any of the three benefits, not just one, tying the challenges directly to whether the benefits are realized at all rather than treating them as unrelated topics."
+    },
+    {
+      "id": "Q112",
+      "module": 3,
+      "q": "A newly hired analyst proposes skipping Define Value and starting directly with Map the Value Stream, arguing it saves time. What is the strongest objection based on the manual's principle sequence?",
+      "opts": [
+        "There is no objection, since the two principles work equally well in either order",
+        "Mapping the stream without first defining value risks removing or preserving the wrong steps",
+        "Map the Value Stream must come first simply because it appears earlier alphabetically",
+        "Skipping Define Value is only a problem for scenario-based work, not general process work"
+      ],
+      "ans": "B",
+      "exp": "Since 'waste' in Value Stream Mapping is specifically defined as anything not adding customer value, mapping the stream without first defining what customers actually value risks misjudging which steps are wasteful — the reason Define Value is positioned first in the sequence, not an arbitrary ordering choice. Alphabetical ordering and a scenario/general-work distinction are not the manual's actual reasoning."
+    },
+    {
+      "id": "Q113",
+      "module": 3,
+      "q": "Which of the following stems is most characteristic of an Understanding-level question, as distinct from a pure Recognition-level one, within this module's style?",
+      "opts": [
+        "A direct question asking which step comes first in the 5S sequence",
+        "A question asking a trainee to distinguish two similarly worded Lean principles from each other",
+        "A scenario asking which action a branch manager should take next given a described problem",
+        "A question asking a trainee to evaluate a flawed sequencing decision"
+      ],
+      "ans": "B",
+      "exp": "Asking a trainee to distinguish two principles from each other requires explaining or differentiating concepts, the hallmark of Understanding — one level above pure Recognition, which only requires recalling a fixed sequence. The scenario-based options describing action or evaluation sit at Application and Analysis/Professional Judgment respectively, higher than Understanding."
+    },
+    {
+      "id": "Q114",
+      "module": 3,
+      "q": "A regional Lean coordinator observes that a branch's queue-management system (Access Bank-style) has improved customer satisfaction scores but that staff still report high stress levels. Which combination of concepts from this module is most relevant to addressing the staff-side gap?",
+      "opts": [
+        "Only Establish Pull is relevant, since queue systems are fundamentally a pull-based tool",
+        "Cultural Resistance and Kaizen together — staff involvement may address what the tool alone didn't",
+        "Only 5S is relevant, since staff stress is always a workplace-organization issue",
+        "No tool in the module addresses staff-side outcomes; only customer metrics are covered"
+      ],
+      "ans": "B",
+      "exp": "Since Cultural Resistance's solution is staff involvement and Kaizen is specifically illustrated through staff proposing their own process changes, combining the two directly addresses a gap where a customer-facing tool succeeded without addressing staff experience — unlike assuming only Pull or only 5S applies, or assuming the module has nothing relevant to staff-side outcomes, which it does through the employee-benefit framing carried over from Module 1."
+    },
+    {
+      "id": "Q115",
+      "module": 3,
+      "q": "Considering the manual's account of Zenith Bank's 5S case and Access Bank's queue-management case together, which pattern about Lean's reported outcomes is best supported?",
+      "opts": [
+        "Lean outcomes are reported only in terms of cost figures, never service or satisfaction",
+        "Lean outcomes span multiple metric types, not one single standardized measure across cases",
+        "Both cases report outcomes using headcount reduction as their sole reported metric",
+        "Neither case reports any quantified outcome of any kind at all"
+      ],
+      "ans": "B",
+      "exp": "The Zenith Bank case reports a service-delivery-time improvement, while the Access Bank case reports a customer-satisfaction-score improvement — two different metric types, showing Lean outcomes are measured in whatever way best fits the specific initiative rather than one standardized figure. Neither case involves headcount reduction or cost figures as its reported metric."
+    },
+    {
+      "id": "Q116",
+      "module": 3,
+      "q": "A professional-judgment scenario: an operations director must decide whether a Lean initiative that shows early efficiency gains but has not yet been formally reviewed for sustainability should be declared complete. Based on the manual's framework, what is the most defensible decision?",
+      "opts": [
+        "Declare it complete immediately, since early efficiency gains alone are sufficient evidence",
+        "Withhold declaring completion until metrics confirm the gains are actually being sustained",
+        "Declare it complete only once customer complaints have reached zero entirely",
+        "The decision is irrelevant, since Lean initiatives cannot ever fail once gains appear"
+      ],
+      "ans": "B",
+      "exp": "Since the manual explicitly names Measurement and Sustainability as a distinct challenge — maintaining improvements over time — early efficiency gains alone are not equivalent to a sustained result, making it more defensible to confirm sustainability through metrics and accountability before declaring the initiative complete. Zero-complaint and cannot-fail framings go beyond anything the manual supports."
+    },
+    {
+      "id": "Q117",
+      "module": 3,
+      "q": "Which conclusion about the relationship between Lean's five core principles and its named tools (VSM, 5S, Kaizen) is best supported by how the manual structures this module?",
+      "opts": [
+        "The five principles and three tools are entirely unrelated, covered separately by coincidence",
+        "The tools operationalize specific principles — VSM for mapping, Kaizen for continuous improvement",
+        "Only 5S connects to any of the five principles; VSM and Kaizen are unrelated",
+        "The tools replace the need to understand the five principles at all"
+      ],
+      "ans": "B",
+      "exp": "The manual's own structure shows each tool operationalizing a specific principle — VSM as the practical mechanism for Map the Value Stream, Kaizen as the practical mechanism for Pursue Continuous Improvement — rather than the principles and tools being unrelated or replaceable by each other; 5S is not uniquely connected while the other two remain isolated."
+    },
+    {
+      "id": "Q118",
+      "module": 3,
+      "q": "Synthesizing this module's benefits, challenges, and five case examples together, which statement best captures the manual's overall argument about Lean in retail banking?",
+      "opts": [
+        "Lean guarantees success regardless of implementation, since every cited case reported success",
+        "Lean produces real gains, but only when implementation addresses resistance and sustains them",
+        "Lean is primarily a cost-cutting tool with no real connection to satisfaction",
+        "Lean's benefits apply only to physical branches, never to digital channels"
+      ],
+      "ans": "B",
+      "exp": "Taken together, the module's benefits (efficiency, cost, satisfaction), named challenges (resistance, sustainability), and five varied case examples support a conditional argument — gains are real but depend on managing the two named challenges — rather than an unconditional guarantee, a cost-only framing, or a restriction to physical branches that several of the cited digital-adjacent cases (mobile app, digital verification) would contradict."
+    },
+    {
+      "id": "Q119",
+      "module": 4,
+      "q": "Process mapping is best defined in the manual as which of the following?",
+      "opts": [
+        "A statistical technique for reducing variability in a process",
+        "A visual representation of a workflow outlining each step from start to finish",
+        "A method for organizing physical workspace to reduce clutter",
+        "A framework for redesigning a workflow from the ground up"
+      ],
+      "ans": "B",
+      "exp": "Process mapping is defined as a visual representation of a workflow outlining each step from start to finish, helping identify bottlenecks and redundancies. The other options describe Six Sigma, 5S, and BPR respectively — three distinct concepts from earlier modules, not process mapping itself."
+    },
+    {
+      "id": "Q120",
+      "module": 4,
+      "q": "Which of the following is one of the three types of process maps named in the manual?",
+      "opts": [
+        "A Fishbone Diagram",
+        "A SIPOC Diagram",
+        "A Value Stream Map",
+        "A DMAIC Chart"
+      ],
+      "ans": "B",
+      "exp": "The manual names Flowcharts, SIPOC Diagrams, and Swimlane Diagrams as its three types of process maps. Fishbone Diagrams belong to Root Cause Analysis, Value Stream Maps belong to Lean, and DMAIC is not a diagram at all but a Six Sigma phase framework — each from a different part of the course."
+    },
+    {
+      "id": "Q121",
+      "module": 4,
+      "q": "A process map that provides a detailed sequence of tasks, step by step, is best described as which type of map?",
+      "opts": [
+        "A SIPOC Diagram",
+        "A Flowchart",
+        "A Swimlane Diagram",
+        "A Fishbone Diagram"
+      ],
+      "ans": "B",
+      "exp": "A Flowchart is specifically defined as providing a detailed sequence of tasks. A SIPOC Diagram instead summarizes suppliers, inputs, process, outputs, and customers at a higher level, a Swimlane Diagram divides responsibility across departments, and a Fishbone Diagram is a Root Cause Analysis tool, not a process map."
+    },
+    {
+      "id": "Q122",
+      "module": 4,
+      "q": "Which type of process map is specifically designed to summarize Suppliers, Inputs, Process, Outputs, and Customers?",
+      "opts": [
+        "A Flowchart",
+        "A SIPOC Diagram",
+        "A Swimlane Diagram",
+        "A Value Stream Map"
+      ],
+      "ans": "B",
+      "exp": "SIPOC stands for Suppliers, Inputs, Process, Outputs, and Customers, and the diagram is specifically designed to summarize a process along exactly these five categories. Flowcharts detail task sequence, Swimlane Diagrams divide responsibility, and Value Stream Maps categorize value-adding versus non-value-adding steps — none organized around the SIPOC categories."
+    },
+    {
+      "id": "Q123",
+      "module": 4,
+      "q": "A process map that divides responsibility for different steps across departments such as Sales, Stocks, and Finance is best described as which type?",
+      "opts": [
+        "A Flowchart",
+        "A Swimlane Diagram",
+        "A SIPOC Diagram",
+        "A Fishbone Diagram"
+      ],
+      "ans": "B",
+      "exp": "A Swimlane Diagram is specifically defined as dividing responsibilities across departments or teams, matching a map organized by Sales, Stocks, and Finance lanes. A Flowchart shows sequence without departmental division, a SIPOC Diagram summarizes at a higher level, and a Fishbone Diagram is a cause-analysis tool, not a workflow map."
+    },
+    {
+      "id": "Q124",
+      "module": 4,
+      "q": "Which sequence correctly reflects the manual's steps for creating a process map?",
+      "opts": [
+        "Gather data, define the process, visualize, analyze for inefficiencies",
+        "Define the process, gather data, visualize using a mapping tool, analyze for inefficiencies",
+        "Analyze for inefficiencies, define the process, gather data, visualize",
+        "Visualize using a mapping tool, gather data, define the process, analyze"
+      ],
+      "ans": "B",
+      "exp": "The correct sequence is define the process to be mapped, gather data on each step, visualize using a suitable tool, then analyze to identify inefficiencies. The other options each place data-gathering, visualization, or analysis before the process has actually been defined, breaking the logical order."
+    },
+    {
+      "id": "Q125",
+      "module": 4,
+      "q": "Access Bank used process mapping to analyze its customer onboarding workflow. Which specific step did this identify as suitable for automation, and what result followed in 2021?",
+      "opts": [
+        "Identity verification, reducing onboarding time by 40%",
+        "Document collection, reducing onboarding time by 30%",
+        "KYC checks, reducing onboarding time by 60%",
+        "Account activation, reducing onboarding time by 25%"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically credits this process-mapping case to identifying document collection as automatable, reducing onboarding time by 30% in 2021. The other percentages and steps belong to different cases from earlier modules — the 40%/identity-verification and 60%/KYC figures both belong to separate BPR cases in Module 2."
+    },
+    {
+      "id": "Q126",
+      "module": 4,
+      "q": "Root Cause Analysis is best defined in the manual as which of the following?",
+      "opts": [
+        "A method for visualizing the sequence of tasks in a workflow",
+        "A method for identifying the underlying reasons behind inefficiencies or problems in a process",
+        "A method for reducing physical clutter in a workspace",
+        "A method for aligning operations with actual customer demand"
+      ],
+      "ans": "B",
+      "exp": "RCA is defined as a method for identifying the underlying reasons behind inefficiencies or problems, distinct from process mapping (task visualization), 5S (workspace organization), and Establish Pull (demand alignment) — each a different concept from elsewhere in the course."
+    },
+    {
+      "id": "Q127",
+      "module": 4,
+      "q": "The 5 Whys technique is best described as which of the following?",
+      "opts": [
+        "Categorizing potential causes into groups like People, Process, Technology, and Environment",
+        "Repeatedly asking 'Why?' to uncover the root cause of an issue",
+        "Visualizing a process using suppliers, inputs, process, outputs, and customers",
+        "Establishing a data baseline before analyzing root causes"
+      ],
+      "ans": "B",
+      "exp": "The 5 Whys technique is specifically repeatedly asking 'Why?' to trace a problem back to its root cause. The other options describe the Fishbone Diagram, a SIPOC Diagram, and the DMAIC Measure phase respectively — three distinct tools or steps, none of which is the 5 Whys itself."
+    },
+    {
+      "id": "Q128",
+      "module": 4,
+      "q": "In the manual's 5 Whys example, customer dissatisfaction is traced back through delays and manual approval steps to which ultimate root cause?",
+      "opts": [
+        "Insufficient staff training on customer service",
+        "Lack of automation",
+        "High transaction volume during peak hours",
+        "Inadequate regulatory compliance procedures"
+      ],
+      "ans": "B",
+      "exp": "The manual's worked example traces dissatisfaction to delays, then to manual approval steps, then finally to a lack of automation as the root cause. Staff training, transaction volume, and compliance procedures are plausible-sounding causes but are not the one actually named at the end of this specific chain."
+    },
+    {
+      "id": "Q129",
+      "module": 4,
+      "q": "A Fishbone Diagram is described in the manual as categorizing potential causes of a problem into which set of groups?",
+      "opts": [
+        "Cost, Quality, Speed, and Service",
+        "People, Process, Technology, and Environment",
+        "Suppliers, Inputs, Outputs, and Customers",
+        "Define, Measure, Analyze, and Improve"
+      ],
+      "ans": "B",
+      "exp": "The manual describes the Fishbone Diagram as categorizing causes into groups like People, Process, Technology, and Environment. The other option sets describe BPR's performance metrics, SIPOC's categories, and part of the DMAIC sequence respectively — each a distinct framework from elsewhere in the course."
+    },
+    {
+      "id": "Q130",
+      "module": 4,
+      "q": "GTBank applied the 5 Whys method to address delays in loan disbursements. What root cause was revealed, and what improvement followed from addressing it?",
+      "opts": [
+        "Understaffed branches; a 40% reduction in delays after hiring",
+        "Outdated software; a 50% reduction in delays after upgrading the system",
+        "Manual document review; a 30% reduction in delays after digitizing forms",
+        "Regulatory bottlenecks; a 60% reduction in delays after policy changes"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically reports outdated software as the revealed root cause, with a 50% reduction in delays following the system upgrade. The other options present plausible-sounding causes and figures not found in this particular case, several borrowed from statistics belonging to different cases elsewhere in the course."
+    },
+    {
+      "id": "Q131",
+      "module": 4,
+      "q": "According to the manual, what is the primary role of data analytics in process improvement?",
+      "opts": [
+        "To replace the need for process mapping entirely",
+        "To provide insights into performance metrics, helping identify inefficiencies and predict future bottlenecks",
+        "To automatically implement fixes without human review",
+        "To eliminate the need for root cause analysis"
+      ],
+      "ans": "B",
+      "exp": "Data analytics is defined as providing insight into performance metrics to help identify inefficiencies and predict future bottlenecks. It doesn't replace process mapping or RCA, nor does it automatically implement fixes — the manual treats it as an insight-generating tool that still requires human decision-making."
+    },
+    {
+      "id": "Q132",
+      "module": 4,
+      "q": "Which data analytics technique specifically involves identifying patterns over time to address recurring issues?",
+      "opts": [
+        "Heatmaps",
+        "Trend Analysis",
+        "Dashboards",
+        "Root Cause Analysis"
+      ],
+      "ans": "B",
+      "exp": "Trend Analysis is specifically defined as identifying patterns over time to address recurring issues. Heatmaps highlight where delays or errors frequently occur spatially within a workflow, Dashboards provide real-time KPI data, and Root Cause Analysis is a separate diagnostic method, not a data analytics technique in this list."
+    },
+    {
+      "id": "Q133",
+      "module": 4,
+      "q": "Which data analytics technique is specifically described as highlighting areas in a workflow where delays or errors frequently occur?",
+      "opts": [
+        "Trend Analysis",
+        "Heatmaps",
+        "Dashboards",
+        "SIPOC Diagrams"
+      ],
+      "ans": "B",
+      "exp": "Heatmaps are specifically defined as highlighting workflow areas where delays or errors frequently occur. Trend Analysis instead looks at patterns over time, Dashboards provide real-time KPI monitoring, and SIPOC Diagrams are a process-mapping tool entirely unrelated to data analytics."
+    },
+    {
+      "id": "Q134",
+      "module": 4,
+      "q": "Providing real-time data on key performance indicators is specifically the function of which data analytics technique?",
+      "opts": [
+        "Trend Analysis",
+        "Dashboards",
+        "Heatmaps",
+        "Fishbone Diagrams"
+      ],
+      "ans": "B",
+      "exp": "Dashboards are specifically defined as providing real-time data on KPIs. Trend Analysis and Heatmaps serve different purposes — patterns over time and spatial error concentration respectively — while Fishbone Diagrams belong to Root Cause Analysis, not data analytics."
+    },
+    {
+      "id": "Q135",
+      "module": 4,
+      "q": "Zenith Bank implemented a dashboard system to monitor customer service wait times. What did this enable branch managers to do, and with what result?",
+      "opts": [
+        "Predict future staffing needs, cutting overtime costs by 20%",
+        "Allocate resources dynamically, reducing peak-hour delays by 20%",
+        "Automate customer notifications, reducing complaints by 30%",
+        "Redesign the branch layout, reducing wait times by 15%"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically reports the dashboard enabling dynamic resource allocation, reducing peak-hour delays by 20%. The other options present plausible but fabricated outcomes not found in this case, though the general theme — wait-time management — echoes cases from earlier modules."
+    },
+    {
+      "id": "Q136",
+      "module": 4,
+      "q": "A branch analyst is asked to visually map every step of the loan-disbursement process without dividing it by department, focusing purely on the order tasks occur in. Which type of process map is most appropriate?",
+      "opts": [
+        "A Swimlane Diagram",
+        "A Flowchart",
+        "A SIPOC Diagram",
+        "A Fishbone Diagram"
+      ],
+      "ans": "B",
+      "exp": "Since the analyst needs a detailed task sequence without departmental division, a Flowchart is the appropriate tool — it is specifically defined as providing a detailed sequence of tasks. A Swimlane Diagram would add departmental division the analyst doesn't want, a SIPOC Diagram operates at a higher summary level, and a Fishbone Diagram is a cause-analysis tool, not a map."
+    },
+    {
+      "id": "Q137",
+      "module": 4,
+      "q": "A team wants to understand which external parties provide inputs into a process and who ultimately receives its outputs, without detailing every internal task. Which tool fits this need best?",
+      "opts": [
+        "A Flowchart",
+        "A SIPOC Diagram",
+        "A Swimlane Diagram",
+        "A Trend Analysis"
+      ],
+      "ans": "B",
+      "exp": "A SIPOC Diagram is specifically built around Suppliers, Inputs, Process, Outputs, and Customers, matching the team's need to understand external inputs and outputs without task-level detail. A Flowchart would give more internal detail than needed, a Swimlane Diagram adds departmental division, and Trend Analysis is a data technique, not a mapping tool."
+    },
+    {
+      "id": "Q138",
+      "module": 4,
+      "q": "A customer complaint is traced from 'transactions are delayed' through several intermediate causes to a final root cause. Which RCA tool does this describe?",
+      "opts": [
+        "A Fishbone Diagram",
+        "The 5 Whys",
+        "A SIPOC Diagram",
+        "A Dashboard"
+      ],
+      "ans": "B",
+      "exp": "Tracing a problem through a chain of intermediate causes to one final root cause is specifically how the 5 Whys technique works — repeatedly asking why until the root is reached. A Fishbone Diagram instead categorizes multiple parallel causes into groups rather than a single chain, and the other two options are unrelated tools."
+    },
+    {
+      "id": "Q139",
+      "module": 4,
+      "q": "A team wants to categorize several possible causes of high error rates into groups such as People, Process, Technology, and Environment simultaneously, rather than tracing one linear chain. Which RCA tool fits this need?",
+      "opts": [
+        "The 5 Whys",
+        "A Fishbone Diagram",
+        "A Flowchart",
+        "A Heatmap"
+      ],
+      "ans": "B",
+      "exp": "A Fishbone Diagram is specifically designed to categorize multiple potential causes into parallel groups like People, Process, Technology, and Environment. The 5 Whys instead traces one linear chain of causes rather than parallel categories, and the other two options are a mapping tool and a data technique, not RCA tools."
+    },
+    {
+      "id": "Q140",
+      "module": 4,
+      "q": "Which of the following best distinguishes Trend Analysis from a Heatmap, as data analytics techniques?",
+      "opts": [
+        "Trend Analysis looks at patterns over time, while a Heatmap highlights where problems concentrate within a workflow",
+        "Trend Analysis highlights where problems concentrate, while a Heatmap looks at patterns over time",
+        "Both techniques serve an identical function and can be used interchangeably",
+        "Trend Analysis and Heatmaps are both types of process maps, not data techniques"
+      ],
+      "ans": "B",
+      "exp": "Trend Analysis is time-oriented (patterns over time), while a Heatmap is location-oriented (where within a workflow problems concentrate) — a temporal-versus-spatial distinction. The second option reverses these two definitions, and the other two options either falsely claim interchangeability or misclassify both as process maps rather than data techniques."
+    },
+    {
+      "id": "Q141",
+      "module": 4,
+      "q": "A bank has plenty of qualitative complaints about a process but no quantified data on where delays occur. Based on the manual's framework, what should come before meaningful Root Cause Analysis?",
+      "opts": [
+        "Skipping directly to implementing a fix based only on the unverified complaints",
+        "Gathering data on the process first, mirroring the data-gathering step in process mapping",
+        "Redesigning the entire process using BPR regardless of what the specific cause turns out to be",
+        "Assuming the cause is staff-related without conducting any further investigation first"
+      ],
+      "ans": "B",
+      "exp": "Without quantified data, meaningful root cause analysis is difficult — gathering data first, consistent with the data-gathering step process mapping itself requires, gives RCA something concrete to work from rather than acting on unverified complaints, jumping to a full redesign, or assuming a cause without evidence."
+    },
+    {
+      "id": "Q142",
+      "module": 4,
+      "q": "Which combination of tools would most directly support both visualizing a workflow and diagnosing why a specific step within it underperforms?",
+      "opts": [
+        "A SIPOC Diagram alone, since it is said to cover both visualization and diagnosis",
+        "A Flowchart or Swimlane Diagram for visualization, paired with an RCA tool for diagnosis",
+        "A Dashboard alone, since it is said to provide both real-time and historical insight",
+        "5S alone, since it is said to address both process steps and root causes"
+      ],
+      "ans": "B",
+      "exp": "Process maps (Flowchart/Swimlane) visualize the workflow, while RCA tools (5 Whys/Fishbone) diagnose why a specific step underperforms — two distinct tool families working together, as the module's own two subtopics suggest. A SIPOC Diagram alone doesn't diagnose causes, a Dashboard doesn't visualize workflow structure, and 5S addresses workspace organization, not root-cause diagnosis."
+    },
+    {
+      "id": "Q143",
+      "module": 4,
+      "q": "Reviewing the Access Bank onboarding case and the GTBank loan-disbursement case together, what pattern do both suggest about how inefficiencies were diagnosed before being fixed?",
+      "opts": [
+        "Both cases skipped diagnosis entirely and simply guessed at an appropriate fix",
+        "Both cases used a specific diagnostic tool before implementing a targeted fix",
+        "Both cases used the exact same diagnostic tool, applied in an identical way",
+        "Neither case reports any diagnostic step being taken at all"
+      ],
+      "ans": "B",
+      "exp": "The Access Bank case used process mapping to identify document collection as automatable, while the GTBank case used the 5 Whys to trace delays to outdated software — two different diagnostic tools, each followed by a targeted fix rather than a guess. The tools used were not identical, and both cases explicitly describe a diagnostic step."
+    },
+    {
+      "id": "Q144",
+      "module": 4,
+      "q": "A branch manager sees a Heatmap showing errors concentrated in one specific teller station but has not yet determined why. What is the most appropriate next step based on the manual's framework?",
+      "opts": [
+        "Immediately replace the teller station's equipment without any further investigation first",
+        "Apply an RCA tool, such as the 5 Whys, to that specific station",
+        "Ignore the heatmap entirely, since it only shows correlation, not actual causation",
+        "Redesign the entire branch layout using 5S principles across every station"
+      ],
+      "ans": "B",
+      "exp": "A Heatmap identifies where a problem concentrates but not why, so the logical next step is applying an RCA tool to that specific location to diagnose the cause — consistent with data analytics and RCA functioning as complementary tools in the module. Replacing equipment or redesigning the whole branch skips diagnosis entirely, and dismissing the heatmap ignores its actual diagnostic value."
+    },
+    {
+      "id": "Q145",
+      "module": 4,
+      "q": "Which of the following is the strongest reason process mapping is typically performed before Root Cause Analysis, rather than the reverse, in a structured improvement effort?",
+      "opts": [
+        "Process mapping and RCA must always occur simultaneously and can never be sequenced apart",
+        "Understanding the sequence first helps focus where an RCA investigation should look",
+        "RCA is only usable once a Six Sigma project has formally and fully concluded",
+        "Process mapping is faster than RCA, so it must always come first regardless of purpose"
+      ],
+      "ans": "B",
+      "exp": "Mapping the process first clarifies where in the sequence a problem sits, which then focuses the RCA investigation on the right step rather than searching broadly — a logical rather than purely procedural reason. The manual doesn't require simultaneity, tie RCA to Six Sigma specifically, or justify the ordering by speed alone."
+    },
+    {
+      "id": "Q146",
+      "module": 4,
+      "q": "A trainee argues that Dashboards and Heatmaps are essentially the same tool because both are visual. What is the strongest distinction to raise against this claim?",
+      "opts": [
+        "Dashboards and Heatmaps are indeed the same tool, simply presented using different colors",
+        "Dashboards track real-time KPIs broadly; Heatmaps highlight where errors concentrate",
+        "Heatmaps track real-time KPIs broadly, while Dashboards highlight exactly where errors concentrate",
+        "Neither tool is genuinely visual; both present only raw, unformatted numerical tables"
+      ],
+      "ans": "B",
+      "exp": "Despite both being visual, Dashboards serve a general real-time KPI-monitoring function while Heatmaps serve a specific error/delay-concentration function within a workflow — a functional distinction, not merely a stylistic one. The third option reverses these two definitions, and the fourth denies a visual quality both tools clearly have."
+    },
+    {
+      "id": "Q147",
+      "module": 4,
+      "q": "Considering Trend Analysis, Heatmaps, and Dashboards together, what do all three data analytics techniques share as a common purpose, according to the manual's framing?",
+      "opts": [
+        "All three are used exclusively to calculate exam scores for trainees on this course",
+        "All three convert raw data into insight that helps identify inefficiencies",
+        "All three replace the need for any human interpretation of the underlying data",
+        "All three are specifically restricted to fraud-related use cases only, per the manual"
+      ],
+      "ans": "B",
+      "exp": "Despite serving different specific functions — time patterns, spatial concentration, and real-time monitoring — all three techniques share the broader purpose of turning raw data into a form that supports identifying inefficiencies or tracking performance, the framing under which the manual introduces them together. None replaces human interpretation or is restricted to fraud specifically."
+    },
+    {
+      "id": "Q148",
+      "module": 4,
+      "q": "A newly appointed analyst is deciding whether a recurring, seasonal spike in loan-application delays should be investigated with Trend Analysis or a Fishbone Diagram first. Which is the more defensible first step?",
+      "opts": [
+        "A Fishbone Diagram first, since it must always precede any data-based technique used",
+        "Trend Analysis first, since the pattern is seasonal and best seen over time",
+        "Neither tool is appropriate for investigating a seasonal, recurring pattern like this one",
+        "Both tools must always be applied simultaneously, within a single combined analysis session"
+      ],
+      "ans": "B",
+      "exp": "Since the problem is described as seasonal and recurring, Trend Analysis — built specifically around identifying patterns over time — is the more natural first step to confirm and characterize the pattern, before a Fishbone Diagram is used to categorize possible causes behind it. Nothing in the manual establishes a fixed universal ordering or requires simultaneous use."
+    },
+    {
+      "id": "Q149",
+      "module": 4,
+      "q": "Which of the following best reflects a Professional Judgment-level synthesis of why the manual pairs process mapping, RCA, and data analytics together within a single module?",
+      "opts": [
+        "The three tools are unrelated and grouped only for the convenience of the course outline",
+        "Together they form a diagnostic sequence: mapping, then cause analysis, then quantification",
+        "Only data analytics is genuinely useful; the other two tools are largely redundant filler",
+        "The three tools must always be applied in one fixed, mandatory order with no exceptions"
+      ],
+      "ans": "B",
+      "exp": "The three tools complement each other functionally — mapping shows structure, RCA diagnoses specific causes, and analytics quantifies patterns and monitors ongoing performance — which is the likely reason the manual groups them under one module rather than an arbitrary pairing. The manual doesn't declare any of the three redundant or impose one mandatory sequence for all situations."
+    },
+    {
+      "id": "Q150",
+      "module": 4,
+      "q": "Reflecting on the Zenith Bank dashboard case and the Access Bank onboarding case together, which conclusion about how these tools produce value is best supported?",
+      "opts": [
+        "Only the cases involving mobile technology produced any measurable improvement at all",
+        "Different tools produced value differently — monitoring in one case, mapping in the other",
+        "Both cases used process mapping as their one and only diagnostic tool",
+        "Neither case reports a specific, quantified outcome that can actually be measured"
+      ],
+      "ans": "B",
+      "exp": "The Zenith Bank case shows a Dashboard delivering value through continuous, real-time monitoring, while the Access Bank case shows process mapping delivering value through a one-time diagnostic exercise that revealed an automatable step — two different value-delivery patterns. Neither case involves mobile technology specifically, and each uses a different tool, not the same one."
+    },
+    {
+      "id": "Q151",
+      "module": 4,
+      "q": "A team has completed a Fishbone Diagram identifying 'Technology' as the most likely cause category for a recurring processing delay. What is the most logical next step based on the module's tool sequence?",
+      "opts": [
+        "Immediately conclude the investigation, since the category alone is a sufficient basis for a fix",
+        "Use a more targeted tool, like the 5 Whys, within that category",
+        "Discard the Fishbone Diagram's finding entirely and start over using a Heatmap instead",
+        "Escalate the finding directly to the regulator without any further internal investigation first"
+      ],
+      "ans": "B",
+      "exp": "Since a Fishbone Diagram identifies a broad cause category rather than one specific cause, narrowing further with a more targeted tool like the 5 Whys within that category is the logical next step, rather than stopping at the category level, discarding the finding, or escalating externally before further internal diagnosis."
+    },
+    {
+      "id": "Q152",
+      "module": 4,
+      "q": "Which of the following scenarios would most clearly call for a Swimlane Diagram rather than a simple Flowchart?",
+      "opts": [
+        "Mapping a single teller's individual task sequence, with no handoffs to any other staff",
+        "Mapping a loan application that passes through Sales, Credit, and Finance departments in sequence",
+        "Summarizing only the suppliers and customers of a process, without any internal task detail",
+        "Tracking a single KPI's value across the past twelve months of branch data"
+      ],
+      "ans": "B",
+      "exp": "A process that passes through multiple departments — Sales, Credit, Finance — is exactly the scenario Swimlane Diagrams are built for, since they divide responsibility across departments or teams. A single teller's task sequence with no handoffs doesn't need departmental division, the supplier/customer summary describes SIPOC, and tracking a KPI over time describes Trend Analysis."
+    },
+    {
+      "id": "Q153",
+      "module": 4,
+      "q": "A process improvement lead has data showing a steady increase in transaction errors over the past six months, evenly distributed across all branches with no single location standing out. Which data technique is least useful here, and why?",
+      "opts": [
+        "Trend Analysis is least useful here, since it is unable to show any change over time",
+        "A Heatmap is least useful here, since the errors are evenly spread with no location standing out",
+        "A Dashboard is least useful here, since it is unable to display any KPI data at all",
+        "None of the three data techniques are useful in this particular situation at all"
+      ],
+      "ans": "B",
+      "exp": "Since a Heatmap's specific value is highlighting where within a workflow or across locations problems concentrate, and this scenario explicitly has no standout location, a Heatmap would show little useful contrast here — while Trend Analysis (showing the six-month rise) and a Dashboard (monitoring ongoing KPIs) remain genuinely useful for this exact situation."
+    },
+    {
+      "id": "Q154",
+      "module": 4,
+      "q": "Considering the module's full toolset, which statement best captures the relationship between process mapping's four steps and DMAIC's five phases from Module 2?",
+      "opts": [
+        "The two frameworks share no conceptual similarity whatsoever, despite surface-level resemblances",
+        "Both share a similar logic — define scope, gather data, analyze — though DMAIC is broader in scope",
+        "Process mapping's four steps are simply DMAIC's five phases, renamed for a banking audience",
+        "DMAIC replaces the need for process mapping entirely, in every single case described"
+      ],
+      "ans": "B",
+      "exp": "Both frameworks share an underlying logic — defining scope, gathering data, and analyzing before acting — even though DMAIC is the broader improvement framework and process mapping is a specific visualization tool within a narrower scope, not a renamed version of DMAIC or a framework it makes redundant."
+    },
+    {
+      "id": "Q155",
+      "module": 4,
+      "q": "Which of the following stems is most characteristic of an Application-level question, as distinct from a Recognition-level one, within this module's style?",
+      "opts": [
+        "A direct question asking which four categories a Fishbone Diagram is said to use",
+        "A scenario asking which specific process map best fits a described mapping need",
+        "A direct question asking what the acronym RCA is said to stand for",
+        "A direct question asking which named technique highlights real-time KPI data"
+      ],
+      "ans": "B",
+      "exp": "Presenting a described situation and asking the trainee to select the appropriate tool for it is the hallmark of Application — using knowledge in a concrete situation. The other three options are direct recall of a definition, category set, or technique name, all Recognition-level regardless of phrasing."
+    },
+    {
+      "id": "Q156",
+      "module": 4,
+      "q": "A professional-judgment scenario: an operations director must decide whether to invest in a Dashboard system or a one-time process-mapping exercise for a workflow that has never been reviewed but shows no obvious current performance issues. Which factor should most directly guide the decision?",
+      "opts": [
+        "Whichever option costs less should always be chosen, regardless of the workflow's actual condition",
+        "Whether the priority is monitoring an already-understood process, or first mapping an unreviewed one",
+        "The decision is irrelevant here, since both tools produce essentially identical outcomes anyway",
+        "Only the newest available tool should be chosen, regardless of whether it actually fits"
+      ],
+      "ans": "B",
+      "exp": "Since a Dashboard assumes an already-understood process worth monitoring continuously, while process mapping is suited to first establishing understanding of a workflow that has never been reviewed, this distinction — not cost alone, tool novelty, or an assumption of identical outcomes — should guide the decision for an unreviewed workflow."
+    },
+    {
+      "id": "Q157",
+      "module": 4,
+      "q": "Synthesizing the module's process-mapping types, RCA tools, and data techniques together, which statement best captures the manual's overall approach to diagnosing inefficiency?",
+      "opts": [
+        "The manual recommends relying on one single universal tool, regardless of the problem type at hand",
+        "The manual offers a toolkit of complementary tools, each suited to a different diagnostic need",
+        "The manual argues that inefficiency cannot be diagnosed using any structured tool whatsoever",
+        "The manual restricts every tool in this module strictly to fraud-related investigations only"
+      ],
+      "ans": "B",
+      "exp": "Across the module's three subtopics, each tool is presented with a distinct purpose — sequence detail, department division, supplier/customer summary, linear cause-tracing, parallel cause-categorizing, time patterns, spatial concentration, real-time monitoring — supporting a toolkit approach matched to the situation, not one universal tool, no structured diagnosis at all, or a fraud-only restriction."
+    },
+    {
+      "id": "Q158",
+      "module": 4,
+      "q": "Which of the following best distinguishes the manual's treatment of 'diagnosis' tools (process mapping, RCA) from 'monitoring' tools (data analytics) within this module?",
+      "opts": [
+        "Diagnosis tools are used once to understand a specific problem, while monitoring tools like Dashboards are used continuously to track ongoing performance",
+        "Diagnosis and monitoring tools serve an identical function and are fully interchangeable",
+        "Monitoring tools are used once, while diagnosis tools are used continuously",
+        "Neither category of tool produces any measurable outcome"
+      ],
+      "ans": "B",
+      "exp": "Process mapping and RCA are generally applied to understand a specific problem at a point in time, while data analytics tools like Dashboards are built for continuous, ongoing tracking — a diagnosis-versus-monitoring distinction. The third option reverses this pattern, and both categories clearly produce measurable outcomes across the module's cited cases."
+    },
+    {
+      "id": "Q159",
+      "module": 4,
+      "q": "A team used a Flowchart to map a process, a 5 Whys analysis to find its root cause, and a Dashboard to monitor the fix afterward. Which module concept does this full sequence best illustrate?",
+      "opts": [
+        "That only one single tool should ever be used per improvement project undertaken",
+        "That mapping, RCA, and data-analytics tools can function together as complementary stages of one effort",
+        "That Dashboards must always be used before any mapping work is ever done",
+        "That a 5 Whys analysis makes both mapping and dashboards entirely unnecessary"
+      ],
+      "ans": "B",
+      "exp": "Using a Flowchart, then 5 Whys, then a Dashboard in sequence directly illustrates the three tool categories functioning as complementary stages — mapping, diagnosing, then monitoring — of one improvement effort, rather than one tool making the others unnecessary or a fixed reversed ordering being required."
+    },
+    {
+      "id": "Q160",
+      "module": 4,
+      "q": "Considering all of Module 4's cases and tools together, which conclusion about the relationship between diagnosis and measurable outcomes is best supported?",
+      "opts": [
+        "Measurable outcomes occurred only in the specific cases that used a Dashboard",
+        "A specific diagnostic tool consistently preceded each reported, quantified improvement across the module's cases",
+        "None of the module's cases report any diagnostic tool being used at all",
+        "Diagnostic tools and measurable outcomes are entirely unrelated across every case in the module"
+      ],
+      "ans": "B",
+      "exp": "In every case across the module — Access Bank's process mapping, GTBank's 5 Whys, Zenith Bank's Dashboard — a specific diagnostic or monitoring tool is paired with a reported, quantified outcome, a consistent pattern rather than outcomes appearing without diagnosis. Not every case used a Dashboard, ruling out that narrower claim, and each case does name a tool."
+    },
+    {
+      "id": "Q161",
+      "module": 5,
+      "q": "Fraud where stolen personal information is used to open accounts, apply for loans, or make unauthorized transactions is best classified as which type?",
+      "opts": [
+        "Card Fraud",
+        "Identity Theft",
+        "Check Fraud",
+        "Internal Fraud"
+      ],
+      "ans": "B",
+      "exp": "Identity Theft is specifically defined as using stolen personal information to open accounts, apply for loans, or make transactions. Card Fraud involves unauthorized card use, Check Fraud involves altering or forging checks, and Internal Fraud involves employees manipulating processes — each a distinct category with its own definition."
+    },
+    {
+      "id": "Q162",
+      "module": 5,
+      "q": "An employee alters account records to embezzle funds for personal gain. Which fraud type does this describe?",
+      "opts": [
+        "Identity Theft",
+        "Internal Fraud",
+        "Card Fraud",
+        "Check Fraud"
+      ],
+      "ans": "B",
+      "exp": "Internal Fraud is specifically defined as employees manipulating processes for personal gain, such as embezzling funds or altering account records — exactly what the scenario describes. The other three fraud types all involve external actors rather than an employee acting from within the bank."
+    },
+    {
+      "id": "Q163",
+      "module": 5,
+      "q": "Which fraud type specifically involves unauthorized card use through methods such as skimming or phishing?",
+      "opts": [
+        "Check Fraud",
+        "Card Fraud",
+        "Identity Theft",
+        "Internal Fraud"
+      ],
+      "ans": "B",
+      "exp": "Card Fraud is specifically defined as unauthorized use of debit or credit cards, often via skimming or phishing. Identity Theft involves broader misuse of stolen personal information beyond just card use, Check Fraud involves altering checks, and Internal Fraud involves staff, not card mechanics."
+    },
+    {
+      "id": "Q164",
+      "module": 5,
+      "q": "Altering or forging a paper instrument to withdraw funds illegally is best classified as which fraud type?",
+      "opts": [
+        "Card Fraud",
+        "Check Fraud",
+        "Identity Theft",
+        "Internal Fraud"
+      ],
+      "ans": "B",
+      "exp": "Check Fraud is specifically defined as involving altering or forging checks to withdraw funds illegally. Card Fraud concerns plastic card misuse rather than paper instruments, Identity Theft concerns broader personal-information misuse, and Internal Fraud concerns staff-driven manipulation, none matching the check-forgery description."
+    },
+    {
+      "id": "Q165",
+      "module": 5,
+      "q": "In 2021, a Nigerian bank detected a phishing scam targeting its mobile app users. How was this fraud mitigated, according to the manual?",
+      "opts": [
+        "Through a temporary suspension of the mobile app pending investigation",
+        "Through customer awareness campaigns and enhanced login security protocols",
+        "Through mandatory in-branch verification for all mobile transactions",
+        "Through a full replacement of the mobile banking platform"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically credits mitigation to customer awareness campaigns and enhanced login security protocols. App suspension, mandatory in-branch verification, and platform replacement are plausible-sounding responses but are not what the manual describes for this particular case."
+    },
+    {
+      "id": "Q166",
+      "module": 5,
+      "q": "Which of the following is listed under Fraud Prevention Measures as part of 'Controls and Policies'?",
+      "opts": [
+        "Conducting fraud awareness programs for all staff",
+        "Segregation of duties to reduce opportunities for internal fraud",
+        "Educating customers on avoiding phishing scams",
+        "Setting up alerts for unusual transactions"
+      ],
+      "ans": "B",
+      "exp": "Segregation of duties is listed specifically under Controls and Policies. Fraud awareness programs fall under Employee Training, customer phishing education falls under Customer Awareness, and unusual-transaction alerts fall under the separate Fraud Detection Frameworks section — three different categories from the same subtopic."
+    },
+    {
+      "id": "Q167",
+      "module": 5,
+      "q": "Which of the following is listed under Fraud Prevention Measures as part of 'Employee Training', as distinct from 'Controls and Policies'?",
+      "opts": [
+        "Setting transaction limits to prevent large unauthorized withdrawals",
+        "Encouraging staff to report suspicious activity through whistleblower policies",
+        "Regular audits to identify and mitigate risks",
+        "Educating customers on protecting their PINs"
+      ],
+      "ans": "B",
+      "exp": "Whistleblower-policy encouragement is listed specifically under Employee Training. Transaction limits and regular audits both fall under Controls and Policies instead, and PIN-protection education falls under Customer Awareness — three categories confused with Employee Training here."
+    },
+    {
+      "id": "Q168",
+      "module": 5,
+      "q": "Which of the following is listed under Fraud Prevention Measures as part of 'Customer Awareness'?",
+      "opts": [
+        "Segregation of duties across departments",
+        "Educating customers on secure banking practices, such as avoiding phishing scams",
+        "Conducting fraud awareness programs for staff",
+        "Setting transaction limits on large withdrawals"
+      ],
+      "ans": "B",
+      "exp": "Educating customers on secure practices like avoiding phishing is specifically listed under Customer Awareness. Segregation of duties and transaction limits fall under Controls and Policies, while fraud awareness programs fall under Employee Training — each a different category within Fraud Prevention Measures."
+    },
+    {
+      "id": "Q169",
+      "module": 5,
+      "q": "Zenith Bank's 'Stay Alert' campaign in 2022 educated customers on recognizing phishing emails and suspicious transaction alerts. What reduction in reported cases resulted?",
+      "opts": [
+        "A 10% reduction",
+        "A 15% reduction",
+        "A 20% reduction",
+        "A 25% reduction"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically reports a 15% reduction in reported cases from this campaign. The other percentages are plausible-sounding figures not tied to this particular case anywhere in the material."
+    },
+    {
+      "id": "Q170",
+      "module": 5,
+      "q": "Which of the following is listed under Fraud Detection Frameworks as 'Proactive Monitoring'?",
+      "opts": [
+        "Conducting detailed reviews of fraud incidents after they occur",
+        "Setting up alerts for unusual transactions, such as high-value transfers or multiple failed logins",
+        "Educating employees on common fraud schemes",
+        "Segregating duties to prevent a single employee from controlling an entire process"
+      ],
+      "ans": "B",
+      "exp": "Setting up alerts for unusual transactions is specifically listed under Proactive Monitoring. Reviewing incidents after they occur describes Forensic Investigations instead, while employee education and duty segregation belong to the separate Fraud Prevention Measures subtopic, not Fraud Detection Frameworks."
+    },
+    {
+      "id": "Q171",
+      "module": 5,
+      "q": "Which of the following is listed under Fraud Detection Frameworks as 'Forensic Investigations', as distinct from Proactive Monitoring?",
+      "opts": [
+        "Setting up real-time alerts for unusual transaction patterns",
+        "Conducting detailed reviews of fraud incidents to identify vulnerabilities and prevent recurrence",
+        "Educating customers on recognizing phishing emails",
+        "Setting transaction limits to prevent large unauthorized withdrawals"
+      ],
+      "ans": "B",
+      "exp": "Detailed post-incident reviews to identify vulnerabilities is specifically listed under Forensic Investigations. Real-time alerts belong to Proactive Monitoring instead, while customer education and transaction limits belong to the separate Fraud Prevention Measures subtopic entirely."
+    },
+    {
+      "id": "Q172",
+      "module": 5,
+      "q": "First Bank's transaction monitoring system flags transfers exceeding a customer's usual patterns. Which fraud detection concept does this system illustrate?",
+      "opts": [
+        "Forensic Investigations",
+        "Proactive Monitoring",
+        "Employee Training",
+        "Customer Awareness"
+      ],
+      "ans": "B",
+      "exp": "Flagging transfers in real time based on deviation from a customer's usual pattern is a Proactive Monitoring example — setting up alerts for unusual activity before further harm occurs. Forensic Investigations instead reviews incidents after the fact, and the other two options belong to the separate prevention-measures subtopic."
+    },
+    {
+      "id": "Q173",
+      "module": 5,
+      "q": "Which technology is specifically described as analyzing transaction patterns to detect anomalies and flag suspicious activities in real-time?",
+      "opts": [
+        "Biometric Authentication",
+        "Artificial Intelligence",
+        "Data Analytics",
+        "Machine Learning"
+      ],
+      "ans": "B",
+      "exp": "Artificial Intelligence is specifically described as analyzing transaction patterns to detect anomalies and flag suspicious activity in real-time. Biometric Authentication instead verifies identity through fingerprints or facial recognition, Data Analytics uncovers broader dataset trends, and Machine Learning adapts detection models over time — each a distinct role."
+    },
+    {
+      "id": "Q174",
+      "module": 5,
+      "q": "Which technology is specifically described as adapting over time to new fraud patterns, improving detection accuracy?",
+      "opts": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Data Analytics",
+        "Biometric Authentication"
+      ],
+      "ans": "B",
+      "exp": "Machine Learning is specifically described as adapting over time to new fraud patterns to improve accuracy. Artificial Intelligence performs real-time anomaly flagging rather than adaptive learning specifically, Data Analytics uncovers dataset-wide trends, and Biometric Authentication verifies identity — three distinct roles from Machine Learning's adaptive one."
+    },
+    {
+      "id": "Q175",
+      "module": 5,
+      "q": "Which technology is specifically described as analyzing large datasets to uncover trends such as frequently targeted accounts?",
+      "opts": [
+        "Machine Learning",
+        "Data Analytics",
+        "Artificial Intelligence",
+        "Biometric Authentication"
+      ],
+      "ans": "B",
+      "exp": "Data Analytics is specifically described as analyzing large datasets to uncover trends like frequently targeted accounts. Machine Learning instead focuses on adapting to new fraud patterns over time, Artificial Intelligence focuses on real-time transaction anomaly flagging, and Biometric Authentication focuses on identity verification."
+    },
+    {
+      "id": "Q176",
+      "module": 5,
+      "q": "Using fingerprints, facial recognition, or voice verification to enhance security is specifically described under which technology category?",
+      "opts": [
+        "Data Analytics",
+        "Biometric Authentication",
+        "Machine Learning",
+        "Artificial Intelligence"
+      ],
+      "ans": "B",
+      "exp": "Biometric Authentication is specifically defined around fingerprints, facial recognition, and voice verification. The other three technologies each serve a different function — dataset trend analysis, adaptive pattern learning, and real-time anomaly flagging — none involving physical identity verification methods."
+    },
+    {
+      "id": "Q177",
+      "module": 5,
+      "q": "In 2020, Access Bank implemented an AI-powered fraud detection system in its online banking platform. What reduction in fraudulent transactions does the manual report?",
+      "opts": [
+        "A 20% reduction",
+        "A 30% reduction",
+        "A 40% reduction",
+        "A 25% reduction"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically reports a 30% reduction in fraudulent transactions from this AI-powered system. The other percentages are plausible-sounding figures associated with other cases from earlier modules, not this particular fraud-detection case."
+    },
+    {
+      "id": "Q178",
+      "module": 5,
+      "q": "A customer receives an unexpected email asking them to confirm their account PIN by clicking a link. Which fraud type is this attempt most directly associated with?",
+      "opts": [
+        "Internal Fraud",
+        "Card Fraud, via phishing to obtain card details",
+        "Check Fraud",
+        "Identity Theft, via phishing to obtain personal information"
+      ],
+      "ans": "D",
+      "exp": "Since the email targets personal account credentials broadly rather than card-specific data, and Identity Theft is defined as using stolen personal information (which phishing is a named method for obtaining), this fits Identity Theft rather than Card Fraud specifically. Internal Fraud requires an employee actor, and Check Fraud involves physical instruments — neither matches a phishing email."
+    },
+    {
+      "id": "Q179",
+      "module": 5,
+      "q": "A branch teller with sole control over both approving and disbursing loan funds quietly manipulates records to divert money to a personal account. Which specific prevention control, if properly enforced, would most directly have prevented this?",
+      "opts": [
+        "Customer awareness campaigns specifically about recognizing phishing emails and links",
+        "Segregation of duties, so no single employee controls an entire process",
+        "Biometric authentication required specifically for every customer login attempt",
+        "Data analytics reviewing which accounts are most frequently targeted overall"
+      ],
+      "ans": "B",
+      "exp": "Segregation of duties is specifically designed to reduce opportunities for internal fraud by preventing any single employee from controlling both approval and disbursement — exactly the gap exploited here. Customer awareness, biometric login, and account-targeting analytics all address external fraud vectors, not this internal-control gap."
+    },
+    {
+      "id": "Q180",
+      "module": 5,
+      "q": "A bank wants to encourage staff to report suspicious internal activity without fear of retaliation. Which specific measure does the manual name for this purpose?",
+      "opts": [
+        "Setting transaction limits",
+        "Whistleblower policies",
+        "Biometric authentication",
+        "Forensic investigations"
+      ],
+      "ans": "B",
+      "exp": "Whistleblower policies are specifically named as encouraging employees to report suspicious activity. Transaction limits and biometric authentication address different fraud vectors entirely, and forensic investigations occur after an incident is already identified, not as a reporting encouragement mechanism."
+    },
+    {
+      "id": "Q181",
+      "module": 5,
+      "q": "Which of the following best distinguishes Proactive Monitoring from Forensic Investigations within the Fraud Detection Frameworks subtopic?",
+      "opts": [
+        "Forensic Investigations occur before suspicious activity, while Proactive Monitoring occurs afterward",
+        "Proactive Monitoring flags activity in real time; Forensic Investigations review incidents afterward",
+        "Both terms refer to the exact same activity, just described differently",
+        "Proactive Monitoring is a Fraud Prevention Measure, not a Detection Framework"
+      ],
+      "ans": "B",
+      "exp": "Proactive Monitoring is defined around real-time alerts before or during suspicious activity, while Forensic Investigations are defined around post-incident review to prevent recurrence — a timing distinction. The reversed first option, the false-identity third option, and the miscategorization in the fourth are all inconsistent with how the manual actually defines each term."
+    },
+    {
+      "id": "Q182",
+      "module": 5,
+      "q": "A bank notices its AI system flags a transaction as suspicious, but a full understanding of how the fraud occurred requires manually reviewing the account's history afterward. Which two concepts does this scenario connect?",
+      "opts": [
+        "Biometric Authentication and Employee Training working together",
+        "AI's flagging and Forensic Investigations' later review",
+        "Data Analytics and Customer Awareness working together",
+        "Machine Learning and Segregation of Duties working together"
+      ],
+      "ans": "B",
+      "exp": "The scenario pairs AI's real-time anomaly flagging with the subsequent Forensic Investigation needed to fully understand how the fraud happened — two distinct but connected concepts from different subtopics. The other pairings combine concepts that don't relate to this specific real-time-flag-then-review scenario."
+    },
+    {
+      "id": "Q183",
+      "module": 5,
+      "q": "Which combination of fraud types would most likely be reduced by strengthening a bank's internal segregation-of-duties controls specifically, as opposed to customer-facing awareness campaigns?",
+      "opts": [
+        "Card Fraud and Check Fraud, since both involve external actors misusing customer instruments",
+        "Internal Fraud specifically, since it involves employees manipulating processes they have unchecked control over",
+        "Identity Theft specifically, since it always originates from a compromised employee account",
+        "All four fraud types equally, since segregation of duties addresses every fraud category identically"
+      ],
+      "ans": "B",
+      "exp": "Segregation of duties directly targets Internal Fraud, since that fraud type is specifically defined around employees manipulating processes for personal gain — a risk unchecked control enables. Card Fraud, Check Fraud, and Identity Theft are all defined as involving external actors or stolen information, not an employee's unchecked internal access."
+    },
+    {
+      "id": "Q184",
+      "module": 5,
+      "q": "A bank is deciding between investing in Biometric Authentication or Data Analytics to address a specific problem: identifying which customer accounts are most frequently targeted by fraud attempts. Which technology more directly addresses this specific need?",
+      "opts": [
+        "Biometric Authentication, since it verifies identity at every login attempt",
+        "Data Analytics, since it uncovers trends like frequently targeted accounts",
+        "Neither technology addresses this specific need at all",
+        "Both technologies address this need in an identical way"
+      ],
+      "ans": "B",
+      "exp": "Data Analytics is specifically defined as analyzing large datasets to uncover trends such as frequently targeted accounts — a direct match for the stated need. Biometric Authentication instead verifies identity at the point of access, a different function that doesn't uncover account-targeting patterns across a dataset."
+    },
+    {
+      "id": "Q185",
+      "module": 5,
+      "q": "Considering the First Bank Proactive Monitoring case and the Access Bank AI fraud-detection case together, what do both suggest about how technology supports fraud detection?",
+      "opts": [
+        "Both cases rely exclusively on customer-reported complaints rather than any technology",
+        "Both cases use technology to flag unusual activity before losses occur",
+        "Both cases apply technology only after a fraud loss has already occurred",
+        "Neither case involves any named technology at all"
+      ],
+      "ans": "B",
+      "exp": "Both cases — First Bank's pattern-deviation flagging and Access Bank's AI anomaly detection — apply technology to catch suspicious activity in real time, before losses are realized, rather than relying on customer complaints or acting only after losses occur. Both cases explicitly name a specific technology."
+    },
+    {
+      "id": "Q186",
+      "module": 5,
+      "q": "A newly hired fraud analyst assumes that Employee Training and Customer Awareness are the same category because both involve education. What is the strongest distinction to raise?",
+      "opts": [
+        "They are indeed the same category, just targeting different audiences with identical content",
+        "Employee Training targets internal staff behavior; Customer Awareness targets external customer behavior",
+        "Customer Awareness targets staff, while Employee Training targets customers",
+        "Neither category involves any form of education at all"
+      ],
+      "ans": "B",
+      "exp": "Despite both involving education, Employee Training is specifically aimed at internal staff behavior (reporting, awareness programs), while Customer Awareness is aimed at external customer behavior (avoiding phishing, protecting PINs) — an internal-versus-external distinction, not identical content for different audiences."
+    },
+    {
+      "id": "Q187",
+      "module": 5,
+      "q": "Which of the following best reflects why the manual separates Fraud Prevention Measures from Fraud Detection Frameworks as two distinct subtopics, rather than merging them?",
+      "opts": [
+        "Prevention measures aim to stop fraud before it happens, while detection frameworks aim to catch or investigate fraud that is occurring or has occurred",
+        "The two subtopics describe identical activities using different names for variety",
+        "Fraud Detection Frameworks apply only to internal fraud, while Prevention Measures apply only to external fraud",
+        "There is no meaningful reason for the separation; it is arbitrary"
+      ],
+      "ans": "B",
+      "exp": "Prevention measures (controls, training, customer education) are proactive stop-fraud-before-it-happens tools, while detection frameworks (monitoring, forensic investigation) are catch-or-investigate tools for activity already underway or completed — a functional distinction, not an arbitrary or duplicate one, and neither subtopic is restricted to internal or external fraud specifically."
+    },
+    {
+      "id": "Q188",
+      "module": 5,
+      "q": "A regional fraud lead must decide whether a spike in unauthorized card transactions calls for more Biometric Authentication at ATMs or more Employee Training at branches. Which factor should most directly guide this decision?",
+      "opts": [
+        "Whichever option is cheaper should always be chosen regardless of the fraud type",
+        "Unauthorized card transactions point to external misuse, favoring authentication technology over training",
+        "Employee Training should always be chosen, since staff awareness solves every fraud type",
+        "The decision is irrelevant, since both options address identical fraud vectors"
+      ],
+      "ans": "B",
+      "exp": "Since Card Fraud is defined as external unauthorized card use rather than staff misconduct, and Biometric Authentication specifically targets identity verification at the point of transaction, this distinction — matching the tool to the actual fraud vector — should guide the decision, not cost alone or a blanket preference for training."
+    },
+    {
+      "id": "Q189",
+      "module": 5,
+      "q": "Which stem is most characteristic of a Professional Judgment-level question, as distinct from a Recognition-level one, within this module's style?",
+      "opts": [
+        "A direct question asking which fraud type involves altering checks",
+        "A scenario asking an analyst to weigh two technology investments",
+        "A direct question asking which technology uses facial recognition",
+        "A direct question asking what AI is described as doing"
+      ],
+      "ans": "B",
+      "exp": "Weighing two investment options against a specific described situation requires evaluating trade-offs, the hallmark of Professional Judgment. The other three options are direct recall of a fraud-type definition or a technology's stated function, both Recognition-level regardless of how the question is phrased."
+    },
+    {
+      "id": "Q190",
+      "module": 5,
+      "q": "Synthesizing the module's four fraud types, three prevention categories, two detection frameworks, and four technologies together, which statement best reflects the manual's overall structure for addressing fraud?",
+      "opts": [
+        "The manual argues that only technology can meaningfully address fraud, making the other categories largely redundant",
+        "The manual addresses fraud through layered categories — types, prevention, detection, and supporting technology",
+        "The manual treats all four fraud types as equally addressed by a single universal control",
+        "The manual restricts prevention measures to only apply after a detection framework has already flagged an incident"
+      ],
+      "ans": "B",
+      "exp": "The module's structure — fraud types, then prevention, then detection, then technology — reflects a layered approach where each category addresses a different part of the fraud-risk picture, rather than technology alone being sufficient, one universal control fitting every fraud type, or prevention only applying after detection, which reverses the manual's own before/after framing."
+    },
+    {
+      "id": "Q191",
+      "module": 5,
+      "q": "A bank successfully reduces Card Fraud through biometric authentication but has not addressed Internal Fraud at all. Based on the manual's framework, what is the most accurate assessment of this bank's overall fraud posture?",
+      "opts": [
+        "The bank has fully addressed fraud risk, since biometric authentication covers all fraud types",
+        "The bank addressed one external vector but remains exposed to a distinct internal fraud risk",
+        "Internal Fraud is automatically reduced whenever Card Fraud is reduced, since both are technology-driven",
+        "The bank should not address Internal Fraud, since it is a lower-priority fraud type"
+      ],
+      "ans": "B",
+      "exp": "Since Card Fraud and Internal Fraud are defined as distinct categories with different actors (external cardholder misuse versus internal staff manipulation) and different named controls (biometric authentication versus segregation of duties), addressing one does not address the other, leaving the bank exposed on the internal side despite progress on the external side."
+    },
+    {
+      "id": "Q192",
+      "module": 5,
+      "q": "Which of the following would most directly illustrate the manual's Customer Awareness category being applied to prevent Identity Theft specifically, as opposed to Card Fraud?",
+      "opts": [
+        "A campaign teaching branch tellers to segregate loan approval and disbursement duties",
+        "A campaign teaching customers to recognize phishing for broader personal information",
+        "A system that automatically declines any transaction above a set limit",
+        "A forensic review of a completed fraud incident's root cause"
+      ],
+      "ans": "B",
+      "exp": "A campaign teaching customers to recognize phishing for broader personal information specifically targets Identity Theft's defining mechanism, distinguishing it from Card Fraud's narrower card-specific scope. The teller-duty option describes an internal control, not Customer Awareness at all, and the other two options describe unrelated detection or control mechanisms."
+    },
+    {
+      "id": "Q193",
+      "module": 5,
+      "q": "Considering the Zenith Bank Customer Awareness case and the Access Bank AI Detection case together, what does the pattern across both suggest about how fraud outcomes are reported in this module?",
+      "opts": [
+        "Only cases involving mobile banking report any quantified outcome at all",
+        "Fraud outcomes are consistently reported as a quantified reduction across cases",
+        "Neither case reports a quantified outcome of any kind at all",
+        "Both cases report identical percentage reductions regardless of intervention type used"
+      ],
+      "ans": "B",
+      "exp": "Both the Zenith Bank case (15% reduction in reported cases) and the Access Bank case (30% reduction in fraudulent transactions) report a specific quantified reduction despite using very different intervention types — education versus AI technology — showing a consistent reporting pattern across the module rather than identical figures or missing data."
+    },
+    {
+      "id": "Q194",
+      "module": 5,
+      "q": "A trainee argues that since both Machine Learning and Artificial Intelligence are mentioned together under the Role of Technology, they must be functionally identical. What is the strongest counterpoint?",
+      "opts": [
+        "They are indeed functionally identical, and the distinction exists only for naming variety",
+        "AI performs real-time anomaly flagging; Machine Learning adapts to new patterns over time",
+        "Machine Learning applies only to Card Fraud, while AI applies only to Check Fraud",
+        "Neither technology is actually used for fraud detection according to the manual"
+      ],
+      "ans": "B",
+      "exp": "Despite being grouped under the same subtopic, AI's defined role (real-time anomaly flagging) and Machine Learning's defined role (adapting detection models over time) are related but distinct functions, not identical — and neither technology is restricted to a single fraud type in the manual."
+    },
+    {
+      "id": "Q195",
+      "module": 5,
+      "q": "Which of the following best captures how the manual's four technologies (AI, Machine Learning, Data Analytics, Biometric Authentication) relate to the two detection frameworks (Proactive Monitoring, Forensic Investigations)?",
+      "opts": [
+        "The four technologies and two frameworks are entirely unrelated topics grouped by coincidence",
+        "The technologies support the frameworks directly — AI enables monitoring, analytics informs investigations",
+        "Only Biometric Authentication is connected to either framework; the other three technologies are unrelated",
+        "The two frameworks replace the need for any of the four technologies entirely"
+      ],
+      "ans": "B",
+      "exp": "Technologies like AI naturally support Proactive Monitoring's real-time alerting, and Data Analytics can inform a Forensic Investigation's post-incident review — the technologies function as enabling mechanisms for the frameworks rather than being unrelated, uniquely tied to one technology, or making the frameworks unnecessary."
+    },
+    {
+      "id": "Q196",
+      "module": 5,
+      "q": "A professional-judgment scenario: a bank must choose whether to prioritize forensic capability or proactive monitoring capability with a limited fraud-technology budget, given that current losses are low but detection speed after an incident is poor. Which factor should most directly guide this decision?",
+      "opts": [
+        "Cost alone should decide, regardless of which capability actually addresses the described gap",
+        "Since detection speed is the stated weakness, Forensic Investigation capability more directly addresses the gap",
+        "Proactive Monitoring should always be prioritized over Forensic Investigations in every situation",
+        "The decision is irrelevant, since both capabilities produce identical outcomes regardless of context"
+      ],
+      "ans": "B",
+      "exp": "Since the stated weakness is specifically post-incident detection speed rather than catching fraud before it happens, strengthening Forensic Investigation capability more directly addresses that gap than Proactive Monitoring would, illustrating that the choice depends on the actual described weakness rather than a fixed universal priority or cost alone."
+    },
+    {
+      "id": "Q197",
+      "module": 5,
+      "q": "Reflecting on all five case examples in this module together, which conclusion about fraud interventions is best supported?",
+      "opts": [
+        "Only technology-based interventions reported any quantified outcome across the five cases",
+        "The five cases mix intervention types, each with its own reported, quantified outcome",
+        "All five cases addressed the exact same fraud type using an identical method",
+        "None of the five cases reports a quantified outcome of any kind"
+      ],
+      "ans": "B",
+      "exp": "Across the phishing-mitigation, Zenith Bank awareness, First Bank monitoring, and Access Bank AI cases, a genuine mix of intervention types is represented, each with its own specific reported outcome — not a single fraud type, method, or the absence of quantified results across the set."
+    },
+    {
+      "id": "Q198",
+      "module": 5,
+      "q": "Which of the following best reflects the manual's overall argument about whether prevention or detection is more important for fraud management in retail banking?",
+      "opts": [
+        "The manual argues prevention is unimportant, since detection alone can fully resolve any fraud after it occurs",
+        "The manual presents prevention and detection as complementary tools, not competing priorities",
+        "The manual argues detection is unimportant, since strong prevention makes any detection framework unnecessary",
+        "The manual does not address the relationship between prevention and detection at all"
+      ],
+      "ans": "B",
+      "exp": "By presenting both Fraud Prevention Measures and Fraud Detection Frameworks as distinct, necessary subtopics — rather than declaring either sufficient on its own — the manual implicitly frames them as complementary layers, not a case for prioritizing one over the other entirely."
+    },
+    {
+      "id": "Q199",
+      "module": 5,
+      "q": "A bank has strong Controls and Policies and strong technology-driven detection, but has never run a Customer Awareness campaign. Based on the manual's framework, which specific fraud risk is this bank most likely still exposed to?",
+      "opts": [
+        "Internal Fraud specifically, since Controls and Policies fully addresses external risk instead",
+        "Fraud vectors relying on customer behavior specifically, such as phishing-driven Identity Theft",
+        "No fraud risk remains, since Controls and Policies and technology together cover every fraud type",
+        "Check Fraud specifically, since it is unrelated to any prevention or detection category"
+      ],
+      "ans": "B",
+      "exp": "Since Customer Awareness is the category specifically aimed at customer-side vulnerabilities like recognizing phishing attempts, skipping it leaves the bank exposed to fraud vectors that depend on customer behavior — even with strong internal controls and detection technology addressing other angles of the same overall risk."
+    },
+    {
+      "id": "Q200",
+      "module": 5,
+      "q": "Considering the entire module's structure together with Module 1's Operational Excellence principles, which conclusion best captures how fraud management connects to the course's broader themes?",
+      "opts": [
+        "Fraud management is entirely disconnected from Operational Excellence, since one concerns risk and the other concerns efficiency",
+        "Fraud management mirrors the course's layered logic, combining prevention, detection, and technology together",
+        "Operational Excellence principles apply only to efficiency topics and never extend to risk-related topics like fraud",
+        "The course treats fraud management as a completely separate discipline requiring no methodology from earlier modules"
+      ],
+      "ans": "B",
+      "exp": "Fraud management's layered structure — named categories, specific tools, and technology support — mirrors the structured, multi-tool approach taught throughout the earlier modules (principles plus tools plus diagnostics), suggesting a consistent underlying philosophy across the course rather than treating fraud as disconnected from or unrelated to the rest of the material."
+    }
+  ]
+}

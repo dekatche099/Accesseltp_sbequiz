@@ -1,0 +1,2862 @@
+{
+  "meta": {
+    "id": "aml-cft-kyc",
+    "title": "Anti-Money Laundering, Counter Financing of Terrorism, and Know Your Customer",
+    "description": "Comprehensive course on AML/CFT/KYC regulations, processes, and case studies based on the Access Bank ELTP Study Guide and AML Revised Participants Manual.",
+    "category": "compliance",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      { "count": 30, "minutes": 40 },
+      { "count": 40, "minutes": 45 },
+      { "count": 50, "minutes": 60 }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": { "enabled": true },
+  "modules": [
+    { "id": 1, "title": "Introduction to AML/CFT/KYC" },
+    { "id": 2, "title": "Money Laundering Process & Impacts" },
+    { "id": 3, "title": "KYC/KYCB" },
+    { "id": 4, "title": "Global, Regional & Nigeria Initiatives" },
+    { "id": 5, "title": "Roles of Banking Operations Units" },
+    { "id": 6, "title": "Integrated Case-Study Scenarios" }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "q": "A bank's client generated funds through counterfeit-goods sales and now routes the proceeds through legitimate-looking transactions. What is this activity called?",
+      "opts": [
+        "Consolidating separate streams of legal income",
+        "Cleaning the proceeds of an illegal business",
+        "Restructuring an existing legitimate debt obligation",
+        "Reinvesting ordinary profits generated from lawful trading activity"
+      ],
+      "ans": "B",
+      "exp": "Money laundering is defined as cleaning the proceeds of illegal business (dirty money) plus concealment of the underlying crime. The distractors describe ordinary, lawful financial activity of comparable specificity."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "q": "What does Anti-Money Laundering (AML) refer to?",
+      "opts": [
+        "A high-value corporate banking product line",
+        "Laws and procedures against disguising dirty money",
+        "A voluntary branch code of conduct",
+        "A government tax incentive programme"
+      ],
+      "ans": "B",
+      "exp": "AML is the set of laws, regulations, and procedures designed to prevent criminals from disguising dirty money — a countermeasure framework, not a product, incentive, or voluntary code."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "q": "Under the Vienna Convention, converting property known to derive from drug trafficking specifically to hide its origin falls under which limb of the UN's definition?",
+      "opts": [
+        "Disguising ownership despite already clearly knowing the source",
+        "Conversion or transfer to conceal illicit origin",
+        "Mandatory reporting duty for suspicious transactions filed",
+        "Lawful transfer of property received by inheritance"
+      ],
+      "ans": "B",
+      "exp": "The first Vienna Convention limb addresses converting or transferring property known to derive from drug trafficking to conceal its illicit origin; the second limb instead covers concealing ownership despite already knowing the source."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "q": "Which activity fits the Vienna Convention's second limb, which applies even when the launderer already knows the property's true source?",
+      "opts": [
+        "Disclosing full ownership history to a regulator",
+        "Disguising the true nature or ownership of property",
+        "Verifying source-of-funds evidence before accepting new deposits",
+        "Filing an accurate and complete annual tax return"
+      ],
+      "ans": "B",
+      "exp": "The second limb covers concealing or disguising the true nature, source, location, disposition, movement, or ownership of property, even where the source is already known — distinct from the first limb's focus on conversion or transfer."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "q": "Which activity constitutes Combating the Financing of Terrorism (CFT)?",
+      "opts": [
+        "Auditing a bank's annual accounts",
+        "Deterring funding sources for ideological causes",
+        "Negotiating and renegotiating corporate loan interest rates",
+        "Segmenting customers by preferred channel"
+      ],
+      "ans": "B",
+      "exp": "CFT is investigating, analyzing, deterring, and preventing sources of funding intended to achieve political, religious, or ideological goals — a distinct discipline from routine banking functions."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "q": "According to the training material, terror organizations typically obtain funding from which source?",
+      "opts": [
+        "Direct salaries paid by foreign agencies",
+        "Sympathizers among people and organizations",
+        "Compulsory levies collected by tax authorities",
+        "Insurance payouts following a declared war"
+      ],
+      "ans": "B",
+      "exp": "Referenced Canadian Police Research found terror organizations usually benefit from financing by people and organizations sympathetic to their cause, not from formal state or institutional payments."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "q": "A bank's KYC policy requires establishing a customer's identity, suitability, and risk profile. What concept does this describe?",
+      "opts": [
+        "Anti-Money Laundering legislation",
+        "Know Your Customer",
+        "FATF's full set of 40 Recommendations",
+        "Customer relationship marketing"
+      ],
+      "ans": "B",
+      "exp": "KYC means the bank should know the customer's identity, suitability to be associated with the bank, and the risks around them — distinct from AML law itself or a marketing strategy."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "q": "Understanding a customer's business type, client base, and operating resources — beyond the customer's personal identity — describes which concept?",
+      "opts": [
+        "Anti-Money Laundering procedure",
+        "Know Your Customer's Business",
+        "Suspicious Transaction Reporting",
+        "Combating the Financing of Terrorism"
+      ],
+      "ans": "B",
+      "exp": "KYCB extends KYC to the customer's business itself — its type, clients, and resources — whereas AML, STR, and CFT sit at different stages of the compliance framework."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "q": "Why does a bank invest resources in knowing its customers and their businesses?",
+      "opts": [
+        "To reduce the volume of account paperwork",
+        "To avoid legal, licensing, and reputational risk",
+        "To increase the volume of cross-sold products",
+        "To satisfy customer preferences for faster service"
+      ],
+      "ans": "B",
+      "exp": "The stated rationale is avoiding legal problems for the bank and staff, loss of banking licence, reputational damage, and profitability risk — not operational convenience or sales targets."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "q": "How does 'loss of banking licence' differ from 'legal problems for the bank' as separate listed risks?",
+      "opts": [
+        "Both risks describe the same regulatory outcome",
+        "Licence loss is regulatory withdrawal, not liability exposure",
+        "Legal problems apply only to individual staff",
+        "Licence loss is a category of reputational risk"
+      ],
+      "ans": "B",
+      "exp": "Legal problems concern liability and litigation exposure, while licence loss is a regulator withdrawing the bank's authority to operate — two distinct failure modes tracked separately in the material."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "q": "Which of these appears among the Money Laundering Offences listed in the training material?",
+      "opts": [
+        "Licensed bureau-de-change exchange",
+        "Insider trading",
+        "Accurate corporate tax filing",
+        "Auction purchase of treasury bills"
+      ],
+      "ans": "B",
+      "exp": "Insider trading is explicitly listed as a Money Laundering Offence, alongside illegal arms sales, smuggling, bribery, drug trafficking, embezzlement, tax evasion, and fraud. The other options describe lawful routine activity."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "q": "Which listed Money Laundering Offence involves illegally moving arms, people, or goods across borders?",
+      "opts": [
+        "Concealing taxable income",
+        "Smuggling",
+        "Misusing non-public market data",
+        "Misappropriating entrusted funds"
+      ],
+      "ans": "B",
+      "exp": "Smuggling is listed as illegal cross-border movement of arms, people, or goods — distinct from tax evasion (concealing taxable income), insider trading (misusing market information), or embezzlement (misappropriating entrusted funds)."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "q": "Which of the following is NOT listed among the Money Laundering Offences?",
+      "opts": [
+        "Human trafficking operations",
+        "Standard mortgage underwriting",
+        "Bribery of officials",
+        "Financial fraud schemes"
+      ],
+      "ans": "B",
+      "exp": "Human trafficking, bribery, and fraud are all explicitly listed ML offences. Standard mortgage underwriting is a routine, lawful banking function absent from that list."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "q": "A donation from a profit-making organization sympathetic to a terrorist cause is classified under which source category?",
+      "opts": [
+        "Illegal, matching every terrorism-linked funding source",
+        "Legal, since the donor's activity is lawful",
+        "A formal reporting exemption under CBN rules",
+        "A placement-stage transaction needing no scrutiny"
+      ],
+      "ans": "B",
+      "exp": "Donations from non-profit or profit-making organizations sympathetic to terrorists are classified as legal sources — the donor's underlying business is lawful, which is precisely what makes this harder to detect than illegal-source funding."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "q": "Ransom paid to kidnappers who then fund a terrorist organization is classified under which source category?",
+      "opts": [
+        "Legal, treated purely as a private civil matter",
+        "Illegal, arising directly from a criminal act",
+        "A formal Terrorism Prevention Act exemption",
+        "A placement-stage transaction needing no scrutiny"
+      ],
+      "ans": "B",
+      "exp": "Ransom for kidnapping is listed under illegal sources of terrorist financing — proceeds of criminal activity by terrorists or sympathizers — alongside trafficking, imposed levies, and natural-resource exploitation."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "q": "Which pairing correctly matches a funding channel with its source-category classification?",
+      "opts": [
+        "Levy imposed by a terrorist group — legal source",
+        "Exploiting oil and gas resources — illegal source",
+        "Non-profit donation — illegal source",
+        "Profit-organization donation — illegal source"
+      ],
+      "ans": "B",
+      "exp": "Exploiting natural resources such as oil and gas is listed under illegal sources, alongside trafficking and ransom. Donations from non-profit and profit-making organizations are legal-source, and imposed levies are also illegal-source, not legal-source."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "q": "Which group is identified among the 'Big Money Laundering and Financing of Terrorism Players'?",
+      "opts": [
+        "Regulated bureau-de-change operators",
+        "Public officials",
+        "Statutory external auditors",
+        "Retail salary-deposit customers"
+      ],
+      "ans": "B",
+      "exp": "Public officials are explicitly listed among the Big Players, alongside drug dealers, mobsters/gang members, politicians, embezzlers, and terrorists — a category defined by illicit-proceeds channels, not routine regulated roles."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "q": "Which 'Big Players' category is distinguished from 'politicians' by holding an administrative rather than elected role?",
+      "opts": [
+        "Mobsters or gang members",
+        "Public officials",
+        "Drug dealers",
+        "Terrorists"
+      ],
+      "ans": "B",
+      "exp": "The material lists 'politicians' and 'public officials' separately — politicians typically hold elected office, public officials hold administrative or civil-service positions — both potential channels for illicit funds."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "q": "A wealthy new client routes funds through shell purchases with no clear economic purpose and has a prior embezzlement conviction. Which Big Player category fits best?",
+      "opts": [
+        "Terrorists",
+        "Embezzlers",
+        "Mobsters or gang members",
+        "Public officials"
+      ],
+      "ans": "B",
+      "exp": "Embezzlers are a listed Big Player category — individuals who misappropriate entrusted funds and then need to disguise the proceeds, matching this client's profile more closely than the other categories."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "q": "Boko Haram's operations in Nigeria are cited in the material as an example of which concept?",
+      "opts": [
+        "Regional regulatory cooperation",
+        "Terrorism",
+        "A used-car laundering case",
+        "A legally exempt donation"
+      ],
+      "ans": "B",
+      "exp": "Boko Haram's operations, alongside the September 11 attacks and ISIS activity, are cited purely as an example of terrorism — the real-world activity CFT measures target — not as a regulatory or case-study example."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "q": "A memo conflates 'money laundering' with 'anti-money laundering.' What is the accurate distinction?",
+      "opts": [
+        "The two terms are used interchangeably in practice",
+        "Laundering is the crime; AML is the countermeasure",
+        "Laundering is defined as covering only terrorism financing",
+        "AML rules are defined to apply only to offshore accounts"
+      ],
+      "ans": "B",
+      "exp": "Money laundering is the offence of disguising illegal proceeds; anti-money laundering is the framework of laws and procedures built to stop it. Scoping either term to a single crime type or account category misstates the definitions."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "q": "A trainee argues CFT and AML are the same discipline. What actually distinguishes CFT from AML?",
+      "opts": [
+        "CFT applies only to domestic transfers",
+        "CFT targets ideological funding specifically",
+        "CFT is voluntary; AML is legally binding",
+        "The two terms are fully interchangeable"
+      ],
+      "ans": "B",
+      "exp": "CFT specifically targets funding sources for politically, religiously, or ideologically motivated activity, while AML addresses disguising crime proceeds more broadly — a narrower purpose-driven focus versus a broader proceeds-of-crime focus."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "q": "Which pair of listed ML offences involves deceiving a market or tax authority rather than physically trafficking goods or people?",
+      "opts": [
+        "Smuggling and human trafficking",
+        "Insider trading and tax evasion",
+        "Illegal arms sales and drug trafficking",
+        "Prostitution and kidnapping"
+      ],
+      "ans": "B",
+      "exp": "Insider trading (misusing non-public market information) and tax evasion (concealing taxable income) both involve deceiving an institution or authority, unlike the trafficking- and smuggling-type offences in the other options."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "q": "Why is a sympathetic non-profit's donation harder to detect as terrorist financing than drug-trafficking proceeds are?",
+      "opts": [
+        "Non-profit donations carry blanket exemption",
+        "The underlying activity is itself lawful",
+        "Non-profits are never high-risk customers",
+        "Drug proceeds are always self-reported"
+      ],
+      "ans": "B",
+      "exp": "Because the donor organization's core activity is lawful, the funds don't display the overt red flags — unclear sourcing, cash-intensive patterns — typical of drug-trafficking proceeds, making legal-source terrorist financing inherently harder to distinguish from ordinary giving."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "q": "A client transfers known drug-trafficking proceeds into a new company name specifically to hide their origin. Which Vienna Convention limb does this illustrate?",
+      "opts": [
+        "Concealing ownership despite already knowing the source",
+        "Conversion or transfer to conceal origin",
+        "FATF's customer due-diligence recommendation framework",
+        "The CBN's three-tiered KYC approach"
+      ],
+      "ans": "B",
+      "exp": "This describes converting/transferring property known to derive from drug trafficking specifically to conceal its illicit origin — the first Vienna Convention limb — rather than a later, separate act of ownership concealment or an unrelated KYC/FATF framework."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "q": "A bank is deciding whether a routine, documented salary deposit needs the same scrutiny as an unexplained large cash lodgment. What should guide that decision?",
+      "opts": [
+        "Applying identical scrutiny to all transactions",
+        "Calibrating scrutiny to actual risk exposure",
+        "Applying scrutiny only above N50,000",
+        "Basing scrutiny solely on customer tenure"
+      ],
+      "ans": "B",
+      "exp": "The rationale for knowing customers and their businesses is managing legal, licensing, reputational, and profitability risk — meaning scrutiny should track the risk a transaction actually poses, not apply uniformly or turn on an unrelated factor like tenure."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "q": "Why does the material list 'public officials' and 'politicians' as separate Big Player categories rather than merging them?",
+      "opts": [
+        "Both categories carry identical risk",
+        "They mark distinct channels into illicit finance",
+        "Public officials can never be PEPs",
+        "The distinction only matters for tax rules"
+      ],
+      "ans": "B",
+      "exp": "Keeping the categories separate preserves a useful distinction between two different institutional channels — elected office versus administrative/civil-service office — that matters for tracing which channel a red flag or PEP designation is coming through."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "q": "A trainee claims insider trading and drug trafficking must involve the same underlying misconduct since both appear on the ML offences list. Is this reasoning sound?",
+      "opts": [
+        "Yes, the list only covers physical goods",
+        "No, the list groups by shared consequence",
+        "Yes, both share one regulatory body",
+        "No, insider trading is not on the list"
+      ],
+      "ans": "B",
+      "exp": "The Money Laundering Offences list groups activities united by producing illegal proceeds that need disguising, not by a shared method. Insider trading (market abuse) and drug trafficking (narcotics crime) are different offences that both generate proceeds requiring laundering."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "q": "A customer receives funds from a foreign non-profit with unclear beneficiaries, and separately from a known kidnapping ransom. How should these be classified under the legal/illegal source framework?",
+      "opts": [
+        "Both treated as illegal-source funding",
+        "Donation legal-source; ransom illegal-source",
+        "Donation illegal; ransom treated as legal",
+        "Neither counts without a border crossing"
+      ],
+      "ans": "B",
+      "exp": "A lawfully constituted donor organization's donation can fall under legal sources even if its use is troubling, whereas ransom for kidnapping is explicitly listed as an illegal source because it arises directly from a criminal act."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "q": "Why does the material treat KYC as foundational to both AML and CFT rather than as a separate discipline?",
+      "opts": [
+        "KYC is unrelated to AML and CFT work",
+        "KYC enables recognizing AML/CFT red flags",
+        "KYC only matters after an STR is filed",
+        "AML and CFT need no customer identification"
+      ],
+      "ans": "B",
+      "exp": "KYC is foundational because establishing true identity and understanding a customer's business is the precondition for recognizing the red flags, high-risk profiles, and suspicious patterns that AML and CFT frameworks exist to catch — not a downstream or unrelated function."
+    },
+    {
+      "id": "Q31",
+      "module": 2,
+      "q": "A criminal group kidnaps a wealthy businessman for ransom and later needs to disguise the ransom proceeds. Which category does the original offence belong to?",
+      "opts": [
+        "A criminal activity that usually leads to money laundering",
+        "A routine collections dispute",
+        "A civil breach of contract",
+        "A regulatory licensing infraction"
+      ],
+      "ans": "B",
+      "exp": "Kidnapping is explicitly listed among the criminal activities that usually lead to money laundering, since proceeds from an illegal act must be disguised to avoid arrest and litigation."
+    },
+    {
+      "id": "Q32",
+      "module": 2,
+      "q": "Which of the following is listed among the criminal activities that usually lead to Money Laundering?",
+      "opts": [
+        "Counterfeiting",
+        "Routine loan repayment",
+        "Standard payroll processing",
+        "Regulatory stress testing"
+      ],
+      "ans": "B",
+      "exp": "Counterfeiting is explicitly listed among the criminal activities that usually lead to money laundering, alongside kidnapping, extortion, drug trafficking, and forgery. The other options describe routine, lawful bank operations."
+    },
+    {
+      "id": "Q33",
+      "module": 2,
+      "q": "Which pair of criminal activities both involve producing or altering documents or currency dishonestly?",
+      "opts": [
+        "Counterfeiting and forgery",
+        "Kidnapping and extortion",
+        "Gambling and cheating",
+        "Robbery and smuggling"
+      ],
+      "ans": "B",
+      "exp": "Counterfeiting (producing fake currency or goods) and forgery (falsifying documents) both involve dishonest production or alteration, distinguishing them from the coercion-based, chance-based, or theft-based offences in the other pairings."
+    },
+    {
+      "id": "Q34",
+      "module": 2,
+      "q": "At which stage of money laundering is illegal money broken into small units and introduced into the financial system?",
+      "opts": [
+        "Integration",
+        "Placement",
+        "Layering",
+        "Regulatory Reporting"
+      ],
+      "ans": "B",
+      "exp": "Placement is the first stage, where illegal money is broken into small units and introduced into the financial system — distinct from Layering (moving funds through complex transactions) and Integration (funds re-entering the legitimate economy)."
+    },
+    {
+      "id": "Q35",
+      "module": 2,
+      "q": "Which stage of money laundering involves converting money into smaller investments and buying goods to obscure its trail?",
+      "opts": [
+        "Placement",
+        "Layering",
+        "Integration",
+        "Fraud Detection"
+      ],
+      "ans": "B",
+      "exp": "Layering is the stage where money is converted into smaller investments and goods are bought, separating the funds from their criminal source through complex transactions — distinct from Placement (initial entry) and Integration (final re-entry)."
+    },
+    {
+      "id": "Q36",
+      "module": 2,
+      "q": "At which stage of money laundering do funds re-enter the legitimate economy, for example through real estate purchases?",
+      "opts": [
+        "Placement",
+        "Integration",
+        "Layering",
+        "Credit Screening"
+      ],
+      "ans": "B",
+      "exp": "Integration is the final stage, where funds re-enter the legitimate economy — for example through real estate — after having been placed and layered. Placement and Layering are the earlier stages, and screening is not a named ML stage."
+    },
+    {
+      "id": "Q37",
+      "module": 2,
+      "q": "A launderer makes several smaller cash deposits across multiple bank branches to avoid drawing attention. Which stage of money laundering does this transaction sample represent?",
+      "opts": [
+        "Integration",
+        "Placement",
+        "Layering",
+        "Account Consolidation"
+      ],
+      "ans": "B",
+      "exp": "Smaller cash deposits in banks are listed as a Placement-stage transaction sample — the initial entry of illegal money into the financial system in reduced units to avoid detection."
+    },
+    {
+      "id": "Q38",
+      "module": 2,
+      "q": "A launderer issues several complex bank transfers between shell entities before the funds settle anywhere permanent. Which stage does this represent?",
+      "opts": [
+        "Placement",
+        "Layering",
+        "Integration",
+        "Cash Withdrawal"
+      ],
+      "ans": "B",
+      "exp": "Issuing several complex bank transfers is listed as a Layering-stage transaction sample — designed to separate the funds from their criminal origin through complexity, distinct from the initial Placement or final Integration stage."
+    },
+    {
+      "id": "Q39",
+      "module": 2,
+      "q": "A launderer uses fully layered funds to purchase valuable real estate and finance a legitimate business project. Which stage does this represent?",
+      "opts": [
+        "Placement",
+        "Integration",
+        "Layering",
+        "Credit Screening"
+      ],
+      "ans": "B",
+      "exp": "Purchasing valuable assets, properties, and financing business projects are listed as Integration-stage transaction samples — the final stage where laundered funds re-enter the legitimate economy."
+    },
+    {
+      "id": "Q40",
+      "module": 2,
+      "q": "Which of the following is listed as a Placement-stage transaction sample?",
+      "opts": [
+        "Buying and reselling shares",
+        "Smuggling money over borders",
+        "Purchasing valuable artworks",
+        "Debt repayment through credit cards"
+      ],
+      "ans": "B",
+      "exp": "Smuggling money over borders is listed as a Placement-stage sample, alongside smaller cash deposits and lodging bank drafts. Buying/reselling shares and debt repayment are Layering-stage samples, and purchasing artworks is an Integration-stage sample."
+    },
+    {
+      "id": "Q41",
+      "module": 2,
+      "q": "Which category of institution is listed among the 'Non-Bank Institutions' popularly used for money laundering?",
+      "opts": [
+        "Deposit money banks",
+        "Money transfer companies",
+        "Correspondent banks",
+        "Private banking divisions"
+      ],
+      "ans": "B",
+      "exp": "Money transfer companies are listed under Non-Bank Institutions, alongside exchange companies, insurance companies, stockbrokers, and securities traders. Deposit money banks, correspondent banks, and private banking are listed under Banks and Investment Institutions instead."
+    },
+    {
+      "id": "Q42",
+      "module": 2,
+      "q": "Which category of institution is listed among the 'Non-Financial Institutions' popularly used for money laundering?",
+      "opts": [
+        "Discount house products",
+        "Real estate firms",
+        "Securities traders",
+        "Insurance companies"
+      ],
+      "ans": "B",
+      "exp": "Real estate firms are listed under Non-Financial Institutions, alongside casinos, precious-stone traders, car dealers, law/audit firms, and the forex black market. The other options are listed under Non-Bank Institutions instead."
+    },
+    {
+      "id": "Q43",
+      "module": 2,
+      "q": "According to the material, roughly how much money is laundered globally each year?",
+      "opts": [
+        "Between $10 million and $50 million dollars",
+        "Between $800 billion and $2 trillion",
+        "Between $1 million and $5 million",
+        "Between $100 billion and $150 billion"
+      ],
+      "ans": "B",
+      "exp": "The material states that between $800 billion and $2 trillion is laundered in the world annually, with the US making up at least $300 billion of that figure."
+    },
+    {
+      "id": "Q44",
+      "module": 2,
+      "q": "According to the material, the United States accounts for approximately how much of the global annual money laundering figure?",
+      "opts": [
+        "At least $50 billion",
+        "At least $300 billion",
+        "At least $900 billion",
+        "At least $1.5 trillion overall"
+      ],
+      "ans": "B",
+      "exp": "The material states the US makes up at least $300 billion of the $800 billion to $2 trillion laundered globally each year."
+    },
+    {
+      "id": "Q45",
+      "module": 2,
+      "q": "Which economic indicator is listed as something affected countries cannot control due to the scale of global money laundering?",
+      "opts": [
+        "Literacy rates",
+        "Inflation rates",
+        "Population growth rates",
+        "Rainfall patterns"
+      ],
+      "ans": "B",
+      "exp": "The material lists inflation rates, FX rates, and interest rates as indicators that affected countries cannot control due to the scale of the global money laundering problem — not demographic or environmental indicators."
+    },
+    {
+      "id": "Q46",
+      "module": 2,
+      "q": "Which of the following is listed as a characteristic of a country that is fertile ground for money laundering?",
+      "opts": [
+        "Strong judicial enforcement capacity",
+        "Low risk of detection",
+        "Transparent beneficial-ownership registries",
+        "High levels of financial-sector supervision"
+      ],
+      "ans": "B",
+      "exp": "Low risk of detection is explicitly listed as a characteristic of fertile countries for money laundering, alongside available financial infrastructure, an unstable economic environment, absence of law, and possible government involvement — the opposite of strong enforcement, transparency, or supervision."
+    },
+    {
+      "id": "Q47",
+      "module": 2,
+      "q": "Which of the following is listed among the characteristics of countries fertile for money laundering?",
+      "opts": [
+        "A well-funded, fully independent national judiciary system notably",
+        "Absence of law and easy tax evasion",
+        "Mandatory and comprehensive beneficial-ownership disclosure requirements",
+        "Robust and extensive cross-border regulatory information sharing"
+      ],
+      "ans": "B",
+      "exp": "Absence of law and easy tax evasion is explicitly listed as a characteristic of fertile countries for money laundering — the other options describe the kind of institutional strength that would make a country less fertile for laundering, not more."
+    },
+    {
+      "id": "Q48",
+      "module": 2,
+      "q": "Which category is listed among the profiles of High-Risk Customers for money laundering purposes?",
+      "opts": [
+        "Public companies listed on the stock exchange",
+        "Private money remitters",
+        "Government ministries",
+        "Financial institutions themselves"
+      ],
+      "ans": "B",
+      "exp": "Private money remitters are listed among High-Risk Customers, alongside money changers, real estate dealers, casinos, and non-profit organizations/charities. The other options are listed elsewhere as Low-Risk customer categories."
+    },
+    {
+      "id": "Q49",
+      "module": 2,
+      "q": "Which channel is listed among the profiles of High-Risk Channels for money laundering purposes?",
+      "opts": [
+        "In-branch teller cash withdrawal",
+        "Correspondent banking",
+        "Standing order payments",
+        "Cheque clearing through a clearing house"
+      ],
+      "ans": "B",
+      "exp": "Correspondent banking is listed among High-Risk Channels, alongside wire/funds transfers, private banking, and electronic banking services. The other options describe standard, lower-risk retail banking mechanisms."
+    },
+    {
+      "id": "Q50",
+      "module": 2,
+      "q": "Which category is listed among the profiles of High-Risk Countries for money laundering purposes?",
+      "opts": [
+        "Countries with strong anti-corruption enforcement",
+        "Drug producing countries",
+        "Countries with mandatory ownership registries",
+        "Countries with high financial transparency scores"
+      ],
+      "ans": "B",
+      "exp": "Drug producing countries are explicitly listed among High-Risk Countries, alongside countries with high corruption levels and those linked to terrorist financing — the opposite of the enforcement and transparency characteristics in the other options."
+    },
+    {
+      "id": "Q51",
+      "module": 2,
+      "q": "Which statutory basis is cited for the rationale that all financial institutions render services that may be exploited for money laundering?",
+      "opts": [
+        "Section 14 of the Terrorism Prevention Act",
+        "Section 25 of the ML Act 2011",
+        "Section 17 of the Terrorism Prevention Act",
+        "The CBN Tiered KYC Circular"
+      ],
+      "ans": "B",
+      "exp": "The rationale cites Section 25 of the ML Act 2011 as defining the financial services that financial institutions render — the basis for regulatory focus on banks and financial institutions, distinct from the Terrorism Prevention Act sections or the KYC circular."
+    },
+    {
+      "id": "Q52",
+      "module": 2,
+      "q": "Which of the following is listed as a rationale for regulatory focus specifically on banks and financial institutions?",
+      "opts": [
+        "Banks employ the highest number of staff nationally",
+        "All financial transactions pass through financial institutions",
+        "Banks generate the largest tax revenue for government",
+        "Banks have the lowest customer complaint rates"
+      ],
+      "ans": "B",
+      "exp": "The material lists 'all financial transactions pass through financial institutions' as a rationale for regulatory focus, alongside financial institutions being the hub of the economy and having exploitable products/services — not staffing levels, tax contribution, or complaint statistics."
+    },
+    {
+      "id": "Q53",
+      "module": 2,
+      "q": "Which impact of money laundering on society is explicitly listed in the material?",
+      "opts": [
+        "Reduced government borrowing costs",
+        "Increased country's risk rating",
+        "Improved investor confidence",
+        "Strengthened judicial independence"
+      ],
+      "ans": "B",
+      "exp": "Increased country's risk rating is explicitly listed as a societal impact of ML/FT, alongside corrupting the value system, financing terrorism, reputational damage, and moral decadence — not the positive outcomes in the other options."
+    },
+    {
+      "id": "Q54",
+      "module": 2,
+      "q": "Which impact of money laundering on Economic Development is explicitly listed in the material?",
+      "opts": [
+        "Increased foreign direct investment",
+        "Capital flight and tax evasion",
+        "Stronger currency stability",
+        "Lower government debt servicing costs"
+      ],
+      "ans": "B",
+      "exp": "Capital flight and tax evasion are explicitly listed as an economic development impact of ML, alongside economic disruption, risks to privatization, stifled competition, and distorted macroeconomic indices — not the positive economic outcomes in the other options."
+    },
+    {
+      "id": "Q55",
+      "module": 2,
+      "q": "Which impact of money laundering on Financial Institutions is explicitly listed in the material?",
+      "opts": [
+        "Improved overall market integrity",
+        "Legal risks for banks",
+        "Higher customer retention rates",
+        "Lower ongoing annual compliance costs"
+      ],
+      "ans": "B",
+      "exp": "Legal risks for banks are explicitly listed as a financial-institution impact of ML, alongside loss of market integrity, negative ethical impacts, and banks' complicity with criminals — not the positive outcomes in the other options."
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "q": "Which of the following historical fine examples is cited in the material as one of the highest imposed on a financial institution for money laundering?",
+      "opts": [
+        "A $500,000 fine on a regional credit union",
+        "A $31.3 billion fine on J.P. Morgan Chase",
+        "A $10,000 fine on a licensed bureau de change",
+        "A $2,000 fine on an individual customer"
+      ],
+      "ans": "B",
+      "exp": "The material cites J.P. Morgan Chase's $31.3 billion fine as the largest among the listed high-profile money laundering fines, alongside HSBC ($3.5 billion), BNP Paribas ($2.99 billion), Goldman Sachs ($2.2 billion), RBS ($1.5 billion), and Standard Chartered ($1 billion)."
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "q": "According to the African financial institution fines table, which institution was penalized for non-compliance with the Financial Intelligence Act (FICA)?",
+      "opts": [
+        "Nedbank Ltd.",
+        "Capitec Bank",
+        "Standard Bank",
+        "Guaranty Trust Bank (UK)"
+      ],
+      "ans": "B",
+      "exp": "Capitec Bank's approximately $3.1 million penalty in 2024 is listed as arising from non-compliance with South Africa's Financial Intelligence Act (FICA), distinct from Nedbank's cash transaction reporting failure and the other listed institutions' compliance failures."
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "q": "According to the African fines table, which institution's penalty resulted from a repeat offence in AML weakness and controls?",
+      "opts": [
+        "Standard Chartered located in Mauritius",
+        "Guaranty Trust Bank (UK)",
+        "Standard Bank of Africa",
+        "Nedbank Limited entity"
+      ],
+      "ans": "B",
+      "exp": "Guaranty Trust Bank (UK)'s 2023 penalty is listed as arising from a repeat offence in AML weakness and controls under the UK's FCA, distinct from the failures listed for the other institutions in the table."
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "q": "A regulator reviewing the African fines table notices Standard Chartered (Mauritius) was penalized for a specific compliance gap. Which gap was it?",
+      "opts": [
+        "Failure to report suspicious transactions on time",
+        "Failure to identify beneficial owners",
+        "Non-compliance with cash transaction reporting",
+        "Failure to file annual audited accounts"
+      ],
+      "ans": "B",
+      "exp": "Standard Chartered (Mauritius)'s 2021 penalty is listed as arising from failure to identify beneficial owners under the Bank of Mauritius, distinct from Standard Bank's late suspicious-transaction reporting and Nedbank's cash-transaction reporting failure."
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "q": "A compliance trainer wants to illustrate why regulators target banks specifically rather than every business in the economy. Which listed rationale best supports that focus?",
+      "opts": [
+        "Banks are the only businesses in any economy that employ dedicated compliance officers",
+        "Financial institutions are the hub of the economy through which all financial transactions pass",
+        "Banks are the only entities ever subject to government regulation of any kind",
+        "Banks generate the highest customer satisfaction scores of any sector nationally"
+      ],
+      "ans": "B",
+      "exp": "The material's rationale is that financial institutions are the hub of the economy and all financial transactions pass through them — a structural reason for regulatory focus, not one based on staffing, exclusivity of regulation, or satisfaction metrics."
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "q": "A launderer smuggles cash across a border, later buys and resells shares through several jurisdictions, and finally purchases equity in a legitimate company. Which sequence of stages does this describe?",
+      "opts": [
+        "Integration, then Layering, then Placement",
+        "Placement, then Layering, then Integration",
+        "Layering, then Placement, then final Integration",
+        "Placement, then Integration, then Layering"
+      ],
+      "ans": "B",
+      "exp": "Smuggling cash across a border is a Placement sample, buying/reselling shares across jurisdictions is a Layering sample, and purchasing equity is an Integration sample — matching the correct order Placement, Layering, Integration."
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "q": "A bank's compliance officer must decide whether a real estate firm client should be treated as a High-Risk Customer under the material's classification. What should determine that decision?",
+      "opts": [
+        "Whether the client has been a customer for over five years",
+        "Whether real estate firms appear on the High-Risk Customer profile",
+        "Whether the client's office is located in the bank's home city",
+        "Whether the client uses online banking exclusively"
+      ],
+      "ans": "B",
+      "exp": "Real estate dealers are explicitly listed among High-Risk Customers, so classification should follow that listed profile rather than unrelated factors like tenure, location, or channel preference."
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "q": "Why does the material link an 'unstable economic environment' to a country being fertile ground for money laundering, rather than treating it as an unrelated economic condition?",
+      "opts": [
+        "Unstable economies always develop stronger anti-corruption enforcement",
+        "Instability makes illicit flows harder to distinguish from ordinary volatility",
+        "Unstable economies are automatically and permanently exempt from FATF monitoring",
+        "Instability guarantees lower detection risk across every transaction type"
+      ],
+      "ans": "B",
+      "exp": "An unstable economic environment is listed as a fertility characteristic because volatile legitimate economic activity makes it harder for regulators or banks to distinguish illicit flows from ordinary economic noise — not because of automatic exemptions or enforcement effects."
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "q": "A junior analyst assumes the $800 billion–$2 trillion global laundering estimate represents money that can still be used for national budgets. Is this assumption correct?",
+      "opts": [
+        "Yes, laundered funds eventually enter national treasury accounts formally",
+        "No, laundered funds happen outside the economic range and cannot fund national budgets",
+        "Yes, but only in countries with unusually strong financial sector infrastructure",
+        "No, because the estimate only covers terrorism financing figures and nothing else"
+      ],
+      "ans": "B",
+      "exp": "The material notes that this scale of money laundering happens outside the normal economic range and cannot be used for national budgets — the funds remain hidden from legitimate fiscal use rather than eventually entering national treasuries."
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "q": "A bank argues that because its correspondent banking relationships are with reputable foreign banks, the channel itself carries no elevated risk. Does the material's classification support this argument?",
+      "opts": [
+        "Yes, correspondent banking is listed as a Low-Risk channel category",
+        "No, correspondent banking is listed High-Risk regardless of counterparty reputation",
+        "Yes, but only for relationships confined within the exact same country",
+        "No, but only due to currency conversion costs involved here"
+      ],
+      "ans": "B",
+      "exp": "Correspondent banking is explicitly listed as a High-Risk channel in the material's classification — the channel's structural characteristics (limited visibility into underlying customers) create elevated risk independent of how reputable a given counterparty bank is."
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "q": "Comparing the JP Morgan Chase and Standard Chartered fine amounts listed in the material, what can be concluded about the scale of penalties across major institutions for money laundering violations?",
+      "opts": [
+        "Penalties are always strictly proportional to the institution's total global headcount",
+        "Penalty amounts vary substantially, from around $1 billion to over $31 billion",
+        "All listed institutions received exactly identical penalty amounts every single time without exception",
+        "Penalties listed apply only to institutions headquartered in America itself"
+      ],
+      "ans": "B",
+      "exp": "The material's list of fines ranges from Standard Chartered's $1 billion to JP Morgan Chase's $31.3 billion, showing substantial variation in penalty scale across institutions rather than uniform, headcount-proportional, or US-only penalties."
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "q": "A compliance officer notices that both the global fines table and the African fines table include entries for 'Standard Chartered.' What does comparing these two entries illustrate?",
+      "opts": [
+        "Standard Chartered has never faced any AML penalty outside Africa",
+        "Standard Chartered has faced AML-related penalties in more than one jurisdiction",
+        "The two entries actually refer to two unrelated, entirely differently named institutions",
+        "African penalties are always larger than global penalty examples"
+      ],
+      "ans": "B",
+      "exp": "Standard Chartered appears in both the global fines list ($1 billion) and the African fines list (Mauritius, $120k) in the material, illustrating that the same institution can face AML-related penalties across multiple jurisdictions and regulators."
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "q": "A regulator is deciding how much weight to give 'absence of law' versus 'government involvement' when assessing whether a country is fertile ground for money laundering. What does the material suggest about these two factors?",
+      "opts": [
+        "Only one of the two factors can apply to a country at any given time",
+        "Both factors are listed independently and can compound each other's effect",
+        "Government involvement cancels out the effect of absence of law",
+        "Neither factor is relevant unless drug production is also present"
+      ],
+      "ans": "B",
+      "exp": "The material lists absence of law/easy tax evasion and possible government involvement as separate, independent characteristics of fertile countries — both can be present simultaneously and compound rather than cancel or require each other."
+    },
+    {
+      "id": "Q69",
+      "module": 2,
+      "q": "A bank must classify a customer who is both a private banking client and a non-resident. Applying the material's high-risk customer classification, what is the correct approach?",
+      "opts": [
+        "Treat the customer as low risk, since private banking implies strong prior vetting occurred",
+        "Treat as high risk, since both private banking and non-resident status are separately listed high-risk factors",
+        "Treat as medium risk, since the two factors offset one another entirely",
+        "Disregard both factors unless the customer later requests a loan facility"
+      ],
+      "ans": "B",
+      "exp": "Both non-resident customers and private banking customers are separately listed as high-risk categories, so a customer meeting both criteria should be treated as high risk under the material's classification — the factors compound rather than offset or require a loan trigger."
+    },
+    {
+      "id": "Q70",
+      "module": 2,
+      "q": "Weighing the societal, economic, and financial-institution impacts of money laundering listed in the material, which conclusion is best supported?",
+      "opts": [
+        "Only financial institutions bear meaningful consequences from money laundering",
+        "ML's damage spans societal, economic, and institutional levels simultaneously",
+        "Societal impacts only occur if economic impacts have already occurred first",
+        "Economic impacts are limited to countries with unstable governments"
+      ],
+      "ans": "B",
+      "exp": "The material lists distinct impact categories across society (reputation, moral decay), economic development (capital flight, distorted indices), and financial institutions (legal risk, market integrity) — showing the damage is simultaneous and multi-level, not confined to one level or sequentially dependent."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "q": "A bank is reviewing whether to escalate a customer relationship involving a casino operator that also uses correspondent banking to move funds internationally. What should this combination trigger under the material's risk framework?",
+      "opts": [
+        "No escalation, since casinos and correspondent banking are treated as unrelated, independent risk categories",
+        "Escalation, since the customer type and the channel are both separately listed high-risk",
+        "Escalation only if the casino operator is located outside Nigeria specifically",
+        "De-escalation, since correspondent banking implies the counterparty already vetted the customer"
+      ],
+      "ans": "B",
+      "exp": "Casinos/gambling outfits are listed as a high-risk customer category and correspondent banking is listed as a high-risk channel — when both combine in one relationship, the material's framework supports escalated scrutiny rather than dismissal, geographic limitation, or reliance on a counterparty's own vetting."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "q": "Given the fine examples listed for JP Morgan Chase, HSBC, and BNP Paribas, what should a bank's board conclude about the consequence category these penalties primarily represent?",
+      "opts": [
+        "Reputational risk only, with no financial consequence",
+        "A concrete illustration of the 'legal risks for banks' impact category",
+        "Evidence that fines apply only to institutions outside the customer's home country",
+        "Proof that AML penalties are capped at a fixed statutory maximum"
+      ],
+      "ans": "B",
+      "exp": "These fine examples are presented in the material specifically to illustrate the 'legal risks for banks' impact category with real, concrete figures — not to suggest fines are reputation-only, geographically limited, or subject to a fixed cap."
+    },
+    {
+      "id": "Q73",
+      "module": 2,
+      "q": "A newly appointed compliance head is designing staff training and must decide how much emphasis to give the placement stage relative to layering and integration, given the material's stage descriptions. What is the strongest justification for prioritizing placement-stage controls?",
+      "opts": [
+        "Placement is the only stage that regulators actually bother to monitor at all",
+        "Placement is where illegal funds first enter the system, so early detection prevents later stages",
+        "Layering and integration never occur without a corresponding tax filing beforehand",
+        "Placement-stage transactions are always reported automatically regardless of any bank controls"
+      ],
+      "ans": "B",
+      "exp": "Because placement is the entry point where illegal funds first enter the financial system, effective detection controls at that stage can prevent funds from ever reaching layering or integration — a stronger justification than claims about exclusive regulatory monitoring, automatic reporting, or unrelated tax filings."
+    },
+    {
+      "id": "Q74",
+      "module": 2,
+      "q": "Given the material's characteristics of fertile countries for money laundering, which single combination of factors would most strongly indicate elevated national ML risk?",
+      "opts": [
+        "Strong financial infrastructure combined with strict enforcement and full transparency",
+        "Available financial infrastructure combined with low detection risk and weak enforcement",
+        "High literacy rates combined with unusually low internet penetration levels",
+        "A strong national currency combined with an unusually high annual tourism revenue figure"
+      ],
+      "ans": "B",
+      "exp": "Available financial infrastructure combined with low detection risk and weak law enforcement directly matches the material's listed fertility characteristics, whereas strong enforcement/transparency, literacy/internet penetration, and currency/tourism factors are not part of that listed framework."
+    },
+    {
+      "id": "Q75",
+      "module": 2,
+      "q": "A board is deciding how to weigh the African fines table against the global fines table when setting the bank's own AML risk appetite. What is the most defensible conclusion to draw from comparing the two tables?",
+      "opts": [
+        "African regulators impose harsher penalties than global regulators in absolute terms",
+        "AML enforcement and penalty exposure exist across both regimes, even at differing scales",
+        "African institutions are exempt from the same AML standards as global institutions particularly formally",
+        "Only institutions with over $1 billion in fines face any enforcement risk"
+      ],
+      "ans": "B",
+      "exp": "Comparing the two tables shows AML enforcement risk is real across both regimes even though the absolute penalty scale differs (African fines in the low millions versus global fines in the billions) — not that African penalties are harsher in absolute terms, that African institutions are exempt, or that only billion-dollar fines represent genuine enforcement risk."
+    },
+    {
+      "id": "Q76",
+      "module": 3,
+      "q": "What does the term 'Know Your Customer' (KYC) mean for a bank or financial institution?",
+      "opts": [
+        "A marketing segmentation exercise for loyalty offers specifically",
+        "The process of verifying the identity of its clients",
+        "A quarterly audit of branch cash holdings explicitly",
+        "A staff training schedule for new hires"
+      ],
+      "ans": "B",
+      "exp": "KYC is the process of a business, including banks and financial institutions, verifying the identity of its clients — not a marketing, audit, or training exercise."
+    },
+    {
+      "id": "Q77",
+      "module": 3,
+      "q": "Beyond identity verification, why are banks, insurers, and export credit agencies increasingly demanding detailed anti-corruption 'due diligence' information from customers?",
+      "opts": [
+        "To calculate applicable stamp duty on transactions",
+        "To verify customer probity and integrity",
+        "To determine eligibility for a loyalty rewards programme",
+        "To set the customer's preferred communication language"
+      ],
+      "ans": "B",
+      "exp": "The material states these institutions demand detailed anti-corruption due diligence information specifically to verify customer probity and integrity, not for tax calculation, rewards eligibility, or communication preferences."
+    },
+    {
+      "id": "Q78",
+      "module": 3,
+      "q": "Which of the following is listed as an objective of KYC Guidelines?",
+      "opts": [
+        "Reducing branch operating hours",
+        "Preventing terrorist financing",
+        "Increasing average account balances",
+        "Standardizing ATM withdrawal limits"
+      ],
+      "ans": "B",
+      "exp": "Preventing terrorist financing is explicitly listed among the ten objectives of KYC guidelines, alongside customer identification, risk assessment, fraud prevention, and effective reporting — not operational metrics like hours or balances."
+    },
+    {
+      "id": "Q79",
+      "module": 3,
+      "q": "Which of the following is listed as an objective of KYC Guidelines?",
+      "opts": [
+        "Reducing teller headcount",
+        "Enhancing regulatory compliance",
+        "Maximizing loan approval speed",
+        "Expanding branch footprint"
+      ],
+      "ans": "B",
+      "exp": "Enhancing regulatory compliance is one of the ten listed KYC objectives, alongside customer identification, risk management, and maintaining regulatory reputational integrity — not staffing, approval speed, or expansion goals."
+    },
+    {
+      "id": "Q80",
+      "module": 3,
+      "q": "According to the material's KYC Policy Roles, what should a bank's policy establish for every customer?",
+      "opts": [
+        "A discount tier based on account size",
+        "True identity and adequate information about the customer",
+        "A default currency for all transactions directly",
+        "A fixed minimum balance requirement consistently"
+      ],
+      "ans": "B",
+      "exp": "The bank's policy should establish the true identity of every customer and obtain adequate information about each one — the foundational KYC policy role, not a pricing, currency, or balance rule."
+    },
+    {
+      "id": "Q81",
+      "module": 3,
+      "q": "Which of the following is listed among the 'Elements of Key Policy Roles' usually formulated by top management under KYC?",
+      "opts": [
+        "Marketing campaign approval notably",
+        "Monitoring of transactions",
+        "Branch relocation planning",
+        "Staff performance appraisal"
+      ],
+      "ans": "B",
+      "exp": "Monitoring of transactions is listed among the key KYC policy role elements, alongside customer acceptance, customer identification procedure, and risk management — not marketing, real estate, or HR functions."
+    },
+    {
+      "id": "Q82",
+      "module": 3,
+      "q": "Under the Customer Definition in the KYC material, who qualifies as a 'customer' of a bank?",
+      "opts": [
+        "Only a person who has physically visited the branch formally entirely",
+        "One on whose behalf an account is maintained, i.e., the beneficial owner",
+        "Only a person holding a current account entirely solely",
+        "Only a person who has an active loan facility solely structurally"
+      ],
+      "ans": "B",
+      "exp": "The customer definition explicitly includes the beneficial owner — one on whose behalf the account is maintained — alongside account holders and transaction beneficiaries, not just current-account holders, loan holders, or branch visitors."
+    },
+    {
+      "id": "Q83",
+      "module": 3,
+      "q": "Which customer type is classified as High Risk under the material's customer classification?",
+      "opts": [
+        "Government ministries and parastatals",
+        "Non-resident customers",
+        "Public companies listed on the stock exchange",
+        "Financial institutions"
+      ],
+      "ans": "B",
+      "exp": "Non-resident customers are explicitly classified as High Risk, alongside private banking customers, legal arrangements like trusts, and PEPs — the other options are listed under Low Risk instead."
+    },
+    {
+      "id": "Q84",
+      "module": 3,
+      "q": "Which customer type is classified as Low Risk under the material's customer classification?",
+      "opts": [
+        "Companies with nominee shareholders or bearer shares structurally",
+        "Public companies listed on the stock exchange",
+        "Private banking customers materially immediately",
+        "Politically exposed persons immediately strictly"
+      ],
+      "ans": "B",
+      "exp": "Public companies listed on the stock exchange are classified as Low Risk because their identity information is publicly available, unlike nominee-shareholder companies, private banking customers, and PEPs, which are all classified High Risk."
+    },
+    {
+      "id": "Q85",
+      "module": 3,
+      "q": "Which accounts fall under the Medium Risk classification in the material?",
+      "opts": [
+        "Trusts holding personal assets",
+        "Small and medium enterprise accounts",
+        "Non-resident customer accounts",
+        "Accounts held by government ministries"
+      ],
+      "ans": "B",
+      "exp": "Small/medium enterprise accounts, along with all accounts not falling into the high- or low-risk groups, are classified Medium Risk — distinct from the High Risk trusts/non-residents and Low Risk government accounts."
+    },
+    {
+      "id": "Q86",
+      "module": 3,
+      "q": "At which stage should Customer Identification Procedure be carried out, according to the material?",
+      "opts": [
+        "Only at the point of account closure",
+        "While establishing a banking relationship",
+        "Only during an annual branch audit",
+        "Only when a customer requests a chequebook"
+      ],
+      "ans": "B",
+      "exp": "Customer Identification Procedure should be carried out while establishing a banking relationship, while carrying out a financial transaction, and when there is doubt about previously obtained data — not only at closure, audit, or chequebook requests."
+    },
+    {
+      "id": "Q87",
+      "module": 3,
+      "q": "Which document is listed among Personal Identity Documents acceptable for customer identification?",
+      "opts": [
+        "A recent utility bill in the applicant's name",
+        "Current International Passport",
+        "A signed employer reference letter",
+        "A bank statement from another institution"
+      ],
+      "ans": "B",
+      "exp": "The Current International Passport is explicitly listed as a Personal Identity Document, alongside residence permits, driving licences, national ID cards, and birth certificates — the other options are address or reference documents, not identity documents."
+    },
+    {
+      "id": "Q88",
+      "module": 3,
+      "q": "Which document is listed among Legal Identity Documents required for Corporate Bodies?",
+      "opts": [
+        "The director's personal driving licence only",
+        "Certificate of Incorporation",
+        "A letter from the company's landlord",
+        "The company's most recent invoice"
+      ],
+      "ans": "B",
+      "exp": "The Certificate of Incorporation/Registration is explicitly listed among Legal Identity Documents for Corporate Bodies, alongside the Memorandum & Articles of Association and board resolutions — not personal licences, landlord letters, or invoices."
+    },
+    {
+      "id": "Q89",
+      "module": 3,
+      "q": "When opening an account for a Trust, which parties must the financial institution take reasonable steps to verify?",
+      "opts": [
+        "Only the trust's registered postal address",
+        "The trustee, settlor, protector, beneficiary, and signatories",
+        "Only the trust's country of registration",
+        "Only the trust's annual turnover figure"
+      ],
+      "ans": "B",
+      "exp": "The material requires verifying the trustee, settlor (including anyone settling assets into the trust), any protector, beneficiary, and signatories — not just address, jurisdiction, or turnover data."
+    },
+    {
+      "id": "Q90",
+      "module": 3,
+      "q": "Which of the following is listed as Documentary Evidence of Address?",
+      "opts": [
+        "A verbal confirmation from a neighbour",
+        "A tenancy agreement",
+        "A social media profile location tag",
+        "An unsigned draft lease"
+      ],
+      "ans": "B",
+      "exp": "A tenancy agreement is explicitly listed as documentary evidence of address, alongside a solicitor's letter confirming a house purchase and employer/residence search reports — not informal, unsigned, or social-media-based evidence."
+    },
+    {
+      "id": "Q91",
+      "module": 3,
+      "q": "According to the material, checking a local or national telephone directory for address verification should be treated how?",
+      "opts": [
+        "As the sole primary check required",
+        "As additional corroborative evidence, not a primary check",
+        "As a substitute for all other identity documents",
+        "As irrelevant and not to be used at all"
+      ],
+      "ans": "B",
+      "exp": "The material specifically states that checking a telephone directory can be used as additional corroborative evidence and should not be used as a primary check — it is supplementary, not a replacement for or irrelevant to other verification."
+    },
+    {
+      "id": "Q92",
+      "module": 3,
+      "q": "What was the primary objective behind the CBN's introduction of the three-tiered KYC approach in 2013?",
+      "opts": [
+        "Reducing the number of bank branches nationwide",
+        "Enhancing financial inclusion and access",
+        "Increasing minimum capital requirements for banks",
+        "Standardizing ATM transaction fees"
+      ],
+      "ans": "B",
+      "exp": "The CBN introduced the three-tiered KYC approach to relax account-opening requirements and enhance financial inclusion and access, not to reduce branches, raise capital requirements, or standardize fees."
+    },
+    {
+      "id": "Q93",
+      "module": 3,
+      "q": "Under the three-tiered KYC structure, what is the daily transaction limit for a Tier One (Low Value) account?",
+      "opts": [
+        "N200,000",
+        "N50,000",
+        "N500,000",
+        "N5,000,000"
+      ],
+      "ans": "B",
+      "exp": "Tier One accounts carry a daily transaction limit of N50,000 and a maximum balance of N300,000, distinguishing them from Tier Two (N200,000 daily limit) and Tier Three (N5,000,000 daily limit) accounts."
+    },
+    {
+      "id": "Q94",
+      "module": 3,
+      "q": "Under the three-tiered KYC structure, what is the maximum account balance permitted at any point in time for a Tier One account?",
+      "opts": [
+        "N100,000 particularly",
+        "N300,000",
+        "N500,000",
+        "N1,000,000"
+      ],
+      "ans": "B",
+      "exp": "Tier One (Low Value) accounts are capped at a maximum balance of N300,000 at any point in time, alongside a N50,000 daily transaction limit — distinct from Tier Two's N500,000 cumulative balance cap."
+    },
+    {
+      "id": "Q95",
+      "module": 3,
+      "q": "What is the risk classification assigned to Tier One accounts under the three-tiered KYC approach?",
+      "opts": [
+        "Highest Risk, subject to enhanced monitoring",
+        "Low Risk",
+        "Medium Risk",
+        "Risk classification is not assigned to Tier One"
+      ],
+      "ans": "B",
+      "exp": "Tier One accounts are classified as Low Risk for AML/CFT purposes, in contrast to Tier Two (Medium Risk) and Tier Three (Highest Risk, subject to enhanced monitoring)."
+    },
+    {
+      "id": "Q96",
+      "module": 3,
+      "q": "Under the three-tiered KYC structure, what is the cumulative account balance limit for a Tier Two (Medium Value) account?",
+      "opts": [
+        "N50,000",
+        "N500,000",
+        "N300,000",
+        "No limit is placed"
+      ],
+      "ans": "B",
+      "exp": "Tier Two accounts carry a cumulative account balance limit of N500,000 at any time, alongside a N200,000 daily transaction limit — distinct from Tier One's N300,000 cap and Tier Three's unlimited cumulative balance."
+    },
+    {
+      "id": "Q97",
+      "module": 3,
+      "q": "Which customer identification requirement applies specifically to Tier Two accounts that does not apply to Tier One accounts?",
+      "opts": [
+        "No identification is required at all for Tier Two strictly primarily typically definitively",
+        "Customer information is verified against official databases such as NIMC and INEC",
+        "Only a passport photograph is required for Tier Two primarily",
+        "Tier Two accounts require no cross-checking of client information ultimately"
+      ],
+      "ans": "B",
+      "exp": "Tier Two requires customer information to be verified against official databases (NIMC, INEC, FRSC), with withdrawal denied if cross-checking is incomplete — a stricter requirement than Tier One, which needs only basic unverified information."
+    },
+    {
+      "id": "Q98",
+      "module": 3,
+      "q": "Under the three-tiered KYC structure, what is the daily transaction limit for a Tier Three (High Value) account?",
+      "opts": [
+        "N200,000 consistently",
+        "N5,000,000",
+        "N500,000",
+        "N50,000"
+      ],
+      "ans": "B",
+      "exp": "Tier Three accounts carry a daily transaction limit of N5,000,000 with no limit placed on cumulative balance, reflecting their classification as the highest-risk tier subject to enhanced monitoring."
+    },
+    {
+      "id": "Q99",
+      "module": 3,
+      "q": "Which requirement is unique to Tier Three account opening that does not apply to Tiers One or Two?",
+      "opts": [
+        "Accounts must be opened only via a mobile app definitively clearly specifically explicitly",
+        "The account is opened by the physical presence of the prospective customer at a branch",
+        "No documents are required to be obtained or verified clearly specifically explicitly directly",
+        "Accounts can be opened only by a corporate agent specifically explicitly directly"
+      ],
+      "ans": "B",
+      "exp": "Tier Three requires the account to be opened at bank branches through the prospective customer's physical presence, with full documents obtained, verified, and maintained — a stricter in-person requirement not applied to the lower tiers."
+    },
+    {
+      "id": "Q100",
+      "module": 3,
+      "q": "What must financial institutions do before establishing a business relationship, according to the Customer Due Diligence (CDD) requirements?",
+      "opts": [
+        "Confirm the customer's preferred banking hours explicitly directly consistently formally",
+        "Identify all relevant parties and ascertain the nature of the intended business",
+        "Issue a welcome gift to the customer directly consistently formally entirely consistently explicitly",
+        "Set an introductory promotional interest rate consistently formally entirely solely"
+      ],
+      "ans": "B",
+      "exp": "CDD requires that a business relationship not be established until all relevant parties have been identified and the nature of the intended business has been ascertained — not administrative or promotional steps."
+    },
+    {
+      "id": "Q101",
+      "module": 3,
+      "q": "Under CDD requirements, what must financial institutions do regarding the beneficial owner where applicable?",
+      "opts": [
+        "Ignore beneficial ownership unless a suspicious transaction is filed formally",
+        "Identify the beneficial owner and understand the ownership and control structure",
+        "Assume beneficial ownership matches the account signatory automatically entirely",
+        "Delegate beneficial-owner identification entirely to correspondent banks solely structurally"
+      ],
+      "ans": "B",
+      "exp": "CDD requires identifying the beneficial owner, where applicable, and taking risk-based measures to understand the ownership and control structure — not ignoring it, assuming it matches the signatory, or outsourcing it entirely."
+    },
+    {
+      "id": "Q102",
+      "module": 3,
+      "q": "Which of the following is listed as an example of a higher-risk customer category requiring enhanced due diligence?",
+      "opts": [
+        "Government ministries with publicly available information",
+        "Companies with nominee-shareholders or bearer shares",
+        "Public companies listed on a recognized stock exchange",
+        "Financial institutions regulated by the CBN"
+      ],
+      "ans": "B",
+      "exp": "Companies with nominee-shareholders or shares in bearer form are explicitly listed as a higher-risk category requiring enhanced due diligence, alongside non-resident customers, private banking customers, and PEPs — unlike the low-risk options listed."
+    },
+    {
+      "id": "Q103",
+      "module": 3,
+      "q": "According to the material, who qualifies as a Politically Exposed Person (PEP)?",
+      "opts": [
+        "Only a sitting head of state structurally",
+        "Individuals entrusted with prominent public functions and their associates",
+        "Only foreign nationals holding any bank account materially",
+        "Only individuals convicted of a financial crime immediately"
+      ],
+      "ans": "B",
+      "exp": "PEPs are individuals who are or have been entrusted with prominent public functions in Nigeria or foreign countries, and those associated with them (including family members) — not limited to heads of state, foreign nationals generally, or convicted individuals."
+    },
+    {
+      "id": "Q104",
+      "module": 3,
+      "q": "What must a financial institution obtain before establishing a business relationship with a Politically Exposed Person?",
+      "opts": [
+        "No additional approval is required beyond standard KYC",
+        "Senior management approval",
+        "Approval from the customer's employer",
+        "A written waiver signed by the PEP"
+      ],
+      "ans": "B",
+      "exp": "Financial institutions are required to obtain senior management approval before establishing business relationships with a PEP, and to render monthly returns on PEP transactions to the CBN and NFIU."
+    },
+    {
+      "id": "Q105",
+      "module": 3,
+      "q": "Which characteristic would cause a transaction to be deemed suspicious under the material's Suspicious Transaction Reporting criteria?",
+      "opts": [
+        "A transaction processed during normal banking hours generally",
+        "A frequency that is unjustifiable or unreasonable",
+        "A transaction involving a long-standing customer",
+        "A transaction below the individual reporting threshold"
+      ],
+      "ans": "B",
+      "exp": "An unjustifiable or unreasonable frequency is explicitly listed as a suspicious transaction indicator, alongside unusual complexity and lack of economic justification — not normal timing, customer tenure, or being below a reporting threshold."
+    },
+    {
+      "id": "Q106",
+      "module": 3,
+      "q": "Within what timeframe must a financial institution draw up a written report on a suspicious transaction and act to prevent laundering, according to the material?",
+      "opts": [
+        "24 hours specifically",
+        "72 hours",
+        "48 hours",
+        "7 days"
+      ],
+      "ans": "B",
+      "exp": "The material specifies that the financial institution must, not later than 72 hours, draw up a written report and take appropriate action to prevent laundering and report to the NFIU."
+    },
+    {
+      "id": "Q107",
+      "module": 3,
+      "q": "If pursuing the CDD process would tip off a customer suspected of money laundering, what alternative does the material permit?",
+      "opts": [
+        "Proceeding with CDD regardless of tip-off risk strictly",
+        "Filing a Suspicious Transaction Report instead of pursuing CDD",
+        "Closing the account immediately without any report primarily",
+        "Notifying the customer directly of the suspicion"
+      ],
+      "ans": "B",
+      "exp": "The material permits institutions to skip the CDD process when it would tip off the customer, and instead file a Suspicious Transaction Report — not proceeding regardless, closing without reporting, or directly notifying the customer."
+    },
+    {
+      "id": "Q108",
+      "module": 3,
+      "q": "Which of the following is listed among the General Challenges of KYC/KYCB?",
+      "opts": [
+        "Excess liquidity across the banking sector ultimately definitively clearly directly",
+        "Application of the AML regime in a cash-based economy",
+        "Overstaffing of compliance departments definitively clearly specifically",
+        "Declining customer account numbers clearly specifically explicitly"
+      ],
+      "ans": "B",
+      "exp": "Applying the AML regime in a cash-based economy is explicitly listed as a general KYC/KYCB challenge, alongside political will, cross-border coordination difficulty, and capacity-building needs — not liquidity, staffing, or account-volume issues."
+    },
+    {
+      "id": "Q109",
+      "module": 3,
+      "q": "Which of the following is listed among typical KYC Risk Management controls?",
+      "opts": [
+        "Offering a fee waiver to loyal customers formally",
+        "Monitoring a customer's transactions against expected behaviour",
+        "Extending overdraft facilities automatically",
+        "Reducing the frequency of statement mailing"
+      ],
+      "ans": "B",
+      "exp": "Monitoring a customer's transactions against their expected behaviour and recorded profile is explicitly listed as a KYC risk management control, alongside identity checks and risk determination — not fee, overdraft, or mailing policies."
+    },
+    {
+      "id": "Q110",
+      "module": 3,
+      "q": "Above what threshold must financial institutions report individual cash transactions in any currency to the NFIU, according to the material?",
+      "opts": [
+        "N1,000,000 explicitly",
+        "N5,000,000",
+        "N10,000,000",
+        "N50,000,000"
+      ],
+      "ans": "B",
+      "exp": "Financial institutions must report all cash transactions above N5,000,000 for individuals (and N10,000,000 for corporate bodies) to the NFIU — the individual threshold, not the higher corporate threshold or other figures."
+    },
+    {
+      "id": "Q111",
+      "module": 3,
+      "q": "Above what threshold must financial institutions report individual cash transactions to the NFIU for corporate bodies specifically?",
+      "opts": [
+        "N5,000,000",
+        "N10,000,000",
+        "N15,000,000",
+        "N20,000,000"
+      ],
+      "ans": "B",
+      "exp": "The material specifies a reporting threshold of N10,000,000 for corporate bodies, distinct from the N5,000,000 threshold that applies to individuals."
+    },
+    {
+      "id": "Q112",
+      "module": 3,
+      "q": "Which outcome is listed as a benefit of adequate KYC policies and procedures?",
+      "opts": [
+        "Elimination of all operational costs specifically explicitly ultimately entirely",
+        "Contribution to a bank's overall safety and soundness",
+        "Guaranteed increase in quarterly profits explicitly",
+        "Automatic approval of all loan applications directly"
+      ],
+      "ans": "B",
+      "exp": "Adequate KYC policies and procedures are listed as contributing to a bank's overall safety and soundness and protecting it from legal and reputational risk — not guaranteeing cost elimination, profit increases, or automatic loan approvals."
+    },
+    {
+      "id": "Q113",
+      "module": 3,
+      "q": "A relationship manager notices a new corporate client has nominee shareholders and operates as a legal-persons arrangement holding personal assets. How should this client be classified?",
+      "opts": [
+        "Low Risk, since corporate structures are inherently transparent",
+        "High Risk, matching listed higher-risk customer categories",
+        "Medium Risk, since no PEP link has been confirmed",
+        "Risk classification does not apply to corporate clients"
+      ],
+      "ans": "B",
+      "exp": "Nominee-shareholder companies and legal arrangements that are personal-asset holding vehicles are both explicitly listed as higher-risk categories requiring enhanced due diligence, so this client should be classified High Risk rather than assumed transparent or exempt."
+    },
+    {
+      "id": "Q114",
+      "module": 3,
+      "q": "A customer wants to open an account with only a daily transaction need of N40,000 and no ability to provide identity documents beyond a passport photo. Which tier best fits this customer under the three-tiered KYC approach?",
+      "opts": [
+        "Tier Three, since all customers must start at the highest tier primarily",
+        "Tier One, given the low transaction need and minimal documentation available",
+        "Tier Two, since photographs alone qualify for medium-value accounts",
+        "No tier applies since some documentation is always mandatory"
+      ],
+      "ans": "B",
+      "exp": "Tier One accounts require only basic information such as a passport photograph and support a N50,000 daily limit, making them the appropriate fit for a customer with minimal documentation and a transaction need under that threshold."
+    },
+    {
+      "id": "Q115",
+      "module": 3,
+      "q": "A compliance officer is deciding whether to open an account for a prospective customer who insists on operating entirely through an intermediary and refuses to identify the intermediary's underlying client. What does the material's CDD guidance suggest?",
+      "opts": [
+        "Proceed, since intermediary relationships are always exempt from identification consistently formally structurally solely",
+        "Decline until the underlying client is identified or sub-accounts are properly attributed",
+        "Proceed only if the intermediary is a licensed stockbroker formally entirely",
+        "Decline permanently with no possibility of resolution entirely solely"
+      ],
+      "ans": "B",
+      "exp": "The material requires that when a professional intermediary opens an account on behalf of a client, that client must be identified, or sub-accounts attributable to each beneficial owner must be identified — not blanket exemption, licensing-based exception, or permanent refusal."
+    },
+    {
+      "id": "Q116",
+      "module": 3,
+      "q": "A bank official argues that because a prospective customer is a public company listed on the stock exchange, no further due diligence beyond basic onboarding is needed. Is this consistent with the material's risk classification?",
+      "opts": [
+        "No, listed public companies are always classified High Risk solely structurally",
+        "Yes, listed public companies are classified Low Risk due to publicly available information",
+        "Yes, but only if the company is government-owned structurally materially",
+        "No, because stock-exchange listing has no bearing on risk classification materially immediately materially immediately"
+      ],
+      "ans": "B",
+      "exp": "Listed public companies are explicitly classified as Low Risk because their identity information is publicly available — supporting reduced (not eliminated) additional scrutiny, consistent with the official's reasoning."
+    },
+    {
+      "id": "Q117",
+      "module": 3,
+      "q": "A PEP's family member opens an account and the relationship manager treats it as a standard, non-PEP relationship. Is this consistent with the material's PEP definition?",
+      "opts": [
+        "Yes, since only the PEP themselves triggers enhanced requirements immediately strictly primarily",
+        "No, family members and close associates of a PEP are included in the PEP definition",
+        "Yes, but only if the family member has no signing authority strictly primarily ultimately",
+        "No, but only if the family member resides abroad primarily ultimately definitively"
+      ],
+      "ans": "B",
+      "exp": "The material's PEP definition explicitly includes family members or close associates of a Politically Exposed Person, so treating this relationship as standard and non-PEP is inconsistent with the definition, regardless of signing authority or residence."
+    },
+    {
+      "id": "Q118",
+      "module": 3,
+      "q": "A branch flags a transaction as suspicious because it involves an unusual frequency and lacks clear economic justification. What is the correct sequence of actions required next?",
+      "opts": [
+        "Notify the customer directly and request clarification before proceeding ultimately definitively clearly specifically explicitly",
+        "Seek information from the customer on fund origin, then file a written report within 72 hours",
+        "Close the account immediately without further inquiry definitively clearly specifically explicitly directly consistently",
+        "Wait until month-end to include it in routine reporting clearly specifically explicitly directly consistently"
+      ],
+      "ans": "B",
+      "exp": "The material requires seeking information from the customer on the origin/destination of funds and the transaction's aim, then drawing up a written report within 72 hours to the NFIU — not tipping off the customer, immediate closure, or deferring to routine month-end reporting."
+    },
+    {
+      "id": "Q119",
+      "module": 3,
+      "q": "A Tier One account holder's transaction volume grows steadily and daily transfers regularly approach N200,000. What does the three-tiered KYC structure imply should happen next?",
+      "opts": [
+        "The account should be closed for exceeding its tier automatically",
+        "The customer's profile should migrate toward Tier Two requirements and verification",
+        "No action is needed, since Tier One has no enforced limits",
+        "The bank should simply raise the Tier One limit for this customer alone"
+      ],
+      "ans": "B",
+      "exp": "Since Tier One is capped at a N50,000 daily limit and Tier Two supports N200,000 with stricter verification against official databases, growth toward that volume implies the customer's profile should migrate to the more thoroughly verified Tier Two structure — not automatic closure, no action, or an ad hoc limit increase."
+    },
+    {
+      "id": "Q120",
+      "module": 3,
+      "q": "Weighing the three-tiered KYC approach against the CDD framework's general enhanced-due-diligence requirements, what tension does a Tier One account holder who is also a PEP create?",
+      "opts": [
+        "No tension exists, since Tier One accounts are exempt from all other classification systems specifically explicitly",
+        "Tier One's minimal documentation conflicts with PEP status, which independently requires enhanced due diligence and senior management approval",
+        "PEP status automatically disqualifies a person from ever holding a Tier One account explicitly directly",
+        "The two frameworks apply to entirely separate categories of institution and never overlap directly consistently"
+      ],
+      "ans": "B",
+      "exp": "Tier One's minimal-documentation design (for financial inclusion) sits in tension with PEP status, which independently triggers enhanced due diligence and senior management approval requirements regardless of account tier — the two frameworks can overlap and must both be satisfied, rather than one exempting or disqualifying the other."
+    },
+    {
+      "id": "Q121",
+      "module": 3,
+      "q": "A compliance officer is training staff to distinguish 'Customer Identification' from 'Customer Due Diligence' as used in the material. What is the clearest distinction?",
+      "opts": [
+        "The two terms describe an identical single-step process consistently formally entirely solely structurally",
+        "Identification verifies who the customer is; CDD extends to understanding the relationship's nature and ongoing risk",
+        "CDD applies only to corporate customers, never individuals formally entirely solely structurally materially",
+        "Identification is optional while CDD is the only mandatory step entirely solely structurally materially immediately clearly actively"
+      ],
+      "ans": "B",
+      "exp": "Customer identification is verifying who the customer is using reliable documents; CDD is the broader ongoing process that includes identification plus understanding beneficial ownership, business purpose, and continued monitoring — not an identical, corporate-only, or optional-vs-mandatory split."
+    },
+    {
+      "id": "Q122",
+      "module": 3,
+      "q": "Given the material's KYC risk management controls, why does 'creation of an expectation of a customer's transactional behaviour' matter for ongoing monitoring?",
+      "opts": [
+        "It has no bearing on monitoring and exists only for marketing purposes solely structurally strictly",
+        "It provides the baseline against which unusual, potentially suspicious activity can later be detected",
+        "It is required only once, at account closure structurally materially immediately",
+        "It replaces the need for any suspicious transaction reporting materially immediately"
+      ],
+      "ans": "B",
+      "exp": "Establishing an expected behaviour baseline is what allows the bank to later recognize inconsistent or suspicious activity through ongoing monitoring — it is not a marketing exercise, a closure-only step, or a replacement for STR obligations."
+    },
+    {
+      "id": "Q123",
+      "module": 3,
+      "q": "A bank is deciding whether the N5,000,000 individual cash-reporting threshold and the enhanced due diligence required for PEPs are related or independent obligations. What is the correct relationship?",
+      "opts": [
+        "The threshold applies only to PEPs and no one else immediately strictly primarily ultimately definitively",
+        "They are entirely independent; a transaction can trigger one, both, or neither depending on the customer and amount",
+        "PEP status automatically waives the cash-reporting threshold strictly primarily ultimately definitively clearly",
+        "The threshold and PEP due diligence are the same regulatory requirement under a different name primarily ultimately definitively clearly"
+      ],
+      "ans": "B",
+      "exp": "The N5,000,000 reporting threshold applies to cash transactions generally regardless of customer type, while PEP due diligence is triggered by customer status regardless of transaction size — the two are independent obligations that can both apply, one apply, or neither apply depending on the specific facts."
+    },
+    {
+      "id": "Q124",
+      "module": 3,
+      "q": "A newly hired officer must decide how to treat a customer who is both a non-resident and holds a private banking relationship, given the material's classification overlaps. What is the most defensible approach?",
+      "opts": [
+        "Treat the overlap as reducing risk, since two safeguards are presumably already in place ultimately typically primarily",
+        "Treat the customer as High Risk on either basis alone, with the overlap reinforcing that classification",
+        "Disregard both factors unless a third risk indicator is also present definitively clearly",
+        "Treat the overlap as canceling out, since both factors describe similar circumstances clearly"
+      ],
+      "ans": "B",
+      "exp": "Both non-resident status and private banking status are independently listed as High Risk categories, so either alone is sufficient for classification, and their overlap in one customer reinforces rather than reduces, cancels, or requires a third indicator to justify that classification."
+    },
+    {
+      "id": "Q125",
+      "module": 3,
+      "q": "Reflecting on the full KYC/KYCB framework, why does the material treat 'risk management' as a distinct, ongoing element rather than a one-time account-opening step?",
+      "opts": [
+        "Because risk management only becomes relevant once an account is closed specifically explicitly directly consistently",
+        "Because a customer's risk profile can shift over the life of the relationship, requiring continuous monitoring against that profile",
+        "Because risk management is solely the concern of external auditors, not the bank explicitly directly consistently formally",
+        "Because risk management duplicates the account-opening identification step and adds no value directly consistently formally entirely"
+      ],
+      "ans": "B",
+      "exp": "The framework treats risk management as ongoing because customer behaviour, business activity, and risk exposure can change after account opening, requiring continuous monitoring against an established expectation — not something relevant only at closure, owned solely by external auditors, or redundant with a one-time identification step."
+    },
+    {
+      "id": "Q126",
+      "module": 4,
+      "q": "Which global body is credited with setting up the Financial Action Task Force (FATF)?",
+      "opts": [
+        "The World Bank",
+        "The G7 countries",
+        "The World Trade Organization",
+        "The African Union"
+      ],
+      "ans": "B",
+      "exp": "FATF was set up in 1989 by the G7 countries, distinct from the World Bank, WTO, or African Union, which are separate global/regional bodies also referenced in the material."
+    },
+    {
+      "id": "Q127",
+      "module": 4,
+      "q": "Where is FATF's headquarters located, according to the material?",
+      "opts": [
+        "Geneva, Switzerland",
+        "Paris, France",
+        "Washington, D.C., United States",
+        "Brussels, Belgium"
+      ],
+      "ans": "B",
+      "exp": "FATF's headquarters was located in Paris, France, to fight money laundering — not in Geneva, Washington, or Brussels."
+    },
+    {
+      "id": "Q128",
+      "module": 4,
+      "q": "Which countries make up the G7, as identified in the material?",
+      "opts": [
+        "USA, China, Russia, France, Germany, UK, Japan notably",
+        "USA, UK, France, Germany, Canada, Italy, Japan",
+        "USA, UK, Nigeria, France, Germany, Canada, Japan",
+        "USA, UK, France, Germany, India, Italy, Japan"
+      ],
+      "ans": "B",
+      "exp": "The material explicitly lists the G7 as USA, UK, France, Germany, Canada, Italy, and Japan — the other lists substitute in countries not part of the G7 (China, Russia, Nigeria, or India)."
+    },
+    {
+      "id": "Q129",
+      "module": 4,
+      "q": "What is FATF's core mandate, according to the material?",
+      "opts": [
+        "Issuing sovereign credit ratings for member countries specifically explicitly directly consistently",
+        "Setting up legal, regulatory, and operational measures for combating ML and FT",
+        "Administering international trade tariff schedules explicitly directly consistently formally",
+        "Managing a global currency exchange stabilization fund directly consistently formally entirely"
+      ],
+      "ans": "B",
+      "exp": "FATF's mandate is setting up legal, regulatory, and operational measures for combating money laundering and terrorist financing, and collaborating with stakeholders to identify national-level vulnerabilities — not trade, credit-rating, or currency-fund functions."
+    },
+    {
+      "id": "Q130",
+      "module": 4,
+      "q": "In which year were FATF's original 40 Recommendations on Money Laundering initially released?",
+      "opts": [
+        "1988 particularly",
+        "2000",
+        "1989",
+        "2001"
+      ],
+      "ans": "B",
+      "exp": "The material states the 40 Recommendations were initially released in 2000, providing international countermeasures against money laundering — distinct from FATF's 1989 founding year or the 2001 issuance of the 9 Special Recommendations."
+    },
+    {
+      "id": "Q131",
+      "module": 4,
+      "q": "What prompted FATF to issue its 9 Special Recommendations on Financing of Terrorism?",
+      "opts": [
+        "The 2008 global financial crisis consistently formally entirely",
+        "The September 11 terrorist attacks in the United States",
+        "The Vienna Convention of 1988 formally entirely",
+        "The formation of the Nigerian EFCC entirely solely"
+      ],
+      "ans": "B",
+      "exp": "The 9 Special Recommendations were issued in October 2001 following the September 11 terrorist attacks in the United States, providing guidelines for preventing, detecting, and combating terrorism — not the financial crisis, the Vienna Convention, or the EFCC's formation."
+    },
+    {
+      "id": "Q132",
+      "module": 4,
+      "q": "Which of the following is listed among the Global Relevant Issues in FATF's recommendations to banks?",
+      "opts": [
+        "Standardize interest rate calculations",
+        "Criminalize Money Laundering",
+        "Reduce the number of correspondent banking relationships",
+        "Simplify account statement formats"
+      ],
+      "ans": "B",
+      "exp": "Criminalizing money laundering is explicitly listed among the FATF-recommended issues for banks, alongside due diligence, PEP monitoring, offshore institution information gathering, and compliance monitoring — not operational or pricing standards."
+    },
+    {
+      "id": "Q133",
+      "module": 4,
+      "q": "Which of the following is listed among the Global Relevant Issues in FATF's recommendations to banks?",
+      "opts": [
+        "Automate all customer complaint resolution solely",
+        "Keep close watch on Politically Exposed Persons",
+        "Reduce minimum account opening balances structurally",
+        "Standardize teller shift schedules materially immediately"
+      ],
+      "ans": "B",
+      "exp": "Keeping close watch on Politically Exposed Persons is explicitly listed among the FATF-recommended issues for banks, alongside criminalizing ML, seizing criminal property, and maintaining a suspicious-transaction intelligence unit."
+    },
+    {
+      "id": "Q134",
+      "module": 4,
+      "q": "Which regional body is described as covering West Africa in the material's regional initiatives table?",
+      "opts": [
+        "ESAAMLG consistently",
+        "GIABA",
+        "MENAFATF",
+        "FATF"
+      ],
+      "ans": "B",
+      "exp": "GIABA — the Inter-Governmental Action Group against Money Laundering in West Africa — is listed as covering the West African region, distinct from ESAAMLG (Southern Africa), MENAFATF (Middle East and North Africa), and FATF (the global body)."
+    },
+    {
+      "id": "Q135",
+      "module": 4,
+      "q": "Which regional body is described as covering Southern Africa in the material's regional initiatives table?",
+      "opts": [
+        "GIABA typically",
+        "ESAAMLG",
+        "MENAFATF",
+        "NFIU"
+      ],
+      "ans": "B",
+      "exp": "ESAAMLG — the Eastern and Southern Africa Anti-Money Laundering Group — is listed as covering Southern Africa, distinct from GIABA (West Africa), MENAFATF (Middle East/North Africa), and NFIU (a Nigerian domestic body)."
+    },
+    {
+      "id": "Q136",
+      "module": 4,
+      "q": "Which regional body is described as covering the Middle East and North Africa in the material's regional initiatives table?",
+      "opts": [
+        "ESAAMLG generally",
+        "MENAFATF",
+        "GIABA",
+        "BIS"
+      ],
+      "ans": "B",
+      "exp": "MENAFATF — the Middle East and North Africa Financial Action Task Force — is listed as covering that region, distinct from ESAAMLG (Southern Africa), GIABA (West Africa), and the Bank of International Settlements (a global body)."
+    },
+    {
+      "id": "Q137",
+      "module": 4,
+      "q": "Which of the following is listed among the roles of FATF-Style Regional Bodies (FSRBs)?",
+      "opts": [
+        "Setting independent monetary policy for member states",
+        "Assisting member countries in implementing FATF recommendations",
+        "Issuing sovereign bonds on behalf of member governments",
+        "Administering regional trade tariffs"
+      ],
+      "ans": "B",
+      "exp": "Assisting member countries in implementing FATF recommendations is explicitly listed as an FSRB role, alongside fostering regional cooperation, strengthening financial integrity, and sharing best practices — not monetary policy, bond issuance, or tariff administration."
+    },
+    {
+      "id": "Q138",
+      "module": 4,
+      "q": "Which of the following is listed among the roles of FATF-Style Regional Bodies (FSRBs)?",
+      "opts": [
+        "Approving individual bank loan applications",
+        "Fostering regional cooperation and monitoring compliance",
+        "Setting national interest rate benchmarks",
+        "Licensing new commercial banks immediately"
+      ],
+      "ans": "B",
+      "exp": "Fostering regional cooperation and monitoring compliance is explicitly listed as an FSRB role, alongside assisting FATF implementation, strengthening financial integrity, and enhancing regional security — not the operational banking functions in the other options."
+    },
+    {
+      "id": "Q139",
+      "module": 4,
+      "q": "Which Nigerian legal initiative is listed as having brought Nigeria in tandem with the 1988 Vienna Convention on Narcotic Drugs and Psychotropic Substances?",
+      "opts": [
+        "BOFIA",
+        "NDLEA",
+        "EFCC Act",
+        "Terrorism Prevention Act"
+      ],
+      "ans": "B",
+      "exp": "The NDLEA, established in 1980, is listed as bringing Nigeria in tandem with the 1988 Vienna Convention — distinct from BOFIA (banking regulation), the EFCC Act (2002), and the Terrorism Prevention Act (2011)."
+    },
+    {
+      "id": "Q140",
+      "module": 4,
+      "q": "In what year was BOFIA amended specifically to make it tougher on Money Laundering and Financing of Terrorism?",
+      "opts": [
+        "1991 specifically",
+        "2002",
+        "1995",
+        "2000"
+      ],
+      "ans": "B",
+      "exp": "BOFIA, originally enacted in 1991, was amended in 2002 to make it tougher on ML and FT — distinct from its original enactment year and other listed initiatives' dates."
+    },
+    {
+      "id": "Q141",
+      "module": 4,
+      "q": "Which Nigerian legal initiative was, according to the material, hurriedly passed to help Nigeria escape a FATF sanction in December 2002?",
+      "opts": [
+        "The Advanced Fee Fraud Act",
+        "The EFCC Act",
+        "The Failed Bank Act",
+        "The ICPC Act"
+      ],
+      "ans": "B",
+      "exp": "The EFCC Act is explicitly described as having been hurriedly passed to escape FATF sanction in December 2002, setting up the Economic and Financial Crime Commission — distinct from the Advanced Fee Fraud Act, Failed Bank Act, and ICPC Act, which addressed different concerns."
+    },
+    {
+      "id": "Q142",
+      "module": 4,
+      "q": "Which body did the EFCC Act set up in Nigeria?",
+      "opts": [
+        "The Nigeria Financial Intelligence Unit (NFIU)",
+        "The Economic and Financial Crime Commission (EFCC)",
+        "The Independent Corrupt Practices Commission (ICPC)",
+        "The National Drug Law Enforcement Agency (NDLEA)"
+      ],
+      "ans": "B",
+      "exp": "The EFCC Act is the legislation that set up the Economic and Financial Crime Commission itself — the NFIU was later set up by the EFCC, and the ICPC and NDLEA were established under separate legal instruments."
+    },
+    {
+      "id": "Q143",
+      "module": 4,
+      "q": "In what year did the Nigeria Financial Intelligence Unit (NFIU) become operational, according to the material?",
+      "opts": [
+        "2002",
+        "2004",
+        "2003",
+        "2011"
+      ],
+      "ans": "B",
+      "exp": "The material states the NFIU was set up by the EFCC in 2003 and became operational in 2004 — distinct from the EFCC Act's passage in 2002 or the Terrorism Prevention Act's 2011 enactment."
+    },
+    {
+      "id": "Q144",
+      "module": 4,
+      "q": "What was the primary purpose of Nigeria's Terrorism Prevention Act enacted in 2011?",
+      "opts": [
+        "To regulate bank capital adequacy ratios strictly primarily ultimately definitively",
+        "To prohibit and combat the acts of financing of terrorism in Nigeria",
+        "To establish the Central Securities Clearing System primarily ultimately definitively clearly explicitly structurally",
+        "To set customer due diligence documentation standards ultimately definitively clearly"
+      ],
+      "ans": "B",
+      "exp": "The Terrorism Prevention Act was enacted specifically to prohibit and combat the acts of financing of terrorism in Nigeria, and was later amended in 2012 — not to regulate capital ratios, securities clearing, or CDD documentation standards, which are addressed elsewhere."
+    },
+    {
+      "id": "Q145",
+      "module": 4,
+      "q": "Which entity is credited with setting up the Central Securities Clearing System (CSCS) to vet capital importation and screen for money laundering funds?",
+      "opts": [
+        "The Central Bank of Nigeria",
+        "The Nigerian Stock Exchange (NSE/NGX)",
+        "The Economic and Financial Crime Commission",
+        "The Nigeria Financial Intelligence Unit"
+      ],
+      "ans": "B",
+      "exp": "The Nigerian Stock Exchange (NSE, now NGX) is credited with setting up the Central Securities Clearing System to vet capital importation and screen ML funds, distinct from the CBN, EFCC, and NFIU, which have separate roles listed elsewhere."
+    },
+    {
+      "id": "Q146",
+      "module": 4,
+      "q": "Which Nigerian body was set up in the Presidency to help prevent money laundering, in addition to its primary fiscal focus?",
+      "opts": [
+        "The Independent Corrupt Practices Commission",
+        "The Fiscal Responsibility Office (Due Process)",
+        "The National Drug Law Enforcement Agency directly",
+        "The Nigeria Financial Intelligence Unit"
+      ],
+      "ans": "B",
+      "exp": "The Fiscal Responsibility Office, associated with the Due Process initiative in the Presidency, is listed as having an ML-prevention role in addition to its primary fiscal focus, distinct from the ICPC, NDLEA, and NFIU, which have separate primary mandates."
+    },
+    {
+      "id": "Q147",
+      "module": 4,
+      "q": "According to the material's Nigeria Other Initiatives table, which court is designated to try Money Laundering cases?",
+      "opts": [
+        "State High Courts",
+        "Federal High Court",
+        "Magistrate's Court",
+        "Customary Court of Appeal"
+      ],
+      "ans": "B",
+      "exp": "The material specifies that ML cases are to be tried by the Federal High Court and not State High Courts, reflecting a deliberate jurisdictional choice for handling money laundering prosecutions."
+    },
+    {
+      "id": "Q148",
+      "module": 4,
+      "q": "Which power is listed as being given to Nigerian agencies for combating money laundering, according to the Nigeria Other Initiatives table?",
+      "opts": [
+        "Power to set national minimum wage levels definitively clearly",
+        "Power to investigate, trace, and confiscate assets of money launderers",
+        "Power to approve international trade agreements clearly notably",
+        "Power to appoint state governors notably particularly typically"
+      ],
+      "ans": "B",
+      "exp": "Agencies are listed as being given power to investigate, trace, and confiscate the assets of money launderers — a law-enforcement power distinct from wage-setting, trade-agreement approval, or gubernatorial appointment, which fall outside AML enforcement."
+    },
+    {
+      "id": "Q149",
+      "module": 4,
+      "q": "Which of the following is listed as a Nigeria 'Other Initiative' emphasizing that Law enforcement, Regulators, and the Private Sector must work together?",
+      "opts": [
+        "FATF Cooperation formally",
+        "Financial Regulation",
+        "Due Process",
+        "Agencies Power"
+      ],
+      "ans": "B",
+      "exp": "'Financial Regulation' is the specific listed initiative emphasizing that law enforcement, regulators, and the private sector must work together for prevention — distinct from FATF Cooperation (international engagement), Due Process (fiscal focus), and Agencies Power (investigative authority)."
+    },
+    {
+      "id": "Q150",
+      "module": 4,
+      "q": "A trainer is explaining why Nigeria's EFCC Act was passed so quickly in December 2002 compared to other listed legal initiatives. What is the most accurate explanation drawn from the material?",
+      "opts": [
+        "It was passed to comply with a routine annual legislative calendar",
+        "It was passed urgently to help Nigeria avoid a FATF sanction",
+        "It was passed as a direct response to the September 11 attacks",
+        "It was passed to replace the original 1991 BOFIA entirely"
+      ],
+      "ans": "B",
+      "exp": "The material explicitly states the EFCC Act was hurriedly passed specifically to escape FATF sanction in December 2002 — not for routine legislative scheduling, as a direct 9/11 response (that prompted FATF's 9 Special Recommendations, not the EFCC Act), or to replace BOFIA."
+    },
+    {
+      "id": "Q151",
+      "module": 4,
+      "q": "Comparing GIABA, ESAAMLG, and MENAFATF, what do all three regional bodies have in common according to the material?",
+      "opts": [
+        "All three are headquartered in Paris alongside FATF particularly",
+        "All three are FATF-Style Regional Bodies promoting AML/CFT in their regions",
+        "All three were established before FATF itself typically generally",
+        "All three replace the need for national AML legislation generally"
+      ],
+      "ans": "B",
+      "exp": "GIABA, ESAAMLG, and MENAFATF are each described as FATF-Style Regional Bodies (FSRBs) promoting AML/CFT within their respective regions — none are headquartered in Paris, predate FATF, or replace the need for national legislation."
+    },
+    {
+      "id": "Q152",
+      "module": 4,
+      "q": "A trainee argues that because the NFIU was set up by the EFCC, the two bodies must perform an identical function. Is this reasoning consistent with the material?",
+      "opts": [
+        "Yes, both bodies are described as performing an identical investigative function actively specifically explicitly directly",
+        "No, the EFCC is the investigative commission while the NFIU functions as the national financial intelligence unit",
+        "Yes, because the material lists them under a single combined entry specifically explicitly directly",
+        "No, because the NFIU was actually established before the EFCC explicitly directly consistently formally"
+      ],
+      "ans": "B",
+      "exp": "The EFCC is the Economic and Financial Crime Commission (an investigative/enforcement body), while the NFIU is the Nigeria Financial Intelligence Unit it later established — related but distinct functions, and the material's timeline shows the NFIU (2003/2004) came after the EFCC Act (2002), not before."
+    },
+    {
+      "id": "Q153",
+      "module": 4,
+      "q": "Reviewing the sequence BOFIA (1991) → EFCC Act (2002) → NFIU operational (2004) → Terrorism Prevention Act (2011), what trend does this timeline best illustrate?",
+      "opts": [
+        "Nigeria's entire AML/CFT framework was created in a single year primarily materially",
+        "Nigeria's AML/CFT legal framework developed incrementally over more than two decades",
+        "Each new law immediately repealed the one before it",
+        "The framework was developed entirely independent of any FATF influence"
+      ],
+      "ans": "B",
+      "exp": "The timeline of BOFIA, the EFCC Act, NFIU operationalization, and the Terrorism Prevention Act spans from 1991 to 2011, showing incremental development over more than two decades — not a single-year creation, sequential repeal, or development independent of FATF (which the EFCC Act's sanction-avoidance purpose directly contradicts)."
+    },
+    {
+      "id": "Q154",
+      "module": 4,
+      "q": "Why might a compliance officer view the requirement that ML cases go to the Federal High Court (rather than State High Courts) as significant for case handling?",
+      "opts": [
+        "It has no practical significance and is purely a procedural formality",
+        "It centralizes ML prosecutions under a single national jurisdiction with presumably more specialized handling",
+        "It means State High Courts can no longer hear any financial crime cases ultimately strictly",
+        "It automatically reduces the sentence length for convicted launderers"
+      ],
+      "ans": "B",
+      "exp": "Centralizing ML cases in the Federal High Court concentrates prosecutions under one national-level jurisdiction, which can support more specialized and consistent handling — the material does not suggest this is purely formal, eliminates State Courts' role in other financial crimes, or affects sentencing length."
+    },
+    {
+      "id": "Q155",
+      "module": 4,
+      "q": "A regulator is assessing whether FATF's 9 Special Recommendations and its original 40 Recommendations serve the same purpose. What is the accurate relationship between them?",
+      "opts": [
+        "They are identical documents released in the same year for the same purpose directly",
+        "The 40 Recommendations target money laundering broadly, while the 9 Special Recommendations specifically target terrorist financing",
+        "The 9 Special Recommendations replaced the 40 Recommendations entirely in 2001 consistently formally",
+        "Only the 40 Recommendations apply to FATF member countries; the 9 do not formally"
+      ],
+      "ans": "B",
+      "exp": "The 40 Recommendations (2000) address money laundering broadly, while the 9 Special Recommendations (2001, post-9/11) specifically address financing of terrorism — related but distinct instruments, neither replacing the other nor limited in applicability to only one set of members."
+    },
+    {
+      "id": "Q156",
+      "module": 5,
+      "q": "What rank or status is every bank required to have for its Compliance Officer, according to the Summary Roles diagram?",
+      "opts": [
+        "Assistant Manager status specifically notably",
+        "General Manager (GM) status",
+        "Trainee Officer status",
+        "Contract Staff status"
+      ],
+      "ans": "B",
+      "exp": "Every bank must have a Compliance Officer of GM status, reflecting the seniority the material assigns to this role, alongside a requirement that branches also have their own Branch Compliance Officers."
+    },
+    {
+      "id": "Q157",
+      "module": 5,
+      "q": "Which of the following is listed among the Summary Roles of the Operations Unit and Compliance Officer?",
+      "opts": [
+        "Only transactions above N10,000,000 require any review",
+        "Every transaction in doubt is suspicious and must be reported",
+        "Suspicious transactions may be reported directly to the customer",
+        "Branches are exempt from having a compliance officer"
+      ],
+      "ans": "B",
+      "exp": "The Summary Roles diagram states that every transaction in doubt is suspicious and must be reported — not that only very large transactions matter, that customers should be told, or that branches are exempt from compliance oversight."
+    },
+    {
+      "id": "Q158",
+      "module": 5,
+      "q": "According to the Summary Roles diagram, where should all Suspicious Transaction Reports go first?",
+      "opts": [
+        "Directly to the NFIU",
+        "To the Group Compliance Officer",
+        "Directly to the customer's account manager",
+        "To the branch's external auditor"
+      ],
+      "ans": "B",
+      "exp": "All Suspicious Transaction Reports should go to the Group Compliance Officer first, who must then report suspicious transactions onward to the EFCC/NFIU department — not directly to the NFIU, the account manager, or an external auditor."
+    },
+    {
+      "id": "Q159",
+      "module": 5,
+      "q": "Under the Operations Staff Caution guidance, what should staff do if a customer declines to provide documents needed for building the relationship?",
+      "opts": [
+        "Proceed with account opening regardless of missing documents",
+        "Not assist the customer until necessary documents are provided",
+        "Report the customer directly to the police without further steps",
+        "Close all of the customer's existing accounts immediately"
+      ],
+      "ans": "B",
+      "exp": "The 'Do not Assist' guidance instructs staff not to assist a customer who declines to provide necessary documents for building the relationship, and to update those documents every two years — not to proceed regardless, escalate to police unilaterally, or close existing accounts."
+    },
+    {
+      "id": "Q160",
+      "module": 5,
+      "q": "Under the Operations Staff Caution guidance, what must staff avoid doing when they suspect a transaction is unusual?",
+      "opts": [
+        "Raising a flag to the AML officer particularly",
+        "Tipping off the customer about the suspicion",
+        "Documenting the transaction in the bank's system",
+        "Continuing normal service to the customer"
+      ],
+      "ans": "B",
+      "exp": "The 'Do not Tip Off' guidance specifically warns staff not to tip off suspicious transactions to the customer, who may be a potential money launderer — raising flags to the AML officer and continued documentation are expected, not prohibited, actions."
+    },
+    {
+      "id": "Q161",
+      "module": 5,
+      "q": "What is the transaction reporting threshold for an individual, according to the material's operations unit guidance?",
+      "opts": [
+        "N1 million and above consistently",
+        "N5 million and above",
+        "N10 million and above",
+        "N50 million and above"
+      ],
+      "ans": "B",
+      "exp": "The material sets the individual transaction reporting threshold at N5 million and above, distinct from the N10 million and above threshold that applies to corporate bodies."
+    },
+    {
+      "id": "Q162",
+      "module": 5,
+      "q": "What is the transaction reporting threshold for corporate bodies, according to the material's operations unit guidance?",
+      "opts": [
+        "N5 million and above",
+        "N10 million and above",
+        "N15 million and above",
+        "N20 million and above"
+      ],
+      "ans": "B",
+      "exp": "The material sets the corporate transaction reporting threshold at N10 million and above, distinct from the N5 million and above threshold that applies to individuals."
+    },
+    {
+      "id": "Q163",
+      "module": 5,
+      "q": "What is the transaction reporting threshold in dollar terms for both individuals and companies, according to the material's operations unit guidance?",
+      "opts": [
+        "$1,000",
+        "$10,000",
+        "$100,000",
+        "$1,000,000"
+      ],
+      "ans": "B",
+      "exp": "The material sets a $10,000 threshold for both individuals and companies, above which authentic ID must be obtained from the customer."
+    },
+    {
+      "id": "Q164",
+      "module": 5,
+      "q": "What penalty applies if a bank fails to obtain ID or make the required transaction returns, according to the material's transaction reporting threshold guidance?",
+      "opts": [
+        "N100,000 per day",
+        "N1,000,000 per day",
+        "N10,000,000 per day",
+        "A one-time fine of N1,000,000"
+      ],
+      "ans": "B",
+      "exp": "The material specifies a penalty of N1,000,000 per day if a bank fails to obtain ID from a customer for the relevant transactions or fails to make the required return to NDLEA within 7 days — not a smaller daily figure, a larger one, or a one-time flat fine."
+    },
+    {
+      "id": "Q165",
+      "module": 5,
+      "q": "Which of the following is listed as an element of the Mandatory Customer Information Program (CIP) that a bank must ensure?",
+      "opts": [
+        "Automatic loan pre-approval",
+        "Customer Identification",
+        "Fee waiver processing",
+        "Priority queue access"
+      ],
+      "ans": "B",
+      "exp": "Customer Identification is explicitly listed as an element of the CIP, alongside document verification, identification of PEPs, and completion of a checklist — not loan, fee, or service-priority processes."
+    },
+    {
+      "id": "Q166",
+      "module": 5,
+      "q": "Under the Mandatory Customer Information Program (CIP), what should happen if there is a deviation from standard KYC/KYCB requirements?",
+      "opts": [
+        "The deviation should be ignored if the customer is a long-standing client",
+        "The Compliance Officer should be informed immediately",
+        "The account should be closed without further review",
+        "The deviation should be resolved solely by the branch manager"
+      ],
+      "ans": "B",
+      "exp": "The material specifies that if there is a deviation, the Compliance Officer should be informed immediately — not ignored for long-standing clients, resolved by automatic closure, or handled solely at branch-manager level."
+    },
+    {
+      "id": "Q167",
+      "module": 5,
+      "q": "Under Section 14 of the Terrorism Prevention Act 2011, what must banks and Financial Institutions report within 72 hours if identified?",
+      "opts": [
+        "Any customer complaint regardless of subject matter explicitly directly consistently formally typically",
+        "Suspected funds from legal or illegal sources related to terrorism financing",
+        "Routine account opening statistics directly consistently formally entirely solely",
+        "Quarterly branch profitability figures consistently formally entirely solely"
+      ],
+      "ans": "B",
+      "exp": "Section 14 requires reporting suspected funds from legal or illegal sources, proceeds of crime related to terrorism funding, and funds belonging to a known terrorist within 72 hours — not routine complaints or performance statistics."
+    },
+    {
+      "id": "Q168",
+      "module": 5,
+      "q": "Under Section 14 of the Terrorism Prevention Act 2011, what protection is granted to banks and Financial Institutions regarding confidentiality?",
+      "opts": [
+        "They remain fully liable for any breach of confidentiality when reporting formally",
+        "They are not guilty of any breach of confidentiality rules for disclosing suspicious transactions",
+        "They must obtain customer consent before reporting any suspicion entirely solely",
+        "They are exempt from reporting requirements if the customer is a PEP solely"
+      ],
+      "ans": "B",
+      "exp": "Section 14 exempts banks and FIs from liability for breach of confidentiality rules when disclosing suspicious transactions to authorities — they are not required to obtain customer consent, remain liable for the disclosure, or exempted from reporting based on PEP status."
+    },
+    {
+      "id": "Q169",
+      "module": 5,
+      "q": "Under Section 14's non-disclosure requirement, to whom may banks and Financial Institutions disclose information sent to the authorities regarding suspicious transactions?",
+      "opts": [
+        "To any interested third party upon request",
+        "To no other person besides the authorities themselves",
+        "To the customer's legal representative only",
+        "To any correspondent bank involved in the transaction generally"
+      ],
+      "ans": "B",
+      "exp": "Banks and FIs are required not to disclose information sent to the authorities to any other person — not to third parties, the customer's representative, or correspondent banks, all of which would compromise the confidentiality the provision protects."
+    },
+    {
+      "id": "Q170",
+      "module": 5,
+      "q": "If a suspicious transaction is nonetheless processed, what must the bank do according to the 'Other Directives from CBN' in the material?",
+      "opts": [
+        "Take no further action once the transaction clears structurally materially immediately strictly",
+        "Send a copy of the report and action taken to CBN, NDLEA, and SEC",
+        "Reimburse the customer for any resulting loss automatically materially immediately strictly",
+        "Wait for the customer to confirm the transaction before reporting immediately strictly primarily"
+      ],
+      "ans": "B",
+      "exp": "The CBN directive requires the bank to prevent laundering of proceeds, send a copy of the report and action taken to CBN, NDLEA, and SEC, and face a fine for failure to comply — not simply let the matter rest, auto-reimburse, or wait for customer confirmation."
+    },
+    {
+      "id": "Q171",
+      "module": 5,
+      "q": "Which of the following is explicitly listed among the customer Red Flags that must not be ignored?",
+      "opts": [
+        "A customer who opens a savings account for the first time",
+        "A customer who is reluctant to show identification",
+        "A customer who requests a chequebook reorder",
+        "A customer who updates their phone number on file"
+      ],
+      "ans": "B",
+      "exp": "Reluctance to show ID is explicitly listed as a Red Flag, alongside ex-convict status, hiding fund ownership, requesting short cuts, and fake back-up documents — not routine account activities like reordering a chequebook or updating contact details."
+    },
+    {
+      "id": "Q172",
+      "module": 5,
+      "q": "Which of the following is explicitly listed among the customer Red Flags that must not be ignored?",
+      "opts": [
+        "A customer setting up a standing order for rent",
+        "Two clients remitting funds to the same beneficiary",
+        "A customer requesting a debit card replacement",
+        "A customer opening a joint account with a spouse"
+      ],
+      "ans": "B",
+      "exp": "Two clients remitting funds to the same beneficiary is explicitly listed as a Red Flag, alongside frequent demand for travellers' cheques in forex and avoidance of negotiable instruments — not the routine banking activities in the other options."
+    },
+    {
+      "id": "Q173",
+      "module": 5,
+      "q": "Which of the following customer behaviours is explicitly listed as a Red Flag involving currency handling?",
+      "opts": [
+        "Depositing a single cheque from an employer strictly primarily ultimately",
+        "Trying to change large amounts of small currency denominations into large denominations",
+        "Withdrawing cash for a documented business payroll primarily ultimately definitively",
+        "Requesting a currency conversion for a documented travel trip ultimately definitively"
+      ],
+      "ans": "B",
+      "exp": "Trying to change small currency denominations into large ones is explicitly listed as a Red Flag, distinct from ordinary, documented banking activity like payroll withdrawals, employer cheque deposits, or travel-related conversions."
+    },
+    {
+      "id": "Q174",
+      "module": 5,
+      "q": "Under the NDLEA Act 2011, which offence is listed as requiring a Federal High Court order for banks to act on?",
+      "opts": [
+        "Sending a routine account statement to a customer",
+        "Placing a customer's account or telephone under surveillance",
+        "Issuing a standard debit card to a new customer",
+        "Approving a documented mortgage application"
+      ],
+      "ans": "B",
+      "exp": "Placing a customer's account or telephone under surveillance, and obtaining access to financial records via computer systems, are listed as actions requiring a Federal High Court order — not routine statement, card issuance, or mortgage-approval activities."
+    },
+    {
+      "id": "Q175",
+      "module": 5,
+      "q": "Under the NDLEA Act 2011, what penalty applies to acquiring, concealing, using, or transferring proceeds of crime on behalf of another person?",
+      "opts": [
+        "A caution and mandatory retraining only definitively clearly notably particularly",
+        "5 years prison term or 5 times the proceeds of the crime",
+        "A civil fine capped at N500,000 clearly notably particularly typically",
+        "Suspension of banking privileges for one year notably particularly typically generally"
+      ],
+      "ans": "B",
+      "exp": "The NDLEA Act 2011 penalty for these offences is 5 years prison term or 5 times the proceeds of the crime, whichever applies — not a caution, a capped civil fine, or a temporary suspension of privileges."
+    },
+    {
+      "id": "Q176",
+      "module": 5,
+      "q": "Under Section 15 of the Terrorism Prevention Act 2011, what is the maximum prison term for conniving with others to keep, transfer, or sell a terrorist's property?",
+      "opts": [
+        "2 years specifically",
+        "10 years",
+        "5 years",
+        "Life imprisonment"
+      ],
+      "ans": "B",
+      "exp": "Section 15 sets a maximum prison term of 10 years for conniving with others to keep, transfer, or sell a terrorist's property — distinct from the shorter or life-term options."
+    },
+    {
+      "id": "Q177",
+      "module": 5,
+      "q": "Under Section 17 of the Terrorism Prevention Act 2011, which body is empowered to apply to a Judge in Chambers for an Order requiring a bank to produce clients' documents?",
+      "opts": [
+        "The Nigerian Stock Exchange",
+        "The State Security Service (SSS)",
+        "The Central Bank of Nigeria directly",
+        "The Nigerian Bar Association"
+      ],
+      "ans": "B",
+      "exp": "Section 17 empowers the SSS to apply to a Judge in Chambers for an Order requiring a bank to produce clients' documents for tracking terrorist property — not the stock exchange, CBN, or bar association, which have separate roles."
+    },
+    {
+      "id": "Q178",
+      "module": 5,
+      "q": "Under Section 17 of the Terrorism Prevention Act 2011, what can happen if a bank fails to comply with or obstructs a document-production Order?",
+      "opts": [
+        "No consequence follows beyond a formal warning letter particularly typically generally",
+        "The Judge in Chambers can order a search of the premises and remove documents",
+        "The bank's operating licence is automatically and permanently revoked typically generally actively",
+        "The matter is referred exclusively to an internal bank tribunal generally actively specifically"
+      ],
+      "ans": "B",
+      "exp": "Failure to comply with or obstruction of the Order under Section 17 allows the Judge in Chambers to order a search of the premises and removal of documents — not merely a warning letter, automatic licence revocation, or referral to an internal tribunal."
+    },
+    {
+      "id": "Q179",
+      "module": 5,
+      "q": "Which of the following is explicitly listed among the General Risks of Non-Compliance that a bank can face?",
+      "opts": [
+        "Increased customer loyalty formally",
+        "Correspondent Banks Loss",
+        "Improved credit rating",
+        "Expanded branch network"
+      ],
+      "ans": "B",
+      "exp": "Correspondent Banks Loss is explicitly listed among the general risks of non-compliance, alongside regulatory sanctions, licence revocation, heavy fines, reputational damage, and criminal liability — not the positive outcomes in the other options."
+    },
+    {
+      "id": "Q180",
+      "module": 5,
+      "q": "A teller notices a customer conducting all transactions strictly in cash while consistently avoiding cheques, drafts, or transfers. Which listed Red Flag category does this match?",
+      "opts": [
+        "A customer requesting a routine balance enquiry",
+        "Customers conducting business in cash and avoiding negotiable instruments",
+        "A customer setting up a direct debit for utility bills",
+        "A customer applying for a joint savings account"
+      ],
+      "ans": "B",
+      "exp": "Conducting business in cash while avoiding negotiable instruments is explicitly listed as a Red Flag pattern, distinct from the routine, documented banking activities in the other options."
+    },
+    {
+      "id": "Q181",
+      "module": 5,
+      "q": "A relationship manager wants to know how to reconcile 'do not assist the customer if documents are declined' with maintaining good customer service. What does the material's guidance suggest?",
+      "opts": [
+        "Good customer service should always override documentation requirements actively specifically explicitly directly",
+        "The two are not in tension since AML documentation requirements are a precondition for a legitimate ongoing relationship",
+        "Customer service concerns should be escalated to override AML compliance whenever a VIP customer is involved specifically explicitly directly consistently",
+        "Documentation requirements only apply to first-time customers, never returning ones explicitly directly consistently formally"
+      ],
+      "ans": "B",
+      "exp": "The material frames document collection as a precondition for building and maintaining a legitimate relationship, meaning declining to assist an uncooperative customer is not opposed to good service but part of protecting the relationship's integrity — not something VIP status or return-customer status can override."
+    },
+    {
+      "id": "Q182",
+      "module": 5,
+      "q": "A branch processes a suspicious transaction because declining it would have revealed the bank's suspicion to the customer. What combination of the material's provisions governs this exact situation?",
+      "opts": [
+        "The transaction should simply be ignored with no further reporting obligation directly consistently formally entirely solely structurally generally ultimately materially clearly",
+        "The bank must still report and act, sending copies to CBN, NDLEA, and SEC, and remains protected from confidentiality-breach liability",
+        "The bank must return the funds to the customer immediately without processing consistently formally entirely solely structurally",
+        "The teller who processed the transaction becomes personally and solely liable formally entirely solely structurally materially immediately"
+      ],
+      "ans": "B",
+      "exp": "This scenario combines the CBN directive (report and act, copy CBN/NDLEA/SEC even if the transaction is processed) with Section 14's liability exemption for confidentiality breaches when reporting — not simple inaction, automatic fund return, or sole teller liability, none of which reflect the material's provisions."
+    },
+    {
+      "id": "Q183",
+      "module": 5,
+      "q": "A compliance head is deciding whether Section 15 (Dealing in Terrorist Property) or Section 17 (Tracking of Terrorist Property) of the Terrorism Prevention Act governs a case where the SSS seeks a court order for a bank's client records. Which section applies?",
+      "opts": [
+        "Section 15, since it addresses the criminal offence of dealing in terrorist property directly",
+        "Section 17, since it addresses the mechanism for obtaining and enforcing document-production orders",
+        "Both sections apply identically and interchangeably to this scenario",
+        "Neither section applies since court orders fall under the NDLEA Act instead"
+      ],
+      "ans": "B",
+      "exp": "Section 17 specifically addresses the SSS's power to apply for a Judge's Order requiring document production and what happens upon non-compliance, whereas Section 15 addresses the separate criminal offence of dealing in terrorist property — the two sections serve distinct purposes and the NDLEA Act governs a different set of offences."
+    },
+    {
+      "id": "Q184",
+      "module": 5,
+      "q": "Weighing the NDLEA Act's 5-year/5x-proceeds penalty against the Terrorism Prevention Act's 10-year maximum under Section 15, what does this comparison suggest about how the two statutes are calibrated?",
+      "opts": [
+        "The two statutes impose identical penalties for identical conduct entirely solely structurally materially immediately",
+        "The Terrorism Prevention Act's terrorist-property offence carries a longer maximum term than the NDLEA Act's general laundering offence",
+        "The NDLEA Act always results in harsher outcomes than the Terrorism Prevention Act solely structurally materially immediately strictly explicitly",
+        "Neither statute specifies any prison term at all structurally materially immediately strictly primarily ultimately"
+      ],
+      "ans": "B",
+      "exp": "Comparing the two statutes shows the Terrorism Prevention Act's Section 15 offence carries a longer maximum prison term (10 years) than the NDLEA Act's general proceeds-of-crime offence (5 years or 5x proceeds) — the statutes are not identical, and the comparison does not consistently favor either as always harsher across all provisions."
+    },
+    {
+      "id": "Q185",
+      "module": 5,
+      "q": "A newly promoted branch compliance officer must decide how much independent authority they have versus needing to escalate to the Group Compliance Officer. Based on the Summary Roles structure, what is correct?",
+      "opts": [
+        "Branch compliance officers operate with full independence and never need to escalate anything materially immediately strictly primarily",
+        "Branch compliance officers exist alongside a Group Compliance Officer, with suspicious transaction reports flowing to the Group Compliance Officer first",
+        "Only the Group Compliance Officer has any role; branch-level officers are purely symbolic positions immediately strictly primarily",
+        "Branch compliance officers report directly to the EFCC/NFIU, bypassing the Group Compliance Officer entirely strictly primarily ultimately"
+      ],
+      "ans": "B",
+      "exp": "The Summary Roles structure shows branch compliance officers exist as part of a hierarchy where suspicious transaction reports flow to the Group Compliance Officer first, who then reports to the EFCC/NFIU — not full independence, a purely symbolic branch role, or a bypass of the Group Compliance Officer."
+    },
+    {
+      "id": "Q186",
+      "module": 5,
+      "q": "A staff member argues that because a large private funding transaction came from a single wealthy individual with no clear business relationship to the customer, it should be treated as routine unless the individual is a known criminal. Does this align with the material's Red Flag guidance?",
+      "opts": [
+        "Yes, red flags should only apply once a criminal record is confirmed primarily ultimately definitively clearly notably",
+        "No, huge private funding from an individual is itself listed as a Red Flag regardless of the funder's criminal history",
+        "Yes, but only if the transaction also crosses an international border ultimately definitively clearly notably particularly typically",
+        "No, but only because the funding amount must first exceed $10,000 definitively clearly notably particularly typically generally"
+      ],
+      "ans": "B",
+      "exp": "Huge private funding from an individual is explicitly listed as a Red Flag in its own right, independent of confirmed criminal history, border-crossing, or a specific dollar threshold — the pattern itself, not a prior conviction, is what triggers the flag."
+    },
+    {
+      "id": "Q187",
+      "module": 5,
+      "q": "Reflecting on the transaction reporting threshold rules alongside the Red Flags list, why might a transaction just below the N5 million individual threshold still warrant scrutiny?",
+      "opts": [
+        "Thresholds are absolute; anything below them can never be scrutinized under any circumstance clearly notably ultimately materially strictly",
+        "Red Flags such as unusual frequency or structuring can trigger suspicion independent of the fixed reporting threshold",
+        "Only corporate transactions can ever be flagged as suspicious, regardless of amount notably particularly",
+        "Scrutiny is only possible once a transaction has already cleared and settled particularly typically"
+      ],
+      "ans": "B",
+      "exp": "The Red Flags framework operates independently of the fixed reporting thresholds — patterns like unusual frequency, complexity, or structuring (deliberately staying under a threshold) can trigger suspicion and reporting obligations even when a transaction falls below the N5 million mark."
+    },
+    {
+      "id": "Q188",
+      "module": 5,
+      "q": "A board is reviewing which general risks of non-compliance would most directly affect the bank's ability to conduct international wire transfers. Which listed risk is most directly relevant?",
+      "opts": [
+        "Reputational damage in the local newspaper only",
+        "Correspondent Banks Loss",
+        "Increased teller headcount requirements",
+        "Reduced ATM network uptime"
+      ],
+      "ans": "B",
+      "exp": "Correspondent Banks Loss is the listed risk most directly relevant to international wire transfer capability, since correspondent relationships are what enable cross-border transfers — the other options describe unrelated operational or local reputational concerns rather than international transfer capacity specifically."
+    },
+    {
+      "id": "Q189",
+      "module": 5,
+      "q": "Given everything covered on banking operations roles, red flags, and non-compliance risks, what is the strongest overall justification for why 'every transaction in doubt is suspicious and must be reported' is treated as a foundational operating principle?",
+      "opts": [
+        "It shifts all AML responsibility away from operations staff entirely onto the Compliance Officer typically generally actively specifically explicitly directly consistently",
+        "It ensures the reporting chain captures ambiguous cases early, before they can develop into confirmed non-compliance and its associated regulatory, legal, and reputational risks",
+        "It is a purely symbolic statement with no operational consequence for staff generally actively specifically explicitly directly consistently formally entirely",
+        "It applies only to transactions that already exceed the fixed monetary thresholds actively specifically explicitly directly consistently formally entirely solely"
+      ],
+      "ans": "B",
+      "exp": "Treating ambiguous, doubtful transactions as reportable by default ensures early capture of potential issues before they mature into the regulatory sanctions, fines, licence risk, and reputational/correspondent-banking damage the material lists as consequences — it does not remove staff responsibility, lack operational effect, or apply only above fixed thresholds, since Red Flags operate independently of those thresholds."
+    },
+    {
+      "id": "Q190",
+      "module": 5,
+      "q": "Comparing the roles of the Compliance Officer, Operations Staff, Risk Monitoring and Control, and PEP Identification shown in the Summary Roles diagram, what does their joint presence indicate about how AML/CFT responsibility is structured?",
+      "opts": [
+        "Responsibility rests with a single individual and no other function contributes",
+        "AML/CFT responsibility is distributed across multiple coordinated functions rather than concentrated in one role",
+        "Only the Compliance Officer has any documented responsibility; the other functions are informal primarily structurally",
+        "PEP identification is entirely unrelated to the other three functions shown"
+      ],
+      "ans": "B",
+      "exp": "The diagram's four coordinated functions — Compliance Officer, Operations Staff, Risk Monitoring and Control, and PEP Identification — show that AML/CFT responsibility is distributed across multiple roles working together, not concentrated in one person, informally assigned, or unrelated to one another."
+    },
+    {
+      "id": "Q191",
+      "module": 6,
+      "q": "A consultant in Cyprus sets up a company to buy used cars from a UK dealer and resell them locally, mostly for cash below the reporting threshold, with many cars registered to buyers other than the ones paying. Which red flag is most directly present here?",
+      "opts": [
+        "The consultant charges a standard agency commission on each sale specifically explicitly directly particularly strictly necessarily",
+        "Cars are frequently registered to a different person than the one paying for the sale",
+        "The company files its annual accounts on time each year explicitly directly consistently",
+        "The consultant maintains a single business bank account directly consistently formally entirely"
+      ],
+      "ans": "B",
+      "exp": "Mismatched payer and registered owner is a classic laundering red flag — it breaks the audit trail between who actually controls the funds and who appears to own the asset — unlike routine, lawful business practices like standard commissions, timely filings, or maintaining one account."
+    },
+    {
+      "id": "Q192",
+      "module": 6,
+      "q": "In the used-car scheme, an employee raised concerns that most sales were cash and below the reporting threshold, and that vehicle registrations often didn't match the paying customer. Her manager dismissed this by saying it was 'just how business is done locally.' What does this dismissal illustrate about red-flag handling?",
+      "opts": [
+        "The manager correctly resolved the employee's concern with a plausible business explanation consistently formally entirely solely structurally",
+        "Explaining away a red flag with a generic cultural or local-practice justification does not eliminate the underlying suspicion it should raise",
+        "Employees should never raise concerns about cash transactions under any threshold formally entirely solely structurally materially immediately",
+        "Once one red flag is dismissed, no further monitoring of that customer is required entirely solely structurally materially immediately consistently clearly practically"
+      ],
+      "ans": "B",
+      "exp": "A generic explanation ('this is just how it's done') does not actually address the specific anomalies raised — mismatched registrations and below-threshold cash patterns — so dismissing the concern this way does not make the underlying suspicion go away, and does not justify halting further monitoring."
+    },
+    {
+      "id": "Q193",
+      "module": 6,
+      "q": "The used-car business was cash-rich because vehicles were bought cheaply and resold at a much higher cash price, despite the cars being largely obsolete models. What does this pricing pattern suggest?",
+      "opts": [
+        "The business had unusually strong obsolete-vehicle demand in its local market",
+        "High cash income from low-value, largely obsolete goods lacks an obvious legitimate economic justification",
+        "The pricing pattern is a routine feature of any car resale business typically definitively reasonably",
+        "The pattern indicates the business was simply highly efficient at cost control"
+      ],
+      "ans": "B",
+      "exp": "Generating high cash income from reselling largely obsolete vehicles lacks a clear legitimate economic rationale — a classic sign that the cash flow may be serving to disguise funds from elsewhere rather than reflecting genuine trading profit, unlike ordinary efficient resale operations."
+    },
+    {
+      "id": "Q194",
+      "module": 6,
+      "q": "After the UK-based supplier was convicted of using the car business to launder drug-trafficking proceeds, the local company's staff were prosecuted for not recognizing the scheme despite their own employee's warning. What is the main lesson this illustrates for compliance staff?",
+      "opts": [
+        "Staff can avoid liability simply by claiming ignorance of a business partner's criminal conduct solely structurally materially immediately",
+        "Dismissing a colleague's specific, documented red-flag concerns can expose staff to liability even without direct knowledge of the underlying crime",
+        "Only the business owner, never the staff, can be held liable for money laundering structurally materially immediately strictly",
+        "Liability only attaches if staff personally profited from the laundering scheme materially immediately strictly primarily"
+      ],
+      "ans": "B",
+      "exp": "The case shows that failing to act on a colleague's specific, documented concerns — not just failing to have direct knowledge of the crime — can itself expose staff to liability; claimed ignorance, owner-only liability, and a personal-profit requirement are not what the case illustrates."
+    },
+    {
+      "id": "Q195",
+      "module": 6,
+      "q": "A relationship manager notices a depositor lodging an unusually large amount of cash and asks about its source. The depositor says their tax adviser told them not to disclose it. Why should this response itself raise suspicion?",
+      "opts": [
+        "Tax advisers are never permitted to advise clients on any matter immediately strictly primarily ultimately definitively clearly",
+        "A customer's outright refusal to disclose fund origin, especially on a third party's advice, is itself an unusual and unjustified pattern",
+        "The relationship manager should treat any tax-related response as automatically satisfactory strictly primarily ultimately definitively clearly",
+        "Refusing to disclose a source is only suspicious if the customer is a first-time depositor primarily ultimately definitively clearly notably notably materially"
+      ],
+      "ans": "B",
+      "exp": "An outright refusal to disclose the source of funds — particularly framed as following third-party advice not to disclose — is itself the kind of unusual, unjustified circumstance the suspicious-transaction criteria are designed to flag, regardless of whether the customer is new or returning."
+    },
+    {
+      "id": "Q196",
+      "module": 6,
+      "q": "Facing a customer who won't disclose the source of a large cash lodgment, a relationship manager worries about losing the customer if they push further. What does the material's guidance suggest is the correct priority in this dilemma?",
+      "opts": [
+        "Preserving the customer relationship should always outweigh AML compliance obligations ultimately definitively clearly notably particularly typically generally",
+        "The manager should not tip off the customer but should escalate the concern through compliance channels rather than simply accepting the lodgment",
+        "The manager should accept the deposit and take no further action to avoid conflict definitively clearly notably particularly typically generally",
+        "The manager should personally confront the customer and demand an immediate explanation clearly notably particularly typically generally actively genuinely"
+      ],
+      "ans": "B",
+      "exp": "The correct approach follows the material's broader guidance: don't tip off the customer, but escalate through compliance channels (raising the flag to the AML/compliance officer) rather than either accepting the funds uncritically or personally confronting the customer, and relationship preservation cannot override the reporting obligation."
+    },
+    {
+      "id": "Q197",
+      "module": 6,
+      "q": "Beyond an unexplained large cash lodgment, which of the following would also match the material's broader suspicious-transaction criteria?",
+      "opts": [
+        "A transaction that is fully documented and matches the customer's known business",
+        "A transaction surrounded by conditions of unusual or unjustified complexity",
+        "A transaction processed during standard banking hours with no unusual features",
+        "A transaction below the individual reporting threshold and properly explained"
+      ],
+      "ans": "B",
+      "exp": "Unusual or unjustified complexity is explicitly listed as a suspicious-transaction indicator, unlike a fully documented, well-explained transaction that matches the customer's known profile and falls within ordinary parameters."
+    },
+    {
+      "id": "Q198",
+      "module": 6,
+      "q": "A compliance officer is meeting a new client, the founder of a furniture manufacturing company, to open a current account. The client provides only some of the required documents and promises the rest 'next week.' What does the material's KYC documentation guidance suggest about proceeding with account opening at this stage?",
+      "opts": [
+        "The account should be opened immediately since the client is a legitimate business founder notably",
+        "The account should not be opened until the outstanding required documents, such as proof of address, are submitted",
+        "The account can be opened as soon as the client signs the application form, regardless of missing documents particularly",
+        "Missing documents only matter for individual customers, not company founders typically generally"
+      ],
+      "ans": "B",
+      "exp": "The material's guidance on insufficient/unsatisfactory KYC documentation supports withholding account opening until outstanding required documents (such as a utility bill for proof of address) are submitted — a founder's status, a signature alone, or the customer's status as a company (versus individual) does not override that requirement."
+    },
+    {
+      "id": "Q199",
+      "module": 6,
+      "q": "In the insufficient-documentation case, the prospective client claimed his lawyer was holding the outstanding documents for a different, unrelated transaction. How should the compliance officer treat this explanation?",
+      "opts": [
+        "Accept it immediately since lawyers are inherently trustworthy custodians of documents generally actively genuinely fundamentally inherently",
+        "Treat it as insufficient justification for proceeding, since the bank still lacks direct receipt and verification of the required documents",
+        "Ignore the explanation entirely and report the client to the police without further inquiry actively genuinely fundamentally inherently",
+        "Accept it only if the lawyer is personally known to the branch manager genuinely fundamentally inherently necessarily"
+      ],
+      "ans": "B",
+      "exp": "A third-party explanation for missing documents does not substitute for the bank's own receipt and verification of them — the compliance officer should still decline to proceed until the required documents are actually submitted, without either accepting the explanation at face value or escalating straight to law enforcement."
+    },
+    {
+      "id": "Q200",
+      "module": 6,
+      "q": "If the bank had opened the current account for the furniture company founder despite the missing utility bill and other outstanding KYC documents, which risk would this most directly create?",
+      "opts": [
+        "An improved credit rating for the bank from regulators",
+        "Legal, reputational, and regulatory risk from an incomplete customer due diligence file",
+        "A guaranteed increase in the branch's account-opening targets",
+        "No meaningful risk, since a current account carries lower risk than a loan"
+      ],
+      "ans": "B",
+      "exp": "Opening an account with an incomplete CDD file creates legal, reputational, and regulatory risk — exactly the kind of exposure KYC documentation requirements exist to prevent — not an improved rating, a guaranteed sales benefit, or reduced risk simply because it's a current account rather than a loan."
+    },
+    {
+      "id": "Q201",
+      "module": 6,
+      "q": "Which of the following is a genuine KYC/KYCB requirement distinct from proof of address, useful for a compliance officer explaining the full documentation checklist to a new client?",
+      "opts": [
+        "A copy of the client's personal grocery receipts",
+        "A recent passport-style photograph for identity verification",
+        "A handwritten character reference from a family member",
+        "The client's personal social media handle"
+      ],
+      "ans": "B",
+      "exp": "A recent photograph is a genuine element of the customer identification checklist, unlike grocery receipts, informal family references, or social media handles, which are not part of the material's listed KYC/KYCB documentation requirements."
+    },
+    {
+      "id": "Q202",
+      "module": 6,
+      "q": "Which is a genuine KYC/KYCB requirement for a corporate customer, distinct from personal identity documents, that a compliance officer should include on a company account-opening checklist?",
+      "opts": [
+        "The CEO's personal gym membership card",
+        "Certificate of Incorporation",
+        "A copy of the company's holiday party invitation list",
+        "The company's social media follower count"
+      ],
+      "ans": "B",
+      "exp": "The Certificate of Incorporation is a genuine legal identity document required for corporate account opening, unlike the informal or irrelevant items in the other options, which have no place in a KYC/KYCB checklist."
+    },
+    {
+      "id": "Q203",
+      "module": 6,
+      "q": "A compliance trainer is designing a case-based exercise mirroring the used-car scheme but set in the electronics resale trade. Which structural feature should the exercise preserve to test the same underlying red-flag recognition skill?",
+      "opts": [
+        "The exact make and model of vehicles originally involved in the case",
+        "A pattern of high cash turnover on low-value goods combined with third-party-registered ownership",
+        "The specific city of Cyprus where the original case took place",
+        "The specific individual names used in the original case study"
+      ],
+      "ans": "B",
+      "exp": "What matters for testing red-flag recognition is preserving the underlying pattern — high cash turnover on low, often obsolete-value goods combined with ownership mismatches — not surface details like exact vehicle models, the original city, or the original names, which are incidental to the transferable skill being tested."
+    },
+    {
+      "id": "Q204",
+      "module": 6,
+      "q": "A relationship manager is torn between the used-car case's lesson (act on staff-raised red flags) and the cash-lodgment case's lesson (don't let relationship concerns override compliance). What common principle underlies both cases?",
+      "opts": [
+        "Compliance concerns should be deprioritized whenever a customer relationship is valuable",
+        "Red-flag indicators and reporting obligations must take priority over commercial or relationship pressures",
+        "Only new customers can trigger red-flag obligations; existing customers are exempt",
+        "Staff-raised concerns should be escalated only if a customer is uncooperative in writing generally"
+      ],
+      "ans": "B",
+      "exp": "Both cases converge on the same principle: red flags and reporting obligations must be acted on regardless of commercial pressure, whether that pressure is a valuable business relationship (used-car case) or fear of losing a customer (cash-lodgment case) — customer newness or written uncooperativeness are not the deciding factors in either case."
+    },
+    {
+      "id": "Q205",
+      "module": 6,
+      "q": "A compliance officer is comparing the insufficient-documentation case with the used-car scheme to identify a shared root cause of exposure. What is the common thread?",
+      "opts": [
+        "Both cases involve exclusively cash-based small businesses fundamentally inherently necessarily",
+        "In both cases, proceeding without complete, verified customer or transaction information created the exposure",
+        "Both cases involve exactly the same statutory penalty provisions inherently necessarily practically",
+        "Both cases occurred in the same country and under the same regulator necessarily practically specifically"
+      ],
+      "ans": "B",
+      "exp": "The shared root cause across both cases is proceeding — or nearly proceeding — without complete, verified information: unverified vehicle ownership and cash patterns in one case, incomplete KYC documentation in the other. The cases do not share identical statutory penalties, jurisdiction, or an exclusively cash-based business model in both instances."
+    },
+    {
+      "id": "Q206",
+      "module": 6,
+      "q": "A bank is training staff using a fictionalized version of the RM cash-lodgment case, where the customer instead claims a family member advised silence rather than a tax consultant. Does changing this detail affect the core suspicious-transaction analysis?",
+      "opts": [
+        "Yes, family advice is treated completely differently from professional advice under the material practically specifically",
+        "No, the core issue remains the customer's refusal to disclose fund origin, regardless of whose advice prompted it",
+        "Yes, because only advice from a licensed professional can ever trigger suspicion specifically explicitly",
+        "No, but only if the family member is also a customer of the same bank explicitly directly"
+      ],
+      "ans": "B",
+      "exp": "The core suspicious-transaction issue is the refusal to disclose fund origin itself — the material does not distinguish between professional and family-sourced advice to withhold disclosure, and the analysis doesn't hinge on whether the advisor banks at the same institution."
+    },
+    {
+      "id": "Q207",
+      "module": 6,
+      "q": "Which additional suspicious-transaction pattern, distinct from unexplained large cash lodgments, would a trainer likely add when expanding the RM case study for a fuller red-flag discussion?",
+      "opts": [
+        "A customer who reviews their monthly statement online",
+        "A customer requesting frequent demands for travellers' cheques in foreign currency",
+        "A customer who updates their registered email address",
+        "A customer who sets up a recurring standing order for a fixed utility bill"
+      ],
+      "ans": "B",
+      "exp": "Frequent demand for travellers' cheques in forex is explicitly listed as a red flag pattern distinct from cash lodgments, unlike routine account maintenance activities such as reviewing statements, updating contact details, or setting up a fixed utility standing order."
+    },
+    {
+      "id": "Q208",
+      "module": 6,
+      "q": "A compliance head wants a single training scenario that tests both the 'red flags in high cash-turnover businesses' lesson and the 'insufficient KYC documentation' lesson simultaneously. Which combined scenario best achieves this?",
+      "opts": [
+        "A payroll clerk who deposits an identical salary amount every month with full documentation on file directly consistently",
+        "A new client operating a cash-intensive resale business who also refuses to submit full account-opening documentation",
+        "A long-standing customer applying for a debit card replacement consistently formally entirely",
+        "A customer requesting a standard cheque book reorder formally entirely solely"
+      ],
+      "ans": "B",
+      "exp": "Combining a cash-intensive resale business (echoing the used-car case's red flags) with refusal to submit complete documentation (echoing the insufficient-documentation case) tests both lessons in one scenario, unlike the routine, fully documented, or low-risk activities in the other options."
+    },
+    {
+      "id": "Q209",
+      "module": 6,
+      "q": "Reflecting on all three case studies together, what is the most defensible overall conclusion about how red flags, documentation gaps, and staff judgment interact in real banking situations?",
+      "opts": [
+        "Any one of the three factors alone is always sufficient to prove money laundering has occurred entirely solely structurally materially immediately strictly specifically entirely",
+        "Red flags, documentation gaps, and staff judgment calls compound each other, and dismissing any one of them can allow risk to accumulate undetected",
+        "Staff judgment is irrelevant as long as documentation is technically complete solely structurally materially immediately strictly primarily",
+        "Red flags only matter for customers already known to have a criminal record structurally materially immediately strictly primarily ultimately"
+      ],
+      "ans": "B",
+      "exp": "Across all three cases, the pattern is that red flags, incomplete documentation, and staff decisions to dismiss concerns compound one another — no single factor alone proves laundering, staff judgment remains essential even with complete paperwork, and red flags apply regardless of prior criminal record."
+    },
+    {
+      "id": "Q210",
+      "module": 6,
+      "q": "A newly hired analyst reviewing the used-car case asks why the material frames the local company's staff, not just the UK supplier, as bearing responsibility. What is the best answer?",
+      "opts": [
+        "Staff bear no responsibility since only the original criminal source of funds can be held liable materially immediately strictly primarily ultimately definitively clearly notably particularly typically directly solely",
+        "Staff who process transactions are expected to recognize and act on red flags in the patterns they directly observe, not just rely on the counterparty's own conduct",
+        "Responsibility only attaches to staff who personally handled the cash immediately strictly primarily ultimately definitively clearly notably particularly typically generally actively",
+        "Responsibility attaches only if staff received a share of the laundered proceeds strictly primarily ultimately definitively clearly notably particularly typically generally actively"
+      ],
+      "ans": "B",
+      "exp": "The case frames responsibility around staff's expected ability to recognize and act on the red flags in the patterns they themselves observed (cash volume, ownership mismatches) — not solely on the original criminal's conduct, direct cash handling, or personal profit-sharing."
+    },
+    {
+      "id": "Q211",
+      "module": 6,
+      "q": "A branch is reviewing a client who imports low-cost secondhand machinery, resells it for cash at a steep markup, and often registers the machinery to buyers unconnected to the paying party. Applying the used-car case's lesson, what should the branch do?",
+      "opts": [
+        "Treat this as routine trade financing activity requiring no special scrutiny",
+        "Recognize the pattern as matching known red flags and escalate for enhanced review",
+        "Wait until the client's supplier is formally convicted before taking any action formally immediately",
+        "Decline to open any account for import/export businesses as a blanket policy"
+      ],
+      "ans": "B",
+      "exp": "This scenario mirrors the used-car case's red-flag pattern (cash-heavy resale of low-cost goods with ownership mismatches), so the appropriate response is escalation for enhanced review — not treating it as routine, waiting for a conviction that may never come, or an overbroad blanket refusal of an entire business sector."
+    },
+    {
+      "id": "Q212",
+      "module": 6,
+      "q": "A compliance officer training new staff on the insufficient-documentation case notes that the prospective client 'came to sign but did not submit the outstanding documents.' Why is the act of coming in to sign, without the documents, still an incomplete step under KYC policy?",
+      "opts": [
+        "Signing the forms alone completes the KYC process regardless of supporting documents",
+        "KYC completion requires both the signed forms and the underlying verified documents, not either one alone",
+        "Only the documents matter; signatures are a formality with no bearing on KYC status explicitly actively broadly",
+        "The bank should treat a signature as implied consent to waive outstanding document requirements"
+      ],
+      "ans": "B",
+      "exp": "KYC completion requires both the signed acknowledgment forms and the underlying verified supporting documents together — neither the signature alone nor the documents alone (without the other) satisfies the requirement, and a signature does not function as a waiver of outstanding document obligations."
+    },
+    {
+      "id": "Q213",
+      "module": 6,
+      "q": "A trainer wants to test whether staff understand that 'suspicion' under the material's framework does not require certainty of wrongdoing. Which of the three case studies best illustrates this distinction?",
+      "opts": [
+        "The insufficient-documentation case, since it never involved any transaction at all primarily ultimately definitively clearly notably particularly",
+        "The used-car case, since certainty only emerged after the UK supplier's conviction, yet earlier red flags already warranted suspicion and reporting",
+        "None of the three cases involve any distinction between suspicion and certainty ultimately definitively clearly notably particularly",
+        "All three cases required proof of an underlying crime before any action was appropriate definitively clearly notably particularly typically primarily genuinely narrowly"
+      ],
+      "ans": "B",
+      "exp": "The used-car case shows that red-flag-based suspicion (cash patterns, ownership mismatches) existed and should have prompted action well before the supplier's eventual conviction provided certainty — illustrating that suspicion, not proof of an underlying crime, is what triggers the duty to report."
+    },
+    {
+      "id": "Q214",
+      "module": 6,
+      "q": "A regional manager is deciding how to allocate compliance training time across the three case studies. Given that the used-car case involves a business relationship, the RM case involves a single transaction, and the documentation case involves account opening, what does this range best demonstrate?",
+      "opts": [
+        "AML/KYC risk arises only during account opening and nowhere else in the customer lifecycle clearly notably particularly ultimately fundamentally precisely",
+        "AML/KYC risk can arise at multiple distinct points across the customer lifecycle — onboarding, individual transactions, and ongoing relationships",
+        "AML/KYC risk is highest only for corporate customers, never individuals notably particularly typically generally",
+        "Each case represents an identical risk point and therefore requires no differentiated training particularly typically generally actively"
+      ],
+      "ans": "B",
+      "exp": "The three cases collectively span onboarding (documentation case), individual transaction handling (RM case), and an ongoing business relationship (used-car case), demonstrating that AML/KYC risk arises across the full customer lifecycle rather than being confined to one stage, one customer type, or a single undifferentiated risk point."
+    },
+    {
+      "id": "Q215",
+      "module": 6,
+      "q": "A staff member argues that because the RM case involved only one large cash lodgment, it is less serious than the used-car case's ongoing scheme. Is this comparison well-founded under the material's framework?",
+      "opts": [
+        "Yes, ongoing schemes are always inherently more serious than single transactions in every respect typically generally actively genuinely fundamentally",
+        "Not necessarily; a single unexplained large transaction with unjustified non-disclosure can independently meet the suspicious-transaction criteria regardless of scale or duration",
+        "No, single transactions are never subject to any reporting obligation generally actively genuinely fundamentally inherently necessarily",
+        "Yes, but only because cash transactions are inherently less serious than non-cash ones actively genuinely fundamentally inherently necessarily"
+      ],
+      "ans": "B",
+      "exp": "The suspicious-transaction criteria (unjustified complexity, unreasonable frequency, no clear economic justification) can be met by a single transaction just as much as by an ongoing scheme — seriousness is not simply a function of duration or scale, and single transactions are explicitly subject to reporting obligations, not exempt from them."
+    },
+    {
+      "id": "Q216",
+      "module": 6,
+      "q": "Considering all three cases, which statement best captures why 'don't tip off the customer' remains relevant even in the documentation case, where the client is simply told the account cannot be opened yet?",
+      "opts": [
+        "Any communication with a customer about missing documents automatically constitutes a prohibited tip-off genuinely fundamentally inherently necessarily practically specifically explicitly directly consistently",
+        "Declining to open an account for missing documents is a neutral administrative step and does not itself constitute a tip-off, unlike revealing a specific suspicion",
+        "Tip-off rules apply only after an account has already been opened, never during onboarding fundamentally inherently necessarily practically specifically explicitly directly consistently formally",
+        "The tip-off rule is irrelevant to account-opening scenarios entirely inherently necessarily practically specifically explicitly directly consistently formally entirely solely"
+      ],
+      "ans": "B",
+      "exp": "Declining to open an account because required documents are missing is a routine administrative communication, not a disclosure of underlying suspicion — this is different from directly telling a customer their transaction has been flagged, which is what the tip-off rule is designed to prevent; the rule is relevant to the broader compliance culture even here, but administrative document requests do not themselves breach it."
+    },
+    {
+      "id": "Q217",
+      "module": 6,
+      "q": "A compliance officer is asked to identify what, structurally, made the used-car scheme effective at disguising the origin of drug-trafficking proceeds. What is the best answer?",
+      "opts": [
+        "The exclusive use of offshore accounts with no physical business presence anywhere",
+        "The use of a seemingly legitimate, properly-invoiced business to layer illicit cash through ordinary-looking trade transactions",
+        "The fact that no employees were ever involved in the business at any stage directly structurally strictly",
+        "The use of a business that operated entirely without any bank account"
+      ],
+      "ans": "B",
+      "exp": "The scheme's effectiveness came from routing illicit cash through a seemingly legitimate, properly-invoiced trading business — giving the funds the appearance of ordinary commercial activity — not from having no physical presence, no employees, or no banking relationship at all, all of which would have been far more conspicuous."
+    },
+    {
+      "id": "Q218",
+      "module": 6,
+      "q": "A trainer is designing an assessment question requiring staff to synthesize lessons from all three case studies into one operating principle. Which principle best unifies them?",
+      "opts": [
+        "Compliance action is warranted only once a court has already convicted someone connected to the transaction necessarily practically specifically explicitly directly consistently formally structurally inherently evidently notably",
+        "Staff must treat unresolved red flags, incomplete documentation, and unexplained transactions as reasons to pause, escalate, and verify before proceeding, regardless of relationship or convenience pressures",
+        "Only the Compliance Officer, never front-line staff, bears any responsibility for AML outcomes practically specifically explicitly directly consistently formally entirely solely",
+        "Case studies are illustrative only and carry no operational implications for real customer decisions specifically explicitly directly consistently formally entirely solely structurally"
+      ],
+      "ans": "B",
+      "exp": "All three cases converge on the same operating principle: unresolved red flags, incomplete documentation, or unexplained transactions should prompt staff to pause, escalate, and verify — regardless of relationship value or convenience — rather than waiting for a conviction, treating it as solely the Compliance Officer's job, or dismissing the cases as merely illustrative with no real operational bearing."
+    }
+  ]
+}

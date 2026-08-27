@@ -2,7 +2,7 @@
 
 A browser-based study platform for the Access Bank ELTP (Executive/Entry-Level Trainee Programme) — practice quizzes, timed exams, flashcards, and a full workbook system, all running client-side with no backend required.
 
-**Live site:** https://accesseltp.github.io/sbequiz/
+**Live site:** https://dekatche099.github.io/Accesseltp_sbequiz/
 
 ---
 

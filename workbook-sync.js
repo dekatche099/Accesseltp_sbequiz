@@ -1,60 +1,15 @@
-/* workbook-sync.js — cross-device backup/restore for Practice Workbooks
- * ============================================================
- * This module does NOT control the app state. It only provides
- * functions to push the current data to Firebase and to pull
- * data on explicit user request.
- * ============================================================ */
+/* workbook-sync.js — cross-device backup/restore for Practice Workbooks.
+ * Rebuilt on Firebase Authentication instead of the 4-digit PIN scheme.
+ * Keyed by uid instead of lowercased username. */
 
-import { initializeApp, getApps, getApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
-import {
-  getFirestore,
-  doc,
-  getDoc,
-  setDoc
-} from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { db } from "./engine/firebase-auth.js?v=20260822b";
+import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyA_JY5U0fzc92X_sPZJHmqkQGaib0EALtI",
-  authDomain: "accesswarrior-f8f34.firebaseapp.com",
-  projectId: "accesswarrior-f8f34",
-  storageBucket: "accesswarrior-f8f34.firebasestorage.app",
-  messagingSenderId: "592765280433",
-  appId: "1:592765280433:web:08799c90034244660d0290",
-  measurementId: "G-JE664K1H0C"
-};
-
-const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-async function hashPin(pin) {
-  const enc = new TextEncoder().encode("qbsalt_" + pin);
-  const buf = await crypto.subtle.digest("SHA-256", enc);
-  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
-}
-
-let verifiedName = null;
-let verifiedPinHash = null;
-
-export async function verifyAndPullWorkbooks(name, pin) {
-  const lname = name.trim().toLowerCase();
-  if (!/^\d{4}$/.test(pin)) return { ok: false, reason: "PIN must be exactly 4 digits." };
-
+/** Pull this trainee's saved workbook subjects from Firestore, by uid. */
+export async function pullWorkbooks(uid) {
+  if (!uid) return { ok: false, reason: "Not signed in." };
   try {
-    const userRef = doc(db, "users", lname);
-    const userSnap = await getDoc(userRef);
-    if (!userSnap.exists()) return { ok: false, reason: "Username not found." };
-
-    const enteredHash = await hashPin(pin);
-    if (userSnap.data().pinHash !== enteredHash) {
-      verifiedName = null;
-      verifiedPinHash = null;
-      return { ok: false, reason: "Wrong PIN." };
-    }
-
-    verifiedName = lname;
-    verifiedPinHash = enteredHash;
-
-    const wbRef = doc(db, "workbooks", lname);
+    const wbRef = doc(db, "workbooks", uid);
     const wbSnap = await getDoc(wbRef);
     if (wbSnap.exists() && wbSnap.data().subjects) {
       try {
@@ -66,35 +21,29 @@ export async function verifyAndPullWorkbooks(name, pin) {
     return { ok: true, data: null };
   } catch (e) {
     console.warn("workbook-sync: pull failed", e);
-    return { ok: false, reason: "Network error – please try again later." };
+    return { ok: false, reason: "Network error — please try again later." };
   }
 }
 
 let pushTimer = null;
 
-export function pushWorkbooksToCloud(name, subjectsArray) {
-  const lname = (name || '').trim().toLowerCase();
-  // Only push if we have a verified user (i.e., a valid PIN)
-  if (verifiedName !== lname || !verifiedPinHash) {
-    console.warn("workbook-sync: push skipped – not verified for", lname);
+/** Push the current workbook subjects to Firestore, by uid. Debounced 600ms, same as before. */
+export function pushWorkbooksToCloud(uid, subjectsArray) {
+  if (!uid) {
+    console.warn("workbook-sync: push skipped — not signed in");
     return;
   }
-
   clearTimeout(pushTimer);
   pushTimer = setTimeout(async () => {
     try {
       await setDoc(
-        doc(db, "workbooks", lname),
+        doc(db, "workbooks", uid),
         { subjects: JSON.stringify(subjectsArray), updatedAt: Date.now() },
         { merge: true }
       );
-      console.log("workbook-sync: push succeeded for", lname);
+      console.log("workbook-sync: push succeeded for", uid);
     } catch (e) {
       console.warn("workbook-sync: push failed", e);
     }
   }, 600);
-}
-
-export function isVerified(name) {
-  return verifiedName === (name || '').trim().toLowerCase() && !!verifiedPinHash;
 }

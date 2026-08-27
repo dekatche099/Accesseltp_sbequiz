@@ -106,13 +106,6 @@
     .workbooks-banner .wb-arrow { font-size: 1.6rem; color: var(--accent); flex-shrink: 0; }
 
     .course-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; margin-bottom: 8px; }
-    .tier-header { display: flex; align-items: center; gap: 12px; margin: 40px 0 16px; }
-    .tier-header:first-of-type { margin-top: 0; }
-    .tier-header h2 { color: var(--text-primary); font-size: 1.3rem; }
-    .tier-count { background: var(--overlay-1); color: var(--text-secondary); font-size: 0.75rem; padding: 3px 12px; border-radius: 100px; }
-    .tier-inprogress .course-card.available { border-color: rgba(251,191,36,0.4); }
-    .tier-inprogress .course-card.available:hover { border-color: #fbbf24; background: rgba(251,191,36,0.12); }
-    .tier-done .course-card { opacity: 0.82; }
     .course-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
@@ -265,7 +258,7 @@
   <div class="container">
     <a href="index.html" class="back-link">← Back to tracks</a>
     <h1>🎓 Graduate Track</h1>
-    <div class="track-badge">ELTP 14 · 15 · 16 · 17</div>
+    <div class="track-badge">Grad Track</div>
 
     <a href="workbooks.html" class="workbooks-banner">
       <div class="wb-info">
@@ -341,31 +334,41 @@
       }
     }
 
-    // ---- Login bar logic ----
+    // ---- Login bar logic (Firebase Auth) ----
+    window.applyCredentialsToLinks = function() {}; // kept as a no-op for course-card render() compatibility
     (function() {
-      const name = safeGetItem('qb_global_user');
-      const pin = safeGetItem('qb_global_pin');
       const bar = document.getElementById('loggedInBar');
-
-      if (name && pin) {
-        bar.classList.add('visible');
-        document.getElementById('trackUser').textContent = name;
-
-        window.applyCredentialsToLinks = function() {
-          // no-op
-        };
-
-        document.getElementById('trackLogout').addEventListener('click', function() {
-          if (confirm('Are you sure you want to log out?')) {
-            safeRemoveItem('qb_global_user');
-            safeRemoveItem('qb_global_pin');
-            window.location.reload();
+      let isPinSession = false;
+      Promise.all([
+        import('./engine/firebase-auth.js?v=20260822'),
+        import('./engine/pin-auth.js?v=20260822')
+      ]).then(([{ onAuthChange, logout }, { resolvePinSession, logoutPin }]) => {
+        onAuthChange(async (user, profile) => {
+          if (user) {
+            isPinSession = false;
+            bar.classList.add('visible');
+            document.getElementById('trackUser').textContent =
+              (profile && profile.username) || user.displayName || user.email;
+            return;
+          }
+          let pinResult = null;
+          try { pinResult = await resolvePinSession(); } catch (e) { /* ignore */ }
+          if (pinResult && pinResult.ok) {
+            isPinSession = true;
+            bar.classList.add('visible');
+            document.getElementById('trackUser').textContent = pinResult.profile.username;
+          } else {
+            isPinSession = false;
+            bar.classList.remove('visible');
           }
         });
-      } else {
-        bar.classList.remove('visible');
-        window.applyCredentialsToLinks = function() {};
-      }
+        document.getElementById('trackLogout').addEventListener('click', async function() {
+          if (confirm('Are you sure you want to log out?')) {
+            if (isPinSession) logoutPin(); else await logout();
+            window.location.href = 'index.html';
+          }
+        });
+      });
     })();
 
     // ---- Workbook intro modal (shown once) ----
@@ -389,53 +392,40 @@
       }
     })();
 
-    // ---- Course data, grouped into 3 tiers based on the 2026 ELTP 14-21 calendar ----
+    // ---- Course data, grouped into 3 tiers based on the current teaching calendar ----
     // Tier 1 (top): being worked on right now — module is today/upcoming on the calendar
     //   (JSON course.html links listed first, legacy standalone HTML pages after).
     // Tier 2 (middle): coming soon — no quiz built yet at all.
     // Tier 3 (bottom): already done — module's calendar date has already passed.
-    const courseGroups = [
-      {
-        key: "inprogress",
-        label: "🔧 In Progress",
-        courses: [
-          { title: "Credit Policy Guide Review", status: "available", link: "course.html?course=cpg-question-bank", desc: "550 unique dual‑mode questions" },
-          { title: "Basic Banking Operations", status: "available", link: "course.html?course=basic-banking-operations", desc: "150 MCQs + 39 flashcards — 189 total" },
-          { title: "Bank Lending & Credit Management", status: "available", link: "course.html?course=bank-lending-and-credit", desc: "133 MCQs + 60 flashcards — 193 total" },
-          { title: "Banking Regulations", status: "available", link: "course.html?course=banking-regulation-2023", desc: "250 MCQs covering key concepts" },
-          { title: "Selling & Marketing of Financial Services", status: "available", link: "course.html?course=smfs", desc: "Quiz now live — question bank added" },
-          { title: "Intra‑Africa Trade", status: "available", link: "course.html?course=intra-africa-trade", desc: "195 MCQs + 21 flashcards — 70 total" },
-          { title: "Finance in Global Markets", status: "available", link: "course.html?course=fgm", desc: "98 MCQs + 98 flashcards — 196 total" },
+    // Single unified sequence, matching the actual Grad Track timetable order
+    // (top to bottom = teaching order). "coming" = no question bank yet; flip to
+    // "available" with the real course.html link once the JSON file is ready.
+    const courses = [
+          { title: "Customer Service", status: "available", link: "course.html?course=customer-service-excellence", desc: "295 practice questions" },
+          { title: "Micro &amp; Macro Economics", status: "available", link: "course.html?course=economics", desc: "418 practice questions" },
+          { title: "Fraud Prevention &amp; Detection", status: "available", link: "course.html?course=fraud-risk-management", desc: "421 practice questions" },
+          { title: "Elements of Banking", status: "available", link: "course.html?course=eob", desc: "340 practice questions" },
+          { title: "Data Analytics", status: "available", link: "course.html?course=data-analysis", desc: "355 practice questions" },
+          { title: "Digital Technology in Banking", status: "available", link: "course.html?course=digital-banking", desc: "340 practice questions" },
+          { title: "Basic Accounting", status: "available", link: "course.html?course=accounting-quiz-mcq", desc: "596 practice questions" },
+          { title: "Elements of Finance", status: "available", link: "course.html?course=eof", desc: "350 practice questions" },
+          { title: "Innovation &amp; Design Thinking", status: "available", link: "course.html?course=innovation-design-thinking", desc: "475 practice questions" },
+          { title: "Role of Insurance in Banking", status: "available", link: "course.html?course=role-of-insurance-banking", desc: "155 practice questions" },
+          { title: "Legal Aspects of Banking &amp; Securities for Lending", status: "available", link: "course.html?course=legal-aspects-of-banking", desc: "402 practice questions" },
+          { title: "Financial Statement Analysis", status: "available", link: "course.html?course=fsa-eltp", desc: "623 practice questions" },
+          { title: "International Trade Finance", status: "available", link: "course.html?course=itf", desc: "345 practice questions" },
+          { title: "Introduction to Cyber Security", status: "available", link: "course.html?course=cybersecurity", desc: "365 practice questions" },
+          { title: "Compliance &amp; Compliance Culture", status: "available", link: "course.html?course=compliance-banking", desc: "195 practice questions" },
+          { title: "Enterprise Risk Management", status: "available", link: "course.html?course=erm", desc: "190 practice questions" },
+          { title: "Credit Policy Guide Review", status: "available", link: "course.html?course=cpg-question-bank", desc: "717 practice questions" },
+          { title: "Basic Banking Operations", status: "available", link: "course.html?course=basic-banking-operations", desc: "359 practice questions" },
+          { title: "Intra Africa Trade", status: "available", link: "course.html?course=intra-africa-trade", desc: "195 practice questions" },
+          { title: "Bank Lending &amp; Credit Management", status: "available", link: "course.html?course=bank-lending-and-credit", desc: "629 practice questions" },
+          { title: "Finance in Global Markets", status: "available", link: "course.html?course=fgm", desc: "230 practice questions" },
           { title: "Money Laundering with KYC/AML/CFT", status: "available", link: "course.html?course=aml-cft-kyc", desc: "218 practice questions" },
-          { title: "Nigerian Deposit Insurance Scheme", status: "available", link: "course.html?course=ndis", desc: "Quiz now live — 270 practice questions" },
-        ]
-      },
-      {
-        key: "coming",
-        label: "⏳ Coming Soon",
-        courses: []
-      },
-      {
-        key: "done",
-        label: "✅ Already Done",
-        courses: [
-          { title: "Customer Service Excellence", status: "available", link: "course.html?course=customer-service-excellence", desc: "250 MCQs + 45 flashcards — 295 total" },
-          { title: "Micro & Macro Economics Quiz", status: "available", link: "course.html?course=economics", desc: "98 MCQs + 42 flashcards — 140 total" },
-          { title: "Fraud Risk Management & Detection", status: "available", link: "course.html?course=fraud-risk-management", desc: "150 MCQs covering key concepts" },
-          { title: "Elements of Banking", status: "available", link: "course.html?course=eob", desc: "140 MCQs + 60 flashcards — 200 total" },
-          { title: "Data Analysis (Power BI and Excel)", status: "available", link: "course.html?course=data-analysis", desc: "480 MCQs covering key concepts" },
-          { title: "Digital Technology in Banking", status: "available", link: "course.html?course=digital-banking", desc: "200 MCQs covering key concepts" },
-          { title: "Basic Accounting", status: "available", link: "course.html?course=accounting-quiz-mcq", desc: "264 MCQs + 264 flashcards — 528 total" },
-          { title: "Elements of Finance", status: "available", link: "course.html?course=eof", desc: "280 MCQs covering key concepts" },
-          { title: "Innovation and Design Thinking", status: "available", link: "course.html?course=innovation-design-thinking", desc: "350 MCQs covering key concepts" },
-          { title: "Banking & Insurance Fundamentals", status: "available", link: "course.html?course=role-of-insurance-banking", desc: "65 MCQs covering key concepts" },
-          { title: "Legal Aspects of Banking & Securities for Lending", status: "available", link: "course.html?course=legal-aspects-of-banking", desc: "322 MCQs covering key concepts" },
-          { title: "Financial Statement Analysis", status: "available", link: "course.html?course=fsa-eltp", desc: "343 MCQs + 60 Case Study Questions covering key concepts" },
-          { title: "Introduction to Cyber Security", status: "available", link: "course.html?course=cybersecurity", desc: "Quiz now live — question bank added" },
-          { title: "Compliance & Ethics", status: "available", link: "course.html?course=compliance-banking", desc: "200 MCQs + 45 flashcards — 245 total" },
-          { title: "Enterprise Risk Management", status: "available", link: "course.html?course=erm", desc: "50 MCQs + 50 flashcards — 100 total" },          
-        ]
-      }
+          { title: "Banking Regulations", status: "available", link: "course.html?course=banking-regulation-2023", desc: "370 practice questions" },
+          { title: "Nigerian Deposit Insurance Scheme", status: "available", link: "course.html?course=ndis", desc: "270 practice questions" },
+          { title: "Selling &amp; Marketing of Financial Services", status: "available", link: "course.html?course=smfs", desc: "350 practice questions" }
     ];
 
     function escapeHtml(str) {
@@ -473,14 +463,7 @@
 
     const container = document.getElementById("trackCourses");
     function render() {
-      let html = '';
-      courseGroups.forEach(group => {
-        if (group.courses.length === 0) return; // skip empty tiers entirely
-        html += `<div class="tier-header"><h2>${group.label}</h2><span class="tier-count">${group.courses.length}</span></div>`;
-        html += `<div class="course-grid tier-${group.key}">${group.courses.map(cardHtml).join('')}</div>`;
-      });
-      container.innerHTML = html;
-
+      container.innerHTML = `<div class="course-grid">${courses.map(cardHtml).join('')}</div>`;
       if (typeof window.applyCredentialsToLinks === 'function') {
         window.applyCredentialsToLinks();
       }

@@ -1,204 +1,138 @@
-/* cloud-sync.js — cross‑device sync, 4‑digit PIN, no forced login */
+/* cloud-sync.js — cross-device progress sync for quiz pages.
+ * ============================================================
+ * Rebuilt on Firebase Authentication (engine/firebase-auth.js) instead
+ * of the old 4-digit PIN scheme. Auth state now comes from Firebase's
+ * own onAuthChange(), which fires reliably on every page load — no PIN
+ * field, no manual verification event, no race condition to get wrong.
+ * ============================================================ */
 
-// ---- Firebase modular imports (Firestore only, no analytics) ----
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
-import {
-  getFirestore,
-  doc,
-  getDoc,
-  setDoc
-} from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { db, onAuthChange } from "./engine/firebase-auth.js?v=20260822";
+import { resolvePinSession, logoutPin, PIN_PREFIX } from "./engine/pin-auth.js?v=20260822";
+import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
-// ---- Your web app's Firebase configuration ----
-const firebaseConfig = {
-  apiKey: "AIzaSyA_JY5U0fzc92X_sPZJHmqkQGaib0EALtI",
-  authDomain: "accesswarrior-f8f34.firebaseapp.com",
-  projectId: "accesswarrior-f8f34",
-  storageBucket: "accesswarrior-f8f34.firebasestorage.app",
-  messagingSenderId: "592765280433",
-  appId: "1:592765280433:web:08799c90034244660d0290",
-  measurementId: "G-JE664K1H0C"
-};
-
-// ---- Initialize Firebase & Firestore ----
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-// ---- Helpers ----
-function docIdFor(courseId, name) {
-  return courseId + "__" + name.trim().toLowerCase();
+function docIdFor(courseId, uid) {
+  return uid + "_" + courseId;
 }
 
-async function hashPin(pin) {
-  const enc = new TextEncoder().encode("qbsalt_" + pin);
-  const buf = await crypto.subtle.digest("SHA-256", enc);
-  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, "0")).join("");
-}
-
-let verifiedName = null;
-let verifiedPinHash = null;
+let currentUid = null;
+let currentProfile = null;
+let usingPinSession = false;
 
 /**
- * Verify PIN against global users doc, then pull progress for this course.
- * Returns { ok: true/false, reason?: string }
+ * Pull this trainee's saved progress for one course from Firestore into
+ * localStorage, under the same qb_missed_ / qb_session_ / qb_answered_
+ * keys the exam engine already reads — only the key suffix changes,
+ * from lowercased-name to uid.
  */
-async function verifyAndPull(courseId, name, pin) {
-  const lname = name.trim().toLowerCase();
-  if (!/^\d{4}$/.test(pin)) return { ok: false, reason: "PIN must be exactly 4 digits." };
-
-  const userRef = doc(db, "users", lname);
-  const userSnap = await getDoc(userRef);
-  const enteredHash = await hashPin(pin);
-
-  if (!userSnap.exists()) {
-    return { ok: false, reason: "Username not found." };
-  }
-
-  const userData = userSnap.data();
-  if (userData.pinHash !== enteredHash) {
-    verifiedName = null;
-    verifiedPinHash = null;
-    return { ok: false, reason: "Wrong PIN." };
-  }
-
-  verifiedName = lname;
-  verifiedPinHash = enteredHash;
-
-  // Download progress for this course
-  const progRef = doc(db, "progress", docIdFor(courseId, name));
-  const progSnap = await getDoc(progRef);
-  if (progSnap.exists()) {
-    const data = progSnap.data();
-    if (data.missed != null) localStorage.setItem("qb_missed_" + courseId, data.missed);
-    if (data.session != null) localStorage.setItem("qb_session_" + courseId + "_" + lname, data.session);
-    if (data.answered != null) localStorage.setItem("qb_answered_" + courseId + "_" + lname, data.answered);
-  }
-  return { ok: true };
+async function pullProgress(courseId, uid) {
+  const progRef = doc(db, "progress", docIdFor(courseId, uid));
+  const snap = await getDoc(progRef);
+  if (!snap.exists()) return;
+  const data = snap.data();
+  if (data.missed != null) localStorage.setItem("qb_missed_" + courseId, data.missed);
+  if (data.session != null) localStorage.setItem("qb_session_" + courseId + "_" + uid, data.session);
+  if (data.answered != null) localStorage.setItem("qb_answered_" + courseId + "_" + uid, data.answered);
 }
 
-/**
- * Register a new user (only called from the hub).
- */
-async function registerUser(name, pin, track = "") {
-  const lname = name.trim().toLowerCase();
-  if (!/^\d{4}$/.test(pin)) return { ok: false, reason: "PIN must be exactly 4 digits." };
-  const userRef = doc(db, "users", lname);
-  const snap = await getDoc(userRef);
-  if (snap.exists()) {
-    return { ok: false, reason: "Username already taken." };
-  }
-  const pinHash = await hashPin(pin);
-  await setDoc(userRef, {
-    pinHash,
-    track: track,
-    createdAt: Date.now()
-  });
-  return { ok: true };
-}
-
-// ---- Push local progress to Firestore (debounced) ----
+// ---- Push local progress to Firestore (debounced, same 800ms as before) ----
 let pushTimer = null;
-function pushToCloud(courseId, name) {
-  const lname = name.trim().toLowerCase();
-  if (verifiedName !== lname || !verifiedPinHash) return;
+function pushToCloud(courseId, uid) {
+  if (!uid) return;
   clearTimeout(pushTimer);
   pushTimer = setTimeout(async () => {
     const payload = {
+      identity: uid,
+      courseId,
       missed: localStorage.getItem("qb_missed_" + courseId) || null,
-      session: localStorage.getItem("qb_session_" + courseId + "_" + lname) || null,
-      answered: localStorage.getItem("qb_answered_" + courseId + "_" + lname) || null,
+      session: localStorage.getItem("qb_session_" + courseId + "_" + uid) || null,
+      answered: localStorage.getItem("qb_answered_" + courseId + "_" + uid) || null,
       updatedAt: Date.now()
     };
     try {
-      await setDoc(doc(db, "progress", docIdFor(courseId, name)), payload, { merge: true });
+      await setDoc(doc(db, "progress", docIdFor(courseId, uid)), payload, { merge: true });
     } catch (e) { console.warn("cloud-sync: push failed", e); }
   }, 800);
 }
 
-// ---- Inject PIN field & sync status on quiz pages ----
-function injectPinField(nameInput) {
-  const pin = document.createElement("input");
-  pin.type = "password";
-  pin.id = "userPin-input";
-  pin.placeholder = "4-digit PIN";
-  pin.maxLength = 4;
-  pin.inputMode = "numeric";
-  pin.pattern = "[0-9]*";
-  pin.style.cssText = nameInput.style.cssText || "";
-  pin.style.marginTop = "8px";
-  pin.style.width = "110px";
-
-  const status = document.createElement("div");
-  status.id = "syncStatus";
-  status.style.cssText = "font-size:13px;margin-top:6px;min-height:1.2em;";
-
-  nameInput.insertAdjacentElement("afterend", status);
-  nameInput.insertAdjacentElement("afterend", pin);
-
-  document.dispatchEvent(new CustomEvent("pinFieldReady", { detail: { pinField: pin } }));
-  return { pin, status };
-}
-
+/**
+ * Call once per course page. Wires up: (1) auto sign-in-state detection,
+ * (2) pulling cloud progress the moment we know who's signed in, (3) a
+ * localStorage.setItem watcher that auto-pushes any progress write back
+ * to the cloud. Calls window.checkForSavedSession() etc. (bridged by
+ * firebase-adapter.js) once the pull completes, same as before.
+ */
 function initCloudSync(courseId) {
-  const nameInput = document.getElementById("userId-input");
-  if (!nameInput) return;
-
-  const { pin, status } = injectPinField(nameInput);
-
-  function setStatus(msg, isError) {
-    status.textContent = msg;
-    status.style.color = isError ? "#ef4444" : "#22c55e";
-  }
-
   const origSetItem = localStorage.setItem.bind(localStorage);
-  localStorage.setItem = function(key, value) {
+  localStorage.setItem = function (key, value) {
     origSetItem(key, value);
-    if (nameInput.value.trim() &&
+    if (currentUid &&
        (key.startsWith("qb_missed_" + courseId) ||
         key.startsWith("qb_session_" + courseId + "_") ||
         key.startsWith("qb_answered_" + courseId + "_"))) {
-      pushToCloud(courseId, nameInput.value);
+      pushToCloud(courseId, currentUid);
     }
   };
 
-  async function attemptVerify() {
-    const name = nameInput.value.trim();
-    const pinVal = pin.value.trim();
-    if (!name || pinVal.length !== 4) { status.textContent = ""; return; }
-
-    setStatus("Checking…", false);
-    const result = await verifyAndPull(courseId, name, pinVal);
-    if (!result.ok) {
-      setStatus("⚠ " + result.reason, true);
-      pin.value = "";
-      pin.focus();
+  async function signInAs(user, profile, isPin) {
+    if (typeof window.setSignedInUser === "function") {
+      window.setSignedInUser(user, profile);
+    }
+    usingPinSession = isPin;
+    if (!user) {
+      currentUid = null;
+      currentProfile = null;
       return;
     }
-    setStatus("✓ Progress synced", false);
+    currentUid = user.uid;
+    currentProfile = profile;
+    try {
+      await pullProgress(courseId, user.uid);
+    } catch (e) {
+      console.warn("cloud-sync: pull failed", e);
+    }
     if (typeof window.checkForSavedSession === "function") window.checkForSavedSession();
     if (typeof window.validateStart === "function") window.validateStart();
     if (typeof window.updateTotalAvail === "function") window.updateTotalAvail();
   }
 
-  nameInput.addEventListener("change", attemptVerify);
-  pin.addEventListener("change", attemptVerify);
-  pin.addEventListener("blur", attemptVerify);
+  onAuthChange(async (user, profile) => {
+    if (user) {
+      // A real Firebase Auth account always takes priority over any
+      // leftover PIN session in localStorage.
+      await signInAs(user, profile, false);
+      return;
+    }
 
-  // Auto‑fill from URL params (passed from hub or track pages)
-  const params = new URLSearchParams(window.location.search);
-  const linkedName = params.get("u");
-  const linkedPin = params.get("p");
-  if (linkedName) nameInput.value = linkedName;
-  if (linkedPin) pin.value = linkedPin;
-  if (linkedName && linkedPin) attemptVerify();
+    // No Firebase Auth session — see if a PIN session was remembered
+    // and still checks out against Firestore.
+    let pinResult = null;
+    try {
+      pinResult = await resolvePinSession();
+    } catch (e) {
+      console.warn("cloud-sync: pin session check failed", e);
+    }
+
+    if (pinResult && pinResult.ok) {
+      const pinUser = {
+        uid: pinResult.identity,
+        email: null,
+        displayName: pinResult.profile.username
+      };
+      await signInAs(pinUser, pinResult.profile, true);
+    } else {
+      await signInAs(null, null, false);
+    }
+  });
 }
 
-function logoutUser(redirect = true) {
-  localStorage.removeItem("qb_global_user");
-  localStorage.removeItem("qb_global_pin");
-  verifiedName = null;
-  verifiedPinHash = null;
-  if (redirect) window.location.replace("index.html");
+/** Sign out of whichever session (Firebase Auth or PIN) is currently active. */
+async function signOutAny() {
+  if (usingPinSession) {
+    logoutPin();
+  } else {
+    const { logout } = await import("./engine/firebase-auth.js?v=20260822");
+    await logout();
+  }
 }
 
-export { initCloudSync, registerUser, logoutUser, verifyAndPull };
+export { initCloudSync, signOutAny };

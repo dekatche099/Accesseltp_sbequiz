@@ -160,6 +160,17 @@
     .auth-message { text-align: center; margin-top: 12px; font-size: 0.9rem; min-height: 22px; }
     .auth-message.error { color: var(--error); }
     .auth-message.success { color: var(--success); }
+    .auth-link { text-align: right; margin-top: 6px; }
+    .auth-link a { color: var(--accent); font-size: 0.85rem; text-decoration: none; }
+    .auth-link a:hover { text-decoration: underline; }
+    .auth-divider { display: flex; align-items: center; gap: 10px; margin: 16px 0 12px; color: var(--text-muted); font-size: 0.8rem; }
+    .auth-divider::before, .auth-divider::after { content: ""; flex: 1; height: 1px; background: var(--input-border); }
+    .btn-google {
+      width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;
+      background: var(--card-bg); color: var(--text-primary); border: 1px solid var(--input-border);
+      padding: 11px; border-radius: 10px; font-size: 0.95rem; cursor: pointer; font-weight: 500;
+    }
+    .btn-google:hover { background: var(--overlay-1); }
 
     h1 { text-align: center; color: var(--text-primary); font-size: 2.4rem; margin-bottom: 8px; }
     .subtitle { text-align: center; color: var(--text-secondary); font-size: 1rem; margin-bottom: 48px; }
@@ -187,14 +198,6 @@
     .arrow { font-size: 1.5rem; margin-top: 6px; transition: transform 0.3s; }
     .track-card:hover .arrow { transform: translateY(4px); }
     .footer { text-align: center; color: var(--text-muted); font-size: 0.82rem; margin-top: 44px; }
-
-    .saved-users { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; }
-    .saved-user-chip {
-      background: var(--overlay-1); border: 1px solid var(--card-border);
-      border-radius: 20px; padding: 4px 12px; font-size: 0.8rem; color: var(--text-secondary);
-      cursor: pointer; transition: background 0.2s;
-    }
-    .saved-user-chip:hover { background: rgba(59,130,246,0.2); }
 
     @media (max-width: 700px) { .track-grid { grid-template-columns: 1fr; } }
   </style>
@@ -236,11 +239,11 @@
     <div class="modal-content">
       <h3>🔐 How It Works</h3>
       <ul>
-        <li><strong>One account for all courses.</strong><br>Create a username and a 4‑digit PIN on this page.</li>
-        <li>✅ After logging in, every quiz automatically knows who you are — no more typing your name or PIN on each course.</li>
-        <li>📱 <strong>Progress syncs across devices.</strong> Open a quiz on your phone, continue on your laptop.</li>
-        <li>🔒 Your PIN keeps your progress private.</li>
-        <li>⚠ <strong>Lost PIN = lost account.</strong> Write it down!</li>
+        <li><strong>One account for all courses.</strong><br>Register with your email and a password (or continue with Google) on this page.</li>
+        <li>✅ After logging in, every quiz automatically knows who you are — no more typing your name on each course.</li>
+        <li>📱 <strong>Progress syncs across devices.</strong> Open a quiz on your phone, continue on your laptop — just sign in with the same account.</li>
+        <li>🔒 Your account keeps your progress private — nobody else can see or touch it.</li>
+        <li>⚠ <strong>Forgot your password?</strong> Use "Forgot password?" on the login screen to reset it by email.</li>
       </ul>
       <button id="closeInfo">Got it</button>
     </div>
@@ -256,16 +259,21 @@
     <!-- Login form -->
     <div class="auth-form active" id="formLogin">
       <div class="form-row">
-        <label for="loginUsername">Username</label>
-        <input type="text" id="loginUsername" placeholder="Your username" autocomplete="off">
-        <div class="saved-users" id="savedUsers"></div>
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" placeholder="you@example.com" autocomplete="email">
       </div>
       <div class="form-row">
-        <label for="loginPin">4‑digit PIN</label>
-        <input type="password" id="loginPin" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="••••">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="Your password" autocomplete="current-password">
       </div>
       <button class="btn" id="loginBtn">Log In</button>
+      <p class="auth-link"><a href="#" id="forgotPasswordLink">Forgot password?</a></p>
       <div class="auth-message" id="loginMsg"></div>
+      <div class="auth-divider"><span>or</span></div>
+      <button class="btn btn-google" id="googleLoginBtn">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="" width="18" height="18">
+        Continue with Google
+      </button>
     </div>
 
     <!-- Register form -->
@@ -275,12 +283,16 @@
         <input type="text" id="regUsername" placeholder="e.g. chidi" autocomplete="off">
       </div>
       <div class="form-row">
-        <label for="regPin">Create a 4‑digit PIN</label>
-        <input type="password" id="regPin" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="••••">
+        <label for="regEmail">Email</label>
+        <input type="email" id="regEmail" placeholder="you@example.com" autocomplete="email">
       </div>
       <div class="form-row">
-        <label for="regPin2">Confirm PIN</label>
-        <input type="password" id="regPin2" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="••••">
+        <label for="regPassword">Create a Password</label>
+        <input type="password" id="regPassword" placeholder="At least 6 characters" autocomplete="new-password">
+      </div>
+      <div class="form-row">
+        <label for="regPassword2">Confirm Password</label>
+        <input type="password" id="regPassword2" placeholder="Re-enter your password" autocomplete="new-password">
       </div>
       <div class="form-row">
         <label for="regTrack">Your Track</label>
@@ -292,6 +304,68 @@
       </div>
       <button class="btn" id="registerBtn">Create Account & Go</button>
       <div class="auth-message" id="registerMsg"></div>
+      <div class="auth-divider"><span>or</span></div>
+      <button class="btn btn-google" id="googleRegisterBtn">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="" width="18" height="18">
+        Continue with Google
+      </button>
+      <p class="auth-link"><a href="#" id="preferNoEmailLink">Prefer not to use email?</a></p>
+    </div>
+
+    <!-- No-email register/login (username + 4-digit PIN) -->
+    <div class="auth-form" id="formPin">
+      <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:14px;">
+        No email needed — just a username and a 4-digit PIN. This is a lighter form of
+        protection than a password, so only use it for practice progress you're comfortable
+        syncing this way. You can add an email + password later without losing anything.
+      </p>
+      <div class="form-row">
+        <label for="pinUsername">Username</label>
+        <input type="text" id="pinUsername" placeholder="e.g. chidi" autocomplete="off">
+      </div>
+      <div class="form-row">
+        <label for="pinCode">4-digit PIN</label>
+        <input type="password" id="pinCode" placeholder="1234" maxlength="4" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+      </div>
+      <div class="form-row" id="pinTrackRow">
+        <label for="pinTrack">Your Track</label>
+        <select id="pinTrack">
+          <option value="">Select a track…</option>
+          <option value="grad">Graduate Track</option>
+          <option value="retail">Retail Track</option>
+        </select>
+      </div>
+      <button class="btn" id="pinRegisterBtn">Create Account & Go</button>
+      <button class="btn" id="pinLoginBtn" style="display:none;background:transparent;border:1px solid var(--input-border);color:var(--text-primary);margin-top:10px;">Log In</button>
+      <div class="auth-message" id="pinMsg"></div>
+      <p class="auth-link"><a href="#" id="pinHaveAccountLink">Already have a username + PIN account? Log in</a></p>
+      <p class="auth-link"><a href="#" id="backToEmailLink">Back to email registration</a></p>
+    </div>
+  </div>
+
+  <!-- Shown instead of the auth card once Firebase Auth confirms a session -->
+  <div class="auth-card" id="alreadySignedIn" style="display:none; text-align:center;">
+    <p style="margin-bottom:12px;">👤 Signed in as <strong></strong></p>
+    <button class="btn" id="signOutBtn" style="background:transparent;border:1px solid var(--input-border);color:var(--text-secondary);">Sign out</button>
+
+    <div id="upgradeBox" style="display:none;text-align:left;margin-top:20px;padding-top:20px;border-top:1px solid var(--input-border);">
+      <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:12px;">
+        You're using a username + PIN account. Add an email and password any time to make your
+        account recoverable and keep all your progress.
+      </p>
+      <button class="btn" id="showUpgradeFormBtn" style="background:transparent;border:1px solid var(--accent);color:var(--accent);">Add email & password</button>
+      <div id="upgradeForm" style="display:none;margin-top:14px;">
+        <div class="form-row">
+          <label for="upgradeEmail">Email</label>
+          <input type="email" id="upgradeEmail" placeholder="you@example.com" autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="upgradePassword">Create a Password</label>
+          <input type="password" id="upgradePassword" placeholder="At least 6 characters" autocomplete="new-password">
+        </div>
+        <button class="btn" id="upgradeBtn">Save</button>
+        <div class="auth-message" id="upgradeMsg"></div>
+      </div>
     </div>
   </div>
 
@@ -300,14 +374,12 @@
     <a href="grad-track.html" class="track-card grad" id="gradCard">
       <div class="track-icon">🎓</div>
       <h2>Graduate Track</h2>
-      <p>ELTP 14 · 15 · 16 · 17</p>
       <div class="track-badge">Grad Track</div>
       <div class="arrow">↓</div>
     </a>
     <a href="retail-track.html" class="track-card retail" id="retailCard">
       <div class="track-icon">🏦</div>
       <h2>Retail Track</h2>
-      <p>ELTP 18 · 19 · 20 · 21</p>
       <div class="track-badge">Retail Track</div>
       <div class="arrow">↓</div>
     </a>
@@ -316,29 +388,29 @@
 </div>
 
 <script type="module">
-  import { registerUser, verifyAndPull } from "./cloud-sync.js";
+  import {
+    registerWithEmail,
+    loginWithEmail,
+    loginWithGoogle,
+    sendReset,
+    onAuthChange,
+    logout
+  } from "./engine/firebase-auth.js?v=20260822b";
+  import {
+    registerWithPin,
+    loginWithPin,
+    resolvePinSession,
+    logoutPin,
+    upgradePinToEmail
+  } from "./engine/pin-auth.js?v=20260822b";
 
-  // ====== YOUR REAL FIREBASE CONFIG (SAME AS IN CLOUD-SYNC.JS) ======
-  const firebaseConfig = {
-    apiKey: "AIzaSyA_JY5U0fzc92X_sPZJHmqkQGaib0EALtI",
-    authDomain: "accesswarrior-f8f34.firebaseapp.com",
-    projectId: "accesswarrior-f8f34",
-    storageBucket: "accesswarrior-f8f34.firebasestorage.app",
-    messagingSenderId: "592765280433",
-    appId: "1:592765280433:web:08799c90034244660d0290",
-    measurementId: "G-JE664K1H0C"
-  };
+  let activeIsPin = false;
+  let activePinUsername = null;
 
-  const { initializeApp } = await import("https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js");
-  const { getFirestore, doc, getDoc } = await import("https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js");
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-
-  async function hashPin(pin) {
-    const enc = new TextEncoder().encode("qbsalt_" + pin);
-    const buf = await crypto.subtle.digest("SHA-256", enc);
-    return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, "0")).join("");
-  }
+  document.getElementById('signOutBtn').addEventListener('click', () => {
+    if (activeIsPin) { logoutPin(); location.reload(); }
+    else { logout(); }
+  });
 
   // ---- Tab switching ----
   const tabLogin = document.getElementById('tabLogin');
@@ -354,98 +426,117 @@
     formRegister.classList.add('active'); formLogin.classList.remove('active');
   });
 
-  // ---- Remembered usernames ----
-  const USERS_KEY = 'qb_saved_usernames';
-  function getSavedUsers() {
-    try { return JSON.parse(localStorage.getItem(USERS_KEY)) || []; } catch { return []; }
+  // ---- If already signed in, skip straight to track choice ----
+  // Firebase Auth persists sessions itself (IndexedDB-backed), so this
+  // fires correctly on every visit without us reading/writing anything
+  // to localStorage ourselves.
+  function showSignedIn(name) {
+    document.getElementById('authCard').style.display = 'none';
+    const banner = document.getElementById('alreadySignedIn');
+    banner.style.display = 'block';
+    banner.querySelector('strong').textContent = name;
+    document.getElementById('upgradeBox').style.display = activeIsPin ? 'block' : 'none';
   }
-  function saveUsername(name) {
-    const users = getSavedUsers().filter(u => u.toLowerCase() !== name.toLowerCase());
-    users.unshift(name);
-    localStorage.setItem(USERS_KEY, JSON.stringify(users.slice(0, 10)));
-  }
-  function renderSavedUsers() {
-    const container = document.getElementById('savedUsers');
-    const users = getSavedUsers();
-    container.innerHTML = users.map(u => `<span class="saved-user-chip" data-name="${u}">${u}</span>`).join('');
-    document.querySelectorAll('.saved-user-chip').forEach(chip => {
-      chip.addEventListener('click', () => {
-        document.getElementById('loginUsername').value = chip.dataset.name;
-      });
-    });
-  }
-  renderSavedUsers();
 
-  // ---- Update track card links ----
-  function updateTrackLinks() {
-    // v-security-1: previously appended ?u=<name>&p=<pin> to these links. That leaked the
-    // PIN into the URL bar, browser history, and any referrer headers. It's also unnecessary:
-    // grad-track.html / retail-track.html read qb_global_user / qb_global_pin straight from
-    // localStorage (shared across same-origin pages), and never consumed these URL params in
-    // the first place. Plain links only.
-    document.getElementById('gradCard').href = 'grad-track.html';
-    document.getElementById('retailCard').href = 'retail-track.html';
+  function showSignedOut() {
+    document.getElementById('authCard').style.display = '';
+    document.getElementById('alreadySignedIn').style.display = 'none';
   }
+
+  onAuthChange(async (user, profile) => {
+    if (user) {
+      activeIsPin = false;
+      activePinUsername = null;
+      showSignedIn((profile && profile.username) || user.displayName || user.email);
+      return;
+    }
+
+    // No Firebase Auth session — check for a remembered PIN session.
+    let pinResult = null;
+    try { pinResult = await resolvePinSession(); } catch (e) { /* ignore */ }
+    if (pinResult && pinResult.ok) {
+      activeIsPin = true;
+      activePinUsername = pinResult.profile.username;
+      showSignedIn(pinResult.profile.username);
+    } else {
+      activeIsPin = false;
+      activePinUsername = null;
+      showSignedOut();
+    }
+  });
 
   // ---- Login ----
   document.getElementById('loginBtn').addEventListener('click', async () => {
-    const name = document.getElementById('loginUsername').value.trim();
-    const pin = document.getElementById('loginPin').value.trim();
+    const email = document.getElementById('loginEmail').value.trim();
+    const password = document.getElementById('loginPassword').value;
     const msg = document.getElementById('loginMsg');
     msg.textContent = ''; msg.className = 'auth-message';
 
-    if (!name || !/^\d{4}$/.test(pin)) {
-      msg.textContent = 'Please enter username and a 4‑digit PIN.';
+    if (!email || !password) {
+      msg.textContent = 'Please enter your email and password.';
       msg.classList.add('error');
       return;
     }
 
-    try {
-      const userRef = doc(db, "users", name.toLowerCase());
-      const snap = await getDoc(userRef);
-      if (!snap.exists()) {
-        msg.textContent = 'Username not found. Did you register?';
-        msg.classList.add('error');
-        return;
-      }
-      const userData = snap.data();
-      const enteredHash = await hashPin(pin);
-      if (userData.pinHash !== enteredHash) {
-        msg.textContent = 'Wrong PIN.';
-        msg.classList.add('error');
-        return;
-      }
+    const result = await loginWithEmail(email, password);
+    if (!result.ok) {
+      msg.textContent = result.reason;
+      msg.classList.add('error');
+      return;
+    }
+    msg.textContent = 'Logged in! You can now click a track.';
+    msg.classList.add('success');
+  });
 
-      // Success
-      localStorage.setItem('qb_global_user', name);
-      localStorage.setItem('qb_global_pin', pin);
-      saveUsername(name);
-      updateTrackLinks();
-      msg.textContent = 'Logged in! You can now click a track.';
-      msg.classList.add('success');
-      renderSavedUsers();
-    } catch (e) {
-      msg.textContent = 'Connection error. Check your internet.';
+  document.getElementById('forgotPasswordLink').addEventListener('click', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('loginEmail').value.trim();
+    const msg = document.getElementById('loginMsg');
+    msg.textContent = ''; msg.className = 'auth-message';
+    if (!email) {
+      msg.textContent = 'Type your email above first, then click "Forgot password?" again.';
+      msg.classList.add('error');
+      return;
+    }
+    const result = await sendReset(email);
+    msg.textContent = result.ok
+      ? 'Password reset email sent — check your inbox.'
+      : result.reason;
+    msg.classList.add(result.ok ? 'success' : 'error');
+  });
+
+  document.getElementById('googleLoginBtn').addEventListener('click', async () => {
+    const msg = document.getElementById('loginMsg');
+    msg.textContent = ''; msg.className = 'auth-message';
+    const result = await loginWithGoogle();
+    if (!result.ok) {
+      msg.textContent = result.reason;
       msg.classList.add('error');
     }
   });
 
   // ---- Register ----
   document.getElementById('registerBtn').addEventListener('click', async () => {
-    const name = document.getElementById('regUsername').value.trim();
-    const pin = document.getElementById('regPin').value.trim();
-    const pin2 = document.getElementById('regPin2').value.trim();
+    const username = document.getElementById('regUsername').value.trim();
+    const email = document.getElementById('regEmail').value.trim();
+    const password = document.getElementById('regPassword').value;
+    const password2 = document.getElementById('regPassword2').value;
     const track = document.getElementById('regTrack').value;
     const msg = document.getElementById('registerMsg');
     msg.textContent = ''; msg.className = 'auth-message';
 
-    if (!name || !/^\d{4}$/.test(pin) || !/^\d{4}$/.test(pin2)) {
-      msg.textContent = 'All fields required. PIN must be exactly 4 digits.';
+    if (!username || !email || !password || !password2) {
+      msg.textContent = 'All fields are required.';
       msg.classList.add('error');
       return;
     }
-    if (pin !== pin2) {
-      msg.textContent = 'PINs do not match.';
+    if (password.length < 6) {
+      msg.textContent = 'Password must be at least 6 characters.';
+      msg.classList.add('error');
+      return;
+    }
+    if (password !== password2) {
+      msg.textContent = 'Passwords do not match.';
       msg.classList.add('error');
       return;
     }
@@ -455,30 +546,126 @@
       return;
     }
 
-    try {
-      const result = await registerUser(name, pin, track);
-      if (!result.ok) {
-        msg.textContent = result.reason;
-        msg.classList.add('error');
-        return;
-      }
-      // Registration successful – log in automatically
-      localStorage.setItem('qb_global_user', name);
-      localStorage.setItem('qb_global_pin', pin);
-      saveUsername(name);
-      updateTrackLinks();
-      msg.textContent = 'Account created! Redirecting to your track…';
-      msg.classList.add('success');
-      const dest = track === 'retail' ? 'retail-track.html' : 'grad-track.html';
-      // v-security-1: qb_global_user / qb_global_pin are already written to localStorage
-      // above, and the destination page reads them from there. No need to also put the
-      // PIN in the URL, where it would land in browser history and any referrer headers.
-      window.location.href = dest;
-    } catch (e) {
-      msg.textContent = 'Connection error. Please try again.';
+    const result = await registerWithEmail(email, password, username, track);
+    if (!result.ok) {
+      msg.textContent = result.reason;
       msg.classList.add('error');
+      return;
     }
+    msg.textContent = 'Account created! Redirecting to your track…';
+    msg.classList.add('success');
+    const dest = track === 'retail' ? 'retail-track.html' : 'grad-track.html';
+    window.location.href = dest;
   });
+
+  document.getElementById('googleRegisterBtn').addEventListener('click', async () => {
+    const track = document.getElementById('regTrack').value;
+    const msg = document.getElementById('registerMsg');
+    msg.textContent = ''; msg.className = 'auth-message';
+    if (!track) {
+      msg.textContent = 'Please choose your track first, then continue with Google.';
+      msg.classList.add('error');
+      return;
+    }
+    const result = await loginWithGoogle(track);
+    if (!result.ok) {
+      msg.textContent = result.reason;
+      msg.classList.add('error');
+      return;
+    }
+    window.location.href = track === 'retail' ? 'retail-track.html' : 'grad-track.html';
+  });
+
+  // ---- No-email (username + PIN) register/login ----
+  const formRegisterEl = document.getElementById('formRegister');
+  const formPin = document.getElementById('formPin');
+  const pinRegisterBtn = document.getElementById('pinRegisterBtn');
+  const pinLoginBtn = document.getElementById('pinLoginBtn');
+  const pinTrackRow = document.getElementById('pinTrackRow');
+  let pinMode = 'register'; // or 'login'
+
+  function setPinMode(mode) {
+    pinMode = mode;
+    const isRegister = mode === 'register';
+    pinRegisterBtn.style.display = isRegister ? '' : 'none';
+    pinLoginBtn.style.display = isRegister ? 'none' : '';
+    pinTrackRow.style.display = isRegister ? '' : 'none';
+    document.getElementById('pinHaveAccountLink').textContent = isRegister
+      ? 'Already have a username + PIN account? Log in'
+      : "Don't have one yet? Create one";
+    document.getElementById('pinMsg').textContent = '';
+  }
+
+  document.getElementById('preferNoEmailLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    formRegisterEl.classList.remove('active');
+    formPin.classList.add('active');
+    setPinMode('register');
+  });
+  document.getElementById('backToEmailLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    formPin.classList.remove('active');
+    formRegisterEl.classList.add('active');
+  });
+  document.getElementById('pinHaveAccountLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    setPinMode(pinMode === 'register' ? 'login' : 'register');
+  });
+
+  pinRegisterBtn.addEventListener('click', async () => {
+    const username = document.getElementById('pinUsername').value.trim();
+    const pin = document.getElementById('pinCode').value.trim();
+    const track = document.getElementById('pinTrack').value;
+    const msg = document.getElementById('pinMsg');
+    msg.textContent = ''; msg.className = 'auth-message';
+    if (!username || !pin) { msg.textContent = 'Please fill in a username and PIN.'; msg.classList.add('error'); return; }
+    if (!track) { msg.textContent = 'Please choose your track.'; msg.classList.add('error'); return; }
+
+    const result = await registerWithPin(username, pin, track);
+    if (!result.ok) { msg.textContent = result.reason; msg.classList.add('error'); return; }
+    msg.textContent = 'Account created! Redirecting to your track…';
+    msg.classList.add('success');
+    window.location.href = track === 'retail' ? 'retail-track.html' : 'grad-track.html';
+  });
+
+  pinLoginBtn.addEventListener('click', async () => {
+    const username = document.getElementById('pinUsername').value.trim();
+    const pin = document.getElementById('pinCode').value.trim();
+    const msg = document.getElementById('pinMsg');
+    msg.textContent = ''; msg.className = 'auth-message';
+    const result = await loginWithPin(username, pin);
+    if (!result.ok) { msg.textContent = result.reason; msg.classList.add('error'); return; }
+    msg.textContent = 'Logged in! You can now click a track.';
+    msg.classList.add('success');
+    location.reload();
+  });
+
+  // ---- Upgrade a PIN account to email + password ----
+  const showUpgradeFormBtn = document.getElementById('showUpgradeFormBtn');
+  if (showUpgradeFormBtn) {
+    showUpgradeFormBtn.addEventListener('click', () => {
+      const form = document.getElementById('upgradeForm');
+      form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    });
+  }
+  const upgradeBtn = document.getElementById('upgradeBtn');
+  if (upgradeBtn) {
+    upgradeBtn.addEventListener('click', async () => {
+      const email = document.getElementById('upgradeEmail').value.trim();
+      const password = document.getElementById('upgradePassword').value;
+      const msg = document.getElementById('upgradeMsg');
+      msg.textContent = ''; msg.className = 'auth-message';
+      if (!email || !password) { msg.textContent = 'Please enter an email and password.'; msg.classList.add('error'); return; }
+      if (!activePinUsername) { msg.textContent = 'Could not find your current PIN session — please log in again.'; msg.classList.add('error'); return; }
+
+      const storedPin = localStorage.getItem('qb_pin_pin');
+      const result = await upgradePinToEmail(activePinUsername, storedPin, email, password);
+      if (!result.ok) { msg.textContent = result.reason; msg.classList.add('error'); return; }
+      msg.textContent = 'Email added! Reloading…';
+      msg.classList.add('success');
+      setTimeout(() => location.reload(), 800);
+    });
+  }
 
   // ---- Modal logic ----
   document.getElementById('infoBtn').addEventListener('click', () => {
@@ -491,8 +678,6 @@
     document.getElementById('infoModal').style.display = 'flex';
     localStorage.setItem('info_shown', '1');
   }
-
-  updateTrackLinks();
 </script>
 </body>
 </html>

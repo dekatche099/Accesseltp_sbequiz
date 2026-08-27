@@ -594,15 +594,15 @@
             <h1 id="course-title">Loading…</h1>
             <p id="course-desc" style="text-align:center; color:var(--text-secondary); margin-bottom:20px;"></p>
 
-            <!-- Logged-in bar: shown when a hub login (qb_global_user/qb_global_pin) is present -->
+            <!-- Logged-in bar: shown once Firebase Auth resolves a signed-in user (see engine/ui-renderer.js setSignedInUser) -->
             <div id="loggedInBar" class="logged-in-bar">
                 <span>👤 Logged in as <strong id="loggedInName"></strong></span>
                 <button id="logoutFromQuiz">🚪 Logout</button>
             </div>
 
-            <!-- User ID input (hidden when logged in) -->
+            <!-- User ID input: only shown when NOT signed in (local-only, no cloud sync) -->
             <div class="form-group" id="userId-group">
-                <label for="userId-input">Your User ID <span style="font-weight:400;color:var(--text-secondary);font-size:13px;">(e.g., name)</span></label>
+                <label for="userId-input">Your User ID <span style="font-weight:400;color:var(--text-secondary);font-size:13px;">(e.g., name — local only; <a href="index.html">sign in</a> to sync across devices)</span></label>
                 <input type="text" id="userId-input" placeholder="Enter your ID to save progress…" autocomplete="off" />
             </div>
 
@@ -790,6 +790,6 @@
     </div>
 
 </div>
-    <script type="module" src="engine/app.js"></script>
+    <script type="module" src="engine/app.js?v=20260822"></script>
 </body>
 </html>

@@ -51,7 +51,7 @@
     *{box-sizing:border-box;margin:0;padding:0}
     html,body{height:100%}
     body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh;transition:background 0.3s,color 0.3s;display:flex;flex-direction:column}
-    #root{display:flex;flex-direction:column;flex:1;min-height:0}
+    #root{display:flex;flex-direction:column;flex:1;min-height:0;overflow-y:auto}
     .toolbar{background:var(--panel-bg);border-bottom:1px solid var(--border);padding:8px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;box-shadow:var(--shadow);z-index:100;min-height:52px;flex-shrink:0}
     .toolbar .logo{font-weight:700;font-size:1rem;color:var(--accent);white-space:nowrap}
     .toolbar .spacer{flex:1}
@@ -90,8 +90,9 @@
     .sheet-tab-add{padding:6px 10px;border:none;background:transparent;color:var(--accent);font-size:1.1rem;cursor:pointer;font-weight:700;line-height:1}
     .sheet-tab-add:hover{background:var(--btn-hover);border-radius:6px}
 
-    .editor-wrap{flex:1;min-height:0;padding:10px 16px 16px;display:flex;flex-direction:column}
-    .editor-fill{flex:1;min-height:0}
+    .editor-wrap{min-height:460px;padding:10px 16px 16px;display:flex;flex-direction:column}
+    .editor-fill{min-height:400px}
+    .editor-fill .tox-tinymce{resize:vertical !important}
 
     .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px}
     .equ-modal{background:var(--panel-bg);border-radius:var(--radius);padding:20px;max-width:700px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,0.3);border:1px solid var(--border);max-height:90vh;overflow-y:auto}
@@ -125,6 +126,15 @@
     .question-panel-resize-handle:hover .grip{background:var(--accent)}
     .question-panel-hidden-strip{display:flex;align-items:center;padding:6px 14px;background:var(--btn-bg);border:1px solid var(--border);border-radius:var(--radius-sm);margin:0 16px 10px;flex-shrink:0;cursor:pointer;color:var(--text-secondary);font-size:0.8rem;font-weight:600}
     .question-panel-hidden-strip:hover{background:var(--btn-hover)}
+    .solution-panel{border:1px solid #2f8f4e;border-radius:var(--radius);margin:10px 16px 0;background:var(--panel-bg);flex-shrink:0;overflow:hidden}
+    .solution-panel-header{display:flex;align-items:center;gap:10px;padding:8px 14px;background:rgba(47,143,78,0.12);border-bottom:1px solid #2f8f4e}
+    .solution-panel-header .sp-label{font-weight:700;font-size:0.82rem;color:#2f8f4e;flex:1}
+    .solution-panel-header button{padding:4px 10px;font-size:0.75rem;border:1px solid var(--border);border-radius:6px;background:var(--panel-bg);color:var(--text);cursor:pointer;font-family:var(--font)}
+    .solution-panel-body{padding:14px 16px;max-height:38vh;overflow-y:auto;font-size:0.92rem;line-height:1.5}
+    .solution-panel-body table{border-collapse:collapse;max-width:100%}
+    .solution-panel-body td,.solution-panel-body th{border:1px solid var(--border);padding:5px 8px}
+    .solution-panel-hidden-strip{display:flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;background:rgba(47,143,78,0.08);border:1px dashed #2f8f4e;border-radius:var(--radius-sm);margin:10px 16px 0;flex-shrink:0;cursor:pointer;color:#2f8f4e;font-size:0.82rem;font-weight:700}
+    .solution-panel-hidden-strip:hover{background:rgba(47,143,78,0.15)}
 
     .question-modal{background:var(--panel-bg);border-radius:var(--radius);padding:20px;max-width:750px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,0.3);border:1px solid var(--border);max-height:90vh;display:flex;flex-direction:column}
     .question-modal h3{margin-bottom:6px}
@@ -160,8 +170,74 @@ function newId() { return Date.now().toString(36) + '-' + Math.random().toString
 function escapeHtml(str) {
     return String(str ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
-function newSheet(name) { return { id: newId(), name: name, content: '', prompt: '', promptVisible: true }; }
+function newSheet(name) { return { id: newId(), name: name, content: '', prompt: '', promptVisible: true, solution: '', solutionVisible: false }; }
 function newSubject(name) { return { id: newId(), name, sheets: [newSheet('Sheet 1')] }; }
+
+/* ---- Starter packs (workbook-templates/) ----
+ * One-time seeding: brand-new, genuinely empty workbooks get pre-populated
+ * from whatever's in workbook-templates/manifest.json. Adding more content
+ * later is a pure data change (drop a new JSON file, add its name to
+ * manifest.json) — this function never needs to change again.
+ *
+ * Deliberately NOT run when cloud data is merely unreachable (vs. confirmed
+ * empty) — seeding into an "offline, unsure" state risks a real workbook
+ * getting silently overwritten once connectivity returns and autosave
+ * pushes the seeded placeholder to the cloud.
+ */
+async function loadStarterPacks(track) {
+    try {
+        const manifestRes = await fetch('workbook-templates/manifest.json?v=20260824');
+        if (!manifestRes.ok) return [];
+        const entries = await manifestRes.json();
+        const subjects = [];
+        for (const entry of entries) {
+            // Support both the old flat-string manifest shape and the new
+            // { file, tracks } shape, so nothing breaks if manifest.json
+            // ever reverts to a plain filename list.
+            const filename = typeof entry === 'string' ? entry : entry.file;
+            const entryTracks = typeof entry === 'string' ? null : entry.tracks;
+            if (!filename) continue;
+
+            // Track scoping: only seed a pack if it applies to this user's track.
+            // If the pack has no "tracks" field, treat it as shared (always seeded).
+            // If we don't know the user's track (e.g. guest, not signed in),
+            // only seed packs shared across every track — never guess.
+            if (Array.isArray(entryTracks)) {
+                if (track) {
+                    if (!entryTracks.includes(track)) continue;
+                } else {
+                    if (entryTracks.length < 2) continue;
+                }
+            }
+
+            try {
+                const res = await fetch('workbook-templates/' + filename + '?v=20260824');
+                if (!res.ok) continue;
+                const pack = await res.json();
+                if (!pack.subjectName || !Array.isArray(pack.sheets)) continue;
+                subjects.push({
+                    id: newId(),
+                    name: pack.subjectName,
+                    sheets: pack.sheets.map(s => ({
+                        id: newId(),
+                        name: s.sheetName || 'Sheet',
+                        content: '',
+                        prompt: s.question || '',
+                        promptVisible: true,
+                        solution: s.solution || '',
+                        solutionVisible: false
+                    }))
+                });
+            } catch (e) {
+                console.warn('Starter pack failed to load:', filename, e);
+            }
+        }
+        return subjects;
+    } catch (e) {
+        console.warn('Starter packs unavailable:', e);
+        return [];
+    }
+}
 
 const EQU_TABS = {
     Operators: ['\\cdot', '\\times', '*', '\\div', '\\diamond', '\\pm', '\\mp', '\\oplus', '\\ominus', '\\otimes',
@@ -184,7 +260,8 @@ function App() {
     // --- State ---
     const [darkMode, setDarkMode] = useState(() => localStorage.getItem('wb_dark') === 'true');
     const [userId, setUserId] = useState(() => localStorage.getItem('wb_user') || '');
-    const [pin, setPin] = useState('');
+    const [uid, setUid] = useState(null); // Firebase Auth uid, once signed in
+    const [userTrack, setUserTrack] = useState(null); // 'grad' | 'retail' | null, from users/{uid} profile
     const [isHubLogin, setIsHubLogin] = useState(false);
     // True once we've definitively finished checking for a hub login (prevents loader race)
     const [loginResolved, setLoginResolved] = useState(false);
@@ -246,29 +323,51 @@ function App() {
         }, delay);
     };
 
-    // --- Hub login detection ---
+    // --- Firebase Auth state detection (replaces old qb_global_user/pin) ---
     useEffect(() => {
-        const name = localStorage.getItem('qb_global_user');
-        const hubPin = localStorage.getItem('qb_global_pin');
-        if (name && hubPin) {
-            setIsHubLogin(true);
-            setUserId(name);
-            setPin(hubPin);
-        }
-        setLoginResolved(true);
-        // Note: we don't set loaded here, we'll do that after loading data.
+        let unsubscribe = () => {};
+        Promise.all([
+            import('./engine/firebase-auth.js?v=20260823'),
+            import('./engine/pin-auth.js?v=20260823')
+        ]).then(([{ onAuthChange }, { resolvePinSession }]) => {
+            unsubscribe = onAuthChange(async (user, profile) => {
+                if (user) {
+                    setIsHubLogin(true);
+                    setUid(user.uid);
+                    setUserId((profile && profile.username) || user.displayName || user.email);
+                    setUserTrack((profile && profile.track) || null);
+                    setLoginResolved(true);
+                    return;
+                }
+                let pinResult = null;
+                try { pinResult = await resolvePinSession(); } catch (e) { /* ignore */ }
+                if (pinResult && pinResult.ok) {
+                    setIsHubLogin(true);
+                    setUid(pinResult.identity);
+                    setUserId(pinResult.profile.username);
+                    setUserTrack(pinResult.profile.track || null);
+                } else {
+                    setIsHubLogin(false);
+                    setUid(null);
+                    setUserTrack(null);
+                }
+                setLoginResolved(true);
+                // Note: we don't set loaded here, we'll do that after loading data.
+            });
+        });
+        return () => unsubscribe();
     }, []);
 
     // --- Resolve storage key (only once, after we know the user) ---
     const resolveStorageKey = useCallback(() => {
         if (storageKeyRef.current) return storageKeyRef.current;
 
-        // Determine effective user: hub login takes priority over manual input
-        const effectiveUser = (isHubLogin && userId) ? userId : (userId || 'default');
+        // Determine effective user: signed-in uid takes priority over manual input
+        const effectiveUser = (isHubLogin && uid) ? uid : (userId || 'default');
         const key = 'wb_data_' + effectiveUser;
 
-        // If hub login and we previously had a default key, migrate its content
-        if (isHubLogin && userId) {
+        // If signed in and we previously had a default key, migrate its content
+        if (isHubLogin && uid) {
             const defaultKey = 'wb_data_default';
             const hasDefault = localStorage.getItem(defaultKey) !== null;
             const hasUser = localStorage.getItem(key) !== null;
@@ -283,7 +382,7 @@ function App() {
 
         storageKeyRef.current = key;
         return key;
-    }, [isHubLogin, userId]);
+    }, [isHubLogin, uid, userId]);
 
     // --- Loader: runs when userId or isHubLogin changes, but only if not yet loaded ---
     useEffect(() => {
@@ -294,9 +393,9 @@ function App() {
         // otherwise we can lock onto 'wb_data_default' before the real identity is known.
         if (!loginResolved) return;
 
-        // Wait until we have a definitive user (either hub login resolved or user manually entered)
-        // If hub login is in progress but userId is empty, wait.
-        if (isHubLogin && !userId) return;
+        // Wait until we have a definitive user (either sign-in resolved or user manually entered)
+        // If sign-in is in progress but uid isn't known yet, wait.
+        if (isHubLogin && !uid) return;
 
         const key = resolveStorageKey();
         let localData = null;
@@ -315,10 +414,10 @@ function App() {
             setLoaded(true);
             setSyncStatusWithTimeout('✅ Loaded from local', 2000);
         } else {
-            // No local data – try cloud if we have a PIN
-            if (userId && /^\d{4}$/.test(pin)) {
+            // No local data – try cloud if we're signed in
+            if (uid) {
                 setSyncStatusWithTimeout('☁️ Checking cloud…', 6000);
-                import('./workbook-sync.js').then(({ verifyAndPullWorkbooks }) => verifyAndPullWorkbooks(userId, pin)).then(result => {
+                import('./workbook-sync.js?v=20260823').then(({ pullWorkbooks }) => pullWorkbooks(uid)).then(result => {
                     if (result.ok && result.data && Array.isArray(result.data) && result.data.length > 0) {
                         const cloudData = { subjects: result.data };
                         setData(cloudData);
@@ -327,26 +426,31 @@ function App() {
                         setLoaded(true);
                         setSyncStatusWithTimeout('☁️ Restored from cloud', 2000);
                     } else {
-                        // Nothing – start empty
-                        setData({ subjects: [] });
-                        setLoaded(true);
-                        setSyncStatusWithTimeout('📓 Ready', 2000);
+                        // Confirmed empty in the cloud too — genuinely new account. Seed once.
+                        loadStarterPacks(userTrack).then(starterSubjects => {
+                            setData({ subjects: starterSubjects });
+                            setLoaded(true);
+                            setSyncStatusWithTimeout(starterSubjects.length ? '📓 Starter content added' : '📓 Ready', 2500);
+                        });
                     }
                 }).catch(() => {
-                    // Cloud unavailable – start empty
+                    // Cloud unavailable — status genuinely unknown, do NOT seed here
+                    // (see loadStarterPacks() comment for why).
                     setData({ subjects: [] });
                     setLoaded(true);
                     setSyncStatusWithTimeout('⚠ Offline', 2000);
                 });
             } else {
-                // No PIN – start empty
-                setData({ subjects: [] });
-                setLoaded(true);
-                setSyncStatusWithTimeout('📓 Ready', 2000);
+                // Not signed in — guest, local-only. Safe to seed: nothing cloud-side to conflict with.
+                loadStarterPacks(userTrack).then(starterSubjects => {
+                    setData({ subjects: starterSubjects });
+                    setLoaded(true);
+                    setSyncStatusWithTimeout(starterSubjects.length ? '📓 Starter content added' : '📓 Ready', 2500);
+                });
             }
         }
         // We do NOT write empty state here.
-    }, [userId, pin, isHubLogin, loaded, loginResolved, resolveStorageKey]);
+    }, [userId, uid, userTrack, isHubLogin, loaded, loginResolved, resolveStorageKey]);
 
     // --- Autosave: whenever data changes (only after loaded) ---
     const saveLocal = useCallback((newData) => {
@@ -372,13 +476,13 @@ function App() {
         if (!key) return;
         // Save to localStorage
         saveLocal(data);
-        // Upload to cloud (only if PIN valid) – the sync module already debounces
-        if (userId && /^\d{4}$/.test(pin)) {
-            import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => pushWorkbooksToCloud(userId, data.subjects));
+        // Upload to cloud (only if signed in) – the sync module already debounces
+        if (uid) {
+            import('./workbook-sync.js?v=20260823').then(({ pushWorkbooksToCloud }) => pushWorkbooksToCloud(uid, data.subjects));
             // We set status briefly – will be overridden by sync module's internal status if needed.
             setSyncStatusWithTimeout('☁️ Uploading…', 1000);
         }
-    }, [data, userId, pin, loaded, saveLocal]);
+    }, [data, uid, loaded, saveLocal]);
 
     // --- Other settings ---
     useEffect(() => { if (userId) localStorage.setItem('wb_user', userId); }, [userId]);
@@ -398,10 +502,19 @@ function App() {
             }
             const target = document.getElementById('wb-rich-editor');
             if (!target) { setMceError('Editor element not found. Please reload.'); return; }
+            // Remember whatever size the user last dragged the editor to; otherwise
+            // default to something roomy instead of the old cramped 100%-of-leftover-space.
+            let startHeight = 520;
+            try {
+                const saved = parseInt(localStorage.getItem('wb_editor_height'), 10);
+                if (saved && saved >= 320) startHeight = saved;
+            } catch { /* localStorage unavailable — just use the default */ }
             tinymce.init({
                 selector: '#wb-rich-editor',
-                height: '100%',
-                resize: false,
+                height: startHeight,
+                min_height: 320,
+                max_height: 1600,
+                resize: true,
                 menubar: 'edit view insert format tools table help',
                 plugins: 'table lists link fullscreen directionality wordcount code',
                 toolbar: 'undo redo | bold italic | link unlink | fullscreen | alignleft aligncenter alignright | ltr rtl | outdent indent | bullist numlist | equation',
@@ -423,6 +536,16 @@ function App() {
                                 return { ...s, sheets };
                             })
                         }));
+                    });
+                    // Persist the editor's height whenever the user drags the resize handle,
+                    // so the size they picked sticks around next time they open the app.
+                    ed.on('ResizeEditor', () => {
+                        try {
+                            const container = ed.getContainer();
+                            if (container && container.offsetHeight) {
+                                localStorage.setItem('wb_editor_height', String(container.offsetHeight));
+                            }
+                        } catch { /* localStorage unavailable — resizing still works, just won't persist */ }
                     });
                     editorRef.current = ed;
                 }
@@ -516,6 +639,21 @@ function App() {
             })
         }));
     };
+    // Revealing a solution asks for confirmation first — it sits right next to their
+    // own answer space, and the whole point of practicing is attempting it themselves
+    // before checking. Hiding it again never needs confirmation.
+    const toggleSolutionVisible = () => {
+        const isCurrentlyVisible = activeSheet && activeSheet.solutionVisible;
+        if (!isCurrentlyVisible) {
+            const ok = confirm('Are you sure you want to see the solution? Try answering the question first.');
+            if (!ok) return;
+        }
+        setData(prev => ({
+            subjects: prev.subjects.map(s => s.id !== activeSubjectId ? s : {
+                ...s, sheets: s.sheets.map((sh, i) => i === activeSheetIdx ? { ...sh, solutionVisible: !sh.solutionVisible } : sh)
+            })
+        }));
+    };
 
     // --- Question panel resize handle: drag to grow/shrink, works for both mouse and touch ---
     const clampPanelHeight = (h) => Math.max(80, Math.min(window.innerHeight * 0.75, h));
@@ -572,7 +710,7 @@ function App() {
         { icon: '📑', title: 'Sheets', text: 'Inside a subject, sheets work like Excel tabs. Click "+" to add one, double-click a tab to rename it, click a tab to switch to it.' },
         { icon: '✍️', title: 'Answer editor', text: 'The big box is where you write and practice — draw tables from the Table menu, format text, and use the Ω button for equations (fractions, Greek letters, and more).' },
         { icon: '📄', title: 'Question panel', text: 'Click "+ Add Question" to paste in a question exactly as it appears in your textbook, a Word doc, or a webpage — tables and formatting are kept. It sits above the answer editor, separate from it, so you can read the question while you write. Edit or Hide it anytime; drag the bottom edge to resize it.' },
-        { icon: '☁️', title: 'Saving & sync', text: 'Everything saves automatically as you type. Enter a 4-digit PIN (top right) to sync your workbooks across devices using the same login as the rest of the platform.' },
+        { icon: '☁️', title: 'Saving & sync', text: 'Everything saves automatically as you type. Sign in (top right) to sync your workbooks across devices using the same login as the rest of the platform.' },
         { icon: '📤', title: 'Export', text: 'Use the PDF or JSON buttons to export your work — the PDF includes both your questions and answers, so it reads as a complete study record.' }
     ];
     const guideModal = showGuide ? ReactDOM.createPortal(
@@ -700,22 +838,22 @@ function App() {
 
     // --- Manual sync (push) and restore (pull) ---
     const manualPush = () => {
-        if (!userId || !/^\d{4}$/.test(pin)) {
-            setSyncStatusWithTimeout('⚠ Enter a valid 4‑digit PIN first', 3000);
+        if (!uid) {
+            setSyncStatusWithTimeout('⚠ Please sign in from the home page first', 3000);
             return;
         }
         setSyncStatusWithTimeout('☁️ Uploading…', 3000);
-        import('./workbook-sync.js').then(({ pushWorkbooksToCloud }) => pushWorkbooksToCloud(userId, data.subjects));
+        import('./workbook-sync.js?v=20260823').then(({ pushWorkbooksToCloud }) => pushWorkbooksToCloud(uid, data.subjects));
     };
 
     const pullFromCloud = () => {
-        if (!userId || !/^\d{4}$/.test(pin)) {
-            alert('Please enter a valid 4‑digit PIN to restore from cloud.');
+        if (!uid) {
+            alert('Please sign in from the home page first to restore from cloud.');
             return;
         }
         if (!confirm('This will replace all your current workbooks with the cloud version. Continue?')) return;
         setSyncStatusWithTimeout('☁️ Restoring…', 5000);
-        import('./workbook-sync.js').then(({ verifyAndPullWorkbooks }) => verifyAndPullWorkbooks(userId, pin)).then(result => {
+        import('./workbook-sync.js?v=20260823').then(({ pullWorkbooks }) => pullWorkbooks(uid)).then(result => {
             if (!result.ok) {
                 setSyncStatusWithTimeout('⚠ ' + result.reason, 3000);
                 return;
@@ -743,8 +881,8 @@ function App() {
                 <span className="spacer" />
                 {!isHubLogin && (
                     <React.Fragment>
-                        <input value={userId} onChange={e => setUserId(e.target.value)} placeholder="Your name / ID" style={{ width: 110 }} />
-                        <input value={pin} onChange={e => setPin(e.target.value.replace(/\D/g, '').slice(0, 4))} placeholder="PIN (optional)" maxLength={4} inputMode="numeric" style={{ width: 90 }} />
+                        <input value={userId} onChange={e => setUserId(e.target.value)} placeholder="Your name / ID (local only)" style={{ width: 160 }} />
+                        <a href="index.html" className="signin-hint" title="Sign in to sync across devices" style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Sign in to sync ↗</a>
                     </React.Fragment>
                 )}
                 <button className="guide-btn" onClick={() => setShowGuide(true)} title="How this works">?</button>
@@ -854,6 +992,23 @@ function App() {
                     <textarea id="wb-rich-editor"></textarea>
                 </div>
             </div>
+
+            {view === 'editor' && activeSheet && activeSheet.solution && !activeSheet.solutionVisible && (
+                <div className="solution-panel-hidden-strip" onClick={toggleSolutionVisible}>
+                    🔒 Show Solution
+                </div>
+            )}
+
+            {view === 'editor' && activeSheet && activeSheet.solution && activeSheet.solutionVisible && (
+                <div className="solution-panel">
+                    <div className="solution-panel-header">
+                        <span className="sp-label">✅ Solution</span>
+                        <button onClick={toggleSolutionVisible}>Hide</button>
+                    </div>
+                    <div className="solution-panel-body"
+                        dangerouslySetInnerHTML={{ __html: window.DOMPurify ? DOMPurify.sanitize(activeSheet.solution) : '' }} />
+                </div>
+            )}
 
             {view === 'editor' && !activeSubject && (
                 <div className="empty-state">This subject couldn't be found. <span className="crumb" onClick={() => setView('subjects')}>Go back to Subjects</span></div>

@@ -10,14 +10,14 @@
  * "a course", not which one.
  * ============================================================ */
 
-import { createAppState } from './state.js';
-import { StorageManager } from './storage.js';
-import { CourseLoader, CourseLoadError } from './loader.js';
-import { AnalyticsManager } from './analytics.js';
-import { ExamEngine } from './exam-engine.js';
-import { FlashcardEngine } from './flashcard-engine.js';
-import { UIRenderer } from './ui-renderer.js';
-import { attachFirebaseSync } from './firebase-adapter.js';
+import { createAppState } from './state.js?v=20260822';
+import { StorageManager } from './storage.js?v=20260822';
+import { CourseLoader, CourseLoadError } from './loader.js?v=20260822';
+import { AnalyticsManager } from './analytics.js?v=20260822';
+import { ExamEngine } from './exam-engine.js?v=20260822';
+import { FlashcardEngine } from './flashcard-engine.js?v=20260822';
+import { UIRenderer } from './ui-renderer.js?v=20260822';
+import { attachFirebaseSync } from './firebase-adapter.js?v=20260822';
 import './question-types.js'; // registers built-in mcq / case-mcq renderers
 
 function getCourseUrlFromQueryString() {
@@ -70,11 +70,16 @@ async function bootstrap() {
     missedQuestionIds: storage.getMissed()
   });
 
-  uiRenderer.init();
-
   // Exposed for cloud-sync.js / debugging, same role window.__courseId played before.
   window.__courseId = course.meta.id;
+
+  // IMPORTANT: attachFirebaseSync() must run BEFORE uiRenderer.init().
+  // init() calls applyLoginState(), which needs window.setSignedInUser
+  // (wired up inside attachFirebaseSync) to already exist. Getting this
+  // backwards was the root cause of the cross-device sync bug: the auth
+  // listener wasn't wired yet when the UI first tried to react to it.
   await attachFirebaseSync(course.meta.id, uiRenderer);
+  uiRenderer.init();
 }
 
 bootstrap();

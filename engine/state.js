@@ -22,9 +22,8 @@ export function createAppState() {
 
     // ---- User identity ----
     user: {
-      id: '',              // free-text user id/name typed into the setup screen
-      globalUser: null,    // name from qb_global_user (hub login), if any
-      globalPin: null       // pin from qb_global_pin, if any
+      id: '',              // Firebase Auth uid once signed in, or a free-text local-only id typed into the setup screen
+      displayName: ''       // username shown in the UI (from users/{uid} profile, or a fallback)
     },
 
     // ---- Progress (persisted via StorageManager) ----

@@ -3,25 +3,17 @@
  * Single point of contact with localStorage. Nothing else in the
  * engine (or in course files) should call localStorage directly.
  *
- * IMPORTANT FIX vs. the old per-course templates:
- * -------------------------------------------------------------
- * The legacy quiz template saved progress under:
- *     missed_<courseId>
- *     quiz_engine_<courseId>_<userId>          (whole session object)
- *
- * But cloud-sync.js's localStorage.setItem monkey-patch (and its
- * pull/push logic) only ever watches/writes:
+ * Progress is saved under a single consistent scheme:
  *     qb_missed_<courseId>
- *     qb_session_<courseId>_<userId>
- *     qb_answered_<courseId>_<userId>
- *
- * Those key schemes never matched, so cross-device sync has never
- * actually synced real quiz progress — only whatever coincidentally
- * used the qb_* names (the login bar's qb_global_user/qb_global_pin).
- *
- * This StorageManager writes under the qb_* scheme so cloud-sync's
- * existing patch/push logic picks up every save automatically, with
- * no changes needed to cloud-sync.js itself.
+ *     qb_session_<courseId>_<uid>
+ *     qb_answered_<courseId>_<uid>
+ * where <uid> is the signed-in trainee's Firebase Authentication uid
+ * (see engine/firebase-auth.js), not a typed name. cloud-sync.js's
+ * localStorage.setItem watcher pushes any write under this scheme to
+ * Firestore automatically. (Earlier versions of this app used a
+ * lowercased, hand-typed username instead of a real uid, which is
+ * what the PIN-to-Firebase-Auth migration replaced — see the Firebase
+ * Handover Security Plan for why.)
  * ============================================================ */
 
 function safeGet(key) {
@@ -76,11 +68,11 @@ export class StorageManager {
     safeRemove(`qb_missed_${this.courseId}`);
   }
 
-  // ---- Session (user-scoped) ----
+  // ---- Session (user-scoped, keyed by Firebase Auth uid) ----
   getSession(userId) {
-    const lname = (userId || '').trim().toLowerCase();
-    if (!lname) return null;
-    const raw = safeGet(`qb_session_${this.courseId}_${lname}`);
+    const uid = (userId || '').trim();
+    if (!uid) return null;
+    const raw = safeGet(`qb_session_${this.courseId}_${uid}`);
     if (!raw) return null;
     try {
       return JSON.parse(raw);
@@ -90,39 +82,21 @@ export class StorageManager {
   }
 
   setSession(userId, sessionObj) {
-    const lname = (userId || '').trim().toLowerCase();
-    if (!lname) return;
-    safeSet(`qb_session_${this.courseId}_${lname}`, JSON.stringify(sessionObj));
+    const uid = (userId || '').trim();
+    if (!uid) return;
+    safeSet(`qb_session_${this.courseId}_${uid}`, JSON.stringify(sessionObj));
     const answered = Array.isArray(sessionObj.userAnswers)
       ? sessionObj.userAnswers.filter((a) => a !== null).length
       : 0;
     // Written as its own key because cloud-sync's payload reads
-    // qb_answered_<courseId>_<user> as a standalone field.
-    safeSet(`qb_answered_${this.courseId}_${lname}`, String(answered));
+    // qb_answered_<courseId>_<uid> as a standalone field.
+    safeSet(`qb_answered_${this.courseId}_${uid}`, String(answered));
   }
 
   clearSession(userId) {
-    const lname = (userId || '').trim().toLowerCase();
-    if (!lname) return;
-    safeRemove(`qb_session_${this.courseId}_${lname}`);
-    safeRemove(`qb_answered_${this.courseId}_${lname}`);
-  }
-
-  // ---- Global (hub) login, shared across all courses ----
-  getGlobalUser() {
-    return {
-      name: safeGet('qb_global_user'),
-      pin: safeGet('qb_global_pin')
-    };
-  }
-
-  clearGlobalUser() {
-    safeRemove('qb_global_user');
-    safeRemove('qb_global_pin');
-  }
-
-  setGlobalUser(name, pin) {
-    safeSet('qb_global_user', name);
-    safeSet('qb_global_pin', pin);
+    const uid = (userId || '').trim();
+    if (!uid) return;
+    safeRemove(`qb_session_${this.courseId}_${uid}`);
+    safeRemove(`qb_answered_${this.courseId}_${uid}`);
   }
 }

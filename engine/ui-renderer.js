@@ -11,7 +11,8 @@
  * NEW: Previous button for practice sessions, with confirm popup.
  * ============================================================ */
 
-import { getQuestionTypeRenderer } from './question-types.js';
+import { getQuestionTypeRenderer } from './question-types.js?v=20260822';
+import { logout as firebaseLogout } from './firebase-auth.js?v=20260822';
 
 const escapeHTML = (str) =>
   String(str ?? '').replace(/[&<>"']/g, (c) => ({
@@ -179,10 +180,10 @@ export class UIRenderer {
     this.leaveConfirmProceedBtn.addEventListener('click', () => this.onLeaveConfirmProceed());
 
     if (this.logoutBtn) {
-      this.logoutBtn.addEventListener('click', () => {
+      this.logoutBtn.addEventListener('click', async () => {
         if (confirm('Are you sure you want to log out?')) {
-          this.storage.clearGlobalUser();
-          window.location.reload();
+          await firebaseLogout();
+          window.location.href = 'index.html';
         }
       });
     }
@@ -193,31 +194,45 @@ export class UIRenderer {
     });
   }
 
-  // ---- Hub login pass-through (name pre-filled, PIN handled by cloud-sync's injected field) ----
+  // ---- Firebase Auth state (replaces the old PIN-field-injection dance) ----
+  // Called by firebase-adapter.js's window.setSignedInUser bridge, every
+  // time Firebase Auth resolves who's signed in — on page load, right
+  // after login, and right after logout. No manual event timing to get
+  // wrong, because Firebase Auth's own listener drives this, not a
+  // 'change' event dispatched on a field that may not exist yet.
   applyLoginState() {
-    const { name, pin } = this.storage.getGlobalUser();
-    if (name && pin) {
-      this.state.set({ user: { globalUser: name, globalPin: pin } });
-      const parentGroup = this.userIdInput.closest('.form-group');
-      if (parentGroup) parentGroup.style.display = 'none';
-      if (this.loggedInBar) {
-        this.loggedInBar.classList.add('visible');
-        if (this.loggedInName) this.loggedInName.textContent = name;
-      }
-      this.userIdInput.value = name;
-      this.state.set({ user: { id: name } });
+    // Placeholder no-op call at init() time — real work happens in
+    // setSignedInUser() once auth state actually resolves (which may be
+    // asynchronous, arriving slightly after init() finishes).
+  }
 
-      const setPinAndVerify = (pinField) => {
-        pinField.value = pin;
-        pinField.dispatchEvent(new Event('change', { bubbles: true }));
-        this.checkForSavedSession();
-        this.validateStart();
-        this.updateTotalAvail();
-      };
-      const existingPin = document.getElementById('userPin-input');
-      if (existingPin) setPinAndVerify(existingPin);
-      else document.addEventListener('pinFieldReady', (e) => setPinAndVerify(e.detail.pinField), { once: true });
+  setSignedInUser(user, profile) {
+    if (!user) {
+      // Signed out: show the plain "type a name to save locally" input,
+      // hide the logged-in bar.
+      const parentGroup = this.userIdInput && this.userIdInput.closest('.form-group');
+      if (parentGroup) parentGroup.style.display = '';
+      if (this.loggedInBar) this.loggedInBar.classList.remove('visible');
+      return;
     }
+
+    const displayName = (profile && profile.username) || user.displayName || (user.email || '').split('@')[0];
+
+    this.state.set({ user: { id: user.uid, displayName } });
+    const parentGroup = this.userIdInput && this.userIdInput.closest('.form-group');
+    if (parentGroup) parentGroup.style.display = 'none';
+    if (this.loggedInBar) {
+      this.loggedInBar.classList.add('visible');
+      if (this.loggedInName) this.loggedInName.textContent = displayName;
+    }
+    if (this.userIdInput) this.userIdInput.value = user.uid;
+
+    // cloud-sync.js already pulled progress into localStorage by the time
+    // this fires (see cloud-sync.js's onAuthChange handler), so it's safe
+    // to refresh the UI against it now.
+    this.checkForSavedSession();
+    this.validateStart();
+    this.updateTotalAvail();
   }
 
   // ---- Screen switching ----

@@ -163,6 +163,22 @@
     .auth-link { text-align: right; margin-top: 6px; }
     .auth-link a { color: var(--accent); font-size: 0.85rem; text-decoration: none; }
     .auth-link a:hover { text-decoration: underline; }
+    .auth-link-prominent { text-align: center; margin-bottom: 16px; }
+    .auth-link-prominent a {
+      display: block;
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 10px 14px;
+      border: 1.5px dashed var(--accent);
+      border-radius: 10px;
+      background: rgba(79, 70, 229, 0.06);
+    }
+    .auth-link-prominent a:hover {
+      background: rgba(79, 70, 229, 0.12);
+      border-style: solid;
+    }
     .auth-divider { display: flex; align-items: center; gap: 10px; margin: 16px 0 12px; color: var(--text-muted); font-size: 0.8rem; }
     .auth-divider::before, .auth-divider::after { content: ""; flex: 1; height: 1px; background: var(--input-border); }
     .btn-google {
@@ -302,6 +318,7 @@
           <option value="retail">Retail Track</option>
         </select>
       </div>
+      <p class="auth-link-prominent"><a href="#" id="preferNoEmailLink">🔒 Prefer not to use email? Register with just a username &amp; PIN →</a></p>
       <button class="btn" id="registerBtn">Create Account & Go</button>
       <div class="auth-message" id="registerMsg"></div>
       <div class="auth-divider"><span>or</span></div>
@@ -309,7 +326,6 @@
         <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="" width="18" height="18">
         Continue with Google
       </button>
-      <p class="auth-link"><a href="#" id="preferNoEmailLink">Prefer not to use email?</a></p>
     </div>
 
     <!-- No-email register/login (username + 4-digit PIN) -->

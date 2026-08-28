@@ -1,0 +1,55 @@
+{
+  "subjectName": "Basic Accounting",
+  "sheets": [
+    {
+      "sheetName": "Section 1 - Q1: Accounting Equation Impact",
+      "question": "<p><strong>Using the accounting equation, show the impact of the following transactions on Assets, Liabilities, and Owner's Equity:</strong></p><p>a) Obinna deposits ₦3,000,000 as capital</p><p>b) Novelle Café receives a ₦2,000,000 interest-free loan</p><p>c) ₦1,200,000 is paid for one-year rent</p><p>d) ₦1,800,000 is spent on equipment and furnishings</p>",
+      "solution": "<p><strong>Accounting Equation:</strong> Assets = Liabilities + Owner's Equity</p><p>Analyse each transaction:</p><table><tr><th>Transaction</th><th>Assets</th><th>Liabilities</th><th>Owner's Equity</th></tr><tr><td>(a) Capital deposit</td><td>+₦3,000,000 (Cash)</td><td>No change</td><td>+₦3,000,000 (Capital)</td></tr><tr><td>(b) Loan received</td><td>+₦2,000,000 (Cash)</td><td>+₦2,000,000 (Loan)</td><td>No change</td></tr><tr><td>(c) Rent paid for one year</td><td>−₦1,200,000 (Cash); +₦1,200,000 (Prepaid Rent)</td><td>No change</td><td>No change</td></tr><tr><td>(d) Equipment &amp; furnishings purchased</td><td>−₦1,800,000 (Cash); +₦1,800,000 (Equipment)</td><td>No change</td><td>No change</td></tr></table><p><strong>Note:</strong> After each transaction, the equation remains balanced.</p>"
+    },
+    {
+      "sheetName": "Section 2 - Q6: Trial Balance Totals",
+      "question": "<p><strong>Using the trial balance below, calculate the total assets and total liabilities as of March 31, 2023.</strong></p><table><tr><th>Account</th><th>Debit (₦)</th><th>Credit (₦)</th></tr><tr><td>Cash</td><td>1,500,000</td><td></td></tr><tr><td>Accounts Receivable</td><td>120,000</td><td></td></tr><tr><td>Equipment &amp; Furnishings</td><td>1,800,000</td><td></td></tr><tr><td>Payables</td><td></td><td>45,000</td></tr><tr><td>Loan from Ngozi</td><td></td><td>2,000,000</td></tr><tr><td>Owner's Capital</td><td></td><td>3,000,000</td></tr></table><p>a) Total Assets = ?</p><p>b) Total Liabilities = ?</p>",
+      "solution": "<p><strong>Total Assets</strong> = Cash + Accounts Receivable + Equipment &amp; Furnishings</p><p>= ₦1,500,000 + ₦120,000 + ₦1,800,000 = <strong>₦3,420,000</strong></p><p><strong>Total Liabilities</strong> = Payables + Loan from Ngozi</p><p>= ₦45,000 + ₦2,000,000 = <strong>₦2,045,000</strong></p>"
+    },
+    {
+      "sheetName": "Section 3 - Q9: Unearned Revenue Adjustment",
+      "question": "<p><strong>Obinna wants to prepare adjusting entries at month-end. One of his clients paid in advance ₦120,000 for future services.</strong></p><p>a) What adjusting journal entry should Obinna make at month-end if only ₦40,000 worth of the services has been rendered?</p><p>b) Identify the correct classification of the accounts involved.</p>",
+      "solution": "<p><strong>(a) Adjusting Journal Entry:</strong></p><p>Unearned revenue at month-end = ₦120,000 − ₦40,000 = ₦80,000.</p><p>Journal entry to recognize revenue earned:</p><table><tr><th>Account</th><th>Debit (₦)</th><th>Credit (₦)</th></tr><tr><td>Unearned Revenue (Liability)</td><td>40,000</td><td></td></tr><tr><td>Service Revenue (Income)</td><td></td><td>40,000</td></tr></table><p><strong>(b) Classification:</strong></p><p>Unearned Revenue – Liability (decreased)</p><p>Service Revenue – Income (increased)</p>"
+    },
+    {
+      "sheetName": "Section 4 - Q13: Depreciation for 6 Months",
+      "question": "<p><strong>Novelle Café purchased equipment for ₦3,000,000 with a 5‑year life. Calculate and record the depreciation for 6 months.</strong></p>",
+      "solution": "<p><strong>Annual depreciation (straight‑line)</strong> = (Cost − Residual value) ÷ Useful life</p><p>= (₦3,000,000 − 0) ÷ 5 = <strong>₦600,000 per year</strong></p><p><strong>Depreciation for 6 months</strong> = ₦600,000 × 6/12 = <strong>₦300,000</strong></p><p><strong>Journal entry to record depreciation:</strong></p><table><tr><th>Account</th><th>Debit (₦)</th><th>Credit (₦)</th></tr><tr><td>Depreciation Expense</td><td>300,000</td><td></td></tr><tr><td>Accumulated Depreciation – Equipment</td><td></td><td>300,000</td></tr></table>"
+    },
+    {
+      "sheetName": "Section 5 - Q16: Allowance for Doubtful Accounts",
+      "question": "<p><strong>At the end of 20X4, Novelle Café estimated that 4% of the ₦8,000,000 total receivables may be uncollectible. Record the journal entry to create the allowance using the percentage of receivables method.</strong></p>",
+      "solution": "<p><strong>Allowance for doubtful accounts</strong> = 4% × ₦8,000,000 = <strong>₦320,000</strong></p><p><strong>Journal entry:</strong></p><table><tr><th>Account</th><th>Debit (₦)</th><th>Credit (₦)</th></tr><tr><td>Bad Debt Expense</td><td>320,000</td><td></td></tr><tr><td>Allowance for Doubtful Accounts</td><td></td><td>320,000</td></tr></table>"
+    },
+    {
+      "sheetName": "Practice Q1: CBN Monetary Policy Priority",
+      "question": "<p><strong>What was the priority for the monetary policy of the Central Bank of Nigeria in 2018?</strong></p><p>A. Reducing exchange rates</p><p>B. Achieving exchange rate stability</p><p>C. Increasing cash transactions</p><p>D. Promoting market concentration</p>",
+      "solution": "<p><strong>Correct answer:</strong> B. Achieving exchange rate stability.</p><p>The CBN’s primary focus in 2018 was to maintain stability in the foreign exchange market.</p>"
+    },
+    {
+      "sheetName": "Practice Q8: Non-Interest Income Product",
+      "question": "<p><strong>Which one of the following Banking Products is <em>not</em> an interest income generating Product?</strong></p><p>A. Overdraft</p><p>B. Working Capital Loan</p><p>C. Term Loan</p><p>D. Guarantees</p>",
+      "solution": "<p><strong>Correct answer:</strong> D. Guarantees.</p><p>Guarantees generate fee income (commission), not interest. Overdrafts, working capital loans, and term loans all earn interest.</p>"
+    },
+    {
+      "sheetName": "Practice Q13: Major Income on Loan",
+      "question": "<p><strong>The Major income received on a loan granted by a bank is known as</strong></p><p>A. Rental Income</p><p>B. Interest Income</p><p>C. Commission received</p><p>D. Brokerages</p>",
+      "solution": "<p><strong>Correct answer:</strong> B. Interest Income.</p><p>Interest is the primary return a bank earns from lending activities.</p>"
+    },
+    {
+      "sheetName": "Practice Q18: Sensitivity to Market Risk",
+      "question": "<p><strong>Sensitivity to Market Risk in banking is related to the impact of changes in which of the following?</strong></p><p>A. Corporate governance</p><p>B. Exchange rates</p><p>C. Asset quality</p><p>D. Internal audit programs</p>",
+      "solution": "<p><strong>Correct answer:</strong> B. Exchange rates.</p><p>Market risk includes exposure to fluctuations in exchange rates, interest rates, and commodity prices.</p>"
+    },
+    {
+      "sheetName": "Practice Q20: Ratings and Listing Eligibility",
+      "question": "<p><strong>How can ratings impact a bank's eligibility for listing on certain exchanges or disclosure requirements?</strong></p><p>A. Ratings have no impact on listing eligibility.</p><p>B. Higher ratings make listing easier.</p><p>C. Lower ratings make listing easier.</p><p>D. Ratings determine a bank's legal status.</p>",
+      "solution": "<p><strong>Correct answer:</strong> B. Higher ratings make listing easier.</p><p>Higher credit ratings signal lower risk, which can facilitate listing on exchanges and reduce disclosure burdens.</p>"
+    }
+  ]
+}

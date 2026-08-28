@@ -1,0 +1,3018 @@
+{
+  "meta": {
+    "id": "leadership-development",
+    "title": "Leadership Development and Team Empowerment in Banking",
+    "description": "Retail banking leadership development quiz covering foundations, customer-centric leadership, leadership potential, and team dynamics.",
+    "category": "retail",
+    "version": "1.0.0"
+  },
+  "examSettings": {
+    "sizes": [
+      { "count": 30, "minutes": 40 },
+      { "count": 40, "minutes": 45 },
+      { "count": 50, "minutes": 60 }
+    ],
+    "passMark": 70
+  },
+  "flashcardSettings": {
+    "enabled": true
+  },
+  "modules": [
+    { "id": 1, "title": "Foundations of Leadership in Retail Banking" },
+    { "id": 2, "title": "Customer-Centric Leadership" },
+    { "id": 3, "title": "Developing Your Leadership Potential" },
+    { "id": 4, "title": "Team Dynamics and Empowerment" }
+  ],
+  "questionBank": [
+    {
+      "id": "Q1",
+      "module": 1,
+      "q": "Which statement best defines leadership in a retail banking context?",
+      "opts": [
+        "The formal authority granted by a job title",
+        "The ability to influence others toward shared goals",
+        "The power to enforce compliance with bank policies",
+        "The capacity to manage financial transactions efficiently"
+      ],
+      "ans": "B",
+      "exp": "Leadership is defined by influence toward shared goals, not title or authority (Manual p.3)."
+    },
+    {
+      "id": "Q2",
+      "module": 1,
+      "q": "What makes leadership unique in the African retail banking environment?",
+      "opts": [
+        "Uniform customer expectations across regions",
+        "Cultural diversity and economic volatility",
+        "Stable, unchanging regulatory frameworks",
+        "Very minimal digital disruption overall"
+      ],
+      "ans": "B",
+      "exp": "African banking is shaped by cultural nuances and economic factors like commodity-price and exchange-rate swings (Manual p.4)."
+    },
+    {
+      "id": "Q3",
+      "module": 1,
+      "q": "Which of the following is NOT a key behavior of an effective communicator in retail banking?",
+      "opts": [
+        "Active listening to customer concerns",
+        "Using complex jargon to demonstrate expertise",
+        "Clarity and conciseness in messaging",
+        "Adaptability to the audience"
+      ],
+      "ans": "B",
+      "exp": "The manual's five communicator behaviors are Active Listening, Clarity & Conciseness, Confidence & Authority, Non-Verbal Cues, and Adaptability — jargon isn't among them (Manual p.5)."
+    },
+    {
+      "id": "Q4",
+      "module": 1,
+      "q": "A team member who consistently encourages others to think creatively and models a strong work ethic is demonstrating which leadership style?",
+      "opts": [
+        "Transactional",
+        "Transformational",
+        "Servant",
+        "Democratic"
+      ],
+      "ans": "B",
+      "exp": "Transformational leadership means sharing enthusiasm, encouraging creative thinking, and role-modeling a strong work ethic (Manual p.7)."
+    },
+    {
+      "id": "Q5",
+      "module": 1,
+      "q": "A branch manager sets clear daily targets for tellers and rewards those who meet them. This approach best illustrates:",
+      "opts": [
+        "Transformational leadership",
+        "Transactional leadership",
+        "Servant leadership",
+        "Democratic leadership"
+      ],
+      "ans": "B",
+      "exp": "Transactional leadership centers on clear goals, tracked progress, and rewarding results (Manual p.8)."
+    },
+    {
+      "id": "Q6",
+      "module": 1,
+      "q": "A leader who prioritizes the growth and well-being of team members above all else is practicing:",
+      "opts": [
+        "Autocratic leadership",
+        "Servant leadership",
+        "Laissez-faire leadership",
+        "Bureaucratic leadership"
+      ],
+      "ans": "B",
+      "exp": "Servant leadership prioritizes the needs, growth, and well-being of team members (Manual p.8)."
+    },
+    {
+      "id": "Q7",
+      "module": 1,
+      "q": "What is the primary advantage of a democratic (participative) leadership style in a retail bank?",
+      "opts": [
+        "Decisions are made faster than other styles",
+        "Team members feel ownership and are more engaged",
+        "Hierarchy and reporting lines are strictly maintained",
+        "It removes the need for manager oversight"
+      ],
+      "ans": "B",
+      "exp": "Democratic leadership empowers employees to contribute to decisions, building ownership and consensus (Manual p.9)."
+    },
+    {
+      "id": "Q8",
+      "module": 1,
+      "q": "Which of the following is a culturally sensitive communication best practice for banking employees in Africa?",
+      "opts": [
+        "Address all customers in exactly the same formal register",
+        "Respect the hierarchy and authority valued in many African workplaces",
+        "Avoid ever adapting communication styles to regional differences",
+        "Ignore local customs to keep messaging consistent"
+      ],
+      "ans": "B",
+      "exp": "The manual lists respecting hierarchy and authority as a best practice for culturally sensitive communication (Manual p.6)."
+    },
+    {
+      "id": "Q9",
+      "module": 1,
+      "q": "In the Ozone Bank case, Amira's first response—assigning specific roles and linking rewards to targets—reflects which leadership approach?",
+      "opts": [
+        "Transformational",
+        "Transactional",
+        "Servant",
+        "Democratic"
+      ],
+      "ans": "B",
+      "exp": "Amira's Response One used structured roles, incentives, and warnings of corrective action — a transactional approach (Manual p.11)."
+    },
+    {
+      "id": "Q10",
+      "module": 1,
+      "q": "When Amira joined her team to assist tellers and held a town hall for staff concerns, she demonstrated which leadership style?",
+      "opts": [
+        "Transactional",
+        "Servant",
+        "Laissez-faire",
+        "Autocratic"
+      ],
+      "ans": "B",
+      "exp": "Response Two shows Amira supporting stressed staff and listening to concerns — servant leadership (Manual p.11)."
+    },
+    {
+      "id": "Q11",
+      "module": 1,
+      "q": "What is the key distinction between transformational and transactional leadership in retail banking?",
+      "opts": [
+        "Transformational focuses on rules; transactional focuses on inspiration",
+        "Transformational inspires change; transactional ensures results through rewards",
+        "Both are identical in practice",
+        "Transformational applies mainly to senior managers"
+      ],
+      "ans": "B",
+      "exp": "Transformational leadership motivates through vision; transactional leadership relies on roles, rewards, and accountability (Manual p.7-8)."
+    },
+    {
+      "id": "Q12",
+      "module": 1,
+      "q": "A loan officer who listens empathetically to a frustrated customer and tailors their explanation to the customer's level of understanding is applying:",
+      "opts": [
+        "Confident, authoritative assertiveness alone",
+        "Active listening and adaptability",
+        "A transactional rewards mindset",
+        "Strict, rule-based procedure"
+      ],
+      "ans": "B",
+      "exp": "Active listening and adaptability are two of the manual's key communicator behaviors (Manual p.5)."
+    },
+    {
+      "id": "Q13",
+      "module": 1,
+      "q": "Which is a potential risk of relying exclusively on a transactional leadership style in a customer-facing branch?",
+      "opts": [
+        "It ensures every team member feels part of key decisions",
+        "Employees may become demotivated and less creative",
+        "It focuses primarily on team members' personal growth",
+        "It inspires staff to exceed expectations through shared vision"
+      ],
+      "ans": "B",
+      "exp": "Over-relying on rewards and rules (transactional) can crowd out the creativity and engagement that democratic, servant, or transformational approaches build (Manual p.8)."
+    },
+    {
+      "id": "Q14",
+      "module": 1,
+      "q": "A branch manager who involves tellers, loan officers, and customer service reps in a brainstorming session to solve operational problems is using:",
+      "opts": [
+        "Autocratic leadership",
+        "Democratic leadership",
+        "Laissez-faire leadership",
+        "Transactional leadership"
+      ],
+      "ans": "B",
+      "exp": "Democratic leadership invites participation and consensus-building (Manual p.9)."
+    },
+    {
+      "id": "Q15",
+      "module": 1,
+      "q": "What is the primary benefit of a servant leadership approach in high-pressure retail banking situations?",
+      "opts": [
+        "It ensures strict compliance with policies",
+        "It builds trust and reduces employee burnout",
+        "It speeds up everyday decision-making processes",
+        "It reduces the need for training"
+      ],
+      "ans": "B",
+      "exp": "Servant leadership supports team well-being, which matters most under stress (Manual p.8)."
+    },
+    {
+      "id": "Q16",
+      "module": 1,
+      "q": "Why is understanding local economic factors important for leaders in African retail banking?",
+      "opts": [
+        "It standardizes customer expectations across every region",
+        "It helps tailor products and services to diverse customer needs",
+        "It primarily affects regulatory reporting, not service design",
+        "It mainly matters for setting HR and staffing policies"
+      ],
+      "ans": "B",
+      "exp": "Leaders must adapt to economic and cultural factors to serve customers effectively (Manual p.4)."
+    },
+    {
+      "id": "Q17",
+      "module": 1,
+      "q": "Which of the following communication strategies does the manual recommend for engaging senior management?",
+      "opts": [
+        "Use informal, casual language to build rapport",
+        "Provide data-driven insights and concise reports",
+        "Rely mainly on personal anecdotes and stories",
+        "Focus on team morale rather than strategic goals"
+      ],
+      "ans": "B",
+      "exp": "For senior management, the manual recommends data-driven insights and concise, to-the-point reports (Manual p.6)."
+    },
+    {
+      "id": "Q18",
+      "module": 1,
+      "q": "A teller who notices a colleague struggling and offers to help during peak hours is exhibiting traits of:",
+      "opts": [
+        "Transformational leadership",
+        "Servant leadership",
+        "Transactional leadership",
+        "Autocratic leadership"
+      ],
+      "ans": "B",
+      "exp": "Servant leadership means supporting teammates and stepping in when they're overwhelmed (Manual p.8)."
+    },
+    {
+      "id": "Q19",
+      "module": 1,
+      "q": "Which leadership style would be most effective for managing a sudden operational crisis like system downtime?",
+      "opts": [
+        "Democratic — wait for team consensus before acting",
+        "Transactional — issue clear directives and monitor performance",
+        "Laissez-faire — let employees figure it out",
+        "Servant — prioritize individual comfort above the response"
+      ],
+      "ans": "B",
+      "exp": "In a crisis, clear direction and accountability restore order quickly, even though other styles may complement it once the crisis eases (Manual p.8)."
+    },
+    {
+      "id": "Q20",
+      "module": 1,
+      "q": "How can an entry-level employee demonstrate leadership without a formal title?",
+      "opts": [
+        "By waiting for instructions from managers",
+        "By taking initiative and collaborating effectively",
+        "By focusing mainly on personal performance targets",
+        "By avoiding conflict with colleagues and customers"
+      ],
+      "ans": "B",
+      "exp": "Every employee can demonstrate leadership by taking initiative and collaborating effectively — leadership isn't tied to title (Manual p.1)."
+    },
+    {
+      "id": "Q21",
+      "module": 1,
+      "q": "What is the primary purpose of developing emotional intelligence for retail banking leaders?",
+      "opts": [
+        "To improve one's personal well-being outside of work",
+        "To build strong relationships and navigate conflicts",
+        "To sharpen technical and numerical skills",
+        "To reduce reliance on teamwork and delegation"
+      ],
+      "ans": "B",
+      "exp": "EI helps leaders build relationships and positive work environments, which is central to navigating conflict (Manual p.5)."
+    },
+    {
+      "id": "Q22",
+      "module": 1,
+      "q": "Which of the following is a key problem-solving strategy for retail bankers?",
+      "opts": [
+        "Ignore the root cause and focus on symptoms",
+        "Identify the root cause and involve the team",
+        "Make decisions without consulting colleagues",
+        "Delay action until all data is perfect"
+      ],
+      "ans": "B",
+      "exp": "The manual's problem-solving strategies include identifying the root cause and encouraging team involvement (Manual p.5)."
+    },
+    {
+      "id": "Q23",
+      "module": 1,
+      "q": "A branch manager who implements a 'Customer First' initiative, empowering staff to make small decisions without approval, is demonstrating:",
+      "opts": [
+        "Autocratic leadership",
+        "Transformational leadership — inspiring initiative",
+        "Transactional leadership — setting clear rewards",
+        "Servant leadership — focusing on employee needs"
+      ],
+      "ans": "B",
+      "exp": "Encouraging colleagues to think creatively and take initiative is transformational leadership (Manual p.7)."
+    },
+    {
+      "id": "Q24",
+      "module": 1,
+      "q": "What is the main challenge of applying a democratic leadership style in a fast-paced retail banking environment?",
+      "opts": [
+        "It works best mainly with very small teams",
+        "It may slow decision-making during emergencies",
+        "It requires no structured communication at all",
+        "It reduces opportunities for team participation"
+      ],
+      "ans": "B",
+      "exp": "Consultation takes time, which can be a problem in urgent situations (Manual p.9)."
+    },
+    {
+      "id": "Q25",
+      "module": 1,
+      "q": "Which of the following is a characteristic of effective non-verbal communication for bank employees?",
+      "opts": [
+        "Using a monotone voice to appear neutral",
+        "Maintaining eye contact and open body language",
+        "Avoiding hand gestures during conversations",
+        "Speaking loudly to assert authority"
+      ],
+      "ans": "B",
+      "exp": "Non-verbal cues like eye contact and open posture help staff appear approachable (Manual p.5)."
+    },
+    {
+      "id": "Q26",
+      "module": 1,
+      "q": "A team leader who shares a powerful vision of expanding banking access to underserved communities is using:",
+      "opts": [
+        "Transactional leadership",
+        "Transformational leadership",
+        "Laissez-faire leadership",
+        "Bureaucratic leadership"
+      ],
+      "ans": "B",
+      "exp": "Sharing an inspiring vision to motivate a team is transformational leadership (Manual p.7)."
+    },
+    {
+      "id": "Q27",
+      "module": 1,
+      "q": "In the Ozone Bank case, Amira's speech about resilience and innovation, and her introduction of a rapid response system, reflects:",
+      "opts": [
+        "Transactional leadership",
+        "Transformational leadership",
+        "Servant leadership",
+        "Democratic leadership"
+      ],
+      "ans": "B",
+      "exp": "Response Four — the resilience/innovation speech and the 'Customer First' initiative — is transformational leadership (Manual p.11)."
+    },
+    {
+      "id": "Q28",
+      "module": 1,
+      "q": "A leader who models a strong work ethic and a positive attitude is most likely to:",
+      "opts": [
+        "Create confusion about expectations",
+        "Inspire others through example",
+        "Reduce overall team performance",
+        "Be seen as indecisive"
+      ],
+      "ans": "B",
+      "exp": "Modeling desired behavior — a strong work ethic and positive attitude — is a stated way to apply transformational leadership (Manual p.7)."
+    },
+    {
+      "id": "Q29",
+      "module": 1,
+      "q": "Which of the following is a common misconception about servant leadership?",
+      "opts": [
+        "It puts others' needs first",
+        "It weakens accountability",
+        "It focuses on team growth and well-being",
+        "It can apply in for-profit organizations"
+      ],
+      "ans": "B",
+      "exp": "Servant leadership does not reduce accountability — it strengthens it through support and empowerment (Manual p.8)."
+    },
+    {
+      "id": "Q30",
+      "module": 1,
+      "q": "A branch manager who rewards a teller for resolving a complex customer complaint on the same day is using:",
+      "opts": [
+        "Servant leadership",
+        "Transactional leadership",
+        "Transformational leadership",
+        "Laissez-faire leadership"
+      ],
+      "ans": "B",
+      "exp": "Recognizing and rewarding specific results is a hallmark of transactional leadership (Manual p.8)."
+    },
+    {
+      "id": "Q31",
+      "module": 1,
+      "q": "A loan officer who reassures a nervous first-time customer by speaking with calm, steady confidence is demonstrating which communicator trait?",
+      "opts": [
+        "Adaptability to the audience",
+        "Confidence & Authority",
+        "Non-Verbal Cues",
+        "Clarity & Conciseness"
+      ],
+      "ans": "B",
+      "exp": "Confidence & Authority means inspiring trust with assurance — one of the manual's five communicator behaviors (Manual p.5)."
+    },
+    {
+      "id": "Q32",
+      "module": 1,
+      "q": "In the context of African banking, which of the following is a key factor that influences leadership style?",
+      "opts": [
+        "The homogeneity of customer needs across regions",
+        "Cultural diversity and varying economic conditions",
+        "The absence of regulatory change",
+        "A fixed, unchanging market"
+      ],
+      "ans": "B",
+      "exp": "African banking is characterized by diverse cultures and economies, requiring adaptable leadership (Manual p.4)."
+    },
+    {
+      "id": "Q33",
+      "module": 1,
+      "q": "A leader who adapts their communication style when speaking with regulators versus frontline staff is demonstrating:",
+      "opts": [
+        "Inconsistent messaging over time",
+        "Adaptability and audience awareness",
+        "A clear sign of indecisiveness",
+        "A lack of personal authority"
+      ],
+      "ans": "B",
+      "exp": "The manual calls for tailoring messages to the audience — customers, colleagues, or management (Manual p.6)."
+    },
+    {
+      "id": "Q34",
+      "module": 1,
+      "q": "Which of the following is a benefit of using a transformational leadership approach in retail banking?",
+      "opts": [
+        "Strict adherence to existing processes",
+        "Increased employee engagement and innovation",
+        "Reduced training costs",
+        "Minimal need for communication"
+      ],
+      "ans": "B",
+      "exp": "Transformational leadership is linked to greater employee engagement and creativity (Manual p.7)."
+    },
+    {
+      "id": "Q35",
+      "module": 1,
+      "q": "A branch employee who takes responsibility for the long-term health of the branch and its people — beyond just their own tasks — is demonstrating which servant-leadership principle?",
+      "opts": [
+        "Delegation",
+        "Stewardship",
+        "Negotiation",
+        "Assertiveness"
+      ],
+      "ans": "B",
+      "exp": "Stewardship is one of the ten servant-leadership principles, alongside Listening, Empathy, Healing, Awareness, Persuasion, Conceptualization, Foresight, Commitment to the growth of people, and Building community (Manual p.9)."
+    },
+    {
+      "id": "Q36",
+      "module": 1,
+      "q": "A customer service representative who offers a solution to a customer's problem without waiting for manager approval is demonstrating:",
+      "opts": [
+        "Reckless disregard for procedure",
+        "Initiative and empowerment",
+        "Willful disobedience of instructions",
+        "A general lack of training"
+      ],
+      "ans": "B",
+      "exp": "Taking initiative is how any employee — regardless of title — can demonstrate leadership (Manual p.1)."
+    },
+    {
+      "id": "Q37",
+      "module": 1,
+      "q": "Which leadership style is most likely to foster a culture of continuous learning and adaptation?",
+      "opts": [
+        "Autocratic",
+        "Transformational",
+        "Transactional",
+        "Bureaucratic"
+      ],
+      "ans": "B",
+      "exp": "Transformational leaders encourage innovation and creative thinking, which supports ongoing learning (Manual p.7)."
+    },
+    {
+      "id": "Q38",
+      "module": 1,
+      "q": "In the Ozone Bank case, what was a risk of Amira's brainstorming-session approach (Response Three)?",
+      "opts": [
+        "It left little room for employee input",
+        "It may have slowed immediate problem-solving",
+        "It increased authoritarian control",
+        "It removed all accountability"
+      ],
+      "ans": "B",
+      "exp": "Involving many voices in an open brainstorm can delay urgent decisions, even as it builds longer-term buy-in (Manual p.11)."
+    },
+    {
+      "id": "Q39",
+      "module": 1,
+      "q": "What was the main purpose of Access Bank's 'W' Initiative mentioned in the Wigwe case?",
+      "opts": [
+        "To increase adoption of digital banking channels nationwide",
+        "To empower women through tailored loans and financial literacy",
+        "To reduce operational costs across all branches",
+        "To pursue strategic mergers with other regional banks"
+      ],
+      "ans": "B",
+      "exp": "The 'W' Initiative focused on empowering women through tailored loans, financial literacy, and networking, reaching over 9 million women customers by 2023 (Manual p.29)."
+    },
+    {
+      "id": "Q40",
+      "module": 1,
+      "q": "A team member holds a discussion with colleagues, encouraging them to share their own ideas rather than simply issuing instructions. This reflects the manual's recommended approach for:",
+      "opts": [
+        "Formal written memos to senior management",
+        "Two-way dialogue with colleagues",
+        "Professionalism and trust with customers",
+        "Data-driven reporting to senior management"
+      ],
+      "ans": "B",
+      "exp": "For colleagues, the manual recommends dialogue rather than issuing commands, and encouraging two-way communication (Manual p.6)."
+    },
+    {
+      "id": "Q41",
+      "module": 1,
+      "q": "A branch manager who conducts a weekly team meeting to discuss challenges and successes is applying:",
+      "opts": [
+        "One-way directives from the top",
+        "Two-way communication and dialogue",
+        "Top-down commands without discussion",
+        "A silent, hands-off leadership style"
+      ],
+      "ans": "B",
+      "exp": "Regular team meetings and two-way communication are recommended for colleague engagement (Manual p.6)."
+    },
+    {
+      "id": "Q42",
+      "module": 1,
+      "q": "What is the core idea behind 'purpose-driven leadership' as exemplified by Herbert Wigwe?",
+      "opts": [
+        "Maximizing short-term profits above all else",
+        "Aligning banking expertise with community uplift",
+        "Focusing mainly on digital transformation",
+        "Avoiding regulatory scrutiny"
+      ],
+      "ans": "B",
+      "exp": "Wigwe's leadership connected banking expertise to community development and financial inclusion (Manual p.27)."
+    },
+    {
+      "id": "Q43",
+      "module": 1,
+      "q": "Which conflict resolution skill is most important for a team leader managing a dispute between two colleagues?",
+      "opts": [
+        "Ignoring the conflict until it resolves itself",
+        "Communication and assertiveness",
+        "Taking one side immediately",
+        "Escalating to senior management right away"
+      ],
+      "ans": "B",
+      "exp": "Conflict resolution calls for developed communication and assertiveness skills (Manual p.39). Note: this is core Module 4 content — see the audit report's module-fit note."
+    },
+    {
+      "id": "Q44",
+      "module": 1,
+      "q": "A leader who says 'We will find a way to serve every customer, no matter the challenge' is demonstrating:",
+      "opts": [
+        "A fixed, unchanging mindset",
+        "A growth mindset and resilience",
+        "Complacency about past success",
+        "Rigid resistance to change"
+      ],
+      "ans": "B",
+      "exp": "A growth mindset means persisting through hard work rather than giving up (Manual p.43)."
+    },
+    {
+      "id": "Q45",
+      "module": 1,
+      "q": "Why does the manual emphasize adapting communication styles to local customs and regional differences?",
+      "opts": [
+        "It is optional for banks operating internationally",
+        "It helps build trust across culturally diverse customer bases",
+        "It is relevant mainly to marketing teams",
+        "It reduces the need for local staff"
+      ],
+      "ans": "B",
+      "exp": "Culturally sensitive communication is presented as key to building strong relationships in diverse markets (Manual p.6)."
+    },
+    {
+      "id": "Q46",
+      "module": 1,
+      "q": "Which of Amira's responses in the Ozone Bank case most clearly reflects transformational leadership?",
+      "opts": [
+        "Response One — structured roles and rewards",
+        "Response Four — a resilience speech and new initiative",
+        "Response Two — assisting staff and listening",
+        "Response Three — a team brainstorming session"
+      ],
+      "ans": "B",
+      "exp": "Response Four's vision-driven speech and empowerment of staff is the clearest example of transformational leadership among the four (Manual p.11)."
+    },
+    {
+      "id": "Q47",
+      "module": 1,
+      "q": "What is the primary benefit of mentoring for aspiring banking leaders?",
+      "opts": [
+        "It leads to an eventual promotion",
+        "It provides access to expert guidance and feedback",
+        "It replaces the need for formal training",
+        "It ensures a noticeably higher salary"
+      ],
+      "ans": "B",
+      "exp": "Mentorship accelerates growth through access to expert knowledge, feedback, and career guidance (Manual p.24)."
+    },
+    {
+      "id": "Q48",
+      "module": 1,
+      "q": "A leader who focuses on expanding opportunities, encouraging new ideas, and building customer loyalty is aligning with which three outcomes the manual says leadership drives?",
+      "opts": [
+        "Growth, compliance, and cost-cutting",
+        "Growth, innovation, and customer satisfaction",
+        "Innovation, competition, and secrecy",
+        "Customer satisfaction, hierarchy, and control"
+      ],
+      "ans": "B",
+      "exp": "The manual frames leadership as driving growth, innovation, and customer satisfaction (Manual p.3)."
+    },
+    {
+      "id": "Q49",
+      "module": 1,
+      "q": "A bank employee who stays calm and composed during a system outage and reassures customers is demonstrating:",
+      "opts": [
+        "Deep technical product expertise",
+        "Emotional intelligence — self-regulation",
+        "Passive, disengaged behavior",
+        "General indifference to the outage"
+      ],
+      "ans": "B",
+      "exp": "Staying calm and making rational decisions under pressure reflects self-regulation, part of emotional intelligence (Manual p.22)."
+    },
+    {
+      "id": "Q50",
+      "module": 1,
+      "q": "What is the primary reason for involving team members in problem-solving decisions?",
+      "opts": [
+        "To reduce the manager's own workload",
+        "To foster ownership and draw on diverse perspectives",
+        "To speed up every single decision",
+        "To help the team avoid personal accountability"
+      ],
+      "ans": "B",
+      "exp": "Encouraging team involvement fosters ownership, per the manual's problem-solving strategies (Manual p.5)."
+    },
+    {
+      "id": "Q51",
+      "module": 1,
+      "q": "A branch manager who trains staff in stress management and teamwork to help them cope with long queues and a wide mix of walk-in customers is addressing which peculiarity of the African banking context?",
+      "opts": [
+        "Cultural Awareness",
+        "High-Pressure Environment",
+        "Sales-Driven Approach",
+        "Customer-Centric Focus"
+      ],
+      "ans": "B",
+      "exp": "'High-Pressure Environment' — managing long queues and diverse customers, with stress management and teamwork — is one of four named peculiarities (Manual p.4)."
+    },
+    {
+      "id": "Q52",
+      "module": 1,
+      "q": "Which best describes the difference between transactional and transformational approaches to employee motivation?",
+      "opts": [
+        "Transactional focuses on long-term vision; transformational on daily tasks",
+        "Transactional uses rewards and roles; transformational inspires through vision",
+        "Both rely on identical motivational methods",
+        "Transactional relies mainly on intrinsic motivation"
+      ],
+      "ans": "B",
+      "exp": "Transactional leadership motivates through clear roles and rewards; transformational leadership motivates through vision and inspiration (Manual p.7-8)."
+    },
+    {
+      "id": "Q53",
+      "module": 1,
+      "q": "A retail banking team that consistently exceeds customer satisfaction targets is most likely led by a manager who:",
+      "opts": [
+        "Focuses narrowly on sales numbers alone",
+        "Prioritizes effective communication and supportive team behavior",
+        "Rarely gives constructive feedback to staff",
+        "Micromanages every task the team performs"
+      ],
+      "ans": "B",
+      "exp": "Effective communication and supportive team behavior are named factors behind high-performing teams (Manual p.38)."
+    },
+    {
+      "id": "Q54",
+      "module": 1,
+      "q": "Fluctuations driven by global commodity prices and exchange rates fall under which peculiarity of the African banking context?",
+      "opts": [
+        "Cultural Nuances",
+        "Economic Factors",
+        "Customer Expectations",
+        "Regulatory Compliance"
+      ],
+      "ans": "B",
+      "exp": "The manual specifically attributes commodity-price and exchange-rate fluctuations to 'Economic Factors' (Manual p.4)."
+    },
+    {
+      "id": "Q55",
+      "module": 1,
+      "q": "What is the most important lesson from Herbert Wigwe's leadership journey for entry-level bankers?",
+      "opts": [
+        "Leadership is mainly about acquiring positional power",
+        "Build a personal board of mentors and keep learning",
+        "A single credential defines your entire career ceiling",
+        "Ambitious risk-taking should generally be avoided at work"
+      ],
+      "ans": "B",
+      "exp": "The manual's 'Actionable Lessons from Wigwe's Career' highlight the mentorship multiplier and continuous learning (Manual p.30)."
+    },
+    {
+      "id": "Q56",
+      "module": 2,
+      "q": "Which of the following best defines a bank customer?",
+      "opts": [
+        "Any person who happens to walk into the bank",
+        "An individual who has an account or intends to open one",
+        "A person who currently has a loan",
+        "A company that invests in the bank's shares"
+      ],
+      "ans": "B",
+      "exp": "A bank customer is someone who has an account, intends to open one, or engages any of the bank's services (Manual p.13)."
+    },
+    {
+      "id": "Q57",
+      "module": 2,
+      "q": "What is the primary reason trust is considered the foundation of banking relationships?",
+      "opts": [
+        "It ensures higher interest rates",
+        "It determines customer retention and loyalty",
+        "It reduces operational costs",
+        "It is required by law"
+      ],
+      "ans": "B",
+      "exp": "Trust determines whether a customer stays or ports to another organization — the trustworthiness meter decides if a bank grows or fails (Manual p.16)."
+    },
+    {
+      "id": "Q58",
+      "module": 2,
+      "q": "A customer who has been with the bank for years and actively refers friends is exhibiting:",
+      "opts": [
+        "Casual satisfaction with a single product",
+        "Loyalty grounded in trust",
+        "Unpredictable, random behavior",
+        "General indifference to the bank"
+      ],
+      "ans": "B",
+      "exp": "Trust leads to loyalty and positive word-of-mouth, as in the Mr. Bonny example (Manual p.16)."
+    },
+    {
+      "id": "Q59",
+      "module": 2,
+      "q": "Which of the following is NOT one of the customer categories the manual discusses?",
+      "opts": [
+        "Youth and students",
+        "International corporations exclusively",
+        "High-net-worth individuals",
+        "Small business owners"
+      ],
+      "ans": "B",
+      "exp": "The manual discusses segments like income, age, financial literacy, and location — not an exclusive focus on international corporations (Manual p.14-15)."
+    },
+    {
+      "id": "Q60",
+      "module": 2,
+      "q": "What skill does the manual identify as essential for building trust with customers?",
+      "opts": [
+        "Aggressive selling",
+        "Active listening",
+        "Avoiding eye contact",
+        "Speaking quickly"
+      ],
+      "ans": "B",
+      "exp": "Listening is essential for building trust, showing the customer their words and feelings are valued (Manual p.19)."
+    },
+    {
+      "id": "Q61",
+      "module": 2,
+      "q": "A bank employee who explains the pros and cons of different loan products to a customer is demonstrating:",
+      "opts": [
+        "Pressure selling",
+        "Transparency and customer-centricity",
+        "A lack of product knowledge",
+        "Indifference to the sale"
+      ],
+      "ans": "B",
+      "exp": "Providing full information helps customers make informed decisions and builds trust (Manual p.16-17)."
+    },
+    {
+      "id": "Q62",
+      "module": 2,
+      "q": "What is the main purpose of Access Bank's customer-focused vision?",
+      "opts": [
+        "To become the most profitable bank in Africa",
+        "To provide exceptional service and innovative solutions",
+        "To reduce the number of branches",
+        "To increase fees across products"
+      ],
+      "ans": "B",
+      "exp": "Access Bank's vision is to be the world's most respected African bank by focusing on customer experience, inclusion, and technology (Manual p.19)."
+    },
+    {
+      "id": "Q63",
+      "module": 2,
+      "q": "Which of the following is an example of 'cultural responsiveness' in customer service?",
+      "opts": [
+        "Using the exact same script for every customer",
+        "Adapting greetings and communication styles to local norms",
+        "Setting aside cultural differences to save time",
+        "Avoiding any mention of cultural events"
+      ],
+      "ans": "B",
+      "exp": "Cultural Sensitivity/Responsiveness is one of the trust-building skills — adapting to local customs builds rapport (Manual p.18)."
+    },
+    {
+      "id": "Q64",
+      "module": 2,
+      "q": "A customer says, 'I'm worried about my savings after hearing news about bank instability.' What is the best initial response?",
+      "opts": [
+        "Suggest they move their funds to a competitor bank",
+        "Reassure them calmly, verify their concern, and explain the safeguards in place",
+        "Dismiss the concern as an overreaction",
+        "Continue the transaction without addressing the comment"
+      ],
+      "ans": "B",
+      "exp": "Address the concern with empathy and a factual, reassuring explanation, mirroring how the manual's example handles anxious customers (Manual p.16)."
+    },
+    {
+      "id": "Q65",
+      "module": 2,
+      "q": "Which of the following services are most commonly patronized by retail bank customers?",
+      "opts": [
+        "Underwriting and corporate bond issuance",
+        "Savings accounts, loans, and digital banking",
+        "Investment banking and M&A advisory",
+        "Cheque clearing and nothing else"
+      ],
+      "ans": "B",
+      "exp": "Retail customers typically use savings accounts, loans, and digital banking services (Manual p.13)."
+    },
+    {
+      "id": "Q66",
+      "module": 2,
+      "q": "What is the role of empathy in customer-centric service delivery?",
+      "opts": [
+        "It matters mainly when handling complaints",
+        "It helps understand the customer's perspective and tailor solutions",
+        "It tends to slow service down unnecessarily",
+        "It adds little if the product itself is good"
+      ],
+      "ans": "B",
+      "exp": "Empathy/Care is one of the five trust-building skills, helping staff connect with customers and address real needs (Manual p.18)."
+    },
+    {
+      "id": "Q67",
+      "module": 2,
+      "q": "A customer is frustrated about a delayed transfer. Which response best demonstrates active listening?",
+      "opts": [
+        "'Let me walk you through our full delay policy.'",
+        "'I understand you're upset — let me check the status and get back to you.'",
+        "'It's not my fault, it's the system's fault.'",
+        "'Please just calm down, it will get resolved.'"
+      ],
+      "ans": "B",
+      "exp": "Acknowledging the emotion before taking action reflects active listening (Manual p.19)."
+    },
+    {
+      "id": "Q68",
+      "module": 2,
+      "q": "What is the benefit of segmenting customers by income level and age?",
+      "opts": [
+        "It is a requirement imposed by regulators",
+        "It allows tailored product offerings and communication",
+        "It reduces overall marketing costs",
+        "It simplifies the product design process"
+      ],
+      "ans": "B",
+      "exp": "Income and age segmentation lets the bank meet each group's distinct needs (Manual p.14)."
+    },
+    {
+      "id": "Q69",
+      "module": 2,
+      "q": "A bank employee who consistently follows up with customers after resolving issues is building:",
+      "opts": [
+        "An unnecessary dependence on the bank",
+        "Trust and a durable long-term relationship",
+        "Frustration among the customer base",
+        "A sense of customer complacency"
+      ],
+      "ans": "B",
+      "exp": "Follow-up shows care and reliability, strengthening trust (Manual p.16)."
+    },
+    {
+      "id": "Q70",
+      "module": 2,
+      "q": "A bank that develops financial products specifically designed to be easy to access for every segment of society — from low-income earners to high-net-worth clients — is demonstrating which element of Access Bank's customer vision?",
+      "opts": [
+        "Reducing the total number of physical branches",
+        "Broad accessibility of financial products across all segments",
+        "A narrow focus on high-net-worth clients",
+        "Increasing transaction fees across products"
+      ],
+      "ans": "B",
+      "exp": "'Access' is one of five named elements of Access Bank's vision — developing easy-to-access products for all segments of society (Manual p.20)."
+    },
+    {
+      "id": "Q71",
+      "module": 2,
+      "q": "A customer asks for a loan but is vague about its purpose. What is the best approach?",
+      "opts": [
+        "Provide a standard loan without asking further questions",
+        "Ask open-ended questions to understand the need and offer suitable products",
+        "Decline the loan request immediately",
+        "Suggest the customer try another bank"
+      ],
+      "ans": "B",
+      "exp": "Understanding the customer's real need — as in the role-play example — ensures the right solution (Manual p.17)."
+    },
+    {
+      "id": "Q72",
+      "module": 2,
+      "q": "What is the primary reason for building trust with customers in retail banking?",
+      "opts": [
+        "To increase overall transaction volume",
+        "To ensure customer retention and positive referrals",
+        "To reduce regulatory oversight burden",
+        "To decrease everyday employee workload"
+      ],
+      "ans": "B",
+      "exp": "Trust is the foundation of loyalty and business growth (Manual p.16)."
+    },
+    {
+      "id": "Q73",
+      "module": 2,
+      "q": "A customer complains about a service charge. What is the most effective way to handle this?",
+      "opts": [
+        "Simply blame the bank's policy",
+        "Explain the charge clearly and offer alternatives if appropriate",
+        "Dismiss the complaint as too minor",
+        "Suggest the customer close their account"
+      ],
+      "ans": "B",
+      "exp": "Transparency and problem-solving build trust when addressing fee complaints (Manual p.16)."
+    },
+    {
+      "id": "Q74",
+      "module": 2,
+      "q": "Which of the following is a characteristic of a customer-centric bank employee?",
+      "opts": [
+        "Focusing mainly on sales targets",
+        "Proactive problem-solving and empathy",
+        "Strict adherence to rules without exceptions",
+        "Avoiding difficult customer interactions"
+      ],
+      "ans": "B",
+      "exp": "Proactive problem-solving and empathy reflect the staff-value elements of understanding customers and offering support (Manual p.20)."
+    },
+    {
+      "id": "Q75",
+      "module": 2,
+      "q": "What is the role of cultural sensitivity in African retail banking?",
+      "opts": [
+        "It matters mainly for expatriate staff",
+        "It helps avoid offense and build stronger customer relationships",
+        "It is treated as a mere legal formality",
+        "It is not especially relevant to banking"
+      ],
+      "ans": "B",
+      "exp": "Cultural Sensitivity/Responsiveness is named as one of the core skills for building trust with customers (Manual p.18)."
+    },
+    {
+      "id": "Q76",
+      "module": 2,
+      "q": "A small-business customer asks about financial literacy resources. How should the bank employee respond?",
+      "opts": [
+        "Say the bank doesn't offer such resources",
+        "Point them toward available financial literacy support",
+        "Suggest they hire a private financial advisor",
+        "Ignore the request"
+      ],
+      "ans": "B",
+      "exp": "Supporting customers' financial education fits the manual's broader emphasis on customer-centric values (Manual p.19). Note: the specific financial-literacy-workshop example lives in Module 3's Kupata Bank case, not this module — flagged for cross-reference in the audit report."
+    },
+    {
+      "id": "Q77",
+      "module": 2,
+      "q": "What is the most important outcome of effective customer complaint handling?",
+      "opts": [
+        "The bank saves on operating costs",
+        "The customer becomes a loyal advocate",
+        "The employee earns a small bonus",
+        "The complaint is simply forgotten"
+      ],
+      "ans": "B",
+      "exp": "As with Mr. Bonny, resolving a complaint well can turn a worried customer into an enthusiastic advocate who refers others (Manual p.16)."
+    },
+    {
+      "id": "Q78",
+      "module": 2,
+      "q": "Which skill is essential for building trust with both colleagues and customers?",
+      "opts": [
+        "Dominating conversations",
+        "Active listening",
+        "Using technical jargon",
+        "Speaking loudly"
+      ],
+      "ans": "B",
+      "exp": "Listening is foundational to trust-building throughout the manual (Manual p.19)."
+    },
+    {
+      "id": "Q79",
+      "module": 2,
+      "q": "A bank employee who offers a personalized financial solution based on a customer's life stage is demonstrating:",
+      "opts": [
+        "A one-size-fits-all approach",
+        "Personalization and customer focus",
+        "Aggressive sales tactics",
+        "Indifference to the customer's situation"
+      ],
+      "ans": "B",
+      "exp": "Tailoring solutions to the customer reflects the 'Understanding Customers' element of delivering value (Manual p.20)."
+    },
+    {
+      "id": "Q80",
+      "module": 2,
+      "q": "A training activity asks participants to identify three additional ways bank customers can be classified, beyond income, age, financial literacy, and location. What skill does this activity build?",
+      "opts": [
+        "Product pricing calculations",
+        "Customer segmentation thinking",
+        "Regulatory compliance checks",
+        "Fraud-detection awareness"
+      ],
+      "ans": "B",
+      "exp": "This is the 'KYC 1' exercise, which asks trainees to extend the manual's segmentation framework (Manual p.14-15)."
+    },
+    {
+      "id": "Q81",
+      "module": 2,
+      "q": "Which of the following is an example of 'trust' in a banking context?",
+      "opts": [
+        "A customer expecting high returns on every product",
+        "A customer believing the bank will safeguard their money",
+        "A customer accepting any advice without question",
+        "A customer insisting on immediate withdrawals"
+      ],
+      "ans": "B",
+      "exp": "Trust is confidence in the bank's reliability and integrity (Manual p.16)."
+    },
+    {
+      "id": "Q82",
+      "module": 2,
+      "q": "A bank employee who notices a customer is anxious about using digital banking should:",
+      "opts": [
+        "Tell them to just use the ATM instead",
+        "Offer to guide them through the process patiently",
+        "Ignore their anxiety and move on",
+        "Suggest they bank somewhere else"
+      ],
+      "ans": "B",
+      "exp": "Patiently addressing customer fears reflects the 'Empathy and Support' element of delivering customer-centric value (Manual p.20)."
+    },
+    {
+      "id": "Q83",
+      "module": 2,
+      "q": "A bank employee who is fully transparent about fees and loan terms — even when the details aren't in the bank's favor for the sale — is demonstrating which trust-building skill?",
+      "opts": [
+        "Expertise",
+        "Integrity/Transparency",
+        "Cultural Sensitivity/Responsiveness",
+        "Listening"
+      ],
+      "ans": "B",
+      "exp": "Integrity/Transparency is one of the five trust-building skills in the manual's diagram (Manual p.18)."
+    },
+    {
+      "id": "Q84",
+      "module": 2,
+      "q": "A customer has a recurring issue with their statement. What is the best long-term solution?",
+      "opts": [
+        "Apologize and hope it doesn't happen again",
+        "Investigate the root cause and fix it permanently",
+        "Quietly blame the bank's IT system",
+        "Suggest they switch to online banking"
+      ],
+      "ans": "B",
+      "exp": "A permanent fix that addresses the root cause shows real commitment to service quality (Manual p.16)."
+    },
+    {
+      "id": "Q85",
+      "module": 2,
+      "q": "A teller who takes time to remember a regular customer's name and past transactions is primarily contributing to which element of customer-centric value delivery?",
+      "opts": [
+        "Knowledge and Expertise",
+        "Building Relationships",
+        "Effective Communication",
+        "Empathy and Support"
+      ],
+      "ans": "B",
+      "exp": "'Building Relationships' is one of five ways staff deliver customer-centric value in the manual's diagram (Manual p.20)."
+    },
+    {
+      "id": "Q86",
+      "module": 2,
+      "q": "What is the primary benefit of using simple, jargon-free language with customers?",
+      "opts": [
+        "It makes the employee sound more senior",
+        "It ensures clarity and builds trust",
+        "It speeds up every conversation",
+        "It reduces the need for any explanation"
+      ],
+      "ans": "B",
+      "exp": "Simple, jargon-free language is recommended specifically to build customer trust (Manual p.6)."
+    },
+    {
+      "id": "Q87",
+      "module": 2,
+      "q": "A customer who holds several products and has banked with the branch for a decade should be treated as:",
+      "opts": [
+        "Just another routine account holder",
+        "A valuable relationship requiring ongoing attention",
+        "A low-priority, easily replaceable customer",
+        "An operational inconvenience to manage"
+      ],
+      "ans": "B",
+      "exp": "Long-term, multi-product customers are key relationships worth retaining (Manual p.16)."
+    },
+    {
+      "id": "Q88",
+      "module": 2,
+      "q": "Which of the following is a likely expectation of a high-net-worth customer?",
+      "opts": [
+        "Standardized products with no extras",
+        "Personalized attention and tailored solutions",
+        "Long waits and minimal communication",
+        "High fees with no added value"
+      ],
+      "ans": "B",
+      "exp": "High-net-worth customers are described as expecting wealth management, exclusive services, and high-end products (Manual p.15)."
+    },
+    {
+      "id": "Q89",
+      "module": 2,
+      "q": "What is the role of empathy in handling a customer complaint about a late transfer?",
+      "opts": [
+        "It becomes unnecessary once the transfer completes",
+        "It helps the employee understand the customer's stress and respond with genuine concern",
+        "It tends to slow the resolution process down",
+        "It can make the employee seem less authoritative"
+      ],
+      "ans": "B",
+      "exp": "Empathy/Care helps de-escalate tension and rebuild trust during a complaint (Manual p.18)."
+    },
+    {
+      "id": "Q90",
+      "module": 2,
+      "q": "A bank employee who suggests a cheaper alternative to a customer's requested loan is demonstrating:",
+      "opts": [
+        "A lack of sales drive",
+        "Customer-centricity and integrity",
+        "General incompetence",
+        "Indifference to the customer"
+      ],
+      "ans": "B",
+      "exp": "Putting the customer's interest first, even over immediate profit, reflects Integrity/Transparency (Manual p.18)."
+    },
+    {
+      "id": "Q91",
+      "module": 2,
+      "q": "What is the significance of consistent messaging across customer touchpoints (in-branch, email, phone)?",
+      "opts": [
+        "It is unimportant as long as the product is good",
+        "It avoids confusion and reinforces trust in the brand",
+        "It increases operational complexity",
+        "It reduces the need for staff training"
+      ],
+      "ans": "B",
+      "exp": "Ensuring consistency across touchpoints is named as a way to build customer trust (Manual p.6)."
+    },
+    {
+      "id": "Q92",
+      "module": 2,
+      "q": "A customer complains that a loan officer was rude. What is the first step for a manager?",
+      "opts": [
+        "Automatically defend the loan officer",
+        "Listen to the customer's account and apologize sincerely",
+        "Dismiss the complaint as too subjective",
+        "Simply ask the customer to leave"
+      ],
+      "ans": "B",
+      "exp": "Acknowledging the concern and investigating fairly is the recommended first step (Manual p.16)."
+    },
+    {
+      "id": "Q93",
+      "module": 2,
+      "q": "A customer who prioritizes digital products, tech-savvy tools, and investment opportunities most likely belongs to which customer segment?",
+      "opts": [
+        "Seniors (55+)",
+        "Millennials/Gen Z",
+        "High-Net-Worth Individuals",
+        "Retail (Low/Middle-income)"
+      ],
+      "ans": "B",
+      "exp": "The manual's needs breakdown lists digital products, tech-savvy tools, and investment opportunities under Millennials/Gen Z (Manual p.15)."
+    },
+    {
+      "id": "Q94",
+      "module": 2,
+      "q": "What is the best way to respond to a customer who is angry about a fee increase?",
+      "opts": [
+        "Offer to waive the fee with absolutely no explanation",
+        "Explain the reasons for the increase and highlight the value they receive",
+        "Simply ignore the customer's complaint",
+        "Suggest the customer close their account right away"
+      ],
+      "ans": "B",
+      "exp": "Transparency and communicating value preserve trust when fees change (Manual p.16)."
+    },
+    {
+      "id": "Q95",
+      "module": 2,
+      "q": "A bank employee who remembers a customer's past interactions and preferences is practicing:",
+      "opts": [
+        "Pure efficiency",
+        "Personalization and relationship-building",
+        "A memory technique",
+        "A generic sales tactic"
+      ],
+      "ans": "B",
+      "exp": "Remembering personal details shows care and strengthens the customer relationship (Manual p.20)."
+    },
+    {
+      "id": "Q96",
+      "module": 2,
+      "q": "A bank that offers everything from basic savings accounts to high-end wealth management, each tailored to a different customer segment, is demonstrating which element of Access Bank's customer vision?",
+      "opts": [
+        "Secure",
+        "Options",
+        "Easy",
+        "Tailored"
+      ],
+      "ans": "B",
+      "exp": "'Options' is named as the element covering a wide, segment-tailored product range, from low-income earners to high-net-worth individuals (Manual p.20)."
+    },
+    {
+      "id": "Q97",
+      "module": 2,
+      "q": "A customer says they are considering switching to a competitor. How should a bank employee respond?",
+      "opts": [
+        "Tell them to do whatever they think is best",
+        "Ask open-ended questions to understand the reasons and offer solutions",
+        "Simply ignore the comment",
+        "Become defensive about the bank's service"
+      ],
+      "ans": "B",
+      "exp": "Understanding the source of dissatisfaction and addressing it can retain the customer (Manual p.16)."
+    },
+    {
+      "id": "Q98",
+      "module": 2,
+      "q": "Making financial products easy to use and available to every segment of society reflects which vision element?",
+      "opts": [
+        "Limiting access to preserve exclusivity",
+        "Accessibility across all customer segments",
+        "Reducing service hours at branches",
+        "Increasing fees for basic accounts"
+      ],
+      "ans": "B",
+      "exp": "'Access' means developing easy-to-access financial products for all segments of society (Manual p.20)."
+    },
+    {
+      "id": "Q99",
+      "module": 2,
+      "q": "A bank employee who proactively calls a customer to tell them about a new product that suits their profile is:",
+      "opts": [
+        "Being needlessly intrusive",
+        "Providing personalized, proactive service",
+        "Wasting the customer's valuable time",
+        "Selling to the customer aggressively"
+      ],
+      "ans": "B",
+      "exp": "Proactive, relevant outreach is part of understanding and serving customer needs (Manual p.20)."
+    },
+    {
+      "id": "Q100",
+      "module": 2,
+      "q": "What is the most important factor in a customer's decision to stay with a bank, per the manual?",
+      "opts": [
+        "Interest rates alone, above all else",
+        "Trust and overall experience",
+        "Branch proximity to home or work",
+        "Marketing campaigns and advertising"
+      ],
+      "ans": "B",
+      "exp": "Trust and experience are presented as the primary drivers of customer loyalty (Manual p.16)."
+    },
+    {
+      "id": "Q101",
+      "module": 2,
+      "q": "Restating what a customer said, in your own words, to confirm you understood them correctly demonstrates which active-listening skill?",
+      "opts": [
+        "Summarize",
+        "Reflect",
+        "Withhold Judgment",
+        "Pay Attention"
+      ],
+      "ans": "B",
+      "exp": "'Reflect' is one of the manual's six key active-listening skills, alongside Pay Attention, Withhold Judgment, Clarify, Summarize, and Share (Manual p.19)."
+    },
+    {
+      "id": "Q102",
+      "module": 2,
+      "q": "A loan officer who deeply understands the bank's full product range and can accurately explain each product's pros and cons is demonstrating which element of customer-centric value delivery?",
+      "opts": [
+        "Building Relationships",
+        "Knowledge and Expertise",
+        "Empathy and Support",
+        "Effective Communication"
+      ],
+      "ans": "B",
+      "exp": "'Knowledge and Expertise' is named as one of five ways staff deliver customer-centric value (Manual p.20)."
+    },
+    {
+      "id": "Q103",
+      "module": 2,
+      "q": "A customer who has a positive experience is likely to:",
+      "opts": [
+        "Complain about minor, unrelated issues",
+        "Refer others and remain loyal",
+        "Switch banks almost immediately",
+        "Request lower fees across the board"
+      ],
+      "ans": "B",
+      "exp": "Positive experiences drive referrals and retention, as with Mr. Bonny (Manual p.16)."
+    },
+    {
+      "id": "Q104",
+      "module": 2,
+      "q": "What is the main lesson from the case of Mr. Bonny's anxiety about a suspicious text message?",
+      "opts": [
+        "Banks should ignore such complaints",
+        "Swift, reassuring responses build trust",
+        "Customers are often overly paranoid",
+        "Digital channels are inherently unreliable"
+      ],
+      "ans": "B",
+      "exp": "The bank's prompt, empathetic handling restored Mr. Bonny's confidence and earned a referral (Manual p.16)."
+    },
+    {
+      "id": "Q105",
+      "module": 2,
+      "q": "Adopting AI-powered chatbots, mobile banking apps, and data analytics to personalize service reflects which element of Access Bank's customer vision?",
+      "opts": [
+        "Reducing the number of products offered",
+        "Tailored",
+        "Focusing mainly on urban branches",
+        "Increasing fees for premium accounts"
+      ],
+      "ans": "B",
+      "exp": "'Tailored' specifically covers adopting technologies like AI chatbots and data analytics to personalize service (Manual p.20)."
+    },
+    {
+      "id": "Q106",
+      "module": 2,
+      "q": "A bank employee who offers to help a customer set up a mobile banking app is:",
+      "opts": [
+        "Overstepping their role",
+        "Demonstrating customer-centricity",
+        "Wasting time on a side task",
+        "Avoiding their primary duties"
+      ],
+      "ans": "B",
+      "exp": "Helping customers adopt digital channels supports the bank's service-delivery goals (Manual p.20)."
+    },
+    {
+      "id": "Q107",
+      "module": 2,
+      "q": "A customer service rep who explains a complex loan product in plain terms tailored to the customer's understanding is demonstrating which element of customer-centric value delivery?",
+      "opts": [
+        "Empathy and Support",
+        "Effective Communication",
+        "Building Relationships",
+        "Knowledge and Expertise"
+      ],
+      "ans": "B",
+      "exp": "'Effective Communication' is named as one of five ways staff deliver customer-centric value (Manual p.20)."
+    },
+    {
+      "id": "Q108",
+      "module": 2,
+      "q": "A customer who is dissatisfied but does not complain is:",
+      "opts": [
+        "Probably satisfied overall",
+        "At risk of leaving silently",
+        "Likely to become more loyal",
+        "Not a priority for follow-up"
+      ],
+      "ans": "B",
+      "exp": "Silent dissatisfaction is a real churn risk — proactive engagement matters even without a complaint (Manual p.16, extending the trust discussion)."
+    },
+    {
+      "id": "Q109",
+      "module": 2,
+      "q": "What is the most effective way to handle a customer who is rushing and impatient?",
+      "opts": [
+        "Tell them to simply wait their turn",
+        "Acknowledge their urgency, offer clear options, and act efficiently",
+        "Ignore their visible impatience",
+        "Ask them to just calm down"
+      ],
+      "ans": "B",
+      "exp": "Empathy paired with efficiency reduces frustration in time-pressured interactions (Manual p.18)."
+    },
+    {
+      "id": "Q110",
+      "module": 2,
+      "q": "Which of the following best summarizes the customer-centric approach in retail banking?",
+      "opts": [
+        "Following procedures strictly regardless of customer impact",
+        "Understanding customer needs, building trust, and delivering personalized solutions",
+        "Focusing mainly on sales targets",
+        "Minimizing customer interaction wherever possible"
+      ],
+      "ans": "B",
+      "exp": "The core of Module 2 is understanding needs, building trust, and personalizing service (Manual p.16-20)."
+    },
+    {
+      "id": "Q111",
+      "module": 3,
+      "q": "What is the foundation of personal and professional growth for a leader?",
+      "opts": [
+        "Years of accumulated experience",
+        "Self-awareness",
+        "Formal positional authority",
+        "Deep technical expertise"
+      ],
+      "ans": "B",
+      "exp": "A great leader understands their own capabilities and limitations — self-awareness is named as the foundation of growth (Manual p.22)."
+    },
+    {
+      "id": "Q112",
+      "module": 3,
+      "q": "Which of the following is NOT one of the five components of emotional intelligence?",
+      "opts": [
+        "Self-awareness of one's own state",
+        "Detailed technical analysis",
+        "Self-regulation of emotions",
+        "Empathy for others"
+      ],
+      "ans": "B",
+      "exp": "EI's five components are self-awareness, self-regulation, motivation, empathy, and social skills — technical analysis isn't among them (Manual p.23)."
+    },
+    {
+      "id": "Q113",
+      "module": 3,
+      "q": "A leader who recognizes their own emotional triggers and manages them in healthy ways is displaying:",
+      "opts": [
+        "Motivation",
+        "Self-regulation",
+        "Social skills",
+        "Empathy"
+      ],
+      "ans": "B",
+      "exp": "Self-regulation means managing your emotions in healthy ways (Manual p.23)."
+    },
+    {
+      "id": "Q114",
+      "module": 3,
+      "q": "What is the purpose of a Personal Leadership SWOT analysis?",
+      "opts": [
+        "To evaluate the branch's overall financial performance",
+        "To identify strengths, weaknesses, opportunities, and threats for leadership growth",
+        "To assess the team's overall dynamics",
+        "To set the branch's quarterly sales targets"
+      ],
+      "ans": "B",
+      "exp": "The SWOT exercise asks trainees to evaluate their own leadership strengths, weaknesses, opportunities, and threats (Manual p.23)."
+    },
+    {
+      "id": "Q115",
+      "module": 3,
+      "q": "Which emotional intelligence component involves understanding others' emotions and responding appropriately?",
+      "opts": [
+        "Social skills",
+        "Empathy",
+        "Self-regulation",
+        "Motivation"
+      ],
+      "ans": "B",
+      "exp": "Empathy is defined as understanding the emotions of others and responding appropriately (Manual p.23)."
+    },
+    {
+      "id": "Q116",
+      "module": 3,
+      "q": "Beyond general encouragement, which of the following is specifically named as something a mentor offers?",
+      "opts": [
+        "Guaranteed introductions to major clients",
+        "A sounding board for strategic decisions",
+        "Direct control over the mentee's daily tasks",
+        "A formal performance review each quarter"
+      ],
+      "ans": "B",
+      "exp": "The manual names providing a sounding board for strategic decisions among the roles mentors play in leadership growth (Manual p.24)."
+    },
+    {
+      "id": "Q117",
+      "module": 3,
+      "q": "A leader who sets a clear, inspiring goal that aligns daily tasks with a broader impact is:",
+      "opts": [
+        "Reacting to changes as they occur",
+        "Leading with vision",
+        "Simply managing daily operations",
+        "Following existing procedures"
+      ],
+      "ans": "B",
+      "exp": "Vision is described as a clear, inspiring goal that aligns daily tasks with broader impact (Manual p.26)."
+    },
+    {
+      "id": "Q118",
+      "module": 3,
+      "q": "Which of the following is named as a source of stress in retail banking?",
+      "opts": [
+        "Flexible working hours",
+        "Meeting high customer expectations",
+        "A consistently supportive team",
+        "Having adequate resources"
+      ],
+      "ans": "B",
+      "exp": "High customer expectations are named among the sources of stress in retail banking (Manual p.42)."
+    },
+    {
+      "id": "Q119",
+      "module": 3,
+      "q": "A branch manager who launches a free financial literacy workshop series for small-business clients, rather than simply pushing loan products, is demonstrating:",
+      "opts": [
+        "A fairly narrow profit focus",
+        "Purpose-driven leadership",
+        "Neglect of the bank's core business",
+        "A wasteful use of resources"
+      ],
+      "ans": "B",
+      "exp": "This mirrors the Kupata Bank example of purpose-driven leadership connecting banking expertise to community uplift (Manual p.26)."
+    },
+    {
+      "id": "Q120",
+      "module": 3,
+      "q": "Which of the following best describes emotional intelligence in a retail banking context?",
+      "opts": [
+        "The ability to calculate interest rates precisely",
+        "The ability to recognize and manage emotions in oneself and others",
+        "The ability to memorize every bank policy",
+        "The ability to multitask under heavy pressure"
+      ],
+      "ans": "B",
+      "exp": "EI is defined as the ability to recognize, understand, and manage your own emotions and those of others (Manual p.23)."
+    },
+    {
+      "id": "Q121",
+      "module": 3,
+      "q": "Per the manual's self-awareness diagram, staying calm and making rational decisions ultimately helps a leader do what for their team?",
+      "opts": [
+        "Reduce headcount costs",
+        "Build team cohesion",
+        "Avoid all future conflict",
+        "Increase quarterly sales targets"
+      ],
+      "ans": "B",
+      "exp": "The diagram shows staying calm and making rational decisions leading, in turn, to building team cohesion (Manual p.22)."
+    },
+    {
+      "id": "Q122",
+      "module": 3,
+      "q": "Why does the manual emphasize continuous learning for leadership development?",
+      "opts": [
+        "It matters mainly for junior technical staff",
+        "It keeps leaders updated on trends and best practices in a fast-evolving sector",
+        "It becomes optional once a leader turns senior",
+        "It has little bearing on most managerial roles"
+      ],
+      "ans": "B",
+      "exp": "Africa's banking sector evolves rapidly, so leaders must stay agile through mentorship and continuous learning (Manual p.24-25)."
+    },
+    {
+      "id": "Q123",
+      "module": 3,
+      "q": "A leader who identifies a potential mentor and approaches them with clear goals is:",
+      "opts": [
+        "Overstepping normal workplace and social boundaries",
+        "Taking a proactive step in their own development",
+        "Being mostly opportunistic about the connection",
+        "Wasting a busy mentor's valuable time"
+      ],
+      "ans": "B",
+      "exp": "The manual recommends identifying senior leaders whose values align with yours and approaching them with clear goals (Manual p.24)."
+    },
+    {
+      "id": "Q124",
+      "module": 3,
+      "q": "What is the significance of the Herbert Wigwe case study for retail banking leaders?",
+      "opts": [
+        "It mainly explains how to avoid mergers",
+        "It illustrates mentorship, vision, and strategic growth",
+        "It focuses narrowly on digital innovation",
+        "It is a historical account with no practical lessons"
+      ],
+      "ans": "B",
+      "exp": "Wigwe's journey provides concrete lessons on mentorship, vision, and growth for aspiring leaders (Manual p.27-30)."
+    },
+    {
+      "id": "Q125",
+      "module": 3,
+      "q": "Which of the following is a key element of a leadership vision, per the manual?",
+      "opts": [
+        "A narrow focus on short-term profits alone",
+        "Alignment with personal values and organizational goals",
+        "Avoiding any kind of meaningful change",
+        "Simply copying other leaders' visions"
+      ],
+      "ans": "B",
+      "exp": "Personal values, long-term goals, and alignment with organizational goals are named as key elements of a leadership vision (Manual p.26)."
+    },
+    {
+      "id": "Q126",
+      "module": 3,
+      "q": "A leader who encourages team members to learn from feedback and persist through challenges is promoting:",
+      "opts": [
+        "A fixed mindset",
+        "A growth mindset",
+        "General complacency",
+        "Rigid, inflexible thinking"
+      ],
+      "ans": "B",
+      "exp": "Seeing feedback as an opportunity to improve is part of the manual's growth-mindset guidance (Manual p.43)."
+    },
+    {
+      "id": "Q127",
+      "module": 3,
+      "q": "A trainee keeps a week-long daily log of stressful moments, their emotional reaction, and how they responded. What is this journal exercise mainly building?",
+      "opts": [
+        "A record of daily banking transactions",
+        "Self-awareness through tracking emotional patterns",
+        "A log of customer complaints",
+        "A weekly sales tracker"
+      ],
+      "ans": "B",
+      "exp": "The journal asks trainees to document stressful situations, their emotional reactions, and how they responded, to build self-awareness (Manual p.24)."
+    },
+    {
+      "id": "Q128",
+      "module": 3,
+      "q": "Which of the following is a recommended way to find the right mentor?",
+      "opts": [
+        "Simply wait passively for a mentor to appear",
+        "Identify senior leaders whose values and style align with your aspirations",
+        "Choose whoever happens to hold the highest title",
+        "Avoid networking with senior staff altogether"
+      ],
+      "ans": "B",
+      "exp": "The manual recommends identifying senior leaders with aligned values and approaching them with clear goals (Manual p.24)."
+    },
+    {
+      "id": "Q129",
+      "module": 3,
+      "q": "What is the primary benefit of building a strong professional network?",
+      "opts": [
+        "It leads to an eventual promotion",
+        "Access to diverse perspectives, trends, and career opportunities",
+        "A significant reduction in work hours",
+        "A full replacement for formal training"
+      ],
+      "ans": "B",
+      "exp": "Networking lets leaders exchange ideas, stay informed on trends, and create career-advancement opportunities (Manual p.25)."
+    },
+    {
+      "id": "Q130",
+      "module": 3,
+      "q": "A leader who invests in the community through financial inclusion programs is demonstrating:",
+      "opts": [
+        "A largely profit-driven mindset",
+        "Purpose-driven leadership",
+        "General indifference to customers",
+        "Short-term, reactive thinking"
+      ],
+      "ans": "B",
+      "exp": "Purpose-driven leadership aligns business goals with community development, like financial inclusion (Manual p.26)."
+    },
+    {
+      "id": "Q131",
+      "module": 3,
+      "q": "Which of the following is an example of growth-mindset behavior?",
+      "opts": [
+        "Avoiding difficult tasks in general",
+        "Viewing challenges as opportunities to learn",
+        "Giving up quickly after one setback",
+        "Dismissing feedback from colleagues"
+      ],
+      "ans": "B",
+      "exp": "A growth mindset means embracing challenges as opportunities to develop, not obstacles to avoid (Manual p.43)."
+    },
+    {
+      "id": "Q132",
+      "module": 3,
+      "q": "What was the primary aim of Access Bank's 'W' Initiative, per the Wigwe case?",
+      "opts": [
+        "Increasing overall male customer share",
+        "Empowering women and enhancing financial inclusion",
+        "Reducing the bank's lending activity",
+        "Focusing mainly on corporate clients"
+      ],
+      "ans": "B",
+      "exp": "The 'W' Initiative targeted women's financial empowerment through tailored loans and literacy programs (Manual p.29)."
+    },
+    {
+      "id": "Q133",
+      "module": 3,
+      "q": "A leader who delegates tasks and empowers team members to make their own decisions is likely:",
+      "opts": [
+        "Avoiding their own personal responsibility",
+        "Building a stronger team and developing others",
+        "Quietly micromanaging every process",
+        "Signaling a general lack of confidence"
+      ],
+      "ans": "B",
+      "exp": "Developing others through delegation and empowerment reflects the manual's mentorship and team-growth themes (Manual p.24)."
+    },
+    {
+      "id": "Q134",
+      "module": 3,
+      "q": "What role does feedback play in developing leadership potential?",
+      "opts": [
+        "It is useful mainly for negative criticism",
+        "It provides an opportunity to learn and improve",
+        "It has little practical use for leaders",
+        "It should generally be avoided"
+      ],
+      "ans": "B",
+      "exp": "The manual frames learning from feedback — focused on behavior, not the person — as key to growth (Manual p.43)."
+    },
+    {
+      "id": "Q135",
+      "module": 3,
+      "q": "A bank employee who sets specific, achievable goals and regularly measures their progress is:",
+      "opts": [
+        "Being unnecessarily rigid",
+        "Practicing effective goal-setting",
+        "Wasting valuable time",
+        "Setting unrealistic expectations"
+      ],
+      "ans": "B",
+      "exp": "Setting specific, measurable goals is part of the manual's growth-mindset guidance (Manual p.43)."
+    },
+    {
+      "id": "Q136",
+      "module": 3,
+      "q": "What is the main lesson from Herbert Wigwe's approach to mergers and acquisitions?",
+      "opts": [
+        "Mergers are generally too risky to pursue at all",
+        "Strategic expansion can be achieved through well-integrated acquisitions",
+        "Organic growth alone is the truly sustainable path",
+        "Acquisitions inevitably reduce customer focus over time"
+      ],
+      "ans": "B",
+      "exp": "Wigwe's acquisition of Diamond Bank expanded Access Bank's reach and digital capabilities (Manual p.28)."
+    },
+    {
+      "id": "Q137",
+      "module": 3,
+      "q": "A leader who remains curious and actively seeks out learning opportunities is:",
+      "opts": [
+        "Acting like a know-it-all",
+        "A lifelong learner",
+        "Reluctant to embrace change",
+        "Professionally stagnant"
+      ],
+      "ans": "B",
+      "exp": "Being a lifelong learner — staying curious and seeking ongoing development — is named as key to growth (Manual p.43)."
+    },
+    {
+      "id": "Q138",
+      "module": 3,
+      "q": "Which of the following is a strategy for building resilience in retail banking teams?",
+      "opts": [
+        "Avoiding all challenges where possible",
+        "Promoting a growth mindset and celebrating milestones",
+        "Focusing mainly on past successes",
+        "Downplaying signs of stress"
+      ],
+      "ans": "B",
+      "exp": "Resilience is built through a growth mindset and recognizing achievements along the way (Manual p.43)."
+    },
+    {
+      "id": "Q139",
+      "module": 3,
+      "q": "A branch manager who encourages team members to take ownership of customer problems is:",
+      "opts": [
+        "Quietly avoiding their own responsibility",
+        "Empowering employees and fostering accountability",
+        "Actually micromanaging the entire team",
+        "Creating unnecessary confusion for staff"
+      ],
+      "ans": "B",
+      "exp": "Empowering employees to own customer problems boosts engagement and satisfaction, echoing the mentorship and development themes of the module (Manual p.24)."
+    },
+    {
+      "id": "Q140",
+      "module": 3,
+      "q": "After a team hits a target, its manager marks the occasion before setting the next goal. What is the main benefit of this habit?",
+      "opts": [
+        "It is mostly a waste of time",
+        "It boosts morale and motivates further progress",
+        "It reduces focus on future goals",
+        "It can breed complacency"
+      ],
+      "ans": "B",
+      "exp": "Celebrating milestones reinforces effort and builds momentum toward future goals (Manual p.43)."
+    },
+    {
+      "id": "Q141",
+      "module": 3,
+      "q": "Herbert Wigwe founded a university described as Nigeria's first '4th Industrial Revolution-focused' institution. What does this reflect about his approach to leadership?",
+      "opts": [
+        "A focus mainly on personal legacy-building",
+        "A belief in empowering others through knowledge-sharing",
+        "A one-off gesture unrelated to his leadership style",
+        "A strategy to reduce competition in banking"
+      ],
+      "ans": "B",
+      "exp": "Wigwe's founding of Wigwe University is presented as part of his legacy as a mentor who believed in empowering others (Manual p.29)."
+    },
+    {
+      "id": "Q142",
+      "module": 3,
+      "q": "What role does self-awareness play in managing high-pressure situations?",
+      "opts": [
+        "It is largely irrelevant once pressure sets in",
+        "It helps leaders recognize emotional triggers and respond thoughtfully",
+        "It tends to make leaders more anxious",
+        "It can lead to unhelpful overthinking"
+      ],
+      "ans": "B",
+      "exp": "Self-awareness enables calmer, more deliberate reactions under pressure (Manual p.22)."
+    },
+    {
+      "id": "Q143",
+      "module": 3,
+      "q": "Which of the following is a common misconception about emotional intelligence?",
+      "opts": [
+        "That it is basically the same as being extroverted",
+        "That it is a fixed trait that can't be developed",
+        "That empathy is genuinely one of its components",
+        "That it genuinely includes self-regulation"
+      ],
+      "ans": "B",
+      "exp": "EI is a set of skills that can be developed over time, not a fixed trait — a common misconception the manual's framing implicitly corrects (Manual p.23)."
+    },
+    {
+      "id": "Q144",
+      "module": 3,
+      "q": "A leader who actively seeks feedback from colleagues and acts on it is demonstrating:",
+      "opts": [
+        "A degree of professional weakness",
+        "Humility and a growth mindset",
+        "A degree of general indecisiveness",
+        "A degree of unwarranted overconfidence"
+      ],
+      "ans": "B",
+      "exp": "Seeking and using feedback is framed as a growth-mindset strength, not a weakness (Manual p.43)."
+    },
+    {
+      "id": "Q145",
+      "module": 3,
+      "q": "What is the significance of the 'Mentorship Multiplier' lesson from Wigwe's career?",
+      "opts": [
+        "Mentorship is mainly useful for senior executives",
+        "Building a personal board of advisors accelerates growth",
+        "Mentorship can fully replace all formal training",
+        "Mentorship is not really necessary at all"
+      ],
+      "ans": "B",
+      "exp": "'Mentorship Multiplier' — build a personal board of advisors for career guidance — is one of the manual's actionable lessons from Wigwe's career (Manual p.30)."
+    },
+    {
+      "id": "Q146",
+      "module": 3,
+      "q": "Which of the following is a key characteristic of a visionary leader in retail banking?",
+      "opts": [
+        "Aligning daily tasks with a long-term purpose",
+        "Focusing narrowly on quarterly targets",
+        "Actively avoiding change",
+        "Managing in a mostly reactive way"
+      ],
+      "ans": "B",
+      "exp": "A leadership vision connects daily work to long-term goals and organizational mission (Manual p.26)."
+    },
+    {
+      "id": "Q147",
+      "module": 3,
+      "q": "A leader who invests in continuous learning by attending workshops and reading industry reports is:",
+      "opts": [
+        "Simply wasting valuable working time",
+        "Staying relevant and adaptable in a changing sector",
+        "Being overly academic about the job",
+        "Avoiding practical, hands-on work in general"
+      ],
+      "ans": "B",
+      "exp": "Reading industry reports and attending workshops are named as commitments to continuous learning (Manual p.25)."
+    },
+    {
+      "id": "Q148",
+      "module": 3,
+      "q": "What is the primary lesson from the branch manager who launched financial resilience workshops for local entrepreneurs?",
+      "opts": [
+        "Community engagement is largely irrelevant to banking",
+        "Purpose-driven leadership can build trust and drive business growth",
+        "Banking should remain a strictly transactional business",
+        "Profit alone should be the main focus"
+      ],
+      "ans": "B",
+      "exp": "The Kupata Bank example shows customer growth, team pride, and branch referrals all rising from a purpose-driven initiative (Manual p.26)."
+    },
+    {
+      "id": "Q149",
+      "module": 3,
+      "q": "A leader who adapts readily to changes in the banking environment is described as:",
+      "opts": [
+        "Rigid and set in their ways",
+        "Agile and resilient",
+        "Generally resistant to change",
+        "Complacent about the future"
+      ],
+      "ans": "B",
+      "exp": "Agility — adapting to technological shifts, customer needs, and regulation — is named as a future-readiness skill (Manual p.42). Note: this content sits in Module 4's resilience section — flagged as a module-fit item in the audit report."
+    },
+    {
+      "id": "Q150",
+      "module": 3,
+      "q": "What role does purpose play in leadership, per the manual?",
+      "opts": [
+        "It matters mainly for non-profit organizations",
+        "It provides meaning and direction beyond profit alone",
+        "It tends to reduce focus on financial goals",
+        "It is described as a luxury banking can't afford"
+      ],
+      "ans": "B",
+      "exp": "Purpose connects work to community impact and is presented as something that enhances, not replaces, business results (Manual p.26)."
+    },
+    {
+      "id": "Q151",
+      "module": 3,
+      "q": "A bank employee who takes the initiative to solve a customer issue without being asked is:",
+      "opts": [
+        "Overstepping their role",
+        "Demonstrating leadership potential",
+        "Acting somewhat recklessly",
+        "Avoiding proper accountability"
+      ],
+      "ans": "B",
+      "exp": "Every employee can demonstrate leadership by taking initiative, regardless of title (Manual p.1)."
+    },
+    {
+      "id": "Q152",
+      "module": 3,
+      "q": "What is the primary benefit of setting goals in leadership development?",
+      "opts": [
+        "It mainly creates added stress",
+        "It provides direction and motivation",
+        "It is largely a waste of effort",
+        "It limits day-to-day flexibility"
+      ],
+      "ans": "B",
+      "exp": "Setting specific, measurable goals gives direction and motivates progress (Manual p.43)."
+    },
+    {
+      "id": "Q153",
+      "module": 3,
+      "q": "A leader who listens to team members' concerns and incorporates their ideas into decisions is:",
+      "opts": [
+        "Being fundamentally indecisive",
+        "Practicing democratic leadership",
+        "Lacking real authority",
+        "Coming across as weak"
+      ],
+      "ans": "B",
+      "exp": "Democratic leadership involves participation and consensus-building (Manual p.9)."
+    },
+    {
+      "id": "Q154",
+      "module": 3,
+      "q": "What role do social skills play within emotional intelligence?",
+      "opts": [
+        "Dominating group conversations",
+        "Building and managing relationships effectively",
+        "Manipulating others to get results",
+        "Avoiding conflict altogether"
+      ],
+      "ans": "B",
+      "exp": "Social skills mean building relationships and managing social networks effectively (Manual p.23)."
+    },
+    {
+      "id": "Q155",
+      "module": 3,
+      "q": "A leader who stays positive and focused even after a setback is demonstrating:",
+      "opts": [
+        "An unrealistic outlook on the situation",
+        "Motivation and resilience",
+        "A failure to notice real problems",
+        "A lack of self-awareness"
+      ],
+      "ans": "B",
+      "exp": "Motivation — harnessing emotions to pursue goals with persistence — is one of the five EI components (Manual p.23)."
+    },
+    {
+      "id": "Q156",
+      "module": 3,
+      "q": "Which of the following is a key takeaway from Herbert Wigwe's leadership journey for new bankers?",
+      "opts": [
+        "Mainly technical skills really matter",
+        "Mentorship and continuous learning are critical",
+        "Professional networking is unimportant",
+        "Mergers are generally a bad strategy"
+      ],
+      "ans": "B",
+      "exp": "Wigwe's career underscores mentorship and lifelong learning as central to leadership growth (Manual p.27-30)."
+    },
+    {
+      "id": "Q157",
+      "module": 3,
+      "q": "A leader who deliberately builds a 'personal board of advisors' is:",
+      "opts": [
+        "Avoiding making their own key decisions",
+        "Building a support network for guidance",
+        "Signaling a degree of professional weakness",
+        "Becoming overly dependent on other people"
+      ],
+      "ans": "B",
+      "exp": "'Mentorship Multiplier' — building a personal board of advisors — is one of the actionable lessons from Wigwe's career (Manual p.30)."
+    },
+    {
+      "id": "Q158",
+      "module": 3,
+      "q": "What is the primary purpose of the Emotional Intelligence Self-Assessment in Appendix 1?",
+      "opts": [
+        "To compare scores against other trainees",
+        "To help trainees identify areas for EI growth",
+        "To test general memory recall skills",
+        "To assess mainly technical banking skills"
+      ],
+      "ans": "B",
+      "exp": "The self-assessment is a tool for honest self-reflection and identifying development areas (Manual p.45)."
+    },
+    {
+      "id": "Q159",
+      "module": 3,
+      "q": "Wigwe's approach of pursuing global ambition while staying rooted in local African needs reflects which of his career's actionable lessons?",
+      "opts": [
+        "Legacy Over Profit",
+        "Think 'Glocal'",
+        "Mentorship Multiplier",
+        "Purpose Over Vision"
+      ],
+      "ans": "B",
+      "exp": "'Think Glocal: Global ambition + local relevance = success' is one of the manual's actionable lessons from Wigwe's career (Manual p.30)."
+    },
+    {
+      "id": "Q160",
+      "module": 3,
+      "q": "What is the role of motivation as a component of emotional intelligence?",
+      "opts": [
+        "Avoiding emotional engagement altogether",
+        "Harnessing emotions to pursue goals with energy and persistence",
+        "Suppressing feelings under any pressure",
+        "Focusing mainly on external rewards alone"
+      ],
+      "ans": "B",
+      "exp": "Motivation means harnessing emotions to pursue goals with energy and persistence (Manual p.23)."
+    },
+    {
+      "id": "Q161",
+      "module": 3,
+      "q": "A leader who stays updated on mobile money trends and ESG banking is:",
+      "opts": [
+        "Sticking to outdated methods",
+        "Practicing continuous learning",
+        "Getting distracted from core work",
+        "Avoiding the bank's core business"
+      ],
+      "ans": "B",
+      "exp": "Staying current on trends like mobile money and ESG banking is named as continuous learning in a fast-evolving sector (Manual p.24)."
+    },
+    {
+      "id": "Q162",
+      "module": 3,
+      "q": "What is the benefit of involving team members in decision-making?",
+      "opts": [
+        "It tends to slow decision processes unnecessarily",
+        "It fosters ownership and draws on diverse insights",
+        "It generally reduces individual accountability",
+        "It can create unnecessary confusion for staff"
+      ],
+      "ans": "B",
+      "exp": "Democratic leadership — involving the team in decisions — builds ownership and consensus (Manual p.9)."
+    },
+    {
+      "id": "Q163",
+      "module": 3,
+      "q": "A leader who encourages colleagues to think creatively and take initiative is exhibiting:",
+      "opts": [
+        "An autocratic style",
+        "A transformational style",
+        "A laissez-faire style",
+        "A mostly transactional style"
+      ],
+      "ans": "B",
+      "exp": "Encouraging creativity and initiative is a stated way to apply transformational leadership (Manual p.7)."
+    },
+    {
+      "id": "Q164",
+      "module": 3,
+      "q": "What is a common challenge of developing leadership potential in a hierarchical banking culture?",
+      "opts": [
+        "There are usually too many learning opportunities available",
+        "Access to mentors may be limited, since bosses can be hard to reach",
+        "Senior leaders are usually quite readily available",
+        "Hierarchy generally has little effect on development"
+      ],
+      "ans": "B",
+      "exp": "The manual's discussion prompt directly raises how to find mentors in a hierarchical culture where bosses are often inaccessible (Manual p.30)."
+    },
+    {
+      "id": "Q165",
+      "module": 3,
+      "q": "A bank employee who celebrates reaching a team goal, then sets a new one, is:",
+      "opts": [
+        "Being needlessly boastful about the win",
+        "Building team morale and momentum",
+        "Simply wasting everyone's time",
+        "Losing sight of future team goals"
+      ],
+      "ans": "B",
+      "exp": "Celebrating milestones and setting new ones is part of the manual's growth-mindset guidance (Manual p.43)."
+    },
+    {
+      "id": "Q166",
+      "module": 3,
+      "q": "A bank that channels its lending expertise into uplifting the communities it serves, rather than treating banking as purely transactional, is practicing which leadership approach?",
+      "opts": [
+        "A focus on profit above all else",
+        "Purpose-driven leadership",
+        "A deliberate avoidance of social impact",
+        "Prioritizing personal gain"
+      ],
+      "ans": "B",
+      "exp": "Purpose-driven leadership aligns banking expertise with community uplift (Manual p.26)."
+    },
+    {
+      "id": "Q167",
+      "module": 3,
+      "q": "What is an important trait for a leader operating in the African retail banking context?",
+      "opts": [
+        "Strict adherence to global standards alone",
+        "Adaptability and cultural sensitivity",
+        "Disregarding local market nuances",
+        "A narrow focus on technology alone"
+      ],
+      "ans": "B",
+      "exp": "African banking requires leaders to adapt to local cultural and economic factors (Manual p.4)."
+    },
+    {
+      "id": "Q168",
+      "module": 3,
+      "q": "A leader who invests in developing their team's skills and well-being is best described as:",
+      "opts": [
+        "A transactional leader",
+        "A servant leader",
+        "An autocratic leader",
+        "A laissez-faire leader"
+      ],
+      "ans": "B",
+      "exp": "Servant leadership prioritizes team growth and well-being (Manual p.8)."
+    },
+    {
+      "id": "Q169",
+      "module": 3,
+      "q": "What is the primary purpose of the Leadership Action Plan (LAP)?",
+      "opts": [
+        "To simply fulfill a course paperwork requirement",
+        "To help trainees apply learning and guide their growth",
+        "To evaluate the course trainers themselves",
+        "To test basic rote knowledge recall"
+      ],
+      "ans": "B",
+      "exp": "The course's learning objectives list creating a Leadership Action Plan to apply learning in daily work (Manual p.1)."
+    },
+    {
+      "id": "Q170",
+      "module": 3,
+      "q": "Which of the following best summarizes Module 3's core message?",
+      "opts": [
+        "Leadership is mainly about technical skills",
+        "Leadership starts with self-awareness, EI, mentorship, and purpose",
+        "Leadership is mainly reserved for senior staff",
+        "Leadership is innate and cannot be developed"
+      ],
+      "ans": "B",
+      "exp": "Module 3 centers on self-awareness, emotional intelligence, mentorship, and vision as the building blocks of leadership growth (Manual p.22-30)."
+    },
+    {
+      "id": "Q171",
+      "module": 4,
+      "q": "According to Katzenbach and Smith, what defines a team?",
+      "opts": [
+        "Any group of people working in the same department",
+        "A small number of people with complementary skills committed to a common purpose",
+        "People who happen to share the same job title",
+        "A group that follows one leader without question"
+      ],
+      "ans": "B",
+      "exp": "A team has complementary skills, a shared purpose, performance goals, and mutual accountability (Manual p.31)."
+    },
+    {
+      "id": "Q172",
+      "module": 4,
+      "q": "What is the first stage of Tuckman's team development model?",
+      "opts": [
+        "Storming",
+        "Forming",
+        "Norming",
+        "Performing"
+      ],
+      "ans": "B",
+      "exp": "Forming is the initial stage, where team members get acquainted and formalities are preserved (Manual p.32)."
+    },
+    {
+      "id": "Q173",
+      "module": 4,
+      "q": "Which stage of team development involves conflict and members resisting group control?",
+      "opts": [
+        "Forming",
+        "Storming",
+        "Norming",
+        "Performing"
+      ],
+      "ans": "B",
+      "exp": "Storming is characterized by conflict as members assert their individual positions (Manual p.32)."
+    },
+    {
+      "id": "Q174",
+      "module": 4,
+      "q": "What is the key characteristic of the 'Norming' stage?",
+      "opts": [
+        "Members openly clash and struggle to agree on how to work together",
+        "People feel part of the team and accept different viewpoints from others",
+        "The team completes its work and formally disbands once the project ends",
+        "Each member works mostly alone, rarely coordinating with the rest of the team"
+      ],
+      "ans": "B",
+      "exp": "In Norming, people feel part of the team and realize they can achieve more by accepting other viewpoints (Manual p.32)."
+    },
+    {
+      "id": "Q175",
+      "module": 4,
+      "q": "At which stage does a team work in an open, trusting atmosphere with flexibility as the key?",
+      "opts": [
+        "Storming",
+        "Performing",
+        "Forming",
+        "Adjourning"
+      ],
+      "ans": "B",
+      "exp": "Performing is when the team works in an open, trusting atmosphere where flexibility matters most (Manual p.32)."
+    },
+    {
+      "id": "Q176",
+      "module": 4,
+      "q": "What is a 'team dynamic'?",
+      "opts": [
+        "The physical layout of a team's shared workspace",
+        "The interaction of behaviors, attitudes, and relationships within a group",
+        "The formal salary structure of the team",
+        "The total headcount of team members"
+      ],
+      "ans": "B",
+      "exp": "Team dynamics are the level of interaction of behaviors, attitudes, and relationships within a group focused on a shared task (Manual p.33)."
+    },
+    {
+      "id": "Q177",
+      "module": 4,
+      "q": "Which set of roles does the manual describe individuals playing on a team?",
+      "opts": [
+        "Mainly the leader role matters",
+        "Leader, Communicator, Problem Solver, Innovator, Supporter",
+        "Mainly the communicator role matters",
+        "Mainly the problem-solver role matters"
+      ],
+      "ans": "B",
+      "exp": "The manual names five roles: Leader, Communicator, Problem Solver, Innovator, and Supporter (Manual p.33)."
+    },
+    {
+      "id": "Q178",
+      "module": 4,
+      "q": "What is the primary purpose of understanding team dynamics?",
+      "opts": [
+        "To enforce complete uniformity among members",
+        "To leverage individual strengths and achieve shared goals",
+        "To eliminate all conflict permanently",
+        "To reduce the overall size of the team"
+      ],
+      "ans": "B",
+      "exp": "Understanding dynamics helps a leader harness individual strengths despite differences, to hit shared goals (Manual p.33)."
+    },
+    {
+      "id": "Q179",
+      "module": 4,
+      "q": "In the Bantu Bank case, what is the primary conflict between Mena and JohnHenry?",
+      "opts": [
+        "Personal animosity between two colleagues",
+        "Speed of loan approvals versus risk management",
+        "How the branch's budget gets allocated",
+        "A disagreement over shift work hours"
+      ],
+      "ans": "B",
+      "exp": "Mena pushes for faster loan approvals to hit targets, while JohnHenry prioritizes risk assessment and due diligence (Manual p.41)."
+    },
+    {
+      "id": "Q180",
+      "module": 4,
+      "q": "What is the main cause of the conflict in the Bantu Bank case?",
+      "opts": [
+        "A lack of staff training",
+        "Poor leadership at the branch",
+        "Pressure to meet an aggressive new loan target",
+        "A wave of customer complaints"
+      ],
+      "ans": "B",
+      "exp": "A newly introduced, aggressive loan target creates tension between speed and due diligence (Manual p.41)."
+    },
+    {
+      "id": "Q181",
+      "module": 4,
+      "q": "What is the best approach for the team leader to resolve the Bantu Bank conflict?",
+      "opts": [
+        "Take Mena's side on the dispute",
+        "Take JohnHenry's side on the dispute",
+        "Facilitate a discussion where both sides are heard, and seek a balanced solution",
+        "Ignore the disagreement and hope it resolves itself"
+      ],
+      "ans": "B",
+      "exp": "A balanced approach that acknowledges both perspectives — speed and risk — is needed (Manual p.40-41)."
+    },
+    {
+      "id": "Q182",
+      "module": 4,
+      "q": "Which of the following is a sign of a dysfunctional team, according to Lencioni?",
+      "opts": [
+        "Healthy, candid conflict",
+        "Absence of trust",
+        "Strong commitment to results",
+        "Mutual accountability"
+      ],
+      "ans": "B",
+      "exp": "Absence of trust is the foundational dysfunction in Lencioni's model (Manual p.38)."
+    },
+    {
+      "id": "Q183",
+      "module": 4,
+      "q": "In Lencioni's model, what is the consequence of 'fear of conflict'?",
+      "opts": [
+        "Stronger, deeper trust between members",
+        "A lack of candid debate and false harmony",
+        "Very high team performance overall",
+        "Strong individual accountability throughout"
+      ],
+      "ans": "B",
+      "exp": "Fear of conflict blocks candid debate, leading to artificial harmony and weaker decisions (Manual p.38)."
+    },
+    {
+      "id": "Q184",
+      "module": 4,
+      "q": "What is the role of 'commitment' in Lencioni's model?",
+      "opts": [
+        "It is the very first dysfunction in the chain",
+        "It follows healthy conflict and secures real buy-in",
+        "It has no real link to conflict",
+        "It applies mainly to team leaders"
+      ],
+      "ans": "B",
+      "exp": "After healthy debate, commitment to the decision follows — hear all, disagree, decide, buy in, speak with one voice (Manual p.38)."
+    },
+    {
+      "id": "Q185",
+      "module": 4,
+      "q": "Which of the following is a factor that produces high-performing teams in retail banking?",
+      "opts": [
+        "A total absence of conflict",
+        "Strong leadership and effective communication",
+        "Uniformity of opinion among members",
+        "A strict, rigid hierarchy"
+      ],
+      "ans": "B",
+      "exp": "Strong Leadership and Effective Communication are two of the four named factors behind high-performing teams (Manual p.38)."
+    },
+    {
+      "id": "Q186",
+      "module": 4,
+      "q": "What is the benefit of performance feedback in teams?",
+      "opts": [
+        "It tends to create unnecessary conflict",
+        "It enhances positive self-reflection and improvement",
+        "It is generally unnecessary",
+        "It tends to reduce motivation"
+      ],
+      "ans": "B",
+      "exp": "Performance Feedback — enhancing positive self-reflection — is one of the four factors behind high-performing teams (Manual p.38)."
+    },
+    {
+      "id": "Q187",
+      "module": 4,
+      "q": "Which type of conflict involves disagreements over the work itself, rather than personalities?",
+      "opts": [
+        "Personality conflict",
+        "Task-based conflict",
+        "Workstyle conflict",
+        "Leadership conflict"
+      ],
+      "ans": "B",
+      "exp": "Task-based conflict is one of the manual's four named conflict types, alongside Leadership, Workstyle, and Personality conflict (Manual p.39)."
+    },
+    {
+      "id": "Q188",
+      "module": 4,
+      "q": "What is the best strategy for managing interpersonal conflict between team members?",
+      "opts": [
+        "Avoid the conflict for as long as possible",
+        "Communication, assertiveness, and problem-solving skills",
+        "Take one side immediately",
+        "Escalate to senior management right away"
+      ],
+      "ans": "B",
+      "exp": "The manual names Communication, Assertiveness, Problem Solving, and a positive mindset as the key conflict-resolution skills to develop (Manual p.39)."
+    },
+    {
+      "id": "Q189",
+      "module": 4,
+      "q": "Which conflict-handling style involves high concern for self and low concern for others?",
+      "opts": [
+        "Collaborating",
+        "Competitive",
+        "Compromising",
+        "Avoiding"
+      ],
+      "ans": "B",
+      "exp": "'Competitive' (the Tough Battler) is high assertiveness, low cooperativeness (Manual p.40)."
+    },
+    {
+      "id": "Q190",
+      "module": 4,
+      "q": "Which conflict-handling style is both highly assertive and highly cooperative, aiming for a win-win?",
+      "opts": [
+        "Competitive",
+        "Collaborating",
+        "Avoiding",
+        "Accommodating"
+      ],
+      "ans": "B",
+      "exp": "'Collaborating' (the Problem Solver) is high on both assertiveness and cooperativeness (Manual p.40)."
+    },
+    {
+      "id": "Q191",
+      "module": 4,
+      "q": "What does the manual say should happen first when managing a conflict situation?",
+      "opts": [
+        "Escalate the issue immediately",
+        "Stay calm and acknowledge the conflict openly",
+        "Pick a side to speed things up",
+        "Wait for the conflict to resolve on its own"
+      ],
+      "ans": "B",
+      "exp": "Staying calm and openly acknowledging the conflict — not glossing over it — are the manual's first steps (Manual p.40)."
+    },
+    {
+      "id": "Q192",
+      "module": 4,
+      "q": "Frequent upgrades to banking software and new digital tools are an example of which named stressor in retail banking?",
+      "opts": [
+        "Job security",
+        "Technological changes",
+        "Regulatory compliance",
+        "Performance pressures"
+      ],
+      "ans": "B",
+      "exp": "'Technological changes' is one of the named sources of stress in the manual's stressor diagram (Manual p.42)."
+    },
+    {
+      "id": "Q193",
+      "module": 4,
+      "q": "What is a 'growth mindset' in the context of team resilience?",
+      "opts": [
+        "Believing abilities are fixed and unchangeable",
+        "Believing abilities can be developed through effort and learning",
+        "Avoiding any challenges wherever possible",
+        "Dismissing all feedback from others"
+      ],
+      "ans": "B",
+      "exp": "A growth mindset — the belief abilities can be developed — underpins resilience and agility (Manual p.43)."
+    },
+    {
+      "id": "Q194",
+      "module": 4,
+      "q": "Which of the following is a way to build resilience in teams, per the manual?",
+      "opts": [
+        "Avoid all challenges wherever possible",
+        "Embrace challenges, learn from feedback, and celebrate milestones",
+        "Focus mainly on individual performance alone",
+        "Dismiss any feedback from colleagues"
+      ],
+      "ans": "B",
+      "exp": "Embracing challenges, learning from feedback, and celebrating milestones are named resilience-building habits (Manual p.43)."
+    },
+    {
+      "id": "Q195",
+      "module": 4,
+      "q": "A team that avoids conflict and lacks real commitment to decisions is likely suffering from which combination of dysfunctions?",
+      "opts": [
+        "High trust and open, healthy debate",
+        "Absence of trust and fear of conflict",
+        "Strong accountability throughout the team",
+        "Excellent, regular performance feedback"
+      ],
+      "ans": "B",
+      "exp": "In Lencioni's model, absence of trust breeds fear of conflict, which in turn breeds a lack of commitment (Manual p.38)."
+    },
+    {
+      "id": "Q196",
+      "module": 4,
+      "q": "What is the role of emotional intelligence in managing team dynamics?",
+      "opts": [
+        "It is largely irrelevant to team-based work",
+        "It helps a leader understand and regulate emotions within the team",
+        "It applies mainly to individual, solo work tasks",
+        "It tends to create more team conflict"
+      ],
+      "ans": "B",
+      "exp": "The manual notes that navigating team differences requires using Emotional Intelligence to inspire members (Manual p.32)."
+    },
+    {
+      "id": "Q197",
+      "module": 4,
+      "q": "A team leader who actively encourages open debate and disagreement is:",
+      "opts": [
+        "Creating unnecessary and lasting team dysfunction",
+        "Fostering the healthy conflict that leads to real commitment",
+        "Avoiding their own personal responsibility as a leader",
+        "Coming across as generally weak to the team"
+      ],
+      "ans": "B",
+      "exp": "Healthy conflict — candid debate without fear of retribution — leads to better decisions and buy-in (Manual p.38)."
+    },
+    {
+      "id": "Q198",
+      "module": 4,
+      "q": "Which of the following is a defining characteristic of a true team, not just a group?",
+      "opts": [
+        "Individual goals pursued separately",
+        "Mutual accountability toward shared goals",
+        "A strict, fixed hierarchy",
+        "Avoidance of any conflict"
+      ],
+      "ans": "B",
+      "exp": "Katzenbach and Smith's definition centers on mutual accountability for a common purpose and goals (Manual p.31)."
+    },
+    {
+      "id": "Q199",
+      "module": 4,
+      "q": "In the 'Banking on Knowledge' treasure hunt activity, what is the primary learning objective?",
+      "opts": [
+        "Winning a prize for the fastest team",
+        "Practicing teamwork skills alongside retail banking knowledge",
+        "Testing individual knowledge in strict isolation",
+        "Simply filling class time"
+      ],
+      "ans": "B",
+      "exp": "The activity is explicitly framed as testing both teamwork skills and retail banking knowledge together (Manual p.35)."
+    },
+    {
+      "id": "Q200",
+      "module": 4,
+      "q": "What is the best way to handle a team member who is consistently late and affecting team performance?",
+      "opts": [
+        "Ignore the pattern and hope it improves",
+        "Address the issue privately with constructive feedback",
+        "Call them out publicly in front of the team",
+        "Escalate straight to dismissal"
+      ],
+      "ans": "B",
+      "exp": "Constructive, private feedback is the approach the manual recommends for addressing conflict-adjacent issues (Manual p.40)."
+    },
+    {
+      "id": "Q201",
+      "module": 4,
+      "q": "A team that regularly celebrates milestones and openly discusses what went wrong after mistakes is:",
+      "opts": [
+        "Becoming complacent over time",
+        "Building resilience and a growth mindset",
+        "Focused mainly on its past successes",
+        "Ignoring challenges still ahead"
+      ],
+      "ans": "B",
+      "exp": "Celebrating milestones and learning from setbacks are both named parts of building resilience (Manual p.43)."
+    },
+    {
+      "id": "Q202",
+      "module": 4,
+      "q": "What is the primary benefit of having diverse roles — Leader, Communicator, Problem Solver, Innovator, Supporter — within a team?",
+      "opts": [
+        "It creates unnecessary role confusion",
+        "It leverages complementary strengths for better outcomes",
+        "It increases competition among members",
+        "It reduces overall team collaboration"
+      ],
+      "ans": "B",
+      "exp": "Complementary skills across roles are core to how the manual defines an effective team (Manual p.33)."
+    },
+    {
+      "id": "Q203",
+      "module": 4,
+      "q": "Which of the following is NOT a stage in Tuckman's team development model?",
+      "opts": [
+        "Forming",
+        "Transitioning",
+        "Storming",
+        "Norming"
+      ],
+      "ans": "B",
+      "exp": "Tuckman's stages are Forming, Storming, Norming, Performing, and Adjourning — 'Transitioning' isn't one of them (Manual p.32)."
+    },
+    {
+      "id": "Q204",
+      "module": 4,
+      "q": "According to Lencioni, what is the first dysfunction at the base of the pyramid?",
+      "opts": [
+        "Fear of conflict",
+        "Absence of trust",
+        "Lack of commitment",
+        "Inattention to results"
+      ],
+      "ans": "B",
+      "exp": "Absence of trust sits at the base of Lencioni's pyramid as the foundational dysfunction (Manual p.38)."
+    },
+    {
+      "id": "Q205",
+      "module": 4,
+      "q": "What is the second dysfunction in Lencioni's model, sitting directly above absence of trust?",
+      "opts": [
+        "Avoidance of accountability",
+        "Fear of conflict",
+        "Lack of commitment",
+        "Inattention to results"
+      ],
+      "ans": "B",
+      "exp": "Fear of conflict sits directly above absence of trust in the pyramid (Manual p.38)."
+    },
+    {
+      "id": "Q206",
+      "module": 4,
+      "q": "Which dysfunction is characterized by a lack of real buy-in from team members after a decision?",
+      "opts": [
+        "Absence of trust",
+        "Lack of commitment",
+        "Fear of conflict",
+        "Inattention to results"
+      ],
+      "ans": "B",
+      "exp": "Lack of commitment arises when conflict is avoided and no real buy-in is reached (Manual p.38)."
+    },
+    {
+      "id": "Q207",
+      "module": 4,
+      "q": "What is the fourth dysfunction in Lencioni's model?",
+      "opts": [
+        "Absence of trust",
+        "Avoidance of accountability",
+        "Fear of conflict",
+        "Lack of commitment"
+      ],
+      "ans": "B",
+      "exp": "Avoidance of accountability follows lack of commitment in the pyramid (Manual p.38)."
+    },
+    {
+      "id": "Q208",
+      "module": 4,
+      "q": "The final dysfunction at the top of Lencioni's pyramid is:",
+      "opts": [
+        "Absence of trust",
+        "Inattention to results",
+        "Fear of conflict",
+        "Lack of commitment"
+      ],
+      "ans": "B",
+      "exp": "Inattention to results sits at the very top of Lencioni's pyramid (Manual p.38)."
+    },
+    {
+      "id": "Q209",
+      "module": 4,
+      "q": "A team that consistently avoids individual accountability is likely to:",
+      "opts": [
+        "Communicate unusually openly",
+        "Miss deadlines and underperform",
+        "Show unusually high trust",
+        "Excel across every task"
+      ],
+      "ans": "B",
+      "exp": "Avoidance of accountability, per Lencioni's model, leads to missed standards and poor performance (Manual p.38)."
+    },
+    {
+      "id": "Q210",
+      "module": 4,
+      "q": "What is the role of the 'Innovator' on a team?",
+      "opts": [
+        "Managing the team's overall budget",
+        "Suggesting new ideas and embracing change",
+        "Handling customer complaints directly",
+        "Formally leading the whole team"
+      ],
+      "ans": "B",
+      "exp": "The Innovator suggests new products and ideas, embraces change, and encourages others to do the same (Manual p.33)."
+    },
+    {
+      "id": "Q211",
+      "module": 4,
+      "q": "In the Equity Savings Bank case, which role is responsible for regular check-ins with borrowers to prevent loan defaults?",
+      "opts": [
+        "The Problem Solver, a Risk and Credit Analyst",
+        "The Communicators (Loan Officers and Relationship Managers)",
+        "The Innovator on the Technology Team",
+        "The Supporter on the Customer Support Team"
+      ],
+      "ans": "B",
+      "exp": "Loan Officers and Relationship Managers are cast as the Communicators, maintaining regular contact with borrowers (Manual p.34)."
+    },
+    {
+      "id": "Q212",
+      "module": 4,
+      "q": "Managing a constant flow of tasks and responsibilities with limited time reflects which named stressor in retail banking?",
+      "opts": [
+        "Job security",
+        "High workload",
+        "Cultural differences",
+        "Branch location"
+      ],
+      "ans": "B",
+      "exp": "'High workload' is one of the named sources of stress in the manual's stressor diagram (Manual p.42)."
+    },
+    {
+      "id": "Q213",
+      "module": 4,
+      "q": "How can a leader promote agility within their team?",
+      "opts": [
+        "Stick rigidly to existing plans",
+        "Encourage experimentation and learning from failure",
+        "Avoid taking on any risk",
+        "Dismiss feedback from the team"
+      ],
+      "ans": "B",
+      "exp": "Agility comes from adapting and learning from setbacks, echoing the manual's growth-mindset guidance (Manual p.42-43)."
+    },
+    {
+      "id": "Q214",
+      "module": 4,
+      "q": "What is the benefit of a growth mindset within a team?",
+      "opts": [
+        "It tends to lead to fixed behaviors",
+        "It fosters resilience and adaptability",
+        "It generally discourages effort",
+        "It tends to reduce collaboration"
+      ],
+      "ans": "B",
+      "exp": "A growth mindset helps teams overcome challenges through resilience and adaptability (Manual p.43)."
+    },
+    {
+      "id": "Q215",
+      "module": 4,
+      "q": "A team that shares information openly and supports each other rather than competing is demonstrating:",
+      "opts": [
+        "Internal competition",
+        "Supportive Team Behaviour",
+        "A strict, individualist culture",
+        "An unusually rigid hierarchy"
+      ],
+      "ans": "B",
+      "exp": "'Supportive Team Behaviour' is named as one of the four factors behind high-performing teams (Manual p.38)."
+    },
+    {
+      "id": "Q216",
+      "module": 4,
+      "q": "After a conflict has been acknowledged and everyone has been heard, what does the manual say is often still needed to fully resolve it?",
+      "opts": [
+        "A single, unilateral decision from the most senior person",
+        "Some compromise from all sides, without anyone feeling cheated",
+        "Immediate escalation to head office",
+        "A formal written warning to everyone involved"
+      ],
+      "ans": "B",
+      "exp": "Finding a solution may require compromise — but nobody should leave feeling cheated or neglected (Manual p.40-41)."
+    },
+    {
+      "id": "Q217",
+      "module": 4,
+      "q": "Which conflict-handling style is both unassertive and uncooperative?",
+      "opts": [
+        "Competitive",
+        "Avoiding",
+        "Collaborating",
+        "Accommodating"
+      ],
+      "ans": "B",
+      "exp": "'Avoiding' (the Impersonal Complier) is low on both assertiveness and cooperativeness (Manual p.40)."
+    },
+    {
+      "id": "Q218",
+      "module": 4,
+      "q": "Which conflict-handling style sits between the four corners of the grid, balancing assertiveness and cooperativeness to some degree?",
+      "opts": [
+        "Competitive",
+        "Compromising",
+        "Avoiding",
+        "Accommodating"
+      ],
+      "ans": "B",
+      "exp": "'Compromising' (the Maneuvering Conciliator) sits at the center of the grid, between the four more extreme styles (Manual p.40)."
+    },
+    {
+      "id": "Q219",
+      "module": 4,
+      "q": "A branch manager who gives clear direction while the team communicates openly and supports rather than competes with one another is displaying which factor behind high-performing teams?",
+      "opts": [
+        "Strict, rigid hierarchy",
+        "Strong Leadership",
+        "Individual competition",
+        "Minimal, one-way communication"
+      ],
+      "ans": "B",
+      "exp": "'Strong Leadership' is one of the four named factors, alongside Effective Communication, Supportive Team Behaviour, and Performance Feedback (Manual p.38)."
+    },
+    {
+      "id": "Q220",
+      "module": 4,
+      "q": "In the Bantu Bank case, what is a possible solution to the conflict between Mena and JohnHenry?",
+      "opts": [
+        "Fire one of the two employees involved",
+        "Implement a balanced scorecard weighing both speed and risk",
+        "Ignore the disagreement for the time being",
+        "Raise the loan target even further still"
+      ],
+      "ans": "B",
+      "exp": "A balanced approach that weighs both speed and risk management addresses both perspectives (Manual p.41)."
+    },
+    {
+      "id": "Q221",
+      "module": 4,
+      "q": "A team member who focuses on meeting sales targets without considering risk, like Mena in the Bantu Bank case, is demonstrating:",
+      "opts": [
+        "A genuinely balanced, careful approach",
+        "An overemphasis on a single goal",
+        "Strong, well-developed risk awareness",
+        "Careful, deliberate customer focus"
+      ],
+      "ans": "B",
+      "exp": "Focusing narrowly on targets, as Mena does, creates conflict and risk exposure (Manual p.41)."
+    },
+    {
+      "id": "Q222",
+      "module": 4,
+      "q": "What is the primary lesson from the Bantu Bank case?",
+      "opts": [
+        "Speed should generally outweigh risk concerns",
+        "Short-term targets and long-term risk management must be balanced",
+        "Risk assessment should be dropped from the process",
+        "Customer needs barely factor into loan decisions"
+      ],
+      "ans": "B",
+      "exp": "The case highlights the need to balance short-term targets with long-term risk management (Manual p.41)."
+    },
+    {
+      "id": "Q223",
+      "module": 4,
+      "q": "A branch manager who invests in team training to handle digital banking issues is:",
+      "opts": [
+        "Deliberately ignoring new technology trends",
+        "Building the team's resilience for future challenges",
+        "Cutting costs at the expense of service",
+        "Reverting back to manual processes"
+      ],
+      "ans": "B",
+      "exp": "Investing in training builds the capability to handle technological and workload pressures (Manual p.42)."
+    },
+    {
+      "id": "Q224",
+      "module": 4,
+      "q": "What is key to building consensus within a team?",
+      "opts": [
+        "Imposing a decision from the top down",
+        "Open communication and a willingness to compromise",
+        "Avoiding discussion of the issue for now",
+        "Deciding mainly by majority vote"
+      ],
+      "ans": "B",
+      "exp": "Communicating with and listening to everyone, then finding a solution that may require compromise, builds consensus (Manual p.40)."
+    },
+    {
+      "id": "Q225",
+      "module": 4,
+      "q": "A team with clear goals, established roles, and growing cohesion is likely in which stage of development?",
+      "opts": [
+        "Forming or Storming",
+        "Norming or Performing",
+        "Mostly Forming",
+        "Mostly Adjourning"
+      ],
+      "ans": "B",
+      "exp": "Clear goals, established roles, and cohesion are characteristic of the Norming and Performing stages (Manual p.32)."
+    },
+    {
+      "id": "Q226",
+      "module": 4,
+      "q": "What is the benefit of celebrating a team's collective achievements, specifically?",
+      "opts": [
+        "It tends to cause complacency afterward",
+        "It reinforces collaboration and strengthens team bonds",
+        "It tends to increase internal conflict",
+        "It generally reduces future productivity"
+      ],
+      "ans": "B",
+      "exp": "Celebrating team achievements reinforces collaboration and strengthens the bonds built while working toward the goal (Manual p.43)."
+    },
+    {
+      "id": "Q227",
+      "module": 4,
+      "q": "A leader who encourages team members to voice concerns without fear of retribution is:",
+      "opts": [
+        "Encouraging unnecessary secrecy among staff",
+        "Building the trust that underpins healthy conflict",
+        "Creating dysfunction across the team",
+        "Avoiding their own personal responsibility"
+      ],
+      "ans": "B",
+      "exp": "Psychological safety to speak up without fear of retribution is what builds trust, per Lencioni's model (Manual p.38)."
+    },
+    {
+      "id": "Q228",
+      "module": 4,
+      "q": "What is the role of empathy in team dynamics?",
+      "opts": [
+        "It is largely unnecessary for teamwork",
+        "It helps members understand each other's perspectives",
+        "It tends to cause unfair favoritism",
+        "It generally reduces team efficiency"
+      ],
+      "ans": "B",
+      "exp": "Understanding teammates' perspectives supports the collaboration and communication at the heart of team dynamics (Manual p.33)."
+    },
+    {
+      "id": "Q229",
+      "module": 4,
+      "q": "A team that adapts quickly to new regulatory requirements is demonstrating:",
+      "opts": [
+        "Resistance to change",
+        "Agility",
+        "Rigidity in its processes",
+        "General confusion"
+      ],
+      "ans": "B",
+      "exp": "Agility is the ability to adapt swiftly to shifts like new regulatory policies (Manual p.42)."
+    },
+    {
+      "id": "Q230",
+      "module": 4,
+      "q": "What is the overarching theme of Module 4?",
+      "opts": [
+        "Leadership is mainly about individual performance",
+        "Effective team dynamics and resilience are essential for future-readiness",
+        "Teams don't matter much in retail banking",
+        "Conflict should generally be avoided at all costs"
+      ],
+      "ans": "B",
+      "exp": "Module 4 centers on teamwork, conflict management, and resilience as pillars of future-readiness (Manual p.31-43)."
+    }
+  ]
+}

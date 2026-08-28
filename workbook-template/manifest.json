@@ -1,5 +1,0 @@
-[
-  { "file": "accounting.json", "tracks": ["grad", "retail"] },
-  { "file": "eof.json", "tracks": ["grad"] },
-  { "file": "fsa.json", "tracks": ["grad"] }
-]

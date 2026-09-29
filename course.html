@@ -345,6 +345,8 @@
         .results-score.green { color: var(--success); }
         .results-score.amber { color: var(--warning); }
         .results-score.red { color: var(--error); }
+        .results-note { text-align: center; font-size: 14px; color: var(--text-secondary); margin: -10px 0 20px; line-height: 1.5; }
+        .results-note strong { color: var(--text-primary); }
         .results-stats {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -366,6 +368,22 @@
             font-size: 14px;
             color: var(--text-secondary);
         }
+        .results-filters { margin-bottom: 18px; }
+        .filter-chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+        .filter-chip { width:auto; margin:0; min-height:auto; padding:7px 12px; border-radius:999px; background:var(--bg-tertiary); color:var(--text-secondary); border:1px solid transparent; font-size:13px; }
+        .filter-chip.active { background:var(--accent); color:var(--on-accent); }
+        .module-results { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:8px; }
+        .module-result { width:100%; margin:0; min-height:auto; padding:10px 12px; text-align:left; background:var(--bg-tertiary); color:var(--text-primary); border:1px solid transparent; border-radius:var(--border-radius); }
+        .module-result.active { border-color:var(--accent); }
+        .module-result-title { font-weight:700; font-size:13px; }
+        .module-result-meta { color:var(--text-secondary); font-size:12px; margin-top:3px; }
+        .progress-card { background:var(--bg-tertiary); border-radius:var(--border-radius); padding:16px; margin:18px 0; }
+        .progress-card h3 { margin:0 0 8px; }
+        .progress-summary { color:var(--text-secondary); font-size:13px; line-height:1.5; }
+        .progress-module { margin-top:10px; }
+        .progress-module-head { display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px; }
+        .progress-track { height:6px; background:var(--bg-secondary); border-radius:999px; overflow:hidden; }
+        .progress-fill { height:100%; background:var(--accent); }
         .review-section {
             max-height: 400px;
             overflow-y: auto;
@@ -393,6 +411,27 @@
             margin-bottom: 4px;
         }
         .review-detail strong { color: var(--text-primary); }
+
+        /* ---- Review-in-full (opened from the results list) ---- */
+        .review-item.clickable { cursor: pointer; transition: background-color 0.15s, transform 0.1s; }
+        .review-item.clickable:hover { background-color: var(--hover-bg); }
+        .review-item.clickable:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+        .review-open-link { display: inline-block; margin-top: 8px; font-size: 13px; font-weight: 600; color: var(--accent); }
+        .review-hint { font-size: 13px; color: var(--text-secondary); margin: -8px 0 12px; }
+        .rv-topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+        .rv-back { flex: 0 0 auto; width: auto; padding: 8px 14px; font-size: 14px; }
+        .rv-badge { font-size: 13px; font-weight: 700; padding: 4px 12px; border-radius: 999px; }
+        .rv-badge.correct { background: rgba(34,197,94,0.18); color: var(--success); }
+        .rv-badge.wrong { background: rgba(239,68,68,0.18); color: var(--error); }
+        .rv-badge.skipped { background: rgba(245,158,11,0.18); color: var(--warning); }
+        .rv-count { font-size: 14px; color: var(--text-secondary); margin-bottom: 12px; }
+        .rv-option { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 14px 16px; border-radius: var(--border-radius); border: 2px solid transparent; background-color: var(--bg-tertiary); font-size: 15px; line-height: 1.4; }
+        .rv-option.correct { border-color: var(--success); background-color: rgba(34,197,94,0.15); }
+        .rv-option.wrong { border-color: var(--error); background-color: rgba(239,68,68,0.15); }
+        .rv-tag { flex: 0 0 auto; font-size: 12px; font-weight: 700; white-space: nowrap; }
+        .rv-option.correct .rv-tag { color: var(--success); }
+        .rv-option.wrong .rv-tag { color: var(--error); }
+        .rv-note { margin-top: 14px; padding: 12px 14px; border-radius: 8px; background: rgba(245,158,11,0.12); border-left: 4px solid var(--warning); font-size: 14px; }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: var(--bg-primary); border-radius: 4px; }
         ::-webkit-scrollbar-thumb { background: var(--bg-tertiary); border-radius: 4px; }
@@ -749,20 +788,29 @@
         <div id="results-screen" class="screen">
             <h2>Session Complete!</h2>
             <div class="results-score" id="results-score">0%</div>
+            <div class="results-note" id="results-note"></div>
             <div class="results-stats" id="results-stats-grid">
                 <div class="stat-box"><span class="stat-value" id="res-correct" style="color:var(--success);">0</span><span class="stat-label">Correct</span></div>
                 <div class="stat-box"><span class="stat-value" id="res-wrong" style="color:var(--error);">0</span><span class="stat-label">Wrong</span></div>
-                <div class="stat-box"><span class="stat-value" id="res-skipped" style="color:var(--warning);">0</span><span class="stat-label">Skipped</span></div>
+                <div class="stat-box"><span class="stat-value" id="res-skipped" style="color:var(--warning);">0</span><span class="stat-label">Unanswered</span></div>
                 <div class="stat-box"><span class="stat-value" id="res-total">0</span><span class="stat-label">Total</span></div>
                 <div class="stat-box" id="time-stat-box" style="display:none;"><span class="stat-value" id="res-time">0:00</span><span class="stat-label">Time Taken</span></div>
             </div>
+            <div id="results-filters" class="results-filters" style="display:none;">
+                <div id="status-filters" class="filter-chips"></div>
+                <div id="module-results" class="module-results"></div>
+            </div>
             <h3>Review All Answers</h3>
+            <p class="review-hint" id="review-hint">Tap any question to open it in full.</p>
             <div class="review-section" id="review-section"></div>
             <div class="action-buttons">
                 <button class="btn-secondary" id="retry-missed-btn">Retry Missed</button>
                 <button id="new-session-btn">New Session</button>
             </div>
         </div>
+        <!-- ===== REVIEW SCREEN (single question, opened from results) ===== -->
+        <div id="review-screen" class="screen"></div>
+
     </div>
 
     <!-- ===== EXAM START CONFIRMATION MODAL ===== -->
@@ -790,6 +838,6 @@
     </div>
 
 </div>
-    <script type="module" src="engine/app.js?v=20260822"></script>
+    <script type="module" src="engine/app.js?v=20260929"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
  * Rebuilt on Firebase Authentication instead of the 4-digit PIN scheme.
  * Keyed by uid instead of lowercased username. */
 
-import { db } from "./engine/firebase-auth.js?v=20260822b";
+import { db } from "./engine/firebase-auth.js?v=20260929b";
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
 /** Pull this trainee's saved workbook subjects from Firestore, by uid. */

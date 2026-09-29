@@ -6,8 +6,8 @@
  * field, no manual verification event, no race condition to get wrong.
  * ============================================================ */
 
-import { db, onAuthChange } from "./engine/firebase-auth.js?v=20260822";
-import { resolvePinSession, logoutPin, PIN_PREFIX } from "./engine/pin-auth.js?v=20260822";
+import { db, onAuthChange } from "./engine/firebase-auth.js?v=20260929";
+import { resolvePinSession, logoutPin, PIN_PREFIX } from "./engine/pin-auth.js?v=20260929";
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
 function docIdFor(courseId, uid) {
@@ -32,6 +32,7 @@ async function pullProgress(courseId, uid) {
   if (data.missed != null) localStorage.setItem("qb_missed_" + courseId, data.missed);
   if (data.session != null) localStorage.setItem("qb_session_" + courseId + "_" + uid, data.session);
   if (data.answered != null) localStorage.setItem("qb_answered_" + courseId + "_" + uid, data.answered);
+  if (data.stats != null) localStorage.setItem("qb_stats_" + courseId + "_" + uid, data.stats);
 }
 
 // ---- Push local progress to Firestore (debounced, same 800ms as before) ----
@@ -46,6 +47,7 @@ function pushToCloud(courseId, uid) {
       missed: localStorage.getItem("qb_missed_" + courseId) || null,
       session: localStorage.getItem("qb_session_" + courseId + "_" + uid) || null,
       answered: localStorage.getItem("qb_answered_" + courseId + "_" + uid) || null,
+      stats: localStorage.getItem("qb_stats_" + courseId + "_" + uid) || null,
       updatedAt: Date.now()
     };
     try {
@@ -68,7 +70,8 @@ function initCloudSync(courseId) {
     if (currentUid &&
        (key.startsWith("qb_missed_" + courseId) ||
         key.startsWith("qb_session_" + courseId + "_") ||
-        key.startsWith("qb_answered_" + courseId + "_"))) {
+        key.startsWith("qb_answered_" + courseId + "_") ||
+        key.startsWith("qb_stats_" + courseId + "_"))) {
       pushToCloud(courseId, currentUid);
     }
   };
@@ -130,7 +133,7 @@ async function signOutAny() {
   if (usingPinSession) {
     logoutPin();
   } else {
-    const { logout } = await import("./engine/firebase-auth.js?v=20260822");
+    const { logout } = await import("./engine/firebase-auth.js?v=20260929");
     await logout();
   }
 }

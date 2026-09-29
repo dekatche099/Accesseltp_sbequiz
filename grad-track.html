@@ -340,8 +340,8 @@
       const bar = document.getElementById('loggedInBar');
       let isPinSession = false;
       Promise.all([
-        import('./engine/firebase-auth.js?v=20260822'),
-        import('./engine/pin-auth.js?v=20260822')
+        import('./engine/firebase-auth.js?v=20260929'),
+        import('./engine/pin-auth.js?v=20260929')
       ]).then(([{ onAuthChange, logout }, { resolvePinSession, logoutPin }]) => {
         onAuthChange(async (user, profile) => {
           if (user) {

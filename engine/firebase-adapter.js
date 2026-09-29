@@ -29,7 +29,7 @@ export async function attachFirebaseSync(courseId, uiRenderer) {
   window.setSignedInUser = (user, profile) => uiRenderer.setSignedInUser(user, profile);
 
   try {
-    const { initCloudSync } = await import('../cloud-sync.js?v=20260822');
+    const { initCloudSync } = await import('../cloud-sync.js?v=20260929');
     initCloudSync(courseId);
     return true;
   } catch (e) {

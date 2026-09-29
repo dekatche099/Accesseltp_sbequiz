@@ -11,8 +11,8 @@
  * NEW: Previous button for practice sessions, with confirm popup.
  * ============================================================ */
 
-import { getQuestionTypeRenderer } from './question-types.js?v=20260822';
-import { logout as firebaseLogout } from './firebase-auth.js?v=20260822';
+import { getQuestionTypeRenderer } from './question-types.js?v=20260929';
+import { logout as firebaseLogout } from './firebase-auth.js?v=20260929';
 
 const escapeHTML = (str) =>
   String(str ?? '').replace(/[&<>"']/g, (c) => ({
@@ -30,10 +30,13 @@ export class UIRenderer {
     this.pendingExamCount = null;
     this.pendingLeaveAction = null;
     this.originalQuizScreenHTML = '';
+    this.resultStatusFilter = 'all';
+    this.resultModuleFilter = 'all';
   }
 
   init() {
     this.cacheDom();
+    this.renderProgressCard();
     this.initTheme();
     this.populateCourseChrome();
     this.applyLoginState();
@@ -48,7 +51,7 @@ export class UIRenderer {
       tick: (secondsLeft) => this.updateTimerDisplay(secondsLeft),
       timeUp: () => {
         const { session } = this.state.get();
-        if (session.mode === 'exam') this.submitExam();
+        if (session.mode === 'exam') this.submitExam(true);
         else this.endSession(true);
       }
     });
@@ -81,6 +84,7 @@ export class UIRenderer {
     this.quizScreen = byId('quiz-screen');
     this.flashcardScreen = byId('flashcard-screen');
     this.resultsScreen = byId('results-screen');
+    this.reviewScreen = byId('review-screen');
 
     this.courseTitleEl = byId('course-title');
     this.courseDescEl = byId('course-desc');
@@ -208,6 +212,8 @@ export class UIRenderer {
 
   setSignedInUser(user, profile) {
     if (!user) {
+      this.state.set({ user: { id: '', displayName: '' }, missedQuestionIds: this.storage.getMissed() });
+      this.renderProgressCard();
       // Signed out: show the plain "type a name to save locally" input,
       // hide the logged-in bar.
       const parentGroup = this.userIdInput && this.userIdInput.closest('.form-group');
@@ -218,7 +224,7 @@ export class UIRenderer {
 
     const displayName = (profile && profile.username) || user.displayName || (user.email || '').split('@')[0];
 
-    this.state.set({ user: { id: user.uid, displayName } });
+    this.state.set({ user: { id: user.uid, displayName }, missedQuestionIds: this.storage.getMissed() });
     const parentGroup = this.userIdInput && this.userIdInput.closest('.form-group');
     if (parentGroup) parentGroup.style.display = 'none';
     if (this.loggedInBar) {
@@ -233,6 +239,7 @@ export class UIRenderer {
     this.checkForSavedSession();
     this.validateStart();
     this.updateTotalAvail();
+    this.renderProgressCard();
   }
 
   // ---- Screen switching ----
@@ -323,11 +330,21 @@ export class UIRenderer {
     if (session.mode === 'flashcard') this.renderFlashcard();
     else if (session.mode === 'exam') this.renderExamSheet();
     else { this.restoreQuizScreenStructure(); this.renderQuestion(); }
+
+    // Timed sessions: pick the countdown back up from the real clock. If the
+    // time ran out while the learner was away, finish the session now.
+    const timerState = this.examEngine.resumeTimer();
+    if (timerState === 'expired') {
+      if (session.mode === 'exam') this.submitExam(true);
+      else this.endSession(true);
+    } else if (timerState === true) {
+      this.updateTimerDisplay(this.state.get().session.timeRemaining);
+    }
   }
 
   startFresh() {
     const userId = this.userIdInput.value.trim();
-    if (userId) this.storage.clearSession(userId);
+    if (userId) { this.storage.clearSession(userId); this.storage.clearStats(userId); }
     this.savedSession = null;
     this.sessionStatus.style.display = 'none';
   }
@@ -581,6 +598,8 @@ export class UIRenderer {
     } else {
       practiceActions.style.display = 'none';
       examActions.style.display = 'flex';
+      const nextExam = document.getElementById('next-exam-btn');
+      if (nextExam) nextExam.style.display = session.currentIndex < session.totalQuestions - 1 ? '' : 'none';
     }
     document.getElementById('exam-timer').style.display = (session.testMode === 'exam' || session.mode === 'exam') ? 'block' : 'none';
   }
@@ -681,13 +700,18 @@ export class UIRenderer {
     el.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   }
 
-  submitExam() {
+  submitExam(autoSubmit = false) {
+    const { session } = this.state.get();
+    if (!session.active || session.finalized) return;
+    const unanswered = session.userAnswers.filter((a) => a === null || a === undefined).length;
+    if (!autoSubmit && unanswered > 0) {
+      const ok = confirm(`You have ${unanswered} unanswered question${unanswered === 1 ? '' : 's'}. They will count as not correct.\n\nSubmit anyway?`);
+      if (!ok) return;
+    }
     this.examEngine.stopTimer();
     this.updateExamSheetLiveStats?.();
-    const { session } = this.state.get();
-    const unanswered = session.userAnswers.filter((a) => a === null).length;
-    this.state.set({ session: { skippedCount: unanswered, active: false } });
-    this.examEngine.finalize({ autoSubmit: true });
+    this.state.set({ session: { skippedCount: unanswered } });
+    this.examEngine.finalize({ autoSubmit });
     this.showResults();
   }
 
@@ -738,12 +762,27 @@ export class UIRenderer {
 
   showResults() {
     this.showScreen('results-screen');
-    const { session } = this.state.get();
-    const results = this.analytics.computeResults(session);
+    const { session, course } = this.state.get();
+    const results = this.analytics.computeResults(session, course.examSettings && course.examSettings.passMark);
 
     const resultsScore = document.getElementById('results-score');
     resultsScore.textContent = `${results.percent}%`;
     resultsScore.className = `results-score ${results.tier}`;
+    // Explain how the headline % was worked out (see AnalyticsManager.computeResults).
+    const noteEl = document.getElementById('results-note');
+    if (noteEl) {
+      if (session.mode === 'flashcard') {
+        noteEl.innerHTML = '';
+      } else {
+        const lines = [`You answered <strong>${results.answered}</strong> of ${results.total} questions · Accuracy on answered: <strong>${results.accuracyOnAnswered}%</strong>`];
+        if (results.timed && results.answered < results.total) {
+          lines.push('Scored out of all questions — unanswered count as not correct.');
+        } else if (!results.timed && results.denominator < results.total) {
+          lines.push(`Scored on the ${results.denominator} question${results.denominator === 1 ? '' : 's'} you reached.`);
+        }
+        noteEl.innerHTML = lines.join('<br>');
+      }
+    }
     document.getElementById('res-correct').textContent = results.correct;
     document.getElementById('res-wrong').textContent = results.wrong;
     document.getElementById('res-skipped').textContent = results.skipped;
@@ -759,26 +798,187 @@ export class UIRenderer {
       timeStatBox.style.display = 'none';
     }
 
-    const reviewSection = document.getElementById('review-section');
-    reviewSection.innerHTML = '';
-    session.questionSet.forEach((q, idx) => {
-      const userAns = session.userAnswers[idx];
-      let statusClass = 'skipped';
-      if (userAns !== null && userAns !== undefined) {
-        statusClass = q.opts[userAns] === q.ans ? 'correct' : 'wrong';
-      }
-      const item = document.createElement('div');
-      item.className = `review-item ${statusClass}`;
-      item.innerHTML = `
-        <div class="review-q">${escapeHTML(q.q)}</div>
-        <div class="review-detail"><strong>Your answer:</strong> ${userAns !== null && userAns !== undefined ? escapeHTML(q.opts[userAns]) : 'None'}</div>
-        <div class="review-detail"><strong>Correct answer:</strong> ${escapeHTML(q.ans)}</div>
-        <div class="review-detail" style="margin-top:4px;">${escapeHTML(q.exp)}</div>
-      `;
-      reviewSection.appendChild(item);
-    });
+    this.resultStatusFilter = 'all';
+    this.resultModuleFilter = 'all';
+    this.renderResultFilters();
+    this.renderReviewList();
+    const hint = document.getElementById('review-hint');
+    if (hint) hint.style.display = reviewable ? 'block' : 'none';
 
     this.updateTotalAvail();
+  }
+
+
+  renderResultFilters() {
+    const { session, course } = this.state.get();
+    const wrap = document.getElementById('results-filters');
+    const statusEl = document.getElementById('status-filters');
+    const moduleEl = document.getElementById('module-results');
+    if (!wrap || !statusEl || !moduleEl || session.mode === 'flashcard') { if (wrap) wrap.style.display='none'; return; }
+    wrap.style.display = 'block';
+    const counts = { all: session.totalQuestions, correct: 0, wrong: 0, unanswered: 0 };
+    session.questionSet.forEach((q,i) => {
+      const a=session.userAnswers[i];
+      if (a===null || a===undefined) counts.unanswered++;
+      else if(q.opts[a]===q.ans) counts.correct++; else counts.wrong++;
+    });
+    statusEl.innerHTML = Object.entries({all:'All',correct:'Correct',wrong:'Wrong',unanswered:'Unanswered'}).map(([key,label]) =>
+      `<button type="button" class="filter-chip ${this.resultStatusFilter===key?'active':''}" data-status-filter="${key}">${label} (${counts[key]})</button>`
+    ).join('');
+    statusEl.querySelectorAll('[data-status-filter]').forEach(btn => btn.addEventListener('click',()=>{
+      this.resultStatusFilter=btn.dataset.statusFilter; this.renderResultFilters(); this.renderReviewList();
+    }));
+    const modules=this.analytics.getModuleResults(session);
+    if (modules.length < 2) { moduleEl.innerHTML=''; return; }
+    const titleFor=(id)=> {
+      const found=(course.modules||[]).find(m=>String(m.id)===String(id));
+      return found ? found.title : `Module ${id}`;
+    };
+    moduleEl.innerHTML = `<button type="button" class="module-result ${this.resultModuleFilter==='all'?'active':''}" data-module-filter="all"><div class="module-result-title">All modules</div><div class="module-result-meta">${session.totalQuestions} questions</div></button>` +
+      modules.map(m=>`<button type="button" class="module-result ${this.resultModuleFilter===String(m.module)?'active':''}" data-module-filter="${escapeHTML(String(m.module))}"><div class="module-result-title">${escapeHTML(titleFor(m.module))}</div><div class="module-result-meta">${m.correct}/${m.total} · ${m.percent}%</div></button>`).join('');
+    moduleEl.querySelectorAll('[data-module-filter]').forEach(btn=>btn.addEventListener('click',()=>{
+      this.resultModuleFilter=btn.dataset.moduleFilter; this.renderResultFilters(); this.renderReviewList();
+    }));
+  }
+
+  renderReviewList() {
+    const { session } = this.state.get();
+    const reviewSection=document.getElementById('review-section');
+    if (!reviewSection) return;
+    reviewSection.innerHTML='';
+    const reviewable=session.mode!=='exam' && session.mode!=='flashcard';
+    session.questionSet.forEach((q,idx)=>{
+      const userAns=session.userAnswers[idx];
+      const status=(userAns===null||userAns===undefined)?'unanswered':(q.opts[userAns]===q.ans?'correct':'wrong');
+      if (this.resultStatusFilter!=='all' && status!==this.resultStatusFilter) return;
+      if (this.resultModuleFilter!=='all' && String(q.module??1)!==this.resultModuleFilter) return;
+      const item=document.createElement('div');
+      item.className=`review-item ${status==='unanswered'?'skipped':status}`;
+      item.innerHTML=`<div class="review-q">Q${idx+1}. ${escapeHTML(q.q)}</div>
+        <div class="review-detail"><strong>Your answer:</strong> ${userAns!==null&&userAns!==undefined?escapeHTML(q.opts[userAns]):'None'}</div>
+        <div class="review-detail"><strong>Correct answer:</strong> ${escapeHTML(q.ans)}</div>
+        <div class="review-detail" style="margin-top:4px;">${escapeHTML(q.exp)}</div>`;
+      if(reviewable){
+        item.classList.add('clickable'); item.tabIndex=0; item.setAttribute('role','button');
+        item.setAttribute('aria-label',`Open question ${idx+1} in full`);
+        item.insertAdjacentHTML('beforeend','<span class="review-open-link">View full question →</span>');
+        item.addEventListener('click',()=>this.openReview(idx));
+        item.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();this.openReview(idx);}});
+      }
+      reviewSection.appendChild(item);
+    });
+    if(!reviewSection.children.length) reviewSection.innerHTML='<div class="review-detail" style="padding:12px;">No questions match these filters.</div>';
+  }
+
+  renderProgressCard() {
+    const { course, user } = this.state.get();
+    const setup=this.practiceSetup;
+    if(!setup) return;
+    let card=document.getElementById('learning-progress-card');
+    if(!card){ card=document.createElement('div'); card.id='learning-progress-card'; card.className='progress-card'; setup.insertAdjacentElement('afterend',card); }
+    const stats=user.id ? this.storage.getStats(user.id) : null;
+    if(!stats || !Object.keys(stats.questions||{}).length){ card.innerHTML='<h3>Your learning progress</h3><div class="progress-summary">Complete a quiz to start tracking your question history and module performance. Progress stays within this course.</div>'; return; }
+    const bankIds=new Set((course.questionBank||[]).map(q=>q.id));
+    const valid=Object.entries(stats.questions).filter(([id])=>bankIds.has(id));
+    const correct=valid.filter(([,v])=>v===1).length;
+    const accuracy=valid.length?Math.round(correct/valid.length*100):0;
+    const sessions=Array.isArray(stats.sessions)?stats.sessions:[];
+    const moduleMap=new Map();
+    valid.forEach(([id,v])=>{ const q=course.questionBank.find(x=>x.id===id); if(!q)return; const k=String(q.module??1); const m=moduleMap.get(k)||{correct:0,total:0}; m.total++; m.correct+=v; moduleMap.set(k,m); });
+    const titleFor=id=>{const m=(course.modules||[]).find(x=>String(x.id)===String(id)); return m?m.title:`Module ${id}`;};
+    const bars=[...moduleMap.entries()].map(([id,m])=>`<div class="progress-module"><div class="progress-module-head"><span>${escapeHTML(titleFor(id))}</span><strong>${Math.round(m.correct/m.total*100)}%</strong></div><div class="progress-track"><div class="progress-fill" style="width:${Math.round(m.correct/m.total*100)}%"></div></div></div>`).join('');
+    const weakest=[...moduleMap.entries()].sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total))[0];
+    const weakestId=weakest ? String(weakest[0]) : null;
+    const recent=sessions.slice(-5).reverse().map(x=>`${escapeHTML(x.mode||'practice')} · ${x.percent}%`).join(' &nbsp;·&nbsp; ');
+    card.innerHTML=`<h3>Your learning progress</h3><div class="progress-summary"><strong>${accuracy}%</strong> accuracy across ${valid.length} answered question${valid.length===1?'':'s'} · ${sessions.length} recent session${sessions.length===1?'':'s'}<br>${recent ? `Recent: ${recent}<br>` : ''}Only this course is tracked, so there is no cross-course dashboard or extra Firestore reads.</div>${bars}${weakestId?`<button type="button" id="practice-weakest-module" style="width:auto;margin-top:12px;">Practice weakest module</button>`:''}`;
+    const weakBtn=document.getElementById('practice-weakest-module');
+    if(weakBtn) weakBtn.addEventListener('click',()=>{
+      this.switchTab('practice');
+      this.modeSelect.value='sequential';
+      this.onModeChange();
+      this.topicSelect.value=weakestId;
+      this.countSelect.value='10';
+      this.testModeSelect.value='practice';
+      this.validateStart();
+      this.startBtn.scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  }
+
+  // ---- Read-only, full view of ONE finished question (from the results list) ----
+  // Deliberately has no Previous/Next: the only way out is back to results,
+  // so there is no navigation state to get wrong for skipped/unanswered questions.
+  openReview(idx) {
+    const { session } = this.state.get();
+    if (session.mode === 'exam' || session.mode === 'flashcard') return;
+    const q = session.questionSet[idx];
+    if (!q) return;
+    const userAns = session.userAnswers[idx];
+    const answered = userAns !== null && userAns !== undefined;
+    const status = !answered ? 'skipped' : (q.opts[userAns] === q.ans ? 'correct' : 'wrong');
+    const statusLabel = { correct: '✓ Correct', wrong: '✗ Wrong', skipped: 'Unanswered' }[status];
+    const renderer = getQuestionTypeRenderer(q.type);
+
+    const reviewSection = document.getElementById('review-section');
+    this.resultsScroll = { page: window.scrollY, list: reviewSection ? reviewSection.scrollTop : 0 };
+
+    this.reviewScreen.innerHTML = `
+      <div class="rv-topbar">
+        <button type="button" class="btn-secondary rv-back" id="rv-back-btn">← Back to results</button>
+        <span class="rv-badge ${status}">${statusLabel}</span>
+      </div>
+      <div class="rv-count">Question ${idx + 1} of ${session.questionSet.length}</div>
+      <div class="case-text" id="rv-case-text" style="display:none;"></div>
+      <div class="question-text" id="rv-question-text"></div>
+      <div class="options-list" id="rv-options"></div>
+      ${answered ? '' : '<div class="rv-note">You didn\'t answer this question.</div>'}
+      <div class="explanation" id="rv-explanation"></div>
+      <div class="action-buttons">
+        <button type="button" id="rv-back-btn-2">Back to results</button>
+      </div>
+    `;
+
+    renderer.renderPrompt(q, {
+      caseTextEl: document.getElementById('rv-case-text'),
+      questionTextEl: document.getElementById('rv-question-text')
+    });
+
+    const optionsEl = document.getElementById('rv-options');
+    q.opts.forEach((opt, oIdx) => {
+      const isCorrect = opt === q.ans;
+      const isPicked = answered && oIdx === userAns;
+      const row = document.createElement('div');
+      row.className = 'rv-option' + (isCorrect ? ' correct' : isPicked ? ' wrong' : '');
+      const text = document.createElement('span');
+      text.textContent = renderer.getOptionLabel(q, oIdx, opt);
+      row.appendChild(text);
+      const tags = [];
+      if (isPicked) tags.push('Your answer');
+      if (isCorrect) tags.push('Correct answer');
+      if (tags.length) {
+        const tag = document.createElement('span');
+        tag.className = 'rv-tag';
+        tag.textContent = tags.join(' · ');
+        row.appendChild(tag);
+      }
+      optionsEl.appendChild(row);
+    });
+
+    const expEl = document.getElementById('rv-explanation');
+    if (q.exp) { expEl.textContent = q.exp; expEl.classList.add('visible'); }
+
+    document.getElementById('rv-back-btn').addEventListener('click', () => this.closeReview());
+    document.getElementById('rv-back-btn-2').addEventListener('click', () => this.closeReview());
+
+    this.showScreen('review-screen');
+    window.scrollTo(0, 0);
+  }
+
+  closeReview() {
+    this.showScreen('results-screen');
+    const reviewSection = document.getElementById('review-section');
+    const pos = this.resultsScroll || { page: 0, list: 0 };
+    if (reviewSection) reviewSection.scrollTop = pos.list;
+    window.scrollTo(0, pos.page);
   }
 
   retryMissed() {
@@ -821,7 +1021,7 @@ export class UIRenderer {
     this.storage.clearMissed();
     this.state.set({ missedQuestionIds: [] });
     const userId = this.userIdInput.value.trim();
-    if (userId) this.storage.clearSession(userId);
+    if (userId) { this.storage.clearSession(userId); this.storage.clearStats(userId); }
     this.updateTotalAvail();
     this.checkForSavedSession();
   }

@@ -41,9 +41,11 @@ export function createAppState() {
       correctCount: 0,
       wrongCount: 0,
       skippedCount: 0,
+      furthest: 0,
       timeLimit: 0,
       timeRemaining: 0,
-      examStartTime: null
+      examStartTime: null,
+      finalized: false
     },
 
     // ---- UI ----
@@ -89,9 +91,11 @@ export function createAppState() {
         correctCount: 0,
         wrongCount: 0,
         skippedCount: 0,
+      furthest: 0,
         timeLimit: 0,
         timeRemaining: 0,
-        examStartTime: null
+        examStartTime: null,
+      finalized: false
       }
     });
   }

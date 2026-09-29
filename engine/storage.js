@@ -68,6 +68,33 @@ export class StorageManager {
     safeRemove(`qb_missed_${this.courseId}`);
   }
 
+
+  // ---- Learning analytics (user-scoped, one compact JSON record per course) ----
+  getStats(userId) {
+    const uid = (userId || '').trim();
+    if (!uid) return null;
+    const raw = safeGet(`qb_stats_${this.courseId}_${uid}`);
+    if (!raw) return null;
+    try {
+      const parsed = JSON.parse(raw);
+      return parsed && typeof parsed === 'object' ? parsed : null;
+    } catch {
+      return null;
+    }
+  }
+
+  setStats(userId, stats) {
+    const uid = (userId || '').trim();
+    if (!uid) return;
+    safeSet(`qb_stats_${this.courseId}_${uid}`, JSON.stringify(stats));
+  }
+
+  clearStats(userId) {
+    const uid = (userId || '').trim();
+    if (!uid) return;
+    safeRemove(`qb_stats_${this.courseId}_${uid}`);
+  }
+
   // ---- Session (user-scoped, keyed by Firebase Auth uid) ----
   getSession(userId) {
     const uid = (userId || '').trim();

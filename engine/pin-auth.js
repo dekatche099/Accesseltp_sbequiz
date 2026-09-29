@@ -35,7 +35,7 @@
  * prominently so people can move to a stronger account when ready.
  * ============================================================ */
 
-import { db, auth } from "./firebase-auth.js?v=20260822b";
+import { db, auth } from "./firebase-auth.js?v=20260929b";
 import {
   doc, getDoc, setDoc,
   collection, query, where, getDocs

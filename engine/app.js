@@ -10,14 +10,14 @@
  * "a course", not which one.
  * ============================================================ */
 
-import { createAppState } from './state.js?v=20260822';
-import { StorageManager } from './storage.js?v=20260822';
-import { CourseLoader, CourseLoadError } from './loader.js?v=20260822';
-import { AnalyticsManager } from './analytics.js?v=20260822';
-import { ExamEngine } from './exam-engine.js?v=20260822';
-import { FlashcardEngine } from './flashcard-engine.js?v=20260822';
-import { UIRenderer } from './ui-renderer.js?v=20260822';
-import { attachFirebaseSync } from './firebase-adapter.js?v=20260822';
+import { createAppState } from './state.js?v=20260929';
+import { StorageManager } from './storage.js?v=20260929';
+import { CourseLoader, CourseLoadError } from './loader.js?v=20260929';
+import { AnalyticsManager } from './analytics.js?v=20260929';
+import { ExamEngine } from './exam-engine.js?v=20260929';
+import { FlashcardEngine } from './flashcard-engine.js?v=20260929';
+import { UIRenderer } from './ui-renderer.js?v=20260929';
+import { attachFirebaseSync } from './firebase-adapter.js?v=20260929';
 import './question-types.js'; // registers built-in mcq / case-mcq renderers
 
 function getCourseUrlFromQueryString() {

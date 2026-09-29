@@ -125,9 +125,11 @@ export class ExamEngine {
       correctCount: 0,
       wrongCount: 0,
       skippedCount: 0,
+      furthest: 0,
       timeLimit: testMode === 'exam' ? examTimeMinutes * 60 : 0,
       timeRemaining: testMode === 'exam' ? examTimeMinutes * 60 : 0,
-      examStartTime: testMode === 'exam' ? Date.now() : null
+      examStartTime: testMode === 'exam' ? Date.now() : null,
+      finalized: false
     };
     this.state.set({ session });
     if (testMode === 'exam') this.startTimer();
@@ -153,9 +155,11 @@ export class ExamEngine {
       correctCount: 0,
       wrongCount: 0,
       skippedCount: 0,
+      furthest: 0,
       timeLimit: minutes * 60,
       timeRemaining: minutes * 60,
-      examStartTime: Date.now()
+      examStartTime: Date.now(),
+      finalized: false
     };
     this.state.set({ session });
     this.startTimer();
@@ -214,7 +218,8 @@ export class ExamEngine {
       session: {
         userAnswers,
         skippedCount: session.skippedCount + 1,
-        currentIndex: session.currentIndex + 1
+        currentIndex: session.currentIndex + 1,
+        furthest: Math.max(session.furthest || 0, session.currentIndex + 1)
       }
     });
     this.persist();
@@ -222,7 +227,12 @@ export class ExamEngine {
 
   next() {
     const { session } = this.state.get();
-    this.state.set({ session: { currentIndex: session.currentIndex + 1 } });
+    this.state.set({
+      session: {
+        currentIndex: session.currentIndex + 1,
+        furthest: Math.max(session.furthest || 0, session.currentIndex + 1)
+      }
+    });
     this.persist();
   }
 
@@ -234,11 +244,19 @@ export class ExamEngine {
     }
   }
 
+  /** Seconds left, computed from the real clock so it stays correct after a
+   *  page reload / resume and isn't thrown off by a throttled background tab. */
+  computeRemaining(session) {
+    if (!session.examStartTime || !session.timeLimit) return session.timeRemaining;
+    const elapsed = Math.floor((Date.now() - session.examStartTime) / 1000);
+    return Math.max(0, session.timeLimit - elapsed);
+  }
+
   startTimer() {
     this.stopTimer();
     this.timerInterval = setInterval(() => {
       const { session } = this.state.get();
-      const timeRemaining = session.timeRemaining - 1;
+      const timeRemaining = this.computeRemaining(session);
       this.state.set({ session: { timeRemaining } });
       if (this._onTick) this._onTick(timeRemaining);
       if (timeRemaining <= 0) {
@@ -246,6 +264,20 @@ export class ExamEngine {
         if (this._onTimeUp) this._onTimeUp();
       }
     }, 1000);
+  }
+
+  /** Called after a saved timed session is restored. Returns 'expired' if the
+   *  clock already ran out while the learner was away, true if the timer was
+   *  restarted, false if the session isn't timed. */
+  resumeTimer() {
+    const { session } = this.state.get();
+    const timed = session.testMode === 'exam' || session.mode === 'exam';
+    if (!timed || !session.examStartTime || !session.timeLimit) return false;
+    const timeRemaining = this.computeRemaining(session);
+    this.state.set({ session: { timeRemaining } });
+    if (timeRemaining <= 0) return 'expired';
+    this.startTimer();
+    return true;
   }
 
   stopTimer() {
@@ -258,18 +290,21 @@ export class ExamEngine {
   /** Finalize a session: fold in unanswered questions as skipped, update missed list, persist. */
   finalize({ autoSubmit = false } = {}) {
     this.stopTimer();
-    const { session, course, missedQuestionIds } = this.state.get();
-    let skippedCount = session.skippedCount;
-    if (autoSubmit && (session.testMode === 'exam' || session.mode === 'exam')) {
-      skippedCount = session.userAnswers.filter((a) => a === null).length;
-    } else if (!autoSubmit && session.mode !== 'flashcard') {
-      skippedCount = session.skippedCount + session.userAnswers.filter((a) => a === null).length;
-    }
-    this.state.set({ session: { active: false, skippedCount } });
+    const { session, course, missedQuestionIds, user } = this.state.get();
+    if (!session.active || session.finalized) return;
+    // Skipped questions are stored as null in userAnswers, so counting the nulls
+    // once gives the true skipped/unanswered total. (Adding session.skippedCount
+    // on top double-counted every question the learner pressed Skip on.)
+    // Flashcards have no answers, so they keep whatever count they had.
+    const skippedCount = session.mode === 'flashcard'
+      ? session.skippedCount
+      : session.userAnswers.filter((a) => a === null || a === undefined).length;
+    this.state.set({ session: { active: false, skippedCount, finalized: true } });
 
     const updatedMissed = this.analytics.updateMissed(course.meta.id, this.state.get().session, missedQuestionIds);
     this.state.set({ missedQuestionIds: updatedMissed });
-    this.storage.clearSession(this.state.get().user.id);
+    this.analytics.recordCompletedSession(user.id, this.state.get().session, course);
+    this.storage.clearSession(user.id);
   }
 
   retryMissed() {
@@ -292,9 +327,11 @@ export class ExamEngine {
         correctCount: 0,
         wrongCount: 0,
         skippedCount: 0,
+      furthest: 0,
         timeLimit: 0,
         timeRemaining: 0,
-        examStartTime: null
+        examStartTime: null,
+        finalized: false
       }
     });
     this.persist();
